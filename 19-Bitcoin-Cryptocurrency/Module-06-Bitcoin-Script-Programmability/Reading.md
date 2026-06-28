@@ -17,7 +17,7 @@ Almost nothing visibly changes. The price of Bitcoin doesn't move on the news (a
 
 But under the hood, four years of cryptographic engineering have just shipped. **Schnorr signatures replace ECDSA for new transactions.** **Multi-signature spending can now be aggregated into a single signature using MuSig2** meaning a 5-of-9 corporate vault looks indistinguishable on-chain from a single-sig personal wallet. **Merkelized Alternative Script Trees (MAST) let complex contracts reveal only the actual execution path** privacy and efficiency at the same time. The script length limit and `OP_*` opcode menu expand modestly. The total Bitcoin script ecosystem becomes more expressive in the same week.
 
-The Taproot activation was significant for what it *didn't* do. It didn't add Turing-completeness. It didn't introduce a new VM. It didn't enable Ethereum-style smart contracts. It tightened consensus rules backward-compatibly, kept the conservative posture, and shipped years of careful work.
+The Taproot activation was significant for what it *didn't* do. It didn't add Turing-completeness. It didn't introduce a new VM (Virtual Machine). It didn't enable Ethereum-style smart contracts. It tightened consensus rules backward-compatibly, kept the conservative posture, and shipped years of careful work.
 
 That story is your first lesson: **Bitcoin's culture is "do less, but ship what you do correctly." Taproot represents the most expressive Bitcoin Script change in a decade, and it was a soft fork small enough that most non-developers didn't notice it shipped.**
 
@@ -186,7 +186,7 @@ Pre-Taproot: all three paths are visible in the redeem script when first spent, 
 
 ---
 
-## 🕰️ Time-Locked Scripts (CLTV + CSV)
+## 🕰️ Time-Locked Scripts (CLTV (Customer Lifetime Value) + CSV)
 
 Two soft forks added time-based spending conditions:
 

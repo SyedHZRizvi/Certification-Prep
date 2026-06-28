@@ -102,7 +102,7 @@ Preston Blair's phoneme set (from his book *Cartoon Animation*) is the industry 
 | **FV** | F, V sounds | Upper teeth on lower lip |
 | **L** | L sound | Open, tongue tip to roof |
 | **MBP** | M, B, P | Closed or nearly closed |
-| **REST** | Silence, exhale | Relaxed, slight opening |
+| **REST (Representational State Transfer)** | Silence, exhale | Relaxed, slight opening |
 | **WQ** | W, Q | Small round pucker |
 
 **MEMORIZE THIS.** The Preston Blair set appears in multiple exam questions.

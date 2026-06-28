@@ -1,12 +1,12 @@
-# Module 1: Strategic Frameworks & OKRs 🎯
+# Module 1: Strategic Frameworks & OKRs (Objectives and Key Results) 🎯
 
 > **Why this module matters:** Strategy is the single most-faked discipline in marketing. Everyone has "the strategy". Few can write it down on a single page using a real framework, defend each choice with data, and translate it into measurable OKRs the team will actually hit. This module gives you that toolkit, the same one used at Spotify, Airbnb, Stripe, and Shopify.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Basic marketing vocabulary (segment, channel, funnel, conversion), covered in [Course 14 Module 1: Digital Marketing Landscape 2026](../../14-AI-Marketing-Foundations/Module-01-Digital-Marketing-Landscape-2026/Reading.md).
-> - Analytics & measurement basics (CTR, CVR, ROAS, CAC, LTV), covered in [Course 14 Module 8: Analytics & Measurement Basics](../../14-AI-Marketing-Foundations/Module-08-Analytics-Measurement-Basics/Reading.md).
+> - Analytics & measurement basics (CTR (Click-Through Rate), CVR (Conversion Rate), ROAS (Return on Ad Spend), CAC (Customer Acquisition Cost), LTV (Lifetime Value)), covered in [Course 14 Module 8: Analytics & Measurement Basics](../../14-AI-Marketing-Foundations/Module-08-Analytics-Measurement-Basics/Reading.md).
 > - Hands-on campaign exposure (running at least one Google or Meta Ads campaign), covered across [Course 15: AI Digital Marketing Practitioner](../../15-AI-Marketing-Practitioner/README.md).
-> - Numeracy: be able to read a quarterly P&L line and a basic A/B-test table without translation.
+> - Numeracy: be able to read a quarterly P&L (Profit and Loss) line and a basic A/B-test table without translation.
 > If any of these are shaky, pause and review before continuing, this module assumes them.
 
 ---
@@ -15,13 +15,13 @@
 
 December 1, 2016. Spotify launches a small feature: a personalized "Year in Music" page summarizing your top songs of the year. It's pretty. Some users share it. The campaign cost Spotify roughly $400K to build and promote.
 
-Fast-forward to December 1, 2024. **Spotify Wrapped** is now a global cultural event. 156 million users open Wrapped on day one. Twitter (X) trends carry the hashtag for 72 hours. Apple Music, Amazon Music, YouTube Music, and Tidal all launch their own copycat year-in-review features, and lose every single year. Spotify spends roughly $30M on Wrapped each year and generates an estimated $400M+ in net subscriber growth and brand value from it alone. The ROI is roughly **13×**, before counting brand lift.
+Fast-forward to December 1, 2024. **Spotify Wrapped** is now a global cultural event. 156 million users open Wrapped on day one. Twitter (X) trends carry the hashtag for 72 hours. Apple Music, Amazon Music, YouTube Music, and Tidal all launch their own copycat year-in-review features, and lose every single year. Spotify spends roughly $30M on Wrapped each year and generates an estimated $400M+ in net subscriber growth and brand value from it alone. The ROI (Return on Investment) is roughly **13×**, before counting brand lift.
 
 Why did Wrapped work? Not because Spotify had a marketing budget Apple didn't have Apple has more. Not because the data science was unique every streaming service has the same log files. Wrapped worked because Spotify's strategy team applied **three frameworks simultaneously**:
 
 1. **Jobs-to-be-Done (JTBD)** told them what users actually hire music for at end of year: *I want to relive a year that mattered, and prove who I was, to friends I want to stay close to.*
 2. **STP (Segmentation, Targeting, Positioning)** told them the target wasn't all listeners, it was specifically the 18–34 social-sharing segment whose use of TikTok and Instagram primes them to share visual identity tokens.
-3. **OKR design** translated this into a single measurable objective: *Make Wrapped the most-shared annual content event in music streaming, with ≥35% of monthly actives opening it within 7 days.*
+3. **OKR (Objective and Key Result) design** translated this into a single measurable objective: *Make Wrapped the most-shared annual content event in music streaming, with ≥35% of monthly actives opening it within 7 days.*
 
 Every other streamer copied the *feature*. None copied the *strategic thinking*. That is the difference this module teaches.
 
@@ -29,7 +29,7 @@ By the time you finish Module 1, you will have:
 
 - A working command of seven canonical strategic frameworks (STP, 4Ps + 4Cs + 7Ps, Porter's Five Forces, Ansoff Matrix, BCG Growth-Share, JTBD theory, Customer Journey Maps).
 - A working command of OKR design at the depth John Doerr describes in *Measure What Matters*, including the difference between objectives, key results, initiatives, and the trap of "set-it-and-forget-it OKRs" that plague 70% of orgs.
-- A KPI tree you can construct top-down from a single North Star metric, decomposing it into the operational levers each team can move.
+- A KPI (Key Performance Indicator) tree you can construct top-down from a single North Star metric, decomposing it into the operational levers each team can move.
 
 This is dense material. Treat it like a graduate-level course, because that is what it is.
 
@@ -41,9 +41,9 @@ Before any framework, understand the **levels** at which strategy operates. A co
 
 | Level | Time horizon | Owner | Example question |
 |-------|--------------|-------|------------------|
-| **Corporate strategy** | 3–10 years | CEO / Board | "What businesses should we be in?" (Ansoff, BCG) |
+| **Corporate strategy** | 3–10 years | CEO (Chief Executive Officer) / Board | "What businesses should we be in?" (Ansoff, BCG) |
 | **Business strategy** | 1–3 years | GM / President of BU | "How do we win in this specific market?" (Porter, STP) |
-| **Marketing strategy** | 6–18 months | CMO / VP Marketing | "What audiences, what positioning, what mix?" (4Ps/4Cs, JTBD) |
+| **Marketing strategy** | 6–18 months | CMO (Chief Marketing Officer) / VP Marketing | "What audiences, what positioning, what mix?" (4Ps/4Cs, JTBD) |
 | **Campaign strategy** | 1–6 months | Director / Senior Manager | "What channels, what creative, what budget?" (covered in Course 2) |
 | **Tactics** | 1–8 weeks | Manager / Specialist | "What headline, what bid, what landing page?" (covered in Course 2) |
 
@@ -75,7 +75,7 @@ Common segmentation variables:
 | **Geographic** | Country, region, urban/suburban/rural, climate |
 | **Psychographic** | Values, attitudes, interests, lifestyle (VALS framework) |
 | **Behavioral** | Purchase frequency, usage occasion, brand loyalty, benefits sought |
-| **Firmographic (B2B)** | Industry, company size, revenue, tech stack |
+| **Firmographic (B2B (Business-to-Business))** | Industry, company size, revenue, tech stack |
 | **Needs-based** | What problem the customer is trying to solve (overlaps with JTBD) |
 
 ⚠️ **What most teams get wrong:** They segment by demographics (millennials, women 25–34) when the *predictive* variable is behavioral or needs-based. Spotify's *Wrapped* segment was not "Gen Z", it was "users who shared at least one playlist in the past 90 days." Behavioral segmentation outperforms demographic segmentation in 80%+ of marketing experiments (CXL Institute meta-analysis, 2021).
@@ -94,7 +94,7 @@ Target-segment evaluation matrix:
 
 | Criterion | Weight | Segment A score | Segment B score |
 |-----------|--------|-----------------|-----------------|
-| Segment size (TAM) | 25% | 8/10 | 6/10 |
+| Segment size (TAM (Total Addressable Market)) | 25% | 8/10 | 6/10 |
 | Growth rate | 20% | 9/10 | 7/10 |
 | Competitive intensity (low = good) | 15% | 4/10 | 8/10 |
 | Strategic fit | 20% | 9/10 | 5/10 |
@@ -284,7 +284,7 @@ A modern journey map is **not** a five-step Awareness-Consideration-Decision fun
 | **Thoughts & feelings** | What they're thinking and feeling at each step |
 | **Touchpoints** | Channels and assets the customer encounters |
 
-### Modern 7-stage B2B SaaS journey
+### Modern 7-stage B2B SaaS (Software as a Service) journey
 
 | Stage | Customer mindset | Marketing job | Primary metric |
 |-------|------------------|---------------|----------------|
@@ -323,7 +323,7 @@ The trap that ruins 70% of OKR rollouts: confusing initiatives with key results.
 
 ### A worked example, VP of Marketing, B2B SaaS, Q2 2026
 
-**Objective 1: Become the default vendor in mid-market e-commerce companies evaluating a CDP.**
+**Objective 1: Become the default vendor in mid-market e-commerce companies evaluating a CDP (Customer Data Platform).**
 
 | Key Result | Q1 actual | Q2 target | Q2 attainment | Score |
 |------------|-----------|-----------|---------------|-------|
@@ -333,7 +333,7 @@ The trap that ruins 70% of OKR rollouts: confusing initiatives with key results.
 | Pipeline sourced from organic + content | $3.2M | $5.5M | $5.1M | 0.93 |
 | **Composite objective score** | | | | **0.83** |
 
-**Objective 2: Build a measurement function the CFO can trust.**
+**Objective 2: Build a measurement function the CFO (Chief Financial Officer) can trust.**
 
 | Key Result | Q2 target | Q2 attainment | Score |
 |------------|-----------|---------------|-------|
@@ -407,7 +407,7 @@ Each leaf is owned by a team. The Notifications team owns the "sessions/DAU" bra
 | "Strategy is the same as planning" | Strategy = *choosing what not to do*. Planning = how to execute the choice. |
 | "OKRs are a performance-review tool" | They are an *alignment* tool. Performance reviews using OKR scores destroy honest goal-setting. |
 | "The North Star metric is revenue" | Revenue is the *outcome*. The North Star is the *customer-value* driver upstream of revenue. |
-| "We have 27 KPIs we track" | You have 27 metrics. You have zero strategy. |
+| "We have 27 KPIs (Key Performance Indicators) we track" | You have 27 metrics. You have zero strategy. |
 | "The 4Ps are old / replaced by 4Cs" | 4Cs is a *complement*, not a replacement. Sophisticated teams use both. |
 | "Porter's Five Forces is obsolete in the age of platforms" | It is more relevant than ever, the "platforms" are exactly the new supplier/buyer concentration the framework predicted. |
 | "JTBD replaces personas" | JTBD adds the *situation* dimension that personas lack. Modern teams use both. |
@@ -461,7 +461,7 @@ Sit with these for ten minutes each. There is no single right answer; defending 
 2. Spotify's Wrapped is celebrated as a strategy triumph; copycats at Apple Music, Amazon Music, and YouTube Music landed flat. If you were leading marketing at Apple Music in late 2025, what *specific* strategy would you adopt, knowing you cannot win the copy-Wrapped game? Defend your call against the obvious objection that any unique alternative may be "weirder" than what users want.
 3. Doerr's OKR canon says 100% attainment for multiple quarters means sandbagging. But in a regulated industry (medical devices, banking), missing some kinds of KRs has compliance consequences. How do you reconcile the "stretch" philosophy with KRs whose floor is "we must hit 100%"?
 4. The North Star metric idea is that revenue is a *lagging* outcome and the right apex is one step upstream in customer value. Pick a company you know well and propose its North Star, then explain the specific way that metric could be *gamed* by an internal team, and how you'd structurally prevent the gaming.
-5. The Ansoff matrix puts diversification in the riskiest quadrant, and McKinsey's 2018 replication confirms ~70% of diversification moves destroy value. Why, then, did Amazon's diversification (AWS, Prime Video, Devices, Pharmacy) work? Is Amazon the rare exception, or are most "diversifications" misclassified moves that were actually adjacent expansions?
+5. The Ansoff matrix puts diversification in the riskiest quadrant, and McKinsey's 2018 replication confirms ~70% of diversification moves destroy value. Why, then, did Amazon's diversification (AWS (Amazon Web Services), Prime Video, Devices, Pharmacy) work? Is Amazon the rare exception, or are most "diversifications" misclassified moves that were actually adjacent expansions?
 
 ---
 
@@ -483,7 +483,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 2](../Module-02-CDP-Server-Side-Tracking/Reading.md) turns the strategic frameworks into the *data infrastructure* (CDP + server-side tracking) needed to actually measure them; [Module 10](../Module-10-Marketing-Org-Tech-Stack-Design/Reading.md) revisits OKRs and KPI trees at the org-design level.
-> - Cross-course: [Course 17: AI Digital Marketing Entrepreneur](../../17-AI-Marketing-Entrepreneur/README.md) takes the strategic frameworks here and applies them at the founder / GTM-design level, including positioning, market entry, and growth-portfolio decisions.
+> - Cross-course: [Course 17: AI Digital Marketing Entrepreneur](../../17-AI-Marketing-Entrepreneur/README.md) takes the strategic frameworks here and applies them at the founder / GTM (Google Tag Manager)-design level, including positioning, market entry, and growth-portfolio decisions.
 > - Practice: [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) covers Modules 1–5 (questions 1–4 and 30–34 draw from this module); the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) tests STP/Porter/Ansoff/OKR design.
 
 ---

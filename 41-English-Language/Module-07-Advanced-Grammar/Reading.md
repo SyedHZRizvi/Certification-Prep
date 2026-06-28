@@ -95,7 +95,7 @@ NOW ──────────────────●──────�
 **Use:** Hypothetical, unlikely, or imaginary situations.
 
 - "If I **had** a million dollars, I **would travel** the world."
-- "If she **were** the CEO, things **would be** different."
+- "If she **were** the CEO (Chief Executive Officer), things **would be** different."
 
 **Note:** "Were" (not "was") is grammatically correct for all subjects in second conditional: "If I **were** you..." is standard formal English.
 

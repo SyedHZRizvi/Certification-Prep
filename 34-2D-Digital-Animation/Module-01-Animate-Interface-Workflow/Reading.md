@@ -162,7 +162,7 @@ The most important document setting is frame rate, measured in frames per second
 | 24 fps | Cinema standard; used for most feature animation | Spider-Verse, Avatar TLAB |
 | 25 fps | PAL broadcast standard (Europe, Australia) | BBC productions |
 | 30 fps | NTSC broadcast standard (US, Japan); YouTube default | Most US TV animation |
-| 60 fps | Gaming UI; smooth motion graphics | Game UI, web apps |
+| 60 fps | Gaming UI (User Interface); smooth motion graphics | Game UI, web apps |
 
 **"Animating on twos"** means drawing a new pose every 2 frames at 24fps effectively 12 unique drawings per second. This is the foundation of classic hand-drawn animation and is still used intentionally in modern productions for aesthetic reasons. The creators of *Spider-Man: Into the Spider-Verse* famously animated Miles Morales "on twos" while other characters used different rates a deliberate artistic choice that gave the film its unique, hand-crafted visual texture.
 

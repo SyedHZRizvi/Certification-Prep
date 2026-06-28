@@ -1,9 +1,9 @@
 # Module 1: Entra ID Fundamentals 🪪
 
-> **Why this module matters:** Identity is the new perimeter. Every CA policy, every PIM activation, every B2B invitation in the rest of this course starts from a tenant, and from picking the right license SKU. Get this layer wrong, and *every* feature in modules 2–8 is gated behind something you didn't buy. Get it right, and the whole governance story is a series of small, predictable clicks.
+> **Why this module matters:** Identity is the new perimeter. Every CA policy, every PIM (Product Information Management) activation, every B2B (Business-to-Business) invitation in the rest of this course starts from a tenant, and from picking the right license SKU (Stock Keeping Unit). Get this layer wrong, and *every* feature in modules 2–8 is gated behind something you didn't buy. Get it right, and the whole governance story is a series of small, predictable clicks.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Basic identity concepts (user, password, MFA, role), covered in [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Cost-Management-SLAs/Reading.md) (AZ-900) and [`09-CompTIA-Security-Plus` Module 1](../../09-CompTIA-Security-Plus/Module-01-Security-Fundamentals/Reading.md).
+> - Basic identity concepts (user, password, MFA (Multi-Factor Authentication), role), covered in [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Cost-Management-SLAs/Reading.md) (AZ-900) and [`09-CompTIA-Security-Plus` Module 1](../../09-CompTIA-Security-Plus/Module-01-Security-Fundamentals/Reading.md).
 > - The Azure resource hierarchy and inheritance, [`06-Azure-Administrator` Module 1](../../06-Azure-Administrator/Module-01-Subscriptions-Resource-Hierarchy/Reading.md).
 > - The principle of least privilege from Saltzer & Schroeder's seminal paper "The Protection of Information in Computer Systems" (*Proceedings of the IEEE*, 1975).
 >
@@ -13,11 +13,11 @@
 
 ## 🪪 A Story: The Mass MFA Enrollment That Took Down a Hospital
 
-It's a Tuesday in 2024. A 4,200-employee regional health system is rolling out MFA. The CISO sends a tenant-wide email at 7 AM: "Starting today, sign in with the Microsoft Authenticator app." By 9 AM the help desk has 800 tickets open. By noon, three operating rooms can't sign in to the EHR. At 1 PM a vendor's badge reader stops working because its service account requires legacy SMTP AUTH, which an emergency "block legacy auth" policy just blocked. At 2 PM the on-call admin's own MFA device is on a charger downstairs and *every* break-glass account has been deleted "for security" by a well-meaning intern the week before. The CIO is now signing a court order on her cell phone to delay surgeries.
+It's a Tuesday in 2024. A 4,200-employee regional health system is rolling out MFA. The CISO (Chief Information Security Officer) sends a tenant-wide email at 7 AM: "Starting today, sign in with the Microsoft Authenticator app." By 9 AM the help desk has 800 tickets open. By noon, three operating rooms can't sign in to the EHR. At 1 PM a vendor's badge reader stops working because its service account requires legacy SMTP (Simple Mail Transfer Protocol) AUTH, which an emergency "block legacy auth" policy just blocked. At 2 PM the on-call admin's own MFA device is on a charger downstairs and *every* break-glass account has been deleted "for security" by a well-meaning intern the week before. The CIO is now signing a court order on her cell phone to delay surgeries.
 
 What went wrong? Not the MFA decision, MFA is right. What went wrong was that the team treated **identity** as a series of unrelated checkboxes: a license here, a policy there, a method there. They never built the **identity foundation** that makes MFA, conditional access, and break-glass coexist. They never picked an *edition* (P1 vs P2) that matched the policies they wanted. They never thought about service accounts, vendors, or guests. They never opened the Entra portal and *just understood the tenant*.
 
-This module is that foundation. Boring? Maybe. But everything you'll spend the rest of SC-300 doing Conditional Access, PIM, Identity Protection, app SSO, governance fails on day one without it. Get this right and the hospital story is a 30-minute incident, not a CNN headline.
+This module is that foundation. Boring? Maybe. But everything you'll spend the rest of SC-300 doing Conditional Access, PIM, Identity Protection, app SSO (Single Sign-On), governance fails on day one without it. Get this right and the hospital story is a 30-minute incident, not a CNN headline.
 
 ---
 
@@ -25,16 +25,16 @@ This module is that foundation. Boring? Maybe. But everything you'll spend the r
 
 **Microsoft Entra ID** (the artist formerly known as **Azure Active Directory**, renamed in mid-2023) is Microsoft's cloud identity service. It is **not** on-premises Active Directory:
 
-| On-prem AD (the thing in your data center) | Microsoft Entra ID (the cloud service) |
+| On-prem AD (Active Directory) (the thing in your data center) | Microsoft Entra ID (the cloud service) |
 |--------------------------------------------|----------------------------------------|
-| LDAP, Kerberos, NTLM | OAuth 2.0, OIDC, SAML 2.0, WS-Fed, SCIM |
+| LDAP (Lightweight Directory Access Protocol), Kerberos, NTLM | OAuth 2.0, OIDC, SAML 2.0, WS-Fed, SCIM |
 | Domain Controllers (you patch them) | Globally managed by Microsoft |
 | OUs and Group Policy | Administrative Units + Conditional Access |
 | Forest / domain trusts | Cross-tenant access settings, B2B |
 | Computers join the domain | Devices register or *join* Entra ID |
 | Single-org boundary | Multi-tenant boundary (B2B, multi-tenant apps) |
 
-Entra ID is the identity service behind **Microsoft 365, Azure, Intune, Dynamics, and almost every Microsoft SaaS**. It's also the identity service behind hundreds of non-Microsoft SaaS apps (Workday, Salesforce, ServiceNow, Slack…) via federation.
+Entra ID is the identity service behind **Microsoft 365, Azure, Intune, Dynamics, and almost every Microsoft SaaS (Software as a Service)**. It's also the identity service behind hundreds of non-Microsoft SaaS apps (Workday, Salesforce, ServiceNow, Slack…) via federation.
 
 🔥 **MEMORIZE:** SC-300 still uses "Microsoft Entra ID" and "Azure AD" interchangeably. They are the same thing. The rebrand is naming only.
 
@@ -47,7 +47,7 @@ This single table is worth 5–7 exam questions. Tape it to your monitor.
 | Feature | **Free** | **Entra ID P1** | **Entra ID P2** | **Entra External ID** |
 |---------|----------|-----------------|-----------------|-----------------------|
 | Up to 500K objects | ✅ | ✅ | ✅ | Per-MAU billing |
-| Cloud users, groups, SSO to gallery apps | ✅ | ✅ | ✅ | (B2C: consumer) |
+| Cloud users, groups, SSO to gallery apps | ✅ | ✅ | ✅ | (B2C (Business-to-Consumer): consumer) |
 | Self-service password reset (cloud only) | ✅ | ✅ | ✅ | ✅ |
 | Self-service password reset for synced users | ❌ | ✅ | ✅ | n/a |
 | **Conditional Access** | ❌ | ✅ | ✅ | (subset) |
@@ -76,11 +76,11 @@ This single table is worth 5–7 exam questions. Tape it to your monitor.
 
 ## 🏗️ Tenants: Your Identity Boundary
 
-A **tenant** is a dedicated, isolated instance of the Entra ID directory representing your organization. **One organization usually has one tenant.** (Some have more for testing, M&A, or regulatory reasons.)
+A **tenant** is a dedicated, isolated instance of the Entra ID directory representing your organization. **One organization usually has one tenant.** (Some have more for testing, M&A (Mergers and Acquisitions), or regulatory reasons.)
 
 When you create a tenant, you pick:
 
-1. A **default DNS name**: `<yourname>.onmicrosoft.com`, permanent, can never be deleted or renamed.
+1. A **default DNS (Domain Name System) name**: `<yourname>.onmicrosoft.com`, permanent, can never be deleted or renamed.
 2. A **country/region** affects which Microsoft datacenters store directory data (and which sovereign cloud you're in: Public, US Gov, China separate from public commercial Azure).
 3. An **organization name**, the friendly name you can change later.
 
@@ -147,7 +147,7 @@ Branding lets you put your logo on the sign-in page, change the background image
 Branding is per-tenant **and** per-language. You can ship up to 100 language variants.
 
 ```bash
-# Set branding via Graph API (PowerShell wrapper)
+# Set branding via Graph API (Application Programming Interface) (PowerShell wrapper)
 Update-MgOrganizationBranding -OrganizationId "<tenant-id>" `
   -SignInPageText "Use your @contoso.com address. IT help: 1-800-555-1234." `
   -UsernameHintText "alice@contoso.com" `
@@ -158,7 +158,7 @@ Update-MgOrganizationBranding -OrganizationId "<tenant-id>" `
 
 ---
 
-## 🛡️ Directory Roles vs Entra Roles vs Azure RBAC
+## 🛡️ Directory Roles vs Entra Roles vs Azure RBAC (Role-Based Access Control)
 
 Microsoft uses three role systems that share many names but live at three different scopes. This is one of the most-confused SC-300 topics.
 
@@ -192,7 +192,7 @@ New-AzRoleAssignment -SignInName "alice@contoso.com" `
 | **User Administrator** | Manage users + groups (not GAs) | Can create accounts |
 | **Authentication Administrator** | Reset auth methods for non-admins | Limited but useful for help desk |
 | **Helpdesk Administrator** | Reset passwords for non-admins | Help-desk baseline |
-| **Reports Reader** | Read sign-in / audit logs | Audit / SOC tier |
+| **Reports Reader** | Read sign-in / audit logs | Audit / SOC (Security Operations Center) tier |
 | **Security Reader / Security Administrator** | Read or manage security features | SOC / IR teams |
 | **Hybrid Identity Administrator** | Manage Entra Connect, federation | Hybrid IT |
 | **Compliance Administrator** | M365 Compliance Center | Legal / compliance |
@@ -321,7 +321,7 @@ The correct order:
 | **Security Defaults** | Free baseline: MFA on admins + block legacy auth |
 | **Conditional Access** | If-then engine for sign-in; requires P1 |
 | **Identity Protection** | Risk-based detections and policies; requires P2 |
-| **PIM** | Privileged Identity Management; JIT + approval + audit; requires P2 |
+| **PIM** | Privileged Identity Management; JIT (Just-In-Time) + approval + audit; requires P2 |
 | **Branding** | Custom logo/text on sign-in page; requires P1 |
 
 ---
@@ -371,7 +371,7 @@ The transformation took ~3 years and re-architected ~80,000 employee identities.
 **Discussion (Socratic).**
 - **Q1.** Maersk kept on-prem AD even after the rebuild for legacy domain-joined workloads. Defend the decision: when does *eliminating* on-prem AD entirely become more expensive than running it carefully? Where does Hybrid Entra Join (Module 7) fit?
 - **Q2.** Maersk now has ~6 Global Administrators across 80,000+ users. Microsoft recommends ≤5. Is there a single right number? What are the trade-offs of 2 vs 5 vs 12 GAs in a 24×7 global IT operation?
-- **Q3.** A common counter-argument from a CFO: "We already pay for Microsoft 365 E3, do we *really* need E5 just for PIM?" Make the cost-of-not-doing-it case using NotPetya as evidence, but be specific about which P2 features each prevent which attack.
+- **Q3.** A common counter-argument from a CFO (Chief Financial Officer): "We already pay for Microsoft 365 E3, do we *really* need E5 just for PIM?" Make the cost-of-not-doing-it case using NotPetya as evidence, but be specific about which P2 features each prevent which attack.
 
 ---
 
@@ -387,7 +387,7 @@ The transformation took ~3 years and re-architected ~80,000 employee identities.
 1. **One tenant or two?** A 4,000-employee health system buys a competitor with 1,200 employees. Each has its own Entra tenant. Argue both sides: merge into one tenant immediately vs run two tenants federated with cross-tenant sync for 18 months. What's the risk in each path? Which makes the SC-300 "right answer" and why?
 2. **Federated vs managed in 2026.** Most net-new tenants are managed (cloud auth). When does federation with AD FS still make sense, beyond "we already have it"? Consider Conditional Access signal loss, MFA economics, and the AD FS retirement roadmap.
 3. **Security Defaults vs Conditional Access.** A 50-person law firm has Entra ID Free + Microsoft 365 Business Basic. Should they (a) turn on Security Defaults and stop, or (b) upgrade to Business Premium (includes Entra ID P1) and build CA? Build the cost/benefit case.
-4. **Branding as a security control.** Microsoft sells branding as a UX feature. Make the security argument: how does a custom-branded sign-in page *reduce* phishing risk? Where does it not help?
+4. **Branding as a security control.** Microsoft sells branding as a UX (User Experience) feature. Make the security argument: how does a custom-branded sign-in page *reduce* phishing risk? Where does it not help?
 5. **GA inflation.** A consultancy is brought in to "right-size" Global Admins. They find 47 in a 2,000-person company. What's your engagement plan, and how do you build the replacement role taxonomy (User Admin, Auth Admin, Hybrid Identity Admin, etc.) without breaking workflows?
 
 ---

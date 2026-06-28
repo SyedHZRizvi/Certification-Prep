@@ -1,6 +1,6 @@
-# Module 6: Conversion Optimization & UX 🎯
+# Module 6: Conversion Optimization & UX (User Experience) 🎯
 
-> **Why this module matters:** Conversion rate is the multiplier that decides whether every dollar of paid acquisition pays back twice or burns. A 1.8% CVR brand and a 3.2% CVR brand can run the same Meta campaign one is profitable, one is dying. This module gives you the operating doctrine Kohavi/Tang/Xu A/B-testing rigor, PDP UX, Core Web Vitals, the Booking.com 1,000-tests-a-year experimentation engine.
+> **Why this module matters:** Conversion rate is the multiplier that decides whether every dollar of paid acquisition pays back twice or burns. A 1.8% CVR (Conversion Rate) brand and a 3.2% CVR brand can run the same Meta campaign one is profitable, one is dying. This module gives you the operating doctrine Kohavi/Tang/Xu A/B-testing rigor, PDP UX, Core Web Vitals, the Booking.com 1,000-tests-a-year experimentation engine.
 
 ---
 
@@ -19,14 +19,14 @@ The lesson for e-commerce: speed of test-shipping is not the same as quality of 
 > - Platform choices and Hydrogen/headless implications for speed (covered in [Module 2](../Module-02-Storefront-Platforms-Architecture/Reading.md))
 > - Catalog hygiene (covered in [Module 3](../Module-03-Product-Catalog-Information-Management/Reading.md))
 > - Checkout fundamentals (covered in [Module 4](../Module-04-Payments-Tax-Fraud/Reading.md))
-> - Cross-course: [15-AI-Marketing-Practitioner Module 7](../../15-AI-Marketing-Practitioner/Module-07-CRO-Landing-Pages-Personalization/Reading.md) on landing-page CRO and Mutiny / Optimizely.
+> - Cross-course: [15-AI-Marketing-Practitioner Module 7](../../15-AI-Marketing-Practitioner/Module-07-CRO (Chief Revenue Officer)-Landing-Pages-Personalization/Reading.md) on landing-page CRO and Mutiny / Optimizely.
 > If any of these are shaky, pause and review before continuing.
 
 ---
 
 ## 📊 CRO Industry Benchmarks (2026)
 
-| Category | Median DTC CVR | Top quartile CVR |
+| Category | Median DTC (Direct-to-Consumer) CVR | Top quartile CVR |
 |----------|----------------|------------------|
 | Beauty | 2.5-3.5% | 5-7% |
 | Apparel (mid) | 1.8-2.8% | 4-6% |
@@ -54,7 +54,7 @@ Ron Kohavi (formerly Microsoft, Airbnb), Diane Tang (Google) and Ya Xu (LinkedIn
 3. **Achieve 80% power and p < 0.05.** Under-powered tests miss real wins. Over-powered tests waste traffic.
 4. **Check Sample-Ratio Mismatch (SRM) before reading results.** If the actual split deviates from planned (e.g., 50.4% / 49.6% with chi-square p < 0.01), the randomization is broken. Stop the test.
 5. **Do not peek.** Looking at results mid-test inflates false-positive rate. Use sequential testing (Optimizely's Stats Engine, Bayesian methods) if you must look early.
-6. **Track guardrail metrics.** Beyond the primary KPI, monitor page-load time, error rate, support tickets. A variant that lifts revenue but tanks page speed is a net negative.
+6. **Track guardrail metrics.** Beyond the primary KPI (Key Performance Indicator), monitor page-load time, error rate, support tickets. A variant that lifts revenue but tanks page speed is a net negative.
 7. **Beware novelty + primacy effects.** New buttons cause clicks because they're new. Run tests for at least 2-3 full business cycles (typically 2-4 weeks for DTC).
 
 🚨 **Trap on the exam:** P < 0.05 does NOT mean "95% probability the variant is better." It means "if the null hypothesis (no effect) were true, there's < 5% probability of observing this data." This distinction is the most-tested A/B-testing concept.
@@ -123,7 +123,7 @@ Baymard Institute's PDP usability research (the 2024 wave covers 2,000+ PDPs acr
 6. **Trust signals** (reviews ★★★★★ count, badges, security seals).
 7. **Detailed product description** (≥ 200 words, structured with bullets).
 8. **Specifications table** (size, weight, materials, technical specs).
-9. **Customer reviews + UGC photos** (Yotpo 2024: 88% of consumers read reviews; UGC photos lift CVR 6-15%).
+9. **Customer reviews + UGC (User-Generated Content) photos** (Yotpo 2024: 88% of consumers read reviews; UGC photos lift CVR 6-15%).
 10. **Sticky add-to-cart** on mobile (especially for long-scroll PDPs).
 
 🎯 **Exam tip:** Shopify Theme Developer + Adobe Commerce Business Practitioner both test PDP-anatomy questions. Memorize 6-12 images, image zoom required, 200+ words, sticky ATC.
@@ -155,7 +155,7 @@ Baymard's 2024 checkout research:
 
 **The 5-step checkout discipline:**
 1. **Email entry** (single field; never required as account creation).
-2. **Shipping address** (use address autocomplete via Google Maps API or Loqate).
+2. **Shipping address** (use address autocomplete via Google Maps API (Application Programming Interface) or Loqate).
 3. **Shipping method** (display all options + estimated arrival).
 4. **Payment** (express wallets first, card entry second).
 5. **Review + place order** (clear final price, no surprises).
@@ -166,7 +166,7 @@ Baymard's 2024 checkout research:
 
 ## ⚡ Core Web Vitals (Google), The Speed Standard
 
-Google's user-experience metric trio. Affects SEO ranking + ad quality scores.
+Google's user-experience metric trio. Affects SEO (Search Engine Optimization) ranking + ad quality scores.
 
 | Metric | What it measures | Good threshold |
 |--------|------------------|----------------|
@@ -180,7 +180,7 @@ Google's user-experience metric trio. Affects SEO ranking + ad quality scores.
 - Deloitte's 2020 mobile speed report: 0.1-second improvement = 8% conversion lift in retail.
 
 **How to fix:**
-- **Images**, use WebP / AVIF; lazy-load below-fold; CDN-served.
+- **Images**, use WebP / AVIF; lazy-load below-fold; CDN (Content Delivery Network)-served.
 - **JavaScript**, defer non-critical; split bundles; tree-shake.
 - **Third-party scripts**, audit and remove (Shopify's "Slow Site Speed" usually has 18+ apps loading scripts).
 - **CDN**, Cloudflare, Bunny CDN, Fastly; especially important for global brands.
@@ -220,18 +220,18 @@ Site-search users convert at 2-3x the rate of non-search users (Algolia 2024, Kl
 
 | Vendor | Best for |
 |--------|----------|
-| **Mutiny** | B2B / SaaS landing-page personalization |
+| **Mutiny** | B2B (Business-to-Business) / SaaS (Software as a Service) landing-page personalization |
 | **Dynamic Yield** | Enterprise; McDonald's-class |
 | **Optimizely Personalization** | Enterprise; CMS-integrated |
 | **Bloomreach** | Personalization + content + commerce |
-| **Klaviyo Mobile Push + Web** | DTC native (Klaviyo Predicted CLV signals) |
+| **Klaviyo Mobile Push + Web** | DTC native (Klaviyo Predicted CLV (Customer Lifetime Value) signals) |
 | **Shopify Audiences** | First-party Shopify-only |
 
 **The Two-Visitor Personalization Test:**
 - **First-time visitor**, sees brand pillar + best-seller; trust signals; discount offer.
 - **Returning customer**, sees recently-viewed + complementary items; loyalty status; account-aware UX.
 
-Personalization platforms typically lift conversion 3-8% on B2C sites (less than vendors claim; more than skeptics claim).
+Personalization platforms typically lift conversion 3-8% on B2C (Business-to-Consumer) sites (less than vendors claim; more than skeptics claim).
 
 🎯 **Exam tip:** AI-personalization questions in 2026 focus on "personalize first-time vs returning" and "personalize by paid-traffic source." The standard answers are "yes for both."
 
@@ -393,7 +393,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 7 returns to CRO when discussing landing pages for paid traffic; Module 8 returns when discussing email/SMS subject-line testing; Module 9 returns for measurement infrastructure.
-> - Cross-course: [15-AI-Marketing-Practitioner Module 7](../../15-AI-Marketing-Practitioner/Module-07-CRO-Landing-Pages-Personalization/Reading.md) covers Mutiny/Optimizely deeper; [04-AWS-Solutions-Architect-Associate Module 5](../../04-AWS-Solutions-Architect-Associate/Module-05-S3-Deep-Dive/Reading.md) covers performance/CDN architecture.
+> - Cross-course: [15-AI-Marketing-Practitioner Module 7](../../15-AI-Marketing-Practitioner/Module-07-CRO-Landing-Pages-Personalization/Reading.md) covers Mutiny/Optimizely deeper; [04-AWS (Amazon Web Services)-Solutions-Architect-Associate Module 5](../../04-AWS-Solutions-Architect-Associate/Module-05-S3 (Simple Storage Service)-Deep-Dive/Reading.md) covers performance/CDN architecture.
 > - Practice: Practice Exam 2 has ~7 questions drawn from this module (sample-size, CWV thresholds, PDP anatomy, peeking, SRM).
 
 ---

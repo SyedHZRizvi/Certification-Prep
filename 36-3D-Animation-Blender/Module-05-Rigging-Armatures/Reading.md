@@ -101,9 +101,9 @@ Every animator faces this choice at every limb:
 | Spine, blocking phase | FK | Cleaner control over each spine segment |
 | Spine, secondary motion | IK | Hips drive belly/chest naturally with IK |
 | Mechanical arm (industrial robot) | IK | End effector control is the natural description |
-| Hero facial expression (jaw) | Neither, shape key | Bone rotation + driver = clean animator UX |
+| Hero facial expression (jaw) | Neither, shape key | Bone rotation + driver = clean animator UX (User Experience) |
 
-> ⚠️ **Gotcha IK/FK Popping on Switch:** Switching between IK and FK mid-animation causes the character to "pop" the pose jumps when the blend value crosses 0.5. The correct technique is to **snap IK to FK** (or vice versa) before switching, Rigify includes a "Snap IK→FK" button in the rig UI that aligns bone positions before the switch. Always snap before switching; never switch without snapping.
+> ⚠️ **Gotcha IK/FK Popping on Switch:** Switching between IK and FK mid-animation causes the character to "pop" the pose jumps when the blend value crosses 0.5. The correct technique is to **snap IK to FK** (or vice versa) before switching, Rigify includes a "Snap IK→FK" button in the rig UI (User Interface) that aligns bone positions before the switch. Always snap before switching; never switch without snapping.
 
 ---
 

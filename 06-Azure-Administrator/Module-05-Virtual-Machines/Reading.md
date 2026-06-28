@@ -3,12 +3,12 @@
 > **Why this module matters:** VMs are 20–25% of the AZ-104 exam. Picking the right size, redundancy model, and disk tier and knowing how to scale, image, and automate them is the bread and butter of an Azure admin. Expect drag-drop case studies.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 1](../Module-01-Subscriptions-Resource-Hierarchy/Reading.md): subscriptions, regions, and quota concepts (VM cores are a per-subscription, per-region quota).
-> - [Module 2](../Module-02-Entra-ID-RBAC/Reading.md): Managed Identity (every modern VM should have one).
+> - [Module 1](../Module-01-Subscriptions-Resource-Hierarchy/Reading.md): subscriptions, regions, and quota concepts (VM (Virtual Machine) cores are a per-subscription, per-region quota).
+> - [Module 2](../Module-02-Entra-ID-RBAC (Role-Based Access Control)/Reading.md): Managed Identity (every modern VM should have one).
 > - [Module 3](../Module-03-Storage-Accounts-Blobs/Reading.md): managed-disk storage is built on the storage account redundancy model you just learned.
 > - Basic Linux *and* Windows admin literacy: at least one of `ssh`, `cloud-init`, PowerShell remoting; or RDP and `sysprep`.
 >
-> If you have not provisioned an Azure VM via CLI before, do so before tackling the quiz, the drag-drop "task sequencing" exam style rewards finger memory, not just visual memory.
+> If you have not provisioned an Azure VM via CLI (Command Line Interface) before, do so before tackling the quiz, the drag-drop "task sequencing" exam style rewards finger memory, not just visual memory.
 
 ---
 
@@ -57,7 +57,7 @@ az vm list-sizes --location eastus --output table | head -20
 
 The big-three resilience options:
 
-| Option | What it gives you | SLA |
+| Option | What it gives you | SLA (Service Level Agreement) |
 |--------|-------------------|-----|
 | **Single VM with Premium SSD** | None except hardware redundancy | 99.9% |
 | **Availability Set (AS)** | Spreads VMs across fault & update domains in the same datacenter | 99.95% |
@@ -110,7 +110,7 @@ New-AzVM -ResourceGroupName "rg-app" -Name "vm-web-01" `
 
 A managed disk = an Azure-managed storage account behind the scenes. Five SKUs to know:
 
-| SKU | Backing | Use case | Max IOPS |
+| SKU (Stock Keeping Unit) | Backing | Use case | Max IOPS |
 |-----|---------|----------|----------|
 | **Standard HDD** | HDD | Dev/test, low cost | ~500 |
 | **Standard SSD** | SSD | Light prod web servers | ~6,000 |
@@ -195,7 +195,7 @@ Code/scripts that Azure injects into the VM at boot or on demand. The big ones:
 | Extension | Use |
 |-----------|-----|
 | **Custom Script Extension (CSE)** | Run a script on VM provision/update |
-| **Run Command** | Ad-hoc command from the portal (doesn't need RDP/SSH) |
+| **Run Command** | Ad-hoc command from the portal (doesn't need RDP/SSH (Secure Shell)) |
 | **DSC** | PowerShell Desired State Configuration |
 | **Azure Monitor Agent (AMA)** | Sends logs/metrics to Log Analytics |
 | **Network Watcher Agent** | Enables packet capture & connection monitor |
@@ -270,7 +270,7 @@ az monitor autoscale rule create \
 |---------|--------------|
 | **Azure Update Manager** | Periodic + on-demand OS patching, replaces "Update Management (legacy)" |
 | **Maintenance Configuration** | Schedule reboots/maintenance windows |
-| **Scheduled events** | API the VM can poll to learn of upcoming host maintenance |
+| **Scheduled events** | API (Application Programming Interface) the VM can poll to learn of upcoming host maintenance |
 | **Live migration** | Microsoft moves your VM to another host with minimal disruption |
 
 ---
@@ -388,8 +388,8 @@ When AZ-104 shows you a case study with "data subject to U.S. export controls" a
 
 > **Where this leads.**
 > - Inside this course: Module 6 covers the *managed* compute alternatives (App Service, AKS, ACI), when a VM is the wrong answer; Module 7 covers the network design VMs sit in; Module 8 secures them; Module 9 backs them up.
-> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 4](../../04-AWS-Solutions-Architect-Associate/Module-04-VPC-Deep-Dive/Reading.md) covers EC2 / ASG / placement groups, the AWS analogue; [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) covers VM encryption (ADE) as a control class.
-> - Practice: PE-1 has 7 questions from this module; PE-2 + Final Mock combine VMs with networking and backup.
+> - Cross-course: [`04-AWS (Amazon Web Services)-Solutions-Architect-Associate` Module 4](../../04-AWS-Solutions-Architect-Associate/Module-04-VPC (Virtual Private Cloud)-Deep-Dive/Reading.md) covers EC2 (Elastic Compute Cloud) / ASG / placement groups, the AWS analogue; [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) covers VM encryption (ADE) as a control class.
+> - Practice: PE (Private Equity)-1 has 7 questions from this module; PE-2 + Final Mock combine VMs with networking and backup.
 
 ---
 
@@ -399,7 +399,7 @@ When AZ-104 shows you a case study with "data subject to U.S. export controls" a
 2. **Spot VMs in production?** Spot VMs are 90% cheaper but evict with 30 sec notice. The conventional wisdom is "Spot is for batch only." Construct the strongest argument for using Spot for *interactive production workloads*, and the strongest argument against. Where's the line? (Hint: VMSS Flexible can mix Spot and on-demand instances.)
 3. **Premium SSD v2 vs. Ultra Disk.** Both are modern; both let you tune IOPS/throughput independently. When is Ultra worth the operational cost (per-region restrictions, no snapshot support in some scenarios)? Defend a default-to-Premium-SSD-v2 policy and identify the workload class that actually needs Ultra.
 4. **Encryption at host vs. ADE.** Microsoft now recommends "encryption at host" over Azure Disk Encryption (ADE) for new deployments. What does ADE still buy you that host encryption doesn't? When is the BYOK / customer-managed-key story *only* satisfied by ADE?
-5. **VMSS autoscale tuning.** Default autoscale rules: scale out at CPU > 70%, scale in at < 30%. For a public web tier, what *specific* additional signals should you autoscale on (HTTP queue depth, custom App Insights metrics)? Design the rule set, and explain why CPU alone often misses load.
+5. **VMSS autoscale tuning.** Default autoscale rules: scale out at CPU > 70%, scale in at < 30%. For a public web tier, what *specific* additional signals should you autoscale on (HTTP (Hypertext Transfer Protocol) queue depth, custom App Insights metrics)? Design the rule set, and explain why CPU alone often misses load.
 
 ---
 

@@ -298,7 +298,7 @@ Confusion between the compositor's grade and the colorist's grade is one of the 
 
 | Stage | Who | Tool | Purpose | When |
 |-------|-----|------|---------|------|
-| Plate prep | DIT / Plate Dept | ARRIRAW SDK | Transcode log footage to working format | On set / Day 1 post |
+| Plate prep | DIT / Plate Dept | ARRIRAW SDK (Software Development Kit) | Transcode log footage to working format | On set / Day 1 post |
 | VFX technical grade | Compositor | Nuke Grade nodes | Match elements to plate; neutral delivery | During compositing |
 | Conform / EDL | Editor / Online | Avid / Resolve | Assemble comps with offline cut | Post-VFX picture lock |
 | Creative grade | Colorist | DaVinci Resolve | Apply the film's look globally | DI facility |

@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1: Manufacturing Strategy](../Module-01-Manufacturing-Strategy/Reading.md), MTS/ATO/MTO determines whether you need a one-level or two-level MPS
 > - [Module 2: Demand Planning & Forecasting](../Module-02-Demand-Planning-Forecasting/Reading.md), the forecast is one of the three MPS inputs
-> - [Module 3: S&OP](../Module-03-SOP-Sales-Operations-Planning/Reading.md), the agreed family plan is the third MPS input
+> - [Module 3: S&OP (Sales and Operations Planning)](../Module-03-SOP (Standard Operating Procedure)-Sales-Operations-Planning/Reading.md), the agreed family plan is the third MPS input
 > - Arithmetic, the MRP gross-to-net calculation is a discipline, not a math problem; you'll do it by hand
 >
 > This module is the densest on the exam. Expect to spend 4+ hours on the reading and another 4 hours practicing MRP tables by hand. If you can't hand-compute an MRP record cold by the end of the module, re-work the *Velo Frères* and worked-example sections.
@@ -133,7 +133,7 @@ Each item gets a **low-level code** equal to the *lowest* level at which it appe
 
 ## ⚙️ The MRP Logic: Gross-to-Net Calculation
 
-> **Citation.** MRP was formalized by **Joseph A. Orlicky** at IBM in the late 1960s and published as *Material Requirements Planning: The New Way of Life in Production and Inventory Management* (McGraw-Hill, 1975). The 3rd edition (Plossl, George W. & Orlicky, Joseph, 2011) is the modern canonical reference; APICS (now ASCM) co-published *Orlicky's MRP, 3rd edition* with Carol Ptak and Chad Smith. The gross-to-net logic is reaffirmed in Vollmann, Berry, Whybark & Jacobs, *Manufacturing Planning and Control for Supply Chain Management*, 6th ed. (McGraw-Hill, 2011), Chapter 6, and is the same logic implemented (with extensions) in SAP, Oracle, Microsoft Dynamics, NetSuite, and every modern ERP system.
+> **Citation.** MRP was formalized by **Joseph A. Orlicky** at IBM in the late 1960s and published as *Material Requirements Planning: The New Way of Life in Production and Inventory Management* (McGraw-Hill, 1975). The 3rd edition (Plossl, George W. & Orlicky, Joseph, 2011) is the modern canonical reference; APICS (now ASCM) co-published *Orlicky's MRP, 3rd edition* with Carol Ptak and Chad Smith. The gross-to-net logic is reaffirmed in Vollmann, Berry, Whybark & Jacobs, *Manufacturing Planning and Control for Supply Chain Management*, 6th ed. (McGraw-Hill, 2011), Chapter 6, and is the same logic implemented (with extensions) in SAP, Oracle, Microsoft Dynamics, NetSuite, and every modern ERP (Enterprise Resource Planning) system.
 
 🔥 **MEMORIZE this process.** It is the single most-tested calculation on CPIM.
 
@@ -181,7 +181,7 @@ Reading this:
 
 | Rule | What It Does | Use Case |
 |------|-------------|---------|
-| **Lot-for-Lot (L4L)** | Order exactly the net requirement each period | Low setup cost, JIT |
+| **Lot-for-Lot (L4L)** | Order exactly the net requirement each period | Low setup cost, JIT (Just-In-Time) |
 | **Economic Order Quantity (EOQ)** | Order EOQ each time (Module 6 formula) | Stable demand, high setup |
 | **Period Order Quantity (POQ)** | Order to cover N periods at a time | Trade-off LT/setup vs holding |
 | **Fixed Order Quantity (FOQ)** | Always order a fixed Q (e.g., truckload) | Supplier-imposed minimum |
@@ -338,7 +338,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 5 (Capacity), RCCP supports the MPS you build here, and CRP supports the MRP plan; Module 6 (Inventory) uses MRP outputs to drive lot-sizing; Module 7 (PAC) executes MRP's planned releases on the floor.
-> - Cross-course: `10-ASCM-CSCP` Module 6 generalizes MRP across multi-plant networks (DRP, distribution requirements planning); `12-ASCM-CLTD` Module 5 uses MRP-style logic at distribution centers.
+> - Cross-course: `10-ASCM-CSCP` Module 6 generalizes MRP across multi-plant networks (DRP (Distribution Requirements Planning), distribution requirements planning); `12-ASCM-CLTD` Module 5 uses MRP-style logic at distribution centers.
 > - Practice: Practice Exam 1 includes 8–10 MRP calculation questions; Final Mock Exam has 12–15. *Do not* skip the calculation questions, they are the highest-yield exam content.
 
 ---

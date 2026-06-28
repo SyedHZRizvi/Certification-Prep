@@ -21,7 +21,7 @@ In 2024 they rebuilt it using **Amazon Bedrock**:
 - **Bedrock Knowledge Bases** over the 3,000 articles, using **OpenSearch Serverless** as the vector store
 - **Bedrock Agent** to call internal APIs for customer-account lookups
 - **Bedrock Guardrails** for PII redaction and topic restriction
-- **Amazon Q Business** as the rep-facing UI
+- **Amazon Q Business** as the rep-facing UI (User Interface)
 
 The replacement took **3 engineers, 11 weeks**. Coverage of real-world questions hit **92%** on first launch. Rep ramp time fell from 6 months to 6 weeks. The bank now invests the savings in higher-tier human escalation, not in writing knowledge articles.
 
@@ -31,7 +31,7 @@ That is what this module teaches. The 2026 way to build a Q&A system on AWS is *
 
 ## 🌟 Amazon Bedrock, The Foundation-Model Gateway
 
-Bedrock is AWS's serverless API for accessing leading foundation models from multiple providers, **without provisioning any compute or training anything**.
+Bedrock is AWS's serverless API (Application Programming Interface) for accessing leading foundation models from multiple providers, **without provisioning any compute or training anything**.
 
 ### Available model families (as of 2026)
 
@@ -76,7 +76,7 @@ Bedrock is AWS's serverless API for accessing leading foundation models from mul
 ```
 ┌──────────────────────────────────────────────────────────┐
 │  1. Data sources                                         │
-│     S3, Confluence, Salesforce, SharePoint, web crawler  │
+│     S3 (Simple Storage Service), Confluence, Salesforce, SharePoint, web crawler  │
 └─────────────────────────┬────────────────────────────────┘
                           ↓
 ┌──────────────────────────────────────────────────────────┐
@@ -190,7 +190,7 @@ JumpStart hosts **300+ pre-built models** including foundation models you can de
 
 | Use | When |
 |-----|------|
-| Deploy Llama / Mistral / Falcon as SageMaker endpoint | When you need VPC isolation, custom networking, or to fine-tune deeply |
+| Deploy Llama / Mistral / Falcon as SageMaker endpoint | When you need VPC (Virtual Private Cloud) isolation, custom networking, or to fine-tune deeply |
 | Deploy task-specific models (DistilBERT, ViT) | Lighter-weight than LLMs |
 | Pre-built solutions (e.g. fraud detection, churn) | Templates to start from |
 
@@ -214,7 +214,7 @@ Amazon Q is AWS's family of generative-AI assistants at the *application* layer 
 | Product | Audience | What it does |
 |---------|----------|--------------|
 | **Amazon Q Business** | Enterprise knowledge workers | Connects to 40+ sources (SharePoint, Confluence, Salesforce, ServiceNow, S3, etc.), provides RAG-style Q&A, summarisation, document generation; respects ACLs |
-| **Amazon Q Developer** | Software engineers | Code generation, code transformation, security scanning; IDE plugin + CLI; replaces CodeWhisperer |
+| **Amazon Q Developer** | Software engineers | Code generation, code transformation, security scanning; IDE plugin + CLI (Command Line Interface); replaces CodeWhisperer |
 | **Amazon Q in QuickSight** | Business analysts | Natural-language EDA + dashboard generation |
 | **Amazon Q in Connect** | Contact-centre agents | Real-time customer-service assistance |
 | **Amazon Q in AWS Console** | Cloud engineers | "Why is my Lambda timing out?" type chat |
@@ -402,8 +402,8 @@ You now know:
 - 📖 **Amazon Q Business Admin Guide**, `docs.aws.amazon.com/amazonq/latest/qbusiness-ug/`
 
 **Academic foundations**
-- 📄 **Lewis et al. (2020).** *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.* NeurIPS, the foundational RAG paper
-- 📄 **Brown et al. (2020).** *Language Models are Few-Shot Learners.*, GPT-3, the foundation-model paradigm
+- 📄 **Lewis et al. (2020).** *Retrieval-Augmented Generation for Knowledge-Intensive NLP (Natural Language Processing) Tasks.* NeurIPS, the foundational RAG paper
+- 📄 **Brown et al. (2020).** *Language Models are Few-Shot Learners.*, GPT (Generative Pre-trained Transformer)-3, the foundation-model paradigm
 - 📄 **Wei et al. (2022).** *Chain-of-Thought Prompting Elicits Reasoning in LLMs.* NeurIPS, CoT prompting
 - 📄 **Touvron et al. (2023).** *Llama 2: Open Foundation and Fine-Tuned Chat Models.*, Llama 2 paper
 
@@ -488,7 +488,7 @@ def lambda_handler(event, context):
 
     if function_name == "get_order":
         order_id = params["order_id"]
-        # Query DynamoDB / RDS / internal API
+        # Query DynamoDB / RDS (Relational Database Service) / internal API
         order = lookup_order(order_id)
         return {
             "messageVersion": "1.0",

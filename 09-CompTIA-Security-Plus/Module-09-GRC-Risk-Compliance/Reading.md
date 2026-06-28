@@ -1,11 +1,11 @@
 # Module 9: GRC, Risk & Compliance ⚖️
 
-> **Why this module matters:** Domain 5 (Security Program Management & Oversight) is **20%** of the exam. Most engineers underestimate it, and lose points. This module is heavy on definitions, formulas (ALE/SLE/ARO), framework names, and "vendor agreement" acronyms (MSA, NDA, MOU, SLA, SOW, BPA). Memorization-heavy but very high-yield.
+> **Why this module matters:** Domain 5 (Security Program Management & Oversight) is **20%** of the exam. Most engineers underestimate it, and lose points. This module is heavy on definitions, formulas (ALE/SLE/ARO), framework names, and "vendor agreement" acronyms (MSA, NDA (Non-Disclosure Agreement), MOU, SLA (Service Level Agreement), SOW, BPA). Memorization-heavy but very high-yield.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Control types and categories](../Module-01-Security-Fundamentals/Reading.md), risk treatments produce *controls*.
 > - General business literacy, read a balance sheet enough to know what "asset value" and "fiscal year" mean. Risk math (SLE, ALE) lives at the intersection of finance and security.
-> - Awareness of major regulatory regimes by name, you don't need to *cite* HIPAA or GDPR articles, but you should recognize their domains.
+> - Awareness of major regulatory regimes by name, you don't need to *cite* HIPAA or GDPR (General Data Protection Regulation) articles, but you should recognize their domains.
 
 ---
 
@@ -35,9 +35,9 @@ Enterprise security risk works exactly the same, just with bigger words and more
 |-------|------|
 | **Board of Directors** | Ultimate accountability; risk oversight |
 | **Risk / Audit / Security committees** | Subsets of the board |
-| **CISO / Executive sponsor** | Owns the security program |
+| **CISO (Chief Information Security Officer) / Executive sponsor** | Owns the security program |
 | **Policies** | High-level rules ("we will encrypt PII") |
-| **Standards** | Specific requirements ("use AES-256-GCM") |
+| **Standards** | Specific requirements ("use AES (Advanced Encryption Standard)-256-GCM") |
 | **Procedures** | Step-by-step instructions ("how to rotate keys") |
 | **Guidelines** | Recommendations (non-mandatory) |
 | **Baselines** | Minimum acceptable configurations |
@@ -51,7 +51,7 @@ Enterprise security risk works exactly the same, just with bigger words and more
 | **Privacy Policy** | How personal data is handled |
 | **Incident Response Plan** | How we respond to incidents |
 | **Business Continuity Plan (BCP)** | How we keep running during disruption |
-| **Disaster Recovery Plan (DRP)** | How we restore after disaster |
+| **Disaster Recovery Plan (DRP (Distribution Requirements Planning))** | How we restore after disaster |
 | **SDLC Policy** | How we build secure software |
 | **Change Management Policy** | How we change production |
 | **Data Classification Policy** | How we label data sensitivity |
@@ -118,7 +118,7 @@ Where:
 | Strategy | What | Example |
 |----------|------|---------|
 | **Avoid** | Stop the activity entirely | Don't offer that product line |
-| **Mitigate** (reduce) | Apply controls | Buy EDR, add MFA |
+| **Mitigate** (reduce) | Apply controls | Buy EDR (Endpoint Detection and Response), add MFA |
 | **Transfer** | Shift to a third party | Cyber insurance, outsource to MSSP |
 | **Accept** | Acknowledge and live with it | Documented risk acceptance signed by exec |
 | **Share** (sometimes 5th) | Distribute risk among parties | Joint venture; consortium |
@@ -131,7 +131,7 @@ Where:
 
 ### Vendor lifecycle
 1. **Due diligence**, research the vendor (financial health, security posture, breach history, references)
-2. **Risk assessment / questionnaire**, SIG, CAIQ, SOC 2 reports
+2. **Risk assessment / questionnaire**, SIG, CAIQ, SOC (Security Operations Center) 2 reports
 3. **Contracts**, terms encode security expectations
 4. **Onboarding**, provision access, integrate
 5. **Continuous monitoring**, security scorecards, news monitoring, periodic reassessment
@@ -194,7 +194,7 @@ Citation note for the framework table:
 | **SOX** (Sarbanes-Oxley) | US public-company financial reporting |
 | **PCI-DSS** | Credit card processors (contractual, not statutory) |
 | **GDPR** | EU personal data; extraterritorial |
-| **CCPA / CPRA** | California consumer privacy |
+| **CCPA (California Consumer Privacy Act) / CPRA** | California consumer privacy |
 | **FERPA** | US student education records |
 | **FISMA** | US federal information security |
 | **NERC CIP** | North American electric utilities |
@@ -230,8 +230,8 @@ Citation note for the framework table:
 ### Key metrics, MEMORIZE
 | Acronym | Means | Owned by |
 |---------|-------|----------|
-| **RTO** (Recovery Time Objective) | Max acceptable downtime | Business |
-| **RPO** (Recovery Point Objective) | Max acceptable data loss (in time) | Business |
+| **RTO (Recovery Time Objective)** (Recovery Time Objective) | Max acceptable downtime | Business |
+| **RPO (Recovery Point Objective)** (Recovery Point Objective) | Max acceptable data loss (in time) | Business |
 | **MTTR** (Mean Time To Repair/Recover) | Average actual recovery time | Engineering |
 | **MTBF** (Mean Time Between Failures) | Average time between failures | Engineering |
 | **MTTF** (Mean Time To Failure) | Average lifespan of non-repairable system | Engineering |
@@ -290,7 +290,7 @@ Citation note for the framework table:
 
 ## 🔬 Scenario Walkthrough (PBQ-style)
 
-> **Scenario:** Your company processes EU customer data, US credit cards, and US health records (some clinical trials). Match each regulation/framework to the data type, then identify two contracts you must negotiate with a SaaS vendor that processes some of this data.
+> **Scenario:** Your company processes EU customer data, US credit cards, and US health records (some clinical trials). Match each regulation/framework to the data type, then identify two contracts you must negotiate with a SaaS (Software as a Service) vendor that processes some of this data.
 
 **Walkthrough:**
 
@@ -321,20 +321,20 @@ A PBQ might present this as drag-match.
 - **FAA delegation.** The FAA had progressively delegated certification authority to Boeing via the **Organization Designation Authorization (ODA)** program. Boeing personnel acted as Authorized Representatives (ARs) on FAA's behalf, a structural conflict of interest the House report later characterized as "regulatory capture."
 - **Risk acceptance.** Internal Boeing emails (released during House investigation) showed engineers raising concerns; Boeing's risk-management process classified those as acceptable. One engineer's 2016 internal email: "This airplane is designed by clowns, who in turn are supervised by monkeys" (entered into the congressional record).
 
-**Outcome.** Lion Air Flight 610 (29 October 2018, Indonesia, 189 deaths) and Ethiopian Airlines Flight 302 (10 March 2019, Ethiopia, 157 deaths), both lost when faulty AoA sensors triggered repeated MCAS nose-down inputs the pilots could not override in time. The MAX was **globally grounded for 20 months** (March 2019 to November 2020 in the US; longer elsewhere). Boeing paid **$2.5B settlement** with the US DOJ (January 2021) including a $243.6M criminal fine, $1.77B in customer compensation, and $500M for victim-family compensation. The SEC also pursued action against Boeing executives. The FAA's certification authority was statutorily revised by the **Aircraft Certification, Safety, and Accountability Act** of 2020. Boeing's CEO Dennis Muilenburg was fired (December 2019). Direct losses crossed **$20B**.
+**Outcome.** Lion Air Flight 610 (29 October 2018, Indonesia, 189 deaths) and Ethiopian Airlines Flight 302 (10 March 2019, Ethiopia, 157 deaths), both lost when faulty AoA sensors triggered repeated MCAS nose-down inputs the pilots could not override in time. The MAX was **globally grounded for 20 months** (March 2019 to November 2020 in the US; longer elsewhere). Boeing paid **$2.5B settlement** with the US DOJ (January 2021) including a $243.6M criminal fine, $1.77B in customer compensation, and $500M for victim-family compensation. The SEC also pursued action against Boeing executives. The FAA's certification authority was statutorily revised by the **Aircraft Certification, Safety, and Accountability Act** of 2020. Boeing's CEO (Chief Executive Officer) Dennis Muilenburg was fired (December 2019). Direct losses crossed **$20B**.
 
 **Lesson for the exam / for practitioners.** The 737 MAX is taught in Cornell, Harvard, and Stanford engineering ethics and GRC courses as the canonical case of a **GRC-meets-regulatory-capture failure**. Every concept in Module 9 has a 737 MAX analog:
 
 - **Risk treatment vs risk acceptance.** Boeing classified MCAS malfunction as "major" rather than "catastrophic." Classification drives required mitigations. **Inappropriate risk acceptance with executive sign-off** *is* a Sec+ concept, and a 737 MAX-grade reminder that documentation does not absolve responsibility when the underlying classification is wrong.
 - **Governance hierarchy failure.** Policies (FAA certification standards) → standards (catastrophic vs major hazard definitions) → procedures (hazard analysis worksheets). The procedure was followed; the underlying classification was wrong. Sec+ tests this: governance documents are only as good as their underlying assumptions. Compare with the Equifax case (Module 1): patch policy existed; the *verifier* of compliance was broken.
 - **Third-party / regulatory risk.** The ODA program effectively made Boeing its own auditor. This is what Sec+ calls "self-attestation" and contrasts with "**independent attestation**" (SOC 2 by external auditor, ISO certification by accredited body). The exam tests this distinction directly.
-- **Stakeholder risk vs financial risk.** Boeing's CFO calculations gave MCAS its cost-benefit math (avoiding pilot retraining = ~$1M/aircraft savings to airlines, supporting MAX sales). The risk register did not weight passenger-life risk appropriately. Sec+ Domain 5 covers this: **stakeholder identification and impact analysis** must include parties who do not pay for the system.
+- **Stakeholder risk vs financial risk.** Boeing's CFO (Chief Financial Officer) calculations gave MCAS its cost-benefit math (avoiding pilot retraining = ~$1M/aircraft savings to airlines, supporting MAX sales). The risk register did not weight passenger-life risk appropriately. Sec+ Domain 5 covers this: **stakeholder identification and impact analysis** must include parties who do not pay for the system.
 - **Whistleblower / culture.** Boeing engineers raised concerns; the organization did not surface those concerns to certifiers or pilots. Sec+ "security culture programs" and reporting-culture concepts directly address this failure mode.
 
 **Discussion (Socratic).**
 - **Q1:** Boeing's risk-acceptance decision was made within a *legally-compliant* process (delegated FAA certification, internal hazard analysis with executive sign-off). At what point should a regulator override an industry's internal risk-acceptance documentation, and at what point is that override regulatory overreach? Defend a position with reference to NIST SP 800-30 (Risk Assessment) and analogous regulatory frameworks (FDA medical devices, NRC nuclear, FCC spectrum).
 - **Q2:** ISO 27001 *requires* independent third-party certification. SOC 2 requires an independent auditor. Boeing's ODA program inverted this, the firm itself was certifier. Apply this contrast to cybersecurity: would mandatory independent SOC 2 / ISO 27001 audits prevent Colonial Pipeline (Module 6) or Capital One (Module 7) outcomes? Steelman both sides.
-- **Q3:** The House report (Sept 2020) called the FAA-Boeing relationship "regulatory capture." Apply this lens to cybersecurity: is the relationship between large cloud providers (AWS/Azure/GCP) and federal cyber-regulators (CISA, NIST, FedRAMP) heading toward the same pathology? What governance structures would prevent it? Defend your design.
+- **Q3:** The House report (Sept 2020) called the FAA-Boeing relationship "regulatory capture." Apply this lens to cybersecurity: is the relationship between large cloud providers (AWS (Amazon Web Services)/Azure/GCP (Google Cloud Platform)) and federal cyber-regulators (CISA, NIST, FedRAMP) heading toward the same pathology? What governance structures would prevent it? Defend your design.
 
 ---
 
@@ -391,7 +391,7 @@ A PBQ might present this as drag-match.
 | SLE / ARO / ALE / AV / EF | Quantitative risk formula vars |
 | BIA / BCP / DRP / COOP | Business Impact Analysis / Continuity / DR / Continuity of Ops |
 | NDA / MSA / SOW / SLA / MOU / MOA / BPA / ISA / DPA / BAA | Vendor contracts |
-| KRI / KPI | Key Risk / Performance Indicator |
+| KRI / KPI (Key Performance Indicator) | Key Risk / Performance Indicator |
 | NIST CSF / RMF / SP 800-53 | NIST standards |
 | ISO 27001 / 27002 / 27017 / 27018 | ISO security standards |
 | HIPAA / HITECH / PHI | Healthcare |

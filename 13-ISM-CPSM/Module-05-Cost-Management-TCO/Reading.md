@@ -59,7 +59,7 @@ Should-cost = the cost the product **should** cost based on a bottom-up build (m
 ### Build-up
 
 ```
-Raw materials (kg × $/kg, BOM)
+Raw materials (kg × $/kg, BOM (Bill of Materials))
 + Direct labor (hours × $/hr)
 + Indirect labor / overhead
 + Equipment / depreciation
@@ -216,7 +216,7 @@ A typical "cost-down" toolkit:
 6. Make-or-buy reversal, In-source or outsource
 7. Should-cost / VA / VE, Attack the cost itself
 8. Process redesign, Eliminate non-value steps
-9. Total acquisition redesign, Pull-based, lean, JIT
+9. Total acquisition redesign, Pull-based, lean, JIT (Just-In-Time)
 10. Supplier consolidation, Fewer suppliers, more leverage
 11. Low-cost-country sourcing, Where it makes sense (TCO!)
 12. Supplier-driven innovation, Suppliers find new approaches
@@ -225,7 +225,7 @@ A typical "cost-down" toolkit:
 
 ---
 
-## 📊 ROI, Payback, and NPV, Quick Reference
+## 📊 ROI (Return on Investment), Payback, and NPV, Quick Reference
 
 You'll see these in CPSM cost questions.
 
@@ -244,7 +244,7 @@ You'll see these in CPSM cost questions.
 
 **Situation.** In the early 2000s, Boeing committed to a radical new approach for its 787 Dreamliner program: **~70% of the design and manufacturing would be outsourced** to a global network of Tier-1 partners (Mitsubishi, Kawasaki, Fuji, Alenia, Spirit AeroSystems, Vought, etc.) who would in turn manage their own multi-tier supply chains. Boeing would "snap together" the major sections fuselage, wings, engines, electrical in Everett, Washington. The unit-price math looked extraordinary on acquisition: lower labor costs in partner countries, partner-funded R&D, fixed-price contracts shifting risk away from Boeing.
 
-**Decision.** Boeing executives (chief among them then-CEO Alan Mulally and successor Jim McNerney) bought the consultancy thesis (a McKinsey/Bain-influenced view of "global value chains") that outsourcing 70% of the airframe would cut development cost from $10B to $6B and time-to-market from 6 to 4 years. The unit cost lens was acquisition-price-dominated. Boeing dramatically reduced its in-house engineering on airframe structures. It executed on this aggressively from 2003 to 2007.
+**Decision.** Boeing executives (chief among them then-CEO (Chief Executive Officer) Alan Mulally and successor Jim McNerney) bought the consultancy thesis (a McKinsey/Bain-influenced view of "global value chains") that outsourcing 70% of the airframe would cut development cost from $10B to $6B and time-to-market from 6 to 4 years. The unit cost lens was acquisition-price-dominated. Boeing dramatically reduced its in-house engineering on airframe structures. It executed on this aggressively from 2003 to 2007.
 
 **Outcome.** The 787 program slipped by **three and a half years** (first delivery in 2011 instead of 2008) and cost over **$32B** versus the original $6-10B plan. Battery fires in early 787s (2013) triggered a worldwide grounding by the FAA root-causing back to supplier-managed sub-tier engineering decisions Boeing did not control. *Bloomberg Businessweek* later quoted Mike Bair, the 787 program manager, describing the supplier-quality problems as the "worst nightmare of an outsourced operation." Operating cost analysis published in the *Harvard Business Review* (Christensen & Bever, "The Capitalist's Dilemma," HBR, June 2014) and by John Hart-Smith of Boeing (in an internal-then-leaked 2001 white paper *Out-Sourced Profits the Cornerstone of Successful Subcontracting*) showed that **TCO including coordination cost, rework, schedule slippage, and warranty exposure exceeded what vertical integration would have cost by an estimated $10-15B**.
 
@@ -316,7 +316,7 @@ CPSM distinguishes these.
 
 ## 💬 Discussion, Socratic Prompts
 
-1. **TCO vs the quarterly P&L.** TCO horizons are typically 5-10 years. CFOs are measured quarterly. Build a 60-second pitch you'd give a new CFO to defend a TCO-driven supplier choice that costs $200K more on day 1. What metric on the dashboard makes the case stick?
+1. **TCO vs the quarterly P&L (Profit and Loss).** TCO horizons are typically 5-10 years. CFOs are measured quarterly. Build a 60-second pitch you'd give a new CFO (Chief Financial Officer) to defend a TCO-driven supplier choice that costs $200K more on day 1. What metric on the dashboard makes the case stick?
 2. **Hedging, when speculation is reasonable.** This module says "hedge known exposure; don't speculate." But sophisticated supply organizations sometimes layer modest speculation on top of pure hedging (e.g., to lock in below-trend prices when their analyst sees a peak coming). Defend a position on whether modest, governed speculation by procurement should be allowed, banned, or required.
 3. **Should-cost in the AI era.** Generative AI can now produce bottom-up should-cost models in hours that used to take weeks. Does that change the should-cost discipline materially, or does it just lower the cost barrier to entry? What's the highest-stakes failure mode of an AI-driven should-cost model in a real negotiation?
 4. **The 2/10 Net 30 math is great, until it isn't.** A 2/10 Net 30 discount annualizes to ~36.5%, which is irresistible math. Yet many large enterprises stretch terms instead of taking discounts. Build the case that *extending* terms can be more valuable than *taking* discounts even when the math says otherwise.
@@ -347,7 +347,7 @@ You now know:
 4. ➡️ [Module 6: International Supply](../Module-06-International-Supply/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: Module 6 adds Incoterms, tariffs, and FX layers to TCO; Module 7 quantifies risk in financial terms; Module 8 covers the KPI framework that surfaces TCO to executives.
+> - Inside this course: Module 6 adds Incoterms, tariffs, and FX layers to TCO; Module 7 quantifies risk in financial terms; Module 8 covers the KPI (Key Performance Indicator) framework that surfaces TCO to executives.
 > - Cross-course: [PMP Module 4](../../02-PMP/Module-04-Business-Environment/Reading.md) covers earned value management and contingency reserves at the project level.
 > - Practice: Practice Exam 2 has ~22 questions drawn from this module (TCO, VA/VE, hedging, payment terms, learning curves).
 

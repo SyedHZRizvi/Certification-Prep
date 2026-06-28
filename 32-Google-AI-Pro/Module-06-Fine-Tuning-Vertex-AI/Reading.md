@@ -1,6 +1,6 @@
 # Module 6: Fine-Tuning & Model Customization on Vertex AI 🔧
 
-> **Why this module matters:** Fine-tuning is the most-misunderstood lever in the GenAI toolbox. Half the time engineers reach for it, they should be using RAG or a better prompt. The other half, they reach for it but pick the wrong *kind* of fine-tuning, end up with a brittle model that costs 5x what it should, and conclude "fine-tuning doesn't work." This module is the practitioner's guide to fine-tuning Gemini on Vertex AI, what it actually does, when to use it, and the SFT/RLHF/distillation choices that determine whether your fine-tuned model ships.
+> **Why this module matters:** Fine-tuning is the most-misunderstood lever in the GenAI toolbox. Half the time engineers reach for it, they should be using RAG (Retrieval-Augmented Generation) or a better prompt. The other half, they reach for it but pick the wrong *kind* of fine-tuning, end up with a brittle model that costs 5x what it should, and conclude "fine-tuning doesn't work." This module is the practitioner's guide to fine-tuning Gemini on Vertex AI, what it actually does, when to use it, and the SFT/RLHF/distillation choices that determine whether your fine-tuned model ships.
 
 > **Prerequisites for this module.** Modules 1–5 finished. Familiarity with the *concept* of supervised learning (input → label → loss → gradient update). Some experience labeling or curating a small dataset (~100 examples) helps.
 
@@ -104,7 +104,7 @@ Split your data: **80% train / 10% validation / 10% holdout**.
 - Validation: used during training to detect overfitting; the loss on validation guides hyperparameters
 - Holdout: never seen during training; the final, honest benchmark
 
-### Launching an SFT job (Python SDK)
+### Launching an SFT job (Python SDK (Software Development Kit))
 
 ```python
 from vertexai.preview.tuning import sft
@@ -182,7 +182,7 @@ Full-parameter fine-tuning of a Gemini Flash-sized model would be cost-prohibiti
 
 **Direct Preference Optimization (DPO)**, published by Rafailov et al. 2023, achieves RLHF-like behavior without the RL machinery, directly optimizes the model on pairwise preference data. Simpler and increasingly preferred.
 
-🎯 **Exam pattern:** *"A team wants their model to give subjectively-better customer-service responses. The team has 5K pairs of (better, worse) example responses ranked by their CX leads. The fastest path is..."* → **DPO** (or RLHF) on Vertex AI. SFT alone misses the comparative signal.
+🎯 **Exam pattern:** *"A team wants their model to give subjectively-better customer-service responses. The team has 5K pairs of (better, worse) example responses ranked by their CX (Customer Experience) leads. The fastest path is..."* → **DPO** (or RLHF) on Vertex AI. SFT alone misses the comparative signal.
 
 ---
 

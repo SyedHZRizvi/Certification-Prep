@@ -1,6 +1,6 @@
-# Module 8: SEO, Content & Lifecycle Marketing 🌱
+# Module 8: SEO (Search Engine Optimization), Content & Lifecycle Marketing 🌱
 
-> **Why this module matters:** Paid acquisition (Module 7) is the rocket fuel fast but expensive, and you stop moving the instant you stop spending. Organic SEO, content, and lifecycle marketing are the compounders slow to start, but they pay back for years. A correctly-architected lifecycle program (welcome + cart-abandonment + post-purchase + win-back) generates 30-40% of e-commerce revenue at near-zero marginal CAC. A correctly-architected SEO program defends against CAC inflation when Temu and Shein bid up the auction. This module is the long-game playbook.
+> **Why this module matters:** Paid acquisition (Module 7) is the rocket fuel fast but expensive, and you stop moving the instant you stop spending. Organic SEO, content, and lifecycle marketing are the compounders slow to start, but they pay back for years. A correctly-architected lifecycle program (welcome + cart-abandonment + post-purchase + win-back) generates 30-40% of e-commerce revenue at near-zero marginal CAC (Customer Acquisition Cost). A correctly-architected SEO program defends against CAC inflation when Temu and Shein bid up the auction. This module is the long-game playbook.
 
 ---
 
@@ -10,7 +10,7 @@ In October 2014, Emily Weiss launched Glossier with four products and no paid ad
 
 Weiss treated *Into The Gloss* as the marketing funnel. The site ran long-form editorial, "Top Shelf" interviews where she photographed celebrities' bathroom shelves, ingredient deep-dives, comment-section AMAs where Estée Lauder executives would weigh in alongside dermatologists. When Glossier the brand launched, *Into The Gloss* readers were the first customers, the first reviewers, and (critically) the first organic-search backlinks.
 
-Through 2017, Glossier spent roughly zero on paid acquisition. Revenue hit $40M in 2017 and an estimated $100M by 2019. Valuation hit $1.2B in March 2019 (Series D, led by Sequoia). Roughly 70% of DTC traffic came from organic search + direct + referral, channels with zero marginal cost. The Glossier "playbook" got studied by every DTC operator from 2018 onward: own the editorial, own the community, paid is for scale not foundation.
+Through 2017, Glossier spent roughly zero on paid acquisition. Revenue hit $40M in 2017 and an estimated $100M by 2019. Valuation hit $1.2B in March 2019 (Series D, led by Sequoia). Roughly 70% of DTC (Direct-to-Consumer) traffic came from organic search + direct + referral, channels with zero marginal cost. The Glossier "playbook" got studied by every DTC operator from 2018 onward: own the editorial, own the community, paid is for scale not foundation.
 
 Then the model broke. Through 2019-2021, growth slowed. Competitors (Drunk Elephant, The Ordinary, Rare Beauty by Selena Gomez) caught up. In 2022, Glossier shifted to paid acquisition at scale, Meta, TikTok, Sephora wholesale (which Weiss had famously avoided). The brand opened retail stores. Layoffs in 2022. By 2024, Glossier was profitable on a much larger paid mix, but the "content-first organic moat" of 2014-2018 had given way to a mature DTC operating model.
 
@@ -23,8 +23,8 @@ This module teaches you how to build that foundation: e-commerce SEO (the techni
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Catalog hygiene + PDP structure, covered in [Module 3](../Module-03-Product-Catalog-Information-Management/Reading.md)
-> - Conversion rate optimization + Core Web Vitals, covered in [Module 6](../Module-06-Conversion-Optimization-UX/Reading.md)
-> - Paid acquisition fundamentals (CAC, ROAS), covered in [Module 7](../Module-07-Paid-Acquisition-E-Commerce/Reading.md)
+> - Conversion rate optimization + Core Web Vitals, covered in [Module 6](../Module-06-Conversion-Optimization-UX (User Experience)/Reading.md)
+> - Paid acquisition fundamentals (CAC, ROAS (Return on Ad Spend)), covered in [Module 7](../Module-07-Paid-Acquisition-E-Commerce/Reading.md)
 > - Cross-course: [15-AI-Marketing-Practitioner Module 6, SEO + Content Strategy](../../15-AI-Marketing-Practitioner/Module-06-Programmatic-Retargeting/Reading.md) covers organic search at depth.
 > - Cross-course: [16-AI-Marketing-Strategist Module 7, AI Personalization](../../16-AI-Marketing-Strategist/Module-07-AI-Personalization-Scale/Reading.md) deepens lifecycle personalization.
 > If any of these are shaky, pause and review before continuing.
@@ -52,8 +52,8 @@ A high-ranking product page typically has:
 
 | Element | Why it matters |
 |---------|----------------|
-| `<title>`, 50-60 chars, primary keyword + brand | Top-of-SERP signal |
-| `<meta description>`, 150-160 chars, action-oriented | CTR booster (not ranking signal) |
+| `<title>`, 50-60 chars, primary keyword + brand | Top-of-SERP (Search Engine Results Page) signal |
+| `<meta description>`, 150-160 chars, action-oriented | CTR (Click-Through Rate) booster (not ranking signal) |
 | H1, exact product name | Primary on-page signal |
 | Breadcrumb (with `BreadcrumbList` schema) | Site-architecture signal + SERP enrichment |
 | Product description, 300+ unique words | Avoid manufacturer-default duplication |
@@ -118,10 +118,10 @@ Faceted navigation (filters for color, size, brand, price range) is e-commerce's
 
 `<link rel="canonical" href="https://example.com/products/blue-widget/">` tells Google "if you found this URL, treat THIS as the canonical version." Critical for:
 
-- **Variant pages.** Color/size variants of one product → all canonical to the parent SKU PDP.
+- **Variant pages.** Color/size variants of one product → all canonical to the parent SKU (Stock Keeping Unit) PDP.
 - **Tracking parameters.** `?utm_source=email` → canonical to clean URL.
 - **Pagination.** `/category/page-2` → canonical to itself (NOT to page 1; Google's 2019 rel=next/prev deprecation).
-- **HTTPS/WWW canonicalization.** All variants 301 to one canonical.
+- **HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure)/WWW canonicalization.** All variants 301 to one canonical.
 
 🎯 **Exam tip:** Canonical tags are HINTS, not directives. Google can ignore them. If you need a hard exclusion, use `noindex` instead. Common exam trap: "the canonical tag guarantees deduplication", FALSE.
 
@@ -262,7 +262,7 @@ SMS has 90%+ open rates (vs 30-45% for email). The 2024 Postscript SMS Benchmark
 | Click rate | 1-3% | 8-15% |
 | Cost per send | $0.0001-0.001 | $0.01-0.03 |
 | Revenue per send | $0.05-0.15 | $0.30-0.80 |
-| Opt-in barrier | Low | TCPA-regulated (US), needs double opt-in |
+| Opt-in barrier | Low | TCPA (Telephone Consumer Protection Act)-regulated (US), needs double opt-in |
 
 **TCPA compliance** (Telephone Consumer Protection Act, 1991, amended) is non-negotiable in the US. Required:
 
@@ -324,11 +324,11 @@ Starbucks Rewards has 34.3M active members in the US (Q4 2024 disclosure). The m
 The technical underpinnings:
 
 - *Into The Gloss* held ~70K monthly organic backlinks by 2017 (Ahrefs estimate); the editorial brand transferred SEO authority to glossier.com.
-- Every product page had a content-rich PDP, long-form description, customer reviews surfaced front-and-center, "real girl" photos (UGC) instead of stock product shots.
+- Every product page had a content-rich PDP, long-form description, customer reviews surfaced front-and-center, "real girl" photos (UGC (User-Generated Content)) instead of stock product shots.
 - Email lifecycle was built on Mailchimp initially, then Klaviyo (post-2016 migration), welcome flow + abandoned cart + post-purchase were the only three flows for ~2 years; the brand resisted over-automation.
 - Instagram + Twitter were the customer-service channel, Weiss famously had product managers DM customers about reviews.
 
-**Outcome.** By 2017, Glossier generated ~$40M in revenue with paid acquisition <5% of marketing spend. By 2019, ~$100M revenue. March 2019: Series D at $1.2B valuation, led by Sequoia. Approximately 70% of DTC traffic came from organic + direct + referral channels in 2017-2019 (per industry reports). Then growth slowed in 2020-2021 (the pandemic + Drunk Elephant / Rare Beauty competition + Sephora's brand expansion). In 2022, Glossier did the unthinkable: signed a wholesale deal with Sephora, opened retail stores, and began scaling paid acquisition on Meta + TikTok + Pinterest. By 2024, Glossier was profitable, but the "content-first organic moat" of the original era had been replaced by a more conventional DTC + retail mix. Emily Weiss stepped down as CEO in May 2022.
+**Outcome.** By 2017, Glossier generated ~$40M in revenue with paid acquisition <5% of marketing spend. By 2019, ~$100M revenue. March 2019: Series D at $1.2B valuation, led by Sequoia. Approximately 70% of DTC traffic came from organic + direct + referral channels in 2017-2019 (per industry reports). Then growth slowed in 2020-2021 (the pandemic + Drunk Elephant / Rare Beauty competition + Sephora's brand expansion). In 2022, Glossier did the unthinkable: signed a wholesale deal with Sephora, opened retail stores, and began scaling paid acquisition on Meta + TikTok + Pinterest. By 2024, Glossier was profitable, but the "content-first organic moat" of the original era had been replaced by a more conventional DTC + retail mix. Emily Weiss stepped down as CEO (Chief Executive Officer) in May 2022.
 
 **Lesson for the exam / for practitioners.** Organic content is a defensible competitive advantage *until* the unit economics of scale demand paid acquisition. The "content crossover" is real: brands typically hit it between $50-100M revenue, when the addressable organic audience is saturated and paid is the only growth lever left. The takeaway: build the organic foundation first, it gives you (a) lower-CAC compounders, (b) higher conversion rates on paid (because customers Google you before clicking the ad), and (c) defensibility when CAC inflates from competitors. But don't romanticize organic-forever. The Glossier 2022 pivot was a smart business decision, not a betrayal of the original vision.
 
@@ -354,7 +354,7 @@ The technical underpinnings:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 9 covers GA4, attribution, MMM, and marketplaces (the measurement and channel-mix layer that sits over everything in Modules 7-8).
+> - Inside this course: Module 9 covers GA4 (Google Analytics 4), attribution, MMM, and marketplaces (the measurement and channel-mix layer that sits over everything in Modules 7-8).
 > - Cross-course: [15-AI-Marketing-Practitioner Module 6 SEO + Content Strategy](../../15-AI-Marketing-Practitioner/Module-06-Programmatic-Retargeting/Reading.md) goes deeper on keyword research, technical SEO audits, and content workflows; [16-AI-Marketing-Strategist Module 7 AI Personalization at Scale](../../16-AI-Marketing-Strategist/Module-07-AI-Personalization-Scale/Reading.md) covers lifecycle personalization with AI.
 > - Practice: Practice Exam 2 has ~8 questions drawn from this module (E-E-A-T, schema markup, Klaviyo flow architecture, Reichheld loyalty math).
 

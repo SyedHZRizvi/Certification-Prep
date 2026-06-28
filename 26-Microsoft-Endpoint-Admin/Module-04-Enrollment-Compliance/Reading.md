@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting:
 > - Module 1 (Modern Workplace), join states and the Zero Trust mental model.
 > - Module 2 (Deployment), Windows Autopilot specifically.
-> - Module 3 (Intune Fundamentals), Company Portal, RBAC, group targeting.
+> - Module 3 (Intune Fundamentals), Company Portal, RBAC (Role-Based Access Control), group targeting.
 > - Awareness of mobile platforms, you should know what an iPhone Apple ID is, what an Android Google account is.
 
 ---
@@ -22,8 +22,8 @@ Maria pulls up Intune. The Devices blade shows 1,407 enrolled devices. The audit
 
 Maria's stomach drops. The auditor is right. There are 4,200 devices accessing corporate email *that aren't enrolled in Intune*. They came in through:
 
-- **Outlook for iOS / Android** on personal phones with no MDM enrollment (~3,800 devices)
-- **Native iOS Mail** with the corporate IMAP account configured manually (~250)
+- **Outlook for iOS / Android** on personal phones with no MDM (Mobile Device Management) enrollment (~3,800 devices)
+- **Native iOS Mail** with the corporate IMAP (Internet Message Access Protocol) account configured manually (~250)
 - **Outlook for Mac** on personal Macs with no enrollment (~150)
 - **Random Outlook clients** running on home Windows PCs (~tablets, gaming PCs)
 
@@ -35,7 +35,7 @@ This is the gap MD-102 expects you to close. The answer is the four enrollment p
 
 | Platform | Primary enrollment path | Alternative paths |
 |----------|-------------------------|-------------------|
-| **Windows 11** (corporate) | Windows Autopilot (any mode) | Manual enrollment via Settings, GPO-triggered enrollment, ConfigMgr co-mgmt enrollment, provisioning package |
+| **Windows 11** (corporate) | Windows Autopilot (any mode) | Manual enrollment via Settings, GPO (Group Policy Object)-triggered enrollment, ConfigMgr co-mgmt enrollment, provisioning package |
 | **Windows 11** (BYOD) | User adds work account via Settings | MDM auto-enrollment via Entra ID join with auto-enroll policy |
 | **iOS / iPadOS** (corporate) | Apple Business Manager (ABM) → Automated Device Enrollment (ADE) | Manual via Company Portal app, Apple Configurator (USB) |
 | **iOS / iPadOS** (BYOD) | User-initiated via Company Portal | User-enrollment mode (privacy-respecting MDM) |
@@ -87,7 +87,7 @@ Supervised iOS / iPadOS devices unlock additional MDM capabilities:
 
 ## 🤖 Android Enterprise, The Four Scenarios
 
-Android Enterprise is Google's API surface for enterprise-managed Android. Intune supports four scenarios:
+Android Enterprise is Google's API (Application Programming Interface) surface for enterprise-managed Android. Intune supports four scenarios:
 
 | Scenario | What | Who |
 |----------|------|-----|
@@ -195,7 +195,7 @@ User signs in to Outlook → Entra ID auth → CA evaluates → grant/block
 
 | Control | What |
 |---------|------|
-| **Require MFA** | Force MFA |
+| **Require MFA (Multi-Factor Authentication)** | Force MFA |
 | **Require compliant device** | Block if Intune marked non-compliant |
 | **Require Microsoft Entra hybrid joined device** | Block if not hybrid-joined |
 | **Require approved client app** | Force Outlook Mobile (not native Mail) |
@@ -282,7 +282,7 @@ A CA condition introduced to let you target/exclude devices by attribute without
 
 ## 🧪 Task-Sequencing Practice: Build Compliance + CA for a Sensitive App
 
-**Order these steps to require compliant devices for Salesforce.com access via SSO.**
+**Order these steps to require compliant devices for Salesforce.com access via SSO (Single Sign-On).**
 
 The correct sequence:
 
@@ -353,7 +353,7 @@ You now know:
 
 ## 📊 Case Study, Unilever's BYOD-First iOS + Android Rollout (2021–2024)
 
-**Situation.** Unilever (the consumer goods giant, ~127,000 employees in 100+ countries) had a long-standing BYOD policy: most non-executive employees were expected to use their personal phones for work email and Teams. Pre-2021, this was managed via a fragmented combination of Outlook for iOS / Android with ad-hoc MAM policies, native iOS Mail using Exchange ActiveSync, and almost no oversight of unmanaged Android devices. The CISO reported (Unilever public ESG + sustainability reports + Microsoft customer story, 2023):
+**Situation.** Unilever (the consumer goods giant, ~127,000 employees in 100+ countries) had a long-standing BYOD policy: most non-executive employees were expected to use their personal phones for work email and Teams. Pre-2021, this was managed via a fragmented combination of Outlook for iOS / Android with ad-hoc MAM policies, native iOS Mail using Exchange ActiveSync, and almost no oversight of unmanaged Android devices. The CISO (Chief Information Security Officer) reported (Unilever public ESG + sustainability reports + Microsoft customer story, 2023):
 
 - ~83,000 personal devices accessing Unilever email
 - < 30% of those devices had any form of Intune App Protection Policy applied
@@ -412,4 +412,4 @@ You now know:
 - 📖 [Filter for devices in Conditional Access](https://learn.microsoft.com/entra/identity/conditional-access/concept-condition-filters-for-devices)
 - 📖 [Compliance policies in Microsoft Intune](https://learn.microsoft.com/mem/intune/protect/device-compliance-get-started)
 - 📖 [Windows 11 device health attestation](https://learn.microsoft.com/windows/security/hardware-security/tpm/trusted-platform-module-overview)
-- 📖 Forrester *Total Economic Impact of Microsoft Intune* (most recent edition), independent ROI study
+- 📖 Forrester *Total Economic Impact of Microsoft Intune* (most recent edition), independent ROI (Return on Investment) study

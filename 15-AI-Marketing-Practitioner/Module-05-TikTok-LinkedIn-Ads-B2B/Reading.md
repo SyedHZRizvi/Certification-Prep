@@ -1,4 +1,4 @@
-# Module 5: TikTok + LinkedIn Ads (B2B Focus) 🎯
+# Module 5: TikTok + LinkedIn Ads (B2B (Business-to-Business) Focus) 🎯
 
 > **Why this module matters:** TikTok and LinkedIn occupy opposite ends of the marketing spectrum but share one truth: both reward authentic, native content and punish polished ads. By the end of this module you can launch a TikTok Spark Ad and a LinkedIn Thought-Leadership Ad with confidence.
 
@@ -12,9 +12,9 @@ The fix, publicly shared at SaaStr Annual 2024: a **LinkedIn ABM (Account-Based 
 
 1. Built a target list of 800 Fortune-2000 companies in 3 verticals (tech, finance, professional services).
 2. Used **LinkedIn Matched Audiences** with company name targeting.
-3. Ran **Thought-Leadership Ads** featuring Notion's CEO Ivan Zhao and product leaders, looking like organic LinkedIn posts, not ads.
+3. Ran **Thought-Leadership Ads** featuring Notion's CEO (Chief Executive Officer) Ivan Zhao and product leaders, looking like organic LinkedIn posts, not ads.
 4. Layered **Conversation Ads** to high-engagement accounts, interactive InMail-style sponsored DMs.
-5. Connected LinkedIn lead form submissions to their HubSpot CRM via the native integration.
+5. Connected LinkedIn lead form submissions to their HubSpot CRM (Customer Relationship Management) via the native integration.
 
 Result over 12 months: 10x increase in enterprise pipeline. The single biggest source of meetings: a CEO Thought-Leadership Ad that ran for 4 months with no creative refresh, reaching the same enterprise targets 6-12 times.
 
@@ -37,12 +37,12 @@ Business Center (admin hub)
 └── Ad Account
     └── Campaign (objective + bidding type)
         └── Ad Group (audience, placements, budget, schedule)
-            └── Ad (creative + copy + CTA + URL)
+            └── Ad (creative + copy + CTA (Call to Action) + URL)
 ```
 
 **Key differences from Meta:**
 - TikTok uses **"Ad Group"** for the audience+budget tier (Meta calls it "Ad Set")
-- TikTok's pixel is called the **TikTok Pixel** + **Events API** (their version of CAPI)
+- TikTok's pixel is called the **TikTok Pixel** + **Events API (Application Programming Interface)** (their version of CAPI)
 - Catalog ads exist; product feeds are supported
 - One Business Center can hold multiple ad accounts
 
@@ -63,16 +63,16 @@ Same iOS 14.5 problem, same solution. TikTok Pixel is browser-based (blocked by 
 | Format | Description | Best for |
 |--------|-------------|----------|
 | **In-Feed Ads** | Native vertical videos in the For You feed | Almost everything (default) |
-| **Spark Ads** | Boost an existing organic TikTok (yours or a creator's) | UGC amplification, highest performing |
+| **Spark Ads** | Boost an existing organic TikTok (yours or a creator's) | UGC (User-Generated Content) amplification, highest performing |
 | **TopView** | Full-screen video shown when the app opens | Massive awareness campaigns |
 | **Brand Takeover** | 3–5 second image/video that owns the app open | Brand launches |
 | **Branded Hashtag Challenge** | Sponsored hashtag with branded effects | Engagement campaigns |
 | **Branded Effects** | Custom AR filters | Brand engagement |
 | **Catalog Ads (Video Shopping)** | Dynamic product video ads | Ecom |
 
-🧠 **MEMORIZE:** Spark Ads consistently outperform regular In-Feed ads by 30–80% on CTR. They look organic because they ARE organic, you're just boosting a real post.
+🧠 **MEMORIZE:** Spark Ads consistently outperform regular In-Feed ads by 30–80% on CTR (Click-Through Rate). They look organic because they ARE organic, you're just boosting a real post.
 
-### Spark Ads, The 2026 MVP
+### Spark Ads, The 2026 MVP (Minimum Viable Product)
 
 Spark Ads let you take any organic TikTok video (yours or a creator's, with their permission via a Spark Code) and run it as an ad. Why it works:
 
@@ -151,7 +151,7 @@ TikTok's version of Advantage+. The algorithm decides who to show ads to. As of 
 | Strategy | When to use |
 |----------|-------------|
 | **Lowest Cost** | Default, get most conversions for budget |
-| **Cost Cap** | Maintain a target CPA (similar to Meta's cost cap) |
+| **Cost Cap** | Maintain a target CPA (Cost Per Acquisition) (similar to Meta's cost cap) |
 | **Bid Cap** | Maximum bid you'll pay (manual control) |
 | **Value-Based Optimization** | tROAS equivalent, requires conversion values |
 
@@ -159,7 +159,7 @@ TikTok's version of Advantage+. The algorithm decides who to show ads to. As of 
 
 ---
 
-## 🎬 TikTok $200 Campaign Walkthrough (DTC Ecom)
+## 🎬 TikTok $200 Campaign Walkthrough (DTC (Direct-to-Consumer) Ecom)
 
 Building a TikTok campaign for Sunday Studio Pilates apparel.
 
@@ -188,12 +188,12 @@ Ad Group 3: In-Feed Ad - Founder selfie ($2/day)
 
 | Metric | Range |
 |--------|-------|
-| CPM | $3–$10 (often cheaper than Meta) |
+| CPM (Cost Per Mille) | $3–$10 (often cheaper than Meta) |
 | CTR | 1.5–3% |
-| CPC | $0.30–$1.20 |
+| CPC (Cost Per Click) | $0.30–$1.20 |
 | 6-sec video view rate | 25%+ |
 | Cost per Purchase | $20–$60 |
-| ROAS | 1.5x–3x |
+| ROAS (Return on Ad Spend) | 1.5x–3x |
 
 🚨 **Common mistake:** Cross-posting Meta Reels to TikTok. Same vertical, but TikTok creative has a different vibe, sound-first, faster cuts, trending audio, lower production value. Native TikTok content outperforms ported Reels by 40%+.
 
@@ -276,7 +276,7 @@ LinkedIn introduced Thought-Leadership Ads (TLAs) in late 2023 as a major format
 3. You ask permission to "boost" their post via LinkedIn Campaign Manager
 4. The boost runs as a sponsored post, but the engagement (likes/comments) lands on their personal post
 
-🎯 **Exam pattern:** "B2B SaaS wants to reach VP-level decision makers." → Right answer almost always includes "Thought-Leadership Ads from senior employees" because they outperform brand ads on engagement and trust.
+🎯 **Exam pattern:** "B2B SaaS (Software as a Service) wants to reach VP-level decision makers." → Right answer almost always includes "Thought-Leadership Ads from senior employees" because they outperform brand ads on engagement and trust.
 
 ---
 
@@ -403,7 +403,7 @@ What FAILS on B2B:
 
 Drift (acquired by Salesloft in 2024) publicly shared their B2B LinkedIn playbook at SaaStr 2022 and again at INBOUND 2023:
 
-- **$50K LinkedIn ad budget per quarter** initially, scaled to $200K/qtr after CAC validation
+- **$50K LinkedIn ad budget per quarter** initially, scaled to $200K/qtr after CAC (Customer Acquisition Cost) validation
 - **80% of budget on TLAs** from CEO + 5 senior executives
 - **Account list of 2,000 target accounts** in 3 verticals
 - **Lead Gen Form** integrated to HubSpot in real-time

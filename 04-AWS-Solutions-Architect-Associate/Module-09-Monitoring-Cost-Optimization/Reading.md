@@ -4,9 +4,9 @@
 
 > **Prerequisites for this module.**
 > - All previous modules, monitoring touches everything
-> - [Module 2](../Module-02-IAM-Organizations/Reading.md), CloudTrail is the IAM audit log
-> - [Module 3](../Module-03-EC2-Deep-Dive/Reading.md), Compute Optimizer rightsizing
-> - [Module 6](../Module-06-Databases/Reading.md), Performance Insights for RDS
+> - [Module 2](../Module-02-IAM (Identity and Access Management)-Organizations/Reading.md), CloudTrail is the IAM audit log
+> - [Module 3](../Module-03-EC2 (Elastic Compute Cloud)-Deep-Dive/Reading.md), Compute Optimizer rightsizing
+> - [Module 6](../Module-06-Databases/Reading.md), Performance Insights for RDS (Relational Database Service)
 > - Basic understanding of telemetry concepts: **metrics**, **logs**, **traces**, see the Google SRE book (Beyer et al., O'Reilly 2016) chapters 6 and 11
 
 ---
@@ -41,11 +41,11 @@ Numerical time-series. AWS publishes many automatically (EC2 CPU, ALB request co
 
 ### 2. CloudWatch Logs
 
-Collect logs from EC2 (CW Agent), Lambda (automatic), ECS, on-prem, API Gateway, VPC Flow Logs.
+Collect logs from EC2 (CW Agent), Lambda (automatic), ECS (Elastic Container Service), on-prem, API (Application Programming Interface) Gateway, VPC Flow Logs.
 
 - **Log Groups** → **Log Streams** → log events
 - Retention configurable per group (1 day to "never expire")
-- Export to S3 for archive
+- Export to S3 (Simple Storage Service) for archive
 - **Subscription filters** stream to Kinesis or Lambda for real-time processing
 
 ### 3. CloudWatch Alarms
@@ -135,7 +135,7 @@ Trace a request through a distributed system (API Gateway → Lambda → DynamoD
 
 | Service | What | When |
 |---------|------|------|
-| **GuardDuty** | ML-based threat detection on CloudTrail, VPC Flow, DNS | "Detect suspicious behavior in my account" |
+| **GuardDuty** | ML-based threat detection on CloudTrail, VPC Flow, DNS (Domain Name System) | "Detect suspicious behavior in my account" |
 | **Macie** | Discovers and protects sensitive data (PII) in S3 | "Find buckets with credit card numbers" |
 | **Inspector** | Vulnerability scanning for EC2, Lambda, ECR images | "Check my images for CVEs" |
 | **Security Hub** | Aggregates findings from GuardDuty, Inspector, Macie, partners | "Single pane of glass for security" |
@@ -177,7 +177,7 @@ Cost allocation tags (e.g., `CostCenter`, `Environment`, `Owner`), must be activ
 🎯 **Exam pattern:**
 - "Which team's S3 buckets are costing the most?" → Tagging + Cost Explorer filtered by tag.
 - "Notify Finance if monthly bill exceeds $10k" → **AWS Budgets**.
-- "Detect a sudden surge in NAT Gateway charges automatically" → **Cost Anomaly Detection**.
+- "Detect a sudden surge in NAT (Network Address Translation) Gateway charges automatically" → **Cost Anomaly Detection**.
 
 ---
 
@@ -295,7 +295,7 @@ You now know:
 1. **Audited every cloud-hosted service** and tagged each as "must repatriate," "stays on cloud," or "evaluate." Roughly 60% of workloads were tagged for repatriation
 2. **Built out two new data centers** (Sacramento and Portland) totaling ~100,000 servers added in 2023
 3. **Migrated batch and feed-generation pipelines** (the largest cost line) back to on-premises Hadoop / Kubernetes clusters
-4. **Kept**: edge / CDN traffic on cloud (CloudFront-equivalent), some non-critical analytics, and DR-only standby capacity
+4. **Kept**: edge / CDN (Content Delivery Network) traffic on cloud (CloudFront-equivalent), some non-critical analytics, and DR-only standby capacity
 5. **Cut Google Cloud spend by ~60%** and AWS spend by similar; net infrastructure savings reported as **$1B+ annually** by mid-2024 (Musk's posts; corroborated by analyst notes)
 
 **The architecture-level audit drivers** (what every team had to defend):
@@ -327,11 +327,11 @@ The bigger meta-lesson: **monitoring and cost data are the prerequisite to any o
 
 ## 💬 Discussion, Socratic Prompts
 
-1. **Cost allocation tags as governance.** Tagging requires discipline, SCPs can enforce "no untagged resources." Argue: should tag enforcement live in SCPs (deny create without required tags), in IaC pipeline checks (CloudFormation guard), or in post-deploy audits (Config rules + Lambda)? Trade-offs?
-2. **CloudWatch Logs Insights vs OpenSearch vs third-party (Datadog).** All can query logs. CloudWatch is cheapest, OpenSearch is most flexible, Datadog has the best UX. Build a 3-axis decision rule.
+1. **Cost allocation tags as governance.** Tagging requires discipline, SCPs can enforce "no untagged resources." Argue: should tag enforcement live in SCPs (deny create without required tags), in IaC (Infrastructure as Code) pipeline checks (CloudFormation guard), or in post-deploy audits (Config rules + Lambda)? Trade-offs?
+2. **CloudWatch Logs Insights vs OpenSearch vs third-party (Datadog).** All can query logs. CloudWatch is cheapest, OpenSearch is most flexible, Datadog has the best UX (User Experience). Build a 3-axis decision rule.
 3. **Compute Optimizer's recommendations, when do you trust them?** They're ML-based but lack business context. What's the SRE workflow for going from "Compute Optimizer says downsize" to actually shipping it without an incident?
 4. **Budgets vs Cost Anomaly Detection.** Budgets are threshold-based and predictable. Anomaly Detection is ML-based and finds surprises. Why use both? What's the failure mode if you skip one?
-5. **GuardDuty + Security Hub vs SIEM (Splunk, Datadog Security).** AWS's native security tooling vs a vendor SIEM. What's the cost-vs-coverage trade-off, and when does each win?
+5. **GuardDuty + Security Hub vs SIEM (Security Information and Event Management) (Splunk, Datadog Security).** AWS's native security tooling vs a vendor SIEM. What's the cost-vs-coverage trade-off, and when does each win?
 
 ---
 

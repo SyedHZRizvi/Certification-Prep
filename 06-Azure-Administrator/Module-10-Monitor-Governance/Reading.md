@@ -29,7 +29,7 @@ Azure Monitor is the **single pane of glass** for everything observability. Two 
 
 | Data type | Stored in | Query language |
 |-----------|-----------|----------------|
-| **Metrics** | Azure Monitor Metrics (TSDB) | Native UI / metric explorer |
+| **Metrics** | Azure Monitor Metrics (TSDB) | Native UI (User Interface) / metric explorer |
 | **Logs** | Log Analytics workspace | **KQL** (Kusto Query Language) |
 
 ### Architecture (memorize this picture)
@@ -51,7 +51,7 @@ NSG flow logs                   Settings              N days, archive 12y)    Ap
 | **Activity Log** | Control-plane events (who did what to which resource, like an audit log) |
 | **Resource logs (diagnostic settings)** | Data-plane / service-specific logs (e.g. NSG flow logs, storage transactions) |
 | **Metrics** | Numeric time-series (CPU %, RPS, etc.) |
-| **Custom logs / Tables** | Anything you ship via the agent or REST API |
+| **Custom logs / Tables** | Anything you ship via the agent or REST (Representational State Transfer) API (Application Programming Interface) |
 
 🔥 **MEMORIZE:** Activity Log is automatically captured for 90 days. To **retain longer**, route it via a Diagnostic Setting to a Log Analytics workspace, storage account, or Event Hub.
 
@@ -67,9 +67,9 @@ A workspace is a region-scoped container for log data. Properties to know:
 | Retention | Interactive 30 days default (4–730 days configurable, longer with Archive) |
 | Archive tier | Cheap storage for 12+ years; restore to interactive when needed |
 | Pricing tier | Pay-as-you-go vs Commitment tiers (per-GB savings) |
-| RBAC | Workspace-context vs resource-context permissions |
+| RBAC (Role-Based Access Control) | Workspace-context vs resource-context permissions |
 
-### Send VM logs to a workspace
+### Send VM (Virtual Machine) logs to a workspace
 
 ```bash
 # Install AMA via extension (replaces legacy Log Analytics Agent (MMA), which is retired)
@@ -144,7 +144,7 @@ az monitor metrics alert create \
 |---------|-----|
 | Service Health alert: region outage | Page ops team |
 | Activity Log: `Delete Resource` for a vault | Detect malicious deletion |
-| Metric: VPN Gateway tunnel down | Connectivity issue |
+| Metric: VPN (Virtual Private Network) Gateway tunnel down | Connectivity issue |
 | Log: SigninLogs ResultType >= 50000 | Auth failure spike |
 | Cost alert at 80% of budget | Spend control |
 
@@ -161,7 +161,7 @@ A subset of Azure Monitor specifically for application-level telemetry (requests
 
 Auto-instrument options:
 
-- **.NET / Java / Node / Python**: SDK or auto-instrumentation in App Service "Application monitoring"
+- **.NET / Java / Node / Python**: SDK (Software Development Kit) or auto-instrumentation in App Service "Application monitoring"
 - **AKS**: enable via the Azure Monitor add-on
 - **Browser JS**: small script for client-side telemetry
 
@@ -350,7 +350,7 @@ For Azure admins specifically, the relevant facts:
 
 - **Microsoft Defender for Cloud / Sentinel** dashboards lit up red within minutes of the cascade.
 - **Azure Monitor metric alerts** on VM uptime fired across affected subscriptions.
-- **Azure Service Health** dashboard *did not* show an outage, because Microsoft's infrastructure was fine; the third-party EDR agent was failing.
+- **Azure Service Health** dashboard *did not* show an outage, because Microsoft's infrastructure was fine; the third-party EDR (Endpoint Detection and Response) agent was failing.
 - **Azure Policy** had nothing to say about it, there is no policy that prevents a vendor-pushed bad config on an installed agent.
 
 **Decision.** The remediation required physical or near-physical access to each affected machine: boot to Safe Mode, delete the bad Channel File 291 from `C:\Windows\System32\drivers\CrowdStrike\`, reboot. Cloud VMs were *easier* than physical machines because Azure Serial Console, Run Command, and (eventually) a Microsoft Recovery Tool published on July 21 could automate the fix at scale.
@@ -376,14 +376,14 @@ The exam tests this through alert/policy/workbook configuration questions. Real 
 **Discussion (Socratic).**
 - **Q1.** CrowdStrike was a *third-party* failure. Microsoft Service Health reported "all systems operational" because the infrastructure was fine. How does this change the design of your alerting? Defend a posture where you trust your *own* metrics over the cloud provider's status page, when is the inverse the right default?
 - **Q2.** Azure Monitor metric alerts are evaluated server-side and don't require an agent on the VM. The CrowdStrike outage broke agent-based logging on millions of hosts. Argue why this distinction matters in your alert design. Build the principled split: which signals must be "agentless" (metrics, Service Health, Activity Log) and which can be agent-based (Log Analytics queries, Application Insights)?
-- **Q3.** The cost of running Azure Monitor at "production observability" maturity is non-trivial, Log Analytics data ingestion, App Insights sampling, alert rule evaluations, and Sentinel analytics all bill. Many small organizations underspend on observability and discover the gap during incidents. Construct the business case to an SMB CTO for "the right level of Azure Monitor investment is X% of total Azure spend." What number do you defend, and why?
+- **Q3.** The cost of running Azure Monitor at "production observability" maturity is non-trivial, Log Analytics data ingestion, App Insights sampling, alert rule evaluations, and Sentinel analytics all bill. Many small organizations underspend on observability and discover the gap during incidents. Construct the business case to an SMB CTO (Chief Technology Officer) for "the right level of Azure Monitor investment is X% of total Azure spend." What number do you defend, and why?
 
 ---
 
 > **Where this leads.**
 > - Inside this course: this is the closing module. Apply everything in the [Capstone Project](../Capstone-Project.md).
 > - Cross-course: [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Modules 5 and 6 cover the broader incident-response and security-operations discipline; AZ-500 (Security Engineer) deepens Sentinel and Defender for Cloud; [`08-Azure-AI-Engineer`](../../../08-Azure-AI-Engineer/) ML modules use the same Log Analytics + Application Insights pattern for model-monitoring.
-> - Practice: PE-2 has 7 questions on monitoring/governance; Final Mock revisits with cross-domain scenarios (Activity Log + Defender + Action Groups in one case study).
+> - Practice: PE (Private Equity)-2 has 7 questions on monitoring/governance; Final Mock revisits with cross-domain scenarios (Activity Log + Defender + Action Groups in one case study).
 
 ---
 

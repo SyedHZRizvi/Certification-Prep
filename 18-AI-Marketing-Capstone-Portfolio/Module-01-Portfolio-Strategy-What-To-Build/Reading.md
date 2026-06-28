@@ -3,7 +3,7 @@
 > **Why this module matters:** Before you spend 50 hours building portfolio pieces, spend 3 hours deciding *which* portfolio pieces. The wrong 5 projects waste 6 weeks. The right 5 land interviews.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Basic familiarity with the marketing function (channels: SEO, paid, email, automation), covered in [14-AI-Marketing-Foundations](../../14-AI-Marketing-Foundations/README.md)
+> - Basic familiarity with the marketing function (channels: SEO (Search Engine Optimization), paid, email, automation), covered in [14-AI-Marketing-Foundations](../../14-AI-Marketing-Foundations/README.md)
 > - The vocabulary of AI-native marketing (prompts, agents, structured output), covered in [14-AI-Marketing-Foundations Module 2](../../14-AI-Marketing-Foundations/Module-02-AI-Fundamentals-for-Marketers/Reading.md)
 > - Practical SEO, paid acquisition, and analytics fundamentals, covered in 15-AI-Marketing-SEO-Content, 16-AI-Marketing-Paid-Acquisition, and 17-AI-Marketing-Analytics-Automation respectively
 > If any of these are shaky, pause and review before continuing, this capstone assumes the four track courses are already done.
@@ -12,7 +12,7 @@
 
 ## 🎬 A Story: Two Marketers Apply For The Same Job
 
-It's Tuesday morning at a mid-stage Series B SaaS company. A hiring manager named Priya is staring at 247 applicants for a Growth Marketing Manager role. She has 90 minutes.
+It's Tuesday morning at a mid-stage Series B SaaS (Software as a Service) company. A hiring manager named Priya is staring at 247 applicants for a Growth Marketing Manager role. She has 90 minutes.
 
 She skims the first batch of 50 resumes in 12 minutes. 47 of them list the same things, "ran campaigns on Google Ads," "managed a content calendar," "used HubSpot." All the verbs are the same. All the bullets are the same. Priya makes the same mental note 47 times: *can't tell if they actually did the work or just sat in the room while someone else did the work.*
 
@@ -133,7 +133,7 @@ There's no shortage of project ideas. Why these specific 5?
 
 ### Capstone 5: AI Marketing Agent
 
-**Why this one:** In 2026, "I use ChatGPT" is table stakes, like "I use email" in 1998. The signal that matters is: *can you build with the API, not just chat with the UI?* A working agent (lead qualifier, content brief generator, competitor researcher) shows you've crossed that line.
+**Why this one:** In 2026, "I use ChatGPT" is table stakes, like "I use email" in 1998. The signal that matters is: *can you build with the API (Application Programming Interface), not just chat with the UI (User Interface)?* A working agent (lead qualifier, content brief generator, competitor researcher) shows you've crossed that line.
 
 **Format hiring managers respect:** Working hosted agent (even if scrappy) + GitHub repo + Loom demo.
 
@@ -226,7 +226,7 @@ When a recruiter or prospect reads your portfolio, every sentence is either:
 The ratio matters. Aim for **5 shows per 1 tell**. If you're at 1 show per 5 tells, you have a resume, not a portfolio.
 
 **Tell:** *"I'm experienced with paid social campaigns."*
-**Show:** *"In this campaign for [client], we spent $200 across Meta and Google. Final ROAS: 3.1x. Top creative below. Three creatives that failed below that."*
+**Show:** *"In this campaign for [client], we spent $200 across Meta and Google. Final ROAS (Return on Ad Spend): 3.1x. Top creative below. Three creatives that failed below that."*
 
 ---
 
@@ -251,7 +251,7 @@ When the recruiter (or prospect) asks "Tell me about a project," you should be a
 
 [LESSON, 1 sentence, honest]: 
    "Two of the four creatives bombed; if I redid it, I'd skip Carousel 
-   on Meta and do all single-image with UGC."
+   on Meta and do all single-image with UGC (User-Generated Content)."
 ```
 
 Practice this for each of your 5 capstones until you can do it cold.
@@ -274,7 +274,7 @@ Practice this for each of your 5 capstones until you can do it cold.
 ## 🎯 Exam Traps (Project Decisions That'll Trip You Up)
 
 🚨 **Trap 1: Picking a niche before you have a body of work.**
-A lot of students try to niche to "I'm the AI marketer for B2B SaaS founders" before they've built anything. Result: their portfolio doesn't actually match the niche. **Build first, niche later**, by Capstone 3, you'll see which niche you naturally vibe with.
+A lot of students try to niche to "I'm the AI marketer for B2B (Business-to-Business) SaaS founders" before they've built anything. Result: their portfolio doesn't actually match the niche. **Build first, niche later**, by Capstone 3, you'll see which niche you naturally vibe with.
 
 🚨 **Trap 2: Choosing a capstone subject you can't get screenshots from.**
 You can't share Acme Corp's internal data. Pick subjects where you control the surface, your own micro-product, a friend's side business, a public indie maker who agreed, or *yourself*.
@@ -357,7 +357,7 @@ These prompts have no single right answer. Defend your reasoning from the framew
 1. **The "5 capstones" of this course are SEO audit, paid campaign, automation workflow, attribution model, and AI agent.** A student argues that for a B2B SaaS hiring market, two of these (paid campaign and attribution model) are wasted, they should be replaced with two more "AI agent" capstones to amplify the AI-native signal. Build the strongest argument for AND against this substitution. What does the answer depend on?
 2. **Path A (Job Track), Path B (Client Track), and Path C (Indie Track) are presented as three audiences.** A senior marketer claims that for portfolio purposes, picking one path is a junior mistake, the same 5 capstones can serve all three audiences if framed correctly. Is she right, partly right, or wrong? Where does her argument break?
 3. **The "Show Don't Tell" 5:1 ratio is presented as a hard rule, but a thoughtful counter-argument is that some hiring signals (judgment, taste, communication style) are inherently *tell* and don't compress into screenshots.** When would you violate the 5:1 ratio deliberately, and how would you defend that choice to a hiring manager?
-4. **The reading argues "Notion is the default" hosting choice and "Webflow loses 2 weeks to design tweaks."** A designer-oriented marketer pushes back: for *brand* roles or *DTC* roles, a Notion site signals "doesn't care about craft." How do you reconcile this with the speed-of-shipping argument? Which path would you take if you were targeting a senior brand role at a DTC fashion company?
+4. **The reading argues "Notion is the default" hosting choice and "Webflow loses 2 weeks to design tweaks."** A designer-oriented marketer pushes back: for *brand* roles or *DTC (Direct-to-Consumer)* roles, a Notion site signals "doesn't care about craft." How do you reconcile this with the speed-of-shipping argument? Which path would you take if you were targeting a senior brand role at a DTC fashion company?
 5. **The course explicitly recommends including failed campaigns in your portfolio (the "vulnerability = trust" principle).** A hiring manager you respect tells you the opposite at a networking event: *"Don't show me a campaign that lost money. I have 100 applicants who can show me wins."* How do you respond? Where is each of you right, and what does the answer depend on?
 
 ---

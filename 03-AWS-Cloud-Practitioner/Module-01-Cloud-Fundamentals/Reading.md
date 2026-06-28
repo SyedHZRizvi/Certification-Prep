@@ -1,6 +1,6 @@
 # Module 1: Cloud & AWS Fundamentals ☁️
 
-> **Why this module matters:** Before you touch a single AWS service, you need to *think* like a cloud architect. This module rewires your brain from "data center" to "cloud", and once you get it, EC2, S3, Lambda, all of it, makes sense in 10 seconds instead of an hour.
+> **Why this module matters:** Before you touch a single AWS service, you need to *think* like a cloud architect. This module rewires your brain from "data center" to "cloud", and once you get it, EC2 (Elastic Compute Cloud), S3 (Simple Storage Service), Lambda, all of it, makes sense in 10 seconds instead of an hour.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Basic IT literacy: what a server is, what a data center is, what an IP address is
@@ -73,9 +73,9 @@ These six benefits trace back to Andy Jassy's 2012 re:Invent keynote and are for
 
 ---
 
-## 🏗️ The 3 Cloud Service Models (IaaS / PaaS / SaaS)
+## 🏗️ The 3 Cloud Service Models (IaaS (Infrastructure as a Service) / PaaS (Platform as a Service) / SaaS (Software as a Service))
 
-The IaaS / PaaS / SaaS taxonomy comes from NIST's **Special Publication 800-145 "The NIST Definition of Cloud Computing"** (Mell & Grance, NIST, September 2011). Every exam blueprint AWS, Azure, GCP, CompTIA Cloud+, references this definition. The trick: **how much do YOU manage vs. how much does the provider manage?**
+The IaaS / PaaS / SaaS taxonomy comes from NIST's **Special Publication 800-145 "The NIST Definition of Cloud Computing"** (Mell & Grance, NIST, September 2011). Every exam blueprint AWS, Azure, GCP (Google Cloud Platform), CompTIA Cloud+, references this definition. The trick: **how much do YOU manage vs. how much does the provider manage?**
 
 ```
    YOU MANAGE MORE                         PROVIDER MANAGES MORE
@@ -86,8 +86,8 @@ The IaaS / PaaS / SaaS taxonomy comes from NIST's **Special Publication 800-145 
 
 | Model | What you control | What AWS controls | Example AWS services |
 |-------|------------------|-------------------|----------------------|
-| **IaaS** (Infrastructure) | OS, runtime, app, data | Virtualization, servers, storage, network | EC2, EBS, VPC |
-| **PaaS** (Platform) | Just your app + data | Everything below the runtime | Elastic Beanstalk, RDS, Lambda* |
+| **IaaS** (Infrastructure) | OS, runtime, app, data | Virtualization, servers, storage, network | EC2, EBS, VPC (Virtual Private Cloud) |
+| **PaaS** (Platform) | Just your app + data | Everything below the runtime | Elastic Beanstalk, RDS (Relational Database Service), Lambda* |
 | **SaaS** (Software) | Just your settings/data | The entire stack including app | Amazon Chime, WorkMail, QuickSight |
 
 *Lambda is often called "FaaS" (Function-as-a-Service), a sub-category of PaaS.
@@ -131,7 +131,7 @@ A **Region** is a geographic area (city-ish) with multiple datacenters. Examples
 As of 2026, AWS has **30+ Regions** worldwide. You pick a region based on:
 
 1. **Latency**, closer to users = faster
-2. **Compliance / data sovereignty**, EU data must stay in EU regions (GDPR)
+2. **Compliance / data sovereignty**, EU data must stay in EU regions (GDPR (General Data Protection Regulation))
 3. **Service availability**, not every service is in every region (e.g. new GenAI services often launch in `us-east-1` first)
 4. **Cost**, `us-east-1` is usually the cheapest
 
@@ -153,10 +153,10 @@ An **AZ** is one or more discrete datacenters within a Region, each with indepen
 
 Used primarily by:
 
-- **CloudFront** (CDN)
-- **Route 53** (DNS resolution)
+- **CloudFront** (CDN (Content Delivery Network))
+- **Route 53** (DNS (Domain Name System) resolution)
 - **AWS Global Accelerator**
-- **AWS WAF / Shield** (DDoS protection terminates at edge)
+- **AWS WAF (Web Application Firewall) / Shield** (DDoS (Distributed Denial of Service) protection terminates at edge)
 
 🎯 **Exam pattern:** "User in Tokyo loads a video from a US-hosted S3 bucket, how do you make it fast?" → CloudFront caches the video at a Tokyo edge location.
 
@@ -182,7 +182,7 @@ A middle tier between Edge Locations and the origin. Larger than edge caches; ab
 | Interface | Best for | Example |
 |-----------|----------|---------|
 | **Management Console** | Learning, exploring, click-ops | <https://console.aws.amazon.com> |
-| **AWS CLI** | Scripting, automation, terminal jocks | `aws s3 ls`, `aws ec2 run-instances` |
+| **AWS CLI (Command Line Interface)** | Scripting, automation, terminal jocks | `aws s3 ls`, `aws ec2 run-instances` |
 | **AWS SDKs** | Building apps that call AWS | Python `boto3`, JavaScript `aws-sdk`, Java, .NET, Go |
 | **Infrastructure as Code** | Repeatable infra (the right answer for production) | CloudFormation, AWS CDK, Terraform |
 
@@ -223,7 +223,7 @@ AWS gives newcomers a free tier, and the exam tests that you know the **three di
 | "Edge Locations are mini-Regions" | No, Edges only cache content; you can't launch an EC2 in an edge location |
 | "Public cloud means anyone can access my data" | "Public" describes the *infrastructure model*, not your data permissions |
 | "Cloud is always cheaper" | For steady, predictable workloads, on-prem can be cheaper. Cloud wins on variable / unknown workloads |
-| "Cloud means no responsibilities" | You still own your data, app code, IAM, OS patching (if IaaS), etc. → Shared Responsibility Model |
+| "Cloud means no responsibilities" | You still own your data, app code, IAM (Identity and Access Management), OS patching (if IaaS), etc. → Shared Responsibility Model |
 
 ---
 
@@ -290,7 +290,7 @@ You now know:
 - 🌍 Public vs Private vs Hybrid deployment models
 - 🗺️ Regions (geographic), AZs (datacenters), Edge Locations (cache PoPs)
 - 🇺🇸 GovCloud, China regions, Local Zones, Wavelength, Outposts
-- 🛠️ Console, CLI, SDK, IaC as ways to interact with AWS
+- 🛠️ Console, CLI, SDK (Software Development Kit), IaC (Infrastructure as Code) as ways to interact with AWS
 - 🎁 The 3 flavors of AWS Free Tier
 - 🏛️ Capital One's data-center exit (2015–2020) as the canonical "cloud benefits realized" case
 
@@ -313,13 +313,13 @@ You now know:
 
 Use these as journal prompts, study-group questions, or interview-prep drills. Each is open-ended; the best answers cite specific frameworks, numbers, or cases.
 
-1. **The single-AZ MVP question.** A two-founder startup running a 50-customer SaaS argues their entire AWS architecture in a single AZ is "fine" because their SLA promise is 99.5%, not 99.99%. Multi-AZ would roughly double their RDS and ALB bill (~$280/mo → ~$560/mo) for a benefit they say they don't need. Build the strongest argument FOR their single-AZ position AND AGAINST it. Which would you defend at a CTO review, and at what point in their growth (revenue, customers, geographic spread) does the answer flip?
+1. **The single-AZ MVP (Minimum Viable Product) question.** A two-founder startup running a 50-customer SaaS argues their entire AWS architecture in a single AZ is "fine" because their SLA (Service Level Agreement) promise is 99.5%, not 99.99%. Multi-AZ would roughly double their RDS and ALB bill (~$280/mo → ~$560/mo) for a benefit they say they don't need. Build the strongest argument FOR their single-AZ position AND AGAINST it. Which would you defend at a CTO (Chief Technology Officer) review, and at what point in their growth (revenue, customers, geographic spread) does the answer flip?
 2. **Carr's utility-computing prediction.** In *The Big Switch* (2008), Nicholas Carr predicted that computing would become a utility like electricity, measured, fungible, commodified. Two decades on, AWS, Azure, GCP have ~65% combined market share but margins remain 30%+. Why hasn't compute commoditized to electricity-like 3–5% margins? What does this imply for a cloud-strategy course's framing of "cloud is just a utility"?
 3. **The Capital One pre-migration question.** Imagine you are advising Capital One's board in **2013** one year before the migration decision. The board says "Banks don't put core workloads in public cloud too risky." Build a 3-bullet argument that Alexander could have used to win the board over. What would have been the *strongest* counter-argument from a skeptical board member, and how would you have addressed it?
-4. **Region choice under conflicting constraints.** A B2B SaaS with 60% revenue in the EU but its engineering team in São Paulo must pick a primary AWS Region. Cheapest = `us-east-1` (N. Virginia). Closest to engineering = `sa-east-1` (São Paulo). Closest to revenue + GDPR-aligned = `eu-west-1` (Ireland). Walk through how you'd actually decide this, citing the Module 1 trade-offs (latency vs compliance vs cost vs service availability). Defend why one factor outranks the others.
+4. **Region choice under conflicting constraints.** A B2B (Business-to-Business) SaaS with 60% revenue in the EU but its engineering team in São Paulo must pick a primary AWS Region. Cheapest = `us-east-1` (N. Virginia). Closest to engineering = `sa-east-1` (São Paulo). Closest to revenue + GDPR-aligned = `eu-west-1` (Ireland). Walk through how you'd actually decide this, citing the Module 1 trade-offs (latency vs compliance vs cost vs service availability). Defend why one factor outranks the others.
 5. **NIST vs marketing.** AWS sometimes uses "cloud" terminology more loosely than NIST SP 800-145. Find one example where AWS's marketing definition diverges from the NIST definition (e.g., how AWS positions Outposts as "cloud"). Why does the divergence exist, and is the exam testing AWS's definition or NIST's?
 
-There are no "official" answers, defend your reasoning with specifics. Strong responses cite at least one named framework (NIST SP 800-145, AWS Well-Architected, Carr 2008), one named case (Capital One 2015–2020, Mailchimp, your own employer), and one piece of cloud math (TCO, $/AZ-hr, RTO/RPO).
+There are no "official" answers, defend your reasoning with specifics. Strong responses cite at least one named framework (NIST SP 800-145, AWS Well-Architected, Carr 2008), one named case (Capital One 2015–2020, Mailchimp, your own employer), and one piece of cloud math (TCO, $/AZ-hr, RTO (Recovery Time Objective)/RPO (Recovery Point Objective)).
 
 ---
 

@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) POESM, funnels, walled gardens; you'll need this vocabulary
-> - Basic digital fluency: knowing what a "browser," "API," and "database" are at a layperson level
+> - Basic digital fluency: knowing what a "browser," "API (Application Programming Interface)," and "database" are at a layperson level
 > - Comfort reading a simple table of numbers (token counts, context windows in K/M)
 >
 > You do *not* need a CS or ML background. No math beyond arithmetic. If you've used ChatGPT or Claude once or twice, you're ready. If you've never used either, open a free tier alongside this reading, you'll get more out of it.
@@ -37,7 +37,7 @@ The term "AI" has been overloaded for 60 years. For your purposes, here's the cl
 | **Machine Learning (ML)** | A subfield of AI: systems that learn patterns from data instead of being explicitly programmed | Spam filters, recommendation engines, ad bidding |
 | **Deep Learning** | A subfield of ML using multi-layer neural networks | Image classification, speech recognition |
 | **Generative AI (GenAI)** | Models that *produce* new content (text, image, audio, video) | ChatGPT, Midjourney, Synthesia |
-| **Large Language Model (LLM)** | A specific kind of generative AI trained on text | GPT-4 / 5, Claude, Gemini, Llama |
+| **Large Language Model (LLM)** | A specific kind of generative AI trained on text | GPT (Generative Pre-trained Transformer)-4 / 5, Claude, Gemini, Llama |
 | **Foundation Model** | A large pretrained model that can be adapted to many tasks | GPT-4, Claude 3.5, Gemini 1.5, Llama 3 |
 
 🎯 **MEMORIZE THIS.** A common exam trap is to use "AI" and "GenAI" interchangeably. They are not. AI is the umbrella; GenAI is the part that *creates* content.
@@ -148,12 +148,12 @@ Before answering, the system *retrieves* relevant documents from your own knowle
 
 **Use when:** You need the model to answer using *your* knowledge your brand voice, your product docs, your case studies, your support tickets that wasn't in its training data.
 
-**Real-world example:** A SaaS company's "AI support agent" that answers using their help center is almost always RAG, not fine-tuning.
+**Real-world example:** A SaaS (Software as a Service) company's "AI support agent" that answers using their help center is almost always RAG, not fine-tuning.
 
 ### Level 3: Fine-Tuning
 You take a foundation model and continue training it on your own dataset, permanently shifting its behavior.
 
-**Use when:** You need a specific *style* (your CMO's writing voice across thousands of examples), a specific *domain language* (legal, medical, pharma), or a specific *output format* the base model struggles with.
+**Use when:** You need a specific *style* (your CMO (Chief Marketing Officer)'s writing voice across thousands of examples), a specific *domain language* (legal, medical, pharma), or a specific *output format* the base model struggles with.
 
 **Cost vs benefit:** Fine-tuning typically costs $100s–$10,000s and takes hours-to-days. It's overkill for most marketing tasks. **RAG covers 80% of "we want our own AI" use cases.**
 
@@ -168,7 +168,7 @@ You take a foundation model and continue training it on your own dataset, perman
 | Domain knowledge | Limited | Strong (any docs you load) | Strong (if data is good) |
 | Best marketing use | Drafts, brainstorms, repurposing | Customer-facing AI, knowledge-base chat, brand-voiced content | Specialized voice, regulated industries |
 
-🎯 **Exam tip:** "We want our AI assistant to reference our own product docs" → **RAG**, almost always. "We want our AI to write in our CEO's voice across thousands of past articles" → fine-tuning is reasonable.
+🎯 **Exam tip:** "We want our AI assistant to reference our own product docs" → **RAG**, almost always. "We want our AI to write in our CEO (Chief Executive Officer)'s voice across thousands of past articles" → fine-tuning is reasonable.
 
 ---
 
@@ -235,7 +235,7 @@ Paste this into ChatGPT or Claude and see how it compares to "write me a blog po
 
 ```
 ROLE: You are a content strategist with 10 years of experience
-       writing B2B SaaS blog posts.
+       writing B2B (Business-to-Business) SaaS blog posts.
 
 CONTEXT: Our brand is a project management SaaS called "Stride"
        targeting agency owners (5–50 employees). Our voice is
@@ -248,7 +248,7 @@ TASK: Draft a 700-word blog post titled
 CONSTRAINTS:
 - Open with a 2-paragraph story about a fictional agency owner.
 - Include a comparison table of "old standup" vs "async update."
-- End with a CTA to download a free async-standup template.
+- End with a CTA (Call to Action) to download a free async-standup template.
 - Do not use the words "synergy," "leverage," or "ecosystem."
 - Subheadings in title case.
 
@@ -279,7 +279,7 @@ We will return to this in Module 10.
 
 This is a teaser, Module 9 covers it in depth.
 
-- LLMs are trained on the open internet, which is full of biased text. Models can reproduce or amplify race, gender, age, and economic biases. The MIT Media Lab's *Gender Shades* project (Buolamwini, 2018) was the canonical study that surfaced this for facial recognition; for text, more recent work by Anthropic and OpenAI on "constitutional AI" and RLHF attempts to mitigate it.
+- LLMs are trained on the open internet, which is full of biased text. Models can reproduce or amplify race, gender, age, and economic biases. The MIT Media Lab's *Gender Shades* project (Buolamwini, 2018) was the canonical study that surfaced this for facial recognition; for text, more recent work by Anthropic and OpenAI on "constitutional AI" and RLHF (Reinforcement Learning from Human Feedback) attempts to mitigate it.
 - LLMs sometimes reproduce copyrighted text verbatim. The *New York Times v. OpenAI* lawsuit (December 2023, ongoing) is the load-bearing test case.
 - Generated content disclosure is increasingly regulated. The EU AI Act (passed 2024) requires clear labeling of AI-generated content in certain contexts; US states are following.
 
@@ -368,7 +368,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 3 applies LLM mechanics to GEO/AEO (how Overviews extract content); Module 4 turns the prompt template into a content workflow; Module 9 deepens the bias, copyright, and Constitutional AI threads.
+> - Inside this course: Module 3 applies LLM mechanics to GEO (Generative Engine Optimization)/AEO (Answer Engine Optimization) (how Overviews extract content); Module 4 turns the prompt template into a content workflow; Module 9 deepens the bias, copyright, and Constitutional AI threads.
 > - Cross-course: `15-AI-Marketing-Strategy` Module 2 covers AI portfolio decisions at the executive level; `16-AI-Marketing-Automation-Workflows` Module 3 builds RAG and agentic flows on the foundations from here.
 > - Practice: Practice Exam 1 has 5–7 questions on tokens, RAG, hallucinations, and model families. Final Mock Exam adds harder cross-module synthesis (e.g. "RAG vs fine-tune for a regulated industry").
 
@@ -376,7 +376,7 @@ You now know:
 
 ## 💼 Case Study, Klarna (2024)
 
-**Situation.** Klarna, the Swedish buy-now-pay-later fintech, ran a global customer-service operation supporting roughly 150 million consumers across 45 markets in 23 languages. By late 2023, the cost of human-staffed support across an outsourced agent network of approximately 700 full-time-equivalents had become a major operating-margin drag, and Klarna's then-IPO trajectory put intense pressure on cost-to-serve. The CEO Sebastian Siemiatkowski had been publicly enthusiastic about generative AI since the launch of ChatGPT, and Klarna had been one of the first major non-tech enterprises to sign an OpenAI enterprise partnership.
+**Situation.** Klarna, the Swedish buy-now-pay-later fintech, ran a global customer-service operation supporting roughly 150 million consumers across 45 markets in 23 languages. By late 2023, the cost of human-staffed support across an outsourced agent network of approximately 700 full-time-equivalents had become a major operating-margin drag, and Klarna's then-IPO (Initial Public Offering) trajectory put intense pressure on cost-to-serve. The CEO Sebastian Siemiatkowski had been publicly enthusiastic about generative AI since the launch of ChatGPT, and Klarna had been one of the first major non-tech enterprises to sign an OpenAI enterprise partnership.
 
 **Decision.** In February 2024 Klarna publicly disclosed that, after a one-month live test, it had deployed an **OpenAI-powered customer-service assistant** capable of handling roughly two-thirds of all consumer-service chats end-to-end (without escalation to a human agent). The assistant ran on a fine-tuned + RAG-grounded GPT-4 stack using RAG over Klarna's own help-center articles, refund policies, and consumer dispute records, with a multi-language layer wrapping the model. The system was designed to do "the work of 700 full-time agents" those 700 had been employed via an outsourced contract that Klarna chose not to renew.
 
@@ -385,7 +385,7 @@ You now know:
 **Lesson for the exam / for practitioners.** Klarna is the most-cited 2024 reference for the *RAG-plus-LLM enterprise pattern* taught in this module: a foundation model (GPT-4) is the engine, but the deployment-grade system layered RAG over Klarna's own first-party documents (refund policies, help center, dispute history). That's not "fine-tuning" and it's not "prompt engineering alone", it's the middle layer (RAG) doing 80% of the value lift. The case also illustrates the hallucination-mitigation discipline: customer service is a high-trust context, so Klarna grounded the model in verifiable internal documents rather than relying on the model's pretraining. The exam-relevant principle: when a case asks "we want our AI to answer using our knowledge base in our brand voice," the right answer is almost always **RAG + a strong system prompt**, not fine-tuning.
 
 **Discussion (Socratic).**
-- Q1: Klarna's reported figure of "700 FTEs replaced" was widely covered, but later reporting suggested it brought some human agents back for complex cases. If you were Klarna's CMO or CTO in early 2024, how would you have framed the 700-agent number publicly without either overstating the win or understating the legitimate productivity gain?
+- Q1: Klarna's reported figure of "700 FTEs replaced" was widely covered, but later reporting suggested it brought some human agents back for complex cases. If you were Klarna's CMO or CTO (Chief Technology Officer) in early 2024, how would you have framed the 700-agent number publicly without either overstating the win or understating the legitimate productivity gain?
 - Q2: The official answer here is RAG over fine-tuning. Why does RAG win for Klarna's customer-service use case specifically, and what kind of use case (give a concrete example) would have made fine-tuning the right call instead?
 - Q3: Klarna implicitly accepted the trade-off that ~1/3 of conversations still need human escalation. What's the dimension along which that 1/3 is distributed, and is the "best" remaining human work the *hardest* cases or the *most ambiguous-policy* cases? Defend a routing strategy.
 
@@ -408,5 +408,5 @@ You now know:
 - 📰 *Harvard Business Review*, "How Generative AI Is Changing Creative Work" (Brynjolfsson, Li, Raymond, 2023).
 - 📰 *MIT Sloan Management Review*, multiple 2024–2025 case studies on enterprise GenAI adoption.
 - 📰 *Anthropic Research*, read at least one post; the "Constitutional AI" paper is the most cited safety reference.
-- 📰 Nielsen Norman Group, "The AI Trust Gap" (Pernice & Whitenton, 2024). UX research with implications for every AI-facing marketer.
-- 📰 McKinsey *State of AI* (annual), usage stats and ROI benchmarks.
+- 📰 Nielsen Norman Group, "The AI Trust Gap" (Pernice & Whitenton, 2024). UX (User Experience) research with implications for every AI-facing marketer.
+- 📰 McKinsey *State of AI* (annual), usage stats and ROI (Return on Investment) benchmarks.

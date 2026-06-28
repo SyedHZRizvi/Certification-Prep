@@ -108,7 +108,7 @@ Wi-Fi divides each band into **channels**. The width of a channel determines ban
 |----------|------|------------|--------|
 | **WEP** | 1997 | RC4 (broken) | **Deprecated**, broken in 2001 (Fluhrer–Mantin–Shamir attack) |
 | **WPA** | 2003 | TKIP | Deprecated |
-| **WPA2** | 2004 | AES-CCMP (preferred) or TKIP | Widely deployed; **KRACK** vulnerability disclosed 2017 |
+| **WPA2** | 2004 | AES (Advanced Encryption Standard)-CCMP (preferred) or TKIP | Widely deployed; **KRACK** vulnerability disclosed 2017 |
 | **WPA3** | 2018 | AES-GCMP-256 | **Current standard** |
 
 🚨 **Trap on the exam:** WEP is *always* the wrong answer when "most secure" is asked. WPA3 is the current correct answer; WPA2 is acceptable for legacy.
@@ -130,7 +130,7 @@ Wi-Fi divides each band into **channels**. The width of a channel determines ban
 
 ### Enterprise EAP variants
 
-- **EAP-TLS**, certificates on both client and server (most secure; deployment-heavy)
+- **EAP-TLS (Transport Layer Security)**, certificates on both client and server (most secure; deployment-heavy)
 - **PEAP** (Protected EAP), server cert + user credentials inside TLS tunnel
 - **EAP-TTLS**, similar to PEAP, more flexible inner methods
 - **EAP-FAST**, Cisco's lightweight alternative
@@ -141,16 +141,16 @@ Wi-Fi divides each band into **channels**. The width of a channel determines ban
 
 ## 🚪 Captive Portal, The Coffee-Shop Login Page
 
-A **captive portal** intercepts HTTP requests on a guest network and redirects the user to a web page (sign-in, agree-to-terms, payment). Common on hotel, airport, coffee-shop Wi-Fi.
+A **captive portal** intercepts HTTP (Hypertext Transfer Protocol) requests on a guest network and redirects the user to a web page (sign-in, agree-to-terms, payment). Common on hotel, airport, coffee-shop Wi-Fi.
 
 **How it works:**
-1. Client associates with the open SSID and gets DHCP
+1. Client associates with the open SSID and gets DHCP (Dynamic Host Configuration Protocol)
 2. Client tries to load any HTTP page
 3. The gateway responds with an HTTP 302 redirect to the portal URL
 4. After the user accepts/logs in, the gateway adds the client's MAC to an "allowed" list
 5. Subsequent traffic flows freely
 
-🚨 **Trap:** Captive portals over **HTTP only** intercept, they cannot intercept HTTPS sessions cleanly (browsers complain about certificate errors). Modern OSes use a "captive portal detection" URL probe (e.g., Apple's `captive.apple.com`) to detect and pop up the login UI.
+🚨 **Trap:** Captive portals over **HTTP only** intercept, they cannot intercept HTTPS (HTTP Secure) sessions cleanly (browsers complain about certificate errors). Modern OSes use a "captive portal detection" URL probe (e.g., Apple's `captive.apple.com`) to detect and pop up the login UI (User Interface).
 
 ---
 
@@ -226,17 +226,17 @@ The Small Office / Home Office router is a one-box combo. Key features tested:
 
 | Feature | What it does |
 |---------|--------------|
-| **Router** | Forwards between LAN and ISP/WAN |
+| **Router** | Forwards between LAN (Local Area Network) and ISP (Internet Service Provider)/WAN (Wide Area Network) |
 | **L2 switch** | Wired LAN ports (usually 4) |
 | **Wireless AP** | Wi-Fi service |
 | **DHCP server** | Hands out IPs on LAN |
-| **DNS forwarder/cache** | Speeds up DNS for LAN clients |
-| **NAT/PAT** | Many internal hosts → one ISP IP |
+| **DNS (Domain Name System) forwarder/cache** | Speeds up DNS for LAN clients |
+| **NAT (Network Address Translation)/PAT** | Many internal hosts → one ISP IP |
 | **Firewall (basic)** | Stateful inbound block, optional rule engine |
 | **Port forwarding** | Allow inbound to specific internal host |
 | **DMZ** (1-host) | Forward all unsolicited inbound to one internal host (risky; rarely used) |
-| **Guest network** | Separate SSID/VLAN for visitors |
-| **QoS** | Prioritize VoIP/video over bulk traffic |
+| **Guest network** | Separate SSID/VLAN (Virtual Local Area Network) for visitors |
+| **QoS (Quality of Service)** | Prioritize VoIP/video over bulk traffic |
 | **UPnP** | Auto port forwarding (security risk, disable if not needed) |
 | **WPS** | One-button pairing (PIN method vulnerable, disable) |
 
@@ -353,7 +353,7 @@ This case is exactly what Network+ tests when asking, "Which is the most secure 
 
 **Discussion (Socratic).**
 - **Q1:** An enterprise has 15,000 IoT sensors that only support WPA2-PSK. Migration is a multi-year project. What three compensating controls would you put in place in the meantime to limit blast radius if KRACK or a successor is exploited?
-- **Q2:** WPA3 Personal still uses *a passphrase*. If passwords are the weak link, why is the SAE-based WPA3-Personal materially stronger than WPA2-Personal? Explain in one paragraph in language a non-engineer (e.g., your CFO) could understand.
+- **Q2:** WPA3 Personal still uses *a passphrase*. If passwords are the weak link, why is the SAE-based WPA3-Personal materially stronger than WPA2-Personal? Explain in one paragraph in language a non-engineer (e.g., your CFO (Chief Financial Officer)) could understand.
 - **Q3:** A vendor proposes "open Wi-Fi with a captive portal" for a hospital cafeteria. From a regulatory and patient-data standpoint, list three reasons this is risky and propose a better architecture that achieves the same user-experience goal.
 
 ---
@@ -378,7 +378,7 @@ You now know:
 4. ➡️ Move on: [Module 5, Network Services & Cloud Connectivity](../Module-05-Services-Cloud/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 6](../Module-06-Security/Reading.md) revisits 802.1X and WPA3-Enterprise; [Module 7](../Module-07-Monitoring-Tools/Reading.md) covers wireless monitoring via WLC dashboards and SNMP; [Module 8](../Module-08-Troubleshooting/Reading.md) revisits roaming + signal-strength troubleshooting.
+> - Inside this course: [Module 6](../Module-06-Security/Reading.md) revisits 802.1X and WPA3-Enterprise; [Module 7](../Module-07-Monitoring-Tools/Reading.md) covers wireless monitoring via WLC dashboards and SNMP (Simple Network Management Protocol); [Module 8](../Module-08-Troubleshooting/Reading.md) revisits roaming + signal-strength troubleshooting.
 > - Cross-course: CompTIA Security+ (course 09) Module 5 covers Wi-Fi attacks (evil twin, deauth, KRACK) in depth.
 > - Practice: Practice Exam 1 has ~5 wireless questions; the Final Mock has ~10.
 

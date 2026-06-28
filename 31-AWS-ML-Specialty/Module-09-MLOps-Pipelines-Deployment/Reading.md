@@ -1,19 +1,19 @@
 # Module 9: MLOps, Pipelines, Deployment & Monitoring 🚀
 
-> **Why this module matters:** Domain 4 of MLS-C01 (ML Implementation & Operations) is **20%** of the exam. It tests the production side of ML: pipelines, deployment patterns, monitoring, retraining, A/B tests, blue-green releases, shadow deployments. This is also the area where most candidates lose points because their hands-on experience is heavier on training than on operating. This module makes you fluent in SageMaker Pipelines, the four endpoint types, Model Registry, Model Monitor, and the CI/CD glue (Projects, CodePipeline, EventBridge, Step Functions).
+> **Why this module matters:** Domain 4 of MLS-C01 (ML Implementation & Operations) is **20%** of the exam. It tests the production side of ML: pipelines, deployment patterns, monitoring, retraining, A/B tests, blue-green releases, shadow deployments. This is also the area where most candidates lose points because their hands-on experience is heavier on training than on operating. This module makes you fluent in SageMaker Pipelines, the four endpoint types, Model Registry, Model Monitor, and the CI/CD (Continuous Integration/Continuous Deployment) glue (Projects, CodePipeline, EventBridge, Step Functions).
 
 > **Prerequisites for this module.** Modules 1–8 of this course. Helpful background:
 > - Familiarity with CI/CD concepts (build → test → deploy)
-> - Module 4's SageMaker SDK structure
+> - Module 4's SageMaker SDK (Software Development Kit) structure
 > - Module 8's metrics + Clarify
 
 ---
 
 ## 🍕 A Story: From 1 Model To 73 Models In Two Years
 
-Meet Sara. She runs MLE at a 200-engineer SaaS company. In 2022 they had **one** production ML model a churn predictor that they retrained quarterly by running a Jupyter notebook by hand. Releases were "Sara commits a new model artifact to S3 and Slack-pings the platform team to redeploy the API." It worked. Until it didn't.
+Meet Sara. She runs MLE at a 200-engineer SaaS (Software as a Service) company. In 2022 they had **one** production ML model a churn predictor that they retrained quarterly by running a Jupyter notebook by hand. Releases were "Sara commits a new model artifact to S3 (Simple Storage Service) and Slack-pings the platform team to redeploy the API (Application Programming Interface)." It worked. Until it didn't.
 
-By mid-2023 they had **9** production models. Each one had a different deployment process. When the upstream Snowflake schema changed, **5 of the 9 models silently broke** for two weeks before anyone noticed. The CEO wrote a memo: "We are *operating* this thing like 1995 PHP."
+By mid-2023 they had **9** production models. Each one had a different deployment process. When the upstream Snowflake schema changed, **5 of the 9 models silently broke** for two weeks before anyone noticed. The CEO (Chief Executive Officer) wrote a memo: "We are *operating* this thing like 1995 PHP."
 
 In 2024 Sara rebuilt the ML platform on AWS:
 
@@ -297,7 +297,7 @@ SageMaker **Inference Recommender** automatically benchmarks your model on diffe
 - **Blue/green deployment** with CloudWatch-alarm-driven auto-rollback
 - **EventBridge** for cross-pipeline triggers
 - **Distributed tracing via X-Ray** for top-of-funnel latency tracing
-- **CloudWatch dashboards** per model + per business KPI
+- **CloudWatch dashboards** per model + per business KPI (Key Performance Indicator)
 
 **Outcome.** Page-out rate fell ~80%. New-model time-to-production fell from ~6 weeks to ~5 days. The team now ships 30+ model updates per week.
 
@@ -637,7 +637,7 @@ Before any model goes to production, verify:
 - [ ] CloudWatch alarms on: 5xx rate, p95 latency, `InvocationsPerInstance` (capacity), cost anomaly
 - [ ] Blue/Green deployment configured with alarm-based auto-rollback
 - [ ] Endpoint encrypted with customer-managed KMS key
-- [ ] VPC + Security Group + (optionally) PrivateLink for on-prem access
+- [ ] VPC (Virtual Private Cloud) + Security Group + (optionally) PrivateLink for on-prem access
 - [ ] Model Monitor: at least Data Quality + Model Quality (when labels available)
 - [ ] Clarify post-training bias report attached as Model Card artefact
 - [ ] Shadow variant deployed during initial rollout (cleanup after 2-4 weeks)

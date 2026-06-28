@@ -1,11 +1,11 @@
 # Module 3: Identity & Access Management 🪪
 
-> **Why this module matters:** Identity is the new perimeter. The Verizon *Data Breach Investigations Report* consistently finds that **~74-80% of breaches involve a human element**, and roughly half involve stolen or misused credentials (Verizon DBIR 2024 17th annual edition). Sec+ tests every authentication factor, federation protocol (SAML/OAuth/OIDC), access-control model (DAC/MAC/RBAC/ABAC), and privileged-access concept. This is one of the most heavily tested modules about 12–15% of exam questions touch IAM directly.
+> **Why this module matters:** Identity is the new perimeter. The Verizon *Data Breach Investigations Report* consistently finds that **~74-80% of breaches involve a human element**, and roughly half involve stolen or misused credentials (Verizon DBIR 2024 17th annual edition). Sec+ tests every authentication factor, federation protocol (SAML/OAuth/OIDC), access-control model (DAC/MAC/RBAC (Role-Based Access Control)/ABAC (Attribute-Based Access Control)), and privileged-access concept. This is one of the most heavily tested modules about 12–15% of exam questions touch IAM directly.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [AAA Authentication, Authorization, Accounting](../Module-01-Security-Fundamentals/Reading.md) the access lifecycle this module builds on.
 > - [Digital signatures and public-key cryptography](../Module-02-Cryptography-PKI/Reading.md), SAML signed assertions, OIDC JWTs, and FIDO2 passkeys all depend on Module 2's primitives. If you can't explain why "sender's private key signs," go back to Module 2.
-> - General LDAP / directory concepts (a tree of objects with attributes), helpful but not required.
+> - General LDAP (Lightweight Directory Access Protocol) / directory concepts (a tree of objects with attributes), helpful but not required.
 
 ---
 
@@ -60,7 +60,7 @@ Sec+ recognizes **five** factors. Most people remember 3, you need all 5.
 | **SMS code** | Text message OTP | ⚠️ Phishable, SIM-swap-able. Avoid if possible. |
 | **Push notification** | "Allow login?" on phone | Better, but vulnerable to **MFA fatigue / push bombing** |
 | **Hardware token** | YubiKey, RSA SecurID | Strongest, physical possession; FIDO2 versions are phishing-resistant |
-| **Smartcard + PIN** | CAC/PIV cards | Common in govt/military |
+| **Smartcard + PIN** | CAC (Customer Acquisition Cost)/PIV cards | Common in govt/military |
 | **Biometric** | Touch ID, Windows Hello | Convenient + factor combination |
 | **Passkeys** (FIDO2/WebAuthn) | Cryptographic key on device | Modern phishing-resistant, replaces passwords entirely |
 
@@ -82,7 +82,7 @@ Sec+ recognizes **five** factors. Most people remember 3, you need all 5.
 ### Password Managers (1Password, Bitwarden, KeePass, LastPass)
 - Generate + store unique strong passwords per site
 - Auto-fill (reduces phishing, the manager checks the URL)
-- Master password unlocks the vault; vault encrypted with AES-256 + key derived via PBKDF2/Argon2
+- Master password unlocks the vault; vault encrypted with AES (Advanced Encryption Standard)-256 + key derived via PBKDF2/Argon2
 - Org-tier: shared vaults, recovery codes, audit logs
 
 🚨 **Common exam trap:** "Users should memorize 30 unique 16-character passwords", wrong; the realistic answer is "deploy a password manager."
@@ -102,9 +102,9 @@ Citations: **SAML 2.0** is an OASIS standard ratified March 2005 (Cantor et al.,
 | **SAML 2.0** | Web SSO (older enterprise) | XML assertions | Okta → Salesforce, Workday |
 | **OAuth 2.0** | **Authorization** (give app access to your data) | JSON, tokens | "Allow LinkedIn to access your Google Contacts" |
 | **OIDC** (OpenID Connect) | **Authentication** layer on top of OAuth 2.0 | JWT id_token | "Log in with Google" buttons |
-| **LDAP / LDAPS** | Directory lookup + bind auth | Binary on TCP 389 / 636 | Active Directory backend |
+| **LDAP / LDAPS** | Directory lookup + bind auth | Binary on TCP (Transmission Control Protocol) 389 / 636 | Active Directory backend |
 | **Kerberos** | Ticket-based mutual auth | Tickets (TGT, ST) | Windows domain logins |
-| **RADIUS** | AAA for network access | UDP 1812/1813 | Wi-Fi 802.1X, VPN |
+| **RADIUS** | AAA for network access | UDP (User Datagram Protocol) 1812/1813 | Wi-Fi 802.1X, VPN (Virtual Private Network) |
 | **TACACS+** | AAA for device admin | TCP 49 | Cisco device login, separates AuthN/AuthZ |
 
 ### Important distinctions
@@ -114,7 +114,7 @@ Citations: **SAML 2.0** is an OASIS standard ratified March 2005 (Cantor et al.,
 - **RADIUS** uses UDP and encrypts only the password
 - **TACACS+** uses TCP and encrypts the whole payload, and **separates** AuthN from AuthZ
 
-🎯 **Exam trap:** "Which protocol authenticates users for a web SSO?", SAML *or* OIDC depending on context. If the question says "JWT" or "modern API/mobile," answer **OIDC**. If the question says "XML assertion" or "enterprise web app," answer **SAML**.
+🎯 **Exam trap:** "Which protocol authenticates users for a web SSO?", SAML *or* OIDC depending on context. If the question says "JWT" or "modern API (Application Programming Interface)/mobile," answer **OIDC**. If the question says "XML assertion" or "enterprise web app," answer **SAML**.
 
 ### Kerberos quick anatomy (Windows domain)
 1. User logs in → sends request to **KDC** (Key Distribution Center)
@@ -133,9 +133,9 @@ Citations: **SAML 2.0** is an OASIS standard ratified March 2005 (Cantor et al.,
 |------|-------|
 | **SSO** | Log in once, access many systems within the same trust domain |
 | **Federation** | Trust extends *across* organizations/domains |
-| **IdP** | Identity Provider (Okta, Azure AD/Entra, Google Workspace) |
-| **SP** | Service Provider (Salesforce, Slack, AWS) |
-| **JIT Provisioning** | First-time login auto-creates the account |
+| **IdP** | Identity Provider (Okta, Azure AD (Active Directory)/Entra, Google Workspace) |
+| **SP** | Service Provider (Salesforce, Slack, AWS (Amazon Web Services)) |
+| **JIT (Just-In-Time) Provisioning** | First-time login auto-creates the account |
 | **SCIM** | Standard for provisioning/deprovisioning across systems |
 
 ---
@@ -149,7 +149,7 @@ You authenticate. Now what can you do? Five canonical models:
 | **Discretionary** | DAC | **Object owner** assigns permissions | Windows file shares, classic Unix files |
 | **Mandatory** | MAC | **System enforces** based on labels (clearance vs classification) | Military, classified data |
 | **Role-Based** | RBAC | Permissions assigned to **roles**; users get roles | Most enterprises |
-| **Rule-Based** | (rule-based) | If-then rules ("no SSH after 6pm") | Firewalls, time-based ACLs |
+| **Rule-Based** | (rule-based) | If-then rules ("no SSH (Secure Shell) after 6pm") | Firewalls, time-based ACLs |
 | **Attribute-Based** | ABAC | Decisions based on **attributes** of user, resource, environment | Cloud, dynamic policies (e.g., AWS IAM with conditions) |
 
 🧠 **Memory hooks:**
@@ -162,8 +162,8 @@ You authenticate. Now what can you do? Five canonical models:
 ### Worked example
 > A US Government system requires Top Secret clearance to read a Top Secret document, regardless of who owns it. → **MAC**.
 > A corporate file share where Maria can grant Tom access to her project folder. → **DAC**.
-> A SaaS app where "Finance Manager" role automatically grants payroll access to new hires in that role. → **RBAC**.
-> An AWS policy saying "allow S3 read only if MFA was used AND IP is in 10.0.0.0/8 AND object tag = `dept=eng`." → **ABAC**.
+> A SaaS (Software as a Service) app where "Finance Manager" role automatically grants payroll access to new hires in that role. → **RBAC**.
+> An AWS policy saying "allow S3 (Simple Storage Service) read only if MFA was used AND IP is in 10.0.0.0/8 AND object tag = `dept=eng`." → **ABAC**.
 
 ---
 
@@ -233,7 +233,7 @@ JIT access:          [User requests]→[approved 60 min]→[auto-revoke]  ← GO
 
 ## 🔬 Scenario Walkthrough (PBQ-style)
 
-> **Scenario:** A SOC analyst sees an account that was disabled 6 months ago suddenly authenticate successfully from a foreign IP, then immediately fail to access several internal apps. What identity controls failed and which would have prevented this?
+> **Scenario:** A SOC (Security Operations Center) analyst sees an account that was disabled 6 months ago suddenly authenticate successfully from a foreign IP, then immediately fail to access several internal apps. What identity controls failed and which would have prevented this?
 
 **Walkthrough:**
 1. **Failure 1, Deprovisioning:** "Disabled" should mean *cannot* authenticate. The account was re-enabled somehow (admin mistake, automated re-sync from HR, or compromised admin tool). **Control needed:** automated, immediate deprovisioning via SCIM tied to HR system; periodic access review to catch reactivated/orphan accounts.
@@ -251,7 +251,7 @@ A PBQ might present an event log and ask you to drag controls into the order the
 
 **Decision.** Okta's policy already required service-account credentials to live in a corporate password manager not in personal browser vaults. But there was no *technical* control (DLP, browser-policy block on personal Google sign-in for managed endpoints, or token-binding on the service account) preventing the engineer from doing what they did. The attacker later attributed to the financially-motivated group tracked as **Scattered Spider / 0ktapus / Muddled Libra**, gained access to the personal Google account (vector unknown; likely info-stealer malware on a different personal device), then used the synced credentials to log into Okta's support portal between **28 September and 17 October 2023**.
 
-**Outcome.** The attacker exfiltrated **HAR files** (HTTP Archive recordings) that customers had uploaded to Okta's support portal for troubleshooting. HAR files routinely contain live session tokens. Okta's *customers* including **1Password (20 Sept), BeyondTrust (2 Oct), Cloudflare (18 Oct)** detected unusual access using those tokens and reported it back to Okta. Okta initially under-counted the impact, telling investors only ~1% of customers were affected. On **3 November 2023** Okta disclosed that the attacker had downloaded a customer-support report containing **all 18,400 active Okta customers' names and email addresses**. Okta's stock fell 11% on disclosure day; by year-end the breach had cost Okta an estimated **$1.4B in market cap**. The CEO later called this the company's most significant security incident.
+**Outcome.** The attacker exfiltrated **HAR files** (HTTP (Hypertext Transfer Protocol) Archive recordings) that customers had uploaded to Okta's support portal for troubleshooting. HAR files routinely contain live session tokens. Okta's *customers* including **1Password (20 Sept), BeyondTrust (2 Oct), Cloudflare (18 Oct)** detected unusual access using those tokens and reported it back to Okta. Okta initially under-counted the impact, telling investors only ~1% of customers were affected. On **3 November 2023** Okta disclosed that the attacker had downloaded a customer-support report containing **all 18,400 active Okta customers' names and email addresses**. Okta's stock fell 11% on disclosure day; by year-end the breach had cost Okta an estimated **$1.4B in market cap**. The CEO (Chief Executive Officer) later called this the company's most significant security incident.
 
 **Lesson for the exam / for practitioners.** Every Sec+ IAM concept appears here:
 
@@ -262,7 +262,7 @@ A PBQ might present an event log and ask you to drag controls into the order the
 - **Cross-organization supply-chain identity risk.** 1Password and Cloudflare detected the incident before Okta did, because they were watching their *own* token usage. This is the modern reality: your customers' SOCs are part of your detection fabric, whether you like it or not.
 
 **Discussion (Socratic).**
-- **Q1:** Okta's CISO post-mortem committed to "phishing-resistant MFA for all employees" and "blocking sign-in to personal Google accounts on managed Chromes." Are these *technical* (preventive) controls, *managerial* (policy) controls, or both? What edge cases would still defeat them, and what compensating detective controls would you layer in?
+- **Q1:** Okta's CISO (Chief Information Security Officer) post-mortem committed to "phishing-resistant MFA for all employees" and "blocking sign-in to personal Google accounts on managed Chromes." Are these *technical* (preventive) controls, *managerial* (policy) controls, or both? What edge cases would still defeat them, and what compensating detective controls would you layer in?
 - **Q2:** The attacker exfiltrated session tokens from HAR files. Okta's customers had uploaded those files voluntarily for troubleshooting. Design a *secure-by-default* alternative: how would you let a support engineer debug a customer's auth flow *without* the engineer (or anyone else) ever seeing a live session token? Argue trade-offs between debug fidelity and confidentiality.
 - **Q3:** Cloudflare and 1Password detected the breach by watching their *own* logs for anomalous Okta-token usage. Okta itself did not detect it for ~3 weeks. What does this say about IdP-side vs SP-side monitoring, and what's the right division of detection responsibility in a federated trust relationship?
 
@@ -272,7 +272,7 @@ A PBQ might present an event log and ask you to drag controls into the order the
 
 | Misconception | Reality |
 |---------------|---------|
-| "MFA means at least 3 factors" | MFA = ≥2 factors from *different* categories. 2-factor (2FA) counts. |
+| "MFA means at least 3 factors" | MFA = ≥2 factors from *different* categories. 2-factor (2FA (Two-Factor Authentication)) counts. |
 | "Password + PIN is MFA" | NO, both are "something you know." |
 | "OAuth is for login" | OAuth is for *authorization* (delegated access). OIDC is for login. |
 | "SAML uses JWT" | SAML uses XML assertions. JWT is OIDC. |
@@ -352,7 +352,7 @@ You now know:
 4. ➡️ [Module 4, Threats & Threat Actors](../Module-04-Threats-Threat-Actors/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 4](../Module-04-Threats-Threat-Actors/Reading.md) covers Scattered Spider / Okta-class actors; [Module 5](../Module-05-Vulnerabilities-Attacks/Reading.md) covers credential-stuffing, spraying, and session hijacking that target the protocols in this module; [Module 8](../Module-08-Security-Operations/Reading.md) covers SIEM detection rules for anomalous IdP activity.
+> - Inside this course: [Module 4](../Module-04-Threats-Threat-Actors/Reading.md) covers Scattered Spider / Okta-class actors; [Module 5](../Module-05-Vulnerabilities-Attacks/Reading.md) covers credential-stuffing, spraying, and session hijacking that target the protocols in this module; [Module 8](../Module-08-Security-Operations/Reading.md) covers SIEM (Security Information and Event Management) detection rules for anomalous IdP activity.
 > - Cross-course: Azure Administrator (course 06) covers Entra ID / Conditional Access in depth; AWS Solutions Architect (course 04) covers IAM, IAM Identity Center, and federation.
 > - Practice: Practice Exam 1 has ~6 IAM questions; Final Mock has ~10. Pay extra attention to SAML vs OIDC distinctions and the JIT/ephemeral-credential angle, frequently tested.
 

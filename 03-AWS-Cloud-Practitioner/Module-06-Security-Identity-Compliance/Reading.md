@@ -3,9 +3,9 @@
 > **Why this module matters:** Security & Compliance is **30% of the exam**, the LARGEST domain. If you only deeply learn one module, make it this one. The Shared Responsibility Model alone will appear in 4–6 questions.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Cloud Fundamentals](../Module-01-Cloud-Fundamentals/Reading.md), IaaS vs PaaS vs SaaS (the boundary that the Shared Responsibility Model rides on)
-> - [Core Storage](../Module-03-Core-Storage/Reading.md), what an S3 bucket policy is
-> - [Networking](../Module-04-Networking-CDN/Reading.md), Security Groups, NACLs, VPCs
+> - [Cloud Fundamentals](../Module-01-Cloud-Fundamentals/Reading.md), IaaS (Infrastructure as a Service) vs PaaS (Platform as a Service) vs SaaS (Software as a Service) (the boundary that the Shared Responsibility Model rides on)
+> - [Core Storage](../Module-03-Core-Storage/Reading.md), what an S3 (Simple Storage Service) bucket policy is
+> - [Networking](../Module-04-Networking-CDN (Content Delivery Network)/Reading.md), Security Groups, NACLs, VPCs
 > - The general security mental model: confidentiality, integrity, availability, the **CIA Triad** (Saltzer & Schroeder, *"The Protection of Information in Computer Systems,"* Proceedings of the IEEE, 1975)
 > - Authentication vs authorization (CompTIA Security+ chapter 1 level is plenty)
 >
@@ -30,15 +30,15 @@ Memorize this analogy. The exam will test it half a dozen ways.
 
 ## 🛡️ The Shared Responsibility Model (THE MOST-TESTED CONCEPT)
 
-The Shared Responsibility Model is AWS's formal articulation of the security boundary between cloud provider and customer. AWS first published it as a whitepaper in 2011 (*"Amazon Web Services: Overview of Security Processes,"* AWS Whitepapers) and has refreshed it most recently in 2024. The same pattern appears in Microsoft's *Azure Shared Responsibility Model* (Microsoft Docs, 2017) and Google's *GCP Shared Responsibility Matrix*, but AWS's version is the most-tested on the exam.
+The Shared Responsibility Model is AWS's formal articulation of the security boundary between cloud provider and customer. AWS first published it as a whitepaper in 2011 (*"Amazon Web Services: Overview of Security Processes,"* AWS Whitepapers) and has refreshed it most recently in 2024. The same pattern appears in Microsoft's *Azure Shared Responsibility Model* (Microsoft Docs, 2017) and Google's *GCP (Google Cloud Platform) Shared Responsibility Matrix*, but AWS's version is the most-tested on the exam.
 
 
 ```
    ┌─────────────────────────────────────────────────┐
    │  CUSTOMER  →  Security IN the cloud             │
    │    • Customer data                              │
-   │    • IAM users, roles, permissions              │
-   │    • OS patching (on IaaS, e.g. EC2)            │
+   │    • IAM (Identity and Access Management) users, roles, permissions              │
+   │    • OS patching (on IaaS, e.g. EC2 (Elastic Compute Cloud))            │
    │    • Network/firewall config (SG, NACL)         │
    │    • Encryption settings (which keys, where)    │
    │    • Application code & secrets                 │
@@ -57,7 +57,7 @@ The Shared Responsibility Model is AWS's formal articulation of the security bou
 🎯 **Exam patterns:**
 - "Patching guest OS on EC2" → **Customer**
 - "Patching the hypervisor" → **AWS**
-- "Patching the OS underlying RDS or Lambda" → **AWS**
+- "Patching the OS underlying RDS (Relational Database Service) or Lambda" → **AWS**
 - "Configuring IAM users" → **Customer**
 - "Physical security of data centers" → **AWS**
 - "S3 bucket access permissions" → **Customer**
@@ -78,7 +78,7 @@ The Shared Responsibility Model is AWS's formal articulation of the security bou
 
 IAM operationalizes the **principle of least privilege**, articulated by Jerome Saltzer and Michael Schroeder in *"The Protection of Information in Computer Systems"* (Proceedings of the IEEE, 1975). Their eight design principles for security (least privilege, fail-safe defaults, complete mediation, open design, separation of privilege, least common mechanism, psychological acceptability, work factor) are the philosophical bedrock of every modern IAM system. CompTIA Security+ tests them by name; CLF-C02 tests them by application.
 
-**IAM = the front door of AWS.** Every API call to AWS must be authenticated and authorized.
+**IAM = the front door of AWS.** Every API (Application Programming Interface) call to AWS must be authenticated and authorized.
 
 ### Core IAM entities
 
@@ -92,11 +92,11 @@ IAM operationalizes the **principle of least privilege**, articulated by Jerome 
 
 ### Best practices (almost direct exam questions)
 
-1. **Lock down the root user**, enable MFA, use only for billing / a couple of account-level tasks
+1. **Lock down the root user**, enable MFA (Multi-Factor Authentication), use only for billing / a couple of account-level tasks
 2. **Don't use root for daily work**, create an IAM Admin user
 3. **Grant LEAST PRIVILEGE**, only the permissions actually needed
 4. **Use roles for EC2 → other AWS services**, never put access keys on an instance
-5. **Use IAM Identity Center (formerly AWS SSO)** for federated workforce access
+5. **Use IAM Identity Center (formerly AWS SSO (Single Sign-On))** for federated workforce access
 6. **Enable MFA on all human accounts**
 7. **Rotate access keys regularly**
 8. **Use Groups to manage permissions** (don't attach policies directly to users)
@@ -188,25 +188,25 @@ Memorize what each service DOES, the exam asks "which service detects X / blocks
 | **AWS CloudHSM** | Dedicated HSM | FIPS 140-2 Level 3 / sole tenancy |
 | **AWS Secrets Manager** | Store + auto-rotate secrets (DB passwords, API keys) | Production secret management |
 | **AWS Systems Manager Parameter Store** | Free-tier config / secret store | Lighter, no auto-rotation |
-| **AWS Certificate Manager (ACM)** | Free TLS certificates | HTTPS on ELB, CloudFront, API GW |
-| **AWS WAF** | Web app firewall (HTTP layer), block SQLi, XSS, geos | In front of CloudFront / ALB |
-| **AWS Shield Standard** | DDoS protection (free, automatic) | Always on for ELB/CloudFront |
+| **AWS Certificate Manager (ACM)** | Free TLS (Transport Layer Security) certificates | HTTPS (HTTP Secure) on ELB, CloudFront, API GW |
+| **AWS WAF** | Web app firewall (HTTP (Hypertext Transfer Protocol) layer), block SQLi, XSS, geos | In front of CloudFront / ALB |
+| **AWS Shield Standard** | DDoS (Distributed Denial of Service) protection (free, automatic) | Always on for ELB/CloudFront |
 | **AWS Shield Advanced** | Enhanced DDoS, 24/7 DRT, cost protection | Mission-critical apps ($3K/mo) |
 | **Amazon GuardDuty** | Intelligent threat detection (analyzes logs for anomalies) | Always-on threat alerting |
-| **Amazon Macie** | Discovers + classifies PII in S3 | Compliance, GDPR |
+| **Amazon Macie** | Discovers + classifies PII in S3 | Compliance, GDPR (General Data Protection Regulation) |
 | **Amazon Inspector** | Vulnerability scanning of EC2 / ECR images / Lambda | Continuous vuln mgmt |
 | **AWS Config** | Track resource configs + compliance vs rules | Compliance / drift detection |
 | **AWS CloudTrail** | Records every API call in your account | Audit / forensics |
 | **AWS Security Hub** | Aggregates findings from many services | Single pane of glass |
 | **AWS Detective** | Investigate root cause of security events | Incident response |
-| **AWS Artifact** | Self-service compliance reports (SOC, ISO, PCI) | Auditors need a report |
+| **AWS Artifact** | Self-service compliance reports (SOC (Security Operations Center), ISO, PCI) | Auditors need a report |
 | **AWS Trusted Advisor** | Best-practice checks (incl. security) | Mod 7 coverage too |
 
 🎯 **Exam shortcuts:**
 - "Scan S3 for PII / credit card numbers" → **Macie**
 - "Detect anomalous API activity (e.g. crypto-mining)" → **GuardDuty**
 - "Scan EC2 / containers for known vulns (CVEs)" → **Inspector**
-- "Block SQL injection at the web layer" → **WAF**
+- "Block SQL (Structured Query Language) injection at the web layer" → **WAF**
 - "DDoS protection (free)" → **Shield Standard**
 - "DDoS protection with cost protection + DRT" → **Shield Advanced**
 - "Centralized findings dashboard" → **Security Hub**
@@ -295,7 +295,7 @@ You download reports from **AWS Artifact** (no fee, self-service).
 | **ACM** | AWS Certificate Manager (free TLS certs) |
 | **WAF** | Web Application Firewall (Layer 7) |
 | **Shield Standard / Advanced** | DDoS protection (free / $3K/mo with DRT) |
-| **GuardDuty** | Threat detection from logs (DNS, VPC, CloudTrail) |
+| **GuardDuty** | Threat detection from logs (DNS (Domain Name System), VPC (Virtual Private Cloud), CloudTrail) |
 | **Macie** | PII discovery in S3 |
 | **Inspector** | Vulnerability scanning (EC2, ECR, Lambda) |
 | **Config** | Resource config tracking + compliance rules |
@@ -304,7 +304,7 @@ You download reports from **AWS Artifact** (no fee, self-service).
 | **Detective** | Investigation/RCA tool for security events |
 | **Artifact** | Self-service compliance reports |
 | **Identity Center** | Federated SSO across AWS accounts + 3rd party apps |
-| **Encryption in transit** | Data encrypted while moving (TLS/SSL) |
+| **Encryption in transit** | Data encrypted while moving (TLS/SSL (Secure Sockets Layer)) |
 | **Encryption at rest** | Data encrypted while stored (KMS, SSE) |
 
 ---
@@ -317,7 +317,7 @@ In March 2019, a former AWS engineer named Paige Thompson who had left AWS in la
 
 **Decision (the breach steps).** Once Thompson had the IAM credentials:
 
-1. She used the AWS CLI from her own machine, authenticated as the WAF role, to list all S3 buckets in the Capital One account (`aws s3 ls`).
+1. She used the AWS CLI (Command Line Interface) from her own machine, authenticated as the WAF role, to list all S3 buckets in the Capital One account (`aws s3 ls`).
 2. She used `aws s3 sync` to download ~30 GB of S3 data including ~106 million applicant records from a credit-card-application bucket.
 3. She posted snippets on GitHub and a public Slack channel, where another security researcher noticed and reported it to Capital One on July 17, 2019.
 
@@ -347,7 +347,7 @@ In March 2019, a former AWS engineer named Paige Thompson who had left AWS in la
 
 **Discussion (Socratic).**
 - Q1: Capital One's lawyers argued in court that AWS bore partial responsibility because IMDS v1 was the default at the time. AWS argued the customer chose the WAF configuration and the IAM permissions. Who is right? At what point does "the default" of the platform become the provider's responsibility vs the customer's?
-- Q2: Imagine you are the new CISO at Capital One in August 2019. Build a 30-day plan to ensure this exact attack class cannot happen again. What's the *first* thing you change? Defend the ordering.
+- Q2: Imagine you are the new CISO (Chief Information Security Officer) at Capital One in August 2019. Build a 30-day plan to ensure this exact attack class cannot happen again. What's the *first* thing you change? Defend the ordering.
 - Q3: GuardDuty *would* have detected this pattern but Capital One's GuardDuty findings were not being acted on in near-real-time. Is the failure here "Detective controls weren't configured" or "Responsive controls weren't automated"? What's the difference, and which one matters more?
 
 ---
@@ -384,7 +384,7 @@ You now know:
 1. **Root user paradox.** The root user is the most powerful identity in any AWS account, but the official guidance is "almost never use it." If it's that dangerous, why does AWS keep it? Could the root user be eliminated? Argue why AWS keeps it and what the practical workflow looks like.
 2. **SCPs vs IAM policies.** Both restrict permissions. When does an SCP belong at the org level vs an IAM policy at the user/role level? Walk through a concrete scenario where you'd use both layered together.
 3. **GuardDuty vs Inspector vs Macie.** All three are "AWS security services that detect something." Build the decision tree: when does each one win? Where do they overlap?
-4. **Shield Standard vs Shield Advanced economics.** Shield Standard is free. Shield Advanced is ~$3,000/month + traffic. For a typical SaaS doing $10M ARR, when does Shield Advanced become defensible? What's the *threshold event* that justifies the upgrade?
+4. **Shield Standard vs Shield Advanced economics.** Shield Standard is free. Shield Advanced is ~$3,000/month + traffic. For a typical SaaS doing $10M ARR (Annual Recurring Revenue), when does Shield Advanced become defensible? What's the *threshold event* that justifies the upgrade?
 5. **KMS Customer-Managed Keys vs AWS-Managed Keys.** Both encrypt your data. CMKs let you set rotation, restrict who can use them via key policy, and revoke. When does the additional CMK overhead become necessary vs theater?
 
 ---
@@ -406,5 +406,5 @@ You now know:
 - 📄 **Office of the Comptroller of the Currency *Consent Order, Capital One, August 2020*** the OCC's $80M civil penalty and a 17-page list of what Capital One must change. Free PDF on the OCC website.
 - 📄 **Saltzer, J. & Schroeder, M. *"The Protection of Information in Computer Systems"* (Proceedings of the IEEE, September 1975)** the foundational paper that defined least privilege, separation of privilege, complete mediation, etc. ~30 pages; still tested by name on CompTIA Security+ and CISSP.
 - 📖 **AWS *"Security Pillar AWS Well-Architected Framework"* whitepaper (2024 refresh)**, AWS's own articulation of the Security pillar. Free PDF; ~80 pages.
-- 📖 **AWS Builders' Library *"My CI/CD pipeline is my release captain"* by Sean Kelly** explains the deployment-pipeline security controls that, applied to Capital One's stack, would have caught the misconfiguration before production. Free read.
+- 📖 **AWS Builders' Library *"My CI/CD (Continuous Integration/Continuous Deployment) pipeline is my release captain"* by Sean Kelly** explains the deployment-pipeline security controls that, applied to Capital One's stack, would have caught the misconfiguration before production. Free read.
 - 🎓 **CIS Controls v8 + CIS AWS Benchmark v3** (Center for Internet Security, 2024), free, vendor-neutral baseline of controls that map cleanly to AWS services. The benchmark is the most widely-used hardening checklist after Well-Architected.

@@ -4,9 +4,9 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Azure subscription / resource group / resource model, covered in [`05-Azure-Fundamentals` Module 2](../../05-Azure-Fundamentals/Module-02-Azure-Architecture/Reading.md)
-> - Microsoft Entra ID basics (tenants, RBAC roles), covered in [`06-Azure-Administrator` Module 1](../../06-Azure-Administrator/Module-01-Subscriptions-Resource-Hierarchy/Reading.md)
-> - Python or C# fluency at the "I can read a REST snippet" level
-> - Azure CLI installed (`az login` working)
+> - Microsoft Entra ID basics (tenants, RBAC (Role-Based Access Control) roles), covered in [`06-Azure-Administrator` Module 1](../../06-Azure-Administrator/Module-01-Subscriptions-Resource-Hierarchy/Reading.md)
+> - Python or C# fluency at the "I can read a REST (Representational State Transfer) snippet" level
+> - Azure CLI (Command Line Interface) installed (`az login` working)
 >
 > If any of these are shaky, pause and review before continuing, the rest of this course assumes you can read a `Microsoft.CognitiveServices/accounts` ARM resource and not flinch.
 
@@ -40,7 +40,7 @@ Microsoft kept rebranding throughout 2023–2024. The exam uses **current** name
 | Azure AI Studio | **Azure AI Foundry** (portal experience) | Build/deploy GenAI apps, prompt flow |
 | Bing Search APIs | **Retiring** moved to Grounding with Bing Search (in Azure AI Foundry) | |
 
-🚨 **Trap on the exam:** If a question references "Form Recognizer," the right answer probably still says "Document Intelligence", the underlying SDK package is `azure-ai-formrecognizer` (legacy) or `azure-ai-documentintelligence` (current). Microsoft is migrating, both names appear.
+🚨 **Trap on the exam:** If a question references "Form Recognizer," the right answer probably still says "Document Intelligence", the underlying SDK (Software Development Kit) package is `azure-ai-formrecognizer` (legacy) or `azure-ai-documentintelligence` (current). Microsoft is migrating, both names appear.
 
 ---
 
@@ -50,7 +50,7 @@ These are the services you'll touch on AI-102:
 
 | Category | Service | What it does | Typical resource kind |
 |---|---|---|---|
-| Vision | Azure AI Vision | Image Analysis 4.0, OCR (Read API) | `ComputerVision` |
+| Vision | Azure AI Vision | Image Analysis 4.0, OCR (Read API (Application Programming Interface)) | `ComputerVision` |
 | Vision | Custom Vision | Train your own image classifier / object detector | `CustomVision.Training` + `CustomVision.Prediction` |
 | Vision | Face | Face detection, verification, identification (**limited access**) | `Face` |
 | Vision | Video Indexer | Extract insights from video | (separate ARM resource) |
@@ -60,7 +60,7 @@ These are the services you'll touch on AI-102:
 | Documents | Document Intelligence | Extract structured data from forms, invoices, receipts | `FormRecognizer` |
 | Decision | Content Safety | Text + image moderation, prompt shields, groundedness | `ContentSafety` |
 | Search | Azure AI Search | Indexes, indexers, skillsets, vector + semantic search | `Microsoft.Search` |
-| Generative | Azure OpenAI | GPT-4o, GPT-4, embeddings, DALL-E, Whisper | `OpenAI` |
+| Generative | Azure OpenAI | GPT (Generative Pre-trained Transformer)-4o, GPT-4, embeddings, DALL-E, Whisper | `OpenAI` |
 | Multi | **Azure AI services multi-service** | One resource, one key, access to most services above | `AIServices` (or `CognitiveServices`) |
 
 ⚠️ **Note on retired services:** Anomaly Detector, Metrics Advisor, Personalizer, and the standalone "Language Understanding (LUIS)" service are all retired or in retirement. AI-102 has stopped asking about them as primary subjects. CLU has replaced LUIS. QnA Maker is replaced by Question Answering.
@@ -152,7 +152,7 @@ client = ImageAnalysisClient(
 - ❌ Long-lived secret; if it leaks, attacker has full access
 - ❌ Not recommended for production
 
-### 2. Microsoft Entra ID (formerly Azure AD)
+### 2. Microsoft Entra ID (formerly Azure AD (Active Directory))
 
 Use when humans or service principals authenticate. Requires an RBAC role assignment (commonly **Cognitive Services User** or **Cognitive Services Contributor**).
 
@@ -173,7 +173,7 @@ client = TextAnalyticsClient(
 
 ### 3. Managed Identity (the production answer)
 
-Use when your code runs **inside Azure** (App Service, Functions, AKS, VM). The platform injects an identity, no secrets, no rotation.
+Use when your code runs **inside Azure** (App Service, Functions, AKS, VM (Virtual Machine)). The platform injects an identity, no secrets, no rotation.
 
 ```python
 from azure.identity import ManagedIdentityCredential
@@ -190,7 +190,7 @@ Two flavors:
 | Method | Best for | Secret in code? |
 |---|---|---|
 | Subscription key | Local dev, quick prototypes | Yes |
-| Entra ID (service principal) | CI/CD outside Azure | Sometimes (client secret) |
+| Entra ID (service principal) | CI/CD (Continuous Integration/Continuous Deployment) outside Azure | Sometimes (client secret) |
 | Managed identity | Production code running in Azure | **No** |
 
 ---
@@ -265,7 +265,7 @@ Content-Type: application/json
 | **Cost Management** | Per-resource spend; tag resources so you can group |
 | **Throttling (429s)** | Hit when you exceed the TPM/RPM quota of your tier |
 
-🎯 **Exam pattern:** *"Calls to Azure OpenAI return HTTP 429 intermittently. What do you do first?"* → check quota (Tokens Per Minute) and request an increase, then add client-side retry with exponential backoff.
+🎯 **Exam pattern:** *"Calls to Azure OpenAI return HTTP (Hypertext Transfer Protocol) 429 intermittently. What do you do first?"* → check quota (Tokens Per Minute) and request an increase, then add client-side retry with exponential backoff.
 
 ---
 
@@ -299,7 +299,7 @@ Content-Type: application/json
 | **Azure AI services** | Umbrella brand for Microsoft's pretrained AI APIs (formerly Cognitive Services) |
 | **Multi-service resource** | One resource (`AIServices` kind) that exposes most AI services with a single key |
 | **Single-service resource** | One resource per service (`ComputerVision`, `TextAnalytics`, etc.) |
-| **Endpoint** | The HTTPS URL where your code calls the service |
+| **Endpoint** | The HTTPS (HTTP Secure) URL where your code calls the service |
 | **Custom subdomain** | A unique subdomain on `cognitiveservices.azure.com`, required for Entra ID auth |
 | **Subscription key** | Long-lived secret in the `Ocp-Apim-Subscription-Key` header |
 | **Managed identity** | Azure-issued identity for code running in Azure, no secrets needed |
@@ -315,11 +315,11 @@ Content-Type: application/json
 
 ## 📖 Case Study, ChatGPT Enterprise runs on Azure OpenAI (2023–2024)
 
-**Situation.** In January 2023, Microsoft made Azure OpenAI Service generally available, anchored by a multi-year, multi-billion-dollar partnership with OpenAI (announced January 23, 2023; per Microsoft and OpenAI press releases). When OpenAI launched **ChatGPT Enterprise** in August 2023, the entire backend ran on Azure infrastructure the same `Microsoft.CognitiveServices/accounts` resource family this module describes, scaled to power hundreds of thousands of concurrent enterprise sessions. By early 2024, ChatGPT Enterprise reportedly served customers including PwC, Klarna, Block, and Estée Lauder, all subject to enterprise contracts that demanded SOC 2 Type 2 compliance, customer-managed keys (CMK), and audited data residency features that this module's "Azure AI services" umbrella has built in but that consumer ChatGPT did not.
+**Situation.** In January 2023, Microsoft made Azure OpenAI Service generally available, anchored by a multi-year, multi-billion-dollar partnership with OpenAI (announced January 23, 2023; per Microsoft and OpenAI press releases). When OpenAI launched **ChatGPT Enterprise** in August 2023, the entire backend ran on Azure infrastructure the same `Microsoft.CognitiveServices/accounts` resource family this module describes, scaled to power hundreds of thousands of concurrent enterprise sessions. By early 2024, ChatGPT Enterprise reportedly served customers including PwC, Klarna, Block, and Estée Lauder, all subject to enterprise contracts that demanded SOC (Security Operations Center) 2 Type 2 compliance, customer-managed keys (CMK), and audited data residency features that this module's "Azure AI services" umbrella has built in but that consumer ChatGPT did not.
 
 **Decision.** Microsoft and OpenAI architected ChatGPT Enterprise on Azure OpenAI's `kind=OpenAI` resources behind **Private Endpoints**, used **Managed Identity** for service-to-service auth (no keys in code paths), pinned model deployments to specific regions for data-residency claims (US, EU, then "Data Zones" added in 2024), and turned on **abuse-monitoring opt-out** under approved customer contracts so prompts were not retained for 30 days. Quota was enforced via **TPM/RPM** caps at the deployment level, the same dials covered in this module's "Monitoring & Cost" section.
 
-**Outcome.** Microsoft's FY2024 disclosures (per CEO Satya Nadella, July 2024 earnings call) reported Azure OpenAI was used by 60,000+ customers, with the Azure AI business contributing 8 percentage points to Azure growth that quarter. By Q1 2025, the customer count crossed 65,000 (Microsoft Build 2024 keynote; verified against Microsoft Investor Relations materials, checked 2026-05). Critically: there was no major public security incident traced to the platform itself between GA (Jan 2023) and 2026-05, the architectural choices (private networking, MI, data zones) held.
+**Outcome.** Microsoft's FY2024 disclosures (per CEO (Chief Executive Officer) Satya Nadella, July 2024 earnings call) reported Azure OpenAI was used by 60,000+ customers, with the Azure AI business contributing 8 percentage points to Azure growth that quarter. By Q1 2025, the customer count crossed 65,000 (Microsoft Build 2024 keynote; verified against Microsoft Investor Relations materials, checked 2026-05). Critically: there was no major public security incident traced to the platform itself between GA (Jan 2023) and 2026-05, the architectural choices (private networking, MI, data zones) held.
 
 **Lesson for the exam / for practitioners.** Every "boring" feature this module covers multi-service vs single-service, custom subdomains for Entra ID, managed identity, Private Endpoints, customer-managed keys, quota tiers is the same machinery that lets Azure OpenAI host ChatGPT Enterprise at scale. AI-102 tests these as separate questions because they're separate dials. In production, they compose into a defensible platform.
 
@@ -338,7 +338,7 @@ Use these as journal prompts, study-group questions, or interview-prep drills. E
 2. **Managed identity vs subscription key in a hybrid scenario.** You have a Python ETL job that runs on-premises 3 nights a week and on Azure 4 nights a week. The simpler architecture is "key in env var everywhere"; the principled architecture is "MI on Azure, federated identity on-prem." Argue both sides at a Cornell security review. Where does each architecture break?
 3. **F0 trap at scale.** A team prototypes on F0 (free) tier, ships to S0 (standard) for production, and gets sticker shock when monthly invoices show $40K of cognitive-services charges. From the architect's perspective: which monitoring + cost-control levers (TPM/RPM, PTU, Global Batch, tagging, Cost Management alerts, regional pinning) would you have wired *before* the launch, and which would you bolt on now? What does that ranking imply about the F0→S0 onboarding ritual at a mature org?
 4. **Custom subdomain irreversibility.** Once set, the custom subdomain on an Azure AI resource cannot be renamed. Build the strongest argument for AND against Microsoft making subdomains mutable (e.g., to support brand rebrands, acquisitions). What's the cost Microsoft is implicitly making customers pay for the immutability? Which Cornell IT systems-engineering principle does this most clearly map to?
-5. **Region pinning vs latency.** Azure OpenAI Global Standard SKU routes globally; Standard SKU pins to a region. Your CIO insists on EU-only data residency for GDPR. Your CMO wants the lowest possible perceived latency for users in São Paulo. Walk through how you'd structure the deployment topology AND the customer-facing privacy disclosure to satisfy both, without lying.
+5. **Region pinning vs latency.** Azure OpenAI Global Standard SKU (Stock Keeping Unit) routes globally; Standard SKU pins to a region. Your CIO insists on EU-only data residency for GDPR (General Data Protection Regulation). Your CMO (Chief Marketing Officer) wants the lowest possible perceived latency for users in São Paulo. Walk through how you'd structure the deployment topology AND the customer-facing privacy disclosure to satisfy both, without lying.
 
 ---
 
@@ -365,7 +365,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 2 turns the resource model you just learned into a *Responsible AI* control surface (content filters, prompt shields, groundedness). Module 7 deepens the auth + quota story specifically for Azure OpenAI. Module 8 wires it all into Azure AI Foundry projects.
-> - Cross-course: [`05-Azure-Fundamentals`](../../../05-Azure-Fundamentals/) covers the ARM resource model; [`06-Azure-Administrator`](../../../06-Azure-Administrator/) deepens RBAC + managed identity; [`07-AWS-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) gives the cross-cloud comparison if you've worked on Bedrock or SageMaker.
+> - Cross-course: [`05-Azure-Fundamentals`](../../../05-Azure-Fundamentals/) covers the ARM resource model; [`06-Azure-Administrator`](../../../06-Azure-Administrator/) deepens RBAC + managed identity; [`07-AWS (Amazon Web Services)-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) gives the cross-cloud comparison if you've worked on Bedrock or SageMaker.
 > - Practice: Practice Exam 1 includes ~7 questions drawing from this module (provisioning, auth, SDK identity); Final Mock Exam revisits the same patterns inside multi-module case studies.
 
 ---

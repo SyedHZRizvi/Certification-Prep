@@ -1,6 +1,6 @@
 # Module 4: Identity, Governance & Security 🔐
 
-> **Why this module matters:** The exam treats security as a top-three priority. About 30–35% of management/governance content lives here. The cleanest path to misery on the exam is mixing up **RBAC** (who can do what), **Azure Policy** (what's allowed to exist), and **Locks** (what can't be deleted). This module fixes that, forever.
+> **Why this module matters:** The exam treats security as a top-three priority. About 30–35% of management/governance content lives here. The cleanest path to misery on the exam is mixing up **RBAC (Role-Based Access Control)** (who can do what), **Azure Policy** (what's allowed to exist), and **Locks** (what can't be deleted). This module fixes that, forever.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [The Azure resource hierarchy (MG → Sub → RG → Resource)](../Module-02-Azure-Architecture/Reading.md#-the-resource-hierarchy-live-or-die-for-the-exam), covered in Module 2
@@ -18,7 +18,7 @@ Back to Anna and *PizzaTracker.io*. Now Anna has 25 employees:
 - 4 developers (need to deploy code)
 - 2 finance people (need to see the bill, NOT change settings)
 - 1 ops lead (full control over the production environment)
-- The CEO (wants to *look* at dashboards, change nothing)
+- The CEO (Chief Executive Officer) (wants to *look* at dashboards, change nothing)
 - A new contractor in another country (1-month access, then revoked)
 
 If Anna gave every employee the same master Azure password, she'd get hacked by Tuesday. If she put everyone in a giant spreadsheet of "who-can-do-what," she'd quit by Friday.
@@ -38,7 +38,7 @@ Mix these up on the exam and you'll lose 5+ questions. Don't.
 
 ## 🪪 Microsoft Entra ID (the identity foundation)
 
-**Microsoft Entra ID** is Azure's cloud identity service, formerly called **Azure Active Directory (Azure AD)** until Microsoft renamed it in 2023. The exam uses the new name.
+**Microsoft Entra ID** is Azure's cloud identity service, formerly called **Azure Active Directory (Azure AD (Active Directory))** until Microsoft renamed it in 2023. The exam uses the new name.
 
 > ⚠️ **Critical exam-update fact:** "Azure AD" = "Microsoft Entra ID". They are the **same product, new name**. If you see "Azure AD" on the exam, it means Entra ID.
 
@@ -51,7 +51,7 @@ Mix these up on the exam and you'll lose 5+ questions. Don't.
 | **Single Sign-On (SSO)** | One login → access to thousands of apps |
 | **Multi-Factor Authentication (MFA)** | Require 2+ proofs of identity |
 | **Conditional Access** | Policy-based access (only from corporate device, only on weekdays, etc.) |
-| **External ID** | Invite external users/customers (B2B and B2C) |
+| **External ID** | Invite external users/customers (B2B (Business-to-Business) and B2C (Business-to-Consumer)) |
 | **Device management** | Register/manage Windows, Mac, iOS, Android |
 | **Identity Protection** | Detect risky sign-ins, compromised accounts |
 
@@ -60,7 +60,7 @@ Mix these up on the exam and you'll lose 5+ questions. Don't.
 | Feature | Microsoft Entra ID | On-prem AD DS |
 |---------|-------------------|----------------|
 | Where | Cloud (managed by Microsoft) | Your servers |
-| Protocols | OAuth, SAML, OpenID Connect | Kerberos, LDAP, NTLM |
+| Protocols | OAuth, SAML, OpenID Connect | Kerberos, LDAP (Lightweight Directory Access Protocol), NTLM |
 | Manages | Users, groups, apps, devices, B2B/B2C | Users, groups, computers (domain join), Group Policy |
 | Hierarchy | Flat (groups + roles) | Forests, domains, OUs, GPOs |
 | Group Policy | ❌ (use Intune / Endpoint Manager instead) | ✅ |
@@ -74,7 +74,7 @@ Mix these up on the exam and you'll lose 5+ questions. Don't.
 |---------|----------|
 | **Free** | Basic identity, included with Azure subscription |
 | **Microsoft Entra ID P1** | Conditional Access, self-service password reset for hybrid, dynamic groups |
-| **Microsoft Entra ID P2** | All P1 + Identity Protection + Privileged Identity Management (PIM) |
+| **Microsoft Entra ID P2** | All P1 + Identity Protection + Privileged Identity Management (PIM (Product Information Management)) |
 | **Microsoft Entra ID Governance** | (Add-on) Entitlement management, access reviews, lifecycle workflows |
 
 ---
@@ -84,7 +84,7 @@ Mix these up on the exam and you'll lose 5+ questions. Don't.
 ### Single Sign-On (SSO)
 One login → access to many apps. Implemented via SAML, OAuth, or OpenID Connect.
 
-🎯 **Exam pattern:** "Reduce password fatigue across 50 SaaS apps" → **SSO via Entra ID**.
+🎯 **Exam pattern:** "Reduce password fatigue across 50 SaaS (Software as a Service) apps" → **SSO via Entra ID**.
 
 ### Multi-Factor Authentication (MFA)
 Require ≥ 2 of:
@@ -193,7 +193,7 @@ Examples of policies:
 
 - "All resources must have a `costCenter` tag"
 - "VMs can only be created in `East US` and `West Europe`"
-- "Storage accounts must use HTTPS only"
+- "Storage accounts must use HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure) only"
 - "All SQL databases must have auditing enabled"
 
 ### Policy effects
@@ -213,7 +213,7 @@ A bundle of related policies (e.g., "ISO 27001 baseline" initiative bundles doze
 🎯 **Exam pattern:** "Ensure no one can create resources outside approved regions" → **Azure Policy with a Deny effect** at the management group scope.
 
 ⚠️ **Trap:** RBAC ≠ Policy.
-- RBAC = "Maya cannot DELETE this VM" (per-identity authorization)
+- RBAC = "Maya cannot DELETE this VM (Virtual Machine)" (per-identity authorization)
 - Policy = "Nobody can CREATE a VM in Brazil South" (per-resource compliance rules)
 
 ---
@@ -266,15 +266,15 @@ What it does:
 
 🎯 **Exam pattern:** "Get a continuously updated picture of our cloud security posture with recommendations" → **Microsoft Defender for Cloud**.
 
-⚠️ **Trap:** "Defender for Cloud" ≠ "Defender for Endpoint" (which is the device EDR product).
+⚠️ **Trap:** "Defender for Cloud" ≠ "Defender for Endpoint" (which is the device EDR (Endpoint Detection and Response) product).
 
 ---
 
-## 👁️ Microsoft Sentinel, Cloud-Native SIEM/SOAR
+## 👁️ Microsoft Sentinel, Cloud-Native SIEM (Security Information and Event Management)/SOAR
 
 **Microsoft Sentinel** is Azure's **SIEM** (Security Information & Event Management) **+ SOAR** (Security Orchestration, Automation & Response).
 
-It ingests logs from anywhere (Azure, AWS, on-prem, M365, third-party) and:
+It ingests logs from anywhere (Azure, AWS (Amazon Web Services), on-prem, M365, third-party) and:
 
 - Correlates events across sources
 - Detects threats with built-in and ML analytics
@@ -318,10 +318,10 @@ The exam loves "which layer would this control fit?" questions.
 |-------|----------------------|
 | Physical | Microsoft datacenter security (not your job) |
 | Identity & Access | Entra ID, MFA, Conditional Access, RBAC |
-| Perimeter | DDoS Protection, Azure Firewall |
+| Perimeter | DDoS (Distributed Denial of Service) Protection, Azure Firewall |
 | Network | NSGs, Azure Firewall, Private Link |
 | Compute | OS patching, antimalware, Defender for Servers |
-| Application | WAF (App Gateway / Front Door), secure coding |
+| Application | WAF (Web Application Firewall) (App Gateway / Front Door), secure coding |
 | Data | Encryption at rest + in transit, Key Vault, IRM |
 
 ---
@@ -332,7 +332,7 @@ Stores and manages:
 
 - **Secrets** (passwords, connection strings)
 - **Keys** (encryption keys, signing keys)
-- **Certificates** (TLS/SSL)
+- **Certificates** (TLS (Transport Layer Security)/SSL (Secure Sockets Layer))
 
 Backed by HSMs (Hardware Security Modules). Integrates with Managed Identities for keyless access by Azure resources.
 
@@ -345,11 +345,11 @@ Backed by HSMs (Hardware Security Modules). Integrates with Managed Identities f
 | Service | What |
 |---------|------|
 | **Azure DDoS Protection** | Always-on DDoS mitigation for public endpoints |
-| **Azure Bastion** | Browser-based RDP/SSH to VMs without exposing them publicly |
-| **Private Endpoint / Private Link** | Bring Azure PaaS services into your private VNet IP space |
+| **Azure Bastion** | Browser-based RDP/SSH (Secure Shell) to VMs without exposing them publicly |
+| **Private Endpoint / Private Link** | Bring Azure PaaS (Platform as a Service) services into your private VNet IP space |
 | **Microsoft Purview** | Data governance, classification, lineage, sensitivity labels |
 | **Compliance Manager (in Service Trust Portal)** | Assess compliance with frameworks |
-| **Microsoft 365 Defender** | XDR across endpoints, email, identities, apps |
+| **Microsoft 365 Defender** | XDR (Extended Detection and Response) across endpoints, email, identities, apps |
 
 ---
 
@@ -410,13 +410,13 @@ For Boeing's most sensitive workloads, public-cloud regions weren't always an op
 
 1. **Public Azure (commercial regions)**, for non-regulated commercial-aviation workloads: customer-facing apps, supply-chain optimization for the 737/787 lines, engineering simulation that doesn't carry CUI. This is the standard tenant + management-group + subscription pattern Module 2 teaches.
 2. **Azure Government (Gov Virginia / Gov Texas / Gov Arizona)**, for CMMC-Level-4 / DFARS workloads where U.S.-citizen ops and physical isolation from commercial Azure are required but public-cloud delivery is acceptable. Boeing was an early-adopter customer of Azure Gov dating to ~2018.
-3. **Azure Stack Hub** (on-prem, in Boeing's own ITAR-cleared datacenters), for the most sensitive workloads where the *hardware* must stay inside a Boeing facility. Azure Stack Hub gives Boeing a *consistent Azure experience* (same ARM API, same Bicep templates, same RBAC roles) running on Microsoft-validated hardware that Boeing physically owns. (Microsoft and Boeing public references; Microsoft Federal blog 2019; Boeing Defense Cloud One reference, 2022.)
+3. **Azure Stack Hub** (on-prem, in Boeing's own ITAR-cleared datacenters), for the most sensitive workloads where the *hardware* must stay inside a Boeing facility. Azure Stack Hub gives Boeing a *consistent Azure experience* (same ARM API (Application Programming Interface), same Bicep templates, same RBAC roles) running on Microsoft-validated hardware that Boeing physically owns. (Microsoft and Boeing public references; Microsoft Federal blog 2019; Boeing Defense Cloud One reference, 2022.)
 
 The governance pattern across all three:
 
 - **A single Microsoft Entra ID tenant per environment** (separate for Gov vs Commercial, sovereign clouds are separate environments per Module 2 §6)
 - **Management-group-level Azure Policy** enforcing "no resource deployment outside U.S. regions" and tag-based ITAR classification
-- **Conditional Access** requiring CAC (Common Access Card) hardware tokens for cleared engineers, not just MFA, but specifically FIDO2-backed credentials issued by the U.S. government
+- **Conditional Access** requiring CAC (Customer Acquisition Cost) (Common Access Card) hardware tokens for cleared engineers, not just MFA, but specifically FIDO2-backed credentials issued by the U.S. government
 - **Microsoft Sentinel** (in Gov tenant) ingesting logs from all three tiers for unified threat hunting
 - **Microsoft Purview** classifying data by ITAR/CUI sensitivity at rest
 
@@ -468,10 +468,10 @@ You now know:
 
 ## 💬 Discussion, Socratic prompts
 
-1. **The least-privilege paradox.** A startup hands every developer the *Contributor* role on the production subscription because "they need to deploy fixes fast." A consultant arrives, scans the IAM blade, and tells the CTO this is a critical finding. The CTO pushes back: "Show me the breach this enables that's worth slowing my engineers down." Construct the strongest argument *for* keeping everyone as Contributor (velocity, no friction, the team is small and trusted). Construct the strongest argument *against* (data exfiltration, blast radius, insider threat). Where would you draw the line, and what's the principled framework? (Hint: Zero Trust + Saltzer & Schroeder's least-privilege principle, 1975.)
+1. **The least-privilege paradox.** A startup hands every developer the *Contributor* role on the production subscription because "they need to deploy fixes fast." A consultant arrives, scans the IAM (Identity and Access Management) blade, and tells the CTO (Chief Technology Officer) this is a critical finding. The CTO pushes back: "Show me the breach this enables that's worth slowing my engineers down." Construct the strongest argument *for* keeping everyone as Contributor (velocity, no friction, the team is small and trusted). Construct the strongest argument *against* (data exfiltration, blast radius, insider threat). Where would you draw the line, and what's the principled framework? (Hint: Zero Trust + Saltzer & Schroeder's least-privilege principle, 1975.)
 2. **RBAC at MG vs Sub vs RG.** A 200-engineer company is designing its first proper RBAC strategy. The cloud architect proposes assigning all roles at the management-group level for inheritance. The security lead pushes back, "if you assign roles at the management-group level you'll over-grant access." Walk through both positions. At what scope (MG / Sub / RG / Resource) should you assign each of the four fundamental roles, and why? Cite the Module 4 §RBAC scope-inheritance rules.
 3. **Azure Policy "Deny" vs "Audit."** A new compliance officer wants to set every Policy to *Deny* effect "to be safe." The cloud team protests this will break every team trying to deploy and surface compliance issues as failed deployments instead of audit findings. Walk through the trade-off. When is Audit the right answer, when is Deny the right answer, and what's the staged-rollout pattern (Audit first → Deny later) most enterprises actually use?
-4. **Defender for Cloud Secure Score: vanity metric or real signal?** A CISO uses Secure Score as her primary KPI to the board, "we improved from 64 → 78 this quarter." A skeptical board member argues Secure Score is gameable (you can boost it by enabling features without actually improving security). Argue both sides. What's the *correct* way to consume Secure Score as a leadership signal vs. as a working backlog for the security team?
+4. **Defender for Cloud Secure Score: vanity metric or real signal?** A CISO (Chief Information Security Officer) uses Secure Score as her primary KPI (Key Performance Indicator) to the board, "we improved from 64 → 78 this quarter." A skeptical board member argues Secure Score is gameable (you can boost it by enabling features without actually improving security). Argue both sides. What's the *correct* way to consume Secure Score as a leadership signal vs. as a working backlog for the security team?
 5. **Conditional Access vs Plain MFA.** A small team has Entra ID Free (no Conditional Access). They want "MFA only when off-network." Pure-MFA tenants force MFA *always*. The fix is to upgrade to Entra ID P1 for Conditional Access, at a per-user-per-month cost. Build the cost-benefit case for the upgrade at a 50-person company, a 500-person company, and a 5,000-person company. At what scale does P1 stop being optional?
 
 ---

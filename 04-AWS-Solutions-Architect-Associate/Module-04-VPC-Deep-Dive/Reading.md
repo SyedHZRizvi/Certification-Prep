@@ -1,10 +1,10 @@
 # Module 4: VPC Deep Dive 🌐
 
-> **Why this module matters:** Networking is roughly **20% of SAA-C03 questions** when you combine pieces from Resilient + Secure + Performance. The exam loves scenarios like "private app needs S3 access without internet" or "connect 3 VPCs and an on-prem network." Get NAT, endpoints, peering, Transit Gateway and DX right and you'll fly through 12+ questions.
+> **Why this module matters:** Networking is roughly **20% of SAA-C03 questions** when you combine pieces from Resilient + Secure + Performance. The exam loves scenarios like "private app needs S3 (Simple Storage Service) access without internet" or "connect 3 VPCs and an on-prem network." Get NAT (Network Address Translation), endpoints, peering, Transit Gateway and DX right and you'll fly through 12+ questions.
 
 > **Prerequisites for this module.**
-> - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md) and [Module 2](../Module-02-IAM-Organizations/Reading.md), for region/AZ and cross-account/SCP context
-> - [Module 3](../Module-03-EC2-Deep-Dive/Reading.md), instances live inside VPCs; Security Groups attach to ENIs
+> - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md) and [Module 2](../Module-02-IAM (Identity and Access Management)-Organizations/Reading.md), for region/AZ and cross-account/SCP context
+> - [Module 3](../Module-03-EC2 (Elastic Compute Cloud)-Deep-Dive/Reading.md), instances live inside VPCs; Security Groups attach to ENIs
 > - IP networking fundamentals: CIDR notation, RFC 1918 private ranges, routing, NAT. If "/16 vs /24" sounds unfamiliar, do 30 minutes on Wikipedia's *Classless Inter-Domain Routing* article first
 > - OSI model layers 3 (network), 4 (transport), 7 (application), needed to distinguish ALB/NLB/GWLB intuitively
 
@@ -63,7 +63,7 @@ It's NOT a setting. It's the **route table**: if the subnet's route table has `0
 
 ## 🚪 NAT Gateway vs NAT Instance
 
-Private-subnet instances need a way to make *outbound* internet calls (yum updates, API calls) without being reachable from the internet. NAT is that mechanism.
+Private-subnet instances need a way to make *outbound* internet calls (yum updates, API (Application Programming Interface) calls) without being reachable from the internet. NAT is that mechanism.
 
 | Feature | NAT Gateway (AWS managed) | NAT Instance (EC2 you run) |
 |---------|---------------------------|----------------------------|
@@ -87,7 +87,7 @@ VPC endpoints let resources inside your VPC reach AWS services **without** traff
 | Endpoint type | Services | How it works | Cost |
 |---------------|----------|--------------|------|
 | **Gateway Endpoint** | S3, DynamoDB only | Route table entry to the service prefix list | FREE |
-| **Interface Endpoint (PrivateLink)** | Most other AWS services + SaaS partners | ENI in your subnet with a private IP | $/hour + $/GB |
+| **Interface Endpoint (PrivateLink)** | Most other AWS services + SaaS (Software as a Service) partners | ENI in your subnet with a private IP | $/hour + $/GB |
 
 ### Gateway endpoint (S3 / DynamoDB)
 
@@ -117,7 +117,7 @@ If you build a service on an NLB, you can expose it as a **PrivateLink service**
 | **VPC Peering** | Connect 2 VPCs (same or different accounts/regions) | NOT transitive. N×(N-1)/2 connections for N VPCs (mesh). |
 | **Transit Gateway (TGW)** | Hub-and-spoke for many VPCs + on-prem | Centralizes routing. Up to 5,000 VPC attachments. Cross-region peering. |
 | **VPC Endpoint (PrivateLink)** | Expose a single service from one VPC to another | Per-service, not full network connectivity. |
-| **Site-to-Site VPN** | IPSec tunnel from on-prem to AWS over internet | Up to ~1.25 Gbps per tunnel; encrypted; quick to set up. |
+| **Site-to-Site VPN (Virtual Private Network)** | IPSec tunnel from on-prem to AWS over internet | Up to ~1.25 Gbps per tunnel; encrypted; quick to set up. |
 | **Direct Connect (DX)** | Dedicated private fiber from on-prem to AWS | 1, 10, 100 Gbps; weeks to provision; no internet; lowest latency. |
 
 ### Peering vs TGW, when to switch?
@@ -147,7 +147,7 @@ If you build a service on an NLB, you can expose it as a **PrivateLink service**
 
 | | Security Group | NACL |
 |---|----------------|------|
-| Scope | Per-ENI (per instance/RDS/etc.) | Per-subnet |
+| Scope | Per-ENI (per instance/RDS (Relational Database Service)/etc.) | Per-subnet |
 | State | **Stateful** (return traffic auto-allowed) | **Stateless** (must allow both directions) |
 | Rules | **Allow only** | **Allow AND Deny** |
 | Order | All rules evaluated | Numbered, lowest number first |
@@ -295,7 +295,7 @@ When the SAA exam asks "which combination of AWS services would have detected an
 
 > **Where this leads.**
 > - **Inside this course:** Module 05 (S3) covers Gateway VPC Endpoints in depth. Module 08 (CloudFront, Global Accelerator) extends the networking story to the edge. Module 10 covers Direct Connect Gateway and Site-to-Site VPN for hybrid.
-> - **Cross-course:** `06-Azure-Administrator` Module 04 covers Azure VNets, same patterns, different names (peering = VNet peering, TGW ≈ Virtual WAN). `09-CompTIA-Security-Plus` Module 04 covers network segmentation theory.
+> - **Cross-course:** `06-Azure-Administrator` Module 04 covers Azure VNets, same patterns, different names (peering = VNet peering, TGW ≈ Virtual WAN (Wide Area Network)). `09-CompTIA-Security-Plus` Module 04 covers network segmentation theory.
 > - **Practice:** Practice Exam 1 has 5 networking questions; Practice Exam 2 has 7; Final Mock has 9. Networking is the most-tested module by raw question count.
 > - **Real world:** Build a 3-tier VPC by hand (no CloudFormation) in a personal AWS account, the muscle memory matters for the exam.
 

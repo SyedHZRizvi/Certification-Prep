@@ -1,6 +1,6 @@
 # Module 4: Conditional Access & Identity Protection 🛡️
 
-> **Why this module matters:** Conditional Access is the **engine** that turns identity into a security perimeter. It's where everything you built in Modules 1–3 license tiers, users, groups, MFA methods gets composed into actual security policy. Microsoft estimates that ~99% of identity attacks they see are stopped by a well-built CA policy stack. The same Microsoft data says **5% of attempted sign-ins to Entra each month are malicious**, which means CA is in line on every sign-in by every user, every day. The SC-300 exam dedicates ~25% of its weight here. Get this module right and the exam gets dramatically easier.
+> **Why this module matters:** Conditional Access is the **engine** that turns identity into a security perimeter. It's where everything you built in Modules 1–3 license tiers, users, groups, MFA (Multi-Factor Authentication) methods gets composed into actual security policy. Microsoft estimates that ~99% of identity attacks they see are stopped by a well-built CA policy stack. The same Microsoft data says **5% of attempted sign-ins to Entra each month are malicious**, which means CA is in line on every sign-in by every user, every day. The SC-300 exam dedicates ~25% of its weight here. Get this module right and the exam gets dramatically easier.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The license tiers + user/group taxonomy from [Modules 1–2](../Module-01-Entra-ID-Fundamentals/Reading.md).
@@ -62,7 +62,7 @@ Microsoft publishes 14+ **Conditional Access templates** in the portal (Entra po
 | **Block sign-in from outside trusted countries** | Geo-block based on named locations |
 | **Require compliant device for admins** | Layered with MFA |
 | **Require app protection policy on mobile** | Intune MAM-WE on iOS/Android |
-| **Block access for unknown / unsupported device platforms** | Linux + Android (without MDM) often falls here |
+| **Block access for unknown / unsupported device platforms** | Linux + Android (without MDM (Mobile Device Management)) often falls here |
 | **Block downloads on unmanaged devices** (web app) | Session control via Defender for Cloud Apps |
 | **Require Terms of Use** | First-time sign-in to specified apps |
 | **Require password change for high-risk users** | Identity Protection user-risk policy |
@@ -76,7 +76,7 @@ Microsoft publishes 14+ **Conditional Access templates** in the portal (Entra po
 
 ## 🚫 Block Legacy Authentication (The Single Highest-Leverage Policy)
 
-Microsoft published the canonical stat: ~97% of credential-stuffing attacks against M365 in 2018 targeted legacy auth protocols (POP, IMAP, SMTP AUTH, MAPI over HTTP, Exchange ActiveSync, older PowerShell) that **cannot enforce MFA**. Blocking legacy auth is the *prerequisite* to every other security control in this module.
+Microsoft published the canonical stat: ~97% of credential-stuffing attacks against M365 in 2018 targeted legacy auth protocols (POP, IMAP (Internet Message Access Protocol), SMTP (Simple Mail Transfer Protocol) AUTH, MAPI over HTTP (Hypertext Transfer Protocol), Exchange ActiveSync, older PowerShell) that **cannot enforce MFA**. Blocking legacy auth is the *prerequisite* to every other security control in this module.
 
 The policy:
 
@@ -174,7 +174,7 @@ SigninLogs
 | project TimeGenerated, UserPrincipalName, IPAddress, Location, ResultType
 ```
 
-🚨 **Exam trap:** "Federated break-glass account" is the wrong answer. If federation (e.g. AD FS) is down, a federated GA cannot sign in. Cloud-only only.
+🚨 **Exam trap:** "Federated break-glass account" is the wrong answer. If federation (e.g. AD (Active Directory) FS) is down, a federated GA cannot sign in. Cloud-only only.
 
 ---
 
@@ -356,7 +356,7 @@ You now know:
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
 2. ✏️ Take the [Quiz](./Quiz.md)
 3. 📋 Review the [Cheat-Sheet](./Cheat-Sheet.md)
-4. ➡️ Move to [Module 5: Application Registration & SSO](../Module-05-Apps-SSO/Reading.md)
+4. ➡️ Move to [Module 5: Application Registration & SSO (Single Sign-On)](../Module-05-Apps-SSO/Reading.md)
 
 ---
 
@@ -369,7 +369,7 @@ You now know:
 - 18 policies had stale exclusion groups pointing to deprovisioned users.
 - 4 policies had no Grant control at all (defaulting to "allow without controls").
 
-**Decision.** Capital One's IAM team (publicly discussed at Microsoft Ignite 2023 and the Gartner IAM Summit 2024) ran a multi-quarter consolidation:
+**Decision.** Capital One's IAM (Identity and Access Management) team (publicly discussed at Microsoft Ignite 2023 and the Gartner IAM Summit 2024) ran a multi-quarter consolidation:
 
 1. **Inventory + classify.** Used `Get-MgIdentityConditionalAccessPolicy` + Graph Explorer to export every policy to a spreadsheet, classified by purpose (MFA, geo, device, risk, app-specific).
 2. **Consolidation map.** For each purpose category, picked one canonical policy and deprecated duplicates after testing with What If + report-only.
@@ -380,7 +380,7 @@ You now know:
 
 - Active CA policy count dropped from 312 to **96** (69% reduction).
 - Average time to roll out a new policy: from "ad hoc, hours to days" to a 5-day controlled flow (request → peer review → report-only 5 day → enforce).
-- Number of credential-related incidents that escalated past tier-1 SOC: **down 41%** year-over-year (attributed partly to cleaner policies, partly to enforcing report-only policies that had been parked).
+- Number of credential-related incidents that escalated past tier-1 SOC (Security Operations Center): **down 41%** year-over-year (attributed partly to cleaner policies, partly to enforcing report-only policies that had been parked).
 - Zero accidental tenant lockouts during the consolidation period (vs 3 in the previous 18 months).
 
 **Lesson for the exam / for practitioners.** Conditional Access is not a "set once, forget" feature. It is a living policy estate that requires the same engineering rigor as software, peer review, deprecation, monitoring, owners. SC-300 scenarios about "the CA estate is messy, what do we do" almost always answer with: **inventory + consolidate + standardize + peer review + monitor**. Microsoft's own playbook (Microsoft Cybersecurity Reference Architectures, MCRA) prescribes this exact lifecycle.
@@ -388,12 +388,12 @@ You now know:
 **Discussion (Socratic).**
 - **Q1.** Capital One reduced 312 → 96 policies. Is "fewer = better" always right? Build the case for keeping 312 specialized policies; what does a 96-policy estate lose that 312 provided?
 - **Q2.** Capital One mandated peer review on every CA policy change. What's the right approver, Security team only, IT operations only, or both? What about emergency policies (e.g. "block sign-in from a country during an active incident")?
-- **Q3.** A regulated firm in Europe asks: "Capital One is US-only; how would GDPR change this model?" Specifically address (a) using country location in policy decisions, (b) sign-in log retention, (c) Identity Protection data residency.
+- **Q3.** A regulated firm in Europe asks: "Capital One is US-only; how would GDPR (General Data Protection Regulation) change this model?" Specifically address (a) using country location in policy decisions, (b) sign-in log retention, (c) Identity Protection data residency.
 
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 5 builds the app side of what these CA policies target; Module 6 layers PIM activation MFA (which is a CA-style flow); Module 8 wires sign-in logs to Sentinel.
+> - Inside this course: Module 5 builds the app side of what these CA policies target; Module 6 layers PIM (Product Information Management) activation MFA (which is a CA-style flow); Module 8 wires sign-in logs to Sentinel.
 > - Cross-course: [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) covers SOC integration with CA.
 > - Practice: Practice Exam 1 has 8–10 questions from this module, the highest single-module weight.
 

@@ -5,8 +5,8 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Modules 1–7
 > - Git basics
-> - Basic CI/CD concepts (you've seen a GitHub Actions or similar pipeline)
-> - The idea of an SLA / latency budget
+> - Basic CI/CD (Continuous Integration/Continuous Deployment) concepts (you've seen a GitHub Actions or similar pipeline)
+> - The idea of an SLA (Service Level Agreement) / latency budget
 >
 > You do NOT need DevOps experience. We define the operational vocabulary.
 
@@ -21,7 +21,7 @@ Forensic analysis found four root causes:
 1. **No prompt caching**, Their system prompt (3,800 tokens with rich examples) was sent fresh on every call. Cached: $3,800/day. Uncached: $38,000/day.
 2. **No semantic cache**, The most-asked questions ("review my README", "explain this function") were processed independently every time. ~40% of traffic was effectively duplicate.
 3. **No model tiering**, Every request used GPT-4o, including 10K/day requests for trivial tasks Haiku 4.5 / GPT-5 mini could handle at 1/20th the cost.
-4. **No cost dashboard**, The bill was visible only in OpenAI's billing console, weekly. The CFO found out by checking the credit card.
+4. **No cost dashboard**, The bill was visible only in OpenAI's billing console, weekly. The CFO (Chief Financial Officer) found out by checking the credit card.
 
 The fix took 8 days:
 
@@ -45,7 +45,7 @@ Prompts are software. They change. They have releases. They have bugs. They have
 |----------|------|
 | Store prompts in Git | Repo |
 | Include version in the prompt itself or its filename | `prompts/v17_customer_support.md` |
-| Reference version in API call | Log `prompt_version: "v17"` on every request |
+| Reference version in API (Application Programming Interface) call | Log `prompt_version: "v17"` on every request |
 | Tie eval results to versions | Module 6 regression harness keyed by version |
 | Roll back via Git revert | Standard workflow |
 
@@ -59,7 +59,7 @@ Prompts are software. They change. They have releases. They have bugs. They have
 | **LangSmith** | LangChain stack; prompts + traces + datasets |
 | **Braintrust** | Eval-first; prompts as data |
 | **Pezzo** | Open-source; CMS-style prompt management |
-| **Vercel AI SDK + Prompt Templates** | Lightweight, code-first |
+| **Vercel AI SDK (Software Development Kit) + Prompt Templates** | Lightweight, code-first |
 
 🎯 **Memorize:** *The single biggest jump in prompt engineering maturity is moving prompts from inline strings to a versioned, tagged, eval-tied artifact.*
 
@@ -84,7 +84,7 @@ When prompt caching wins:
 
 - Long system prompts with examples
 - Few-shot prompts repeated across users
-- Long-context RAG where the doc set is stable
+- Long-context RAG (Retrieval-Augmented Generation) where the doc set is stable
 - Long tool-descriptions array
 
 🎯 **Memorize:** *Prompt caching is the easiest 50-90% cost reduction available in 2026.* Use it.
@@ -155,7 +155,7 @@ You cannot improve what you cannot see. Production LLM apps need:
 | Signal | What to capture |
 |--------|-----------------|
 | **Request trace** | prompt_version, model, params, input, output, latency, tokens, cost |
-| **Error trace** | HTTP status, retries, fallback used, error message |
+| **Error trace** | HTTP (Hypertext Transfer Protocol) status, retries, fallback used, error message |
 | **Quality signal** | LLM-judge score, user thumbs-up/down, downstream conversion |
 | **Cost** | per-request and per-user roll-ups; alert thresholds |
 | **Latency** | P50 / P95 / P99; TTFT for streaming |
@@ -208,7 +208,7 @@ LiteLLM features that matter in production:
 |------|-------|
 | **OpenRouter** | Hosted multi-provider proxy; pay-per-token across providers |
 | **Portkey** | Gateway with caching, fallbacks, observability |
-| **AWS Bedrock** | First-party multi-provider via AWS |
+| **AWS (Amazon Web Services) Bedrock** | First-party multi-provider via AWS |
 | **Vercel AI SDK** | TypeScript / Node side; provider-agnostic |
 | **LangChain ChatModels** | Multi-provider but heavy framework lock-in |
 
@@ -235,7 +235,7 @@ The four levels of cost discipline:
 | `model` | Which models drive spend? |
 | `customer_id` | Top-spend customers (and abuse detection) |
 | `feature` | Which features are over budget? |
-| `cache_hit` | Cache ROI |
+| `cache_hit` | Cache ROI (Return on Investment) |
 | `input_tokens` / `output_tokens` | Input vs output skew |
 | `reasoning_tokens` | Reasoning-model spend |
 
@@ -260,7 +260,7 @@ if daily_spend > customer.budget:
 
 Service Level Objectives for LLM apps usually look like:
 
-| SLO | Typical target |
+| SLO (Service Level Objective) | Typical target |
 |-----|----------------|
 | Availability (uptime) | 99.5% (consumer) to 99.9% (enterprise) |
 | P95 latency | 2s (chat) / 5s (RAG) / 30s (reasoning) |
@@ -313,7 +313,7 @@ Use a flag service (LaunchDarkly, Statsig, Unleash, or built-in) to roll out pro
 
 ## 🌐 Edge / Realtime / Streaming Considerations
 
-For chat UX, **streaming** is non-negotiable. Users perceive TTFT (time-to-first-token) far more than total latency.
+For chat UX (User Experience), **streaming** is non-negotiable. Users perceive TTFT (time-to-first-token) far more than total latency.
 
 | Concern | Pattern |
 |---------|---------|
@@ -340,7 +340,7 @@ For chat UX, **streaming** is non-negotiable. Users perceive TTFT (time-to-first
 
 **Day 5, LiteLLM abstraction:** Replace all direct vendor SDK calls with LiteLLM. Configure fallbacks: primary Anthropic → secondary OpenAI → tertiary Gemini.
 
-**Day 6, Observability:** Stand up Langfuse (self-hosted on a tiny VM). Pipe every request through it. Build a cost-per-customer dashboard.
+**Day 6, Observability:** Stand up Langfuse (self-hosted on a tiny VM (Virtual Machine)). Pipe every request through it. Build a cost-per-customer dashboard.
 
 **Day 7, Spend caps:** Per-customer daily budgets. Slack alert at 80%, block at 100%. Per-feature budgets for engineering oversight.
 
@@ -439,7 +439,7 @@ For chat UX, **streaming** is non-negotiable. Users perceive TTFT (time-to-first
 
 **Discussion (Socratic).**
 - **Q1:** A team has a 6K-token system prompt and an average of 8 turns per conversation. Estimate the cost savings from enabling Anthropic prompt caching, given $3/MTok input and a 10% cached read rate.
-- **Q2:** Semantic caching shares some risks with stale data (think CDN). Argue for / against using it for: (a) FAQ-class queries, (b) personalized recommendations, (c) financial advice.
+- **Q2:** Semantic caching shares some risks with stale data (think CDN (Content Delivery Network)). Argue for / against using it for: (a) FAQ-class queries, (b) personalized recommendations, (c) financial advice.
 - **Q3:** OpenAI's implicit auto-caching is "free" UX. Argue for / against the explicit-tagging approach Anthropic took. Which design surfaces better engineering discipline?
 
 ---

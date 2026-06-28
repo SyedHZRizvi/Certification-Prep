@@ -43,7 +43,7 @@ Re: Application for Senior Software Engineer — Cloud Infrastructure (Ref: TVG-
 
 I am writing to express my strong interest in the above-mentioned position, 
 advertised on your company website on 10 June 2026. With seven years of 
-experience in cloud infrastructure, specialising in AWS and Azure deployments 
+experience in cloud infrastructure, specialising in AWS (Amazon Web Services) and Azure deployments 
 across enterprise environments in Pakistan and the UAE, I am confident that 
 my technical expertise and cross-cultural professional experience align 
 closely with the requirements of this role.
@@ -100,7 +100,7 @@ We propose the implementation of InvenTrack Pro — a cloud-based AI
 inventory platform with the following key features:
   • Real-time stock tracking across all warehouse locations
   • Predictive reorder algorithms based on historical demand
-  • Integration with our existing ERP (SAP Business One)
+  • Integration with our existing ERP (Enterprise Resource Planning) (SAP Business One)
   • Mobile access for warehouse staff
 
 INVESTMENT REQUIRED
@@ -113,7 +113,7 @@ EXPECTED OUTCOMES
 
   • 80% reduction in inventory discrepancies by Month 12
   • PKR 6.5 million annual savings by Year 2
-  • Full ROI achieved within 14 months
+  • Full ROI (Return on Investment) achieved within 14 months
 
 RECOMMENDATION
 
@@ -218,7 +218,7 @@ When chairing a meeting, you control the flow, ensure participation, and keep on
 | Term | Meaning |
 |---|---|
 | Agile | Iterative project management methodology |
-| API | Interface allowing software to communicate |
+| API (Application Programming Interface) | Interface allowing software to communicate |
 | Bandwidth | Data transfer capacity |
 | Cloud migration | Moving systems to cloud infrastructure |
 | Deployment | Releasing software to a live environment |
@@ -233,12 +233,12 @@ When chairing a meeting, you control the flow, ensure participation, and keep on
 | Term | Meaning |
 |---|---|
 | Amortisation | Spreading cost over time |
-| EBITDA | Earnings Before Interest, Tax, Depreciation, Amortisation |
+| EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) | Earnings Before Interest, Tax, Depreciation, Amortisation |
 | Equity | Ownership value |
 | Fiscal year | Company's financial year |
 | Hedging | Reducing financial risk |
 | Liquidity | How easily assets can be converted to cash |
-| P&L | Profit and Loss statement |
+| P&L (Profit and Loss) | Profit and Loss statement |
 | Portfolio | Collection of investments |
 | ROI | Return on Investment |
 | Working capital | Short-term operational funds |

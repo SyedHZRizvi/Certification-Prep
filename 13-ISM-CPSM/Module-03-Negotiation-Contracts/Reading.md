@@ -193,7 +193,7 @@ The contract type determines **who bears cost risk**, buyer or seller.
 | **Warranties** | Express + implied |
 | **Indemnification** | Who pays if a third party sues |
 | **Limitation of Liability** | Caps on damages |
-| **Confidentiality / NDA** | Protect IP and trade secrets |
+| **Confidentiality / NDA (Non-Disclosure Agreement)** | Protect IP and trade secrets |
 | **Intellectual Property** | Who owns work product |
 | **Termination** | For convenience and for cause |
 | **Force Majeure** | Excused performance during unforeseen events |
@@ -304,7 +304,7 @@ When a CPSM scenario describes a *true* sole-source negotiation, the right answe
 
 **Discussion (Socratic).**
 - Q1: Intel paid a reported €350M+ for the *first* High-NA EUV machine, well above the unit price others paid later. Defend the decision from the buyer's TCO perspective. Then attack it. Which would you defend at an Intel board review?
-- Q2: ASML's CEO Peter Wennink (until April 2024, succeeded by Christophe Fouquet) repeatedly emphasized "we partner with our customers." Cynics call this PR; supporters say ASML can't ship without buyer R&D. What evidence would convince you which is right?
+- Q2: ASML's CEO (Chief Executive Officer) Peter Wennink (until April 2024, succeeded by Christophe Fouquet) repeatedly emphasized "we partner with our customers." Cynics call this PR; supporters say ASML can't ship without buyer R&D. What evidence would convince you which is right?
 - Q3: If you were leading supply at a fourth-tier chip fab (e.g., a Chinese SMIC after sanctions, or an Israeli Tower Semiconductor), how would you re-architect your strategy knowing you cannot buy EUV? What's the trade-off you'd implicitly accept?
 
 ---

@@ -111,7 +111,7 @@ The Guardrails Hub has hundreds of pre-built validators. `on_fail` actions: `exc
 
 For Anthropic Claude, the recommended pattern is a *strong system prompt* with explicit refusal rules, augmented by:
 
-- Content moderation API call before sending to Claude
+- Content moderation API (Application Programming Interface) call before sending to Claude
 - Output content review after generation
 - HITL gating for sensitive actions
 
@@ -235,7 +235,7 @@ Defenses:
 
 - Input classifier (Llama Guard, PromptGuard) catches known patterns
 - Multi-turn moderation; safety re-check at each turn
-- Refusal training of the model itself (RLHF + Constitutional AI)
+- Refusal training of the model itself (RLHF (Reinforcement Learning from Human Feedback) + Constitutional AI)
 - Limit context size and turn count
 - Detect "unusual" Unicode patterns / base64 / suspicious encoding
 
@@ -291,7 +291,7 @@ This is the cheapest, most effective guardrail for many production scenarios. If
 | No audit logging | Can't investigate incidents |
 | No HITL on destructive actions | "agent emailed all customers" |
 | Hardcoded prompt strings (no version control) | Can't roll back a regression |
-| Block-everything mode | Bad UX; users find workarounds |
+| Block-everything mode | Bad UX (User Experience); users find workarounds |
 
 ---
 

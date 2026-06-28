@@ -97,7 +97,7 @@ Pixar developed an internal framework for eye movement that character animators 
 | Eyes down | Shame, submission, inner focus | Guilt, grief, contemplation |
 | Eyes dart (rapid side-to-side) | Fear, anxiety, threat assessment | High-stakes situations |
 
-> ⚠️ **Important:** These patterns are based on NLP (Neurolinguistic Programming) models that are popular in animation education but are NOT scientifically validated for all people. Use them as a storytelling convention, not as factual psychology.
+> ⚠️ **Important:** These patterns are based on NLP (Natural Language Processing) (Neurolinguistic Programming) models that are popular in animation education but are NOT scientifically validated for all people. Use them as a storytelling convention, not as factual psychology.
 
 ### Saccades and Fixations
 

@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Cloud Fundamentals](../Module-01-Cloud-Fundamentals/Reading.md), Regions, AZs, Multi-AZ vs cross-Region
-> - [Core Compute](../Module-02-Core-Compute/Reading.md), what an EC2 instance is, what an AZ-scoped resource means
+> - [Core Compute](../Module-02-Core-Compute/Reading.md), what an EC2 (Elastic Compute Cloud) instance is, what an AZ-scoped resource means
 > - Light filesystem mental model: the difference between "a hard drive" and "a network share"
 >
 > If you've never thought about block vs file vs object storage as distinct paradigms, that's exactly what this module teaches.
@@ -44,9 +44,9 @@ Once you get this taxonomy, every storage question on the exam takes 5 seconds t
 
 ## ☁️ Amazon S3, The Star Service
 
-S3 was AWS's first public service, launched March 14, 2006 making it older than EC2. The S3 design object storage with key-value access over HTTP, was described in a foundational paper by AWS senior leadership (DeCandia et al., *"Dynamo: Amazon's Highly Available Key-value Store,"* SOSP 2007) and remains a reference design in distributed-systems courses (e.g., MIT 6.824, *Distributed Systems*, taught by Robert Morris and Frans Kaashoek). The CAP-theorem trade-offs S3 makes (eventual consistency historically, strong read-after-write since December 2020) are tested implicitly on the SAA-C03.
+S3 was AWS's first public service, launched March 14, 2006 making it older than EC2. The S3 design object storage with key-value access over HTTP (Hypertext Transfer Protocol), was described in a foundational paper by AWS senior leadership (DeCandia et al., *"Dynamo: Amazon's Highly Available Key-value Store,"* SOSP 2007) and remains a reference design in distributed-systems courses (e.g., MIT 6.824, *Distributed Systems*, taught by Robert Morris and Frans Kaashoek). The CAP-theorem trade-offs S3 makes (eventual consistency historically, strong read-after-write since December 2020) are tested implicitly on the SAA-C03.
 
-**S3 = Simple Storage Service.** Unlimited object storage, accessed via HTTP(S) API. Each object lives in a **bucket** (globally unique name) and has a **key** (the path).
+**S3 = Simple Storage Service.** Unlimited object storage, accessed via HTTP(S) API (Application Programming Interface). Each object lives in a **bucket** (globally unique name) and has a **key** (the path).
 
 ### Headline facts (MEMORIZE)
 
@@ -145,7 +145,7 @@ For when EFS isn't the right protocol or feature set:
 
 | FSx variant | Best for | Protocol |
 |-------------|----------|----------|
-| **FSx for Windows File Server** | Windows shares, AD-integrated | SMB |
+| **FSx for Windows File Server** | Windows shares, AD (Active Directory)-integrated | SMB |
 | **FSx for Lustre** | High-performance computing (HPC), ML training | Custom (POSIX) |
 | **FSx for NetApp ONTAP** | Lift & shift NetApp workloads | NFS, SMB, iSCSI |
 | **FSx for OpenZFS** | ZFS workloads on AWS | NFS |
@@ -224,7 +224,7 @@ You order via the AWS console → AWS ships the device → you copy data → shi
 | "EBS is shared like EFS" | EBS attaches to one EC2; EFS is the shared one |
 | "Glacier is a separate service" | Glacier is now a *storage class within S3* (since 2021 rebranding) |
 | "More expensive = more durable" | Not necessarily, One Zone-IA is cheaper than Standard-IA but less durable |
-| "S3 has folders" | Just key prefixes that look like folders in the UI |
+| "S3 has folders" | Just key prefixes that look like folders in the UI (User Interface) |
 | "Snowmobile is bigger than Snowball" | Yes, but Snowmobile (the truck) is being phased out, confirm before exam |
 
 ---
@@ -257,11 +257,11 @@ You order via the AWS console → AWS ships the device → you copy data → shi
 
 ## 🏛️ Case Study, Dropbox Leaves AWS S3 ("Magic Pocket," 2015–2017)
 
-**Situation.** Dropbox stored "over 90% of [its] data" on Amazon S3 from launch (2007) through ~2015. By 2015, the company had ~500 million users and was storing **exabytes** of customer data on S3. CFO Ajay Vashee told investors S3 was Dropbox's single largest line item, hundreds of millions of dollars per year. The team realized that at their scale and workload pattern (almost-immutable user files, predictable access, ~constant capacity growth) they were paying S3 margin on something they could potentially build for less.
+**Situation.** Dropbox stored "over 90% of [its] data" on Amazon S3 from launch (2007) through ~2015. By 2015, the company had ~500 million users and was storing **exabytes** of customer data on S3. CFO (Chief Financial Officer) Ajay Vashee told investors S3 was Dropbox's single largest line item, hundreds of millions of dollars per year. The team realized that at their scale and workload pattern (almost-immutable user files, predictable access, ~constant capacity growth) they were paying S3 margin on something they could potentially build for less.
 
-**Decision.** In 2015, Dropbox started a project called **Magic Pocket** a custom object-storage system built from open-source software (modified Linux + SMR HDDs) running in three new owned data centers in California, Texas, and Virginia. They invested two years and a few hundred engineers. Crucially, they did *not* move all workloads off AWS they kept compute (EC2), edge / CDN, and some metadata workloads on AWS. The repatriation was *storage-only*, surgical.
+**Decision.** In 2015, Dropbox started a project called **Magic Pocket** a custom object-storage system built from open-source software (modified Linux + SMR HDDs) running in three new owned data centers in California, Texas, and Virginia. They invested two years and a few hundred engineers. Crucially, they did *not* move all workloads off AWS they kept compute (EC2), edge / CDN (Content Delivery Network), and some metadata workloads on AWS. The repatriation was *storage-only*, surgical.
 
-**Outcome.** By March 2016, Dropbox completed the migration: ~90% of user data shifted from S3 to Magic Pocket. They publicly disclosed in their 2017 S-1 (IPO filing) that the move generated **$74.6M in gross-margin savings over 2 years (2016–2017 combined)**. Dropbox went public in March 2018 with a $9B valuation. Magic Pocket has since been described in detail in the Dropbox tech blog (Akhil Gupta, *"Inside the Magic Pocket,"* 2016) and is taught in distributed-systems courses as a case study in when cloud isn't the cheapest answer.
+**Outcome.** By March 2016, Dropbox completed the migration: ~90% of user data shifted from S3 to Magic Pocket. They publicly disclosed in their 2017 S-1 (IPO (Initial Public Offering) filing) that the move generated **$74.6M in gross-margin savings over 2 years (2016–2017 combined)**. Dropbox went public in March 2018 with a $9B valuation. Magic Pocket has since been described in detail in the Dropbox tech blog (Akhil Gupta, *"Inside the Magic Pocket,"* 2016) and is taught in distributed-systems courses as a case study in when cloud isn't the cheapest answer.
 
 **Lesson for the exam / for practitioners.** Dropbox is the canonical counter-example to "always go to S3." For the *exam*, S3 is almost always the right answer CLF-C02 tests cloud-native patterns. But for *practitioners*, the lesson is sharper: at exabyte scale with predictable access patterns and the engineering capacity to build storage infrastructure, S3's gross margin can be reclaimed by repatriation. This is also a textbook **Cost Optimization** pillar lesson (Well-Architected, 2015; revisited Module 8) measure everything and re-evaluate periodically; the right answer at 10 TB is not the right answer at 10 EB.
 
@@ -303,7 +303,7 @@ You now know:
 ## 💬 Discussion, Socratic prompts
 
 1. **The "Intelligent-Tiering is always the answer" trap.** Some study guides say "if you don't know the access pattern, pick Intelligent-Tiering." When is that the *wrong* default? (Hint: small objects, very low total storage.) What does the monitoring fee buy and when does it stop being worth it?
-2. **S3 One Zone-IA economic question.** One Zone-IA is ~20% cheaper than Standard-IA. Imagine you're the architect for a CDN origin storing replicable image thumbnails. What's the *expected* dollar savings on a 100 TB workload, and what's the operational risk you accept? Defend the choice in front of a paranoid CTO.
+2. **S3 One Zone-IA economic question.** One Zone-IA is ~20% cheaper than Standard-IA. Imagine you're the architect for a CDN origin storing replicable image thumbnails. What's the *expected* dollar savings on a 100 TB workload, and what's the operational risk you accept? Defend the choice in front of a paranoid CTO (Chief Technology Officer).
 3. **The Snowmobile question (2024 retirement).** AWS announced in early 2024 that Snowmobile (the 100 PB truck) is being retired in favor of multiple Snowball Edge shipments. What does that tell you about how customer demand for petabyte-physical-transfer has shifted? Is the underlying problem (slow internet pipes from on-prem) actually solved by something else?
 4. **EFS vs FSx for ML.** A research lab will store ~30 TB of training data accessed by 100 GPU instances in parallel. EFS Standard is comfortable; FSx for Lustre is faster but pricier. How do you decide? What's the question you ask the data scientists first?
 5. **The Magic Pocket question for startups.** A Series-B startup is approaching 5 PB of S3 storage. CTO is asking "should we be Dropbox?" Walk through the case for / against. What's the *one* signal that would tip you to "yes, build it"?

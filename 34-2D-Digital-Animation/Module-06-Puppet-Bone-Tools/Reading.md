@@ -30,7 +30,7 @@ Both versions share the same fundamental concepts. This module uses DUIK Bassel 
 |---------|-------------------------------|
 | Auto-Rig | Recognizes bone chains automatically; faster setup |
 | Bone System | Improved visual feedback; bones have head/tail indicators |
-| UI | Reorganized panels; fewer clicks for common operations |
+| UI (User Interface) | Reorganized panels; fewer clicks for common operations |
 | Walk Cycle | Built-in procedural walk cycle generator |
 | Performance | Faster expression evaluation; smoother real-time preview |
 

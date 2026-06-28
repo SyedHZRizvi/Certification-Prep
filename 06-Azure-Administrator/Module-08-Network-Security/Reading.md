@@ -4,9 +4,9 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 7](../Module-07-Virtual-Networks/Reading.md): VNets, subnets, reserved subnet names (`AzureFirewallSubnet`, `AzureBastionSubnet`), and the hub-spoke topology.
-> - [Module 2](../Module-02-Entra-ID-RBAC/Reading.md): Conditional Access (this module's controls operate at the *network* layer; CA operates at the *identity* layer, they're complementary).
+> - [Module 2](../Module-02-Entra-ID-RBAC (Role-Based Access Control)/Reading.md): Conditional Access (this module's controls operate at the *network* layer; CA operates at the *identity* layer, they're complementary).
 > - OSI model layers 3, 4, and 7, you need to know what "L4 stateful" vs. "L7 inspection" actually means.
-> - The OWASP Top 10 (2021 revision; refresh expected late 2025), App Gateway and Front Door WAF rules are based on it. Covered in [`09-CompTIA-Security-Plus` Module 5](../../09-CompTIA-Security-Plus/Module-05-Vulnerabilities-Attacks/Reading.md).
+> - The OWASP Top 10 (2021 revision; refresh expected late 2025), App Gateway and Front Door WAF (Web Application Firewall) rules are based on it. Covered in [`09-CompTIA-Security-Plus` Module 5](../../09-CompTIA-Security-Plus/Module-05-Vulnerabilities-Attacks/Reading.md).
 >
 > This module is dense. If NSG rule precedence has never clicked, do Microsoft Learn's *Network Security* sandbox before reading.
 
@@ -20,7 +20,7 @@ Picture a shopping mall on Black Friday. The crowd is enormous. Security is laye
 2. **At a private back door for delivery trucks**: a manifest check by trusted vendor (an **Application Security Group**, same role, friendlier model).
 3. **At the main mall doors**: a security team scans bags for weapons and inspects suspicious packages with a deeper sniff (an **Azure Firewall**).
 4. **Outside a flagship boutique that sells $50K watches**: extra biometric verification, with a web-app-aware filter that checks for fake-receipt scams (**Application Gateway with WAF**).
-5. **For the global website that drives all online customers in**: a worldwide CDN-style routing layer that picks the fastest mall to send them to and dodges DDoS waves (**Azure Front Door**).
+5. **For the global website that drives all online customers in**: a worldwide CDN (Content Delivery Network)-style routing layer that picks the fastest mall to send them to and dodges DDoS (Distributed Denial of Service) waves (**Azure Front Door**).
 
 Different layers solve different problems. Pick one and call it secure → fail. Stack them in the right order → real defense in depth.
 
@@ -66,7 +66,7 @@ When a NIC's subnet has an NSG **AND** the NIC itself has an NSG, both apply:
 
 🔥 **A deny in EITHER NSG drops the packet.** The "first match wins" still applies *within* each NSG.
 
-### Create an NSG + rule via CLI
+### Create an NSG + rule via CLI (Command Line Interface)
 
 ```bash
 az network nsg create \
@@ -114,7 +114,7 @@ A logical tag you attach to NICs. Then your NSG rule says "allow from ASG `web-t
 az network asg create -g rg-net -n asg-web -l eastus
 az network asg create -g rg-net -n asg-app -l eastus
 
-# Tag VM NICs with ASGs
+# Tag VM (Virtual Machine) NICs with ASGs
 az network nic update --resource-group rg-app --name vm-web01-nic \
     --remove ipConfigurations[0].applicationSecurityGroups
 # (Or attach via the portal NIC blade; CLI is verbose for this.)
@@ -140,11 +140,11 @@ az network nsg rule create \
 
 A **stateful, fully managed, L3–L7** firewall-as-a-service. Lives in `AzureFirewallSubnet`. Three SKUs:
 
-| SKU | Use case | Features |
+| SKU (Stock Keeping Unit) | Use case | Features |
 |-----|----------|----------|
 | **Basic** | SMB / dev | L3/L4 filtering, ~250 Mbps; lightweight |
 | **Standard** | Most prod | + Threat intelligence, FQDN tags, web categories, DNAT, ~30 Gbps |
-| **Premium** | Regulated | + TLS inspection, IDPS, URL filtering, Web categories with TLS |
+| **Premium** | Regulated | + TLS (Transport Layer Security) inspection, IDPS, URL filtering, Web categories with TLS |
 
 ### Rule types (stack in order)
 
@@ -179,13 +179,13 @@ az network firewall ip-config create \
 
 ## 🚪 Load Balancer (L4)
 
-A **layer-4** distributor for TCP/UDP traffic. Two SKUs:
+A **layer-4** distributor for TCP (Transmission Control Protocol)/UDP (User Datagram Protocol) traffic. Two SKUs:
 
 | | Basic | Standard |
 |---|-------|----------|
 | Backend pool | Single AZ | Up to **1000** instances |
 | AZ support | ❌ | ✅ (zonal or zone-redundant) |
-| SLA | No SLA | 99.99% (with min 2 instances) |
+| SLA (Service Level Agreement) | No SLA | 99.99% (with min 2 instances) |
 | Outbound rules | No | Yes |
 | Required for VMSS Flex | ❌ | ✅ |
 | Security model | Open by default | **Secure by default, needs explicit NSG rule** |
@@ -203,9 +203,9 @@ A **layer-4** distributor for TCP/UDP traffic. Two SKUs:
 
 - **Frontend IP**, the LB's listening IP
 - **Backend pool**, VMs / VMSS instances
-- **Health probe**, TCP / HTTP / HTTPS check
+- **Health probe**, TCP / HTTP (Hypertext Transfer Protocol) / HTTPS (HTTP Secure) check
 - **Load balancing rule**, frontend port → backend port
-- **Inbound NAT rule**, single-VM port forward (e.g., specific RDP per VM)
+- **Inbound NAT (Network Address Translation) rule**, single-VM port forward (e.g., specific RDP per VM)
 - **Outbound rule**, define SNAT behavior for backend pool's egress
 
 ```bash
@@ -224,7 +224,7 @@ az network lb create \
 
 ## 🚪 Application Gateway (L7)
 
-A **layer-7** (HTTP/HTTPS) load balancer with WAF, URL-based routing, SSL termination, cookie affinity, autoscale.
+A **layer-7** (HTTP/HTTPS) load balancer with WAF, URL-based routing, SSL (Secure Sockets Layer) termination, cookie affinity, autoscale.
 
 | Tier | What it adds |
 |------|--------------|
@@ -289,7 +289,7 @@ az network application-gateway create \
 | Service | Layer | Routing |
 |---------|-------|---------|
 | **Front Door** | L7 (HTTP/HTTPS) | Edge routing, caching, WAF |
-| **Traffic Manager** | DNS-only | Client uses returned IP, no proxy |
+| **Traffic Manager** | DNS (Domain Name System)-only | Client uses returned IP, no proxy |
 | **Cross-region Load Balancer** | L4 global | Routes TCP/UDP globally |
 
 ---
@@ -404,7 +404,7 @@ You now know:
 
 ## 📊 Case Study, The MOVEit Transfer Breach (2023) and What Azure Network Security Would Have Stopped
 
-**Situation.** MOVEit Transfer is a managed file-transfer (MFT) product made by Progress Software, deployed by thousands of enterprises for B2B file exchange (healthcare records, payroll, government data). On May 27, 2023, a previously-unknown SQL injection vulnerability (**CVE-2023-34362**) was actively exploited by the **Cl0p ransomware group**. By the time Progress shipped a patch on May 31, hundreds of organizations had been compromised. Final tally (per *Emsisoft, MOVEit Hack Victim Tracker*, December 2023): **~2,773 confirmed organizations breached**, including the U.S. Department of Energy, Shell, BBC, British Airways, the State of Maine, the Government of Nova Scotia, IBM, and PwC. **~95 million individuals' data** was exfiltrated. Direct losses, settlements, and remediation costs are estimated north of **$15 billion** industry-wide (*IT Governance Limited*, breach impact analysis, 2024).
+**Situation.** MOVEit Transfer is a managed file-transfer (MFT) product made by Progress Software, deployed by thousands of enterprises for B2B (Business-to-Business) file exchange (healthcare records, payroll, government data). On May 27, 2023, a previously-unknown SQL injection vulnerability (**CVE-2023-34362**) was actively exploited by the **Cl0p ransomware group**. By the time Progress shipped a patch on May 31, hundreds of organizations had been compromised. Final tally (per *Emsisoft, MOVEit Hack Victim Tracker*, December 2023): **~2,773 confirmed organizations breached**, including the U.S. Department of Energy, Shell, BBC, British Airways, the State of Maine, the Government of Nova Scotia, IBM, and PwC. **~95 million individuals' data** was exfiltrated. Direct losses, settlements, and remediation costs are estimated north of **$15 billion** industry-wide (*IT Governance Limited*, breach impact analysis, 2024).
 
 **Decision.** The MOVEit Transfer software itself was the vulnerability, but the *blast radius* was determined by how victim organizations had networked it. Two architecture patterns separated organizations that lost millions of records from those that did not:
 
@@ -418,7 +418,7 @@ If MOVEit had been deployed on Azure with this module's recommended controls, th
 - **Azure Firewall Premium with IDPS** would have alerted on the post-exploit C2 traffic (Cl0p's beacons hit known-bad IPs catalogued in Microsoft Threat Intelligence). IDPS rules block-on-known-malicious automatically.
 - **NSG egress rule**: outbound from MOVEit subnet allowed only to specific FQDNs (your partner upload endpoints + Microsoft Update). Exfiltration to attacker-controlled servers blocked at the subnet edge.
 
-**Outcome.** As of 2024, multiple MOVEit victims (the BBC, Shell, BMO, Schneider Electric) publicly disclosed they were migrating to either Microsoft-managed Secure File Exchange or to architectures where MFT runs behind Azure Front Door + Private Link + WAF. The CISO of one Fortune 500 victim told *Wall Street Journal* (2023-09-15): "Our root cause wasn't that we ran MOVEit. It was that we ran MOVEit with a public IP."
+**Outcome.** As of 2024, multiple MOVEit victims (the BBC, Shell, BMO, Schneider Electric) publicly disclosed they were migrating to either Microsoft-managed Secure File Exchange or to architectures where MFT runs behind Azure Front Door + Private Link + WAF. The CISO (Chief Information Security Officer) of one Fortune 500 victim told *Wall Street Journal* (2023-09-15): "Our root cause wasn't that we ran MOVEit. It was that we ran MOVEit with a public IP."
 
 **Lesson for the exam / for practitioners.** AZ-104 won't name MOVEit. It will name the *pattern*. Every "publish a third-party app to the internet" question is testing whether you reflexively answer **Front Door Premium with WAF + Private Link origin + Azure Firewall egress + NSG defense-in-depth**. The "Big Comparison" table in this module is essentially the multiple-choice form of the MOVEit lesson:
 
@@ -439,8 +439,8 @@ The exam-favorite trap is reaching for *one* of these when the right answer is *
 
 > **Where this leads.**
 > - Inside this course: Module 10 wires NSG Flow Logs, WAF logs, and Firewall logs into Azure Monitor, the *detection* half of the prevention-detect-respond loop this module covered.
-> - Cross-course: [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Modules 4, 5 cover the threat-actor side (Cl0p, ransomware-as-a-service models, MITRE ATT&CK techniques); [`04-AWS-Solutions-Architect-Associate` Module 8](../../04-AWS-Solutions-Architect-Associate/Module-08-Caching-CDN-Edge/Reading.md) covers the AWS analogues (Security Groups, AWS WAF, Shield, GuardDuty).
-> - Practice: PE-2 has 12 questions from this module, it's the heaviest single-module test; Final Mock combines with VNet, identity, monitoring.
+> - Cross-course: [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Modules 4, 5 cover the threat-actor side (Cl0p, ransomware-as-a-service models, MITRE ATT&CK techniques); [`04-AWS (Amazon Web Services)-Solutions-Architect-Associate` Module 8](../../04-AWS-Solutions-Architect-Associate/Module-08-Caching-CDN-Edge/Reading.md) covers the AWS analogues (Security Groups, AWS WAF, Shield, GuardDuty).
+> - Practice: PE (Private Equity)-2 has 12 questions from this module, it's the heaviest single-module test; Final Mock combines with VNet, identity, monitoring.
 
 ---
 
@@ -450,7 +450,7 @@ The exam-favorite trap is reaching for *one* of these when the right answer is *
 2. **Service tags vs. hard IPs.** Service tags (`Storage.EastUS`, `AzureFrontDoor.Backend`) are symbolic and auto-update. Hard-coded CIDR allow-lists are explicit. When is the *explicit-IP* approach actually better? (Hint: think about regulatory audit reports that require "the IP allow-list as of date X.")
 3. **Azure Firewall Standard vs. Premium.** Standard is roughly half the price; Premium adds TLS inspection, IDPS, URL filtering. For an internal-only workload (no external attack surface), is Premium overkill? Construct the strongest case for *Standard is enough* and the strongest case for *Premium is mandatory*. What workload type tips the answer?
 4. **WAF detection-mode vs. prevention-mode.** Teams routinely deploy WAF in detection-only "to avoid breaking things." The MOVEit lesson is that detection-only is not the same as protection. Defend a 30-day move from detection to prevention as a *standard procedure*. What's the right monitoring discipline to make it safe?
-5. **Bastion vs. JIT VM access.** Both let you administer VMs without a public IP. When is Bastion (always-on, RDP/SSH-in-the-browser) the right answer, and when is JIT VM access (open NSG rule for a fixed window when requested) better? At what fleet size does Bastion's per-hour cost stop being worth it?
+5. **Bastion vs. JIT (Just-In-Time) VM access.** Both let you administer VMs without a public IP. When is Bastion (always-on, RDP/SSH (Secure Shell)-in-the-browser) the right answer, and when is JIT VM access (open NSG rule for a fixed window when requested) better? At what fleet size does Bastion's per-hour cost stop being worth it?
 
 ---
 

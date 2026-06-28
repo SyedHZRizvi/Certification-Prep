@@ -7,7 +7,7 @@
 > - General programming intuition: hashes, lists, timestamps (no code yet)
 > - Comfort with the idea that "trust" can have a technical definition, not only a social one
 >
-> No prior cryptography or distributed-systems coursework is required, this module is the historical and motivational foundation the rest of the course builds on. If you've completed 09-CompTIA-Security-Plus Module-02 (Cryptography & PKI) you'll glide through Module 2 here; if not, that module makes a tight warm-up.
+> No prior cryptography or distributed-systems coursework is required, this module is the historical and motivational foundation the rest of the course builds on. If you've completed 09-CompTIA-Security-Plus Module-02 (Cryptography & PKI (Public Key Infrastructure)) you'll glide through Module 2 here; if not, that module makes a tight warm-up.
 
 ---
 
@@ -253,7 +253,7 @@ If the white paper is the *manual*, the value proposition is the *pitch*. CBP ro
 
 | # | Property | One-line definition |
 |---|----------|----------------------|
-| 1 | **Permissionless** | Anyone can transact, run a node, or mine, no whitelist or KYC at the protocol layer |
+| 1 | **Permissionless** | Anyone can transact, run a node, or mine, no whitelist or KYC (Know Your Customer) at the protocol layer |
 | 2 | **Censorship-resistant** | No party can block specific transactions; miners can decline to include them but other miners will eventually do so |
 | 3 | **Trust-minimized** | Receivers do not need to trust senders; senders do not need to trust intermediaries |
 | 4 | **Pseudonymous** | Addresses are public keys, not legal identities, but on-chain history is fully public |

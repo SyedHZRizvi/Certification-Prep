@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md), covered earlier in this course
-> - Marketing analytics & GA4 basics (events, sessions, source/medium), covered in [17-AI-Marketing-Analytics-Automation Module 1](../../17-AI-Marketing-Entrepreneur/README.md) and Module 3
+> - Marketing analytics & GA4 (Google Analytics 4) basics (events, sessions, source/medium), covered in [17-AI-Marketing-Analytics-Automation Module 1](../../17-AI-Marketing-Entrepreneur/README.md) and Module 3
 > - Spreadsheet formulas (QUERY, SUMPRODUCT, SUMIF), covered in [17-AI-Marketing-Analytics-Automation Module 2](../../17-AI-Marketing-Entrepreneur/README.md)
 > - Optional but recommended: Python / pandas basics if you're choosing the Colab path
 > If any of these are shaky, pause and review, Markov chain math is hard enough without also fighting GA4 exports or VLOOKUP.
@@ -13,7 +13,7 @@
 
 ## 🎬 A Story: The Marketer Who Won The Budget War
 
-Picture a Series B SaaS startup mid-2026. Marketing team is being asked to defend their channel mix to a new CFO. Paid social budget = $40k/mo, content/SEO = $25k/mo, partnerships = $15k/mo.
+Picture a Series B SaaS (Software as a Service) startup mid-2026. Marketing team is being asked to defend their channel mix to a new CFO (Chief Financial Officer). Paid social budget = $40k/mo, content/SEO (Search Engine Optimization) = $25k/mo, partnerships = $15k/mo.
 
 The CFO opens with: *"All your tracking says 'last-click attribution.' That means Google is getting credit for every customer that searched our brand name after seeing a Meta ad. I'm cutting paid social by 60% until you can prove it actually does anything."*
 
@@ -613,7 +613,7 @@ These prompts probe whether you understand the *limits* of attribution modeling,
 1. **The reading says Markov Chain attribution is "data-driven, considered fair by most analysts" and contrasts it with Last-Click.** But Markov makes a strong assumption, the *Markov property* (the future depends only on the present state, not the full history). For real marketing journeys (email → blog → ad → search → conversion), is this assumption a reasonable simplification or a fatal flaw? When would you use Markov anyway, and when would you reach for Shapley despite the compute cost?
 2. **The capstone asks for 100–500 customer journeys.** A senior analyst would say that's far too few for Markov to produce stable results, you need 1,000+ for reliable transition probabilities. Should the capstone be honest about this limitation in the writeup, or does the small sample size invalidate the portfolio piece? How would you frame the trade-off to a skeptical interviewer?
 3. **The "money-shot chart" the clustered bar chart comparing Last-Click vs Linear vs Markov is presented as the centerpiece of the capstone.** A statistician might point out that without confidence intervals, three different-looking bars could be statistical noise. Should the chart include error bars? If you add them, does the story change?
-4. **Multi-Touch Attribution (MTA) and Media Mix Modeling (MMM) are increasingly seen as alternatives.** MTA needs user-level data (cookies, identifiers); MMM uses aggregate channel spend. With cookie deprecation and privacy laws (GDPR, CCPA, iOS 14.5+), MTA is getting harder every quarter. Is this capstone teaching a method that will be obsolete in 3 years? Defend "build MTA anyway because the *thinking* transfers to MMM", or argue it's miseducation.
+4. **Multi-Touch Attribution (MTA) and Media Mix Modeling (MMM) are increasingly seen as alternatives.** MTA needs user-level data (cookies, identifiers); MMM uses aggregate channel spend. With cookie deprecation and privacy laws (GDPR (General Data Protection Regulation), CCPA (California Consumer Privacy Act), iOS 14.5+), MTA is getting harder every quarter. Is this capstone teaching a method that will be obsolete in 3 years? Defend "build MTA anyway because the *thinking* transfers to MMM", or argue it's miseducation.
 5. **The reading frames attribution as a budget-defense tool ("CFO was about to cut paid social by 60%").** A counter-view: attribution models are *political* artifacts, every team picks the model that makes their channel look best. Last-click favors closing-channel teams; first-click favors brand teams. Is "the most fair attribution model" a real thing, or is fairness in the eye of the budget-defender? How would you handle this tension in a CFO presentation?
 
 ---

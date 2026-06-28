@@ -190,7 +190,7 @@ id Software's approach to animation budgeting for DOOM Eternal is notable for it
 | Demon AI + animation | < 1ms per active demon | ~8–12 demons visible at once; total < 12ms |
 | Demon death animations | Not real-time budgeted | Glory kills are scripted sequences; can "cheat" timing |
 | Environment animation | < 0.5ms | Terrain, doors, traps |
-| UI animation | < 0.2ms | Health, armor, ammo bars |
+| UI (User Interface) animation | < 0.2ms | Health, armor, ammo bars |
 
 The total animation budget for DOOM Eternal at 60fps is approximately **15ms** (leaving 1.67ms for render pipeline overhead). id achieves this through aggressive LOD on distant demons (disable non-essential bone updates at > 20 meters), animation update rate reduction for off-screen entities, and pre-baked secondary motion on all demon models.
 
@@ -300,7 +300,7 @@ Understanding how animation concepts map across the three major game engines is 
 |---|---|---|---|
 | State machine editor | Animator window (Animator Controller) | AnimGraph inside Animation Blueprint | AnimationTree with StateMachine node |
 | Blend interpolation | Blend Tree (embedded in state) | Blend Space (standalone asset) | BlendSpace2D node |
-| Code logic for anim params | Animator C# API (SetFloat, SetBool) | Event Graph (Blueprint, every tick) | Script sets AnimationTree parameters |
+| Code logic for anim params | Animator C# API (Application Programming Interface) (SetFloat, SetBool) | Event Graph (Blueprint, every tick) | Script sets AnimationTree parameters |
 | Rigging / procedural | Animation Rigging package | Control Rig (built-in, real-time) | SkeletonModificationStack |
 | Cinematic timeline | Timeline (asset + Director) | Sequencer (track-based, full-featured) | AnimationPlayer + Camera rigs |
 | One-shot override | Override layer (Avatar Mask) | Montage + Slot node | One-shot node in AnimationTree |

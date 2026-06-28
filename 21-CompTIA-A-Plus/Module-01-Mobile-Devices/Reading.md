@@ -49,7 +49,7 @@ Sec+ tests *concepts*. A+ tests *parts*. Know these by sight and by what they do
 ### Touch input types
 
 - **Capacitive**, senses the electrical conductivity of your finger. Used in every modern smartphone/tablet. Won't respond to a gloved hand unless gloves are conductive.
-- **Resistive**, two layers pressed together by physical pressure. Used in older PoS terminals, industrial handhelds. Works with any stylus or fingernail.
+- **Resistive**, two layers pressed together by physical pressure. Used in older PoS (Proof of Stake) terminals, industrial handhelds. Works with any stylus or fingernail.
 - **Active stylus** (Apple Pencil, Samsung S-Pen, Surface Pen), sends a signal back to the digitizer for pressure and tilt sensitivity. Requires a compatible screen.
 
 ### Built-in mobile sensors (you'll be asked to identify what each does)
@@ -127,7 +127,7 @@ You can have **5+ eSIMs stored on an iPhone**, two active at once (one for work,
 
 ---
 
-## 📡 Bluetooth, NFC, IR, RFID, Short-Range Wireless
+## 📡 Bluetooth, NFC, IR, RFID (Radio Frequency Identification), Short-Range Wireless
 
 | Tech | Range | Speed | Common uses |
 |------|-------|-------|-------------|
@@ -147,7 +147,7 @@ Bluetooth pairing process:
 
 ---
 
-## 📧 Mobile Email Setup, IMAP, POP3, Exchange ActiveSync
+## 📧 Mobile Email Setup, IMAP (Internet Message Access Protocol), POP3 (Post Office Protocol 3), Exchange ActiveSync
 
 You will be asked to pick the right protocol for a scenario.
 
@@ -155,7 +155,7 @@ You will be asked to pick the right protocol for a scenario.
 |----------|------|-------------------|----------|
 | **POP3** | Mail fetch | Downloads to device, often *deletes from server* | One device only, e.g., legacy single-PC setups |
 | **IMAP** | Mail sync | Stays on server, synced to device | Multi-device, phone + laptop + tablet all show the same inbox |
-| **SMTP** | Mail send | N/A, outbound only | All outgoing mail |
+| **SMTP (Simple Mail Transfer Protocol)** | Mail send | N/A, outbound only | All outgoing mail |
 | **Exchange ActiveSync (EAS)** | Microsoft sync | Server-stored | Push email, calendar, contacts, plus policy enforcement (MDM-lite) on M365 |
 
 ### Ports to memorize
@@ -165,7 +165,7 @@ You will be asked to pick the right protocol for a scenario.
 | POP3 | 110 | 995 (POP3S) |
 | IMAP | 143 | 993 (IMAPS) |
 | SMTP submission | 25 (server-to-server) / 587 (client submission) | 465 (SMTPS, legacy) |
-| Exchange ActiveSync |, | 443 (HTTPS) |
+| Exchange ActiveSync |, | 443 (HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure)) |
 
 🎯 **Exam pattern:** *"User wants the same inbox across phone and laptop."* → **IMAP** (or Exchange). POP3 is wrong because it removes mail from the server.
 
@@ -177,7 +177,7 @@ You will be asked to pick the right protocol for a scenario.
 |-------|-----------|---------------|------|------|
 | **BYOD** (Bring Your Own Device) | User | Limited (MDM container only) | No hardware cost; user gets device they love | Privacy/legal nuance; harder to enforce policy; recovery on departure is messy |
 | **COBO** (Corporate-Owned, Business Only) | Company | Full | Maximum control & auditability | Users carry two devices; high cost |
-| **COPE** (Corporate-Owned, Personally Enabled) | Company | Full, but personal use permitted | Balance of control + UX; tax/expense simplification | Privacy boundary still requires policy |
+| **COPE** (Corporate-Owned, Personally Enabled) | Company | Full, but personal use permitted | Balance of control + UX (User Experience); tax/expense simplification | Privacy boundary still requires policy |
 | **CYOD** (Choose Your Own Device) | Company (from a curated list) | Full | Better UX than COBO; predictable IT support | Limited choice; still corporate-owned |
 
 🎯 **Exam pattern:** A healthcare scenario where data protection is paramount → **COBO**. A tech startup that wants developer happiness → **BYOD with strong MDM containers**.
@@ -192,14 +192,14 @@ Modern MDM platforms Microsoft Intune, Jamf Pro (macOS/iOS), VMware Workspace ON
 |------------|--------------|
 | **Enrollment** | Register a device into the corporate fleet (DEP for Apple Business Manager; Zero-Touch for Android Enterprise) |
 | **Policy push** | Force passcode complexity, encryption-on, screen-lock timeout, allowed apps |
-| **Wi-Fi / VPN profile push** | Auto-configure the corp Wi-Fi, certificate-based VPN |
+| **Wi-Fi / VPN (Virtual Private Network) profile push** | Auto-configure the corp Wi-Fi, certificate-based VPN |
 | **Email profile push** | Pre-configure Exchange/IMAP credentials |
 | **App management** | Push required apps; block prohibited apps; deploy from a private app catalog |
 | **Compliance check** | Verify OS version, encryption, jailbreak status; auto-quarantine on failure |
 | **Remote wipe** | Full device wipe OR selective (only corporate container) |
 | **Remote lock** | Lock device with new PIN if lost |
 | **Geofencing** | Allow/block features by location |
-| **Conditional access** | Pair with identity provider (Azure AD, Okta), only compliant devices get email/SharePoint |
+| **Conditional access** | Pair with identity provider (Azure AD (Active Directory), Okta), only compliant devices get email/SharePoint |
 
 ### Containerization
 
@@ -295,7 +295,7 @@ This is what an MDM-mediated mobile-support workflow looks like end-to-end.
 
 **The mobile dimension.** Forensic analysis (Mandiant final report, March 2015; FireEye whitepaper, January 2016) identified that one initial-access vector was a spear-phishing email opened on an Sony executive's personal iPhone, which then forwarded credentials when the executive subsequently used the same password on a Sony VPN portal from a workstation. The iPhone itself was never compromised by malware, but it was outside MDM scope, the executive used it personally and the corporate email was IMAP-configured manually rather than through Exchange ActiveSync, so no policy enforcement applied.
 
-**Decision and outcome.** Sony Pictures took ~3 weeks to fully restore email and payroll; the incident cost an estimated $35M directly and far more in canceled-film and reputational losses. Sony's CEO, Michael Lynton, later testified the company had no formal BYOD policy at executive level, no MDM enrollment requirement, and no conditional access for corporate mail. A 2015 internal review mandated MDM enrollment for all corporate-mail access, mandatory passcodes ≥8 characters, and a 24-hour remote-wipe SLA.
+**Decision and outcome.** Sony Pictures took ~3 weeks to fully restore email and payroll; the incident cost an estimated $35M directly and far more in canceled-film and reputational losses. Sony's CEO (Chief Executive Officer), Michael Lynton, later testified the company had no formal BYOD policy at executive level, no MDM enrollment requirement, and no conditional access for corporate mail. A 2015 internal review mandated MDM enrollment for all corporate-mail access, mandatory passcodes ≥8 characters, and a 24-hour remote-wipe SLA (Service Level Agreement).
 
 **Lesson for the exam / for practitioners.**
 - **BYOD without MDM is just "you-give-them-corporate-access-and-hope"**, exactly what the practice of this module's BYOD/MDM section is designed to prevent.

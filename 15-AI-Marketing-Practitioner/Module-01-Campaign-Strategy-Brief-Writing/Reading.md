@@ -10,12 +10,12 @@ In 2017, Mike Cessario walked into investor meetings selling **canned water**. I
 
 Every Liquid Death ad opens with the same one-line answer to the same question, written in their brand brief: **"Why would a 23-year-old at a concert reach for our can instead of a beer?"** Not "let's sell water." Not "let's target Gen Z." A single, specific, behavior-anchored question. Every brief, every script, every creative starts there.
 
-Compare that to the average campaign brief: "Drive awareness for the brand, target millennials 25–44, use Instagram and TikTok, KPIs to be determined." That brief is going nowhere. It hasn't decided what success looks like. It hasn't picked one customer. It hasn't named one behavior change. Within 48 hours of launch, that team will be optimizing for vanity metrics because no one wrote down what real metrics were.
+Compare that to the average campaign brief: "Drive awareness for the brand, target millennials 25–44, use Instagram and TikTok, KPIs (Key Performance Indicators) to be determined." That brief is going nowhere. It hasn't decided what success looks like. It hasn't picked one customer. It hasn't named one behavior change. Within 48 hours of launch, that team will be optimizing for vanity metrics because no one wrote down what real metrics were.
 
 The brief isn't paperwork. **The brief is the campaign.** If the brief is sharp, mediocre creative will still work. If the brief is fuzzy, brilliant creative will fail. We're going to learn how to write the sharp kind.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Basic marketing vocabulary (audience, channel, conversion, KPI), covered in [14-AI-Marketing-Foundations Module 1](../../14-AI-Marketing-Foundations/Module-01-Digital-Marketing-Landscape-2026/Reading.md)
+> - Basic marketing vocabulary (audience, channel, conversion, KPI (Key Performance Indicator)), covered in [14-AI-Marketing-Foundations Module 1](../../14-AI-Marketing-Foundations/Module-01-Digital-Marketing-Landscape-2026/Reading.md)
 > - The funnel concept (awareness / consideration / conversion / retention), covered in [14-AI-Marketing-Foundations Module 2](../../14-AI-Marketing-Foundations/Module-02-AI-Fundamentals-for-Marketers/Reading.md)
 > - Comfort writing in plain English; this module is writing-heavy
 > If any of these are shaky, pause and review before continuing.
@@ -119,11 +119,11 @@ DATES: [Same]
 TOTAL MEDIA BUDGET: $[Number]
 
 PRIMARY KPI:
-[ONE metric. Conversion volume, CPA, ROAS, or qualified leads.]
+[ONE metric. Conversion volume, CPA (Cost Per Acquisition), ROAS (Return on Ad Spend), or qualified leads.]
 Example: "200 free-trial signups at a CPA <= $40"
 
 SECONDARY KPI:
-[Health metric, usually CTR, CPC, or CPM benchmark.]
+[Health metric, usually CTR (Click-Through Rate), CPC (Cost Per Click), or CPM (Cost Per Mille) benchmark.]
 Example: "Maintain CTR > 1.5% across Meta Reels placements"
 
 GUARDRAIL KPI:
@@ -138,18 +138,18 @@ CHANNEL MIX (with budget split):
 Channel              %     $       Why
 Google Search        40%   $800    Bottom-funnel intent
 Meta Reels           35%   $700    Mid-funnel video discovery
-TikTok Spark Ads     15%   $300    UGC social proof
+TikTok Spark Ads     15%   $300    UGC (User-Generated Content) social proof
 LinkedIn TLA         10%   $200    Owner/decision-maker layer
 
 CONVERSION SETUP:
-- Tracking: [Pixel, GA4, CAPI, server-side, etc.]
+- Tracking: [Pixel, GA4 (Google Analytics 4), CAPI, server-side, etc.]
 - Conversion events: [List each one + value]
 - Attribution window: [7-day click / 1-day view, etc.]
 
 FLIGHT PATTERN:
 Week 1: Test phase, broad audiences, $30/day each channel
 Week 2: Read learnings, kill bottom 20% of creatives
-Week 3-4: Scale winners by 20% daily until CAC drifts
+Week 3-4: Scale winners by 20% daily until CAC (Customer Acquisition Cost) drifts
 Week 5: Defend and harvest
 
 REPORTING CADENCE:
@@ -190,7 +190,7 @@ This is where 2026 marketing changes the game. You can draft a usable brief in 2
 LAYER 1, CONTEXT (paste at the top):
 
 You are a senior brand strategist with 15 years of experience writing
-campaign briefs for DTC brands. You write tight, specific briefs. You
+campaign briefs for DTC (Direct-to-Consumer) brands. You write tight, specific briefs. You
 refuse to write vague briefs. If I give you a vague request, ask me
 clarifying questions until you have enough to write a specific brief.
 
@@ -217,14 +217,14 @@ After drafting, list 3 assumptions you made that I should verify.
 For each assumption, explain how I could verify it cheaply.
 ```
 
-That last layer "list 3 assumptions" is what separates a usable AI brief from generated fluff. Without it, the LLM will confidently invent things.
+That last layer "list 3 assumptions" is what separates a usable AI brief from generated fluff. Without it, the LLM (Large Language Model) will confidently invent things.
 
 ### Which Model For What
 
 | Model (2026) | Best at | Worst at |
 |--------------|---------|----------|
 | Claude Sonnet 4.7 | Long-form briefs with nuance, brand voice, complex constraints | Real-time data |
-| ChatGPT GPT-5 | Quick iteration, structured outputs, web search integration | Subtle brand voice |
+| ChatGPT GPT (Generative Pre-trained Transformer)-5 | Quick iteration, structured outputs, web search integration | Subtle brand voice |
 | Gemini 2.5 Pro | Multimodal inputs (paste a competitor's ad image), long context | Tone control |
 
 **My current workflow:** Draft in Claude → fact-check live data in ChatGPT → review competitor visuals in Gemini → final polish in Claude. Three models, one brief, ~30 minutes total.
@@ -335,7 +335,7 @@ Meta Reels      50%   $100   Top-mid; visual demo of the chaos -> calm
 CONVERSION SETUP:
 - GA4 event: pdf_download
 - Meta Pixel: Lead event w/ value=8
-- GTM container for both
+- GTM (Google Tag Manager) container for both
 - 7-day click, 1-day view attribution
 ```
 
@@ -388,7 +388,7 @@ You now know:
 Use these to test your own thinking. None has a single right answer, defend your choice with the frameworks in this module.
 
 1. A founder says: "We have $5,000 and 4 weeks. We don't have time to write a brief, we'll learn as we go." Build the strongest argument FOR skipping the brief and the strongest argument AGAINST. Which would you defend at a board review, and why?
-2. Re-read Liquid Death's "23-year-old at a concert" question and Notion's 35-word brief sentence. Both are one-customer, one-behavior briefs, but one is consumer DTC and one is B2B PLG. What's the principle they share, and where would copy-pasting one into the other's industry fail?
+2. Re-read Liquid Death's "23-year-old at a concert" question and Notion's 35-word brief sentence. Both are one-customer, one-behavior briefs, but one is consumer DTC and one is B2B (Business-to-Business) PLG. What's the principle they share, and where would copy-pasting one into the other's industry fail?
 3. The 3-Test ICP Validation Protocol takes ~2 weeks before any media spend. A growth lead argues that on a $200 capstone budget, the 20-conversation test costs more (in time-money) than the campaign itself. When is this argument right, and when is it a rationalization for skipping discipline?
 4. The reading lists "Eternal brief" as an anti-pattern (one brief, one campaign). Yet brand strategists like Marty Neumeier argue for a *brand* brief that lives for years. Reconcile the two, at what scope does each level of brief belong?
 5. Your AI-generated brief and your hand-written brief come back substantially different. Which do you trust more in 2026, and what does the gap between them tell you about the inputs you gave the model?

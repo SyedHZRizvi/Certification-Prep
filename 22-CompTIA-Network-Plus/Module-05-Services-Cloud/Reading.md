@@ -1,6 +1,6 @@
 # Module 5: Network Services & Cloud Connectivity 🗂️
 
-> **Why this module matters:** DNS and DHCP are the **two services every network on Earth runs**. Without them, the Internet doesn't work and your laptop can't get an IP. The exam tests DNS record types, DHCP scopes, and the supporting services (NTP, FTP variants, SMTP, file transfer) on roughly 15 questions. The cloud-connectivity additions (VPN, Direct Connect, ExpressRoute, SD-WAN) are newer to the N10-009 blueprint, expect ~5 more questions there.
+> **Why this module matters:** DNS (Domain Name System) and DHCP (Dynamic Host Configuration Protocol) are the **two services every network on Earth runs**. Without them, the Internet doesn't work and your laptop can't get an IP. The exam tests DNS record types, DHCP scopes, and the supporting services (NTP, FTP (File Transfer Protocol) variants, SMTP (Simple Mail Transfer Protocol), file transfer) on roughly 15 questions. The cloud-connectivity additions (VPN (Virtual Private Network), Direct Connect, ExpressRoute, SD-WAN (Wide Area Network)) are newer to the N10-009 blueprint, expect ~5 more questions there.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Modules 1–3 (OSI, IP addressing, routing)
@@ -15,7 +15,7 @@ When you call your mom, you tap her name in your contacts, your phone looks up t
 
 That's exactly what life would be without DNS. Computers route by IP address `142.250.190.78` but humans remember names, `google.com`. Without a system mapping names to addresses, the Internet stops being usable. DNS is the **distributed address book of the Internet**, queried billions of times per second, never quite synchronous, and the source of more help-desk tickets than any other system.
 
-This module covers DNS in depth, then DHCP (how your device even *gets* an IP), then the smaller-but-still-tested services (NTP, FTP family, SMTP/IMAP/POP3), then the modern cloud-connectivity options that bridge enterprise data centers to AWS/Azure/GCP.
+This module covers DNS in depth, then DHCP (how your device even *gets* an IP), then the smaller-but-still-tested services (NTP, FTP family, SMTP/IMAP (Internet Message Access Protocol)/POP3 (Post Office Protocol 3)), then the modern cloud-connectivity options that bridge enterprise data centers to AWS (Amazon Web Services)/Azure/GCP (Google Cloud Platform).
 
 ---
 
@@ -26,20 +26,20 @@ Defined in **RFC 1034** and **RFC 1035** (Paul Mockapetris, 1987). DNS translate
 ### How a DNS query works (top-down resolution)
 
 1. Browser asks the OS's **stub resolver** for `www.example.com`
-2. Stub resolver asks its configured **recursive resolver** (often the ISP's, or 1.1.1.1, 8.8.8.8)
+2. Stub resolver asks its configured **recursive resolver** (often the ISP (Internet Service Provider)'s, or 1.1.1.1, 8.8.8.8)
 3. If recursive resolver doesn't have it cached, it queries:
 
    - A **root server** (.), "Who handles .com?"
    - A **TLD server** (.com), "Who handles example.com?"
    - An **authoritative server** for example.com, "What's the A record for www?"
 4. Recursive resolver caches the answer (respecting TTL) and returns it to the stub resolver
-5. The browser opens a TCP connection to the returned IP
+5. The browser opens a TCP (Transmission Control Protocol) connection to the returned IP
 
 Total round-trip: ~10–100 ms for a fresh query; <1 ms for a cached one.
 
 ### DNS port and transport
 
-- **UDP/53** for most queries and responses (faster, stateless)
+- **UDP (User Datagram Protocol)/53** for most queries and responses (faster, stateless)
 - **TCP/53** for zone transfers between authoritative servers AND for responses >512 bytes (some DNSSEC responses, large TXT records)
 
 🚨 **Trap on the exam:** When asked about *zone transfers*, the answer is **TCP/53**, not UDP/53.
@@ -56,7 +56,7 @@ Total round-trip: ~10–100 ms for a fresh query; <1 ms for a cached one.
 | **NS** | Names of authoritative name servers | `example.com → ns1.example.com` |
 | **SOA** | Start of Authority, zone metadata (serial, refresh, expire) | One per zone |
 | **TXT** | Free-form text, used for SPF, DKIM, DMARC, domain verification | `"v=spf1 include:_spf.google.com -all"` |
-| **SRV** | Service location (host + port) for SIP, AD, XMPP | `_sip._tcp.example.com → 10 5 5060 sipserver.example.com` |
+| **SRV** | Service location (host + port) for SIP, AD (Active Directory), XMPP | `_sip._tcp.example.com → 10 5 5060 sipserver.example.com` |
 
 ### Anti-spam TXT records (frequently tested)
 
@@ -85,8 +85,8 @@ Total round-trip: ~10–100 ms for a fresh query; <1 ms for a cached one.
 
 | Standard | Means |
 |----------|-------|
-| **DoT** (DNS over TLS) | DNS over TCP/853 wrapped in TLS |
-| **DoH** (DNS over HTTPS) | DNS over HTTPS/443 (looks like web traffic, harder to block) |
+| **DoT** (DNS over TLS (Transport Layer Security)) | DNS over TCP/853 wrapped in TLS |
+| **DoH** (DNS over HTTPS (HTTP Secure)) | DNS over HTTPS/443 (looks like web traffic, harder to block) |
 | **DNSSEC** | Cryptographically signs DNS responses to defeat cache poisoning |
 
 ---
@@ -132,7 +132,7 @@ Defined in **RFC 5905** (Mills et al., 2010). NTP synchronizes clocks across the
 
 - **UDP 123**
 - **Stratum** levels, stratum 0 = atomic clock / GPS; stratum 1 = directly attached to stratum 0; stratum 2 = synced to stratum 1; …; lower number = more authoritative
-- Accuracy: <1 ms on LAN, ~10–100 ms over Internet
+- Accuracy: <1 ms on LAN (Local Area Network), ~10–100 ms over Internet
 - Public NTP pools: `pool.ntp.org`, `time.google.com`, `time.windows.com`
 
 🚨 **Trap:** Kerberos and most authentication systems require clocks within ~5 minutes. Without NTP, login fails mysteriously.
@@ -144,7 +144,7 @@ Defined in **RFC 5905** (Mills et al., 2010). NTP synchronizes clocks across the
 | Protocol | Port | Encryption | Use |
 |----------|------|------------|-----|
 | **FTP** | TCP 21 (control), TCP 20 (data, active mode) | **None** | Legacy file transfer |
-| **SFTP** | TCP 22 (SSH) | Yes (SSH) | Secure file transfer over SSH |
+| **SFTP** | TCP 22 (SSH (Secure Shell)) | Yes (SSH) | Secure file transfer over SSH |
 | **FTPS** | TCP 990 (implicit) or 21+explicit AUTH TLS | Yes (TLS) | FTP wrapped in TLS |
 | **TFTP** | UDP 69 | None | Switch/router firmware uploads, PXE boot, IoT |
 | **SCP** | TCP 22 (SSH) | Yes (SSH) | Simple copy over SSH (less interactive than SFTP) |
@@ -165,7 +165,7 @@ Defined in **RFC 5905** (Mills et al., 2010). NTP synchronizes clocks across the
 | **POP3** | 110 | 995 (POP3S) | Inbound (download + usually delete from server) | Older, "download and disconnect" model |
 | **IMAP** | 143 | 993 (IMAPS) | Inbound (sync with server) | Modern, multi-device sync |
 
-🎯 **Exam pattern:** *"Which port for IMAP over SSL/TLS?"* → 993. *"SMTP submission with TLS"* → 587.
+🎯 **Exam pattern:** *"Which port for IMAP over SSL (Secure Sockets Layer)/TLS?"* → 993. *"SMTP submission with TLS"* → 587.
 
 ---
 
@@ -173,13 +173,13 @@ Defined in **RFC 5905** (Mills et al., 2010). NTP synchronizes clocks across the
 
 | Protocol | Port | Use |
 |----------|------|-----|
-| **HTTP** | TCP 80 | Cleartext web |
+| **HTTP (Hypertext Transfer Protocol)** | TCP 80 | Cleartext web |
 | **HTTPS** | TCP 443 | HTTP over TLS |
 | **SSH** | TCP 22 | Encrypted remote shell + SFTP/SCP/tunneling |
 | **Telnet** | TCP 23 | **Cleartext** remote shell, never use |
 | **RDP** | TCP 3389 | Remote Desktop (Windows) |
 | **VNC** | TCP 5900+ | Cross-platform remote desktop |
-| **LDAP** | TCP/UDP 389 | Directory service (Active Directory, OpenLDAP) |
+| **LDAP (Lightweight Directory Access Protocol)** | TCP/UDP 389 | Directory service (Active Directory, OpenLDAP) |
 | **LDAPS** | TCP 636 | LDAP over SSL/TLS |
 | **Kerberos** | TCP/UDP 88 | Ticket-based authentication |
 | **SIP** | UDP/TCP 5060, 5061 (TLS) | VoIP session signaling |
@@ -225,7 +225,7 @@ Centrally managed overlay across multiple transports (MPLS, broadband Internet, 
 
 ### 4. SASE (Secure Access Service Edge)
 
-Coined by **Gartner in 2019** as the convergence of SD-WAN + cloud-native security (CASB, ZTNA, SWG, FWaaS). Delivers networking + security from the cloud edge, no on-prem appliances.
+Coined by **Gartner in 2019** as the convergence of SD-WAN + cloud-native security (CASB, ZTNA (Zero Trust Network Access), SWG, FWaaS). Delivers networking + security from the cloud edge, no on-prem appliances.
 
 **Vendors:** Cloudflare One, Zscaler, Netskope, Palo Alto Prisma Access.
 
@@ -242,7 +242,7 @@ Decouples the **control plane** (decisions) from the **data plane** (forwarding)
 | **Application plane** | Apps / orchestrators that request network behaviors |
 | **Control plane** | Centralized controller (OpenDaylight, ONOS, Cisco ACI controller), decides routes/policies |
 | **Data plane** | Switches/routers that *only* forward packets according to controller's rules |
-| **Management plane** | Tools that manage devices (SNMP, CLI, NETCONF) |
+| **Management plane** | Tools that manage devices (SNMP (Simple Network Management Protocol), CLI (Command Line Interface), NETCONF) |
 
 🧠 SDN is to networking what virtualization was to servers, abstract the workload from the hardware, manage centrally.
 
@@ -328,7 +328,7 @@ This is a high-impact PBQ scenario, N10-009 increasingly tests email anti-spam D
 | SD-WAN | Software-Defined Wide Area Network |
 | SASE | Secure Access Service Edge |
 | SDN | Software-Defined Networking |
-| API | Application Programming Interface |
+| API (Application Programming Interface) | Application Programming Interface |
 
 ---
 
@@ -399,7 +399,7 @@ You now know:
 - 📄 Gartner (2019). "Hype Cycle for Enterprise Networking", coined SASE.
 
 **Case-study sources:**
-- 📄 Dyn (2016). "Dyn Statement on 10/21/2016 DDoS Attack." Post-mortem blog post.
+- 📄 Dyn (2016). "Dyn Statement on 10/21/2016 DDoS (Distributed Denial of Service) Attack." Post-mortem blog post.
 - 📄 Cloudflare (2017). "Anatomy of a DNS DDoS Amplification Attack." Blog post.
 
 **Practitioner / exam:**

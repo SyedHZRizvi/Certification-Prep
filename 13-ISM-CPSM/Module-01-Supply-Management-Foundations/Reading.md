@@ -3,9 +3,9 @@
 > **Why this module matters:** CPSM doesn't test purchasing clerks, it tests strategic supply leaders. If you can't articulate how supply management ties to corporate strategy, every other module collapses. This module gives you the strategic lens you'll see every scenario through.
 
 > **Prerequisites for this module.** This is the opening module of the CPSM track. Before starting, you should be comfortable with:
-> - Basic business-school vocabulary: COGS, EBITDA, working capital, value chain
+> - Basic business-school vocabulary: COGS (Cost of Goods Sold), EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization), working capital, value chain
 > - Reading a one-page corporate-strategy document and identifying the dominant generic strategy (cost leadership / differentiation / focus)
-> - Cross-references in other tracks: [ASCM CSCP Module 1, Supply Chain Strategy](../../10-ASCM-CSCP/Module-01-SCM-Foundations-Strategy/Reading.md) for the broader supply-chain context, and [PMP Module 1](../../02-PMP/Module-01-Foundations/Reading.md) for stakeholder vocabulary used in Module 8.
+> - Cross-references in other tracks: [ASCM CSCP Module 1, Supply Chain Strategy](../../10-ASCM-CSCP/Module-01-SCM (Supply Chain Management)-Foundations-Strategy/Reading.md) for the broader supply-chain context, and [PMP Module 1](../../02-PMP/Module-01-Foundations/Reading.md) for stakeholder vocabulary used in Module 8.
 > If any of these are shaky, pause and review before continuing.
 
 ---
@@ -14,7 +14,7 @@
 
 Meet Priya. In 2010 she joined a mid-sized appliance manufacturer as a buyer. The department was called "Purchasing." Her manager's main metric was **price variance**, beat last year's price on every part. Period. The team sat in a basement office. Engineering threw specs over the wall. Finance audited every PO. Nobody asked Priya what she thought about strategy.
 
-Fast forward to 2024. Priya is now the company's **Chief Supply Officer**, reporting directly to the CEO. The team is called "Supply Management." Her metrics include **total cost of ownership, supplier innovation contribution, ESG score of the supply base, and contribution to revenue growth**. Engineering invites her team into design meetings *before* specs are written. The board asked her to present supply-chain strategy last quarter.
+Fast forward to 2024. Priya is now the company's **Chief Supply Officer**, reporting directly to the CEO (Chief Executive Officer). The team is called "Supply Management." Her metrics include **total cost of ownership, supplier innovation contribution, ESG score of the supply base, and contribution to revenue growth**. Engineering invites her team into design meetings *before* specs are written. The board asked her to present supply-chain strategy last quarter.
 
 What changed? Two things:
 
@@ -49,9 +49,9 @@ Supply professionals operate on two altitudes at once. The exam will test whethe
 | Issuing POs | Designing the supply-base portfolio |
 | Expediting late shipments | Selecting which suppliers are strategic partners |
 | Resolving invoice disputes | Negotiating multi-year master agreements |
-| Running an RFQ for off-the-shelf parts | Choosing whether to make-or-buy |
+| Running an RFQ (Request for Quotation) for off-the-shelf parts | Choosing whether to make-or-buy |
 | Checking supplier quality at receipt | Developing supplier capabilities |
-| Updating ERP records | Defining category strategies |
+| Updating ERP (Enterprise Resource Planning) records | Defining category strategies |
 
 🚨 **Trap on the exam:** A scenario asks "What is the BEST use of the senior supply manager's time?", the right answer is almost always the **strategic** option, not the tactical one. Senior supply leaders delegate tactics and own strategy.
 
@@ -73,7 +73,7 @@ Supply strategy must align:
 | Differentiation | Premium materials, supplier innovation partnerships, joint R&D, fewer but deeper relationships |
 | Focus / niche | Specialized suppliers, smaller volumes, agility over scale |
 
-🎯 **Exam pattern:** "Your company's differentiation strategy is innovation. The CFO wants to reverse-auction all categories for price savings. What's the BEST response?" → Push back: reverse auctions on innovation-critical categories destroy supplier collaboration and contradict the strategy. Coach the CFO on category-appropriate sourcing.
+🎯 **Exam pattern:** "Your company's differentiation strategy is innovation. The CFO (Chief Financial Officer) wants to reverse-auction all categories for price savings. What's the BEST response?" → Push back: reverse auctions on innovation-critical categories destroy supplier collaboration and contradict the strategy. Coach the CFO on category-appropriate sourcing.
 
 ---
 
@@ -230,7 +230,7 @@ Every CPSM scenario fits somewhere in this lifecycle. Learn it.
        ↓
 5. Sourcing strategy (Kraljic quadrant; competitive vs. partnership)
        ↓
-6. Solicit (RFI / RFP / RFQ / reverse auction)
+6. Solicit (RFI / RFP (Request for Proposal) / RFQ / reverse auction)
        ↓
 7. Evaluate & select supplier
        ↓

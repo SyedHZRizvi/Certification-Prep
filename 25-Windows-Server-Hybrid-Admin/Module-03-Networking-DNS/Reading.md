@@ -1,13 +1,13 @@
-# Module 3: Networking, DNS & DHCP 🌐
+# Module 3: Networking, DNS (Domain Name System) & DHCP (Dynamic Host Configuration Protocol) 🌐
 
-> **Why this module matters:** Networking quietly dominates both exams. DNS alone is 8%+ of total marks; DHCP another 4%; firewall and NLB another 3–5%. But the deeper truth is: **every other module fails when DNS is broken**. AD authentication fails. Hyper-V live migration fails. Azure Arc onboarding fails. Defender for Servers fails to register. Master DNS and DHCP cold and the whole rest of the curriculum becomes easier.
+> **Why this module matters:** Networking quietly dominates both exams. DNS alone is 8%+ of total marks; DHCP another 4%; firewall and NLB another 3–5%. But the deeper truth is: **every other module fails when DNS is broken**. AD (Active Directory) authentication fails. Hyper-V live migration fails. Azure Arc onboarding fails. Defender for Servers fails to register. Master DNS and DHCP cold and the whole rest of the curriculum becomes easier.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - TCP/IP basics IP addresses, subnets, CIDR, default gateway, ports covered in CompTIA Network+ or equivalent
+> - TCP (Transmission Control Protocol)/IP basics IP addresses, subnets, CIDR, default gateway, ports covered in CompTIA Network+ or equivalent
 > - DNS query terminology (resolver, authoritative, recursive, iterative)
 > - AD DS site structure, [Module 1](../Module-01-Active-Directory/Reading.md)
 >
-> If those are shaky, pause and pick up the CompTIA Network+ certification path first. This module assumes you know what a `/24` is and why TCP/53 differs from UDP/53.
+> If those are shaky, pause and pick up the CompTIA Network+ certification path first. This module assumes you know what a `/24` is and why TCP/53 differs from UDP (User Datagram Protocol)/53.
 
 ---
 
@@ -15,7 +15,7 @@
 
 It's 4:11 a.m. on a Tuesday. You're the on-call senior engineer at Globex, a 9,000-seat manufacturer. Your phone rings. The night-shift operations lead is panicked: *"Nobody can log in. Production line stopped. Conveyor belts running but the SCADA HMI screens are showing 'cannot contact domain controller.'"*
 
-You SSH from bed into your jump box. `ping dc01.globex.local` no response. `ping 10.50.1.10` pings fine. The DC is up. The *name resolution* is broken.
+You SSH (Secure Shell) from bed into your jump box. `ping dc01.globex.local` no response. `ping 10.50.1.10` pings fine. The DC is up. The *name resolution* is broken.
 
 You check the DHCP server log: it was rebooted overnight by a power blip; the conditional forwarder for `corp.globex.local` (the parent forest, managed by HQ) was never re-saved to a non-AD-integrated zone, so it vanished. The branch DNS server is now returning SERVFAIL for any name in the parent forest's namespace. Domain controllers and therefore every workstation, every line of code, every SCADA HMI cannot resolve their own service records.
 
@@ -266,7 +266,7 @@ IPAM is a Windows Server feature for **centrally tracking DHCP, DNS, and AD-DS**
 | Cannot run on | A domain controller |
 | Storage | LocalDB (default) or SQL Server (large-scale) |
 | Discovery | AD-based, IPAM auto-finds DHCP/DNS servers in chosen domains |
-| Provisioning | Manual or GPO-based (creates GPO that grants IPAM server read rights) |
+| Provisioning | Manual or GPO (Group Policy Object)-based (creates GPO that grants IPAM server read rights) |
 
 ```powershell
 Install-WindowsFeature IPAM -IncludeManagementTools
@@ -321,7 +321,7 @@ Beyond simple allow/block, WFAS can enforce **IPsec** between hosts:
 
 - **Isolation**, only domain-joined computers can connect
 - **Server-to-server**, specific server pairs use IPsec
-- **Tunnel**, site-to-site VPN-style tunneling
+- **Tunnel**, site-to-site VPN (Virtual Private Network)-style tunneling
 - **Authentication exemption**, exclude specific hosts
 
 ### Domain isolation
@@ -337,7 +337,7 @@ Windows NLB distributes TCP/UDP traffic across **2–32 nodes**.
 | Property | Detail |
 |----------|--------|
 | Layer | 4 (transport), pre-app inspection |
-| Shared state | None, best for stateless workloads (IIS, RDS Gateway, RD Connection Broker pre-2012) |
+| Shared state | None, best for stateless workloads (IIS, RDS (Relational Database Service) Gateway, RD Connection Broker pre-2012) |
 | Max nodes | 32 |
 | Modes | **Unicast**, **Multicast**, **IGMP Multicast** |
 | Drainstop | Graceful, finishes existing connections then offline |
@@ -373,7 +373,7 @@ Add-NlbClusterNode -InterfaceName "Ethernet" -NewNodeName "WEB02"
 
 | vSwitch type | Reachability |
 |--------------|--------------|
-| **External** | Bound to physical NIC, VM ↔ outside world |
+| **External** | Bound to physical NIC, VM (Virtual Machine) ↔ outside world |
 | **Internal** | Host ↔ VMs only |
 | **Private** | VM ↔ VM only, no host, no outside |
 
@@ -383,7 +383,7 @@ Hyper-V networking is covered deeper in [Module 5](../Module-05-HyperV/Reading.m
 
 ## 🧪 Task-Sequencing Practice: Set Up DHCP Failover in Load-Balance Mode Across Two Sites
 
-**Scenario:** HQ has DHCP01 (10.0.0.10) serving the HQ subnet 10.0.10.0/24. You're building DHCP02 (10.0.0.11) for HA. The CTO wants both servers active, 50/50, with a 1-hour MCLT.
+**Scenario:** HQ has DHCP01 (10.0.0.10) serving the HQ subnet 10.0.10.0/24. You're building DHCP02 (10.0.0.11) for HA. The CTO (Chief Technology Officer) wants both servers active, 50/50, with a 1-hour MCLT.
 
 **Order these steps:**
 
@@ -399,7 +399,7 @@ Hyper-V networking is covered deeper in [Module 5](../Module-05-HyperV/Reading.m
 
 ---
 
-## 📊 Case Study, The 2016 Dyn DNS DDoS and the Lessons for Internal DNS
+## 📊 Case Study, The 2016 Dyn DNS DDoS (Distributed Denial of Service) and the Lessons for Internal DNS
 
 **Situation.** On October 21, 2016, the Mirai botnet comprising ~150,000 compromised IoT devices (DVRs, IP cameras, baby monitors) launched a 1.2 Tbps DDoS attack against **Dyn DNS**, the managed-DNS provider for Twitter, Spotify, Reddit, GitHub, PayPal, Netflix, and dozens of other major web properties (Dyn Statement on October 21, 2016 DDoS Attack, October 26, 2016; Bruce Schneier, "Lessons from the Dyn DDoS Attack," CRYPTO-GRAM newsletter, November 2016). For ~7 hours, much of the East Coast of the United States could not reach these services, because their DNS resolution path failed. The websites themselves were online; nobody could *find* them.
 
@@ -409,7 +409,7 @@ Hyper-V networking is covered deeper in [Module 5](../Module-05-HyperV/Reading.m
 2. **No anycast diversification.** Dyn's anycast network was overwhelmed because all the attack traffic could converge on the same DNS infrastructure.
 3. **Recursive resolver caching couldn't save them.** TTLs on the affected domains were measured in seconds to minutes, too short for caches to bridge the outage.
 
-**Outcome.** Within 6 months, Cloudflare DNS, AWS Route 53, and Google Cloud DNS all reported a surge in customers adopting **multi-provider authoritative DNS** with redundant DNSSEC signing. CloudFlare published its own incident-response guidance recommending *minimum two unrelated DNS providers* for any internet-facing service. Internally, large enterprises like Microsoft tightened their own internal DNS resiliency: a typical 50,000-seat Windows enterprise now runs DNS on **every** domain controller (active-active-active...), with **conditional forwarders** to internet resolvers, **scavenging enabled**, **DNSSEC for internal trust anchors**, and **DNS policies** to handle geographic / split-horizon needs.
+**Outcome.** Within 6 months, Cloudflare DNS, AWS (Amazon Web Services) Route 53, and Google Cloud DNS all reported a surge in customers adopting **multi-provider authoritative DNS** with redundant DNSSEC signing. CloudFlare published its own incident-response guidance recommending *minimum two unrelated DNS providers* for any internet-facing service. Internally, large enterprises like Microsoft tightened their own internal DNS resiliency: a typical 50,000-seat Windows enterprise now runs DNS on **every** domain controller (active-active-active...), with **conditional forwarders** to internet resolvers, **scavenging enabled**, **DNSSEC for internal trust anchors**, and **DNS policies** to handle geographic / split-horizon needs.
 
 **Lesson for the exam / for practitioners.** AZ-800 won't test you on Dyn by name, but it tests every concept that the Dyn outage taught us:
 
@@ -421,9 +421,9 @@ Hyper-V networking is covered deeper in [Module 5](../Module-05-HyperV/Reading.m
 The exam will phrase scenarios like: *"After a partial network outage, the secondary site reports authentication failures only on Windows 11 workstations. Domain controllers in both sites are reachable on TCP/445 and TCP/389. What's the most likely cause?"* The answer is almost always **DNS**, specifically that the secondary site's DNS server is returning incomplete `_msdcs.contoso.com` SRV records, which Windows 11's stricter resolver logic surfaces faster than Windows 10's.
 
 **Discussion (Socratic).**
-- **Q1.** A 30-site enterprise running AD-integrated DNS on every DC has a 4-hour WAN outage between HQ and a regional hub. Defend the architecture choice that lets authentication continue at the hub (hint: every DC also runs DNS for its own zone), and then identify the *one* type of query that fails during the outage and how DNS conditional forwarders or stub zones change the answer.
+- **Q1.** A 30-site enterprise running AD-integrated DNS on every DC has a 4-hour WAN (Wide Area Network) outage between HQ and a regional hub. Defend the architecture choice that lets authentication continue at the hub (hint: every DC also runs DNS for its own zone), and then identify the *one* type of query that fails during the outage and how DNS conditional forwarders or stub zones change the answer.
 - **Q2.** Microsoft recommends scavenging be enabled on AD-integrated zones with a 7/7/7 day setting. A senior admin pushes back: "Scavenging deletes records we care about, better to leave it off." Build the case for scavenging with the exact failure modes of *not* enabling it (zone bloat, replication overhead, stale records masking outages).
-- **Q3.** A regulated bank cannot use external DNS providers (compliance) and runs all DNS internally. Argue the case that they're *more* vulnerable to a Dyn-style failure than a multi-provider cloud-first competitor, or, conversely, that internal DNS is the *correct* choice and the bank's risk model differs from a consumer SaaS.
+- **Q3.** A regulated bank cannot use external DNS providers (compliance) and runs all DNS internally. Argue the case that they're *more* vulnerable to a Dyn-style failure than a multi-provider cloud-first competitor, or, conversely, that internal DNS is the *correct* choice and the bank's risk model differs from a consumer SaaS (Software as a Service).
 
 ---
 
@@ -440,7 +440,7 @@ The exam will phrase scenarios like: *"After a partial network outage, the secon
 | "NLB works for SQL clusters" | ❌ NLB is stateless layer-4 only; SQL needs Failover Cluster or AG |
 | "Windows Firewall has only Domain and Public profiles" | ❌ Three profiles: Domain, Private, Public |
 | "IPAM can run on a DC" | ❌ Must run on a non-DC member server |
-| "DNSSEC encrypts DNS responses" | ❌ It *signs* (integrity + auth); for confidentiality use DNS-over-HTTPS / TLS (DoH/DoT) |
+| "DNSSEC encrypts DNS responses" | ❌ It *signs* (integrity + auth); for confidentiality use DNS-over-HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure) / TLS (Transport Layer Security) (DoH/DoT) |
 
 ---
 
@@ -501,8 +501,8 @@ You now know:
 
 ## 💬 Discussion, Socratic prompts
 
-1. **DNSSEC for an internal zone, is it worth the operational cost?** A 5,000-seat enterprise with mostly internal services debates enabling DNSSEC on `contoso.local` (AD-integrated). The CISO wants the integrity guarantees; the operations team warns about key-rotation accidents that have caused outages at other companies. Build both sides of the argument and identify the minimum operational tooling required.
-2. **Conditional forwarder vs stub zone vs forest trust.** A merger gives you cross-resolution needs between `contoso.local` and `fabrikam.local`. You can pick conditional forwarders, stub zones, or a forest trust (which creates name-suffix routing). For a stable, infrequently-changing remote, defend the conditional-forwarder approach. For a remote where domain controllers come and go monthly, defend the stub zone. For full SSO + name resolution, defend the forest trust. Which combination should the architect actually choose?
+1. **DNSSEC for an internal zone, is it worth the operational cost?** A 5,000-seat enterprise with mostly internal services debates enabling DNSSEC on `contoso.local` (AD-integrated). The CISO (Chief Information Security Officer) wants the integrity guarantees; the operations team warns about key-rotation accidents that have caused outages at other companies. Build both sides of the argument and identify the minimum operational tooling required.
+2. **Conditional forwarder vs stub zone vs forest trust.** A merger gives you cross-resolution needs between `contoso.local` and `fabrikam.local`. You can pick conditional forwarders, stub zones, or a forest trust (which creates name-suffix routing). For a stable, infrequently-changing remote, defend the conditional-forwarder approach. For a remote where domain controllers come and go monthly, defend the stub zone. For full SSO (Single Sign-On) + name resolution, defend the forest trust. Which combination should the architect actually choose?
 3. **DHCP failover, load balance vs hot standby.** A 10,000-device HQ runs DHCP on two beefy servers. A 200-device branch has one beefy server and one tiny server. For each, defend the choice of failover mode and justify the MCLT setting. What's the practical difference between MCLT=1hr and MCLT=5min when you actually have a partner outage?
 4. **IPAM in a heterogeneous environment.** Your IPAM server can manage 150 DHCP and 500 DNS servers, but a global enterprise has 30 forests, 2,000 DHCP servers, and a mix of Microsoft and Infoblox. Build the case for using IPAM only for Windows-side visibility (with Infoblox handling the rest) vs migrating Infoblox to IPAM. Where does the cost-benefit analysis break?
 5. **NLB in 2026 has it been replaced?** NLB is a 1999-era technology. Modern Azure-aware architectures use Azure Front Door, Application Gateway, or Standard Load Balancer for these patterns. Make the case that NLB is still the right answer for specific on-prem stateless tiers and identify the workloads where moving to Azure-side load balancing is the better answer.

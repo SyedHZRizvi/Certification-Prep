@@ -172,7 +172,7 @@ The **Transform Gizmo** (shown with colored arrows at the object origin) also le
 
 ---
 
-## 1.6a The Blender Python API: Basics for Power Users
+## 1.6a The Blender Python API (Application Programming Interface): Basics for Power Users
 
 Blender's entire interface is scriptable via **Python**, every button press, every modal operator, every property change can be triggered or automated from a script. This is not just for developers: animators and TDs use Python constantly.
 
@@ -182,7 +182,7 @@ Blender's entire interface is scriptable via **Python**, every button press, eve
 ```python
 bpy.ops.mesh.primitive_cube_add(size=2, location=(0, 0, 0))
 ```
-This is the single fastest way to learn the Python API: do things in the UI and watch what Python says.
+This is the single fastest way to learn the Python API: do things in the UI (User Interface) and watch what Python says.
 
 **Essential `bpy` modules:**
 

@@ -17,7 +17,7 @@ Meet the architect at Bertolli & Sons construction. Every Monday she opens File 
 
 Her IT person, Diego, finally migrates the share to **Azure Files**. The `Z:` mapping now points to `\\bertollifiles.file.core.windows.net\projects`. The CAD files live in Azure. Backed up. Geo-redundant. Indexed by Defender.
 
-But Diego notices a problem: a 200 MB CAD file takes 6 seconds to open over the WAN, vs 0.5 seconds when it lived in the closet. So Diego installs **Azure File Sync** on a small Windows Server in the same office. Now Bertolli has the same share *cached locally*, but Azure is the source of truth. Files used in the last 30 days are stored locally on the cache server (fast). Old files exist as tiny "stub" placeholders that get pulled down on demand (slow but rare). Snapshots in Azure. SMB clients see no difference. **That's Azure Files + File Sync.**
+But Diego notices a problem: a 200 MB CAD file takes 6 seconds to open over the WAN (Wide Area Network), vs 0.5 seconds when it lived in the closet. So Diego installs **Azure File Sync** on a small Windows Server in the same office. Now Bertolli has the same share *cached locally*, but Azure is the source of truth. Files used in the last 30 days are stored locally on the cache server (fast). Old files exist as tiny "stub" placeholders that get pulled down on demand (slow but rare). Snapshots in Azure. SMB clients see no difference. **That's Azure Files + File Sync.**
 
 ---
 
@@ -25,7 +25,7 @@ But Diego notices a problem: a 200 MB CAD file takes 6 seconds to open over the 
 
 | | Azure Files | Blob Storage |
 |---|-------------|--------------|
-| Protocol | SMB 2.1/3 or NFS 4.1 | HTTPS (REST) |
+| Protocol | SMB 2.1/3 or NFS 4.1 | HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure) (REST (Representational State Transfer)) |
 | Mounting | `net use Z:` (Windows), `mount` (Linux/Mac) | Application code or Storage Explorer |
 | Folder structure | Native folder tree | Flat namespace with `/` prefixes |
 | File locking | Yes (real SMB locks) | Lease-based only |
@@ -47,7 +47,7 @@ Sit inside a storage account. Choose tier per **share**, not per file.
 
 🔥 **Premium is billed for *provisioned* size; standard tiers bill for *used* size.** This trips people up.
 
-### Create a standard (Hot) share via CLI
+### Create a standard (Hot) share via CLI (Command Line Interface)
 
 ```bash
 az storage share-rm create \
@@ -82,7 +82,7 @@ After Kerberos auth happens at the SMB level, **NTFS-style ACLs** on files/folde
 
 🔥 **MEMORIZE this layering:**
 1. SMB connects with Kerberos (or storage account key)
-2. Azure RBAC role grants **share-level access** (`Storage File Data SMB Share Reader/Contributor/Elevated Contributor`)
+2. Azure RBAC (Role-Based Access Control) role grants **share-level access** (`Storage File Data SMB Share Reader/Contributor/Elevated Contributor`)
 3. **NTFS ACLs** grant **file/folder-level access**
 
 Both #2 and #3 must allow the action.
@@ -136,7 +136,7 @@ az storage share-rm create \
 
 ## 🔄 Azure File Sync
 
-The killer feature: a **Windows Server** acts as a cache for an Azure file share, giving local LAN-speed access while Azure remains the source of truth.
+The killer feature: a **Windows Server** acts as a cache for an Azure file share, giving local LAN (Local Area Network)-speed access while Azure remains the source of truth.
 
 ```
 ┌─────────────────┐         ┌──────────────────────┐
@@ -248,7 +248,7 @@ Recover an entire deleted share within retention (1–365 days). Separate from s
 |------|------------|
 | **Azure Files** | Managed SMB / NFS file shares |
 | **Share tier** | Premium / Transaction Optimized / Hot / Cool |
-| **SMB Multichannel** | Allows multiple TCP connections per session for throughput |
+| **SMB Multichannel** | Allows multiple TCP (Transmission Control Protocol) connections per session for throughput |
 | **AD DS auth** | Storage account joined to on-prem AD via a service account |
 | **Entra Kerberos** | Modern hybrid auth for Azure Files |
 | **Entra Domain Services** | Managed domain in Azure (rare on AZ-104) |
@@ -300,7 +300,7 @@ You now know:
 - **~70% reduction in per-store storage hardware capex** by moving from 12 TB RAID arrays to 256 GB SSD caches.
 - **Mean time to restore a corrupted file** dropped from "next sysadmin truck-roll, 0–14 days" to **under 10 minutes** via Windows Explorer "Previous Versions" (snapshot-based).
 - **Mean time to recover a failed store server** dropped from a full sysadmin visit (4–8 hours plus parts) to **under 90 minutes**, install Windows Server, install the Sync agent, register to the same sync group, files re-populate on demand.
-- **Cross-store visibility** became possible: head office could finally query schedule data across all 180 stores from a single Power BI report. The compliance and labor-cost optimization that unlocked was, by IT's own measurement, the actual ROI of the project, the storage savings were a rounding error.
+- **Cross-store visibility** became possible: head office could finally query schedule data across all 180 stores from a single Power BI report. The compliance and labor-cost optimization that unlocked was, by IT's own measurement, the actual ROI (Return on Investment) of the project, the storage savings were a rounding error.
 
 **Lesson for the exam / for practitioners.** Azure File Sync is the exam's "lift and shift the file server" answer, but the *real* lesson is that the cache + cloud-source-of-truth pattern enables analytics that the per-store siloed model fundamentally couldn't. When AZ-104 gives you a "distributed offices with file servers" scenario, Azure File Sync is the answer, not just for the SMB compatibility, but because (a) cloud tiering kills the per-site capacity-planning problem, (b) Entra Kerberos kills the per-site domain-controller dependency, and (c) snapshots + backup centralize what used to be 180 separate failure modes into one.
 
@@ -312,9 +312,9 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 5 covers the VM sizing decisions for those per-store cache servers; Module 9 deepens the backup/DR design; Module 10 wires the Sync diagnostic logs into Azure Monitor.
-> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 3](../../04-AWS-Solutions-Architect-Associate/Module-03-EC2-Deep-Dive/Reading.md) covers AWS Storage Gateway (the analogue to Azure File Sync); [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md) covers the AD auth and SMB security model in depth.
-> - Practice: PE-1 has 2 questions from this module; Final Mock revisits via cross-domain scenarios (file share + private endpoint + backup).
+> - Inside this course: Module 5 covers the VM (Virtual Machine) sizing decisions for those per-store cache servers; Module 9 deepens the backup/DR design; Module 10 wires the Sync diagnostic logs into Azure Monitor.
+> - Cross-course: [`04-AWS (Amazon Web Services)-Solutions-Architect-Associate` Module 3](../../04-AWS-Solutions-Architect-Associate/Module-03-EC2 (Elastic Compute Cloud)-Deep-Dive/Reading.md) covers AWS Storage Gateway (the analogue to Azure File Sync); [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md) covers the AD auth and SMB security model in depth.
+> - Practice: PE (Private Equity)-1 has 2 questions from this module; Final Mock revisits via cross-domain scenarios (file share + private endpoint + backup).
 
 ---
 

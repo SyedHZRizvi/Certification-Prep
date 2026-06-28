@@ -3,11 +3,11 @@
 > **Why this module matters:** 12% of the Final Mock, and 100% of every other module. Tokens, context windows, sampling parameters, and the system/user/assistant role architecture are the periodic table of prompt engineering. Skip the chemistry, fail the experiments.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Reading Python or JavaScript at a junior level (you can follow an API call with `requests` or `fetch`)
-> - The idea of an API key and an HTTP request
+> - Reading Python or JavaScript at a junior level (you can follow an API (Application Programming Interface) call with `requests` or `fetch`)
+> - The idea of an API key and an HTTP (Hypertext Transfer Protocol) request
 > - JSON syntax (objects, arrays, strings)
 >
-> You do NOT need to know anything about transformer internals, embeddings, or RLHF. We define every term we use.
+> You do NOT need to know anything about transformer internals, embeddings, or RLHF (Reinforcement Learning from Human Feedback). We define every term we use.
 
 ---
 
@@ -139,7 +139,7 @@ A context window is the maximum number of tokens (input + output combined, on mo
 
 A model that advertises 1M context does **not** uniformly remember everything in that window. The classic paper *Lost in the Middle* (Liu et al., 2023) showed that information placed in the **middle** of a long context is recalled significantly worse than information at the **start** or **end**.
 
-🎯 **Prompt-engineering rule:** Put critical instructions at the **start** of the system prompt OR at the **end** of the user message. Never bury them in the middle of a 100K-token RAG dump.
+🎯 **Prompt-engineering rule:** Put critical instructions at the **start** of the system prompt OR at the **end** of the user message. Never bury them in the middle of a 100K-token RAG (Retrieval-Augmented Generation) dump.
 
 ### Reasoning models break the math
 
@@ -283,7 +283,7 @@ A list of strings; when the model produces one, it stops generating.
 
 ## 🔌 Calling an API, The Minimum Viable Prompt
 
-Every provider's SDK ultimately POSTs JSON to an HTTPS endpoint. Here are the four-line minimums for each.
+Every provider's SDK (Software Development Kit) ultimately POSTs JSON to an HTTPS (HTTP Secure) endpoint. Here are the four-line minimums for each.
 
 ```python
 # Anthropic
@@ -467,7 +467,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 2](../Module-02-Few-Shot-In-Context/Reading.md) layers in example-driven prompting. [Module 4](../Module-04-Structured-Outputs-JSON/Reading.md) revisits the role architecture to force JSON outputs. [Module 7](../Module-07-Adversarial-Defense/Reading.md) deeply explores instruction-hierarchy enforcement under attack. [Module 8](../Module-08-Production-Scale/Reading.md) revisits cost math at production scale.
-> - Cross-course: AWS AI Practitioner (course 07) covers Bedrock model selection. Azure AI Engineer (course 08) covers Azure OpenAI Service and its tokenizer specifics.
+> - Cross-course: AWS (Amazon Web Services) AI Practitioner (course 07) covers Bedrock model selection. Azure AI Engineer (course 08) covers Azure OpenAI Service and its tokenizer specifics.
 > - Practice: Practice Exam 1 has ~4 questions from this module.
 
 ---

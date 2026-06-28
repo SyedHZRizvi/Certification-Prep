@@ -312,7 +312,7 @@ This is the classic "repeating defect" troubleshooting move: measure the *period
 - **Patches sometimes need follow-up.** Always verify by reading post-patch advisories.
 
 **Discussion (Socratic).**
-- **Q1:** A 50-person law firm's only IT person reads about PrintNightmare. They have one Windows Server acting as both file server and print server, AD-joined. What 3 actions take in the first 24 hours?
+- **Q1:** A 50-person law firm's only IT person reads about PrintNightmare. They have one Windows Server acting as both file server and print server, AD (Active Directory)-joined. What 3 actions take in the first 24 hours?
 - **Q2:** Is the right architecture in 2026 to centralize printing on a dedicated print server, distribute it to each workstation, or use direct-to-printer (IP printing)? Argue trade-offs for a 100-person law firm.
 - **Q3:** PrintNightmare highlighted that legacy Windows services (Print Spooler dates to NT 3.1, 1993) carry forward old assumptions. Where else in modern Windows might similar architectural debt lurk, and how do we prioritize remediation?
 

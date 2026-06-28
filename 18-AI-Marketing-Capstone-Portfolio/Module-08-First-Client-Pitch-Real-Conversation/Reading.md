@@ -17,9 +17,9 @@ Picture someone call them Jordan who's just finished the portfolio. Five capston
 
 Jordan does what most students stop short of doing: they start sending cold messages.
 
-Monday: 5 LinkedIn DMs to indie SaaS founders, each referencing the founder's product specifically + linking to one capstone that's relevant.
+Monday: 5 LinkedIn DMs to indie SaaS (Software as a Service) founders, each referencing the founder's product specifically + linking to one capstone that's relevant.
 
-Tuesday: 1 reply. *"Hey Jordan, your SEO audit format looks great. We don't need a full audit but we could use a content roadmap. What would you charge?"*
+Tuesday: 1 reply. *"Hey Jordan, your SEO (Search Engine Optimization) audit format looks great. We don't need a full audit but we could use a content roadmap. What would you charge?"*
 
 Wednesday: A 30-min call. Jordan walks through their case study for 5 minutes, then asks: *"Tell me about your business, where are you stuck on content?"*
 
@@ -96,9 +96,9 @@ This is the "show don't tell" wall. You're not explaining; you're showing.
 Pick the capstone most relevant to THIS prospect.
 
 For an indie SaaS founder: probably the SEO audit
-For a DTC brand: probably the paid campaign
+For a DTC (Direct-to-Consumer) brand: probably the paid campaign
 For an agency: probably the automation workflow
-For a B2B SaaS: probably the AI agent
+For a B2B (Business-to-Business) SaaS: probably the AI agent
 
 This is the only slide that changes per pitch. The other 6 stay the same.
 
@@ -160,11 +160,11 @@ If you're job-track: replace this slide with "What I'm looking for in a role" (3
 
 Examples of differentiators:
 
-- *"I work AI-native, I build with the API, not just chat with ChatGPT"*
+- *"I work AI-native, I build with the API (Application Programming Interface), not just chat with ChatGPT"*
 - *"I always publish a post-mortem, you see what worked AND what didn't"*
 - *"I work on small budgets, my biggest case study used $200, not $20k"*
 
-### Slide 7: Next Steps + CTA
+### Slide 7: Next Steps + CTA (Call to Action)
 
 ```
 "If this fits, here's what we'd do:
@@ -467,7 +467,7 @@ You've practiced this throughout the course. Here's the final version that incor
 | **Close** | The moment they say yes |
 | **Discovery question** | A question that uncovers their actual need |
 | **Sales objection** | A reason they give for not moving forward |
-| **MQL/SQL** | Marketing-Qualified Lead / Sales-Qualified Lead (B2B context) |
+| **MQL (Marketing Qualified Lead)/SQL** | Marketing-Qualified Lead / Sales-Qualified Lead (B2B context) |
 
 ---
 

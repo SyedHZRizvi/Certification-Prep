@@ -1,10 +1,10 @@
 # Module 8: Analytics & Measurement Basics 📊
 
-> **Why this module matters:** "If you can't measure it, you can't manage it", Peter Drucker. In 2026, the marketers who get promoted are the ones who can read GA4, build a Looker Studio dashboard, set up consent-aware conversion tracking, and explain attribution to their CMO without lying.
+> **Why this module matters:** "If you can't measure it, you can't manage it", Peter Drucker. In 2026, the marketers who get promoted are the ones who can read GA4, build a Looker Studio dashboard, set up consent-aware conversion tracking, and explain attribution to their CMO (Chief Marketing Officer) without lying.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) the attribution-is-broken seismic shift, first-party data
-> - [Module 7 Paid Advertising](../Module-07-Paid-Advertising-Fundamentals/Reading.md) Conversions API, Enhanced Conversions, iOS 14.5 ATT
+> - [Module 7 Paid Advertising](../Module-07-Paid-Advertising-Fundamentals/Reading.md) Conversions API (Application Programming Interface), Enhanced Conversions, iOS 14.5 ATT
 > - Comfort opening a (free) Google Analytics account and clicking around, the tutorial sections benefit from following along
 >
 > If you've used UA but never GA4, expect a re-learning curve, the data model is fundamentally different (events instead of sessions). If you've used neither, signing up for a free GA4 demo account before the tutorial sections is a good idea.
@@ -51,7 +51,7 @@ GA4 was a ground-up rebuild, not a UA update. The biggest shifts:
 | Core unit | **Session** (a visit) | **Event** (any interaction) |
 | Tracking model | Pageviews + sessions + events as separate concepts | Everything is an event |
 | Cross-platform | Web only | Web + app unified |
-| Privacy | Pre-GDPR design | Consent-aware (Consent Mode) |
+| Privacy | Pre-GDPR (General Data Protection Regulation) design | Consent-aware (Consent Mode) |
 | AI features | Limited | Predictive metrics + Insights baked in |
 | Reporting | Pre-built reports + custom | Exploration reports + ML-driven analyses |
 | Free retention | 14 months | 14 months default (can extend) |
@@ -161,7 +161,7 @@ The 5 standard UTM parameters:
    - **Pie chart**: Device breakdown
    - **Table**: Top 20 landing pages by sessions
 
-Spend 1 hour. You'll have a dashboard you can send to your CEO weekly.
+Spend 1 hour. You'll have a dashboard you can send to your CEO (Chief Executive Officer) weekly.
 
 ### Free vs Paid Dashboard Stack
 
@@ -170,7 +170,7 @@ Spend 1 hour. You'll have a dashboard you can send to your CEO weekly.
 | **Looker Studio** | Free (Google) | Multi-source marketing dashboards |
 | **Power BI** | Free for users; per-license enterprise | Microsoft-stack shops |
 | **Tableau** | Tableau Public free; enterprise paid | Mature data teams |
-| **Metabase** | Open-source free; cloud paid | Database-heavy SaaS |
+| **Metabase** | Open-source free; cloud paid | Database-heavy SaaS (Software as a Service) |
 | **Mixpanel** | Free tier | Product/event analytics |
 | **Amplitude** | Free tier | Product/event analytics |
 
@@ -188,7 +188,7 @@ For marketing reporting, **Looker Studio dominates the free-tier space**.
 |---|---|---|
 | **Last-click** | 100% credit to the last touch | Simple, default, but underweights TOFU |
 | **First-click** | 100% to the first touch | Brand awareness focus |
-| **Linear** | Equal credit across all touches | Multi-touch B2B journeys |
+| **Linear** | Equal credit across all touches | Multi-touch B2B (Business-to-Business) journeys |
 | **Time-decay** | More recent touches get more credit | Mixed-funnel campaigns |
 | **Position-based (U-shaped)** | 40% first, 40% last, 20% middle | Common B2B compromise |
 | **Data-driven attribution (DDA)** | ML assigns credit based on actual paths | Default in GA4 + Google Ads since 2023 |
@@ -203,7 +203,7 @@ The honest 2026 setup combines:
 2. **GA4 / cross-channel attribution**, DDA in GA4 gives a single source of truth across platforms.
 3. **MMM (Marketing Mix Modeling)**, econometric, aggregate-level. Resilient to cookie loss.
 4. **Incrementality testing**, holdouts that measure true lift, not just correlation.
-5. **First-party signal**, your CRM data, server-side events, customer surveys.
+5. **First-party signal**, your CRM (Customer Relationship Management) data, server-side events, customer surveys.
 
 No single model is "right." The best teams triangulate.
 
@@ -273,7 +273,7 @@ The McKinsey 2024 *Marketing & Sales Practice* report flagged MMM as one of the 
 | **Average engagement time** | Total engaged time ÷ sessions | Stickiness |
 | **Event count** | All events | Activity volume |
 | **Users / Active users** | Unique users in period | Audience size |
-| **Revenue / ARPU** | Total revenue / users | Per-user value |
+| **Revenue / ARPU (Average Revenue Per User)** | Total revenue / users | Per-user value |
 | **Goals achieved (legacy term)** |, | Old UA name for conversions |
 
 🚨 **Trap on the exam:** GA4's bounce rate definition is *different* from UA's. In UA, bounce was "single-page session." In GA4, bounce is "1 minus engagement rate," where engagement is itself a stricter, multi-factor definition. Many old study guides still use UA logic.
@@ -285,7 +285,7 @@ The McKinsey 2024 *Marketing & Sales Practice* report flagged MMM as one of the 
 Spotify is the most-cited modern data-driven marketing organization. Public talks by Spotify's former CMO Alex Bodman and analytics leads at the Spotify Engineering Blog have outlined a stack that became a reference architecture:
 
 1. **Event-level instrumentation** of the product captures every meaningful user action.
-2. **First-party data lake** (originally on AWS) holds the raw events; modeled into BigQuery / Snowflake.
+2. **First-party data lake** (originally on AWS (Amazon Web Services)) holds the raw events; modeled into BigQuery / Snowflake.
 3. **MMM + incrementality testing** for paid marketing measurement (their MMM is reportedly one of the most sophisticated in consumer tech).
 4. **Personalization engine** (the same Aerosolve we mentioned in Module 2) closes the loop.
 5. **Spotify Wrapped** is the most visible output, but it's the *tip of the iceberg*, most of Spotify's analytics work is invisible to users.
@@ -372,7 +372,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 9 covers the GDPR, CCPA, and EU AI Act layers that constrain what you can measure; Module 10 covers the stack-and-tools layer (CDPs, dashboards) you wire on top of GA4.
+> - Inside this course: Module 9 covers the GDPR, CCPA (California Consumer Privacy Act), and EU AI Act layers that constrain what you can measure; Module 10 covers the stack-and-tools layer (CDPs, dashboards) you wire on top of GA4.
 > - Cross-course: `15-AI-Marketing-Strategy` Module 8 covers measurement governance (when to push for MMM, when to invest in incrementality tests); `16-AI-Marketing-Automation-Workflows` Module 8 automates the dashboard + alerting layer.
 > - Practice: Practice Exam 2 has 8–10 measurement questions (GA4, UTM, attribution, Consent Mode, MMM). Final Mock revisits with cross-platform synthesis (Robyn vs Meridian, DDA vs MMM).
 
@@ -380,8 +380,8 @@ You now know:
 
 ## 💬 Discussion, Socratic prompts
 
-1. **DDA as default feature or trap?** GA4 made data-driven attribution (DDA) the default in 2023. A marketing analyst argues this is great because last-click was always wrong. A CFO objects: "I don't trust a black-box ML model assigning credit; I want to see the rules." Construct the strongest argument for each. Where is the right operating point DDA + last-click + first-click reported side-by-side, or DDA-only with a periodic incrementality test?
-2. **MMM's comeback at the SMB level.** Robyn (Meta) and Meridian (Google) made MMM accessible to mid-market for free. A small DTC brand with $200K monthly ad spend asks: "Is MMM worth my analyst's 2 weeks of setup time?" The reading says yes; a practical objection says no, because MMM needs 2+ years of clean weekly data to work and small brands don't have it. Where is the cutover, what's the minimum spend + history + variance you need before MMM beats last-click?
+1. **DDA as default feature or trap?** GA4 made data-driven attribution (DDA) the default in 2023. A marketing analyst argues this is great because last-click was always wrong. A CFO (Chief Financial Officer) objects: "I don't trust a black-box ML model assigning credit; I want to see the rules." Construct the strongest argument for each. Where is the right operating point DDA + last-click + first-click reported side-by-side, or DDA-only with a periodic incrementality test?
+2. **MMM's comeback at the SMB level.** Robyn (Meta) and Meridian (Google) made MMM accessible to mid-market for free. A small DTC (Direct-to-Consumer) brand with $200K monthly ad spend asks: "Is MMM worth my analyst's 2 weeks of setup time?" The reading says yes; a practical objection says no, because MMM needs 2+ years of clean weekly data to work and small brands don't have it. Where is the cutover, what's the minimum spend + history + variance you need before MMM beats last-click?
 3. **Consent Mode v2: tracking laundering or genuine privacy?** Consent Mode v2 lets Google "model" conversion data for non-consenting users via aggregate signals. A privacy advocate says this is consent-washing, you're still feeding aggregate signal to Google's ad-targeting model. A pragmatist says it's the best available bridge between "track everything" and "track nothing." Steel-man both. Where would you, as the marketer-of-record, draw the privacy line your CMO has to defend in front of regulators?
 4. **The UTM taxonomy that survives reorgs.** A common failure mode: a UTM taxonomy works for 6 months, then breaks when the team reorgs or adds a new channel. Design a UTM-naming convention that's *robust to organizational change*, what 4–5 rules would you commit to in writing (lowercase, hyphen vs underscore, channel-vs-source distinction, etc.), and how would you enforce them with a non-technical team? Defend each rule.
 5. **The Spotify reference architecture: aspiration vs realism.** Spotify's measurement stack (event-level + first-party + MMM + incrementality + personalization) is held up as the reference. Most companies will never reach this depth. What are the *first three* layers any 2026 mid-market team should build, in what order? Construct your argument as if you were the new VP of Marketing Ops making a 12-month plan to the CMO.

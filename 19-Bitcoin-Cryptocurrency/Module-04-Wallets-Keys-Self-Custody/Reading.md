@@ -19,7 +19,7 @@ The forensic post-mortem reveals an architecture that custody engineers in 2026 
 
 1. **Single hot wallet** held essentially all customer BTC.
 2. **No segregation** between customer funds and operational funds.
-3. **No multi-party signature requirement**, one set of keys, often available to the CEO.
+3. **No multi-party signature requirement**, one set of keys, often available to the CEO (Chief Executive Officer).
 4. **Transaction malleability** (a Bitcoin protocol quirk Mt. Gox claimed allowed double-withdrawal exploits, the truth was murkier).
 5. **No external attestation** of reserves. Customers had no way to verify their BTC was still there.
 6. **No independent audit** of cold-storage holdings.
@@ -444,14 +444,14 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 6 explains how the multi-sig and Taproot scripts work at the protocol layer; Module 7 builds Lightning channels on top of these self-custody primitives; Module 9 audits institutional custody against CCSS.
-> - Cross-course: `09-CompTIA-Security-Plus` Module-04 (IAM) covers MFA, hardware tokens (YubiKey, FIDO2), and the same general "what you have / what you know" framework.
+> - Cross-course: `09-CompTIA-Security-Plus` Module-04 (IAM (Identity and Access Management)) covers MFA (Multi-Factor Authentication), hardware tokens (YubiKey, FIDO2), and the same general "what you have / what you know" framework.
 > - Practice: Practice Exam 1 has 6–8 questions from this module (BIP numbers, multi-sig, inheritance). Final Mock asks scenario questions on custody architecture choices.
 
 ---
 
 ## 💬 Discussion, Socratic prompts
 
-1. **The "regulated custody" question.** A high-net-worth client argues that Coinbase Custody (NYDFS-chartered trust company, SOC 2 Type II, insurance) is safer than self-custody. Construct the strongest argument for both. At what dollar threshold does each side dominate?
+1. **The "regulated custody" question.** A high-net-worth client argues that Coinbase Custody (NYDFS-chartered trust company, SOC (Security Operations Center) 2 Type II, insurance) is safer than self-custody. Construct the strongest argument for both. At what dollar threshold does each side dominate?
 2. **The passphrase paradox.** A passphrase protects against seed theft but creates a single point of failure (passphrase loss = funds lost forever). Design an inheritance plan that handles both threats. What's the unavoidable trade-off?
 3. **2-of-3 vs 3-of-5 multi-sig.** For a $5M personal holding, defend either 2-of-3 (simpler, faster recovery) or 3-of-5 (more resilient to multiple compromises), and show the math of expected loss under different attack/loss scenarios.
 4. **MPC vs multi-sig for an exchange.** An exchange must rebalance its warm wallet hourly with sub-second signing latency. Multi-sig is slow; MPC is fast. What's the security trade-off, and what's the audit-and-compliance trade-off?

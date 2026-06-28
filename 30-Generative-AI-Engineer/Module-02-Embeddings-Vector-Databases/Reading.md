@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1 (tokenization, vectors, basic attention)
 > - Linear algebra: dot products and cosine similarity
-> - Python data plumbing (`numpy`, basic SQL, REST APIs)
+> - Python data plumbing (`numpy`, basic SQL, REST (Representational State Transfer) APIs)
 >
 > If you can compute the cosine similarity between two vectors by hand on a 3-dimensional example, you are ready.
 
@@ -19,7 +19,7 @@ January 2024. Notion's AI team had just shipped "Q&A", ask your workspace anythi
 
 Internal investigation. The pinned memo was in the index. The embedding lookup correctly returned the memo as the *fifth* most similar chunk. Q&A only fed the top three. Why was a perfectly relevant 600-word memo ranked fifth?
 
-The cause turned out to be the **chunking strategy**. Notion's first chunker split documents at fixed token boundaries (every 512 tokens, no overlap). The memo's *agenda* section started 460 tokens into the document and the chunker had split right *across* the agenda, so the heading was in one chunk and the bullet points were in the next. The embedding of the chunk that contained "Q4 offsite" plus a dozen paragraphs of unrelated CRM strategy was, in cosine-similarity space, dominated by "CRM" so it ranked below three retrieval-poisoning blog drafts.
+The cause turned out to be the **chunking strategy**. Notion's first chunker split documents at fixed token boundaries (every 512 tokens, no overlap). The memo's *agenda* section started 460 tokens into the document and the chunker had split right *across* the agenda, so the heading was in one chunk and the bullet points were in the next. The embedding of the chunk that contained "Q4 offsite" plus a dozen paragraphs of unrelated CRM (Customer Relationship Management) strategy was, in cosine-similarity space, dominated by "CRM" so it ranked below three retrieval-poisoning blog drafts.
 
 The fix wasn't a model upgrade. It was *chunking with overlap*, *header-aware splitting*, and a *small reranker* on top of the dense retriever. The embedding model `text-embedding-3-small` never changed.
 
@@ -75,9 +75,9 @@ Modern retrieval-tuned embedders **distinguish queries from documents**. They ha
 
 - Cohere `embed-v3`: pass `input_type="search_query"` for the user query, `input_type="search_document"` for stored chunks
 - E5: prepend `query: ` to queries, `passage: ` to documents
-- BGE: prepend `Represent this sentence for searching relevant passages: ` to queries (or use the `bge-m3` API that handles it)
+- BGE: prepend `Represent this sentence for searching relevant passages: ` to queries (or use the `bge-m3` API (Application Programming Interface) that handles it)
 
-Forgetting the asymmetric prefix is *the* most common first-day bug. Quality can drop 5–15 points of MRR.
+Forgetting the asymmetric prefix is *the* most common first-day bug. Quality can drop 5–15 points of MRR (Monthly Recurring Revenue).
 
 ### Matryoshka representations
 
@@ -101,7 +101,7 @@ A vector DB indexes vectors for **approximate nearest neighbor (ANN) search**. E
 | **Vespa** | Managed + self-host | Apache 2.0 | HNSW | Yahoo's serving engine; very fast hybrid + structured filters |
 | **Redis (RediSearch)** | Anywhere Redis runs | Permissive | HNSW, FLAT | Low-latency lookup; small-to-medium scale |
 | **LanceDB** | Embedded | Apache 2.0 | IVF-PQ on disk | Embedded "DuckDB-for-vectors"; popular in notebooks |
-| **Turbopuffer** | Managed | No | Disk-first with S3-backed storage | Optimized for cost at scale; LangChain integration |
+| **Turbopuffer** | Managed | No | Disk-first with S3 (Simple Storage Service)-backed storage | Optimized for cost at scale; LangChain integration |
 
 ### The "what should I use" answer
 
@@ -354,7 +354,7 @@ You now know:
 
 > **Where this leads.**
 > - **Inside this course:** Module 3 builds end-to-end RAG on top of this, the embeddings + DB are the *retrieval* layer of every RAG pipeline. Module 9 covers semantic caching, which is yet another use of embeddings.
-> - **Cross-course:** Course 07 (AWS AI Practitioner) covers Bedrock Knowledge Bases at a higher level; this module is the engineer's view of the same primitives.
+> - **Cross-course:** Course 07 (AWS (Amazon Web Services) AI Practitioner) covers Bedrock Knowledge Bases at a higher level; this module is the engineer's view of the same primitives.
 
 ---
 

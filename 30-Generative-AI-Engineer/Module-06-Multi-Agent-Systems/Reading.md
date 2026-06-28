@@ -14,7 +14,7 @@
 
 March 2023. AutoGPT exploded onto the scene: a GitHub repo claiming to be the "first autonomous AI agent." Within a month it had 150,000 stars. Tech Twitter declared the singularity was imminent. Within six months, the community had moved on. Why?
 
-Because AutoGPT, in practice, was *spectacularly* bad at finishing tasks. It would spin in loops, repeat itself, run up API costs, and produce 200-line plans for "buy a domain and host a hello world site" before failing at step 8 because it couldn't authenticate to a service it had never been told about. A widely-circulated benchmark in mid-2023 showed AutoGPT successfully completed roughly **8%** of the tasks it attempted.
+Because AutoGPT, in practice, was *spectacularly* bad at finishing tasks. It would spin in loops, repeat itself, run up API (Application Programming Interface) costs, and produce 200-line plans for "buy a domain and host a hello world site" before failing at step 8 because it couldn't authenticate to a service it had never been told about. A widely-circulated benchmark in mid-2023 showed AutoGPT successfully completed roughly **8%** of the tasks it attempted.
 
 The 2024 takeaway, written in many post-mortems, was unsentimental: **autonomous open-ended agents don't work yet.** What does work is *scoped agents*, agents with a well-defined goal, a small set of tools, a limited budget of steps, and a clear stop condition. Most of "multi-agent systems" in 2026 is the engineering of *constrained collaboration*, not "let the AI figure it out."
 
@@ -133,7 +133,7 @@ Released October 2024. Claude controls a virtual desktop, sees screenshots, move
 
 Computer Use is a *new shape* of agent, sensorimotor rather than text-tool. Production deployments in 2025–2026 wrap it with strict guardrails because the action space is enormous.
 
-### OpenAI Swarm / OpenAI Agents SDK
+### OpenAI Swarm / OpenAI Agents SDK (Software Development Kit)
 
 OpenAI released the experimental "Swarm" framework in October 2024, then the production "Agents SDK" in 2025. Swarm models *handoffs*, one agent decides which other agent to transfer control to.
 

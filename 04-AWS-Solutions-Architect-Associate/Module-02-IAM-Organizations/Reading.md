@@ -1,4 +1,4 @@
-# Module 2: IAM, Organizations & Cross-Account Access 🔐
+# Module 2: IAM (Identity and Access Management), Organizations & Cross-Account Access 🔐
 
 > **Why this module matters:** The "Design Secure Architectures" domain is **30%** of SAA-C03, the largest single domain. Nearly every question in it pivots on IAM. If you don't know the difference between an identity policy and a resource policy, between an SCP and a permissions boundary, or how AssumeRole works, you can't pass this exam.
 
@@ -25,8 +25,8 @@ Now translate:
 - **Room key → IAM policy** (says what you can open)
 - **Housekeeper's key → IAM group** (shared keys for a job function)
 - **Plumber's temp credential → STS AssumeRole** (short-lived, expires)
-- **Vault dual-control → MFA / SCPs** (extra barrier on dangerous actions)
-- **Camera log → CloudTrail** (audit of every door swipe / API call)
+- **Vault dual-control → MFA (Multi-Factor Authentication) / SCPs** (extra barrier on dangerous actions)
+- **Camera log → CloudTrail** (audit of every door swipe / API (Application Programming Interface) call)
 
 Master that hotel and you've mastered AWS IAM. Now let's get specific.
 
@@ -39,7 +39,7 @@ Before the AWS-specific jargon, know that IAM stands on shoulders:
 - **The principle of least privilege** comes from Saltzer & Schroeder's seminal paper *"The Protection of Information in Computer Systems"* (Saltzer & Schroeder, **Communications of the ACM, 1975**). Their eight design principles are still cited verbatim in the AWS Security pillar. Least privilege is principle #4: *"Every program and every user of the system should operate using the least set of privileges necessary to complete the job."*
 - **The CIA Triad** (Confidentiality, Integrity, Availability) was systematized in the same Saltzer & Schroeder paper and codified in the U.S. NIST Special Publication 800-12 (1995). When the SAA exam asks "which pillar is improved by enabling encryption?" it's asking about Confidentiality.
 - **The "confused deputy" problem**, which AWS solves with `ExternalId`, was first described by Norman Hardy in *"The Confused Deputy"* (Hardy, **ACM Operating Systems Review, 1988**). The hotel-valet analogy AWS uses in its docs comes directly from Hardy's paper.
-- **Role-based access control (RBAC)** as a formal model is from Ferraiolo & Kuhn's *"Role-Based Access Controls"* (Ferraiolo & Kuhn, **NIST/NCSC National Computer Security Conference, 1992**). IAM roles are the AWS implementation; attribute-based access control (ABAC) which AWS calls "tag-based authorization" is the academic descendant codified in NIST SP 800-162 (2014).
+- **Role-based access control (RBAC (Role-Based Access Control))** as a formal model is from Ferraiolo & Kuhn's *"Role-Based Access Controls"* (Ferraiolo & Kuhn, **NIST/NCSC National Computer Security Conference, 1992**). IAM roles are the AWS implementation; attribute-based access control (ABAC (Attribute-Based Access Control)) which AWS calls "tag-based authorization" is the academic descendant codified in NIST SP 800-162 (2014).
 
 These citations are not academic flourish: the exam questions are deliberately written to test whether you can distinguish "authentication" from "authorization," "principle of least privilege" from "defense in depth," and "RBAC" from "ABAC." Knowing the textbook source makes the distinctions reflexive.
 
@@ -89,8 +89,8 @@ An **IAM policy** is a JSON document combining these:
 | **Root user** | The original account owner | Almost never (only for ~6 root-only tasks) | Yes, guard with MFA |
 | **IAM User** | A long-term identity for a *human* (legacy) or a *service that lives outside AWS* | Decreasingly recommended; prefer Identity Center for humans | Yes, password and/or access key |
 | **IAM Group** | A bag of users with shared permissions | Organize humans by job function | No, just a container |
-| **IAM Role** | An identity that's *assumed* by someone/something for a short time | EC2 instance access to S3, cross-account access, federation | No long-term creds, temporary STS tokens |
-| **Federated user** | An identity from your corporate IdP (Okta, Active Directory, Google) | SSO into AWS | No AWS credentials, uses STS |
+| **IAM Role** | An identity that's *assumed* by someone/something for a short time | EC2 (Elastic Compute Cloud) instance access to S3 (Simple Storage Service), cross-account access, federation | No long-term creds, temporary STS tokens |
+| **Federated user** | An identity from your corporate IdP (Okta, Active Directory, Google) | SSO (Single Sign-On) into AWS | No AWS credentials, uses STS |
 
 ### Roles vs Users, the distinction the exam loves
 
@@ -209,7 +209,7 @@ Real companies don't run one AWS account, they run dozens (one per team, one per
 
 The modern way to give *humans* access to multiple AWS accounts.
 
-- One login (your corporate IdP, Okta, Azure AD, Google, or built-in directory).
+- One login (your corporate IdP, Okta, Azure AD (Active Directory), Google, or built-in directory).
 - **Permission Sets** = predefined IAM roles that get auto-provisioned in target accounts.
 - Users get an AWS access portal with a tile per account/role.
 - All access is **federated** (no long-term IAM user creds).
@@ -259,7 +259,7 @@ aws sts assume-role \
 
 ### What's the `ExternalId` for?
 
-If you're a **third-party SaaS** (e.g., Datadog) accessing customer AWS accounts, the customer puts an `ExternalId` condition. This prevents the "confused deputy" problem where Datadog gets tricked into reading the wrong customer's account.
+If you're a **third-party SaaS (Software as a Service)** (e.g., Datadog) accessing customer AWS accounts, the customer puts an `ExternalId` condition. This prevents the "confused deputy" problem where Datadog gets tricked into reading the wrong customer's account.
 
 🎯 **Exam pattern:** Whenever a **3rd party vendor** needs access to a customer's AWS account → answer involves an **IAM Role** with an **ExternalId** condition. *Never* hand out IAM user access keys.
 
@@ -337,7 +337,7 @@ These four services are part of nearly every "secure architecture" answer:
 
 ## 🚨 Exam Traps
 
-1. **Long-term access keys for EC2 / Lambda / ECS** → always wrong. The right answer is "use an IAM role."
+1. **Long-term access keys for EC2 / Lambda / ECS (Elastic Container Service)** → always wrong. The right answer is "use an IAM role."
 2. **"Best way to give a 3rd party vendor access"** → IAM role + **ExternalId**, not an IAM user.
 3. **Region lockdown** → SCP with `aws:RequestedRegion` condition.
 4. **"Disable CloudTrail prevention"** → SCP denying `cloudtrail:Stop*` and `cloudtrail:Delete*`.
@@ -383,7 +383,7 @@ These four services are part of nearly every "secure architecture" answer:
 
 **Outcome, the celebrated part.** Capital One demonstrably moved faster than its competitors: a feature that took 18 months at JPMorgan Chase shipped in 6 weeks at Capital One. Lambda invocations exceeded **2 billion per month** by 2018. Operational cost per transaction dropped roughly 40%. Capital One became the case study in every bank board deck for "cloud done right."
 
-**Outcome the painful part.** In **July 2019**, a former AWS engineer, Paige Thompson (online handle "erratic"), exploited a **misconfigured WAF on an EC2 instance** to perform a **server-side request forgery (SSRF)** attack against the EC2 instance metadata service (IMDSv1). She obtained the IAM role credentials attached to the instance credentials that had been granted overly broad S3 permissions, and exfiltrated **106 million customer records** (US and Canadian credit-card applicants, including 140,000 SSNs and 80,000 linked bank account numbers).
+**Outcome the painful part.** In **July 2019**, a former AWS engineer, Paige Thompson (online handle "erratic"), exploited a **misconfigured WAF (Web Application Firewall) on an EC2 instance** to perform a **server-side request forgery (SSRF)** attack against the EC2 instance metadata service (IMDSv1). She obtained the IAM role credentials attached to the instance credentials that had been granted overly broad S3 permissions, and exfiltrated **106 million customer records** (US and Canadian credit-card applicants, including 140,000 SSNs and 80,000 linked bank account numbers).
 
 **The breach was a *configuration* failure, not an AWS failure.** Specifically:
 

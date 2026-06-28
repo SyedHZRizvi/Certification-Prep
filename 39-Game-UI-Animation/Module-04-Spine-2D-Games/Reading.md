@@ -128,7 +128,7 @@ This is a core animation technique, "IK/FK switching":
 ### Skin Workflow
 1. Create a base skin with all attachment slots defined
 2. Create variant skins, adding only the slots that change
-3. At runtime, the runtime API composites the base skin + selected variant skin
+3. At runtime, the runtime API (Application Programming Interface) composites the base skin + selected variant skin
 
 ```csharp
 // Unity Spine-Unity runtime, set a skin
@@ -148,7 +148,7 @@ Spine's commercial license includes runtime libraries for Unity, Unreal Engine, 
 
 The Spine-Unity runtime is a UPM package:
 - `SkeletonAnimation`: the MonoBehaviour component for animated Spine skeletons
-- `SkeletonGraphic`: for UI Canvas rendering (Unity UI system)
+- `SkeletonGraphic`: for UI (User Interface) Canvas rendering (Unity UI system)
 - `SkeletonMecanim`: experimental bridge to Unity's Animator Controller (rarely used in production)
 
 ```csharp

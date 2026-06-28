@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI-Animation/Module-08-Social-Media-Animation/Reading/
+permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-08-Social-Media-Animation/Reading/
 title: "Module 8: Social Media Animation"
 ---
 
@@ -188,7 +188,7 @@ Platforms report that 85% of Facebook videos are watched with sound off. 80% of 
 
 ## 🧪 A/B Testing Video Thumbnails
 
-Custom thumbnails drive click-through rate (CTR) on YouTube and LinkedIn. Testing two thumbnail designs against each other (A/B test) is the fastest way to learn what works for your audience.
+Custom thumbnails drive click-through rate (CTR (Click-Through Rate)) on YouTube and LinkedIn. Testing two thumbnail designs against each other (A/B test) is the fastest way to learn what works for your audience.
 
 ### YouTube Thumbnail A/B Test Setup
 

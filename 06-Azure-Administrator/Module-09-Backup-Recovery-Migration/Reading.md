@@ -4,9 +4,9 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 3](../Module-03-Storage-Accounts-Blobs/Reading.md): redundancy SKUs (LRS / ZRS / GRS / GZRS), vault redundancy reuses the same model.
-> - [Module 5](../Module-05-Virtual-Machines/Reading.md): VM, managed disk, and Availability Zone concepts, ASR replicates these.
+> - [Module 5](../Module-05-Virtual-Machines/Reading.md): VM (Virtual Machine), managed disk, and Availability Zone concepts, ASR replicates these.
 > - [Module 7](../Module-07-Virtual-Networks/Reading.md): VNet topology, DR design depends on how you replicate networks (and the gotcha of cross-region IP-address-space planning).
-> - RPO and RTO as concepts, covered briefly in [`02-PMP`](../../../02-PMP/) risk-management modules and in [`09-CompTIA-Security-Plus` Module 6](../../09-CompTIA-Security-Plus/Module-06-Network-Security/Reading.md).
+> - RPO (Recovery Point Objective) and RTO (Recovery Time Objective) as concepts, covered briefly in [`02-PMP`](../../../02-PMP/) risk-management modules and in [`09-CompTIA-Security-Plus` Module 6](../../09-CompTIA-Security-Plus/Module-06-Network-Security/Reading.md).
 >
 > Backup design is one place where on-prem and cloud admin intuitions both apply, but the *automation* is what Azure changes. Treat this module as a re-mapping of skills you may already have to Azure-native tooling.
 
@@ -170,7 +170,7 @@ az site-recovery replication-protected-item create \
 A migration command center. Used for:
 
 - **Discovery & assessment** (on-prem servers, dependencies, cost estimates)
-- **Server migration** (VMware / Hyper-V / Physical / AWS / GCP → Azure)
+- **Server migration** (VMware / Hyper-V / Physical / AWS (Amazon Web Services) / GCP (Google Cloud Platform) → Azure)
 - **Database migration** (SQL Server, MySQL, PostgreSQL → Azure SQL / Flexible Server)
 - **Web app migration** (.NET / Java apps → App Service / AKS)
 - **Storage / file migration** (file shares → Azure Files)
@@ -337,7 +337,7 @@ What Maersk would have done differently with current Azure tooling, all of it co
 > **Where this leads.**
 > - Inside this course: Module 10 covers the Azure Monitor + Sentinel detection layer that would have *alerted* on NotPetya's lateral movement before it took down the backup infrastructure.
 > - Cross-course: [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Modules 4, 5, 6 cover incident response and recovery planning frameworks; [`02-PMP`](../../../02-PMP/) Module 9 covers risk and contingency planning at the project layer.
-> - Practice: PE-2 has 7 questions from this module; Final Mock revisits with cross-domain scenarios (backup + identity + monitoring).
+> - Practice: PE (Private Equity)-2 has 7 questions from this module; Final Mock revisits with cross-domain scenarios (backup + identity + monitoring).
 
 ---
 

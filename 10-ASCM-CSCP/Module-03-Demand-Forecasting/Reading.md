@@ -1,9 +1,9 @@
 # Module 3: Demand & Forecasting 📈
 
-> **Why this module matters:** Forecasting drives every downstream planning decision, S&OP, inventory, capacity, sourcing. Domain 3 ("Planning and Execution") is 40% of the exam. Expect 8–12 questions that test forecasting *methods, error metrics, and CPFR* head-on.
+> **Why this module matters:** Forecasting drives every downstream planning decision, S&OP (Sales and Operations Planning), inventory, capacity, sourcing. Domain 3 ("Planning and Execution") is 40% of the exam. Expect 8–12 questions that test forecasting *methods, error metrics, and CPFR* head-on.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [The bullwhip effect](../Module-01-SCM-Foundations-Strategy/Reading.md), covered in Module 1
+> - [The bullwhip effect](../Module-01-SCM (Supply Chain Management)-Foundations-Strategy/Reading.md), covered in Module 1
 > - [SCOR-Plan vocabulary](../Module-01-SCM-Foundations-Strategy/Reading.md), covered in Module 1
 > - Basic statistics: mean, standard deviation, variance, normal distribution
 > - Time-series intuition (trends, cycles, seasonality)
@@ -15,7 +15,7 @@
 
 Diego runs production planning at **Polar Pop**, a regional ice-cream maker. Every summer his factory ran out of chocolate-chip-cookie-dough by week 3 and ended September with a freezer full of unsold pumpkin-spice. Sales blamed the factory. The factory blamed sales. Sales blamed customers.
 
-Diego decided to do the math. He pulled three years of weekly shipments by SKU and tried four different forecasting approaches:
+Diego decided to do the math. He pulled three years of weekly shipments by SKU (Stock Keeping Unit) and tried four different forecasting approaches:
 
 1. **Naïve** (next week = this week): MAPE was 38%.
 2. **Three-month moving average**: MAPE dropped to 22%.
@@ -56,9 +56,9 @@ The exam tests these patterns explicitly. The right forecasting method depends o
 | **Cyclical** | Long-wave business cycles | Steel | Econometric models |
 | **Lumpy / intermittent** | Sporadic, many zeros | Spare parts, jet engines | Croston's method, single-period |
 | **Independent** | Driven by external customer | Finished goods | Forecast |
-| **Dependent** | Derived from a parent item | Components | MRP, don't forecast |
+| **Dependent** | Derived from a parent item | Components | MRP (Material Requirements Planning), don't forecast |
 
-> 🎯 **Exam tip:** *Independent* demand is forecast. *Dependent* demand (components for an MTS car) is **calculated** from BOM in MRP. Don't forecast components, calculate them.
+> 🎯 **Exam tip:** *Independent* demand is forecast. *Dependent* demand (components for an MTS car) is **calculated** from BOM (Bill of Materials) in MRP. Don't forecast components, calculate them.
 
 ---
 
@@ -193,7 +193,7 @@ CPFR is a structured industry framework (originated by Walmart + Warner-Lambert,
 
 ---
 
-## 🛒 VMI, Vendor Managed Inventory
+## 🛒 VMI (Vendor Managed Inventory), Vendor Managed Inventory
 
 The supplier monitors and replenishes customer inventory on its own (using shared POS or VMI signals).
 
@@ -262,7 +262,7 @@ You can shape demand to match supply:
 
 **Discussion (Socratic).**
 - Q1: Many 2020-2022 CPFR programs fell apart during COVID because partners hoarded information about their own supply problems. Reconstruct: was CPFR fundamentally fragile to crisis, or was it implementation-shallow? Defend a position.
-- Q2: A regional retailer's CEO objects to CPFR with their biggest supplier because "we'll lose pricing leverage when they see our true demand." Build the counter-argument that information sharing increases joint surplus more than it shifts the split.
+- Q2: A regional retailer's CEO (Chief Executive Officer) objects to CPFR with their biggest supplier because "we'll lose pricing leverage when they see our true demand." Build the counter-argument that information sharing increases joint surplus more than it shifts the split.
 - Q3: Generative-AI demand forecasting (e.g., Snowflake + Anthropic Claude, 2024-2026) can ingest raw text news, social, weather that CPFR's structured signal can't. Does this make CPFR obsolete or strengthen it? Cite where the human-in-the-loop fits.
 
 ---
@@ -331,7 +331,7 @@ You now know:
 1. 🎥 [Videos.md](./Videos.md), pay attention to the worked exponential-smoothing example
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ [Module 4: Supply Planning & S&OP](../Module-04-Supply-Planning-SOP/Reading.md)
+4. ➡️ [Module 4: Supply Planning & S&OP](../Module-04-Supply-Planning-SOP (Standard Operating Procedure)/Reading.md)
 
 ---
 
@@ -348,7 +348,7 @@ You now know:
 2. **When naïve beats fancy.** Spyros Makridakis's M-competition (1982, M3 in 2000, M5 in 2020) repeatedly found that simple methods (naïve, exponential smoothing) beat sophisticated ARIMA in many real datasets. Construct an honest argument for when sophistication is worth it, and when it's vanity. Cite at least one demand pattern from this module's typology.
 3. **Demand sensing's edge case.** Your firm pays a vendor for hourly POS-based demand sensing. Your data scientist shows it improves the 1-week forecast by 8% MAPE, but increases the *6-month* forecast volatility because the model over-weights recent signal. How would you reconcile S&OP (6-12 months) vs replenishment (days)?
 4. **The α dial.** A planner sets α = 0.9 because "I want the model to react fast." The forecast bias swings wildly. Walk through the conceptual + math reason why high α hurts here, and how you'd defend a lower α to a planner who insists the higher number "feels right."
-5. **MAPE's collapse and the WMAPE rescue.** A spare-parts business has many SKUs with intermittent demand and frequent zeros. MAPE is mathematically undefined for those weeks. Defend the choice between WMAPE, MASE, and Mean Absolute Error to a CFO who wants "one number that's comparable across the business."
+5. **MAPE's collapse and the WMAPE rescue.** A spare-parts business has many SKUs with intermittent demand and frequent zeros. MAPE is mathematically undefined for those weeks. Defend the choice between WMAPE, MASE, and Mean Absolute Error to a CFO (Chief Financial Officer) who wants "one number that's comparable across the business."
 
 ---
 

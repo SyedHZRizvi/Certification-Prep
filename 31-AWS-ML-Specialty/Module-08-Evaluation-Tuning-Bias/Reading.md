@@ -204,7 +204,7 @@ Foundation models need their own metric family.
 | **Perplexity** | exp(cross-entropy) on held-out text | Language-model quality |
 | **MMLU / ARC / HellaSwag / GSM8K / HumanEval / MT-Bench** | Benchmark suites | General LLM evals |
 | **LLM-as-judge** | Use a larger LLM to score outputs | Subjective tasks |
-| **Faithfulness** (RAG) | Output supported by retrieved docs | RAG; Bedrock contextual grounding checks this |
+| **Faithfulness** (RAG (Retrieval-Augmented Generation)) | Output supported by retrieved docs | RAG; Bedrock contextual grounding checks this |
 | **Answer relevance** (RAG) | Output addresses the question | RAG |
 | **Context precision/recall** (RAG) | Retrieved docs relevance | RAG |
 
@@ -234,7 +234,7 @@ We saw pre-training bias in Module 3. Now we cover **post-training** (after the 
 | **Difference in Positive Proportions of Predicted Labels (DPPL)** | Like DPL but on predictions |
 | **Difference in Acceptance Rates (DAR)** | Acceptance rate difference |
 | **Difference in Rejection Rates (DRR)** | Rejection rate difference |
-| **Accuracy Difference (AD)** | Model accuracy across facets |
+| **Accuracy Difference (AD (Active Directory))** | Model accuracy across facets |
 | **Recall Difference (RD)** | Recall across facets |
 | **Specificity Difference (SD)** | Specificity across facets |
 | **Counterfactual Fliptest (FT)** | Predictions flip when facet changes |
@@ -590,7 +590,7 @@ clarify.run_explainability(
 - `run_post_training_bias`, this module (model-level: DI, DPPL, DAR, ...)
 - `run_explainability`, SHAP, both global and local
 
-The outputs land as JSON / HTML reports in S3; can be attached to a Model Card or referenced by Model Monitor's bias-drift schedule.
+The outputs land as JSON / HTML reports in S3 (Simple Storage Service); can be attached to a Model Card or referenced by Model Monitor's bias-drift schedule.
 
 ---
 
@@ -627,7 +627,7 @@ bedrock.create_evaluation_job(
 )
 ```
 
-For **human evaluation**, the same API supports a `human` config with a workforce ARN and rubric.
+For **human evaluation**, the same API (Application Programming Interface) supports a `human` config with a workforce ARN and rubric.
 
 🎯 **Exam pattern.** Bedrock Model Evaluation = the canonical answer for "compare two Bedrock models on a task with reference labels". Pair with **ROUGE / BLEU** for summarisation / translation, or with **human / LLM-as-judge** for subjective tasks.
 
@@ -659,14 +659,14 @@ What is the task?
 │   └─ Multi-label → Hamming loss / per-class F1 averaged
 │
 ├─ RANKING / RECOMMENDATION
-│   ├─ Top-k matters → Precision@k, Recall@k, MAP, NDCG
+│   ├─ Top-k matters → Precision@k, Recall@k, MAP (Minimum Advertised Price), NDCG
 │   └─ Pairwise rank quality → Kendall's tau, Spearman
 │
 ├─ FORECASTING
 │   ├─ Point forecast → RMSE / MAE / MAPE
 │   └─ Probabilistic → Quantile loss / CRPS
 │
-├─ LLM (CLASSICAL NLP)
+├─ LLM (CLASSICAL NLP (Natural Language Processing))
 │   ├─ Summarisation → ROUGE-1 / ROUGE-2 / ROUGE-L + BERTScore
 │   ├─ Translation → BLEU + METEOR + BERTScore
 │   ├─ Q&A → Exact match + F1 (token-level) + faithfulness

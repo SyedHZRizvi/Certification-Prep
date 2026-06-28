@@ -13,7 +13,7 @@
 
 ## 🏠 A Story: One Building, Many Tenants
 
-Imagine a 20-story apartment building. Each apartment has its own kitchen, bathroom, locked door, mailbox, and address, but they all share the building's *foundation*, *elevator shaft*, *electrical service*, and *roof*. One tenant can repaint without affecting another. A burst pipe in 14B is bad for 14B but the building keeps standing. The building manager (the *hypervisor*) coordinates shared infrastructure; each apartment (the *VM*) operates independently.
+Imagine a 20-story apartment building. Each apartment has its own kitchen, bathroom, locked door, mailbox, and address, but they all share the building's *foundation*, *elevator shaft*, *electrical service*, and *roof*. One tenant can repaint without affecting another. A burst pipe in 14B is bad for 14B but the building keeps standing. The building manager (the *hypervisor*) coordinates shared infrastructure; each apartment (the *VM (Virtual Machine)*) operates independently.
 
 Now imagine a different model: a 20-bedroom co-living house. Bedrooms have doors, but the kitchen, bathroom, and living room are shared. The house has one big shared *foundation* (the *host OS kernel*). Each tenant gets their own bedroom (the *container*), but they all use the same kitchen at the same time, just from different sides. Less isolation than apartments. Much cheaper, much faster to move in, way more tenants per square foot.
 
@@ -46,7 +46,7 @@ VMware was founded in 1998; ESXi (the small, microkernel hypervisor that replace
 |---|---|
 | **ESXi** | The hypervisor itself, runs on bare metal |
 | **vCenter Server** | Central management appliance, manages many ESXi hosts |
-| **vSphere** | The product family (ESXi + vCenter + management UI) |
+| **vSphere** | The product family (ESXi + vCenter + management UI (User Interface)) |
 | **Cluster** | Group of ESXi hosts under one vCenter for HA/DRS/vMotion |
 | **Datastore** | Storage volume (VMFS on block, NFS, vSAN) that holds VM files |
 | **VMFS** | VMware's clustered block filesystem |
@@ -83,13 +83,13 @@ Microsoft's Type 1 hypervisor, built into Windows Server (and Windows 11 Pro/Ent
 Linux-native Type 1 hypervisor. KVM (Kernel-based Virtual Machine) is a Linux kernel module turning the kernel into a hypervisor; QEMU provides device emulation. Together they're the foundation of:
 
 - Open-source private clouds (OpenStack, Proxmox)
-- Most public cloud hypervisors (AWS Nitro, Google Compute Engine, Azure, modified)
+- Most public cloud hypervisors (AWS (Amazon Web Services) Nitro, Google Compute Engine, Azure, modified)
 - KVM hosts on RHEL/Rocky/Ubuntu via `libvirt` + `virt-manager` + `virsh`
 
 | Term | Meaning |
 |---|---|
-| **libvirt** | API/daemon for managing KVM (and other) VMs |
-| **virsh** | CLI to libvirt |
+| **libvirt** | API (Application Programming Interface)/daemon for managing KVM (and other) VMs |
+| **virsh** | CLI (Command Line Interface) to libvirt |
 | **virt-manager** | GUI to libvirt |
 | **qcow2** | KVM/QEMU's native virtual disk format (qcow2 = QEMU Copy-on-Write v2) |
 | **OVS** | Open vSwitch, software switch often paired with KVM |
@@ -179,7 +179,7 @@ Containers package an application + its dependencies into an isolated namespace 
 | Isolation | Strong (hardware-assisted) | Weaker (process-level via namespaces, cgroups) |
 | OS choice | Any OS supported by the hypervisor | Must match host kernel family (Linux containers on Linux host; Windows containers on Windows host; or use a Linux VM under the Docker engine on Windows/Mac) |
 | Density | 10s per host | 100s–1000s per host |
-| Use case | Different OSes, strong isolation, long-running services | Microservices, CI/CD, ephemeral workloads, dev parity |
+| Use case | Different OSes, strong isolation, long-running services | Microservices, CI/CD (Continuous Integration/Continuous Deployment), ephemeral workloads, dev parity |
 
 ### Docker, the canonical container runtime
 
@@ -226,7 +226,7 @@ Once you have many containers across many hosts, you need an orchestrator. Kuber
 | **Control plane** | API server, scheduler, controller manager, etcd (state store) |
 | **Deployment** | Declarative spec for a set of identical Pods + rolling updates |
 | **Service** | Stable network endpoint fronting a set of Pods (ClusterIP/NodePort/LoadBalancer) |
-| **Ingress** | HTTP/HTTPS routing into the cluster |
+| **Ingress** | HTTP (Hypertext Transfer Protocol)/HTTPS (HTTP Secure) routing into the cluster |
 | **Namespace** | Logical isolation within a cluster |
 | **ConfigMap / Secret** | App config / sensitive credentials injected at runtime |
 | **PVC / PV** | PersistentVolumeClaim / PersistentVolume, storage abstraction |
@@ -239,7 +239,7 @@ Once you have many containers across many hosts, you need an orchestrator. Kuber
 - **containerd / CRI-O**, modern container runtimes underneath Docker / Kubernetes
 - **Podman**, daemonless, rootless Docker-compatible CLI from Red Hat
 - **LXC / LXD**, older system containers (more like lightweight VMs)
-- **Rancher, OpenShift, EKS, AKS, GKE**, managed Kubernetes distributions
+- **Rancher, OpenShift, EKS (Elastic Kubernetes Service), AKS, GKE**, managed Kubernetes distributions
 
 ---
 
@@ -254,7 +254,7 @@ Once you have many containers across many hosts, you need an orchestrator. Kuber
 | Strong isolation for multi-tenant workloads | **VM** (or sandbox + containers) |
 | 1,000 short-lived CI jobs per day | **Containers** |
 
-**Truth:** modern infrastructure typically *combines* both. Kubernetes itself often runs on VMs (e.g., VMware Tanzu, OpenShift on RHV, EKS on EC2 instances).
+**Truth:** modern infrastructure typically *combines* both. Kubernetes itself often runs on VMs (e.g., VMware Tanzu, OpenShift on RHV, EKS on EC2 (Elastic Compute Cloud) instances).
 
 ---
 
@@ -287,14 +287,14 @@ Once you have many containers across many hosts, you need an orchestrator. Kuber
 ### Network
 
 - **vSwitch**, software switch in the hypervisor (VMware vSphere Standard Switch, Distributed Switch; Hyper-V vSwitch)
-- **Port group / VLAN tagging**, assign VMs to network segments
+- **Port group / VLAN (Virtual Local Area Network) tagging**, assign VMs to network segments
 - **SR-IOV**, single-root I/O virtualization: assigns a Virtual Function of a physical NIC directly to a VM, bypassing the vSwitch for performance
 
 ---
 
 ## 🔬 Scenario Walkthrough (PBQ-style thinking)
 
-> **Scenario.** A 400-person SaaS company is consolidating 60 physical servers (mix of Windows Server 2016/2019 and various Linux distros) onto a virtualization platform. They want zero downtime for production VM maintenance, automatic restart on host failure, anti-affinity for their two database replicas, and a separate cluster for containerized microservices. Bandwidth and budget are moderate. Design the architecture.
+> **Scenario.** A 400-person SaaS (Software as a Service) company is consolidating 60 physical servers (mix of Windows Server 2016/2019 and various Linux distros) onto a virtualization platform. They want zero downtime for production VM maintenance, automatic restart on host failure, anti-affinity for their two database replicas, and a separate cluster for containerized microservices. Bandwidth and budget are moderate. Design the architecture.
 
 **Walkthrough.**
 
@@ -399,7 +399,7 @@ This is the kind of integration question Server+ PBQs ask. Each choice maps to a
 This is a non-exam-tested situational context, but Server+ candidates moving into mid-career sysadmin roles will absolutely encounter it.
 
 **Discussion (Socratic).**
-- **Q1:** Your CFO asks you to migrate off vSphere to Proxmox over 18 months. List the *first three* technical risks and how you'd mitigate each.
+- **Q1:** Your CFO (Chief Financial Officer) asks you to migrate off vSphere to Proxmox over 18 months. List the *first three* technical risks and how you'd mitigate each.
 - **Q2:** Is "lift-and-shift to AWS EC2" cheaper than staying on vSphere? Identify the categories of cost you must compare.
 - **Q3:** Containers reduce hypervisor licensing exposure but introduce K8s operational complexity. How would you decide which workloads to containerize first?
 
@@ -426,7 +426,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 5](../Module-05-Disaster-Recovery/Reading.md) covers VM-aware backups (Veeam, native), snapshots in DR, and the "snapshots ≠ backup" reality; [Module 6](../Module-06-Security/Reading.md) hardens hypervisors and container runtimes; [Module 8](../Module-08-Troubleshooting/Reading.md) diagnoses VM performance and resource starvation.
-> - Cross-course: **AWS Solutions Architect** maps EC2/ECS/EKS to VM/container concepts; **Azure Administrator** maps Azure VMs/AKS to the same.
+> - Cross-course: **AWS Solutions Architect** maps EC2/ECS (Elastic Container Service)/EKS to VM/container concepts; **Azure Administrator** maps Azure VMs/AKS to the same.
 > - Practice: Practice Exam 1 has ~9 questions from this module; the Final Mock has ~14.
 
 ---

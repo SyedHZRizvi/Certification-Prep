@@ -268,7 +268,7 @@ spec:
           storage: 10Gi
 ```
 
-DNS for StatefulSet Pods follows this pattern:
+DNS (Domain Name System) for StatefulSet Pods follows this pattern:
 `<pod-name>.<service-name>.<namespace>.svc.cluster.local`
 
 So `postgres-0.postgres-headless.default.svc.cluster.local` always resolves to the same Pod.

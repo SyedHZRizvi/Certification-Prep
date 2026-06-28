@@ -2,7 +2,7 @@
 
 > **Why this module matters:** Modules 1–9 gave you the components. This module is the *architect's tour*, five canonical real-world deployments deconstructed end-to-end, the cost-optimization playbook, the security checklist, and a capstone exercise that asks you to design a Google-Cloud-AI architecture for a scenario you have not seen. Pass this module and you can walk into any Fortune 500 boardroom and defend a Vertex AI deployment design.
 
-> **Prerequisites for this module.** Modules 1–9 complete. You should be able to draw the Vertex AI MLOps loop, name the four safety_setting categories, and explain the difference between Vertex AI Search and Vector Search without looking.
+> **Prerequisites for this module.** Modules 1–9 complete. You should be able to draw the Vertex AI MLOps (Machine Learning Operations) loop, name the four safety_setting categories, and explain the difference between Vertex AI Search and Vector Search without looking.
 
 ---
 
@@ -80,7 +80,7 @@ This module deconstructs five such architectures and ends with a capstone that a
 
 **Workload:** In-car voice assistant with rich function calling (navigation, climate, media, communication, e-commerce).
 **Scale:** Millions of new Mercedes vehicles annually starting model-year 2024+; per-driver session.
-**Constraints:** Mixed online/offline (vehicle may be in poor coverage); strict latency; multilingual (German, English, French, etc.); deep car-API integration; brand-voice; safety-critical (no distracting flows while driving).
+**Constraints:** Mixed online/offline (vehicle may be in poor coverage); strict latency; multilingual (German, English, French, etc.); deep car-API (Application Programming Interface) integration; brand-voice; safety-critical (no distracting flows while driving).
 
 ### Architecture
 
@@ -114,7 +114,7 @@ This module deconstructs five such architectures and ends with a capstone that a
    ↓
 [Chirp TTS, Mercedes brand voice]
    ↓
-[Spoken response + in-display UI update]
+[Spoken response + in-display UI (User Interface) update]
 ```
 
 ### Key architectural choices
@@ -129,7 +129,7 @@ This module deconstructs five such architectures and ends with a capstone that a
 
 - Latency is sometimes won at the edge. Nano on-device handles wake-word + simple intents without round-tripping.
 - Privacy story matters at scale. Per-region deployment is *the* answer for global automotive.
-- Tight integration to existing systems (POS, car APIs, CRM) is more architectural work than the LLM itself.
+- Tight integration to existing systems (POS, car APIs, CRM (Customer Relationship Management)) is more architectural work than the LLM itself.
 
 ---
 
@@ -178,7 +178,7 @@ This module deconstructs five such architectures and ends with a capstone that a
 ### Lessons
 
 - ADK + Conversational Agents are complementary, not substitutes.
-- Tool-access security is enforced *outside* the LLM (in your service account / IAM scoping), not by trusting the model.
+- Tool-access security is enforced *outside* the LLM (in your service account / IAM (Identity and Access Management) scoping), not by trusting the model.
 - Multi-tenant + per-tenant context caching is a real cost-saving pattern.
 
 ---
@@ -249,7 +249,7 @@ This module deconstructs five such architectures and ends with a capstone that a
    ↓
 [Vertex AI in HIPAA-eligible region]
    ↓
-[VPC-SC perimeter]
+[VPC (Virtual Private Cloud)-SC perimeter]
    ↓
 [Med-PaLM 2 via Vertex AI Model Garden]
    ↓
@@ -310,7 +310,7 @@ Hard reasoning, hardest tasks → Ultra
 - Match GSCUs to *peak* with PAYG overflow
 
 ### 5. Retrieve, don't stuff
-- A 200K-token prompt costs 100× more than a 2K-token prompt with RAG
+- A 200K-token prompt costs 100× more than a 2K-token prompt with RAG (Retrieval-Augmented Generation)
 - RAG when the corpus is large or changes
 
 ### 6. Distill for narrow workloads
@@ -332,7 +332,7 @@ Hard reasoning, hardest tasks → Ultra
 □ 1. IAM: least privilege per service account
 □ 2. VPC-SC perimeter around Vertex + storage
 □ 3. CMEK for all data at rest
-□ 4. TLS in transit (default; verify)
+□ 4. TLS (Transport Layer Security) in transit (default; verify)
 □ 5. Cloud Audit Logs enabled with retention policy
 □ 6. Secret Manager for any keys / tokens (NOT env vars in code)
 □ 7. Service Account key rotation (or use Workload Identity)
@@ -355,7 +355,7 @@ Hard reasoning, hardest tasks → Ultra
 
 You will be asked at least one cross-cloud question. Here is the matrix.
 
-| Concern | Google Vertex AI | AWS | Azure |
+| Concern | Google Vertex AI | AWS (Amazon Web Services) | Azure |
 |---------|------------------|-----|-------|
 | Flagship LLM | Gemini (1st-party) | Claude / Llama / Mistral (3rd-party on Bedrock) | Azure OpenAI (GPT, 1st-party) |
 | Long context | 2M (Gemini Pro/Ultra) | 200K (Claude Sonnet/Haiku), 500K (Claude Opus 4.6) | 128K (GPT-4o), 1M (GPT-5) |
@@ -375,7 +375,7 @@ You will be asked at least one cross-cloud question. Here is the matrix.
 
 ## 🎓 The Capstone Exercise
 
-You are the architect at a mid-sized US insurance company. The CEO asks: *"I want our claims processing to use AI. Customers upload photos of damage, a recorded voice statement, the police report PDF, and prior claims documents. The AI should triage the claim, draft an initial assessment, and route to a human adjuster. Build me the architecture."*
+You are the architect at a mid-sized US insurance company. The CEO (Chief Executive Officer) asks: *"I want our claims processing to use AI. Customers upload photos of damage, a recorded voice statement, the police report PDF, and prior claims documents. The AI should triage the claim, draft an initial assessment, and route to a human adjuster. Build me the architecture."*
 
 **Constraints:**
 - US data residency (no cross-border data transfer)
@@ -505,7 +505,7 @@ This is the kind of full-system answer the PMLE exam wants from you in scenario 
 | **GSCU** | Generative AI Service Capacity Unit |
 | **Workload Identity** | Google Cloud's keyless service-account auth |
 | **Secret Manager** | Google's managed secret store |
-| **Eventarc** | Event routing service on GCP |
+| **Eventarc** | Event routing service on GCP (Google Cloud Platform) |
 | **Pub/Sub** | Asynchronous messaging service |
 | **Cloud Scheduler** | Managed cron |
 | **Apigee** | API management; rate limits + auth |
@@ -521,7 +521,7 @@ You now know:
 
 - 🍔 **Wendy's FreshAI**, deterministic flow + grounded Gemini for drive-thru
 - 🚗 **Mercedes MBUX**, hybrid on-device + cloud for in-car
-- 🛒 **Shopify Sidekick**, multi-tenant ADK + Conversational Agents for SaaS AI
+- 🛒 **Shopify Sidekick**, multi-tenant ADK + Conversational Agents for SaaS (Software as a Service) AI
 - 📷 **Google Photos**, batch-index with Gemini + query with vectors
 - 🏥 **Verily Med-PaLM 2**, HIPAA-grade clinical decision support
 - 💰 **Cost optimization playbook**, 8-step

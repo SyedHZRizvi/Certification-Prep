@@ -11,7 +11,7 @@
 
 ## 📖 A Story: The Schema That Saved a Startup
 
-Maya runs ML at a 12-person legal-tech startup in Austin. Her product extracts structured data from 200-page commercial leases, landlord, tenant, term, base rent, escalations, exclusive-use clauses, OFAC reps, termination triggers. The customer pays $0.85 per lease and the company barely breaks even. The model is GPT-4 Turbo, the prompt is 600 lines of "please return JSON with these fields," and the extraction is *correct 73% of the time*. Customers re-keying the wrong 27% by hand is the bottleneck.
+Maya runs ML at a 12-person legal-tech startup in Austin. Her product extracts structured data from 200-page commercial leases, landlord, tenant, term, base rent, escalations, exclusive-use clauses, OFAC reps, termination triggers. The customer pays $0.85 per lease and the company barely breaks even. The model is GPT (Generative Pre-trained Transformer)-4 Turbo, the prompt is 600 lines of "please return JSON with these fields," and the extraction is *correct 73% of the time*. Customers re-keying the wrong 27% by hand is the bottleneck.
 
 Maya's intern, Devon, ports the same prompt to Claude 3.5 Sonnet on a Tuesday afternoon. Same prompt, same lease, same JSON schema. Accuracy comes in at 81%. Progress, but not the leap Maya needs.
 
@@ -55,7 +55,7 @@ Anthropic's [official prompt-engineering documentation](https://docs.anthropic.c
 └─────────────────────────────────────────────┘
 ```
 
-The Messages API exposes these as `system`, `messages: [{role: "user", content: "..."}, ...]`, an optional `messages: [..., {role: "assistant", content: "{"}]` prefill turn, and `stop_sequences`.
+The Messages API (Application Programming Interface) exposes these as `system`, `messages: [{role: "user", content: "..."}, ...]`, an optional `messages: [..., {role: "assistant", content: "{"}]` prefill turn, and `stop_sequences`.
 
 🎯 **MEMORIZE THIS.** Claude has separate "system" and "user" slots. Mixing role intent into a single concatenated string (the old "Human:\nAssistant:" pre-Messages-API style) leaves quality on the table.
 
@@ -233,12 +233,12 @@ LLMs are trained to continue text. If you give Claude `{ "name":` as the start o
 ### Caveats
 
 - Prefill is only available via the **Messages API**, by sending an `assistant` role message *as the last item in the messages list*, with the prefilled text as its content.
-- It does **not** work via the Anthropic Workbench chat UI by default, you must use the API or the "raw" mode.
+- It does **not** work via the Anthropic Workbench chat UI (User Interface) by default, you must use the API or the "raw" mode.
 - Whatever you prefill **counts as output tokens** and is billed accordingly.
 - Be careful with whitespace, `{\n` and `{ ` and `{` behave subtly differently.
 
 ```python
-# Python SDK example of prefill
+# Python SDK (Software Development Kit) example of prefill
 response = client.messages.create(
     model="claude-sonnet-4-6-20260301",
     max_tokens=1024,

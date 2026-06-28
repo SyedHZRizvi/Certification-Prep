@@ -169,7 +169,7 @@ raise RuntimeError(f"Agent did not finish in {MAX_STEPS} steps")
 The hard parts are not the loop. They are:
 
 1. **Step caps** (MAX_STEPS, e.g., 25) to prevent infinite loops
-2. **Per-tool timeouts** so a hung API doesn't stall the whole agent
+2. **Per-tool timeouts** so a hung API (Application Programming Interface) doesn't stall the whole agent
 3. **Cost caps** ($ per session) so a confused agent doesn't run up a $400 invoice
 4. **Confirmation gates** for destructive actions (Replit's "are you sure?")
 5. **Restart-from-checkpoint** so failed runs don't redo work
@@ -315,7 +315,7 @@ Replit's lesson, hard-earned. Require confirmation for: file deletions, payments
 
 ---
 
-## 🧰 Frameworks vs Raw SDK, A Pragmatic Take
+## 🧰 Frameworks vs Raw SDK (Software Development Kit), A Pragmatic Take
 
 | Framework | Strengths | When to skip |
 |-----------|-----------|--------------|
@@ -341,7 +341,7 @@ Anthropic publishes a **Claude Agent SDK** (npm: `@anthropic-ai/claude-agent-sdk
 - "Hook" system to intercept tool calls (auth, logging, throttling)
 - Sub-agent / "skill" delegation patterns
 
-This is what powers `claude-code` (the Anthropic CLI). It's the closest thing to a "reference implementation" of Anthropic's agentic best practices.
+This is what powers `claude-code` (the Anthropic CLI (Command Line Interface)). It's the closest thing to a "reference implementation" of Anthropic's agentic best practices.
 
 ```typescript
 // Sketch, actual API varies; check current docs

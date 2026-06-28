@@ -6,9 +6,9 @@
 
 ## 🎯 A Real Story: How Wayfair Cracked the Long-Tail in 2017
 
-In 2017, Wayfair's paid search team had a problem. They had 14 million SKUs. They were paying for "couch", and getting clicks that cost $4.20 and converted at 0.3%. Meanwhile their CFO was breathing down their neck on CAC.
+In 2017, Wayfair's paid search team had a problem. They had 14 million SKUs. They were paying for "couch", and getting clicks that cost $4.20 and converted at 0.3%. Meanwhile their CFO (Chief Financial Officer) was breathing down their neck on CAC (Customer Acquisition Cost).
 
-Their analyst Niraj Bhargava (publicly cited in [Search Engine Land's 2018 case study](https://searchengineland.com/)) made a bet: what if they stopped bidding on the head terms entirely and went deep on long-tail SKU-level queries? "Mid-century modern sleeper sofa with chaise under $800", that query has 90 monthly searches. CPC of $0.45. Conversion rate of 11.2%.
+Their analyst Niraj Bhargava (publicly cited in [Search Engine Land's 2018 case study](https://searchengineland.com/)) made a bet: what if they stopped bidding on the head terms entirely and went deep on long-tail SKU (Stock Keeping Unit)-level queries? "Mid-century modern sleeper sofa with chaise under $800", that query has 90 monthly searches. CPC (Cost Per Click) of $0.45. Conversion rate of 11.2%.
 
 They restructured the account into **single-keyword ad groups (SKAGs)** for the top 5,000 long-tail queries. CAC dropped 38% in 90 days. Revenue from paid search went up 22%.
 
@@ -18,7 +18,7 @@ This module teaches you to answer that, then build the campaign around it.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Writing a campaign brief, covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md) of this course
-> - KPI hierarchy by funnel stage (TOFU/MOFU/BOFU), also Module 1
+> - KPI (Key Performance Indicator) hierarchy by funnel stage (TOFU/MOFU/BOFU), also Module 1
 > - Search-intent and keyword fundamentals, covered in [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Social-Media-AI-Tools/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
@@ -72,7 +72,7 @@ START
   │     └─ YES → Use BROAD MATCH with an audience signal. Trust the AI.
   │     └─ NO  → Continue.
   │
-  ├─ Are you in a B2B or niche where exact intent matters?
+  ├─ Are you in a B2B (Business-to-Business) or niche where exact intent matters?
   │     └─ YES → Use EXACT match + tight negatives.
   │     └─ NO  → PHRASE match is the safe middle ground.
 ```
@@ -88,10 +88,10 @@ This is the single most-tested topic on the Google Ads Search Cert. Get the tabl
 | Strategy | What it does | When to use | When NOT to use |
 |----------|-------------|-------------|-----------------|
 | **Manual CPC** | You set the max CPC per keyword | Brand-new account, want full control, < 30 conv/mo | Once you have conversion data; you'll underperform Smart Bidding |
-| **Maximize Clicks** | Get the most clicks within budget | Driving traffic with no clear conversion goal | If you have a CPA target |
+| **Maximize Clicks** | Get the most clicks within budget | Driving traffic with no clear conversion goal | If you have a CPA (Cost Per Acquisition) target |
 | **Maximize Conversions** | Get the most conversions within budget | You have conversion tracking + want to scale | Without conversion tracking |
 | **tCPA (Target CPA)** | Hit a target cost per conversion | You know your CPA target + have 30+ conversions/month | < 30 conv/mo (algorithm starves) |
-| **tROAS (Target ROAS)** | Hit a target return on ad spend | Ecommerce with revenue values + 50+ conversions/month | If you can't pass dynamic conversion values |
+| **tROAS (Target ROAS (Return on Ad Spend))** | Hit a target return on ad spend | Ecommerce with revenue values + 50+ conversions/month | If you can't pass dynamic conversion values |
 | **Maximize Conversion Value** | Maximize total conversion value (no target) | Ecom that wants to scale revenue, no fixed ROAS target | If protecting margin matters |
 | **Target Impression Share** | Show on top of page X% of the time | Brand defense, competitor terms | Performance campaigns |
 
@@ -165,7 +165,7 @@ Descriptions (4 slots):
   Slot 1: Lead benefit + call to action
   Slot 2: Social proof + offer
   Slot 3: Brand story + trust signal
-  Slot 4: Urgency + secondary CTA
+  Slot 4: Urgency + secondary CTA (Call to Action)
 ```
 
 ⚠️ **Common mistake:** Writing 15 nearly-identical headlines ("Best Running Shoes 2026", "Top Running Shoes 2026", "Running Shoes for 2026"). Google's algorithm cannot test variation it doesn't have. Make each headline genuinely different.
@@ -174,10 +174,10 @@ Descriptions (4 slots):
 
 ## 🚀 Performance Max for Ecommerce (Brief, Deep Dive in Module 3)
 
-Performance Max (PMax) is Google's all-channels-in-one campaign. It runs across Search, Display, YouTube, Discover, Gmail, and Maps, simultaneously. For ecommerce with a Merchant Center feed, PMax is often the highest-ROI campaign type.
+Performance Max (PMax) is Google's all-channels-in-one campaign. It runs across Search, Display, YouTube, Discover, Gmail, and Maps, simultaneously. For ecommerce with a Merchant Center feed, PMax is often the highest-ROI (Return on Investment) campaign type.
 
 **Quick rule for Module 2 purposes:**
-- If you have a product feed + GA4 conversion tracking + 50+ purchases/month → run BOTH a Search campaign AND a PMax campaign with brand exclusions on PMax.
+- If you have a product feed + GA4 (Google Analytics 4) conversion tracking + 50+ purchases/month → run BOTH a Search campaign AND a PMax campaign with brand exclusions on PMax.
 - If you're lead-gen or service-based without a feed → stick with Search until you have data, then test PMax.
 
 Module 3 covers PMax architecture in full.
@@ -218,7 +218,7 @@ jobs          career        salary        hiring
 review        complaint     scam          fake
 ```
 
-🎯 **Exam trap:** "A campaign has high CTR but low conversion rate." → Most common cause: irrelevant search queries triggering broad match keywords. Fix = aggressive negative keyword work, not changing bidding.
+🎯 **Exam trap:** "A campaign has high CTR (Click-Through Rate) but low conversion rate." → Most common cause: irrelevant search queries triggering broad match keywords. Fix = aggressive negative keyword work, not changing bidding.
 
 ---
 
@@ -350,7 +350,7 @@ Quality Score is a 1–10 score Google assigns each keyword. It's based on three
 |-----------|------------------|
 | **Expected CTR** | How often people are likely to click your ad |
 | **Ad Relevance** | How closely your ad matches the keyword's intent |
-| **Landing Page Experience** | Page load speed, mobile UX, content relevance |
+| **Landing Page Experience** | Page load speed, mobile UX (User Experience), content relevance |
 
 Each component is rated **Above Average / Average / Below Average**.
 
@@ -383,7 +383,7 @@ This means: **a higher Quality Score lets you bid LESS but still rank above comp
 
 Google Ads Editor is a **free desktop application** that lets you build campaigns offline, bulk-edit, and copy structure across accounts. Pros use it; beginners avoid it. Wrong choice.
 
-**Three things Editor does that the web UI can't (easily):**
+**Three things Editor does that the web UI (User Interface) can't (easily):**
 
 1. **Bulk import keywords + ads from a spreadsheet**, upload a CSV of 500 keywords and 50 ads in seconds
 2. **Copy a campaign from one account to another**, preserves all settings, ad groups, negatives
@@ -397,7 +397,7 @@ Download from: <https://ads.google.com/intl/en_us/home/tools/ads-editor/>
 
 ## 📊 Real Case Study: Allbirds' Tight Search Account
 
-Allbirds (the DTC shoe brand) ran a famously tight Google Ads account from 2020–2023. Their structure (publicly discussed by their growth team in a [Modern Retail interview, 2023](https://www.modernretail.co/)):
+Allbirds (the DTC (Direct-to-Consumer) shoe brand) ran a famously tight Google Ads account from 2020–2023. Their structure (publicly discussed by their growth team in a [Modern Retail interview, 2023](https://www.modernretail.co/)):
 
 - **5 campaigns only**: Brand, Generic, Sustainable, Running, Re-targeting
 - **30 ad groups total** across all campaigns
@@ -478,4 +478,4 @@ Use these to pressure-test your understanding. Each is defensible from multiple 
 - 📖 [Google Ads Help Smart Bidding](https://support.google.com/google-ads/answer/7066642) official documentation
 - 📖 [Frederick Vallaeys *Unlevel the Playing Field* (book)](https://optmyzr.com/book/) Optmyzr founder; one of the deepest books on Google Ads strategy
 - 📖 [Search Engine Land Quality Score guide](https://searchengineland.com/) annually-updated Quality Score deep dive
-- 📖 [Surfside PPC YouTube channel](https://www.youtube.com/@SurfsidePPC), the most thorough free Google Ads tutorials on the internet
+- 📖 [Surfside PPC (Pay-Per-Click) YouTube channel](https://www.youtube.com/@SurfsidePPC), the most thorough free Google Ads tutorials on the internet

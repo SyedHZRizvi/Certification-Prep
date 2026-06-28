@@ -4,8 +4,8 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - A locked wedge from [Module 1](../Module-01-Niche-Service-Offering/Reading.md), you need a defined ICP before you can build Apollo lists or write cold-email copy
-> - A drafted productized SKU from [Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md), the SKU's price + scope are what you offer in the cold email's "credibility" line and on the Carrd page
-> - Basic familiarity with marketing math: CAC, ACV, LTV, reply rate vs positive reply rate (see [`14-AI-Marketing-Foundations` Module 1](../../14-AI-Marketing-Foundations/Module-01-Digital-Marketing-Landscape-2026/Reading.md) §"Marketing Math" if any of these are shaky)
+> - A drafted productized SKU (Stock Keeping Unit) from [Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md), the SKU's price + scope are what you offer in the cold email's "credibility" line and on the Carrd page
+> - Basic familiarity with marketing math: CAC (Customer Acquisition Cost), ACV, LTV (Lifetime Value), reply rate vs positive reply rate (see [`14-AI-Marketing-Foundations` Module 1](../../14-AI-Marketing-Foundations/Module-01-Digital-Marketing-Landscape-2026/Reading.md) §"Marketing Math" if any of these are shaky)
 > - Comfort with at least one AI writing tool (Claude or ChatGPT), the AI-personalized cold email + LinkedIn DM playbooks assume you've used prompts to draft outbound at scale
 >
 > If you have not finished Modules 1–2, pause and finish them. Outbound + inbound without a sharp wedge and a priced SKU is the most common Year-1 failure mode this course is designed to prevent.
@@ -14,7 +14,7 @@
 
 ## 📞 A Story: How Diego Booked 17 Discovery Calls in 30 Days From a Standing Start
 
-It's February 2024. Diego is leaving his head-of-growth role at a Series B SaaS. He has $26K saved. He's good at paid search. He wants to launch a productized Google Ads management service for B2B SaaS companies $5M–$30M ARR.
+It's February 2024. Diego is leaving his head-of-growth role at a Series B SaaS (Software as a Service). He has $26K saved. He's good at paid search. He wants to launch a productized Google Ads management service for B2B (Business-to-Business) SaaS companies $5M–$30M ARR (Annual Recurring Revenue).
 
 He has zero clients. Zero pipeline. Zero followers.
 
@@ -71,7 +71,7 @@ There are exactly **seven viable channels** for an AI-marketing operator to land
 | # | Channel | Time to first client | Effort | Predictability | Best for |
 |---|---|---|---|---|---|
 | 1 | **Outbound** (cold email + LinkedIn DM) | 14–45 days | High | High once dialed in | Year 1, fastest |
-| 2 | **Inbound** (SEO + content + YouTube) | 6–18 months | High | Very high at scale | Year 2+, flywheel |
+| 2 | **Inbound** (SEO (Search Engine Optimization) + content + YouTube) | 6–18 months | High | Very high at scale | Year 2+, flywheel |
 | 3 | **Referrals** (warm intros + programs) | Variable | Low | Medium | Year 2+, leverages reputation |
 | 4 | **Networks** (communities + Slack + Geneva) | 30–90 days | Medium | Medium | All years, relationship-based |
 | 5 | **Partnerships** (white-label + co-marketing) | 60–180 days | Medium | High once signed | Year 2+, quietly powerful |
@@ -101,7 +101,7 @@ Industry benchmarks aggregated from Smartlead, Lemlist, Apollo, and Mailshake pu
 **Working math, 1,000 prospects:**
 - 1,000 sends → 30 positive replies → 13 booked → 9 shows → 2 closes
 - At $5,000 average contract = **$10,000 from 1,000 prospects**.
-- Tool cost ~$200/mo. Net: $9,800. ROI: ~4,900%.
+- Tool cost ~$200/mo. Net: $9,800. ROI (Return on Investment): ~4,900%.
 
 ### Tool stack for outbound (2026 pricing, verify current)
 
@@ -169,7 +169,7 @@ LinkedIn is dramatically underused by AI-marketing operators. The playbook:
 2. **Connect with a one-line note.** "Hey [Name], saw your post on [topic]. Connecting." That's it. No pitch.
 3. **Wait 5–7 days.** Don't pitch instantly.
 4. **DM with a 2-line value-add.** Share an insight related to a post they wrote. Not a pitch.
-5. **Soft CTA in week 3.** "I noticed [observation about their company]. I have an audit product that gets at exactly this, happy to send you a sample if useful."
+5. **Soft CTA (Call to Action) in week 3.** "I noticed [observation about their company]. I have an audit product that gets at exactly this, happy to send you a sample if useful."
 
 Average LinkedIn DM-to-call conversion: **6–12%** (vs. cold email 2–4%), but the volume is lower. Combine both.
 
@@ -237,7 +237,7 @@ After Year 2 the slope is exponential. **The compounding effect is why inbound d
 
 ### The "Notion of operators" tactical playbook
 
-1. **Pick 4 content pillars** related to your wedge. (For B2B SaaS Google Ads: PMax, conversion tracking, search-term hygiene, MQL-to-SQL leakage.)
+1. **Pick 4 content pillars** related to your wedge. (For B2B SaaS Google Ads: PMax, conversion tracking, search-term hygiene, MQL (Marketing Qualified Lead)-to-SQL (Sales Qualified Lead) leakage.)
 2. **Set up an Airtable or Notion content database.** Each entry: pillar, idea, status, asset URL.
 3. **Write Monday/Wednesday/Friday.** Two LinkedIn posts + one newsletter draft.
 4. **Repurpose into atomic units.** One newsletter = 5 LinkedIn posts + 5 tweets + 1 video script.
@@ -325,14 +325,14 @@ You partner with a complementary (non-competing) agency. Examples:
 
 - An SEO agency + a paid-ads agency cross-refer clients
 - A content agency + a website-build agency package deals
-- A CRO agency + an ads agency offer joint "$3K full-funnel audit"
+- A CRO (Chief Revenue Officer) agency + an ads agency offer joint "$3K full-funnel audit"
 
 ### The partnership outreach script
 
 ```
 Hi [Name],
 
-We both serve [DTC e-commerce / B2B SaaS / etc.]. You handle [their service]; I handle [your service]. Almost every client I onboard mentions needing what you do.
+We both serve [DTC (Direct-to-Consumer) e-commerce / B2B SaaS / etc.]. You handle [their service]; I handle [your service]. Almost every client I onboard mentions needing what you do.
 
 What if we had a structured cross-referral? I'll commit to passing you 1 qualified intro per month minimum. Open to chatting about the mechanics?
 ```
@@ -378,7 +378,7 @@ Paid ads work ONLY when your ACV (annual contract value) is $7,500+ (and ideally
 
 A typical LinkedIn or Google Ads campaign for B2B services has CAC of **$800–$2,500 per booked call**, and your close rate is **15–30%**.
 
-So: 1 close costs $4,000–$10,000 in ads. If your ACV is $5,000, you lose money. If your ACV is $30,000, you have a 3–6x ROAS.
+So: 1 close costs $4,000–$10,000 in ads. If your ACV is $5,000, you lose money. If your ACV is $30,000, you have a 3–6x ROAS (Return on Ad Spend).
 
 | ACV | Min ads spend / month for profitable channel | Recommended? |
 |---|---|---|
@@ -392,7 +392,7 @@ So: 1 close costs $4,000–$10,000 in ads. If your ACV is $5,000, you lose money
 
 - **LinkedIn Ads** (best for B2B; targeting by company, role, seniority)
 - **Google Search Ads** (for specific buy-intent queries, e.g., "google ads audit b2b saas")
-- **Meta Lookalikes** (B2C / DTC services)
+- **Meta Lookalikes** (B2C (Business-to-Consumer) / DTC services)
 - **YouTube Pre-Roll** (for retainer products with high LTV)
 
 ### The wrong way: lead-magnet ads
@@ -440,7 +440,7 @@ Brett Williams publicly states (multiple podcasts) that 70%+ of Designjoy client
 
 ## 💼 Case Study, Justin Welsh's Solopreneur LinkedIn Engine (2019–2024)
 
-**Situation.** In May 2019, Justin Welsh resigned as SVP of Sales at PatientPop after eight years scaling sales orgs from $0 → $50M ARR at two healthtech companies. He was 37, burned out, and committed to building a one-person business, but with no audience, no email list, and no productized offer. The conventional playbook for ex-VPs was a $30K/month consulting retainer with two enterprise clients. Welsh rejected that path because he saw the dependency risk (lose one client, lose 50% of revenue). He decided to bet the entire acquisition strategy on a single channel: LinkedIn organic, with a newsletter capturing the spillover. Sources: Welsh's own LinkedIn posts 2019–2024, *The Saturday Solopreneur* newsletter, *Diary of a CEO* podcast (Steven Bartlett, 2023), *My First Million* (Hubspot, 2022).
+**Situation.** In May 2019, Justin Welsh resigned as SVP of Sales at PatientPop after eight years scaling sales orgs from $0 → $50M ARR at two healthtech companies. He was 37, burned out, and committed to building a one-person business, but with no audience, no email list, and no productized offer. The conventional playbook for ex-VPs was a $30K/month consulting retainer with two enterprise clients. Welsh rejected that path because he saw the dependency risk (lose one client, lose 50% of revenue). He decided to bet the entire acquisition strategy on a single channel: LinkedIn organic, with a newsletter capturing the spillover. Sources: Welsh's own LinkedIn posts 2019–2024, *The Saturday Solopreneur* newsletter, *Diary of a CEO (Chief Executive Officer)* podcast (Steven Bartlett, 2023), *My First Million* (Hubspot, 2022).
 
 **Decision.** Welsh built one of the most documented single-channel acquisition engines in the solopreneur space. The mechanics: (1) five LinkedIn posts per week, all written from a Notion content database of ~150 evergreen hooks; (2) one Saturday newsletter, repurposed from the week's posts; (3) zero paid acquisition, zero outbound, zero sales calls below $25K/quarter. Tool stack stayed under $100/mo (Notion + ConvertKit-now-Kit + Calendly + Stripe). Welsh productized only two SKUs: *The LinkedIn Operating System* (a $150 self-paced course) and *The Content Operating System* ($250), priced as "no-decision" digital products. A third tier 1:1 strategic advisory at $25,000/quarter was deliberately kept scarce (4 slots at any time, often closed). Posts were rigorously templated: hook → 3–7 line value beats → CTA to newsletter. He committed to this exact cadence for 60 months without changing it.
 
@@ -545,4 +545,4 @@ There are no "official" answers, defend your reasoning with specifics. Strong re
 - 📖 *FletchPMM blog and Anthony Pierri's LinkedIn*, positioning + inbound examples
 - 📖 *Codie Sanchez's Contrarian Thinking newsletter*, content-as-channel masterclass
 - 📖 *Greg Isenberg's Late Checkout YouTube*, AI-leveraged acquisition tactics
-- 📖 *Lenny's Newsletter*, B2B/SaaS GTM deep dives
+- 📖 *Lenny's Newsletter*, B2B/SaaS GTM (Google Tag Manager) deep dives

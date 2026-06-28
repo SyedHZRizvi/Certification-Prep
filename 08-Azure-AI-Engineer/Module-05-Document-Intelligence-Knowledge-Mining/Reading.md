@@ -1,11 +1,11 @@
 # Module 5: Document Intelligence & Knowledge Mining 📄
 
-> **Why this module matters:** This is the LARGEST single module on the AI-102 exam by surface area. Document Intelligence + Azure AI Search together touch 15–20% of questions and are central to every RAG architecture (Modules 7 & 8). Master the prebuilt vs custom model distinction AND the index/indexer/skillset triangle.
+> **Why this module matters:** This is the LARGEST single module on the AI-102 exam by surface area. Document Intelligence + Azure AI Search together touch 15–20% of questions and are central to every RAG (Retrieval-Augmented Generation) architecture (Modules 7 & 8). Master the prebuilt vs custom model distinction AND the index/indexer/skillset triangle.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1 (resource model, SDKs, auth)
-> - Module 3 (the Vision Read API, Document Intelligence extends it)
-> - Vector / embedding intuition at the "vectors are arrays of floats and cosine similarity measures angle" level, see [`07-AWS-AI-Practitioner` Module 5](../../07-AWS-AI-Practitioner/Module-05-Prompt-Engineering-RAG/Reading.md) for a primer
+> - Module 3 (the Vision Read API (Application Programming Interface), Document Intelligence extends it)
+> - Vector / embedding intuition at the "vectors are arrays of floats and cosine similarity measures angle" level, see [`07-AWS (Amazon Web Services)-AI-Practitioner` Module 5](../../07-AWS-AI-Practitioner/Module-05-Prompt-Engineering-RAG/Reading.md) for a primer
 > - The transformer foundation from Vaswani et al. (2017), embedding models trace to the same line
 >
 > Optional: skim the original BM25 ranking paper (Robertson & Walker, 1994) for context, Azure AI Search's keyword scoring uses a BM25 variant.
@@ -35,10 +35,10 @@ Document Intelligence (formerly **Form Recognizer**) extracts text, tables, stru
 | **Read** | OCR, text + lines + words + selection marks | Pure text extraction from PDFs/TIFFs |
 | **Layout** | Tables, structure, selection marks, paragraphs | When you need structure but no fields |
 | **General Document** (legacy) | KV pairs + entities from any document | Generic forms (now overlaps with Layout 4.0) |
-| **Prebuilt: Invoice** | Vendor, items, totals, tax | B2B invoices |
+| **Prebuilt: Invoice** | Vendor, items, totals, tax | B2B (Business-to-Business) invoices |
 | **Prebuilt: Receipt** | Merchant, items, total, tip, date | Expense receipts |
-| **Prebuilt: ID document** | Passport, driver's license, name, DOB, doc #, MRZ | KYC |
-| **Prebuilt: Business card** | Names, emails, phones | CRM ingestion |
+| **Prebuilt: ID document** | Passport, driver's license, name, DOB, doc #, MRZ | KYC (Know Your Customer) |
+| **Prebuilt: Business card** | Names, emails, phones | CRM (Customer Relationship Management) ingestion |
 | **Prebuilt: W-2 / 1098 / 1099** | US tax forms | Tax workflows |
 | **Prebuilt: Health Insurance Card** | Member ID, group, payer | Insurance |
 | **Prebuilt: Contract / Mortgage / Bank statement** | Domain-specific | Financial workflows |
@@ -49,7 +49,7 @@ Document Intelligence (formerly **Form Recognizer**) extracts text, tables, stru
 
 🎯 **Exam pattern:** When a question says "documents follow a strict template (same form every time)" → **Custom Template**. When it says "documents have varying layouts but same fields" → **Custom Neural**.
 
-### Python (current SDK)
+### Python (current SDK (Software Development Kit))
 
 ```python
 from azure.ai.documentintelligence import DocumentIntelligenceClient
@@ -73,7 +73,7 @@ for invoice in result.documents:
 
 1. Upload labeled documents (5+ minimum for Template, 5+ for Neural too) to **Azure Blob Storage**
 2. Use **Document Intelligence Studio** to label fields (or label programmatically with `fields.json`)
-3. Train via SDK / REST:
+3. Train via SDK / REST (Representational State Transfer):
 
 ```python
 from azure.ai.documentintelligence import DocumentIntelligenceAdministrationClient
@@ -114,7 +114,7 @@ Web portal at <https://documentintelligence.ai.azure.com/> (formerly formrecogni
 
 ## 🔍 Azure AI Search
 
-Azure AI Search (formerly **Azure Cognitive Search**) is a **PaaS search service** built around the inverted index, with bolt-ons for **AI enrichment**, **semantic ranking**, and **vector search**.
+Azure AI Search (formerly **Azure Cognitive Search**) is a **PaaS (Platform as a Service) search service** built around the inverted index, with bolt-ons for **AI enrichment**, **semantic ranking**, and **vector search**.
 
 ### The four core concepts (you WILL be tested on these)
 
@@ -122,7 +122,7 @@ Azure AI Search (formerly **Azure Cognitive Search**) is a **PaaS search service
 |---|---|
 | **Index** | The schema + storage for searchable documents (like a database table) |
 | **Indexer** | A pull-based crawler that ingests data from a data source on a schedule |
-| **Data Source** | Connection info to where docs live (Blob, Cosmos, SQL, Data Lake, etc.) |
+| **Data Source** | Connection info to where docs live (Blob, Cosmos, SQL (Structured Query Language), Data Lake, etc.) |
 | **Skillset** | A pipeline of cognitive skills that enrich docs during indexing (OCR, KV extraction, entity recognition, custom Web API) |
 
 ```
@@ -143,7 +143,7 @@ An index has **fields**, each with attributes:
 | `searchable` | Full-text searchable (tokenized) |
 | `filterable` | Use in `$filter` expressions |
 | `sortable` | Use in `$orderby` |
-| `facetable` | Use as facets in UI |
+| `facetable` | Use as facets in UI (User Interface) |
 | `retrievable` | Returned in search results |
 | `analyzer` | Tokenizer (language analyzers, custom) |
 
@@ -199,7 +199,7 @@ A skillset can also write enriched data to a **Knowledge Store** tables, objects
 |---|---|
 | **Simple syntax** | `"laptop -refurbished"`, keyword + boolean |
 | **Full Lucene** | `title:"AI 102"~3 AND price:[100 TO 200]`, fielded, fuzzy, range |
-| **Semantic ranker** | Re-rank top results with an LLM-style ranker; returns answers + captions |
+| **Semantic ranker** | Re-rank top results with an LLM (Large Language Model)-style ranker; returns answers + captions |
 | **Vector search** | Similarity search using an embedding vector |
 | **Hybrid search** | Combines keyword + vector with **Reciprocal Rank Fusion (RRF)** |
 | **Hybrid + semantic** | Hybrid first, then semantic re-rank, Microsoft's "gold standard" for RAG |
@@ -212,7 +212,7 @@ You enable it on an index with a **semantic configuration** that names the title
 - `@search.captions`, short excerpt highlighting why the doc matched
 - `@search.answers`, extractive answer pulled from the top docs
 
-Pricing tier: requires **Standard** SKU (S1+); Free/Basic tiers don't support semantic ranker.
+Pricing tier: requires **Standard** SKU (Stock Keeping Unit) (S1+); Free/Basic tiers don't support semantic ranker.
 
 ### Vector search & embeddings
 
@@ -278,10 +278,10 @@ The canonical RAG pipeline looks like:
 
 | SKU | Replicas / Partitions | Notes |
 |---|---|---|
-| **Free** | 1 / 1 | 50 MB; no SLA; no semantic ranker; one per subscription |
+| **Free** | 1 / 1 | 50 MB; no SLA (Service Level Agreement); no semantic ranker; one per subscription |
 | **Basic** | up to 3 / 1 | 2 GB; SLA available |
 | **Standard S1** | up to 12 / 12 | Semantic ranker available |
-| **Standard S2 / S3** | larger | High-density, high-throughput |
+| **Standard S2 / S3 (Simple Storage Service)** | larger | High-density, high-throughput |
 | **Storage Optimized L1 / L2** | up to 12 / 12 | Massive index size, slower queries |
 
 🚨 **Trap:** Semantic ranker = **Standard tier or higher**. Free/Basic = no semantic.
@@ -368,7 +368,7 @@ Crucially, the architecture made the AI an *assistive* layer, the radiologist re
 
 1. **Custom Template vs Custom Neural in a single org.** A team has both an internal employee-onboarding form (one template, never changes) and 200 different vendor invoice formats. Defend the architectural choice to use *both* model types side-by-side, and walk through the maintenance burden trade-off.
 2. **DISKS as a teaching mnemonic.** Argue both sides at a Cornell systems-engineering seminar: is **Data source / Indexer / Skillset / Knowledge store / Search index** a useful pedagogical scaffold, or does it create misleading "five-thing" certainty about a system that's actually a small graph? When does the mnemonic hurt students who try to apply it to a non-Microsoft search system?
-3. **Embedding dimension trade-offs.** A team picks `text-embedding-3-small` (1536) for cost and is unhappy with retrieval quality. They consider `text-embedding-3-large` (3072) and `ada-002` (1536, older). Walk through the cost + accuracy + dimension-mismatch landscape, and what the team should measure (recall@k, MRR, latency) before swapping models.
+3. **Embedding dimension trade-offs.** A team picks `text-embedding-3-small` (1536) for cost and is unhappy with retrieval quality. They consider `text-embedding-3-large` (3072) and `ada-002` (1536, older). Walk through the cost + accuracy + dimension-mismatch landscape, and what the team should measure (recall@k, MRR (Monthly Recurring Revenue), latency) before swapping models.
 4. **Knowledge Store vs index.** Most Azure AI Search deployments don't need a Knowledge Store. Defend the *opposite* position: when is Knowledge Store the right architectural choice, and what downstream tool (Power BI, Microsoft Fabric, Data Lake analytics) makes it pay off?
 5. **Integrated vectorization as a coupling decision.** Integrated vectorization (Embedding skill called by the indexer) is the easy path, but it tightly couples your retrieval index to a specific Azure OpenAI embedding model. Argue the case for *decoupling*, embed in your own pipeline, push pre-vectorized data to the index. What do you gain? What do you lose?
 

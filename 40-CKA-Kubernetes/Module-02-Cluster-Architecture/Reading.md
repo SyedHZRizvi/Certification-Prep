@@ -52,7 +52,7 @@ This analogy maps directly to Kubernetes. Once it clicks, the exam questions bec
 
 ### kube-apiserver
 
-The **only** component that talks directly to etcd. Every kubectl command, every controller query, every kubelet heartbeat passes through here first. It validates requests, authenticates callers, enforces authorization (RBAC), and then writes to or reads from etcd.
+The **only** component that talks directly to etcd. Every kubectl command, every controller query, every kubelet heartbeat passes through here first. It validates requests, authenticates callers, enforces authorization (RBAC (Role-Based Access Control)), and then writes to or reads from etcd.
 
 **MEMORIZE THIS.** The apiserver is the single gateway to the cluster state. All other components talk to etcd exclusively through the apiserver.
 
@@ -75,7 +75,7 @@ Key controllers you must know:
 - **Node Controller** — detects node failures, marks nodes `NotReady`, evicts pods after timeout
 - **ReplicaSet Controller** — ensures the correct number of pod replicas exist
 - **Endpoints Controller** — populates the Endpoints objects that back Services
-- **ServiceAccount & Token Controllers** — create default service accounts and API tokens
+- **ServiceAccount & Token Controllers** — create default service accounts and API (Application Programming Interface) tokens
 - **Job Controller** — manages batch job pods to completion
 
 ### cloud-controller-manager
@@ -84,9 +84,9 @@ Separates cloud-specific logic from the core Kubernetes controller manager. Mana
 
 | Component | Primary Role | Port(s) | Talks To |
 |---|---|---|---|
-| kube-apiserver | REST API gateway, auth/authz, validation | 6443 | etcd, all other components |
+| kube-apiserver | REST (Representational State Transfer) API gateway, auth/authz, validation | 6443 | etcd, all other components |
 | etcd | Persistent state store (key-value) | 2379, 2380 | kube-apiserver only |
-| kube-scheduler | Pod-to-node placement decisions | 10259 (HTTPS) | kube-apiserver |
+| kube-scheduler | Pod-to-node placement decisions | 10259 (HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure)) | kube-apiserver |
 | kube-controller-manager | Runs all built-in control loops | 10257 (HTTPS) | kube-apiserver |
 | cloud-controller-manager | Cloud provider integration | 10258 | kube-apiserver, cloud API |
 
@@ -214,13 +214,13 @@ kubeadm token create --print-join-command
 
 ---
 
-## 🔐 Certificates and TLS in Kubernetes
+## 🔐 Certificates and TLS (Transport Layer Security) in Kubernetes
 
 Kubernetes uses mutual TLS (mTLS) for all control plane communication. Every component has its own certificate, and every certificate is signed by the cluster's Certificate Authority (CA).
 
 ### Certificate Authority Structure
 
-**MEMORIZE THIS.** After `kubeadm init`, all PKI files live in `/etc/kubernetes/pki/`:
+**MEMORIZE THIS.** After `kubeadm init`, all PKI (Public Key Infrastructure) files live in `/etc/kubernetes/pki/`:
 
 ```
 /etc/kubernetes/pki/
@@ -412,7 +412,7 @@ systemctl daemon-reload && systemctl restart kubelet
 ```
 
 The kubelet configuration file at `/var/lib/kubelet/config.yaml` controls:
-- `clusterDNS` — the DNS server IP for pods
+- `clusterDNS` — the DNS (Domain Name System) server IP for pods
 - `clusterDomain` — the cluster domain (default: `cluster.local`)
 - `staticPodPath` — where to read static pod manifests (default: `/etc/kubernetes/manifests/`)
 - `cgroupDriver` — must match the container runtime (`cgroupfs` or `systemd`)

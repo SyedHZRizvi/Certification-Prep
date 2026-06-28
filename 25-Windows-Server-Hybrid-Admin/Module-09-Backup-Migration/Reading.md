@@ -1,6 +1,6 @@
 # Module 9: Backup, ASR & Migration 💾
 
-> **Why this module matters:** Disaster Recovery + Migration is 15–20% of AZ-801 by itself, plus another 20–25% on the Migration domain. Combined, this single module covers ~40% of the exam. The exam loves *"given this RPO/RTO, which combination of MARS / MABS / ASR / Storage Migration Service / Azure Migrate?"* Get the toolset taxonomy into reflex memory and you've locked down the second-largest exam concentration after Security.
+> **Why this module matters:** Disaster Recovery + Migration is 15–20% of AZ-801 by itself, plus another 20–25% on the Migration domain. Combined, this single module covers ~40% of the exam. The exam loves *"given this RPO (Recovery Point Objective)/RTO (Recovery Time Objective), which combination of MARS / MABS / ASR / Storage Migration Service / Azure Migrate?"* Get the toolset taxonomy into reflex memory and you've locked down the second-largest exam concentration after Security.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Azure resource hierarchy and storage redundancy (LRS/ZRS/GRS), [`06-Azure-Administrator` Module 3](../../06-Azure-Administrator/Module-03-Storage-Accounts-Blobs/Reading.md)
@@ -23,11 +23,11 @@ At 11:55 p.m., they trigger:
 - **Azure Site Recovery** failover of the SQL VMs from on-prem Hyper-V to Azure (RPO ~30 sec)
 - **Azure Backup** restore of the Cerner file shares from the **immutable Recovery Services Vault** (the attacker couldn't touch the Azure-side backups because they didn't have Azure credentials)
 - Conditional Access policy locks out all on-prem accounts; new short-lived passwords issued via TAP
-- DNS records flip to Azure-side endpoints
+- DNS (Domain Name System) records flip to Azure-side endpoints
 
 At **12:01 a.m. Sunday 47 minutes from first alert** the EHR is back online. The radiology PACS comes back at 12:18 a.m. Workstations are reimaged from PXE boot starting at 01:00 a.m. By 7 a.m., 87% of operations are restored.
 
-The CISO told the board the following week: *"Every dollar we'd spent on Azure Backup + Azure Site Recovery in the prior 18 months paid for itself in that 47 minutes. The ransom demand was $4.8M. We paid nothing."*
+The CISO (Chief Information Security Officer) told the board the following week: *"Every dollar we'd spent on Azure Backup + Azure Site Recovery in the prior 18 months paid for itself in that 47 minutes. The ransom demand was $4.8M. We paid nothing."*
 
 That's what Backup + ASR is for. The exam tests *which tool* applies to *which scenario*, and getting that mapping wrong costs real money.
 
@@ -41,7 +41,7 @@ Azure Backup is a family of agents and services backing different workload types
 |-----------------|------------------|-----------|
 | **MARS** (Microsoft Azure Recovery Services agent) | Files / folders / System State | Windows → Azure direct |
 | **MABS** (Microsoft Azure Backup Server) | VMs / SQL / SharePoint / Exchange | On-prem → MABS local disk → Azure |
-| **Azure Backup for Azure VMs** | Whole VMs (managed disks, snapshots) | Azure VM ↔ Vault |
+| **Azure Backup for Azure VMs** | Whole VMs (managed disks, snapshots) | Azure VM (Virtual Machine) ↔ Vault |
 | **Azure Backup for Azure Files** | SMB file shares | Azure Files ↔ Vault |
 | **Azure Backup for SQL Server in Azure VM** | SQL DBs | Inside Azure VM |
 | **Azure Backup for SAP HANA / PostgreSQL** | Database tier | Azure VM ↔ Vault |
@@ -134,7 +134,7 @@ Set-OBPolicy -Policy $pol -Confirm:$false
 
 ### Install + protect a SQL Server
 
-1. Install MABS on a clean Windows Server 2022 (joined to AD)
+1. Install MABS on a clean Windows Server 2022 (joined to AD (Active Directory))
 2. Add storage pool (local disks for short-term cache)
 3. Register the vault credentials
 4. Install MABS agent on target SQL Server
@@ -146,7 +146,7 @@ Set-OBPolicy -Policy $pol -Confirm:$false
 
 ## 🚀 Azure Site Recovery (ASR), Disaster Recovery
 
-**ASR** is Microsoft's DR-as-a-service. Replicates VMs/physical/AWS to Azure (or Azure-to-Azure between regions) and orchestrates failover.
+**ASR** is Microsoft's DR-as-a-service. Replicates VMs/physical/AWS (Amazon Web Services) to Azure (or Azure-to-Azure between regions) and orchestrates failover.
 
 ### Supported source scenarios
 
@@ -156,7 +156,7 @@ Set-OBPolicy -Policy $pol -Confirm:$false
 | VMware VMs | Azure |
 | Physical Windows / Linux servers | Azure |
 | Azure VMs (region A) | Azure VMs (region B), Azure-to-Azure |
-| AWS EC2 instances | Azure |
+| AWS EC2 (Elastic Compute Cloud) instances | Azure |
 
 ### Key metrics
 
@@ -205,7 +205,7 @@ Start-AzRecoveryServicesAsrTestFailoverJob -ReplicationProtectedItem $repItem `
 
 ```
 Recovery Plan: "Tier-1-DC-Failover"
-  1. Pre-script: Notify SOC via webhook
+  1. Pre-script: Notify SOC (Security Operations Center) via webhook
   2. Group 1: Failover AD DCs (DC01, DC02)
   3. Group 1 post-script: Verify AD DNS service health
   4. Group 2: Failover application servers (APP01, APP02)
@@ -282,12 +282,12 @@ Recovery Plan: "Tier-1-DC-Failover"
 | Source / target | AD domains in any forests |
 | SID History | Preserves original SIDs for resource access continuity |
 | Password migration | Yes (with Password Export Server installed on source) |
-| Use case | M&A consolidation, domain rename, forest consolidation |
+| Use case | M&A (Mergers and Acquisitions) consolidation, domain rename, forest consolidation |
 
 ### Modern alternatives
 
 - **Cross-tenant migration** in Entra ID (for cloud-first orgs)
-- **Hybrid B2B** with cross-tenant access settings
+- **Hybrid B2B (Business-to-Business)** with cross-tenant access settings
 - Third-party tools (Quest Migration Manager for AD, Binary Tree Active Directory Pro, etc.)
 
 🎯 **Exam pattern:** *"Migrate user accounts from acquired company's domain to parent's domain, preserving access to file servers"* → **ADMT with SID History**.

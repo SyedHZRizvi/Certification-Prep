@@ -1,13 +1,13 @@
 # Module 3: Storage Accounts & Blob Storage 🗄️
 
-> **Why this module matters:** Storage is 15–20% of the AZ-104 exam, and *every* other service eventually writes to it, VM disks, backups, logs, function code, container images. Pick the wrong redundancy, lifecycle, or access pattern and you'll either waste a fortune or lose data. The exam loves tricky redundancy and SAS questions.
+> **Why this module matters:** Storage is 15–20% of the AZ-104 exam, and *every* other service eventually writes to it, VM (Virtual Machine) disks, backups, logs, function code, container images. Pick the wrong redundancy, lifecycle, or access pattern and you'll either waste a fortune or lose data. The exam loves tricky redundancy and SAS questions.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1](../Module-01-Subscriptions-Resource-Hierarchy/Reading.md): how resource groups, locks, and tags work.
-> - [Module 2](../Module-02-Entra-ID-RBAC/Reading.md): control-plane vs. data-plane role distinction (you'll hear it again here, *Storage Account Contributor* ≠ *Storage Blob Data Reader*).
+> - [Module 2](../Module-02-Entra-ID-RBAC (Role-Based Access Control)/Reading.md): control-plane vs. data-plane role distinction (you'll hear it again here, *Storage Account Contributor* ≠ *Storage Blob Data Reader*).
 > - The CAP theorem (Brewer, *Symposium on Principles of Distributed Computing keynote*, 2000), useful background for understanding why GZRS exists and what trade-offs LRS / ZRS / GRS make.
 >
-> If you've taken AZ-900, the storage chapter there covered tiers and redundancy at the level of "names and pictures", this module assumes you know those names and gets into the operational and exam-tested details (in-place SKU change rules, rehydration, SAS revocation, CMK requirements).
+> If you've taken AZ-900, the storage chapter there covered tiers and redundancy at the level of "names and pictures", this module assumes you know those names and gets into the operational and exam-tested details (in-place SKU (Stock Keeping Unit) change rules, rehydration, SAS revocation, CMK requirements).
 
 ---
 
@@ -41,7 +41,7 @@ A **storage account** is the top-level namespace. Pick the right *kind* once, yo
 
 Performance tiers: **Standard** (HDD-backed, cheap) vs **Premium** (SSD-backed, low-latency).
 
-### Create a v2 standard account via CLI
+### Create a v2 standard account via CLI (Command Line Interface)
 
 ```bash
 az storage account create \
@@ -219,8 +219,8 @@ az storage container immutability-policy lock \
 
 | Layer | Default | Customer-managed key (CMK) option |
 |-------|---------|----------------------------------|
-| At-rest (Storage Service Encryption) | ✅ AES-256, Microsoft-managed keys (MMK) | Use a Key Vault key |
-| In-transit (HTTPS) | ✅ TLS 1.2+ enforced when configured | n/a |
+| At-rest (Storage Service Encryption) | ✅ AES (Advanced Encryption Standard)-256, Microsoft-managed keys (MMK) | Use a Key Vault key |
+| In-transit (HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure)) | ✅ TLS (Transport Layer Security) 1.2+ enforced when configured | n/a |
 | Infrastructure encryption | Optional, adds a second AES-256 layer at the infra level | Enable at account creation only |
 
 ### Switch to CMK
@@ -436,7 +436,7 @@ You now know:
 
 Toyota's fix list, published in their second-wave disclosure: enable Defender for Storage across all environments, enforce `Storage accounts should disallow public access` via Azure Policy at the management-group root, rotate all account keys, switch to **User Delegation SAS** for any URL-shareable scenario, and add a Conditional Access policy that confines storage-account admin operations to managed devices.
 
-**Outcome.** Toyota offered affected customers credit monitoring and issued a public apology. Japan's Personal Information Protection Commission opened an investigation. Industry impact was substantial: *Wall Street Journal* and *Nikkei* coverage made "9.5 years of public storage" the canonical cautionary tale, and several auto manufacturers (Honda, Nissan, Ford) accelerated their own cloud-storage posture reviews. As of late 2024, Toyota had migrated affected workloads onto a hardened Azure-and-AWS landing zone with private endpoints and CMK encryption.
+**Outcome.** Toyota offered affected customers credit monitoring and issued a public apology. Japan's Personal Information Protection Commission opened an investigation. Industry impact was substantial: *Wall Street Journal* and *Nikkei* coverage made "9.5 years of public storage" the canonical cautionary tale, and several auto manufacturers (Honda, Nissan, Ford) accelerated their own cloud-storage posture reviews. As of late 2024, Toyota had migrated affected workloads onto a hardened Azure-and-AWS (Amazon Web Services) landing zone with private endpoints and CMK encryption.
 
 **Lesson for the exam / for practitioners.** This case study is on AZ-104 in spirit: nearly every Defender-for-Storage / Azure-Policy storage scenario question is a thinly-veiled "Toyota." Memorize the seven correct controls for a *new* storage account: `--kind StorageV2`, `--sku Standard_GZRS` (or LRS if no regional DR need), `--min-tls-version TLS1_2`, `--allow-blob-public-access false`, `--public-network-access Disabled` *(when feasible)*, managed identity + CMK, lifecycle policy, and **a diagnostic setting to Log Analytics with a Defender alert on anonymous-read or container ACL changes**. Toyota would not be on Wikipedia today if any *one* of those had been in place in 2013.
 
@@ -449,14 +449,14 @@ Toyota's fix list, published in their second-wave disclosure: enable Defender fo
 
 > **Where this leads.**
 > - Inside this course: Module 4 builds on storage by adding the *SMB/NFS file share* layer; Module 8 covers the network-side controls (private endpoint, NSG, Firewall) that lock storage down; Module 10 closes the loop with diagnostic settings + Defender for Storage alerts.
-> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 3](../../04-AWS-Solutions-Architect-Associate/Module-03-EC2-Deep-Dive/Reading.md) covers the equivalent S3 controls, useful for the multi-cloud admin; [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Module 4 covers cloud-storage misconfiguration as a recognized attack class.
-> - Practice: PE-1 has 9 questions from this module (redundancy SKUs, tiers, SAS, CMK, private endpoint); PE-2 + Final Mock test scenario synthesis.
+> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 3](../../04-AWS-Solutions-Architect-Associate/Module-03-EC2 (Elastic Compute Cloud)-Deep-Dive/Reading.md) covers the equivalent S3 (Simple Storage Service) controls, useful for the multi-cloud admin; [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Module 4 covers cloud-storage misconfiguration as a recognized attack class.
+> - Practice: PE (Private Equity)-1 has 9 questions from this module (redundancy SKUs, tiers, SAS, CMK, private endpoint); PE-2 + Final Mock test scenario synthesis.
 
 ---
 
 ## 💬 Discussion, Socratic prompts
 
-1. **Redundancy choice under cost pressure.** A startup CFO wants you to switch the production blob account from GZRS to LRS to save ~60% on storage cost. Walk through the AZ-104-style decision: at what RPO/RTO posture is LRS defensible? Defend the *cheapest acceptable* redundancy SKU for a system whose data could be re-derived from an upstream source within 4 hours, vs. one whose data is the system of record. (Hint: the AWS Well-Architected and Microsoft Well-Architected Framework "Reliability" pillars both give explicit guidance.)
+1. **Redundancy choice under cost pressure.** A startup CFO (Chief Financial Officer) wants you to switch the production blob account from GZRS to LRS to save ~60% on storage cost. Walk through the AZ-104-style decision: at what RPO (Recovery Point Objective)/RTO (Recovery Time Objective) posture is LRS defensible? Defend the *cheapest acceptable* redundancy SKU for a system whose data could be re-derived from an upstream source within 4 hours, vs. one whose data is the system of record. (Hint: the AWS Well-Architected and Microsoft Well-Architected Framework "Reliability" pillars both give explicit guidance.)
 2. **Tiering math.** A media company keeps 100 TB of video assets. 5 TB are accessed daily, 20 TB monthly, 75 TB roughly once a year for archival reference. Design the lifecycle policy and estimate the storage-cost reduction vs. all-Hot. Where does the math flip, at what access frequency does Archive *lose* money once retrieval and rehydration costs are included?
 3. **SAS revocation.** A vendor's Account SAS was leaked on GitHub. The standard advice is "rotate the account key." Argue why that's the right answer despite breaking *every* other SAS issued from that key, and what a *Stored Access Policy* would have bought you. When would User Delegation SAS have made the leak nearly inert?
 4. **Immutable storage and the regulator.** A bank is told by their regulator to retain trade records for 7 years, write-once. Two designs: time-based immutability (locked) on a regular blob container vs. a dedicated WORM-mode Backup vault. Argue which is the right primary control and which is the appropriate *defense-in-depth* secondary control.
@@ -472,5 +472,5 @@ Toyota's fix list, published in their second-wave disclosure: enable Defender fo
 - 📖 [SAS overview](https://learn.microsoft.com/azure/storage/common/storage-sas-overview)
 - 📖 [AzCopy v10 reference](https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10)
 - 📖 [Defender for Storage](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-storage-introduction) (GA 2022; checked 2026-05).
-- 📖 Mark Russinovich, *Azure CTO blog*, periodic posts on storage architecture and resiliency engineering; especially the 2022 *"Inside Azure datacenter architecture"* series.
+- 📖 Mark Russinovich, *Azure CTO (Chief Technology Officer) blog*, periodic posts on storage architecture and resiliency engineering; especially the 2022 *"Inside Azure datacenter architecture"* series.
 - 📖 Brewer, *PODC keynote 2000*, the CAP theorem origin; useful for reasoning about why GRS can't promise zero data loss on regional failover.

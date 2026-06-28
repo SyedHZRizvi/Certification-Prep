@@ -16,7 +16,7 @@ Picture an office in 1995. Tony, a salesman, wants to send a contract to Mei, an
 
 Each handoff added a layer of packaging admin (envelope), mailroom (mailbag), courier (truck) and each layer of packaging is *invisible* to every other layer. The courier doesn't know what's in the contract. The mailroom doesn't care which courier. Mei doesn't see the envelope flap. Each layer just trusts its peer at the other end to use the same conventions.
 
-Welcome to the **OSI model**. Networking works *exactly* this way. Your browser hands data to TCP, TCP hands it to IP, IP hands it to Ethernet, Ethernet hands it to copper or fiber. At the other end, each layer peels off its envelope and hands the contents to its peer above. The whole game is **layered abstraction**, and the cleanest way to reason about it is the 7-layer OSI model from 1984.
+Welcome to the **OSI model**. Networking works *exactly* this way. Your browser hands data to TCP (Transmission Control Protocol), TCP hands it to IP, IP hands it to Ethernet, Ethernet hands it to copper or fiber. At the other end, each layer peels off its envelope and hands the contents to its peer above. The whole game is **layered abstraction**, and the cleanest way to reason about it is the 7-layer OSI model from 1984.
 
 ---
 
@@ -26,11 +26,11 @@ The OSI Reference Model was standardized as **ISO/IEC 7498-1** in 1984, with ori
 
 | # | Layer | What it does | PDU | Addresses/IDs | Examples |
 |---|-------|--------------|-----|---------------|----------|
-| 7 | **Application** | User-facing protocols | Data | Hostnames | HTTP, HTTPS, FTP, DNS, SMTP, SSH |
-| 6 | **Presentation** | Data format, encryption, compression | Data | | TLS (debatable see note), JPEG, ASCII, character encodings |
-| 5 | **Session** | Open / maintain / close sessions | Data |, | NetBIOS, RPC, SQL, SIP session setup |
-| 4 | **Transport** | End-to-end delivery, segmentation | **Segment** (TCP) / **Datagram** (UDP) | **Port numbers** | TCP, UDP |
-| 3 | **Network** | Logical addressing, routing | **Packet** | **IP addresses** | IP, ICMP, OSPF, EIGRP, BGP |
+| 7 | **Application** | User-facing protocols | Data | Hostnames | HTTP (Hypertext Transfer Protocol), HTTPS (HTTP Secure), FTP (File Transfer Protocol), DNS (Domain Name System), SMTP (Simple Mail Transfer Protocol), SSH (Secure Shell) |
+| 6 | **Presentation** | Data format, encryption, compression | Data | | TLS (Transport Layer Security) (debatable see note), JPEG, ASCII, character encodings |
+| 5 | **Session** | Open / maintain / close sessions | Data |, | NetBIOS, RPC, SQL (Structured Query Language), SIP session setup |
+| 4 | **Transport** | End-to-end delivery, segmentation | **Segment** (TCP) / **Datagram** (UDP (User Datagram Protocol)) | **Port numbers** | TCP, UDP |
+| 3 | **Network** | Logical addressing, routing | **Packet** | **IP addresses** | IP, ICMP (Internet Control Message Protocol), OSPF (Open Shortest Path First), EIGRP, BGP (Border Gateway Protocol) |
 | 2 | **Data Link** | Hop-to-hop delivery on a single segment | **Frame** | **MAC addresses** | Ethernet, 802.11, PPP, ARP, switches |
 | 1 | **Physical** | Bits on the wire/radio/fiber | **Bits** |, | Cabling, voltage, RJ45, fiber, hubs, repeaters |
 
@@ -92,7 +92,7 @@ Hop-to-hop delivery on a single network segment. Layer 2 frames carry data betwe
 | Reliability | Yes (sequence + ack + retransmit) | No |
 | Ordering | Yes (sequence numbers) | No |
 | Overhead | Higher (20-byte minimum header) | Lower (8-byte header) |
-| Use cases | Web, email, SSH, file transfer | DNS queries, VoIP, video streaming, DHCP, SNMP |
+| Use cases | Web, email, SSH, file transfer | DNS queries, VoIP, video streaming, DHCP (Dynamic Host Configuration Protocol), SNMP (Simple Network Management Protocol) |
 
 🎯 **Exam pattern:** *"Voice over IP suffers from jitter on a high-latency link. Which transport protocol does VoIP use?"* → UDP (real-time apps prefer UDP, retransmits are useless for live audio).
 
@@ -106,13 +106,13 @@ Open, maintain, and gracefully close *logical conversations* between two applica
 
 How the bytes are *encoded*. Character sets (ASCII, UTF-8), file formats (JPEG, MPEG), encryption, compression. Translates between application-specific formats and the network's wire format.
 
-**Where TLS lives**, debated. CompTIA's Network+ commonly places SSL/TLS at Layer 6 (because it's about encrypting and presenting data); some texts argue it spans 5–7. **On the exam, if asked, choose Presentation (L6).**
+**Where TLS lives**, debated. CompTIA's Network+ commonly places SSL (Secure Sockets Layer)/TLS at Layer 6 (because it's about encrypting and presenting data); some texts argue it spans 5–7. **On the exam, if asked, choose Presentation (L6).**
 
 ### Layer 7, Application
 
 The protocols users actually interact with, directly or through their browser, mail client, etc.
 
-**Examples:** HTTP, HTTPS, DNS, DHCP, FTP, SFTP, SMTP, IMAP, POP3, SNMP, SSH, NTP, LDAP.
+**Examples:** HTTP, HTTPS, DNS, DHCP, FTP, SFTP, SMTP, IMAP (Internet Message Access Protocol), POP3 (Post Office Protocol 3), SNMP, SSH, NTP, LDAP (Lightweight Directory Access Protocol).
 
 🚨 **Trap on the exam:** "Application layer" in OSI ≠ the apps on your computer (Chrome, Outlook). It means the *protocol* the app speaks to the network.
 
@@ -160,10 +160,10 @@ Topology = the physical or logical *shape* of how nodes connect.
 | Topology | Diagram | Pros | Cons | Use case |
 |----------|---------|------|------|----------|
 | **Bus** | All nodes share one cable | Cheap, simple | Single cable fault = whole net down; collisions | Legacy (10BASE-2/5); rare today |
-| **Star** | Every node → central switch/hub | Easy to add/remove nodes; isolated faults; dominant LAN topology | Switch is single point of failure | Modern Ethernet LANs |
+| **Star** | Every node → central switch/hub | Easy to add/remove nodes; isolated faults; dominant LAN (Local Area Network) topology | Switch is single point of failure | Modern Ethernet LANs |
 | **Ring** | Nodes connect in a loop, traffic circulates | Predictable, deterministic timing | One break = whole ring down (unless dual-ring like FDDI) | Token Ring, FDDI, MetroEthernet rings |
 | **Mesh (full)** | Every node directly connects to every other | Massive redundancy; no single-link failure matters | Expensive, N(N-1)/2 links | Backbone networks, internet core |
-| **Mesh (partial)** | Some nodes have multiple paths; others don't | Cheaper than full, still resilient | Less predictable | WAN designs, large data centers |
+| **Mesh (partial)** | Some nodes have multiple paths; others don't | Cheaper than full, still resilient | Less predictable | WAN (Wide Area Network) designs, large data centers |
 | **Hybrid** | Combination (e.g., star-of-stars) | Pick the best for each segment | Complex documentation | Most real enterprise networks |
 | **Point-to-point** | Two nodes, one link | Simplest possible | Doesn't scale | WAN links, fiber between data centers |
 
@@ -212,7 +212,7 @@ How many recipients does a single transmission target?
 | **PAN** (Personal Area) | 1–10 m | Bluetooth headphones, USB tether |
 | **LAN** (Local Area) | One building / one site | Office Ethernet + Wi-Fi |
 | **CAN** (Campus Area) | Multiple adjacent buildings | University, hospital complex |
-| **MAN** (Metropolitan Area) | One city / metro region | City fiber ring, ISP regional network |
+| **MAN** (Metropolitan Area) | One city / metro region | City fiber ring, ISP (Internet Service Provider) regional network |
 | **WAN** (Wide Area) | Multi-city / country / global | The Internet; corporate connections between offices |
 | **SAN** (Storage Area) | Block-level storage fabric | Data-center fiber-channel network |
 | **WLAN** (Wireless LAN) | LAN over Wi-Fi | Office or home Wi-Fi |
@@ -326,7 +326,7 @@ This is a *perfect* PBQ-style scenario: CompTIA loves to ask "at which OSI layer
 
 **Situation.** Throughout 2016, three teenagers (Paras Jha, Josiah White, Dalton Norman) wrote malware that scanned the IPv4 address space for IoT devices routers, IP cameras, DVRs running Linux on busybox with **default credentials still in place** (root/admin, admin/admin, 888888/888888). The malware logged in over Telnet (TCP/23) or SSH (TCP/22), pulled down a small binary, and added the device to a command-and-control botnet.
 
-**Decision.** Once the botnet topped ~600,000 infected devices, the authors used it to launch volumetric DDoS attacks for hire. On **21 September 2016**, the security journalist Brian Krebs was hit with a ~620 Gbps attack the largest publicly recorded DDoS at the time which knocked his site offline despite Akamai's defenses. The Krebs attack used **UDP-based** floods at Layer 4 (the *transport* layer), combining DNS, NTP, and CLDAP amplification reflectors to multiply traffic.
+**Decision.** Once the botnet topped ~600,000 infected devices, the authors used it to launch volumetric DDoS (Distributed Denial of Service) attacks for hire. On **21 September 2016**, the security journalist Brian Krebs was hit with a ~620 Gbps attack the largest publicly recorded DDoS at the time which knocked his site offline despite Akamai's defenses. The Krebs attack used **UDP-based** floods at Layer 4 (the *transport* layer), combining DNS, NTP, and CLDAP amplification reflectors to multiply traffic.
 
 **Outcome.** On **21 October 2016**, Mirai was unleashed against **Dyn**, a major DNS provider. The attack peaking at ~1.2 Tbps overwhelmed Dyn's authoritative DNS servers. Because vast portions of the eastern US Internet (Twitter, Reddit, GitHub, Spotify, Netflix, The New York Times, Airbnb) used Dyn for DNS resolution, *those services became unreachable even though their own infrastructure was fine*, browsers couldn't resolve their hostnames. Outages lasted ~11 hours and cascaded across the country. The Mirai source code was leaked on Hack Forums by "Anna-Senpai" (Jha) the same month, spawning dozens of variants still active in 2026. The three authors pleaded guilty in December 2017.
 
@@ -366,8 +366,8 @@ You now know:
 4. ➡️ Move on: [Module 2, TCP/IP & Subnetting](../Module-02-TCP-IP-Subnetting/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 2](../Module-02-TCP-IP-Subnetting/Reading.md) deepens L3 (IP addressing, CIDR, NAT); [Module 3](../Module-03-Routing-Switching/Reading.md) goes deep on L2 (switches, VLANs, STP) and L3 (routing protocols); [Module 7](../Module-07-Monitoring-Tools/Reading.md) uses the OSI model as the diagnostic framework for ping/traceroute/Wireshark; [Module 8](../Module-08-Troubleshooting/Reading.md) is built around the OSI-layer troubleshooting approach.
-> - Cross-course: CompTIA Security+ (course 09) Module 6 (Network Security) and AWS Solutions Architect (course 04) VPC content both assume you have the OSI model memorized.
+> - Inside this course: [Module 2](../Module-02-TCP-IP-Subnetting/Reading.md) deepens L3 (IP addressing, CIDR, NAT (Network Address Translation)); [Module 3](../Module-03-Routing-Switching/Reading.md) goes deep on L2 (switches, VLANs, STP) and L3 (routing protocols); [Module 7](../Module-07-Monitoring-Tools/Reading.md) uses the OSI model as the diagnostic framework for ping/traceroute/Wireshark; [Module 8](../Module-08-Troubleshooting/Reading.md) is built around the OSI-layer troubleshooting approach.
+> - Cross-course: CompTIA Security+ (course 09) Module 6 (Network Security) and AWS (Amazon Web Services) Solutions Architect (course 04) VPC (Virtual Private Cloud) content both assume you have the OSI model memorized.
 > - Practice: Practice Exam 1 has ~8 questions drawing from this module; the Final Mock has ~10.
 
 ---

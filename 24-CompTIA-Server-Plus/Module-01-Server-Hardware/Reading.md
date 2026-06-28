@@ -97,7 +97,7 @@ Why it matters:
 | **ECC RDIMM** (registered) | Most servers | Buffer chip between memory controller and DIMM; allows higher density, slight latency cost |
 | **ECC LRDIMM** (load-reduced) | High-density servers | Bigger buffer; lets you populate more DIMMs per channel for maximum capacity |
 
-🎯 **Exam pattern:** *"A bank reports silent corruption of accounting records. The CFO insists the database is fine. Which hardware feature should the new server have to prevent this?"* → **ECC RAM**.
+🎯 **Exam pattern:** *"A bank reports silent corruption of accounting records. The CFO (Chief Financial Officer) insists the database is fine. Which hardware feature should the new server have to prevent this?"* → **ECC RAM**.
 
 ---
 
@@ -196,11 +196,11 @@ Two pieces of hardware sit between drives and the OS:
 
 ## 🔌 Networking on the Server (More in Module 7)
 
-Module 7 covers NIC teaming, VLAN tagging, jumbo frames. Here we cover the physical NICs.
+Module 7 covers NIC teaming, VLAN (Virtual Local Area Network) tagging, jumbo frames. Here we cover the physical NICs.
 
 | NIC type | Use |
 |---|---|
-| **Onboard (LOM, LAN on Motherboard)** | 1× or 2× 1 GbE / 10 GbE built into the chassis |
+| **Onboard (LOM, LAN (Local Area Network) on Motherboard)** | 1× or 2× 1 GbE / 10 GbE built into the chassis |
 | **PCIe NIC card** | Add-on for more ports or higher speed (10/25/40/100 GbE) |
 | **CNA** (Converged Network Adapter) | Carries IP + FCoE on the same card, collapses LAN and SAN |
 | **InfiniBand HCA** | Specialized low-latency interconnect for HPC and storage |
@@ -220,7 +220,7 @@ The **BMC** (Baseboard Management Controller) is a tiny computer on the server's
 - Its own CPU and RAM (independent of the host CPU/RAM)
 - Its own NIC (dedicated management port)
 - Its own power (runs on standby power, works even when the server is "off")
-- Its own web UI + IPMI interface
+- Its own web UI (User Interface) + IPMI interface
 
 This means you can:
 
@@ -235,10 +235,10 @@ This means you can:
 **IPMI** (Intelligent Platform Management Interface) is the industry-standard management protocol (Intel/Dell/HP/NEC, 1998). It defines:
 
 - IPMI 1.5, 2.0 (current)
-- LAN port: **UDP 623**
+- LAN port: **UDP (User Datagram Protocol) 623**
 - Commands: power control, sensor query, SEL access, virtual media
 
-🚨 **Trap on the exam:** IPMI runs on **UDP 623**, not TCP. It also has had multiple historical CVEs (cleartext passwords in IPMI 1.5, "cipher 0" auth bypass), treat the management network as *high security*, never expose it to the internet.
+🚨 **Trap on the exam:** IPMI runs on **UDP 623**, not TCP (Transmission Control Protocol). It also has had multiple historical CVEs (cleartext passwords in IPMI 1.5, "cipher 0" auth bypass), treat the management network as *high security*, never expose it to the internet.
 
 ### Vendor brand names, same idea, different name
 
@@ -280,7 +280,7 @@ Servers expose dozens of environmental sensors over IPMI. The BMC monitors:
 | PSU voltages | 12 V ±5%, 5 V ±5%, 3.3 V ±5% |
 | PSU input current | per-PSU; alerts on imbalance |
 
-The BMC sends SNMP traps or syslog alerts to your monitoring system on any threshold cross. Email/SMS/PagerDuty alerts let you respond *before* CPU throttling or thermal shutdown.
+The BMC sends SNMP (Simple Network Management Protocol) traps or syslog alerts to your monitoring system on any threshold cross. Email/SMS/PagerDuty alerts let you respond *before* CPU throttling or thermal shutdown.
 
 🚨 **Trap on the exam:** Inlet temperature is what you measure for cooling, *not* CPU temp. CPU temp is a downstream effect.
 
@@ -317,7 +317,7 @@ A **switched PDU** is your *last-ditch* remote recovery, when even the BMC is un
 
 ## 🔬 Scenario Walkthrough (PBQ-style thinking)
 
-> **Scenario.** A 70-person regional credit union is opening a second branch. The CTO wants the new branch to host a domain controller, file server, and accounting database VM on a single physical server, with full hardware redundancy and the ability to recover from a remote-site failure without sending a tech. Pick the bill of materials.
+> **Scenario.** A 70-person regional credit union is opening a second branch. The CTO (Chief Technology Officer) wants the new branch to host a domain controller, file server, and accounting database VM (Virtual Machine) on a single physical server, with full hardware redundancy and the ability to recover from a remote-site failure without sending a tech. Pick the bill of materials.
 
 **Walkthrough.**
 
@@ -329,7 +329,7 @@ A **switched PDU** is your *last-ditch* remote recovery, when even the BMC is un
 6. **Network.** Onboard 2× 1 GbE for management + 2× 10 GbE PCIe NIC for data, teamed via LACP into the branch switch.
 7. **Out-of-band.** **iDRAC Enterprise** with dedicated management NIC on a separate management VLAN. Virtual console + virtual media licensed.
 8. **Environmental.** Inlet temperature sensor wired to monitoring. Email + SMS alert if inlet >27 °C or any fan fails.
-9. **Recovery story.** If the branch crashes, the CTO connects to iDRAC over VPN, opens virtual console, reboots into UEFI, fixes the boot order if needed, all from headquarters. *No tech rolls.*
+9. **Recovery story.** If the branch crashes, the CTO connects to iDRAC over VPN (Virtual Private Network), opens virtual console, reboots into UEFI, fixes the boot order if needed, all from headquarters. *No tech rolls.*
 
 This is the kind of integration question Server+ PBQs ask. Notice how every component on this list maps to one of the concepts in this module.
 
@@ -425,7 +425,7 @@ This is the kind of integration question Server+ PBQs ask. Notice how every comp
 - **Out-of-band management saved the survivors.** Sites with iLO/iDRAC could remotely shed load, gracefully shut down non-critical hosts, and prioritize cooling. Sites without had to send techs into hot dark rooms with flashlights.
 - **Documentation matters.** Sites with up-to-date *rack power maps* (which server is on which PDU is on which feed) reacted in minutes. Sites without spent hours guessing.
 
-This is exactly the scenario Server+ tests when asking "design a server for a 99.99% availability SLA in a colocation facility." The answer is rarely one feature, it is **redundancy at every layer**, *verified by testing*.
+This is exactly the scenario Server+ tests when asking "design a server for a 99.99% availability SLA (Service Level Agreement) in a colocation facility." The answer is rarely one feature, it is **redundancy at every layer**, *verified by testing*.
 
 **Discussion (Socratic).**
 - **Q1:** If you were the data-center manager at a Tier III facility on 14 August 2003, what *three* operational changes would you push for within the next 90 days, ranked by cost-effectiveness? Defend each.
@@ -455,7 +455,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 2](../Module-02-Server-Administration/Reading.md) puts an OS on the hardware; [Module 3](../Module-03-Storage/Reading.md) extends storage from internal drives to SAN/NAS; [Module 5](../Module-05-Disaster-Recovery/Reading.md) uses redundancy concepts here as inputs to BCP/DR planning; [Module 8](../Module-08-Troubleshooting/Reading.md) returns to LEDs, beep codes, and the BMC for diagnostics.
-> - Cross-course: CompTIA A+ (220-1101/1102) covers desktop hardware that maps directly to the server-vs-desktop comparisons here. CompTIA Network+ (N10-008) covers the data-center cabling and PoE that's adjacent to server cabling.
+> - Cross-course: CompTIA A+ (220-1101/1102) covers desktop hardware that maps directly to the server-vs-desktop comparisons here. CompTIA Network+ (N10-008) covers the data-center cabling and PoE (Power over Ethernet) that's adjacent to server cabling.
 > - Practice: Practice Exam 1 has ~9 questions drawing from this module; the Final Mock has ~14.
 
 ---

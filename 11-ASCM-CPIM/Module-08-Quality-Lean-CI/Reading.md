@@ -194,7 +194,7 @@ The Kaizen mindset:
 
 ## 📊 Six Sigma & DMAIC
 
-> **Citation.** Six Sigma originated at **Motorola** in 1986 under **Bill Smith** (engineer) and **Mikel Harry** (director, Operations and Systems Research), formally launched company-wide in 1987. Motorola won the inaugural Malcolm Baldrige National Quality Award in 1988 substantially on the strength of Six Sigma adoption. The methodology was popularized by **General Electric** under **Jack Welch** starting 1995. The DMAIC framework was formalized in Pyzdek, Thomas, *The Six Sigma Handbook* (3rd ed. McGraw-Hill, 2010) and George, Michael L., *Lean Six Sigma: Combining Six Sigma Quality with Lean Production Speed* (McGraw-Hill, 2002). The TQM antecedents Deming, Juran, Crosby, Ishikawa preceded Six Sigma by decades; see "TQM" section below for those citations.
+> **Citation.** Six Sigma originated at **Motorola** in 1986 under **Bill Smith** (engineer) and **Mikel Harry** (director, Operations and Systems Research), formally launched company-wide in 1987. Motorola won the inaugural Malcolm Baldrige National Quality Award in 1988 substantially on the strength of Six Sigma adoption. The methodology was popularized by **General Electric** under **Jack Welch** starting 1995. The DMAIC framework was formalized in Pyzdek, Thomas, *The Six Sigma Handbook* (3rd ed. McGraw-Hill, 2010) and George, Michael L., *Lean Six Sigma: Combining Six Sigma Quality with Lean Production Speed* (McGraw-Hill, 2002). The TQM (Total Quality Management) antecedents Deming, Juran, Crosby, Ishikawa preceded Six Sigma by decades; see "TQM" section below for those citations.
 
 **Six Sigma** = a data-driven quality improvement methodology pioneered by Motorola (1986) and popularized by GE (Welch, 1995). Target: ≤ **3.4 defects per million opportunities (DPMO)** = 6σ from the mean.
 
@@ -361,7 +361,7 @@ The CPIM exam-takeaway: when an exam question describes a company that "implemen
 | "Lean means fewer workers" | False, lean targets *waste*, not headcount |
 | "Six Sigma is just statistics" | It's a project methodology; statistics is a tool |
 | "Kaizen is a one-time event" | It's a *culture* of continuous small improvement |
-| "Kanban replaces MRP" | They coexist, MRP plans, kanban executes pull |
+| "Kanban replaces MRP (Material Requirements Planning)" | They coexist, MRP plans, kanban executes pull |
 | "Takt time = cycle time" | Takt is *desired* pace (customer); cycle time is *actual* |
 | "TPM is the maintenance department's job" | TPM puts *operators* in charge of daily maintenance |
 | "Higher Cpk is always better" | Cpk ≥ 1.33 capable; ≥ 2.0 world-class, beyond that, diminishing returns |
@@ -437,7 +437,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 8 closes the CPIM canon. The capstone project at the course root brings every module together (S&OP → MPS → MRP → Capacity → Inventory → PAC → Lean).
+> - Inside this course: Module 8 closes the CPIM canon. The capstone project at the course root brings every module together (S&OP (Sales and Operations Planning) → MPS → MRP → Capacity → Inventory → PAC → Lean).
 > - Cross-course: `10-ASCM-CSCP` Module 10 extends Lean to the multi-tier supply chain (Lean Six Sigma at network scale); `12-ASCM-CLTD` Module 9 applies Lean to warehouse and transportation operations.
 > - Practice: Practice Exam 2 has 18+ questions on Lean / Six Sigma / TPM; Final Mock Exam has 22+. This is one of the highest-yield modules, drill the formulas (kanban, takt, OEE, Cpk) and the case-named concepts (TIMWOOD/DOWNTIME, 5S, DMAIC).
 

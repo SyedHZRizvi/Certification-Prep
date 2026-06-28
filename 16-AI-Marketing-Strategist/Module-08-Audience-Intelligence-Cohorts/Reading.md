@@ -3,9 +3,9 @@
 > **Why this module matters:** The single most under-used analytical technique in marketing is the cohort. The companies that use cohort analysis well Spotify, Notion, Figma, Stripe, Shopify outpace competitors by 2–3× in capital efficiency because they actually know what their retention curves look like. The companies that don't know are flying blind. This module teaches you to cohort like a Series-B growth analyst.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - GA4 + BigQuery raw event-schema queries from [Module 3](../Module-03-GA4-Mastery-Custom-Events/Reading.md), most cohort triangles are built from these events.
-> - The CLV / retention vocabulary from [Module 6: Predictive Analytics CLV, Churn & Propensity](../Module-06-Predictive-Analytics-LTV-Churn/Reading.md) cohorts are the descriptive complement to predictive CLV.
-> - SQL `JOIN` and `GROUP BY` with window functions (`DATE_DIFF`, `DATE_TRUNC`), refresher in [Course 14 Module 8](../../14-AI-Marketing-Foundations/Module-08-Analytics-Measurement-Basics/Reading.md).
+> - GA4 (Google Analytics 4) + BigQuery raw event-schema queries from [Module 3](../Module-03-GA4-Mastery-Custom-Events/Reading.md), most cohort triangles are built from these events.
+> - The CLV (Customer Lifetime Value) / retention vocabulary from [Module 6: Predictive Analytics CLV, Churn & Propensity](../Module-06-Predictive-Analytics-LTV (Lifetime Value)-Churn/Reading.md) cohorts are the descriptive complement to predictive CLV.
+> - SQL (Sales Qualified Lead) `JOIN` and `GROUP BY` with window functions (`DATE_DIFF`, `DATE_TRUNC`), refresher in [Course 14 Module 8](../../14-AI-Marketing-Foundations/Module-08-Analytics-Measurement-Basics/Reading.md).
 > - Reading retention triangles / decay curves without translation.
 > If "look-alike" and "first-party seed audience" are not familiar, that's covered briefly here and at depth in [Module 9](../Module-09-Privacy-First-Measurement/Reading.md).
 
@@ -13,7 +13,7 @@
 
 ## 🎵 A Story: How Spotify Discovered the Retention Cliff That Cost Music Labels Billions
 
-In 2017, Spotify's data team published an internal analysis (later partially disclosed in IPO documents) showing a sharp retention "cliff" between weeks 4 and 8 of user tenure for free-tier users:
+In 2017, Spotify's data team published an internal analysis (later partially disclosed in IPO (Initial Public Offering) documents) showing a sharp retention "cliff" between weeks 4 and 8 of user tenure for free-tier users:
 
 - Week 1 retention: 91%
 - Week 2 retention: 76%
@@ -107,7 +107,7 @@ The **dimensional cohort** is the 2026 default, not just "Jan 2026 cohort" but "
 
 Same cohort matrix shape, but with revenue (per-customer cumulative or quarterly) in each cell instead of retention.
 
-### Worked example, a SaaS company
+### Worked example, a SaaS (Software as a Service) company
 
 | Acquisition month | Cumulative LTV M3 | M6 | M12 | M24 |
 |-------------------|---------------------|----|-----|-----|
@@ -121,7 +121,7 @@ Reading this:
 
 - LTV climbing across cohorts (newer cohorts reach higher LTV at the same tenure) = improving product.
 - LTV declining = either acquisition quality dropping or product getting worse.
-- The 24-month LTV is what you compare to CAC for the LTV:CAC ratio.
+- The 24-month LTV is what you compare to CAC (Customer Acquisition Cost) for the LTV:CAC ratio.
 
 ---
 
@@ -143,9 +143,9 @@ Meta gradually de-emphasized Lookalikes in favor of **Advantage+ Audience**, whi
 |----------|-------------------|
 | Manual Lookalike (legacy) | Useful when you have a *very* high-confidence seed (e.g., top 1% LTV); broadly de-emphasized |
 | Advantage+ Audience | Default for most campaigns in 2026; trust Meta's model |
-| Server-side conversion API + Advantage+ | The best combination; feed Meta high-quality conversion data and let its model target |
+| Server-side conversion API (Application Programming Interface) + Advantage+ | The best combination; feed Meta high-quality conversion data and let its model target |
 
-⚠️ **2026 reality:** The era of "I built a beautiful lookalike from my CRM" is largely over. Meta and Google have more data on user behavior than you do, your job is to feed them *quality conversion signals* and let their targeting models do the work. The strategist's value-add is in *what you measure* (e.g., 90-day-LTV-weighted conversion events), not in micromanaging the targeting algorithm.
+⚠️ **2026 reality:** The era of "I built a beautiful lookalike from my CRM (Customer Relationship Management)" is largely over. Meta and Google have more data on user behavior than you do, your job is to feed them *quality conversion signals* and let their targeting models do the work. The strategist's value-add is in *what you measure* (e.g., 90-day-LTV-weighted conversion events), not in micromanaging the targeting algorithm.
 
 ---
 
@@ -166,7 +166,7 @@ This pattern (the "death spiral") tells the retention team where to intervene. I
 
 ---
 
-## 🎙️ Storytelling With Cohort Data, How to Present to the CEO
+## 🎙️ Storytelling With Cohort Data, How to Present to the CEO (Chief Executive Officer)
 
 The hardest part of cohort analysis isn't the math. It's translating it into a 5-minute board narrative.
 
@@ -260,10 +260,10 @@ Pivot this in Looker Studio or paste the resulting table into Sheets / Excel, yo
 | Misconception | Reality |
 |---------------|---------|
 | "Average retention is enough" | Average hides the high/low extremes. Always cohort. |
-| "Cohorts are just for SaaS" | Every business has cohorts, DTC, marketplace, content |
+| "Cohorts are just for SaaS" | Every business has cohorts, DTC (Direct-to-Consumer), marketplace, content |
 | "Lookalikes are still the targeting default" | In 2026, Advantage+ Audience and Google equivalents dominate |
 | "Cohort analysis is a one-time exercise" | The triangle is a *weekly* check, not a once-a-year report |
-| "More retention is always better" | Some products *should* have low retention (one-time-purchase items), measure NPS / referral instead |
+| "More retention is always better" | Some products *should* have low retention (one-time-purchase items), measure NPS (Net Promoter Score) / referral instead |
 | "Cohort and segment are the same" | Cohort = grouped by time. Segment = grouped by attribute. Often combined as "cohort × segment". |
 
 ---
@@ -279,7 +279,7 @@ Pivot this in Looker Studio or paste the resulting table into Sheets / Excel, yo
 | **Cohort-of-one** | Treating each user as their own cohort with behavioral history |
 | **Activation event / threshold** | The behavior that, once hit, dramatically improves retention |
 | **LTV cohort curve** | Cohort matrix with revenue instead of retention |
-| **NRR (Net Revenue Retention)** | (start ARR + expansion − contraction − churn) / start ARR |
+| **NRR (Net Revenue Retention)** | (start ARR (Annual Recurring Revenue) + expansion − contraction − churn) / start ARR |
 | **GRR (Gross Revenue Retention)** | (start ARR − contraction − churn) / start ARR (no expansion) |
 | **Look-alike audience** | Audience of users who resemble your seed audience |
 | **Advantage+ Audience** | Meta's ML-driven 2024+ alternative to manual look-alikes |
@@ -291,7 +291,7 @@ Pivot this in Looker Studio or paste the resulting table into Sheets / Excel, yo
 
 ## 💼 Case Study, Sephora's Beauty Insider Cohort-Driven Loyalty (2017–2024)
 
-**Situation.** By 2017, Sephora the LVMH-owned beauty retailer with over 2,700 stores globally was already the established US category leader in prestige beauty, but it faced a structural threat: digital-native competitors like Glossier, Function of Beauty, and the direct-to-consumer brand explosion were poaching beauty's most valuable cohort (the "high-engagement, multi-brand exploration" segment) by offering more personalized experiences than Sephora's transactional in-store relationship. Sephora's **Beauty Insider** loyalty program (launched 2007, with tiers added 2009) was a meaningful asset roughly 25 million members at that point but it was operationally treated as a marketing-database, not a strategic differentiation engine. The CMO at the time, Deborah Yeh, recognized that the program's *retention data* was a richer source of strategic insight than Sephora was using.
+**Situation.** By 2017, Sephora the LVMH-owned beauty retailer with over 2,700 stores globally was already the established US category leader in prestige beauty, but it faced a structural threat: digital-native competitors like Glossier, Function of Beauty, and the direct-to-consumer brand explosion were poaching beauty's most valuable cohort (the "high-engagement, multi-brand exploration" segment) by offering more personalized experiences than Sephora's transactional in-store relationship. Sephora's **Beauty Insider** loyalty program (launched 2007, with tiers added 2009) was a meaningful asset roughly 25 million members at that point but it was operationally treated as a marketing-database, not a strategic differentiation engine. The CMO (Chief Marketing Officer) at the time, Deborah Yeh, recognized that the program's *retention data* was a richer source of strategic insight than Sephora was using.
 
 **Decision.** From 2017 onward Sephora's data science and CRM teams executed a multi-year rebuild of Beauty Insider around **dimensional cohort analytics** and **RFM-augmented behavioral segmentation**, with concrete operating changes: (1) every Beauty Insider member was scored quarterly on **Recency × Frequency × Monetary** (RFM) plus a behavioral overlay (categories purchased, sample-redemption rate, in-store-vs-online split); (2) cohort retention triangles became a standing input to the quarterly merchandising review, not just a CRM-team artifact; (3) the **Beauty Insider tier ladder** (Insider → VIB → Rouge) was redesigned so that benefits at each tier were *calibrated to the LTV cohort the member belonged to*, Rouge members got first access to limited-edition launches, free same-day delivery, and event invitations weighted toward the categories their cohort over-indexed on; (4) cohort-driven personalization fed both email and the Sephora app's homepage, with the app's "For You" feed driven by cohort affinity rather than purchase history alone.
 
@@ -311,7 +311,7 @@ Pivot this in Looker Studio or paste the resulting table into Sheets / Excel, yo
 1. Spotify's free-tier retention falls from 91% at week 1 to 31% at week 8, the "cliff." Three competing diagnoses: (a) the music catalog isn't broad enough for the long tail, (b) the social-graph isn't bootstrapped, (c) the on-boarding doesn't reach the activation threshold of "3 personalized playlists made." Which would you test first, and what's the design of the test that would conclusively distinguish them?
 2. Cohort retention curves are sometimes called "the only chart that matters" in growth investing. Yet most marketing decks lead with funnel charts, not cohorts. Why has the cohort triangle remained a *finance/board-deck* artifact rather than a marketing-team daily tool, and is that a feature or a bug?
 3. Meta's Advantage+ Audience replaced manual look-alike audiences in 2024. Some advertisers report 15–25% performance gains; others report flat or negative. What specifically about a brand's *seed-audience quality* and *funnel volume* determines whether Advantage+ outperforms manual look-alikes?
-4. NRR > 100% is the gold standard for B2B SaaS. But a company with 90% NRR and 8% net new-logo growth has a different trajectory than one with 130% NRR and 0% new logos. When the second is healthier, defend it; when the first is healthier, defend it.
+4. NRR > 100% is the gold standard for B2B (Business-to-Business) SaaS. But a company with 90% NRR and 8% net new-logo growth has a different trajectory than one with 130% NRR and 0% new logos. When the second is healthier, defend it; when the first is healthier, defend it.
 5. Cohort-based pricing (charging different cohorts different rates as you learn) is operationally hard but economically optimal. What's a clean *governance* design that lets you implement it without creating a customer-trust disaster when cohorts compare notes?
 
 ---
@@ -336,7 +336,7 @@ You now know:
 4. ➡️ Move to [Module 9: Privacy-First Measurement](../Module-09-Privacy-First-Measurement/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 9](../Module-09-Privacy-First-Measurement/Reading.md) covers how cohort seed-audiences and look-alikes interact with Consent Mode v2, CAPI, and data clean rooms; [Module 10](../Module-10-Marketing-Org-Tech-Stack-Design/Reading.md) covers the CFO-grade scorecard that NRR and LTV cohorts feed into.
+> - Inside this course: [Module 9](../Module-09-Privacy-First-Measurement/Reading.md) covers how cohort seed-audiences and look-alikes interact with Consent Mode v2, CAPI, and data clean rooms; [Module 10](../Module-10-Marketing-Org-Tech-Stack-Design/Reading.md) covers the CFO (Chief Financial Officer)-grade scorecard that NRR and LTV cohorts feed into.
 > - Cross-course: [Course 17: AI Digital Marketing Entrepreneur](../../17-AI-Marketing-Entrepreneur/README.md) shows cohorts as the language fundraisers expect; [Course 18: AI Digital Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) expects at least one cohort artifact.
 > - Practice: [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) tests cohort math, NRR, and look-alike vs Advantage+; the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) integrates cohorts with strategy.
 

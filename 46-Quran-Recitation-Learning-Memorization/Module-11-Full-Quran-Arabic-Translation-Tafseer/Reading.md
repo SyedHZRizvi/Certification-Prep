@@ -495,7 +495,7 @@ function qrLoad(n) {
   panel.innerHTML = '<p class="qr-loading">⏳ Loading Surah ' + n + '\u2026 / \u0644\u0648\u0688 \u06c1\u0648 \u0631\u06c1\u06cc \u06c1\u06d2\u2026</p>';
   panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
   fetch('https://api.alquran.cloud/v1/surah/' + n + '/editions/quran-uthmani,en.qarai,ur.jawadi,quran-tajweed')
-    .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function(r) { if (!r.ok) throw new Error('HTTP (Hypertext Transfer Protocol) ' + r.status); return r.json(); })
     .then(function(j) {
       if (!j.data || j.data.length < 3) throw new Error('bad payload');
       qrCache[n] = j.data;

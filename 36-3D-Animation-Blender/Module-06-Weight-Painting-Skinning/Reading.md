@@ -260,7 +260,7 @@ The lesson: weight painting is not a one-click step. Budget time for it. A 4-day
 | Auto Normalize | Always enable; forces all weights to sum to 1.0 |
 | Skin bag fix | Manual weight redistribution + corrective shape key |
 | Shape keys | Stored mesh deformations blended by slider value |
-| Driven shape keys | Bone rotation → driver → shape key value; cleaner animator UX |
+| Driven shape keys | Bone rotation → driver → shape key value; cleaner animator UX (User Experience) |
 
 ---
 

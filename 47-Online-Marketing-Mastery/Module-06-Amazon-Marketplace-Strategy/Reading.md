@@ -10,7 +10,7 @@
 
 In the spring of 2022, a mid-sized American supplements brand — call them PureVitamin Co. — decided to ride the post-pandemic health wave into Europe. They had crushed it on Amazon US. Their whey protein ranked on page one for seventeen competitive keywords. Their founder had appeared on a podcast. Life was good.
 
-Their German marketplace launch plan was bold: list all 47 SKUs on Amazon.de, enroll in Pan-European FBA, and let Amazon's logistics network handle the rest. They translated their US listings using Google Translate. They shipped $120,000 of inventory to Amazon's fulfilment centre in Rheinberg, Germany.
+Their German marketplace launch plan was bold: list all 47 SKUs on Amazon.de, enroll in Pan-European FBA (Fulfillment by Amazon), and let Amazon's logistics network handle the rest. They translated their US listings using Google Translate. They shipped $120,000 of inventory to Amazon's fulfilment centre in Rheinberg, Germany.
 
 Then came the email from Amazon EU.
 
@@ -36,10 +36,10 @@ Total cost: $120,000 in stranded inventory fees, removal and disposal costs, re-
 
 Amazon operates distinct marketplace domains that are essentially separate businesses sharing a technology platform. As of 2025 (industry estimates):
 
-| Marketplace | Domain | GMV Estimate | Primary Currency | VAT/Sales Tax |
+| Marketplace | Domain | GMV (Gross Merchandise Value) Estimate | Primary Currency | VAT/Sales Tax |
 |---|---|---|---|---|
 | United States | amazon.com | ~$400B | USD | Sales tax (varies by state) |
-| United Kingdom | amazon.co.uk | ~£30B | GBP | 20% VAT |
+| United Kingdom | amazon.co.uk | ~£30B | GBP (Google Business Profile) | 20% VAT |
 | Germany | amazon.de | ~€35B | EUR | 19% VAT |
 | France | amazon.fr | ~€12B | EUR | 20% VAT |
 | Italy | amazon.it | ~€8B | EUR | 22% VAT |
@@ -70,13 +70,13 @@ Think of Amazon's global presence in three clusters:
 Amazon's search algorithm (colloquially called A9, now evolving toward A10) is fundamentally a **revenue maximisation engine for Amazon**, not a pure relevance engine. It ranks listings that will generate the most revenue per search impression. That means:
 
 1. **Sales velocity** — the more you sell, the higher you rank (virtuous cycle)
-2. **Conversion rate (CVR)** — listings that convert better rank higher
-3. **Click-through rate (CTR)** — the listing's thumbnail/title that gets clicked more ranks higher
+2. **Conversion rate (CVR (Conversion Rate))** — listings that convert better rank higher
+3. **Click-through rate (CTR (Click-Through Rate))** — the listing's thumbnail/title that gets clicked more ranks higher
 4. **Keyword relevance** — the algorithm must index your listing for a keyword before it can rank you
 5. **Seller authority** — account health, review score, fulfillment method
 6. **Price competitiveness** — relative to category average
 
-The A10 evolution specifically added heavier weighting to **organic sales** (vs. PPC-driven sales), **off-Amazon traffic** (brand referral bonus programme), and **customer repurchase signals** (Subscribe & Save uptake).
+The A10 evolution specifically added heavier weighting to **organic sales** (vs. PPC (Pay-Per-Click)-driven sales), **off-Amazon traffic** (brand referral bonus programme), and **customer repurchase signals** (Subscribe & Save uptake).
 
 **The mnemonic: S-C-C-K-A-P** (Sales, Conversion, Click-through, Keywords, Authority, Price) — "Some Competitors Chase Keyword Arbitrage Pointlessly."
 
@@ -111,7 +111,7 @@ Five bullet points. Each should hit one benefit using the **FISH** structure:
 
 **Capitalise the first 2-3 words** of each bullet — Amazon renders them in plain text and the caps act as visual sub-headers on mobile.
 
-**EU-specific bullets:** In Germany, health claims on food supplements are governed by the EU Health Claims Regulation (EC 1924/2006). You CANNOT write "Builds Muscle" without an approved EU health claim. You CAN write "Contributes to normal muscle function" (this is an approved claim for Vitamin D). Violating this gets your ASIN suppressed or your account warned.
+**EU-specific bullets:** In Germany, health claims on food supplements are governed by the EU Health Claims Regulation (EC 1924/2006). You CANNOT write "Builds Muscle" without an approved EU health claim. You CAN write "Contributes to normal muscle function" (this is an approved claim for Vitamin D). Violating this gets your ASIN (Amazon Standard Identification Number) suppressed or your account warned.
 
 ### The Product Description and A+ Content
 
@@ -120,7 +120,7 @@ The product description (the long-form HTML text below the fold) is indexed but 
 A+ Content impact (Amazon internal data, cited by Amazon Seller University 2024):
 - Average conversion uplift: **3–10%** on well-optimised listings
 - Premium A+ Content (available to sellers with 5+ A+ modules and high brand scores): average uplift of **20%**
-- A+ Content is **not** indexed for keywords — its value is purely conversion, not SEO
+- A+ Content is **not** indexed for keywords — its value is purely conversion, not SEO (Search Engine Optimization)
 
 **A+ Content best practices:**
 
@@ -149,7 +149,7 @@ The backend keywords field (250 bytes in the US, often less in EU) is invisible 
 
 ---
 
-## Section 3: Fulfilment — FBA vs FBM vs SFP
+## Section 3: Fulfilment — FBA vs FBM (Fulfillment by Merchant) vs SFP
 
 ### The Three Fulfilment Models
 
@@ -187,7 +187,7 @@ Pan-European FBA (Pan-EU FBA) allows you to send inventory to one EU fulfilment 
 
 **The Brexit complication:** UK inventory is now in a separate customs territory from EU inventory. You need:
 - Separate UK VAT registration (MTD-compliant)
-- Separate EU VAT registrations (use the One Stop Shop / OSS for B2C sales under the €10,000 annual threshold, or register individually)
+- Separate EU VAT registrations (use the One Stop Shop / OSS for B2C (Business-to-Consumer) sales under the €10,000 annual threshold, or register individually)
 - Separate inventory pools (UK FBA and EU FBA are distinct programmes)
 
 ---
@@ -243,7 +243,7 @@ Non-EU sellers (including UK sellers post-Brexit, US sellers, Canadian sellers) 
 
 | Scenario | VAT Action Required |
 |---|---|
-| US seller shipping from US to EU consumers (DTC) | Register for EU VAT (OSS) if annual sales > €10,000 |
+| US seller shipping from US to EU consumers (DTC (Direct-to-Consumer)) | Register for EU VAT (OSS) if annual sales > €10,000 |
 | US seller using FBA in Germany | Register for German VAT immediately — no threshold |
 | UK seller using Pan-EU FBA | Register in all 7 EU FBA countries |
 | UK seller selling to UK customers only | Register for UK VAT when revenue exceeds £90,000/yr |
@@ -266,7 +266,7 @@ Amazon's Vine programme sends your product to ~30 trusted reviewers ("Vine Voice
 
 Available in US, UK, DE, FR, ES, IT, JP. Allows customers to subscribe to recurring deliveries at a 5–15% discount.
 
-- **Why it matters:** SnS customers have 3–4x higher LTV than one-time buyers
+- **Why it matters:** SnS customers have 3–4x higher LTV (Lifetime Value) than one-time buyers
 - **FBA requirement:** SnS requires FBA for most categories
 - **Inventory risk:** SnS commits you to fulfilling recurring orders — running out of stock causes automatic cancellations and penalises your SnS metrics
 
@@ -319,7 +319,7 @@ No single factor wins it alone. A perfectly priced FBM offer will lose to an FBA
 ### FBA Profitability Formula
 
 ```
-Net Margin = Sale Price − COGS − FBA Fulfilment Fee − FBA Storage Fee − Amazon Referral Fee − PPC ACoS
+Net Margin = Sale Price − COGS (Cost of Goods Sold) − FBA Fulfilment Fee − FBA Storage Fee − Amazon Referral Fee − PPC ACoS (Advertising Cost of Sale)
 ```
 
 Amazon Referral Fee by category (US, 2025 estimates):

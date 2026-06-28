@@ -1,11 +1,11 @@
-# Module 3: S&OP, Sales & Operations Planning 🤝
+# Module 3: S&OP (Sales and Operations Planning), Sales & Operations Planning 🤝
 
 > **Why this module matters:** S&OP is the monthly heartbeat of a manufacturing company. Get this right and Sales, Operations, Finance, and Supply Chain are all looking at one number. Get it wrong and every department fights every month. CPIM dedicates ~15% of the exam to this domain alone.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1: Manufacturing Strategy](../Module-01-Manufacturing-Strategy/Reading.md), particularly MTS/ATO/MTO (S&OP decisions differ across environments) and competitive priorities
-> - [Module 2: Demand Planning & Forecasting](../Module-02-Demand-Planning-Forecasting/Reading.md), the demand plan is S&OP's Step-2 input; forecast aggregation principles drive the family/SKU choice
-> - Basic financial literacy: P&L vs cash flow, working capital, OPEX vs CAPEX (you'll meet these in the IBP discussion)
+> - [Module 2: Demand Planning & Forecasting](../Module-02-Demand-Planning-Forecasting/Reading.md), the demand plan is S&OP's Step-2 input; forecast aggregation principles drive the family/SKU (Stock Keeping Unit) choice
+> - Basic financial literacy: P&L (Profit and Loss) vs cash flow, working capital, OPEX vs CAPEX (you'll meet these in the IBP discussion)
 >
 > S&OP is process-heavy, light on math. The hardest part for most students is keeping the 5 steps and their owners straight. Treat this module as memorization-plus-pattern-recognition, not calculation.
 
@@ -22,7 +22,7 @@ It's 2018. **WonderToys Inc.** has 1,400 employees and $400M revenue. Every Mond
 
 Each department had its own number. Each had its own spreadsheet. Each blamed the others. Inventory was wrong by ±30% every quarter, cash was always tight, and customer service was below 88%.
 
-In January 2019 a new COO arrived. She put one rule in place: **one demand plan, one supply plan, one financial plan, agreed every month at the executive table.** Monthly cadence. Family-level aggregation. Numbers approved by the CEO. No siloed forecasts.
+In January 2019 a new COO (Chief Operating Officer) arrived. She put one rule in place: **one demand plan, one supply plan, one financial plan, agreed every month at the executive table.** Monthly cadence. Family-level aggregation. Numbers approved by the CEO (Chief Executive Officer). No siloed forecasts.
 
 Eighteen months later, WonderToys' inventory was down 22%, service was at 96%, and the executive team for the first time in a decade wasn't fighting in the parking lot. **That's S&OP.** Not a system. A discipline.
 
@@ -287,10 +287,10 @@ Post-Red-Sea routing decisions (the December 2023 Houthi attacks on Suez transit
 - Adopted a single S&OP cadence (monthly, family-level) across all global business units, with the executive review chaired by the relevant Global BU President.
 - Built a unified data layer common SKU hierarchies, common product families, common time buckets so that demand and supply could be reconciled across regions.
 - Deployed SAP IBP (then APO; migrated to IBP starting 2018) as the integrated planning platform.
-- Tied the financial plan into the IBP cycle starting 2007; the CFO began reviewing the financial-impact of the operating plan monthly rather than quarterly.
+- Tied the financial plan into the IBP cycle starting 2007; the CFO (Chief Financial Officer) began reviewing the financial-impact of the operating plan monthly rather than quarterly.
 - Standardized "demand control" the discipline of converting forecast variance into S&OP exceptions and corrective action by 2012.
 
-**Outcome.** Reported in P&G's annual report (2016) and various ASCM SCM Now interviews: working-capital reduction of **$2.5B+** across 2003–2014; first-pass-yield on the demand plan up from ~75% to ~90% at the global level; new-product launch on-time-in-full from 60% to 88% across 2010–2018. Cash-conversion-cycle reduced by 24 days between FY 2004 and FY 2014. P&G has since been the canonical "mature global IBP" reference cited in every Oliver Wight white paper, every Gartner Magic Quadrant for S&OP, and most academic case books (Cohen & Roussel, *Strategic Supply Chain Management*, 2nd ed. 2013, devotes a chapter).
+**Outcome.** Reported in P&G's annual report (2016) and various ASCM SCM (Supply Chain Management) Now interviews: working-capital reduction of **$2.5B+** across 2003–2014; first-pass-yield on the demand plan up from ~75% to ~90% at the global level; new-product launch on-time-in-full from 60% to 88% across 2010–2018. Cash-conversion-cycle reduced by 24 days between FY 2004 and FY 2014. P&G has since been the canonical "mature global IBP" reference cited in every Oliver Wight white paper, every Gartner Magic Quadrant for S&OP, and most academic case books (Cohen & Roussel, *Strategic Supply Chain Management*, 2nd ed. 2013, devotes a chapter).
 
 **Lesson for the exam / for practitioners.** P&G demonstrates the **maturity ladder** that ASCM tests on: classic S&OP (operational, 12-month, demand+supply only) → integrated S&OP with financial overlay (18-month, demand+supply+financial) → IBP (24+ months, all functions, strategically integrated, executive-led). The point is *not* that everyone needs to be P&G; it's that ASCM expects you to recognize *which rung* of the maturity ladder a described organization is on, and what the next step would be. CPIM exam-takeaway: when a question describes "Sales has a number, Operations has a different number, Finance has a third number, and they don't reconcile until the quarterly board meeting," the right answer is *not* "buy software", it's "implement a monthly S&OP cadence with executive ratification (Step 5)."
 
@@ -332,7 +332,7 @@ You now know:
 
 1. **Cadence vs continuous.** With AI-augmented planning making weekly (or daily) re-planning operationally feasible, why does ASCM (and Wallace, Oliver Wight) continue to teach monthly S&OP as the canonical cadence? Construct an argument for moving to continuous planning AND for keeping monthly as the executive-ratification rhythm. What's the *organizational* (not technical) constraint?
 2. **The unconstrained-demand discipline.** "Never let Operations cap demand at Step 2" is a Wallace-school commandment. In a capacity-constrained environment (say, semiconductors 2021–2023 or GLP-1 drugs 2023–2025), is this still right, or is it organizationally dishonest? Defend either position with reference to the 5-step process and the role of the executive review.
-3. **IBP vs S&OP at the CPG mid-market.** A 1,500-person consumer-packaged-goods manufacturer with $250M revenue and a single ERP runs classic 5-step S&OP. The new CFO wants to "upgrade to IBP." Build the strongest argument that the value of the upgrade is real *and* the strongest argument that "you're already running IBP, you just don't call it that." Where does the actual gap lie?
+3. **IBP vs S&OP at the CPG mid-market.** A 1,500-person consumer-packaged-goods manufacturer with $250M revenue and a single ERP (Enterprise Resource Planning) runs classic 5-step S&OP. The new CFO wants to "upgrade to IBP." Build the strongest argument that the value of the upgrade is real *and* the strongest argument that "you're already running IBP, you just don't call it that." Where does the actual gap lie?
 4. **Post-Red-Sea S&OP.** A European apparel company sourcing 60% of volume from South-East Asia is hit with a routing decision in early 2024: Suez (faster, riskier) vs Cape of Good Hope (+14 days, safer, +$1.5M per voyage). At which S&OP step does this decision belong, who has the authority to make it, and what financial-plan inputs must be reconciled to make it well? (Hint: this is not a Step-3 supply-review decision alone.)
 5. **AI as augmentation, not replacement.** Pick one of the five S&OP steps. Argue both that AI can *fully* automate that step and that AI can *only* augment a human at that step. Where does the line genuinely sit, and what does the answer tell you about how to organize the S&OP team in 2026?
 

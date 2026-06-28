@@ -2,7 +2,7 @@
 
 > **Why this module matters:** Vertex AI is the answer to the question both Google certification exams ask most often: *"You have an enterprise GenAI workload where do you run it, what are the components, and how do you wire them together?"* If Module 1 told you what Gemini is and Module 2 told you how to call it, this module tells you *where it lives in production* and that "where" turns out to be an umbrella over roughly 25 Google Cloud products. Memorize the umbrella; the exam is testing whether you can navigate it.
 
-> **Prerequisites for this module.** Modules 1–2 finished. A Google Cloud project with billing enabled and the Vertex AI API enabled (`gcloud services enable aiplatform.googleapis.com`). $300 free credits if new.
+> **Prerequisites for this module.** Modules 1–2 finished. A Google Cloud project with billing enabled and the Vertex AI API (Application Programming Interface) enabled (`gcloud services enable aiplatform.googleapis.com`). $300 free credits if new.
 
 ---
 
@@ -12,7 +12,7 @@ It is 2019. Spotify's ML platform team is running ~3,000 ML models across discov
 
 Spotify's published case study (Google Cloud Next 2020, Spotify Engineering blog) describes the next two years as a deliberate consolidation onto **Vertex AI**. Training notebooks moved to **Vertex AI Workbench**. Features moved to **Vertex AI Feature Store**. Pipelines moved to **Vertex AI Pipelines** (Kubeflow under the hood). Models registered to **Vertex AI Model Registry**. Deployments via **Vertex AI Endpoints**. Drift detection via **Vertex AI Model Monitoring**. The before-state was 3,000 bespoke pipelines; the after-state was one platform.
 
-By 2024 with GenAI now a first-class workload Spotify's GenAI team built on the same platform. Vertex AI added a *Studio* (web UI for Gemini prompting), a *Model Garden* (catalog of 200+ models, including Gemini, Claude, Llama, Mistral, Cohere), a *Vector Search* (the rebranded Matching Engine ANN index), a *Search* (the rebranded Discovery Engine), and an *Agent Builder* (no-code agent framework). Each piece existed because somebody at Google's biggest customer asked for it.
+By 2024 with GenAI now a first-class workload Spotify's GenAI team built on the same platform. Vertex AI added a *Studio* (web UI (User Interface) for Gemini prompting), a *Model Garden* (catalog of 200+ models, including Gemini, Claude, Llama, Mistral, Cohere), a *Vector Search* (the rebranded Matching Engine ANN index), a *Search* (the rebranded Discovery Engine), and an *Agent Builder* (no-code agent framework). Each piece existed because somebody at Google's biggest customer asked for it.
 
 This module is the *map* of that platform. You will not write much code in this module; you will memorize what each Vertex AI sub-product does, when to pick it, and how it composes with the others. That map is the single most testable artifact of the Generative AI Leader and PMLE exams.
 
@@ -30,7 +30,7 @@ This module is the *map* of that platform. You will not write much code in this 
 │  │   STUDIO    │  │  MODEL GARDEN  │  │  AGENT BUILDER       │    │
 │  │ (web UI for │  │ Gemini, Claude,│  │ No-code agents +     │    │
 │  │  prompts +  │  │ Llama, Mistral,│  │ Conversational Agents│    │
-│  │  models)    │  │ Cohere, …      │  │ (formerly DF CX)     │    │
+│  │  models)    │  │ Cohere, …      │  │ (formerly DF CX (Customer Experience))     │    │
 │  └─────────────┘  └────────────────┘  └──────────────────────┘    │
 │                                                                    │
 │  ┌─────────────┐  ┌────────────────┐  ┌──────────────────────┐    │
@@ -59,7 +59,7 @@ This module is the *map* of that platform. You will not write much code in this 
 │  │ VECTOR      │  │   SEARCH       │  │  EVALUATION          │    │
 │  │ SEARCH      │  │ (formerly      │  │ (online + offline)   │    │
 │  │ (formerly   │  │  Discovery     │  │                      │    │
-│  │  Matching   │  │  Engine; RAG)  │  │                      │    │
+│  │  Matching   │  │  Engine; RAG (Retrieval-Augmented Generation))  │  │                      │    │
 │  │  Engine ANN)│  │                │  │                      │    │
 │  └─────────────┘  └────────────────┘  └──────────────────────┘    │
 └────────────────────────────────────────────────────────────────────┘
@@ -77,8 +77,8 @@ Already covered in Module 2; consolidating here for the exam.
 |---------|------------------|-----------|
 | Surface | `aistudio.google.com` | Google Cloud Console |
 | Auth | API key | IAM via ADC |
-| IAM granularity | None (single key) | Full GCP IAM (per-resource, per-role) |
-| VPC Service Controls (perimeter) | ❌ | ✅ |
+| IAM granularity | None (single key) | Full GCP (Google Cloud Platform) IAM (per-resource, per-role) |
+| VPC (Virtual Private Cloud) Service Controls (perimeter) | ❌ | ✅ |
 | Customer-Managed Encryption Keys (CMEK) | ❌ | ✅ |
 | Regional deployment | Limited (US, automatically chosen) | 30+ regions; explicit choice |
 | Audit logs (Cloud Logging) | ❌ | ✅ |
@@ -133,7 +133,7 @@ Already covered in Module 2; consolidating here for the exam.
 
 | Flavor | Use |
 |--------|-----|
-| **Workbench Instances** | Dedicated VM, persistent, your own kernel libraries, your own GPUs/TPUs |
+| **Workbench Instances** | Dedicated VM (Virtual Machine), persistent, your own kernel libraries, your own GPUs/TPUs |
 | **Colab Enterprise** | Browser-only managed Colab, persistent, IAM-integrated, BigQuery + Vertex AI client pre-installed |
 
 **Why Workbench (not local Jupyter):**
@@ -264,7 +264,7 @@ The Registry is the *source of truth*. From it, you deploy to Endpoints, run Bat
 An **Endpoint** is a managed serving instance. Three kinds:
 
 ### 1. Online (real-time) endpoint
-- HTTPS REST + gRPC
+- HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure) REST (Representational State Transfer) + gRPC
 - Auto-scaling (min/max replicas, traffic-split per model version for canary)
 - ~50–300ms latency P50 depending on model + region
 - Per-replica machine type (CPU, GPU, TPU)
@@ -330,7 +330,7 @@ vertexai.init(project="my-project", location="europe-west1")
 
 Regional choices matter for:
 
-- **Data residency** (EU GDPR, German BDSG, Singapore PDPA, Brazil LGPD)
+- **Data residency** (EU GDPR (General Data Protection Regulation), German BDSG, Singapore PDPA, Brazil LGPD)
 - **Latency** (deploy near your users)
 - **Model availability** (not every model is in every region, exam favorite)
 - **Quotas** (per-region)
@@ -467,7 +467,7 @@ Module 7 deconstructs each.
 
 ## 🔬 Scenario Walkthrough (Architect-Style)
 
-> **Scenario:** Your CTO asks: "Build us a Gemini-powered internal-document assistant for our 5,000-person engineering org. Source documents are in Google Drive + Confluence + GitHub Enterprise. EU residency required. We need audit logging, the ability to know which user asked what, and a quarterly retrain cadence."
+> **Scenario:** Your CTO (Chief Technology Officer) asks: "Build us a Gemini-powered internal-document assistant for our 5,000-person engineering org. Source documents are in Google Drive + Confluence + GitHub Enterprise. EU residency required. We need audit logging, the ability to know which user asked what, and a quarterly retrain cadence."
 
 **Walkthrough:**
 1. **Model**: Gemini 2.5 Pro on Vertex AI in `europe-west1`. (Pro for quality, EU region for residency.)
@@ -496,7 +496,7 @@ This is the canonical end-to-end architecture answer the PMLE exam wants from yo
 | "Workbench is just a hosted Jupyter." | It's IAM-integrated, VPC-SC-compliant, BigQuery-connected, significantly more than vanilla Jupyter. |
 | "CMEK and VPC-SC do the same thing." | CMEK = encryption keys; VPC-SC = perimeter. Different layers. Often deployed together. |
 | "Endpoints scale infinitely." | They have min/max replicas. Misconfigured caps cause real outages. |
-| "Pipelines and Cloud Build are the same." | Cloud Build = generic CI/CD; Pipelines = ML metadata + artifacts + lineage. |
+| "Pipelines and Cloud Build are the same." | Cloud Build = generic CI/CD (Continuous Integration/Continuous Deployment); Pipelines = ML metadata + artifacts + lineage. |
 
 ---
 

@@ -5,17 +5,17 @@
 > **Prerequisites for this module.** You should be comfortable with:
 > - Module 1 (tokens, attention, context windows)
 > - Module 2 (embeddings, vector DBs, chunking, hybrid retrieval, reranking)
-> - HTTP services / async Python (or willingness to learn FastAPI as you go)
+> - HTTP (Hypertext Transfer Protocol) services / async Python (or willingness to learn FastAPI as you go)
 
 ---
 
 ## 🎬 A Story: The Stripe Docs Bot That Refunded $0
 
-October 2024. A mid-sized SaaS team launched a "docs chatbot" on top of Anthropic's API with naive RAG, embed the Stripe-style docs, store in Pinecone, retrieve top-5, stuff into the prompt, generate. It worked impressively well on their own internal tests.
+October 2024. A mid-sized SaaS (Software as a Service) team launched a "docs chatbot" on top of Anthropic's API (Application Programming Interface) with naive RAG, embed the Stripe-style docs, store in Pinecone, retrieve top-5, stuff into the prompt, generate. It worked impressively well on their own internal tests.
 
 Production-day-two, a real customer asked: "How do I refund a partial amount of a subscription charge billed in EUR last quarter, where the customer changed plans mid-cycle?"
 
-The chatbot replied confidently, articulately with a code snippet that referenced a *deprecated* `PartialRefund` API that hadn't existed since 2022. The customer copy-pasted the snippet. It threw a 404. They tweeted. Twitter laughed. The CEO sent an email at 11pm.
+The chatbot replied confidently, articulately with a code snippet that referenced a *deprecated* `PartialRefund` API that hadn't existed since 2022. The customer copy-pasted the snippet. It threw a 404. They tweeted. Twitter laughed. The CEO (Chief Executive Officer) sent an email at 11pm.
 
 Postmortem found four compounding failures:
 
@@ -401,7 +401,7 @@ You'll see the quality climb from ~60% to ~85%+ on faithfulness, and you'll see 
 **Discussion (Socratic).**
 - **Q1:** Klarna's "confidence threshold" gate escalates to humans below 0.7 faithfulness. How would you build that gate? (Hint: think Module 7 RAGAS LLM-as-judge.)
 - **Q2:** A customer messages "I bought a TV with Klarna two weeks ago and the screen is broken, what do I do?" Walk through the modular-RAG flow: which retrievers, which tools, which escalation rules?
-- **Q3:** If Klarna's success story made your CFO eager to fire 70% of support, what *engineering* arguments would you make for keeping a higher-than-modeled human-escalation rate in the first 6 months?
+- **Q3:** If Klarna's success story made your CFO (Chief Financial Officer) eager to fire 70% of support, what *engineering* arguments would you make for keeping a higher-than-modeled human-escalation rate in the first 6 months?
 
 ---
 
@@ -426,14 +426,14 @@ You now know:
 
 > **Where this leads.**
 > - **Inside this course:** Module 4 implements the same diagram in LangChain *and* LlamaIndex. Module 7 evaluates it with RAGAS. Module 9 wraps it in observability + cost monitoring + semantic cache.
-> - **Cross-course:** Course 07 (AWS AI Practitioner) covers Bedrock Knowledge Bases (managed RAG). Course 08 (Azure AI Engineer) covers Azure AI Search + RAG.
+> - **Cross-course:** Course 07 (AWS (Amazon Web Services) AI Practitioner) covers Bedrock Knowledge Bases (managed RAG). Course 08 (Azure AI Engineer) covers Azure AI Search + RAG.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
 **Foundational papers:**
-- 📄 Lewis et al. (2020). *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.* The original RAG paper.
+- 📄 Lewis et al. (2020). *Retrieval-Augmented Generation for Knowledge-Intensive NLP (Natural Language Processing) Tasks.* The original RAG paper.
 - 📄 Gao et al. (2024). *Retrieval-Augmented Generation for Large Language Models: A Survey.* The reference taxonomy.
 - 📄 Gao, Ma, et al. (2022). *Precise Zero-Shot Dense Retrieval without Relevance Labels (HyDE).*
 - 📄 Asai et al. (2023). *Self-RAG.*

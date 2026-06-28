@@ -11,7 +11,7 @@
 
 ## 🍕 A Story: Patch Tuesday + Zero-Day
 
-It's Tuesday, May 13th. Microsoft releases the May 2026 Patch Tuesday update at 1pm Eastern. Among the patches is **KB5037890**, a critical Remote Code Execution vuln in the Windows Print Spooler that's already being exploited in the wild. The CISO sends one message:
+It's Tuesday, May 13th. Microsoft releases the May 2026 Patch Tuesday update at 1pm Eastern. Among the patches is **KB5037890**, a critical Remote Code Execution vuln in the Windows Print Spooler that's already being exploited in the wild. The CISO (Chief Information Security Officer) sends one message:
 
 > *"Maria, every Windows 11 endpoint needs KB5037890 in production within 48 hours. CVSS 9.8. Active exploitation. Go."*
 
@@ -106,14 +106,14 @@ When you publish an expedited update:
 
 ## 🌐 Delivery Optimization (DO)
 
-Microsoft's peer-to-peer content delivery for Windows updates, Intune apps, and Microsoft 365 apps. Devices pull from peers on the same LAN/network before pulling from Microsoft's CDN.
+Microsoft's peer-to-peer content delivery for Windows updates, Intune apps, and Microsoft 365 apps. Devices pull from peers on the same LAN (Local Area Network)/network before pulling from Microsoft's CDN (Content Delivery Network).
 
 ### DO download modes
 
 | Mode | Effect |
 |------|--------|
-| **HTTP only (0)** | No P2P, direct from Microsoft CDN |
-| **LAN (1)** | Peers on same NAT/subnet + Microsoft CDN |
+| **HTTP (Hypertext Transfer Protocol) only (0)** | No P2P, direct from Microsoft CDN |
+| **LAN (1)** | Peers on same NAT (Network Address Translation)/subnet + Microsoft CDN |
 | **Group (2)** | Same as LAN but allows custom group ID (cross-subnet) |
 | **Internet (3)** | Allow peers across the internet (less common) |
 | **Simple (99)** | Direct Microsoft Update download, no caching |
@@ -202,7 +202,7 @@ Microsoft Intune (with WUfB) can manage **driver updates** as a separate policy,
 
 Windows 11 ships annually with a new feature update (e.g., 24H2 = October 2024, 25H2 = ~October 2025).
 
-| SKU | End of servicing for a feature update |
+| SKU (Stock Keeping Unit) | End of servicing for a feature update |
 |-----|---------------------------------------|
 | **Windows 11 Home / Pro** | 24 months from release |
 | **Windows 11 Enterprise / Education** | 36 months from release |

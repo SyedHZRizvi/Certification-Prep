@@ -5,8 +5,8 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Web vulnerabilities / OWASP Top 10](../Module-05-Vulnerabilities-Attacks/Reading.md), this module covers *prevention* (SAST/DAST/SCA) of the vulns Module 5 covered as attacks.
 > - [Cryptographic primitives + data-at-rest/in-transit](../Module-02-Cryptography-PKI/Reading.md), needed for the data-states + encryption/tokenization/masking distinctions.
-> - [Cloud / IaC concepts](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md), needed for CI/CD pipeline security.
-> - [Privacy regulations (GDPR, HIPAA, PCI-DSS)](../Module-09-GRC-Risk-Compliance/Reading.md), drive data-classification and DLP requirements.
+> - [Cloud / IaC (Infrastructure as Code) concepts](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md), needed for CI/CD (Continuous Integration/Continuous Deployment) pipeline security.
+> - [Privacy regulations (GDPR (General Data Protection Regulation), HIPAA, PCI-DSS)](../Module-09-GRC-Risk-Compliance/Reading.md), drive data-classification and DLP requirements.
 
 ---
 
@@ -47,7 +47,7 @@ Bakery B is doing **secure SDLC + DevSecOps**. Bakery A is doing what most compa
 | **Test** | SAST, DAST, IAST, SCA, fuzzing, manual pentest |
 | **Release** | Signed artifacts, SBOM, change management |
 | **Deploy** | IaC scans, runtime protections, immutable infra |
-| **Operate** | RASP, WAF, EDR, log monitoring |
+| **Operate** | RASP, WAF (Web Application Firewall), EDR (Endpoint Detection and Response), log monitoring |
 | **Retire** | Sanitize data, revoke access, decommission |
 
 ### Threat Modeling (often referenced)
@@ -68,7 +68,7 @@ Citations: **STRIDE** was developed at Microsoft by **Loren Kohnfelder and Praer
 | Principle | What |
 |-----------|------|
 | **Input validation** | Treat all input as hostile; allow-list patterns |
-| **Output encoding** | Encode for the context (HTML, JS, SQL, shell) |
+| **Output encoding** | Encode for the context (HTML, JS, SQL (Structured Query Language), shell) |
 | **Parameterized queries** | Defeat SQL injection structurally |
 | **Least privilege** | Code runs with minimum needed permissions |
 | **Fail securely** | Errors default to closed/denied, not open |
@@ -133,7 +133,7 @@ Citations: **STRIDE** was developed at Microsoft by **Loren Kohnfelder and Praer
 | **Internal / Sensitive** | Employees only |
 | **Confidential** | Restricted business |
 | **Private** | Personal data |
-| **Restricted / Highly Confidential** | Most sensitive (trade secrets, M&A) |
+| **Restricted / Highly Confidential** | Most sensitive (trade secrets, M&A (Mergers and Acquisitions)) |
 | **PII** | Personally Identifiable Information |
 | **PHI** | Protected Health Information (HIPAA) |
 | **PCI / CHD** | Cardholder Data (PCI-DSS) |
@@ -157,10 +157,10 @@ Citations: **STRIDE** was developed at Microsoft by **Loren Kohnfelder and Praer
 | State | What | Protection |
 |-------|------|------------|
 | **At Rest** | On disk / DB / backup tape | FDE (BitLocker, FileVault), DB TDE, encrypted backups, KMS |
-| **In Transit** | Crossing networks | TLS, IPSec, SSH, S/MIME, VPN |
+| **In Transit** | Crossing networks | TLS (Transport Layer Security), IPSec, SSH (Secure Shell), S/MIME, VPN (Virtual Private Network) |
 | **In Use** | Being processed in memory or CPU | Memory encryption, secure enclaves, **confidential computing**, OS sandboxing |
 
-🎯 **Confidential computing** = encrypted-while-in-use via hardware (Intel SGX, AMD SEV, Apple Secure Enclave, AWS Nitro Enclaves).
+🎯 **Confidential computing** = encrypted-while-in-use via hardware (Intel SGX, AMD SEV, Apple Secure Enclave, AWS (Amazon Web Services) Nitro Enclaves).
 
 ---
 
@@ -173,7 +173,7 @@ DLP monitors and blocks unauthorized exfiltration of sensitive data.
 |------|------|
 | **Network DLP** | Inline at gateway, block emails with SSNs, file uploads with CHD |
 | **Endpoint DLP** | Agent on each device, block USB copy, screen capture, print |
-| **Cloud DLP** | API integration with SaaS (M365 DLP, Google DLP, CASB) |
+| **Cloud DLP** | API (Application Programming Interface) integration with SaaS (Software as a Service) (M365 DLP, Google DLP, CASB) |
 | **Email DLP** | Specific to outbound email |
 
 ### DLP discovery & action
@@ -223,7 +223,7 @@ DLP monitors and blocks unauthorized exfiltration of sensitive data.
 | **Legal hold** | Suspend deletion when litigation reasonably anticipated |
 | **Sanitization** | Reliably making data unrecoverable |
 | **Records management** | Lifecycle of records (creation → use → archive → destroy) |
-| **Right to erasure** | GDPR/CCPA right to demand deletion |
+| **Right to erasure** | GDPR/CCPA (California Consumer Privacy Act) right to demand deletion |
 
 **Sanitization techniques** (covered Module 8): wipe/overwrite, crypto-erase, degauss (magnetic only), shred, incinerate.
 
@@ -235,7 +235,7 @@ Modern DLP/CSPM systems can fingerprint:
 
 - **Regex**, SSN `\d{3}-\d{2}-\d{4}`, credit cards (with Luhn validation), email
 - **Exact data match**, hash of customer records
-- **ML / NLP**, context-aware classification
+- **ML / NLP (Natural Language Processing)**, context-aware classification
 - **OCR**, extracting text from images / PDFs
 
 ---
@@ -279,7 +279,7 @@ A PBQ might ask you to drag activities into the right pipeline stages (Commit �
 
 ## 📊 Case Study, Twitter / X API Email Leak (January 2023)
 
-**Situation.** Between **June 2021** and **January 2022**, an authorization-check bug in Twitter's user-lookup REST API endpoint (`POST /1.1/account/login_verification.json` and related endpoints) returned an authenticated user's email address and phone number even when those fields were configured as private in user privacy settings. Twitter (now X) fixed the bug **upon HackerOne disclosure in January 2022**. The HackerOne report was paid out under Twitter's bug-bounty program. Standard bug-bounty disclosure: report → fix → reward → public eventually.
+**Situation.** Between **June 2021** and **January 2022**, an authorization-check bug in Twitter's user-lookup REST (Representational State Transfer) API endpoint (`POST /1.1/account/login_verification.json` and related endpoints) returned an authenticated user's email address and phone number even when those fields were configured as private in user privacy settings. Twitter (now X) fixed the bug **upon HackerOne disclosure in January 2022**. The HackerOne report was paid out under Twitter's bug-bounty program. Standard bug-bounty disclosure: report → fix → reward → public eventually.
 
 **Decision.** Twitter's response was *technically correct* (fix the bug; pay the bounty; do not disclose to users). But during the **8-month exposure window**, multiple attackers had independently discovered the same bug and *scraped* the API en masse submitting **hundreds of millions of email addresses** against the endpoint and recording which ones produced matched Twitter accounts. The attackers then compiled the result into massive **email-to-Twitter-handle correlation lists**. Twitter did not detect the volumetric API abuse during the window there was no API rate-limit / anomaly-detection capable of catching it because the API was *designed* to handle high-volume lookups, and the attackers used many residential-IP proxies.
 
@@ -376,13 +376,13 @@ You now know:
 ## 🎓 Final Module Checklist
 
 - ✅ Module 1: Security Fundamentals, CIA, AAA, Zero Trust, control types
-- ✅ Module 2: Cryptography & PKI, AES, RSA, ECC, signatures, certificates
+- ✅ Module 2: Cryptography & PKI, AES (Advanced Encryption Standard), RSA, ECC, signatures, certificates
 - ✅ Module 3: IAM, MFA, SAML/OAuth/OIDC, access control models, PAM
 - ✅ Module 4: Threats, actors, motivations, vectors, intel
 - ✅ Module 5: Vulnerabilities & Attacks, malware, OWASP, network/credential/social attacks
 - ✅ Module 6: Network Security, firewalls, IDS/IPS, VPNs, secure protocols, ports
-- ✅ Module 7: Endpoint, Mobile & Cloud, EDR, MDM, cloud shared responsibility, OT/ICS
-- ✅ Module 8: Security Operations, SIEM/SOAR, IR, forensics, vuln mgmt
+- ✅ Module 7: Endpoint, Mobile & Cloud, EDR, MDM (Mobile Device Management), cloud shared responsibility, OT/ICS
+- ✅ Module 8: Security Operations, SIEM (Security Information and Event Management)/SOAR, IR, forensics, vuln mgmt
 - ✅ Module 9: GRC, Risk & Compliance, frameworks, regulations, vendor agreements, BCP/DR
 - ✅ Module 10: Application & Data Security, SDLC, SAST/DAST, classification, DLP
 
@@ -402,7 +402,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: the [Capstone Project](../Capstone-Project.md) integrates every module, this is the last reading before the integrative exercise. The [Recommended Readings](../Recommended-Readings.md) deepen any of the topics covered.
-> - Cross-course: AWS SAA (course 04) covers AWS-native SAST/DAST integrations (CodeGuru, Inspector, GuardDuty); Azure courses cover Defender for Cloud. AI courses 07/08 introduce LLM-specific application-security concerns (prompt injection, training-data poisoning) building on OWASP LLM Top 10 (2023).
+> - Cross-course: AWS SAA (course 04) covers AWS-native SAST/DAST integrations (CodeGuru, Inspector, GuardDuty); Azure courses cover Defender for Cloud. AI courses 07/08 introduce LLM (Large Language Model)-specific application-security concerns (prompt injection, training-data poisoning) building on OWASP LLM Top 10 (2023).
 > - Practice: Practice Exam 2 has ~11 application/data questions; Final Mock has ~12.
 
 ---

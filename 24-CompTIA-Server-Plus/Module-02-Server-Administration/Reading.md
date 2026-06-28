@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting you should be comfortable with:
 > - Module 1 (server hardware)
 > - General command-line literacy (you've used a shell before)
-> - Basic IP networking (DNS, DHCP, ports, routing)
+> - Basic IP networking (DNS (Domain Name System), DHCP (Dynamic Host Configuration Protocol), ports, routing)
 >
 > If those are shaky, pause and review before continuing.
 
@@ -25,7 +25,7 @@ This module is the antidote. You'll learn:
 
 - The Windows Server **roles** and **features** vocabulary
 - The Linux **systemd**, **package manager**, and **daemon** vocabulary
-- How to **remote-administer** both worlds: RDP, SSH, WinRM, PowerShell remoting
+- How to **remote-administer** both worlds: RDP, SSH (Secure Shell), WinRM, PowerShell remoting
 - The shared concepts: time sync, DNS, DHCP, user/group management, permissions
 
 ---
@@ -40,19 +40,19 @@ A "role" is a major function. You add roles via **Server Manager** (GUI) or **In
 
 | Role | What it does | Default ports |
 |---|---|---|
-| **AD DS** (Active Directory Domain Services) | Directory of users, computers, groups; the identity backbone | LDAP 389, LDAPS 636, GC 3268/3269, Kerberos 88, SMB 445 |
-| **AD CS** (Certificate Services) | Internal PKI / enterprise CA | HTTP/HTTPS 80/443 for enrollment |
+| **AD (Active Directory) DS** (Active Directory Domain Services) | Directory of users, computers, groups; the identity backbone | LDAP (Lightweight Directory Access Protocol) 389, LDAPS 636, GC 3268/3269, Kerberos 88, SMB 445 |
+| **AD CS** (Certificate Services) | Internal PKI (Public Key Infrastructure) / enterprise CA | HTTP (Hypertext Transfer Protocol)/HTTPS (HTTP Secure) 80/443 for enrollment |
 | **AD FS** (Federation Services) | SAML/WS-Fed identity federation to external apps | HTTPS 443 |
-| **DNS Server** | Name resolution for AD and clients | UDP/TCP 53 |
+| **DNS Server** | Name resolution for AD and clients | UDP (User Datagram Protocol)/TCP (Transmission Control Protocol) 53 |
 | **DHCP Server** | IP address leasing | UDP 67/68 |
 | **File Services** (incl. SMB, DFS, FSRM) | File shares, distributed namespaces, quotas | SMB 445 |
 | **Print Services** | Network printing, drivers, queues | LPR 515, IPP 631, RPC ephemeral |
-| **IIS** (Web Server) | HTTP/HTTPS hosting, FTP, ASP.NET | 80/443 |
+| **IIS** (Web Server) | HTTP/HTTPS hosting, FTP (File Transfer Protocol), ASP.NET | 80/443 |
 | **Hyper-V** | Type-1 hypervisor for VMs | (see Module 4) |
-| **Remote Desktop Services** (RDS) | RDP session hosts, gateway, broker | 3389 (and 443 for RD Gateway) |
+| **Remote Desktop Services** (RDS (Relational Database Service)) | RDP session hosts, gateway, broker | 3389 (and 443 for RD Gateway) |
 | **Windows Deployment Services** (WDS) | Network OS deployment (PXE) | 67/68/4011 |
 | **WSUS** | Patch management server for Windows clients | 8530/8531 |
-| **Failover Clustering** | High-availability clustering for SQL, file, Hyper-V | varies |
+| **Failover Clustering** | High-availability clustering for SQL (Structured Query Language), file, Hyper-V | varies |
 
 🎯 **Exam pattern:** *"You need name resolution for an internal AD forest."* → DNS Server **role**, not a feature.
 
@@ -78,10 +78,10 @@ Install-WindowsFeature -Name DHCP -IncludeManagementTools
 
 ### Server Core vs Desktop Experience
 
-| Variant | UI | Best for |
+| Variant | UI (User Interface) | Best for |
 |---|---|---|
 | **Desktop Experience** | Full GUI | Familiarity, complex GUI apps |
-| **Server Core** | No GUI, only CLI + sconfig + remote tools | Smaller attack surface, less patching, less RAM/disk |
+| **Server Core** | No GUI, only CLI (Command Line Interface) + sconfig + remote tools | Smaller attack surface, less patching, less RAM/disk |
 | **Nano Server** (legacy, mostly containers now) | Container-only image | Containers/microservices |
 
 🎯 **Exam tip:** Server Core is **preferred for production**, smaller attack surface, fewer patches per month, lower resource use. Manage it remotely via RSAT, PowerShell remoting, or Windows Admin Center.
@@ -242,7 +242,7 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
 |---|---|
 | **Forest** | Top-level container; shares schema |
 | **Domain** | Replication boundary within a forest |
-| **OU** (Organizational Unit) | Logical container for users/computers/groups, target for GPO |
+| **OU** (Organizational Unit) | Logical container for users/computers/groups, target for GPO (Group Policy Object) |
 | **GPO** (Group Policy Object) | Policy applied to OU/site/domain |
 | **DC** (Domain Controller) | Server hosting AD DS |
 | **Global Catalog** (GC) | Searchable subset of forest objects |
@@ -259,7 +259,7 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
 
 - Microsoft protocol, **TCP 3389** (and UDP 3389 for low-latency mode)
 - Graphical session; the user sees a full desktop
-- Encrypted with TLS by default in modern Windows
+- Encrypted with TLS (Transport Layer Security) by default in modern Windows
 - **NLA** (Network Level Authentication) authenticates the user *before* establishing a session, defense against pre-auth RDP exploits
 - For internet exposure use **RD Gateway** (TCP 443 over HTTPS, tunnels RDP through TLS to internal hosts), NEVER expose 3389 directly to the internet
 
@@ -339,7 +339,7 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
 **Walkthrough.**
 
 1. **DC1, DC2**, Two Windows Server Core VMs running **AD DS + DNS + DHCP**. Two for redundancy. Server Core reduces patch surface. DNS and DHCP are AD-aware and should live with DCs (or be replicated).
-2. **Web/App VM**, One VM with **IIS + the application**. Separate from data tier. Pick Desktop Experience only if app management requires the GUI; otherwise Server Core.
+2. **Web/App VM (Virtual Machine)**, One VM with **IIS + the application**. Separate from data tier. Pick Desktop Experience only if app management requires the GUI; otherwise Server Core.
 3. **SQL VM**, One VM dedicated to **SQL Server**, ideally Server Core / dedicated database compute. Storage on its own LUN with RAID 10 (Module 3). Backups via SQL Agent → DPM or Veeam.
 4. **File Server**, Demote to a separate VM later when File Services workload warrants. For now, can co-locate on the app VM if traffic is small.
 
@@ -361,7 +361,7 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
 | "Server Core is for advanced admins only." | Server Core is the *default best practice* for production roles. Lower attack surface, fewer patches, less RAM/disk. |
 | "Telnet is fine for admin." | Cleartext credentials. Sec+/Server+ flag this constantly. Use SSH (Linux) or WinRM HTTPS / RDP+NLA (Windows). |
 | "AD authentication failures must be password problems." | Top causes are time skew (>5 min), missing/broken SRV/PTR DNS, DC replication broken. Check those first. |
-| "RDP on 3389 is fine to expose to the internet for road warriors." | No, use an RD Gateway behind 443 with TLS + MFA, or a VPN. Direct 3389 exposure is breach #1 for SMBs (BlueKeep CVE-2019-0708). |
+| "RDP on 3389 is fine to expose to the internet for road warriors." | No, use an RD Gateway behind 443 with TLS + MFA (Multi-Factor Authentication), or a VPN (Virtual Private Network). Direct 3389 exposure is breach #1 for SMBs (BlueKeep CVE-2019-0708). |
 | "WSUS approves patches automatically." | WSUS *downloads* but typically requires an admin to approve patches and target groups. Don't conflate WSUS with auto-update. |
 | "Putting both DCs on the same hypervisor host is fine." | Anti-pattern, one host failure takes the directory down. Use anti-affinity rules to keep DCs on different hosts (Module 4). |
 
@@ -426,7 +426,7 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
 This is the scenario Server+ tests when asking "design a resilient AD deployment with patch management." The answer is rarely one thing, it's *layered discipline*.
 
 **Discussion (Socratic).**
-- **Q1:** If you were Maersk's CISO on 28 March 2017 (two weeks after the EternalBlue patch dropped), what three concrete operational changes would you push to land before 27 June, given limited budget? Defend each.
+- **Q1:** If you were Maersk's CISO (Chief Information Security Officer) on 28 March 2017 (two weeks after the EternalBlue patch dropped), what three concrete operational changes would you push to land before 27 June, given limited budget? Defend each.
 - **Q2:** Is "test restore your AD forest into an isolated lab every quarter" worth the operational burden? Argue both sides.
 - **Q3:** Tiered Administration breaks the convenience of "Domain Admin can do anything anywhere." How would you justify it to a CIO who hears "complexity" and pushes back?
 

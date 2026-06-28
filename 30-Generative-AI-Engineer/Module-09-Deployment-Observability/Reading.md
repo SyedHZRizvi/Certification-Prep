@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Modules 1–8
-> - Docker basics, FastAPI, HTTP basics
+> - Docker basics, FastAPI, HTTP (Hypertext Transfer Protocol) basics
 > - Cloud-shaped concepts (autoscaling, load balancers, observability)
 
 ---
@@ -45,7 +45,7 @@ The big upfront question.
 
 **Trade-offs:**
 - Per-token pricing, predictable cost per call, but no economies of scale
-- API rate limits, your tier matters
+- API (Application Programming Interface) rate limits, your tier matters
 - Latency depends on the provider; can be inconsistent
 - Data goes to the provider (most have enterprise no-train terms)
 
@@ -103,7 +103,7 @@ HuggingFace's serving framework. Strong feature parity with vLLM; slightly diffe
 For *consumer-grade* serving, your laptop, edge devices, offline applications.
 
 - **llama.cpp**, GGUF quantized models; runs on CPU + GPU + Apple Silicon; the foundation of the local-LLM ecosystem
-- **Ollama**, opinionated CLI wrapper around llama.cpp; one-line model serving
+- **Ollama**, opinionated CLI (Command Line Interface) wrapper around llama.cpp; one-line model serving
 - **LMStudio**, GUI wrapper
 
 ### TensorRT-LLM (NVIDIA)
@@ -124,7 +124,7 @@ Newer serving framework with strong support for structured generation and RAG pa
 
 | Provider | Strength | Models |
 |----------|----------|--------|
-| **AWS Bedrock** | Enterprise integration, Anthropic + Mistral + Llama + Cohere + AI21 | Wide |
+| **AWS (Amazon Web Services) Bedrock** | Enterprise integration, Anthropic + Mistral + Llama + Cohere + AI21 | Wide |
 | **Azure OpenAI** | Enterprise + Azure stack + compliance | OpenAI family |
 | **Google Vertex AI** | Gemini + open weights + Anthropic + Mistral | Wide |
 | **Together AI** | Open-weight inference; cheap; fast | Llama, Mistral, DeepSeek, Qwen |
@@ -207,7 +207,7 @@ Production dashboards should track:
 
 ### Alerts
 
-- p99 latency > SLO
+- p99 latency > SLO (Service Level Objective)
 - Cost / hour > budget
 - 5xx rate > threshold
 - Guardrail-block rate spike (under attack? broken classifier?)
@@ -325,7 +325,7 @@ The biggest hidden cost: cross-region data transfer between your vector DB and t
 | Single-provider lock-in | One outage = full downtime |
 | No semantic cache | Pay full price for near-duplicate queries |
 | No prompt cache | 5-10× more cost on long-prompt workloads |
-| Non-streamed responses | Perceived latency wrecks UX |
+| Non-streamed responses | Perceived latency wrecks UX (User Experience) |
 | Avg latency only (no p95/p99) | Power users get the worst experience and you don't know |
 | No cost dashboard | Bill surprise at end of month |
 | Same model for every query | 5-20× more expensive than route-by-difficulty |

@@ -1,12 +1,12 @@
-# Module 6: Identity Governance & PIM 🛂
+# Module 6: Identity Governance & PIM (Product Information Management) 🛂
 
-> **Why this module matters:** Standing privilege is the silent killer of modern security programs. Microsoft's own internal data (RSA 2019, Ignite 2023) found that ~80% of identity-driven breaches involved an account that *didn't need* the privileges it held, privileges granted six months ago for a one-off task and never revoked. SC-300 spends 20–25% of its weight on identity governance because Microsoft (and every CISO who's lived through a breach) believes this layer is the single biggest gap between "MFA on" and "actual zero trust."
+> **Why this module matters:** Standing privilege is the silent killer of modern security programs. Microsoft's own internal data (RSA 2019, Ignite 2023) found that ~80% of identity-driven breaches involved an account that *didn't need* the privileges it held, privileges granted six months ago for a one-off task and never revoked. SC-300 spends 20–25% of its weight on identity governance because Microsoft (and every CISO (Chief Information Security Officer) who's lived through a breach) believes this layer is the single biggest gap between "MFA (Multi-Factor Authentication) on" and "actual zero trust."
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - License tiers (PIM = P2; Lifecycle Workflows = Entra ID Governance), [Module 1](../Module-01-Entra-ID-Fundamentals/Reading.md).
 > - Users, groups, AUs, entitlement management basics, [Module 2](../Module-02-Users-Groups/Reading.md).
 > - CA + Identity Protection (so you understand the "MFA on activation" piece), [Module 4](../Module-04-Conditional-Access/Reading.md).
-> - Application app roles, [Module 5](../Module-05-Apps-SSO/Reading.md).
+> - Application app roles, [Module 5](../Module-05-Apps-SSO (Single Sign-On)/Reading.md).
 
 ---
 
@@ -20,7 +20,7 @@ It's late 2024. A 1,800-person company is closing its Series E. As part of due d
 - **No access reviews** have ever been run.
 - **No PIM** is configured, even though the company has Microsoft 365 E5 (which includes P2 + PIM).
 
-The investor's report includes a single line: "Identity governance posture is below acceptable thresholds for our portfolio." The Series E closes at a $40M lower valuation. The CISO is "transitioned." The new CISO's first hire is an IAM lead. The new IAM lead's first deliverable is "all admin privileges in PIM eligible-only by end of next quarter; quarterly access reviews on every privileged role."
+The investor's report includes a single line: "Identity governance posture is below acceptable thresholds for our portfolio." The Series E closes at a $40M lower valuation. The CISO is "transitioned." The new CISO's first hire is an IAM (Identity and Access Management) lead. The new IAM lead's first deliverable is "all admin privileges in PIM eligible-only by end of next quarter; quarterly access reviews on every privileged role."
 
 This module is how to never be that CISO. By the end you'll know how to make standing privilege the exception, not the default, and how to prove it to an auditor at any moment.
 
@@ -35,7 +35,7 @@ TRADITIONAL                          PIM-MANAGED
 ─────────────                        ────────────
 "I'm a Global Admin"                 "I'm ELIGIBLE for Global Admin"
 GA assignment is PERMANENT           GA is INACTIVE until I activate it
-GA always on (24/7)                  GA active for up to 8 hours after JIT activation
+GA always on (24/7)                  GA active for up to 8 hours after JIT (Just-In-Time) activation
 Phished password = full GA           Phished password = no GA without MFA + approval
 Audit: "Alice did X at time Y"        Audit: "Alice activated GA for reason 'fix tenant',
                                        approver Bob granted, used GA for 47 minutes"
@@ -59,7 +59,7 @@ Audit: "Alice did X at time Y"        Audit: "Alice activated GA for reason 'fix
 
 | | **PIM for Entra Roles** | **PIM for Azure Resources** | **PIM for Groups** |
 |---|--------------------------|------------------------------|--------------------|
-| Manages | Entra ID directory roles (Global Admin, User Admin, …) | Azure RBAC roles (Owner, Contributor, …) | Membership of role-assignable groups |
+| Manages | Entra ID directory roles (Global Admin, User Admin, …) | Azure RBAC (Role-Based Access Control) roles (Owner, Contributor, …) | Membership of role-assignable groups |
 | Scope | Tenant (or Administrative Unit) | Mgmt group / sub / RG / resource | Group membership (used elsewhere as a privilege source) |
 | License | Entra ID P2 | Entra ID P2 | Entra ID P2 |
 | Configurable per | Each role | Each role at each scope | Each group |
@@ -182,8 +182,8 @@ Access Review: "Q1 Global Admins Review"
 | **Catalog** | Container of resources + access packages, with delegated ownership |
 | **Access package** | A bundle of resources + assignment policies |
 | **Assignment policy** | Rules: who can request, who approves, expiration, access review |
-| **Connected organization** | External Entra tenant the packages can grant access to (auto B2B) |
-| **Custom extensions** | Logic Apps that fire at activation/expiration (Entra ID Governance SKU) |
+| **Connected organization** | External Entra tenant the packages can grant access to (auto B2B (Business-to-Business)) |
+| **Custom extensions** | Logic Apps that fire at activation/expiration (Entra ID Governance SKU (Stock Keeping Unit)) |
 | **Verifiable credentials** | New 2025 feature: require a Verified ID credential as a prereq |
 
 ### Use case: "Project Marlin"
@@ -352,7 +352,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 7 covers Hybrid Identity (often the largest PIM-eligibility surface); Module 8 wires PIM activation events to Sentinel for SOC visibility.
+> - Inside this course: Module 7 covers Hybrid Identity (often the largest PIM-eligibility surface); Module 8 wires PIM activation events to Sentinel for SOC (Security Operations Center) visibility.
 > - Cross-course: [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md) covers PIM for Azure Resources at AZ-104 depth.
 > - Practice: Practice Exam 2 has 8–10 questions from this module.
 
@@ -363,7 +363,7 @@ You now know:
 1. **"PIM as audit theater."** A skeptical engineer says: "PIM doesn't actually reduce risk, admins just activate every morning and stay activated all day." How would you instrument PIM (alerting, KQL, access reviews) to prevent this behavior, or detect it when it happens?
 2. **Approver design.** Who should approve GA activations? Options: senior security only, peer-to-peer, manager, "two-person rule" with two approvers required. Build the case for each in a 4,000-person company.
 3. **Access reviews vs Lifecycle Workflows.** Both clean up access. When does Lifecycle Workflows replace access reviews entirely, and when do you need both?
-4. **Custom extensions for entitlement management.** What use cases justify the Entra ID Governance SKU upgrade (custom extensions) over P2 alone? Identify 3 high-ROI integrations (Slack notifications, ServiceNow ticket creation, etc.).
+4. **Custom extensions for entitlement management.** What use cases justify the Entra ID Governance SKU upgrade (custom extensions) over P2 alone? Identify 3 high-ROI (Return on Investment) integrations (Slack notifications, ServiceNow ticket creation, etc.).
 5. **The auditor's lens.** An external SOC 2 auditor asks: "Show me every privileged access change in the last 90 days, who approved it, and why." Walk through what PIM + Access Review history + Sentinel surfaces for them, and what gaps remain.
 
 ---

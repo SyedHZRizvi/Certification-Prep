@@ -1,6 +1,6 @@
 # Module 8: Responsible AI on Google Cloud 🛡️
 
-> **Why this module matters:** Roughly 20% of the Generative AI Leader exam and a substantial chunk of PMLE is responsible-AI questions. The exam doesn't just want "is AI ethical" platitudes; it tests *specific controls* you turn on in Vertex AI to enforce policy: safety_settings categories and thresholds, the recitation checker, grounding for hallucination, SynthID watermarking, training-data opt-out, CMEK + VPC-SC for data governance, SAIF (Google's Secure AI Framework), and the Google AI Principles. Each is a memorize-and-apply item.
+> **Why this module matters:** Roughly 20% of the Generative AI Leader exam and a substantial chunk of PMLE is responsible-AI questions. The exam doesn't just want "is AI ethical" platitudes; it tests *specific controls* you turn on in Vertex AI to enforce policy: safety_settings categories and thresholds, the recitation checker, grounding for hallucination, SynthID watermarking, training-data opt-out, CMEK + VPC (Virtual Private Cloud)-SC for data governance, SAIF (Google's Secure AI Framework), and the Google AI Principles. Each is a memorize-and-apply item.
 
 > **Prerequisites for this module.** Modules 1–7 finished. Familiarity with `safety_settings` from Module 2; CMEK and VPC-SC from Module 3.
 
@@ -21,7 +21,7 @@ Verily's responsible-AI deployment checklist (published in their 2024 deployment
 7. **Grounding with Vertex AI Search**, every response cites the clinical-guideline document
 8. **Recitation checker**, enabled; logs any output that triggers
 9. **SynthID watermarking**, text outputs carry an invisible Google watermark
-10. **Cloud Audit Logs**, every API call logged with the requesting clinician's identity
+10. **Cloud Audit Logs**, every API (Application Programming Interface) call logged with the requesting clinician's identity
 11. **Clinician-in-the-loop**, no Med-PaLM 2 output reaches a patient chart without an MD signing off
 12. **Eval gates**, Vertex AI Evaluation Service runs nightly against a 500-case clinical eval set; deployment frozen if quality regresses
 13. **Kill switch**, `JWT_SECRET`-style rotation on the API key fronting Med-PaLM 2; one button disables the entire pilot
@@ -185,7 +185,7 @@ For responsible-AI deployment:
 | **VPC-SC** | Data exfiltration outside the perimeter (compromised service account, insider threat) |
 | **Both together** | The two-layer enterprise security minimum for regulated workloads |
 
-For HIPAA, both are required. For GDPR, both are strongly recommended. For SOC 2, both contribute meaningfully.
+For HIPAA, both are required. For GDPR (General Data Protection Regulation), both are strongly recommended. For SOC (Security Operations Center) 2, both contribute meaningfully.
 
 ---
 
@@ -290,7 +290,7 @@ The exam will test these items individually as "which of the following is REQUIR
 | "Google AI Principles are voluntary self-regulation, no teeth." | **They have shipped product cancellations** (Project Maven non-renewal in 2018), they do constrain decisions. |
 | "Constitutional AI is Google's safety methodology." | **No, Anthropic's.** Google uses AI Principles + safety_settings + recitation + grounding + SynthID. |
 | "Prompt injection is a model bug." | **It's an architectural attack class** that requires defense in depth, not a model patch. |
-| "CMEK encrypts data in transit." | **No, at rest.** TLS handles transit. |
+| "CMEK encrypts data in transit." | **No, at rest.** TLS (Transport Layer Security) handles transit. |
 | "VPC-SC encrypts data." | **No.** It's a perimeter; CMEK does encryption. |
 
 ---
@@ -341,7 +341,7 @@ You now know:
 - 🚨 **Prompt injection**, direct + indirect; defense in depth
 - 📋 **12-item responsible-AI checklist**, memorize
 
-**Next:** [Module 9, MLOps on Vertex AI](../Module-09-MLOps-Vertex-AI/Reading.md)
+**Next:** [Module 9, MLOps (Machine Learning Operations) on Vertex AI](../Module-09-MLOps-Vertex-AI/Reading.md)
 
 ---
 

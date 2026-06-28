@@ -15,7 +15,7 @@
 
 In 2021, Duolingo's social media manager (then-22-year-old Zaria Parvez) started posting unhinged TikToks featuring the company's mascot a giant green owl in increasingly absurd situations. The owl committed crimes. The owl thirsted after celebrities. The owl danced.
 
-By 2023, Duolingo's TikTok had **8 million followers**, more than Disney+, ESPN, and most US-listed brands. CEO Luis von Ahn reported on earnings calls that the brand-awareness lift from social was equivalent to *tens of millions of dollars* of paid advertising. The marginal cost to Duolingo was a salary plus a wearable owl costume.
+By 2023, Duolingo's TikTok had **8 million followers**, more than Disney+, ESPN, and most US-listed brands. CEO (Chief Executive Officer) Luis von Ahn reported on earnings calls that the brand-awareness lift from social was equivalent to *tens of millions of dollars* of paid advertising. The marginal cost to Duolingo was a salary plus a wearable owl costume.
 
 The lesson is *not* "make weird TikToks." It's the lesson Zaria gave in nearly every interview: **she studied the algorithm, knew what TikTok rewarded in 2021–2022, and built a creative format that matched.** The content was unhinged on purpose, because TikTok 2021 rewarded surprise, repeat hooks, and identity-affiliated commentary. The minute the algorithm changed (Reels-style shopping content in 2024), Duolingo evolved.
 
@@ -32,7 +32,7 @@ That's the work of social in 2026: **understand each platform's current algorith
 | **Threads** | Meta | Twitter-refugees + younger | Following + recommendations | Short text, longer-form than X |
 | **TikTok** | ByteDance | <35 globally | Engagement velocity (likes, completion, shares, comments) within minutes | Short vertical video |
 | **YouTube** | Alphabet | Universal | Watch time + click-through + retention | Long-form + Shorts |
-| **LinkedIn** | Microsoft | Working professionals, B2B | Dwell time + comment-driven recency | Text + carousel + native video |
+| **LinkedIn** | Microsoft | Working professionals, B2B (Business-to-Business) | Dwell time + comment-driven recency | Text + carousel + native video |
 | **X (Twitter)** | X Corp | News/tech/finance/politics | Real-time + Premium boost | Short text + threads + video |
 | **Pinterest** | Pinterest, Inc. | 25–55, ~70% female | Search + visual relevance + freshness | Vertical "Idea Pins" + product pins |
 | **Snapchat** | Snap Inc. | Gen Z, regional pockets | Friends + Discover | Short video + AR lenses |
@@ -181,7 +181,7 @@ Answer in a notebook:
 Pick 2–3 platforms. Not 7. Not 1. **Two or three.**
 
 ### Step 2: Content pillars (15 min)
-Define 3–5 **content pillars**, recurring topic buckets that map to audience interest. For a project management SaaS, pillars might be:
+Define 3–5 **content pillars**, recurring topic buckets that map to audience interest. For a project management SaaS (Software as a Service), pillars might be:
 
 - Team collaboration tips
 - Tool comparisons + reviews
@@ -230,7 +230,7 @@ After 30 days, kill the bottom 30% of pillars + formats. Double down on the top 
 | Tier | Follower Range | Strength | Weakness |
 |---|---|---|---|
 | **Nano** | 1K–10K | Highest engagement % | Low reach per post |
-| **Micro** | 10K–100K | Best ROI for most brands | Manual to manage at scale |
+| **Micro** | 10K–100K | Best ROI (Return on Investment) for most brands | Manual to manage at scale |
 | **Macro** | 100K–1M | Brand reach + still relatable | Higher cost, less engagement |
 | **Mega / Celebrity** | 1M+ | Mass reach + halo | Expensive, lower trust |
 
@@ -286,7 +286,7 @@ What it teaches:
 
 1. **Voice can be a competitive advantage** when it's distinct + consistent.
 2. **Engagement-driven posts beat polished broadcast** on most social platforms.
-3. **It only works with leadership air cover**, Wendy's CMO publicly stood behind the team.
+3. **It only works with leadership air cover**, Wendy's CMO (Chief Marketing Officer) publicly stood behind the team.
 4. **It's hard to replicate.** Many brands tried "snarky Wendy's style" in 2017–2019 and failed because they lacked Wendy's actual voice DNA.
 
 Wendy's stays load-bearing on social-marketing exams because it's the cleanest demonstration of **brand voice as a distribution moat.**
@@ -327,7 +327,7 @@ Wendy's stays load-bearing on social-marketing exams because it's the cleanest d
 | **Engagement rate** | (Likes + comments + shares) ÷ followers (or impressions) |
 | **Reach** | Unique users who saw the post |
 | **Impressions** | Total times the post was displayed |
-| **CTR** | Click-through rate (clicks ÷ impressions) |
+| **CTR (Click-Through Rate)** | Click-through rate (clicks ÷ impressions) |
 | **Completion rate** | % of users who watched a video to the end |
 | **Dwell time** | How long a user pauses on a post |
 | **Native content** | Uploaded directly to the platform vs linked from elsewhere |
@@ -339,7 +339,7 @@ Wendy's stays load-bearing on social-marketing exams because it's the cleanest d
 | **Sentiment analysis** | Classifying mentions as positive / neutral / negative |
 | **FYP** | "For You Page", TikTok's main algorithmic surface |
 | **Hashtag** | A topic-affiliated tag (less weighted than 2018-era) |
-| **UGC** | User-generated content |
+| **UGC (User-Generated Content)** | User-generated content |
 | **Earned media value (EMV)** | Estimated $ value of organic media coverage |
 
 ---

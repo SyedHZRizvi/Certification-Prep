@@ -1,6 +1,6 @@
 # Module 6: Email Marketing & AI Personalization 📧
 
-> **Why this module matters:** Email is the channel marketers under-invest in and over-deliver from. The DMA's annual studies put email ROI at $36–$42 for every $1 spent, the highest in marketing. Add 2026 AI personalization and you have the channel most likely to outperform any other on your résumé.
+> **Why this module matters:** Email is the channel marketers under-invest in and over-deliver from. The DMA's annual studies put email ROI (Return on Investment) at $36–$42 for every $1 spent, the highest in marketing. Add 2026 AI personalization and you have the channel most likely to outperform any other on your résumé.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) POESM (email = owned), funnel basics
@@ -44,7 +44,7 @@ Reasons email outperforms most channels:
 ## 🧱 Email Marketing 101: The Five Foundations
 
 ### 1. List Building (Permission, Not Purchase)
-- Never buy lists, illegal under CAN-SPAM, GDPR, and most local laws.
+- Never buy lists, illegal under CAN-SPAM, GDPR (General Data Protection Regulation), and most local laws.
 - Use **opt-in forms** with clear value propositions.
 - **Double opt-in** (confirmation email after signup) reduces spam and improves deliverability.
 - Lead magnets (PDF guide, free template, discount, checklist) are the standard exchange.
@@ -60,7 +60,7 @@ Sending one email to your whole list = poor performance. **Segment by:**
 ### 3. Deliverability
 The difference between "I sent it" and "they received it in inbox" is **deliverability**. Three load-bearing pieces:
 
-- **Authentication**: **SPF**, **DKIM**, **DMARC**, three DNS records that prove you are who you say. *Mandatory* for bulk senders to Gmail and Yahoo since February 2024.
+- **Authentication**: **SPF**, **DKIM**, **DMARC**, three DNS (Domain Name System) records that prove you are who you say. *Mandatory* for bulk senders to Gmail and Yahoo since February 2024.
 - **List hygiene**: Remove hard-bounces, inactive subscribers, and complainers. A "dirty" list tanks sender reputation.
 - **Engagement signals**: ISPs (Gmail, Outlook, Apple Mail) watch open + click rates as inbox/spam signals.
 
@@ -72,7 +72,7 @@ Too rare = forgotten. Too frequent = unsubscribed.
 **Common cadences:**
 - **Newsletters**: weekly to biweekly
 - **E-commerce promos**: 1–3x/week
-- **B2B nurture**: weekly to monthly
+- **B2B (Business-to-Business) nurture**: weekly to monthly
 - **Lifecycle triggers**: triggered by user action, on demand
 
 ### 5. Templates and Design
@@ -81,7 +81,7 @@ Too rare = forgotten. Too frequent = unsubscribed.
 - **Alt text** on images (in case images don't load)
 - **Short subject lines** (40–60 characters; mobile-friendly)
 - **Preview text** (the 90-character preview after the subject)
-- **One primary CTA** per email
+- **One primary CTA (Call to Action)** per email
 - **Brand consistency** + accessibility (alt text, contrast)
 
 ---
@@ -120,7 +120,7 @@ Beyond `{{ first_name }}`, modern personalization can swap entire blocks based o
 Example: A retail email shows hiking boots to last month's outdoor-category buyers and yoga gear to wellness-segment subscribers, same campaign send, different content.
 
 ### AI Capability 4: Generative Drafting
-Most major ESPs added Claude-powered or GPT-powered drafting in 2023–2024. You describe the campaign; the ESP drafts subject, preview, body, and even alt text. The human edits and ships.
+Most major ESPs added Claude-powered or GPT (Generative Pre-trained Transformer)-powered drafting in 2023–2024. You describe the campaign; the ESP drafts subject, preview, body, and even alt text. The human edits and ships.
 
 ### AI Capability 5: Predictive Lifecycle and Churn
 The deepest AI feature: predict which subscribers are about to churn / lapse, automatically trigger win-back sequences before they leave.
@@ -135,9 +135,9 @@ AI assigns sub-segments to A/B variants, monitors significance in real-time, and
 | ESP | Best For | Standout Feature | Pricing Tier |
 |---|---|---|---|
 | **Klaviyo** | E-commerce (Shopify, BigCommerce) | Deep e-commerce data + predictive sends | Free up to ~250 contacts; scales fast |
-| **HubSpot Email** | All-in-one CRM + marketing teams | Native to HubSpot CRM | Tiered with HubSpot Marketing Hub |
+| **HubSpot Email** | All-in-one CRM (Customer Relationship Management) + marketing teams | Native to HubSpot CRM | Tiered with HubSpot Marketing Hub |
 | **Mailchimp** | SMB, content + e-commerce | AI subject lines, broad ecosystem | Free up to ~500 contacts |
-| **ActiveCampaign** | SMB + mid-market automation | Best-in-class automation builder | Tiered SaaS |
+| **ActiveCampaign** | SMB + mid-market automation | Best-in-class automation builder | Tiered SaaS (Software as a Service) |
 | **ConvertKit / Kit** | Creators, newsletters, infoproducts | Simple, creator-friendly | Free up to 1,000; paid above |
 | **Beehiiv** | Newsletter / media businesses | Built for newsletter monetization | Free tier; tiers up |
 | **Substack** | Independent writers | Easy paid newsletter setup | 10% revenue share |
@@ -213,7 +213,7 @@ Skim these now; Module 9 goes deep.
 - Implied consent in limited cases
 - Penalties up to CA$10M
 
-### CCPA / CPRA (California, 2020+)
+### CCPA (California Consumer Privacy Act) / CPRA (California, 2020+)
 - Right to know / delete / opt-out of sale
 - Applies to companies > $25M revenue, or selling 50K+ Californians' data
 - Foundation for many later US state laws
@@ -270,12 +270,12 @@ This is the workflow professional email marketers use. After you've built one we
 
 Klaviyo was founded in 2012 by Andrew Bialecki and Ed Hallen with one bet: that e-commerce brands would prefer an email tool **designed around their data** rather than a generic ESP with e-commerce features bolted on.
 
-By 2023, Klaviyo had become the dominant ESP for Shopify-powered brands and went public on the NYSE. Reported numbers from their S-1 and subsequent earnings: hundreds of millions in ARR, growing fast.
+By 2023, Klaviyo had become the dominant ESP for Shopify-powered brands and went public on the NYSE. Reported numbers from their S-1 and subsequent earnings: hundreds of millions in ARR (Annual Recurring Revenue), growing fast.
 
 Why Klaviyo won (per Bialecki's public interviews and Klaviyo's own benchmark reports):
 
 1. **Native Shopify (and BigCommerce, etc.) data sync.** Customers, products, orders, browsing, all auto-flowing.
-2. **Predictive analytics built on that data.** Predicted CLV, predicted next-order date, predicted churn, for each subscriber.
+2. **Predictive analytics built on that data.** Predicted CLV (Customer Lifetime Value), predicted next-order date, predicted churn, for each subscriber.
 3. **Segmentation language tuned for e-commerce.** "Bought 2+ orders, last 90 days, hasn't opened in 30 days" is a one-click filter.
 4. **Pre-built playbooks** for cart abandonment, browse abandonment, post-purchase, win-back, all the highest-ROI e-commerce sequences.
 
@@ -327,11 +327,11 @@ The Klaviyo case demonstrates the broader thesis: **the next generation of ESPs 
 | **Lifecycle marketing** | Behavior-triggered sequences across the customer journey |
 | **Welcome series** | Highest-ROI initial sequence |
 | **Open rate** | % of sends that were opened (unreliable post-iOS-15) |
-| **Click rate / CTR** | % of opens (or sends) that clicked |
+| **Click rate / CTR (Click-Through Rate)** | % of opens (or sends) that clicked |
 | **Hard bounce** | Email permanently failed (bad address) |
 | **Soft bounce** | Temporary failure |
 | **Deliverability** | % of emails reaching inbox (vs spam folder) |
-| **Sender reputation** | ISP-tracked score of your sending domain/IP |
+| **Sender reputation** | ISP (Internet Service Provider)-tracked score of your sending domain/IP |
 | **Smart Send Time** | AI-predicted optimal send time per subscriber |
 | **Dynamic content** | Email blocks that vary by subscriber attribute |
 | **MPP** | Mail Privacy Protection (iOS 15+) |
@@ -361,7 +361,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 7 covers the paid layer over the email-generated audience (retargeting custom audiences, lookalikes); Module 8 covers email metrics in GA4 + Looker Studio; Module 9 deepens CAN-SPAM, GDPR, and CCPA compliance.
+> - Inside this course: Module 7 covers the paid layer over the email-generated audience (retargeting custom audiences, lookalikes); Module 8 covers email metrics in GA4 (Google Analytics 4) + Looker Studio; Module 9 deepens CAN-SPAM, GDPR, and CCPA compliance.
 > - Cross-course: `15-AI-Marketing-Strategy` Module 6 covers lifecycle ROI and the BCG email-vs-other-channel allocation; `16-AI-Marketing-Automation-Workflows` Module 6 wires the welcome series end-to-end with Make/Zapier.
 > - Practice: Practice Exam 2 has roughly 8–10 email questions (deliverability, lifecycle, ESP-by-vertical, Klaviyo case). Final Mock revisits with cross-module synthesis.
 
@@ -373,7 +373,7 @@ You now know:
 2. **The welcome series ROI assumption.** Klaviyo's data shows welcome series has the highest per-email revenue. But a SaaS lifecycle manager argues that for *their* business, the post-purchase series (specifically, day-7 onboarding nudge) outperforms welcome. Steel-man both. Under what business conditions does welcome win, and under what conditions does some other sequence dominate? (Hint: consider order-frequency, purchase cycle, customer lifecycle.)
 3. **The deliverability cliff after Feb 2024.** Gmail and Yahoo's Feb 2024 bulk-sender enforcement forced SPF/DKIM/DMARC + one-click unsubscribe + <0.3% complaint rate. A growth marketer says this favors big senders who can hire deliverability engineers; a SMB advocate says it just enforces hygiene that should always have been mandatory. Make both cases. Is the Feb-2024 enforcement net-positive for the email-marketing ecosystem, or net-negative for small senders trying to grow?
 4. **Phrasee, Mailchimp AI, and the moat question.** Mailchimp's AI subject-line generator is grounded in billions of past sends. Phrasee's tool reports 10–40% lift across enterprise clients. As LLMs commoditize text generation, what's the durable moat for these AI subject-line tools, proprietary outcome data, integration into the daily workflow, or brand trust? Defend the strongest single answer, then identify what would *break* the moat by 2028.
-5. **First-party email list as the post-cookie play.** "Build the list, own the channel" is the most-cited 2026 strategic answer. But list-building costs (lead magnets, paid acquisition into email funnels, double opt-in friction) have risen sharply. At what point does email-list-building stop being the cheapest first-party play and start being just another paid acquisition channel with extra steps? Walk through the math with an example CAC-to-email-subscriber number for an e-commerce brand at $30 CPM and 1% form conversion.
+5. **First-party email list as the post-cookie play.** "Build the list, own the channel" is the most-cited 2026 strategic answer. But list-building costs (lead magnets, paid acquisition into email funnels, double opt-in friction) have risen sharply. At what point does email-list-building stop being the cheapest first-party play and start being just another paid acquisition channel with extra steps? Walk through the math with an example CAC (Customer Acquisition Cost)-to-email-subscriber number for an e-commerce brand at $30 CPM (Cost Per Mille) and 1% form conversion.
 
 ---
 

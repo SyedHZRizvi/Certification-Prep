@@ -1,6 +1,6 @@
 # Module 7: Agent Builder & Conversational AI 🤖
 
-> **Why this module matters:** Agentic AI is the highest-value pattern of 2025–2026, and Google's agent stack has its own vocabulary, **Vertex AI Agent Builder** (the umbrella), **Conversational Agents** (formerly Dialogflow CX, the structured-flow conversational AI product), **function calling** (Gemini's native tool-use mechanism), **ADK** (the Agent Development Kit, Google's open-source agent SDK), **multi-agent orchestration** (the latest pattern). The exam tests every one of these distinctions. This module deconstructs the stack and the architectural choices each enables.
+> **Why this module matters:** Agentic AI is the highest-value pattern of 2025–2026, and Google's agent stack has its own vocabulary, **Vertex AI Agent Builder** (the umbrella), **Conversational Agents** (formerly Dialogflow CX (Customer Experience), the structured-flow conversational AI product), **function calling** (Gemini's native tool-use mechanism), **ADK** (the Agent Development Kit, Google's open-source agent SDK (Software Development Kit)), **multi-agent orchestration** (the latest pattern). The exam tests every one of these distinctions. This module deconstructs the stack and the architectural choices each enables.
 
 > **Prerequisites for this module.** Modules 1–6 finished. A Vertex AI project; Conversational Agents and Agent Builder console access. Familiarity with the concept of tool-using LLMs (the LLM decides "I should call function X with argument Y," your code executes X(Y), the result goes back to the LLM, the LLM uses it).
 
@@ -50,7 +50,7 @@ The interesting architectural choice: Mercedes did NOT have Gemini decide *the w
 | Component | What it does |
 |-----------|--------------|
 | **Conversational Agents** | Structured-flow conversational AI (formerly Dialogflow CX). State machine, intents, slots, flows, fulfillments. The deterministic backbone. |
-| **Search Agents** | Pre-built RAG agents that wrap Vertex AI Search as a chat interface |
+| **Search Agents** | Pre-built RAG (Retrieval-Augmented Generation) agents that wrap Vertex AI Search as a chat interface |
 | **Function calling** | Gemini's native ability to call tools you define (single-turn) |
 | **ADK (Agent Development Kit)** | Google's open-source SDK for building multi-step agentic systems with Gemini + tools |
 | **Agent Garden** | Catalog of pre-built agent templates |
@@ -71,7 +71,7 @@ The interesting architectural choice: Mercedes did NOT have Gemini decide *the w
 
 - **Goal-driven, finite-state conversations**, booking, ordering, IVR-like flows, customer-service triage
 - **Strict compliance**, regulated industries that need auditable conversation paths
-- **Multi-language consistency**, out-of-the-box NLU in 40+ languages
+- **Multi-language consistency**, out-of-the-box NLU (Natural Language Understanding) in 40+ languages
 - **Channels**, telephony (Google Cloud Phone Gateway), web chat, messaging (WhatsApp, FB Messenger), in-car
 - **High-volume**, built for tens of millions of conversations per day
 
@@ -236,7 +236,7 @@ Shopify launched **Sidekick** in 2024 as an AI assistant for merchants ("rewrite
 
 - **Gemini 2.5 Pro on Vertex AI**, the LLM
 - **ADK**, multi-step agentic orchestration
-- **Function calling**, tools for Shopify Admin API (products, orders, customers, analytics)
+- **Function calling**, tools for Shopify Admin API (Application Programming Interface) (products, orders, customers, analytics)
 - **Vertex AI Search**, grounding against Shopify help docs + merchant guides
 - **Conversational Agents**, for "guided flow" actions (e.g. "set up Black Friday discount" walks through structured slots)
 
@@ -266,7 +266,7 @@ The drive-thru, Conversational Agents managing order state, function calling for
 
 ### Webhooks
 
-Pages can trigger **webhooks**, HTTPS endpoints in your service that the agent calls with current state and a request to execute (e.g., `book_table(...)`). Your webhook returns updated state + response.
+Pages can trigger **webhooks**, HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure) endpoints in your service that the agent calls with current state and a request to execute (e.g., `book_table(...)`). Your webhook returns updated state + response.
 
 ### Generative fallback
 
@@ -292,20 +292,20 @@ You provide training phrases per intent. The agent's NLU model learns to match n
 
 ---
 
-## 🆚 Google Agent Builder vs Microsoft Copilot Studio vs AWS Bedrock Agents
+## 🆚 Google Agent Builder vs Microsoft Copilot Studio vs AWS (Amazon Web Services) Bedrock Agents
 
 The exam likes a comparison question.
 
 | | Google Agent Builder | Microsoft Copilot Studio | AWS Bedrock Agents |
 |---|---|---|---|
 | LLM | Gemini (configurable) | Azure OpenAI (GPT) | Bedrock-hosted (Claude, Llama, Mistral, …) |
-| No-code surface | Yes (Conversational Agents UI) | Yes (Copilot Studio UI) | Limited (CDK / console) |
+| No-code surface | Yes (Conversational Agents UI (User Interface)) | Yes (Copilot Studio UI) | Limited (CDK / console) |
 | Tool integration | Function calling, Webhooks, Tool Registry, ADK | Power Platform connectors | Action groups + Lambda |
 | RAG built-in | Yes (Vertex AI Search) | Yes (SharePoint, Dataverse) | Yes (Knowledge Bases) |
 | Strengths | Multi-modal native, multi-channel, scale | Microsoft 365 integration | Multi-model choice (incl. Claude) |
 | Weakness | Less M365 integration | LLM choice limited | Less mature UI |
 
-🎯 **Exam pattern:** *"A Google Workspace customer wants a sales-CRM voice assistant."* → **Agent Builder** (native Workspace integration; multi-modal; multi-channel).
+🎯 **Exam pattern:** *"A Google Workspace customer wants a sales-CRM (Customer Relationship Management) voice assistant."* → **Agent Builder** (native Workspace integration; multi-modal; multi-channel).
 
 ---
 

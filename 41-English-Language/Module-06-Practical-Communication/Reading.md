@@ -172,7 +172,7 @@ Usman Ali
 | 20 | Headcount | Number of employees | "The headcount increased by 10% this year." |
 | 21 | Incentive | Reward to motivate | "A bonus is a financial incentive." |
 | 22 | Invoice | Bill for goods/services | "Please send the invoice by end of month." |
-| 23 | KPI | Key Performance Indicator | "Sales volume is one of our KPIs." |
+| 23 | KPI (Key Performance Indicator) | Key Performance Indicator | "Sales volume is one of our KPIs (Key Performance Indicators)." |
 | 24 | Liability | Legal/financial responsibility | "The company accepts no liability for..." |
 | 25 | Logistics | Planning of complex operations | "The logistics of the event were handled well." |
 | 26 | Mandate | Official instruction/authority | "The board has mandated a cost review." |
@@ -238,7 +238,7 @@ Usman Ali
 | 86 | Implementation | Putting a plan into action | "Implementation begins Monday." |
 | 87 | Initiative | New project or plan | "This is a company-wide initiative." |
 | 88 | Integration | Combining systems/teams | "The system integration is complete." |
-| 89 | Interim | Temporary | "She's the interim CEO." |
+| 89 | Interim | Temporary | "She's the interim CEO (Chief Executive Officer)." |
 | 90 | Leverage | Use something to maximum advantage | "Leverage your network to find leads." |
 | 91 | Liaison | Person who connects two groups | "He acts as liaison between HR and Finance." |
 | 92 | Loop in | Include someone in communication | "Please loop in the legal team." |

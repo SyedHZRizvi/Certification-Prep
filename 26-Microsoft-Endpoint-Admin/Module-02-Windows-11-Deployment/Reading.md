@@ -13,9 +13,9 @@
 
 ## 🍕 A Story: The Sales Kickoff Tuesday Doubled
 
-Pick up where Maria left off in Module 1. The Friday kickoff went perfectly, 998 of 1,000 Lenovo X1 Carbons were online by 9:30am Eastern with the corporate portal open. (Two devices were DOA hardware; replaced Monday.) Three weeks later the CEO walks in with a new ask:
+Pick up where Maria left off in Module 1. The Friday kickoff went perfectly, 998 of 1,000 Lenovo X1 Carbons were online by 9:30am Eastern with the corporate portal open. (Two devices were DOA hardware; replaced Monday.) Three weeks later the CEO (Chief Executive Officer) walks in with a new ask:
 
-> *"We just acquired ContosoBio. 200 people in San Diego, Cambridge, and Cork. They're on 4-year-old Dell laptops, all AD domain-joined, all running our soon-to-retire on-prem Exchange. They need to be on our Microsoft 365 by quarter-end. The CFO doesn't want to buy new hardware."*
+> *"We just acquired ContosoBio. 200 people in San Diego, Cambridge, and Cork. They're on 4-year-old Dell laptops, all AD (Active Directory) domain-joined, all running our soon-to-retire on-prem Exchange. They need to be on our Microsoft 365 by quarter-end. The CFO (Chief Financial Officer) doesn't want to buy new hardware."*
 
 Maria has to make six deployment-strategy decisions:
 
@@ -148,7 +148,7 @@ Built with **Windows Configuration Designer** (free Microsoft Store app). A `.pp
 - Wi-Fi profiles (great for getting on the network before Autopilot reaches the internet)
 - Domain/Entra join settings
 - Local user accounts
-- Bulk MDM enrollment credentials
+- Bulk MDM (Mobile Device Management) enrollment credentials
 - Apps to install (limited, typically MSI)
 - Certificates
 - Files to copy
@@ -366,13 +366,13 @@ In 2019, **Lenovo became the first major OEM** to support Autopilot hash registr
 **Discussion (Socratic).**
 - **Q1.** The OEM hash registration model creates a tenant-binding dependency at the factory. Argue both sides: should an enterprise insist on OEM registration to standardize provisioning, or should they keep the option of manual registration for flexibility? What does each choice cost when the enterprise wants to repurpose devices to a subsidiary tenant?
 - **Q2.** Autopilot user-driven requires internet at OOBE. A field office in a low-bandwidth location asks for an alternative. The two supported answers are (a) provisioning package shipped on USB or (b) Autopilot at the office with pre-provisioned (white-glove) finish for users. Defend which is right when bandwidth is the constraint vs when device count is the constraint.
-- **Q3.** A startup CTO with 30 employees argues "Autopilot is overkill, just hand-configure each device, it takes me an hour each." Microsoft's customer-story numbers suggest break-even is around 50–100 devices. Defend or refute the CTO's position, naming the one operational scenario (besides initial provisioning) where Autopilot pays for itself even for tiny fleets.
+- **Q3.** A startup CTO (Chief Technology Officer) with 30 employees argues "Autopilot is overkill, just hand-configure each device, it takes me an hour each." Microsoft's customer-story numbers suggest break-even is around 50–100 devices. Defend or refute the CTO's position, naming the one operational scenario (besides initial provisioning) where Autopilot pays for itself even for tiny fleets.
 
 ---
 
 > **Where this leads.**
 > - Inside this course: Module 3 introduces Intune as the policy engine that takes over once Autopilot finishes; Module 4 covers enrollment beyond Autopilot (iOS/Android/macOS/Linux); Module 5 covers app deployment, which is what fills the ESP screen during Autopilot.
-> - Cross-course: AZ-104 doesn't cover deployment because it's Azure not endpoint, but [`05-Azure-Fundamentals` Module 3](../../05-Azure-Fundamentals/Module-03-Core-Services/Reading.md) covers VM provisioning, the cloud analogue.
+> - Cross-course: AZ-104 doesn't cover deployment because it's Azure not endpoint, but [`05-Azure-Fundamentals` Module 3](../../05-Azure-Fundamentals/Module-03-Core-Services/Reading.md) covers VM (Virtual Machine) provisioning, the cloud analogue.
 > - Practice: Practice Exam 1 has roughly 7–9 questions from this module (Autopilot modes, ESP, provisioning packages, deployment-mode-picker scenarios). Final Mock Exam revisits with multi-part scenarios.
 
 ---

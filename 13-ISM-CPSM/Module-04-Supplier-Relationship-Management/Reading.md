@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 2, Kraljic matrix](../Module-02-Category-Management-Sourcing/Reading.md): SRM tiering uses Kraljic outputs directly
 > - [Module 3, Contracts and SLAs](../Module-03-Negotiation-Contracts/Reading.md): SRM enforces what was negotiated
-> - Cross-course: [ASCM CSCP Module 4, SRM & Customer Relationships](../../10-ASCM-CSCP/Module-04-Supply-Planning-SOP/Reading.md) for the broader chain-of-chains relationship view
+> - Cross-course: [ASCM CSCP Module 4, SRM & Customer Relationships](../../10-ASCM-CSCP/Module-04-Supply-Planning-SOP (Standard Operating Procedure)/Reading.md) for the broader chain-of-chains relationship view
 > If either of the above is shaky, pause and review before continuing.
 
 ---
@@ -31,7 +31,7 @@ SRM = the systematic management of supplier interactions across the entire lifec
 Key SRM activities:
 
 - Segmenting (tiering) suppliers by strategic importance
-- Setting performance expectations (scorecards / KPIs)
+- Setting performance expectations (scorecards / KPIs (Key Performance Indicators))
 - Regular performance reviews
 - Joint improvement programs (supplier development)
 - Innovation collaboration
@@ -123,7 +123,7 @@ The discipline of investing in suppliers traces to the Toyota Production System 
 - Switching cost is high
 - The capability gap is fixable
 - The supplier is willing and motivated
-- Business case shows positive ROI on the investment
+- Business case shows positive ROI (Return on Investment) on the investment
 
 ### When NOT To
 - Capability gap is fundamental (e.g., wrong technology)
@@ -205,7 +205,7 @@ Level 3: Supply VP ↔ Supplier VP  (issue persists or critical impact)
 Level 4: Executive sponsors / C-suite  (existential / contractual breach)
 ```
 
-🎯 **Exam tip:** Skipping levels (going straight to the supplier's CEO) damages the relationship. Use the ladder.
+🎯 **Exam tip:** Skipping levels (going straight to the supplier's CEO (Chief Executive Officer)) damages the relationship. Use the ladder.
 
 ---
 
@@ -250,7 +250,7 @@ Toyota Motor Corporation, by contrast, made roughly 766,000 fewer vehicles in ca
 
 **Decision.** After the 2011 Tōhoku earthquake exposed automotive supply-chain fragility, Toyota's purchasing organization spent a decade building what came to be called **"Rescue"**, a database tracking ~50,000 parts to Tier-4 (and in some cases Tier-5) with mandated inventory buffers for high-risk components, including semiconductors. Key elements:
 
-1. **Mandated chip stockpiles** of 2-6 months at strategic Tier-1 suppliers (Denso, Aisin), explicitly contrary to "lean" JIT orthodoxy for components Toyota classified as long-lead-time-risk.
+1. **Mandated chip stockpiles** of 2-6 months at strategic Tier-1 suppliers (Denso, Aisin), explicitly contrary to "lean" JIT (Just-In-Time) orthodoxy for components Toyota classified as long-lead-time-risk.
 2. **Multi-tier mapping** so Toyota knew which fab made which wafer for which Tier-1 assembly.
 3. **Cross-investment** in supplier-of-supplier relationships: Toyota stakes in Denso, Denso stakes in fabs.
 4. **Joint engineering programs**, Toyota engineers embedded at Denso, Denso engineers at TSMC and Renesas.
@@ -270,7 +270,7 @@ Note four exam-relevant patterns: (1) Toyota's *strategic* suppliers (Module 4 T
 When a CPSM scenario asks "BEST response when a strategic supplier struggles," the answer is rarely "switch suppliers", Toyota's playbook is to invest, not exit.
 
 **Discussion (Socratic).**
-- Q1: Toyota's 2-6 month chip stockpile violates JIT/lean orthodoxy. The carrying cost is non-trivial. Defend the decision quantitatively to a CFO who reads only quarterly scorecards. What metric would you put on the dashboard?
+- Q1: Toyota's 2-6 month chip stockpile violates JIT/lean orthodoxy. The carrying cost is non-trivial. Defend the decision quantitatively to a CFO (Chief Financial Officer) who reads only quarterly scorecards. What metric would you put on the dashboard?
 - Q2: GM, Ford, and Stellantis have all publicly committed (2022-2024) to copy Toyota's supplier-visibility model. What's the *structural* reason they may not succeed even with the same investment level?
 - Q3: Toyota's approach assumes long-tenured supplier relationships. In an industry like generative AI (where everything is new) is the Toyota model applicable, or does it require a stable supply base it doesn't have?
 

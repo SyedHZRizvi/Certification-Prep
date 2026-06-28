@@ -1,6 +1,6 @@
 # Module 5: Warehouse Operations 🏭
 
-> **Why this module matters:** The warehouse is where the supply chain meets the floor. Every order, every return, every truck delivery passes through these four walls. The CLTD exam asks the most operational questions here, layouts, flows, automation, KPIs. Master this and 14% of the exam is in your pocket.
+> **Why this module matters:** The warehouse is where the supply chain meets the floor. Every order, every return, every truck delivery passes through these four walls. The CLTD exam asks the most operational questions here, layouts, flows, automation, KPIs (Key Performance Indicators). Master this and 14% of the exam is in your pocket.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1](../Module-01-Logistics-Strategy-Network/Reading.md) facility roles (DC vs cross-dock vs FC)
@@ -40,7 +40,7 @@ Not all warehouses are alike. The exam expects you to differentiate.
 | **Cross-dock** | Sorts inbound → outbound within hours | No (transient) |
 | **Fulfillment Center (FC)** | E-commerce single-unit picks | Yes |
 | **Hub / Sort center** | Parcel/LTL consolidation between legs | No |
-| **3PL warehouse** | Outsourced multi-client DC | Yes |
+| **3PL (Third-Party Logistics) warehouse** | Outsourced multi-client DC | Yes |
 | **Bonded warehouse** | Holds goods pre-customs-clearance | Yes (customs-controlled) |
 | **Cold storage / refrigerated** | Temperature-controlled for food, pharma | Yes |
 | **Hazmat warehouse** | Special licensing for chemicals, batteries | Yes |
@@ -50,7 +50,7 @@ Not all warehouses are alike. The exam expects you to differentiate.
 
 ## 📐 Warehouse Layouts
 
-> **Citation.** The U-shape / I-shape / L-shape layout taxonomy and slotting principles are canonical in Tompkins, James A., White, John A., Bozer, Yavuz A. & Tanchoco, J.M.A., *Facilities Planning* (4th ed., John Wiley & Sons, 2010, the field's reference textbook) and in Frazelle, Edward H., *World-Class Warehousing and Material Handling* (2nd ed., McGraw-Hill, 2016). Slotting math and KPI benchmarks draw from WERC (Warehousing Education and Research Council) annual benchmarking reports (2024 ed.).
+> **Citation.** The U-shape / I-shape / L-shape layout taxonomy and slotting principles are canonical in Tompkins, James A., White, John A., Bozer, Yavuz A. & Tanchoco, J.M.A., *Facilities Planning* (4th ed., John Wiley & Sons, 2010, the field's reference textbook) and in Frazelle, Edward H., *World-Class Warehousing and Material Handling* (2nd ed., McGraw-Hill, 2016). Slotting math and KPI (Key Performance Indicator) benchmarks draw from WERC (Warehousing Education and Research Council) annual benchmarking reports (2024 ed.).
 
 Three classic layouts. CLTD expects you to know each.
 
@@ -151,7 +151,7 @@ Where do you put a newly received pallet?
 
 | Strategy | Logic |
 |----------|-------|
-| **Fixed location** | Same SKU always in the same slot |
+| **Fixed location** | Same SKU (Stock Keeping Unit) always in the same slot |
 | **Random / chaotic** | Any available slot; system tracks via WMS |
 | **Velocity-based** | Fast movers near pick face, slow movers in reserve |
 | **Class-based (ABC zones)** | Zones by ABC velocity, items random within zone |
@@ -169,9 +169,9 @@ Know each storage method's strengths.
 | Method | Density | Selectivity | Best for |
 |--------|---------|-------------|----------|
 | **Selective pallet racking** | Low | High | Most SKUs, broad assortment |
-| **Drive-in / drive-through racking** | High | Low (LIFO) | Few SKUs, deep storage |
+| **Drive-in / drive-through racking** | High | Low (LIFO (Last In, First Out)) | Few SKUs, deep storage |
 | **Push-back racking** | Medium-high | Medium (LIFO) | Limited aisles |
-| **Pallet flow / gravity flow** | High | Medium (FIFO) | Cold storage, FIFO required |
+| **Pallet flow / gravity flow** | High | Medium (FIFO (First In, First Out)) | Cold storage, FIFO required |
 | **Mezzanine** | Adds vertical | High | Light goods, manual pick |
 | **Shelving / bin** | Low | Very high | Small parts, e-com |
 | **AS/RS (auto storage/retrieval)** | Very high | Very high | High-throughput, automated |
@@ -206,7 +206,7 @@ The CLTD body of knowledge tests automation broadly. Know each.
 ✅ Predictable, low-variability SKUs
 ✅ 24/7 operations
 ✅ Tight quality / accuracy needs
-✅ Long-term horizon (5–10 years to ROI)
+✅ Long-term horizon (5–10 years to ROI (Return on Investment))
 
 ### When Automation LOSES
 
@@ -343,14 +343,14 @@ Labor is 40–60% of DC operating cost. CLTD tests:
 
 **Decision.** Tesla built a vertically-integrated warehouse stack at Lathrop and Shanghai that exemplifies the modern automated DC:
 
-- **Robotic outdoor yard storage**, Megapack units are stored outdoors in marshaled rows. Tesla's WMS tracks each unit by GPS + RFID; automated locomotive-style carriers shuttle units between staging zones.
+- **Robotic outdoor yard storage**, Megapack units are stored outdoors in marshaled rows. Tesla's WMS tracks each unit by GPS + RFID (Radio Frequency Identification); automated locomotive-style carriers shuttle units between staging zones.
 - **AS/RS for components**, battery cells and PCB sub-assemblies move via crane-based AS/RS systems inside the gigafactory storage zones.
 - **AGV / AMR fleet** for inter-zone moves, using Tesla's own LiDAR-equipped autonomous vehicles (derived from Autopilot/FSD technology stack).
 - **Pick-to-light + voice picking** for small-component sub-assembly bays.
 - **Dock-to-truck "kit" model**, Megapack units are pre-staged with their installation hardware kit (cables, mounts, manuals) at adjacent docks so outbound truck loads are pre-bundled.
 - **Real-time digital twin**, Tesla's manufacturing software (custom-built, not SAP/Oracle) gives planners a real-time 3D view of the entire production-warehouse-yard pipeline.
 
-**Outcome.** Megapack production cycle time dropped from ~5 days (2021) to ~2 days (2024). Throughput at Lathrop reached ~1 Megapack every ~12 minutes by Q4 2024. Yard utilization at Lathrop runs at ~80% of theoretical capacity high but managed via dynamic re-marshaling. Outbound shipping (truck for North America; rail for cross-country and ports for export) on-time rate ~97%. The Shanghai facility started production March 2024 and ramped to ~10 GWh annual run-rate by year-end. Notably, Tesla declined to use any third-party WMS or TMS preferring a build-it-yourself stack tightly integrated with manufacturing execution.
+**Outcome.** Megapack production cycle time dropped from ~5 days (2021) to ~2 days (2024). Throughput at Lathrop reached ~1 Megapack every ~12 minutes by Q4 2024. Yard utilization at Lathrop runs at ~80% of theoretical capacity high but managed via dynamic re-marshaling. Outbound shipping (truck for North America; rail for cross-country and ports for export) on-time rate ~97%. The Shanghai facility started production March 2024 and ramped to ~10 GWh annual run-rate by year-end. Notably, Tesla declined to use any third-party WMS or TMS (Transportation Management System) preferring a build-it-yourself stack tightly integrated with manufacturing execution.
 
 **Lesson for the exam / for practitioners.** Tesla Megapack illustrates the *modern automated DC* archetype that the CLTD exam tests in the warehouse-operations domain:
 
@@ -441,11 +441,11 @@ You now know:
 
 ## 🤔 Discussion (Socratic prompts)
 
-1. **The automation ROI debate.** A logistics director pitches a $20M AS/RS retrofit for a current manual DC. CFO models a 6-year payback. CEO worries about "automation lock-in", what if SKU mix shifts? Build both sides of the argument. What evidence would resolve it?
+1. **The automation ROI debate.** A logistics director pitches a $20M AS/RS retrofit for a current manual DC. CFO (Chief Financial Officer) models a 6-year payback. CEO (Chief Executive Officer) worries about "automation lock-in", what if SKU mix shifts? Build both sides of the argument. What evidence would resolve it?
 
 2. **AMR vs AGV in a brownfield site.** A 25-year-old DC with concrete-poured floors and uneven aisles is considering automation. AGVs need precise floor markings/wires. AMRs can map dynamically. Cost per unit is roughly comparable. Which to pick, and why does the building's age matter?
 
-3. **The 85% cube utilization wall.** Finance wants you to push from 75% to 88% utilization. Operations says it'll wreck pick rates. Sketch the math, when is finance right, when is operations right, and what compromise actually serves the P&L?
+3. **The 85% cube utilization wall.** Finance wants you to push from 75% to 88% utilization. Operations says it'll wreck pick rates. Sketch the math, when is finance right, when is operations right, and what compromise actually serves the P&L (Profit and Loss)?
 
 4. **In-source vs 3PL warehousing.** Your e-commerce volume is doubling in 12 months but uncertain whether the growth is durable. You can lease a new DC (5-year commitment, $40M build-out) or use a 3PL (variable cost, 30-day commitment, 25% higher per-unit cost). Frame the strategic decision.
 

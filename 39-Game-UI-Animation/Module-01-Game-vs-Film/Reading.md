@@ -51,7 +51,7 @@ At 60 frames per second, each frame has exactly **16.67 milliseconds** to comple
 4. Sample animation clips and blend them
 5. Run inverse kinematics
 6. Compute lighting (forward or deferred)
-7. Render geometry, VFX, and UI
+7. Render geometry, VFX, and UI (User Interface)
 8. Present the frame to the display
 
 The animation system typically gets between **1–3ms** of that budget. That constraint shapes every animation decision:
@@ -247,7 +247,7 @@ Understanding platform-specific constraints is essential for any animator moving
 | PlayStation 5 / Xbox Series X | 60–120 | 8.33–16.67ms | 1–2ms | 4 | Higher-end mobile GPU class |
 | PlayStation 4 / Xbox One | 30–60 | 16.67–33.33ms | 2–4ms | 4 | Common 30fps target for visually complex games |
 | Nintendo Switch | 30–60 | 16.67–33.33ms | 2–3ms | 4 | GPU is Tegra X1; VRAM-constrained |
-| iOS (modern) | 60 | 16.67ms | 1–2ms | 2 | Metal API; 2 bone influences for optimal GPU skinning |
+| iOS (modern) | 60 | 16.67ms | 1–2ms | 2 | Metal API (Application Programming Interface); 2 bone influences for optimal GPU skinning |
 | Android (mid-range) | 60 | 16.67ms | 2–4ms | 2 | OpenGL ES 3.0; high variance by device |
 | Web (desktop browser) | 60 | 16.67ms | N/A | N/A | CSS/JS animation; no bone skinning |
 | Web (mobile browser) | 60 (target), 30 (actual) | 16.67–33.33ms | N/A | N/A | Very resource-constrained; minimize animation complexity |

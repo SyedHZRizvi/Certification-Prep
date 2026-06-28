@@ -1,10 +1,10 @@
-# Module 3: Claude API & SDK Deep Dive 🔌
+# Module 3: Claude API (Application Programming Interface) & SDK (Software Development Kit) Deep Dive 🔌
 
 > **Why this module matters:** Anything you can do with Claude, you can do with a 30-line script once you know the API. The Messages API is small (one endpoint, ten or so parameters), but the details streaming semantics, batch economics, prompt caching, retries, error taxonomy, are what separate a junior engineer from one who can stand up a Claude-powered service that does not page anyone at 2 a.m.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Modules 1 and 2 (model tiers + prompting conventions)
-> - HTTP basics (status codes, headers, JSON, streaming responses, server-sent events)
+> - HTTP (Hypertext Transfer Protocol) basics (status codes, headers, JSON, streaming responses, server-sent events)
 > - Python OR TypeScript at intermediate level, the examples are language-equivalent
 > - Async programming basics (async/await, futures, promises)
 > - Environment variables and basic secret hygiene
@@ -182,7 +182,7 @@ console.log(response.content[0].type === "text" ? response.content[0].text : "")
 const stream = client.messages.stream({
   model: "claude-sonnet-4-6-20260301",
   max_tokens: 1024,
-  messages: [{ role: "user", content: "Stream a haiku about TCP/IP." }],
+  messages: [{ role: "user", content: "Stream a haiku about TCP (Transmission Control Protocol)/IP." }],
 });
 
 for await (const event of stream) {
@@ -211,7 +211,7 @@ Without streaming, the user waits for the full response before seeing a single c
 | Implementation complexity | Trivial | Slight, handle SSE / iterator |
 | Use when | Background jobs, batches | Anywhere a human is waiting |
 
-🎯 **Exam pattern:** *"A chat UI feels slow at 4 seconds. What is the single highest-impact engineering change?"* → **Stream the response** (TTFT drops to ~500 ms).
+🎯 **Exam pattern:** *"A chat UI (User Interface) feels slow at 4 seconds. What is the single highest-impact engineering change?"* → **Stream the response** (TTFT drops to ~500 ms).
 
 ### Streaming gotchas
 
@@ -346,7 +346,7 @@ for result in client.messages.batches.results(batch.id):
 - ✅ Bulk classification (sentiment, intent, language detection)
 - ✅ Synthetic data generation for fine-tuning
 - ✅ Re-running an entire eval suite after a prompt change
-- ❌ Anything user-facing (Batch SLA is hours, not seconds)
+- ❌ Anything user-facing (Batch SLA (Service Level Agreement) is hours, not seconds)
 - ❌ Anything that needs to chain to another LLM call immediately
 
 🎯 **Exam pattern:** *"A team wants to summarize 2M existing support tickets to enrich their knowledge base. The job can run overnight."* → **Batch API at 50% discount**.
@@ -471,8 +471,8 @@ These numbers vary by model and date, check the [console rate limits page](https
 ### API key formats
 
 - Anthropic direct: `sk-ant-api03-xxxxx` (or similar, version prefix changes)
-- AWS Bedrock: standard AWS SigV4, uses your IAM credentials
-- GCP Vertex: Google service account auth
+- AWS (Amazon Web Services) Bedrock: standard AWS SigV4, uses your IAM (Identity and Access Management) credentials
+- GCP (Google Cloud Platform) Vertex: Google service account auth
 
 ### Rules
 
@@ -521,7 +521,7 @@ client = AnthropicVertex(
 )
 ```
 
-Same `client.messages.create(...)` interface across all three. **Code portability between hosts is excellent.** The model SKU naming differs slightly across platforms (Bedrock uses `anthropic.claude-sonnet-4-6-v1:0`-style IDs); check the per-platform docs.
+Same `client.messages.create(...)` interface across all three. **Code portability between hosts is excellent.** The model SKU (Stock Keeping Unit) naming differs slightly across platforms (Bedrock uses `anthropic.claude-sonnet-4-6-v1:0`-style IDs); check the per-platform docs.
 
 ---
 
@@ -608,12 +608,12 @@ This is the layered answer expected of an architect.
 **The technical pattern (paraphrasing their public talks).**
 - **Sonnet-class model** as primary; cheaper tier for trivial routing
 - **Heavy use of prompt caching** for stable product/policy context, they did not disclose exact percentages but cited "transformative" unit economics impact
-- **Streaming** for real-time agent UX
+- **Streaming** for real-time agent UX (User Experience)
 - **Tool use** for account lookups, refund processing, order status (Module 4)
 - **Observability via internal stack** plus Anthropic's usage reporting
 - **Tier 4+ rate limits** with reserved capacity through Anthropic Sales
 
-**The reported business impact.** Klarna's earnings disclosure attributed ~$40M/year in operating efficiency to the AI agent. Their CEO Sebastian Siemiatkowski has repeatedly cited the AI assistant as a key margin lever.
+**The reported business impact.** Klarna's earnings disclosure attributed ~$40M/year in operating efficiency to the AI agent. Their CEO (Chief Executive Officer) Sebastian Siemiatkowski has repeatedly cited the AI assistant as a key margin lever.
 
 **Lesson for the architect.**
 - **Production scale changes the playbook.** At Klarna's volume, every architectural choice (tier, caching, batch vs sync, rate-limit headroom) compounds.

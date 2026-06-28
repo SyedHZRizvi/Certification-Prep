@@ -46,7 +46,7 @@ The **golden set** (a.k.a. eval set, regression set, benchmark set) is your samp
 
 ### What goes in a good golden set
 
-| Component | Count for an MVP |
+| Component | Count for an MVP (Minimum Viable Product) |
 |-----------|------------------|
 | Easy, typical cases | 30–50 |
 | Common edge cases | 20–30 |
@@ -186,14 +186,14 @@ When two humans rate the same output, do they agree? Standard metrics:
 |-----------|----------|-------|
 | **Anthropic evals harness** | Cross-Claude evals | Used internally; partially open-sourced |
 | **OpenAI Evals** | General-purpose, large community | YAML/JSON-defined evals, runs against any provider |
-| **DeepEval** (confident-ai) | Pytest-style, RAG-focused | Good developer ergonomics |
+| **DeepEval** (confident-ai) | Pytest-style, RAG (Retrieval-Augmented Generation)-focused | Good developer ergonomics |
 | **RAGAS** | RAG pipelines specifically | Faithfulness, answer relevance, context precision |
-| **LangSmith Evaluations** | LangChain stack | UI for human review, dataset versioning |
+| **LangSmith Evaluations** | LangChain stack | UI (User Interface) for human review, dataset versioning |
 | **Promptfoo** | Quick prompt A/B testing | YAML config, great for CI |
 | **LlamaIndex Evals** | LlamaIndex pipelines | Tightly integrated |
 | **Inspect (UK AI Safety Institute)** | Capability and safety evals | Used by AISI for frontier model testing |
 | **lm-evaluation-harness** | Academic benchmarks (HELM, MMLU) | Reproducible academic eval |
-| **Braintrust** | SaaS-hosted eval platform | Dataset, judge, dashboards |
+| **Braintrust** | SaaS (Software as a Service)-hosted eval platform | Dataset, judge, dashboards |
 | **Phoenix (Arize)** | Tracing + eval, open-source | Observability + evals together |
 
 ### Picking a framework
@@ -253,7 +253,7 @@ You have a candidate prompt that beats the current one on the golden set. Should
 
 1. Pick a randomization key (user ID, request ID, session ID)
 2. Hash → bucket → assign A or B
-3. Log: bucket, input, output, downstream signals (CTR, conversion, satisfaction)
+3. Log: bucket, input, output, downstream signals (CTR (Click-Through Rate), conversion, satisfaction)
 4. After N requests per arm OR T days, compare metrics with statistical significance
 5. Ramp up the winner; document the loser
 
@@ -447,7 +447,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 7](../Module-07-Adversarial-Defense/Reading.md) extends evals to safety/red-team work. [Module 8](../Module-08-Production-Scale/Reading.md) integrates evals into CI and observability.
-> - Cross-course: AWS AI Practitioner (course 07) covers Bedrock Evaluations. Azure AI Engineer (course 08) covers Azure Prompt Flow Evals.
+> - Cross-course: AWS (Amazon Web Services) AI Practitioner (course 07) covers Bedrock Evaluations. Azure AI Engineer (course 08) covers Azure Prompt Flow Evals.
 > - Practice: Practice Exam 2 has ~4 questions from this module.
 
 ---
@@ -455,7 +455,7 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 Liu et al. (2023). *G-Eval: NLG Evaluation using GPT-4 with Better Human Alignment*. EMNLP.
+- 📄 Liu et al. (2023). *G-Eval: NLG (Natural Language Generation) Evaluation using GPT-4 with Better Human Alignment*. EMNLP.
 - 📄 Zheng et al. (2023). *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena*. NeurIPS.
 - 📄 Liang et al. (2022). *Holistic Evaluation of Language Models (HELM)*. Stanford.
 - 📄 Chiang et al. (2023). *LMSYS Chatbot Arena methodology*.

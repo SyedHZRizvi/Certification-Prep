@@ -4,8 +4,8 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The forest/domain/OU model and FSMO roles, [Module 1](../Module-01-Active-Directory/Reading.md)
-> - Basic Microsoft Entra ID concepts (users, groups, conditional access), [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md)
-> - HTTP/HTTPS basics, what TLS does, what a JWT is
+> - Basic Microsoft Entra ID concepts (users, groups, conditional access), [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC (Role-Based Access Control)/Reading.md)
+> - HTTP (Hypertext Transfer Protocol)/HTTPS (HTTP Secure) basics, what TLS (Transport Layer Security) does, what a JWT is
 >
 > If those are shaky, pause and review. This module assumes you can already explain "what is Entra ID", and gets straight to "how do we marry it to AD."
 
@@ -17,7 +17,7 @@ Dr. Rivera works at St. Augustine's, a 4,200-bed hospital system in Texas. Every
 
 But Dr. Rivera also publishes research, reviews journal articles, signs into Microsoft 365 from her laptop at home, joins Teams calls from her phone at the airport, and accesses the hospital's Azure-hosted insurance-claim portal, all of which run on **Microsoft Entra ID**, the cloud directory.
 
-If those two identities aren't connected, Dr. Rivera lives in a horror movie: two passwords, two MFA methods, two help-desk queues, and on the day IT resets her password, she's locked out of half her tools for hours.
+If those two identities aren't connected, Dr. Rivera lives in a horror movie: two passwords, two MFA (Multi-Factor Authentication) methods, two help-desk queues, and on the day IT resets her password, she's locked out of half her tools for hours.
 
 The fix is **hybrid identity**: a sync engine that copies users from AD to Entra ID (and increasingly, attributes back the other way), a sign-in method that lets a single password work in both clouds, and a device-join model that makes both Windows and Azure see the laptop as "trusted."
 
@@ -33,7 +33,7 @@ Microsoft has two production sync agents, and the exam tests the choice between 
 |---------|--------------------------------|------------------------------|
 | Where it runs | Single Windows Server, with SQL Server LocalDB or full SQL | Lightweight agent, install on 2+ servers for HA |
 | Memory/disk footprint | Heavy (SQL, full schema cache) | Light (no local DB; cloud rules) |
-| Source AD topology | Single multi-forest setup | **Multiple disconnected forests**, M&A scenarios |
+| Source AD topology | Single multi-forest setup | **Multiple disconnected forests**, M&A (Mergers and Acquisitions) scenarios |
 | Group writeback | Yes | Yes (general availability since 2023) |
 | Password hash sync | Yes | Yes |
 | Pass-through auth (PTA) | Yes | **No** (use PHS instead) |
@@ -75,7 +75,7 @@ User types password at sign-in
 The on-prem AD password hash (already MD4 of the password) is re-hashed via PBKDF2 + HMAC-SHA256 + salt, then synced to Entra ID. The on-prem hash is *never* sent. Entra ID stores only the re-hashed version. Re-syncs occur every 2 minutes.
 
 **Pros:**
-- No on-prem dependency at sign-in (survives WAN/DC outage)
+- No on-prem dependency at sign-in (survives WAN (Wide Area Network)/DC outage)
 - **Smart Lockout** at the Entra ID edge protects on-prem AD from spray attacks
 - Microsoft can scan for **leaked credentials** matches in the wild
 - Simplest to deploy and operate
@@ -125,7 +125,7 @@ The on-prem **AD FS** farm (with WAP / Web Application Proxy in DMZ) becomes the
 - Sign-ins fail if AD FS is down
 - Microsoft is actively pushing customers *off* AD FS (announced retirement focus 2023+)
 
-🚨 **Trap on the exam:** Microsoft 2024+ guidance is *"Migrate from federation to cloud authentication (PHS or PTA + Seamless SSO)."* If a question describes a federation deployment and asks "What should the admin recommend going forward?", the answer is almost always "migrate to PHS + Seamless SSO."
+🚨 **Trap on the exam:** Microsoft 2024+ guidance is *"Migrate from federation to cloud authentication (PHS or PTA + Seamless SSO (Single Sign-On))."* If a question describes a federation deployment and asks "What should the admin recommend going forward?", the answer is almost always "migrate to PHS + Seamless SSO."
 
 ---
 
@@ -140,7 +140,7 @@ Seamless SSO works with **PHS or PTA** (not Federation, AD FS does its own SSO).
 
 ### Requirements
 - User must be on a **domain-joined** (AD) device
-- Device must be on the corporate network or have line-of-sight to a DC (VPN ok)
+- Device must be on the corporate network or have line-of-sight to a DC (VPN (Virtual Private Network) ok)
 - Browser must trust the Entra ID intranet URL (`autologon.microsoftazuread-sso.com`)
 - `AZUREADSSOACC` computer account password should be rotated every **30 days** for security
 
@@ -162,7 +162,7 @@ Update-AzureADSSOForest -OnPremCredentials (Get-Credential)
 |------|--------------------------------|-------------|----------------|
 | **Entra Registered** | Entra ID only (no AD) | Personal devices (BYOD) | App-level SSO (Outlook, Teams) |
 | **Entra Joined** | Entra ID only (cloud-native device) | Cloud-first orgs, remote-first workforces, frontline devices | Full SSO via Primary Refresh Token |
-| **Hybrid Entra Joined** | Both AD **and** Entra ID | Org has on-prem investments (file shares, GPOs, legacy apps) | Full SSO + on-prem auth + GPO + Conditional Access |
+| **Hybrid Entra Joined** | Both AD **and** Entra ID | Org has on-prem investments (file shares, GPOs, legacy apps) | Full SSO + on-prem auth + GPO (Group Policy Object) + Conditional Access |
 
 ### Hybrid Entra Join automation prerequisites
 
@@ -203,7 +203,7 @@ Microsoft retired the legacy "MFA settings" page in **September 2025**. Today, a
 
 ## 🏢 Microsoft Entra Domain Services (Entra DS)
 
-Different beast. Entra DS = a **managed domain** in Azure that speaks **LDAP, NTLM, Kerberos**, for legacy apps that need on-prem-style AD but you don't want to run DCs.
+Different beast. Entra DS = a **managed domain** in Azure that speaks **LDAP (Lightweight Directory Access Protocol), NTLM, Kerberos**, for legacy apps that need on-prem-style AD but you don't want to run DCs.
 
 | Feature | AD DS (on-prem) | Entra DS (managed) | Entra ID (cloud) |
 |---------|----------------|-------------------|------------------|
@@ -218,7 +218,7 @@ Different beast. Entra DS = a **managed domain** in Azure that speaks **LDAP, NT
 
 ---
 
-## 🌐 Cross-Tenant Access Settings (B2B/B2C, the 2024+ replacements)
+## 🌐 Cross-Tenant Access Settings (B2B (Business-to-Business)/B2C (Business-to-Consumer), the 2024+ replacements)
 
 If you collaborate with a partner who also has an Entra ID tenant, modern cross-tenant access settings let you:
 
@@ -237,7 +237,7 @@ This replaced/extended the older "B2B collaboration" model. AZ-801 tests modern 
 **Order these steps:**
 
 1. ✅ Verify on-prem AD is healthy (`repadmin /replsum`, `dcdiag /v`); document UPN suffixes
-2. ✅ Add and verify a **custom DNS domain** in Entra ID (`contoso.com`) so users get clean `alice@contoso.com` UPNs instead of `alice@contoso.onmicrosoft.com`
+2. ✅ Add and verify a **custom DNS (Domain Name System) domain** in Entra ID (`contoso.com`) so users get clean `alice@contoso.com` UPNs instead of `alice@contoso.onmicrosoft.com`
 3. ✅ On a dedicated Windows Server 2022 (member server, NOT a DC), install **Microsoft Entra Connect Sync** (or **Cloud Sync** agent on 2+ servers if Connect features aren't needed)
 4. ✅ In the wizard, choose **Password Hash Sync** + **Enable single sign-on**
 5. ✅ Filter sync scope (start with one pilot OU, expand later)
@@ -252,7 +252,7 @@ This replaced/extended the older "B2B collaboration" model. AZ-801 tests modern 
 
 ## 📊 Case Study, The 2023 Midnight Blizzard / Storm-0558 Entra ID Token-Signing Key Compromise
 
-**Situation.** In July 2023, Microsoft disclosed that **Storm-0558** (a China-state-sponsored adversary tracked as APT15 / Salt Typhoon family) had forged Entra ID auth tokens for ~25 organizations including the US State Department, the US Department of Commerce, and at least one EU foreign ministry (Microsoft Security Response Center, *Mitigation for China-Based Threat Actor Storm-0558*, July 11 2023; CISA Cybersecurity Advisory AA23-193A). The root cause: Storm-0558 had stolen a **Microsoft Account (MSA) consumer signing key** in 2021, then exploited a validation flaw to use that *consumer* key to sign *enterprise* Entra ID tokens, a cross-trust-boundary bug Microsoft had not detected for almost two years. Affected tenants' Outlook Web Access and OWA-for-Business mail was accessible to the adversary; in some cases the adversary maintained access for weeks before the State Department's SOC noticed anomalous mail-API patterns in their **Microsoft Purview audit logs**.
+**Situation.** In July 2023, Microsoft disclosed that **Storm-0558** (a China-state-sponsored adversary tracked as APT15 / Salt Typhoon family) had forged Entra ID auth tokens for ~25 organizations including the US State Department, the US Department of Commerce, and at least one EU foreign ministry (Microsoft Security Response Center, *Mitigation for China-Based Threat Actor Storm-0558*, July 11 2023; CISA Cybersecurity Advisory AA23-193A). The root cause: Storm-0558 had stolen a **Microsoft Account (MSA) consumer signing key** in 2021, then exploited a validation flaw to use that *consumer* key to sign *enterprise* Entra ID tokens, a cross-trust-boundary bug Microsoft had not detected for almost two years. Affected tenants' Outlook Web Access and OWA-for-Business mail was accessible to the adversary; in some cases the adversary maintained access for weeks before the State Department's SOC (Security Operations Center) noticed anomalous mail-API (Application Programming Interface) patterns in their **Microsoft Purview audit logs**.
 
 **Decision.** The US Cyber Safety Review Board (CSRB) published its formal review (March 2024) and concluded that the breach was **preventable**, naming five remediation areas Microsoft committed to:
 
@@ -269,11 +269,11 @@ This replaced/extended the older "B2B collaboration" model. AZ-801 tests modern 
 - *Why* Microsoft recommends **PHS + Seamless SSO** over federation in 2026 (operational simplicity + Microsoft's commitment to harden its own IdP > the marginal benefit of on-prem token issuance, which Storm-0558 ironically vindicated).
 - *Why* **Conditional Access** with device-compliance enforcement matters even on cloud-only deployments (any layer can be compromised; never depend on a single control).
 - *Why* **CAE** is now default-on (revokes tokens within minutes of admin disable / risk detection, rather than waiting for the 1-hour access-token TTL).
-- *Why* **continuous logging and SIEM ingestion** (Defender for Cloud + Sentinel) matters more than ever, without logs, you cannot detect.
+- *Why* **continuous logging and SIEM (Security Information and Event Management) ingestion** (Defender for Cloud + Sentinel) matters more than ever, without logs, you cannot detect.
 
 **Discussion (Socratic).**
 - **Q1.** Storm-0558 specifically used the stolen key to forge tokens for Outlook Web Access. Conditional Access policies *did* exist on the victim tenants, but the policies evaluated at sign-in only, and the forged tokens bypassed sign-in. **Continuous Access Evaluation (CAE)** is now default-on. Build the case that CAE is the single most important post-Storm-0558 control, and explain the operational trade-off (CAE can revoke tokens during a session, which feels disruptive to users).
-- **Q2.** A regulated financial-services firm with 8,000 employees still runs AD FS. Their CISO points to Storm-0558 and says, *"This is why we keep on-prem federation."* Argue both sides: does keeping AD FS reduce or increase risk in 2026?
+- **Q2.** A regulated financial-services firm with 8,000 employees still runs AD FS. Their CISO (Chief Information Security Officer) points to Storm-0558 and says, *"This is why we keep on-prem federation."* Argue both sides: does keeping AD FS reduce or increase risk in 2026?
 - **Q3.** Microsoft's published guidance in 2024 was "passwordless first." A 50-person nonprofit cannot afford FIDO2 hardware keys for everyone. What's the *practical* minimum bar for passwordless in this scenario, and how do you stage the rollout while still defending against the next IdP-layer attack?
 
 ---
@@ -334,13 +334,13 @@ You now know:
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
 2. ✏️ Take the [Quiz](./Quiz.md)
 3. 📋 Review the [Cheat-Sheet](./Cheat-Sheet.md)
-4. ➡️ Move to [Module 3: Networking, DNS & DHCP](../Module-03-Networking-DNS/Reading.md)
+4. ➡️ Move to [Module 3: Networking, DNS & DHCP (Dynamic Host Configuration Protocol)](../Module-03-Networking-DNS/Reading.md)
 
 ---
 
 > **Where this leads.**
 > - Inside this course: Module 6's Azure Arc onboarding uses the hybrid identity you built here; Module 8's Defender for Servers uses Entra-joined / hybrid-joined devices for Conditional Access policies; Module 9's Azure Backup vault relies on Entra-based RBAC.
-> - Cross-course: [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md) covers Entra ID standalone (cloud-only). [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md) covers the IAM principles. [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/README.md) modules show how managed identities authenticate AI workloads.
+> - Cross-course: [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md) covers Entra ID standalone (cloud-only). [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md) covers the IAM (Identity and Access Management) principles. [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/README.md) modules show how managed identities authenticate AI workloads.
 > - Practice: Practice Exam 1 has 4 questions on hybrid identity; Practice Exam 2 has 8 (Entra Joined, Conditional Access, CAE); Final Mock has a case study integrating Connect Sync, PHS, and Hybrid Entra Join.
 
 ---
@@ -349,7 +349,7 @@ You now know:
 
 1. **Connect Sync vs Cloud Sync after a merger.** Two companies merge, each has its own Entra ID tenant. The plan is to consolidate into one Entra tenant over 18 months. During the consolidation, the IT team must sync the *acquired* company's forest into the *surviving* tenant. Defend the choice between Entra Connect Sync (running on a new staging server) vs Cloud Sync (lightweight agent on existing servers). Which scales better for the eventual decommission of the acquired forest?
 2. **Federation in 2026.** A 9,000-employee Fortune-500 bank still runs AD FS because regulators require "on-prem token issuance for privileged users." Build the case that Microsoft's PHS + SSSO + Conditional Access + Privileged Identity Management is now operationally and security-wise *superior* to federation for the bank, and identify the one or two scenarios where AD FS still wins.
-3. **PHS and the privacy regulator.** A German subsidiary's data-protection officer (GDPR-influenced) refuses to allow any password-derived material to leave EU on-prem infrastructure. The org's parent in the US has standardized on PHS. Negotiate the architectural compromise: PTA-only with PHS off? Multi-region Connect Sync with EU isolation? AD FS for EU users only? Which preserves both compliance and operational simplicity?
+3. **PHS and the privacy regulator.** A German subsidiary's data-protection officer (GDPR (General Data Protection Regulation)-influenced) refuses to allow any password-derived material to leave EU on-prem infrastructure. The org's parent in the US has standardized on PHS. Negotiate the architectural compromise: PTA-only with PHS off? Multi-region Connect Sync with EU isolation? AD FS for EU users only? Which preserves both compliance and operational simplicity?
 4. **Hybrid Join rollout for 12,000 devices.** A 12,000-device estate has 80% Windows 10/11 domain-joined laptops and 20% Macs. The IT director wants every Windows device Hybrid Entra Joined within 90 days. Build the realistic rollout plan: which prerequisites must be in place (Connect Sync version, network reachability of `enterpriseregistration.windows.net`, GPO for the Intranet Zone), and how do you handle the 20% of devices (Macs) that cannot Hybrid Join?
 5. **Storm-0558 lesson for your tenant.** As a SOC manager, write the 5-line policy that your Conditional Access team must enforce going forward, given that even Microsoft's IdP can be compromised. Justify why each line is non-negotiable and explain the user-experience cost of each.
 

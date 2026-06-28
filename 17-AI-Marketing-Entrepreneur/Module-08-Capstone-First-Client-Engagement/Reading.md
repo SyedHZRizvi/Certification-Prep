@@ -3,7 +3,7 @@
 > **Why this module matters:** This is the final exam in disguise, the complete playbook for landing, onboarding, delivering, and retaining your first AI-marketing agency client. Everything from Modules 1–7 converges here into a single 90-day operating plan. Complete this module either by running a real first engagement (recommended) or by simulating one with the templates below.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Everything in Modules 1–7, this capstone integrates the wedge, the SKU, the acquisition channels, the proposal + contract, the tool stack, the (potential) first hire, and the financial discipline into one 47-day arc
+> - Everything in Modules 1–7, this capstone integrates the wedge, the SKU (Stock Keeping Unit), the acquisition channels, the proposal + contract, the tool stack, the (potential) first hire, and the financial discipline into one 47-day arc
 > - A drafted positioning sentence ([Module 1](../Module-01-Niche-Service-Offering/Reading.md)), a productized SKU ([Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md)), a channel choice ([Module 3](../Module-03-Client-Acquisition-Channels/Reading.md)), and at least a proposal template + contract template ([Module 4](../Module-04-Pricing-Proposals-Contracts/Reading.md))
 > - The minimum tool stack from [Module 5](../Module-05-AI-Marketing-Tech-Stack-Cost-Efficient/Reading.md) (Tier 2 if you're running outbound; Tier 1 if pure inbound) and the bank-account setup + tax bucket from [Module 7](../Module-07-Financials-Cash-Flow-Taxes/Reading.md)
 > - Awareness that this module is the simulator + scoreboard, Option A walks through the engagement as a portfolio asset; Option B walks it through against a real client. Both are valid completion paths
@@ -14,7 +14,7 @@
 
 ## 🎬 A Story: From Cold Email To Retainer In 47 Days
 
-It's March 2025. Vera has just finished an AI-marketing course (this one). She wants to launch a productized service: **"The Klaviyo Flow Build for Shopify DTC brands $1M–$10M revenue, $6,500 flat, 14 days."**
+It's March 2025. Vera has just finished an AI-marketing course (this one). She wants to launch a productized service: **"The Klaviyo Flow Build for Shopify DTC (Direct-to-Consumer) brands $1M–$10M revenue, $6,500 flat, 14 days."**
 
 Here is the entire 47-day arc, day by day, from cold email to her first signed retainer:
 
@@ -76,7 +76,7 @@ Carrd ($19/yr), Framer ($15/mo free tier), or Notion. **One** page. Includes:
 
 Per Module 3:
 
-- Apollo ($79/mo) for B2B data
+- Apollo ($79/mo) for B2B (Business-to-Business) data
 - Smartlead ($39/mo) for sending
 - 3 Workspace inboxes ($18/mo)
 - LinkedIn Sales Navigator ($99/mo, optional)
@@ -117,7 +117,7 @@ We cover this in detail next. Aim for 45 minutes. Take detailed notes.
 
 ### Step 10, Send The Proposal
 
-Within 48 hours of the call. Use the template from Module 4, 3 options, ROI projection, 5–7 day expiration.
+Within 48 hours of the call. Use the template from Module 4, 3 options, ROI (Return on Investment) projection, 5–7 day expiration.
 
 **Deliverable:** Proposal sent via PandaDoc / Better Proposals / Google Docs.
 
@@ -440,9 +440,9 @@ Track these every week:
 
 Discussed in opening. 47 days, $38,500 contracted (project + retainer).
 
-### Case 2, Diego's B2B SaaS launch (Module 3 carryover)
+### Case 2, Diego's B2B SaaS (Software as a Service) launch (Module 3 carryover)
 
-30 days, 3 audits + 1 retainer. $11,750 cash + $6,500/mo ARR.
+30 days, 3 audits + 1 retainer. $11,750 cash + $6,500/mo ARR (Annual Recurring Revenue).
 
 ### Case 3, Brett Williams's first 30 days (Designjoy public)
 
@@ -452,7 +452,7 @@ Lesson: There's more than one path. Vera ran outbound; Williams ran pure inbound
 
 ### Case 4, Anthony Pierri's FletchPMM positioning launch (public)
 
-Pierri publicly shared on LinkedIn that his first FletchPMM engagement came from a single LinkedIn post that went moderately viral. The post described his POV on B2B SaaS positioning; a CEO commented; he responded; the engagement closed at $25K. Lesson: **content that is sharp on positioning is itself a sales asset.**
+Pierri publicly shared on LinkedIn that his first FletchPMM engagement came from a single LinkedIn post that went moderately viral. The post described his POV on B2B SaaS positioning; a CEO (Chief Executive Officer) commented; he responded; the engagement closed at $25K. Lesson: **content that is sharp on positioning is itself a sales asset.**
 
 ### Case 5, A "first 5 clients via Hampton" pattern
 
@@ -466,7 +466,7 @@ Multiple anonymized Hampton members have described their first 5 agency clients 
 
 **Decision.** Flynn ran what is now the canonical first-engagement playbook decades before this course documented it. The mechanics: (1) he built a sample deliverable (a 100-page LEED AP study guide compiled from his blog content) BEFORE he sold anything same logic as §"Step 2 Build Your Sample Deliverable" in this module's 12-step playbook; (2) he priced it at $19.95 (not $9.95, not $29.95) after testing with three early readers the exact "value-based pricing" question Module 4 §"Pricing Mindset 1" describes; (3) he wrote a single launch blog post explaining the guide and why he made it, with a Buy Now link to a manual PayPal page (no Stripe, no funnel software, no fancy landing page the "Carrd-level minimum" §"Step 3" calls for); (4) he committed to writing a "make-or-break" blog post documenting the full launch revenue publicly, which itself became the marketing engine for *future* products (the testimonial-and-public-track-record loop in §"Getting The Testimonial"). The first launch ran on the same blog, with the same audience, at zero marketing spend. The single tactical decision that distinguished Flynn's launch from most beginner attempts: he priced for the *value of passing the LEED exam* (industry-relevant, ~$2,500 expected income lift), not for the *cost of producing the PDF* (his time at $0). This is exactly Lena's "outcome value" frame from Module 4.
 
-**Outcome.** Verified from Flynn's public income reports (he published monthly income reports from October 2008 through December 2017, all archived at smartpassiveincome.com/income-reports): October 2008 first launch generated $7,906.55 in PDF sales over 30 days; by January 2009 monthly revenue had stabilized at $4,000–$6,000/mo; by October 2010 (24 months in), Flynn was earning $30,000+/month from the LEED study guide alone, with three additional products layered on. The pivotal Year-2 decision: instead of building more LEED products (which had a finite TAM of US/Canada LEED candidates), Flynn pivoted to teaching *the model that produced the LEED business* launching Smart Passive Income (smartpassiveincome.com) in July 2010 as the meta-product. The first SPI podcast episode (July 8, 2010) is the public artifact of the pivot. By 2015, SPI had crossed $2M annual revenue across courses, affiliate income, and the SPI podcast. Crucially: Flynn never hired a sales team, never ran outbound, never gated content behind paywalls he ran *pure inbound* from blog + podcast for 12 years, and every transaction was self-serve via Stripe (after 2010). The compounding lesson: the public income reports themselves became Flynn's most-cited acquisition asset, because they functioned as a 10-year-long quantified testimonial.
+**Outcome.** Verified from Flynn's public income reports (he published monthly income reports from October 2008 through December 2017, all archived at smartpassiveincome.com/income-reports): October 2008 first launch generated $7,906.55 in PDF sales over 30 days; by January 2009 monthly revenue had stabilized at $4,000–$6,000/mo; by October 2010 (24 months in), Flynn was earning $30,000+/month from the LEED study guide alone, with three additional products layered on. The pivotal Year-2 decision: instead of building more LEED products (which had a finite TAM (Total Addressable Market) of US/Canada LEED candidates), Flynn pivoted to teaching *the model that produced the LEED business* launching Smart Passive Income (smartpassiveincome.com) in July 2010 as the meta-product. The first SPI podcast episode (July 8, 2010) is the public artifact of the pivot. By 2015, SPI had crossed $2M annual revenue across courses, affiliate income, and the SPI podcast. Crucially: Flynn never hired a sales team, never ran outbound, never gated content behind paywalls he ran *pure inbound* from blog + podcast for 12 years, and every transaction was self-serve via Stripe (after 2010). The compounding lesson: the public income reports themselves became Flynn's most-cited acquisition asset, because they functioned as a 10-year-long quantified testimonial.
 
 **Lesson for the practitioner.** Flynn's first-engagement story is the cleanest publicly documented version of this module's 12-step playbook executed in 2008 eight years before the playbook was even formalized. Every step has a Flynn analog: §"Step 1 Wedge Lock" = LEED AP exam (vertical-by-deliverable wedge from Module 1); §"Step 2 Sample Deliverable" = the 100-page guide built before any sale; §"Step 3 One-Page Site" = the blog he already had; §"Step 7 Outbound + Inbound" = zero outbound, pure inbound; §"Step 11 Close" = the launch blog post with PayPal link; §"Step 12 Upsell" = subsequent products to the same audience. The deepest transferable lesson is **public income reporting as a compounding sales asset**. Flynn's monthly income reports (starting October 2008) were initially just personal accountability, but they became the single highest-converting trust signal in his marketing quantified testimonials of his own success that competitors couldn't replicate without doing the work themselves. For an AI-marketing operator, this maps to the §"Getting The Testimonial" section: not just collecting client testimonials, but also documenting *your own* journey publicly (the §"Discovery Call → Proposal → Close" sequence) as content fuel for future inbound.
 

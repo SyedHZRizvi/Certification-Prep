@@ -1,4 +1,4 @@
-# Module 2: Capstone 1, SEO + Content Audit 🔍
+# Module 2: Capstone 1, SEO (Search Engine Optimization) + Content Audit 🔍
 
 > **Why this module matters:** This is your first portfolio piece. By end of Module 2, you'll have a 15–20 page audit document, a 90-day content roadmap, and a public link you can put on LinkedIn. Most students who land their first marketing job credit *this* capstone.
 
@@ -14,7 +14,7 @@
 
 Imagine someone call him Alex three years into his marketing career, trying to break into senior roles. He's done good work at his agency, but his LinkedIn says nothing specific. He's read every "how to portfolio" article and made zero progress.
 
-One Saturday morning, he scrolls Twitter and sees an indie SaaS founder named Lina post: *"Anyone want to do a free SEO audit on my product for portfolio purposes? I'll give a public testimonial."*
+One Saturday morning, he scrolls Twitter and sees an indie SaaS (Software as a Service) founder named Lina post: *"Anyone want to do a free SEO audit on my product for portfolio purposes? I'll give a public testimonial."*
 
 Alex replies in 30 seconds: *"I'll take it. Done in 14 days."*
 
@@ -98,7 +98,7 @@ Ahrefs is the gold standard. SEMrush is the alternative. You only need one for t
 **What you'll do:**
 
 1. **Sign up & verify the domain.**
-   - If it's your own site: verify via DNS or HTML file.
+   - If it's your own site: verify via DNS (Domain Name System) or HTML file.
    - If it's a public site: just enter the URL, Ahrefs will show estimated data.
 
 2. **Pull the Site Explorer report.**
@@ -166,11 +166,11 @@ Ahrefs is the gold standard. SEMrush is the alternative. You only need one for t
 5. Images missing alt text (count + worst offenders)
 6. Pages with no internal links pointing in (orphan pages)
 7. Slow-loading pages (over 3 seconds)
-8. Pages with mixed HTTP/HTTPS content
+8. Pages with mixed HTTP (Hypertext Transfer Protocol)/HTTPS (HTTP Secure) content
 9. Sitemap missing or stale
 10. Canonical issues
 
-Screenshot each of these from the Screaming Frog UI. Use them in your audit.
+Screenshot each of these from the Screaming Frog UI (User Interface). Use them in your audit.
 
 ---
 
@@ -195,7 +195,7 @@ If you own the site (or your subject does and will share), GSC is gold.
 
 **What to grab:**
 - Total clicks + impressions for last 12 months
-- Average CTR
+- Average CTR (Click-Through Rate)
 - Average position
 - Top 50 queries (export CSV)
 - Top 50 pages (export CSV)
@@ -382,13 +382,13 @@ The 90-second pitch:
 | **Domain Rating (DR)** | Ahrefs' 0–100 score of backlink strength |
 | **Keyword Difficulty (KD)** | Ahrefs' 0–100 estimate of how hard it is to rank |
 | **Search Volume** | Estimated monthly searches for a query |
-| **SERP** | Search Engine Results Page |
+| **SERP (Search Engine Results Page)** | Search Engine Results Page |
 | **Content Gap** | Keywords competitors rank for that you don't |
 | **Top Pages** | Highest-traffic existing pages on a site |
 | **Quick Wins** | Keywords ranked at positions 8–20 that could move up easily |
 | **Technical SEO** | The crawlability / indexability layer (titles, redirects, canonicals, etc.) |
 | **Content Roadmap** | Prioritized list of articles to publish, with target keywords |
-| **Core Web Vitals** | Google's UX metrics: LCP, FID/INP, CLS |
+| **Core Web Vitals** | Google's UX (User Experience) metrics: LCP, FID/INP, CLS |
 | **Orphan Page** | A page with no internal links pointing to it |
 | **Topical Authority** | Comprehensive coverage of a topic across many pages |
 | **EEAT** | Google's quality signals: Experience, Expertise, Authoritativeness, Trustworthiness |

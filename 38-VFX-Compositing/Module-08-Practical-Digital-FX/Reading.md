@@ -48,7 +48,7 @@ Each camera transition in *1917* required DNEG compositors to perform a multi-st
 
 The sequence where Lance Corporal Schofield runs through the burning French town of Écoust was shot against a limited standing set a single street facade with DNEG adding:
 
-- **DMP extensions:** Entire blocks of burned-out French buildings painted in Photoshop and projected onto geometry in Nuke
+- **DMP (Data Management Platform) extensions:** Entire blocks of burned-out French buildings painted in Photoshop and projected onto geometry in Nuke
 - **Particle FX:** Embers, ash, and smoke particles integrated into the live plate (Trapcode Particular for small-scale debris; Houdini for the large volume smoke)
 - **Digital extras:** CG soldiers composited into the background using digital double integration
 - **Atmospheric fire effects:** Multiple fire elements composited in Screen/Add blend mode to build the visual density of a burning city

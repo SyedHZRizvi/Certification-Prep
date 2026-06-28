@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI-Animation/Module-04-Logo-Brand-Motion/Reading/
+permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-04-Logo-Brand-Motion/Reading/
 title: "Module 4: Logo & Brand Motion"
 ---
 

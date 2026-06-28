@@ -1,10 +1,10 @@
 # Module 1: AWS Foundations & Well-Architected Framework ☁️
 
-> **Why this module matters:** The exam doesn't just ask "what does S3 do?", it asks "which design is the *best* fit?" To answer that, you need a mental model of AWS's global infrastructure, who's responsible for what, and the six pillars architects use to judge a design. This module gives you the lens you'll look through for the next 9 modules.
+> **Why this module matters:** The exam doesn't just ask "what does S3 (Simple Storage Service) do?", it asks "which design is the *best* fit?" To answer that, you need a mental model of AWS's global infrastructure, who's responsible for what, and the six pillars architects use to judge a design. This module gives you the lens you'll look through for the next 9 modules.
 
 > **Prerequisites for this module.** This is the on-ramp module, no AWS prerequisites assumed. Helpful background:
 > - Basic IP networking (an IP address, a subnet, a route, a port), Wikipedia "Subnet" article is enough
-> - Familiarity with virtualization concepts (VM, hypervisor), see *Computer Organization and Design* (Patterson & Hennessy, 6th ed., 2020) chapter on virtualization
+> - Familiarity with virtualization concepts (VM (Virtual Machine), hypervisor), see *Computer Organization and Design* (Patterson & Hennessy, 6th ed., 2020) chapter on virtualization
 > - One semester of any programming language so the JSON / YAML examples don't surprise you
 > - If you've done the **CLF-C02 (AWS Cloud Practitioner)** course in this hub already, you're ahead, most of this module is a deeper re-derivation of those concepts
 
@@ -16,7 +16,7 @@ Meet Priya. She runs *Sunrise Roasters*. In 2018 she roasts coffee in her garage
 
 By 2021 she's selling nationwide. So she rents a small data-center cabinet: two servers, a UPS, a generator. Now if one server fails, the other takes over. But if the *building* loses power for a week (hurricane, fire), she's out. So she rents a *second* cabinet in another city, and now she's running across **two availability zones**.
 
-By 2024 she's selling globally. EU customers complain her site is slow. So she puts copies of her product images on edge servers in Paris, Tokyo, and São Paulo a **CDN**. And she keeps a full replica of her order database in Frankfurt so that if the entire US East Coast went dark, she could keep shipping to EU customers that's **multi-region**.
+By 2024 she's selling globally. EU customers complain her site is slow. So she puts copies of her product images on edge servers in Paris, Tokyo, and São Paulo a **CDN (Content Delivery Network)**. And she keeps a full replica of her order database in Frankfurt so that if the entire US East Coast went dark, she could keep shipping to EU customers that's **multi-region**.
 
 Priya didn't build all this herself. She rents it from AWS. Every concept above **AZ**, **region**, **edge location**, **multi-region** is a building block AWS provides. The architect's job is to combine them so the system stays up, stays fast, stays secure, and doesn't cost a fortune. That's the entire SAA exam in two sentences.
 
@@ -65,7 +65,7 @@ AWS's physical infrastructure is laid out in a strict hierarchy. **Memorize it c
 
 ## 🏛️ The Well-Architected Framework, The 6 Pillars
 
-This is the single most quoted document on the exam. AWS literally writes questions like *"Which pillar of the Well-Architected Framework is most directly improved by enabling Multi-AZ on RDS?"*
+This is the single most quoted document on the exam. AWS literally writes questions like *"Which pillar of the Well-Architected Framework is most directly improved by enabling Multi-AZ on RDS (Relational Database Service)?"*
 
 The framework's intellectual lineage matters because the exam quotes it almost verbatim:
 
@@ -84,7 +84,7 @@ The framework's intellectual lineage matters because the exam quotes it almost v
 |---|--------|---------------------|----------------------------------|
 | 1 | **Operational Excellence** | Run and monitor systems to deliver business value; continuously improve | "automation", "runbook", "infra-as-code", "CloudFormation" |
 | 2 | **Security** | Protect data, systems, and assets while delivering business value | "least privilege", "encryption", "IAM", "KMS", "audit" |
-| 3 | **Reliability** | Workload recovers from failures and meets demand | "Multi-AZ", "auto-recovery", "ASG", "RPO", "RTO", "failover" |
+| 3 | **Reliability** | Workload recovers from failures and meets demand | "Multi-AZ", "auto-recovery", "ASG", "RPO (Recovery Point Objective)", "RTO (Recovery Time Objective)", "failover" |
 | 4 | **Performance Efficiency** | Use computing resources efficiently; scale as demand changes | "low latency", "throughput", "right-sized", "caching" |
 | 5 | **Cost Optimization** | Avoid unnecessary cost | "cheapest", "most cost-effective", "Spot", "lifecycle to Glacier" |
 | 6 | **Sustainability** | Minimize environmental impact of workloads | "reduce energy", "Graviton", "Serverless", "right-size", "managed services" |
@@ -133,7 +133,7 @@ The framework's intellectual lineage matters because the exam quotes it almost v
 - Anticipate and adopt new, more efficient hardware/software offerings (Graviton processors).
 - Use managed services (AWS optimizes their datacenters for you).
 
-🎯 **Exam pattern:** "An architect wants to reduce environmental impact while migrating an EC2 fleet. Which is the BEST approach?" → Use **Graviton** instances + **Auto Scaling** + Spot. That's the Sustainability pillar.
+🎯 **Exam pattern:** "An architect wants to reduce environmental impact while migrating an EC2 (Elastic Compute Cloud) fleet. Which is the BEST approach?" → Use **Graviton** instances + **Auto Scaling** + Spot. That's the Sustainability pillar.
 
 ---
 
@@ -162,8 +162,8 @@ Possibly the most-tested concept on Day-1 AWS topics. **AWS** is responsible for
 
 | Service type | Customer manages | AWS manages |
 |--------------|------------------|-------------|
-| **EC2 (IaaS)** | OS patches, software, firewall (Security Group), data, IAM | Hypervisor, hardware, networking |
-| **RDS (PaaS)** | DB user accounts, network access, data, IAM | OS patches, DB engine patches, backups, hardware |
+| **EC2 (IaaS (Infrastructure as a Service))** | OS patches, software, firewall (Security Group), data, IAM | Hypervisor, hardware, networking |
+| **RDS (PaaS (Platform as a Service))** | DB user accounts, network access, data, IAM | OS patches, DB engine patches, backups, hardware |
 | **S3 / DynamoDB / Lambda (managed)** | Data, access policies, IAM | Everything else |
 
 🎯 **Exam trap:** "AWS patches your EC2 operating system." → **WRONG**. EC2 is IaaS. *You* patch the OS. AWS patches RDS instances because RDS is managed.
@@ -190,11 +190,11 @@ AWS has 200+ services, but pricing almost always comes down to three things:
 
 | Task | Why |
 |------|-----|
-| 🔐 Lock the root account (MFA, no daily use) | Root = nuclear keys. Use only for billing & a couple of account-level tasks. |
+| 🔐 Lock the root account (MFA (Multi-Factor Authentication), no daily use) | Root = nuclear keys. Use only for billing & a couple of account-level tasks. |
 | 👤 Create admin **IAM user** (or better, an Identity Center user) | Daily admin work happens here, not as root. |
 | 🛡️ Enable **MFA** on root + every privileged user | Single biggest security win for the dollar. |
 | 💸 Set up **AWS Budgets** ($10 alert is fine) | First defense against a runaway Lambda or compromised key. |
-| 📜 Enable **CloudTrail** in all regions | Audit log of every API call. Forensics gold. |
+| 📜 Enable **CloudTrail** in all regions | Audit log of every API (Application Programming Interface) call. Forensics gold. |
 | 🔎 Enable **AWS Config** + **GuardDuty** | Continuous compliance + threat detection. |
 | 🏷️ Define a **tagging strategy** (CostCenter, Env, Owner) | You'll thank yourself in 6 months when you're chasing cost. |
 
@@ -205,10 +205,10 @@ AWS has 200+ services, but pricing almost always comes down to three things:
 | Interface | When to use | Exam clue |
 |-----------|-------------|-----------|
 | **Management Console** | Manual exploration, learning, occasional changes | "from the AWS web interface" |
-| **AWS CLI** | Scripts, automation, CI/CD, one-off batch ops | `aws s3 cp`, `aws ec2 describe-instances` |
-| **SDKs (Boto3, AWS SDK for JS, etc.)** | Application code | `import boto3` |
+| **AWS CLI (Command Line Interface)** | Scripts, automation, CI/CD (Continuous Integration/Continuous Deployment), one-off batch ops | `aws s3 cp`, `aws ec2 describe-instances` |
+| **SDKs (Boto3, AWS SDK (Software Development Kit) for JS, etc.)** | Application code | `import boto3` |
 
-All three call the same underlying **APIs**, with the same **IAM permissions**. Authentication uses **access keys** (CLI/SDK) or **Identity Center SSO** (modern recommended approach for humans).
+All three call the same underlying **APIs**, with the same **IAM permissions**. Authentication uses **access keys** (CLI/SDK) or **Identity Center SSO (Single Sign-On)** (modern recommended approach for humans).
 
 ### Simple CLI example
 
@@ -232,12 +232,12 @@ aws ec2 run-instances \
 
 ---
 
-## 🆚 IaaS vs PaaS vs SaaS (Quick Recap)
+## 🆚 IaaS vs PaaS vs SaaS (Software as a Service) (Quick Recap)
 
 | Model | You manage | AWS manages | AWS example |
 |-------|------------|-------------|-------------|
 | **IaaS** (Infrastructure) | OS, runtime, apps, data | Hardware, virtualization, networking | EC2, EBS |
-| **PaaS** (Platform) | Apps, data | Everything below | RDS, Elastic Beanstalk, ECS Fargate |
+| **PaaS** (Platform) | Apps, data | Everything below | RDS, Elastic Beanstalk, ECS (Elastic Container Service) Fargate |
 | **SaaS** (Software) | Just use it | Everything | Amazon WorkMail, Chime |
 | **Serverless** | Just code (functions) | Servers, scaling, patching | Lambda, Fargate, DynamoDB, S3 |
 
@@ -312,7 +312,7 @@ aws ec2 run-instances \
 - **Operational Excellence**, Spinnaker (Netflix's open-source CI/CD, now CNCF) deploys 4,000+ times per day
 - **Sustainability**, Graviton, right-sizing, ARM-based encoding farm
 
-When the SAA exam asks "which is the BEST design for a global streaming service with 99.99% SLA?", the answer is some variation of *what Netflix actually built*.
+When the SAA exam asks "which is the BEST design for a global streaming service with 99.99% SLA (Service Level Agreement)?", the answer is some variation of *what Netflix actually built*.
 
 **Discussion (Socratic).**
 - **Q1.** Netflix took **7+ years** to migrate. A modern SaaS company doing a similar migration in 2026 with AWS Application Migration Service, Aurora Global Database, and DynamoDB Global Tables, could they do it in 2 years? What technical and *organizational* factors compress (or extend) the timeline?

@@ -1,4 +1,4 @@
-# Module 1: SCM Foundations & Strategy 🚚
+# Module 1: SCM (Supply Chain Management) Foundations & Strategy 🚚
 
 > **Why this module matters:** Roughly a quarter of the CSCP exam (Domain 1) tests strategy, scope, and the SCOR vocabulary. If you can't draw a supply chain on a napkin and label it with SCOR terms, every later module sits on sand.
 
@@ -43,7 +43,7 @@ Three flows. Memorize them:
 | Flow | Direction | Examples |
 |------|-----------|----------|
 | **Product / Material** | Mostly upstream → downstream | Beans, components, finished goods, returns |
-| **Information** | Both directions | Forecasts, orders, ASNs, POs, invoices, EDI |
+| **Information** | Both directions | Forecasts, orders, ASNs, POs, invoices, EDI (Electronic Data Interchange) |
 | **Cash / Financial** | Mostly downstream → upstream | Payments, credit, financing, factoring |
 
 🎯 **Exam tip:** If a question asks "what flows in a supply chain?" the answer is **three flows**: material, information, and cash. Not just product.
@@ -83,7 +83,7 @@ The Supply Chain Operations Reference (SCOR) model is maintained by ASCM. It's t
 
 | SCOR Process | Question It Answers | Example Activity |
 |--------------|---------------------|------------------|
-| **Plan** | What do we forecast / balance / budget? | S&OP, demand planning, supply planning |
+| **Plan** | What do we forecast / balance / budget? | S&OP (Sales and Operations Planning), demand planning, supply planning |
 | **Source** | Where do we buy? From whom? | Procurement, supplier mgmt, inbound receiving |
 | **Make** | How do we produce / transform? | MTS, MTO, ETO, assembly, QC |
 | **Deliver** | How do we get it to the customer? | Order mgmt, warehousing, transport, returns auth |
@@ -97,7 +97,7 @@ The Supply Chain Operations Reference (SCOR) model is maintained by ASCM. It's t
 | 1 | Process types | Plan, Source, Make, Deliver, Return, Enable |
 | 2 | Process categories | Make-to-Stock (sM1), Make-to-Order (sM2), Engineer-to-Order (sM3) |
 | 3 | Process elements / activities | sM1.1 Schedule production, sM1.2 Issue material… |
-| 4 | Implementation (company-specific) | Your firm's actual ERP workflow |
+| 4 | Implementation (company-specific) | Your firm's actual ERP (Enterprise Resource Planning) workflow |
 
 🧠 **Memory hook:** "**P**lease **S**end **M**oney **D**aily, **R**eturns **E**xpected" → P-S-M-D-R-E.
 
@@ -106,9 +106,9 @@ The Supply Chain Operations Reference (SCOR) model is maintained by ASCM. It's t
 | Dimension | Attribute Examples |
 |-----------|--------------------|
 | **Customer-facing** | Reliability (perfect order), Responsiveness (cycle time), Agility (upside flexibility) |
-| **Internal-facing** | Cost (total SC mgmt cost, COGS), Asset (cash-to-cash, inventory days, asset turns) |
+| **Internal-facing** | Cost (total SC mgmt cost, COGS (Cost of Goods Sold)), Asset (cash-to-cash, inventory days, asset turns) |
 
-> 🎯 **Exam tip:** When you see "perfect order" or "OTIF," that's a SCOR Reliability metric. "Cash-to-cash" is an Asset metric. "Upside supply chain flexibility" is Agility.
+> 🎯 **Exam tip:** When you see "perfect order" or "OTIF (On-Time In-Full)," that's a SCOR Reliability metric. "Cash-to-cash" is an Asset metric. "Upside supply chain flexibility" is Agility.
 
 ---
 
@@ -211,7 +211,7 @@ Causes (memorize, they appear as multi-select on the exam):
 4. **Rationing & shortage gaming** (over-ordering when supply is tight)
 5. **Long lead times** (amplify reaction)
 
-Counter-measures: shared point-of-sale data (VMI, CPFR), smaller batches, EDLP pricing, shorter lead times.
+Counter-measures: shared point-of-sale data (VMI (Vendor Managed Inventory), CPFR (Collaborative Planning, Forecasting, and Replenishment)), smaller batches, EDLP pricing, shorter lead times.
 
 ---
 
@@ -245,17 +245,17 @@ Forces shaping today's supply chains (the exam will frame questions around these
 
 ## 📊 Case Study, Maersk and the Ever Given Suez Blockage (March 2021)
 
-**Situation.** On 23 March 2021, the 400-metre container ship *Ever Given* wedged itself diagonally across the Suez Canal, halting roughly 12% of global trade for six days. A.P. Møller-Maersk the world's largest container line by volume, headquartered in Copenhagen had 30+ vessels in the immediate queue and dozens more headed for the canal. With 12,000+ TEU-class container ships unable to pass, every option (wait, divert around the Cape of Good Hope adding 9–14 days, redistribute cargo via European feeder networks) carried tens of millions of dollars in cost and cascading SLA penalties for cargo owners, from IKEA flat-packs to Caterpillar parts to Adidas footwear.
+**Situation.** On 23 March 2021, the 400-metre container ship *Ever Given* wedged itself diagonally across the Suez Canal, halting roughly 12% of global trade for six days. A.P. Møller-Maersk the world's largest container line by volume, headquartered in Copenhagen had 30+ vessels in the immediate queue and dozens more headed for the canal. With 12,000+ TEU-class container ships unable to pass, every option (wait, divert around the Cape of Good Hope adding 9–14 days, redistribute cargo via European feeder networks) carried tens of millions of dollars in cost and cascading SLA (Service Level Agreement) penalties for cargo owners, from IKEA flat-packs to Caterpillar parts to Adidas footwear.
 
 **Decision.** Maersk made three near-simultaneous calls, broadcast publicly through hourly customer advisories: (1) **multi-modal contingency** re-routed 28 vessels around the Cape of Good Hope on the same day the salvage operation began, accepting the longer transit rather than gamble on Suez reopening; (2) **information transparency** published vessel-by-vessel ETAs and proactively notified BCO (beneficial cargo owner) customers, rather than wait for inquiries; (3) **capacity reallocation**, flexed inland European rail capacity (their dual-brand Maersk + Hamburg Süd network plus DSV partnerships) to absorb diverted Mediterranean volumes.
 
-**Outcome.** The canal reopened 29 March 2021, faster than Maersk's worst case. Industry-wide, Lloyd's List estimated the blockage cost **$9.6 billion in held-up trade per day**. Maersk's 2021 EBITDA hit a record **$24 billion** partially driven by spot freight rate explosions the disruption triggered. Critically, customer surveys post-event ranked Maersk first among carriers for "crisis communication," driving a ~9% gain in long-term contract share in the following 12 months. The Cape diversion cost Maersk an estimated $80–100M in extra bunker and crew expense but versus the option value of stuck vessels with perishable cargo, the math worked.
+**Outcome.** The canal reopened 29 March 2021, faster than Maersk's worst case. Industry-wide, Lloyd's List estimated the blockage cost **$9.6 billion in held-up trade per day**. Maersk's 2021 EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) hit a record **$24 billion** partially driven by spot freight rate explosions the disruption triggered. Critically, customer surveys post-event ranked Maersk first among carriers for "crisis communication," driving a ~9% gain in long-term contract share in the following 12 months. The Cape diversion cost Maersk an estimated $80–100M in extra bunker and crew expense but versus the option value of stuck vessels with perishable cargo, the math worked.
 
 **Lesson for the exam / for practitioners.** This is the canonical 2020s case for **Hau Lee's "Agile" supply chain** high demand uncertainty (which lane will customers actually want?) plus high supply uncertainty (when will the canal reopen?) demanded BOTH responsive moves AND risk-hedging diversification. It's also a textbook example of SCOR **Enable** plus **Deliver** processes under stress: governance, communication, and risk management are not soft "extras" they are competitive weapons when efficient-mode chains collapse. Pure-cost optimization (single lane via Suez, minimal slack) maximized profit in the 2010s and lost catastrophically in March 2021.
 
 **Discussion (Socratic).**
-- Q1: If you were the CEO of a CPG firm with 40 containers stuck on the Ever Given itself, and Maersk offered you (a) wait + a 50% rebate, or (b) air-freight transshipment at 8× the cost, how would you decide, and what data would you demand first?
-- Q2: Maersk's choice to divert around the Cape *before* the canal status was known looks brilliant in hindsight. What's the analogous decision in your industry where the "expensive insurance" move pays off only in tail-risk events, and how would you defend that spend to a CFO in a normal year?
+- Q1: If you were the CEO (Chief Executive Officer) of a CPG firm with 40 containers stuck on the Ever Given itself, and Maersk offered you (a) wait + a 50% rebate, or (b) air-freight transshipment at 8× the cost, how would you decide, and what data would you demand first?
+- Q2: Maersk's choice to divert around the Cape *before* the canal status was known looks brilliant in hindsight. What's the analogous decision in your industry where the "expensive insurance" move pays off only in tail-risk events, and how would you defend that spend to a CFO (Chief Financial Officer) in a normal year?
 - Q3: Lloyd's List has called Suez "the single most fragile chokepoint in global trade." Yet 95% of pre-2021 supply-chain strategies routed through it because it's cheapest. What's the principled framework (cite Hau Lee or Fisher) for when concentration risk is acceptable vs unacceptable?
 
 ---
@@ -327,7 +327,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 2 takes the SCOR vocabulary into network-design and make-or-buy decisions; Module 4 turns the planning hierarchy into the S&OP / MPS / MRP cascade; Module 9 returns to Hau Lee's framework through a sustainability + resilience lens.
+> - Inside this course: Module 2 takes the SCOR vocabulary into network-design and make-or-buy decisions; Module 4 turns the planning hierarchy into the S&OP / MPS / MRP (Material Requirements Planning) cascade; Module 9 returns to Hau Lee's framework through a sustainability + resilience lens.
 > - Cross-course: `11-ASCM-CPIM` deepens the Plan/Make detail one tier below SCOR; `12-ASCM-CLTD` takes Deliver and Return into logistics depth; `13-ISM-CPSM` extends Source into the procurement strategy depth.
 > - Practice: Practice Exam 1 contains roughly 12–14 questions drawn from this module's frameworks (SCOR, Hau Lee, Fisher, bullwhip, CODP). The Final Mock has cross-module synthesis questions tying SCOR-Enable to risk + sustainability.
 
@@ -337,7 +337,7 @@ You now know:
 
 Use these as journal prompts, study-group questions, or interview-prep drills. Each is open-ended; the best answers cite Fisher, Hau Lee, Porter, or APICS dictionary definitions explicitly.
 
-1. **The "efficient or responsive" inheritance.** You're hired as Chief Supply Chain Officer at a 40-year-old grocery wholesaler that has historically run an *efficient* SC (Fisher), lowest cost, predictable volumes, low SKU churn. The new CEO wants to launch a fresh-prepared-meals line (innovative product per Fisher). Defend BOTH "run two parallel supply chains, one efficient + one responsive" AND "extend the existing efficient SC because cost discipline is the firm's culture and you can't switch culture in 18 months." Which would you defend at the board?
+1. **The "efficient or responsive" inheritance.** You're hired as Chief Supply Chain Officer at a 40-year-old grocery wholesaler that has historically run an *efficient* SC (Fisher), lowest cost, predictable volumes, low SKU (Stock Keeping Unit) churn. The new CEO wants to launch a fresh-prepared-meals line (innovative product per Fisher). Defend BOTH "run two parallel supply chains, one efficient + one responsive" AND "extend the existing efficient SC because cost discipline is the firm's culture and you can't switch culture in 18 months." Which would you defend at the board?
 2. **SCOR Enable: real or paper?** A skeptical operations VP says SCOR's Enable process is "just IT overhead, Plan/Source/Make/Deliver/Return is where the real work is." Build the strongest counter-argument that Enable belongs as a top-level process, using the Maersk/Ever Given case from this module and at least one APICS dictionary attribute as evidence.
 3. **The CODP move you can't undo.** A consumer electronics firm is debating moving its CODP from "finished goods at the regional DC" (push to FG, current) to "sub-assemblies at the central plant" (ATO). Customer wait goes from 1 day to 5 days; inventory drops 60%. Walk through who wins and who loses in each function (sales, ops, finance, customer service). Which functional leader would torpedo the project, and what concession would you give them?
 4. **Hau Lee's framework under tariff shock.** Donald Trump's 2025 tariff regime made many "efficient" supply chains suddenly "high supply uncertainty." Using Hau Lee's 4-quadrant matrix, what's the migration path: efficient → ??? Defend whether you'd move to risk-hedging (multi-source) or to agile (responsive + risk-hedged), and what the carrying-cost penalty looks like for each.

@@ -6,9 +6,9 @@
 
 ## 🎯 A Real Story: How Casper Mastered Cart-Abandoner Retargeting
 
-Casper Mattress launched in 2014. By 2017 they were doing $250M in revenue, but their CFO had a problem: cart abandonment rates were ~75% (industry norm). That's $750 of intent walking away for every $1,000 of cart adds.
+Casper Mattress launched in 2014. By 2017 they were doing $250M in revenue, but their CFO (Chief Financial Officer) had a problem: cart abandonment rates were ~75% (industry norm). That's $750 of intent walking away for every $1,000 of cart adds.
 
-Their growth team built what became the textbook DTC retargeting playbook (publicly discussed by their VP of Marketing at Shopify Reunite 2018 and reanalyzed by [Common Thread Collective in 2022](https://commonthreadco.com/)):
+Their growth team built what became the textbook DTC (Direct-to-Consumer) retargeting playbook (publicly discussed by their VP of Marketing at Shopify Reunite 2018 and reanalyzed by [Common Thread Collective in 2022](https://commonthreadco.com/)):
 
 1. **3-stage retargeting funnel**:
 
@@ -18,16 +18,16 @@ Their growth team built what became the textbook DTC retargeting playbook (publi
 
 2. **Frequency capping**: Each user saw retargeting ads max 3x per day, 12x per week
 3. **CDP-fed audiences**: Their customer data platform (Segment → Klaviyo → Meta + AdRoll) pushed real-time updates so a buyer was excluded from retargeting within minutes
-4. **Result**: Recovered $4.2M in 2018 from cart-abandon retargeting alone. ROI of the program: 18:1.
+4. **Result**: Recovered $4.2M in 2018 from cart-abandon retargeting alone. ROI (Return on Investment) of the program: 18:1.
 
-The lesson isn't that retargeting works everyone knows that. The lesson is **discipline** sequencing creative across days, capping frequency, excluding converted users, and connecting your CDP so the audiences update in real time. Most marketers get the audience right and the sequencing/capping wrong, then wonder why their CAC drifts.
+The lesson isn't that retargeting works everyone knows that. The lesson is **discipline** sequencing creative across days, capping frequency, excluding converted users, and connecting your CDP so the audiences update in real time. Most marketers get the audience right and the sequencing/capping wrong, then wonder why their CAC (Customer Acquisition Cost) drifts.
 
 This module teaches you to build it right.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Funnel-stage targeting and audience-signal vs hard-targeting, covered in [Module 3](../Module-03-Google-Ads-PMax-Display-Video/Reading.md)
 > - Meta Custom Audiences and attribution windows (post-iOS 14.5), covered in [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
-> - LinkedIn Matched Audiences (the B2B equivalent), covered in [Module 5](../Module-05-TikTok-LinkedIn-Ads-B2B/Reading.md)
+> - LinkedIn Matched Audiences (the B2B (Business-to-Business) equivalent), covered in [Module 5](../Module-05-TikTok-LinkedIn-Ads-B2B/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
 ---
@@ -39,7 +39,7 @@ Programmatic advertising is the automated buying and selling of ad inventory thr
 The infrastructure has 4 main players:
 
 ```
-ADVERTISER → DSP (Demand-Side Platform) → AD EXCHANGE → SSP (Supply-Side Platform) → PUBLISHER
+ADVERTISER → DSP (Demand-Side Platform) → AD (Active Directory) EXCHANGE → SSP (Supply-Side Platform) → PUBLISHER
 
 Example:
   You (advertiser) want to buy a banner on CNN.com.
@@ -63,7 +63,7 @@ Example:
 
 ### Brief Notes on Each
 
-**DV360**: Google's enterprise programmatic. Minimum spend typically ~$2,000/mo. Integrates with Google Ads, GA4, Campaign Manager 360. Use when you're already on the Google Marketing Platform.
+**DV360**: Google's enterprise programmatic. Minimum spend typically ~$2,000/mo. Integrates with Google Ads, GA4 (Google Analytics 4), Campaign Manager 360. Use when you're already on the Google Marketing Platform.
 
 **The Trade Desk**: The independent giant. Strong on Connected TV (CTV), programmatic Hulu, Disney+, Roku inventory. Used by most large agencies. Minimum spend varies by IO (insertion order).
 
@@ -98,7 +98,7 @@ You don't configure header bidding as an advertiser, publishers do. But knowing 
 | **Add-to-cart** | Added to cart but didn't checkout | Show product + social proof + reassurance ("Free returns") |
 | **Cart abandoners** | Started checkout but dropped off | Show product + DISCOUNT/INCENTIVE |
 | **Past purchasers** | Bought before | Show NEW products + cross-sell |
-| **Customer Match (high LTV)** | Top 20% of customers by revenue | Use as lookalike seed; light retention ads |
+| **Customer Match (high LTV (Lifetime Value))** | Top 20% of customers by revenue | Use as lookalike seed; light retention ads |
 | **VIP loyalty** | High frequency + high recency customers | Exclusive offers + early-access ads |
 
 ### The 3-Stage Funnel Pattern (Casper-style)
@@ -126,7 +126,7 @@ Without caps, retargeting becomes harassment:
 
 ## 🏭 CDP-Fed Retargeting (The 2026 Standard)
 
-A **Customer Data Platform (CDP)** is a database that unifies customer data from your website, app, CRM, email, and POS, then pushes audiences to ad platforms in real time. This solves a critical problem: lag.
+A **Customer Data Platform (CDP)** is a database that unifies customer data from your website, app, CRM (Customer Relationship Management), email, and POS, then pushes audiences to ad platforms in real time. This solves a critical problem: lag.
 
 ### The Lag Problem
 
@@ -144,7 +144,7 @@ With a CDP:
 
 | CDP | Use case |
 |-----|----------|
-| **Segment (Twilio)** | The OG; developer-friendly; powers most VC-backed startups |
+| **Segment (Twilio)** | The OG; developer-friendly; powers most VC (Venture Capital)-backed startups |
 | **mParticle** | Enterprise; especially for mobile apps |
 | **Treasure Data** | Enterprise; strong for large brands |
 | **RudderStack** | Open source; Segment alternative |
@@ -188,7 +188,7 @@ An attribution window is the time period after an ad interaction during which a 
 | Scenario | Best window |
 |----------|-------------|
 | DTC ecom on Meta | 7-day click + 1-day view (Meta default) |
-| B2B SaaS with long sales cycle | 90-day click + 1-day view (LinkedIn) |
+| B2B SaaS (Software as a Service) with long sales cycle | 90-day click + 1-day view (LinkedIn) |
 | YouTube brand campaign | 28-day click + view-through (longer for brand) |
 | GA4 default | Data-driven (Google's ML model) |
 
@@ -211,7 +211,7 @@ Programmatic's dirty secret: a lot of impressions go to fraud, bots, or sketchy 
 | **Invalid Traffic (IVT)** | Bots + fraud + non-human traffic |
 | **GIVT (General IVT)** | Common bots, easily detected |
 | **SIVT (Sophisticated IVT)** | Advanced bots, click farms, hijacked clicks |
-| **MFA (Made-For-Advertising)** | Low-quality sites built just to harvest ad spend |
+| **MFA (Multi-Factor Authentication) (Made-For-Advertising)** | Low-quality sites built just to harvest ad spend |
 | **CTV Fraud** | Especially bad on cheap CTV inventory, fake households, bot streaming |
 
 ### Tools to Protect Yourself
@@ -293,7 +293,7 @@ Google Ads Display + PMax retargeting: 10% of budget
 ☐ Spend on track for monthly budget?
 ☐ Frequency on any audience >5x in a day? → Pause, refresh creative
 ☐ Past purchasers being retargeted? → Check CDP sync; fix exclusion
-☐ Any creative below 0.5% CTR? → Replace
+☐ Any creative below 0.5% CTR (Click-Through Rate)? → Replace
 ```
 
 ---
@@ -387,7 +387,7 @@ You now know:
 1. 🎥 Watch the videos in `Videos.md`
 2. ✏️ Take `Quiz.md`
 3. 📋 Review `Cheat-Sheet.md`
-4. ➡️ Move to [Module 7: CRO, Landing Pages & Personalization](../Module-07-CRO-Landing-Pages-Personalization/Reading.md)
+4. ➡️ Move to [Module 7: CRO (Chief Revenue Officer), Landing Pages & Personalization](../Module-07-CRO-Landing-Pages-Personalization/Reading.md)
 
 ---
 

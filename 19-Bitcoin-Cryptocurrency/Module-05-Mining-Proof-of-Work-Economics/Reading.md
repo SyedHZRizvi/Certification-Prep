@@ -154,7 +154,7 @@ The "Bitcoin uses too much energy" critique has been the single most persistent 
 | For comparison: gold mining | ~131 TWh/year |
 | For comparison: ATM + bank-branch energy | ~140 TWh/year (some estimates) |
 | For comparison: clothes dryers (US alone) | ~108 TWh/year |
-| For comparison: data centers (Google, FB, AWS) | ~250 TWh/year |
+| For comparison: data centers (Google, FB, AWS (Amazon Web Services)) | ~250 TWh/year |
 
 ### The "energy mix" question
 

@@ -12,11 +12,11 @@
 
 ## 🎬 A Story: The $84,000 Fine-Tuning Mistake
 
-January 2025. A 30-person legal-tech startup decides they need a fine-tuned LLM. The reasoning: GPT-4 gives "generic" answers; clients want "lawyer-y" answers; the team's CTO has convinced the board that "fine-tuning will fix this."
+January 2025. A 30-person legal-tech startup decides they need a fine-tuned LLM. The reasoning: GPT-4 gives "generic" answers; clients want "lawyer-y" answers; the team's CTO (Chief Technology Officer) has convinced the board that "fine-tuning will fix this."
 
 They spend three months building a 12,000-example training set of (user_question, attorney_answer) pairs, gathered by paying paralegals $30/hr to write answers. Total dataset cost: ~$28,000. They QLoRA-fine-tune LLaMA-3-70B on 8×A100s on RunPod for two weeks. Compute cost: ~$56,000.
 
-Total spent: **$84,000**. The result: the fine-tuned model's answers are *more confidently wrong* than the base. Hallucinations on jurisdiction-specific edge cases got worse, not better. They couldn't update the model when laws changed without re-tuning. Customer NPS dropped 12 points.
+Total spent: **$84,000**. The result: the fine-tuned model's answers are *more confidently wrong* than the base. Hallucinations on jurisdiction-specific edge cases got worse, not better. They couldn't update the model when laws changed without re-tuning. Customer NPS (Net Promoter Score) dropped 12 points.
 
 The retrospective conclusion (from the engineering blog the team published afterward): they should have built a **RAG system over a curated case-law corpus + careful prompt engineering** for ~$2,000. The fine-tuning didn't teach the model new facts; it just biased its *style* toward sounding more authoritative, which is the worst possible failure mode in legal advice.
 
@@ -213,7 +213,7 @@ Hugging Face's `trl` library is the standard. Unsloth is a popular 2x-faster wra
 |----------|--------------|---------|
 | **SFT** (Supervised Fine-Tuning) | Minimize next-token loss on `(input, target)` pairs | `trl.SFTTrainer` |
 | **DPO** (Direct Preference Optimization) | Train on (chosen, rejected) preference pairs without a reward model | `trl.DPOTrainer` |
-| **RLHF / PPO** | Train a reward model, then RL the policy against it | `trl.PPOTrainer`; rare outside frontier labs |
+| **RLHF (Reinforcement Learning from Human Feedback) / PPO** | Train a reward model, then RL the policy against it | `trl.PPOTrainer`; rare outside frontier labs |
 | **KTO** (Kahneman-Tversky Optimization) | Like DPO but doesn't need pairs, just thumbs-up/down labels | `trl.KTOTrainer` |
 | **ORPO / SimPO** | Variants that combine SFT + preference learning | `trl.ORPOTrainer` |
 | **RFT / Reasoning Fine-Tuning** | Train on chain-of-thought traces; rewards correct final answers | New OpenAI method; community implementations |
@@ -242,7 +242,7 @@ These are starting points, not gospel. Always tune on a small held-out set first
 
 ## 🌐 The OpenAI / Anthropic / Gemini Fine-Tuning APIs
 
-Major API-only providers have managed fine-tuning offerings.
+Major API (Application Programming Interface)-only providers have managed fine-tuning offerings.
 
 ### OpenAI (GA since 2023; updated continuously)
 
@@ -321,7 +321,7 @@ You'll learn the practical realities, out-of-memory errors, learning-rate sensit
 
 ## 📊 Case Study, Bloomberg's BloombergGPT vs OpenAI-Fine-Tuned Approach (2024 retrospective)
 
-**Situation.** In March 2023, Bloomberg published *BloombergGPT*, a 50B-parameter LLM trained from scratch on their 363B-token financial corpus. It outperformed GPT-3 on financial NLP tasks and was widely cited as a vindication of "domain-specific from-scratch training."
+**Situation.** In March 2023, Bloomberg published *BloombergGPT*, a 50B-parameter LLM trained from scratch on their 363B-token financial corpus. It outperformed GPT-3 on financial NLP (Natural Language Processing) tasks and was widely cited as a vindication of "domain-specific from-scratch training."
 
 **The 2024 retrospective.** A year later, multiple teams reported that **GPT-4 with a well-engineered RAG + light fine-tuning** matched or exceeded BloombergGPT on the same Bloomberg-published benchmarks. Anthropic published a Claude 3.5 Sonnet result that exceeded BloombergGPT *zero-shot*. The cost: BloombergGPT was estimated at $5–10M to train; the RAG-plus-FT alternatives cost <$50K.
 

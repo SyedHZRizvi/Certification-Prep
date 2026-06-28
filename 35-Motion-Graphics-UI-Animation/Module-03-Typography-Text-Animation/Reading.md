@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI-Animation/Module-03-Typography-Text-Animation/Reading/
+permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-03-Typography-Text-Animation/Reading/
 title: "Module 3: Typography & Text Animation"
 ---
 

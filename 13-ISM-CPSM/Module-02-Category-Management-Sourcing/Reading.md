@@ -29,7 +29,7 @@ The lesson: **you can't manage what you can't see.** Step one of every sourcing 
 Spend analysis = systematically gathering, classifying, and analyzing **historical spend data** to drive decisions.
 
 ### What you need (data sources)
-- ERP / AP system (invoices, POs)
+- ERP (Enterprise Resource Planning) / AP system (invoices, POs)
 - P-card transactions
 - Travel & expense system
 - Master vendor file
@@ -71,7 +71,7 @@ Examples:
 - MRO (lubricants, cleaning supplies, tools)
 - Marketing services (agencies, print, events)
 
-**Category management** = treating each category as a strategic mini-business with its own multi-year strategy, dedicated owner, supplier portfolio, and KPIs.
+**Category management** = treating each category as a strategic mini-business with its own multi-year strategy, dedicated owner, supplier portfolio, and KPIs (Key Performance Indicators).
 
 ### A Category Strategy Document Typically Contains
 1. Category definition and scope
@@ -156,7 +156,7 @@ A.T. Kearney (now Kearney) popularized this 7-step framework in the mid-1990s an
        ↓
 3. Develop sourcing strategy (Kraljic + structure)
        ↓
-4. Solicit suppliers (RFI / RFP / RFQ / e-auction)
+4. Solicit suppliers (RFI / RFP (Request for Proposal) / RFQ (Request for Quotation) / e-auction)
        ↓
 5. Evaluate and select
        ↓
@@ -254,7 +254,7 @@ Documented by Hau L. Lee in "Information Distortion in a Supply Chain: The Bullw
 4. Rationing / shortage gaming
 
 ### Mitigations
-- Share point-of-sale data with suppliers (VMI, CPFR)
+- Share point-of-sale data with suppliers (VMI (Vendor Managed Inventory), CPFR (Collaborative Planning, Forecasting, and Replenishment))
 - Smaller, more frequent orders
 - Stable pricing (no promo-driven spikes)
 - Visibility platforms (control towers)
@@ -376,7 +376,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 3 picks up *after* the supplier has been selected and negotiates the deal; Module 4 manages the supplier post-award; Module 5 deepens the TCO lens applied during evaluation.
-> - Cross-course: [ASCM CPIM Module 4](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) addresses the inventory-buffer side of bottleneck-quadrant strategies; [PMP Module 9](../../02-PMP/Module-09-Procurement/Reading.md) covers contract-administration overlap.
+> - Cross-course: [ASCM CPIM Module 4](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP (Material Requirements Planning)/Reading.md) addresses the inventory-buffer side of bottleneck-quadrant strategies; [PMP Module 9](../../02-PMP/Module-09-Procurement/Reading.md) covers contract-administration overlap.
 > - Practice: Practice Exam 1 has ~20 questions drawn from this module (Kraljic, RFI/RFP/RFQ, single vs sole vs dual, spend analysis, bullwhip).
 
 ---

@@ -29,7 +29,7 @@ A phoneme is the smallest unit of sound in a language. English has approximately
 | F, V | FV | Upper teeth on lower lip |
 | L | L | Open, tongue tip to palate |
 | M, B, P (bilabials) | MBP | Closed or nearly closed |
-| Rest / silence | REST | Relaxed natural position |
+| Rest / silence | REST (Representational State Transfer) | Relaxed natural position |
 | W, Q | WQ | Small pucker, cheeks rounded |
 
 This reduction is essential for practical animation: drawing 44 distinct mouth shapes per character would be prohibitive. Drawing 10 works.

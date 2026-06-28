@@ -1,11 +1,11 @@
 # Module 6: Capstone 5, AI Marketing Agent 🤖
 
-> **Why this module matters:** "I use ChatGPT" is table stakes in 2026. The signal that actually matters is: can you build with the API, not just chat with the UI? A working agent lead qualifier, content brief generator, competitor researcher separates you from 90% of applicants.
+> **Why this module matters:** "I use ChatGPT" is table stakes in 2026. The signal that actually matters is: can you build with the API (Application Programming Interface), not just chat with the UI (User Interface)? A working agent lead qualifier, content brief generator, competitor researcher separates you from 90% of applicants.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md), covered earlier in this course
 > - [Marketing automation mental model](../Module-04-Capstone-Marketing-Automation-Workflow/Reading.md), covered in Module 4 (the agent is "automation with intelligence")
-> - LLM fundamentals (prompts, tokens, context windows, system vs user messages), covered in [14-AI-Marketing-Foundations Modules 2–3](../../14-AI-Marketing-Foundations/Module-02-AI-Fundamentals-for-Marketers/Reading.md)
+> - LLM (Large Language Model) fundamentals (prompts, tokens, context windows, system vs user messages), covered in [14-AI-Marketing-Foundations Modules 2–3](../../14-AI-Marketing-Foundations/Module-02-AI-Fundamentals-for-Marketers/Reading.md)
 > - Basic command-line + Python read-ability (you don't need to write code from scratch Cursor will help but you need to read what it writes)
 > - Git basics (clone, commit, push), any 1-hour primer is fine
 > If any of these are shaky, pause and review, building an agent in 10 hours assumes the prereqs are solid.
@@ -14,7 +14,7 @@
 
 ## 🎬 A Story: The Marketer Who Outshipped The Engineering Team
 
-Imagine the marketing team at a Series A startup. The CEO wants them to research the top 50 competitors in their space and write strategic briefs on each. Manually, this is 4–6 weeks of work for a senior content marketer.
+Imagine the marketing team at a Series A startup. The CEO (Chief Executive Officer) wants them to research the top 50 competitors in their space and write strategic briefs on each. Manually, this is 4–6 weeks of work for a senior content marketer.
 
 A marketer on the team call them Theo opens Cursor on a Tuesday. They've never written serious code before. By Tuesday night they have a working Python script: 200 lines, uses the Claude API + an Apify scraper. Feed it a competitor URL → it fetches the homepage + pricing page + about page, runs them through Claude with a structured prompt, outputs a 2-page strategic brief.
 
@@ -36,7 +36,7 @@ The agent itself? Could be built by any marketer who reads docs and isn't afraid
 2. **Content Brief Generator**, given a keyword + target audience, produce a 2-page brief
 3. **Competitor Research Agent**, given competitor URLs, produce a strategic summary
 4. **Email Personalization Agent**, given a recipient profile, generate a personalized cold email
-5. **SEO Content Generator**, given a topic + outline, produce a full-length article
+5. **SEO (Search Engine Optimization) Content Generator**, given a topic + outline, produce a full-length article
 6. **Social Media Repurposer**, given a blog post URL, generate LinkedIn carousel + Twitter thread + Reddit post
 
 **Specifications:**
@@ -86,7 +86,7 @@ Same workflow as Cursor, less polished.
 **For:** Marketers who would rather not look at code at all.
 
 **Setup:**
-- Make.com scenario where one module calls Anthropic's API directly via HTTP request.
+- Make.com scenario where one module calls Anthropic's API directly via HTTP (Hypertext Transfer Protocol) request.
 - You're not "building an agent" in the dev sense, but you ARE building a working AI workflow.
 
 This works for portfolio purposes, but the signal is weaker than a GitHub repo. **Recommend Path A or B if you can.**
@@ -416,7 +416,7 @@ python agent.py
 2:30, Briefly explain ONE technical decision (e.g., "I used Claude's 
        structured prompts because...").
 4:00, Limitations + v2 ideas.
-4:30, CTA: "Repo + README at [link]."
+4:30, CTA (Call to Action): "Repo + README at [link]."
 ```
 
 Live execution is key. Anyone can show a screenshot of code. Showing it actually working sells it.
@@ -490,7 +490,7 @@ Live execution is key. Anyone can show a screenshot of code. Showing it actually
 | Highest "wow" factor | **Competitor Research Agent** |
 | Most business-applicable | **Lead Qualification Bot** |
 | Most differentiated | **Email Personalization Agent** (with web scraping) |
-| Most B2C-friendly | **Social Media Repurposer** |
+| Most B2C (Business-to-Consumer)-friendly | **Social Media Repurposer** |
 | Highest technical signal | **Email Personalization** OR **Competitor Research** w/ tool use |
 
 ---
@@ -552,7 +552,7 @@ Document this in your README. It's a senior-marketer signal.
 | **Structured output** | LLM response formatted as JSON or specific schema |
 | **Tool use / Function calling** | Letting an LLM call external functions |
 | **Agent** | An LLM doing multiple steps autonomously (vs single chat response) |
-| **RAG** | Retrieval-Augmented Generation; supplementing prompts with retrieved docs |
+| **RAG (Retrieval-Augmented Generation)** | Retrieval-Augmented Generation; supplementing prompts with retrieved docs |
 | **Embedding** | Vector representation of text used for semantic search |
 | **Fine-tuning** | Customizing a model on specific data (usually overkill for portfolio agents) |
 | **Hallucination** | Model generating plausible-but-false output |
@@ -602,7 +602,7 @@ These prompts probe the line between "useful agent" and "ChatGPT wrapper," and w
 2. **Path A is Cursor / Replit ($20-25/mo "AI-pair-programming"), Path B is VSCode + Continue.dev (free), Path C is Make.com calling Claude API (no-code).** The reading recommends A or B "if you can." But a senior marketer counters: *"If Cursor writes 90% of your code, what skill did you actually demonstrate?"* What does the agent capstone *actually* test in 2026, coding ability, system thinking, prompt engineering, or shipping discipline? And does the answer change what tooling you pick?
 3. **The reading recommends disclosing AI pair-programming use ("built with Cursor as pair-programmer is GOOD now").** A counter-view from an old-school engineer: disclosing it lets the reader discount your work entirely. What's the right framing in the README? When is disclosure a strength signal, and when does it undersell you?
 4. **Six agent use cases are offered (lead qualifier, content brief, competitor research, email personalization, SEO content, social repurposer).** A senior marketer says only competitor research and email personalization with web scraping are "real" agents, the others are just structured prompt templates. Is the senior right? What's the dividing line between "prompt template I wrap in a Python file" and "agent that does something not achievable in pure chat"?
-5. **The reading documents API cost (~$0.02 per content-brief run, ~$0.075 per competitor-research run).** A marketing-ops manager pushes back: *"At those prices, the human time saved is way less than the API spend if you account for setup and maintenance. Build vs buy, most teams should just pay for Jasper / Writer / Copy.ai."* When does building the agent yourself pencil out vs paying for a SaaS that already does it? Defend the build for portfolio purposes AND argue against it for production.
+5. **The reading documents API cost (~$0.02 per content-brief run, ~$0.075 per competitor-research run).** A marketing-ops manager pushes back: *"At those prices, the human time saved is way less than the API spend if you account for setup and maintenance. Build vs buy, most teams should just pay for Jasper / Writer / Copy.ai."* When does building the agent yourself pencil out vs paying for a SaaS (Software as a Service) that already does it? Defend the build for portfolio purposes AND argue against it for production.
 
 ---
 

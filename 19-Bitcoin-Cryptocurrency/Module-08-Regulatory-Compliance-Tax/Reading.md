@@ -1,6 +1,6 @@
 # Module 8: Regulatory, Compliance & Tax ⚖️
 
-> **Jurisdiction Scope and Legal Disclaimer:** This module covers the US (FinCEN/BSA/OFAC), EU (MiCA/TFR), South Korea (VAUPA), and Japan (FSA) frameworks in depth, and references FATF international standards. It does not cover Canadian FINTRAC (PCMLTFA), Australian AUSTRAC, UK FCA, Singapore MAS, or other national frameworks in depth. The regulatory landscape changes frequently. Nothing in this module constitutes legal or tax advice. If you are operating or advising a Bitcoin business, retain qualified legal counsel in each relevant jurisdiction before commencing operations. The tax content in this module describes U.S. federal tax rules as of mid-2026 for educational and exam-preparation purposes only; it does not constitute tax advice. Tax rules are jurisdiction-specific, fact-specific, and change frequently. Always consult a qualified tax professional (CPA, EA, or tax attorney) before making any filing or planning decision.
+> **Jurisdiction Scope and Legal Disclaimer:** This module covers the US (FinCEN/BSA/OFAC), EU (MiCA/TFR), South Korea (VAUPA), and Japan (FSA) frameworks in depth, and references FATF international standards. It does not cover Canadian FINTRAC (PCMLTFA), Australian AUSTRAC, UK FCA, Singapore MAS, or other national frameworks in depth. The regulatory landscape changes frequently. Nothing in this module constitutes legal or tax advice. If you are operating or advising a Bitcoin business, retain qualified legal counsel in each relevant jurisdiction before commencing operations. The tax content in this module describes U.S. federal tax rules as of mid-2026 for educational and exam-preparation purposes only; it does not constitute tax advice. Tax rules are jurisdiction-specific, fact-specific, and change frequently. Always consult a qualified tax professional (CPA (Cost Per Acquisition), EA, or tax attorney) before making any filing or planning decision.
 
 > **Why this module matters:** Bitcoin is a permissionless protocol; the businesses that touch it are not. Between 2013 and 2026, regulators across the US, EU, UK, Japan, South Korea, and Singapore built a layered regime around Bitcoin custodians, exchanges, payment processors, and miners. **If you operate a Bitcoin business and miss FinCEN MSB registration, or get the FATF Travel Rule wrong, or misclassify a swap on Form 8949, the penalty is not theoretical, it is corporate-existential.** This module gives you the regulatory and tax map that every certified Bitcoin professional must carry.
 
@@ -18,13 +18,13 @@
 
 ## ☕ A Story: Maria Opens a Crypto Exchange, Twice
 
-It is **late 2020**. **Maria Velasco**, a former JP Morgan FX trader, raises a $4M seed round to launch **PesoBit**, a Mexico-focused USD/MXN/BTC exchange targeting the Mexican-American remittance corridor. The protocol layer is straightforward: a hot-wallet Bitcoin node, a custody multi-sig, a Strike-style Lightning integration, KYC at the door. The technology is the easy part.
+It is **late 2020**. **Maria Velasco**, a former JP Morgan FX trader, raises a $4M seed round to launch **PesoBit**, a Mexico-focused USD/MXN/BTC exchange targeting the Mexican-American remittance corridor. The protocol layer is straightforward: a hot-wallet Bitcoin node, a custody multi-sig, a Strike-style Lightning integration, KYC (Know Your Customer) at the door. The technology is the easy part.
 
 The legal-and-compliance stack is **harder than the codebase**. To operate in the US, PesoBit needs:
 
 - **FinCEN registration as a Money Services Business (MSB)**, a 2013 guidance requirement.
 - **State money-transmitter licenses**, 49 of them, each with its own bond, capital, and audit requirements. (New York's BitLicense alone takes 18+ months and ~$100K of legal fees.)
-- **Bank Secrecy Act (BSA)** AML program, written policies, designated compliance officer, customer-identification program, transaction monitoring, SAR (Suspicious Activity Report) filing.
+- **Bank Secrecy Act (BSA)** AML (Anti-Money Laundering) program, written policies, designated compliance officer, customer-identification program, transaction monitoring, SAR (Suspicious Activity Report) filing.
 - **OFAC sanctions screening**, every customer + every counterparty.
 - **FATF Travel Rule** compliance, transfers >$1,000 require originator + beneficiary information shared with the receiving VASP.
 - **IRS Form 1099 / 1099-DA reporting**, by 2025 every transaction is reportable.
@@ -33,7 +33,7 @@ In Mexico: **Ley Fintech** (2018) requires Comisión Nacional Bancaria y de Valo
 
 Maria does the work. PesoBit launches in late 2021, registered, licensed, supervised. **Compliance cost = ~$2.8M of the $4M raise.** Engineering = ~$800K. Marketing = $400K. The compliance-engineering ratio at a US crypto exchange in 2021 is **roughly 3:1 against engineering.**
 
-She is lucky. Across the industry over 2021–2024, dozens of competitors who tried to skip steps operating "from offshore" while serving US customers, or filing the MSB form but never standing up a real AML program got crushed. **BitMEX (HDR Global) paid $100M and the founders pleaded to BSA violations in 2021.** **Bittrex Inc. paid $24M in 2022.** **Binance the world's largest exchange agreed to a $4.3B settlement and forced its CEO out in November 2023.** The bar for "we tried to comply but missed a detail" is now zero tolerance.
+She is lucky. Across the industry over 2021–2024, dozens of competitors who tried to skip steps operating "from offshore" while serving US customers, or filing the MSB form but never standing up a real AML program got crushed. **BitMEX (HDR Global) paid $100M and the founders pleaded to BSA violations in 2021.** **Bittrex Inc. paid $24M in 2022.** **Binance the world's largest exchange agreed to a $4.3B settlement and forced its CEO (Chief Executive Officer) out in November 2023.** The bar for "we tried to comply but missed a detail" is now zero tolerance.
 
 That story is your first lesson: **regulating Bitcoin is not about regulating the protocol it is about regulating the gateways. The protocol is permissionless. The on-ramps and off-ramps are not.** Every framework in this module FinCEN MSB, FATF Travel Rule, MiCA, IRS Notice 2014-21, OFAC, derives from this single principle.
 
@@ -274,9 +274,9 @@ Clarifies that **NFTs may be "collectibles" under §408(m)** for IRA purposes, r
 
 | Method | Description | When To Use |
 |--------|-------------|-------------|
-| **FIFO** (First In, First Out) | Default; sell oldest coins first | Default; lowest tax in a rising market is *opposite* of HIFO |
+| **FIFO (First In, First Out)** (First In, First Out) | Default; sell oldest coins first | Default; lowest tax in a rising market is *opposite* of HIFO |
 | **HIFO** (Highest In, First Out) | Sell highest-cost coins first | Minimizes current-year gain |
-| **LIFO** (Last In, First Out) | Sell newest coins first | Less common; uncertain IRS acceptance |
+| **LIFO (Last In, First Out)** (Last In, First Out) | Sell newest coins first | Less common; uncertain IRS acceptance |
 | **Specific ID** | Designate exact lots | Requires contemporaneous recordkeeping |
 
 🎯 **Exam tip.** The IRS's December 2024 final regulations (Rev. Proc. 2024-28, in TR 9999) clarified that **wallet-by-wallet cost basis is required from January 1, 2025**. Pre-2025 universal-basis methods are grandfathered for prior years but not for ongoing reporting.
@@ -510,7 +510,7 @@ The principled exam answer to "where is regulation heading?" is **incrementally 
 | **CIP** | Customer Identification Program |
 | **KYC** | Know Your Customer |
 | **SAR** | Suspicious Activity Report |
-| **CTR** | Currency Transaction Report (>$10K cash) |
+| **CTR (Click-Through Rate)** | Currency Transaction Report (>$10K cash) |
 | **OFAC** | Office of Foreign Assets Control (US Treasury sanctions) |
 | **SDN list** | Specially Designated Nationals list, OFAC's blocked-persons roster |
 | **MiCA** | Markets in Crypto-Assets Regulation (EU 2023/1114) |
@@ -545,7 +545,7 @@ You now know:
 - 🎯 Cost-basis methods (FIFO, HIFO, Specific ID) + wallet-by-wallet (2025+)
 - 🚨 Wash-sale carve-out for crypto (temporary policy)
 - 💼 The Binance $4.3B settlement case
-- ⚠️ Custodial vs self-custody as a regulatory line, not just a UX choice
+- ⚠️ Custodial vs self-custody as a regulatory line, not just a UX (User Experience) choice
 
 **Next steps:**
 1. 🎥 Watch [Videos.md](./Videos.md)
@@ -564,7 +564,7 @@ You now know:
 
 ## 💬 Discussion, Socratic prompts
 
-1. **The arbitrage trade-off.** Binance ran a regulatory-arbitrage strategy for ~6 years before the bill came due. If you were the CFO of a 2026 crypto exchange with $200M in revenue, would you pay the cost of full US MSB + EU CASP + Korean VASP compliance, or operate offshore and accept the eventual settlement? Construct the financial argument both ways. At what revenue level does compliance become clearly cheaper than arbitrage?
+1. **The arbitrage trade-off.** Binance ran a regulatory-arbitrage strategy for ~6 years before the bill came due. If you were the CFO (Chief Financial Officer) of a 2026 crypto exchange with $200M in revenue, would you pay the cost of full US MSB + EU CASP + Korean VASP compliance, or operate offshore and accept the eventual settlement? Construct the financial argument both ways. At what revenue level does compliance become clearly cheaper than arbitrage?
 2. **The Travel Rule paradox.** The EU's TFR has a **zero threshold** for VASP-to-VASP transfers. This means a $5 Bitcoin transfer from one regulated exchange to another requires originator + beneficiary KYC data to travel along. Defend this maximalist position. Then defend the opposing "threshold-based" position. What's the cost-of-friction calculation, and at what threshold do you land?
 3. **The Tornado Cash precedent.** OFAC sanctioned the Tornado Cash smart contract addresses in August 2022. The Fifth Circuit ruled in November 2024 that immutable code cannot be sanctioned as a "person" under IEEPA. What's the right line between sanctioning *operators* of privacy tools versus *the tools themselves*? How does this generalize to future tools like CoinJoin coordinators, Lightning mixers, or BIP-300 sidechain operators?
 4. **The wash-sale carve-out.** As of mid-2026, Bitcoin holders can sell at a loss and immediately re-buy, harvesting the tax loss in a way securities holders cannot. This is **temporary policy**, proposals to close the loophole have been floated since 2021. From a CBP / institutional planning perspective, what's the right strategy: aggressively harvest before the loophole closes, or assume permanent treatment? Show your reasoning.

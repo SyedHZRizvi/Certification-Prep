@@ -1,11 +1,11 @@
 # Module 7: Financials, Cash Flow & Taxes 💰
 
-> **Why this module matters:** Most agency founders are great at marketing and bad at finance, and that's how they end up surprised by tax bills, broke despite high revenue, and unable to scale. This module is the operator's financial playbook: how to track money, separate personal + business, structure (S-corp / LLC / sole prop / Ltd / GmbH equivalents), pay quarterly taxes, save aggressively, and protect your wealth. **EVERY claim in this module is operational guidance, NOT professional tax/legal advice. Always consult a CPA and (for entity structure) an attorney in your jurisdiction.**
+> **Why this module matters:** Most agency founders are great at marketing and bad at finance, and that's how they end up surprised by tax bills, broke despite high revenue, and unable to scale. This module is the operator's financial playbook: how to track money, separate personal + business, structure (S-corp / LLC / sole prop / Ltd / GmbH equivalents), pay quarterly taxes, save aggressively, and protect your wealth. **EVERY claim in this module is operational guidance, NOT professional tax/legal advice. Always consult a CPA (Cost Per Acquisition) and (for entity structure) an attorney in your jurisdiction.**
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - A drafted SKU + pricing from [Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md) and [Module 4](../Module-04-Pricing-Proposals-Contracts/Reading.md), you can't forecast cash flow without knowing your unit economics
+> - A drafted SKU (Stock Keeping Unit) + pricing from [Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md) and [Module 4](../Module-04-Pricing-Proposals-Contracts/Reading.md), you can't forecast cash flow without knowing your unit economics
 > - The contract payment-terms vocabulary from Module 4 (Net-7 / Net-30, kill fee, milestone billing), these are the inputs to the cash flow forecast
-> - The tool-spend benchmark from [Module 5](../Module-05-AI-Marketing-Tech-Stack-Cost-Efficient/Reading.md) (~1–2% of revenue) and the hiring-cost math from [Module 6](../Module-06-Hiring-Managing-AI-Native-Teams/Reading.md), these are the major OpEx lines on your P&L
+> - The tool-spend benchmark from [Module 5](../Module-05-AI-Marketing-Tech-Stack-Cost-Efficient/Reading.md) (~1–2% of revenue) and the hiring-cost math from [Module 6](../Module-06-Hiring-Managing-AI-Native-Teams/Reading.md), these are the major OpEx lines on your P&L (Profit and Loss)
 > - Awareness that nothing in this module is professional tax, legal, or financial advice, entity formation, S-corp election, quarterly estimates, retirement contributions all require a CPA and attorney in your jurisdiction. The numbers cited are US 2024–2025 illustrative examples and shift annually.
 >
 > If you have not yet signed your first paying client, work through this module in "preparation" mode, open the business banking + tax bucket structure now so you're ready on Day 1 of revenue. Founders who postpone this module until they "have time" almost always overpay tax in Year 1.
@@ -65,7 +65,7 @@ This is the single most important financial move. Until you separate, you cannot
 
 | Bank | Why | Cost (2026, verify) |
 |---|---|---|
-| **Mercury** | Free business banking, great UX, no minimums | Free + per-wire fees |
+| **Mercury** | Free business banking, great UX (User Experience), no minimums | Free + per-wire fees |
 | **Relay** | Multi-account; designed for Profit First method | Free + per-feature |
 | **Bluevine** | Free + interest-bearing | Free |
 | **Chase Business Complete** | Brick-and-mortar + payments | $15/mo waived w/ balance |
@@ -96,7 +96,7 @@ This is the biggest one-time decision. Get it wrong and you pay extra tax for ye
 | **Sole proprietor** | Year 1, revenue <$50K | Zero setup, easy taxes | Personal liability; full SE tax |
 | **Single-member LLC** | Year 1–2, revenue $30K–$80K | Liability protection; flexible | Still pays SE tax |
 | **LLC + S-corp election** | $80K–$400K profit | Lower SE tax via salary + distribution split | Payroll setup + reasonable comp |
-| **C-corp** | Raising VC; selling business >$10M | Investor-friendly | Double taxation, complex |
+| **C-corp** | Raising VC (Venture Capital); selling business >$10M | Investor-friendly | Double taxation, complex |
 | **Multi-member LLC** | Partners | Liability + flexibility | Partnership tax filing |
 
 ### The S-corp tax savings (illustrative US example)
@@ -170,7 +170,7 @@ You need to know what you made, what you spent, and what you owe. Period.
 |---|---|
 | Gross revenue MTD | QBO dashboard |
 | Operating expenses MTD | QBO P&L |
-| Margin % | (Revenue − COGS) / Revenue |
+| Margin % | (Revenue − COGS (Cost of Goods Sold)) / Revenue |
 | Tax bucket balance | Business savings |
 | AR (money owed to you) | QBO Aged Receivables |
 | AP (money you owe) | QBO Aged Payables |
@@ -259,8 +259,8 @@ Legitimate, well-documented business expenses reduce your taxable income dollar-
 | Expense | Notes |
 |---|---|
 | Software subscriptions | Apollo, Claude, ChatGPT, Make, Notion, etc. |
-| Cloud / hosting | AWS, Vercel, Hetzner, Cloudflare |
-| Domain + SSL | Yearly renewal |
+| Cloud / hosting | AWS (Amazon Web Services), Vercel, Hetzner, Cloudflare |
+| Domain + SSL (Secure Sockets Layer) | Yearly renewal |
 | Computer equipment | Section 179 typically allows full deduction up to limits |
 | Office supplies | Stationery, ergonomic chair, monitor |
 | Professional services | CPA, attorney, financial advisor |
@@ -471,7 +471,7 @@ After Year-2 expansion (recovery-center Google Ads), Maya cleared ~$450K persona
 
 Pat Walls (Starter Story) publicly discusses using the Profit First method. He cites it as keeping his profitable at every revenue level. Lesson: **financial discipline scales better than revenue does.**
 
-### Case 5, Sahil Bloom's family CFO model (public)
+### Case 5, Sahil Bloom's family CFO (Chief Financial Officer) model (public)
 
 Sahil Bloom has publicly written about building a "family CFO" practice for his finances after his businesses scaled, quarterly reviews of personal + business, automated savings, separation of growth + safety capital. Lesson: **as revenue scales, formalize the financial review.**
 
@@ -574,7 +574,7 @@ Use these as journal prompts, study-group questions, or interview-prep drills. E
 2. **The 30-30-40 vs Profit First trade-off.** Both are popular service-business cash-flow disciplines. A founder argues 30-30-40 is too rigid (the 30% tax bucket overestimates her real tax burden at her marginal rate); a CPA argues Profit First over-allocates to Owner Pay early. Build both critiques. Then defend the rule you'd use in Year 1, and name the conditions under which you'd switch to the other in Year 2.
 3. **Self-insuring vs ACA marketplace.** The reading lists health share plans (Sedera, CHM) at $200–$500/mo and notes "not legally insurance." A founder at $250K profit is weighing self-insuring via a health share + HSA against an ACA plan at $1,200/mo. Build the strongest version of the cost-only argument for the health share. Then construct the counter that takes catastrophic risk into account (cancer diagnosis, surgery, kid's hospitalization). Where does the trade-off sit, and what does that imply for *which* founders should consider health share at all?
 4. **The "I'll handle taxes in April" archetype.** Tara's composite story is the canonical Year-1 mistake. A founder argues that quarterly estimates are over-engineered for Year-1 operators with revenue under $80K (where the IRS penalty is small enough to absorb). Build her argument. Then construct the counter using the §"safe harbor" rule + the operational discipline argument (quarterly forces a real P&L review). Where exactly does the threshold sit?
-5. **Cash flow forecasting at Designjoy scale.** Brett Williams publicly cites weekly cash-flow forecasting as the discipline that scaled Designjoy past $1M ARR even though he's solo and the revenue is highly predictable. A skeptic argues that at $1.5M ARR with subscription revenue and 70% margin, weekly cash review is theater. Build the skeptic's argument. Then defend Williams's discipline what does the 4-week rolling forecast catch that a quarterly review misses, and why does the answer change at $1.5M vs $150K ARR?
+5. **Cash flow forecasting at Designjoy scale.** Brett Williams publicly cites weekly cash-flow forecasting as the discipline that scaled Designjoy past $1M ARR (Annual Recurring Revenue) even though he's solo and the revenue is highly predictable. A skeptic argues that at $1.5M ARR with subscription revenue and 70% margin, weekly cash review is theater. Build the skeptic's argument. Then defend Williams's discipline what does the 4-week rolling forecast catch that a quarterly review misses, and why does the answer change at $1.5M vs $150K ARR?
 
 There are no "official" answers, defend your reasoning with specifics. Strong responses cite the tax bucket rule, the safe-harbor rule, the Solo 401(k) limits, at least one P&L margin target, and at least one named case (Tara, Jake, Maya, Pat Walls, Sahil Bloom, Brett Williams).
 

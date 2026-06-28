@@ -3,7 +3,7 @@
 > **Why this module matters:** Most production Claude apps need to ground the model in *your* data, your docs, your tickets, your code, your contracts. There are two main paths: stuff the data into the 200K-token context window, or retrieve the relevant subset via RAG. Both have a place. This module makes you fluent in choosing, plus implementing the Claude-flavored version of each.
 
 > **Prerequisites for this module.** You should be comfortable with:
-> - Modules 1–4 (model, prompting, API, tool use)
+> - Modules 1–4 (model, prompting, API (Application Programming Interface), tool use)
 > - General "embeddings" intuition (vectors representing text similarity)
 > - A vector database concept (Pinecone, Weaviate, Qdrant, pgvector, pick your fighter)
 > - Basic chunking concepts
@@ -16,7 +16,7 @@ Two stories. Same model (Claude 4 Sonnet). Two opposite architectural conclusion
 
 **Story 1: PalmettoLegal.** A 200-attorney mid-market law firm in Charleston. Their AI workflow ingested 800-page commercial leases and answered questions: "What's the escalation clause? Cap on rent?" Initially they built a chunked RAG pipeline, chunks → embeddings → vector search → top-K → Claude. Accuracy hovered around 78%. Half the misses were "the answer is in a different chunk than the one we retrieved." In March 2025, the team rebuilt the pipeline to **stuff the entire 200-page lease into a single Claude call** (Sonnet 4.5 with prompt caching on the lease text). Accuracy jumped to 96%. They retired the vector store.
 
-**Story 2: Recursion Holdings.** A 4,000-attorney firm with offices in 16 cities. Their AI workflow searches across **18 million** historical contracts to answer "Find me every NDA in our archive with a non-compete > 12 months and a jurisdiction in Texas." Stuffing the entire archive into context is not possible, it's terabytes. The team built a sophisticated multi-stage RAG: metadata filter → semantic search via Voyage AI embeddings → BM25 keyword overlay → Claude reranker → Claude answer composer with citations. Accuracy: 91%. The vector store is the whole product.
+**Story 2: Recursion Holdings.** A 4,000-attorney firm with offices in 16 cities. Their AI workflow searches across **18 million** historical contracts to answer "Find me every NDA (Non-Disclosure Agreement) in our archive with a non-compete > 12 months and a jurisdiction in Texas." Stuffing the entire archive into context is not possible, it's terabytes. The team built a sophisticated multi-stage RAG: metadata filter → semantic search via Voyage AI embeddings → BM25 keyword overlay → Claude reranker → Claude answer composer with citations. Accuracy: 91%. The vector store is the whole product.
 
 The same model. Two architectures. Both right.
 
@@ -500,7 +500,7 @@ You now know:
 - 📄 Anthropic. [*Citations API documentation*](https://docs.anthropic.com/claude/docs/citations). The native citation pattern.
 - 📄 Anthropic Cookbook, [contextual-retrieval recipe](https://github.com/anthropics/anthropic-cookbook/tree/main/skills/contextual-embeddings).
 - 📄 [Voyage AI documentation](https://docs.voyageai.com/), the partnered embeddings provider.
-- 📄 Lewis et al. (2020). [*Retrieval-Augmented Generation for Knowledge-Intensive NLP*](https://arxiv.org/abs/2005.11401). The original RAG paper.
+- 📄 Lewis et al. (2020). [*Retrieval-Augmented Generation for Knowledge-Intensive NLP (Natural Language Processing)*](https://arxiv.org/abs/2005.11401). The original RAG paper.
 
 **Practitioner:**
 - 📖 [LlamaIndex documentation](https://docs.llamaindex.ai/), RAG-first framework with many concrete patterns

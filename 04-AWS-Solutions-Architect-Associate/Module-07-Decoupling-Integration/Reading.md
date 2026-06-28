@@ -3,7 +3,7 @@
 > **Why this module matters:** "Resilient architecture" almost always means "decoupled." If a queue can absorb a downstream outage, your app stays up. SAA-C03 hammers SQS vs SNS vs EventBridge, plus Step Functions and Kinesis. Expect 6–10 questions and a few are easy gimmes once you internalize the patterns.
 
 > **Prerequisites for this module.**
-> - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md) and [Module 2](../Module-02-IAM-Organizations/Reading.md), Reliability pillar, IAM roles for Lambda/EC2 consumers
+> - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md) and [Module 2](../Module-02-IAM (Identity and Access Management)-Organizations/Reading.md), Reliability pillar, IAM roles for Lambda/EC2 (Elastic Compute Cloud) consumers
 > - [Module 3](../Module-03-EC2-Deep-Dive/Reading.md), ASG with mixed instance types is the typical consumer fleet
 > - Conceptual familiarity with **producer/consumer**, **publish/subscribe**, and **event sourcing** patterns, *Designing Data-Intensive Applications* Chapter 11 covers them rigorously
 > - Knowing the difference between **at-most-once / at-least-once / exactly-once** delivery semantics
@@ -34,7 +34,7 @@ Three classic patterns:
 |---------|---------|-----|
 | **Queue** (1 producer → 1 consumer, work absorbed) | SQS | Background work, smoothing load |
 | **Pub/Sub Topic** (1 producer → many consumers) | SNS | Fan-out notifications |
-| **Event Bus** (many producers → many consumers with rules) | EventBridge | Loosely coupled microservices, SaaS events |
+| **Event Bus** (many producers → many consumers with rules) | EventBridge | Loosely coupled microservices, SaaS (Software as a Service) events |
 
 ---
 
@@ -45,14 +45,14 @@ The OG queue. Two flavors:
 | Flavor | Order | Throughput | Duplicates | Use |
 |--------|-------|------------|------------|-----|
 | **Standard** | Best-effort (mostly in order) | Nearly unlimited | At-least-once (may deliver dupes) | High-volume async work |
-| **FIFO** | Strict ordering | 300 msg/s (or 3,000 with batching), up to 70,000 with high throughput mode | Exactly-once delivery | Order matters (e.g. financial txns, inventory) |
+| **FIFO (First In, First Out)** | Strict ordering | 300 msg/s (or 3,000 with batching), up to 70,000 with high throughput mode | Exactly-once delivery | Order matters (e.g. financial txns, inventory) |
 
 ### Key concepts
 - **Visibility timeout**, when a consumer receives a message, it becomes invisible to others for this period (default 30 s). If not deleted in time, returns to queue.
 - **Long polling** (1–20 s), wait for messages to arrive vs short polling (returns immediately). Use long polling to reduce empty-receive cost.
 - **Dead Letter Queue (DLQ)**, after N failed receives, message moves here for investigation.
 - **Message retention**, 4 days default; 1 minute to 14 days.
-- **Max message size**, 256 KB (use S3 + pointer for larger).
+- **Max message size**, 256 KB (use S3 (Simple Storage Service) + pointer for larger).
 - **Delay queues**, delay first delivery 0–15 minutes.
 
 🎯 **Exam pattern:**
@@ -74,7 +74,7 @@ A **pub/sub** topic. Publishers send messages to a topic; subscribers receive th
 | Subscriber | Use |
 |------------|-----|
 | Email / SMS | Notify humans |
-| HTTP/S endpoint | Webhook |
+| HTTP (Hypertext Transfer Protocol)/S endpoint | Webhook |
 | **SQS queue** | Fan-out to multiple queues |
 | **Lambda** | Trigger compute |
 | **Kinesis Data Firehose** | Stream to S3/Redshift |
@@ -105,7 +105,7 @@ EventBridge is a **serverless event bus** with rules. Think of it as SNS + filte
 | **Pipes** | Connect sources → optional filter/transform → target |
 | **Scheduler** | Cron-like one-time or recurring schedules |
 | **Archive + Replay** | Save events; replay later for testing/debug |
-| **Targets** | 20+ AWS services + HTTPS endpoints + API destinations |
+| **Targets** | 20+ AWS services + HTTPS (HTTP Secure) endpoints + API (Application Programming Interface) destinations |
 
 ### EventBridge vs SNS, When Each?
 
@@ -129,7 +129,7 @@ EventBridge is a **serverless event bus** with rules. Think of it as SNS + filte
 
 ## 🔁 AWS Step Functions
 
-Step Functions orchestrate workflows as **state machines**. Each step can call a Lambda, an ECS task, a Glue job, wait, branch, parallel, retry.
+Step Functions orchestrate workflows as **state machines**. Each step can call a Lambda, an ECS (Elastic Container Service) task, a Glue job, wait, branch, parallel, retry.
 
 Two workflow types:
 
@@ -202,7 +202,7 @@ While not strictly "integration," API Gateway often pairs with these patterns. I
 - Buffer requests with usage plans + throttling
 - Authenticate via IAM, Cognito, Lambda authorizers
 - Cache responses
-- Convert REST to AWS service calls (e.g., directly write to SQS or DynamoDB)
+- Convert REST (Representational State Transfer) to AWS service calls (e.g., directly write to SQS or DynamoDB)
 
 🎯 **Exam pattern:** "Want HTTPS in front of Lambda with auth and throttling" → **API Gateway → Lambda**.
 
@@ -302,7 +302,7 @@ You now know:
 1. 🎥 [`Videos.md`](./Videos.md)
 2. ✏️ [`Quiz.md`](./Quiz.md)
 3. 📋 [`Cheat-Sheet.md`](./Cheat-Sheet.md)
-4. ➡️ [Module 8: Caching, CDN & Edge](../Module-08-Caching-CDN-Edge/Reading.md)
+4. ➡️ [Module 8: Caching, CDN (Content Delivery Network) & Edge](../Module-08-Caching-CDN-Edge/Reading.md)
 
 ---
 
@@ -324,7 +324,7 @@ The monthly bill for **just that one queue's data transfer** was approximately *
 
 1. **Co-located producers and consumers in the same AZ** where possible, using ASG instance distribution preferences
 2. **Switched the heavy-volume queue from SQS to in-process message passing** (where the same EC2 host had both producer and consumer)
-3. **Added VPC endpoints (PrivateLink)** for SNS and SQS, eliminated NAT data-processing charges on traffic that wasn't actually leaving the VPC
+3. **Added VPC endpoints (PrivateLink)** for SNS and SQS, eliminated NAT (Network Address Translation) data-processing charges on traffic that wasn't actually leaving the VPC
 4. **Aggregated small messages**, batched 100 events into a single SQS message where business logic allowed; this reduced API call cost (SQS is also priced per API call)
 
 Estimated annual savings: ~$1.1M, with no functional change to the application.

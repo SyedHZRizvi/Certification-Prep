@@ -174,9 +174,9 @@ Or selectively:
 
 ## 5.3 — Secrets
 
-Secrets store sensitive data: passwords, tokens, TLS certificates.
+Secrets store sensitive data: passwords, tokens, TLS (Transport Layer Security) certificates.
 
-> 🚨 **Trap — MEMORIZE THIS:** Kubernetes Secrets are stored **base64-encoded**, NOT encrypted by default. Base64 is **encoding**, not encryption — anyone with `kubectl get secret -o yaml` can decode them instantly. Encryption at rest requires enabling `EncryptionConfiguration` on the API server. CKA examiners specifically test whether you know this distinction.
+> 🚨 **Trap — MEMORIZE THIS:** Kubernetes Secrets are stored **base64-encoded**, NOT encrypted by default. Base64 is **encoding**, not encryption — anyone with `kubectl get secret -o yaml` can decode them instantly. Encryption at rest requires enabling `EncryptionConfiguration` on the API (Application Programming Interface) server. CKA examiners specifically test whether you know this distinction.
 
 ### Secret Types
 
@@ -187,7 +187,7 @@ Secrets store sensitive data: passwords, tokens, TLS certificates.
 | `kubernetes.io/tls` | TLS certificate + key |
 | `kubernetes.io/service-account-token` | SA token (auto-created) |
 | `kubernetes.io/basic-auth` | Username + password |
-| `kubernetes.io/ssh-auth` | SSH private key |
+| `kubernetes.io/ssh-auth` | SSH (Secure Shell) private key |
 
 ### Creating Secrets
 
@@ -523,7 +523,7 @@ kubectl get pvc <name> -o jsonpath='{.spec.volumeName}'
 
 ## Next Steps
 
-- Module 6: Security & RBAC — where you will control *who* can access those Secrets
+- Module 6: Security & RBAC (Role-Based Access Control) — where you will control *who* can access those Secrets
 - Practice: `kubectl create` a PV + PVC pair, bind them, mount into a Pod, verify with `kubectl exec`
 - Hands-on: Deploy a StatefulSet that uses a `volumeClaimTemplate` (dynamic PVC per replica)
 

@@ -4,8 +4,8 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1 (auth, identities)
-> - Module 4 (CLU + Question Answering at the SDK level)
-> - Basic REST + WebSocket mental model
+> - Module 4 (CLU + Question Answering at the SDK (Software Development Kit) level)
+> - Basic REST (Representational State Transfer) + WebSocket mental model
 > - Optional: project-management chapters from [`02-PMP`](../../../02-PMP/) for "user journey" framing if you've never designed a chatbot conversation flow
 >
 > If "intent" and "entity" feel new, return to Module 4's CLU section first.
@@ -31,7 +31,7 @@ That's the whole module in one paragraph. Now let's go deeper.
 Bot Service is Azure's managed hosting for bots built with the **Bot Framework SDK**. It handles:
 
 - **Compute**, runs your bot on Azure App Service / Functions
-- **Identity**, provisions the bot's Azure AD app registration
+- **Identity**, provisions the bot's Azure AD (Active Directory) app registration
 - **Channels**, Web Chat, Teams, Slack, Telegram, Direct Line, etc.
 - **Authentication**, Azure AD, OAuth providers for users
 - **State**, turn state, conversation state, user state (in storage of your choice)
@@ -246,13 +246,13 @@ Use this to:
 | Channel-specific | Each channel may have its own creds (Teams app id/secret, Slack tokens) |
 | State storage | Cosmos / Blob with managed identity |
 
-🚨 **Trap:** A bot calling Azure AI Language for CLU should use **managed identity + the Language API role**, not a hardcoded key.
+🚨 **Trap:** A bot calling Azure AI Language for CLU should use **managed identity + the Language API (Application Programming Interface) role**, not a hardcoded key.
 
 ---
 
 ## 📚 Adaptive Cards
 
-For rich responses (buttons, forms, images), use **Adaptive Cards**, JSON-defined UI that channels render in their native style. The same card looks native in Teams, Web Chat, and Slack.
+For rich responses (buttons, forms, images), use **Adaptive Cards**, JSON-defined UI (User Interface) that channels render in their native style. The same card looks native in Teams, Web Chat, and Slack.
 
 ```json
 {
@@ -334,14 +334,14 @@ For AI-102, you still need to know **Bot Service + Bot Framework + CLU + QA + Or
 
 ## 📖 Case Study, Microsoft Security Copilot (2023–2024)
 
-**Situation.** Cyber-defenders face an information-asymmetry problem: attackers can move faster than humans can read signals. Microsoft Security Copilot announced March 2023, GA April 2024 combined Azure OpenAI (GPT-4 then GPT-4o) with Microsoft Defender's telemetry, Sentinel's SIEM, Intune, Entra, and Purview data, plus a *conversational* surface targeted at security analysts (Microsoft Security blog, March 28, 2023, and April 1, 2024 GA announcement; verified against Microsoft Mechanics 2024 and the Security Copilot documentation page, 2026-05).
+**Situation.** Cyber-defenders face an information-asymmetry problem: attackers can move faster than humans can read signals. Microsoft Security Copilot announced March 2023, GA April 2024 combined Azure OpenAI (GPT (Generative Pre-trained Transformer)-4 then GPT-4o) with Microsoft Defender's telemetry, Sentinel's SIEM (Security Information and Event Management), Intune, Entra, and Purview data, plus a *conversational* surface targeted at security analysts (Microsoft Security blog, March 28, 2023, and April 1, 2024 GA announcement; verified against Microsoft Mechanics 2024 and the Security Copilot documentation page, 2026-05).
 
 **Decision.** Security Copilot is *not* built on Azure AI Bot Service in the way a classic CLU+QA bot would be, but Microsoft openly described it at Ignite 2023 and 2024 as architected with the same principles this module teaches:
 
 - A **conversational front-end** with multi-turn dialog and structured prompt templates (analogous to a Bot Framework `Activity` + `TurnContext` model).
 - **Plugins** that map to specialized data sources (Defender, Sentinel, Entra, threat intelligence), analogous to **Orchestration Workflow** routing across CLU + Question Answering + custom skills, but at much larger scale.
 - **Adaptive Cards-style** rich responses (timelines, IOCs, host details) that render natively in the Security Copilot UI.
-- **Managed identity** + RBAC for every plugin call, the analyst's identity is what authorizes Defender / Sentinel queries.
+- **Managed identity** + RBAC (Role-Based Access Control) for every plugin call, the analyst's identity is what authorizes Defender / Sentinel queries.
 - **Persistent threads** (called "investigations") that carry state, analogous to a Bot Framework `ConversationState` stored in Cosmos / Blob, but built atop Azure OpenAI's Assistants/Threads primitives.
 
 Critically, the Responsible AI overlay from Module 2 was non-negotiable: every Security Copilot response carries citation provenance (which Defender alert or Sentinel rule grounded the answer), Prompt Shields are on, Groundedness Detection runs continuously, and analysts can flag-and-redact a turn for incident review.
@@ -360,7 +360,7 @@ Critically, the Responsible AI overlay from Module 2 was non-negotiable: every S
 ## 💬 Discussion, Socratic prompts
 
 1. **Bot Framework Composer's decline.** Composer is being de-emphasized in favor of Copilot Studio + Foundry. Argue both sides of the "should I learn Composer for the exam?" question. What does this teach you about studying for fast-moving certs in general?
-2. **CLU + QA + Orchestration vs LLM-with-tools.** A startup PM wants to skip CLU entirely and feed every utterance into GPT-4o with a tool list. Build the strongest argument for that approach (one model, less to maintain), AND for the canonical stack (cheaper per call, deterministic intent routing, observable telemetry). At what conversation volume does each architecture decisively beat the other?
+2. **CLU + QA + Orchestration vs LLM (Large Language Model)-with-tools.** A startup PM wants to skip CLU entirely and feed every utterance into GPT-4o with a tool list. Build the strongest argument for that approach (one model, less to maintain), AND for the canonical stack (cheaper per call, deterministic intent routing, observable telemetry). At what conversation volume does each architecture decisively beat the other?
 3. **State storage philosophy.** MemoryStorage is dev-only; Cosmos and Blob are production options. Build the case for *neither*, a stateless bot that re-reads context from a search index every turn. When is that the right call?
 4. **Adaptive Cards portability.** Adaptive Cards render natively in Teams, Web Chat, Slack, and Outlook. Argue the position that they're under-rated; counter-argue that they're a leaky abstraction that always requires per-channel tweaks. Where does the line fall in practice?
 5. **Active Learning in Question Answering.** QA's Active Learning suggests question variants from real traffic. From a Responsible AI standpoint, what governance must surround the human approver who accepts these suggestions? What's the failure mode if no governance is set?

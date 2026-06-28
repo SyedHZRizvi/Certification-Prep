@@ -83,7 +83,7 @@ Before any transformation, answer:
 
 🎯 **AWS-specific tooling** for EDA:
 
-- **SageMaker Data Wrangler**, UI-based EDA + transforms; produces a reproducible flow file
+- **SageMaker Data Wrangler**, UI (User Interface)-based EDA + transforms; produces a reproducible flow file
 - **Amazon QuickSight**, BI / dashboard tool; can produce histograms, scatter, heatmaps without a notebook
 - **Amazon Q in QuickSight**, natural-language EDA ("show me sales by region for last 30 days")
 - **SageMaker Studio notebooks**, full pandas / matplotlib / seaborn / Plotly
@@ -296,7 +296,7 @@ Data Wrangler is the visual data-prep tool inside SageMaker Studio. The exam wil
 
 | Feature | Detail |
 |---------|--------|
-| **Data sources** | S3, Athena, Redshift, EMR, Snowflake, DataBricks, JDBC, Lake Formation |
+| **Data sources** | S3 (Simple Storage Service), Athena, Redshift, EMR, Snowflake, DataBricks, JDBC, Lake Formation |
 | **300+ built-in transforms** | Drop columns, impute, encode, scale, vectorise, custom Python / SQL / PySpark |
 | **Quick model** | One-click train of an XGBoost baseline to evaluate feature impact |
 | **Data Quality and Insights Report** | Auto-detects skew, missingness, anomalies |
@@ -317,7 +317,7 @@ The first centralised, dual-mode (online + offline) feature store in any major c
 | **Online store** | Low-latency key-value store (in-memory; DynamoDB-backed by default) for real-time inference |
 | **Offline store** | S3 + Glue Catalogue for batch training and historical replay |
 | **Feature group** | A named set of features sharing a record identifier + event time |
-| **Ingest API** | `put_record` (online + offline) or batch ingest |
+| **Ingest API (Application Programming Interface)** | `put_record` (online + offline) or batch ingest |
 | **Time-travel queries** | Athena queries on offline store filtered by event time |
 
 🎯 **Exam pattern.** *"Capital One needs sub-100ms feature lookups during a card-swipe AND wants the same features available for nightly retrains."* → **Feature Store: online + offline**. The feature definitions (event time, record ID) are the same; data is dual-written.
@@ -330,7 +330,7 @@ The first centralised, dual-mode (online + offline) feature store in any major c
 
 | Tool | When |
 |------|------|
-| **QuickSight Standard / Enterprise** | BI dashboards; can include scatter, histograms, KPI tiles |
+| **QuickSight Standard / Enterprise** | BI dashboards; can include scatter, histograms, KPI (Key Performance Indicator) tiles |
 | **SPICE engine** | QuickSight's in-memory cache; speeds up dashboards |
 | **QuickSight ML Insights** | Auto-detected outliers + forecasts + narrative insights |
 | **Amazon Q in QuickSight** | Natural-language Q&A on your data ("plot revenue by region last quarter") |
@@ -447,7 +447,7 @@ Before training, check for **data bias** that could lead to unfair outcomes. Sag
 2. **The over-feature-engineering trap.** Feature engineering yields diminishing returns. When does adding a 300th derived feature *hurt* (not help) a model? (Hint: think variance vs bias.)
 3. **PCA's interpretability cost.** PCA produces orthogonal components with no semantic meaning. Regulators want explanations. Argue for and against PCA in a credit-scoring pipeline.
 4. **The class-imbalance illusion.** SMOTE creates synthetic examples by interpolating in feature space. Is this *real* signal, or are we training on hallucinations? Defend or attack SMOTE in 200 words.
-5. **Feature Store ROI.** A 30-person ML team is debating whether to set up SageMaker Feature Store (added ops cost) vs continuing to compute features inline per project. At what team size and reuse pattern does Feature Store start paying off?
+5. **Feature Store ROI (Return on Investment).** A 30-person ML team is debating whether to set up SageMaker Feature Store (added ops cost) vs continuing to compute features inline per project. At what team size and reuse pattern does Feature Store start paying off?
 
 ---
 

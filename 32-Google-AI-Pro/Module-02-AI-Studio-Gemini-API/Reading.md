@@ -1,6 +1,6 @@
-# Module 2: Google AI Studio & Gemini API 🛠️
+# Module 2: Google AI Studio & Gemini API (Application Programming Interface) 🛠️
 
-> **Why this module matters:** Knowing what Gemini *is* is not enough. The exam will ask you, in scenario form, *how* to call it, which SDK, which endpoint, which auth pattern, which generation_config knobs, how to constrain output to a JSON schema, how to set safety_settings without breaking your assistant, how to count tokens before you spend them. This module turns Module 1's knowledge into running code.
+> **Why this module matters:** Knowing what Gemini *is* is not enough. The exam will ask you, in scenario form, *how* to call it, which SDK (Software Development Kit), which endpoint, which auth pattern, which generation_config knobs, how to constrain output to a JSON schema, how to set safety_settings without breaking your assistant, how to count tokens before you spend them. This module turns Module 1's knowledge into running code.
 
 > **Prerequisites for this module.** Module 1 finished. Python 3.10+ installed locally (or use a Colab / Vertex AI Workbench notebook). A free Google AI Studio account at `aistudio.google.com` (no credit card required for prototyping). For Vertex AI sections, a Google Cloud project with billing enabled, Google offers $300 free credit for new sign-ups.
 
@@ -8,7 +8,7 @@
 
 ## 📖 A Story: From "Pasta Recipe" to "Production Endpoint" in 90 Seconds
 
-It is May 2024. A solo developer named Logan opens a browser tab to `aistudio.google.com`, types "Suggest a pasta sauce I can make from things I already have," and gets a Gemini-generated response in three seconds. He hits **"Get code"** in the corner of the AI Studio UI. The site emits a Python snippet:
+It is May 2024. A solo developer named Logan opens a browser tab to `aistudio.google.com`, types "Suggest a pasta sauce I can make from things I already have," and gets a Gemini-generated response in three seconds. He hits **"Get code"** in the corner of the AI Studio UI (User Interface). The site emits a Python snippet:
 
 ```python
 import google.generativeai as genai
@@ -19,7 +19,7 @@ response = model.generate_content("Suggest a pasta sauce I can make from things 
 print(response.text)
 ```
 
-Logan copies that into VS Code, pastes his API key, runs it. The same response, in his terminal. Total time from "I want to try Gemini" to "I have a working program calling it", **under 90 seconds**, with no Google Cloud project, no IAM dance, no billing setup.
+Logan copies that into VS Code, pastes his API key, runs it. The same response, in his terminal. Total time from "I want to try Gemini" to "I have a working program calling it", **under 90 seconds**, with no Google Cloud project, no IAM (Identity and Access Management) dance, no billing setup.
 
 That 90-second on-ramp is the *entire point* of **Google AI Studio**. It is Google's bet that *prototyping should be free and frictionless*. Once Logan is ready to put that pasta-recommender into a real customer-facing product with auth, with rate limits, with audit logging, with data-residency, with team management the same code with a one-line change can target **Vertex AI** instead, where all those enterprise concerns are first-class.
 
@@ -33,7 +33,7 @@ This module deconstructs both surfaces. By the end you will be able to call Gemi
 **Cost:** Free for prototyping (rate-limited; ~60 requests/minute on the free tier as of 2026-05). Paid tier (Google AI for Developers / Gemini API paid) unlocks production rates.
 **Auth:** API key (one click in the UI).
 **Best for:** Demos, hobby projects, "can Gemini do X" experiments, generating sample code, learning.
-**NOT for:** Production traffic against customer data, regulated workloads (no IAM, no VPC-SC, no CMEK, no signed BAA), workloads requiring residency or fine-grained access control.
+**NOT for:** Production traffic against customer data, regulated workloads (no IAM, no VPC (Virtual Private Cloud)-SC, no CMEK, no signed BAA), workloads requiring residency or fine-grained access control.
 
 ### What AI Studio gives you
 
@@ -151,7 +151,7 @@ const result = await model.generateContent("Write a fibonacci function.");
 console.log(result.response.text());
 ```
 
-### 3. REST (cURL, useful for any-language, server-side)
+### 3. REST (Representational State Transfer) (cURL, useful for any-language, server-side)
 
 ```bash
 curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GOOGLE_API_KEY}" \
@@ -353,7 +353,7 @@ job = BatchPredictionJob.submit(
 job.refresh()   # poll for status
 ```
 
-**SLA:** Within 24 hours typically. Often much faster.
+**SLA (Service Level Agreement):** Within 24 hours typically. Often much faster.
 
 🎯 **Exam pattern:** *"A team summarizes 5M articles nightly and is over budget."* → **Switch to Batch API; save ~50%.** Trap: "Switch to Flash Lite" (helps but Batch + Flash Lite stacks even better).
 
@@ -484,7 +484,7 @@ Phase 2 (Internal beta): Gemini API + paid tier
 
 Phase 3 (Production): Vertex AI
   - Switch import to vertexai SDK; one-line diff in code
-  - GCP project + IAM + VPC-SC + CMEK + region pinned
+  - GCP (Google Cloud Platform) project + IAM + VPC-SC + CMEK + region pinned
   - Cloud Logging + Cloud Trace + Model Monitoring
   - Context caching for stable prefixes
   - Provisioned Throughput if >5K req/min steady

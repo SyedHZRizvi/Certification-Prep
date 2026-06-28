@@ -3,8 +3,8 @@
 > **Why this module matters:** The CSCP is deliberately *global*. Expect 8–12 questions on **Incoterms 2020 (all 11)**, customs documentation, letters of credit, tariffs, currency risk, and free trade zones. This is a vocabulary-rich module; mnemonic everything.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Logistics modes and DC/3PL vocabulary](../Module-07-Logistics-Distribution-Warehousing/Reading.md), Module 7
-> - [Sourcing contracts and SLA basics](../Module-06-Sourcing-Supplier-Management/Reading.md), Module 6
+> - [Logistics modes and DC/3PL (Third-Party Logistics) vocabulary](../Module-07-Logistics-Distribution-Warehousing/Reading.md), Module 7
+> - [Sourcing contracts and SLA (Service Level Agreement) basics](../Module-06-Sourcing-Supplier-Management/Reading.md), Module 6
 > - General awareness of import/export concepts (tariffs, duties, customs)
 > - Basic finance fluency: exchange rates, hedging conceptually
 > Most students find this module the densest in pure vocabulary; build flashcards aggressively.
@@ -166,7 +166,7 @@ FTAs reduce or eliminate tariffs between member countries.
 | **Insurance Certificate** | Proof of marine / air cargo insurance |
 | **Letter of Credit (LC)** | Bank payment guarantee (covered below) |
 | **ATA Carnet** | Temporary admission passport for trade samples, exhibits |
-| **C-TPAT / AEO certification** | Trusted-trader programs speed clearance |
+| **C-TPAT / AEO (Answer Engine Optimization) certification** | Trusted-trader programs speed clearance |
 
 ### ATA Carnet
 Officially "Admission Temporaire / Temporary Admission." Allows duty-free temporary import of goods (trade show samples, professional equipment) into 80+ countries for up to 1 year. Saves enormous customs time and bond posting.
@@ -366,7 +366,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 9 takes geopolitical and trade-compliance risk into the formal SCRM framework (ISO 31000); Module 10 connects international trade efficiency to continuous-improvement KPIs.
+> - Inside this course: Module 9 takes geopolitical and trade-compliance risk into the formal SCRM framework (ISO 31000); Module 10 connects international trade efficiency to continuous-improvement KPIs (Key Performance Indicators).
 > - Cross-course: `12-ASCM-CLTD` Module 8 covers logistics-side international trade in more operational depth; `13-ISM-CPSM` Module 4 takes international sourcing strategy deeper.
 > - Practice: Practice Exam 2 has ~12 Incoterms questions; Final Mock has 11-13 questions in this domain.
 

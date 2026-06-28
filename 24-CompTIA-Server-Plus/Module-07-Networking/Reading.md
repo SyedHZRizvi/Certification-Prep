@@ -1,10 +1,10 @@
 # Module 7: Networking for Servers 🌐
 
-> **Why this module matters:** Server-side networking is where the SK0-005 exam tests integration between hardware, storage, and OS. NIC teaming and LACP show up in PBQs. VLAN tagging gets tested on every Server+ exam. Jumbo frames are how storage networks reach line rate. Layer 4 vs Layer 7 load balancers are the difference between "balanced traffic" and "smart routing." This module gives you all of it without re-teaching the Network+ basics.
+> **Why this module matters:** Server-side networking is where the SK0-005 exam tests integration between hardware, storage, and OS. NIC teaming and LACP show up in PBQs. VLAN (Virtual Local Area Network) tagging gets tested on every Server+ exam. Jumbo frames are how storage networks reach line rate. Layer 4 vs Layer 7 load balancers are the difference between "balanced traffic" and "smart routing." This module gives you all of it without re-teaching the Network+ basics.
 
 > **Prerequisites for this module.** Before starting:
 > - Modules 1–6
-> - **Strongly recommended:** CompTIA Network+ (N10-008) or equivalent, IP addressing, subnets, TCP/UDP, OSI model
+> - **Strongly recommended:** CompTIA Network+ (N10-008) or equivalent, IP addressing, subnets, TCP (Transmission Control Protocol)/UDP (User Datagram Protocol), OSI model
 > - Familiarity with Ethernet basics (MAC addresses, frames, switches)
 >
 > If those are shaky, pause and review before continuing.
@@ -13,7 +13,7 @@
 
 ## 🚄 A Story: The Database That Couldn't Backup
 
-Meet Owen. He runs IT for a midsize logistics company. The accounting database (45 TB on a SAN, NFS-mounted by the DB host) takes **14 hours** to back up nightly, exceeding the 8-hour overnight window. Backup spills into business hours, slowing queries and angering the CFO.
+Meet Owen. He runs IT for a midsize logistics company. The accounting database (45 TB on a SAN, NFS-mounted by the DB host) takes **14 hours** to back up nightly, exceeding the 8-hour overnight window. Backup spills into business hours, slowing queries and angering the CFO (Chief Financial Officer).
 
 Owen's first instinct is to buy more disk. Then a network admin asks: *"What's the MTU on the storage VLAN?"* It's 1500 (default). She measures throughput on the dedicated 10 GbE backup NIC: **2.1 Gb/s**, not 10. Owen has been moving 45 TB per night through a bottleneck that's *fully on the server*.
 
@@ -37,7 +37,7 @@ Production servers don't have one NIC. They have several, each often in a team.
 | NIC | Purpose | Speed |
 |---|---|---|
 | **iDRAC / iLO dedicated** | OOB management only, separate VLAN | 100 Mbps or 1 GbE |
-| **LOM 1, 2** (LAN-on-Motherboard) | Host management / heartbeat | 1 or 10 GbE |
+| **LOM 1, 2** (LAN (Local Area Network)-on-Motherboard) | Host management / heartbeat | 1 or 10 GbE |
 | **PCIe NIC port 1, 2** | Production data (e.g., app traffic) | 10/25 GbE |
 | **PCIe NIC port 3, 4** | Storage (iSCSI) or replication | 10/25 GbE |
 
@@ -95,7 +95,7 @@ Most servers connect to **trunk ports**, the server's NIC handles tagging in sof
 
 Hypervisors do this constantly, one trunked NIC, many port groups, each on a different VLAN.
 
-🎯 **Exam pattern:** *"One VM is on a different VLAN than the host. How does the hypervisor put it there?"* → The vSwitch tags the frame with the VM's port-group VLAN ID before sending it out the physical trunk NIC.
+🎯 **Exam pattern:** *"One VM (Virtual Machine) is on a different VLAN than the host. How does the hypervisor put it there?"* → The vSwitch tags the frame with the VM's port-group VLAN ID before sending it out the physical trunk NIC.
 
 ### VLAN best practices on servers
 
@@ -122,7 +122,7 @@ Why bigger?
 Every device in the path **must** support and be configured for the same MTU. Mixed 1500/9000 paths cause:
 
 - **Fragmentation** (TCP doesn't fragment if DF bit is set, it drops packets and triggers PMTUD)
-- **Black-hole connections**, packets dropped silently if PMTUD ICMP is also blocked
+- **Black-hole connections**, packets dropped silently if PMTUD ICMP (Internet Control Message Protocol) is also blocked
 - **Performance degradation** worse than not having jumbo at all
 
 🎯 **Exam pattern:** *"Storage performance degrades after enabling jumbo frames on the server. The switch and storage device are at default MTU."* → **MTU mismatch**. Configure switch ports + storage device for MTU 9000, or revert to 1500 everywhere.
@@ -133,7 +133,7 @@ Every device in the path **must** support and be configured for the same MTU. Mi
 - ✅ **vMotion / Live Migration** networks
 - ✅ **Backup networks**
 - ❌ **General user-facing LAN**, clients are mixed MTU, internet hop adds complications
-- ❌ **WAN / internet**, virtually no path consistently supports >1500
+- ❌ **WAN (Wide Area Network) / internet**, virtually no path consistently supports >1500
 
 ---
 
@@ -160,7 +160,7 @@ IPv4 isn't going away, but IPv6 increasingly is required. The exam tests basic a
 
 Modern servers run IPv4 + IPv6 simultaneously. Considerations:
 
-- DNS records: A (IPv4) + AAAA (IPv6) per host
+- DNS (Domain Name System) records: A (IPv4) + AAAA (IPv6) per host
 - Firewall rules: write rules for *both* address families; missing an IPv6 rule is a common gap
 - Application binding: prefer wildcard binds (`::`) that accept both; otherwise dual-bind
 - Patch management: SLAAC/DHCPv6 work; some legacy WSUS configs need IPv4
@@ -175,13 +175,13 @@ A **load balancer (LB)** distributes incoming connections across multiple backen
 
 | | **Layer 4 (Transport)** | **Layer 7 (Application)** |
 |---|---|---|
-| What it sees | IP, port, TCP/UDP state | HTTP host, path, headers, cookies, payload |
+| What it sees | IP, port, TCP/UDP state | HTTP (Hypertext Transfer Protocol) host, path, headers, cookies, payload |
 | Decision basis | IP + port (and basic L4 stats) | URL, host name, content, session affinity |
 | Speed | Very fast | Slower (parses application data) |
-| SSL handling | Pass-through OR TCP-only termination | Full SSL termination + re-encryption (offload) |
+| SSL (Secure Sockets Layer) handling | Pass-through OR TCP-only termination | Full SSL termination + re-encryption (offload) |
 | Sticky sessions | By IP/port hash | By cookie / header |
-| Examples | HAProxy in L4 mode, AWS NLB, Azure Load Balancer, F5 LTM L4 mode | NGINX, HAProxy L7, AWS ALB, Azure Application Gateway, F5 LTM L7 mode, Citrix ADC |
-| WAF integration | No | Yes |
+| Examples | HAProxy in L4 mode, AWS (Amazon Web Services) NLB, Azure Load Balancer, F5 LTM L4 mode | NGINX, HAProxy L7, AWS ALB, Azure Application Gateway, F5 LTM L7 mode, Citrix ADC |
+| WAF (Web Application Firewall) integration | No | Yes |
 
 🎯 **Exam pattern:**
 
@@ -215,7 +215,7 @@ A DNS-level load balancer that distributes across **geographic regions**. Return
 - Backend region health
 - Latency measurements
 
-Used for multi-region active-active deployments (AWS Route 53, Akamai GTM, NS1).
+Used for multi-region active-active deployments (AWS Route 53, Akamai GTM (Google Tag Manager), NS1).
 
 ---
 
@@ -254,7 +254,7 @@ A magic packet (the destination MAC repeated 16 times after a sync stream) sent 
 - **Port channel / LAG**, link aggregation group (where teamed server NICs connect)
 - **MTU mismatch**, most painful misconfiguration on storage VLANs
 - **STP / RSTP / MST** Spanning Tree variants prevent loops; "PortFast" or "edge port" on server-facing ports avoids 30-second listen/learn delay at boot
-- **DHCP relay**, see Module 2
+- **DHCP (Dynamic Host Configuration Protocol) relay**, see Module 2
 
 ### QoS (Quality of Service)
 
@@ -293,7 +293,7 @@ On converged networks (storage + production on the same fabric), **QoS** tags tr
 4. **vMotion VLAN.** Dedicated VLAN 40 on the hypervisor cluster, MTU 9000.
 5. **L7 LB.** NGINX or F5 in front of the app. SSL termination at the LB; backends speak HTTP internally. Health check on `/healthz`. Round-robin or least-connections.
 6. **Backup VLAN.** Dedicated VLAN 50 to the backup target, jumbo frames, off-peak window.
-7. **Management.** OOB iDRAC/iLO on VLAN 99, accessible only via jump host through VPN.
+7. **Management.** OOB iDRAC/iLO on VLAN 99, accessible only via jump host through VPN (Virtual Private Network).
 8. **Documentation.** Cable map color-coded (red = storage, yellow = mgmt, blue = production, green = backup). CMDB updated.
 
 This is the kind of integration question Server+ PBQs ask. Every choice maps to a concept in this module.
@@ -309,7 +309,7 @@ This is the kind of integration question Server+ PBQs ask. Every choice maps to 
 | "Jumbo frames on just the server is fine." | No, end-to-end. Mismatch is worse than not enabling. |
 | "Storage on the production VLAN is fine if QoS is enabled." | Strongly anti-pattern; storage should have its own VLAN (and ideally its own fabric). |
 | "L4 and L7 load balancers are interchangeable." | L4 is fast but blind to content; L7 makes content-based decisions but is slower. Pick by what you need. |
-| "OOB management can live on the same VLAN as production." | NO, separate VLAN, separate access path, MFA on the management UIs. |
+| "OOB management can live on the same VLAN as production." | NO, separate VLAN, separate access path, MFA (Multi-Factor Authentication) on the management UIs. |
 | "Default VLAN 1 is fine to use." | Don't, security best practice is to NOT use VLAN 1 (it's an attack surface in many switch firmware bugs). |
 | "Spanning Tree doesn't matter on server-facing ports." | It does at boot, without PortFast/edge, the server waits 30s for STP to converge before forwarding. |
 | "IPv6 isn't tested anymore." | It is, and the trap is forgetting to write firewall rules for both IPv4 AND IPv6. |
@@ -361,7 +361,7 @@ This is the kind of integration question Server+ PBQs ask. Every choice maps to 
 | NDP | Neighbor Discovery Protocol |
 | LB / GSLB | Load Balancer / Global Server LB |
 | WAF | Web Application Firewall |
-| SSL/TLS | Secure Sockets Layer / Transport Layer Security |
+| SSL/TLS (Transport Layer Security) | Secure Sockets Layer / Transport Layer Security |
 | WoL | Wake-on-LAN |
 | DAC / AOC | Direct Attach Copper / Active Optical Cable |
 | SFP+ / QSFP+ | Small Form-Factor Pluggable (10G) / Quad SFP (40G) |
@@ -383,7 +383,7 @@ This is the kind of integration question Server+ PBQs ask. Every choice maps to 
 - **Audit logging was disabled** on critical CA segments during routine maintenance windows and wasn't re-enabled.
 - **No outbound firewall rules**, exfiltration was unrestricted.
 
-**Outcome.** DigiNotar declared bankruptcy within 3 months. Browser vendors revoked DigiNotar's root certificates globally. The Dutch government took over DigiNotar's PKI operations. The case became the canonical example of why network segmentation matters even between internal tiers.
+**Outcome.** DigiNotar declared bankruptcy within 3 months. Browser vendors revoked DigiNotar's root certificates globally. The Dutch government took over DigiNotar's PKI (Public Key Infrastructure) operations. The case became the canonical example of why network segmentation matters even between internal tiers.
 
 **Lesson for the exam / for practitioners.**
 

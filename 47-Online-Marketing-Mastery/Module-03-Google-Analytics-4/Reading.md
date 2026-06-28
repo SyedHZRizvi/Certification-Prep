@@ -1,6 +1,6 @@
 # Module 03: Google Analytics 4 — Data-Driven Marketing 📊
 
-> **Why this module matters:** GA4 is now the global standard for web analytics — Universal Analytics is dead, and every marketer who still guesses instead of measuring is leaving money on the table. This module teaches you to read user behaviour at a surgical level, diagnose drop-offs before they kill your revenue, and prove ROI in a privacy-first, GDPR-compliant world.
+> **Why this module matters:** GA4 is now the global standard for web analytics — Universal Analytics is dead, and every marketer who still guesses instead of measuring is leaving money on the table. This module teaches you to read user behaviour at a surgical level, diagnose drop-offs before they kill your revenue, and prove ROI (Return on Investment) in a privacy-first, GDPR (General Data Protection Regulation)-compliant world.
 
 > **Prerequisites:** You should understand digital marketing fundamentals (Module 01) and have a basic grasp of how websites work (pages, sessions, users). No coding required — but a GA4 demo account or sandbox is strongly recommended alongside this reading.
 
@@ -8,9 +8,9 @@
 
 ## ☕ A Story: The Berlin Drop-Off That Was Hiding in Plain Sight
 
-In the spring of 2023, a Berlin-based fashion e-commerce brand — call them "Kontor Mode" — was doing everything right. They had a slick redesign live for six months, their Google Ads ROAS was a respectable 3.2x, and their email open rates were the envy of the marketing floor. Yet revenue growth had stalled at 4% quarter-over-quarter when the market was growing at 12%.
+In the spring of 2023, a Berlin-based fashion e-commerce brand — call them "Kontor Mode" — was doing everything right. They had a slick redesign live for six months, their Google Ads ROAS (Return on Ad Spend) was a respectable 3.2x, and their email open rates were the envy of the marketing floor. Yet revenue growth had stalled at 4% quarter-over-quarter when the market was growing at 12%.
 
-The CEO blamed the macroeconomy. The paid media team blamed creative fatigue. The CRO consultant they hired blamed the font choice on the product page. (Yes, really.)
+The CEO (Chief Executive Officer) blamed the macroeconomy. The paid media team blamed creative fatigue. The CRO (Chief Revenue Officer) consultant they hired blamed the font choice on the product page. (Yes, really.)
 
 Then a junior analyst named Lena, three months out of university, opened GA4 for the first time with fresh eyes.
 
@@ -24,9 +24,9 @@ Six months. Millions of euros in revenue walked out the door because of a four-d
 
 The fix took one sprint — a mobile-responsive checkout form update, validated by the development team on a Friday afternoon. Lena set up a **Comparison segment** in GA4 to track mobile vs. desktop separately going forward.
 
-Four weeks after the fix, mobile conversion rate climbed to 28%. Revenue from existing traffic — zero extra ad spend — nearly doubled from the mobile segment. The CFO bought Lena a very nice dinner.
+Four weeks after the fix, mobile conversion rate climbed to 28%. Revenue from existing traffic — zero extra ad spend — nearly doubled from the mobile segment. The CFO (Chief Financial Officer) bought Lena a very nice dinner.
 
-The lesson Kontor Mode learned, at considerable cost, is the central lesson of this module: **GA4's Exploration reports are not dashboards for reporting what happened. They are diagnostic tools for finding where money is leaking.** The data was always there. Universal Analytics could have surfaced it too, in theory. But GA4's event-based model, combined with Funnel Exploration, made the answer discoverable in under fifteen minutes instead of requiring a custom SQL query from a data engineer.
+The lesson Kontor Mode learned, at considerable cost, is the central lesson of this module: **GA4's Exploration reports are not dashboards for reporting what happened. They are diagnostic tools for finding where money is leaking.** The data was always there. Universal Analytics could have surfaced it too, in theory. But GA4's event-based model, combined with Funnel Exploration, made the answer discoverable in under fifteen minutes instead of requiring a custom SQL (Sales Qualified Lead) query from a data engineer.
 
 When you finish this module, you will be Lena. You will know how to build that funnel, read that 68% drop-off, segment by device, and communicate the fix to a development team in language they can act on. You will also know why Consent Mode v2 matters in the EU (hint: without it, you are not seeing real numbers — you are seeing a legally-compliant fiction), and how to connect GA4 to Google Ads so that your remarketing audiences are built on behaviour, not demographic guesses.
 
@@ -64,7 +64,7 @@ Think of UA as a **session-first ledger**: every interaction was bucketed into s
 In GA4, everything is an event. A pageview is an event (`page_view`). A button click you track is an event. A video play, a scroll past 90%, a file download — all events. Each event has:
 
 - **Event name** (e.g., `purchase`, `add_to_cart`, `page_view`)
-- **Event parameters** (key-value pairs, e.g., `item_id: "SKU-4421"`, `value: 89.99`, `currency: "EUR"`)
+- **Event parameters** (key-value pairs, e.g., `item_id: "SKU (Stock Keeping Unit)-4421"`, `value: 89.99`, `currency: "EUR"`)
 - **User properties** (persistent attributes attached to the user, e.g., `membership_tier: "premium"`)
 
 GA4 has four categories of events:
@@ -109,7 +109,7 @@ The standard GA4 reports (Acquisition, Engagement, Monetisation) are fine for we
 | **Segment Overlap** | Venn diagrams of audience segments | "How much do email subscribers and paid search users overlap?" |
 | **User Explorer** | Individual user journeys (pseudonymous) | Debugging a specific user's broken checkout path |
 | **Cohort Exploration** | Retention over time by acquisition cohort | "Do users acquired in Q4 (Black Friday) stick around?" |
-| **User Lifetime** | LTV by acquisition source | "Which channel acquires the highest-value users?" |
+| **User Lifetime** | LTV (Lifetime Value) by acquisition source | "Which channel acquires the highest-value users?" |
 
 #### Building a Funnel Exploration (Step by Step)
 
@@ -150,11 +150,11 @@ Attribution is the art of deciding which marketing touchpoint "caused" a convers
 | Model | How it works | Best for |
 |---|---|---|
 | **Data-Driven** (GA4 default) | ML model distributes credit based on actual conversion probability across all touchpoints | Accounts with high volume (1,000+ conversions/month); most accurate |
-| **Last Click** | 100% credit to the final touchpoint | Simple reporting; over-credits bottom-of-funnel (e.g., Brand PPC) |
+| **Last Click** | 100% credit to the final touchpoint | Simple reporting; over-credits bottom-of-funnel (e.g., Brand PPC (Pay-Per-Click)) |
 | **First Click** | 100% credit to the first touchpoint | Awareness campaigns; under-credits closers |
 | **Linear** | Equal credit to every touchpoint | Fair but diluted; useful for understanding full journey |
 | **Time Decay** | More credit to recent touchpoints | Short sales cycles |
-| **Position-Based (U-Shaped)** | 40% first, 40% last, 20% middle | Classic B2B demand gen |
+| **Position-Based (U-Shaped)** | 40% first, 40% last, 20% middle | Classic B2B (Business-to-Business) demand gen |
 
 > **Common Trap:** Last-click attribution makes organic search look weak and brand PPC look strong, because brand PPC often "steals" the last click from users who would have converted anyway. Data-driven attribution (available in GA4 by default) corrects this by analysing the actual conversion probability contribution of each touchpoint. The difference in budget allocation can be 20-40% for mature accounts.
 
@@ -215,12 +215,12 @@ GA4's free BigQuery export gives you raw, hit-level event data in a Google Cloud
 **Why it matters:**
 - GA4's interface samples Exploration reports for properties with high traffic (>10M events/month)
 - BigQuery gives you exact numbers at any scale
-- You can join GA4 data with CRM data, ad spend data, weather data, anything
+- You can join GA4 data with CRM (Customer Relationship Management) data, ad spend data, weather data, anything
 - SQL queries you cannot run in the GA4 interface (e.g., "median time to purchase by acquisition month")
 
 **Getting started:**
 1. Go to **Admin → Property Settings → BigQuery Linking**
-2. Connect to a GCP project (billing must be enabled, though the first 10GB/month query is free)
+2. Connect to a GCP (Google Cloud Platform) project (billing must be enabled, though the first 10GB/month query is free)
 3. Choose event export frequency: **Daily** (free) or **Streaming** (micro-cost per GB)
 4. Data lands in `events_YYYYMMDD` tables
 
@@ -233,7 +233,7 @@ Looker Studio (formerly Google Data Studio) connects directly to GA4 as a data s
 - Use **GA4 data blending** in Looker Studio to combine GA4 data with Google Ads spend data for a unified ROAS dashboard
 - Set **date range controls** at report level so stakeholders can self-serve
 - Build separate dashboard tabs for: Executive summary | Channel performance | Funnel health | Audience insights
-- Cache data in Looker Studio (15-minute refresh) to avoid hitting GA4 API rate limits
+- Cache data in Looker Studio (15-minute refresh) to avoid hitting GA4 API (Application Programming Interface) rate limits
 
 ---
 

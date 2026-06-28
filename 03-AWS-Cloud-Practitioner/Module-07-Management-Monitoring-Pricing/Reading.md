@@ -8,7 +8,7 @@
 > - [Security & Identity](../Module-06-Security-Identity-Compliance/Reading.md), CloudTrail and Config (the detective layer)
 > - Basic accounting: knowing the difference between a budget, a forecast, and an alert
 >
-> If you've ever scolded yourself for a surprise SaaS subscription, you have the right intuition for this module.
+> If you've ever scolded yourself for a surprise SaaS (Software as a Service) subscription, you have the right intuition for this module.
 
 ---
 
@@ -16,7 +16,7 @@
 
 Maria's pizza empire is humming along on AWS. Then she gets the May bill: **$47,000.** Last month was $4,000.
 
-What happened? A junior dev spun up a `p4d.24xlarge` GPU instance "just to test something" and forgot about it. Cost: ~$33/hour × 24 hours × 30 days = $24,000. Plus a misconfigured S3 lifecycle rule moved 200 TB into Standard from Deep Archive overnight $5,000 in transition fees. Plus CloudFront traffic from a viral marketing campaign $18,000.
+What happened? A junior dev spun up a `p4d.24xlarge` GPU instance "just to test something" and forgot about it. Cost: ~$33/hour × 24 hours × 30 days = $24,000. Plus a misconfigured S3 (Simple Storage Service) lifecycle rule moved 200 TB into Standard from Deep Archive overnight $5,000 in transition fees. Plus CloudFront traffic from a viral marketing campaign $18,000.
 
 Could this have been prevented? Yes, with **Budgets, Billing Alarms, Cost Explorer, and Trusted Advisor.** Cloud's pay-as-you-go is wonderful right up until you forget to watch it.
 
@@ -32,7 +32,7 @@ CloudWatch implements the **"observability"** paradigm a term popularized by Cha
 
 ### 1️⃣ Metrics
 
-Numerical time-series data. AWS publishes default metrics for almost every service (EC2 CPU%, S3 BucketSizeBytes, Lambda Invocations, etc.). You can also push **custom metrics** (your app's request latency, business KPIs).
+Numerical time-series data. AWS publishes default metrics for almost every service (EC2 (Elastic Compute Cloud) CPU%, S3 BucketSizeBytes, Lambda Invocations, etc.). You can also push **custom metrics** (your app's request latency, business KPIs (Key Performance Indicators)).
 
 ### 2️⃣ Logs
 
@@ -54,7 +54,7 @@ Alarms watch a metric and trigger when a threshold is crossed.
 
 ---
 
-## 📜 AWS CloudTrail, API Audit Log
+## 📜 AWS CloudTrail, API (Application Programming Interface) Audit Log
 
 (Already covered in Module 6, but it shows up here too.)
 
@@ -76,7 +76,7 @@ Examples of Config Rules:
 
 - "EBS volumes must be encrypted"
 - "S3 buckets must NOT be public"
-- "IAM users must have MFA enabled"
+- "IAM (Identity and Access Management) users must have MFA (Multi-Factor Authentication) enabled"
 - "All EC2 instances must be tagged with `CostCenter`"
 
 When a resource goes out of compliance, Config flags it (and can auto-remediate via SSM).
@@ -91,7 +91,7 @@ SSM is a Swiss Army knife of operations tools:
 
 | Capability | What it does |
 |------------|--------------|
-| **Session Manager** | SSH-less shell access to EC2 via the console (no SSH keys, no bastion) |
+| **Session Manager** | SSH (Secure Shell)-less shell access to EC2 via the console (no SSH keys, no bastion) |
 | **Run Command** | Execute commands on many EC2 instances at once |
 | **Patch Manager** | Automate OS patching on fleets of EC2 |
 | **Parameter Store** | Hierarchical config / secret store (free tier) |
@@ -142,7 +142,7 @@ AWS pricing follows 3 fundamental laws:
 3. **Pay even less with volume tiering** (S3, data transfer)
 
 ### Free services / always-free aspects
-- IAM, VPC (basic), CloudFormation, Elastic Beanstalk, Organizations, all FREE
+- IAM, VPC (Virtual Private Cloud) (basic), CloudFormation, Elastic Beanstalk, Organizations, all FREE
 - You only pay for the resources THEY create
 - AWS Free Tier covers 12-month + Always Free + Trials (Module 1)
 
@@ -206,7 +206,7 @@ There are **4 paid support tiers** (plus "Basic" which is free):
 | **Developer** | from $29/mo | Business-hours email | One contact, general guidance, business-hours |
 | **Business** | from $100/mo (3% of usage) | **< 1 hour** | 24/7, multiple contacts, ALL Trusted Advisor checks, AWS Support API |
 | **Enterprise On-Ramp** | from $5,500/mo (10% of usage) | **< 30 min for business-critical** | Pool of Technical Account Managers (TAMs), Concierge for billing |
-| **Enterprise** | from $15,000/mo (varies) | **< 15 min for business-critical** | Dedicated TAM, Concierge, IEM (Infrastructure Event Mgmt), well-architected reviews, training credits |
+| **Enterprise** | from $15,000/mo (varies) | **< 15 min for business-critical** | Dedicated TAM (Total Addressable Market), Concierge, IEM (Infrastructure Event Mgmt), well-architected reviews, training credits |
 
 🔥 **MEMORIZE the response times:**
 - Business: **< 1 hour** for production-down
@@ -240,7 +240,7 @@ There are **4 paid support tiers** (plus "Basic" which is free):
 
 ## 📊 Amazon QuickSight
 
-**QuickSight = serverless BI / dashboarding service.** Connects to Redshift, RDS, S3, Athena. Pay per session.
+**QuickSight = serverless BI / dashboarding service.** Connects to Redshift, RDS (Relational Database Service), S3, Athena. Pay per session.
 
 🎯 **Exam pattern:** "Build interactive dashboards on Redshift data for execs" → **QuickSight.**
 
@@ -306,7 +306,7 @@ There are **4 paid support tiers** (plus "Basic" which is free):
 
 ## 🏛️ Case Study, Pinterest's Multi-Year Cost-Optimization Program (2018–2022)
 
-**Situation.** Pinterest had been all-in on AWS since 2011, scaling to ~450 million monthly active users by 2019. Their AWS bill reported publicly in their 2018 S-1 IPO filing as "a substantial portion of cost of revenue" was roughly $100M/year in 2018 and climbing fast as ad spend grew. The CFO and CTO both saw the same problem from different sides: "Are we spending efficiently, or are we paying AWS to host idle EC2?"
+**Situation.** Pinterest had been all-in on AWS since 2011, scaling to ~450 million monthly active users by 2019. Their AWS bill reported publicly in their 2018 S-1 IPO (Initial Public Offering) filing as "a substantial portion of cost of revenue" was roughly $100M/year in 2018 and climbing fast as ad spend grew. The CFO (Chief Financial Officer) and CTO (Chief Technology Officer) both saw the same problem from different sides: "Are we spending efficiently, or are we paying AWS to host idle EC2?"
 
 **Decision.** Pinterest's infrastructure team (under VP of Engineering Yashwanth Nelapati) launched a sustained cost-optimization program with five named workstreams (documented in Pinterest Engineering blog posts 2019–2022 and Pinterest's 2020 + 2021 10-K filings):
 

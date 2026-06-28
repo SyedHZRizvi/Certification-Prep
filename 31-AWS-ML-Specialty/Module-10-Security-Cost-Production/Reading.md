@@ -1,6 +1,6 @@
 # Module 10: Security, Cost & Production Operations 🔐
 
-> **Why this module matters:** The MLS-C01 exam mixes security and cost optimisation into the ML Implementation & Operations domain (20%) plus across all other domains. The exam will ask things like "how do you secure training data with KMS and VPC?", "which Spot strategy cuts training cost 90%?", "which instance family minimises inference cost?", "how do you troubleshoot a slow endpoint?" and "what is the right way to enforce least-privilege on a SageMaker training role?". This module is the final knot that ties everything: IAM, KMS, VPC, PrivateLink, Spot, Savings Plans, Multi-Model Endpoints, Debugger / Profiler, and the production-debugging playbook.
+> **Why this module matters:** The MLS-C01 exam mixes security and cost optimisation into the ML Implementation & Operations domain (20%) plus across all other domains. The exam will ask things like "how do you secure training data with KMS and VPC (Virtual Private Cloud)?", "which Spot strategy cuts training cost 90%?", "which instance family minimises inference cost?", "how do you troubleshoot a slow endpoint?" and "what is the right way to enforce least-privilege on a SageMaker training role?". This module is the final knot that ties everything: IAM (Identity and Access Management), KMS, VPC, PrivateLink, Spot, Savings Plans, Multi-Model Endpoints, Debugger / Profiler, and the production-debugging playbook.
 
 > **Prerequisites for this module.** Modules 1–9 of this course. Helpful background:
 > - SAA-C03's IAM, KMS, VPC chapters cover the underlying AWS identity / network primitives
@@ -10,7 +10,7 @@
 
 ## 🍕 A Story: The Healthcare Startup That Almost Leaked PHI
 
-Meet Lena. She runs ML at a Series-B healthcare-AI startup. In 2023 her team built an EHR-NER model on SageMaker. The data millions of clinical notes sat in S3. Training jobs ran in the default VPC. The endpoint was public. The dev IAM role had `AmazonSageMakerFullAccess`.
+Meet Lena. She runs ML at a Series-B healthcare-AI startup. In 2023 her team built an EHR-NER model on SageMaker. The data millions of clinical notes sat in S3 (Simple Storage Service). Training jobs ran in the default VPC. The endpoint was public. The dev IAM role had `AmazonSageMakerFullAccess`.
 
 Three weeks before their HIPAA audit, the security team did a deep review. They found:
 
@@ -24,9 +24,9 @@ Three weeks before their HIPAA audit, the security team did a deep review. They 
 
 The audit was a near miss. Lena and the security team did a hardening sprint:
 
-- **VPC-only training**, moved jobs into a VPC with a NAT gateway-less private subnet, S3 VPC Gateway Endpoint, and KMS VPC Endpoint
+- **VPC-only training**, moved jobs into a VPC with a NAT (Network Address Translation) gateway-less private subnet, S3 VPC Gateway Endpoint, and KMS VPC Endpoint
 - **Customer-managed KMS** keys with per-team key policies; KMS encrypts S3 data, EBS volumes, EFS, and model artifacts
-- **PrivateLink** on the SageMaker endpoint, no public DNS at all
+- **PrivateLink** on the SageMaker endpoint, no public DNS (Domain Name System) at all
 - **IAM least-privilege execution role**, scoped to a single S3 bucket prefix + KMS key + ECR image
 - **CloudTrail S3 data events** enabled
 - **AWS Macie** scanning S3 for PHI
@@ -82,8 +82,8 @@ A SageMaker execution role typically needs:
 | **EBS volumes** (training instances) | KMS encryption (default since 2023) |
 | **EFS** | KMS encryption |
 | **FSx for Lustre** | KMS encryption |
-| **Training job inter-node traffic** | TLS plus optional **inter-container traffic encryption** (extra encryption between training nodes) |
-| **Endpoint network traffic** | TLS at the API layer; KMS on EBS |
+| **Training job inter-node traffic** | TLS (Transport Layer Security) plus optional **inter-container traffic encryption** (extra encryption between training nodes) |
+| **Endpoint network traffic** | TLS at the API (Application Programming Interface) layer; KMS on EBS |
 | **Model artifact** (`model.tar.gz` in S3) | SSE-KMS |
 | **Snapshot of EBS, Studio EFS** | KMS encryption |
 | **SageMaker Notebook lifecycle config** | Stored encrypted |
@@ -296,7 +296,7 @@ Bedrock can also be invoked via VPC endpoints (PrivateLink). Traffic never trave
 | "Spot is too risky for ML" | With checkpointing, Spot is the default for fault-tolerant training |
 | "Auto-scaling solves all cost problems" | Only if scaling triggers and limits are tuned |
 | "Reserved Instances are dead for ML" | Compute Savings Plans (RI's flexible cousin) are very much alive |
-| "Inferentia is harder to use than GPUs" | Neuron SDK abstracts most differences |
+| "Inferentia is harder to use than GPUs" | Neuron SDK (Software Development Kit) abstracts most differences |
 | "Studio doesn't have idle issues" | Studio spaces can run forever if you don't configure auto-shutdown |
 | "Encrypting in transit isn't needed inside AWS" | Inter-node training traffic should be encrypted for regulated workloads |
 | "Macie replaces CloudTrail" | They serve different purposes, discovery vs audit |

@@ -16,7 +16,7 @@ The team builds the first version the "right" way: open-source RAG with Sentence
 2. The Pinecone index is in us-east-1 (Virginia); Mercado Libre serves Brazil and Argentina; round-trip latency from São Paulo is 180ms before Gemini even starts thinking.
 3. The hybrid-retrieval logic (semantic + keyword) is in a Python service the team wrote in a hurry; it ranks "cómo cambiar contraseña" (Spanish for "how to change password") below an unrelated English document because the BM25 component is English-tuned.
 
-Mercado Libre's team migrates to **Vertex AI Search** in late 2023. Vertex AI Search handles chunking, embedding (using Google's multi-lingual embedding model), regional deployment in São Paulo, hybrid retrieval (BM25 + dense), reranking, and citation extraction, out of the box. Gemini Pro grounds against the Vertex AI Search retrieval result with a single API call. The team's published case study (Google Cloud Next 2024) reports: less code than the open-source version, lower latency for South American users, better Portuguese + Spanish quality, and the engineering team is no longer responsible for re-tuning chunking when seller policies change.
+Mercado Libre's team migrates to **Vertex AI Search** in late 2023. Vertex AI Search handles chunking, embedding (using Google's multi-lingual embedding model), regional deployment in São Paulo, hybrid retrieval (BM25 + dense), reranking, and citation extraction, out of the box. Gemini Pro grounds against the Vertex AI Search retrieval result with a single API (Application Programming Interface) call. The team's published case study (Google Cloud Next 2024) reports: less code than the open-source version, lower latency for South American users, better Portuguese + Spanish quality, and the engineering team is no longer responsible for re-tuning chunking when seller policies change.
 
 The lesson: **Vertex AI Search is RAG for teams that do not want to build RAG.** And it is the right choice *most of the time*. But sometimes when you have a custom embedding model, when you need ANN at extreme scale, when you need a stack you can customize Vertex AI Vector Search (the lower-level primitive) is the right choice. The exam is testing whether you can tell the difference.
 
@@ -136,7 +136,7 @@ When you need:
 | Embeddings (computed in your service) | ANN index (ScaNN under the hood) |
 | Chunking logic | Auto-scaling endpoint |
 | Retrieval orchestration | Region deployment |
-| Generation prompt (you pass retrieved chunks) | Encryption (CMEK), VPC-SC compliance |
+| Generation prompt (you pass retrieved chunks) | Encryption (CMEK), VPC (Virtual Private Cloud)-SC compliance |
 
 ### Building a Vector Search index
 

@@ -19,16 +19,16 @@ The fix: a 9-step automation workflow built inside their own HubSpot product. In
 Results, publicly shared:
 
 - Speed-to-lead under 2 minutes (from 4 hours)
-- MQL-to-SQL conversion up 22%
+- MQL (Marketing Qualified Lead)-to-SQL (Sales Qualified Lead) conversion up 22%
 - Lead acquisition cost down 38%
 - Sales rep capacity freed: ~30% (no longer chasing cold leads)
 
 The lesson: a campaign that ends at "thanks, we'll be in touch" is wasting your ad spend. The automation that follows the conversion is where most of the value gets extracted. This module wires up that automation.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Conversion events and tracking (Pixel, CAPI, GA4), covered in [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
-> - LinkedIn Lead Gen Forms and CRM hand-offs, covered in [Module 5](../Module-05-TikTok-LinkedIn-Ads-B2B/Reading.md)
-> - CDP-fed audience sync concepts, covered in [Module 6](../Module-06-Programmatic-Retargeting/Reading.md)
+> - Conversion events and tracking (Pixel, CAPI, GA4 (Google Analytics 4)), covered in [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
+> - LinkedIn Lead Gen Forms and CRM (Customer Relationship Management) hand-offs, covered in [Module 5](../Module-05-TikTok-LinkedIn-Ads-B2B (Business-to-Business)/Reading.md)
+> - CDP (Customer Data Platform)-fed audience sync concepts, covered in [Module 6](../Module-06-Programmatic-Retargeting/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
 ---
@@ -53,8 +53,8 @@ That's the entire model. Every automation is a chain of those.
 
 | Platform | Best for | Pricing (2026, entry tier) |
 |----------|----------|-----|
-| **HubSpot** | B2B SaaS + content marketing | Free CRM; Marketing Hub from $20/mo (Starter) |
-| **Klaviyo** | DTC ecommerce (especially Shopify) | Free up to 250 contacts; $45/mo at ~1500 contacts |
+| **HubSpot** | B2B SaaS (Software as a Service) + content marketing | Free CRM; Marketing Hub from $20/mo (Starter) |
+| **Klaviyo** | DTC (Direct-to-Consumer) ecommerce (especially Shopify) | Free up to 250 contacts; $45/mo at ~1500 contacts |
 | **ActiveCampaign** | SMB + creators + service businesses | From $15/mo (Marketing Lite) |
 | **Salesforce Marketing Cloud** | Enterprise; deeply integrated with Salesforce CRM | $1,250+/mo |
 | **Make.com / n8n / Zapier** | Generic automation across any tools | $9-299/mo |
@@ -133,7 +133,7 @@ Klaviyo's automation is called **Flows**. Built for ecommerce conversion.
 | **Abandoned Browse** | Viewed product 3+ times, no add to cart | Add to cart |
 | **Post-Purchase** | Order placed | Review + cross-sell |
 | **Win-Back** | No purchase in 90+ days | Re-activate |
-| **Birthday / Anniversary** | Date-based | LTV lift |
+| **Birthday / Anniversary** | Date-based | LTV (Lifetime Value) lift |
 | **Replenishment** | X days post-purchase based on product | Repeat purchase |
 
 ### Example: Abandoned Cart Flow
@@ -186,7 +186,7 @@ Recap from Module 8 because automation is the connective tissue:
 
 | Tool | When to pick it |
 |------|-----------------|
-| **Zapier** | Easiest UI; biggest app library; willing to pay $20-299/mo |
+| **Zapier** | Easiest UI (User Interface); biggest app library; willing to pay $20-299/mo |
 | **Make.com** | Visual flow builder; cheapest for 10K+ ops/mo ($9-29); steeper learning curve |
 | **n8n** | Self-hosted; open source; cheapest at scale; need dev help to deploy |
 
@@ -206,9 +206,9 @@ Example 2: "When a paid Meta lead comes in (Lead Gen Form), append it to
    Connectors needed: Meta Lead Ads → Google Sheets → HubSpot → Twilio
 
 Example 3: "Every Monday at 9am, pull last week's Google Ads spend and 
-           CPA, post it to Slack #marketing as a formatted message, and 
+           CPA (Cost Per Acquisition), post it to Slack #marketing as a formatted message, and 
            write the data to a Notion database"
-   Connectors needed: Google Ads API → Slack → Notion API
+   Connectors needed: Google Ads API (Application Programming Interface) → Slack → Notion API
 ```
 
 🧠 **MEMORIZE the model**: every automation = TRIGGER + STEPS + ACTION. If you can describe it that way, you can build it.
@@ -221,13 +221,13 @@ The current frontier: LLMs that don't just generate content but TAKE ACTIONS via
 
 ### What "Tool Use" Means
 
-LLMs (Claude, GPT-5) can now CALL functions/APIs. You give them:
+LLMs (Claude, GPT (Generative Pre-trained Transformer)-5) can now CALL functions/APIs. You give them:
 
 1. A task ("Reply to support emails about shipping delays")
 2. A set of tools (Gmail API, Shopify API, internal knowledge base)
 3. Permission boundaries
 
-The LLM then orchestrates:
+The LLM (Large Language Model) then orchestrates:
 
 - Read incoming email
 - Check Shopify for the order status
@@ -300,7 +300,7 @@ Convert a Meta-paid visitor → email subscriber → first-time buyer → repeat
 ### The Architecture
 
 ```
-META AD (Reels)
+META AD (Active Directory) (Reels)
    ↓ Click
 LANDING PAGE (Unbounce)
    ↓ Email captured (newsletter signup OR lead magnet)
@@ -369,7 +369,7 @@ An API is a way for one app to talk to another. Example calls:
 
 In automation platforms, you usually don't write API calls directly, the platform handles it. But knowing what an API can do (read data, write data, trigger actions) helps you imagine what's possible.
 
-🎯 **Exam tip**: "What is a webhook?" → "A URL that receives an HTTP POST when an event happens in another app."
+🎯 **Exam tip**: "What is a webhook?" → "A URL that receives an HTTP (Hypertext Transfer Protocol) POST when an event happens in another app."
 
 ---
 
@@ -477,7 +477,7 @@ You now know:
 Each prompt forces a judgment call. Argue from the frameworks in this module.
 
 1. HubSpot's speed-to-lead dropped from 4 hours to under 2 minutes via instant Slack pings. A team argues this volume of pings burns out sales reps. Build both sides, when does speed-to-lead helping conversion turn into burning out the humans on the other end?
-2. Klaviyo recommends 7 must-have Flows (Welcome, Abandoned Cart, Browse, Post-Purchase, Win-Back, Birthday, Replenishment). A new DTC brand at $5K/month MRR says they'll only set up Welcome + Abandoned Cart "for now." Argue when the 80/20 is right, and when it leaves $20K+ on the table that would have been recovered.
+2. Klaviyo recommends 7 must-have Flows (Welcome, Abandoned Cart, Browse, Post-Purchase, Win-Back, Birthday, Replenishment). A new DTC brand at $5K/month MRR (Monthly Recurring Revenue) says they'll only set up Welcome + Abandoned Cart "for now." Argue when the 80/20 is right, and when it leaves $20K+ on the table that would have been recovered.
 3. AI agents with Tool Use can call APIs and take actions. A founder wants to give Claude full write access to the marketing CRM. Walk through what could go right (10x ops efficiency) and what could go wrong (untrackable agent actions, lifecycle-stage damage, unsubscribe complaint cascades). What guardrails would you require before authorizing agent write access?
 4. Gmail/Yahoo's 2024 bulk-sender requirements (SPF + DKIM + DMARC + < 0.3% spam complaint rate) effectively raise the floor on email marketing. Defend the case that this is GOOD for the ecosystem and the case that it favors entrenched senders over startups. What does each side miss?
 5. The reading argues most marketers underuse automation. But over-automation can feel cold, every campaign reply is a robot, every "personal" email is templated. Where does the line fall between productive automation and brand-eroding automation, and how would you audit your own stack against it?

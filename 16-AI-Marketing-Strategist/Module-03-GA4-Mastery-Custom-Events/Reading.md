@@ -1,11 +1,11 @@
-# Module 3: GA4 Mastery & Custom Events 📊
+# Module 3: GA4 (Google Analytics 4) Mastery & Custom Events 📊
 
-> **Why this module matters:** Google Analytics 4 is the *one* analytics certification almost every senior marketer is expected to hold by 2026. It is also the platform that 70%+ of the world's measured web sessions flow through. If you cannot build a GA4 property from scratch events, parameters, audiences, Explorations, BigQuery export, raw-event SQL you are not yet at strategist level.
+> **Why this module matters:** Google Analytics 4 is the *one* analytics certification almost every senior marketer is expected to hold by 2026. It is also the platform that 70%+ of the world's measured web sessions flow through. If you cannot build a GA4 property from scratch events, parameters, audiences, Explorations, BigQuery export, raw-event SQL (Sales Qualified Lead) you are not yet at strategist level.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - The event-based tracking model and what an "event" + "parameter" pair represents, covered in [Module 2: CDPs & Server-Side Tracking](../Module-02-CDP-Server-Side-Tracking/Reading.md).
+> - The event-based tracking model and what an "event" + "parameter" pair represents, covered in [Module 2: CDPs & Server-Side Tracking](../Module-02-CDP (Customer Data Platform)-Server-Side-Tracking/Reading.md).
 > - Basic SQL `SELECT`, `WHERE`, `GROUP BY`, `JOIN`, assumed background, refresher in [Course 14 Module 8](../../14-AI-Marketing-Foundations/Module-08-Analytics-Measurement-Basics/Reading.md).
-> - The OKR / KPI vocabulary from [Module 1](../Module-01-Strategic-Frameworks-OKRs/Reading.md), you'll wire GA4 events directly to those KRs.
+> - The OKR (Objective and Key Result) / KPI (Key Performance Indicator) vocabulary from [Module 1](../Module-01-Strategic-Frameworks-OKRs (Objectives and Key Results)/Reading.md), you'll wire GA4 events directly to those KRs.
 > If you've never run a SQL query against a warehouse, do a one-hour BigQuery sandbox tutorial before continuing, this module's debugging section assumes hands-on familiarity.
 
 ---
@@ -143,7 +143,7 @@ GA4 has three built-in **predictive metrics** powered by Google's machine learni
 | **Churn probability** | Probability an active user will NOT return in next 7 days | Same threshold |
 | **Predicted revenue** | Expected revenue from a user in next 28 days | Same threshold |
 
-These metrics let you build audiences like "Top 10% by predicted revenue" and sync them to Google Ads as bid-modifier targets. This is essentially a no-code propensity model and is one of the highest-ROI features in GA4.
+These metrics let you build audiences like "Top 10% by predicted revenue" and sync them to Google Ads as bid-modifier targets. This is essentially a no-code propensity model and is one of the highest-ROI (Return on Investment) features in GA4.
 
 ⚠️ **What most teams get wrong:** They don't meet the volume thresholds because their conversion data is too thin, and they don't realize the predictive features have been silently disabled. Always check **Admin → Predictions** for eligibility.
 
@@ -171,7 +171,7 @@ Three audiences overlaid in a Venn diagram. Useful for finding the overlap betwe
 
 ### 5. User Lifetime
 
-Aggregate metrics per user across all sessions ever recorded. Foundation for LTV-style analysis inside GA4.
+Aggregate metrics per user across all sessions ever recorded. Foundation for LTV (Lifetime Value)-style analysis inside GA4.
 
 ### Cohort Exploration
 
@@ -186,14 +186,14 @@ A separate technique: cohorts of users sharing an acquisition date, and how thei
 The **GA4 → BigQuery export is free** for all properties (paid in UA). This is the single most underused feature in GA4. Three reasons you must use it:
 
 1. **No sampling.** Every event row is available.
-2. **SQL-level access.** Join GA4 data to your CRM, your warehouse, your MMM inputs.
-3. **Custom modeling.** You cannot build a Markov-chain attribution model in the GA4 UI. You can in SQL.
+2. **SQL-level access.** Join GA4 data to your CRM (Customer Relationship Management), your warehouse, your MMM inputs.
+3. **Custom modeling.** You cannot build a Markov-chain attribution model in the GA4 UI (User Interface). You can in SQL.
 
 ### Setting up the export
 
 ```
 GA4 Admin → Property → BigQuery Links → Link
-  → Choose GCP project
+  → Choose GCP (Google Cloud Platform) project
   → Choose dataset location
   → Frequency: Daily (free) and / or Streaming (~$0.05 per GB ingested,
                                                   free monthly tier)
@@ -317,7 +317,7 @@ Most readers will use the **free** tier. The paid GA4 360 differs:
 | Data retention | 14 months (event-level) | 50 months |
 | BigQuery streaming export | Limited monthly free tier | Higher allowance |
 | Roll-up properties | No | Yes |
-| Dedicated support / SLA | No | Yes |
+| Dedicated support / SLA (Service Level Agreement) | No | Yes |
 
 🎯 **Strategist's rule:** If you do >50M events/month and your team relies on Explorations, the 360 sampling jump (10M → 1B) may justify the price. Otherwise, free GA4 + BigQuery export gives you 95% of the value.
 
@@ -327,7 +327,7 @@ Most readers will use the **free** tier. The paid GA4 360 differs:
 
 **Looker Studio** (formerly Google Data Studio) is the free BI layer on top of GA4. It has two connectors:
 
-1. **GA4 connector**, direct API to your GA4 property. Fast for standard reports but bound by API limits (and sampling for high cardinality).
+1. **GA4 connector**, direct API (Application Programming Interface) to your GA4 property. Fast for standard reports but bound by API limits (and sampling for high cardinality).
 2. **BigQuery connector**, connect to your raw export. No sampling. Full SQL.
 
 For executive dashboards, use BigQuery + a curated SQL view. For self-serve analyst dashboards, the GA4 connector is fine.
@@ -390,7 +390,7 @@ GROUP BY 1, 2, 3;
 | **Predictive metrics** | Purchase probability, churn probability, predicted revenue |
 | **Exploration** | GA4's ad-hoc analysis workspace (free-form, funnel, path, segment overlap, lifetime, cohort) |
 | **BigQuery export** | Free raw event-level data export to GCP BigQuery |
-| **Measurement Protocol v2** | The HTTP endpoint for server-side event ingestion to GA4 |
+| **Measurement Protocol v2** | The HTTP (Hypertext Transfer Protocol) endpoint for server-side event ingestion to GA4 |
 
 ---
 
@@ -398,14 +398,14 @@ GROUP BY 1, 2, 3;
 
 **Situation.** Universal Analytics (UA) stopped collecting data on **July 1, 2023**, and the UA reporting interface itself was scheduled for sunset in July 2024. eBay a marketplace with hundreds of millions of monthly active users, ~190 million buyers, and a complex multi-region property portfolio (eBay.com, eBay.de, eBay.co.uk, eBay.com.au and dozens of country sites) faced a deadline-driven migration problem that most teams under-prepared for: years of UA-trained dashboards, alerts, attribution rules, and bid-optimization integrations all had to be reproduced on GA4's *event-only* data model before the UA cutoff. eBay also had a strategic need to consolidate measurement across web + Android app + iOS app + email, exactly the kind of cross-stream unification GA4 was designed for and UA was not.
 
-**Decision.** eBay's analytics leadership (publicly profiled at the 2023 Google Cloud Next conference) chose a **GA4 + BigQuery + Looker** architecture rather than rebuilding within the GA4 UI alone. Specifically: (1) every GA4 property was linked to BigQuery via the *free* daily-export feature plus streaming export for time-sensitive events; (2) all executive dashboards were rebuilt in Looker on top of curated BigQuery views, with the GA4 UI used only for ad-hoc analyst work and Explorations; (3) custom dimensions and Key Events were standardized via a *single global event taxonomy* enforced through a centralized server-side GTM container; (4) Key Events were ruthlessly cut to fewer than a dozen per region under GA4's 50-event cap with everything else relegated to non-conversion custom events for diagnostic use. The migration ran in parallel with UA from late 2022 through July 2023.
+**Decision.** eBay's analytics leadership (publicly profiled at the 2023 Google Cloud Next conference) chose a **GA4 + BigQuery + Looker** architecture rather than rebuilding within the GA4 UI alone. Specifically: (1) every GA4 property was linked to BigQuery via the *free* daily-export feature plus streaming export for time-sensitive events; (2) all executive dashboards were rebuilt in Looker on top of curated BigQuery views, with the GA4 UI used only for ad-hoc analyst work and Explorations; (3) custom dimensions and Key Events were standardized via a *single global event taxonomy* enforced through a centralized server-side GTM (Google Tag Manager) container; (4) Key Events were ruthlessly cut to fewer than a dozen per region under GA4's 50-event cap with everything else relegated to non-conversion custom events for diagnostic use. The migration ran in parallel with UA from late 2022 through July 2023.
 
 **Outcome.** Google Cloud published eBay's migration as a customer-reference case study in 2023; the eBay analytics team disclosed that the BigQuery-first model gave them **no sampling on any standard executive report**, dashboard rebuilds completed roughly 30% faster than the original UA timeline, and the unified event taxonomy enabled cross-region analyses (e.g., "compare conversion-rate decay of new mobile users across eBay.com and eBay.de") that were genuinely impossible on the UA stack. The most important quantitative result: post-migration, the analytics team's average time-to-answer for a senior-leadership ad-hoc question dropped from "next-business-day" on UA to **under 15 minutes on BigQuery**, a ~95% reduction that fundamentally changed how the marketing org operated.
 
 **Lesson for the exam / for practitioners.** eBay is the canonical 2023 reference for the principle this module's strategist rule encodes: *free GA4 + BigQuery export gives you 95% of GA4 360's value at 0% of the cost.* The migration also illustrates the *event-taxonomy discipline* the module emphasizes, eBay's pre-migration UA implementation had drifted into hundreds of event names with overlapping semantics; the post-migration GA4 implementation collapsed those into a single global taxonomy of ~30 recommended-event-aligned names with ruthless Key Event prioritization. On the exam, recognize: when a case describes a large enterprise migrating from UA with sampling-sensitive reports, the right architecture is GA4 + BigQuery + a BI tool, not GA4 360 alone.
 
 **Discussion (Socratic).**
-- Q1: eBay's migration succeeded in part because the team cut hundreds of legacy UA events down to a few dozen GA4 events in a single sweep. The CMO at a smaller company sees that case and wants to do the same cut. What's the test you'd apply, event-by-event, before deciding which to keep, and what's the most predictable downstream cost of an over-aggressive cut?
+- Q1: eBay's migration succeeded in part because the team cut hundreds of legacy UA events down to a few dozen GA4 events in a single sweep. The CMO (Chief Marketing Officer) at a smaller company sees that case and wants to do the same cut. What's the test you'd apply, event-by-event, before deciding which to keep, and what's the most predictable downstream cost of an over-aggressive cut?
 - Q2: The official answer here is to rebuild dashboards on BigQuery rather than inside GA4. Why does BigQuery + Looker win over GA4-native dashboards for an enterprise at eBay's scale, and at what *smaller* scale does the trade-off reverse, i.e., when is "use GA4 UI dashboards directly" actually the right call?
 - Q3: eBay's implicit trade-off is that BigQuery + Looker requires SQL + data-engineering capability the GA4 UI does not. For a marketing-org structure where SQL fluency is uneven, what's the operating model that protects the BigQuery investment without creating a permanent "the data team is the bottleneck" problem?
 
@@ -415,7 +415,7 @@ GROUP BY 1, 2, 3;
 
 1. GA4's hard cap of 50 Key Events per property forces ruthless prioritization. A client comes to you with 38 Key Events already configured, most of them low-volume micro-conversions. What heuristic would you apply to *cut* the list back to 12–15, and how would you defend the cuts to the team that set up the original 38?
 2. The GA4 → BigQuery export is free for both the standard and 360 tiers, but the SQL skills to actually use it are scarce on most marketing teams. When is it strategically *correct* to skip the BigQuery export entirely and accept the analytics ceiling of the GA4 UI? When is it negligent to skip it?
-3. GA4's data-driven attribution (DDA) requires 400 conversions per type / 30 days. A scrappy B2B SaaS with 25 demo-requests / week will never hit that threshold. What's the *least bad* substitute and how would you communicate the methodology's limits to a board that asks "which channel drove this quarter's pipeline?"
+3. GA4's data-driven attribution (DDA) requires 400 conversions per type / 30 days. A scrappy B2B (Business-to-Business) SaaS (Software as a Service) with 25 demo-requests / week will never hit that threshold. What's the *least bad* substitute and how would you communicate the methodology's limits to a board that asks "which channel drove this quarter's pipeline?"
 4. Google's 2024 rename of "Conversions" to "Key Events" looks cosmetic but has real downstream effects on dashboards, alerts, and team vocabulary. How should an analytics leader manage this kind of platform-driven taxonomy churn over a 5-year horizon, when GA4 itself, like UA before it, will eventually be superseded?
 5. The Airbnb case in the opening story relied on raw event-level SQL to find a $200M bug. Could a smaller team without a dedicated analyst have caught the same issue using only standard GA4 reports + Looker Studio? What does this case tell you about the *fixed costs* of a privacy-first analytics function and where the ROI threshold lies?
 

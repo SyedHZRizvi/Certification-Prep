@@ -31,7 +31,7 @@ sudo: parse error in /etc/sudoers near line 23
 sudo: no valid sudoers sources found, quitting
 ```
 
-Nobody can sudo. She tries to fix it, but she's not root, and the only way to *become* root on this host is via sudo. The console login is via a Bastion ABAC system that itself requires sudo to bypass. She's locked out of her production jump host.
+Nobody can sudo. She tries to fix it, but she's not root, and the only way to *become* root on this host is via sudo. The console login is via a Bastion ABAC (Attribute-Based Access Control) system that itself requires sudo to bypass. She's locked out of her production jump host.
 
 She spends 45 minutes raising a high-priority cloud-provider ticket to get console access via the rescue path. Three engineers wait. The fix: a stray space character before the `ALL=(ALL:ALL)` she pasted from a Stack Overflow snippet. `visudo` would have caught it at save time and refused to overwrite the file.
 
@@ -287,7 +287,7 @@ dave     ALL=(root)     /usr/bin/systemctl restart nginx, /usr/bin/systemctl sta
 Each field:
 
 - **who**, user (`alice`), group (`%groupname`), or `ALL`
-- **where**, hostnames where rule applies (`ALL` = all hosts when sudoers is centralized via LDAP)
+- **where**, hostnames where rule applies (`ALL` = all hosts when sudoers is centralized via LDAP (Lightweight Directory Access Protocol))
 - **(as-whom)**, `(ALL:ALL)` means "as any user, as any group"; default `(root)` means as root
 - **what**, full command path(s), or `ALL`
 
@@ -402,7 +402,7 @@ session    optional     pam_lastlog.so
 | `pam_succeed_if.so` | Match conditions (UID range, hostname, time) |
 | `pam_lastlog.so` | Show last login info |
 | `pam_motd.so` | Display Message Of The Day |
-| `pam_ssh.so` | Use SSH keys for authentication |
+| `pam_ssh.so` | Use SSH (Secure Shell) keys for authentication |
 
 🎯 **Exam pattern:** *"After 5 failed logins, lock the account for 10 minutes."* → Edit `/etc/pam.d/system-auth` (RHEL) or `/etc/pam.d/common-auth` (Debian) to add `auth required pam_faillock.so preauth deny=5 unlock_time=600`.
 
@@ -539,7 +539,7 @@ The PBQ might give you all four requirements and a sudoers fragment, and ask whi
 | GECOS | General Electric Comprehensive OS (the comment field, historic) |
 | PAM | Pluggable Authentication Modules |
 | LDAP | Lightweight Directory Access Protocol (often the source of network users) |
-| SSSD | System Security Services Daemon (modern LDAP/AD client) |
+| SSSD | System Security Services Daemon (modern LDAP/AD (Active Directory) client) |
 | NSS | Name Service Switch (decides where to look up users/groups) |
 | MOTD | Message Of The Day |
 | TTY | Terminal device |
@@ -550,11 +550,11 @@ The PBQ might give you all four requirements and a sudoers fragment, and ask whi
 
 ## 📊 Case Study, The 2008 Debian OpenSSL Predictable Random Number Bug
 
-**Situation.** In May 2008, security researcher Luciano Bello disclosed [CVE-2008-0166](https://nvd.nist.gov/vuln/detail/CVE-2008-0166) the Debian OpenSSL Predictable Random Number Generator vulnerability. A well-meaning patch applied to Debian's OpenSSL package in September 2006 had, in trying to silence Valgrind warnings about uninitialized memory, accidentally removed the code that mixed entropy into the OpenSSL PRNG (Pseudo-Random Number Generator). For ~20 months, every SSH key, every TLS cert, every GPG key, every random nonce generated on a Debian or Ubuntu system used a PRNG seeded entirely by the process PID a number with only 32,768 possible values.
+**Situation.** In May 2008, security researcher Luciano Bello disclosed [CVE-2008-0166](https://nvd.nist.gov/vuln/detail/CVE-2008-0166) the Debian OpenSSL Predictable Random Number Generator vulnerability. A well-meaning patch applied to Debian's OpenSSL package in September 2006 had, in trying to silence Valgrind warnings about uninitialized memory, accidentally removed the code that mixed entropy into the OpenSSL PRNG (Pseudo-Random Number Generator). For ~20 months, every SSH key, every TLS (Transport Layer Security) cert, every GPG key, every random nonce generated on a Debian or Ubuntu system used a PRNG seeded entirely by the process PID a number with only 32,768 possible values.
 
 **Decision.** The fix required regenerating every SSH host key, user SSH key, server TLS cert, and CA-signed cert generated on a Debian-family machine in that 20-month window. Debian and Ubuntu shipped a `ssh-vulnkey` tool to detect compromised keys. The OpenSSH package was patched to reject all known-bad keys in `authorized_keys`. Every CA had to revoke certs Debian users had submitted. Every sysadmin had to reissue tens or hundreds of keys.
 
-**Outcome.** The blast radius was extraordinary. Estimates suggested 8% of all HTTPS keys in active use at the time were on the vulnerable list. Universities (notably Cambridge and Harvard) used this incident in cryptography curriculum for the next decade as "the most expensive line of code ever removed." The cleanup spanned 2008–2010.
+**Outcome.** The blast radius was extraordinary. Estimates suggested 8% of all HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure) keys in active use at the time were on the vulnerable list. Universities (notably Cambridge and Harvard) used this incident in cryptography curriculum for the next decade as "the most expensive line of code ever removed." The cleanup spanned 2008–2010.
 
 **Lesson for the exam / for practitioners.** XK0-005 will not ask you to remember CVE-2008-0166 by ID. But it WILL test the *principles* this incident burned into the Linux community:
 

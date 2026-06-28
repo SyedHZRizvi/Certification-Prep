@@ -11,7 +11,7 @@
 
 ## 🚂 A Story: The 8th-Grade Math Problem That Embarrassed a $20B Company
 
-In November 2021, a competitive-intelligence team at a major US tech firm prepared a slide for their CEO. The pitch: "Our internal LLM beats GPT-3 on 84% of business writing tasks." A board member, after looking at the demo, asked one question: *"How does it do on the arithmetic problem my 8th-grade daughter brought home last night?"*
+In November 2021, a competitive-intelligence team at a major US tech firm prepared a slide for their CEO (Chief Executive Officer). The pitch: "Our internal LLM beats GPT-3 on 84% of business writing tasks." A board member, after looking at the demo, asked one question: *"How does it do on the arithmetic problem my 8th-grade daughter brought home last night?"*
 
 > "Roger has 5 tennis balls. He buys 2 more cans of tennis balls. Each can has 3 tennis balls. How many tennis balls does he have now?"
 
@@ -94,7 +94,7 @@ In late 2024 and through 2025, frontier labs began shipping models with **built-
 | Model family | Reasoning mode | Notes |
 |--------------|----------------|-------|
 | OpenAI o1 / o3 / o4 | Always-on reasoning; user doesn't see thinking by default | Hidden thinking tokens metered separately |
-| Claude 4.7 Extended Thinking | Toggleable via `thinking: {type: "enabled", budget_tokens: N}` | Visible thinking blocks in API response |
+| Claude 4.7 Extended Thinking | Toggleable via `thinking: {type: "enabled", budget_tokens: N}` | Visible thinking blocks in API (Application Programming Interface) response |
 | Gemini 2.5 Pro Deep Think | Toggleable on Pro tier | Visible reasoning trace |
 | DeepSeek R1 | Open-weights reasoning model | Open thinking traces, fully reproducible |
 
@@ -271,7 +271,7 @@ OpenAI's o1 (released September 2024) was the first commercial model to ship wit
 ### When NOT to use a reasoning model
 
 - Classification, extraction, summarization (use Haiku/Flash/mini)
-- Conversational chat (latency tanks UX)
+- Conversational chat (latency tanks UX (User Experience))
 - High-volume batch jobs (cost explodes)
 - Trivial questions ("What's the capital of France?", you don't need o3 for this)
 
@@ -431,7 +431,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 4](../Module-04-Structured-Outputs-JSON/Reading.md) combines CoT with structured outputs. [Module 6](../Module-06-Evaluation-AB-Testing/Reading.md) is how you prove CoT actually helps on your task. [Module 8](../Module-08-Production-Scale/Reading.md) covers cost discipline for reasoning models.
-> - Cross-course: Claude Architect (Cert Hub) covers Extended Thinking in depth. AWS AI Practitioner (course 07) covers Bedrock-hosted reasoning models.
+> - Cross-course: Claude Architect (Cert Hub) covers Extended Thinking in depth. AWS (Amazon Web Services) AI Practitioner (course 07) covers Bedrock-hosted reasoning models.
 > - Practice: Practice Exam 1 has ~5 questions from this module, the largest single-module weight.
 
 ---

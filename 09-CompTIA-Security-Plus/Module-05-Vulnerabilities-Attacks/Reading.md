@@ -6,7 +6,7 @@
 > - [Threat actors and motivations](../Module-04-Threats-Threat-Actors/Reading.md), Module 4 covers *who*; this module covers *how*.
 > - [Cryptography basics](../Module-02-Cryptography-PKI/Reading.md), needed for pass-the-hash, replay attacks, and weak-cipher questions.
 > - [Authentication factors and federation protocols](../Module-03-Identity-Access-Management/Reading.md), needed for credential attacks and session-hijack scenarios.
-> - Basic web concepts (HTTP, cookies, request/response), needed for SQLi/XSS/CSRF/SSRF questions.
+> - Basic web concepts (HTTP (Hypertext Transfer Protocol), cookies, request/response), needed for SQLi/XSS/CSRF/SSRF questions.
 
 ---
 
@@ -19,7 +19,7 @@ Imagine a single bank First Federal and twelve different robbery attempts in one
 3. **Sneaking malware** in the back door (malware, including ransomware)
 4. **Crashing the alarm system** while looting (DDoS/disruption + attack-while-distracted)
 
-Each family has sub-types, pass-the-hash vs brute force, phishing vs vishing, virus vs worm vs Trojan, SYN flood vs DNS amplification. Your job is to **recognize the tell-tale signs of each**. Memorize the tells, and Sec+ scenario questions become matching exercises.
+Each family has sub-types, pass-the-hash vs brute force, phishing vs vishing, virus vs worm vs Trojan, SYN flood vs DNS (Domain Name System) amplification. Your job is to **recognize the tell-tale signs of each**. Memorize the tells, and Sec+ scenario questions become matching exercises.
 
 ---
 
@@ -61,8 +61,8 @@ Each family has sub-types, pass-the-hash vs brute force, phishing vs vishing, vi
 The **OWASP Top 10** is a periodic consensus list of the most critical web-application security risks, maintained by the **Open Worldwide Application Security Project** (founded by Mark Curphey, 2001; the first Top 10 was published 2003). The current edition is **OWASP Top 10:2021**, the next refresh is expected late 2025/2026. Sec+ references this list (don't memorize all 10 in order, but know the heavy-hitters):
 
 1. **A01 Broken Access Control**, IDOR (`?user_id=42`), missing authorization checks
-2. **A02 Cryptographic Failures**, weak ciphers, no HTTPS, hardcoded keys
-3. **A03 Injection**, SQL injection, command injection, LDAP injection
+2. **A02 Cryptographic Failures**, weak ciphers, no HTTPS (HTTP Secure), hardcoded keys
+3. **A03 Injection**, SQL (Structured Query Language) injection, command injection, LDAP (Lightweight Directory Access Protocol) injection
 4. **A04 Insecure Design**, security wasn't considered during design
 5. **A05 Security Misconfiguration**, default creds, verbose error messages
 6. **A06 Vulnerable & Outdated Components**, running EOL library, Log4Shell
@@ -105,7 +105,7 @@ The **OWASP Top 10** is a periodic consensus list of the most critical web-appli
 
 | Type | How |
 |------|-----|
-| **Volumetric DDoS** | Saturate bandwidth (UDP floods, ICMP floods) |
+| **Volumetric DDoS** | Saturate bandwidth (UDP (User Datagram Protocol) floods, ICMP (Internet Control Message Protocol) floods) |
 | **Protocol attack** | Exhaust state tables (SYN flood) |
 | **Amplification / Reflection** | Spoof source IP; small request → huge response from public servers (DNS amplification, NTP, memcached) |
 | **Application-layer DDoS (L7)** | Expensive HTTPS requests, exhaust app workers (Slowloris) |
@@ -115,14 +115,14 @@ The **OWASP Top 10** is a periodic consensus list of the most critical web-appli
 
 - **DNS poisoning / spoofing**, fake DNS answers redirect traffic (`bank.com → evil IP`)
 - **DNS hijacking**, change DNS records at the registrar or resolver
-- **ARP poisoning / spoofing**, fake ARP replies; lets attacker MITM on a LAN
+- **ARP poisoning / spoofing**, fake ARP replies; lets attacker MITM on a LAN (Local Area Network)
 - **MAC flooding**, overflow switch CAM table → switch falls back to hub mode (broadcasts everything)
 - **MAC cloning**, copy a known-good MAC to bypass port security
-- **VLAN hopping**, double-tagging or switch spoofing to jump VLANs
+- **VLAN (Virtual Local Area Network) hopping**, double-tagging or switch spoofing to jump VLANs
 - **STP attacks**, claim to be root bridge → redirect traffic
 - **Replay attack**, capture a valid auth/transaction, replay later
 - **On-path attack** (Sec+'s renamed "Man-in-the-Middle"), attacker sits between client and server, intercepting/altering traffic
-- **DHCP starvation / rogue DHCP**, attacker exhausts pool or hands out malicious config
+- **DHCP (Dynamic Host Configuration Protocol) starvation / rogue DHCP**, attacker exhausts pool or hands out malicious config
 
 ### Wireless attacks
 
@@ -153,7 +153,7 @@ The **OWASP Top 10** is a periodic consensus list of the most critical web-appli
 | **AS-REP roasting** | Targets accounts with Kerberos pre-auth disabled | Require pre-auth |
 | **Golden / Silver Ticket** | Forged Kerberos tickets after KRBTGT compromise | KRBTGT rotation, monitoring |
 | **Phishing for creds** | Trick user into typing into fake login | MFA + user training + DMARC |
-| **Keylogger** | Capture keystrokes | EDR, anti-malware |
+| **Keylogger** | Capture keystrokes | EDR (Endpoint Detection and Response), anti-malware |
 | **Session hijacking** | Steal session cookie/token | HTTPS, Secure+HttpOnly cookies, short sessions |
 
 ---
@@ -187,7 +187,7 @@ The #1 root cause of breaches. Sec+ tests **lots** of subcategories.
 ### Why social engineering works (the psychology Sec+ tests)
 | Principle | Example |
 |-----------|---------|
-| **Authority** | "I'm the CEO" / fake IT badge |
+| **Authority** | "I'm the CEO (Chief Executive Officer)" / fake IT badge |
 | **Urgency** | "Wire this in the next hour or we lose the deal" |
 | **Scarcity** | "Only 5 spots left" |
 | **Social proof** | "Everyone in HR is doing this training" |
@@ -199,7 +199,7 @@ The #1 root cause of breaches. Sec+ tests **lots** of subcategories.
 
 ## 🖥️ Physical & Hardware Attacks
 
-- **RFID cloning**, copying badge data
+- **RFID (Radio Frequency Identification) cloning**, copying badge data
 - **Skimming**, credit card readers harvesting card+PIN
 - **Card cloning**, duplicate magstripes; chip-and-PIN largely defeats this
 - **Tampering**, physical modification of a device
@@ -231,7 +231,7 @@ Knowing the **tell** is what makes scenario questions trivial:
 
 ## 🔬 Scenario Walkthrough (PBQ-style)
 
-> **Scenario:** A SOC analyst sees the following web-server log lines:
+> **Scenario:** A SOC (Security Operations Center) analyst sees the following web-server log lines:
 > ```
 > POST /api/login user=admin&pass=Summer2024
 > POST /api/login user=jdoe &pass=Summer2024
@@ -249,7 +249,7 @@ Knowing the **tell** is what makes scenario questions trivial:
    - **Risk-based / impossible-travel detection**, Conditional Access
    - **Common-password ban**, `Summer2024` is on every spraying wordlist
    - **Alert on aggregate failure rate**, not just per-user
-   - **CAPTCHA / device fingerprinting** at the API gateway
+   - **CAPTCHA / device fingerprinting** at the API (Application Programming Interface) gateway
 
 A PBQ might show 4 log snippets, drag each to its attack name.
 
@@ -257,7 +257,7 @@ A PBQ might show 4 log snippets, drag each to its attack name.
 
 ## 📊 Case Study, Log4Shell (CVE-2021-44228, December 2021)
 
-**Situation.** **Apache Log4j 2** is a Java logging library embedded in roughly **2.5 billion** devices and applications worldwide every Java enterprise stack, every major SaaS, half the Fortune 500's middleware, Minecraft servers, iCloud, Apple's enterprise infrastructure, AWS, Steam, Tesla, government systems. Logging libraries are *boring infrastructure* invisible to most developers and absent from most threat models. In 2013 Log4j had added a feature for "**lookups**," including JNDI (Java Naming and Directory Interface) lookups that let log strings resolve to remote LDAP/DNS objects at log time, a reasonable feature for a 2013 enterprise SOA world, dangerous in any modern context.
+**Situation.** **Apache Log4j 2** is a Java logging library embedded in roughly **2.5 billion** devices and applications worldwide every Java enterprise stack, every major SaaS (Software as a Service), half the Fortune 500's middleware, Minecraft servers, iCloud, Apple's enterprise infrastructure, AWS (Amazon Web Services), Steam, Tesla, government systems. Logging libraries are *boring infrastructure* invisible to most developers and absent from most threat models. In 2013 Log4j had added a feature for "**lookups**," including JNDI (Java Naming and Directory Interface) lookups that let log strings resolve to remote LDAP/DNS objects at log time, a reasonable feature for a 2013 enterprise SOA world, dangerous in any modern context.
 
 **Decision.** On **24 November 2021** an Alibaba security researcher (Chen Zhaojun) responsibly disclosed the flaw later assigned **CVE-2021-44228**, CVSS **10.0** (max) to the Apache Software Foundation. Apache developers (all volunteers) began drafting a patch. On **9 December 2021** before the official disclosure, a **proof-of-concept exploit** appeared in a Chinese Minecraft modder's tweet. Within hours, the PoC was confirmed: an attacker who could control *any string that ends up logged* a User-Agent header, an HTTP URL, a chat message, an iPhone device name (which iCloud logged) could trigger Log4j to fetch and execute remote Java code. The official Apache disclosure came **10 December 2021** with patch 2.15.0. The patch itself was incomplete, leading to **CVE-2021-45046** (a related flaw) on 14 December and **CVE-2021-44832** on 28 December. Three patches in 18 days.
 
@@ -267,12 +267,12 @@ A PBQ might show 4 log snippets, drag each to its attack name.
 
 - **CVE / CVSS / KEV / EPSS** all crystallized around this incident. CVSS 10.0; KEV listing within hours; EPSS top-10 for years. The exam tests these scoring systems practice by ranking patches with Log4Shell-style "10 CVSS, 95% EPSS, on KEV" against an internal SQLi (8.0, 5% EPSS, not on KEV but on your customer-facing app) Log4Shell wins prioritization every time.
 - **Insecure design + Vulnerable & outdated components** (OWASP A04 + A06). Log4j's JNDI-lookup feature was a 2013 design that became a 2021 RCE. A06 "Vulnerable & Outdated Components" exists *because* of this exact pattern. Software Composition Analysis (SCA, Module 10) flags this kind of risk.
-- **Defense-in-depth as the only practical mitigation** during the patch lag. WAF rules to block `${jndi:` strings, egress filtering to block outbound LDAP/RMI from servers, removal of the `JndiLookup.class` from running JARs as a hot-patch, none was a complete fix, but layered, they bought time until proper patches were deployed.
+- **Defense-in-depth as the only practical mitigation** during the patch lag. WAF (Web Application Firewall) rules to block `${jndi:` strings, egress filtering to block outbound LDAP/RMI from servers, removal of the `JndiLookup.class` from running JARs as a hot-patch, none was a complete fix, but layered, they bought time until proper patches were deployed.
 - **Supply chain transparency.** Software Bill of Materials (**SBOM**) became mandatory for US federal software because of Log4Shell (EO 14028, May 2021, codified via NIST SP 800-218 SSDF). Without an SBOM, you couldn't even *answer* the question "do we use Log4j?", Module 10 covers SBOMs in depth.
 - **The patch-was-incomplete pattern.** Three CVEs in 18 days. The exam tests patch-management discipline (Module 7/8): the right answer to "we patched, are we safe?" is *re-scan* and *verify*, not assume.
 
 **Discussion (Socratic).**
-- **Q1:** Log4j was maintained by ~5 volunteer developers, supported by ~$2,500/year in donations (similar to OpenSSL pre-Heartbleed). The Apache Software Foundation has hundreds of similar projects with similar exposure. If you had $50M as a CISO-funded "critical open source" budget, how would you allocate it? Among: paid maintainers, formal-verification tooling, alternative implementations of critical functionality (so single bugs don't take out 60% of the internet), vendor liability frameworks, university research grants? Defend your allocation against a "the market should solve this" objection.
+- **Q1:** Log4j was maintained by ~5 volunteer developers, supported by ~$2,500/year in donations (similar to OpenSSL pre-Heartbleed). The Apache Software Foundation has hundreds of similar projects with similar exposure. If you had $50M as a CISO (Chief Information Security Officer)-funded "critical open source" budget, how would you allocate it? Among: paid maintainers, formal-verification tooling, alternative implementations of critical functionality (so single bugs don't take out 60% of the internet), vendor liability frameworks, university research grants? Defend your allocation against a "the market should solve this" objection.
 - **Q2:** When the PoC dropped before the patch (9 December), Apache was effectively forced to release the patch a day early, incompletely. Should *responsible disclosure* timelines be shortened to prevent this race, or lengthened? Argue both sides referencing CERT/CC's 45-day default vs Google Project Zero's 90+30 day policy.
 - **Q3:** Internal applications running pre-2015 versions of Log4j on air-gapped industrial systems may *never* be patched. Are these systems "vulnerable" in any meaningful sense? Defend a position on whether the *compensating control* (air-gap, segmentation, monitoring) is materially equivalent to patching, with reference to the NIST SP 800-82 (ICS Security) guidance covered in Module 7.
 
@@ -315,7 +315,7 @@ A PBQ might show 4 log snippets, drag each to its attack name.
 | **Rogue AP / Evil twin / Disassociation / Jamming** | Wireless attacks |
 | **Bluejacking / snarfing / bugging** | Bluetooth attacks |
 | **Brute force / dictionary / spraying / stuffing / rainbow** | Credential attacks |
-| **Pass-the-Hash / Kerberoasting / Golden Ticket** | Credential abuse in Windows AD |
+| **Pass-the-Hash / Kerberoasting / Golden Ticket** | Credential abuse in Windows AD (Active Directory) |
 | **Phishing / spear / whaling / vishing / smishing / BEC** | Social engineering channels |
 | **Pretexting / watering hole / typosquatting / tailgating** | Other social engineering |
 
@@ -361,7 +361,7 @@ You now know:
 5. ➡️ [Module 6, Network Security](../Module-06-Network-Security/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 6](../Module-06-Network-Security/Reading.md) covers WAFs, IDS/IPS, segmentation the network-layer defenses against these attacks; [Module 8](../Module-08-Security-Operations/Reading.md) covers SIEM detection rules for the IOCs/IOAs in this module; [Module 10](../Module-10-Application-Data-Security/Reading.md) covers SAST/DAST/SCA *prevention* of these vulns at build time.
+> - Inside this course: [Module 6](../Module-06-Network-Security/Reading.md) covers WAFs, IDS/IPS, segmentation the network-layer defenses against these attacks; [Module 8](../Module-08-Security-Operations/Reading.md) covers SIEM (Security Information and Event Management) detection rules for the IOCs/IOAs in this module; [Module 10](../Module-10-Application-Data-Security/Reading.md) covers SAST/DAST/SCA *prevention* of these vulns at build time.
 > - Cross-course: AWS Solutions Architect (course 04) covers AWS WAF and GuardDuty.
 > - Practice: Practice Exam 1 has ~12 questions from this module (the largest single source); Final Mock has ~15.
 

@@ -1,10 +1,10 @@
-# Module 2: Microsoft Entra ID & RBAC 🪪
+# Module 2: Microsoft Entra ID & RBAC (Role-Based Access Control) 🪪
 
 > **Why this module matters:** Identity is the new perimeter. Get Entra ID and RBAC right and most security problems go away. Get them wrong even slightly and an attacker with one phished password owns your subscription. The exam loves this domain because Microsoft loves this domain.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The Azure resource hierarchy and how inheritance works, [Module 1](../Module-01-Subscriptions-Resource-Hierarchy/Reading.md) of this course.
-> - Basic identity concepts (users, groups, MFA), [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Cost-Management-SLAs/Reading.md).
+> - Basic identity concepts (users, groups, MFA (Multi-Factor Authentication)), [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Cost-Management-SLAs/Reading.md).
 > - The CIA triad (Confidentiality, Integrity, Availability) and the principle of *least privilege*, covered formally in [`09-CompTIA-Security-Plus` Module 1](../../09-CompTIA-Security-Plus/Module-01-Security-Fundamentals/Reading.md). Saltzer & Schroeder named least privilege in their seminal paper "The Protection of Information in Computer Systems" (*Proceedings of the IEEE*, 1975).
 >
 > If "Conditional Access," "scoped role assignment," or the OAuth 2.0 flow names are new, read the linked AZ-900 module first, this module assumes you know what authentication and authorization *are* and gets straight into how Azure does them.
@@ -17,22 +17,22 @@ Imagine you own a 20-floor office building. You hand out master keys to *everyon
 
 That's how Azure looks without RBAC: every "Owner" has a master key, and you have no audit trail.
 
-Now imagine instead: each person gets a key card programmed to *only* the floors and rooms they actually need. Visitors get day passes that auto-expire at 5 PM. The CFO can request "vault access for the next 4 hours" and the security desk approves it. Lost cards get deactivated in seconds, with a full log of every door they opened.
+Now imagine instead: each person gets a key card programmed to *only* the floors and rooms they actually need. Visitors get day passes that auto-expire at 5 PM. The CFO (Chief Financial Officer) can request "vault access for the next 4 hours" and the security desk approves it. Lost cards get deactivated in seconds, with a full log of every door they opened.
 
-**That's Entra ID + RBAC + Conditional Access + PIM.** Least privilege, time-bound elevation, and an audit trail of every single door opened. The exam will test whether you understand which "key card system" feature solves which scenario.
+**That's Entra ID + RBAC + Conditional Access + PIM (Product Information Management).** Least privilege, time-bound elevation, and an audit trail of every single door opened. The exam will test whether you understand which "key card system" feature solves which scenario.
 
 ---
 
 ## 🏢 Microsoft Entra ID: The Identity Plane
 
-**Microsoft Entra ID** (the artist formerly known as Azure Active Directory) is Microsoft's cloud identity service. It's *not* the same as on-premises Active Directory, it doesn't speak LDAP or Kerberos natively, it speaks **OAuth 2.0, OIDC, SAML, WS-Fed**, and SCIM.
+**Microsoft Entra ID** (the artist formerly known as Azure Active Directory) is Microsoft's cloud identity service. It's *not* the same as on-premises Active Directory, it doesn't speak LDAP (Lightweight Directory Access Protocol) or Kerberos natively, it speaks **OAuth 2.0, OIDC, SAML, WS-Fed**, and SCIM.
 
 | On-prem AD | Entra ID |
 |------------|----------|
 | LDAP / Kerberos / NTLM | OAuth 2.0 / OIDC / SAML |
 | Domain Controllers (you patch them) | Globally managed by Microsoft |
 | OUs and Group Policy | Administrative units + Conditional Access |
-| Forest / domain trusts | Cross-tenant access settings, B2B |
+| Forest / domain trusts | Cross-tenant access settings, B2B (Business-to-Business) |
 | Computers join the domain | Devices register or join Entra ID |
 
 You can **sync** on-prem AD users into Entra ID with **Microsoft Entra Connect** (with optional **password hash sync**, **pass-through authentication (PTA)**, or **federation with AD FS**), but that's a hybrid identity topic mostly outside AZ-104 depth.
@@ -49,7 +49,7 @@ Three flavors of Entra ID user accounts:
 | **Synced from on-prem** | Created in AD, synced via Entra Connect | `alice@contoso.com` |
 | **Guest (B2B)** | Invited from another tenant | `alice_externalcorp.com#EXT#@contoso.onmicrosoft.com` |
 
-### Create a user via CLI
+### Create a user via CLI (Command Line Interface)
 
 ```bash
 az ad user create \
@@ -124,7 +124,7 @@ az ad group create \
 
 ---
 
-## 🤝 B2B vs B2C (Don't Mix These Up!)
+## 🤝 B2B vs B2C (Business-to-Consumer) (Don't Mix These Up!)
 
 | | **Entra ID B2B** | **Entra ID External ID for customers (B2C → External ID)** |
 |---|------------------|------------------------------------------------------------|
@@ -284,7 +284,7 @@ When built-ins don't fit. A custom role definition is JSON:
 
 ```json
 {
-  "Name": "VM Operator (Start/Stop only)",
+  "Name": "VM (Virtual Machine) Operator (Start/Stop only)",
   "Description": "Can start and stop VMs but cannot delete them.",
   "Actions": [
     "Microsoft.Compute/virtualMachines/start/action",
@@ -329,7 +329,7 @@ When **code** (not a human) needs to authenticate, you use a **service principal
 |---|-------------------|------------------|
 | Credentials | You manage (secret or cert) | **Azure manages, no secrets in your code** |
 | Lifecycle | Manual create/delete | Auto-created/deleted with the resource (system-assigned) or shared across resources (user-assigned) |
-| Use case | External CI/CD, third-party app | Azure-hosted workloads (VM, Function, App Service) |
+| Use case | External CI/CD (Continuous Integration/Continuous Deployment), third-party app | Azure-hosted workloads (VM, Function, App Service) |
 
 🔥 **Always prefer managed identity** over service principal when the workload runs on Azure. Two flavors:
 
@@ -435,7 +435,7 @@ Sub-divisions of an Entra ID tenant. Like an OU in on-prem AD.
 | **Conditional Access** | If-then policies at sign-in (P1) |
 | **Identity Protection** | Risk-based CA (P2) |
 | **MFA** | Multi-factor authentication |
-| **PIM** | Privileged Identity Management, JIT elevation (P2) |
+| **PIM** | Privileged Identity Management, JIT (Just-In-Time) elevation (P2) |
 | **RBAC** | Role-Based Access Control |
 | **Role definition** | The list of allowed actions |
 | **Role assignment** | Linking a principal to a role at a scope |
@@ -472,7 +472,7 @@ You now know:
 
 ## 📊 Case Study, Okta Support-Contractor Breach (October 2023)
 
-**Situation.** Okta Microsoft's biggest IDaaS competitor and a household name in workforce identity was breached in October 2023 when an attacker stole an HAR file (HTTP Archive) containing a session token belonging to an Okta *customer support engineer*. Okta originally said ~134 customer org records were touched. Three months later, after evidence forced a revision, Okta disclosed (Okta security advisory, *October 2023 Security Incident*, updated 2023-11-29) that **all ~18,400 customer support customers** had had their names and contact data exfiltrated, plus session tokens from Cloudflare, 1Password, and BeyondTrust. The initial root cause: a personal Google account on an Okta-managed laptop synced cached service-account credentials.
+**Situation.** Okta Microsoft's biggest IDaaS competitor and a household name in workforce identity was breached in October 2023 when an attacker stole an HAR file (HTTP (Hypertext Transfer Protocol) Archive) containing a session token belonging to an Okta *customer support engineer*. Okta originally said ~134 customer org records were touched. Three months later, after evidence forced a revision, Okta disclosed (Okta security advisory, *October 2023 Security Incident*, updated 2023-11-29) that **all ~18,400 customer support customers** had had their names and contact data exfiltrated, plus session tokens from Cloudflare, 1Password, and BeyondTrust. The initial root cause: a personal Google account on an Okta-managed laptop synced cached service-account credentials.
 
 **Decision.** Three things mattered, all of them analogous to controls Azure admins implement via Entra ID:
 
@@ -480,7 +480,7 @@ You now know:
 2. **The session token had no Conditional Access-style anomaly check.** The attacker replayed the cookie from an entirely different geo and device with no step-up MFA.
 3. **The personal Google sync was permitted on a corporate machine.** Conditional Access policies that *require a compliant / Hybrid-Entra-joined device* (Microsoft's recommended default for admin portals as of 2024) would have blocked the exfil path.
 
-**Outcome.** Okta's stock dropped ~12% the week of the disclosure (Reuters, 2023-10-23). Cloudflare's CTO blog (John Graham-Cumming, 2023-10-20) became required reading in security circles Cloudflare detected the breach in *34 minutes* via their own session-binding telemetry. Okta has since rolled out: mandatory session binding for admin sessions, MFA on support tools, and a "Customer Identity Cloud privacy posture" review. Multiple Okta enterprise customers including 1Password, publicly stated they were re-evaluating moving to Microsoft Entra ID, in part for **PIM + Conditional Access + Identity Protection** being natively bundled at P2 versus bolted on.
+**Outcome.** Okta's stock dropped ~12% the week of the disclosure (Reuters, 2023-10-23). Cloudflare's CTO (Chief Technology Officer) blog (John Graham-Cumming, 2023-10-20) became required reading in security circles Cloudflare detected the breach in *34 minutes* via their own session-binding telemetry. Okta has since rolled out: mandatory session binding for admin sessions, MFA on support tools, and a "Customer Identity Cloud privacy posture" review. Multiple Okta enterprise customers including 1Password, publicly stated they were re-evaluating moving to Microsoft Entra ID, in part for **PIM + Conditional Access + Identity Protection** being natively bundled at P2 versus bolted on.
 
 **Lesson for the exam / for practitioners.** Every defense Okta retroactively added is a feature you configure inside Entra ID:
 
@@ -491,7 +491,7 @@ You now know:
 AZ-104 will test these by scenario: "An admin's password was phished but PIM is configured. What additional damage can the attacker do without MFA + approval?" The answer is "very little, because the role is *eligible*, not *active*." That is the exact lesson of the Okta breach.
 
 **Discussion (Socratic).**
-- **Q1.** Okta is itself an identity provider, yet they were breached via a support engineer's session. Build the argument that *Microsoft Entra ID is structurally safer than Okta for the SOC* purely from the design of PIM and Conditional Access. Then build the strongest *counter-argument* (Okta's defenders point out that Microsoft Entra has had its own incidents, e.g., Midnight Blizzard 2023). Which case is stronger and why?
+- **Q1.** Okta is itself an identity provider, yet they were breached via a support engineer's session. Build the argument that *Microsoft Entra ID is structurally safer than Okta for the SOC (Security Operations Center)* purely from the design of PIM and Conditional Access. Then build the strongest *counter-argument* (Okta's defenders point out that Microsoft Entra has had its own incidents, e.g., Midnight Blizzard 2023). Which case is stronger and why?
 - **Q2.** A common compromise: orgs make Global Admin "PIM eligible with approval required" but leave User Access Administrator and Privileged Role Administrator as *permanent* assignments. Why is that almost as bad as having permanent Global Admin? What does the **privilege escalation graph** look like from User Access Admin?
 - **Q3.** Okta's HAR file leaked because a support engineer signed into a personal Google account in the same browser session as the corporate Okta admin console. Design a Conditional Access policy + device-compliance posture that blocks this risk on Azure, *without* preventing the legitimate use case of an admin pasting a HAR file from a customer ticket. What's the residual risk you cannot fully kill?
 
@@ -499,18 +499,18 @@ AZ-104 will test these by scenario: "An admin's password was phished but PIM is 
 
 > **Where this leads.**
 > - Inside this course: Module 8 covers the *network* layer of zero trust (NSG, Firewall, Front Door) that complements the identity layer here; Module 10 sends Entra sign-in logs to Log Analytics so the PIM activations you configured become *auditable*.
-> - Cross-course: [`09-CompTIA-Security-Plus` Modules 1, 3, 4](../../../09-CompTIA-Security-Plus/) go deeper on the threat-modeling and IAM principles behind these features; [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/README.md) modules show how managed identities authenticate AI workloads without secrets.
+> - Cross-course: [`09-CompTIA-Security-Plus` Modules 1, 3, 4](../../../09-CompTIA-Security-Plus/) go deeper on the threat-modeling and IAM (Identity and Access Management) principles behind these features; [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/README.md) modules show how managed identities authenticate AI workloads without secrets.
 > - Practice: Practice Exam 1 has 6 questions on Entra ID licensing/PIM/RBAC; Final Mock revisits with case-study synthesis (B2B + PIM + Conditional Access in one scenario).
 
 ---
 
 ## 💬 Discussion, Socratic prompts
 
-1. **Conditional Access starter set.** A new Azure tenant has Security Defaults turned on (Microsoft's free baseline since 2019). The CISO wants to graduate to "real" Conditional Access. Defend the *minimum 5-policy starter set* a regulated mid-size org should deploy first, in priority order. (Hint: Microsoft's published "Zero Trust deployment guide" gives 14 policies, which 5 do you do *this week*?)
+1. **Conditional Access starter set.** A new Azure tenant has Security Defaults turned on (Microsoft's free baseline since 2019). The CISO (Chief Information Security Officer) wants to graduate to "real" Conditional Access. Defend the *minimum 5-policy starter set* a regulated mid-size org should deploy first, in priority order. (Hint: Microsoft's published "Zero Trust deployment guide" gives 14 policies, which 5 do you do *this week*?)
 2. **Custom role design.** A team needs to "manage VMs but not change the network." Show how you'd express this with built-in roles vs. a custom role. Which is more maintainable five years on, and why? When does the maintenance argument tip in favor of an officially-supported custom role?
 3. **B2B vs. B2C.** A retail bank wants both employee access to internal apps *and* a public-facing app for 1M consumers. Walk through which Entra surface (workforce tenant + B2B vs. External ID for customers tenant) you'd use for each, and where the line is when an employee is *also* a consumer of the bank.
 4. **PIM activation duration.** The default max activation in PIM is 8 hours. Some orgs set it to 1 hour; others to 4. What's the trade-off between operational friction and blast-radius reduction? Build the math: if an attacker phishes a credential, what's the *expected* time-at-risk for each setting? (Hint: think about access-token TTL of 60–90 min and refresh-token rotation.)
-5. **Managed identity adoption hurdle.** Most orgs still use service principal secrets stored in pipelines because "we've always done it that way." Construct the business case for migrating to managed identities, naming the *specific* incident class each rotation step prevents. What's the legitimate counter-argument from a third-party SaaS vendor who doesn't run on Azure?
+5. **Managed identity adoption hurdle.** Most orgs still use service principal secrets stored in pipelines because "we've always done it that way." Construct the business case for migrating to managed identities, naming the *specific* incident class each rotation step prevents. What's the legitimate counter-argument from a third-party SaaS (Software as a Service) vendor who doesn't run on Azure?
 
 ---
 

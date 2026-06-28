@@ -1,6 +1,6 @@
 # Module 7: Azure Monitor & Hybrid Monitoring 📈
 
-> **Why this module matters:** "You can't fix what you can't see" is the entire premise of monitoring, and Azure Monitor is now the unified telemetry plane for Azure VMs, Arc-enabled servers, on-prem services, and even SaaS like Microsoft 365. On AZ-801 expect 15% of the marks on this domain alone: Data Collection Rules, the AMA migration, KQL, alert types, and Workbooks. The exam loves "given these telemetry needs, design the DCR + workspace + alert combination."
+> **Why this module matters:** "You can't fix what you can't see" is the entire premise of monitoring, and Azure Monitor is now the unified telemetry plane for Azure VMs, Arc-enabled servers, on-prem services, and even SaaS (Software as a Service) like Microsoft 365. On AZ-801 expect 15% of the marks on this domain alone: Data Collection Rules, the AMA migration, KQL, alert types, and Workbooks. The exam loves "given these telemetry needs, design the DCR + workspace + alert combination."
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Azure resource hierarchy (subscriptions, RGs), [`06-Azure-Administrator` Module 1](../../06-Azure-Administrator/Module-01-Subscriptions-Resource-Hierarchy/Reading.md)
@@ -58,7 +58,7 @@ Azure Monitor is the umbrella term for Microsoft's monitoring services. It sits 
 
 ## 🤖 Azure Monitor Agent (AMA), Replaces Legacy MMA
 
-In August 2024, Microsoft **retired** the legacy **Log Analytics agent (MMA / OMS)** for Windows. AMA is the replacement.
+In August 2024, Microsoft **retired** the legacy **Log Analytics agent (MMA / OMS (Order Management System))** for Windows. AMA is the replacement.
 
 | | **Legacy MMA / OMS** (retired Aug 2024) | **AMA** (current) |
 |---|----------------------------------------|-------------------|
@@ -165,7 +165,7 @@ The Log Analytics workspace is an Azure resource that stores logs and answers KQ
 | Max retention | **730 days** for interactive; up to **12 years** in Archive tier |
 | Data plans (2024+) | **Analytics** (full KQL), **Basic** (cheaper, limited KQL), **Auxiliary** (ingestion-only, eDiscovery) |
 | Cross-workspace queries | Yes, `workspace("law-other").Perf` |
-| Sentinel | Adds SIEM capability to the workspace |
+| Sentinel | Adds SIEM (Security Information and Event Management) capability to the workspace |
 | Defender | Optional 500 MB/node/day free with Defender for Servers P2 |
 
 ### Workspace design
@@ -174,7 +174,7 @@ The Log Analytics workspace is an Azure resource that stores logs and answers KQ
 |---------|------|
 | **Single global workspace** | Single team owns ops; max data locality |
 | **Per-region workspace** | Data sovereignty (EU vs US data must stay regional) |
-| **Per-business-unit workspace** | RBAC isolation per BU |
+| **Per-business-unit workspace** | RBAC (Role-Based Access Control) isolation per BU |
 | **Hub-and-spoke** | Operational telemetry centralized; security in a Sentinel-protected workspace |
 
 🚨 **Trap:** Cross-workspace KQL queries are billed against the **queried** workspace, not the executing user's workspace. Plan tier accordingly.
@@ -243,14 +243,14 @@ Event
 
 ---
 
-## 📊 VM Insights
+## 📊 VM (Virtual Machine) Insights
 
 VM Insights is a turnkey Azure Monitor solution for VMs / Arc machines. Enable it on a workspace and it ships:
 
 | What it shows | How |
 |---------------|-----|
 | Performance trends | CPU / RAM / disk / network per machine, side-by-side |
-| **Dependency map** | Process-to-process connections (where TCP traffic flows) |
+| **Dependency map** | Process-to-process connections (where TCP (Transmission Control Protocol) traffic flows) |
 | Performance Analysis | Top consumers, find the noisy neighbors |
 | Health view | Aggregated status across the fleet |
 | Inventory | Processes, software, services per VM |
@@ -290,7 +290,7 @@ A workbook is a JSON document containing:
 - **Parameters** (dropdowns / time pickers)
 - **Group** / **Tab** for organization
 
-🎯 **Microsoft maintains a curated workbook gallery** in the portal, most common ops scenarios (VM perf, AD health, network telemetry) have a ready-made workbook.
+🎯 **Microsoft maintains a curated workbook gallery** in the portal, most common ops scenarios (VM perf, AD (Active Directory) health, network telemetry) have a ready-made workbook.
 
 ---
 
@@ -383,7 +383,7 @@ Application Insights is the **app-level** telemetry (covered more in dev-focused
 
 ## 📊 Case Study, The 2019 Capital One Breach and the Role of Cloud Audit Logging
 
-**Situation.** In July 2019, a former AWS engineer exploited a misconfigured Web Application Firewall on Capital One's customer-facing servers to extract data on ~106 million credit card applicants in the US and Canada (Capital One Disclosure, July 29 2019; US v. Thompson, criminal complaint No. 19-MJ-344, July 29 2019). The attacker used a Server-Side Request Forgery (SSRF) attack to extract temporary AWS IAM credentials from the EC2 Instance Metadata Service, then used those credentials to list and download S3 buckets containing the customer data including SSNs, bank account numbers, and applicant addresses. The attacker bragged about it on Slack and GitHub before being arrested, but Capital One's investigation later confirmed that **the entire attack lifecycle was visible in AWS CloudTrail and VPC Flow Logs** Capital One simply hadn't ingested those logs into a correlation engine.
+**Situation.** In July 2019, a former AWS (Amazon Web Services) engineer exploited a misconfigured Web Application Firewall on Capital One's customer-facing servers to extract data on ~106 million credit card applicants in the US and Canada (Capital One Disclosure, July 29 2019; US v. Thompson, criminal complaint No. 19-MJ-344, July 29 2019). The attacker used a Server-Side Request Forgery (SSRF) attack to extract temporary AWS IAM (Identity and Access Management) credentials from the EC2 (Elastic Compute Cloud) Instance Metadata Service, then used those credentials to list and download S3 (Simple Storage Service) buckets containing the customer data including SSNs, bank account numbers, and applicant addresses. The attacker bragged about it on Slack and GitHub before being arrested, but Capital One's investigation later confirmed that **the entire attack lifecycle was visible in AWS CloudTrail and VPC (Virtual Private Cloud) Flow Logs** Capital One simply hadn't ingested those logs into a correlation engine.
 
 **Decision.** Capital One's published incident response (testimony before the US Senate Banking Committee, October 17 2019) committed to:
 
@@ -403,7 +403,7 @@ Application Insights is the **app-level** telemetry (covered more in dev-focused
 - *Action Group routing*, security alerts go to a security team's pager, not the ops queue
 - *Sentinel integration*, Sentinel sits atop a Log Analytics workspace and adds SIEM-grade correlation, hunting books, MITRE ATT&CK mapping
 
-The exam will phrase this as: *"A SOC wants to detect when a non-admin user is added to the Domain Admins group across any of 500 Arc-enabled DCs. What's the minimum architecture?"* → **AMA + DCR collecting Security 4732 events + Log Analytics workspace + Scheduled query rule alert on `Event | where EventID == 4732 and TargetGroupName has "Domain Admins"`** → action group to security team.
+The exam will phrase this as: *"A SOC (Security Operations Center) wants to detect when a non-admin user is added to the Domain Admins group across any of 500 Arc-enabled DCs. What's the minimum architecture?"* → **AMA + DCR collecting Security 4732 events + Log Analytics workspace + Scheduled query rule alert on `Event | where EventID == 4732 and TargetGroupName has "Domain Admins"`** → action group to security team.
 
 **Discussion (Socratic).**
 - **Q1.** Capital One had CloudTrail logs that would have shown the attack within hours. They simply weren't being analyzed. Build the case for **Sentinel-as-a-managed-detection-platform** vs a hand-rolled "we'll write our own KQL alerts" approach for a 5,000-employee bank. What's the operational cost of Sentinel vs the cost of a missed alert?

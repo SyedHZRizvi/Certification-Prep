@@ -12,7 +12,7 @@ You don't panic. You don't randomly click buttons hoping something works. You fo
 
 First: was the signal lost, or is the plane actually in distress? Check adjacent frequencies. Second: can you raise them on the emergency channel? Third: is there weather in that sector? You work through a systematic protocol because in the 1960s, after several disasters caused by ad-hoc responses, aviation built **checklists for every failure mode**. That discipline is why commercial aviation has a fatality rate near zero.
 
-The CKA exam is your air traffic control tower. Every pod is a plane. When one goes dark — when a pod is stuck in Pending, a node goes NotReady, or DNS stops resolving — you don't guess. You pull up your checklist. You run `kubectl describe`. You check Events. You follow the systematic protocol.
+The CKA exam is your air traffic control tower. Every pod is a plane. When one goes dark — when a pod is stuck in Pending, a node goes NotReady, or DNS (Domain Name System) stops resolving — you don't guess. You pull up your checklist. You run `kubectl describe`. You check Events. You follow the systematic protocol.
 
 This module builds that protocol. It is the highest-weight domain on the entire exam at **30%**. Treat it accordingly.
 
@@ -188,7 +188,7 @@ IP:             172.16.0.4
 Containers:
   my-container:
     Image:      nginx:1.21
-    Port:       80/TCP
+    Port:       80/TCP (Transmission Control Protocol)
     State:      Running / Waiting / Terminated
     Last State: Terminated (if it crashed)
       Reason:   OOMKilled / Error / Completed
@@ -254,7 +254,7 @@ Conditions:
   Ready             False   KubeletNotReady          ← the node's kubelet is not responsive
 ```
 
-SSH to the problem node and investigate the kubelet:
+SSH (Secure Shell) to the problem node and investigate the kubelet:
 
 ```bash
 ssh <node-name>
@@ -299,7 +299,7 @@ Kubelet reads these manifests automatically. If you fix the YAML, kubelet will r
 
 ### 2.3 kube-apiserver Down — No kubectl Access
 
-If `kubectl` is completely unresponsive (the API server is down), you cannot use kubectl at all. Switch to the container runtime directly:
+If `kubectl` is completely unresponsive (the API (Application Programming Interface) server is down), you cannot use kubectl at all. Switch to the container runtime directly:
 
 ```bash
 # If using containerd:
@@ -444,7 +444,7 @@ kubectl top pods --containers              # break down by container
 
 ### 4.3 Container Runtime Logs — crictl
 
-crictl is the CRI-compliant container runtime CLI. Use it when kubectl is unavailable or to inspect containers at a lower level:
+crictl is the CRI-compliant container runtime CLI (Command Line Interface). Use it when kubectl is unavailable or to inspect containers at a lower level:
 
 ```bash
 crictl ps                                  # running containers
@@ -488,7 +488,7 @@ crictl images                              # list pulled images
 | `journalctl -u kubelet -n 50` | Last 50 log lines |
 | `/var/lib/kubelet/config.yaml` | Kubelet configuration file |
 | `/etc/kubernetes/kubelet.conf` | Kubelet kubeconfig (API server connection) |
-| `/var/lib/kubelet/pki/` | Kubelet TLS certificates |
+| `/var/lib/kubelet/pki/` | Kubelet TLS (Transport Layer Security) certificates |
 | `df -h` | Check disk usage (kubelet stops if >85% full) |
 
 ---

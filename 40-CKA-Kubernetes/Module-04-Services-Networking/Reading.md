@@ -12,7 +12,7 @@ Now the hotel installs a dedicated phone line at the reception desk. Anyone from
 
 The hotel chain grows. A professional call-center manages all incoming calls for every hotel in the chain — callers dial one number, the call center decides which hotel (and which room) to route them to, handles load balancing, and even provides failover. That is **LoadBalancer**: a cloud-provisioned external load balancer that sits in front of NodePort and ClusterIP.
 
-Finally, a concierge stands in the lobby. A guest says "I need the spa"; the concierge looks at a directory and escorts them to the fourth floor, west wing. Another guest says "I need the restaurant"; they go somewhere else. The concierge doesn't open new phone lines — he reads the request and routes by name. That is **Ingress**: HTTP/HTTPS routing by hostname and URL path, handled by an IngressController.
+Finally, a concierge stands in the lobby. A guest says "I need the spa"; the concierge looks at a directory and escorts them to the fourth floor, west wing. Another guest says "I need the restaurant"; they go somewhere else. The concierge doesn't open new phone lines — he reads the request and routes by name. That is **Ingress**: HTTP (Hypertext Transfer Protocol)/HTTPS (HTTP Secure) routing by hostname and URL path, handled by an IngressController.
 
 ---
 
@@ -23,7 +23,7 @@ Finally, a concierge stands in the lobby. A guest says "I need the spa"; the con
 Kubernetes imposes a strict networking contract on any conforming cluster:
 
 1. Every Pod gets its own unique IP address.
-2. Every Pod can communicate with every other Pod without NAT.
+2. Every Pod can communicate with every other Pod without NAT (Network Address Translation).
 3. Every Node can communicate with every Pod without NAT.
 4. The IP that a Pod sees for itself is the same IP that other Pods see when addressing it.
 
@@ -33,7 +33,7 @@ This "flat network" is not built into Kubernetes itself — it is delegated to a
 
 | Plugin | Key characteristic |
 |--------|--------------------|
-| **Calico** | NetworkPolicy support, BGP routing, high performance; very common in production |
+| **Calico** | NetworkPolicy support, BGP (Border Gateway Protocol) routing, high performance; very common in production |
 | **Flannel** | Simple overlay network (VXLAN); minimal configuration; no NetworkPolicy support alone |
 | **Cilium** | eBPF-based; rich observability and L7 NetworkPolicies; used in modern clusters |
 
@@ -43,7 +43,7 @@ Flannel + Calico is a common pairing (Flannel for routing, Calico for policy). O
 
 ## 2. Service Types — MEMORIZE THIS
 
-A Service is a stable virtual IP (called a **ClusterIP**) and DNS name that load-balances traffic to a set of Pods selected by a label selector. The four types differ only in how much external exposure they add.
+A Service is a stable virtual IP (called a **ClusterIP**) and DNS (Domain Name System) name that load-balances traffic to a set of Pods selected by a label selector. The four types differ only in how much external exposure they add.
 
 ### Service Type Comparison Table
 
@@ -58,7 +58,7 @@ A Service is a stable virtual IP (called a **ClusterIP**) and DNS name that load
 
 ### NodePort Range
 
-NodePort uses ports **30000–32767**. If you do not specify a `nodePort` value, Kubernetes picks one from this range. If a port outside this range is specified, the API server rejects the manifest. This range is configurable but the default is what the exam tests.
+NodePort uses ports **30000–32767**. If you do not specify a `nodePort` value, Kubernetes picks one from this range. If a port outside this range is specified, the API (Application Programming Interface) server rejects the manifest. This range is configurable but the default is what the exam tests.
 
 ---
 
@@ -77,7 +77,7 @@ spec:
   selector:
     app: backend
   ports:
-    - protocol: TCP
+    - protocol: TCP (Transmission Control Protocol)
       port: 80             # port on the Service (ClusterIP)
       targetPort: 8080     # port on the Pod
 ```
@@ -284,7 +284,7 @@ spec:
                   number: 80
 ```
 
-### TLS Termination
+### TLS (Transport Layer Security) Termination
 
 ```yaml
 spec:
@@ -398,7 +398,7 @@ spec:
     - Egress
   egress:
     - ports:
-        - protocol: UDP
+        - protocol: UDP (User Datagram Protocol)
           port: 53
         - protocol: TCP
           port: 53

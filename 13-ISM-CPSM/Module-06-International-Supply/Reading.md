@@ -278,7 +278,7 @@ Stanley Black & Decker the $14B tool, fastener, and storage manufacturer had mov
 4. **HTS classification optimization**, formally re-classifying products with US Customs and Border Protection (CBP) to legitimately apply lower-duty codes where the new product engineering justified it ("tariff engineering").
 5. **Working-capital deployment**, Stanley publicly cited $1.5B in 2023 cost actions, of which a meaningful share was procurement-driven.
 
-Hasbro (toys) ran a parallel playbook: shifting toy production from China to Vietnam, India, and Mexico over 2022-2025, partly under USMCA and partly under other FTAs. Hasbro CEO Chris Cocks publicly said in 2024 that less than 50% of US-bound toys would come from China by 2025, down from ~67% in 2022.
+Hasbro (toys) ran a parallel playbook: shifting toy production from China to Vietnam, India, and Mexico over 2022-2025, partly under USMCA and partly under other FTAs. Hasbro CEO (Chief Executive Officer) Chris Cocks publicly said in 2024 that less than 50% of US-bound toys would come from China by 2025, down from ~67% in 2022.
 
 **Outcome.** Stanley reduced China cost-of-goods exposure from ~50% to ~35% by 2024. Operating margin recovered. The reshoring wave was real: US **construction spending on manufacturing facilities** rose from ~$80B/year (2019) to ~$240B/year by mid-2024 (US Census data), much of it driven by CHIPS Act subsidies but also by the broader nearshoring thesis. By 2025, Mexico had surpassed China as the **#1 source of US imports** (calendar 2023 first, sustained through 2024).
 

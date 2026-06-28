@@ -1,5 +1,5 @@
 ---
-title: "Module 6: UI Animation, Figma Smart Animate, GSAP & Framer Motion"
+title: "Module 6: UI (User Interface) Animation, Figma Smart Animate, GSAP & Framer Motion"
 ---
 
 # 🖥️ Module 6: UI Animation, Figma, GSAP & Framer Motion
@@ -59,7 +59,7 @@ Figma Smart Animate supports:
 
 Used by: Google, Microsoft, Apple, Stripe, Mailchimp, Salesforce, NASA, Amazon.
 
-### Core API
+### Core API (Application Programming Interface)
 
 ```javascript
 // Import (ESModule)

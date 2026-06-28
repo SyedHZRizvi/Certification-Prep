@@ -1,11 +1,11 @@
 # Module 8: AI Security & Governance 🔐
 
-> **Why this module matters:** Domain 5 ("Security, Compliance & Governance for AI Solutions") is the final 14% of the exam. It overlaps significantly with general AWS security, but with an AI twist: IAM for Bedrock and SageMaker, VPC endpoints for Bedrock, KMS keys for custom models, audit trails for AI APIs, shared responsibility *for AI*, and the regulations that bite (HIPAA, GDPR). Strong showing here also gives you confidence for the broader AWS security knowledge most cloud roles need.
+> **Why this module matters:** Domain 5 ("Security, Compliance & Governance for AI Solutions") is the final 14% of the exam. It overlaps significantly with general AWS security, but with an AI twist: IAM (Identity and Access Management) for Bedrock and SageMaker, VPC (Virtual Private Cloud) endpoints for Bedrock, KMS keys for custom models, audit trails for AI APIs, shared responsibility *for AI*, and the regulations that bite (HIPAA, GDPR (General Data Protection Regulation)). Strong showing here also gives you confidence for the broader AWS security knowledge most cloud roles need.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 4: AWS GenAI Stack](../Module-04-AWS-GenAI-Stack/Reading.md), Amazon Bedrock, model providers
 > - [Module 7: Responsible AI](../Module-07-Responsible-AI/Reading.md), Guardrails, Model Cards, NIST AI RMF, EU AI Act
-> - Basic AWS security vocabulary: IAM roles, KMS keys, S3 encryption, VPC, security groups
+> - Basic AWS security vocabulary: IAM roles, KMS keys, S3 (Simple Storage Service) encryption, VPC, security groups
 >
 > If [`04-AWS-Solutions-Architect-Associate`](../../../04-AWS-Solutions-Architect-Associate/) Module 5 (IAM) and Module 7 (VPC + PrivateLink) are fresh, you're ready. If not, this module will move quickly through patterns those courses unpack at depth.
 
@@ -18,7 +18,7 @@ A regional insurer rolled out an internal chatbot powered by Bedrock + Knowledge
 The problem wasn't the model. The problem was:
 
 - 🔓 The KB indexed an S3 bucket containing **PII the AI was never meant to expose**.
-- 🪪 The chatbot had **one IAM role** that everyone shared, sales reps got the same data view as the CISO.
+- 🪪 The chatbot had **one IAM role** that everyone shared, sales reps got the same data view as the CISO (Chief Information Security Officer).
 - 🧾 There were **no audit logs** of which user asked what.
 - 🛡️ **Bedrock Guardrails were turned off**.
 - 🌐 The Bedrock endpoint was **public**, not via a VPC interface endpoint.
@@ -85,18 +85,18 @@ Bedrock supports **resource-level permissions**, you can limit which model ARNs 
 
 ## 🌐 Network Security: VPC Endpoints for Bedrock & SageMaker
 
-By default, calling Bedrock goes over the public internet (encrypted via TLS, but still public). For sensitive workloads:
+By default, calling Bedrock goes over the public internet (encrypted via TLS (Transport Layer Security), but still public). For sensitive workloads:
 
 - **VPC Interface Endpoint (PrivateLink)** for Bedrock, traffic from your VPC to Bedrock stays on the AWS backbone
 - Bedrock has VPC endpoints for the **runtime** (model invocation) and the **agent / KB runtime** services
 - SageMaker offers VPC mode for notebooks, training jobs, processing jobs, and endpoints
 - Combine with **VPC endpoint policies** to further restrict who/what can use the endpoint
-- **S3 Gateway endpoints** for any S3 read/write (training data, prompts, RAG corpus) without internet
+- **S3 Gateway endpoints** for any S3 read/write (training data, prompts, RAG (Retrieval-Augmented Generation) corpus) without internet
 
 ### Optional but strong: AWS Network Firewall + Egress controls
 
 - Egress filter to block model inference calls to anything *but* approved endpoints
-- DLP at the proxy / WAF layer to filter prompts before they hit Bedrock
+- DLP at the proxy / WAF (Web Application Firewall) layer to filter prompts before they hit Bedrock
 
 ---
 
@@ -119,7 +119,7 @@ By default, calling Bedrock goes over the public internet (encrypted via TLS, bu
 
 | Layer | Service / log |
 |-------|---------------|
-| **API calls to Bedrock / SageMaker** | **AWS CloudTrail**, every `InvokeModel`, `CreateTrainingJob`, etc. |
+| **API (Application Programming Interface) calls to Bedrock / SageMaker** | **AWS CloudTrail**, every `InvokeModel`, `CreateTrainingJob`, etc. |
 | **Model invocation request + response** | **Bedrock model invocation logging** to CloudWatch Logs or S3 (you opt in; for replay / audit / fine-tuning sources) |
 | **Metrics (latency, errors)** | **Amazon CloudWatch** |
 | **Resource configuration drift** | **AWS Config** |
@@ -149,7 +149,7 @@ If a customer requests deletion under GDPR:
 
 - Remove their docs from your KB (re-index)
 - Delete logged inferences containing their data
-- If they were in fine-tuning data, you may need to retrain to remove their influence, this is a known LLM compliance pain point
+- If they were in fine-tuning data, you may need to retrain to remove their influence, this is a known LLM (Large Language Model) compliance pain point
 
 ---
 
@@ -159,9 +159,9 @@ If a customer requests deletion under GDPR:
 |-----------|--------|-------------------------------|
 | **HIPAA** (US) | Healthcare PHI | Encryption, access controls, audit logs, BAA with AWS |
 | **GDPR** (EU) | Personal data of EU residents | Lawful basis, data subject rights, breach notification, DPIA for high-risk AI |
-| **CCPA / CPRA** (California) | Personal data of CA residents | Right to know, delete, opt out |
+| **CCPA (California Consumer Privacy Act) / CPRA** (California) | Personal data of CA residents | Right to know, delete, opt out |
 | **PCI DSS** | Payment cards | Strong cardholder data protection |
-| **SOC 2** | Service organization controls | Security, availability, confidentiality, processing integrity, privacy |
+| **SOC (Security Operations Center) 2** | Service organization controls | Security, availability, confidentiality, processing integrity, privacy |
 | **ISO 27001** | Information security mgmt system | Org-wide ISMS controls |
 | **FedRAMP** | US federal cloud | High/moderate/low impact baselines |
 | **NIST AI RMF** | AI-specific | Risk management for AI systems |
@@ -223,7 +223,7 @@ A reference secure pattern (the kind the exam loves):
 ```
             ┌──── CloudTrail (API audit) ────┐
             │                                 │
-User in VPC ─→ App on EC2/ECS ─→ Bedrock VPC interface endpoint
+User in VPC ─→ App on EC2 (Elastic Compute Cloud)/ECS (Elastic Container Service) ─→ Bedrock VPC interface endpoint
                   │                       │
                   ├── IAM least-priv role (specific model ARN)
                   ├── Guardrail attached to Invoke calls
@@ -306,8 +306,8 @@ In each case, the data went to OpenAI's servers, where (under OpenAI's then-defa
 **Lesson for the exam / for practitioners.** Five AIF-C01 talking points anchor here:
 
 1. **The biggest GenAI security risk is *not* prompt injection or model extraction it's the well-meaning employee.** The vast majority of incidents are insider-mistake exfiltration via public LLM interfaces. The mitigation isn't algorithmic; it's *policy + enterprise-contracted alternative + DLP at the egress*. The exam tests this through "which architecture prevents data leakage?" scenarios answer: enterprise Bedrock + IAM + PrivateLink + invocation logging + Guardrails PII filter.
-2. **Bedrock's *default* contractual posture is the answer to Samsung's class of incident.** AWS publishes that customer prompts and outputs are not used to train base models, data stays in the customer's Region/account, and customer-managed KMS keys are recommended for custom models. The exam tests this verbatim, Q15 of Module 4's quiz, Q9 of Module 8's quiz, plus PE questions.
-3. **PrivateLink for Bedrock is the network-layer companion.** TLS-encrypted public-internet traffic was good enough for *most* SaaS, but for sensitive workloads, customers want the additional assurance that traffic *never leaves the AWS backbone*. The exam loves this pattern: "How do you keep Bedrock traffic off the public internet?" → **PrivateLink VPC Interface Endpoint**.
+2. **Bedrock's *default* contractual posture is the answer to Samsung's class of incident.** AWS publishes that customer prompts and outputs are not used to train base models, data stays in the customer's Region/account, and customer-managed KMS keys are recommended for custom models. The exam tests this verbatim, Q15 of Module 4's quiz, Q9 of Module 8's quiz, plus PE (Private Equity) questions.
+3. **PrivateLink for Bedrock is the network-layer companion.** TLS-encrypted public-internet traffic was good enough for *most* SaaS (Software as a Service), but for sensitive workloads, customers want the additional assurance that traffic *never leaves the AWS backbone*. The exam loves this pattern: "How do you keep Bedrock traffic off the public internet?" → **PrivateLink VPC Interface Endpoint**.
 4. **Invocation logging is the audit trail.** Post-Samsung, every regulated industry wants the ability to answer "show me everything every employee sent to and received from a Bedrock model in the last 18 months." That's **Bedrock model invocation logging → S3 (KMS) + CloudWatch Logs**. CloudTrail captures only the API metadata; invocation logging captures the *content*.
 5. **The Italian DPA's temporary GDPR ban on ChatGPT (Mar 2023)** preceded Samsung by a month, for related reasons: lack of lawful basis, no age gate, no data subject rights. The Italian regulator's intervention shifted enterprise procurement preferences toward services that *built in* compliance posture (Bedrock, Azure OpenAI). This is the European parallel to Samsung's incident.
 
@@ -352,7 +352,7 @@ You now know:
 
 ## 💬 Discussion, Socratic prompts
 
-1. **Shared Responsibility, the AI twist.** AWS's classic Shared Responsibility Model was clear for IaaS. For Bedrock, draw the new lines: what's AWS responsible for, what's the model provider (Anthropic, Meta, Mistral) responsible for, and what's the customer responsible for? Where do the seams create *ambiguity* in practice (e.g., who's responsible when a model hallucinates harmful advice)?
+1. **Shared Responsibility, the AI twist.** AWS's classic Shared Responsibility Model was clear for IaaS (Infrastructure as a Service). For Bedrock, draw the new lines: what's AWS responsible for, what's the model provider (Anthropic, Meta, Mistral) responsible for, and what's the customer responsible for? Where do the seams create *ambiguity* in practice (e.g., who's responsible when a model hallucinates harmful advice)?
 2. **PrivateLink's *cost*.** PrivateLink VPC Interface Endpoints aren't free, they're priced per endpoint-hour plus per GB. At what monthly Bedrock spend does PrivateLink overhead become noise vs material? When is *not* using PrivateLink the right call?
 3. **CloudTrail vs invocation logging, the audit-cost debate.** A compliance officer wants "every prompt and response from every Bedrock call logged for 7 years." What's the storage cost (estimated) for a mid-size deployment, and what's the *retention-tiering* strategy? At what point does the cost itself force a more surgical logging policy?
 4. **The "we use Bedrock so we're HIPAA-compliant" fallacy.** A Director of Engineering announces: "We're on Bedrock and it's HIPAA-eligible, so we're HIPAA-compliant." What are *three* things they still need that the HIPAA-eligibility checkbox does not provide? Explicitly map each to NIST AI RMF or HIPAA Security Rule sections.

@@ -1,10 +1,10 @@
 # Module 5: Inventory & Capacity 📦
 
-> **Why this module matters:** Inventory is where supply chain math lives. Expect 6–10 calculation questions on the exam: EOQ, safety stock, reorder point, days of supply, inventory turns. Get the formulas wrong here and you'll bleed points across the board.
+> **Why this module matters:** Inventory is where supply chain math lives. Expect 6–10 calculation questions on the exam: EOQ (Economic Order Quantity), safety stock, reorder point, days of supply, inventory turns. Get the formulas wrong here and you'll bleed points across the board.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Forecast error metrics (MAD, MAPE, σ)](../Module-03-Demand-Forecasting/Reading.md), Module 3
-> - [The MPS, MRP, and lot-sizing rules](../Module-04-Supply-Planning-SOP/Reading.md), Module 4
+> - [The MPS, MRP (Material Requirements Planning), and lot-sizing rules](../Module-04-Supply-Planning-SOP (Standard Operating Procedure)/Reading.md), Module 4
 > - Basic statistics: normal distribution, Z-scores, percentile lookup
 > - Calculator comfort with square roots and percentages
 > If you've never computed a Z-score before, skim a 10-minute Khan Academy "Z-tables" video first.
@@ -15,7 +15,7 @@
 
 Priya runs **HomeGood Hardware**, a 6-store chain. Her dad founded the business in 1987 and his rule was: "Never run out, fill the back room." For decades that worked. By 2022 the back rooms held $4.7M of inventory, much of it covered in dust. Cash flow was always tight. Insurance, shrinkage, and obsolescence ate margin.
 
-Priya hired a consultant who ran an **ABC analysis** on 8,200 SKUs. Result: 412 SKUs (5%) generated 75% of revenue. Another 1,200 SKUs hadn't moved in 18 months. They wrote off slow movers, calculated EOQ per SKU, set safety stock based on lead-time variance (not gut feel), and instituted **cycle counting**. Inventory dropped to $2.6M. Service level went UP from 92% to 97%.
+Priya hired a consultant who ran an **ABC analysis** on 8,200 SKUs. Result: 412 SKUs (5%) generated 75% of revenue. Another 1,200 SKUs hadn't moved in 18 months. They wrote off slow movers, calculated EOQ per SKU (Stock Keeping Unit), set safety stock based on lead-time variance (not gut feel), and instituted **cycle counting**. Inventory dropped to $2.6M. Service level went UP from 92% to 97%.
 
 The lesson: more inventory ≠ better service. **Smart inventory** = better service AND lower cost. This module teaches the math behind smart inventory.
 
@@ -33,7 +33,7 @@ The lesson: more inventory ≠ better service. **Smart inventory** = better serv
 
 Also sometimes called out:
 
-- **Maintenance, Repair, Operating (MRO)**, supplies not in the BOM but needed for ops
+- **Maintenance, Repair, Operating (MRO)**, supplies not in the BOM (Bill of Materials) but needed for ops
 - **Promotional inventory**, built specifically for a marketing campaign
 
 ---
@@ -140,7 +140,7 @@ Variations:
 
 | Metric | Formula | What It Tells You |
 |--------|---------|-------------------|
-| **Inventory turns** | `COGS / Avg inventory value` | How often inventory cycles per year |
+| **Inventory turns** | `COGS (Cost of Goods Sold) / Avg inventory value` | How often inventory cycles per year |
 | **Days of supply / DIO** | `365 / turns` | Days of cover at current sales |
 | **Fill rate** | `Orders shipped complete / total orders` | Service performance |
 | **Stockout rate** | `Stockout occurrences / total demand events` | Inverse of fill rate |
@@ -167,11 +167,11 @@ Amazon's cash-to-cash is famously **negative** (collect from customers before pa
 | **Cycle counting** | Continuous, sample-based daily counts | Continuous accuracy, no shutdown | Requires discipline |
 | **ABC-based cycle** | Count A items quarterly, B annually, C bi-annually | Focuses effort | Setup needed |
 
-Modern best practice: **cycle counting**, often automated with RFID, IoT, or scan-as-you-pick.
+Modern best practice: **cycle counting**, often automated with RFID (Radio Frequency Identification), IoT, or scan-as-you-pick.
 
 ---
 
-## 🏃 JIT, Lean, and Kanban Inventory
+## 🏃 JIT (Just-In-Time), Lean, and Kanban Inventory
 
 The Toyota Production System was codified by **Taiichi Ohno** (Toyota plant manager → executive VP) over 1948-1975 and published in *Toyota Production System: Beyond Large-Scale Production* (Diamond Inc., 1978; English translation Productivity Press, 1988). The Western academic synthesis came from **Jeffrey K. Liker, *The Toyota Way: 14 Management Principles*** (McGraw-Hill, 2004; 2e 2020, University of Michigan).
 
@@ -235,18 +235,18 @@ A holiday sweater sells for $80 with $30 cost. Leftover salvage = $20.
 
 ## 📊 Case Study, JD.com's Automated Inventory Network (2017-2024)
 
-**Situation.** China's #2 e-commerce platform after Alibaba, JD.com (Beijing) built its competitive advantage on **owned inventory + owned logistics** the opposite of Alibaba's marketplace + 3PL model. By 2017 JD held 9.6 million SKUs across 500+ warehouses, growing ~30% YoY. The traditional approach manual EOQ at SKU level, ABC tiering on a spreadsheet, was breaking down. SKU velocity ranged from "millions/day" (consumer staples) to "1 per year" (specialty industrial). A single buyer might re-order 200 SKUs daily; getting any one EOQ wrong meant a stockout in Beijing OR pallets of dead stock in a Chengdu DC.
+**Situation.** China's #2 e-commerce platform after Alibaba, JD.com (Beijing) built its competitive advantage on **owned inventory + owned logistics** the opposite of Alibaba's marketplace + 3PL (Third-Party Logistics) model. By 2017 JD held 9.6 million SKUs across 500+ warehouses, growing ~30% YoY. The traditional approach manual EOQ at SKU level, ABC tiering on a spreadsheet, was breaking down. SKU velocity ranged from "millions/day" (consumer staples) to "1 per year" (specialty industrial). A single buyer might re-order 200 SKUs daily; getting any one EOQ wrong meant a stockout in Beijing OR pallets of dead stock in a Chengdu DC.
 
-**Decision.** Founder Richard Liu and CTO Zhang Chen invested $2.4B (2017-2022) in **end-to-end automation** with three pillars: (1) **AI-driven SKU-level demand sensing** using JD's POS data + weather + Weibo/WeChat social signals + same-day search query patterns, producing demand forecasts at hour granularity in 31 provinces; (2) **automated warehouses** by 2023, JD operated 50+ "Asia No.1" mega-DCs with Geek+ robotics, achieving 24x productivity vs manual picking; (3) **AI-driven inventory positioning** instead of EOQ at SKU level, JD's algorithm placed inventory dynamically across the network, treating each DC as a buffer in a hub-and-spoke math model. Critical: they did NOT abandon classical inventory math (EOQ, SS, ROP), they automated and personalized it. Each SKU got its own α for ES, its own σ_LT calibration, its own service-level target based on contribution margin.
+**Decision.** Founder Richard Liu and CTO (Chief Technology Officer) Zhang Chen invested $2.4B (2017-2022) in **end-to-end automation** with three pillars: (1) **AI-driven SKU-level demand sensing** using JD's POS data + weather + Weibo/WeChat social signals + same-day search query patterns, producing demand forecasts at hour granularity in 31 provinces; (2) **automated warehouses** by 2023, JD operated 50+ "Asia No.1" mega-DCs with Geek+ robotics, achieving 24x productivity vs manual picking; (3) **AI-driven inventory positioning** instead of EOQ at SKU level, JD's algorithm placed inventory dynamically across the network, treating each DC as a buffer in a hub-and-spoke math model. Critical: they did NOT abandon classical inventory math (EOQ, SS, ROP), they automated and personalized it. Each SKU got its own α for ES, its own σ_LT calibration, its own service-level target based on contribution margin.
 
-**Outcome.** By 2024: 92% of orders fulfilled same-day or next-day in tier-1/2 Chinese cities; cash-to-cash cycle ~30 days (vs Walmart ~12 days, Alibaba marketplace ~7 days but Alibaba carries no inventory). JD's 11.11 (Singles Day) 2023 generated $52B GMV with stockout rate <1% across millions of SKUs, physically and mathematically impossible without automated SS/ROP optimization. JD's Logistics IPO (2021) valued the unit at $40B. McKinsey featured JD's network in their 2023 *Supply Chain Frontier* report as the case study for "AI-augmented classical inventory science."
+**Outcome.** By 2024: 92% of orders fulfilled same-day or next-day in tier-1/2 Chinese cities; cash-to-cash cycle ~30 days (vs Walmart ~12 days, Alibaba marketplace ~7 days but Alibaba carries no inventory). JD's 11.11 (Singles Day) 2023 generated $52B GMV (Gross Merchandise Value) with stockout rate <1% across millions of SKUs, physically and mathematically impossible without automated SS/ROP optimization. JD's Logistics IPO (Initial Public Offering) (2021) valued the unit at $40B. McKinsey featured JD's network in their 2023 *Supply Chain Frontier* report as the case study for "AI-augmented classical inventory science."
 
 **Lesson for the exam / for practitioners.** The classical formulas in this module EOQ, SS, ROP, ABC are not obsolete in the AI era. They are the *engine*; AI just calibrates the parameters dynamically. JD's success rests on knowing the math cold first. On the exam: don't pick "AI replaces inventory math" as a correct answer, modern systems automate the formulas, they don't discard them. Also note: JD's high carrying cost (owned warehouses + owned trucks) is offset by *fast* turns (~12-15 per year for general merchandise). The cash-to-cash + service level + turn rate triangle is the executive-level CSCP question pattern.
 
 **Discussion (Socratic).**
 - Q1: Walmart's classic supply chain (1980s-2000s) used EOQ + supplier-managed inventory at SKU level. JD's 2024 model uses dynamic AI positioning. What ASCM CSCP framework would JD use to explain the trade-off when the AI mis-calibrates a SKU, and how does the human override fit?
 - Q2: A US-only e-commerce competitor wants to copy JD's model. China has cheap warehouse labor + dense urban demand patterns + 7×24 logistics tolerance. What three structural factors would make JD's playbook fail in the US, and what would you change?
-- Q3: A SKU in JD's network has demand σ = 50/day, lead-time σ = 5 days. The algorithm reports SS calculated for 99.5% service. The CFO asks "is 99.5% on a $30K-COGS slow-mover worth it?" Defend BOTH 99.5% and 92% service answers from a critical-ratio + financial perspective.
+- Q3: A SKU in JD's network has demand σ = 50/day, lead-time σ = 5 days. The algorithm reports SS calculated for 99.5% service. The CFO (Chief Financial Officer) asks "is 99.5% on a $30K-COGS slow-mover worth it?" Defend BOTH 99.5% and 92% service answers from a critical-ratio + financial perspective.
 
 ---
 
@@ -321,7 +321,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 6 picks the suppliers whose lead-time σ feeds your SS math; Module 7 designs the warehouse layouts where cycle counting + RFID happens; Module 10 reconnects EOQ and turns to Lean/TOC + balanced scorecard KPIs.
+> - Inside this course: Module 6 picks the suppliers whose lead-time σ feeds your SS math; Module 7 designs the warehouse layouts where cycle counting + RFID happens; Module 10 reconnects EOQ and turns to Lean/TOC + balanced scorecard KPIs (Key Performance Indicators).
 > - Cross-course: `11-ASCM-CPIM` Modules 4-5 explore inventory mathematics at vastly deeper detail (multi-echelon, time-phased SS, lot-sizing optimization).
 > - Practice: Practice Exam 1 has ~12 inventory questions including 4-5 calculation; Final Mock has ~10 with 3-4 calculation.
 
@@ -332,7 +332,7 @@ You now know:
 1. **The 100% service-level trap.** A new VP demands "99.99% service on everything." Walk through the math (Z = 3.72 for 99.99% vs Z = 1.65 for 95%) and the cost implication. Defend the principled push-back without losing the VP's confidence.
 2. **EOQ when discount tiers exist.** The classical EOQ ignores quantity discounts. A buyer's actual decision is between EOQ at price tier 1 vs slightly-above-EOQ at price tier 2 with a discount. Construct the decision tree, and explain why naïve EOQ can mislead.
 3. **JIT after COVID.** Many firms abandoned pure JIT after COVID-19 supplier failures. Is "JIT + safety stock + dual source" still JIT philosophically, or has Lean's "zero inventory" ideal effectively died? Cite Toyota's actual 2021-2023 behavior.
-4. **Newsvendor in the AI era.** A SaaS firm's "newsvendor" decision is daily compute capacity (over-provision = cloud bill; under-provision = customer SLA breach). How does the classical Cu/(Cu+Co) framework adapt when the cost asymmetry shifts every quarter with cloud pricing?
+4. **Newsvendor in the AI era.** A SaaS (Software as a Service) firm's "newsvendor" decision is daily compute capacity (over-provision = cloud bill; under-provision = customer SLA (Service Level Agreement) breach). How does the classical Cu/(Cu+Co) framework adapt when the cost asymmetry shifts every quarter with cloud pricing?
 5. **Cycle counting vs annual: defending the cost.** Cycle counting requires daily warehouse labor allocated to counts. Annual physical inventory is one weekend of shutdown. Build the cost-benefit argument for cycle counting that survives a CFO who insists "just do annual, it's cheaper labor."
 
 ---

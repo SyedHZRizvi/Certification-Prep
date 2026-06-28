@@ -1,19 +1,19 @@
 # Module 8: Monitoring, Reporting & Threat Response 📊
 
-> **Why this module matters:** Identity controls without telemetry are theater. Microsoft's customer data shows that orgs which forward Entra logs to Sentinel + write basic KQL detections **catch identity attacks an average of 17 days faster** than orgs relying on portal-only views. SC-300 closes with this domain because Microsoft expects the IAM admin (not just the SOC) to own the *visibility* layer over the access plane they built in Modules 1–7. The exam will absolutely test KQL basics, log retention, Defender for Identity, and break-glass alerting.
+> **Why this module matters:** Identity controls without telemetry are theater. Microsoft's customer data shows that orgs which forward Entra logs to Sentinel + write basic KQL detections **catch identity attacks an average of 17 days faster** than orgs relying on portal-only views. SC-300 closes with this domain because Microsoft expects the IAM (Identity and Access Management) admin (not just the SOC (Security Operations Center)) to own the *visibility* layer over the access plane they built in Modules 1–7. The exam will absolutely test KQL basics, log retention, Defender for Identity, and break-glass alerting.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - License tiers + retention defaults, [Module 1](../Module-01-Entra-ID-Fundamentals/Reading.md).
 > - Conditional Access logging fields, [Module 4](../Module-04-Conditional-Access/Reading.md).
-> - PIM activation auditing, [Module 6](../Module-06-Governance-PIM/Reading.md).
+> - PIM (Product Information Management) activation auditing, [Module 6](../Module-06-Governance-PIM/Reading.md).
 > - Hybrid identity sync errors, [Module 7](../Module-07-Hybrid-Identity/Reading.md).
-> - Basic SIEM concepts, [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md).
+> - Basic SIEM (Security Information and Event Management) concepts, [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md).
 
 ---
 
 ## 🪪 A Story: The Identity Breach Detected By A Single KQL Query
 
-It's 2024. A 3,200-person consultancy is two months into their SC-300-compliant identity stack, PIM eligible Global Admins, FIDO2 keys, Conditional Access with Identity Protection. Their CISO has been pushing the SOC to add identity to its monitoring stack. The SOC engineer pushes back: "We have Defender XDR alerts and Identity Protection, that's enough." The CISO insists. The engineer wires Entra sign-in + audit + provisioning logs to Sentinel and writes one KQL query as a starting point:
+It's 2024. A 3,200-person consultancy is two months into their SC-300-compliant identity stack, PIM eligible Global Admins, FIDO2 keys, Conditional Access with Identity Protection. Their CISO (Chief Information Security Officer) has been pushing the SOC to add identity to its monitoring stack. The SOC engineer pushes back: "We have Defender XDR (Extended Detection and Response) alerts and Identity Protection, that's enough." The CISO insists. The engineer wires Entra sign-in + audit + provisioning logs to Sentinel and writes one KQL query as a starting point:
 
 ```kql
 // Any sign-in by either break-glass account
@@ -22,7 +22,7 @@ SigninLogs
 | project TimeGenerated, UserPrincipalName, IPAddress, Location, ResultType
 ```
 
-Three weeks later, the query fires. Tuesday, 3:14 AM PT. `breakglass1@firm.com` signed in successfully from an IP in Eastern Europe. The SOC engineer is paged. He opens Sign-in logs, sees the same event, plus the activation of Global Administrator role via PIM at 3:15 AM. By 3:17, the attacker has created a new federated domain pointing to an AD FS server they control. By 3:19, the SOC engineer has revoked all sessions for the break-glass account, disabled it, rotated `JWT_SECRET`-equivalent for the tenant, paged the CISO, and started incident response. Total time from attacker entry to containment: **5 minutes**, because of one KQL query.
+Three weeks later, the query fires. Tuesday, 3:14 AM PT. `breakglass1@firm.com` signed in successfully from an IP in Eastern Europe. The SOC engineer is paged. He opens Sign-in logs, sees the same event, plus the activation of Global Administrator role via PIM at 3:15 AM. By 3:17, the attacker has created a new federated domain pointing to an AD (Active Directory) FS server they control. By 3:19, the SOC engineer has revoked all sessions for the break-glass account, disabled it, rotated `JWT_SECRET`-equivalent for the tenant, paged the CISO, and started incident response. Total time from attacker entry to containment: **5 minutes**, because of one KQL query.
 
 Without that query, the attacker would have had hours, possibly days, to pivot. The breach would have made the news. The consultancy would have lost the contract that funded their security program.
 
@@ -36,7 +36,7 @@ This module is the visibility layer. The investment is small. The payoff is enor
 |-----|----------|-------------------|
 | **Sign-in logs** | Every interactive + non-interactive sign-in (user, service principal, managed identity) | 7d Free / 30d P1+ |
 | **Audit logs** | Every directory-changing action (user created, group modified, app consented, role activated) | 7d Free / 30d P1+ |
-| **Provisioning logs** | SCIM provisioning events (to/from SaaS) + Cloud Sync events | 7d Free / 30d P1+ |
+| **Provisioning logs** | SCIM provisioning events (to/from SaaS (Software as a Service)) + Cloud Sync events | 7d Free / 30d P1+ |
 | **Risk detections** (Identity Protection, P2) | Individual risk events + scores | 90 days |
 
 🔥 **MEMORIZE:** For retention beyond the defaults, forward to **Log Analytics workspace** (KQL), **Event Hub** (streaming to a SIEM), or **storage account** (cheap archive). Configure via **Diagnostic Settings**.
@@ -75,7 +75,7 @@ Entra portal → Identity Secure Score: a 0–100% score Microsoft calculates ba
 
 | Category (examples) | What it scores |
 |---------------------|----------------|
-| MFA registration coverage | % of users with MFA registered |
+| MFA (Multi-Factor Authentication) registration coverage | % of users with MFA registered |
 | Conditional Access on admins | Are MFA + risk policies on for admins? |
 | Block legacy authentication | Is the policy active? |
 | Number of standing Global Admins | <5 is the target |
@@ -196,7 +196,7 @@ AADProvisioningLogs
 
 | Capability | What it does |
 |------------|--------------|
-| **Connectors** | Ingest from Entra ID, Defender XDR, AWS, GCP, third-party |
+| **Connectors** | Ingest from Entra ID, Defender XDR, AWS (Amazon Web Services), GCP (Google Cloud Platform), third-party |
 | **Analytics rules** | Scheduled KQL queries that fire incidents |
 | **Workbooks** | Pre-built dashboards (e.g. Microsoft Entra workbook) |
 | **Hunting queries** | Pre-built and custom queries for proactive hunting |
@@ -213,14 +213,14 @@ Ships with Sentinel. Visualizes: sign-in volume + failures, CA policy hits, risk
 
 ## 🛡️ Microsoft Defender For Identity (formerly Azure ATP)
 
-**Defender for Identity** is agent-based detection on **on-prem Domain Controllers + AD FS servers + AD CS servers**. Detects on-prem attacks (Golden Ticket, DCSync, lateral movement, suspicious LDAP query, reconnaissance) and reports to the **Microsoft Defender XDR portal** (formerly the Microsoft 365 Defender portal).
+**Defender for Identity** is agent-based detection on **on-prem Domain Controllers + AD FS servers + AD CS servers**. Detects on-prem attacks (Golden Ticket, DCSync, lateral movement, suspicious LDAP (Lightweight Directory Access Protocol) query, reconnaissance) and reports to the **Microsoft Defender XDR portal** (formerly the Microsoft 365 Defender portal).
 
 | Spec | Detail |
 |------|--------|
 | Agent | Lightweight sensor on DC / AD FS / AD CS |
 | Detection model | Behavioral analytics + known attack patterns |
 | Where alerts surface | Defender XDR portal (integrates with Entra incidents) |
-| License | Microsoft Defender for Identity (separate SKU) or part of Microsoft 365 E5 |
+| License | Microsoft Defender for Identity (separate SKU (Stock Keeping Unit)) or part of Microsoft 365 E5 |
 | Use case | "Did someone run Mimikatz on a DC?" |
 
 🚨 **Exam trap:** **Defender for Identity ≠ Identity Protection.** Defender for Identity is **on-prem AD attack detection**; Identity Protection is **Entra cloud risk policies**. Different products. Both useful. Both tested separately on the exam.
@@ -279,7 +279,7 @@ A 2023 attack class Microsoft tracks heavily is **token theft** attacker exfiltr
 | "Identity Secure Score replaces a security program" | ❌ It's a guided backlog, not a complete posture |
 | "MFA stops token theft" | ❌ Token theft = post-MFA; CAE + Token Protection are the defense |
 | "Defender XDR ≠ Defender for Identity" | ❌ Defender XDR is the unified portal; Defender for Identity is one of the products feeding it |
-| "Logs in Log Analytics are searched via PowerShell" | ❌ KQL via Log Analytics / Sentinel UI (PowerShell can call the API but the language is KQL) |
+| "Logs in Log Analytics are searched via PowerShell" | ❌ KQL via Log Analytics / Sentinel UI (User Interface) (PowerShell can call the API (Application Programming Interface) but the language is KQL) |
 
 ---
 

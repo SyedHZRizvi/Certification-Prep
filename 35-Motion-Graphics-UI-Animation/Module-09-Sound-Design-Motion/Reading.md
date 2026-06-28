@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI-Animation/Module-09-Sound-Design-Motion/Reading/
+permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-09-Sound-Design-Motion/Reading/
 title: "Module 9: Sound Design & Motion"
 ---
 
@@ -283,7 +283,7 @@ Every professional motion designer maintains a personal SFX library. These are t
 | Category | Sub-types | Primary Use |
 |----------|-----------|-------------|
 | **Whooshes** | Soft, medium, hard; rising, falling, neutral | Slide transitions, logo reveals |
-| **Impacts** | Soft thud, hard punch, cinematic boom | Key moments, chart reveals, CTA |
+| **Impacts** | Soft thud, hard punch, cinematic boom | Key moments, chart reveals, CTA (Call to Action) |
 | **UI Sounds** | Clicks, pops, toggles, notifications | App UI, product demos |
 | **Sweeps** | Rising sweep, falling sweep, tension sweep | Anticipation, reveal buildup |
 | **Transitions** | Cuts, glitches, organic morphs | Scene changes |

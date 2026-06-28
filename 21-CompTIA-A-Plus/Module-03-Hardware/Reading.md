@@ -145,7 +145,7 @@ A CPU (Central Processing Unit) is the brain of the PC. For the A+ you need to r
 | Feature | BIOS (legacy) | UEFI (modern) |
 |---------|---------------|---------------|
 | Year | 1981+ | 2005+ (Apple), 2010+ widespread on PC |
-| Boot disk format | MBR (≤2 TB) | GPT (>2 TB) |
+| Boot disk format | MBR (≤2 TB) | GPT (Generative Pre-trained Transformer) (>2 TB) |
 | Boot mode | 16-bit real mode | 32/64-bit, can use mouse |
 | Secure Boot | No | Yes |
 | TPM 2.0 use | Limited | Native |
@@ -378,7 +378,7 @@ Higher tier = less waste heat, less electricity, quieter (smaller fans).
 
 **The hardware detail.** Modern CPUs guess (speculatively execute) future instruction paths to keep their long pipelines fed. If the guess is wrong, results are discarded, but tiny side effects (cache state changes) leak. Meltdown let unprivileged user-space code read kernel memory by triggering speculative loads followed by cache-timing observation. Spectre had two variants exploiting indirect branch prediction.
 
-**Decision and outcome.** Operating-system vendors (Microsoft KB4056892, Apple macOS 10.13.2, all major Linux distros) pushed *kernel page-table isolation* (KPTI / KAISER) patches within 72 hours. Performance penalties: 5–30% on syscall-heavy workloads (databases, virtual hosts). Intel and AMD pushed microcode updates rolling out through 2018–2019. Cloud providers (AWS, Azure, GCP) re-patched their entire global fleets within 2 weeks. Most physical-PC owners received the patches via Windows Update without noticing.
+**Decision and outcome.** Operating-system vendors (Microsoft KB4056892, Apple macOS 10.13.2, all major Linux distros) pushed *kernel page-table isolation* (KPTI / KAISER) patches within 72 hours. Performance penalties: 5–30% on syscall-heavy workloads (databases, virtual hosts). Intel and AMD pushed microcode updates rolling out through 2018–2019. Cloud providers (AWS (Amazon Web Services), Azure, GCP (Google Cloud Platform)) re-patched their entire global fleets within 2 weeks. Most physical-PC owners received the patches via Windows Update without noticing.
 
 **Lesson for the exam / for practitioners.**
 - **Firmware/BIOS updates are not optional.** The Spectre microcode patches shipped via motherboard BIOS updates. A+ techs are the people who apply them in person.
@@ -412,7 +412,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 4](../Module-04-Virtualization-Cloud/Reading.md) uses CPU/RAM math when sizing VMs; [Module 5](../Module-05-Troubleshooting/Reading.md) drills hardware troubleshooting in depth; [Module 7](../Module-07-Operating-Systems/Reading.md) revisits BIOS/UEFI for boot.
-> - Cross-course: AWS Solutions Architect Associate (course 04) maps physical RAM/CPU sizing decisions to EC2 instance types; Server+ (course 24) goes much deeper on server hardware.
+> - Cross-course: AWS Solutions Architect Associate (course 04) maps physical RAM/CPU sizing decisions to EC2 (Elastic Compute Cloud) instance types; Server+ (course 24) goes much deeper on server hardware.
 
 ---
 

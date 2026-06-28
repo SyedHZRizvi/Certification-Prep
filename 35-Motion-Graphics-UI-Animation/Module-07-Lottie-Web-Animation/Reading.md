@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI-Animation/Module-07-Lottie-Web-Animation/Reading/
+permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-07-Lottie-Web-Animation/Reading/
 title: "Module 7: Lottie & Web Animation"
 ---
 
@@ -21,7 +21,7 @@ They built Lottie to solve this. The framework converted AE animations to a JSON
 
 > 🎯 **Exam Callout 3:** The Airbnb engineering team built Lottie in **2015** to solve the problem of high-quality animations on mobile that couldn't be delivered via GIF (quality loss) or MP4 (no programmatic control). The exam may test the year or the specific problem Lottie was built to solve.
 
-> 🎯 **Exam Callout 4:** In the GSAP ScrollTrigger API, `scrub: true` links animation progress directly to scroll position. `scrub: 1` adds a 1-second lag between scroll position and animation progress, it smooths the animation. The exam tests: what does `scrub: true` do vs `scrub: 1`?
+> 🎯 **Exam Callout 4:** In the GSAP ScrollTrigger API (Application Programming Interface), `scrub: true` links animation progress directly to scroll position. `scrub: 1` adds a 1-second lag between scroll position and animation progress, it smooths the animation. The exam tests: what does `scrub: true` do vs `scrub: 1`?
 
 > 🎯 **Exam Callout 5:** The Web Animations API (WAAPI) is a **native browser API**, no library required. GSAP, Framer Motion, and React Spring are all libraries that sit on top of browser APIs. The exam may test: which animation approach requires no external library?
 

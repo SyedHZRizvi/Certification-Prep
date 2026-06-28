@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI-Animation/Module-05-Infographic-Data-Viz/Reading/
+permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-05-Infographic-Data-Viz/Reading/
 title: "Module 5: Infographic & Data Viz"
 ---
 

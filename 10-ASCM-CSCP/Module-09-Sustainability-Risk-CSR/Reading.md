@@ -3,7 +3,7 @@
 > **Why this module matters:** Domain 1 (Environment & Strategy) is 25% of the exam, and modern editions of the CSCP Learning System lean heavily on sustainability, risk management, and CSR. Investors and regulators now require what the exam will test, ESG reporting, ISO frameworks, business continuity, scope-3 emissions.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [SCOR-Enable process](../Module-01-SCM-Foundations-Strategy/Reading.md), Module 1 (governance + risk lives here)
+> - [SCOR-Enable process](../Module-01-SCM (Supply Chain Management)-Foundations-Strategy/Reading.md), Module 1 (governance + risk lives here)
 > - [Supplier base segmentation (Kraljic)](../Module-06-Sourcing-Supplier-Management/Reading.md), Module 6
 > - [International trade compliance basics](../Module-08-International-Trade-Customs/Reading.md), Module 8
 > - General awareness of climate change, ESG investing, and corporate sustainability reporting
@@ -16,7 +16,7 @@ Hassan is Chief Supply Chain Officer at **NorthSlope Outdoor**, a $480M apparel 
 
 Six weeks of digging revealed three Tier-3 farms with no animal-welfare audits. Forced-labor allegations were emerging in the broader sector. If the press got hold of it, NorthSlope could lose its biggest retail partner a $7M annual relationship overnight.
 
-Hassan launched a 6-month program: full multi-tier mapping, switch to Responsible Down Standard certified suppliers, ISO 14001 environmental management at owned facilities, scope-3 emissions accounting with CDP disclosure. Cost: $1.2M. Avoided risk: $7M+. Side benefit: 12 new B2B customers wanted exactly that transparency and chose NorthSlope as a result.
+Hassan launched a 6-month program: full multi-tier mapping, switch to Responsible Down Standard certified suppliers, ISO 14001 environmental management at owned facilities, scope-3 emissions accounting with CDP (Customer Data Platform) disclosure. Cost: $1.2M. Avoided risk: $7M+. Side benefit: 12 new B2B (Business-to-Business) customers wanted exactly that transparency and chose NorthSlope as a result.
 
 **Sustainability and risk used to be "nice to have."** They are now table stakes. This module gives you the frameworks.
 
@@ -30,7 +30,7 @@ Hassan launched a 6-month program: full multi-tier mapping, switch to Responsibl
 |---|-----------|----------|
 | **People** | Social, labor, community, human rights | Living wage, no child labor, DEI |
 | **Planet** | Environmental, carbon, water, waste, biodiversity | Net-zero plan, water reduction, circular flows |
-| **Profit** | Economic, financial sustainability | Margin, cash, ROI |
+| **Profit** | Economic, financial sustainability | Margin, cash, ROI (Return on Investment) |
 
 🎯 **Exam tip:** TBL is the foundation of every modern sustainability question. If the answer mentions "balance environmental, social, and economic", you're in TBL territory.
 
@@ -171,7 +171,7 @@ RPN = S × O × D. Higher RPN = higher priority.
 
 ## 🛡️ Business Continuity & Disaster Recovery
 
-### BCP (Business Continuity Plan) vs DRP (Disaster Recovery Plan)
+### BCP (Business Continuity Plan) vs DRP (Distribution Requirements Planning) (Disaster Recovery Plan)
 
 | | BCP | DRP |
 |---|------|------|
@@ -184,8 +184,8 @@ RPN = S × O × D. Higher RPN = higher priority.
 | Metric | Definition |
 |--------|------------|
 | **MTPD** (Maximum Tolerable Period of Disruption) | Longest the business can be down before unacceptable harm |
-| **RTO** (Recovery Time Objective) | Target time to restore a function (≤ MTPD) |
-| **RPO** (Recovery Point Objective) | Max acceptable data loss (e.g., 4 hours = restore from 4-hour-old backup) |
+| **RTO (Recovery Time Objective)** (Recovery Time Objective) | Target time to restore a function (≤ MTPD) |
+| **RPO (Recovery Point Objective)** (Recovery Point Objective) | Max acceptable data loss (e.g., 4 hours = restore from 4-hour-old backup) |
 | **MAO** (Maximum Acceptable Outage) | Synonym for MTPD in some standards |
 
 ### Business Impact Analysis (BIA)
@@ -256,7 +256,7 @@ Implication: **multi-tier visibility** is no longer optional. Tier-2, Tier-3 sup
 ## 🌐 Cyber & Information Risk in SC
 
 ### Key threats
-- Ransomware on supplier or 3PL
+- Ransomware on supplier or 3PL (Third-Party Logistics)
 - Compromised software updates (SolarWinds-style supply chain attacks)
 - Data breach of customer/PII shared with suppliers
 - IP theft, especially in JV / offshore manufacturing
@@ -279,7 +279,7 @@ A resilient supply chain absorbs shocks AND adapts. Levers:
 | **Redundancy** | Multi-source, multi-site, safety stock |
 | **Flexibility** | Cross-trained workforce, configurable lines |
 | **Visibility** | Real-time tracking, multi-tier mapping |
-| **Collaboration** | CPFR, shared planning, supplier intimacy |
+| **Collaboration** | CPFR (Collaborative Planning, Forecasting, and Replenishment), shared planning, supplier intimacy |
 | **Diversification** | Geographic spread, product mix |
 | **Postponement** | Delay final differentiation |
 
@@ -289,7 +289,7 @@ A resilient supply chain absorbs shocks AND adapts. Levers:
 
 ## 📊 Case Study, Unilever's Sustainable Living Plan (2010-2020) and 2024 Compass Update
 
-**Situation.** In 2009, Unilever (Anglo-Dutch consumer goods giant, ~$60B revenue, 400+ brands including Dove, Knorr, Lipton, Ben & Jerry's) faced an investor-relations problem. Climate, water, and social issues were rising in stakeholder importance; competitors (P&G, Nestlé) were issuing sustainability reports but with limited substance. Newly appointed CEO Paul Polman concluded that Unilever's supply chain touching agriculture in 100+ countries, water systems globally, and ~2 billion daily consumers could not be decoupled from sustainability without long-term margin erosion. Investors were skeptical of long-horizon thinking. Polman famously suspended quarterly EPS guidance in 2009.
+**Situation.** In 2009, Unilever (Anglo-Dutch consumer goods giant, ~$60B revenue, 400+ brands including Dove, Knorr, Lipton, Ben & Jerry's) faced an investor-relations problem. Climate, water, and social issues were rising in stakeholder importance; competitors (P&G, Nestlé) were issuing sustainability reports but with limited substance. Newly appointed CEO (Chief Executive Officer) Paul Polman concluded that Unilever's supply chain touching agriculture in 100+ countries, water systems globally, and ~2 billion daily consumers could not be decoupled from sustainability without long-term margin erosion. Investors were skeptical of long-horizon thinking. Polman famously suspended quarterly EPS guidance in 2009.
 
 **Decision.** Unilever launched the **Sustainable Living Plan (USLP)** in November 2010 with three explicit decade-long targets: (1) **Halve the environmental footprint** of products (greenhouse gas, water, waste, sourcing); (2) **Help 1 billion people** improve health and well-being (hygiene, nutrition); (3) **Source 100% of agricultural raw materials sustainably** (palm oil, tea, soy, sugar, cocoa). Critical operationally: USLP was embedded in supply chain decisions palm oil sourcing through RSPO-certified (Roundtable on Sustainable Palm Oil) suppliers, tea through Rainforest Alliance, smallholder farmer training. Scope 3 emissions (~95% of Unilever's footprint) were measured in line with GHG Protocol, audited via PwC. Each brand was given a "sustainable living brand" (SLB) classification those that combined social purpose with brand growth.
 
@@ -299,7 +299,7 @@ A resilient supply chain absorbs shocks AND adapts. Levers:
 
 **Discussion (Socratic).**
 - Q1: Unilever missed the 50% footprint reduction target by ~22 percentage points. Construct the strongest "USLP was still a success" argument AND the strongest "USLP was greenwashing" argument. Which would you defend at a board level?
-- Q2: A skeptical CFO at a mid-cap firm says "we can't afford a 10-year USLP-style program, we have to focus on quarterly EBITDA." Build the rebuttal using EU CSRD enforcement reality (€10M fines or 5% revenue) and ESG-rating impact on cost of capital.
+- Q2: A skeptical CFO (Chief Financial Officer) at a mid-cap firm says "we can't afford a 10-year USLP-style program, we have to focus on quarterly EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization)." Build the rebuttal using EU CSRD enforcement reality (€10M fines or 5% revenue) and ESG-rating impact on cost of capital.
 - Q3: 2024-2026, generative AI is being used by sustainability teams to draft CDP responses and CSRD disclosures. What's the risk of AI-drafted ESG reports, and how would a CSCP-trained supply chain leader govern this?
 
 ---
@@ -382,7 +382,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 10 ties sustainability KPIs into the Balanced Scorecard's "Internal Process" and "Learning & Growth" perspectives; the Capstone integrates risk + sustainability + ESG into the CSCO transformation deliverable.
+> - Inside this course: Module 10 ties sustainability KPIs (Key Performance Indicators) into the Balanced Scorecard's "Internal Process" and "Learning & Growth" perspectives; the Capstone integrates risk + sustainability + ESG into the CSCO transformation deliverable.
 > - Cross-course: `13-ISM-CPSM` Module 6 (Sustainability) goes deeper on supplier-side sustainability; `09-CompTIA-Security-Plus` covers the NIST CSF cybersecurity layer in technical depth.
 > - Practice: Practice Exam 2 has ~14 sustainability + risk questions; Final Mock has ~12.
 

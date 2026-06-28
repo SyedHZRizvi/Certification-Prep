@@ -6,7 +6,7 @@
 > - [Network zones and segmentation](../Module-06-Network-Security/Reading.md), the same vocabulary applies in cloud VPCs/VNETs.
 > - [Encryption at rest / in transit / in use](../Module-02-Cryptography-PKI/Reading.md), needed for cloud KMS and confidential-computing questions.
 > - [IAM concepts](../Module-03-Identity-Access-Management/Reading.md), overly-permissive cloud IAM is the #1 cloud-breach pattern.
-> - [Threat-actor / supply-chain awareness](../Module-04-Threats-Threat-Actors/Reading.md), needed for mobile, OT, and SaaS-supply-chain scenarios.
+> - [Threat-actor / supply-chain awareness](../Module-04-Threats-Threat-Actors/Reading.md), needed for mobile, OT, and SaaS (Software as a Service)-supply-chain scenarios.
 
 ---
 
@@ -14,9 +14,9 @@
 
 Picture a customer at a coffee shop, juggling three devices:
 
-- **Their laptop**, corporate-issued, full disk encrypted, EDR running, can't install random software (managed by IT). When the laptop tries to talk to anything weird, the EDR sees the process tree and alerts SOC. This is **endpoint security**.
-- **Their phone**, personal device, used for work email. IT can wipe just the corporate data (not the family photos) if it's lost. The device must be passcode-locked, with screen lock < 5 minutes, and can't jailbreak. This is **MDM/UEM + BYOD**.
-- **Their AWS account**, they're spinning up an S3 bucket from the coffee shop Wi-Fi. AWS handles physical security and the hypervisor; *they* handle the bucket's policies, encryption, IAM, and content. This is **cloud shared responsibility**.
+- **Their laptop**, corporate-issued, full disk encrypted, EDR (Endpoint Detection and Response) running, can't install random software (managed by IT). When the laptop tries to talk to anything weird, the EDR sees the process tree and alerts SOC (Security Operations Center). This is **endpoint security**.
+- **Their phone**, personal device, used for work email. IT can wipe just the corporate data (not the family photos) if it's lost. The device must be passcode-locked, with screen lock < 5 minutes, and can't jailbreak. This is **MDM (Mobile Device Management)/UEM + BYOD**.
+- **Their AWS (Amazon Web Services) account**, they're spinning up an S3 (Simple Storage Service) bucket from the coffee shop Wi-Fi. AWS handles physical security and the hypervisor; *they* handle the bucket's policies, encryption, IAM, and content. This is **cloud shared responsibility**.
 
 Three very different places where data lives, three very different defenses. Sec+ asks you to keep them straight.
 
@@ -31,7 +31,7 @@ Three very different places where data lives, three very different defenses. Sec
 | 1st | **AV (antivirus)** | Signature-based malware detection |
 | 2nd | **EPP (Endpoint Protection Platform)** | AV + host firewall + device control |
 | 3rd | **EDR (Endpoint Detection & Response)** | Behavioral telemetry, process trees, threat hunting, rollback |
-| 4th | **XDR (Extended Detection & Response)** | EDR + network + cloud + email correlated |
+| 4th | **XDR (Extended Detection and Response) (Extended Detection & Response)** | EDR + network + cloud + email correlated |
 | 4th | **MDR / MSSP** | Managed Detection & Response, outsourced 24/7 EDR ops |
 
 🎯 **Sec+ tells:** EDR records *process behavior*. AV looks for *known signatures*. XDR adds *cross-source correlation*.
@@ -106,7 +106,7 @@ Three very different places where data lives, three very different defenses. Sec
 - **Jailbreaking / rooting**, bypassing OS sandboxing
 - **Sideloading malicious apps**
 - **Bluetooth attacks** (bluejacking, bluesnarfing, bluebugging)
-- **NFC abuse / RFID skimming**
+- **NFC abuse / RFID (Radio Frequency Identification) skimming**
 - **Stalkerware**
 - **Malicious profiles / config payloads**
 - **SIM swap**, attacker convinces carrier to port number, defeating SMS MFA
@@ -115,13 +115,13 @@ Three very different places where data lives, three very different defenses. Sec
 
 ## ☁️ Cloud Security Fundamentals
 
-The **NIST definition of cloud computing** (SP 800-145, September 2011: Mell & Grance) established the standard model IaaS, PaaS, SaaS that Sec+ still tests today. The **shared-responsibility model** was articulated publicly by AWS in early **AWS Well-Architected** materials starting 2012 and standardized via [aws.amazon.com/compliance/shared-responsibility-model](https://aws.amazon.com/compliance/shared-responsibility-model/). Azure ([learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility)) and GCP ([cloud.google.com/security/overview/shared-responsibility](https://cloud.google.com/security/overview/shared-responsibility)) maintain comparable docs. The **Cloud Security Alliance** publishes the *Cloud Controls Matrix (CCM) v4* (2021, current) as the consensus control taxonomy across providers.
+The **NIST definition of cloud computing** (SP 800-145, September 2011: Mell & Grance) established the standard model IaaS (Infrastructure as a Service), PaaS (Platform as a Service), SaaS that Sec+ still tests today. The **shared-responsibility model** was articulated publicly by AWS in early **AWS Well-Architected** materials starting 2012 and standardized via [aws.amazon.com/compliance/shared-responsibility-model](https://aws.amazon.com/compliance/shared-responsibility-model/). Azure ([learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility)) and GCP (Google Cloud Platform) ([cloud.google.com/security/overview/shared-responsibility](https://cloud.google.com/security/overview/shared-responsibility)) maintain comparable docs. The **Cloud Security Alliance** publishes the *Cloud Controls Matrix (CCM) v4* (2021, current) as the consensus control taxonomy across providers.
 
 ### Service models, and the shared responsibility implication
 
 | Model | You manage | Provider manages | Example |
 |-------|-----------|------------------|---------|
-| **IaaS** | OS, runtime, app, data, network configs | Hypervisor, hardware, facilities | EC2, Azure VM |
+| **IaaS** | OS, runtime, app, data, network configs | Hypervisor, hardware, facilities | EC2 (Elastic Compute Cloud), Azure VM (Virtual Machine) |
 | **PaaS** | App + data | Runtime + OS + everything below | App Service, Heroku, Elastic Beanstalk |
 | **SaaS** | Data + your IAM config | Everything else | Salesforce, Microsoft 365 |
 | **FaaS / Serverless** | Function code + IAM | Even more abstracted than PaaS | AWS Lambda, Azure Functions |
@@ -142,7 +142,7 @@ The **NIST definition of cloud computing** (SP 800-145, September 2011: Mell & G
 | **Misconfigured storage** | Public S3 bucket exposing customer data |
 | **Overly permissive IAM** | `s3:*` on `*` rather than least privilege |
 | **Shadow IT / unauthorized cloud use** | Team spins up its own AWS account |
-| **Insecure APIs** | No auth/rate limit on management API |
+| **Insecure APIs** | No auth/rate limit on management API (Application Programming Interface) |
 | **Account hijacking** | Phished cloud root creds |
 | **Inadequate logging** | No CloudTrail / no Azure Activity Log |
 | **Data sovereignty** | Data ends up in a region with conflicting laws |
@@ -156,9 +156,9 @@ The **NIST definition of cloud computing** (SP 800-145, September 2011: Mell & G
 | **CSPM** (Cloud Security Posture Mgmt) | Continuously audits cloud configs for drift/misconfig |
 | **CWPP** (Cloud Workload Protection) | Runtime protection for VMs/containers |
 | **CIEM** (Cloud Infra Entitlements Mgmt) | Inventories + rightsizes IAM permissions |
-| **SASE** (Secure Access Service Edge) | Combines SD-WAN + cloud security (FWaaS, SWG, ZTNA, CASB) |
+| **SASE** (Secure Access Service Edge) | Combines SD-WAN (Wide Area Network) + cloud security (FWaaS, SWG, ZTNA (Zero Trust Network Access), CASB) |
 | **SSE** (Security Service Edge) | SASE minus the network/SD-WAN piece |
-| **ZTNA** (Zero Trust Network Access) | Replace VPN with identity-aware proxy access |
+| **ZTNA** (Zero Trust Network Access) | Replace VPN (Virtual Private Network) with identity-aware proxy access |
 | **SWG** (Secure Web Gateway) | URL filtering + threat prevention for outbound web |
 | **FWaaS** | Firewall delivered as cloud service |
 
@@ -170,7 +170,7 @@ The **NIST definition of cloud computing** (SP 800-145, September 2011: Mell & G
 - **Image security**, scan images for vulns before deploy (Trivy, Snyk, Clair); use minimal base images
 - **Runtime security** Falco, sysdig detect anomalous container behavior
 - **Registry security**, sign images, control who can pull/push
-- **Orchestrator** (Kubernetes), RBAC, network policies, pod security standards, secret management
+- **Orchestrator** (Kubernetes), RBAC (Role-Based Access Control), network policies, pod security standards, secret management
 - **Common pitfalls**: running containers as root, exposed kubelet API, secrets in env vars, image-pulled-from-public
 
 ### Serverless
@@ -226,7 +226,7 @@ Operational Technology (OT) covers industrial systems. Sec+ wants you to know th
 
 ## 🔬 Scenario Walkthrough (PBQ-style)
 
-> **Scenario:** A SOC sees an EC2 instance making outbound DNS queries to a known C2 domain. The instance has a public IP, an over-permissive IAM role (S3:*), and CloudTrail logs are NOT enabled in this region.
+> **Scenario:** A SOC sees an EC2 instance making outbound DNS (Domain Name System) queries to a known C2 domain. The instance has a public IP, an over-permissive IAM role (S3:*), and CloudTrail logs are NOT enabled in this region.
 >
 > Identify the controls that failed and what to do FIRST.
 
@@ -234,10 +234,10 @@ Operational Technology (OT) covers industrial systems. Sec+ wants you to know th
 
 | Failure | Control needed |
 |---------|----------------|
-| Public IP on a non-public workload | Place behind a private subnet + NAT/ALB |
+| Public IP on a non-public workload | Place behind a private subnet + NAT (Network Address Translation)/ALB |
 | `S3:*` role | Least privilege via IAM policy + CIEM |
 | No CloudTrail in region | Enable CloudTrail org-wide; multi-region |
-| Outbound DNS to C2 | Egress filtering, DNS sinkhole, route through VPC DNS Firewall |
+| Outbound DNS to C2 | Egress filtering, DNS sinkhole, route through VPC (Virtual Private Cloud) DNS Firewall |
 | Detection only after exfil | Add CSPM, GuardDuty/Defender for Cloud, CWPP |
 
 **First action (containment, not eradication):** Isolate the instance modify its security group to drop egress to all destinations and re-attach a "quarantine" IAM role. *Then* triage. Don't terminate yet you'll lose forensic state.
@@ -250,16 +250,16 @@ PBQ might ask you to drag containment, eradication, and recovery actions into th
 
 **Situation.** **Capital One Financial** is one of the largest US consumer-credit-card issuers and was an early, public AWS-customer reference by 2018 Capital One had migrated >70% of its workloads to AWS and shut down legacy data centers. The architecture: a **ModSecurity-based web application firewall** in front of a US-East-region application; behind it, an EC2 instance running on **IAM role permissions that allowed reading S3 buckets** in the same account. Capital One stored credit-application data names, addresses, DOBs, credit scores, **140,000 SSNs**, **80,000 linked bank-account numbers**, and 1 million Canadian Social Insurance Numbers, in those S3 buckets.
 
-**Decision.** In **March 2019** a former AWS engineer (Paige Thompson, who had left AWS in 2016) discovered the misconfigured ModSecurity WAF. The WAF was configured in a way that, when sent a specially crafted request, would issue **outbound HTTP requests on the attacker's behalf** a textbook **Server-Side Request Forgery (SSRF)** vulnerability (OWASP A10:2021, covered Module 5). Specifically, the attacker pointed the SSRF at the AWS Instance Metadata Service v1 (**IMDSv1**) endpoint: `http://169.254.169.254/latest/meta-data/iam/security-credentials/<role-name>`. AWS IMDSv1 returned the temporary security credentials for the EC2 instance's IAM role *without any authentication* that was IMDSv1's design. The attacker then used those credentials to list **700+ S3 buckets** and download **~30 GB** of credit-application data.
+**Decision.** In **March 2019** a former AWS engineer (Paige Thompson, who had left AWS in 2016) discovered the misconfigured ModSecurity WAF (Web Application Firewall). The WAF was configured in a way that, when sent a specially crafted request, would issue **outbound HTTP (Hypertext Transfer Protocol) requests on the attacker's behalf** a textbook **Server-Side Request Forgery (SSRF)** vulnerability (OWASP A10:2021, covered Module 5). Specifically, the attacker pointed the SSRF at the AWS Instance Metadata Service v1 (**IMDSv1**) endpoint: `http://169.254.169.254/latest/meta-data/iam/security-credentials/<role-name>`. AWS IMDSv1 returned the temporary security credentials for the EC2 instance's IAM role *without any authentication* that was IMDSv1's design. The attacker then used those credentials to list **700+ S3 buckets** and download **~30 GB** of credit-application data.
 
 **Outcome.** Thompson posted bragging on GitHub Gist and on Slack. A Capital One security researcher (a friend of Thompson's contact) saw the posts and reported it to Capital One on **17 July 2019**. Capital One confirmed the breach within hours, notified the FBI within a day, and patched the SSRF the same week. Public disclosure: **29 July 2019**. **~106 million** Americans and Canadians were affected. Capital One paid **$80M in OCC penalty** (August 2020) and **$190M in a class-action settlement** (December 2021). Internal incident-response cost was estimated at $150M+. Thompson was convicted in 2022 of seven federal counts and sentenced to time served plus probation; the lighter-than-expected sentence triggered intense academic and industry debate about how to charge "researcher-curious" intrusion vs malicious attack. AWS responded by accelerating **IMDSv2** (released November 2019) which requires session-token-based PUT requests (defeating SSRF-style abuse), and in mid-2024 began *defaulting* new instances to IMDSv2-only.
 
 **Lesson for the exam / for practitioners.** This case touches every cloud topic Sec+ tests:
 
 - **Shared responsibility model.** AWS provided IMDSv1 (a service); Capital One **configured it, configured the IAM role with broad S3 access, and configured the WAF that allowed SSRF.** Sec+ tests this exact framing: "A public S3 bucket exposed customer data who is responsible?" → the customer. "An EC2 instance with an over-permissive IAM role who is responsible?" → the customer.
-- **SSRF (Module 5) + IMDS (Module 7) = cloud-credential theft.** This pattern recurs constantly. The countermeasure is IMDSv2 (network-layer enforcement) **plus** scoped IAM roles **plus** runtime SSRF-prevention (block egress to `169.254.169.254` from anything but the legitimate AWS SDK). Sec+ tests each layer.
+- **SSRF (Module 5) + IMDS (Module 7) = cloud-credential theft.** This pattern recurs constantly. The countermeasure is IMDSv2 (network-layer enforcement) **plus** scoped IAM roles **plus** runtime SSRF-prevention (block egress to `169.254.169.254` from anything but the legitimate AWS SDK (Software Development Kit)). Sec+ tests each layer.
 - **CSPM would have caught this.** Cloud Security Posture Management tools (Wiz, Orca, Lacework, Prisma Cloud) would have flagged: (a) the S3 buckets accessible to the EC2 instance role; (b) the IAM role's over-broad scope; (c) the WAF being on a public-internet path with outbound metadata-IP access. Sec+ asks: "what tool would have detected this?" → **CSPM** for config drift, **CIEM** for entitlement, **CWPP** for runtime.
-- **Logging and detection failure.** Capital One had **CloudTrail** enabled but did not have **alerts** on anomalous IAM activity (one credential, 700 buckets, 30 GB downloaded in hours). Module 8 SIEM/SOAR tuning would have caught the volumetric anomaly.
+- **Logging and detection failure.** Capital One had **CloudTrail** enabled but did not have **alerts** on anomalous IAM activity (one credential, 700 buckets, 30 GB downloaded in hours). Module 8 SIEM (Security Information and Event Management)/SOAR tuning would have caught the volumetric anomaly.
 - **The breach reshaped industry practice.** IMDSv2 is now mandatory by default for new AWS accounts as of 2024; AWS introduced **GuardDuty** anomaly detection and **IAM Access Analyzer** as direct responses; the entire **Cloud Native Application Protection Platform (CNAPP)** product category exists in part because of Capital One.
 
 **Discussion (Socratic).**

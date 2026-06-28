@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Running basic shell commands and navigating with `cd`, `ls`, `pwd`
-> - Having root or `sudo` access on a practice VM
+> - Having root or `sudo` access on a practice VM (Virtual Machine)
 > - Module 1, you'll see fstab and systemd mount units referenced repeatedly
 
 ---
@@ -60,7 +60,7 @@ The **Filesystem Hierarchy Standard 3.0** (Linux Foundation, 2015) is the rulebo
 | `/usr` | Read-only, shareable user programs | Historically network-mountable; binaries, libs, docs |
 | `/usr/local` | Locally installed software | Survives package upgrades; `/usr/local/bin` for sysadmin scripts |
 | `/opt` | Third-party / add-on packages | Each app gets its own `/opt/<vendor>/` subtree |
-| `/srv` | Site-specific data served | Web roots, FTP roots, exported NFS shares |
+| `/srv` | Site-specific data served | Web roots, FTP (File Transfer Protocol) roots, exported NFS shares |
 | `/tmp` | Temporary files | World-writable + sticky bit; cleared on reboot (or by `tmpfiles.d`) |
 | `/dev` | Device nodes | Populated dynamically by `devtmpfs` + udev |
 | `/proc` | Process & kernel info (procfs) | Virtual FS; not on disk |
@@ -233,7 +233,7 @@ Add per triad. `rwxr-xr-x` = `7 5 5`. Common modes:
 |-------|----------|----------|
 | `644` | `rw-r--r--` | Regular files (default with umask 022) |
 | `755` | `rwxr-xr-x` | Scripts, public binaries, dirs |
-| `600` | `rw-------` | SSH private keys, /etc/shadow-style secrets |
+| `600` | `rw-------` | SSH (Secure Shell) private keys, /etc/shadow-style secrets |
 | `700` | `rwx------` | `~/.ssh/` directory |
 | `666` | `rw-rw-rw-` | World-writable file (usually wrong) |
 | `777` | `rwxrwxrwx` | World-writable + executable (almost ALWAYS wrong) |

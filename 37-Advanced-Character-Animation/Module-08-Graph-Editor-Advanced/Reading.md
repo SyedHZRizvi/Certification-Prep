@@ -249,7 +249,7 @@ STEP 5: Check the hold frames
 
 ## 📚 Part 9, Advanced Expression Systems: Driven Keys and Set Driven Keys
 
-Beyond offset expressions, Maya's Set Driven Key (SDK) system allows complex relationship-driven secondary motion that responds to primary animation:
+Beyond offset expressions, Maya's Set Driven Key (SDK (Software Development Kit)) system allows complex relationship-driven secondary motion that responds to primary animation:
 
 ### Set Driven Key Examples in Production
 

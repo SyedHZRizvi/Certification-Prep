@@ -132,11 +132,11 @@ kubectl create secret generic my-secret --from-literal=password=mypassword
 # Secret from file
 kubectl create secret generic my-secret --from-file=ssh-privatekey=~/.ssh/id_rsa
 
-# TLS secret
+# TLS (Transport Layer Security) secret
 kubectl create secret tls my-tls --cert=tls.crt --key=tls.key
 ```
 
-### ServiceAccount, RBAC
+### ServiceAccount, RBAC (Role-Based Access Control)
 
 ```bash
 # Create ServiceAccount
@@ -356,7 +356,7 @@ spec:
   selector:
     app: my-app
   ports:
-  - protocol: TCP
+  - protocol: TCP (Transmission Control Protocol)
     port: 80
     targetPort: 8080
   type: ClusterIP
@@ -590,5 +590,5 @@ The pit crew changes the tyre in 2.5 seconds because they have done this specifi
 - [kubectl Cheat Sheet — Official Kubernetes Docs](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 - [kubectl Command Reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 - [CKA Exam Curriculum — CNCF](https://github.com/cncf/curriculum)
-- [Kubernetes API Reference](https://kubernetes.io/docs/reference/kubernetes-api/)
+- [Kubernetes API (Application Programming Interface) Reference](https://kubernetes.io/docs/reference/kubernetes-api/)
 - [kubectl Autocomplete Setup](https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-bash-linux/)

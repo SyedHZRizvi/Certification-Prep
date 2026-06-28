@@ -1,11 +1,11 @@
 # Module 4: Tool Use & Function Calling 🔧
 
-> **Why this module matters:** Without tools, Claude is a brilliant essayist with no hands. With tools, Claude becomes the engine behind every modern AI agent, Cursor, Replit Agent, Klarna's support bot, Lindy, Anthropic's own claude-code. Tool use is *the* atomic primitive of agentic AI, and Anthropic's tool API has specific shape, parallel-execution semantics, and multi-turn handling you must master before Module 6's agent patterns make any sense.
+> **Why this module matters:** Without tools, Claude is a brilliant essayist with no hands. With tools, Claude becomes the engine behind every modern AI agent, Cursor, Replit Agent, Klarna's support bot, Lindy, Anthropic's own claude-code. Tool use is *the* atomic primitive of agentic AI, and Anthropic's tool API (Application Programming Interface) has specific shape, parallel-execution semantics, and multi-turn handling you must master before Module 6's agent patterns make any sense.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Modules 1–3 (model, prompting, API)
 > - JSON Schema (Draft 7 / 2020-12, same idea)
-> - HTTP API design, REST verbs, request/response shapes
+> - HTTP (Hypertext Transfer Protocol) API design, REST (Representational State Transfer) verbs, request/response shapes
 > - A sense of where "agent" sits in the LLM landscape (we go deeper in Module 6)
 
 ---
@@ -67,7 +67,7 @@ The three actors:
 
 1. **Claude**, decides *which* tool, *with what arguments*. Does NOT execute.
 2. **Your code**, receives the `tool_use` request, executes the actual API call, returns the result as a `tool_result`.
-3. **The user**, never sees the tool dance unless your UI surfaces it.
+3. **The user**, never sees the tool dance unless your UI (User Interface) surfaces it.
 
 This is the entire model. Once you internalize "Claude requests; you execute," the rest is plumbing.
 
@@ -327,7 +327,7 @@ You implement the executor side, typically a Docker container running an X serve
 ### Caveats (in capital letters)
 
 - **THIS IS BETA.** Behavior changes. Don't ship to production-critical paths without backstops.
-- **Sandbox it.** Run in a VM/container. The model will, occasionally, click the wrong thing.
+- **Sandbox it.** Run in a VM (Virtual Machine)/container. The model will, occasionally, click the wrong thing.
 - **Add explicit "stop and ask" prompts** for destructive actions (file deletion, payments).
 - **Rate limits are different**, computer use is expensive in tokens (each screenshot is ~1500 tokens).
 - **Recovery from confusion is hard.** When the model gets stuck (wrong-state UI), it can loop endlessly. Set step caps and watchdog timeouts.
@@ -393,9 +393,9 @@ Every tool call should be logged with: tool name, arguments, result, timestamp, 
 
 ---
 
-## 🔬 A Real Tool Suite, The claude-code Agent SDK
+## 🔬 A Real Tool Suite, The claude-code Agent SDK (Software Development Kit)
 
-Anthropic's official **claude-code** (the CLI you may be using right now) is a publicly available reference implementation of an agentic Claude system. Its tool surface is the canonical example of a well-designed agent toolset.
+Anthropic's official **claude-code** (the CLI (Command Line Interface) you may be using right now) is a publicly available reference implementation of an agentic Claude system. Its tool surface is the canonical example of a well-designed agent toolset.
 
 | Tool | Purpose |
 |------|---------|
@@ -484,7 +484,7 @@ Notice the deliberate design choices:
 
 - **`charge_customer` requires `confirm=True`**, the model cannot accidentally trigger it
 - **Side-effect status is in the description**, Claude can reason about reversibility
-- **`hold_seats` exists** so the model can pause before charging, this is a *reasoning aid*, not a UX nicety
+- **`hold_seats` exists** so the model can pause before charging, this is a *reasoning aid*, not a UX (User Experience) nicety
 - **All tools are verbs**
 - **All schemas are tight**, IATA pattern, cabin enum, passenger bounds
 
@@ -536,7 +536,7 @@ This is what production tool design looks like.
 **Lesson for the architect.**
 - **Tool granularity is design.** Splitting one big tool into two scoped tools changes model behavior.
 - **Destructive actions deserve a checkpoint.** Build a "review before commit" step into your tool design, not just into your UI.
-- **Per-tenant tool injection.** Cody injects customer-specific tools at runtime (read internal docs, query internal tracker). This is the right pattern for B2B SaaS.
+- **Per-tenant tool injection.** Cody injects customer-specific tools at runtime (read internal docs, query internal tracker). This is the right pattern for B2B (Business-to-Business) SaaS (Software as a Service).
 
 **Discussion (Socratic).**
 - **Q1:** Design a tool suite for a finance copilot at a hedge fund. What tools must require explicit human approval before execution?

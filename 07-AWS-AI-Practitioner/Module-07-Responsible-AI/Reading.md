@@ -98,12 +98,12 @@ This is THE table for Module 7 exam questions. Each tool has a job, don't confus
 | **SageMaker Model Cards** | Doc artifact | Standardized model documentation: purpose, training data, performance, limits, intended use | Transparency, Governance |
 | **AWS AI Service Cards** | Doc artifact | AWS-published responsible-AI documentation for each AWS AI service (Rekognition, Textract, etc.), explains intended use, limits, fairness considerations | Transparency |
 | **Guardrails for Amazon Bedrock** | Runtime safety | Filter PROMPTS and RESPONSES for PII, denied topics, harmful content categories, custom word filters, and contextual grounding | Safety, Privacy, Veracity |
-| **Bedrock Model Evaluation** | Tool | Evaluate FMs (incl. on bias, toxicity, robustness) using auto / human / LLM-as-judge | Fairness, Robustness |
+| **Bedrock Model Evaluation** | Tool | Evaluate FMs (incl. on bias, toxicity, robustness) using auto / human / LLM (Large Language Model)-as-judge | Fairness, Robustness |
 | **SageMaker Ground Truth** | Tool | Labeling with diverse human workforces, quality and bias control | Fairness |
 | **Amazon A2I (Augmented AI)** | Tool | Built-in human-in-the-loop review for AI predictions (Textract, Rekognition, custom) | Controllability, Safety |
-| **Macie** | Tool | Discover & classify PII / sensitive data in S3 | Privacy |
+| **Macie** | Tool | Discover & classify PII / sensitive data in S3 (Simple Storage Service) | Privacy |
 | **AWS Audit Manager / CloudTrail** | Tool | Audit trails for AI workflows | Governance |
-| **AWS Artifact** | Tool | Access AWS compliance reports (SOC, ISO, HIPAA) | Governance |
+| **AWS Artifact** | Tool | Access AWS compliance reports (SOC (Security Operations Center), ISO, HIPAA) | Governance |
 
 ---
 
@@ -117,7 +117,7 @@ Bedrock Guardrails are the single most-tested AWS feature in Domain 4. Know each
 | **Denied topics** | Topics you define ("Do not discuss competitor products," "Do not offer legal advice") |
 | **Word filters / profanity filters** | Block exact words or built-in profanity dictionary |
 | **Sensitive information (PII)** | Detect or mask PII like SSN, names, emails, addresses, phone, credit cards, block or redact |
-| **Contextual grounding check** | (Newer) Detects ungrounded responses in RAG, flags hallucinations when output isn't supported by retrieved sources |
+| **Contextual grounding check** | (Newer) Detects ungrounded responses in RAG (Retrieval-Augmented Generation), flags hallucinations when output isn't supported by retrieved sources |
 | **Image content filters** | (Newer) Filter image inputs/outputs in multimodal models |
 
 Where Guardrails apply:
@@ -191,7 +191,7 @@ Responsible AI isn't just a model engineer's job. The exam touches on **AI gover
 | **Risk classification** | Categorize use cases by harm potential (low/medium/high) |
 | **Approval workflows** | Different rigor for different risk levels |
 | **Data governance** | Clear data sources, lineage, consent, retention |
-| **Audit trails** | CloudTrail for Bedrock/SageMaker API calls |
+| **Audit trails** | CloudTrail for Bedrock/SageMaker API (Application Programming Interface) calls |
 | **Model lifecycle** | Versioning (Model Registry), retraining cadence |
 | **Incident response** | What to do when the model misbehaves in production |
 | **Compliance mapping** | Map to frameworks: NIST AI RMF, ISO/IEC 42001, EU AI Act |
@@ -312,7 +312,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 8 extends the AI governance lens to the security primitives IAM, KMS, PrivateLink, CloudTrail, model invocation logging that make compliance auditable.
+> - Inside this course: Module 8 extends the AI governance lens to the security primitives IAM (Identity and Access Management), KMS, PrivateLink, CloudTrail, model invocation logging that make compliance auditable.
 > - Cross-course: `09-CompTIA-Security-Plus` Module 10 covers the broader risk management framing (NIST CSF, ISO 27001 lineage). `08-Azure-AI-Engineer` Module 7 covers the Azure equivalents (Azure AI Content Safety, Responsible AI Standard).
 > - Practice: Practice Exam 1, 2, and the Final Mock Exam each have ~5–7 Responsible AI questions; the patterns are mostly "match the AWS service to the responsibility."
 

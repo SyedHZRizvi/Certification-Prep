@@ -8,7 +8,7 @@
 > - [Module 3](../Module-03-Order-Management-Fulfillment/Reading.md) ATP/CTP mechanics
 > - Basic statistics: standard deviation, z-scores at common service levels (95% = 1.65, 99% = 2.33)
 >
-> Cross-course: [CSCP Module 5 (Inventory & Capacity)](../../10-ASCM-CSCP/Module-05-Inventory-Capacity/Reading.md) gives a broader supply-chain view of inventory math. [CPIM Module 4 (MPS/MRP)](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) goes deeper on MRP (the production cousin of DRP). [CPIM Module 6 (Inventory Management)](../../11-ASCM-CPIM/Module-06-Inventory-Management/Reading.md) develops the single-location inventory math (EOQ, ROP) you'll see referenced here.
+> Cross-course: [CSCP Module 5 (Inventory & Capacity)](../../10-ASCM-CSCP/Module-05-Inventory-Capacity/Reading.md) gives a broader supply-chain view of inventory math. [CPIM Module 4 (MPS/MRP (Material Requirements Planning))](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) goes deeper on MRP (the production cousin of DRP). [CPIM Module 6 (Inventory Management)](../../11-ASCM-CPIM/Module-06-Inventory-Management/Reading.md) develops the single-location inventory math (EOQ (Economic Order Quantity), ROP) you'll see referenced here.
 
 ---
 
@@ -16,7 +16,7 @@
 
 Ali runs distribution for a national bicycle chain. They have a master DC in Chicago and 30 regional DCs across the US. Every store orders weekly. Every regional DC replenishes from Chicago. Every Chicago order eventually hits the factory in Vietnam, 5 weeks of ocean time away.
 
-For years, each location ordered independently. Stockouts in Boston, gluts in Phoenix. The CFO asked: "Why are we shipping bikes from Phoenix to Boston twice a week?"
+For years, each location ordered independently. Stockouts in Boston, gluts in Phoenix. The CFO (Chief Financial Officer) asked: "Why are we shipping bikes from Phoenix to Boston twice a week?"
 
 Ali implemented **DRP**. The system started at the *demand point*, each store. Aggregated to the regional DC. Then to the master DC. Then to the factory. With **time-phased planning**: when you need stock at the store on July 15, you need it at the regional DC on July 8 (transit lead time), at the master DC on July 1, and ordered from the factory on May 25.
 
@@ -188,7 +188,7 @@ When demand signals are amplified up the chain, you get the **bullwhip effect**:
 
 - 5% demand variance at the retail level can become 30% at the manufacturer
 - Causes: batched orders, promotions, price shifts, hedging
-- Cure: shared POS data (CPFR), smaller batches, daily replenishment
+- Cure: shared POS data (CPFR (Collaborative Planning, Forecasting, and Replenishment)), smaller batches, daily replenishment
 
 🎯 **Exam tip:** Bullwhip is *amplification of demand variability* upstream. Cure is *information sharing*.
 
@@ -244,7 +244,7 @@ Beyond ABC (we covered in Module 2), CLTD tests:
 
 | | A | B | C |
 |---|---|---|---|
-| X | Tight management, JIT | Standard cycle | Min reorder |
+| X | Tight management, JIT (Just-In-Time) | Standard cycle | Min reorder |
 | Y | Forecasting + safety stock | Standard | Min reorder |
 | Z | Make-to-order or kit | Buffer or kit | Discontinue/drop ship |
 
@@ -274,7 +274,7 @@ In multi-DC networks, full annual physical counts disrupt operations. **Cycle co
 | **Opportunity-based** | Count when bin reaches zero (free verification) |
 | **Control group** | Repeated count on the same items to test process |
 
-KPI: **Inventory Record Accuracy (IRA)** = bins within tolerance / total bins counted. Target 95–99% for high-quality DCs.
+KPI (Key Performance Indicator): **Inventory Record Accuracy (IRA)** = bins within tolerance / total bins counted. Target 95–99% for high-quality DCs.
 
 ---
 
@@ -302,13 +302,13 @@ ROP = (Demand during lead time) + Safety Stock
 
 **Decision.** Walmart announced its "Hi-Vis" (high-visibility) inventory tracking initiative in 2022, the goal: real-time visibility of every unit in the network including reverse flows. Key implementation steps through 2024:
 
-- **RFID at item level** for apparel, home, electronics (mandate for suppliers extended in 2022–2023; previously Walmart had been the slow adopter relative to Macy's and Lululemon).
+- **RFID (Radio Frequency Identification) at item level** for apparel, home, electronics (mandate for suppliers extended in 2022–2023; previously Walmart had been the slow adopter relative to Macy's and Lululemon).
 - **Returns disposition mobile apps** in stores, associates scan returns and the system instantly recommends a disposition: restock-to-shelf, ship-to-return-center, or destroy.
 - **Third-party reverse logistics partner network** (2024), Walmart partnered with **goTRG** (formerly The Recon Group) and **Optoro** for third-party returns processing of items that don't go back to Walmart shelves. These partners refurbish, repackage, or liquidate at higher recovery values than Walmart could in-house.
 - **Returns-via-FedEx integration**, Walmart became one of the largest users of FedEx's "Return Anywhere" service (drop-off at FedEx Office without box or label).
 - **Walmart Marketplace returns offload**, third-party Marketplace sellers handle their own returns via Walmart's Returns Service Provider (RSP) program, with Walmart taking 4–10% transaction fees and not handling the physical reverse flow.
 
-**Outcome.** By Q4 2024, Walmart reported reverse-logistics cost per unit had dropped ~22% from 2022 baseline. Recovery value (% of original retail value captured through disposition) rose from ~38% in 2022 to ~46% in 2024. Critically, *inventory accuracy* (IRA) at the store level rose from ~93% (2022) to ~97% (2024), Hi-Vis essentially eliminated the "where is this returned unit?" mystery. Walmart's overall inventory turn improved 0.4 turns/yr (huge at Walmart scale), and the company began *selling* its returns disposition platform to other retailers in late 2024 (a 4PL-style move).
+**Outcome.** By Q4 2024, Walmart reported reverse-logistics cost per unit had dropped ~22% from 2022 baseline. Recovery value (% of original retail value captured through disposition) rose from ~38% in 2022 to ~46% in 2024. Critically, *inventory accuracy* (IRA) at the store level rose from ~93% (2022) to ~97% (2024), Hi-Vis essentially eliminated the "where is this returned unit?" mystery. Walmart's overall inventory turn improved 0.4 turns/yr (huge at Walmart scale), and the company began *selling* its returns disposition platform to other retailers in late 2024 (a 4PL (Fourth-Party Logistics)-style move).
 
 **Lesson for the exam / for practitioners.** This case ties together three Module 4 concepts:
 
@@ -360,7 +360,7 @@ The CLTD exam tests this in scenarios like: "A retailer with poor inventory accu
 | **Bullwhip Effect** | Upstream amplification of demand variability |
 | **Postponement** | Defer final config to last possible step |
 | **ROP** | Reorder Point = (d × L) + SS |
-| **ABC / XYZ / FSN / VED** | SKU classification systems |
+| **ABC / XYZ / FSN / VED** | SKU (Stock Keeping Unit) classification systems |
 | **IRA** | Inventory Record Accuracy |
 | **Cycle Counting** | Continuous rotating partial counts |
 | **CPFR** | Collaborative Planning, Forecasting, and Replenishment |
@@ -391,7 +391,7 @@ You now know:
 
 ## 🤔 Discussion (Socratic prompts)
 
-1. **MEIO ROI proof.** A consulting firm pitches MEIO for $1.4M implementation cost, promising 18% network-inventory reduction. Your CFO wants proof before committing. What data would you gather over 6 months to validate (or refute) the consultant's projection?
+1. **MEIO ROI (Return on Investment) proof.** A consulting firm pitches MEIO for $1.4M implementation cost, promising 18% network-inventory reduction. Your CFO wants proof before committing. What data would you gather over 6 months to validate (or refute) the consultant's projection?
 
 2. **Centralization vs decentralization debate.** A regional building-materials distributor is considering centralizing inventory at 3 super-DCs vs the current 11 regional DCs. The square-root rule predicts ~40% safety-stock reduction. But shipping distances grow, so transport costs rise. Build the framework for the decision, what *non-cost* factors matter most?
 

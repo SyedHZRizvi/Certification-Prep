@@ -3,9 +3,9 @@
 > **Why this module matters:** A great founder with bad pricing builds a struggling business. A mediocre founder with great pricing builds a thriving one. This module covers the psychology of pricing (anchoring, decoy, value-based), the anatomy of a proposal that closes, and the contract clauses that protect you, including the **not-legal-advice clauses every operator should know about**.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - A locked wedge ([Module 1](../Module-01-Niche-Service-Offering/Reading.md)) and a drafted productized SKU ([Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md)), pricing without these is guessing
-> - A booked discovery call (or a simulated one) from [Module 3](../Module-03-Client-Acquisition-Channels/Reading.md), the PACT-O / BANT data from a call is the input to the ROI projection that closes the proposal
-> - Basic marketing math: ACV, LTV, gross margin (see [`14-AI-Marketing-Foundations` Module 1](../../14-AI-Marketing-Foundations/Module-01-Digital-Marketing-Landscape-2026/Reading.md) §"Marketing Math")
+> - A locked wedge ([Module 1](../Module-01-Niche-Service-Offering/Reading.md)) and a drafted productized SKU (Stock Keeping Unit) ([Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md)), pricing without these is guessing
+> - A booked discovery call (or a simulated one) from [Module 3](../Module-03-Client-Acquisition-Channels/Reading.md), the PACT-O / BANT data from a call is the input to the ROI (Return on Investment) projection that closes the proposal
+> - Basic marketing math: ACV, LTV (Lifetime Value), gross margin (see [`14-AI-Marketing-Foundations` Module 1](../../14-AI-Marketing-Foundations/Module-01-Digital-Marketing-Landscape-2026/Reading.md) §"Marketing Math")
 > - Awareness that nothing in this module is legal advice, you'll need a licensed attorney in your jurisdiction to review templates (typical one-time cost: $400–$1,200)
 >
 > If you don't yet have a SKU + a discovery call, the good-better-best framework will feel abstract. Block 30 minutes to finish the Module 2 SKU sketch before continuing.
@@ -14,7 +14,7 @@
 
 ## 🏗️ A Story: The $4,500 Proposal That Became a $28,000 Engagement
 
-It's April 2024. Lena runs a small AI-content agency in Berlin. A B2B SaaS company in Munich contacts her: "We want a content engine. What does it cost?"
+It's April 2024. Lena runs a small AI-content agency in Berlin. A B2B (Business-to-Business) SaaS (Software as a Service) company in Munich contacts her: "We want a content engine. What does it cost?"
 
 Old Lena would have replied with her standard quote: **$4,500/month for the AI Content Engine.** Take it or leave it.
 
@@ -25,11 +25,11 @@ New Lena (who has just read Blair Enns's *Pricing Creativity* and watched 3 Chri
 On the call, she asks:
 
 1. What does success look like in 6 months? *("3x our blog traffic, double our MQLs.")*
-2. What does that level of growth typically generate in revenue? *("Roughly €400K in new ARR over 18 months.")*
+2. What does that level of growth typically generate in revenue? *("Roughly €400K in new ARR (Annual Recurring Revenue) over 18 months.")*
 3. Who is doing this today and how? *("Two interns + a freelancer; mediocre quality, slow.")*
 4. What have you spent trying to solve this previously? *("Roughly €60K in 18 months across freelancers.")*
 5. What's the cost of NOT solving this? *("Probably €1.2M+ in lost ARR over the next 2 years.")*
-6. Who owns the decision and what's the timeline? *("Me + our CEO; want to start in 3 weeks.")*
+6. Who owns the decision and what's the timeline? *("Me + our CEO (Chief Executive Officer); want to start in 3 weeks.")*
 
 Now Lena writes a proposal with **three options** (the "good-better-best" structure):
 
@@ -37,7 +37,7 @@ Now Lena writes a proposal with **three options** (the "good-better-best" struct
 |---|---|---|
 | **Option A, Content Subscription** | €4,500/mo (12 mo) | Standard AI content engine |
 | **Option B, Content Subscription + Strategy** | €7,500/mo (12 mo) | Content engine + quarterly content strategy + monthly performance review |
-| **Option C, Content + Growth Partnership** | €12,000/mo (12 mo) | Everything in B + paid distribution + monthly executive briefing + SEO content cluster |
+| **Option C, Content + Growth Partnership** | €12,000/mo (12 mo) | Everything in B + paid distribution + monthly executive briefing + SEO (Search Engine Optimization) content cluster |
 
 She also adds an executive-summary page that says: *"Based on your stated goal of €400K in new ARR, Option B at €90K/year represents a 4.4x ROI. Option C at €144K/year represents a 2.8x ROI but accelerates the timeline by ~6 months."*
 
@@ -106,7 +106,7 @@ Before you publish a price, try it at 3x. Most productized services sell at 2–
 Quote in terms of the *outcome value* the work creates for the client. Examples:
 
 - "This audit identifies waste; we typically find 25–40% waste in B2B SaaS Google Ads. On your $40K/mo spend, that's $10K–$16K/mo recovered. The audit is $1,750."
-- "Our content engine drives 40% of clients to 3x organic traffic in 12 months. At your CAC of $1,200, that's roughly $360K in additional pipeline. The engine is $4,500/mo."
+- "Our content engine drives 40% of clients to 3x organic traffic in 12 months. At your CAC (Customer Acquisition Cost) of $1,200, that's roughly $360K in additional pipeline. The engine is $4,500/mo."
 
 ### 5. Price psychology numbers
 
@@ -248,7 +248,7 @@ The MSA is signed once; the SOW is signed for each new engagement. New SOW = no 
 | **Scope of work** | Names what's included | Always reference SOW + "out-of-scope" list |
 | **Payment terms** | When you get paid | Default: 50% upfront / 50% on delivery, OR Net-7 invoicing on monthly retainers |
 | **IP ownership** | Who owns what's created | Usually transfers on full payment; you keep portfolio + reference rights |
-| **Confidentiality / NDA** | Mutual NDA | 2-year typical post-termination |
+| **Confidentiality / NDA (Non-Disclosure Agreement)** | Mutual NDA | 2-year typical post-termination |
 | **Termination** | How either party exits | Usually 30-day notice; "for cause" immediate |
 | **Kill fee** | If client cancels mid-engagement | Typical 25–50% of remaining contract |
 | **Late payment** | Interest on overdue invoices | 1.5%/month is standard |
@@ -320,7 +320,7 @@ Some industries (legal, healthcare, financial services) require explicit AI-use 
 | **Bonsai** | $25/mo | Freelance suite (proposals + contracts + invoicing) |
 | **HoneyBook** | $20–$60/mo | Service businesses |
 | **QBO Payments** | Per transaction | Integrates with accounting |
-| **Wise Business** | 0.5–1% per transaction | International USD/EUR/GBP |
+| **Wise Business** | 0.5–1% per transaction | International USD/EUR/GBP (Google Business Profile) |
 | **Mercury** | Free + per-wire fees | US banking + international wires |
 
 > 🎯 **Recommended starter stack:** Bonsai ($25/mo) or PandaDoc ($35/mo) for proposals + contracts + e-signature + invoicing in one. As you scale, move billing to QBO or Stripe for cleaner accounting integration.
@@ -392,7 +392,7 @@ A common pattern documented across Hampton AMAs and the Tropical MBA community: 
 **Lesson for the practitioner.** This case operationalizes every framework in the module. The three-tiered proposal is the §"Decoy Pricing" play, the diagnostic call is the §"Anatomy of a Proposal That Closes" Section 1 (Recap + Cost-of-Inaction) made tangible, and the paid diagnostic is a hybrid of the §"Productized Audit-as-Wedge" idea from Module 2. The deepest lesson: the value-conversation diagnostic is what justifies the price, not the proposal document itself. A founder who quotes on the call or sends a proposal without the diagnostic data is competing on price by default. Enns's principle: *price the conversation, not the deliverable*. For the AI-marketing operator, the buyer-side numbers (Cooper's 6-question worksheet) ARE Lena's six questions in the opening story of this module, the framework lineage is direct.
 
 **Discussion (Socratic).**
-- Q1: Cooper Black walked from RFPs below $85K, even when they had open capacity. Defend that decision against the obvious counter ("revenue is revenue when capacity is idle"). At what utilization rate (60%? 80%? 95%?) does walking from a sub-floor RFP become indefensible, and what role does the firm's brand-positioning cost play in the answer?
+- Q1: Cooper Black walked from RFPs below $85K, even when they had open capacity. Defend that decision against the obvious counter ("revenue is revenue when capacity is idle"). At what utilization rate (60%? 80%? 95%?) does walking from a sub-floor RFP (Request for Proposal) become indefensible, and what role does the firm's brand-positioning cost play in the answer?
 - Q2: The $7,500 paid diagnostic converted at 92% to full engagement. Would you have skipped it entirely and made the proposal free (per the standard agency norm) because 92% conversion implies nearly every diagnostic became a sale anyway, or is the diagnostic *itself* the mechanism that produced the 92%? Use the §"Anchoring" psychology and the Win Without Pitching commercial-conversation framework to defend your position.
 - Q3: Cooper Black's revenue grew while client count dropped 30%. What's the hidden risk in this revenue-concentration pattern, and at what point does a firm with 12 clients at $158K-each become more fragile than a firm with 30 clients at $63K-each? Reference the Module 7 §"Cash Flow Forecasting" discipline and concentration-risk math.
 
@@ -571,7 +571,7 @@ Use these as journal prompts, study-group questions, or interview-prep drills. E
 2. **Value-based vs cost-plus, in a regulated industry.** A founder serving FDA-regulated healthcare brands argues that value-based pricing is unethical because she cannot promise outcomes (FDA constraints mean she can't quantify the lift she'll deliver). She wants to revert to cost-plus. Build the strongest version of her ethical objection. Then construct the counter: how do you anchor on value (cost-of-inaction, opportunity cost) without promising outcomes? Reference Lena's diagnostic questions and the §"Pricing Psychology" anchoring tools.
 3. **The proposal-review-call objection.** The reading claims the 30-minute proposal-review call roughly doubles close rates vs sending the proposal cold. A senior consultant argues this is true at $5K–$25K engagements but actively *lowers* close rates at $100K+ enterprise where the buyer reads the proposal in committee and the live walk-through looks pushy. Build her case. Then construct the counter: what makes proposal-review calls scale up vs down with deal size? At what ACV does it flip?
 4. **The AI-disclosure clause, protective or self-incriminating?** The reading recommends a 2026 AI-disclosure clause for service contracts, especially in regulated industries. An attorney argues this clause creates more legal exposure than it removes (by documenting AI use, you've now waived the "I didn't know AI was involved" defense if a client sues over hallucinated content). Build her argument. Then construct the counter from the operator's perspective. Where does the right answer sit, and what does that imply for non-regulated industries?
-5. **The tripled-price experiment, applied vs theoretical.** The reading says most productized services sell at 2–3x the founder's gut price. A founder at $4,500/mo MRR runs the experiment, raises to $13,500/mo, and sees a 60% drop in inbound (instead of the predicted "no change"). Was the experiment wrong, or were her conditions wrong (positioning thin, proof weak, audience mid-market not enterprise)? Construct both diagnoses. What test would you run *before* tripling to distinguish the cases?
+5. **The tripled-price experiment, applied vs theoretical.** The reading says most productized services sell at 2–3x the founder's gut price. A founder at $4,500/mo MRR (Monthly Recurring Revenue) runs the experiment, raises to $13,500/mo, and sees a 60% drop in inbound (instead of the predicted "no change"). Was the experiment wrong, or were her conditions wrong (positioning thin, proof weak, audience mid-market not enterprise)? Construct both diagnoses. What test would you run *before* tripling to distinguish the cases?
 
 There are no "official" answers, defend your reasoning with specifics. Strong responses cite the 5 mindsets, the proposal anatomy, at least one named case, and at least one contractual or unit-economics number.
 
@@ -579,7 +579,7 @@ There are no "official" answers, defend your reasoning with specifics. Strong re
 
 ## 📚 Further Reading (Optional)
 
-> ⚖️ **Disclaimer:** This module covers operational pricing/contract patterns. It is NOT legal, tax, or financial advice. For your specific situation, consult a licensed attorney and CPA in your jurisdiction.
+> ⚖️ **Disclaimer:** This module covers operational pricing/contract patterns. It is NOT legal, tax, or financial advice. For your specific situation, consult a licensed attorney and CPA (Cost Per Acquisition) in your jurisdiction.
 
 - 📖 *Pricing Creativity*, Blair Enns
 - 📖 *Win Without Pitching Manifesto*, Blair Enns (free PDF available)

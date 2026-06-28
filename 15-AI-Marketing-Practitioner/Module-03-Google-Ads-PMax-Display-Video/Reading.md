@@ -6,7 +6,7 @@
 
 ## 🎯 A Real Story: How Mejuri Reorganized Around Performance Max
 
-In 2023, Mejuri (the DTC jewelry brand publicly profiled by [Modern Retail](https://www.modernretail.co/) and [Marketing Brew](https://www.marketingbrew.com/)) was running 12 separate Google Ads campaigns: 4 Shopping, 3 Display, 2 YouTube, 3 Search. CAC was $52 and growing. Their growth team made a controversial decision: collapse 8 of the 12 campaigns into a single Performance Max campaign with carefully-structured asset groups.
+In 2023, Mejuri (the DTC (Direct-to-Consumer) jewelry brand publicly profiled by [Modern Retail](https://www.modernretail.co/) and [Marketing Brew](https://www.marketingbrew.com/)) was running 12 separate Google Ads campaigns: 4 Shopping, 3 Display, 2 YouTube, 3 Search. CAC (Customer Acquisition Cost) was $52 and growing. Their growth team made a controversial decision: collapse 8 of the 12 campaigns into a single Performance Max campaign with carefully-structured asset groups.
 
 The results, shared at Shopify's Reunite Conference in 2024:
 
@@ -23,7 +23,7 @@ This module teaches you that discipline.
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Google Ads account hierarchy and Smart Bidding, covered in [Module 2](../Module-02-Google-Ads-Search-Mastery/Reading.md)
 > - The 30-conversion threshold and tCPA/tROAS, also Module 2
-> - Funnel-stage KPIs (TOFU vs BOFU), covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md)
+> - Funnel-stage KPIs (Key Performance Indicators) (TOFU vs BOFU), covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
 ---
@@ -81,7 +81,7 @@ Performance Max Campaign
 
 ## 🚨 Brand Exclusions, The Single Most Important PMax Setting
 
-When you launch a PMax campaign, Google will (by default) bid on **your own brand keywords**. This means PMax steals credit from your dedicated brand Search campaign, and your blended CPA looks artificially great.
+When you launch a PMax campaign, Google will (by default) bid on **your own brand keywords**. This means PMax steals credit from your dedicated brand Search campaign, and your blended CPA (Cost Per Acquisition) looks artificially great.
 
 The fix: **Brand Exclusions** (campaign-level setting added by Google in late 2023).
 
@@ -153,7 +153,7 @@ YouTube is the second-largest search engine in the world. Google offers three ma
 | Where it plays | Before/during/after YouTube videos | Before YouTube videos |
 | Length | 5+ seconds (typically 15s–3min) | 15 seconds max |
 | Skippable after | 5 seconds | Never |
-| Pricing model | CPV (cost-per-view), counted only if viewed ≥ 30 sec OR full play | CPM (you pay for impressions) |
+| Pricing model | CPV (cost-per-view), counted only if viewed ≥ 30 sec OR full play | CPM (Cost Per Mille) (you pay for impressions) |
 | Best for | Mid-funnel storytelling | High-frequency reminders, brand campaigns |
 
 🎯 **Exam tip:** For skippable in-stream, you DON'T pay if the viewer skips before 30 seconds. This is constantly tested.
@@ -170,7 +170,7 @@ Vertical, full-screen, 6–60 sec, run between organic Shorts in users' feeds. P
 
 ### 3. In-Feed Video Ads (formerly Discovery)
 
-Show up on YouTube's homepage, search results, and as suggested videos. Users opt in by clicking. Pricing is CPC (you pay only when they click to watch).
+Show up on YouTube's homepage, search results, and as suggested videos. Users opt in by clicking. Pricing is CPC (Cost Per Click) (you pay only when they click to watch).
 
 **Best for:** Mid/upper-funnel discovery. You're not interrupting, you're appearing as an option.
 
@@ -190,11 +190,11 @@ Open with one of these in the first 3 seconds:
 | Pattern Interrupt | Visual or audio cut that's unexpected | Crowded feeds |
 | Bold Claim | "We sold 100,000 of these. Here's why." | Established brands |
 | Demo | First frame is the product mid-use | Visual products |
-| Stat | "73% of Pilates studios miss this on Sundays" | B2B / niche |
+| Stat | "73% of Pilates studios miss this on Sundays" | B2B (Business-to-Business) / niche |
 
 🚨 **Common mistake:** Logo intros. A 2-second logo at the start of a Short kills retention. Save brand reveal for the last 1 second, after you've earned attention.
 
-### The Hook → Demonstrate → CTA Structure (for any short)
+### The Hook → Demonstrate → CTA (Call to Action) Structure (for any short)
 
 ```
 Seconds 0–3:    HOOK, pattern interrupt + main claim
@@ -383,7 +383,7 @@ Video B, Demo Hook:
 Don't measure YouTube Ads on direct conversion in the first 30 days. Measure:
 
 - View-through rate (target: >30%)
-- View-through conversions in GA4 (Multi-touch attribution)
+- View-through conversions in GA4 (Google Analytics 4) (Multi-touch attribution)
 - Branded search lift (compare brand search volume month-over-month)
 
 🎯 YouTube Ads convert on a longer window than search. A 7-day attribution window will hide most of the impact. Use 28-day click + view-through.
@@ -392,7 +392,7 @@ Don't measure YouTube Ads on direct conversion in the first 30 days. Measure:
 
 ## 📊 Real Case Study: Glossier's YouTube Shorts Pivot
 
-Glossier publicly discussed their 2024 pivot from polished Instagram ads to **UGC-style YouTube Shorts** ([WWD interview, May 2024](https://wwd.com/)). They hired 12 micro-creators ($500–$2,000 per creator) to produce raw 15-second product demos with no script. They ran these as YouTube Shorts ads + Demand Gen campaigns simultaneously.
+Glossier publicly discussed their 2024 pivot from polished Instagram ads to **UGC (User-Generated Content)-style YouTube Shorts** ([WWD interview, May 2024](https://wwd.com/)). They hired 12 micro-creators ($500–$2,000 per creator) to produce raw 15-second product demos with no script. They ran these as YouTube Shorts ads + Demand Gen campaigns simultaneously.
 
 Result: 31% lower CAC than their previous polished-creative strategy. Engagement (likes + shares) was 4x.
 
@@ -449,10 +449,10 @@ You now know:
 Use these to test your reasoning. Each prompt is open-ended, argue from the frameworks in this module.
 
 1. Mejuri consolidated 8 campaigns into ONE PMax and CAC fell from $52 to $34. A friend's brand is at 12 campaigns with CAC at $40 and stable. Build the case for AND against consolidating into PMax. What evidence would tip your decision?
-2. Audience signals are a "hint, not a target." Defend the case that this is more powerful than hard targeting in 2026. Then defend the opposite, that the loss of control is a real risk for an enterprise brand-safety review. Which would you bring to a CMO?
+2. Audience signals are a "hint, not a target." Defend the case that this is more powerful than hard targeting in 2026. Then defend the opposite, that the loss of control is a real risk for an enterprise brand-safety review. Which would you bring to a CMO (Chief Marketing Officer)?
 3. PMax's "Insights tab" is your only window into where spend is going. If the tab shows 70% of spend going to a category you didn't intend (e.g., Display banners instead of Shopping), what are the three plausible root causes, and what's the right diagnostic order?
 4. The reading recommends turning Final URL Expansion OFF initially. A growth marketer argues this throws away ~15% of incremental conversions PMax would have found. Argue both sides, when is the brand-control trade-off worth it, and when isn't it?
-5. YouTube In-Feed ads bill on CPC; In-Stream bills at 30 seconds or full play (CPV). For a DTC apparel brand launching a $5K test, which is the right primary YouTube format and why? Where does the answer flip for a B2B SaaS?
+5. YouTube In-Feed ads bill on CPC; In-Stream bills at 30 seconds or full play (CPV). For a DTC apparel brand launching a $5K test, which is the right primary YouTube format and why? Where does the answer flip for a B2B SaaS (Software as a Service)?
 
 ---
 

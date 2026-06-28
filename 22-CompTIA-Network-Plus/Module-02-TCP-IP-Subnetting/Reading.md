@@ -1,4 +1,4 @@
-# Module 2: TCP/IP & Subnetting 🔢
+# Module 2: TCP (Transmission Control Protocol)/IP & Subnetting 🔢
 
 > **Why this module matters:** Subnetting is the single most tested skill on Network+. If you can't compute a network ID, broadcast address, and usable host count for any CIDR mask in under 90 seconds, you will leave easy points on the table. Every domain security, routing, troubleshooting circles back to addressing. **Drill subnetting daily until exam day.**
 
@@ -83,7 +83,7 @@ Defined in **RFC 1918** (Rekhter, Moskowitz, Karrenberg, de Groot, Lear, 1996). 
 | Range / Address | Purpose | RFC |
 |------------------|---------|-----|
 | **127.0.0.0/8** | Loopback (commonly 127.0.0.1) | RFC 1122 |
-| **169.254.0.0/16** | APIPA, auto-assigned when DHCP fails | RFC 3927 |
+| **169.254.0.0/16** | APIPA, auto-assigned when DHCP (Dynamic Host Configuration Protocol) fails | RFC 3927 |
 | **0.0.0.0** | "This host" / unspecified / default route | RFC 1122 |
 | **255.255.255.255** | Limited broadcast, all hosts on this segment | RFC 922 |
 | **224.0.0.0–239.255.255.255** | Multicast (Class D) | RFC 5771 |
@@ -177,7 +177,7 @@ Standardized in **RFC 1878** (Pummill & Manning, 1995). Lets you carve up an add
 - Engineering: 60 hosts
 - Sales: 28 hosts
 - Operations: 12 hosts
-- Two P2P WAN links: 2 hosts each
+- Two P2P WAN (Wide Area Network) links: 2 hosts each
 
 **Step 1, Sort by host requirement (largest first):** Eng 60, Sales 28, Ops 12, WAN1 2, WAN2 2.
 
@@ -307,7 +307,7 @@ How do IPv4 and IPv6 coexist during the long transition?
 
 **Walkthrough:**
 1. The 169.254.x.x address is **APIPA** (RFC 3927), auto-assigned by the OS when DHCP fails to respond.
-2. Likely causes: DHCP server down/unreachable; switch port placed in wrong VLAN; cable disconnected (so DHCPDISCOVER never reaches the relay); DHCP scope exhausted.
+2. Likely causes: DHCP server down/unreachable; switch port placed in wrong VLAN (Virtual Local Area Network); cable disconnected (so DHCPDISCOVER never reaches the relay); DHCP scope exhausted.
 3. APIPA addresses are *link-local only*, they cannot route to the Internet (the gateway is unknown).
 4. Resolution: investigate DHCP path. Test by manually assigning a known-good IP and confirming connectivity, then root-cause the DHCP failure.
 
@@ -364,7 +364,7 @@ This is the canonical "first-line help-desk Network+ scenario." On the exam, *se
 | ULA | Unique Local Address (IPv6) |
 | EUI-64 | Extended Unique Identifier 64-bit |
 | RFC | Request for Comments (IETF standard document) |
-| ICMP / ICMPv6 | Internet Control Message Protocol |
+| ICMP (Internet Control Message Protocol) / ICMPv6 | Internet Control Message Protocol |
 | DHCP / DHCPv6 | Dynamic Host Configuration Protocol |
 
 ---
@@ -382,9 +382,9 @@ This is the canonical "first-line help-desk Network+ scenario." On the exam, *se
 
 **Lesson for the exam / for practitioners.** This is the canonical Network+ context for *every* IPv6 question:
 
-- **Why CGNAT matters**, your ISP's public IP isn't yours alone; thousands share it via PAT, which breaks port-forwarding and some applications (e.g., gaming, some VPN clients)
-- **Why IPv6 mandate**, the US government (NIST SP 800-119, 2010) and most major cloud providers (AWS, Azure, GCP) require dual-stack or IPv6-only for new builds
-- **Why /48 to enterprises, /64 to hosts**, IPv6 allocation policy assumes /64 per LAN for SLAAC to function; an enterprise /48 carves into 65,536 /64 subnets
+- **Why CGNAT matters**, your ISP (Internet Service Provider)'s public IP isn't yours alone; thousands share it via PAT, which breaks port-forwarding and some applications (e.g., gaming, some VPN (Virtual Private Network) clients)
+- **Why IPv6 mandate**, the US government (NIST SP 800-119, 2010) and most major cloud providers (AWS (Amazon Web Services), Azure, GCP (Google Cloud Platform)) require dual-stack or IPv6-only for new builds
+- **Why /48 to enterprises, /64 to hosts**, IPv6 allocation policy assumes /64 per LAN (Local Area Network) for SLAAC to function; an enterprise /48 carves into 65,536 /64 subnets
 - **Why dual-stack is the practical answer**, Network+ frequently asks about transition mechanisms; dual-stack is the dominant strategy, with tunneling and translation as exceptions
 
 This case is exactly what Network+ tests when asking, "Why would an organization deploy IPv6?" The answer is not "more addresses" alone, it is the economic, policy, and architectural pressure of a 14-year-running address shortage.
@@ -415,7 +415,7 @@ You now know:
 5. ➡️ Move on: [Module 3, Routing & Switching](../Module-03-Routing-Switching/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 3](../Module-03-Routing-Switching/Reading.md) uses subnet design as the substrate for routing protocols and VLAN sizing; [Module 5](../Module-05-Services-Cloud/Reading.md) uses CIDR notation for VPC sizing in cloud connectivity; [Module 7](../Module-07-Monitoring-Tools/Reading.md) uses IP addressing to interpret SNMP/syslog data; [Module 8](../Module-08-Troubleshooting/Reading.md) revisits APIPA, DHCP failure, and addressing as a top L3 issue category.
+> - Inside this course: [Module 3](../Module-03-Routing-Switching/Reading.md) uses subnet design as the substrate for routing protocols and VLAN sizing; [Module 5](../Module-05-Services-Cloud/Reading.md) uses CIDR notation for VPC (Virtual Private Cloud) sizing in cloud connectivity; [Module 7](../Module-07-Monitoring-Tools/Reading.md) uses IP addressing to interpret SNMP (Simple Network Management Protocol)/syslog data; [Module 8](../Module-08-Troubleshooting/Reading.md) revisits APIPA, DHCP failure, and addressing as a top L3 issue category.
 > - Cross-course: AWS Solutions Architect (course 04) VPC CIDR sizing uses identical subnetting math; Azure Administrator (course 06) VNet/subnet design likewise.
 > - Practice: Practice Exam 1 has ~10 subnetting/addressing questions; the Final Mock has ~14.
 
