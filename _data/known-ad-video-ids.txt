@@ -1,0 +1,16 @@
+# known-ad-video-ids.txt — denylist of YouTube IDs confirmed to be COMMERCIAL
+# ADVERTISEMENTS / academy promos rather than teaching content (e.g. online
+# Quran academy admission ads: "داخلے جاری / ٹرائل کلاس فری / گھر بیٹھے", phone
+# numbers, "Earn Ijazah — Course Online"). Consumed by scripts/verify-baseline.py
+# (check_video_ids_introduced): any commit that re-introduces one of these IDs
+# is blocked.
+#
+# Add an ID here whenever an ad slips through (titles often mimic "lessons", so
+# spoken/visual ad content can only be confirmed by watching). One 11-char ID
+# per line; '#' lines are comments. Lives under _data/ so Jekyll never serves it.
+#
+# --- seeded 2026-06-28: ads found + replaced in the Quran course (PRs #26, #27) ---
+67TGTqjucyg
+CYMcTxj1-5c
+uCIEoGk0dHQ
+zKaWVLUwcFM
