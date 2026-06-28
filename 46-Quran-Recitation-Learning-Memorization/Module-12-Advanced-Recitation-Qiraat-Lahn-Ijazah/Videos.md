@@ -1,184 +1,230 @@
-<style>.vg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:22px 0 30px;}.vg-card{display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s,border-color .2s;}.vg-card:hover{transform:translateY(-3px);box-shadow:0 12px 24px -8px rgba(0,0,0,.15);border-color:#34d399;}.vg-thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#064e3b,#065f46);display:flex;align-items:center;justify-content:center;color:#fff;font-size:48px;}.vg-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.35);color:#fff;font-size:48px;opacity:0;transition:opacity .2s;}.vg-card:hover .vg-play{opacity:1;}.vg-meta{padding:14px 16px;}.vg-tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:4px;margin-bottom:8px;}.vg-tag.essential{background:#d1fae5;color:#065f46;}.vg-tag.recommended{background:#dbeafe;color:#1e40af;}.vg-tag.optional{background:#fef3c7;color:#92400e;}.vg-title{font-weight:700;font-size:14px;line-height:1.4;margin:0 0 4px;color:#0f172a;}.vg-creator{font-size:12.5px;color:#64748b;margin:0 0 6px;}.vg-duration{font-size:11px;color:#94a3b8;font-weight:600;}</style>
+{% include lang-switcher.html %}
 
-# Module 12 Videos — Advanced Recitation: Qira'at, Lahn & Ijazah
+# Module 12 Videos — Advanced Recitation — Qira'at, Lahn & Ijazah
 
-Master the 10 Qira'at styles, recitation error science (Lahn), and the complete Ijazah certification pathway through these carefully selected videos.
+<div class="lang-en" markdown="1">
+
+> **🇬🇧 English teaching videos.** Qur'an recitation itself is in Arabic — see the shared section at the bottom.
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=10+qiraat+quran+recitation+styles+history+explained" data-video-id="N1Gjkzjzb1c" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=introduction+to+the+science+of+qiraat+quran+explained+english" data-video-id="fTdyohuCl_0" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Introduction to the 10 Qira'at — History and Overview</p>
-    <p class="vg-creator">Quranic Sciences</p>
-    <p class="vg-duration">~15 min</p>
-  </div>
-</a>
-
-<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+quran+recitation+obligations+rules+standards" data-video-id="pyVds2Wb5_s" target="_blank" rel="noopener">
-  <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
-  <div class="vg-meta">
-    <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Tajweed Obligations — Rules of Proper Recitation</p>
-    <p class="vg-creator">Tajweed Academy</p>
-    <p class="vg-duration">~18 min</p>
-  </div>
-</a>
-
-<a class="vg-card" href="https://www.youtube.com/results?search_query=lahn+recitation+errors+quran+tajweed+jali+khafi" data-video-id="kqd0OGL7a-g" target="_blank" rel="noopener">
-  <div class="vg-thumb">⚠️<div class="vg-play">▶</div></div>
-  <div class="vg-meta">
-    <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Lahn al-Jali and Lahn al-Khafi — Recitation Errors Explained</p>
-    <p class="vg-creator">Quran Recitation Academy</p>
+    <p class="vg-title">An Introduction to the Science of Qira'at</p>
+    <p class="vg-creator">Tarteel AI</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=hamzat+wasl+quran+tajweed+lesson+types+rules" data-video-id="y0jHYvR1rHE" target="_blank" rel="noopener">
-  <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
-  <div class="vg-meta">
-    <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Hamzat al-Wasl — Lesson 4: Types and Application</p>
-    <p class="vg-creator">Hayat Quran</p>
-    <p class="vg-duration">~15 min</p>
-  </div>
-</a>
-
-<a class="vg-card" href="https://www.youtube.com/results?search_query=hafs+recitation+quran+lesson+series+practical" data-video-id="j06ln4G6oEA" target="_blank" rel="noopener">
-  <div class="vg-thumb">📜<div class="vg-play">▶</div></div>
-  <div class="vg-meta">
-    <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Hafs Recitation Series — Lesson 16: Practical Application</p>
-    <p class="vg-creator">Quran Recitation Institute</p>
-    <p class="vg-duration">~20 min</p>
-  </div>
-</a>
-
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ijazah+silsilah+chain+transmission+quran+explained" data-video-id="L_mdEF-nxtU" target="_blank" rel="noopener">
-  <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
-  <div class="vg-meta">
-    <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">The Silsilah — Quran's Unbroken Chain of Transmission</p>
-    <p class="vg-creator">Quran Preservation Studies</p>
-    <p class="vg-duration">~10 min</p>
-  </div>
-</a>
-
-<a class="vg-card" href="https://www.youtube.com/results?search_query=seven+ahruf+quran+why+different+recitations+authentic" data-video-id="8XAnIXvu5TA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=seven+ahruf+ten+qiraat+quran+explained+english" data-video-id="GkPH9Hjc4K8" target="_blank" rel="noopener">
   <div class="vg-thumb">7️⃣<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Why Were 7 Modes (Ahruf) Revealed? Scholarly Explanation</p>
-    <p class="vg-creator">Quranic Studies</p>
-    <p class="vg-duration">~18 min</p>
+    <p class="vg-title">The Seven Ahruf and the Ten Qira'at — Explained</p>
+    <p class="vg-creator">assimalhakeem</p>
+    <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=al-jazariyya+tajweed+poem+waqf+ibtida+lesson" data-video-id="H4PgLsWRi1M" target="_blank" rel="noopener">
-  <div class="vg-thumb">✍️<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ahruf+qiraat+quranic+grammar+difference+explained+english" data-video-id="un7HGxkCd4w" target="_blank" rel="noopener">
+  <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Al-Jazariyyah — Tajweed Poem: Waqf and Ibtida'</p>
-    <p class="vg-creator">Classical Tajweed</p>
+    <p class="vg-title">Ahruf, Qira'at and Quranic Grammar — The Distinction</p>
+    <p class="vg-creator">Nouman Ali Khan — Bayyinah</p>
     <p class="vg-duration">~25 min</p>
   </div>
 </a>
 
-</div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=lahn+jali+lahn+khafi+major+minor+recitation+mistakes+tajweed+english" data-video-id="tYPC7nHpCi0" target="_blank" rel="noopener">
+  <div class="vg-thumb">⚠️<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Lahn al-Jali and Lahn al-Khafi — Major and Minor Mistakes</p>
+    <p class="vg-creator">Together to Paradise</p>
+    <p class="vg-duration">~14 min</p>
+  </div>
+</a>
 
----
-
-## Recommended Videos
-
-<div class="vg-grid" markdown="0">
-
-<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+recitation+beautiful+tilawah+hafs+extended" data-video-id="ZQvqhPX_ppA" target="_blank" rel="noopener">
-  <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=hamzatul+wasl+tajweed+rules+lesson+english" data-video-id="J-qzgvePVlg" target="_blank" rel="noopener">
+  <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Beautiful Quran Recitation — Extended Tilawah (Hafs)</p>
-    <p class="vg-creator">Quran Recitation</p>
+    <p class="vg-title">Hamzat al-Wasl — A Simple Guide to Tajweed (Lesson 9a)</p>
+    <p class="vg-creator">Blossoms Of Faith</p>
+    <p class="vg-duration">~13 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=levels+of+recitation+tahqeeq+tadweer+hadr+tajweed+english" data-video-id="9PG3D0Jlgbk" target="_blank" rel="noopener">
+  <div class="vg-thumb">🎚️<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Levels of Recitation — At-Tahqeeq, At-Tadweer and Al-Hadr</p>
+    <p class="vg-creator">Al Quran Hayati</p>
     <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+ijazah+quran+learning+mentorship+certified+teacher" data-video-id="BYatZ32khxg" target="_blank" rel="noopener">
-  <div class="vg-thumb">👨‍🏫<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=al+jazariyyah+tajweed+poem+arabic+and+english" data-video-id="EuU9b7iI4fQ" target="_blank" rel="noopener">
+  <div class="vg-thumb">✍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
-    <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Tajweed and Ijazah — The Mentorship Model</p>
-    <p class="vg-creator">Quran Education</p>
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Al-Jazariyyah — The Tajweed Poem (Arabic and English)</p>
+    <p class="vg-creator">Creed of Tawheed</p>
+    <p class="vg-duration">~20 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ijazah+sanad+quran+chain+of+transmission+explained+english" data-video-id="67TGTqjucyg" target="_blank" rel="noopener">
+  <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Sanad and Ijazah — The Authentic Qur'anic Chain</p>
+    <p class="vg-creator">Ahl Al Zekr Academy</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+lahn+khafi+common+mistakes+recitation+quran" data-video-id="68P6yTI3Pos" target="_blank" rel="noopener">
+</div>
+
+</div>
+
+<div class="lang-ur" markdown="1" style="direction:rtl;text-align:right;font-family:'Noto Nastaliq Urdu','Gulzar',serif;line-height:2.2;">
+
+> **🇵🇰 اردو تدریسی ویڈیوز۔** قرآن کی تلاوت عربی میں ہے — نیچے مشترکہ سیکشن دیکھیں۔
+
+<div class="vg-grid" markdown="0">
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+seekhein+urdu+introduction+lesson" data-video-id="gLoOGRV3dqw" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">تجوید آسان طریقے سے سیکھیں — تعارفی سبق</p>
+    <p class="vg-creator">Understand Al-Quran Official</p>
+    <p class="vg-duration">~12 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=makharij+ka+bayan+tajweed+urdu+qari+aqib" data-video-id="L1Uh958MmtI" target="_blank" rel="noopener">
+  <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">مخارج کا بیان — احکامِ تجوید کلاس</p>
+    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-duration">~18 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=lahn+e+jali+lahn+khafi+tajweed+urdu+bayan" data-video-id="POrU-lpQ1jE" target="_blank" rel="noopener">
+  <div class="vg-thumb">⚠️<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">لحن جلی اور لحن خفی کا بیان</p>
+    <p class="vg-creator">Qari Muhammad Owais</p>
+    <p class="vg-duration">~15 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+ul+quran+lahn+jali+lesson+urdu" data-video-id="isDvkFNjwHo" target="_blank" rel="noopener">
+  <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">تجویدُ القرآن سبق نمبر ۳ — لحن جلی</p>
+    <p class="vg-creator">Mufti Fawad Ahmad</p>
+    <p class="vg-duration">~16 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=qawaed+e+tajweed+lahn+e+jali+lahn+khafi+urdu" data-video-id="UPBmfVF0bYw" target="_blank" rel="noopener">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Lahn al-Khafi — Subtle Recitation Errors to Avoid</p>
-    <p class="vg-creator">Quran Academy</p>
-    <p class="vg-duration">~20 min</p>
+    <p class="vg-title">قواعدِ تجوید — لحن جلی اور لحن خفی</p>
+    <p class="vg-creator">Mufti Ilyas Official</p>
+    <p class="vg-duration">~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+preservation+history+compilation+explained" data-video-id="8cnl8ykP_vw" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=asan+tajweed+lahn+aur+aqsam+urdu+lesson" data-video-id="tRIz1cJtjUw" target="_blank" rel="noopener">
   <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Quran Compilation History — Abu Bakr to Uthman</p>
-    <p class="vg-creator">Quranic History</p>
-    <p class="vg-duration">~20 min</p>
+    <p class="vg-title">آسان تجوید — لحن اور اس کی اقسام</p>
+    <p class="vg-creator">Quran With Samiya</p>
+    <p class="vg-duration">~13 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=10+qiraat+quran+specialized+instruction+arts+recitation" data-video-id="KFVDgEVJrhc" target="_blank" rel="noopener">
-  <div class="vg-thumb">🕌<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=hamza+tul+wasl+ibtidah+ka+bayan+tajweed+urdu+qari+aqib" data-video-id="Zi43PKoX08M" target="_blank" rel="noopener">
+  <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">ابتداء اور ہمزۃ الوصل کا بیان</p>
+    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-duration">~17 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=hamzatul+wasl+rules+tajweed+urdu+qari+aqib" data-video-id="nl0tnErC2Zg" target="_blank" rel="noopener">
+  <div class="vg-thumb">✍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">10 Qira'at — Specialized Instruction Program</p>
-    <p class="vg-creator">Qira'at Studies</p>
+    <p class="vg-title">ہمزۃ الوصل کے احکام — تفصیلی سبق</p>
+    <p class="vg-creator">Qari Aqib</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
 </div>
 
+</div>
+
 ---
 
-## Optional / Advanced
+## 🕋 Qur'an Recitation (Arabic) — for every learner
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+hifz+ijazah+graduation+ceremony+islamic+seminary" data-video-id="KQZwxbP7koU" target="_blank" rel="noopener">
-  <div class="vg-thumb">🎓<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=al+fatiha+in+the+ten+major+qiraat+recitation" data-video-id="W2OuSY4JDZA" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
-    <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Ijazah and Hifz Graduation — Seminary Ceremony</p>
-    <p class="vg-creator">Islamic Seminary</p>
-    <p class="vg-duration">~30 min</p>
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Surah Al-Fatiha in the Ten Major Qira'at</p>
+    <p class="vg-creator">Jazari UK (Imam Jazari Institute)</p>
+    <p class="vg-duration">~8 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=qiraat+sabah+seven+readings+quran+program+education" data-video-id="BQ4jmqGs_rU" target="_blank" rel="noopener">
-  <div class="vg-thumb">🏅<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mishary+rashid+alafasy+surah+al+fatiha+recitation" data-video-id="ZYaZ6Odbx_Y" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
-    <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Qira'at Sab'ah — The Seven Readings (Program 1)</p>
-    <p class="vg-creator">Educational Broadcast</p>
-    <p class="vg-duration">~15 min</p>
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Surah Al-Fatiha — Mishary Rashid Alafasy</p>
+    <p class="vg-creator">AYAT</p>
+    <p class="vg-duration">~1 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ijaz+al+quran+linguistic+miracle+arabic+literary+proof" data-video-id="vbYvkP9jrS0" target="_blank" rel="noopener">
-  <div class="vg-thumb">✨<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=abdul+basit+abdul+samad+surah+al+fatiha+mujawwad" data-video-id="P7lFSt6-7T8" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
-    <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">I'jaz al-Quran — The Linguistic Miracle Explained</p>
-    <p class="vg-creator">Quranic Miracle Studies</p>
-    <p class="vg-duration">~25 min</p>
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Surah Al-Fatiha — Abdul Basit (Mujawwad)</p>
+    <p class="vg-creator">Quran Recitation</p>
+    <p class="vg-duration">~3 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=saad+al+ghamdi+surah+al+fatiha+recitation" data-video-id="sUuMr9cXNKs" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Surah Al-Fatiha — Saad Al-Ghamdi</p>
+    <p class="vg-creator">Ar-Rahmaan Quran Channel</p>
+    <p class="vg-duration">~1 min</p>
   </div>
 </a>
 

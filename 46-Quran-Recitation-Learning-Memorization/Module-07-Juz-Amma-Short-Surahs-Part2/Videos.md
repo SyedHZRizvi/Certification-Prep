@@ -1,86 +1,210 @@
-<style>.vg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:22px 0 30px;}.vg-card{display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s,border-color .2s;}.vg-card:hover{transform:translateY(-3px);box-shadow:0 12px 24px -8px rgba(0,0,0,.15);border-color:#34d399;}.vg-thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#064e3b,#065f46);display:flex;align-items:center;justify-content:center;color:#fff;font-size:48px;}.vg-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.35);color:#fff;font-size:48px;opacity:0;transition:opacity .2s;}.vg-card:hover .vg-play{opacity:1;}.vg-meta{padding:14px 16px;}.vg-tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:4px;margin-bottom:8px;}.vg-tag.essential{background:#d1fae5;color:#065f46;}.vg-tag.recommended{background:#dbeafe;color:#1e40af;}.vg-tag.optional{background:#fef3c7;color:#92400e;}.vg-title{font-weight:700;font-size:14px;line-height:1.4;margin:0 0 4px;color:#0f172a;}.vg-creator{font-size:12.5px;color:#64748b;margin:0 0 6px;}.vg-duration{font-size:11px;color:#94a3b8;font-weight:600;}</style>
+{% include lang-switcher.html %}
 
-# Module 7 Videos — Juz Amma Short Surahs Part 2
+# Module 7 Videos — Juz Amma — Short Surahs Part 2
+
+<div class="lang-en" markdown="1">
+
+> **🇬🇧 English teaching videos.** Qur'an recitation itself is in Arabic — see the shared section at the bottom.
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+nasr+last+complete+surah+revealed+explanation+110" data-video-id="N3iWRkLKlas" target="_blank" rel="noopener">
-  <div class="vg-thumb">🏆<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=learn+surah+an-nasr+110+tajweed+english+juz+amma" data-video-id="gPosatkINzk" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Surah An-Nasr — Last Surah Revealed, Meaning and Tafseer</p>
-    <p class="vg-creator">Quran Weekly</p>
-    <p class="vg-duration">20 min</p>
+    <p class="vg-title">Learn Surah An-Nasr (110) with Tajweed — Juz Amma</p>
+    <p class="vg-creator">GatewaytoQuran — Saifullah Khan</p>
+    <p class="vg-duration">~6 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+kafirun+religious+freedom+no+compromise+tafseer+109" data-video-id="U7MGkx71OMY" target="_blank" rel="noopener">
-  <div class="vg-thumb">🕊️<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=learn+surah+an-nasr+word+by+word+tajweed+memorize+english" data-video-id="uH609TtoxPk" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Surah Al-Kafirun — No Compromise in Worship</p>
-    <p class="vg-creator">Islamic Guidance</p>
-    <p class="vg-duration">22 min</p>
+    <p class="vg-title">Learn &amp; Memorize Surah An-Nasr Word by Word with Tajweed</p>
+    <p class="vg-creator">Online Teaching Center</p>
+    <p class="vg-duration">~9 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+maun+social+justice+orphan+poor+prayer+tafseer+107" data-video-id="jqFwhRNtoYA" target="_blank" rel="noopener">
-  <div class="vg-thumb">⚖️<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=learn+surah+al-kafirun+correct+tajweed+english" data-video-id="tN-c56-RuW0" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Surah Al-Ma'un — Social Justice and the Test of Character</p>
-    <p class="vg-creator">Quran Studies</p>
-    <p class="vg-duration">28 min</p>
+    <p class="vg-title">Learn Surah Al-Kafiroon with Correct Tajweed</p>
+    <p class="vg-creator">TajweedInstitute</p>
+    <p class="vg-duration">~8 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fil+elephant+abraha+kaaba+history+105" data-video-id="Va6GS8xzbJ8" target="_blank" rel="noopener">
-  <div class="vg-thumb">🐘<div class="vg-play">▶</div></div>
-  <div class="vg-meta">
-    <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Surah Al-Fil — The Army of Elephants: Historical Event</p>
-    <p class="vg-creator">Islamic History</p>
-    <p class="vg-duration">25 min</p>
-  </div>
-</a>
-
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+quraysh+trade+routes+winter+summer+gratitude+106" data-video-id="lUAU5NhYgNI" target="_blank" rel="noopener">
-  <div class="vg-thumb">🌍<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=learn+surah+al-kafirun+109+tajweed+english+juz+amma+kids" data-video-id="_zLEO_PSxyc" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Surah Al-Quraysh — Trade Routes and Divine Gratitude</p>
-    <p class="vg-creator">Quran Tafseer Series</p>
-    <p class="vg-duration">18 min</p>
+    <p class="vg-title">Learn Surah Al-Kafirun (109) with Tajweed — Juz Amma</p>
+    <p class="vg-creator">GatewaytoQuran — Saifullah Khan</p>
+    <p class="vg-duration">~7 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=juz+amma+kids+memorization+short+surahs+part+2" data-video-id="4AX9FIaXyJo" target="_blank" rel="noopener">
-  <div class="vg-thumb">🧒<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=learn+memorize+surah+al-maun+word+by+word+tajweed+english" data-video-id="1-klq9UYVBU" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Memorize Surah Al-Maun Word by Word with Tajweed (6x Practice)</p>
+    <p class="vg-creator">Rasool Academy</p>
+    <p class="vg-duration">~10 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=learn+surah+quraish+106+tajweed+english+juz+amma+kids" data-video-id="TtFeLrExS94" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Juz Amma Short Surahs — Kids Memorization Part 2</p>
-    <p class="vg-creator">Little Muslims</p>
-    <p class="vg-duration">22 min</p>
+    <p class="vg-title">Learn Surah Quraysh (106) with Tajweed — Juz Amma</p>
+    <p class="vg-creator">GatewaytoQuran — Saifullah Khan</p>
+    <p class="vg-duration">~6 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+maun+riya+show+off+prayer+warning+meaning" data-video-id="cQBLFCG6DKY" target="_blank" rel="noopener">
-  <div class="vg-thumb">⚠️<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=learn+quran+surah+al-feel+word+by+word+easy+tajweed+english" data-video-id="1pUrzJvVXLE" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Learn Surah Al-Fil (105) Word by Word — Easy Quran Tajweed</p>
+    <p class="vg-creator">Learn Quran at Home</p>
+    <p class="vg-duration">~8 min</p>
+  </div>
+</a>
+
+</div>
+
+</div>
+
+<div class="lang-ur" markdown="1" style="direction:rtl;text-align:right;font-family:'Noto Nastaliq Urdu','Gulzar',serif;line-height:2.2;">
+
+> **🇵🇰 اردو تدریسی ویڈیوز۔** قرآن کی تلاوت عربی میں ہے — نیچے مشترکہ سیکشن دیکھیں۔
+
+<div class="vg-grid" markdown="0">
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+النصر+اردو+ترجمہ+تلاوت" data-video-id="ew79hAMcQWA" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">سورہ النصر — عربی متن اور اردو کے ساتھ</p>
+    <p class="vg-creator">Qari Ali Raza Hujvari</p>
+    <p class="vg-duration">~4 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+الکافرون+اردو+ترجمہ+کے+ساتھ" data-video-id="V9YjcxFYnkc" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">سورۃ الکافرون — اردو ترجمہ کے ساتھ</p>
+    <p class="vg-creator">Voice of Quran — قرآن کی صدا</p>
+    <p class="vg-duration">~5 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+الماعون+مکمل+اردو+ترجمہ+کے+ساتھ" data-video-id="eTCZeTd4rF0" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">سورہ الماعون — کامل اردو ترجمہ کے ساتھ</p>
+    <p class="vg-creator">Why me?</p>
+    <p class="vg-duration">~5 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+قریش+اردو+ترجمہ+کے+ساتھ" data-video-id="KUJDfcgLcVQ" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">سورہ قریش — اردو ترجمہ کے ساتھ</p>
+    <p class="vg-creator">Asif Rizvi</p>
+    <p class="vg-duration">~4 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+الفیل+تلاوت+اردو+ترجمہ+کے+ساتھ" data-video-id="qEkTlS8gBkw" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">سورہ الفیل — تلاوت اردو ترجمہ کے ساتھ</p>
+    <p class="vg-creator">Quran o hadees</p>
+    <p class="vg-duration">~4 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+قریش+تجوید+کے+ساتھ+سیکھیں+ورڈ+بائی+ورڈ" data-video-id="CuGvw5i8iEA" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">The Prayer Warning in Al-Ma'un — Riya (Showing Off)</p>
-    <p class="vg-creator">Islamic Reminders</p>
-    <p class="vg-duration">15 min</p>
+    <p class="vg-title">سورہ قریش تجوید کے ساتھ سیکھیں — لفظ بہ لفظ</p>
+    <p class="vg-creator">Jadeed Noorani Qaida</p>
+    <p class="vg-duration">~9 منٹ</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+surah+nasr+kafirun+maun+fil+recitation" data-video-id="E3FbUstnBhc" target="_blank" rel="noopener">
-  <div class="vg-thumb">📜<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+الفیل+مشق+تجوید+کے+ساتھ+سیکھیں" data-video-id="4lA9cIx2Tqw" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
-    <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Short Surahs Recitation — Beautiful Recitation</p>
-    <p class="vg-creator">Quran Recitation</p>
-    <p class="vg-duration">25 min</p>
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">سورہ الفیل / قریش تجوید کے ساتھ سیکھیں</p>
+    <p class="vg-creator">Tajweed-UL-Quran</p>
+    <p class="vg-duration">~8 منٹ</p>
+  </div>
+</a>
+
+</div>
+
+</div>
+
+---
+
+## 🕋 Qur'an Recitation (Arabic) — for every learner
+
+<div class="vg-grid" markdown="0">
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mishary+rashid+alafasy+surah+al-kafirun+four+qul+recitation" data-video-id="8HKvMfC1VNA" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Surah Al-Kafirun (within the Four Qul) — Recitation</p>
+    <p class="vg-creator">Mishary Rashid Alafasy</p>
+    <p class="vg-duration">~5 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+an-nasr+110+al-husary+accurate+tajweed+recitation" data-video-id="VVaUWzvJF5E" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Surah An-Nasr (110) — Accurate Tajweed Recitation</p>
+    <p class="vg-creator">Mahmoud Khalil Al-Husary</p>
+    <p class="vg-duration">~2 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+al-maun+107+abdul+basit+recitation" data-video-id="7kVRhtK_oLk" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Surah Al-Maun (107) — Recitation</p>
+    <p class="vg-creator">Abdul Basit Abdus Samad</p>
+    <p class="vg-duration">~3 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=juz+amma+last+surahs+complete+recitation+arabic+text" data-video-id="g3JCOFXTNn0" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Juz Amma — Last Surahs Complete with Arabic Text</p>
+    <p class="vg-creator">Tajweed UL Quran Academy</p>
+    <p class="vg-duration">~30 min</p>
   </div>
 </a>
 

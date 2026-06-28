@@ -31,6 +31,10 @@ def check(vid: str):
 
 
 def main() -> int:
+    try:  # channel names can be Arabic/Urdu/etc.; avoid cp1252 crash on Windows
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
     for vid in sys.argv[1:]:
         status, channel = check(vid)
         print(f"{vid}\t{status}\t{channel}")

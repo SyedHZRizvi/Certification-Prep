@@ -1,86 +1,200 @@
-<style>.vg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:22px 0 30px;}.vg-card{display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s,border-color .2s;}.vg-card:hover{transform:translateY(-3px);box-shadow:0 12px 24px -8px rgba(0,0,0,.15);border-color:#34d399;}.vg-thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#064e3b,#065f46);display:flex;align-items:center;justify-content:center;color:#fff;font-size:48px;}.vg-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.35);color:#fff;font-size:48px;opacity:0;transition:opacity .2s;}.vg-card:hover .vg-play{opacity:1;}.vg-meta{padding:14px 16px;}.vg-tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:4px;margin-bottom:8px;}.vg-tag.essential{background:#d1fae5;color:#065f46;}.vg-tag.recommended{background:#dbeafe;color:#1e40af;}.vg-tag.optional{background:#fef3c7;color:#92400e;}.vg-title{font-weight:700;font-size:14px;line-height:1.4;margin:0 0 4px;color:#0f172a;}.vg-creator{font-size:12.5px;color:#64748b;margin:0 0 6px;}.vg-duration{font-size:11px;color:#94a3b8;font-weight:600;}</style>
+{% include lang-switcher.html %}
 
-# Module 5 Videos — Surah Al-Fatiha
+# Module 5 Videos — Surah Al-Fatiha — Complete Study
+
+<div class="lang-en" markdown="1">
+
+> **🇬🇧 English teaching videos.** Qur'an recitation itself is in Arabic — see the shared section at the bottom.
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+recitation+tajweed+word+by+word+arabic" data-video-id="rQrBxuaPYoE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+al+fatiha+word+by+word+with+tajweed+english" data-video-id="F60gZlg3PQ8" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Surah Al-Fatiha — Word by Word Recitation with Tajweed</p>
-    <p class="vg-creator">Quran Recitation Academy</p>
-    <p class="vg-duration">20 min</p>
+    <p class="vg-title">Surah Al-Fatiha — Full Word by Word with Tajweed (Repeat to Learn)</p>
+    <p class="vg-creator">Online Teaching Center</p>
+    <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+translation+meaning+urdu+english+tafseer" data-video-id="rQrBxuaPYoE" target="_blank" rel="noopener">
-  <div class="vg-thumb">🌏<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=learn+surah+al+fatiha+with+tajweed+pronunciation+of+the+letters" data-video-id="oDIPlifqx4E" target="_blank" rel="noopener">
+  <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Surah Al-Fatiha — Full Translation and Meaning</p>
-    <p class="vg-creator">Quran Studies</p>
-    <p class="vg-duration">25 min</p>
+    <p class="vg-title">Learn Surah Al-Fatiha With Tajweed — Pronunciation of the Letters</p>
+    <p class="vg-creator">Only for Allah</p>
+    <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+tajweed+rules+analysis+madd+shamsiyyah+lam" data-video-id="rQrBxuaPYoE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+al+fatiha+tajweed+rules+step+by+step+tutorial+english" data-video-id="B1oyzstnLVw" target="_blank" rel="noopener">
   <div class="vg-thumb">🔬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Tajweed Rules in Surah Al-Fatiha — Complete Analysis</p>
-    <p class="vg-creator">Tajweed with Sheikh</p>
-    <p class="vg-duration">30 min</p>
+    <p class="vg-title">How to Recite Surah Al-Fatiha with Tajweed — Step-by-Step (Madd, Laam Rules)</p>
+    <p class="vg-creator">Elevate Arabic</p>
+    <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+kids+memorization+step+by+step+easy" data-video-id="rQrBxuaPYoE" target="_blank" rel="noopener">
-  <div class="vg-thumb">🧒<div class="vg-play">▶</div></div>
-  <div class="vg-meta">
-    <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Surah Al-Fatiha for Kids — Easy Step by Step Memorization</p>
-    <p class="vg-creator">Little Muslims</p>
-    <p class="vg-duration">15 min</p>
-  </div>
-</a>
-
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+tafseer+meaning+explanation+verse+by+verse" data-video-id="hDJ_OrFnKR0" target="_blank" rel="noopener">
-  <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+al+fatiha+tajweed+rules+practical+lesson+english" data-video-id="rZRIyqZv3TU" target="_blank" rel="noopener">
+  <div class="vg-thumb">📐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Surah Al-Fatiha — Deep Tafseer and Explanation</p>
-    <p class="vg-creator">Islamic Studies Channel</p>
-    <p class="vg-duration">45 min</p>
+    <p class="vg-title">Surah Al-Fatiha — Tajweed Made Easy (Applying the Rules Verse by Verse)</p>
+    <p class="vg-creator">Ustadh Arif — Islamic Sciences</p>
+    <p class="vg-duration">~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+prayer+salah+how+to+recite+correctly" data-video-id="rQrBxuaPYoE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+al+fatiha+full+english+translation+meaning+verse+by+verse" data-video-id="mftBZ1yk0A0" target="_blank" rel="noopener">
+  <div class="vg-thumb">🌏<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Surah Al-Fatiha — Full English Translation, Verse by Verse</p>
+    <p class="vg-creator">I LISTENE ALONE</p>
+    <p class="vg-duration">~6 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+recite+surah+al+fatiha+correctly+in+salah+prayer+english" data-video-id="uCiEZJ0RiKs" target="_blank" rel="noopener">
   <div class="vg-thumb">🤲<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Reciting Al-Fatiha Correctly in Prayer</p>
-    <p class="vg-creator">Salah Academy</p>
-    <p class="vg-duration">20 min</p>
+    <p class="vg-title">How to Recite Surah Al-Fatiha Correctly for Prayer</p>
+    <p class="vg-creator">Easy Quran</p>
+    <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+al+mizan+tafseer+tabatabai+explanation+meaning" data-video-id="VzIObAd8Hzw" target="_blank" rel="noopener">
-  <div class="vg-thumb">🌿<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+al+fatiha+easy+memorization+for+kids+english+transliteration" data-video-id="ZKZcncyA99c" target="_blank" rel="noopener">
+  <div class="vg-thumb">🧒<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Al-Fatiha in Tafsir al-Mizan — Tabatabai's Commentary</p>
-    <p class="vg-creator">Islamic Lectures</p>
-    <p class="vg-duration">35 min</p>
+    <p class="vg-title">Memorise Qur'an with Zaky — Surah Al-Fatiha (for Kids)</p>
+    <p class="vg-creator">One4kids</p>
+    <p class="vg-duration">~5 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+surah+fatiha+quran+recitation+beautiful" data-video-id="FLrLKsGQ3sE" target="_blank" rel="noopener">
-  <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
+</div>
+
+</div>
+
+<div class="lang-ur" markdown="1" style="direction:rtl;text-align:right;font-family:'Noto Nastaliq Urdu','Gulzar',serif;line-height:2.2;">
+
+> **🇵🇰 اردو تدریسی ویڈیوز۔** قرآن کی تلاوت عربی میں ہے — نیچے مشترکہ سیکشن دیکھیں۔
+
+<div class="vg-grid" markdown="0">
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+فاتحہ+تجوید+کے+مطابق+قرات+کیسے+پڑھیں" data-video-id="0u4MfRQHoh0" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">سورہ فاتحہ تجوید کے مطابق صحیح طریقے سے کیسے پڑھیں — قاری حماد اللہ ساجد</p>
+    <p class="vg-creator">Hammad ullah Sajid</p>
+    <p class="vg-duration">~12 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=سورۃ+الفاتحہ+لفظی+ترجمہ+اردو+لفظ+بہ+لفظ" data-video-id="GmZOTD_BLuM" target="_blank" rel="noopener">
+  <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">سورۃ الفاتحہ — اردو لفظی ترجمہ (لفظ بہ لفظ معنیٰ)</p>
+    <p class="vg-creator">Quran365Day</p>
+    <p class="vg-duration">~7 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=سورۃ+الفاتحہ+اردو+ترجمہ+کے+ساتھ+تلاوت" data-video-id="YKuKB1LYmco" target="_blank" rel="noopener">
+  <div class="vg-thumb">🌏<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">سورۃ الفاتحہ — اردو ترجمہ کے ساتھ مکمل</p>
+    <p class="vg-creator">SM TV</p>
+    <p class="vg-duration">~6 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+فاتحہ+اردو+ترجمہ+آیت+بہ+آیت" data-video-id="Bpo7bxwNlbo" target="_blank" rel="noopener">
+  <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">سورۃ الفاتحہ — آیت بہ آیت اردو ترجمہ</p>
+    <p class="vg-creator">Quran majeed islam light of hidaya</p>
+    <p class="vg-duration">~8 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+فاتحہ+اردو+ترجمہ+کے+ساتھ+بصری+قرآن" data-video-id="2GE1shC4J24" target="_blank" rel="noopener">
+  <div class="vg-thumb">🤲<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">سورہ الفاتحہ — پارہ ۱، اردو ترجمہ کے ساتھ (HD)</p>
+    <p class="vg-creator">Bahria University Media House</p>
+    <p class="vg-duration">~5 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+فاتحہ+ہندی+اردو+ترجمہ+بصری+تلاوت" data-video-id="um67Fqaqxds" target="_blank" rel="noopener">
+  <div class="vg-thumb">🧒<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Surah Al-Fatiha — Beautiful Recitation</p>
-    <p class="vg-creator">Quran Academy</p>
-    <p class="vg-duration">5 min</p>
+    <p class="vg-title">سورہ الفاتحہ — اردو ترجمہ کے ساتھ خوبصورت بصری پیشکش</p>
+    <p class="vg-creator">iPlus TV</p>
+    <p class="vg-duration">~5 منٹ</p>
+  </div>
+</a>
+
+</div>
+
+</div>
+
+---
+
+## 🕋 Qur'an Recitation (Arabic) — for every learner
+
+<div class="vg-grid" markdown="0">
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mishary+rashid+alafasy+surah+al+fatiha+full" data-video-id="HmAdQDNhlgQ" target="_blank" rel="noopener">
+  <div class="vg-thumb">🕋<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Surah Al-Fatiha — Mishary Rashid Alafasy (with Arabic text)</p>
+    <p class="vg-creator">Ar Rahman islamic content</p>
+    <p class="vg-duration">~1 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=abdul+basit+abdul+samad+surah+al+fatiha+mujawwad" data-video-id="P7lFSt6-7T8" target="_blank" rel="noopener">
+  <div class="vg-thumb">🕋<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Surah Al-Fatiha — Abdul Basit Abdul Samad (Mujawwad)</p>
+    <p class="vg-creator">Quran Recitation</p>
+    <p class="vg-duration">~3 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=saad+al+ghamdi+surah+al+fatiha+recitation" data-video-id="sUuMr9cXNKs" target="_blank" rel="noopener">
+  <div class="vg-thumb">🕋<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Surah Al-Fatiha — Saad Al-Ghamdi (Arabic text + recitation)</p>
+    <p class="vg-creator">Ar-Rahmaan Quran Channel</p>
+    <p class="vg-duration">~1 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=al+husary+surah+al+fatiha+muallim+teaching+recitation+hafs" data-video-id="Pin_wcEVavg" target="_blank" rel="noopener">
+  <div class="vg-thumb">🕋<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Surah Al-Fatiha — Mahmud Khalil Al-Husary (Muallim / teaching style)</p>
+    <p class="vg-creator">E-Tilawah Academy</p>
+    <p class="vg-duration">~2 min</p>
   </div>
 </a>
 
