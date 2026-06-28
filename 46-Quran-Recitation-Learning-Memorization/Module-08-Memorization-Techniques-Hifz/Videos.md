@@ -128,12 +128,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%A2%D9%86+%D9%84%D8%A7%D8%A6%D9%86+%D8%AD%D9%81%D8%B8+%D9%88+%D9%86%D8%A7%D8%B8%D8%B1%DB%81+%D9%82%D8%B1%D8%A2%D9%86+%DA%A9%D9%84%D8%A7%D8%B3" data-video-id="CYMcTxj1-5c" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%82%D8%B1%D8%A2%D9%86+%DB%8C%D8%A7%D8%AF+%DA%A9%D8%B1%D9%86%DB%92+%DA%A9%D8%A7+%D8%A2%D8%B3%D8%A7%D9%86+%D8%B7%D8%B1%DB%8C%D9%82%DB%81+%E2%80%94+%D8%AD%D9%81%D8%B8+%DA%A9%DB%92+%D8%B9%D9%85%D9%84%DB%8C+%D8%A7%D8%B5%D9%88%D9%84" data-video-id="pXMAzJRgM2Y" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">آن لائن حفظ و ناظرہ قرآن کلاس</p>
-    <p class="vg-creator">Qari Majid Ali</p>
+    <p class="vg-title">قرآن یاد کرنے کا آسان طریقہ — حفظ کے عملی اصول</p>
+    <p class="vg-creator">Qari Abubakar Hayat</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
