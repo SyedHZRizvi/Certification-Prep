@@ -1,0 +1,23 @@
+# known-broken-video-ids.txt — denylist of YouTube IDs confirmed DEAD
+# (oEmbed 404 = removed/private/never-existed; 401 = embedding disabled).
+# Auto-maintained by scripts/verify-and-allowlist-video-ids.py --update
+# and the twice-weekly audit; consumed by scripts/verify-baseline.py.
+# An ID on this list may NEVER be reintroduced into any Videos.md.
+# One 11-char ID per line; '#' lines are comments.
+
+9zRMjpY7Xpk
+C5pQBpFO7sE
+DPICFeYn5es
+JnFWx8Gc5sQ
+N7s_8e_RJGE
+OFa3NYadCmU
+PLXhBwOt4Vo
+SmvEj8e5Bak
+UdeW80ipksU
+WwaClWzBX90
+YN7XSMOuVFU
+_gq4g7KjU4o
+bLDktPaB8nA
+f8A3-UNm1YM
+k8O_dZBUQ4Y
+v0o-Dz_-AWA

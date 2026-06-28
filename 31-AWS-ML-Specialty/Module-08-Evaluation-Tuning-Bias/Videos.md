@@ -30,12 +30,12 @@
       <span class="vg-duration">⏱ 24 min · Read any metric in 30 s</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="nD4lzr3bJtI" href="https://www.youtube.com/results?search_query=SageMaker+Automatic+Model+Tuning+Bayesian+Hyperband" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ynYnZywayC4" href="https://www.youtube.com/results?search_query=SageMaker+Automatic+Model+Tuning+Bayesian+Hyperband" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎛️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">SageMaker HPO, Bayesian + Hyperband</p>
-      <p class="vg-creator">AWS Online Tech Talks</p>
+      <p class="vg-creator">AWS Developers</p>
       <span class="vg-duration">⏱ 20 min · Strategy decision</span>
     </div>
   </a>
@@ -103,12 +103,12 @@
       <span class="vg-duration">⏱ 24 min · Demographic parity vs equal opportunity</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="s203ScTy4xQ" href="https://www.youtube.com/results?search_query=quantile+regression+prediction+intervals+forecasting" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="b6HMdUe9gy4" href="https://www.youtube.com/results?search_query=quantile+regression+prediction+intervals+forecasting" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Quantile Regression for Forecast Intervals</p>
-      <p class="vg-creator">StatQuest</p>
+      <p class="vg-creator">Population Data BC</p>
       <span class="vg-duration">⏱ 15 min · p10/p50/p90</span>
     </div>
   </a>

@@ -71,21 +71,21 @@
       <span class="vg-duration">⏱ 35m · Skip the reward model</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="MQwryfkydc0" href="https://www.youtube.com/results?search_query=unsloth+qlora+fast+fine+tuning" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="2yZUOeIA7gE" href="https://www.youtube.com/results?search_query=unsloth+qlora+fast+fine+tuning" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Unsloth, 2× faster QLoRA</p>
-      <p class="vg-creator">Unsloth team</p>
+      <p class="vg-creator">Sunny Savita</p>
       <span class="vg-duration">⏱ 25m · The faster way</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=openai+fine+tuning+api+walkthrough+2024" data-video-id="vqhPjScKAjI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=openai+fine+tuning+api+walkthrough+2024" data-video-id="Q0GSZD0Na1s" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">OpenAI fine-tuning API walkthrough</p>
-      <p class="vg-creator">OpenAI DevRel</p>
+      <p class="vg-creator">Hamel Husain</p>
       <span class="vg-duration">⏱ 30m · Managed FT, end-to-end</span>
     </div>
   </a>
@@ -112,12 +112,12 @@
       <span class="vg-duration">⏱ 25m · LoRA successor</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=knowledge+distillation+llm+small+model" data-video-id="VvjPnRcMYRM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=knowledge+distillation+llm+small+model" data-video-id="kzI67UP6luI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Knowledge Distillation, large → small LLM</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">Computing For All</p>
       <span class="vg-duration">⏱ 35m · Cost-saving via distillation</span>
     </div>
   </a>

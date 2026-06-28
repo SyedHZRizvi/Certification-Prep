@@ -30,30 +30,30 @@
       <span class="vg-duration">⏱ 50m · The serving standard</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=litellm+gateway+model+routing+tutorial" data-video-id="BEgydVWFoIc" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=litellm+gateway+model+routing+tutorial" data-video-id="WyW4Ifu4rSo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">LiteLLM, gateway + routing tutorial</p>
-      <p class="vg-creator">LiteLLM team</p>
+      <p class="vg-creator">Data Science Basics</p>
       <span class="vg-duration">⏱ 40m · One API, all providers</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=langfuse+open+source+observability+tutorial" data-video-id="kGZMQlE6sEY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=langfuse+open+source+observability+tutorial" data-video-id="2E8iTvGo9Hs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Langfuse, open-source observability</p>
-      <p class="vg-creator">Langfuse team</p>
+      <p class="vg-creator">Langfuse</p>
       <span class="vg-duration">⏱ 45m · Traces + costs + evals</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=prompt+caching+anthropic+openai+cost" data-video-id="TdLfmGbfk7o" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=prompt+caching+anthropic+openai+cost" data-video-id="D8LqbR0mJ4M" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Prompt caching, Anthropic + OpenAI</p>
-      <p class="vg-creator">community / DevRel</p>
+      <p class="vg-creator">AI Made Simple</p>
       <span class="vg-duration">⏱ 30m · Up to 90% cost saving</span>
     </div>
   </a>
@@ -62,21 +62,21 @@
 ## 📚 Recommended
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=modal+labs+gpu+serverless+inference" data-video-id="eKO7sR8AIQY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=modal+labs+gpu+serverless+inference" data-video-id="G3M46cpdF4g" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Modal, serverless GPU inference</p>
-      <p class="vg-creator">Modal Labs</p>
+      <p class="vg-creator">Modal</p>
       <span class="vg-duration">⏱ 35m · "Lambda for GPUs"</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=helicone+llm+observability+proxy" data-video-id="Gr84wPKKBTQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=helicone+llm+observability+proxy" data-video-id="RNFa8bl3RdE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Helicone, proxy-based observability</p>
-      <p class="vg-creator">Helicone</p>
+      <p class="vg-creator">Helicone AI</p>
       <span class="vg-duration">⏱ 30m · Cheapest path to visibility</span>
     </div>
   </a>
@@ -89,12 +89,12 @@
       <span class="vg-duration">⏱ 30m · Draft + verify</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=gptcache+semantic+cache+llm" data-video-id="cphKEAY9eF8" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=gptcache+semantic+cache+llm" data-video-id="Yug3gObpX-g" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">GPTCache, semantic caching</p>
-      <p class="vg-creator">Zilliz</p>
+      <p class="vg-creator">Fahd Mirza</p>
       <span class="vg-duration">⏱ 25m · 30-70% cost cut on hot queries</span>
     </div>
   </a>
@@ -103,12 +103,12 @@
 ## 🍿 Optional
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=tensorrt+llm+nvidia+inference+optimization" data-video-id="pFmn7LlFoS0" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=tensorrt+llm+nvidia+inference+optimization" data-video-id="sTpQQSbta1k" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">TensorRT-LLM, NVIDIA serving</p>
-      <p class="vg-creator">NVIDIA</p>
+      <p class="vg-creator">NVIDIA Developer</p>
       <span class="vg-duration">⏱ 40m · The fastest serving stack</span>
     </div>
   </a>
@@ -121,12 +121,12 @@
       <span class="vg-duration">⏱ 20m · Consumer-grade serving</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=groq+lpu+inference+fast+latency" data-video-id="wFNE3oVMzQo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=groq+lpu+inference+fast+latency" data-video-id="i9b8WWVyMrQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Groq LPU, lowest-latency serving</p>
-      <p class="vg-creator">Groq</p>
+      <p class="vg-creator">Baytech Consulting</p>
       <span class="vg-duration">⏱ 25m · Custom inference hardware</span>
     </div>
   </a>

@@ -224,7 +224,17 @@ def main():
         print("  Cards now gracefully degrade to their existing search-URL "
               "href fallback.")
 
-    # Exit code
+    # Exit code semantics:
+    #   --check    → 1 if any broken IDs were found (0 otherwise), so a human
+    #                or CI can branch on "is there anything to fix?".
+    #   --auto-fix → 0 once the strip pass completes without a hard error.
+    #                The existence of broken IDs is the *reason* this mode
+    #                runs, not a failure of it; reporting that as a non-zero
+    #                exit caused the CI job to die before opening the cleanup
+    #                PR. Hard/unexpected errors still surface as exit 2 via
+    #                the __main__ wrapper below.
+    if args.auto_fix:
+        return 0
     return 1 if broken > 0 else 0
 
 

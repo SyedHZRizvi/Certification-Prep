@@ -26,34 +26,34 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Cursor team, building the AI IDE</p>
-      <p class="vg-creator">Cursor / Latent Space podcast</p>
+      <p class="vg-creator">Lex Fridman</p>
       <span class="vg-duration">⏱ 1h 20m · The latency moat</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=github+copilot+architecture+evolution" data-video-id="GWH6_zmVe8g" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=github+copilot+architecture+evolution" data-video-id="zemBW3diXIs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">GitHub Copilot, architecture evolution</p>
-      <p class="vg-creator">GitHub Engineering</p>
+      <p class="vg-creator">InfoQ</p>
       <span class="vg-duration">⏱ 50m · Codex → Workspace</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=notion+ai+qa+architecture" data-video-id="1EUkBJhHl6Y" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=notion+ai+qa+architecture" data-video-id="7wFtYtm_bXk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Notion AI, building Q&A at scale</p>
-      <p class="vg-creator">Notion Engineering</p>
+      <p class="vg-creator">AICamp</p>
       <span class="vg-duration">⏱ 45m · v1 → v2 → v3</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=klarna+ai+assistant+customer+support" data-video-id="9G7-7QHZGBQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=klarna+ai+assistant+customer+support" data-video-id="m3niSE-8ZvE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Klarna AI Assistant, 700 FTEs replaced</p>
-      <p class="vg-creator">Klarna / OpenAI</p>
+      <p class="vg-creator">Sequoia Capital</p>
       <span class="vg-duration">⏱ 30m · Cost engineering in detail</span>
     </div>
   </a>
@@ -71,12 +71,12 @@
       <span class="vg-duration">⏱ 35m · Designed-for-minors AI</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=stripe+radar+ml+fraud+llm" data-video-id="ZvvfLGf0Ogo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=stripe+radar+ml+fraud+llm" data-video-id="NWywn0yympA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Stripe Radar, LLM-augmented fraud</p>
-      <p class="vg-creator">Stripe Engineering</p>
+      <p class="vg-creator">Stripe</p>
       <span class="vg-duration">⏱ 40m · LLM as adjudicator</span>
     </div>
   </a>
@@ -89,12 +89,12 @@
       <span class="vg-duration">⏱ 40m · Search + LLM hybrid</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=glean+enterprise+search+rag" data-video-id="NfQrRQmDrqU" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=glean+enterprise+search+rag" data-video-id="OPfUMXz34cU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Glean, enterprise search RAG architecture</p>
-      <p class="vg-creator">Glean Engineering</p>
+      <p class="vg-creator">AI Native Dev</p>
       <span class="vg-duration">⏱ 35m · ACL-aware enterprise RAG</span>
     </div>
   </a>
@@ -130,7 +130,7 @@
       <span class="vg-duration">⏱ 35m · Multi-agent SWE</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ai+engineer+summit+2025+production+talks" data-video-id="XiHmbS40W-A" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ai+engineer+summit+2025+production+talks" data-video-id="5zE2sMka620" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

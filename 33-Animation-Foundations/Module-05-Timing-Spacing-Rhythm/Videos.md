@@ -20,12 +20,12 @@
 ## ⭐ Essential Watching (~75 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Richard+Williams+Animator+Survival+Kit+timing+spacing+tutorial" data-video-id="fmYfJQDaFh8" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Richard+Williams+Animator+Survival+Kit+timing+spacing+tutorial" data-video-id="Yc1tOCR4zYM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Timing & Spacing from The Animator's Survival Kit</p>
-      <p class="vg-creator">Richard Williams / Animation Mentor</p>
+      <p class="vg-creator">Lavalle Lee</p>
       <span class="vg-duration">⏱ 25 min · The foundational lesson on spacing</span>
     </div>
   </a>
@@ -38,12 +38,12 @@
       <span class="vg-duration">⏱ 22 min · F-curves, S-curves, and what they produce</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=timing+chart+dope+sheet+animation+traditional+explained" data-video-id="mVqvdwmkL3s" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=timing+chart+dope+sheet+animation+traditional+explained" data-video-id="uZQ4GCdiCuM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Timing Charts & Dope Sheets Explained</p>
-      <p class="vg-creator">Bloop Animation / Aaron Blaise</p>
+      <p class="vg-creator">Plainly Simple</p>
       <span class="vg-duration">⏱ 18 min · Reading and writing timing charts</span>
     </div>
   </a>
@@ -61,30 +61,30 @@
 ## 📚 Recommended (~45 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bambi+animation+breakdown+slow+in+out+deer+on+ice+timing" data-video-id="v_5HkMUsKwY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bambi+animation+breakdown+slow+in+out+deer+on+ice+timing" data-video-id="B9O_QR7IzcY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Bambi Deer-on-Ice, Timing Breakdown</p>
-      <p class="vg-creator">Animation Analysis Channel</p>
+      <p class="vg-creator">Roel71</p>
       <span class="vg-duration">⏱ 15 min · Frame-by-frame timing analysis</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Incredibles+fight+scene+animation+timing+breakdown+Pixar" data-video-id="B4X_mCEYlKs" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Incredibles+fight+scene+animation+timing+breakdown+Pixar" data-video-id="hDriYY5OkRo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">The Incredibles Fight Scene, Timing & Rhythm</p>
-      <p class="vg-creator">Corridor Crew / Pixar analysis</p>
+      <p class="vg-creator">Pixar</p>
       <span class="vg-duration">⏱ 15 min · Fast action timing vs dramatic timing</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=frame+rate+24fps+30fps+animation+difference+explained" data-video-id="F1R3sDDn3jo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=frame+rate+24fps+30fps+animation+difference+explained" data-video-id="UBRq_Wimh2k" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Frame Rates Explained, 24fps vs 30fps vs 60fps</p>
-      <p class="vg-creator">Tom Scott / Corridor Digital</p>
+      <p class="vg-creator">Video School</p>
       <span class="vg-duration">⏱ 12 min · Why 24fps feels "cinematic"</span>
     </div>
   </a>
@@ -102,12 +102,12 @@
       <span class="vg-duration">⏱ 20 min · The creative decision behind the frame rate choice</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=rhythm+comedy+timing+animation+rule+of+three+examples" data-video-id="qLXDmLZXFW0" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=rhythm+comedy+timing+animation+rule+of+three+examples" data-video-id="TUFHJMuunxA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Comedy Timing & Rhythm in Animation</p>
-      <p class="vg-creator">School of Motion / Film Riot</p>
+      <p class="vg-creator">StudioBinder</p>
       <span class="vg-duration">⏱ 18 min · The rule of three and comic timing</span>
     </div>
   </a>

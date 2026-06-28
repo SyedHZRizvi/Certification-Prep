@@ -52,12 +52,12 @@
       <span class="vg-duration">⏱ 12 min · Audit-grade citations</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Voyage+AI+embeddings+RAG+Claude+tutorial" data-video-id="QdDoFoYVT5c" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Voyage+AI+embeddings+RAG+Claude+tutorial" data-video-id="remqY6UBH9Q" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Voyage AI Embeddings + Claude RAG</p>
-      <p class="vg-creator">Voyage / community</p>
+      <p class="vg-creator">Richmond Alake</p>
       <span class="vg-duration">⏱ 18 min · The recommended embedding partner</span>
     </div>
   </a>
@@ -93,12 +93,12 @@
       <span class="vg-duration">⏱ 15 min · Cross-encoder vs bi-encoder</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+1M+context+beta+stuffing+vs+RAG" data-video-id="w6GQb0y9rls" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+1M+context+beta+stuffing+vs+RAG" data-video-id="dk0QMbsdV8s" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Claude 1M Context Window, When It's Worth It</p>
-      <p class="vg-creator">Anthropic / community</p>
+      <p class="vg-creator">Chase AI</p>
       <span class="vg-duration">⏱ 12 min · Cost-benefit at huge scale</span>
     </div>
   </a>
@@ -107,12 +107,12 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=needle+in+haystack+benchmark+LLM+long+context" data-video-id="KwRRuiCCdOs" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=needle+in+haystack+benchmark+LLM+long+context" data-video-id="UlmyyYQGhzc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Needle-in-Haystack Benchmark Explained</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">LangChain</p>
       <span class="vg-duration">⏱ 18 min · Long-context evals</span>
     </div>
   </a>
@@ -134,12 +134,12 @@
       <span class="vg-duration">⏱ 25 min · Framework-flavored</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=agentic+RAG+iterative+retrieval+research" data-video-id="b-VhL8TA5pw" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=agentic+RAG+iterative+retrieval+research" data-video-id="MYPDsV_825U" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Agentic RAG, Iterative Retrieval</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">DataStax Developers</p>
       <span class="vg-duration">⏱ 18 min · Agent-driven retrieval loops</span>
     </div>
   </a>

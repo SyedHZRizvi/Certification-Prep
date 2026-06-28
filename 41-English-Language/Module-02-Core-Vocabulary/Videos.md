@@ -21,52 +21,52 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+for+beginners+family+members+body+parts+Lucy" data-video-id="n_MJA8bPz2Y" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+for+beginners+family+members+body+parts+Lucy" data-video-id="8tZsPvh2dJI" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Family Members Vocabulary in English</p>
-    <p class="vg-creator">English with Lucy</p>
+    <p class="vg-creator">English with Morgan</p>
     <span class="vg-duration">⏱ 13 min · All family words with pronunciation and examples</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=human+body+parts+English+vocabulary+beginners+labeled" data-video-id="O_sJE5u2qOA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=human+body+parts+English+vocabulary+beginners+labeled" data-video-id="W1aR3h_RQ94" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Body Parts in English — All 50 Words</p>
-    <p class="vg-creator">EnglishClass101</p>
+    <p class="vg-creator">Shaw English Online</p>
     <span class="vg-duration">⏱ 10 min · Visual guide to body vocabulary with pronunciation</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=common+English+action+verbs+list+100+most+used" data-video-id="l0byIGBhvKs" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=common+English+action+verbs+list+100+most+used" data-video-id="tQb6g4zpjMo" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">100 Most Common English Verbs</p>
-    <p class="vg-creator">Learn English with Papa Teach Me</p>
+    <p class="vg-creator">linguamarina</p>
     <span class="vg-duration">⏱ 18 min · Every essential action verb with example sentences</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+food+and+drink+beginners+lesson+2024" data-video-id="kHPCW2-hoKk" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+food+and+drink+beginners+lesson+2024" data-video-id="T5c-n80NDSQ" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Food and Drinks Vocabulary in English</p>
-    <p class="vg-creator">BBC Learning English</p>
+    <p class="vg-creator">Habla Manana</p>
     <span class="vg-duration">⏱ 12 min · 60+ food and drink words with pronunciation</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+adjectives+opposites+vocabulary+list+beginners" data-video-id="S_SfpwnVkFk" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+adjectives+opposites+vocabulary+list+beginners" data-video-id="PdSEBJG2P3U" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">English Adjectives — Opposites and Pairs</p>
-    <p class="vg-creator">English with Lucy</p>
+    <p class="vg-creator">Frankly Speaking - Lessons In Simple English</p>
     <span class="vg-duration">⏱ 11 min · Big/small, hot/cold — 60 adjective pairs</span>
   </div>
 </a>
@@ -77,52 +77,52 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=spaced+repetition+vocabulary+learning+method+English" data-video-id="eVajQPuRmk8" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=spaced+repetition+vocabulary+learning+method+English" data-video-id="ZVsCdlYkXco" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">How to Learn English Vocabulary Fast — Spaced Repetition</p>
-    <p class="vg-creator">EngVid — Learn English</p>
+    <p class="vg-creator">Learn English with EnglishClass101.com</p>
     <span class="vg-duration">⏱ 10 min · Science-based memory techniques for vocabulary</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=household+items+vocabulary+English+home+things+names" data-video-id="tR3QL8XHwbU" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=household+items+vocabulary+English+home+things+names" data-video-id="m27Cck_LGHc" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Household Items — Things in Your Home in English</p>
-    <p class="vg-creator">EnglishClass101</p>
+    <p class="vg-creator">Easy English</p>
     <span class="vg-duration">⏱ 14 min · Rooms, furniture, kitchen items all in one video</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+time+expressions+yesterday+today+tomorrow+vocabulary" data-video-id="WPPPFqsECz0" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+time+expressions+yesterday+today+tomorrow+vocabulary" data-video-id="8g91RVLQGww" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Time Expressions in English — Always, Sometimes, Never</p>
-    <p class="vg-creator">BBC Learning English</p>
+    <p class="vg-creator">English with Abby and Torai</p>
     <span class="vg-duration">⏱ 9 min · When to use now/soon/already/yet/just</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+prefixes+re+un+pre+dis+vocabulary+building" data-video-id="yrpMFcSqRHQ" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+prefixes+re+un+pre+dis+vocabulary+building" data-video-id="l6XCOoO0Mpk" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">English Prefixes — Re, Un, Pre, Dis</p>
-    <p class="vg-creator">English with Lucy</p>
+    <p class="vg-creator">Learn English with Papa Teach Me</p>
     <span class="vg-duration">⏱ 12 min · Unlock thousands of new words with 6 prefixes</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=word+families+English+vocabulary+happy+happiness+happily" data-video-id="XNkjDuSVXiA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=word+families+English+vocabulary+happy+happiness+happily" data-video-id="uYiKua5LWpM" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Word Families in English — Learn 4 Words at Once</p>
-    <p class="vg-creator">EngVid</p>
+    <p class="vg-creator">Antonio's Grammar Class ESL</p>
     <span class="vg-duration">⏱ 11 min · Noun/verb/adjective/adverb forms of common words</span>
   </div>
 </a>
@@ -133,32 +133,32 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+in+use+A2+conversation+daily+life" data-video-id="T-o1yHSq-oE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+in+use+A2+conversation+daily+life" data-video-id="x2CLiXCXgOw" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Daily Life English Vocabulary — A2 Immersion</p>
-    <p class="vg-creator">VOA Learning English</p>
+    <p class="vg-creator">English Listening</p>
     <span class="vg-duration">⏱ 5 min each · Short daily vocabulary immersion stories</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+music+songs+learn+words+through+music" data-video-id="QMt55Fz3oA8" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+music+songs+learn+words+through+music" data-video-id="tiy4FRLHS_Q" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Learn English Vocabulary Through Songs</p>
-    <p class="vg-creator">English Song Learning Channel</p>
+    <p class="vg-creator">Espresso English</p>
     <span class="vg-duration">⏱ Various · Catchy tunes to memorize common vocabulary</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+for+beginners+podcast+slow+clear+A1+A2+level" data-video-id="pLqipRXDxAo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+for+beginners+podcast+slow+clear+A1+A2+level" data-video-id="v3NMUQNc-ng" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Slow and Clear English Podcast for Beginners</p>
-    <p class="vg-creator">BBC Learning English</p>
+    <p class="vg-creator">English Unleashed: The Podcast</p>
     <span class="vg-duration">⏱ 6 min each · Slow-paced natural English for A1/A2 learners</span>
   </div>
 </a>

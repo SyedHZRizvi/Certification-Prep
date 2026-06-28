@@ -59,22 +59,22 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+storage+section+exam+tips+persistent+volumes" data-video-id="Tl7NnFChkgY" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+storage+section+exam+tips+persistent+volumes" data-video-id="JO_cvTVdytU" target="_blank" rel="noopener">
   <div class="vg-thumb">🎓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">CKA Storage Section — Exam Tips & Common Mistakes</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">CCNADailyTIPS</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+emptyDir+hostPath+volumes+explained" data-video-id="d9GHysrHvPM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+emptyDir+hostPath+volumes+explained" data-video-id="JB1_HFBJZ6Y" target="_blank" rel="noopener">
   <div class="vg-thumb">📦<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">emptyDir & hostPath Volumes Explained with Demo</p>
-    <p class="vg-creator">That DevOps Guy</p>
+    <p class="vg-creator">K21Academy</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
@@ -97,42 +97,42 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+PVC+reclaim+policy+retain+delete+tutorial" data-video-id="2mCEHkByvSg" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+PVC+reclaim+policy+retain+delete+tutorial" data-video-id="Cckcmb3jRC8" target="_blank" rel="noopener">
   <div class="vg-thumb">☸️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">PV Reclaim Policies — Retain vs Delete Deep Dive</p>
-    <p class="vg-creator">Mumshad Mannambeth (Udemy CKA)</p>
+    <p class="vg-creator">CodeLucky</p>
     <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+access+modes+ReadWriteOnce+ReadWriteMany+explained" data-video-id="9dCGLgUVBpE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+access+modes+ReadWriteOnce+ReadWriteMany+explained" data-video-id="pvPk_Sd72Lw" target="_blank" rel="noopener">
   <div class="vg-thumb">🔑<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">PV Access Modes — RWO, ROX, RWX Explained</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">Technical Cloud Knowledge</p>
     <p class="vg-duration">~9 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+volume+expansion+PVC+resize+storageclass" data-video-id="Jg3nLJNNXv8" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+volume+expansion+PVC+resize+storageclass" data-video-id="Dd_MX4gvnOg" target="_blank" rel="noopener">
   <div class="vg-thumb">📈<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Expanding PVCs — Volume Resize with StorageClass</p>
-    <p class="vg-creator">Cloud Native Now</p>
+    <p class="vg-creator">devops-wala</p>
     <p class="vg-duration">~11 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+projected+volumes+secret+configmap+serviceaccount+token" data-video-id="w3PwNnQMbow" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+projected+volumes+secret+configmap+serviceaccount+token" data-video-id="6jQMMRmvNYc" target="_blank" rel="noopener">
   <div class="vg-thumb">🗂️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Projected Volumes — Combine ConfigMap, Secret & SA Token</p>
-    <p class="vg-creator">Techno Tim</p>
+    <p class="vg-creator">Technical Cloud Knowledge</p>
     <p class="vg-duration">~13 min</p>
   </div>
 </a>

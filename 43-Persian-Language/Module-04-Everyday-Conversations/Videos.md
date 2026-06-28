@@ -6,112 +6,112 @@ Real Persian conversations, Iranian culture, and immersive listening practice.
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+shopping+bargaining+bazaar+conversation" data-video-id="fv2cCEMNXiw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+shopping+bargaining+bazaar+conversation" data-video-id="nkvhTmgxLYo" target="_blank">
   <div class="vg-thumb">🛒<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian at the Bazaar — Shopping & Bargaining Dialogues</p>
-    <p class="vg-creator">Learn Persian with Chai and Conversation</p>
+    <p class="vg-creator">Talk Like a Persian</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+restaurant+ordering+food+conversation" data-video-id="Ks5MhWVjFYI" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+restaurant+ordering+food+conversation" data-video-id="OMel85japq8" target="_blank">
   <div class="vg-thumb">🍽️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Ordering Food in Persian — Restaurant Conversations</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">Learn Persian with PersianPod101.com</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+taarof+Iranian+politeness+culture+befarmayid" data-video-id="t2l_Lff_eEo" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+taarof+Iranian+politeness+culture+befarmayid" data-video-id="4oiW67Sszj0" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Taarof — Iranian Politeness & Social Customs</p>
-    <p class="vg-creator">Iranian Culture</p>
+    <p class="vg-creator">Persian Walk</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+introducing+yourself+making+friends+lesson" data-video-id="DmNKhFh4Z_E" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+introducing+yourself+making+friends+lesson" data-video-id="2caPy8L9RSU" target="_blank">
   <div class="vg-thumb">🙋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Meeting People & Making Friends in Persian</p>
-    <p class="vg-creator">Persian with Nadia</p>
+    <p class="vg-creator">Learn Persian with Chai and Conversation</p>
     <p class="vg-duration">~16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+at+the+doctor+medical+vocabulary+conversation" data-video-id="GdKGONKi8Lw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+at+the+doctor+medical+vocabulary+conversation" data-video-id="LZoAi2cIhs0" target="_blank">
   <div class="vg-thumb">🏥<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Medical Vocabulary — At the Doctor & Pharmacy</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">LELB Society</p>
     <p class="vg-duration">~17 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+travel+airport+directions+conversation" data-video-id="y3F02r8Ui8c" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+travel+airport+directions+conversation" data-video-id="P64IfY-enWc" target="_blank">
   <div class="vg-thumb">✈️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Persian Travel Phrases — Airport, Directions & Hotels</p>
-    <p class="vg-creator">Learn Persian Online</p>
+    <p class="vg-creator">Learn Persian with PersianPod101.com</p>
     <p class="vg-duration">~19 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+phone+conversation+dialogue+lesson" data-video-id="XRSBq5LDLAU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+phone+conversation+dialogue+lesson" data-video-id="zymwInk7ESI" target="_blank">
   <div class="vg-thumb">📱<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Persian Phone Conversations — What to Say</p>
-    <p class="vg-creator">Learn Persian with Chai and Conversation</p>
+    <p class="vg-creator">Learn Persian with PersianPod101.com</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Tehran+Grand+Bazaar+travel+vlog+Iran" data-video-id="SWvReN1gY8E" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Tehran+Grand+Bazaar+travel+vlog+Iran" data-video-id="2LGD5BCYZcA" target="_blank">
   <div class="vg-thumb">🏛️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Tehran Grand Bazaar — Immersive Travel Vlog</p>
-    <p class="vg-creator">Iran Travel</p>
+    <p class="vg-creator">Emma Travels</p>
     <p class="vg-duration">~25 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+songs+music+beginners+learn+listening" data-video-id="CfMUvMWEbHw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+songs+music+beginners+learn+listening" data-video-id="JckH1S30O80" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Learn Persian Through Music — Songs for Language Learners</p>
-    <p class="vg-creator">Persian Music Learning</p>
+    <p class="vg-creator">Persian Learning</p>
     <p class="vg-duration">~28 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+hospitality+culture+home+visit+customs" data-video-id="6pCJBMWVpso" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+hospitality+culture+home+visit+customs" data-video-id="mBIcAf7sjAo" target="_blank">
   <div class="vg-thumb">🏡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Iranian Home Hospitality — Customs & Culture</p>
-    <p class="vg-creator">Culture Insider</p>
+    <p class="vg-creator">Learn Persian with Chai and Conversation</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+slang+colloquial+expressions+everyday+speech" data-video-id="uBgL6MdTjsw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+slang+colloquial+expressions+everyday+speech" data-video-id="cMy0NGVJJWs" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Persian Slang & Colloquial Expressions Used Daily</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">My Persian Corner</p>
     <p class="vg-duration">~21 min</p>
   </div>
 </a>

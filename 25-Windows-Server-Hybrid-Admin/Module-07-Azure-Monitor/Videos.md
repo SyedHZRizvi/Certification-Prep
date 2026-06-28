@@ -66,21 +66,21 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=VM+Insights+Azure+Monitor+dependency+map" data-video-id="mRTot_8TNHA" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=VM+Insights+Azure+Monitor+dependency+map" data-video-id="CWzwtq-XC1A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">VM Insights & Dependency Map</p>
-      <p class="vg-creator">Microsoft Mechanics</p>
+      <p class="vg-creator">Cyber Cloud Chef</p>
       <span class="vg-duration">⏱ 14 min · Process flows</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Workbooks+tutorial+KQL+dashboard" data-video-id="6bVZCQLfg7M" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Workbooks+tutorial+KQL+dashboard" data-video-id="VGhZiyuQb2U" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Azure Workbooks, Build Your Own</p>
-      <p class="vg-creator">Inside Cloud and Security</p>
+      <p class="vg-creator">VVHIT Solutions</p>
       <span class="vg-duration">⏱ 18 min · Interactive dashboards</span>
     </div>
   </a>

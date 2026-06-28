@@ -23,12 +23,12 @@ Start here. These videos cover the core concepts that appear on almost every CKA
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+pod+lifecycle+phases+CKA" data-video-id="lFb_WA-4zTM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+pod+lifecycle+phases+CKA" data-video-id="wlYESb124xM" target="_blank" rel="noopener">
   <div class="vg-thumb">🚀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Kubernetes Pod Lifecycle — Phases, restartPolicy & Container States</p>
-    <p class="vg-creator">TechWorld with Nana</p>
+    <p class="vg-creator">Microsoft Developer</p>
     <span class="vg-duration">~18 min</span>
   </div>
 </a>
@@ -43,22 +43,22 @@ Start here. These videos cover the core concepts that appear on almost every CKA
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+taints+tolerations+CKA+exam+tutorial" data-video-id="mo8ZaJFJjSU" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+taints+tolerations+CKA+exam+tutorial" data-video-id="-g0hUPRBBXA" target="_blank" rel="noopener">
   <div class="vg-thumb">⚠️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Taints & Tolerations Explained — NoSchedule, NoExecute, PreferNoSchedule</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">Kubesimplify</p>
     <span class="vg-duration">~14 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+node+affinity+nodeSelector+scheduling+CKA" data-video-id="I3TVjLFQAT8" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+node+affinity+nodeSelector+scheduling+CKA" data-video-id="A9phy8irRXY" target="_blank" rel="noopener">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Node Affinity vs nodeSelector — Scheduling Pods to Specific Nodes</p>
-    <p class="vg-creator">Mumshad Mannambeth</p>
+    <p class="vg-creator">Infra with Serge</p>
     <span class="vg-duration">~17 min</span>
   </div>
 </a>
@@ -91,7 +91,7 @@ Solidify your understanding of workload controllers and advanced scheduling patt
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+daemonset+tutorial+log+collection+monitoring+CKA" data-video-id="cdkHFDdBsXE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+daemonset+tutorial+log+collection+monitoring+CKA" data-video-id="RGSeeN-o-kQ" target="_blank" rel="noopener">
   <div class="vg-thumb">🔍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -101,32 +101,32 @@ Solidify your understanding of workload controllers and advanced scheduling patt
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+jobs+cronjobs+tutorial+batch+CKA+exam" data-video-id="GGFKhqBzuFo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+jobs+cronjobs+tutorial+batch+CKA+exam" data-video-id="jWD1B5Ynh_8" target="_blank" rel="noopener">
   <div class="vg-thumb">⏰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Kubernetes Jobs & CronJobs — Batch Workloads & Cron Syntax</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">TechOps Tutorials</p>
     <span class="vg-duration">~16 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+scheduler+how+it+works+scheduling+algorithm+explained" data-video-id="rDCWxkvPlBs" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+scheduler+how+it+works+scheduling+algorithm+explained" data-video-id="W4V14say6hA" target="_blank" rel="noopener">
   <div class="vg-thumb">🧩<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">How the Kubernetes Scheduler Works — Filtering, Scoring & Binding</p>
-    <p class="vg-creator">Learnk8s</p>
+    <p class="vg-creator">Linuxandk8s</p>
     <span class="vg-duration">~21 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+replicaset+vs+deployment+difference+CKA" data-video-id="6D7iFkESmRo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+replicaset+vs+deployment+difference+CKA" data-video-id="oe2zjRb51F0" target="_blank" rel="noopener">
   <div class="vg-thumb">⚙️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">ReplicaSet vs Deployment — What's the Difference and When to Use Each</p>
-    <p class="vg-creator">Abhishek Veeramalla</p>
+    <p class="vg-creator">Tech Tutorials with Piyush</p>
     <span class="vg-duration">~14 min</span>
   </div>
 </a>
@@ -139,32 +139,32 @@ Deepen your understanding with these advanced topics and hands-on walkthroughs.
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+custom+scheduler+multiple+schedulers+tutorial" data-video-id="tgFRW8FJGZE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+custom+scheduler+multiple+schedulers+tutorial" data-video-id="avORKrcyctM" target="_blank" rel="noopener">
   <div class="vg-thumb">🔧<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Running Multiple Schedulers in Kubernetes — Custom Scheduler Deployment</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">CNCF [Cloud Native Computing Foundation]</p>
     <span class="vg-duration">~18 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+pod+disruption+budget+PDB+workloads+scheduling" data-video-id="3qgSrAFmGPU" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+pod+disruption+budget+PDB+workloads+scheduling" data-video-id="09Wkw9uhPak" target="_blank" rel="noopener">
   <div class="vg-thumb">🛡️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Pod Disruption Budgets — Protecting Availability During Node Drains</p>
-    <p class="vg-creator">That DevOps Guy</p>
+    <p class="vg-creator">Just me and Opensource</p>
     <span class="vg-duration">~12 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+OOMKilled+CPU+throttling+resource+troubleshooting" data-video-id="xfDQHBzgwoQ" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+OOMKilled+CPU+throttling+resource+troubleshooting" data-video-id="pZFWKkrgaKI" target="_blank" rel="noopener">
   <div class="vg-thumb">🔥<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Debugging OOMKilled & CPU Throttling — Understanding Resource Limits in Practice</p>
-    <p class="vg-creator">Sysdig</p>
+    <p class="vg-creator">ContainIQ</p>
     <span class="vg-duration">~23 min</span>
   </div>
 </a>

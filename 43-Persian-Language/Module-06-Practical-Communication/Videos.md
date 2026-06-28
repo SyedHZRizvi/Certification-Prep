@@ -6,112 +6,112 @@ Strengthen your real-world Persian communication with these curated video resour
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+business+professional+vocabulary+office" data-video-id="jXsBGLhXLpU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+business+professional+vocabulary+office" data-video-id="8OUX_hxGI2Q" target="_blank">
   <div class="vg-thumb">💼<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Business & Office Vocabulary</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">Learn Persian (Farsi) with Asal</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+business+culture+etiquette+taArof+guide" data-video-id="WpBzP4YXQKU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+business+culture+etiquette+taArof+guide" data-video-id="ewMGjrWukmA" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Iranian Business Culture & Ta'arof Explained</p>
-    <p class="vg-creator">Culture and Business</p>
+    <p class="vg-creator">Kelley International</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+health+medical+vocabulary+doctor" data-video-id="pNQQ5cSBJqE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+health+medical+vocabulary+doctor" data-video-id="mxca3dj5aLI" target="_blank">
   <div class="vg-thumb">🏥<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Health & Medical Vocabulary</p>
-    <p class="vg-creator">Learn Persian with Chai and Conversation</p>
+    <p class="vg-creator">Persian Learning</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+formal+vs+colloquial+spoken+written" data-video-id="8sMt_CDxFLo" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+formal+vs+colloquial+spoken+written" data-video-id="FYnPNdo7js0" target="_blank">
   <div class="vg-thumb">📝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Formal vs Colloquial Persian — Key Differences</p>
-    <p class="vg-creator">Persian with Nadia</p>
+    <p class="vg-creator">Farsi with Kimiya</p>
     <p class="vg-duration">~25 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+proverbs+zarb-al-masal+top+20" data-video-id="D0nRN4EXMrM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+proverbs+zarb-al-masal+top+20" data-video-id="OVWl8CKx7w0" target="_blank">
   <div class="vg-thumb">📜<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Top Persian Proverbs (ضرب‌المثل) with Meaning</p>
-    <p class="vg-creator">Persian Culture</p>
+    <p class="vg-creator">Wisdom of The Ages</p>
     <p class="vg-duration">~19 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+opinion+expressing+agreeing+disagreeing" data-video-id="sTMJBMCKLhk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+opinion+expressing+agreeing+disagreeing" data-video-id="wVF7QEgcZjc" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Expressing Opinions & Agreeing in Persian</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">LELB Society</p>
     <p class="vg-duration">~16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+email+letter+writing+formal" data-video-id="wc0Pwe5ZRHE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+email+letter+writing+formal" data-video-id="GRZFkvFXCdA" target="_blank">
   <div class="vg-thumb">✉️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Writing Formal Persian Emails & Letters</p>
-    <p class="vg-creator">Learn Persian Online</p>
+    <p class="vg-creator">parsi dari</p>
     <p class="vg-duration">~21 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+social+media+Persian+internet+slang" data-video-id="5ZpHQqS4mQY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+social+media+Persian+internet+slang" data-video-id="0-DBa1bjD8s" target="_blank">
   <div class="vg-thumb">📱<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Persian Internet Slang & Social Media Language</p>
-    <p class="vg-creator">Persian with Nadia</p>
+    <p class="vg-creator">Learn Persian (Farsi) with Asal</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+polite+refusal+complaint+phrases" data-video-id="LBgK2G3BCGA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+polite+refusal+complaint+phrases" data-video-id="49qehs1p_dU" target="_blank">
   <div class="vg-thumb">🙏<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Polite Refusals & Complaints in Persian</p>
-    <p class="vg-creator">Learn Persian with Chai and Conversation</p>
+    <p class="vg-creator">Talk Like a Persian</p>
     <p class="vg-duration">~17 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+meeting+workplace+dialogue+intermediate" data-video-id="i3n16AMOBBY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+meeting+workplace+dialogue+intermediate" data-video-id="gVTMOlCksFk" target="_blank">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Persian Workplace Dialogues — Full Meeting Simulation</p>
-    <p class="vg-creator">Persian Lessons</p>
+    <p class="vg-creator">My Persian Corner</p>
     <p class="vg-duration">~28 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iran+business+do+dont+culture+tips+foreigners" data-video-id="qLqB8RmRwwM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iran+business+do+dont+culture+tips+foreigners" data-video-id="6OuDSkQ1RQU" target="_blank">
   <div class="vg-thumb">🇮🇷<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Doing Business in Iran — Do's and Don'ts</p>
-    <p class="vg-creator">Cross-Cultural Business</p>
+    <p class="vg-creator">Global Trade Review</p>
     <p class="vg-duration">~24 min</p>
   </div>
 </a>

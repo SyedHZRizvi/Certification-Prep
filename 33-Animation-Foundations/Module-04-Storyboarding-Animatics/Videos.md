@@ -20,30 +20,30 @@
 ## ⭐ Essential Watching (~65 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=storyboarding+tutorial+animation+beginner+shot+types" data-video-id="REdgKM0HLSM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=storyboarding+tutorial+animation+beginner+shot+types" data-video-id="gD2gEZWCNmo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Storyboarding Fundamentals, Beginner to Intermediate</p>
-      <p class="vg-creator">Bloop Animation / Film Riot</p>
+      <p class="vg-creator">Alanhuynhworks</p>
       <span class="vg-duration">⏱ 25 min · Shot types, format, arrow conventions</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="9ZEu_I-ido4" href="https://www.youtube.com/results?search_query=animatic+tutorial+how+to+make+story+reel+animation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-I05ICuSc9w" href="https://www.youtube.com/results?search_query=animatic+tutorial+how+to+make+story+reel+animation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">How to Make an Animatic, Story Reel Basics</p>
-      <p class="vg-creator">Toniko Pantoja / School of Motion</p>
+      <p class="vg-creator">TipTut</p>
       <span class="vg-duration">⏱ 20 min · From boards to timed video</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+storyboarding+process+Finding+Nemo+story+reel" data-video-id="YkPXGzv3-yg" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+storyboarding+process+Finding+Nemo+story+reel" data-video-id="GaQjtGblqxQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Pixar's Storyboarding Process, Story Reels Explained</p>
-      <p class="vg-creator">Pixar / Art of Story</p>
+      <p class="vg-creator">Write for Animation by Pietro Schito</p>
       <span class="vg-duration">⏱ 18 min · How Pixar uses animatics to fix problems cheaply</span>
     </div>
   </a>
@@ -52,30 +52,30 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=thumbnailing+composition+storyboard+technique+tips" data-video-id="O8i7OKbWmRM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=thumbnailing+composition+storyboard+technique+tips" data-video-id="YXPziuT8BWE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Thumbnailing Compositions, Before the Full Board</p>
-      <p class="vg-creator">NoBullshit Art School / D&D is for Nerds</p>
+      <p class="vg-creator">Paul Angeli</p>
       <span class="vg-duration">⏱ 15 min · Why your first idea is usually wrong</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Toon+Boom+Storyboard+Pro+tutorial+beginner+2024" data-video-id="I2qDzKJ7lF8" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Toon+Boom+Storyboard+Pro+tutorial+beginner+2024" data-video-id="uW4j5U3NbC8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Toon Boom Storyboard Pro, Getting Started</p>
-      <p class="vg-creator">Toon Boom Animation</p>
+      <p class="vg-creator">John McCaffrey</p>
       <span class="vg-duration">⏱ 20 min · Industry tool introduction</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="9ZEu_I-ido4" href="https://www.youtube.com/results?search_query=how+to+pitch+storyboards+director+animation+professional" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="8oLqq8RDt0E" href="https://www.youtube.com/results?search_query=how+to+pitch+storyboards+director+animation+professional" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">How to Pitch Storyboards to a Director</p>
-      <p class="vg-creator">Animation Career Review / Chris Oatley</p>
+      <p class="vg-creator">Jim Mortensen</p>
       <span class="vg-duration">⏱ 15 min · Professional board pitch technique</span>
     </div>
   </a>
@@ -84,21 +84,21 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=continuity+editing+film+animation+180+degree+rule+practical" data-video-id="gHy1aFNsDVo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=continuity+editing+film+animation+180+degree+rule+practical" data-video-id="33eWqDZ6sRc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Continuity Editing in Animation, Spatial Logic</p>
-      <p class="vg-creator">Film Riot / StudioBinder</p>
+      <p class="vg-creator">Film & Media Studies</p>
       <span class="vg-duration">⏱ 20 min · Floor plans, 180-degree rule applied to boarding</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=shot+transitions+film+dissolve+match+cut+examples+analysis" data-video-id="F3OBwwMkLkk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=shot+transitions+film+dissolve+match+cut+examples+analysis" data-video-id="TKXBAaQB03U" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Film Transitions, Cut, Dissolve, Wipe, Match Cut</p>
-      <p class="vg-creator">Now You See It / Every Frame a Painting</p>
+      <p class="vg-creator">StudioBinder</p>
       <span class="vg-duration">⏱ 15 min · When to use each transition type</span>
     </div>
   </a>

@@ -6,122 +6,122 @@ Practice real Arabic conversations for business, travel, hospitality, shopping, 
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Business+Meeting+Conversation+Formal+Phrases" data-video-id="5P_D3fLOuF0" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Business+Meeting+Conversation+Formal+Phrases" data-video-id="sgzVSgi8NQk" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Business Meeting Conversation — Formal Phrases</p>
-    <p class="vg-creator">ArabicPod101</p>
+    <p class="vg-creator">Uncle Jerry's Language School</p>
     <p class="vg-duration">18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Ordering+Food+Drinks+in+Arabic+Cafe+Restaurant" data-video-id="R_KDdIgQhg4" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Ordering+Food+Drinks+in+Arabic+Cafe+Restaurant" data-video-id="vIVh1y7B7Xk" target="_blank">
   <div class="vg-thumb">☕<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Ordering Food & Drinks in Arabic — Café & Restaurant</p>
-    <p class="vg-creator">Learn Arabic with Maha</p>
+    <p class="vg-creator">My Arabic Journey With Mohammed</p>
     <p class="vg-duration">15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Shopping+in+Arabic+Prices+Bargaining+Souks" data-video-id="2CnjKnHlNDk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Shopping+in+Arabic+Prices+Bargaining+Souks" data-video-id="d94-P61jiWA" target="_blank">
   <div class="vg-thumb">🏪<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Shopping in Arabic — Prices, Bargaining, Souks</p>
-    <p class="vg-creator">Speak Arabic For Free</p>
+    <p class="vg-creator">Arabic blooms</p>
     <p class="vg-duration">20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=At+the+Hotel+Arabic+Phrases+for+Travelers" data-video-id="H4UNpfP8OZE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=At+the+Hotel+Arabic+Phrases+for+Travelers" data-video-id="ZZFDe7_EXBg" target="_blank">
   <div class="vg-thumb">🏨<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">At the Hotel — Arabic Phrases for Travelers</p>
-    <p class="vg-creator">ArabicPod101</p>
+    <p class="vg-creator">ARABIC LANGUAGE ACADEMY</p>
     <p class="vg-duration">14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Medical+Arabic+Doctor+Visit+Symptoms+Body+Parts" data-video-id="Tn2hGO6duvw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Medical+Arabic+Doctor+Visit+Symptoms+Body+Parts" data-video-id="U9kwszmSRho" target="_blank">
   <div class="vg-thumb">🩺<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Medical Arabic — Doctor Visit, Symptoms & Body Parts</p>
-    <p class="vg-creator">Arabic with Sam</p>
+    <p class="vg-creator">eArabicLearning</p>
     <p class="vg-duration">16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Islamic+Arabic+Phrases+Mosque+Prayer+Religious+Expressions" data-video-id="3eBNGljMiJw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Islamic+Arabic+Phrases+Mosque+Prayer+Religious+Expressions" data-video-id="sYRu9ZkEC4w" target="_blank">
   <div class="vg-thumb">🕌<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Islamic Arabic Phrases — Mosque, Prayer & Religious Expressions</p>
-    <p class="vg-creator">Quran Arabic</p>
+    <p class="vg-creator">Islamic Education Corner</p>
     <p class="vg-duration">22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Dialects+Gulf+vs+Egyptian+vs+Levantine+Differences" data-video-id="M7OHJSsI1EY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Dialects+Gulf+vs+Egyptian+vs+Levantine+Differences" data-video-id="nhDySCWLgG4" target="_blank">
   <div class="vg-thumb">🌍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Arabic Dialects — Gulf vs Egyptian vs Levantine Differences</p>
-    <p class="vg-creator">Spoken Arabic Institute</p>
+    <p class="vg-creator">Easy Arabic</p>
     <p class="vg-duration">25 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arab+Hospitality+Culture+Meeting+Families+Etiquette" data-video-id="XSYLbcHOVQs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arab+Hospitality+Culture+Meeting+Families+Etiquette" data-video-id="qW_EQWy2S9c" target="_blank">
   <div class="vg-thumb">👨‍👩‍👧<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Arab Hospitality Culture — Meeting Families & Etiquette</p>
-    <p class="vg-creator">Arabic Culture Channel</p>
+    <p class="vg-creator">WayfaringWithMansoor</p>
     <p class="vg-duration">18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Airport+Arabic+Check-In+Immigration+Travel+Phrases" data-video-id="7WUwSG4CXLQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Airport+Arabic+Check-In+Immigration+Travel+Phrases" data-video-id="FzTQXS5A_4E" target="_blank">
   <div class="vg-thumb">✈️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Airport Arabic — Check-In, Immigration & Travel Phrases</p>
-    <p class="vg-creator">ArabicPod101</p>
+    <p class="vg-creator">eArabicLearning</p>
     <p class="vg-duration">12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Learn+Arabic+Through+Music+Popular+Arab+Songs+Explained" data-video-id="m4OIBc6_1Ac" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Learn+Arabic+Through+Music+Popular+Arab+Songs+Explained" data-video-id="rgw2j-InW3c" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Learn Arabic Through Music — Popular Arab Songs Explained</p>
-    <p class="vg-creator">Arabic Music Learning</p>
+    <p class="vg-creator">Arabic with Toqa</p>
     <p class="vg-duration">30 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Al+Jazeera+Arabic+for+Learners+Slow+News+Arabic" data-video-id="nW0hSbNNMro" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Al+Jazeera+Arabic+for+Learners+Slow+News+Arabic" data-video-id="W0G2OwPel-E" target="_blank">
   <div class="vg-thumb">📰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Al Jazeera Arabic for Learners — Slow News Arabic</p>
-    <p class="vg-creator">Al Jazeera Learning Arabic</p>
+    <p class="vg-creator">Talk Arabic Today</p>
     <p class="vg-duration">20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Gulf+Arabic+Phrases+Useful+Expressions+UAE+Saudi" data-video-id="SjMBEH7aPeU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Gulf+Arabic+Phrases+Useful+Expressions+UAE+Saudi" data-video-id="QuR5KGyhCcg" target="_blank">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Gulf Arabic Phrases — Useful Expressions for UAE & Saudi</p>
-    <p class="vg-creator">Gulf Arabic Institute</p>
+    <p class="vg-creator">Learn Arabic Language</p>
     <p class="vg-duration">17 min</p>
   </div>
 </a>

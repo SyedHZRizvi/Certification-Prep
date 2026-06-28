@@ -6,77 +6,77 @@ Master Persian advanced grammar — perfect tenses, conditionals, subjunctive, p
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+present+perfect+tense+rafte+am" data-video-id="MH4DF_eOVG0" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+present+perfect+tense+rafte+am" data-video-id="j4c9039CBow" target="_blank">
   <div class="vg-thumb">⏱️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Present Perfect Tense — رفته‌ام & Full Conjugation</p>
-    <p class="vg-creator">Learn Persian with Chai and Conversation</p>
+    <p class="vg-creator">Farsi Wizard</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+past+perfect+tense+rafte+budam" data-video-id="7nJRoM-5r3Y" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+past+perfect+tense+rafte+budam" data-video-id="LfFtaHYACnA" target="_blank">
   <div class="vg-thumb">🕰️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Past Perfect — رفته بودم (Had Gone)</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">Farsi Wizard</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+conditional+sentences+agar+if" data-video-id="oFbz8HKWK54" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+conditional+sentences+agar+if" data-video-id="URGAenNdRC8" target="_blank">
   <div class="vg-thumb">🔀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Conditional Sentences — اگر (If) Structures</p>
-    <p class="vg-creator">Persian Grammar Lessons</p>
+    <p class="vg-creator">Learn Persian (Farsi) with Asal</p>
     <p class="vg-duration">~25 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+subjunctive+mood+bayad+shayad" data-video-id="sVzRKwJf3JY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+subjunctive+mood+bayad+shayad" data-video-id="ewqnxTArsbk" target="_blank">
   <div class="vg-thumb">🎭<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Subjunctive Mood — باید, شاید & Triggers</p>
-    <p class="vg-creator">Learn Persian Online</p>
+    <p class="vg-creator">Reza Nazari</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+passive+voice+shod+shode" data-video-id="H4iYVX0Zixw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+passive+voice+shod+shode" data-video-id="h9TiWGDylMo" target="_blank">
   <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Passive Voice — شد vs شده Explained</p>
-    <p class="vg-creator">Persian with Nadia</p>
+    <p class="vg-creator">LELB Society</p>
     <p class="vg-duration">~19 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+modal+verbs+bayad+mitavanam+can+must" data-video-id="IiBrMhNEyts" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+modal+verbs+bayad+mitavanam+can+must" data-video-id="YowyuH06z-o" target="_blank">
   <div class="vg-thumb">⚙️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Persian Modal Verbs — می‌توانم, باید, شاید</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">Persian Learning</p>
     <p class="vg-duration">~17 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+relative+clauses+ke+complex+sentences" data-video-id="Kx8v7Vgxb0s" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+relative+clauses+ke+complex+sentences" data-video-id="aTK4vgAeuvc" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Persian Relative Clauses with که — Advanced Sentences</p>
-    <p class="vg-creator">Learn Persian with Chai and Conversation</p>
+    <p class="vg-creator">Reza Nazari</p>
     <p class="vg-duration">~21 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+spoken+vs+written+differences+B2" data-video-id="4LMuGJvRAd0" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+spoken+vs+written+differences+B2" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,22 +86,22 @@ Master Persian advanced grammar — perfect tenses, conditionals, subjunctive, p
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+classical+poetry+grammar+Hafiz+Rumi+analysis" data-video-id="9mAl_W-PqAs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+classical+poetry+grammar+Hafiz+Rumi+analysis" data-video-id="S2adTQGzbBg" target="_blank">
   <div class="vg-thumb">🌹<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Grammar in Persian Classical Poetry — Hafiz & Rumi</p>
-    <p class="vg-creator">Persian Literature Channel</p>
+    <p class="vg-creator">Farsi Wizard</p>
     <p class="vg-duration">~30 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+advanced+grammar+B2+complete+overview" data-video-id="XsLhPcwX0A0" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+advanced+grammar+B2+complete+overview" data-video-id="Xc6qQaU299w" target="_blank">
   <div class="vg-thumb">🎓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Persian Advanced Grammar — Complete B2 Overview</p>
-    <p class="vg-creator">Persian Online Academy</p>
+    <p class="vg-creator">PersianHow</p>
     <p class="vg-duration">~35 min</p>
   </div>
 </a>

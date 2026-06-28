@@ -134,12 +134,12 @@
       <span class="vg-duration">⏱ 20m · The position scheme</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+prompt+caching+explained" data-video-id="TdLfmGbfk7o" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+prompt+caching+explained" data-video-id="_0uiiJfsBPI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Anthropic prompt caching, how it works</p>
-      <p class="vg-creator">Anthropic / DevRel</p>
+      <p class="vg-creator">Mark Kashef</p>
       <span class="vg-duration">⏱ 15m · KV-cache reuse</span>
     </div>
   </a>

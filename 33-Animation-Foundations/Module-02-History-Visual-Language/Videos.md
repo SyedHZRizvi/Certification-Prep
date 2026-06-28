@@ -22,39 +22,39 @@
 ## ⭐ Essential Watching (~70 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=history+of+animation+Disney+Pixar+timeline+documentary" data-video-id="REdgKM0HLSM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=history+of+animation+Disney+Pixar+timeline+documentary" data-video-id="m4gBaZcBHkE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">The Complete History of Animation, Documentary</p>
-      <p class="vg-creator">YouTube Edu / Documentary Central</p>
+      <p class="vg-creator">KiwiCo</p>
       <span class="vg-duration">⏱ 25 min · Muybridge to Pixar in one sitting</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=cinematography+shot+types+explained+animation+camera" data-video-id="LIVgBHyTWhQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=cinematography+shot+types+explained+animation+camera" data-video-id="AyML8xuKfoc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Every Camera Shot Type Explained</p>
-      <p class="vg-creator">StudioBinder / Film Riot</p>
+      <p class="vg-creator">StudioBinder</p>
       <span class="vg-duration">⏱ 18 min · Shot types with animation examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=180+degree+rule+explained+film+animation" data-video-id="gHy1aFNsDVo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=180+degree+rule+explained+film+animation" data-video-id="iW0bKUfvH2c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">The 180-Degree Rule, Visual Grammar of Cinema</p>
-      <p class="vg-creator">Now You See It / Every Frame a Painting</p>
+      <p class="vg-creator">StudioBinder</p>
       <span class="vg-duration">⏱ 12 min · Why crossing the line is disorienting</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hayao+Miyazaki+Studio+Ghibli+animation+style+analysis" data-video-id="etAIpkdhU9Q" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hayao+Miyazaki+Studio+Ghibli+animation+style+analysis" data-video-id="iqJA5ETKNDo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">The Art of Studio Ghibli, Miyazaki's Visual Language</p>
-      <p class="vg-creator">Thomas Flight / Like Stories of Old</p>
+      <p class="vg-creator">Fandor</p>
       <span class="vg-duration">⏱ 15 min · How Ghibli films stage emotion</span>
     </div>
   </a>
@@ -72,30 +72,30 @@
       <span class="vg-duration">⏱ 12 min · Why dead-center framing kills energy</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Disney+golden+age+animation+history+Snow+White+Bambi" data-video-id="pQHKNbOnS70" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Disney+golden+age+animation+history+Snow+White+Bambi" data-video-id="MpTrHhBRt-g" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Disney's Golden Age, The Films That Built an Industry</p>
-      <p class="vg-creator">History of Animation Channel</p>
+      <p class="vg-creator">Modern Mouse</p>
       <span class="vg-duration">⏱ 20 min · Snow White through Bambi in historical context</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Fleischer+Studios+Betty+Boop+rubber+hose+animation+history" data-video-id="g4tFmkGpyHg" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Fleischer+Studios+Betty+Boop+rubber+hose+animation+history" data-video-id="e0uU6S8nqGs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Fleischer Studios, The Other Golden Age</p>
-      <p class="vg-creator">Saberspark / Cartoon Universe</p>
+      <p class="vg-creator">Alla Prima</p>
       <span class="vg-duration">⏱ 20 min · How Betty Boop and Popeye built a rival aesthetic</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=screen+direction+continuity+editing+animation+visual+grammar" data-video-id="F3OBwwMkLkk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=screen+direction+continuity+editing+animation+visual+grammar" data-video-id="9XOn5uxdSJc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Screen Direction & Continuity Editing</p>
-      <p class="vg-creator">Filmmaker IQ / D4Darious</p>
+      <p class="vg-creator">gvfstudio</p>
       <span class="vg-duration">⏱ 14 min · Screen direction rules and when to break them</span>
     </div>
   </a>
@@ -104,39 +104,39 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+Toy+Story+1995+CGI+history+making+of" data-video-id="YkPXGzv3-yg" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+Toy+Story+1995+CGI+history+making+of" data-video-id="gmwFOKDBCYU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">How Toy Story Changed Animation Forever</p>
-      <p class="vg-creator">Corridor Crew / Nerdstalgic</p>
+      <p class="vg-creator">Postpace</p>
       <span class="vg-duration">⏱ 20 min · The 1995 CGI revolution in context</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Eadweard+Muybridge+motion+photography+animation+history" data-video-id="5lkpDfmXSgU" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Eadweard+Muybridge+motion+photography+animation+history" data-video-id="6XGEq37Dnso" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Eadweard Muybridge, The First Motion Studies</p>
-      <p class="vg-creator">Smarter Every Day / Vox</p>
+      <p class="vg-creator">Cantor Arts Center</p>
       <span class="vg-duration">⏱ 15 min · The experiment that started animation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Arcane+League+of+Legends+animation+style+breakdown+2021" data-video-id="LKrP1D8IKQE" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Arcane+League+of+Legends+animation+style+breakdown+2021" data-video-id="3CFl1FRfrQM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Arcane, How Riot Games Changed Animation</p>
-      <p class="vg-creator">Corridor Crew / ArtStation</p>
+      <p class="vg-creator">The Canipa Effect</p>
       <span class="vg-duration">⏱ 18 min · Three-style fusion and its visual language</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anime+limited+animation+history+style+Japan+Osamu+Tezuka" data-video-id="0bFNBAbfwR8" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=anime+limited+animation+history+style+Japan+Osamu+Tezuka" data-video-id="Uo9GREXbMk8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Why Anime Looks Different, Limited Animation History</p>
-      <p class="vg-creator">Canipa Effect / Pause and Select</p>
+      <p class="vg-creator">Drew Malou</p>
       <span class="vg-duration">⏱ 22 min · Japanese animation aesthetic origins</span>
     </div>
   </a>

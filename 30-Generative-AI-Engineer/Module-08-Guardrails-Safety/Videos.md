@@ -21,39 +21,39 @@
 ## ⭐ Essential
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=simon+willison+prompt+injection+talk" data-video-id="mIBSqKNLTnk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=simon+willison+prompt+injection+talk" data-video-id="tWp77I-L2KY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Prompt Injection, Simon Willison's talk</p>
-      <p class="vg-creator">Simon Willison</p>
+      <p class="vg-creator">RedMonk</p>
       <span class="vg-duration">⏱ 40m · The clearest explanation in existence</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=nemo+guardrails+nvidia+tutorial" data-video-id="ZEG4i4w-toI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=nemo+guardrails+nvidia+tutorial" data-video-id="SwqusllMCnE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">NeMo Guardrails, full tutorial</p>
-      <p class="vg-creator">NVIDIA</p>
+      <p class="vg-creator">James Briggs</p>
       <span class="vg-duration">⏱ 1h · Colang flows + integrations</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=guardrails+ai+open+source+validators" data-video-id="pn7K4-LL1IA" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=guardrails+ai+open+source+validators" data-video-id="ireCH411CPY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Guardrails AI, open-source validators</p>
-      <p class="vg-creator">Guardrails AI</p>
+      <p class="vg-creator">GitHub</p>
       <span class="vg-duration">⏱ 35m · Hub + custom validators</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=owasp+llm+top+10+walkthrough" data-video-id="jVABb2BUHFE" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=owasp+llm+top+10+walkthrough" data-video-id="cYuesqIKf9A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">OWASP Top 10 for LLMs, walkthrough</p>
-      <p class="vg-creator">OWASP / community</p>
+      <p class="vg-creator">IBM Technology</p>
       <span class="vg-duration">⏱ 40m · The security baseline</span>
     </div>
   </a>
@@ -62,39 +62,39 @@
 ## 📚 Recommended
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=microsoft+presidio+pii+detection+tutorial" data-video-id="cRFk8LbXQcg" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=microsoft+presidio+pii+detection+tutorial" data-video-id="4GuK9sPUvus" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Presidio PII detection tutorial</p>
-      <p class="vg-creator">Microsoft</p>
+      <p class="vg-creator">M&M Tech</p>
       <span class="vg-duration">⏱ 30m · Recognizers + anonymizers</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=llama+guard+meta+safety+classifier" data-video-id="P4qygUBjQgk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=llama+guard+meta+safety+classifier" data-video-id="IvjLXGR7-vM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Llama Guard, safety classifier</p>
-      <p class="vg-creator">Meta AI</p>
+      <p class="vg-creator">AI at Meta</p>
       <span class="vg-duration">⏱ 25m · Open-weight guard model</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+constitutional+ai+harmlessness" data-video-id="v9spKtWFTOI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+constitutional+ai+harmlessness" data-video-id="nNHBb_2hMWI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Constitutional AI, Anthropic's approach</p>
-      <p class="vg-creator">Anthropic / paper review</p>
+      <p class="vg-creator">AssemblyAI</p>
       <span class="vg-duration">⏱ 35m · The training-time guardrail</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=many+shot+jailbreak+anthropic+paper" data-video-id="Qb2p_jjRx6k" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=many+shot+jailbreak+anthropic+paper" data-video-id="VLZKJAyds0o" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Many-shot jailbreaks, Anthropic research</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">Fahd Mirza</p>
       <span class="vg-duration">⏱ 20m · Long-context attack pattern</span>
     </div>
   </a>
@@ -103,39 +103,39 @@
 ## 🍿 Optional
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=air+canada+chatbot+lawsuit+lessons" data-video-id="l9pSPMoxDJk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=air+canada+chatbot+lawsuit+lessons" data-video-id="Z7LhXBVvkPg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Air Canada chatbot, the legal precedent</p>
-      <p class="vg-creator">analysis videos</p>
+      <p class="vg-creator">Lawful Masses with Leonard French</p>
       <span class="vg-duration">⏱ 15m · The case in detail</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=detoxify+open+source+toxic+content" data-video-id="lnyIh51bpxk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=detoxify+open+source+toxic+content" data-video-id="W6LOJjHiCWg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Detoxify, open-source toxicity detection</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">Google Cloud Events</p>
       <span class="vg-duration">⏱ 20m · Quick integration</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=universal+adversarial+suffix+llm+attack" data-video-id="YVbpiPyqhAU" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=universal+adversarial+suffix+llm+attack" data-video-id="l080-kclS-A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Universal adversarial suffixes (Zou et al.)</p>
-      <p class="vg-creator">paper review</p>
+      <p class="vg-creator">AI Papers Academy</p>
       <span class="vg-duration">⏱ 25m · Adversarial ML for LLMs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=outlines+structured+output+llm+grammar" data-video-id="nIRbN52PA0c" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=outlines+structured+output+llm+grammar" data-video-id="6YxF8P3HFa8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Outlines + grammars, structured output as guardrail</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">Zilliz</p>
       <span class="vg-duration">⏱ 25m · Schema-constrained generation</span>
     </div>
   </a>

@@ -20,12 +20,12 @@
 ## ⭐ Essential Watching (~60 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+file+management+naming+conventions+pipeline+tips" data-video-id="pQHKNbOnS70" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+file+management+naming+conventions+pipeline+tips" data-video-id="W2fJ2jCjlpU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Animation File Management & Naming Conventions</p>
-      <p class="vg-creator">Bloop Animation / Animation Career Review</p>
+      <p class="vg-creator">Matthew Creed Animation</p>
       <span class="vg-duration">⏱ 18 min · Professional file naming, folder structure, version control</span>
     </div>
   </a>
@@ -34,16 +34,16 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Video Codecs Explained, H.264 vs ProRes vs Lossless</p>
-      <p class="vg-creator">Corridor Crew / Gerald Undone</p>
+      <p class="vg-creator">Tom Scott</p>
       <span class="vg-duration">⏱ 20 min · Which codec for which purpose</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+software+overview+2024+Blender+Maya+Toon+Boom+comparison" data-video-id="nFS5MaVS6DI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+software+overview+2024+Blender+Maya+Toon+Boom+comparison" data-video-id="t8oB65d2GWc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Animation Software Overview, Which Tool for Which Career</p>
-      <p class="vg-creator">School of Motion / Bloop Animation</p>
+      <p class="vg-creator">Hugo Reviews</p>
       <span class="vg-duration">⏱ 20 min · Maya vs Blender vs Harmony vs Animate</span>
     </div>
   </a>
@@ -52,21 +52,21 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=frame+rate+animation+project+settings+24fps+30fps+setup" data-video-id="F1R3sDDn3jo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=frame+rate+animation+project+settings+24fps+30fps+setup" data-video-id="R1H1_fpTMwc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Setting Up Your Animation Project, Frame Rate & Resolution</p>
-      <p class="vg-creator">Animation Mentor / SouthernShotty</p>
+      <p class="vg-creator">Patrick's Videos</p>
       <span class="vg-duration">⏱ 15 min · Why you lock settings before Frame 1</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=backup+strategy+creative+professionals+3-2-1+rule+cloud" data-video-id="Aa5VzBNFDiQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=backup+strategy+creative+professionals+3-2-1+rule+cloud" data-video-id="WJzsX32qMJY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Backup Strategy for Animators & Creatives</p>
-      <p class="vg-creator">Linus Tech Tips / Wendover Productions</p>
+      <p class="vg-creator">IBM Technology</p>
       <span class="vg-duration">⏱ 12 min · 3-2-1 backup rule explained</span>
     </div>
   </a>
@@ -84,7 +84,7 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Toon+Boom+Harmony+overview+2D+animation+studio+pipeline" data-video-id="I2qDzKJ7lF8" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Toon+Boom+Harmony+overview+2D+animation+studio+pipeline" data-video-id="DnGMC2G08Us" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -93,12 +93,12 @@
       <span class="vg-duration">⏱ 20 min · How Disney TV and DreamWorks TV use Harmony</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+space+sRGB+Rec709+animation+explained" data-video-id="AIdaqJAaCHs" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+space+sRGB+Rec709+animation+explained" data-video-id="xs64rm6F5LY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Color Spaces, sRGB vs Rec. 709 for Animators</p>
-      <p class="vg-creator">Corridor Crew / Nino Carbe</p>
+      <p class="vg-creator">Acer</p>
       <span class="vg-duration">⏱ 15 min · Why color space matters for delivery</span>
     </div>
   </a>

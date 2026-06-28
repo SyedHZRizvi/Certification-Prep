@@ -23,12 +23,12 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+AI+Studio+quickstart+gemini+API+key+tutorial" data-video-id="4kFReLBBxu8" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+AI+Studio+quickstart+gemini+API+key+tutorial" data-video-id="JdKcFCLotZY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Google AI Studio Quickstart</p>
-      <p class="vg-creator">Google for Developers</p>
+      <p class="vg-creator">Google Cloud</p>
       <span class="vg-duration">⏱ 12 min · From browser tab to running code</span>
     </div>
   </a>
@@ -41,16 +41,16 @@
       <span class="vg-duration">⏱ 15 min · generate_content + generation_config</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+structured+output+response+schema+JSON" data-video-id="Rl1fFLBCY6A" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+structured+output+response+schema+JSON" data-video-id="c8DOxMnigWE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Structured Output with response_schema</p>
-      <p class="vg-creator">Google for Developers</p>
+      <p class="vg-creator">AI Demos</p>
       <span class="vg-duration">⏱ 10 min · JSON-Schema-conformant output</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+safety+settings+harm+thresholds+tutorial" data-video-id="Z-xzOl5Bqe4" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+safety+settings+harm+thresholds+tutorial" data-video-id="Qf6Tgi6BuE4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -59,12 +59,12 @@
       <span class="vg-duration">⏱ 13 min · 4 categories, 4 thresholds</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+context+caching+Vertex+AI+explicit+cache" data-video-id="vwnpNW9nUio" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+context+caching+Vertex+AI+explicit+cache" data-video-id="WgN9giaqic4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Context Caching for ~75% Cost Cut</p>
-      <p class="vg-creator">Google Cloud Tech</p>
+      <p class="vg-creator">Victor Dantas</p>
       <span class="vg-duration">⏱ 12 min · CachedContent + TTL</span>
     </div>
   </a>
@@ -73,16 +73,16 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+streaming+token+TTFT+example" data-video-id="byGIZY0MPUU" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+streaming+token+TTFT+example" data-video-id="Y5KnYQcxga0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Streaming for Better Perceived Latency</p>
-      <p class="vg-creator">Google for Developers</p>
+      <p class="vg-creator">Mohit Code</p>
       <span class="vg-duration">⏱ 8 min · stream=True walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+code+execution+tool+python+sandbox" data-video-id="G-GHurJpT5Q" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+code+execution+tool+python+sandbox" data-video-id="r3-x0GtOmmc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -91,21 +91,21 @@
       <span class="vg-duration">⏱ 14 min · tools=code_execution</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+batch+prediction+gemini+discount" data-video-id="g2JOHLHh4QI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+batch+prediction+gemini+discount" data-video-id="EbEZLp4Dzy8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Batch API, 50% Discount for Async</p>
-      <p class="vg-creator">Google Cloud Tech</p>
+      <p class="vg-creator">little five flower starfish</p>
       <span class="vg-duration">⏱ 13 min · BatchPredictionJob</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+vs+Vertex+AI+SDK+difference+migration" data-video-id="CqfOrFMr3vs" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+vs+Vertex+AI+SDK+difference+migration" data-video-id="tuWtMz6mCPA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Gemini API vs Vertex AI, When To Switch</p>
-      <p class="vg-creator">Google Cloud Tech</p>
+      <p class="vg-creator">RankYa</p>
       <span class="vg-duration">⏱ 18 min · Migration path</span>
     </div>
   </a>
@@ -114,12 +114,12 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Snap+MyAI+Gemini+Vertex+AI+case+study+multimodal" data-video-id="f7L0SHWa3pE" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Snap+MyAI+Gemini+Vertex+AI+case+study+multimodal" data-video-id="lG6MZGYMN_M" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Snap MyAI on Gemini, Case Study</p>
-      <p class="vg-creator">Google Cloud Next</p>
+      <p class="vg-creator">Google Cloud</p>
       <span class="vg-duration">⏱ 22 min · The prototype-to-prod path</span>
     </div>
   </a>
@@ -132,12 +132,12 @@
       <span class="vg-duration">⏱ 30 min · System instruction patterns</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+count+tokens+API+pricing+cost+estimation" data-video-id="pNX-9HqTQeM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+count+tokens+API+pricing+cost+estimation" data-video-id="xSCM9C6NwgA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">count_tokens, Cost Estimation Before Spend</p>
-      <p class="vg-creator">Google for Developers</p>
+      <p class="vg-creator">3CodeCamp</p>
       <span class="vg-duration">⏱ 8 min · Free token count endpoint</span>
     </div>
   </a>

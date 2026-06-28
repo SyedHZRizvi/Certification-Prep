@@ -6,112 +6,112 @@ Build your Persian vocabulary with these focused video lessons.
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+family+vocabulary+mother+father+sister+brother" data-video-id="N7s_8e_RJGE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+family+vocabulary+mother+father+sister+brother" data-video-id="iwtWFYf_YvE" target="_blank">
   <div class="vg-thumb">👨‍👩‍👧‍👦<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Family Vocabulary — All Members</p>
-    <p class="vg-creator">Learn Persian with Chai and Conversation</p>
+    <p class="vg-creator">Learn Persian (Farsi) with Asal</p>
     <p class="vg-duration">~16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+body+parts+vocabulary+Persian+lesson" data-video-id="k8O_dZBUQ4Y" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+body+parts+vocabulary+Persian+lesson" data-video-id="PDGQS56FwMg" target="_blank">
   <div class="vg-thumb">🫀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Body Parts — Complete Vocabulary</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">PersianPod101</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+food+vocabulary+Iranian+cuisine" data-video-id="PLXhBwOt4Vo" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+food+vocabulary+Iranian+cuisine" data-video-id="cn8Pu3P08XM" target="_blank">
   <div class="vg-thumb">🍽️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Food Vocabulary & Iranian Cuisine</p>
-    <p class="vg-creator">Persian with Nadia</p>
+    <p class="vg-creator">Farsi Wizard</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+100+most+common+verbs+beginners" data-video-id="f8A3-UNm1YM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+100+most+common+verbs+beginners" data-video-id="w7mtz5bfzoM" target="_blank">
   <div class="vg-thumb">⚡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">100 Most Common Persian Verbs</p>
-    <p class="vg-creator">Learn Persian Online</p>
+    <p class="vg-creator">Persian Learning</p>
     <p class="vg-duration">~30 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+adjectives+common+vocabulary+lesson" data-video-id="C5pQBpFO7sE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+adjectives+common+vocabulary+lesson" data-video-id="xgTSPv2LES0" target="_blank">
   <div class="vg-thumb">🎨<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Adjectives — Describe Everything</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">Persian Learning</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+home+house+furniture+vocabulary" data-video-id="JnFWx8Gc5sQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+home+house+furniture+vocabulary" data-video-id="HbWif2MN7rs" target="_blank">
   <div class="vg-thumb">🏠<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Persian Home & Household Vocabulary</p>
-    <p class="vg-creator">Learn Persian with Chai and Conversation</p>
+    <p class="vg-creator">Persian Learning</p>
     <p class="vg-duration">~17 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+time+vocabulary+days+months+seasons" data-video-id="YN7XSMOuVFU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+time+vocabulary+days+months+seasons" data-video-id="RojddS-La8w" target="_blank">
   <div class="vg-thumb">🕐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Persian Time Words — Days, Months & Seasons</p>
-    <p class="vg-creator">Persian with Nadia</p>
+    <p class="vg-creator">Learn Persian (Farsi) with Asal</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+colors+vocabulary+lesson+beginners" data-video-id="9zRMjpY7Xpk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+colors+vocabulary+lesson+beginners" data-video-id="E3GOQ16ZXME" target="_blank">
   <div class="vg-thumb">🌈<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Persian Colors & Descriptive Words</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">Persian Land</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+vocabulary+flashcard+style+A1+A2" data-video-id="SmvEj8e5Bak" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+vocabulary+flashcard+style+A1+A2" data-video-id="jdpmOxtUBqE" target="_blank">
   <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Persian A1/A2 Vocabulary Flashcard Drill</p>
-    <p class="vg-creator">Learn Persian Online</p>
-    <p class="vg-duration">~25 min</p>
+    <p class="vg-title">Persian A1/A2 Vocabulary — All the Basics</p>
+    <p class="vg-creator">PersianPod101</p>
+    <p class="vg-duration">~30 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+food+culture+Persian+cuisine+documentary" data-video-id="v0o-Dz_-AWA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+food+culture+Persian+cuisine+documentary" data-video-id="XWabCVQmtwE" target="_blank">
   <div class="vg-thumb">🥘<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Iranian Food Culture — A Culinary Tour</p>
-    <p class="vg-creator">Culture & Travel</p>
+    <p class="vg-creator">Food Safari</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+Urdu+similar+words+cognates+vocabulary" data-video-id="bLDktPaB8nA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+Urdu+similar+words+cognates+vocabulary" data-video-id="zBS9-6s8rw8" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Persian–Urdu Shared Vocabulary Deep Dive</p>
-    <p class="vg-creator">Language Connections</p>
+    <p class="vg-creator">Ashkan Janalipoor</p>
     <p class="vg-duration">~19 min</p>
   </div>
 </a>

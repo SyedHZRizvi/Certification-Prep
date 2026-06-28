@@ -62,21 +62,21 @@
 ## 📚 Recommended
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=langchain+vs+llamaindex+which+to+choose" data-video-id="P7_agAiUdXw" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=langchain+vs+llamaindex+which+to+choose" data-video-id="L6GB2qVtV2Y" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">LangChain vs LlamaIndex, head-to-head</p>
-      <p class="vg-creator">community comparisons</p>
+      <p class="vg-creator">Paperclick</p>
       <span class="vg-duration">⏱ 30m · Honest pros and cons</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=llama+index+workflows+event+driven" data-video-id="VNvOuEb4-0Y" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=llama+index+workflows+event+driven" data-video-id="R2sy6kI-uBk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">LlamaIndex Workflows, event-driven async</p>
-      <p class="vg-creator">LlamaIndex DevRel</p>
+      <p class="vg-creator">LlamaIndex</p>
       <span class="vg-duration">⏱ 35m · The LangGraph competitor</span>
     </div>
   </a>

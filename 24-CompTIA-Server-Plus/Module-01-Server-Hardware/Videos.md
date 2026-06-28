@@ -25,12 +25,12 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SK0-005+Server+Form+Factors" data-video-id="ysye93kIZW4" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SK0-005+Server+Form+Factors" data-video-id="b3svIyZ6Rf4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Server Form Factors, Tower, Rack, Blade</p>
-      <p class="vg-creator">Professor Messer</p>
+      <p class="vg-creator">CBT Nuggets</p>
       <span class="vg-duration">⏱ 8 min · The 3 shapes</span>
     </div>
   </a>

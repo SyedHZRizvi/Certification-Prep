@@ -67,16 +67,16 @@
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Amazon Q Business, Enterprise GenAI</p>
-      <p class="vg-creator">AWS Events</p>
+      <p class="vg-creator">zeb</p>
       <span class="vg-duration">⏱ 20 min · Connector ecosystem</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="qqLcGNZs0Sw" href="https://www.youtube.com/results?search_query=Amazon+Q+Developer+IDE+demo+code+assist" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="i0zQpJPfSdU" href="https://www.youtube.com/results?search_query=Amazon+Q+Developer+IDE+demo+code+assist" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>👨‍💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Amazon Q Developer in the IDE</p>
-      <p class="vg-creator">AWS Online Tech Talks</p>
+      <p class="vg-creator">AWS Developers</p>
       <span class="vg-duration">⏱ 16 min · Code gen + transformation</span>
     </div>
   </a>

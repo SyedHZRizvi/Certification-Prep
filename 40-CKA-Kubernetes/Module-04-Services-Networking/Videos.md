@@ -36,7 +36,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+networking+explained+pod+network+cni" data-video-id="4-MXxJmVJ5I" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+networking+explained+pod+network+cni" data-video-id="EkAzMGldC5M" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🌐
     <div class="vg-play">▶</div>
@@ -44,7 +44,7 @@
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Kubernetes Networking Explained — Pod IPs, CNI, Flat Network Model</p>
-    <p class="vg-creator">Mumshad Mannambeth (KodeKloud)</p>
+    <p class="vg-creator">Tech Tutorials with Piyush</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
@@ -62,7 +62,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+network+policy+tutorial+CKA" data-video-id="yBdSz1Rw7JE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+network+policy+tutorial+CKA" data-video-id="eVtnevr3Rao" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🛡️
     <div class="vg-play">▶</div>
@@ -70,7 +70,7 @@
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Kubernetes NetworkPolicy — Default Deny, Ingress & Egress Rules</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">Tech Tutorials with Piyush</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
@@ -83,7 +83,7 @@
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Kubernetes DNS & CoreDNS — Service Discovery FQDN Format</p>
-    <p class="vg-creator">Mumshad Mannambeth (KodeKloud)</p>
+    <p class="vg-creator">DevOps Gathering</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
@@ -96,7 +96,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+kube-proxy+iptables+ipvs+explained" data-video-id="NZNuBPxh1RU" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+kube-proxy+iptables+ipvs+explained" data-video-id="lkXLsD6-4jA" target="_blank" rel="noopener">
   <div class="vg-thumb">
     ⚙️
     <div class="vg-play">▶</div>
@@ -104,7 +104,7 @@
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">How kube-proxy Works — iptables vs IPVS Mode Deep Dive</p>
-    <p class="vg-creator">Sébastien Goasguen / various</p>
+    <p class="vg-creator">The Learning Channel</p>
     <p class="vg-duration">~25 min</p>
   </div>
 </a>
@@ -122,7 +122,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+ingress+TLS+termination+tutorial" data-video-id="DmIT7f4bTUM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+ingress+TLS+termination+tutorial" data-video-id="xwiRjimKW9c" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔒
     <div class="vg-play">▶</div>
@@ -130,12 +130,12 @@
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Kubernetes Ingress with TLS — Cert-Manager & HTTPS Setup</p>
-    <p class="vg-creator">TechWorld with Nana</p>
+    <p class="vg-creator">Anton Putra</p>
     <p class="vg-duration">~28 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+endpointslices+endpoints+explained" data-video-id="Yx66-Ur1Hys" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+endpointslices+endpoints+explained" data-video-id="6q1ifgeEoGQ" target="_blank" rel="noopener">
   <div class="vg-thumb">
     📋
     <div class="vg-play">▶</div>
@@ -143,12 +143,12 @@
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Kubernetes Endpoints & EndpointSlices — Service Routing Internals</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">CodeLucky</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+exam+services+networking+practice+questions" data-video-id="VLfxFT8XLBA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+exam+services+networking+practice+questions" data-video-id="Zm5sy6otLGc" target="_blank" rel="noopener">
   <div class="vg-thumb">
     📝
     <div class="vg-play">▶</div>
@@ -156,7 +156,7 @@
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">CKA Services & Networking — Exam Practice Walkthrough</p>
-    <p class="vg-creator">KodeKloud / Killer.sh</p>
+    <p class="vg-creator">kubernetesWay</p>
     <p class="vg-duration">~35 min</p>
   </div>
 </a>
@@ -195,7 +195,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+network+policy+visualization+editor" data-video-id="3qgSrAFmGPU" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+network+policy+visualization+editor" data-video-id="nLOwKxk3Gi8" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🗺️
     <div class="vg-play">▶</div>
@@ -203,7 +203,7 @@
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">NetworkPolicy Visual Editor — Understanding AND vs OR Selectors</p>
-    <p class="vg-creator">networkpolicy.io / various</p>
+    <p class="vg-creator">CodeLucky</p>
     <p class="vg-duration">~10 min</p>
   </div>
 </a>

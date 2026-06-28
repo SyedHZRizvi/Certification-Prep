@@ -20,25 +20,25 @@
 ## ⭐ Essential (~75 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Search+RAG+managed+tutorial+google+cloud" data-video-id="I0sPHt2M9TY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Search+RAG+managed+tutorial+google+cloud" data-video-id="v4s5eU2tfd4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Vertex AI Search, End-to-End RAG</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 18 min · The managed default</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Vector+Search+matching+engine+ANN+tutorial" data-video-id="bBGKKqMBaHE" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Vector+Search+matching+engine+ANN+tutorial" data-video-id="Y5Jm_Gtfhsg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Vector Search Deep Dive</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 15 min · ScaNN ANN primitive</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+grounding+with+google+search+vertex+ai+tutorial" data-video-id="r5W0G9mryqM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+grounding+with+google+search+vertex+ai+tutorial" data-video-id="Ph0g6dnsB4g" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Grounding, Google Search vs Vertex AI Search</p><p class="vg-creator">Google for Developers</p>
+      <p class="vg-title">Grounding, Google Search vs Vertex AI Search</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 14 min · The two grounding modes</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AlloyDB+AI+pgvector+gemini+in+database+embedding" data-video-id="VsFUhEOFk0c" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AlloyDB+AI+pgvector+gemini+in+database+embedding" data-video-id="1vBOA0944is" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">AlloyDB AI, Vectors + Gemini Inside SQL</p><p class="vg-creator">Google Cloud Tech</p>
@@ -61,10 +61,10 @@
       <p class="vg-title">BigQuery Vector Search</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 14 min · Analytics-side RAG</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mercado+Libre+Vertex+AI+search+seller+assistant+architecture" data-video-id="CRXnt3QKJMQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mercado+Libre+Vertex+AI+search+seller+assistant+architecture" data-video-id="qEhrg5-NOzk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Mercado Libre, Seller Assistant Architecture</p><p class="vg-creator">Google Cloud Next</p>
+      <p class="vg-title">Mercado Libre, Seller Assistant Architecture</p><p class="vg-creator">Google Cloud</p>
       <span class="vg-duration">⏱ 18 min · The case study</span></div>
   </a>
   <a class="vg-card" data-video-id="8OJC21T2SL4" href="https://www.youtube.com/results?search_query=RAG+chunking+strategy+overlap+token+size+best+practice" target="_blank" rel="noopener">
@@ -73,7 +73,7 @@
       <p class="vg-title">Chunking Strategies for RAG</p><p class="vg-creator">DeepLearning.AI</p>
       <span class="vg-duration">⏱ 18 min · The hidden failure point</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=hybrid+retrieval+BM25+dense+reranker+RAG+google" data-video-id="9QJuPOFbhoo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=hybrid+retrieval+BM25+dense+reranker+RAG+google" data-video-id="mLY2e4n0lKE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Hybrid Retrieval + Rerankers</p><p class="vg-creator">Google Cloud Tech</p>
@@ -96,13 +96,13 @@
       <p class="vg-title">Cloud SQL pgvector</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 14 min · Postgres-native vectors</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ScaNN+approximate+nearest+neighbor+Google+ANN" data-video-id="PD6Vi4m3ZGk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ScaNN+approximate+nearest+neighbor+Google+ANN" data-video-id="qQtE23YKZZk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
-      <p class="vg-title">ScaNN, Google's ANN Library</p><p class="vg-creator">Google Research</p>
+      <p class="vg-title">ScaNN, Google's ANN Library</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 18 min · Inside Vector Search</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=multimodal+embedding+CLIP+google+vertex+image+text" data-video-id="MQoC2LQBNRU" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=multimodal+embedding+CLIP+google+vertex+image+text" data-video-id="d4foqxCzRuA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Multi-Modal Embeddings (Text + Image)</p><p class="vg-creator">Google Cloud Tech</p>

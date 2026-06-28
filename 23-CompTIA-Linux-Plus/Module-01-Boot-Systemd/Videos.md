@@ -34,12 +34,12 @@
       <span class="vg-duration">⏱ 14 min · The 6-stage boot chain</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GRUB2+configuration+tutorial+Linux" data-video-id="W9pOivEGCH0" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=GRUB2+configuration+tutorial+Linux" data-video-id="FjnT6utpeq4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">GRUB2 Configuration Deep Dive</p>
-      <p class="vg-creator">Learn Linux TV</p>
+      <p class="vg-creator">theurbanpenguin</p>
       <span class="vg-duration">⏱ 12 min · /etc/default/grub + mkconfig</span>
     </div>
   </a>

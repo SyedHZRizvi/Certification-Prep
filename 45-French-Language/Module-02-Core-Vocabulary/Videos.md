@@ -6,27 +6,27 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Family+Vocabulary+La+Famille+with+Audio" data-video-id="APKbp3gSmE4" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Family+Vocabulary+La+Famille+with+Audio" data-video-id="L5-3kpXaEi4" target="_blank">
   <div class="vg-thumb">👨‍👩‍👧‍👦<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">French Family Vocabulary — La Famille with Audio</p>
-    <p class="vg-creator">Learn French with Alexa</p>
+    <p class="vg-creator">Learn French With Alexa</p>
     <p class="vg-duration">⏱ ~11 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Food+Vocabulary+La+Nourriture+A1+A2" data-video-id="MVF9qvlEOkE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Food+Vocabulary+La+Nourriture+A1+A2" data-video-id="WwlcExvA4Ds" target="_blank">
   <div class="vg-thumb">🍞<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">French Food Vocabulary — La Nourriture (A1/A2)</p>
-    <p class="vg-creator">FrenchPod101</p>
+    <p class="vg-creator">Francais facile | Easy French</p>
     <p class="vg-duration">⏱ ~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Cafe+Culture+Ordering+Like+a+Local+in+Paris" data-video-id="UXKkgVQW0W8" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Cafe+Culture+Ordering+Like+a+Local+in+Paris" data-video-id="MBK7K1Xw3Lc" target="_blank">
   <div class="vg-thumb">🥐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,92 +36,92 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Rooms+of+the+House+in+French+La+Maison+Vocabulary" data-video-id="1u9VnrfHgFI" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Rooms+of+the+House+in+French+La+Maison+Vocabulary" data-video-id="Q3AGIKdQUvg" target="_blank">
   <div class="vg-thumb">🏠<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Rooms of the House in French — La Maison Vocabulary</p>
-    <p class="vg-creator">Learn French with Alexa</p>
+    <p class="vg-creator">Learn French With Alexa</p>
     <p class="vg-duration">⏱ ~9 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Parts+of+the+Body+in+French+Le+Corps+Humain" data-video-id="m3jdFnalBxc" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Parts+of+the+Body+in+French+Le+Corps+Humain" data-video-id="UNCEy-g8qEM" target="_blank">
   <div class="vg-thumb">💪<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Parts of the Body in French — Le Corps Humain</p>
-    <p class="vg-creator">FrenchPod101</p>
+    <p class="vg-creator">Learn French With Alexa</p>
     <p class="vg-duration">⏱ ~8 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=100+Most+Common+French+Verbs+Action+Words+for+Beginners" data-video-id="EkB3H_EAFkQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=100+Most+Common+French+Verbs+Action+Words+for+Beginners" data-video-id="JmlLV9SktUA" target="_blank">
   <div class="vg-thumb">⚡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">100 Most Common French Verbs — Action Words for Beginners</p>
-    <p class="vg-creator">French with Nelly</p>
+    <p class="vg-creator">Learn French with FrenchPod101.com</p>
     <p class="vg-duration">⏱ ~16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Days+Months+and+Seasons+Complete+Vocabulary" data-video-id="MkEQm1xh4vM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Days+Months+and+Seasons+Complete+Vocabulary" data-video-id="-eo1V-XFXdY" target="_blank">
   <div class="vg-thumb">📅<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">French Days, Months and Seasons — Complete Vocabulary</p>
-    <p class="vg-creator">Learn French with Alexa</p>
+    <p class="vg-creator">Yippee Learning French</p>
     <p class="vg-duration">⏱ ~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Adjectives+Opposites+and+Descriptive+Words" data-video-id="Yxm5TaEdLiI" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Adjectives+Opposites+and+Descriptive+Words" data-video-id="vRCKx2OCt2s" target="_blank">
   <div class="vg-thumb">🎨<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">French Adjectives — Opposites and Descriptive Words</p>
-    <p class="vg-creator">Français Authentique</p>
+    <p class="vg-creator">Learn French With Alexa</p>
     <p class="vg-duration">⏱ ~11 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Market+Vocabulary+Shopping+for+Food+in+France" data-video-id="OAmTNAKPkgQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Market+Vocabulary+Shopping+for+Food+in+France" data-video-id="Lw_jN-AhdGA" target="_blank">
   <div class="vg-thumb">🌾<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">French Market Vocabulary — Shopping for Food in France</p>
-    <p class="vg-creator">Easy French</p>
+    <p class="vg-creator">YouLearnFrench</p>
     <p class="vg-duration">⏱ ~13 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Time+Expressions+Talking+About+Time+A1+A2" data-video-id="5i9HTF_FBDA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Time+Expressions+Talking+About+Time+A1+A2" data-video-id="JlfJjPJGyjM" target="_blank">
   <div class="vg-thumb">🗓️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">French Time Expressions — Talking About Time (A1/A2)</p>
-    <p class="vg-creator">French with Nelly</p>
+    <p class="vg-creator">Learn French With Alexa</p>
     <p class="vg-duration">⏱ ~9 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Cuisine+Documentary+The+Art+of+French+Cooking" data-video-id="CaHHWUoswGk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Cuisine+Documentary+The+Art+of+French+Cooking" data-video-id="tsgXyWFECyo" target="_blank">
   <div class="vg-thumb">🇫🇷<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">French Cuisine Documentary — The Art of French Cooking</p>
-    <p class="vg-creator">Easy French</p>
+    <p class="vg-creator">Ocean Digital Entertainment</p>
     <p class="vg-duration">⏱ ~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Everyday+French+Vocabulary+500+Words+for+Daily+Life" data-video-id="L5DP_KFW__I" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Everyday+French+Vocabulary+500+Words+for+Daily+Life" data-video-id="41kQ8cUUYW0" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Everyday French Vocabulary — 500 Words for Daily Life</p>
-    <p class="vg-creator">Français Authentique</p>
+    <p class="vg-creator">Learn French with FrenchPod101.com</p>
     <p class="vg-duration">⏱ ~22 min</p>
   </div>
 </a>

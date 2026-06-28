@@ -25,12 +25,12 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Building+Effective+Agents+talk+walkthrough" data-video-id="F7YF4agDxdQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Building+Effective+Agents+talk+walkthrough" data-video-id="D7_ipDqhtwk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Building Effective Agents, Anthropic Talk</p>
-      <p class="vg-creator">Anthropic</p>
+      <p class="vg-creator">AI Engineer</p>
       <span class="vg-duration">⏱ 25 min · The canonical reference</span>
     </div>
   </a>
@@ -52,12 +52,12 @@
       <span class="vg-duration">⏱ 25 min · Must watch</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+claude+agent+SDK+overview" data-video-id="9hv3FV8-4fE" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+claude+agent+SDK+overview" data-video-id="TqC1qOfiVcQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Claude Agent SDK, Overview</p>
-      <p class="vg-creator">Anthropic</p>
+      <p class="vg-creator">AI Engineer</p>
       <span class="vg-duration">⏱ 15 min · Reference implementation</span>
     </div>
   </a>
@@ -84,21 +84,21 @@
       <span class="vg-duration">⏱ 20 min · Confirmation gates story</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LLM+as+judge+evaluation+rubric+Anthropic" data-video-id="3LwFNxIlFls" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=LLM+as+judge+evaluation+rubric+Anthropic" data-video-id="wYibF4aezZ4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">LLM-as-Judge, Rubrics and Patterns</p>
-      <p class="vg-creator">community / Anthropic</p>
+      <p class="vg-creator">Data Science Dojo</p>
       <span class="vg-duration">⏱ 15 min · How to score outputs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=extended+thinking+Claude+reasoning+budget" data-video-id="eqXtsnvEMI0" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=extended+thinking+Claude+reasoning+budget" data-video-id="GXCFFKCxTNc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Extended Thinking, Claude 4 Reasoning</p>
-      <p class="vg-creator">Anthropic</p>
+      <p class="vg-creator">TOP AI</p>
       <span class="vg-duration">⏱ 12 min · Deep reasoning mode</span>
     </div>
   </a>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Langfuse+tracing+LLM+agent+observability" data-video-id="nHOLkLGnHAc" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Langfuse+tracing+LLM+agent+observability" data-video-id="pTneXS_m1rk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,30 +116,30 @@
       <span class="vg-duration">⏱ 20 min · Trace replay</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LangChain+vs+raw+SDK+agent+debate" data-video-id="RoR4XJwinlt" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=LangChain+vs+raw+SDK+agent+debate" data-video-id="vOHBFZ8MB90" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">LangChain vs Raw SDK, The Debate</p>
-      <p class="vg-creator">community / AI Engineer</p>
+      <p class="vg-creator">Ellie Daw</p>
       <span class="vg-duration">⏱ 25 min · When to use frameworks</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=hierarchical+agent+orchestrator+pattern+LLM" data-video-id="B26yl_hIAGk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=hierarchical+agent+orchestrator+pattern+LLM" data-video-id="EtSO9vU84ws" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Hierarchical Agents, Orchestrator Patterns</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">scrollypedia</p>
       <span class="vg-duration">⏱ 20 min · Sub-agent delegation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lindy+AI+production+agent+architecture" data-video-id="Kf90x_2iFLg" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lindy+AI+production+agent+architecture" data-video-id="KjgZ4ghj6v4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Lindy, Production Agent Architecture</p>
-      <p class="vg-creator">Lindy team</p>
+      <p class="vg-creator">Alex Lieberman</p>
       <span class="vg-duration">⏱ 25 min · Enterprise agents</span>
     </div>
   </a>

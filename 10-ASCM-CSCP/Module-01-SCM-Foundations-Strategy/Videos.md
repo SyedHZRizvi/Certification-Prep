@@ -66,12 +66,12 @@
 ## 📚 Recommended (~32 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="UdeW80ipksU" href="https://www.youtube.com/results?search_query=Push+vs+pull+supply+chain+decoupling+point" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="UTbpAYrpN6Q" href="https://www.youtube.com/results?search_query=Push+vs+pull+supply+chain+decoupling+point" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Push vs Pull and the Customer Order Decoupling Point</p>
-      <p class="vg-creator">GreyCampus</p>
+      <p class="vg-creator">Per Olof Arnas</p>
       <span class="vg-duration">⏱ 10 min · CODP movement explained</span>
     </div>
   </a>

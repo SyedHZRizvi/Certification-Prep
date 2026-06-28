@@ -21,12 +21,12 @@
 ## ⭐ Essential (~90 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="Q6sXFaFr8IM" href="https://www.youtube.com/results?search_query=SageMaker+distributed+training+SMDDP+SMMP+reinvent" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="UFtaGROb_0Q" href="https://www.youtube.com/results?search_query=SageMaker+distributed+training+SMDDP+SMMP+reinvent" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📦</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">SageMaker Distributed Training (SMDDP + SMMP)</p>
-      <p class="vg-creator">AWS re:Invent (AIM402)</p>
+      <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 50 min · Data + model parallel</span>
     </div>
   </a>
@@ -39,12 +39,12 @@
       <span class="vg-duration">⏱ 22 min · Cost-optimal training & inference</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="FrKue7T7HCs" href="https://www.youtube.com/results?search_query=mixed+precision+training+FP16+BF16+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="hHpC9Sywh4U" href="https://www.youtube.com/results?search_query=mixed+precision+training+FP16+BF16+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧮</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Mixed Precision, FP16, BF16, FP8 Explained</p>
-      <p class="vg-creator">NVIDIA Tech / DeepLearningAI</p>
+      <p class="vg-creator">ExplainingAI</p>
       <span class="vg-duration">⏱ 18 min · Speed up DL with no accuracy loss</span>
     </div>
   </a>
@@ -53,12 +53,12 @@
 ## 📚 Recommended (~70 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="O6XmMxqixBM" href="https://www.youtube.com/results?search_query=SageMaker+PyTorch+script+mode+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="x94hpOmKtXM" href="https://www.youtube.com/results?search_query=SageMaker+PyTorch+script+mode+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🐍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">SageMaker PyTorch Script Mode Walkthrough</p>
-      <p class="vg-creator">AWS Online Tech Talks</p>
+      <p class="vg-creator">Julien Simon</p>
       <span class="vg-duration">⏱ 25 min · Bring your own training script</span>
     </div>
   </a>
@@ -71,12 +71,12 @@
       <span class="vg-duration">⏱ 20 min · Cut labelling cost 70%</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="X3sUFiTKNaE" href="https://www.youtube.com/results?search_query=SageMaker+Debugger+Profiler+training+diagnostics" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="8ol982FiyHM" href="https://www.youtube.com/results?search_query=SageMaker+Debugger+Profiler+training+diagnostics" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">SageMaker Debugger + Profiler</p>
-      <p class="vg-creator">AWS Online Tech Talks</p>
+      <p class="vg-creator">Julien Simon</p>
       <span class="vg-duration">⏱ 18 min · Find training bottlenecks</span>
     </div>
   </a>
@@ -94,30 +94,30 @@
       <span class="vg-duration">⏱ 26 min · Attention mechanism</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="1CIpzeNxIhU" href="https://www.youtube.com/results?search_query=Stable+Diffusion+training+infrastructure+AWS+talk" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7I854do63Lg" href="https://www.youtube.com/results?search_query=Stable+Diffusion+training+infrastructure+AWS+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Stable Diffusion Training Infrastructure</p>
-      <p class="vg-creator">Stability AI / AWS talks</p>
+      <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 45 min · 256 A100 GPUs in action</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="8o4SotMHG1k" href="https://www.youtube.com/results?search_query=AWS+EFA+Elastic+Fabric+Adapter+HPC+ML" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="WZWlmAu2UZ0" href="https://www.youtube.com/results?search_query=AWS+EFA+Elastic+Fabric+Adapter+HPC+ML" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Elastic Fabric Adapter (EFA) for ML Training</p>
-      <p class="vg-creator">AWS HPC</p>
+      <p class="vg-creator">Amazon Web Services</p>
       <span class="vg-duration">⏱ 17 min · HPC networking</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="YwdMFJBqnj0" href="https://www.youtube.com/results?search_query=FSx+for+Lustre+S3+integration+for+ML+training" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="m8_wy1xkwA8" href="https://www.youtube.com/results?search_query=FSx+for+Lustre+S3+integration+for+ML+training" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚀</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">FSx for Lustre + S3 for ML Training</p>
-      <p class="vg-creator">AWS Storage</p>
+      <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 19 min</span>
     </div>
   </a>

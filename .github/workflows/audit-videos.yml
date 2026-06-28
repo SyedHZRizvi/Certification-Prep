@@ -129,6 +129,15 @@ jobs:
 
       - name: Run auto-fix (strip broken IDs)
         if: ${{ steps.report.outputs.broken != '0' }}
+        # The audit script intentionally exits non-zero when broken IDs
+        # exist (its --check contract). In --auto-fix mode that exit code
+        # is NOT a failure — it's the whole reason we're here — so we must
+        # tolerate it, exactly like the report-only step above does. Without
+        # this, the step fails and the "Create cleanup PR" step below is
+        # skipped, so the correction never lands. (The script itself now
+        # also returns 0 on a successful --auto-fix; this is belt-and-braces
+        # so a genuine error here still lets the PR step run on the diff.)
+        continue-on-error: true
         run: |
           python3 scripts/audit-video-ids.py --auto-fix
 

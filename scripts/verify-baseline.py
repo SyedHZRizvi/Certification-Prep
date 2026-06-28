@@ -13,6 +13,7 @@ Frozen baseline: stable-2026-05-20.
 from __future__ import annotations
 
 import re
+import subprocess
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -107,6 +108,9 @@ SEARCH_YT_RE = re.compile(r"youtube\.com/results\?search_query=", re.IGNORECASE)
 QUIZ_Q_RE = re.compile(r"^###\s+Q\d+\b|^\*\*\d+\.\*\*|^\*\*Question\s+\d+\*\*", re.MULTILINE)
 ANSWER_KEY_RE = re.compile(r"^##\s+.*Answer\s+Key", re.MULTILINE | re.IGNORECASE)
 NAV_TRACK_RE = re.compile(r"^\s*-\s+id:\s+\S+", re.MULTILINE)
+VIDEO_ID_ATTR_RE = re.compile(r'data-video-id="([A-Za-z0-9_-]{11})"')
+VIDEO_ALLOWLIST = ROOT / "_data" / "verified-video-ids.txt"
+VIDEO_DENYLIST = ROOT / "_data" / "known-broken-video-ids.txt"
 
 # ---------------------------------------------------------------------------
 # Result accumulator
@@ -243,6 +247,91 @@ def check_search_youtube_urls_present(r: Result) -> None:
         )
     else:
         r.ok(f"YouTube search URL count = {total} (>= {MIN_YT_SEARCH_URLS})")
+
+
+def _load_video_id_list(path: Path) -> set[str]:
+    if not path.is_file():
+        return set()
+    out: set[str] = set()
+    for line in path.read_text(encoding="utf-8", errors="ignore").splitlines():
+        line = line.strip()
+        if line and not line.startswith("#"):
+            out.add(line.split()[0])
+    return out
+
+
+def _git_output(*args: str) -> str | None:
+    # Force UTF-8 decoding with errors="replace": git blobs (Videos.md) carry
+    # UTF-8 (Persian/Arabic text, emoji). The default locale codec is cp1252 on
+    # Windows, which crashes the reader thread mid-decode — that would make this
+    # return empty and silently turn the gate into a false PASS.
+    try:
+        proc = subprocess.run(["git", *args], cwd=str(ROOT),
+                              capture_output=True, encoding="utf-8",
+                              errors="replace", timeout=20)
+    except Exception:
+        return None
+    return proc.stdout if proc.returncode == 0 else None
+
+
+def check_video_ids_introduced(r: Result) -> None:
+    """Forward-protective video-ID gate (root-cause fix for fabricated IDs).
+
+    Any data-video-id NEWLY INTRODUCED in the staged commit must be on the
+    verified allowlist (_data/verified-video-ids.txt) and must NOT be on the
+    known-broken denylist (_data/known-broken-video-ids.txt). Pre-existing IDs
+    elsewhere in the tree are intentionally NOT evaluated here — the twice-
+    weekly online audit (.github/workflows/audit-videos.yml) owns that backlog
+    — so a large backlog cannot deadlock unrelated commits.
+
+    Degrades to an informational no-op when there is no staged Videos.md
+    change (manual run / full CI scan / git unavailable). New IDs are verified
+    with `python3 scripts/verify-and-allowlist-video-ids.py --update`."""
+    allow = _load_video_id_list(VIDEO_ALLOWLIST)
+    deny = _load_video_id_list(VIDEO_DENYLIST)
+
+    staged = _git_output("diff", "--cached", "--name-only", "--diff-filter=AM")
+    if staged is None:
+        r.ok("(git unavailable — introduced-video-id gate skipped)")
+        return
+    staged_videos = [f for f in staged.splitlines() if f.endswith("Videos.md")]
+    if not staged_videos:
+        r.ok("(no staged Videos.md — introduced-video-id gate not triggered)")
+        return
+
+    denylisted: list[str] = []
+    unverified: list[str] = []
+    for f in staged_videos:
+        index_blob = _git_output("show", f":{f}")
+        if index_blob is None:
+            continue
+        head_blob = _git_output("show", f"HEAD:{f}") or ""
+        introduced = (set(VIDEO_ID_ATTR_RE.findall(index_blob))
+                      - set(VIDEO_ID_ATTR_RE.findall(head_blob)))
+        for vid in sorted(introduced):
+            if vid in deny:
+                denylisted.append(f"{f}:{vid}")
+            elif allow and vid not in allow:
+                unverified.append(f"{f}:{vid}")
+
+    if denylisted:
+        r.fail(
+            f"{len(denylisted)} newly-introduced data-video-id(s) are on the "
+            f"known-broken denylist: {denylisted[:5]}"
+            f"{'...' if len(denylisted) > 5 else ''}"
+        )
+    if unverified:
+        r.fail(
+            f"{len(unverified)} newly-introduced data-video-id(s) are NOT on the "
+            f"verified allowlist — run "
+            f"`python3 scripts/verify-and-allowlist-video-ids.py --update` first: "
+            f"{unverified[:5]}{'...' if len(unverified) > 5 else ''}"
+        )
+    if not denylisted and not unverified:
+        r.ok(
+            f"introduced-video-id gate: {len(staged_videos)} staged Videos.md "
+            f"clean (new IDs verified, none known-broken)"
+        )
 
 
 def check_quiz_format(r: Result) -> None:
@@ -451,6 +540,7 @@ def main() -> int:
         check_total_markdown_files,
         check_no_direct_youtube_urls,
         check_search_youtube_urls_present,
+        check_video_ids_introduced,
         check_quiz_format,
         check_protected_files_exist,
         check_content_protection_wired,

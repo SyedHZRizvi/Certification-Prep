@@ -6,122 +6,122 @@ Build your Arabic vocabulary across family, body, food, home, verbs, adjectives,
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Family+Vocabulary+Father+Mother+Siblings" data-video-id="zfTECMEFfLQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Family+Vocabulary+Father+Mother+Siblings" data-video-id="JHnwrWKwVFY" target="_blank">
   <div class="vg-thumb">👨‍👩‍👧‍👦<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Family Vocabulary — Father, Mother, Siblings & More</p>
-    <p class="vg-creator">ArabicPod101</p>
+    <p class="vg-creator">Arabic With Amina</p>
     <p class="vg-duration">12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Human+Body+Parts+in+Arabic+Complete+Vocabulary" data-video-id="SYFXtKlkbwk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Human+Body+Parts+in+Arabic+Complete+Vocabulary" data-video-id="pE_I-RJDViE" target="_blank">
   <div class="vg-thumb">🫀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Human Body Parts in Arabic — Complete Vocabulary</p>
-    <p class="vg-creator">Learn Arabic with Maha</p>
+    <p class="vg-creator">Learn With Safaa</p>
     <p class="vg-duration">16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Food+Vocabulary+Meals+Ingredients+Dishes" data-video-id="YQGcMDUhwYc" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Food+Vocabulary+Meals+Ingredients+Dishes" data-video-id="6bvxCXtNaQI" target="_blank">
   <div class="vg-thumb">🍖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Food Vocabulary — Meals, Ingredients & Dishes</p>
-    <p class="vg-creator">Arabic with Sam</p>
+    <p class="vg-creator">Online Arabic Course</p>
     <p class="vg-duration">14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=House+Home+Vocabulary+in+Arabic" data-video-id="9-M4CW8UxAM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=House+Home+Vocabulary+in+Arabic" data-video-id="ZTythyaXm7o" target="_blank">
   <div class="vg-thumb">🏠<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">House & Home Vocabulary in Arabic</p>
-    <p class="vg-creator">ArabicPod101</p>
+    <p class="vg-creator">Arabic Learners Online</p>
     <p class="vg-duration">11 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=100+Most+Common+Arabic+Verbs+Beginners+Vocabulary" data-video-id="pExkHNd-QJY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=100+Most+Common+Arabic+Verbs+Beginners+Vocabulary" data-video-id="NBwRnk4BZu4" target="_blank">
   <div class="vg-thumb">⚡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">100 Most Common Arabic Verbs — Beginners Vocabulary</p>
-    <p class="vg-creator">Speak Arabic For Free</p>
+    <p class="vg-creator">LearnArabicwithMaha</p>
     <p class="vg-duration">22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Days+Months+Time+Expressions+in+Arabic" data-video-id="bJQ4_fHvhb0" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Days+Months+Time+Expressions+in+Arabic" data-video-id="C5raMnM8y9s" target="_blank">
   <div class="vg-thumb">📅<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Days, Months & Time Expressions in Arabic</p>
-    <p class="vg-creator">Learn Arabic with Maha</p>
+    <p class="vg-creator">ARABIC LANGUAGE ACADEMY</p>
     <p class="vg-duration">18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Adjectives+Opposites+Big+Small+Hot+Cold" data-video-id="MFn2NHBTQHY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Adjectives+Opposites+Big+Small+Hot+Cold" data-video-id="TYK94eC7T_E" target="_blank">
   <div class="vg-thumb">↔️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Arabic Adjectives & Opposites — Big, Small, Hot, Cold</p>
-    <p class="vg-creator">ArabicPod101</p>
+    <p class="vg-creator">Mike Still</p>
     <p class="vg-duration">15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Cuisine+Food+Culture+What+Arabs+Eat" data-video-id="UMKpHe-hpxE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Cuisine+Food+Culture+What+Arabs+Eat" data-video-id="zzckyRtQYc0" target="_blank">
   <div class="vg-thumb">🍽️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Arabic Cuisine & Food Culture — What Arabs Eat</p>
-    <p class="vg-creator">Arabic Culture Channel</p>
+    <p class="vg-creator">Al Jazeera English</p>
     <p class="vg-duration">20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Urdu+Common+Vocabulary+Cognates+in+Action" data-video-id="FPsrEtFsIco" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Urdu+Common+Vocabulary+Cognates+in+Action" data-video-id="H5Uxe1Ww3jQ" target="_blank">
   <div class="vg-thumb">🌐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Arabic-Urdu Common Vocabulary — Cognates in Action</p>
-    <p class="vg-creator">Bilingual Arab</p>
+    <p class="vg-creator">Moroccan in Pakistan</p>
     <p class="vg-duration">17 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Vocabulary+Flashcards+Spaced+Repetition+Method" data-video-id="TT9J7HpWJIM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Vocabulary+Flashcards+Spaced+Repetition+Method" data-video-id="3ZlEYhAQdWg" target="_blank">
   <div class="vg-thumb">🃏<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Arabic Vocabulary Flashcards — Spaced Repetition Method</p>
-    <p class="vg-creator">Arabic Unlocked</p>
+    <p class="vg-creator">Learn Arabic with ArabicPod101.com</p>
     <p class="vg-duration">10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Shopping+Market+Vocabulary" data-video-id="sGfOJVKo2zk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Shopping+Market+Vocabulary" data-video-id="nOJhdw6B_jk" target="_blank">
   <div class="vg-thumb">🛒<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Arabic Shopping & Market Vocabulary</p>
-    <p class="vg-creator">Arabic with Sam</p>
+    <p class="vg-creator">Learning with abi and ummi</p>
     <p class="vg-duration">13 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Colours+in+Arabic+Vocabulary+Agreement+Rules" data-video-id="XbI_cMFOHGc" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Colours+in+Arabic+Vocabulary+Agreement+Rules" data-video-id="wkUeY67uVtY" target="_blank">
   <div class="vg-thumb">📝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Colours in Arabic — Vocabulary & Agreement Rules</p>
-    <p class="vg-creator">Learn Arabic with Maha</p>
+    <p class="vg-creator">Learn Modern Standard Arabic</p>
     <p class="vg-duration">12 min</p>
   </div>
 </a>

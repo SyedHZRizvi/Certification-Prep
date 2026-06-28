@@ -98,12 +98,12 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DHCP+DORA+wireshark+walkthrough" data-video-id="OFa3NYadCmU" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DHCP+DORA+wireshark+walkthrough" data-video-id="TBAQm5A9CJE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">DHCP DORA in Wireshark</p>
-      <p class="vg-creator">Chris Greer</p>
+      <p class="vg-creator">Debasish Sinha</p>
       <span class="vg-duration">⏱ 16 min · See the packets</span>
     </div>
   </a>

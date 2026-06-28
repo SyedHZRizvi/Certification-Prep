@@ -107,12 +107,12 @@
       <span class="vg-duration">⏱ 25 min · Why position matters</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="93bStFtCVMo" href="https://www.youtube.com/results?search_query=microsoft+tay+chatbot+failure+postmortem" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="nEA8JviB_-g" href="https://www.youtube.com/results?search_query=microsoft+tay+chatbot+failure+postmortem" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Microsoft Tay, 24 Hour Disaster Postmortem</p>
-      <p class="vg-creator">Computerphile</p>
+      <p class="vg-creator">AI Revolution</p>
       <span class="vg-duration">⏱ 14 min · Case study from the reading</span>
     </div>
   </a>

@@ -21,21 +21,21 @@
 ## ⭐ Essential (~90 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="Nnd4nFvXPXU" href="https://www.youtube.com/results?search_query=SageMaker+Studio+walkthrough+2024+complete+tour" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="YcJAc-x8XLQ" href="https://www.youtube.com/results?search_query=SageMaker+Studio+walkthrough+2024+complete+tour" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🖥️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">SageMaker Studio, Complete Walkthrough</p>
-      <p class="vg-creator">AWS Online Tech Talks</p>
+      <p class="vg-creator">Amazon Web Services</p>
       <span class="vg-duration">⏱ 22 min · Domains, profiles, apps</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="V6XO7wS8xJE" href="https://www.youtube.com/results?search_query=SageMaker+built+in+algorithms+choosing+the+right+one" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Y8FzvaQBS6s" href="https://www.youtube.com/results?search_query=SageMaker+built+in+algorithms+choosing+the+right+one" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧠</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Choosing the Right SageMaker Built-In Algorithm</p>
-      <p class="vg-creator">AWS re:Invent (AIM303)</p>
+      <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 55 min · Algorithm decision tree</span>
     </div>
   </a>
@@ -48,12 +48,12 @@
       <span class="vg-duration">⏱ 16 min · Gradient boosting from scratch</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="mFpRTmjFxOA" href="https://www.youtube.com/results?search_query=SageMaker+XGBoost+hyperparameter+tuning+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zOjAdtaA3k8" href="https://www.youtube.com/results?search_query=SageMaker+XGBoost+hyperparameter+tuning+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎛️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">SageMaker XGBoost End-to-End Demo</p>
-      <p class="vg-creator">Stephane Maarek</p>
+      <p class="vg-creator">Krish Naik</p>
       <span class="vg-duration">⏱ 20 min · Real notebook walk-through</span>
     </div>
   </a>
@@ -71,12 +71,12 @@
       <span class="vg-duration">⏱ 18 min · Anomaly detection</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="EzULxvOt4Dc" href="https://www.youtube.com/results?search_query=SageMaker+DeepAR+time+series+forecasting+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="g8UYGh0tlK0" href="https://www.youtube.com/results?search_query=SageMaker+DeepAR+time+series+forecasting+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">DeepAR Probabilistic Forecasting</p>
-      <p class="vg-creator">AWS re:Invent</p>
+      <p class="vg-creator">Amazon Web Services</p>
       <span class="vg-duration">⏱ 22 min · Multi-series forecasting</span>
     </div>
   </a>

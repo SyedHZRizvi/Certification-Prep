@@ -6,112 +6,112 @@ Advance your Urdu grammar with targeted lessons on past tense, future tense, con
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+past+tense+lesson+khaaya+gaya+aaya" data-video-id="L_jWHffIx5E" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+past+tense+lesson+khaaya+gaya+aaya" data-video-id="fpuu6Q0Adbk" target="_blank">
   <div class="vg-thumb">⏮️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Simple Past Tense — Khaaya, Gaya, Aaya Explained</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+ne+ergative+case+past+tense+rule" data-video-id="gFMlMIhpPWk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+ne+ergative+case+past+tense+rule" data-video-id="gZoknbH4DhE" target="_blank">
   <div class="vg-thumb">📌<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu "Ne" Construction — The Ergative Case in Past Tense</p>
-    <p class="vg-creator">Urdu Language Centre</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+future+tense+lesson+khaaye+ga+gi" data-video-id="nWMXCFXhWjQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+future+tense+lesson+khaaye+ga+gi" data-video-id="RkrXu-7pUbU" target="_blank">
   <div class="vg-thumb">⏭️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Future Tense — Khaaye Ga/Gi Conjugation Guide</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+continuous+tense+raha+rahi+rahe+lesson" data-video-id="cjn8JICV5OI" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+continuous+tense+raha+rahi+rahe+lesson" data-video-id="RInH5Vdx6nA" target="_blank">
   <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Continuous Tenses — Raha/Rahi/Rahe in Present and Past</p>
-    <p class="vg-creator">Learn Urdu with Ling</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+compound+verbs+kar+lena+de+dena+ja+jana" data-video-id="KqrPNvgYJqE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+compound+verbs+kar+lena+de+dena+ja+jana" data-video-id="80LZIrvPQi0" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Compound Verbs — Kar Lena, Bata Dena, Kha Jaana</p>
-    <p class="vg-creator">Urdu Language Centre</p>
+    <p class="vg-creator">Learn Urdu with Sara</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+negation+nahin+na+mat+placement" data-video-id="XiQSFTCp4PQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+negation+nahin+na+mat+placement" data-video-id="j7uYWn7C8wQ" target="_blank">
   <div class="vg-thumb">🚫<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Negation — Nahin, Na, and Mat — Rules and Usage</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Ciao Urdu</p>
     <p class="vg-duration">~11 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+ka+ki+ke+possessive+particles+lesson" data-video-id="sWBSqH9SXAY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+ka+ki+ke+possessive+particles+lesson" data-video-id="4hMb_zdhXvk" target="_blank">
   <div class="vg-thumb">🔑<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Urdu Ka/Ki/Ke — Possessive Particles Mastery</p>
-    <p class="vg-creator">Learn Urdu with Ling</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~13 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+adjective+agreement+bara+bari+bare+gender" data-video-id="9pCWo0H7FNE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+adjective+agreement+bara+bari+bare+gender" data-video-id="WdfetSnMTXY" target="_blank">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Urdu Adjective Agreement — Bara/Bari/Bare Gender Forms</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+conjunctions+aur+lekin+kyonke+agar+lesson" data-video-id="vHRqnfRHMZ4" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+conjunctions+aur+lekin+kyonke+agar+lesson" data-video-id="T1agsMJmoSQ" target="_blank">
   <div class="vg-thumb">🔀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Urdu Conjunctions — Aur, Lekin, Kyonke, Agar in Context</p>
-    <p class="vg-creator">Speak Urdu</p>
+    <p class="vg-creator">Learn Urdu with Sara</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+formal+speech+honorific+requests+karein" data-video-id="MkGvFLtGfRc" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+formal+speech+honorific+requests+karein" data-video-id="wNcyeR3cVCA" target="_blank">
   <div class="vg-thumb">🎩<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Formal Urdu Speech — Respectful Requests and Elevated Vocabulary</p>
-    <p class="vg-creator">Urdu Language Centre</p>
+    <p class="vg-creator">Learn Urdu with UrduPod101.com</p>
     <p class="vg-duration">~19 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+B1+intermediate+grammar+complete+lesson" data-video-id="QGxHnJFsLXk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+B1+intermediate+grammar+complete+lesson" data-video-id="DwLLTMucZKU" target="_blank">
   <div class="vg-thumb">📈<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Urdu Intermediate Grammar — Complete B1 Level Review</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Learn Urdu with Sara</p>
     <p class="vg-duration">~50 min</p>
   </div>
 </a>

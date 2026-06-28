@@ -52,12 +52,12 @@
       <span class="vg-duration">⏱ 22 min · The cross-provider pattern</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="7edFjPiSsZs" href="https://www.youtube.com/results?search_query=pydantic+v2+tutorial+for+llm+structured+output" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="gjxZ4AGRMLk" href="https://www.youtube.com/results?search_query=pydantic+v2+tutorial+for+llm+structured+output" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Pydantic v2 for LLM Output</p>
-      <p class="vg-creator">ArjanCodes</p>
+      <p class="vg-creator">Fahd Mirza</p>
       <span class="vg-duration">⏱ 15 min · Field, validators, enums</span>
     </div>
   </a>
@@ -66,21 +66,21 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="ltCMuRzHYH8" href="https://www.youtube.com/results?search_query=Gemini+structured+output+response+schema+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="c8DOxMnigWE" href="https://www.youtube.com/results?search_query=Gemini+structured+output+response+schema+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Gemini Structured Output, Hands On</p>
-      <p class="vg-creator">Google AI Developers</p>
+      <p class="vg-creator">AI Demos</p>
       <span class="vg-duration">⏱ 14 min · response_schema</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="XpGGo_7YBNQ" href="https://www.youtube.com/results?search_query=outlines+library+constrained+generation+open+source" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="2IkqM9k8swI" href="https://www.youtube.com/results?search_query=outlines+library+constrained+generation+open+source" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Outlines, Constrained Generation for Open-Source</p>
-      <p class="vg-creator">dottxt.ai</p>
+      <p class="vg-creator">dottxt</p>
       <span class="vg-duration">⏱ 16 min · Local-model structured output</span>
     </div>
   </a>
@@ -98,12 +98,12 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="G_J_xByLGGc" href="https://www.youtube.com/results?search_query=json+schema+tutorial+for+beginners" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dtLl37W68g8" href="https://www.youtube.com/results?search_query=json+schema+tutorial+for+beginners" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">JSON Schema Crash Course</p>
-      <p class="vg-creator">JSON Schema Org</p>
+      <p class="vg-creator">Erik Wilde</p>
       <span class="vg-duration">⏱ 20 min · Spec essentials</span>
     </div>
   </a>

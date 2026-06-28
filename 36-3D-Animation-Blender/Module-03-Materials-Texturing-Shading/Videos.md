@@ -29,20 +29,20 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+shader+editor+node+graph+tutorial+beginners" data-video-id="T0EHr4yjYXM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+shader+editor+node+graph+tutorial+beginners" data-video-id="BNn0bk77XNQ" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Shader Editor, Node Graph Tutorial for Beginners</div>
-    <div class="vg-card-meta">Default Cube · ~28 min</div>
+    <div class="vg-card-meta">CGMatter · ~28 min</div>
     <div class="vg-card-desc">How the node graph works, essential node types (Image Texture, Mapping, Color Ramp, Normal Map), and building a complete PBR material from scratch.</div>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+texture+painting+tutorial+character+workflow" data-video-id="5DGS4oRTUXs" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+texture+painting+tutorial+character+workflow" data-video-id="FzQaxOZyhAg" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Texture Painting, Character Workflow</div>
-    <div class="vg-card-meta">Stylized Station · ~30 min</div>
+    <div class="vg-card-meta">Ahfish · ~30 min</div>
     <div class="vg-card-desc">Direct-on-mesh painting workflow for stylized characters. Covers Draw, Soften, Smear, and Clone tools, plus layer-based painting technique with separate stencil masks.</div>
   </div>
 </a>
@@ -59,25 +59,25 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Substance Painter to Blender, Complete Import Workflow</div>
-    <div class="vg-card-meta">Pixxo 3D · ~22 min</div>
+    <div class="vg-card-meta">Peter France · ~22 min</div>
     <div class="vg-card-desc">Export preset selection, Non-Color texture node setup, Normal Map node, and connecting all PBR channels to the Principled BSDF. Covers DirectX vs OpenGL normal map convention.</div>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+Quixel+Megascans+Bridge+plugin+import+textures" data-video-id="R0_CvJQdmKQ" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+Quixel+Megascans+Bridge+plugin+import+textures" data-video-id="WAWw-rqr2CY" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Quixel Megascans in Blender, Bridge Plugin & Auto-Import</div>
-    <div class="vg-card-meta">Blender Guru · ~18 min</div>
+    <div class="vg-card-meta">Faebe Tutorials · ~18 min</div>
     <div class="vg-card-desc">Installing the Quixel Bridge plugin, CC0 license explained, and auto-connecting Megascans materials to the Blender Principled BSDF with one click.</div>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+PBR+material+system+metallic+roughness+explained" data-video-id="9-0Xrz1BGLA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+PBR+material+system+metallic+roughness+explained" data-video-id="d6oVxZb6qmc" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">PBR Material System, Metallic/Roughness Explained</div>
-    <div class="vg-card-meta">CGCookie · ~20 min</div>
+    <div class="vg-card-meta">Needle · ~20 min</div>
     <div class="vg-card-desc">Energy conservation, metallic vs. dielectric surfaces, roughness as micro-geometry, the physics explained with Blender material demonstrations.</div>
   </div>
 </a>
@@ -90,20 +90,20 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+toon+shader+cel+shading+stylized+animation" data-video-id="NpMKgtZyFD4" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+toon+shader+cel+shading+stylized+animation" data-video-id="sJTEJKQ0lYw" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Toon Shader, Cel Shading for Stylized Animation</div>
-    <div class="vg-card-meta">Default Cube · ~25 min</div>
+    <div class="vg-card-meta">MrTriPie · ~25 min</div>
     <div class="vg-card-desc">Toon BSDF, Shader to RGB node, Color Ramp posterization, recreating the flat-shaded look of Mitchells vs. the Machines and other stylized productions in Blender.</div>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+skin+material+subsurface+scattering+character" data-video-id="MRiXlEwzMKA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+skin+material+subsurface+scattering+character" data-video-id="hUAXBEG_gvc" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Skin Material, Subsurface Scattering for Characters</div>
-    <div class="vg-card-meta">Blender Guru · ~30 min</div>
+    <div class="vg-card-meta">RTFKT · ~30 min</div>
     <div class="vg-card-desc">Building a realistic skin material with Subsurface Weight, per-channel scatter radius, specular IOR, and layered skin texture in Blender Cycles.</div>
   </div>
 </a>
@@ -117,11 +117,11 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+normal+map+baking+tutorial+character+high+low+poly" data-video-id="Vc-2KxPGBNo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+normal+map+baking+tutorial+character+high+low+poly" data-video-id="99Cc2TliKDs" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Normal Map Baking, High to Low Poly Character</div>
-    <div class="vg-card-meta">CGCookie · ~35 min</div>
+    <div class="vg-card-meta">Yuken3D · ~35 min</div>
     <div class="vg-card-desc">Baking surface detail from a high-poly sculpt onto a low-poly animation mesh. The workflow used in game-art pipelines and for Blender-to-game-engine export.</div>
   </div>
 </a>

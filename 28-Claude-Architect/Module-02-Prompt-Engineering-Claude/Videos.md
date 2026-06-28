@@ -34,30 +34,30 @@
       <span class="vg-duration">⏱ 25 min · Best first watch</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DeepLearning+AI+prompt+engineering+with+Claude+short+course" data-video-id="YGWbFWcRFqM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DeepLearning+AI+prompt+engineering+with+Claude+short+course" data-video-id="ysPbXH0LpIE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Prompt Engineering with Claude, Short Course</p>
-      <p class="vg-creator">DeepLearning.AI × Anthropic</p>
+      <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 60 min total · Chapters work standalone</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+XML+tags+prompt+structure" data-video-id="PJNkfFUbBzA" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+XML+tags+prompt+structure" data-video-id="0vO1XF21Xow" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Why XML Tags Work So Well With Claude</p>
-      <p class="vg-creator">Anthropic / community</p>
+      <p class="vg-creator">Claude lab</p>
       <span class="vg-duration">⏱ 10 min · Structural delimiters</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+prefill+assistant+response+technique" data-video-id="wbkfQsEDIbc" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+prefill+assistant+response+technique" data-video-id="q8oQOovObfI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Prefill, The Underused Claude Superpower</p>
-      <p class="vg-creator">Anthropic / Matt Pocock</p>
+      <p class="vg-creator">Deep Dive with The AI Automators</p>
       <span class="vg-duration">⏱ 12 min · Force output discipline</span>
     </div>
   </a>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 15 min · Scratchpad reasoning</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Workbench+console+walkthrough" data-video-id="sSiAx0AqLcs" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Workbench+console+walkthrough" data-video-id="KIGBsQqZcNA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,12 +93,12 @@
       <span class="vg-duration">⏱ 12 min · Edge case coverage</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+long+context+200k+prompting+tips" data-video-id="qppLWHpHOqk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+long+context+200k+prompting+tips" data-video-id="rK0tZTRPu5c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Long-Context Prompting Tips (200K window)</p>
-      <p class="vg-creator">Anthropic / various</p>
+      <p class="vg-creator">1littlecoder</p>
       <span class="vg-duration">⏱ 18 min · Needle-in-haystack done right</span>
     </div>
   </a>
@@ -107,21 +107,21 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+structured+output+JSON+extraction+prompt" data-video-id="e1YkXAFOaWA" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+structured+output+JSON+extraction+prompt" data-video-id="Qq6nTf6V10w" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Structured Output / JSON Extraction Patterns</p>
-      <p class="vg-creator">community / Hamel Husain</p>
+      <p class="vg-creator">ABV · AI · Books · Validation</p>
       <span class="vg-duration">⏱ 25 min · Schema-first prompting</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=prompt+caching+Anthropic+Claude+how+it+works" data-video-id="cPLQkV-nXkQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=prompt+caching+Anthropic+Claude+how+it+works" data-video-id="D8LqbR0mJ4M" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Prompt Caching Deep Dive</p>
-      <p class="vg-creator">Anthropic / Notion case study</p>
+      <p class="vg-creator">AI Made Simple</p>
       <span class="vg-duration">⏱ 20 min · 90% cost cut</span>
     </div>
   </a>
@@ -134,12 +134,12 @@
       <span class="vg-duration">⏱ 35 min · How pros measure prompt quality</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anti+pattern+prompt+engineering+Claude+mistakes" data-video-id="jkrNMKz9pxU" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=anti+pattern+prompt+engineering+Claude+mistakes" data-video-id="Hp4MzVTXcKw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Prompt Engineering Anti-Patterns</p>
-      <p class="vg-creator">AI Engineer / community</p>
+      <p class="vg-creator">AI Engineer</p>
       <span class="vg-duration">⏱ 18 min · What NOT to do</span>
     </div>
   </a>

@@ -6,32 +6,32 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+office+workplace+vocabulary" data-video-id="PqNsqTiMiA0" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+office+workplace+vocabulary" data-video-id="2JI2d4QN5pY" target="_blank">
   <div class="vg-thumb">🏢<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu in the Workplace — Office Vocabulary & Phrases</p>
-    <p class="vg-creator">Urdu Language Hub</p>
+    <p class="vg-creator">OSEI Vocabulary</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+doctor+hospital+phrases" data-video-id="cDiEPMkDVeA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+doctor+hospital+phrases" data-video-id="tetSTY6okEY" target="_blank">
   <div class="vg-thumb">🏥<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">At the Doctor in Urdu — Health Vocabulary</p>
-    <p class="vg-creator">Learn Urdu with Aman</p>
+    <p class="vg-creator">Vocabineer</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+formal+business+letter+writing" data-video-id="yFWqAFzRxHw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+formal+business+letter+writing" data-video-id="DawLJRkxep0" target="_blank">
   <div class="vg-thumb">✉️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">How to Write a Formal Urdu Business Letter</p>
-    <p class="vg-creator">Urdu Writing Academy</p>
+    <p class="vg-creator">Sabaq Foundation - Free Videos & Tests, Grades K-14</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
@@ -42,32 +42,32 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=pakistani+wedding+vocabulary+urdu" data-video-id="RKfFl3fBkSk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=pakistani+wedding+vocabulary+urdu" data-video-id="x-sk3-jLSTU" target="_blank">
   <div class="vg-thumb">💍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Pakistani Wedding Traditions — Urdu Vocabulary Guide</p>
-    <p class="vg-creator">Pakistani Culture Channel</p>
+    <p class="vg-creator">This Modern Love Photography</p>
     <p class="vg-duration">~16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+expressing+emotions+feelings" data-video-id="d5vANH4LsKA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+expressing+emotions+feelings" data-video-id="a4A8tOxkmKU" target="_blank">
   <div class="vg-thumb">❤️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Expressing Emotions & Feelings in Urdu</p>
-    <p class="vg-creator">Roz Marra Urdu</p>
+    <p class="vg-creator">Learn Urdu with Sara</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=eid+urdu+greetings+cultural" data-video-id="eqDoH0cJKGk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=eid+urdu+greetings+cultural" data-video-id="nbGE2SyIRn8" target="_blank">
   <div class="vg-thumb">🌙<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Eid Greetings & Cultural Phrases in Urdu</p>
-    <p class="vg-creator">Urdu Seekhein</p>
+    <p class="vg-creator">Spoken English in Urdu</p>
     <p class="vg-duration">~10 min</p>
   </div>
 </a>
@@ -78,22 +78,22 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+negotiation+phrases+business" data-video-id="vw4VGrqPHOs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+negotiation+phrases+business" data-video-id="r0AGjgBNvCw" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Negotiation Phrases in Urdu — Business Communication</p>
-    <p class="vg-creator">Business Urdu Pro</p>
+    <p class="vg-creator">ecotechmanage</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+complaint+customer+service+phrases" data-video-id="WfS5rr3EQZY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+complaint+customer+service+phrases" data-video-id="lgVHEU7bYJU" target="_blank">
   <div class="vg-thumb">📢<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Making Complaints in Urdu — Polite & Formal Language</p>
-    <p class="vg-creator">Urdu Language Hub</p>
+    <p class="vg-creator">Better Know-How</p>
     <p class="vg-duration">~11 min</p>
   </div>
 </a>

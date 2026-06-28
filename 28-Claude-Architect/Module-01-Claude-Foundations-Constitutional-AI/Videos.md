@@ -25,12 +25,12 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Dario+Amodei+Constitutional+AI+talk" data-video-id="k7GWuF3FVFM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Dario+Amodei+Constitutional+AI+talk" data-video-id="x2VHFgyawPE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Dario Amodei on Constitutional AI</p>
-      <p class="vg-creator">Anthropic / various interviews</p>
+      <p class="vg-creator">Bloomberg Originals</p>
       <span class="vg-duration">⏱ 20 min · The founder's pitch</span>
     </div>
   </a>
@@ -43,21 +43,21 @@
       <span class="vg-duration">⏱ 12 min · The Bai et al. paper walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Claude+model+family+Haiku+Sonnet+Opus+overview" data-video-id="5CTsz-EhFKk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Claude+model+family+Haiku+Sonnet+Opus+overview" data-video-id="8nA5tXVxdXU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Claude Model Family Overview</p>
-      <p class="vg-creator">Anthropic</p>
+      <p class="vg-creator">Pixel Prophets</p>
       <span class="vg-duration">⏱ 8 min · Haiku/Sonnet/Opus when to use</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Responsible+Scaling+Policy+ASL+Dario+Amodei" data-video-id="c5y4VDh5XTM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Responsible+Scaling+Policy+ASL+Dario+Amodei" data-video-id="iUUEbeOQQB0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Responsible Scaling Policy & ASL Levels</p>
-      <p class="vg-creator">Anthropic</p>
+      <p class="vg-creator">HARP Institute AI</p>
       <span class="vg-duration">⏱ 15 min · ASL-1 through ASL-4 explained</span>
     </div>
   </a>
@@ -93,12 +93,12 @@
       <span class="vg-duration">⏱ 18 min · Background for understanding CAI</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+model+card+evaluation+benchmark+walkthrough" data-video-id="s0-bCe3_TUo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+model+card+evaluation+benchmark+walkthrough" data-video-id="sqO020VeCn8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Claude Model Cards, How to Read Them</p>
-      <p class="vg-creator">DeepLearning.AI / Yann Dubois</p>
+      <p class="vg-creator">DataMListic</p>
       <span class="vg-duration">⏱ 12 min · Benchmarks decoded</span>
     </div>
   </a>
@@ -107,12 +107,12 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dario+Amodei+Machines+of+Loving+Grace+essay+talk" data-video-id="xjMjA_xdO6E" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dario+Amodei+Machines+of+Loving+Grace+essay+talk" data-video-id="91AF26Qt_y4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">"Machines of Loving Grace", Amodei's Vision Essay</p>
-      <p class="vg-creator">Anthropic / Dwarkesh Patel</p>
+      <p class="vg-creator">My Thoughts on AI</p>
       <span class="vg-duration">⏱ 90 min · The optimistic case for AI</span>
     </div>
   </a>
@@ -125,12 +125,12 @@
       <span class="vg-duration">⏱ 30 min · Looking inside Claude</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Claude+for+enterprise+case+study" data-video-id="iu2n3h0qfJU" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Claude+for+enterprise+case+study" data-video-id="91AJ0cpgLlQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Enterprise Case Studies, Claude in Production</p>
-      <p class="vg-creator">Anthropic / AI Engineer Conf</p>
+      <p class="vg-creator">Claude</p>
       <span class="vg-duration">⏱ 25 min · Real deployments</span>
     </div>
   </a>

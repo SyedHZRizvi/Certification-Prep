@@ -6,42 +6,42 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Ghalib+poetry+urdu+explanation+in+english" data-video-id="8pPFBgDiFSI" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Ghalib+poetry+urdu+explanation+in+english" data-video-id="MqsI_1coWlQ" target="_blank">
   <div class="vg-thumb">🖋️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Mirza Ghalib — Famous Couplets Explained in English</p>
-    <p class="vg-creator">Urdu Poetry Channel</p>
+    <p class="vg-creator">Waxing Poetic اردو</p>
     <p class="vg-duration">~30 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Faiz+Ahmed+Faiz+urdu+poetry+translation" data-video-id="HHm6qz28XSA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Faiz+Ahmed+Faiz+urdu+poetry+translation" data-video-id="BjEjwYpNphY" target="_blank">
   <div class="vg-thumb">🌹<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Faiz Ahmed Faiz — Complete Introduction with Translations</p>
-    <p class="vg-creator">Literature Urdu</p>
+    <p class="vg-creator">Waxing Poetic اردو</p>
     <p class="vg-duration">~25 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+ghazal+form+explained+matla+maqta" data-video-id="TQJ5JsvO5kI" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+ghazal+form+explained+matla+maqta" data-video-id="1pAqivtxqGg" target="_blank">
   <div class="vg-thumb">📜<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">The Ghazal Form — Structure, Radif, Qafia Explained</p>
-    <p class="vg-creator">Urdu Poetics</p>
+    <p class="vg-creator">Alif Urdu</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+proverbs+zarb+ul+amsal+with+meaning" data-video-id="p2mzNhPRWkU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+proverbs+zarb+ul+amsal+with+meaning" data-video-id="2aPEvFW0T-0" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">50 Essential Urdu Proverbs — ضرب الامثال with Meanings</p>
-    <p class="vg-creator">Urdu Language Hub</p>
+    <p class="vg-creator">REEKHTAN</p>
     <p class="vg-duration">~28 min</p>
   </div>
 </a>
@@ -52,17 +52,17 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mushaira+urdu+poetry+event+tradition" data-video-id="eqDoH0cJKGk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mushaira+urdu+poetry+event+tradition" data-video-id="HYPNX9xTbVg" target="_blank">
   <div class="vg-thumb">🎭<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Mushaira — The Urdu Poetry Tradition Explained</p>
-    <p class="vg-creator">Pakistani Culture Channel</p>
+    <p class="vg-creator">Numaish Hyderabad Official</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=coke+studio+pakistan+urdu+songs+lyrics" data-video-id="SUQnB86xFC4" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=coke+studio+pakistan+urdu+songs+lyrics" data-video-id="-2RAq5o5pwc" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -72,12 +72,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+idioms+muhavare+list+meanings" data-video-id="F2dkOqnfNKs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+idioms+muhavare+list+meanings" data-video-id="C2A2t6sjZdw" target="_blank">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Urdu Idioms (محاورے) — 50 Essential Expressions</p>
-    <p class="vg-creator">Roz Marra Urdu</p>
+    <p class="vg-creator">Ahmad Gk Point</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
@@ -88,32 +88,32 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Fahmida+Riaz+urdu+poet+feminist" data-video-id="gJfNUk1T7ME" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Fahmida+Riaz+urdu+poet+feminist" data-video-id="3rDAiMTDKXA" target="_blank">
   <div class="vg-thumb">✊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Fahmida Riaz — Pioneer of Urdu Feminist Poetry</p>
-    <p class="vg-creator">Literature Urdu</p>
+    <p class="vg-creator">WildFilmsIndia</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=lahori+vs+karachi+urdu+dialect+difference" data-video-id="qNHqjHSqJnI" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=lahori+vs+karachi+urdu+dialect+difference" data-video-id="_M6zH3kqMOo" target="_blank">
   <div class="vg-thumb">🗺️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Lahori vs Karachi Urdu — Regional Dialect Differences</p>
-    <p class="vg-creator">Urdu Dialects</p>
+    <p class="vg-creator">Englerica</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=bollywood+songs+urdu+poetry+classical" data-video-id="X2VlKG2gGfQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=bollywood+songs+urdu+poetry+classical" data-video-id="Ml6epYT5MBM" target="_blank">
   <div class="vg-thumb">🎬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Bollywood's Classical Urdu — Songs with Poetry Analysis</p>
-    <p class="vg-creator">Hindi-Urdu Film Songs</p>
+    <p class="vg-creator">Sangeet Pravah World</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>

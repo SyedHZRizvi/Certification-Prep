@@ -25,12 +25,12 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="SY5jF2tAgSY" href="https://www.youtube.com/results?search_query=GPT-3+paper+Brown+2020+language+models+few+shot+learners+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="5i-SC-roENM" href="https://www.youtube.com/results?search_query=GPT-3+paper+Brown+2020+language+models+few+shot+learners+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">GPT-3 Paper Walkthrough (Brown et al. 2020)</p>
-      <p class="vg-creator">Yannic Kilcher</p>
+      <p class="vg-creator">Samuel Albanie</p>
       <span class="vg-duration">⏱ 50 min · The paper that defined ICL</span>
     </div>
   </a>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="5F0F4VYRqC4" href="https://www.youtube.com/results?search_query=fantastically+ordered+prompts+example+order+sensitivity" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=fantastically+ordered+prompts+example+order+sensitivity" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,30 +98,30 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="6oJBTNLMvgk" href="https://www.youtube.com/results?search_query=rethinking+demonstrations+random+labels+ICL+Min+2022" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="mW0Cb3UCNBQ" href="https://www.youtube.com/results?search_query=rethinking+demonstrations+random+labels+ICL+Min+2022" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Rethinking Demonstrations (Min et al. 2022)</p>
-      <p class="vg-creator">Yannic Kilcher</p>
+      <p class="vg-creator">Namrata Shivagunde</p>
       <span class="vg-duration">⏱ 22 min · Why even random labels help</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="aHQNFNHYPPQ" href="https://www.youtube.com/results?search_query=anthropic+prompt+caching+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="LFvw_xlj0LQ" href="https://www.youtube.com/results?search_query=anthropic+prompt+caching+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Anthropic Prompt Caching for Many-Shot</p>
-      <p class="vg-creator">Anthropic Cookbook</p>
+      <p class="vg-creator">Elvis Saravia</p>
       <span class="vg-duration">⏱ 14 min · Slash cost on long few-shot</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="XdiwKHIqg4A" href="https://www.youtube.com/results?search_query=OpenAI+Evals+few+shot+prompt+benchmark" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="fUv-c57H7qI" href="https://www.youtube.com/results?search_query=OpenAI+Evals+few+shot+prompt+benchmark" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Benchmarking Few-Shot Variants with Evals</p>
-      <p class="vg-creator">OpenAI / DevDay</p>
+      <p class="vg-creator">Kody Simpson</p>
       <span class="vg-duration">⏱ 20 min · How to actually measure lift</span>
     </div>
   </a>

@@ -43,12 +43,12 @@
       <span class="vg-duration">⏱ 12 min · Reading the hardware</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+performance+tools+top+iostat+vmstat+sar" data-video-id="DPICFeYn5es" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+performance+tools+top+iostat+vmstat+sar" data-video-id="N4xoo2fi3TU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Linux Perf Tools, top, iostat, vmstat</p>
-      <p class="vg-creator">Learn Linux TV</p>
+      <p class="vg-creator">SysTech</p>
       <span class="vg-duration">⏱ 15 min · CPU/RAM/disk triage</span>
     </div>
   </a>

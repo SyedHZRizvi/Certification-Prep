@@ -55,7 +55,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">3-2-1 Backup Rule in Practice</p>
-      <p class="vg-creator">Dion Training</p>
+      <p class="vg-creator">Techno Tim</p>
       <span class="vg-duration">⏱ 10 min · Memorize this</span>
     </div>
   </a>
@@ -82,12 +82,12 @@
       <span class="vg-duration">⏱ 12 min · Process framing</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lawrence+Systems+3-2-1+backup+strategy+SMB" data-video-id="wwt9dDhsgJw" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lawrence+Systems+3-2-1+backup+strategy+SMB" data-video-id="GMHFUDZIyMY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">3-2-1 Backup for Small Business</p>
-      <p class="vg-creator">Lawrence Systems</p>
+      <p class="vg-creator">BrenTech</p>
       <span class="vg-duration">⏱ 16 min · Real procurement</span>
     </div>
   </a>
@@ -96,12 +96,12 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Maersk+NotPetya+2017+recovery+talk" data-video-id="8t6qa6MGPjE" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Maersk+NotPetya+2017+recovery+talk" data-video-id="qsbXGZSn9Vw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Maersk NotPetya 2017, Recovery Story</p>
-      <p class="vg-creator">Various / Adam Banks RSAC keynote</p>
+      <p class="vg-creator">Infosecurity Europe</p>
       <span class="vg-duration">⏱ 25 min · Case study</span>
     </div>
   </a>
