@@ -87,8 +87,9 @@ Effective 2026-05-22, every `.vg-card` link in `Videos.md` files SHOULD have a `
 - **A `data-video-id` must be VERIFIED before it is committed.** Real-but-unchecked IDs are how the Persian (and other language/Quran/marketing) courses shipped ~1,200 dead videos. The allow/deny lists close this:
   - `_data/verified-video-ids.txt` — IDs confirmed LIVE + embeddable via oEmbed.
   - `_data/known-broken-video-ids.txt` — IDs confirmed 404/401 (never reuse these).
-  - To add new videos, run `python3 scripts/verify-and-allowlist-video-ids.py --update` — it oEmbed-checks every `data-video-id` and refreshes both lists. Do NOT hand-write IDs into a `Videos.md` without this step.
-  - `scripts/verify-baseline.py` (`check_video_ids_introduced`) hard-fails any commit that introduces a `data-video-id` not on the allowlist, or one that is on the denylist. It only inspects IDs *newly added in the staged diff*, so the pre-existing backlog is owned by the twice-weekly audit (§10.2) and never blocks unrelated commits.
+  - `_data/known-ad-video-ids.txt` — IDs confirmed to be **commercial/academy advertisements** (online-academy admission ads, "Earn Ijazah — Course Online", etc.), not teaching content. Add any ad that slips through here. **Teaching videos must contain genuine instruction, not ads.**
+  - To add new videos, run `python3 scripts/verify-and-allowlist-video-ids.py --update` — it oEmbed-checks every `data-video-id` and refreshes the allow/broken lists. Do NOT hand-write IDs into a `Videos.md` without this step.
+  - `scripts/verify-baseline.py` (`check_video_ids_introduced`) hard-fails any commit that introduces a `data-video-id` that is (a) not on the allowlist, (b) on the broken denylist, (c) on the known-ad denylist, or (d) whose card title matches an academy-advertisement phrase (`AD_PHRASE_RE` — narrow, so technical words like "enrollment"/"sponsored" don't false-positive). It only inspects IDs *newly added in the staged diff*, so the pre-existing backlog is owned by the twice-weekly audit (§10.2) and never blocks unrelated commits. **Caveat:** ad detection from metadata is best-effort — ad titles mimic lessons, so only a human watch is definitive; flag any ad you find by adding its ID to the known-ad denylist.
 
 ### 1.3 Never bypass the verifier
 
@@ -256,7 +257,7 @@ The **DevOps & Cloud-Native** track launched with **Certified Kubernetes Adminis
 
 The **Spoken Language Mastery** track (courses 41–45) adds English, Urdu, Persian, Arabic, and French — each a 10-module A1–C2 CEFR-aligned course with 3 practice exams and a Flashcards deck.
 
-`scripts/verify-baseline.py` enforces the current totals (all 16 invariants still passing). The 16th invariant (added 2026-06-27) is `check_video_ids_introduced` — see §1.2.1 and §10.2: it blocks any commit that introduces an unverified or known-broken `data-video-id`.
+`scripts/verify-baseline.py` enforces the current totals (all 16 invariants still passing). The 16th invariant (added 2026-06-27) is `check_video_ids_introduced` — see §1.2.1 and §10.2: it blocks any commit that introduces a `data-video-id` that is unverified, known-broken, a known commercial/academy ad, or whose card title reads as an academy advertisement.
 
 If you need to roll back: `git checkout stable-2026-05-20`.
 

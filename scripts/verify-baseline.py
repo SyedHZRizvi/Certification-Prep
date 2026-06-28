@@ -111,6 +111,18 @@ NAV_TRACK_RE = re.compile(r"^\s*-\s+id:\s+\S+", re.MULTILINE)
 VIDEO_ID_ATTR_RE = re.compile(r'data-video-id="([A-Za-z0-9_-]{11})"')
 VIDEO_ALLOWLIST = ROOT / "_data" / "verified-video-ids.txt"
 VIDEO_DENYLIST = ROOT / "_data" / "known-broken-video-ids.txt"
+VIDEO_ADLIST = ROOT / "_data" / "known-ad-video-ids.txt"
+# data-video-id followed by its card's <p class="vg-title"> label
+CARD_TITLE_RE = re.compile(r'data-video-id="([A-Za-z0-9_-]{11})"[\s\S]*?<p class="vg-title">(.*?)</p>')
+# Academy/advertisement phrases that mark a promo video (NOT a lesson).
+# Deliberately NARROW so legitimate IT/marketing terms like "enrollment" or
+# "sponsored products" do NOT false-positive — only unmistakable course/academy
+# ad wording (esp. the Urdu online-Quran-academy admission ads) is matched.
+AD_PHRASE_RE = re.compile(
+    "آن لائن قرآن|آن لائن کلاس|داخلے جاری|داخلہ جاری|ٹرائل کلاس|فری کلاس|گھر بیٹھے|"
+    r"online quran class|online quran academy|learn quran at home|admission open|"
+    r"earn ijazah|free trial class|join our academy|whatsapp us",
+    re.IGNORECASE)
 
 # ---------------------------------------------------------------------------
 # Result accumulator
@@ -284,11 +296,16 @@ def check_video_ids_introduced(r: Result) -> None:
     weekly online audit (.github/workflows/audit-videos.yml) owns that backlog
     — so a large backlog cannot deadlock unrelated commits.
 
+    Also blocks newly-introduced videos that are commercial/academy ADS: any ID
+    on the known-ad denylist (_data/known-ad-video-ids.txt) or any card whose
+    vg-title matches an academy-advertisement phrase (AD_PHRASE_RE).
+
     Degrades to an informational no-op when there is no staged Videos.md
     change (manual run / full CI scan / git unavailable). New IDs are verified
     with `python3 scripts/verify-and-allowlist-video-ids.py --update`."""
     allow = _load_video_id_list(VIDEO_ALLOWLIST)
     deny = _load_video_id_list(VIDEO_DENYLIST)
+    ad_deny = _load_video_id_list(VIDEO_ADLIST)
 
     staged = _git_output("diff", "--cached", "--name-only", "--diff-filter=AM")
     if staged is None:
@@ -301,6 +318,7 @@ def check_video_ids_introduced(r: Result) -> None:
 
     denylisted: list[str] = []
     unverified: list[str] = []
+    ad_flagged: list[str] = []
     for f in staged_videos:
         index_blob = _git_output("show", f":{f}")
         if index_blob is None:
@@ -308,11 +326,17 @@ def check_video_ids_introduced(r: Result) -> None:
         head_blob = _git_output("show", f"HEAD:{f}") or ""
         introduced = (set(VIDEO_ID_ATTR_RE.findall(index_blob))
                       - set(VIDEO_ID_ATTR_RE.findall(head_blob)))
+        titles = dict(CARD_TITLE_RE.findall(index_blob))   # vid -> vg-title label
         for vid in sorted(introduced):
             if vid in deny:
                 denylisted.append(f"{f}:{vid}")
             elif allow and vid not in allow:
                 unverified.append(f"{f}:{vid}")
+            # commercial-ad guard: known-ad ID, or an academy-advertisement title
+            if vid in ad_deny:
+                ad_flagged.append(f"{f}:{vid} (known-ad)")
+            elif AD_PHRASE_RE.search(titles.get(vid, "")):
+                ad_flagged.append(f"{f}:{vid} (ad-like title)")
 
     if denylisted:
         r.fail(
@@ -327,10 +351,17 @@ def check_video_ids_introduced(r: Result) -> None:
             f"`python3 scripts/verify-and-allowlist-video-ids.py --update` first: "
             f"{unverified[:5]}{'...' if len(unverified) > 5 else ''}"
         )
-    if not denylisted and not unverified:
+    if ad_flagged:
+        r.fail(
+            f"{len(ad_flagged)} newly-introduced video(s) look like commercial/academy "
+            f"ads (known-ad denylist or admission/online-class title) — replace with "
+            f"genuine teaching content: {ad_flagged[:5]}"
+            f"{'...' if len(ad_flagged) > 5 else ''}"
+        )
+    if not denylisted and not unverified and not ad_flagged:
         r.ok(
             f"introduced-video-id gate: {len(staged_videos)} staged Videos.md "
-            f"clean (new IDs verified, none known-broken)"
+            f"clean (verified, none known-broken, no ads)"
         )
 
 
