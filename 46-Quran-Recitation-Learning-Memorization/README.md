@@ -40,7 +40,7 @@ Designed from the ground up for **complete beginners** — children and adults a
 
 You do not need to know Arabic. You do not need any prior experience. All you need is the desire to connect with the Quran.
 
-> **📖 This course is completely free and open to everyone.** No account, no payment, and no enrollment are required. All 11 modules, practice exams, flashcards, and cheat sheets are accessible directly — no sign-in, no trial, no gates.
+> **📖 This course is completely free and open to everyone.** No account, no payment, and no enrollment are required. All 12 modules, practice exams, flashcards, and cheat sheets are accessible directly — no sign-in, no trial, no gates.
 
 ---
 

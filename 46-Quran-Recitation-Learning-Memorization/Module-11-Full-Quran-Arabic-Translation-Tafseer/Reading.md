@@ -827,7 +827,7 @@ This module is your permanent reference anchor for the Quran. The clickable inde
 
 **How to learn from this module:** Open any surah you are working on. First, read each ayah in Arabic, using the Tajweed colors as a pronunciation guide — notice where the red (Qalqalah), blue (Madd), and green (Ikhfaa) letters fall. Then listen to the recitation and compare. Then read the translation for meaning. Finally, open the Tafseer Switcher on individual ayahs to deepen understanding. This is the core method taught at Dar al-Quran programs and Quran institutes worldwide.
 
-**Next Steps:** Practice Exams for consolidation of all 11 modules.
+**Next Steps:** Practice Exams for consolidation of all 12 modules.
 
 </div>
 
