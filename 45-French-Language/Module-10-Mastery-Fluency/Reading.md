@@ -12,6 +12,9 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 (function(){var s='';try{s=localStorage.getItem('cert-hub-lang-pref')||'';}catch(e){}certHubSetLang(s||'en');})();
 </script>
 
+
+{% include record-studio.html kind="language" language="French" %}
+
 <div class="lang-en" markdown="1">
 
 ## 1. The Art of Academic French Writing
