@@ -40,7 +40,7 @@ Email ROAS: **£4.20 for every £1 invested**. Google Ads ROAS at the same time:
 
 Email was generating **3x the return** of their paid search, with zero incremental ad spend.
 
-But here is the detail most marketers miss: Ben had to build the GDPR compliance infrastructure first. Double opt-in confirmation emails. Documented consent timestamps. A one-click unsubscribe link in every message. A clear privacy notice on every form. Without that foundation, the entire strategy risked a UK ICO (Initial Coin Offering) fine of up to £17.5 million or 4% of global turnover — whichever is higher.
+But here is the detail most marketers miss: Ben had to build the GDPR compliance infrastructure first. Double opt-in confirmation emails. Documented consent timestamps. A one-click unsubscribe link in every message. A clear privacy notice on every form. Without that foundation, the entire strategy risked a UK ICO (Information Commissioner's Office) fine of up to £17.5 million or 4% of global turnover — whichever is higher.
 
 **The lesson:** Email is not a broadcast channel. It is a relationship channel. And in Europe, that relationship must be built on explicit, documented, freely-given consent.
 

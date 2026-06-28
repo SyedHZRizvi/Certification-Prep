@@ -26,7 +26,7 @@ Within 48 hours, the video had 12,000 orders. Within 72 hours, their server cras
 
 **The business result:** Dollar Shave Club went from $0 to $65 million in annual revenue in three years. By 2016, Unilever acquired them for **$1 billion in cash** — all-cash, no debt. At the time, it was the largest acquisition of a digitally-native DTC brand ever.
 
-The kicker? Dubin's customer acquisition cost (CAC) in those early viral days was essentially zero. The lifetime value (LTV (Lifetime Value)) of a subscriber — paying $1–9/month for years — was compounding beautifully. The LTV:CAC ratio was extraordinary.
+The kicker? Dubin's customer acquisition cost (CAC) in those early viral days was essentially zero. The lifetime value (LTV) of a subscriber — paying $1–9/month for years — was compounding beautifully. The LTV:CAC ratio was extraordinary.
 
 **The lesson this module teaches through that story:**
 
@@ -249,7 +249,7 @@ The 2018 enforcement of GDPR (EU) and the 2020 enforcement of CCPA (California) 
 | **Consent for cookies** | Required (via cookie banner) | Required for "sale" of personal info |
 | **Marketing implication** | Email list must be consent-based; no pre-ticked boxes | Must have "Do Not Sell My Personal Information" link |
 | **Penalty** | Up to 4% of global revenue or €20M | Up to $7,500 per intentional violation |
-| **Regulator** | Country-level DPAs (ICO (Initial Coin Offering) in UK, CNIL in France, BfDI in Germany) | California Privacy Protection Agency (CPPA) |
+| **Regulator** | Country-level DPAs (ICO (Information Commissioner's Office) in UK, CNIL in France, BfDI in Germany) | California Privacy Protection Agency (CPPA) |
 
 ### Practical Marketing Implications of GDPR
 
