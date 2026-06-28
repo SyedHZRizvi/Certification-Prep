@@ -98,82 +98,82 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=noon+sakin+tanween+ikhfa+tajweed+rules+urdu" data-video-id="GyzmS6e_pLk" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%86%D9%88%D9%86+%D8%B3%D8%A7%DA%A9%D9%86+%D8%A7%D9%88%D8%B1+%D8%AA%D9%86%D9%88%DB%8C%D9%86+%DA%A9%DB%92+%DA%86%D8%A7%D8%B1+%D8%A7%D8%AD%DA%A9%D8%A7%D9%85+%E2%80%94+%D8%A7%D8%B8%DB%81%D8%A7%D8%B1%D8%8C+%D8%A7%D8%AF%D8%BA%D8%A7%D9%85%D8%8C+%D8%A7%D9%82%D9%84%D8%A7%D8%A8%D8%8C+%D8%A7%D8%AE%D9%81%D8%A7%D8%A1" data-video-id="bAcaWqYSmbs" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">نون ساکن، تنوین اور احکامِ تجوید کا تعارف</p>
-    <p class="vg-creator">New Islamic Teacher</p>
+    <p class="vg-title">نون ساکن اور تنوین کے چار احکام — اظہار، ادغام، اقلاب، اخفاء</p>
+    <p class="vg-creator">Adnan Islamic Media</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=izhar+noon+sakin+tanween+ahkaam+e+tajweed+urdu+qari+aqib" data-video-id="d2xGtajNGIw" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%AA%D9%86%D9%88%DB%8C%D9%86+%D9%88+%D9%86%D9%88%D9%86+%D8%B3%D8%A7%DA%A9%D9%86+%DA%A9%D8%A7+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%3A+%D8%A7%D8%B8%DB%81%D8%A7%D8%B1" data-video-id="mtXAuEXq2CA" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">اظہار — نون ساکن اور تنوین کا پہلا قاعدہ</p>
-    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-title">تنوین و نون ساکن کا قاعدہ : اظہار</p>
+    <p class="vg-creator">Siratul Jannah</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=idgham+noon+sakin+tanween+ahkaam+e+tajweed+urdu+qari+aqib" data-video-id="pV9eA8Q3kPM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%AA%D9%86%D9%88%DB%8C%D9%86+%D8%A7%D9%88%D8%B1+%D9%86%D9%88%D9%86+%D8%B3%D8%A7%DA%A9%D9%86+%DA%A9%D8%A7+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%3A+%D8%A7%D8%AF%D8%BA%D8%A7%D9%85" data-video-id="qy5M4BXdwuY" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">ادغام — نون ساکن اور تنوین کا قاعدہ</p>
-    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-title">تنوین اور نون ساکن کا قاعدہ : ادغام</p>
+    <p class="vg-creator">Siratul Jannah</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=iqlab+ka+qaida+noon+sakin+tanween+tajweed+urdu" data-video-id="hVF5EOwhIlE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%AA%D9%86%D9%88%DB%8C%D9%86+%D8%A7%D9%88%D8%B1+%D9%86%D9%88%D9%86+%D8%B3%D8%A7%DA%A9%D9%86+%DA%A9%D8%A7+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%3A+%D8%A7%D9%82%D9%84%D8%A7%D8%A8" data-video-id="yjSQxUcFNrI" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">اِقلاب کا قاعدہ — نون کا میم میں بدلنا</p>
-    <p class="vg-creator">Paras Shaikh Official</p>
+    <p class="vg-title">تنوین اور نون ساکن کا قاعدہ : اقلاب</p>
+    <p class="vg-creator">Siratul Jannah</p>
     <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ikhfa+noon+sakin+tanween+ahkaam+e+tajweed+urdu+qari+aqib" data-video-id="BcemGaypPX4" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%86%D9%88%D9%86+%D8%B3%D8%A7%DA%A9%D9%86+%D8%A7%D9%88%D8%B1+%D8%AA%D9%86%D9%88%DB%8C%D9%86+%DA%A9%D8%A7+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%3A+%D8%A7%D8%AE%D9%81%D8%A7%D8%A1" data-video-id="D0ej16U5TKU" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">اِخفا — نون ساکن اور تنوین کا قاعدہ</p>
-    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-title">نون ساکن اور تنوین کا قاعدہ : اخفاء</p>
+    <p class="vg-creator">Siratul Jannah</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ghunna+nasalization+types+tajweed+urdu+qari+aqib" data-video-id="uCtem3Hb6o0" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%BA%D9%8F%D9%86%D9%91%DB%81+%D8%A7%D9%88%D8%B1+%D8%A7%D8%B3+%DA%A9%DB%8C+%D8%A7%D9%82%D8%B3%D8%A7%D9%85+%E2%80%94+%D8%A7%D8%AF%D8%A7+%DA%A9%D8%B1%D9%86%DB%92+%DA%A9%D8%A7+%D8%B7%D8%B1%DB%8C%D9%82%DB%81" data-video-id="oHCXcswiBGQ" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">غُنّہ اور اس کی اقسام — نون و میم مشدد</p>
-    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-title">غُنّہ اور اس کی اقسام — ادا کرنے کا طریقہ</p>
+    <p class="vg-creator">All About Quran</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=rules+of+madd+types+tajweed+urdu" data-video-id="IN2Yo1RGEu8" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%85%D9%8E%D8%AF+%D9%81%D8%B1%D8%B9%DB%8C+%DA%A9%DB%8C+%DA%86%DA%BE+%D8%A7%DB%81%D9%85+%D8%A7%D9%82%D8%B3%D8%A7%D9%85" data-video-id="1eKkiM52_aY" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">مَد کے قواعد اور اس کی اقسام</p>
-    <p class="vg-creator">Roots OfKnowledge</p>
+    <p class="vg-title">مَد فرعی کی چھ اہم اقسام</p>
+    <p class="vg-creator">Saifi Quran Academy</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=madd+ul+munfasil+detached+madd+tajweed+urdu+qari+aqib" data-video-id="IO96y5yST2k" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%85%D9%8E%D8%AF+%DA%A9%DB%8C+%D8%A7%D9%82%D8%B3%D8%A7%D9%85+%E2%80%94+%D9%85%D9%8E%D8%AF+%D9%85%D8%AA%D8%B5%D9%84+%D8%A7%D9%88%D8%B1+%D9%85%D9%8E%D8%AF+%D9%85%D9%86%D9%81%D8%B5%D9%84" data-video-id="uplLD1g34rU" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">مَد منفصل — جدا ہونے والی مَد کی تفصیل</p>
-    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-title">مَد کی اقسام — مَد متصل اور مَد منفصل</p>
+    <p class="vg-creator">Psychology &amp; related subjects</p>
     <p class="vg-duration">~10 min</p>
   </div>
 </a>

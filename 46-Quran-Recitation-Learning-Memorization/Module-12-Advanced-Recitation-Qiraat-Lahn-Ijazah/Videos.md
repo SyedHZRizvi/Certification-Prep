@@ -98,32 +98,32 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+seekhein+urdu+introduction+lesson" data-video-id="gLoOGRV3dqw" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%82%D8%B1%D8%A2%D9%86+%D9%BE%D8%A7%DA%A9+%D8%B3%DB%8C%DA%A9%DA%BE%DB%8C%DA%BA+%D8%A2%D8%B3%D8%A7%D9%86+%D8%AA%D8%AC%D9%88%DB%8C%D8%AF+%DA%A9%DB%92+%D8%B3%D8%A7%D8%AA%DA%BE+%E2%80%94+%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%D8%AA%D8%B9%D8%A7%D8%B1%D9%81%DB%8C+%D8%B3%D8%A8%D9%82" data-video-id="zKaWVLUwcFM" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">تجوید آسان طریقے سے سیکھیں — تعارفی سبق</p>
-    <p class="vg-creator">Understand Al-Quran Official</p>
+    <p class="vg-title">قرآن پاک سیکھیں آسان تجوید کے ساتھ — نورانی قاعدہ تعارفی سبق</p>
+    <p class="vg-creator">al madina online quran academy</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=makharij+ka+bayan+tajweed+urdu+qari+aqib" data-video-id="L1Uh958MmtI" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%AA%D8%AC%D9%88%DB%8C%D8%AF+%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86+%DA%A9%D9%88%D8%B1%D8%B3+%E2%80%94+%D9%85%D8%AE%D8%A7%D8%B1%D8%AC+%DA%A9%D8%A7+%D8%A8%DB%8C%D8%A7%D9%86+%28%D8%B3%D8%A8%D9%82+%DB%B1%29" data-video-id="Wo3qo0fThT0" target="_blank" rel="noopener">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">مخارج کا بیان — احکامِ تجوید کلاس</p>
-    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-title">تجوید القرآن کورس — مخارج کا بیان (سبق ۱)</p>
+    <p class="vg-creator">Allama Mansoor Maturidi</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=lahn+e+jali+lahn+khafi+tajweed+urdu+bayan" data-video-id="POrU-lpQ1jE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%84%D8%AD%D9%86+%D8%AC%D9%84%DB%8C+%D8%A7%D9%88%D8%B1+%D9%84%D8%AD%D9%86+%D8%AE%D9%81%DB%8C+%DA%A9%D8%A7+%D8%A8%DB%8C%D8%A7%D9%86+%E2%80%94+%D8%A7%DB%81%D9%85+%D8%B3%D8%A8%D9%82" data-video-id="GJ21zwbGqws" target="_blank" rel="noopener">
   <div class="vg-thumb">⚠️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">لحن جلی اور لحن خفی کا بیان</p>
-    <p class="vg-creator">Qari Muhammad Owais</p>
+    <p class="vg-title">لحن جلی اور لحن خفی کا بیان — اہم سبق</p>
+    <p class="vg-creator">NoorCast</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
@@ -138,12 +138,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=qawaed+e+tajweed+lahn+e+jali+lahn+khafi+urdu" data-video-id="UPBmfVF0bYw" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%84%D8%AD%D9%86+%DA%A9%D8%A7+%D8%A8%DB%8C%D8%A7%D9%86+%D8%A7%D9%88%D8%B1+%D9%84%D8%AD%D9%86+%D8%AC%D9%84%DB%8C+%D9%88+%D8%AE%D9%81%DB%8C+%DA%A9%DB%8C+%D8%A7%D9%82%D8%B3%D8%A7%D9%85" data-video-id="VqyHR-sFoEI" target="_blank" rel="noopener">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">قواعدِ تجوید — لحن جلی اور لحن خفی</p>
-    <p class="vg-creator">Mufti Ilyas Official</p>
+    <p class="vg-title">لحن کا بیان اور لحن جلی و خفی کی اقسام</p>
+    <p class="vg-creator">Qari Zain official</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
@@ -158,22 +158,22 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=hamza+tul+wasl+ibtidah+ka+bayan+tajweed+urdu+qari+aqib" data-video-id="Zi43PKoX08M" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%DB%81%D9%85%D8%B2%DB%81+%D9%88%D8%B5%D9%84%DB%8C+%D8%A7%D9%88%D8%B1+%DB%81%D9%85%D8%B2%DB%81+%D9%82%D8%B7%D8%B9%DB%8C+%DA%A9%DB%8C+%D9%BE%DB%81%DA%86%D8%A7%D9%86+%D8%A7%D9%88%D8%B1+%D9%85%D8%AB%D8%A7%D9%84%DB%8C%DA%BA" data-video-id="CevCAZm-POg" target="_blank" rel="noopener">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">ابتداء اور ہمزۃ الوصل کا بیان</p>
-    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-title">ہمزہ وصلی اور ہمزہ قطعی کی پہچان اور مثالیں</p>
+    <p class="vg-creator">At-Tazkeer</p>
     <p class="vg-duration">~17 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=hamzatul+wasl+rules+tajweed+urdu+qari+aqib" data-video-id="nl0tnErC2Zg" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%DB%81%D9%85%D8%B2%DB%81+%D9%88%D8%B5%D9%84%DB%8C+%D8%A7%D9%88%D8%B1+%DB%81%D9%85%D8%B2%DB%81+%D9%82%D8%B7%D8%B9%DB%8C+%DA%A9%DB%92+%D8%A7%D8%AD%DA%A9%D8%A7%D9%85" data-video-id="4A7ERxmnnBw" target="_blank" rel="noopener">
   <div class="vg-thumb">✍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">ہمزۃ الوصل کے احکام — تفصیلی سبق</p>
-    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-title">ہمزہ وصلی اور ہمزہ قطعی کے احکام</p>
+    <p class="vg-creator">Deen Seekho</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>

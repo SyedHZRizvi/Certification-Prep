@@ -98,42 +98,42 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=نورانی+قاعدہ+سبق+حروف+مفردات+پڑھنا+سیکھیں" data-video-id="puxnnwyuPj4" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%D8%AA%D8%AE%D8%AA%DB%8C+%D9%86%D9%85%D8%A8%D8%B1+%DB%B1+%E2%80%94+%D8%AD%D8%B1%D9%88%D9%81+%D9%85%DA%A9%D9%85%D9%84+%D8%AA%D8%AC%D9%88%DB%8C%D8%AF+%DA%A9%DB%92+%D8%B3%D8%A7%D8%AA%DA%BE" data-video-id="9toCyQ-qc4I" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">نورانی قاعدہ سبق ۲ — حروفِ مفردات پڑھنا سیکھیں</p>
-    <p class="vg-creator">MuftiYaseenAcademy</p>
+    <p class="vg-title">نورانی قاعدہ تختی نمبر ۱ — حروف مکمل تجوید کے ساتھ</p>
+    <p class="vg-creator">islamic Dars</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=نورانی+قاعدہ+عربی+حروف+تہجی+مخارج+سیکھیں" data-video-id="bJIGheo79cc" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%D9%BE%DB%81%D9%84%D8%A7+%D8%B3%D8%A8%D9%82+%E2%80%94+%D8%AD%D8%B1%D9%88%D9%81%D9%90+%D8%AA%DB%81%D8%AC%DB%8C+%DA%A9%DB%8C+%D8%A7%D8%AF%D8%A7%D8%A6%DB%8C%DA%AF%DB%8C+%D9%88+%D9%85%D8%AE%D8%A7%D8%B1%D8%AC" data-video-id="7QsEZGljKJI" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">نورانی قاعدہ سبق ۳ — عربی حروفِ تہجی و مخارج</p>
-    <p class="vg-creator">Learn Quran with Hafiza Uzma Syed</p>
+    <p class="vg-title">نورانی قاعدہ پہلا سبق — حروفِ تہجی کی ادائیگی و مخارج</p>
+    <p class="vg-creator">multisupi</p>
     <p class="vg-duration">~13 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+کوثر+اردو+ترجمہ+تفسیر+تلاوت" data-video-id="aVbSPXLKaIU" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B3%D9%88%D8%B1%DB%81+%D8%A7%D9%84%DA%A9%D9%88%D8%AB%D8%B1+%E2%80%94+%D8%AA%D9%84%D8%A7%D9%88%D8%AA+%D9%88+%D8%A7%D8%B1%D8%AF%D9%88+%D8%AA%D8%B1%D8%AC%D9%85%DB%81+%DA%A9%DB%92+%D8%B3%D8%A7%D8%AA%DA%BE" data-video-id="o84Q0FB2k1g" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">سورہ کوثر — اردو ترجمہ و تفسیر کے ساتھ تلاوت</p>
-    <p class="vg-creator">GYAN KA HUB</p>
+    <p class="vg-title">سورہ الکوثر — تلاوت و اردو ترجمہ کے ساتھ</p>
+    <p class="vg-creator">hjj</p>
     <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+العصر+تجوید+کے+ساتھ+اردو+ترجمہ" data-video-id="hKrXxOTpWw0" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B3%D9%88%D8%B1%DB%81+%D8%A7%D9%84%D8%B9%D8%B5%D8%B1+%E2%80%94+%D8%A7%D8%B1%D8%AF%D9%88+%D8%AA%D8%B1%D8%AC%D9%85%DB%81+%DA%A9%DB%92+%D8%B3%D8%A7%D8%AA%DA%BE+%D8%AE%D9%88%D8%A8%D8%B5%D9%88%D8%B1%D8%AA+%D8%AA%D9%84%D8%A7%D9%88%D8%AA" data-video-id="eyh9wJfoHAY" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">سورۃ العصر — تجوید کے ساتھ اور اردو ترجمہ</p>
-    <p class="vg-creator">Qari sajid waseem Official</p>
+    <p class="vg-title">سورہ العصر — اردو ترجمہ کے ساتھ خوبصورت تلاوت</p>
+    <p class="vg-creator">Quran o hadees</p>
     <p class="vg-duration">~8 min</p>
   </div>
 </a>

@@ -88,22 +88,22 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+فاتحہ+تجوید+کے+مطابق+قرات+کیسے+پڑھیں" data-video-id="0u4MfRQHoh0" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B3%D9%88%D8%B1%DB%81+%D9%81%D8%A7%D8%AA%D8%AD%DB%81+%E2%80%94+%D8%AA%D9%84%D8%A7%D9%88%D8%AA+%D8%A8%D9%85%D8%B9+%D8%A7%D8%B1%D8%AF%D9%88+%D8%AA%D8%B1%D8%AC%D9%85%DB%81+%28%D9%82%D8%A7%D8%B1%DB%8C+%D8%B3%D8%AF%DB%8C%D8%B3%29" data-video-id="sA-ngyfFh8U" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">سورہ فاتحہ تجوید کے مطابق صحیح طریقے سے کیسے پڑھیں — قاری حماد اللہ ساجد</p>
-    <p class="vg-creator">Hammad ullah Sajid</p>
+    <p class="vg-title">سورہ فاتحہ — تلاوت بمع اردو ترجمہ (قاری سدیس)</p>
+    <p class="vg-creator">quran.telawat</p>
     <p class="vg-duration">~12 منٹ</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=سورۃ+الفاتحہ+لفظی+ترجمہ+اردو+لفظ+بہ+لفظ" data-video-id="GmZOTD_BLuM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B3%D9%88%D8%B1%DB%83+%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D8%AD%DB%81+%E2%80%94+%D8%B5%D9%81%D8%AD%DB%81+%D8%A8%DB%81+%D8%B5%D9%81%D8%AD%DB%81+%D8%AA%D9%84%D8%A7%D9%88%D8%AA+%D8%A7%D9%88%D8%B1+%D8%A7%D8%B1%D8%AF%D9%88+%D8%AA%D8%B1%D8%AC%D9%85%DB%81" data-video-id="qfUajX-d8xY" target="_blank" rel="noopener">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">سورۃ الفاتحہ — اردو لفظی ترجمہ (لفظ بہ لفظ معنیٰ)</p>
-    <p class="vg-creator">Quran365Day</p>
+    <p class="vg-title">سورۃ الفاتحہ — صفحہ بہ صفحہ تلاوت اور اردو ترجمہ</p>
+    <p class="vg-creator">الصراط الاقوم</p>
     <p class="vg-duration">~7 منٹ</p>
   </div>
 </a>
@@ -118,32 +118,32 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+فاتحہ+اردو+ترجمہ+آیت+بہ+آیت" data-video-id="Bpo7bxwNlbo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B3%D9%88%D8%B1%DB%81+%D9%81%D8%A7%D8%AA%D8%AD%DB%81+%DA%A9%DB%8C+%D8%AA%D9%81%D8%B3%DB%8C%D8%B1+%E2%80%94+%D8%A2%DB%8C%D8%AA+%D8%A8%DB%81+%D8%A2%DB%8C%D8%AA+%D8%A7%D8%B1%D8%AF%D9%88+%D9%88%D8%B6%D8%A7%D8%AD%D8%AA" data-video-id="7d1j89qLBjQ" target="_blank" rel="noopener">
   <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">سورۃ الفاتحہ — آیت بہ آیت اردو ترجمہ</p>
-    <p class="vg-creator">Quran majeed islam light of hidaya</p>
+    <p class="vg-title">سورہ فاتحہ کی تفسیر — آیت بہ آیت اردو وضاحت</p>
+    <p class="vg-creator">Zdawah</p>
     <p class="vg-duration">~8 منٹ</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+فاتحہ+اردو+ترجمہ+کے+ساتھ+بصری+قرآن" data-video-id="2GE1shC4J24" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B3%D9%88%D8%B1%DB%81+%D9%81%D8%A7%D8%AA%D8%AD%DB%81+%E2%80%94+%D9%BE%D8%A7%D8%B1%DB%81+%DB%B1+%D8%AA%D9%84%D8%A7%D9%88%D8%AA+%D8%A7%D8%B1%D8%AF%D9%88+%D8%AA%D8%B1%D8%AC%D9%85%DB%81+%DA%A9%DB%92+%D8%B3%D8%A7%D8%AA%DA%BE" data-video-id="c8HcJgOvzVA" target="_blank" rel="noopener">
   <div class="vg-thumb">🤲<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">سورہ الفاتحہ — پارہ ۱، اردو ترجمہ کے ساتھ (HD)</p>
-    <p class="vg-creator">Bahria University Media House</p>
+    <p class="vg-title">سورہ فاتحہ — پارہ ۱ تلاوت اردو ترجمہ کے ساتھ</p>
+    <p class="vg-creator">Mashal da wafa</p>
     <p class="vg-duration">~5 منٹ</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+فاتحہ+ہندی+اردو+ترجمہ+بصری+تلاوت" data-video-id="um67Fqaqxds" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B3%D9%88%D8%B1%DB%81+%D9%81%D8%A7%D8%AA%D8%AD%DB%81+%E2%80%94+%D8%A8%D9%85%D8%B9%DB%81+%D8%AA%D8%B1%D8%AC%D9%85%DB%81+%D8%AE%D9%88%D8%A8%D8%B5%D9%88%D8%B1%D8%AA+%D8%AA%D9%84%D8%A7%D9%88%D8%AA" data-video-id="FeAzdDgPxwM" target="_blank" rel="noopener">
   <div class="vg-thumb">🧒<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">سورہ الفاتحہ — اردو ترجمہ کے ساتھ خوبصورت بصری پیشکش</p>
-    <p class="vg-creator">iPlus TV</p>
+    <p class="vg-title">سورہ فاتحہ — بمعہ ترجمہ خوبصورت تلاوت</p>
+    <p class="vg-creator">hjj</p>
     <p class="vg-duration">~5 منٹ</p>
   </div>
 </a>

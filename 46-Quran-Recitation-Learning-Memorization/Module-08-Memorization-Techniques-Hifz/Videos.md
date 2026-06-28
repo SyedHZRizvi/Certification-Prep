@@ -108,42 +108,42 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=قرآن+یاد+کرنے+کا+آسان+طریقہ+حفظ" data-video-id="ePc4wi-VFe0" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%82%D8%B1%D8%A2%D9%86+%DA%A9%D8%B1%DB%8C%D9%85+%DA%A9%D9%88+%DB%8C%D8%A7%D8%AF+%DA%A9%D8%B1%D9%86%DB%92+%DA%A9%D8%A7+%D8%A8%DB%81%D8%AA%D8%B1%DB%8C%D9%86+%D8%B7%D8%B1%DB%8C%D9%82%DB%81" data-video-id="gCl1MPu0H6E" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">قرآن پاک کو حفظ کرنے کا آسان طریقہ</p>
-    <p class="vg-creator">Mufti Syed Adnan Kakakhail</p>
+    <p class="vg-title">قرآن کریم کو یاد کرنے کا بہترین طریقہ</p>
+    <p class="vg-creator">Ahnaf Media Services</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=حفظ+قرآن+کا+بہترین+طریقہ+دہرائی" data-video-id="cRflmgEDoro" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%82%D8%B1%D8%A2%D9%86+%D9%85%D8%AC%DB%8C%D8%AF+%D8%B3%DB%8C%DA%A9%DA%BE%D9%86%DB%92+%DA%A9%D8%A7+%D8%B3%D8%A8+%D8%B3%DB%92+%D8%A2%D8%B3%D8%A7%D9%86+%D8%B7%D8%B1%DB%8C%D9%82%DB%81+%E2%80%94+%D9%84%D9%81%D8%B8+%D8%A8%D9%84%D9%81%D8%B8" data-video-id="8zQgbxMmQ2k" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">حفظ قرآن کا بہترین طریقہ — یاد رکھنے کی تدبیر</p>
-    <p class="vg-creator">Mufti Shahjahan Qasmi Madanapalle</p>
+    <p class="vg-title">قرآن مجید سیکھنے کا سب سے آسان طریقہ — لفظ بلفظ</p>
+    <p class="vg-creator">Hafiz Zafar Allahwala</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=حفظ+قرآن+یاد+کرنے+کا+صحیح+طریقہ+دہرائی" data-video-id="XQaAiGbhbY8" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%A2%D9%86+%D9%84%D8%A7%D8%A6%D9%86+%D8%AD%D9%81%D8%B8+%D9%88+%D9%86%D8%A7%D8%B8%D8%B1%DB%81+%D9%82%D8%B1%D8%A2%D9%86+%DA%A9%D9%84%D8%A7%D8%B3" data-video-id="CYMcTxj1-5c" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">حفظ یاد کرنے اور پختہ رکھنے کا صحیح طریقہ</p>
-    <p class="vg-creator">Muqarrir TV</p>
+    <p class="vg-title">آن لائن حفظ و ناظرہ قرآن کلاس</p>
+    <p class="vg-creator">Qari Majid Ali</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=بھولا+ہوا+قرآن+چھ+ماہ+میں+کیسے+یاد+کریں" data-video-id="3o4cN73ohgY" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%A2%D8%A4+%D9%82%D8%B1%D8%A2%D9%86+%DA%A9%D8%B1%DB%8C%D9%85+%D8%B3%DB%8C%DA%A9%DA%BE%DB%8C%DA%BA+%E2%80%94+%D8%A2%D8%B3%D8%A7%D9%86+%D8%B3%D8%A8%D9%82+%D9%88%D8%A7%D8%B1+%D8%B7%D8%B1%DB%8C%D9%82%DB%81" data-video-id="QksyAA1Zl1U" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">بھولا ہوا قرآن چھ ماہ میں کیسے یاد کریں</p>
-    <p class="vg-creator">Qari Aziz Afridi</p>
+    <p class="vg-title">آؤ قرآن کریم سیکھیں — آسان سبق وار طریقہ</p>
+    <p class="vg-creator">tilawat Quran daily</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
@@ -158,12 +158,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=قرآن+حفظ+سبق+اردو+ہندی+آن+لائن+کورس" data-video-id="LWE1Ht9WDR0" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%A7%D9%84%D9%85%D8%AF%DB%8C%D9%86%DB%81+%D8%A2%D9%86+%D9%84%D8%A7%D8%A6%D9%86+%D9%82%D8%B1%D8%A2%D9%86+%D8%A7%DA%A9%DB%8C%DA%88%D9%85%DB%8C+%E2%80%94+%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%D8%B3%D8%A8%D9%82" data-video-id="zKaWVLUwcFM" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">حفظ قرآن سبق نمبر ۱ — آن لائن کورس</p>
-    <p class="vg-creator">Halal Food Finder</p>
+    <p class="vg-title">المدینہ آن لائن قرآن اکیڈمی — نورانی قاعدہ سبق</p>
+    <p class="vg-creator">al madina online quran academy</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>

@@ -88,22 +88,22 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+النصر+اردو+ترجمہ+تلاوت" data-video-id="ew79hAMcQWA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B3%D9%88%D8%B1%DB%81+%D8%A7%D9%84%D9%86%D8%B5%D8%B1+%E2%80%94+%D8%AA%D9%84%D8%A7%D9%88%D8%AA+%D9%88+%D8%A7%D8%B1%D8%AF%D9%88+%D8%AA%D8%B1%D8%AC%D9%85%DB%81" data-video-id="FBLkIJ-oh4M" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">سورہ النصر — عربی متن اور اردو کے ساتھ</p>
-    <p class="vg-creator">Qari Ali Raza Hujvari</p>
+    <p class="vg-title">سورہ النصر — تلاوت و اردو ترجمہ</p>
+    <p class="vg-creator">Always Islam</p>
     <p class="vg-duration">~4 منٹ</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+الکافرون+اردو+ترجمہ+کے+ساتھ" data-video-id="V9YjcxFYnkc" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B3%D9%88%D8%B1%DB%83+%D8%A7%D9%84%DA%A9%D8%A7%D9%81%D8%B1%D9%88%D9%86+%D8%AA%D8%AC%D9%88%DB%8C%D8%AF+%D8%B3%DB%92+%D9%BE%DA%91%DA%BE%D9%86%D8%A7+%D8%B3%DB%8C%DA%A9%DA%BE%DB%8C%DA%BA" data-video-id="zgJ3FGBlu0A" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">سورۃ الکافرون — اردو ترجمہ کے ساتھ</p>
-    <p class="vg-creator">Voice of Quran — قرآن کی صدا</p>
+    <p class="vg-title">سورۃ الکافرون تجوید سے پڑھنا سیکھیں</p>
+    <p class="vg-creator">Qari Ishaq Azeemi</p>
     <p class="vg-duration">~5 منٹ</p>
   </div>
 </a>
@@ -138,22 +138,22 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+قریش+تجوید+کے+ساتھ+سیکھیں+ورڈ+بائی+ورڈ" data-video-id="CuGvw5i8iEA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B3%D9%88%D8%B1%DB%81+%D9%82%D8%B1%DB%8C%D8%B4+%E2%80%94+%D8%AA%D9%84%D8%A7%D9%88%D8%AA%D8%8C+%D8%A7%D8%B1%D8%AF%D9%88+%D8%AA%D8%B1%D8%AC%D9%85%DB%81+%D8%A7%D9%88%D8%B1+%D9%85%D8%B1%DA%A9%D8%B2%DB%8C+%D8%AE%DB%8C%D8%A7%D9%84" data-video-id="G---oxbm02s" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">سورہ قریش تجوید کے ساتھ سیکھیں — لفظ بہ لفظ</p>
-    <p class="vg-creator">Jadeed Noorani Qaida</p>
+    <p class="vg-title">سورہ قریش — تلاوت، اردو ترجمہ اور مرکزی خیال</p>
+    <p class="vg-creator">Alkaramah Islamic Media</p>
     <p class="vg-duration">~9 منٹ</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+الفیل+مشق+تجوید+کے+ساتھ+سیکھیں" data-video-id="4lA9cIx2Tqw" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B3%D9%88%D8%B1%DB%83+%D8%A7%D9%84%D9%81%DB%8C%D9%84+%E2%80%94+%D8%A7%D8%B1%D8%AF%D9%88+%D8%AA%D8%B1%D8%AC%D9%85%DB%81+%DA%A9%DB%92+%D8%B3%D8%A7%D8%AA%DA%BE" data-video-id="dYc93M2aZsA" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">سورہ الفیل / قریش تجوید کے ساتھ سیکھیں</p>
-    <p class="vg-creator">Tajweed-UL-Quran</p>
+    <p class="vg-title">سورۃ الفیل — اردو ترجمہ کے ساتھ</p>
+    <p class="vg-creator">Quran Easy Tajweed</p>
     <p class="vg-duration">~8 منٹ</p>
   </div>
 </a>
