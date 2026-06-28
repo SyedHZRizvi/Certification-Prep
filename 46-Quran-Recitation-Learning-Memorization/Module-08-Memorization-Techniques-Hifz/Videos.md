@@ -1,86 +1,210 @@
-<style>.vg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:22px 0 30px;}.vg-card{display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s,border-color .2s;}.vg-card:hover{transform:translateY(-3px);box-shadow:0 12px 24px -8px rgba(0,0,0,.15);border-color:#34d399;}.vg-thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#064e3b,#065f46);display:flex;align-items:center;justify-content:center;color:#fff;font-size:48px;}.vg-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.35);color:#fff;font-size:48px;opacity:0;transition:opacity .2s;}.vg-card:hover .vg-play{opacity:1;}.vg-meta{padding:14px 16px;}.vg-tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:4px;margin-bottom:8px;}.vg-tag.essential{background:#d1fae5;color:#065f46;}.vg-tag.recommended{background:#dbeafe;color:#1e40af;}.vg-tag.optional{background:#fef3c7;color:#92400e;}.vg-title{font-weight:700;font-size:14px;line-height:1.4;margin:0 0 4px;color:#0f172a;}.vg-creator{font-size:12.5px;color:#64748b;margin:0 0 6px;}.vg-duration{font-size:11px;color:#94a3b8;font-weight:600;}</style>
+{% include lang-switcher.html %}
 
-# Module 8 Videos — Memorization & Hifz
+# Module 8 Videos — Memorization Techniques (Hifz)
+
+<div class="lang-en" markdown="1">
+
+> **🇬🇧 English teaching videos.** Qur'an recitation itself is in Arabic — see the shared section at the bottom.
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+memorize+quran+hifz+techniques+step+by+step+beginners" data-video-id="FvBFglXheMM" target="_blank" rel="noopener">
-  <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=memorise+the+whole+quran+step+by+step+hifdh+guide" data-video-id="y15xgg5uVB4" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">How to Memorize Quran — Step by Step Hifz Guide</p>
-    <p class="vg-creator">Hifz Academy</p>
-    <p class="vg-duration">35 min</p>
+    <p class="vg-title">Memorise the Whole Qur'an — Step-by-Step Hifdh Guide</p>
+    <p class="vg-creator">IFG</p>
+    <p class="vg-duration">~30 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=spaced+repetition+quran+memorization+review+system+murajaah" data-video-id="jZAWRuaNHzk" target="_blank" rel="noopener">
-  <div class="vg-thumb">🔁<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=step+by+step+quran+memorization+technique+tarteel" data-video-id="GqNeQEsr7k8" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Spaced Repetition for Quran — Muraja'ah System Explained</p>
-    <p class="vg-creator">Quran Memorization</p>
-    <p class="vg-duration">25 min</p>
+    <p class="vg-title">Try This Step-by-Step Qur'an Memorization Technique</p>
+    <p class="vg-creator">Tarteel AI</p>
+    <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+memorization+kids+children+techniques+fun+easy" data-video-id="jZAWRuaNHzk" target="_blank" rel="noopener">
-  <div class="vg-thumb">🧒<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+revision+spaced+repetition+system+srs+murajaah" data-video-id="1X7h6mW9BZM" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Quran Memorization for Children — Fun and Effective Methods</p>
-    <p class="vg-creator">Islamic Kids Channel</p>
-    <p class="vg-duration">20 min</p>
+    <p class="vg-title">Qur'an Revision Using a Spaced Repetition System (Muraja'ah)</p>
+    <p class="vg-creator">Siraj Samsudeen</p>
+    <p class="vg-duration">~25 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=fajr+morning+memorization+quran+best+time+brain+science" data-video-id="jZAWRuaNHzk" target="_blank" rel="noopener">
-  <div class="vg-thumb">🌅<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+memorise+long+verses+of+the+quran+hifz+methods" data-video-id="eDSnA5qrTps" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Why Fajr is the Best Time for Hifz — Brain Science</p>
-    <p class="vg-creator">Quran Learning Channel</p>
-    <p class="vg-duration">18 min</p>
+    <p class="vg-title">How to Memorise Long Verses of the Qur'an</p>
+    <p class="vg-creator">SFM-Academy</p>
+    <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+memorization+mistakes+avoid+hifz+tips" data-video-id="FvBFglXheMM" target="_blank" rel="noopener">
-  <div class="vg-thumb">⚠️<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mufti+menk+easiest+way+to+memorise+the+quran+children" data-video-id="4k2_Ukgg_-Y" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">10 Common Hifz Mistakes to Avoid</p>
-    <p class="vg-creator">Sheikh Hifz Academy</p>
-    <p class="vg-duration">22 min</p>
+    <p class="vg-title">Easiest Way to Memorise the Qur'an — for Children</p>
+    <p class="vg-creator">Mufti Menk</p>
+    <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+teacher+importance+ijazah+talaqqi+chain+transmission" data-video-id="aKi0Va6N3ek" target="_blank" rel="noopener">
-  <div class="vg-thumb">🏫<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=top+mistakes+when+memorizing+the+quran+avoid" data-video-id="Ot0b9wNWdNM" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">The Importance of a Quran Teacher — Ijazah and Talaqqi</p>
-    <p class="vg-creator">Islamic Education</p>
-    <p class="vg-duration">20 min</p>
+    <p class="vg-title">Top Mistakes to Avoid When Memorizing the Qur'an</p>
+    <p class="vg-creator">Tarteel AI</p>
+    <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=adult+quran+memorization+how+to+start+hifz+older" data-video-id="jZAWRuaNHzk" target="_blank" rel="noopener">
-  <div class="vg-thumb">👨‍🎓<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=best+time+of+day+to+memorize+quran+morning+fajr" data-video-id="zJNtw-BI650" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Starting Hifz as an Adult — It Is Never Too Late</p>
-    <p class="vg-creator">Adult Quran Learning</p>
-    <p class="vg-duration">25 min</p>
+    <p class="vg-title">When Is the Best Time of Day to Memorize Qur'an?</p>
+    <p class="vg-creator">Tarteel AI</p>
+    <p class="vg-duration">~8 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+quran+hifz+memorization+repetition+audio" data-video-id="bOnLaHbQpbM" target="_blank" rel="noopener">
-  <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+become+a+hafiz+as+an+adult+quran+memorization" data-video-id="Fhg_4n86tkM" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Quran Memorization Audio — Listen & Repeat</p>
-    <p class="vg-creator">Quran Memorization Audio</p>
-    <p class="vg-duration">90 min</p>
+    <p class="vg-title">How to Become a Hafiz as an Adult — It Is Never Too Late</p>
+    <p class="vg-creator">SFM-Academy</p>
+    <p class="vg-duration">~18 min</p>
+  </div>
+</a>
+
+</div>
+
+</div>
+
+<div class="lang-ur" markdown="1" style="direction:rtl;text-align:right;font-family:'Noto Nastaliq Urdu','Gulzar',serif;line-height:2.2;">
+
+> **🇵🇰 اردو تدریسی ویڈیوز۔** قرآن کی تلاوت عربی میں ہے — نیچے مشترکہ سیکشن دیکھیں۔
+
+<div class="vg-grid" markdown="0">
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=قرآن+حفظ+کرنے+کا+آسان+طریقہ+مکمل+کورس" data-video-id="pXMAzJRgM2Y" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">قرآن پاک کو حفظ کرنے کا آسان طریقہ — مکمل کورس</p>
+    <p class="vg-creator">Qari Abubakar Hayat</p>
+    <p class="vg-duration">~30 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=قرآن+یاد+کرنے+کا+آسان+طریقہ+حفظ" data-video-id="ePc4wi-VFe0" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">قرآن پاک کو حفظ کرنے کا آسان طریقہ</p>
+    <p class="vg-creator">Mufti Syed Adnan Kakakhail</p>
+    <p class="vg-duration">~20 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=حفظ+قرآن+کا+بہترین+طریقہ+دہرائی" data-video-id="cRflmgEDoro" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">حفظ قرآن کا بہترین طریقہ — یاد رکھنے کی تدبیر</p>
+    <p class="vg-creator">Mufti Shahjahan Qasmi Madanapalle</p>
+    <p class="vg-duration">~15 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=حفظ+قرآن+یاد+کرنے+کا+صحیح+طریقہ+دہرائی" data-video-id="XQaAiGbhbY8" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">حفظ یاد کرنے اور پختہ رکھنے کا صحیح طریقہ</p>
+    <p class="vg-creator">Muqarrir TV</p>
+    <p class="vg-duration">~12 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=بھولا+ہوا+قرآن+چھ+ماہ+میں+کیسے+یاد+کریں" data-video-id="3o4cN73ohgY" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">بھولا ہوا قرآن چھ ماہ میں کیسے یاد کریں</p>
+    <p class="vg-creator">Qari Aziz Afridi</p>
+    <p class="vg-duration">~20 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=قرآن+حفظ+کرنے+کا+آسان+طریقہ+ہر+عمر" data-video-id="K3pb4n9y3p0" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag optional">Optional</span>
+    <p class="vg-title">عمر کوئی بھی ہو — قرآن کریم حفظ کرنے کا آسان طریقہ</p>
+    <p class="vg-creator">Qari Abubakar Hayat</p>
+    <p class="vg-duration">~18 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=قرآن+حفظ+سبق+اردو+ہندی+آن+لائن+کورس" data-video-id="LWE1Ht9WDR0" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag optional">Optional</span>
+    <p class="vg-title">حفظ قرآن سبق نمبر ۱ — آن لائن کورس</p>
+    <p class="vg-creator">Halal Food Finder</p>
+    <p class="vg-duration">~15 min</p>
+  </div>
+</a>
+
+</div>
+
+</div>
+
+---
+
+## 🕋 Qur'an Recitation (Arabic) — for every learner
+
+<div class="vg-grid" markdown="0">
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mishary+rashid+alafasy+surah+al+ala+recitation" data-video-id="i2CkkkkqipM" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Surah Al-A'la (87) — Model Recitation</p>
+    <p class="vg-creator">Mishary Rashid Alafasy</p>
+    <p class="vg-duration">~4 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=qari+abdul+basit+surah+al+mulk+recitation" data-video-id="NdpBGYdQ_lU" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Surah Al-Mulk (67) — Legendary Recitation</p>
+    <p class="vg-creator">Qari Abdul Basit Abdus-Samad</p>
+    <p class="vg-duration">~14 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=saad+al+ghamdi+juz+amma+full+recitation" data-video-id="ZAmnBPliO9g" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Juz 'Amma (Juz 30) — Full Recitation for Memorizers</p>
+    <p class="vg-creator">Saad Al-Ghamdi</p>
+    <p class="vg-duration">~75 min</p>
   </div>
 </a>
 

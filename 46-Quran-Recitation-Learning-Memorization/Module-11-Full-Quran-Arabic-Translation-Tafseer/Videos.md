@@ -1,94 +1,230 @@
----
-title: "Module 11 — Full Quran Reference: Videos"
----
+{% include lang-switcher.html %}
 
-# Module 11 — Full Quran Reference: Videos
+# Module 11 Videos — Full Quran Reference — Translation & Tafseer
 
-Use these videos to deepen your understanding of the Arabic text, scholarly translations, and tafseer commentary covered in this module. Watch the Essential videos first, then expand into Recommended and Optional material.
+<div class="lang-en" markdown="1">
 
----
-
-## 🎯 Essential
+> **🇬🇧 English teaching videos.** Qur'an recitation itself is in Arabic — see the shared section at the bottom.
 
 <div class="vg-grid" markdown="0">
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tafsir+al-Mizan+introduction+overview+methodology+Tabatabai" data-video-id="A1Ggjrml9T8" target="_blank" rel="noopener">
-    <div class="vg-card-body">
-      <div class="vg-card-tag">Essential</div>
-      <h3>Introduction to Tafsir al-Mizan — Overview and Methodology</h3>
-      <p>An introduction to Allāmah Tabāṭabāī's monumental 27-volume tafseer: its approach of interpreting the Quran through the Quran, its philosophical depth, and how to use it as a study reference.</p>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=tafsir+of+the+whole+quran+commentary+full+English" data-video-id="IWl6E-jgOhc" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Tafsir of the Whole Qur'an in 30 Hours — Commentary Overview</p>
+      <p class="vg-creator">ZamZamAcademy</p>
+      <p class="vg-duration">~90 min</p>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Seyyed+Ali+Quli+Qarai+English+Quran+translation+approach+lecture" data-video-id="1OX9VRuIppI" target="_blank" rel="noopener">
-    <div class="vg-card-body">
-      <div class="vg-card-tag">Essential</div>
-      <h3>Qarai English Translation — Approach and Principles</h3>
-      <p>Understanding the translation choices behind the Qarai English Quran: why "All-beneficent" for Rahman, "All-sustainer" for Qayyum, and how phrase-by-phrase translation preserves Arabic theological precision.</p>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+study+an+ayah+Quran+study+methodology+English" data-video-id="kU99HsF_ysc" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">How to Study an Ayah — A Method for Understanding the Qur'an</p>
+      <p class="vg-creator">Nouman Ali Khan - Official - Bayyinah</p>
+      <p class="vg-duration">~15 min</p>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Quran+recitation+with+English+subtitles+follow+along+full" data-video-id="QFd8ecG00sQ" target="_blank" rel="noopener">
-    <div class="vg-card-body">
-      <div class="vg-card-tag">Essential</div>
-      <h3>Quran Recitation with English Subtitles — Follow Along</h3>
-      <p>Full Quran recitation with synchronized English translation subtitles. Ideal for connecting Arabic pronunciation with meaning in real time during study sessions.</p>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=modern+tafsir+inside+the+quran+library+methodology+English" data-video-id="of9ojMQKmIA" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Modern Tafsir — Inside the Qur'an Library (How Tafseer Works)</p>
+      <p class="vg-creator">Nouman Ali Khan - Official - Bayyinah</p>
+      <p class="vg-duration">~30 min</p>
+    </div>
+  </a>
+
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=classical+tafsir+quran+library+sources+of+commentary+English" data-video-id="G2qP5oY7Kvk" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Classical Tafsir — The Major Sources of Qur'anic Commentary</p>
+      <p class="vg-creator">Nouman Ali Khan - Official - Bayyinah</p>
+      <p class="vg-duration">~30 min</p>
+    </div>
+  </a>
+
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Quranic+Arabic+corpus+word+by+word+grammar+morphology+English" data-video-id="brGwajMH4fI" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Word-by-Word Grammar of the Qur'an — Using the Quranic Arabic Corpus</p>
+      <p class="vg-creator">The Research Lounge</p>
+      <p class="vg-duration">~12 min</p>
+    </div>
+  </a>
+
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=full+guide+to+quran+reflection+tadabbur+understand+meaning+English" data-video-id="U6b5cTCONww" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Full Guide to Reflecting on the Qur'an (Tadabbur) with Meaning</p>
+      <p class="vg-creator">Waly</p>
+      <p class="vg-duration">~20 min</p>
+    </div>
+  </a>
+
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=read+al+quran+with+translation+understand+meaning+lesson+English" data-video-id="hHldb-vfnQk" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Read the Qur'an With Understanding — Lesson 1 (English)</p>
+      <p class="vg-creator">Understand Al-Quran Official</p>
+      <p class="vg-duration">~25 min</p>
+    </div>
+  </a>
+
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Quranic+Arabic+grammar+made+easy+lesson+1+English" data-video-id="9cG88mQDVBY" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Qur'anic Arabic Grammar Made Easy — Lesson 1</p>
+      <p class="vg-creator">Arabic 101</p>
+      <p class="vg-duration">~14 min</p>
     </div>
   </a>
 
 </div>
 
----
+</div>
 
-## 📚 Recommended
+<div class="lang-ur" markdown="1" style="direction:rtl;text-align:right;font-family:'Noto Nastaliq Urdu','Gulzar',serif;line-height:2.2;">
+
+> **🇵🇰 اردو تدریسی ویڈیوز۔** قرآن کی تلاوت عربی میں ہے — نیچے مشترکہ سیکشن دیکھیں۔
 
 <div class="vg-grid" markdown="0">
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tafseer+Namoona+Makarem+Shirazi+methodology+lecture+Quran+commentary" data-video-id="cEiuWlgCdxE" target="_blank" rel="noopener">
-    <div class="vg-card-body">
-      <div class="vg-card-tag">Recommended</div>
-      <h3>Tafseer Namoona — Methodology and Key Themes</h3>
-      <p>An overview of Allāmah Makārem Shīrāzī's Tafseer-e-Namoona: its practical, thematic approach, social ethics emphasis, and accessibility for everyday believers.</p>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=آسان+قرآن+ترجمہ+و+تفسیر+کلاس+اردو" data-video-id="LYxaeYApy-g" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">آسان قرآن ترجمہ و تفسیر — کلاس ۰۱ (شروع سے)</p>
+      <p class="vg-creator">Islam with Aisha</p>
+      <p class="vg-duration">~30 min</p>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Quran+Urdu+translation+recitation+full+bilingual" data-video-id="8oqNi2xkxfc" target="_blank" rel="noopener">
-    <div class="vg-card-body">
-      <div class="vg-card-tag">Recommended</div>
-      <h3>Quran with Urdu Translation — Bilingual Recitation</h3>
-      <p>Arabic recitation with Urdu translation displayed verse by verse. Excellent for Urdu-speaking students who want to connect the sound of the Arabic with their mother-tongue meaning.</p>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=اردو+ترجمہ+قرآن+کورس+لفظ+بہ+لفظ" data-video-id="2D3e05j6j3A" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">اردو ترجمہ قرآن کورس — قرآن کو سمجھنا</p>
+      <p class="vg-creator">Online Quran Teacher GatewaytoQuran</p>
+      <p class="vg-duration">~25 min</p>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+study+tafseer+Quran+commentary+systematically+beginner+guide" data-video-id="cpxMYqAqzdM" target="_blank" rel="noopener">
-    <div class="vg-card-body">
-      <div class="vg-card-tag">Recommended</div>
-      <h3>How to Study Tafseer Systematically</h3>
-      <p>A practical guide to approaching Quranic commentary: which tafseer to begin with, how to compare multiple scholars on the same verse, and building a sustainable long-term tafseer study habit.</p>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ڈاکٹر+اسرار+احمد+قرآن+اردو+ترجمہ+و+تفسیر+پارہ+1" data-video-id="KjMGYr6nRvo" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">قرآن مجید — اردو ترجمہ و تفسیر، پارہ ۱ (ڈاکٹر اسرار احمد)</p>
+      <p class="vg-creator">Ali Butt Live Videos</p>
+      <p class="vg-duration">~60 min</p>
+    </div>
+  </a>
+
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=قرآن+مجید+لفظ+بہ+لفظ+اردو+ترجمہ" data-video-id="9Go2t3i85Cw" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">قرآن مجید — لفظ بہ لفظ اردو ترجمہ</p>
+      <p class="vg-creator">oilorhumanbeing</p>
+      <p class="vg-duration">~20 min</p>
+    </div>
+  </a>
+
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=قرآن+مجید+لفظی+ترجمہ+خود+کریں+سیکھیں+اردو" data-video-id="bOAYnGFeQ-g" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">قرآن مجید کا لفظی ترجمہ خود کریں — آغاز</p>
+      <p class="vg-creator">Asad Ullah Jan Al-Azhari</p>
+      <p class="vg-duration">~22 min</p>
+    </div>
+  </a>
+
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+البروج+آسان+الفاظ+میں+ترجمہ+اور+تفسیر+اردو" data-video-id="_lD1EoSo11c" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">سورہ البروج — آسان الفاظ میں ترجمہ اور تفسیر</p>
+      <p class="vg-creator">Muhamad Waqas Akhundzada</p>
+      <p class="vg-duration">~18 min</p>
+    </div>
+  </a>
+
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=قرآن+ترجمہ+لفظ+بہ+لفظ+اردو+معنی+سبق" data-video-id="P0I59JnpYUg" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">قرآن کا لفظ بہ لفظ اردو ترجمہ — معنی کے ساتھ سبق</p>
+      <p class="vg-creator">QMA Islamic Tube</p>
+      <p class="vg-duration">~15 min</p>
+    </div>
+  </a>
+
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=قرآن+مجید+کا+ترجمہ+اور+تفسیر+پارہ+1+سورہ+بقرہ+اردو" data-video-id="sitxoY5nXEc" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">قرآن مجید کا ترجمہ اور تفسیر — پارہ ۱، سورہ بقرہ</p>
+      <p class="vg-creator">Islamic learning diary</p>
+      <p class="vg-duration">~35 min</p>
     </div>
   </a>
 
 </div>
 
+</div>
+
 ---
 
-## 🔍 Optional
+## 🕋 Qur'an Recitation (Arabic) — for every learner
 
 <div class="vg-grid" markdown="0">
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=word+by+word+Quran+Arabic+analysis+methodology+quran+tafseer+grammar" data-video-id="DsssFx4GGQw" target="_blank" rel="noopener">
-    <div class="vg-card-body">
-      <div class="vg-card-tag">Optional</div>
-      <h3>Word-by-Word Quran Analysis — Methodology</h3>
-      <p>An introduction to word-by-word Arabic analysis of Quranic verses: how root words, grammatical forms, and rhetorical structures carry theological meaning that translation can only approximate.</p>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mishary+Rashid+Alafasy+Surah+Al+Fatiha+full+recitation+Arabic" data-video-id="HmAdQDNhlgQ" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Surah Al-Fatiha — Mishary Rashid Alafasy (with Arabic text)</p>
+      <p class="vg-creator">Ar Rahman islamic content</p>
+      <p class="vg-duration">~2 min</p>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Quran+recitation+bilingual+English+Urdu+subtitles+translation" data-video-id="V1mWkcwNyrk" target="_blank" rel="noopener">
-    <div class="vg-card-body">
-      <div class="vg-card-tag">Optional</div>
-      <h3>Quran Recitation with Bilingual Subtitles (English and Urdu)</h3>
-      <p>A recitation resource displaying both English and Urdu translations simultaneously with the Arabic text — useful for students using both language tracks of this course.</p>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Abdul+Basit+Mujawwad+Al+Fatiha+Al+Baqarah+recitation" data-video-id="Uzm7_4fTVL0" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Al-Fatiha, Al-Baqarah & Ali-Imran — Abdul Basit (Mujawwad)</p>
+      <p class="vg-creator">Quran Recitations</p>
+      <p class="vg-duration">~60 min</p>
+    </div>
+  </a>
+
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Saad+Al+Ghamdi+Surah+Al+Fatiha+recitation+Arabic+text" data-video-id="sUuMr9cXNKs" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Surah Al-Fatiha — Saad Al-Ghamdi (Arabic text)</p>
+      <p class="vg-creator">Ar-Rahmaan Quran Channel</p>
+      <p class="vg-duration">~2 min</p>
+    </div>
+  </a>
+
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mahmoud+Khalil+Al+Husary+Al+Fatiha+murattal+recitation" data-video-id="nF3brtFwV_I" target="_blank" rel="noopener">
+    <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Surah Al-Fatihah — Mahmoud Khalil Al-Husary (Murattal)</p>
+      <p class="vg-creator">Ali J</p>
+      <p class="vg-duration">~2 min</p>
     </div>
   </a>
 

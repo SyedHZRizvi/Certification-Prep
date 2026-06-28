@@ -1,86 +1,230 @@
-<style>.vg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:22px 0 30px;}.vg-card{display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s,border-color .2s;}.vg-card:hover{transform:translateY(-3px);box-shadow:0 12px 24px -8px rgba(0,0,0,.15);border-color:#34d399;}.vg-thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#064e3b,#065f46);display:flex;align-items:center;justify-content:center;color:#fff;font-size:48px;}.vg-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.35);color:#fff;font-size:48px;opacity:0;transition:opacity .2s;}.vg-card:hover .vg-play{opacity:1;}.vg-meta{padding:14px 16px;}.vg-tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:4px;margin-bottom:8px;}.vg-tag.essential{background:#d1fae5;color:#065f46;}.vg-tag.recommended{background:#dbeafe;color:#1e40af;}.vg-tag.optional{background:#fef3c7;color:#92400e;}.vg-title{font-weight:700;font-size:14px;line-height:1.4;margin:0 0 4px;color:#0f172a;}.vg-creator{font-size:12.5px;color:#64748b;margin:0 0 6px;}.vg-duration{font-size:11px;color:#94a3b8;font-weight:600;}</style>
+{% include lang-switcher.html %}
 
-# Module 3 Videos — Tajweed Rules: Foundations
+# Module 3 Videos — Tajweed Rules — Foundations
+
+<div class="lang-en" markdown="1">
+
+> **🇬🇧 English teaching videos.** Qur'an recitation itself is in Arabic — see the shared section at the bottom.
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+madd+rules+explanation+quran+recitation+beginner" data-video-id="BP7lEEYa90U" target="_blank" rel="noopener">
-  <div class="vg-thumb">📏<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=noon+sakinah+tanween+rules+overview+tajweed+english" data-video-id="u5MoeD71R-Y" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Madd Rules Explained — Tabee'i, Muttasil, Munfasil</p>
-    <p class="vg-creator">Tajweed Institute</p>
-    <p class="vg-duration">35 min</p>
+    <p class="vg-title">Noon Sakinah & Tanween in a Minute — With Examples</p>
+    <p class="vg-creator">Yusuf Ashraf - Arabic Guru</p>
+    <p class="vg-duration">~3 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=noon+sakin+tanween+rules+izhar+idgham+iqlab+ikhfa+tajweed" data-video-id="RAONuw-9_8Y" target="_blank" rel="noopener">
-  <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=izhar+idgham+iqlab+ikhfa+rules+noon+sakin+tanween+english+complete" data-video-id="gbwEvXiDqtM" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Noon Sakin & Tanween — All 4 Rules with Examples</p>
-    <p class="vg-creator">Quran Tajweed Academy</p>
-    <p class="vg-duration">45 min</p>
+    <p class="vg-title">Izhar, Idgham, Iqlab & Ikhfa — All 4 Rules Complete</p>
+    <p class="vg-creator">Alfurqan Academy</p>
+    <p class="vg-duration">~30 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=izhar+tajweed+throat+letters+noon+clear+pronunciation" data-video-id="5ctCy3I37To" target="_blank" rel="noopener">
-  <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=izhar+noon+sakin+tanween+throat+letters+tajweed+english" data-video-id="Hwkyft034hM" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Izhar — Clear Pronunciation Before Throat Letters</p>
-    <p class="vg-creator">Learn Tajweed Online</p>
-    <p class="vg-duration">20 min</p>
+    <p class="vg-title">Izhar — Clear Pronunciation Before the Throat Letters</p>
+    <p class="vg-creator">The Faithful Reminder</p>
+    <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=idgham+noon+sakin+merging+letters+quran+tajweed" data-video-id="vZPuu2ga5mQ" target="_blank" rel="noopener">
-  <div class="vg-thumb">🔀<div class="vg-play">▶</div></div>
-  <div class="vg-meta">
-    <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Idgham — Merging Noon Into 6 Letters</p>
-    <p class="vg-creator">Tajweed Academy</p>
-    <p class="vg-duration">25 min</p>
-  </div>
-</a>
-
-<a class="vg-card" href="https://www.youtube.com/results?search_query=iqlab+noon+to+meem+ba+tajweed+rule+quran" data-video-id="NPIvydt8M60" target="_blank" rel="noopener">
-  <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=iqlab+rule+noon+sakinah+turns+into+meem+with+ghunnah+english" data-video-id="wrB02pFdLSg" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Iqlab — When Noon Becomes Meem Before Ba</p>
-    <p class="vg-creator">Quran Learning Channel</p>
-    <p class="vg-duration">15 min</p>
+    <p class="vg-title">Iqlab — Noon Turns Into Meem With Ghunnah</p>
+    <p class="vg-creator">Digital Academy</p>
+    <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ikhfa+tajweed+15+letters+hidden+noon+nasal" data-video-id="S8GLmTr_KLs" target="_blank" rel="noopener">
-  <div class="vg-thumb">🫣<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ikhfa+rules+noon+sakinah+tanween+hidden+nasal+tajweed+english" data-video-id="jS3QuXq4ldI" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Ikhfa — 15 Letters Where Noon is Hidden</p>
-    <p class="vg-creator">Tajweed Made Easy</p>
-    <p class="vg-duration">30 min</p>
+    <p class="vg-title">Ikhfa — Hiding the Noon With a Nasal Sound</p>
+    <p class="vg-creator">Alfurqan Academy</p>
+    <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ghunna+nasal+sound+tajweed+noon+meem+shaddah" data-video-id="WDg0nYYV2Vg" target="_blank" rel="noopener">
-  <div class="vg-thumb">🌙<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ghunnah+nasalization+ranks+maratib+tajweed+english+lesson" data-video-id="zbLpFMNZWds" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Ghunnah — Nasal Sound of Noon and Meem</p>
-    <p class="vg-creator">Quran Academy</p>
-    <p class="vg-duration">18 min</p>
+    <p class="vg-title">Ghunnah (Nasalization) — Its Ranks & Levels</p>
+    <p class="vg-creator">People of the Quran (Tajweed Course)</p>
+    <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=parhizgar+quran+reciter+tajweed+beautiful+recitation" data-video-id="0jdPY5CLFOI" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=types+of+madd+quranic+recitation+tajweed+english+lesson" data-video-id="BgaUFuFQO2k" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Mastering Madd in Qur'anic Recitation</p>
+    <p class="vg-creator">Islamic Lessons Made Easy</p>
+    <p class="vg-duration">~20 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=easy+tajweed+english+rules+of+madd+natural+secondary" data-video-id="yJB2vPpu29w" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Tajweed in Practice — Beautiful Recitation (Parhizgar)</p>
-    <p class="vg-creator">Quran Recitation</p>
-    <p class="vg-duration">20 min</p>
+    <p class="vg-title">Easy Tajweed (English) — Rules of Madd</p>
+    <p class="vg-creator">Online Quran Teacher - Irfan Khan</p>
+    <p class="vg-duration">~18 min</p>
+  </div>
+</a>
+
+</div>
+
+</div>
+
+<div class="lang-ur" markdown="1" style="direction:rtl;text-align:right;font-family:'Noto Nastaliq Urdu','Gulzar',serif;line-height:2.2;">
+
+> **🇵🇰 اردو تدریسی ویڈیوز۔** قرآن کی تلاوت عربی میں ہے — نیچے مشترکہ سیکشن دیکھیں۔
+
+<div class="vg-grid" markdown="0">
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=noon+sakin+tanween+ikhfa+tajweed+rules+urdu" data-video-id="GyzmS6e_pLk" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">نون ساکن، تنوین اور احکامِ تجوید کا تعارف</p>
+    <p class="vg-creator">New Islamic Teacher</p>
+    <p class="vg-duration">~12 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=izhar+noon+sakin+tanween+ahkaam+e+tajweed+urdu+qari+aqib" data-video-id="d2xGtajNGIw" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">اظہار — نون ساکن اور تنوین کا پہلا قاعدہ</p>
+    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-duration">~12 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=idgham+noon+sakin+tanween+ahkaam+e+tajweed+urdu+qari+aqib" data-video-id="pV9eA8Q3kPM" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">ادغام — نون ساکن اور تنوین کا قاعدہ</p>
+    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-duration">~12 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=iqlab+ka+qaida+noon+sakin+tanween+tajweed+urdu" data-video-id="hVF5EOwhIlE" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">اِقلاب کا قاعدہ — نون کا میم میں بدلنا</p>
+    <p class="vg-creator">Paras Shaikh Official</p>
+    <p class="vg-duration">~10 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ikhfa+noon+sakin+tanween+ahkaam+e+tajweed+urdu+qari+aqib" data-video-id="BcemGaypPX4" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">اِخفا — نون ساکن اور تنوین کا قاعدہ</p>
+    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-duration">~12 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ghunna+nasalization+types+tajweed+urdu+qari+aqib" data-video-id="uCtem3Hb6o0" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">غُنّہ اور اس کی اقسام — نون و میم مشدد</p>
+    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-duration">~12 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=rules+of+madd+types+tajweed+urdu" data-video-id="IN2Yo1RGEu8" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">مَد کے قواعد اور اس کی اقسام</p>
+    <p class="vg-creator">Roots OfKnowledge</p>
+    <p class="vg-duration">~18 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=madd+ul+munfasil+detached+madd+tajweed+urdu+qari+aqib" data-video-id="IO96y5yST2k" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag optional">Optional</span>
+    <p class="vg-title">مَد منفصل — جدا ہونے والی مَد کی تفصیل</p>
+    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-duration">~10 min</p>
+  </div>
+</a>
+
+</div>
+
+</div>
+
+---
+
+## 🕋 Qur'an Recitation (Arabic) — for every learner
+
+<div class="vg-grid" markdown="0">
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+an+nas+mishary+rashid+alafasy+recitation" data-video-id="fCz14uG-vHk" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Surah An-Nas — Mishary Rashid Alafasy</p>
+    <p class="vg-creator">Spirit from Quran</p>
+    <p class="vg-duration">~2 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=4+qul+al+kafirun+al+ikhlas+al+falaq+an+nas+mishary+alafasy" data-video-id="8HKvMfC1VNA" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">The 4 Qul — Al-Kafirun, Al-Ikhlas, Al-Falaq, An-Nas</p>
+    <p class="vg-creator">Islamic_Channel _Asif_</p>
+    <p class="vg-duration">~5 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+al+fatihah+abdul+basit+abdus+samad+recitation" data-video-id="yTJ037hBDPo" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Surah Al-Fatihah — Qari Abdul Basit 'Abdus-Samad</p>
+    <p class="vg-creator">Ultimate Quran Hustle</p>
+    <p class="vg-duration">~2 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+al+fatihah+husary+muallim+teaching+recitation+hafs" data-video-id="Pin_wcEVavg" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Surah Al-Fatihah — Al-Husary (Muallim / Teaching Style)</p>
+    <p class="vg-creator">E-Tilawah Academy</p>
+    <p class="vg-duration">~3 min</p>
   </div>
 </a>
 

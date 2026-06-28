@@ -1,108 +1,210 @@
-<style>.vg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:22px 0 30px;}.vg-card{display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s,border-color .2s;}.vg-card:hover{transform:translateY(-3px);box-shadow:0 12px 24px -8px rgba(0,0,0,.15);border-color:#34d399;}.vg-thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#064e3b,#065f46);display:flex;align-items:center;justify-content:center;color:#fff;font-size:48px;}.vg-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.35);color:#fff;font-size:48px;opacity:0;transition:opacity .2s;}.vg-card:hover .vg-play{opacity:1;}.vg-meta{padding:14px 16px;}.vg-tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:4px;margin-bottom:8px;}.vg-tag.essential{background:#d1fae5;color:#065f46;}.vg-tag.recommended{background:#dbeafe;color:#1e40af;}.vg-tag.optional{background:#fef3c7;color:#92400e;}.vg-title{font-weight:700;font-size:14px;line-height:1.4;margin:0 0 4px;color:#0f172a;}.vg-creator{font-size:12.5px;color:#64748b;margin:0 0 6px;}.vg-duration{font-size:11px;color:#94a3b8;font-weight:600;}</style>
+{% include lang-switcher.html %}
 
 # Module 1 Videos — Arabic Alphabet & Makhaarij
 
-Master the 28 Arabic letters, their four forms, and their exact pronunciation points through these carefully selected videos.
+<div class="lang-en" markdown="1">
+
+> **🇬🇧 English teaching videos.** Qur'an recitation itself is in Arabic — see the shared section at the bottom.
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+alphabet+Quran+tajweed+beginners+28+letters" data-video-id="k-qXevW2fOw" target="_blank" rel="noopener">
-  <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+alphabet+28+letters+quran+tajweed+beginners+english" data-video-id="MPnDo2C_WW0" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Arabic Alphabet for Quran Beginners — All 28 Letters</p>
-    <p class="vg-creator">Quran Studies</p>
-    <p class="vg-duration">35 min</p>
+    <p class="vg-title">Arabic Alphabet for Absolute Beginners — Learn Tajweed (Lesson 1)</p>
+    <p class="vg-creator">Mubin Esat</p>
+    <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=makhaarij+arabic+letters+pronunciation+points+tajweed" data-video-id="KgtwrBXp8uw" target="_blank" rel="noopener">
-  <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=makharij+al+huruf+articulation+points+arabic+letters+tajweed+english" data-video-id="A50an842ZPM" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Makhaarij — Pronunciation Points of All Arabic Letters</p>
-    <p class="vg-creator">Tajweed Academy</p>
-    <p class="vg-duration">45 min</p>
+    <p class="vg-title">Articulation Points of the Arabic Letters — Makharij al-Huruf</p>
+    <p class="vg-creator">Learn Quran Online with Bilal - ENG</p>
+    <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+alphabet+four+forms+initial+medial+final+isolated" data-video-id="ZiZOfKpw-No" target="_blank" rel="noopener">
-  <div class="vg-thumb">📝<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+letters+four+forms+initial+medial+final+isolated+positions" data-video-id="tCrmBqkyC7o" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Arabic Letters — All Four Positions Explained</p>
-    <p class="vg-creator">Arabic Academy</p>
-    <p class="vg-duration">28 min</p>
+    <p class="vg-title">Shapes of Arabic Letters in All 4 Positions Explained</p>
+    <p class="vg-creator">Arabic Made Easy For All</p>
+    <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+arabic+alphabet+children+animation+fun+learning" data-video-id="ZiZOfKpw-No" target="_blank" rel="noopener">
-  <div class="vg-thumb">🧒<div class="vg-play">▶</div></div>
-  <div class="vg-meta">
-    <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Arabic Alphabet for Kids — Animated Fun Learning</p>
-    <p class="vg-creator">Islamic Learning</p>
-    <p class="vg-duration">20 min</p>
-  </div>
-</a>
-
-<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+urdu+script+similarities+naskh+nastaleeq" data-video-id="F84zGS4Y90Y" target="_blank" rel="noopener">
-  <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+alphabet+song+kids+zaky+animated+learn+letters" data-video-id="6e145BWP7ng" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Arabic vs Urdu Script — How They Are Connected</p>
-    <p class="vg-creator">Learn Arabic Urdu</p>
-    <p class="vg-duration">18 min</p>
+    <p class="vg-title">Arabic Alphabet Song with Zaky — Animated for Kids</p>
+    <p class="vg-creator">One4kids</p>
+    <p class="vg-duration">~5 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+emphatic+letters+sad+dad+ta+dha+tajweed" data-video-id="mbCxpZCD2oQ" target="_blank" rel="noopener">
-  <div class="vg-thumb">💪<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+emphatic+heavy+letters+pronunciation+guide+sad+dad+ta+dha" data-video-id="HIVLfdRxdeI" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Emphatic Arabic Letters — Sad, Dad, Ta, Dha</p>
-    <p class="vg-creator">Tajweed Made Easy</p>
-    <p class="vg-duration">22 min</p>
+    <p class="vg-title">Arabic Emphatic Letters — A Pronunciation Guide</p>
+    <p class="vg-creator">Polyglot Ed</p>
+    <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ayn+hamza+arabic+throat+letters+pronunciation+quran" data-video-id="l80yXGskoC8" target="_blank" rel="noopener">
-  <div class="vg-thumb">👄<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+throat+letters+ayn+makharij+tajweed+quran+english" data-video-id="avurwacmSC8" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Throat Letters: Ayn, Hamza & Ha — Correct Pronunciation</p>
-    <p class="vg-creator">Quran Academy Online</p>
-    <p class="vg-duration">15 min</p>
+    <p class="vg-title">Ayn (ع) — Mastering the Makhraj of the Throat Letters</p>
+    <p class="vg-creator">Lahoo Ajraan</p>
+    <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+writing+practice+tracing+letters+beginners" data-video-id="5rMZVqRSzCo" target="_blank" rel="noopener">
-  <div class="vg-thumb">✏️<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+write+arabic+alphabet+letters+beginners+practice+english" data-video-id="S8RO2w3I8AA" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Arabic Letter Writing Practice — Tracing for Beginners</p>
-    <p class="vg-creator">Arabic Writing Channel</p>
-    <p class="vg-duration">30 min</p>
+    <p class="vg-title">How to Write the Arabic Alphabet — Part 1 (Beginners)</p>
+    <p class="vg-creator">Arabic Khatawaat</p>
+    <p class="vg-duration">~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=bismillah+arabic+letters+breakdown+word+by+word" data-video-id="lDc5gd90Th0" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+pronounce+bismillah+arabic+letters+breakdown+english" data-video-id="mWOwHQTPQs4" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Bismillah Letter by Letter — Full Breakdown</p>
-    <p class="vg-creator">Quran Reflections</p>
-    <p class="vg-duration">12 min</p>
+    <p class="vg-title">How to Pronounce Bismillah in Arabic — Letter by Letter</p>
+    <p class="vg-creator">Pronounce Arabic</p>
+    <p class="vg-duration">~4 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+bismillah+surah+fatiha+recitation+beautiful" data-video-id="rQrBxuaPYoE" target="_blank" rel="noopener">
-  <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
+</div>
+
+</div>
+
+<div class="lang-ur" markdown="1" style="direction:rtl;text-align:right;font-family:'Noto Nastaliq Urdu','Gulzar',serif;line-height:2.2;">
+
+> **🇵🇰 اردو تدریسی ویڈیوز۔** قرآن کی تلاوت عربی میں ہے — نیچے مشترکہ سیکشن دیکھیں۔
+
+<div class="vg-grid" markdown="0">
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=نورانی+قاعدہ+سبق+1+حروف+تہجی+تجوید+اردو" data-video-id="PCQttweg6B8" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
-    <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Bismillah & Al-Fatiha — Beautiful Recitation</p>
-    <p class="vg-creator">Quran Academy</p>
-    <p class="vg-duration">8 min</p>
+    <span class="vg-tag essential">لازمی</span>
+    <p class="vg-title">نورانی قاعدہ سبق نمبر 1 — حروفِ تہجی مع تجوید</p>
+    <p class="vg-creator">Qari Hidayatullah Sindhi</p>
+    <p class="vg-duration">~15 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=نورانی+قاعدہ+سبق+2+عربی+حروف+تجوید+اردو" data-video-id="9gU-CRD2fLk" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">لازمی</span>
+    <p class="vg-title">نورانی قاعدہ سبق نمبر 2 — عربی حروف مع تجوید</p>
+    <p class="vg-creator">Tajweed-UL-Quran</p>
+    <p class="vg-duration">~18 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=حروف+کے+مخارج+الف+قرآنی+حروف+ادائیگی+اردو" data-video-id="qc1Ku3TD2uo" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">لازمی</span>
+    <p class="vg-title">حروف کے مخارج — الف کا مخرج اور صحیح ادائیگی</p>
+    <p class="vg-creator">ASF Mailsi</p>
+    <p class="vg-duration">~8 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=حروف+کے+مخارج+ث+ج+قرآنی+حروف+ادائیگی+اردو" data-video-id="CVLWYH0RgAk" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">تجویز کردہ</span>
+    <p class="vg-title">حروف کے مخارج — ث اور ج کی ادائیگی</p>
+    <p class="vg-creator">ASF Mailsi</p>
+    <p class="vg-duration">~8 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=اردو+حروف+کے+مخارج+تلفظ+phonetics" data-video-id="gvacdI_sgcU" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">تجویز کردہ</span>
+    <p class="vg-title">اردو حروف کے مخارج — تلفظ کا بنیادی سبق</p>
+    <p class="vg-creator">Nigaah Muzaffarpur</p>
+    <p class="vg-duration">~12 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=حلقی+حروف+غ+کا+مخرج+تجوید+قاری+اردو" data-video-id="fo8x6eGzZrk" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">تجویز کردہ</span>
+    <p class="vg-title">حلقی حروف — غ کا مخرج اور آواز</p>
+    <p class="vg-creator">ASF Mailsi</p>
+    <p class="vg-duration">~7 منٹ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=نورانی+قاعدہ+حرکات+زبر+زیر+پیش+تجوید+اردو" data-video-id="TpWTnHoXEAo" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag optional">اختیاری</span>
+    <p class="vg-title">حرکات — زبر، زیر، پیش کا سبق</p>
+    <p class="vg-creator">Learn Quran Anytime</p>
+    <p class="vg-duration">~10 منٹ</p>
+  </div>
+</a>
+
+</div>
+
+</div>
+
+---
+
+## 🕋 Qur'an Recitation (Arabic) — for every learner
+
+<div class="vg-grid" markdown="0">
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mishary+rashid+alafasy+surah+al+fatiha+recitation" data-video-id="HmAdQDNhlgQ" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Surah Al-Fatiha — Full Recitation with Arabic Text</p>
+    <p class="vg-creator">Mishary Rashid Alafasy</p>
+    <p class="vg-duration">~2 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=abdul+basit+surah+al+fatiha+mujawwad+recitation" data-video-id="P7lFSt6-7T8" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Surah Al-Fatiha — Mujawwad Recitation</p>
+    <p class="vg-creator">Abdul Basit Abdul Samad</p>
+    <p class="vg-duration">~5 min</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=saad+al+ghamdi+surah+al+fatiha+recitation+arabic+text" data-video-id="sUuMr9cXNKs" target="_blank" rel="noopener">
+  <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Surah Al-Fatiha — Recitation with Arabic Text</p>
+    <p class="vg-creator">Saad Al-Ghamdi</p>
+    <p class="vg-duration">~2 min</p>
   </div>
 </a>
 
