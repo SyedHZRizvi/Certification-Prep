@@ -3,78 +3,124 @@
   Usage:
     {% include record-studio.html kind="quran" %}
     {% include record-studio.html kind="language" language="Arabic" %}
-  Optional: endpoint="/api/recitation-submit"  (Phase 2 — enables "Submit for feedback")
+  Optional: endpoint="/api/recitation-submit"  (future server feedback loop)
 {% endcomment %}
+{% assign rs_lang = "en-US" %}
+{% assign rs_chips = "Hello, how are you?|Could you help me, please?|I would like a coffee." %}
+{% case include.language %}
+  {% when "English" %}{% assign rs_lang = "en-US" %}{% assign rs_chips = "Hello, how are you?|Could you help me, please?|I would like a coffee." %}
+  {% when "French" %}{% assign rs_lang = "fr-FR" %}{% assign rs_chips = "Bonjour, comment ça va ?|Je voudrais un café, s'il vous plaît.|Merci beaucoup." %}
+  {% when "Arabic" %}{% assign rs_lang = "ar-SA" %}{% assign rs_chips = "السلام عليكم|كيف حالك؟|شكرا جزيلا" %}
+  {% when "Urdu" %}{% assign rs_lang = "ur-PK" %}{% assign rs_chips = "آپ کیسے ہیں؟|بہت شکریہ|میرا نام احمد ہے" %}
+  {% when "Persian" %}{% assign rs_lang = "fa-IR" %}{% assign rs_chips = "حال شما چطور است؟|خیلی ممنون|اسم من علی است" %}
+{% endcase %}
 <style>
 .record-studio{border:1px solid #e2e8f0;border-radius:16px;padding:22px 22px 18px;margin:26px 0;background:linear-gradient(180deg,#ffffff,#f8fafc);box-shadow:0 8px 24px -12px rgba(15,23,42,.18);}
-.record-studio h4{margin:0 0 6px;font-size:1.25rem;font-weight:800;color:#0f172a;}
+.record-studio h2.rs-h{margin:0 0 6px;font-size:1.3rem;line-height:1.3;font-weight:800;color:#0f172a;border:0;padding:0;}
 .record-studio .rs-intro{margin:0 0 16px;color:#475569;font-size:.98rem;line-height:1.6;}
+.record-studio .rs-intro2{margin:2px 0 12px;color:#64748b;font-size:.9rem;line-height:1.55;}
 .record-studio .rs-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
 .record-studio .rs-row-after{margin-top:12px;}
 .record-studio .rs-btn{display:inline-flex;align-items:center;gap:7px;border:0;border-radius:10px;padding:11px 18px;font-size:.98rem;font-weight:700;cursor:pointer;text-decoration:none;transition:transform .12s,box-shadow .12s,opacity .12s;}
 .record-studio .rs-btn:active{transform:translateY(1px);}
+.record-studio .rs-btn:focus-visible{outline:3px solid #6366f1;outline-offset:2px;}
 .record-studio .rs-btn[disabled]{opacity:.45;cursor:not-allowed;}
 .record-studio .rs-btn-rec{background:#dc2626;color:#fff;}
 .record-studio .rs-btn-stop{background:#0f172a;color:#fff;}
 .record-studio .rs-btn-ghost{background:#eef2ff;color:#3730a3;}
 .record-studio .rs-btn-submit{background:#059669;color:#fff;}
+.record-studio .rs-btn-check{background:#4f46e5;color:#fff;}
 .record-studio.rs-recording .rs-btn-rec{animation:rsPulse 1.1s ease-in-out infinite;}
 @keyframes rsPulse{0%,100%{box-shadow:0 0 0 0 rgba(220,38,38,.55);}50%{box-shadow:0 0 0 10px rgba(220,38,38,0);}}
 .record-studio .rs-timer{font-variant-numeric:tabular-nums;font-weight:800;color:#dc2626;font-size:1.1rem;min-width:3ch;}
 .record-studio .rs-status{display:block;margin-top:12px;color:#475569;font-size:.92rem;}
-.record-studio .rs-rubric{margin-top:18px;border-top:1px dashed #cbd5e1;padding-top:16px;}
-.record-studio .rs-rubric p.rs-rubric-h{font-weight:800;color:#0f172a;margin:0 0 10px;font-size:1.02rem;}
+.record-studio .rs-note{background:#fef3c7;border:1px solid #fcd34d;border-radius:10px;padding:12px 14px;color:#92400e;font-size:.92rem;line-height:1.6;margin-top:10px;}
+.record-studio .rs-rubric,.record-studio .rs-speech{margin-top:18px;border-top:1px dashed #cbd5e1;padding-top:16px;}
+.record-studio .rs-rubric p.rs-rubric-h,.record-studio .rs-speech p.rs-rubric-h{font-weight:800;color:#0f172a;margin:0 0 10px;font-size:1.02rem;}
 .record-studio .rs-rubric ul{list-style:none;margin:0;padding:0;}
 .record-studio .rs-rubric li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;color:#334155;font-size:.95rem;line-height:1.55;}
 .record-studio .rs-rubric input[type=checkbox]{margin-top:3px;width:18px;height:18px;flex:0 0 auto;accent-color:#4f46e5;}
+.record-studio .rs-badge{display:inline-block;font-size:.62rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:#e0e7ff;color:#4338ca;border-radius:6px;padding:2px 7px;margin-left:6px;vertical-align:middle;}
+.record-studio .rs-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px;}
+.record-studio .rs-chip{border:1px solid #c7d2fe;background:#eef2ff;color:#3730a3;border-radius:999px;padding:6px 13px;font-size:.9rem;cursor:pointer;}
+.record-studio .rs-chip:hover{background:#e0e7ff;}
+.record-studio .rs-chip:focus-visible{outline:3px solid #6366f1;outline-offset:2px;}
+.record-studio .rs-target{width:100%;box-sizing:border-box;border:1px solid #cbd5e1;border-radius:10px;padding:11px 13px;font-size:1.05rem;margin:0 0 10px;}
+.record-studio .rs-result{margin-top:12px;}
+.record-studio .rs-score{font-weight:800;color:#0f172a;font-size:1rem;margin:0 0 8px;}
+.record-studio .rs-score-num{font-size:1.5rem;color:#4f46e5;}
+.record-studio .rs-score-v{font-weight:600;color:#475569;font-size:.95rem;}
+.record-studio .rs-result-h{font-weight:700;color:#0f172a;margin:6px 0 4px;font-size:.92rem;}
+.record-studio .rs-legend{font-weight:400;font-size:.76rem;color:#94a3b8;margin-left:8px;}
+.record-studio .rs-words{margin:0 0 8px;line-height:2.1;}
+.record-studio .rs-w{display:inline-block;border-radius:7px;padding:2px 9px;margin:0 3px 4px 0;font-size:1.02rem;unicode-bidi:isolate;}
+.record-studio .rs-legend .rs-w{font-size:.74rem;padding:1px 7px;}
+.record-studio .rs-w-ok{background:#dcfce7;color:#166534;}
+.record-studio .rs-w-miss{background:#fef3c7;color:#92400e;}
+.record-studio .rs-heard{color:#475569;font-size:.95rem;margin:6px 0;}
+.record-studio .rs-disc{color:#94a3b8;font-size:.82rem;line-height:1.55;margin:8px 0 0;}
 .record-studio .rs-share{margin-top:16px;background:#f1f5f9;border-radius:10px;padding:12px 14px;font-size:.9rem;color:#475569;line-height:1.6;}
 .record-studio .rs-share a{color:#4338ca;font-weight:700;}
 .record-studio .rs-priv{margin-top:10px;font-size:.8rem;color:#94a3b8;}
 </style>
 
-<div class="record-studio" data-kind="{{ include.kind }}"{% if include.endpoint %} data-endpoint="{{ include.endpoint | relative_url }}"{% endif %}{% if include.ref %} data-ref="{{ include.ref }}"{% endif %}>
-  {% if include.kind == "quran" %}
-  <h4>🎙️ Recitation Studio — Record &amp; Self-Review</h4>
-  <p class="rs-intro">Recitation is a skill of the tongue, not just the eyes. Record yourself reciting an ayah or surah you are working on, play it back beside a model reciter (Sheikh Mishary Al-Afasy or Sheikh Abdul Basit), and judge your own recitation honestly against the Tajweed checklist below. Re-record until each box is one you can tick with confidence — this is exactly how huffaz build accuracy before sitting with a teacher.</p>
-  {% else %}
-  <h4>🎙️ Speaking Studio — Record &amp; Self-Review</h4>
-  <p class="rs-intro">Fluency is built by speaking out loud, hearing yourself, and adjusting. Record yourself saying a phrase, sentence, or short answer in {{ include.language }}, play it back beside a native-speaker model, and check your own speaking against the rubric below. Re-record until it flows — the gap between your attempt and the model is exactly where the learning happens.</p>
-  {% endif %}
+<div class="record-studio" markdown="0" data-kind="{{ include.kind }}"{% if include.kind == "language" %} data-lang="{{ rs_lang }}"{% endif %}{% if include.endpoint %} data-endpoint="{{ include.endpoint | relative_url }}"{% endif %}{% if include.ref %} data-ref="{{ include.ref }}"{% endif %}>
+{% if include.kind == "quran" %}
+<h2 class="rs-h">🎙️ Recitation Studio — Record &amp; Self-Review</h2>
+<p class="rs-intro">Recitation is a skill of the tongue, not just the eyes. Record yourself reciting an ayah or surah you are working on, play it back beside a model reciter (Sheikh Mishary Al-Afasy or Sheikh Abdul Basit), and judge your own recitation honestly against the Tajweed checklist below. Re-record until each box is one you can tick with confidence — this is exactly how huffaz build accuracy before sitting with a teacher.</p>
+{% else %}
+<h2 class="rs-h">🎙️ Speaking Studio — Record, Check &amp; Self-Review</h2>
+<p class="rs-intro">Fluency is built by speaking out loud, hearing yourself, and adjusting. Record yourself saying a phrase or short answer in {{ include.language }}, play it back beside a native-speaker model, run the free pronunciation check, and review against the rubric. The gap between your attempt and the model is exactly where the learning happens.</p>
+{% endif %}
 
-  <div data-rs="controls"></div>
+<div data-rs="controls"></div>
 
-  <div class="rs-rubric">
-    {% if include.kind == "quran" %}
-    <p class="rs-rubric-h">✅ Tajweed self-check — listen back and tick honestly</p>
-    <ul>
-      <li><input type="checkbox"> <span><strong>Makhaarij</strong> — each letter came from its correct point (throat, tongue, lips); the heavy letters خ ص ض ط ظ غ ق sound full, the light letters stay thin.</span></li>
-      <li><input type="checkbox"> <span><strong>Ghunnah</strong> — a clear ~2-count nasal hum on noon and meem mushaddad (نّ مّ) and in ikhfaa.</span></li>
-      <li><input type="checkbox"> <span><strong>Madd lengths</strong> — natural madd held 2 counts; connected/obligatory madd held 4–6 counts, consistently.</span></li>
-      <li><input type="checkbox"> <span><strong>Qalqalah</strong> — a distinct echo-bounce on ق ط ب ج د when they carry sukoon or you stop on them.</span></li>
-      <li><input type="checkbox"> <span><strong>Waqf &amp; ibtida</strong> — you stopped and resumed at sensible places, never breaking a word mid-flow.</span></li>
-      <li><input type="checkbox"> <span><strong>Tarteel</strong> — a measured, unhurried pace (Quran 73:4), not rushed.</span></li>
-      <li><input type="checkbox"> <span><strong>Adab</strong> — you began with Ta'awwudh + Basmala and recited with presence of heart.</span></li>
-      <li><input type="checkbox"> <span><strong>The model test</strong> — played side-by-side with the reciter, the two sound the same to your ear.</span></li>
-    </ul>
-    {% else %}
-    <p class="rs-rubric-h">✅ Speaking self-check — listen back and tick honestly</p>
-    <ul>
-      <li><input type="checkbox"> <span><strong>Sounds</strong> — the tricky {{ include.language }} sounds are clear (not substituted with the nearest sound from your own language).</span></li>
-      <li><input type="checkbox"> <span><strong>Word stress</strong> — the stressed syllable in each word matches the model.</span></li>
-      <li><input type="checkbox"> <span><strong>Intonation</strong> — your sentence rises and falls like the model's (questions vs. statements sound different).</span></li>
-      <li><input type="checkbox"> <span><strong>Pace &amp; flow</strong> — you spoke in connected phrases, without long mid-sentence pauses or word-by-word stops.</span></li>
-      <li><input type="checkbox"> <span><strong>Full sentences</strong> — you recorded a complete sentence or answer, not just isolated words.</span></li>
-      <li><input type="checkbox"> <span><strong>The understandability test</strong> — a native speaker would understand you on the first try, without you repeating.</span></li>
-      <li><input type="checkbox"> <span><strong>The model test</strong> — played right after the model, your version sounds close enough to pass for the same phrase.</span></li>
-    </ul>
-    {% endif %}
-  </div>
+{% if include.kind == "language" %}
+<div class="rs-speech" data-rs="speech">
+<p class="rs-rubric-h">🎤 Free pronunciation check <span class="rs-badge">free · no sign-up</span></p>
+<p class="rs-intro2">Pick or type a {{ include.language }} phrase, tap the button, and say it. Your browser's speech recognizer shows word-by-word which words it understood — a solid proxy for whether a real listener would. <strong>Heads up:</strong> the check sends a short clip to your browser maker's speech service (the same as phone voice-typing), and works best in desktop Chrome or Edge — availability varies by browser and language (for example, Safari may not support Urdu or Persian).</p>
+<div class="rs-chips" role="group" aria-label="Example phrases — tap to use">
+{% assign chips_arr = rs_chips | split: "|" %}
+{% for ph in chips_arr %}<button type="button" class="rs-chip" data-phrase="{{ ph | escape }}">{{ ph | escape }}</button>{% endfor %}
+</div>
+<input class="rs-target" data-rs="target" type="text" dir="auto" aria-label="Phrase to practise in {{ include.language }}" placeholder="Type the {{ include.language }} phrase you want to practise…">
+<div class="rs-row"><button type="button" class="rs-btn rs-btn-check" data-rs="check">🎤 Check my pronunciation</button></div>
+<div class="rs-result" data-rs="result"></div>
+</div>
+{% endif %}
 
-  <div class="rs-share">
-    👥 <strong>Want your mistakes marked by a person?</strong> Download your recording and share it with a teacher or in the
-    <a href="{{ '/Resources/Communities/' | relative_url }}">study community</a> — a few rounds of honest feedback is the single fastest way to improve.
-  </div>
-  <p class="rs-priv">🔒 Your recording stays in your browser. Nothing is uploaded or stored unless you choose to download and share it.</p>
+<div class="rs-rubric">
+{% if include.kind == "quran" %}
+<p class="rs-rubric-h">✅ Tajweed self-check — listen back and tick honestly</p>
+<ul>
+<li><input type="checkbox"> <span><strong>Makhaarij</strong> — each letter came from its correct point (throat, tongue, lips); the heavy letters خ ص ض ط ظ غ ق sound full, the light letters stay thin.</span></li>
+<li><input type="checkbox"> <span><strong>Ghunnah</strong> — a clear ~2-count nasal hum on noon and meem mushaddad (نّ مّ) and in ikhfaa.</span></li>
+<li><input type="checkbox"> <span><strong>Madd lengths</strong> — natural madd held 2 counts; connected/obligatory madd held 4–6 counts, consistently.</span></li>
+<li><input type="checkbox"> <span><strong>Qalqalah</strong> — a distinct echo-bounce on ق ط ب ج د when they carry sukoon or you stop on them.</span></li>
+<li><input type="checkbox"> <span><strong>Waqf &amp; ibtida</strong> — you stopped and resumed at sensible places, never breaking a word mid-flow.</span></li>
+<li><input type="checkbox"> <span><strong>Tarteel</strong> — a measured, unhurried pace (Quran 73:4), not rushed.</span></li>
+<li><input type="checkbox"> <span><strong>Adab</strong> — you began with Ta'awwudh + Basmala and recited with presence of heart.</span></li>
+<li><input type="checkbox"> <span><strong>The model test</strong> — played side-by-side with the reciter, the two sound the same to your ear.</span></li>
+</ul>
+<p class="rs-disc">Automated speech-grading is intentionally <strong>not</strong> used for Quran recitation: general speech recognition cannot judge Tajweed (madd length, ghunnah, makhraj) and must not be relied on for the sacred text. Verify your Tajweed with the model recitation and a qualified teacher.</p>
+{% else %}
+<p class="rs-rubric-h">✅ Speaking self-check — listen back and tick honestly</p>
+<ul>
+<li><input type="checkbox"> <span><strong>Sounds</strong> — the tricky {{ include.language }} sounds are clear (not substituted with the nearest sound from your own language).</span></li>
+<li><input type="checkbox"> <span><strong>Word stress</strong> — the stressed syllable in each word matches the model.</span></li>
+<li><input type="checkbox"> <span><strong>Intonation</strong> — your sentence rises and falls like the model's (questions vs. statements sound different).</span></li>
+<li><input type="checkbox"> <span><strong>Pace &amp; flow</strong> — you spoke in connected phrases, without long mid-sentence pauses or word-by-word stops.</span></li>
+<li><input type="checkbox"> <span><strong>Full sentences</strong> — you recorded a complete sentence or answer, not just isolated words.</span></li>
+<li><input type="checkbox"> <span><strong>The understandability test</strong> — a native speaker would understand you on the first try, without you repeating.</span></li>
+<li><input type="checkbox"> <span><strong>The model test</strong> — played right after the model, your version sounds close enough to pass for the same phrase.</span></li>
+</ul>
+{% endif %}
+</div>
+
+<div class="rs-share">
+👥 <strong>Want your mistakes marked by a person?</strong> Download your recording and share it with a teacher or in the <a href="{{ '/Resources/Communities/' | relative_url }}">study community</a> — a few rounds of honest human feedback is the single fastest way to improve.
+</div>
+<p class="rs-priv">🔒 Your <strong>recording</strong> stays in your browser — nothing is uploaded or stored unless you choose to download and share it.{% if include.kind == "language" %} The optional <strong>pronunciation check</strong> uses your browser's built-in speech recognizer; in today's browsers (e.g. Chrome) the short clip is processed by the browser maker's speech service, the same as phone voice-typing — skip it if you'd rather not.{% endif %}</p>
 </div>
 
 <script src="{{ '/assets/record-studio.js' | relative_url }}"></script>
