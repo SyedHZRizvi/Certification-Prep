@@ -88,12 +88,12 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=قرآن+آسان+تجوید+کے+ساتھ+سیکھیں+نورانی+قاعدہ" data-video-id="zKaWVLUwcFM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%85%D8%AF%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%E2%80%94+%D8%B3%D8%A8%D9%82+%D9%86%D9%85%D8%A8%D8%B1+%DB%B1%DB%B1+%28%D9%85%DA%A9%D9%85%D9%84+%D9%BE%DA%91%DA%BE%D9%86%D8%A7+%D8%B3%DB%8C%DA%A9%DA%BE%DB%8C%DA%BA%29" data-video-id="RvQe32b5xpA" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">قرآن آسان تجوید کے ساتھ سیکھیں — نورانی و مدنی قاعدہ</p>
-    <p class="vg-creator">al madina online quran academy</p>
+    <p class="vg-title">مدنی قاعدہ — سبق نمبر ۱۱ (مکمل پڑھنا سیکھیں)</p>
+    <p class="vg-creator">The Islamic Education</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>

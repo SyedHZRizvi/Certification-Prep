@@ -158,12 +158,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%A7%D9%84%D9%85%D8%AF%DB%8C%D9%86%DB%81+%D8%A2%D9%86+%D9%84%D8%A7%D8%A6%D9%86+%D9%82%D8%B1%D8%A2%D9%86+%D8%A7%DA%A9%DB%8C%DA%88%D9%85%DB%8C+%E2%80%94+%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%D8%B3%D8%A8%D9%82" data-video-id="zKaWVLUwcFM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%AD%D9%81%D8%B8+%DA%A9%DB%92+%D8%B7%D9%84%D8%A8%D8%A7%D8%A1+%DA%A9%DB%92+%D9%84%DB%8C%DB%92+%D8%B3%D8%A8%D9%82+%D8%AC%D9%84%D8%AF%DB%8C+%DB%8C%D8%A7%D8%AF+%DA%A9%D8%B1%D9%86%DB%92+%DA%A9%D8%A7+%D8%B7%D8%B1%DB%8C%D9%82%DB%81" data-video-id="jp7NkOSZnKE" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">المدینہ آن لائن قرآن اکیڈمی — نورانی قاعدہ سبق</p>
-    <p class="vg-creator">al madina online quran academy</p>
+    <p class="vg-title">حفظ کے طلباء کے لیے سبق جلدی یاد کرنے کا طریقہ</p>
+    <p class="vg-creator">Qari Aziz Afridi</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>

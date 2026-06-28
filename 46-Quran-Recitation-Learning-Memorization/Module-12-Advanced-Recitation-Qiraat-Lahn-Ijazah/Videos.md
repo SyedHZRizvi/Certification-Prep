@@ -78,12 +78,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ijazah+sanad+quran+chain+of+transmission+explained+english" data-video-id="67TGTqjucyg" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Sanad+%E2%80%94+The+Chain+of+Scholars+Back+to+the+Prophet+%28peace+be+upon+him%29" data-video-id="jRgkRJ2QSJ8" target="_blank" rel="noopener">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Sanad and Ijazah — The Authentic Qur'anic Chain</p>
-    <p class="vg-creator">Ahl Al Zekr Academy</p>
+    <p class="vg-title">Sanad — The Chain of Scholars Back to the Prophet (peace be upon him)</p>
+    <p class="vg-creator">The Dua Studio</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
@@ -98,12 +98,12 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%82%D8%B1%D8%A2%D9%86+%D9%BE%D8%A7%DA%A9+%D8%B3%DB%8C%DA%A9%DA%BE%DB%8C%DA%BA+%D8%A2%D8%B3%D8%A7%D9%86+%D8%AA%D8%AC%D9%88%DB%8C%D8%AF+%DA%A9%DB%92+%D8%B3%D8%A7%D8%AA%DA%BE+%E2%80%94+%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%D8%AA%D8%B9%D8%A7%D8%B1%D9%81%DB%8C+%D8%B3%D8%A8%D9%82" data-video-id="zKaWVLUwcFM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%82%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%D9%90+%D8%B3%D8%A8%D8%B9%DB%81+%D9%88+%D8%B9%D8%B4%D8%B1%DB%81+%DA%A9%D8%A7+%D8%AA%D8%B9%D8%A7%D8%B1%D9%81" data-video-id="foV4etP6t58" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">قرآن پاک سیکھیں آسان تجوید کے ساتھ — نورانی قاعدہ تعارفی سبق</p>
-    <p class="vg-creator">al madina online quran academy</p>
+    <p class="vg-title">قراءاتِ سبعہ و عشرہ کا تعارف</p>
+    <p class="vg-creator">Qari Abubakar Hayat</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>

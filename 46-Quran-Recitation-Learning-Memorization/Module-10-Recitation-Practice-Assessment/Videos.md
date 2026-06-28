@@ -120,12 +120,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=قرآن+آسان+تجوید+کے+ساتھ+سیکھیں+مشق+اردو" data-video-id="zKaWVLUwcFM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%AA%D9%84%D8%A7%D9%88%D8%AA+%DA%A9%DB%8C+%D9%85%D8%B4%D9%82+%E2%80%94+%D8%B3%D9%88%D8%B1%DB%83+%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D8%AD%DB%81+%D9%85%D8%B9+%D8%A7%D8%B1%D8%AF%D9%88+%D8%AA%D8%B1%D8%AC%D9%85%DB%81" data-video-id="hiMFA8551u0" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">قرآن آسان تجوید کے ساتھ سیکھیں — بلند آواز سے مشق</p>
-    <p class="vg-creator">al madina online quran academy</p>
+    <p class="vg-title">تلاوت کی مشق — سورۃ الفاتحہ مع اردو ترجمہ</p>
+    <p class="vg-creator">MH786 Islamic</p>
     <p class="vg-duration">~20 منٹ</p>
   </div>
 </a>
