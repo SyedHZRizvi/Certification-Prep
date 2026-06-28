@@ -108,22 +108,22 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=قلقلہ+احکام+تجوید+اردو+ہندی" data-video-id="0BYw1460JGM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%AD%D8%B1%D9%88%D9%81%D9%90+%D9%82%D9%84%D9%82%D9%84%DB%81+%DA%A9%D8%A7+%D8%A8%DB%8C%D8%A7%D9%86+%E2%80%94+%D9%82%D9%84%D9%82%D9%84%DB%81+%DA%A9%D8%A7+%D9%82%D8%A7%D8%B9%D8%AF%DB%81" data-video-id="n_3uKP1DFyQ" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">قلقلہ — احکامِ تجوید کلاس (قلقلہ کبریٰ و صغریٰ)</p>
-    <p class="vg-creator">Fatima Online Teaching Center</p>
+    <p class="vg-title">حروفِ قلقلہ کا بیان — قلقلہ کا قاعدہ</p>
+    <p class="vg-creator">Tadrees ul Quran studio</p>
     <p class="vg-duration">~13 منٹ</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=میم+ساکن+کے+قواعد+اخفا+شفوی+ادغام+اظہار+اردو" data-video-id="1muG5EsX8O0" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%85%DB%8C%D9%85+%D8%B3%D8%A7%DA%A9%D9%86+%D9%85%DB%8C%DA%BA+%D8%A7%D8%AE%D9%81%D8%A7%D8%A6%DB%92+%D8%B4%D9%81%D9%88%DB%8C+%E2%80%94+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%D8%A7%D9%88%D8%B1+%D8%A2%D8%B3%D8%A7%D9%86+%D9%85%D8%AB%D8%A7%D9%84%DB%8C%DA%BA" data-video-id="ZA7FK_E83s4" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">میم ساکن کے قواعد — اخفا، ادغام و اظہار شفوی</p>
-    <p class="vg-creator">Qari Aqib</p>
+    <p class="vg-title">میم ساکن میں اخفائے شفوی — قاعدہ اور آسان مثالیں</p>
+    <p class="vg-creator">Jadeed Noorani Qaida</p>
     <p class="vg-duration">~16 منٹ</p>
   </div>
 </a>
@@ -148,32 +148,32 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=راء+کے+قواعد+تفخیم+ترقیق+تجوید+اردو" data-video-id="aTZy0tWv4_w" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B1%D8%A7%D8%A1+%D8%A7%D9%88%D8%B1+%D9%84%D9%81%D8%B8%D9%90+%D8%A7%D9%84%D9%84%DB%81+%E2%80%94+%D8%AA%D9%81%D8%AE%DB%8C%D9%85+%D9%88+%D8%AA%D8%B1%D9%82%DB%8C%D9%82+%DA%A9%DB%92+%D8%A7%D8%B5%D9%88%D9%84" data-video-id="OYSYtmeMvD4" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">راء کے قواعد — تفخیم و ترقیقِ راء</p>
-    <p class="vg-creator">Online Quran Teacher</p>
+    <p class="vg-title">راء اور لفظِ اللہ — تفخیم و ترقیق کے اصول</p>
+    <p class="vg-creator">Online Quran Teacher - Irfan Khan</p>
     <p class="vg-duration">~14 منٹ</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=وقف+کے+قواعد+رموز+اوقاف+قرآن+تجوید+اردو" data-video-id="L00UQu-i5DE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%88%D9%82%D9%81+%DA%A9%DB%8C+%D8%A7%D9%82%D8%B3%D8%A7%D9%85+%E2%80%94+%DA%A9%DB%8C%D9%81%DB%8C%D8%AA+%DA%A9%DB%92+%D8%A7%D8%B9%D8%AA%D8%A8%D8%A7%D8%B1+%D8%B3%DB%92" data-video-id="Et8eK5e9Pp4" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">وقف کے قواعد — قرآن میں ٹھہرنے کے اصول</p>
-    <p class="vg-creator">Roots OfKnowledge</p>
+    <p class="vg-title">وقف کی اقسام — کیفیت کے اعتبار سے</p>
+    <p class="vg-creator">Hafiz Studio</p>
     <p class="vg-duration">~12 منٹ</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=مد+لازم+کے+قواعد+تجوید+اردو" data-video-id="oVfK5YqI50U" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%85%D8%AF+%DA%A9%DB%8C+%D8%A7%D9%82%D8%B3%D8%A7%D9%85+%E2%80%94+%D9%85%D8%AF+%D9%85%D8%AA%D8%B5%D9%84%D8%8C+%D9%85%D9%86%D9%81%D8%B5%D9%84%D8%8C+%D9%84%D8%A7%D8%B2%D9%85+%D9%88+%D8%B9%D8%A7%D8%B1%D8%B6" data-video-id="zG5p8LVz2Ak" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">مدِ لازم اور اقسامِ مد — قواعدِ تجوید آسان اردو میں</p>
-    <p class="vg-creator">Rehnumai4u</p>
+    <p class="vg-title">مد کی اقسام — مد متصل، منفصل، لازم و عارض</p>
+    <p class="vg-creator">Tajweed Ul Quran 101</p>
     <p class="vg-duration">~20 منٹ</p>
   </div>
 </a>

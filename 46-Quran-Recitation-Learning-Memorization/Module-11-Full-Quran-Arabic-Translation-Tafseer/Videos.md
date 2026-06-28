@@ -98,32 +98,32 @@
 
 <div class="vg-grid" markdown="0">
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=آسان+قرآن+ترجمہ+و+تفسیر+کلاس+اردو" data-video-id="LYxaeYApy-g" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%AA%D8%B1%D8%AC%D9%85%DB%81+%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86+%DB%94+%D9%84%DB%8C%DA%A9%DA%86%D8%B1+%D9%86%D9%85%D8%A8%D8%B1+%DB%B1+%28%D8%B4%D8%B1%D9%88%D8%B9+%D8%B3%DB%92%29" data-video-id="Eo9pzkSxVxU" target="_blank" rel="noopener">
     <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">آسان قرآن ترجمہ و تفسیر — کلاس ۰۱ (شروع سے)</p>
-      <p class="vg-creator">Islam with Aisha</p>
+      <p class="vg-title">ترجمہ القرآن ۔ لیکچر نمبر ۱ (شروع سے)</p>
+      <p class="vg-creator">Zahid Ameer Khan</p>
       <p class="vg-duration">~30 min</p>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=اردو+ترجمہ+قرآن+کورس+لفظ+بہ+لفظ" data-video-id="2D3e05j6j3A" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%82%D8%B1%D8%A2%D9%86+%D9%85%D8%AC%DB%8C%D8%AF+%D8%A7%D8%B1%D8%AF%D9%88+%D8%AA%D8%B1%D8%AC%D9%85%DB%81+%DA%A9%DB%92+%D8%B3%D8%A7%D8%AA%DA%BE+%E2%80%94+%D9%85%DA%A9%D9%85%D9%84+%D9%BE%DB%81%D9%84%D8%A7+%D9%BE%D8%A7%D8%B1%DB%81" data-video-id="6kj4-ZYJb4E" target="_blank" rel="noopener">
     <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">اردو ترجمہ قرآن کورس — قرآن کو سمجھنا</p>
-      <p class="vg-creator">Online Quran Teacher GatewaytoQuran</p>
+      <p class="vg-title">قرآن مجید اردو ترجمہ کے ساتھ — مکمل پہلا پارہ</p>
+      <p class="vg-creator">Quran majeed dil ka nur</p>
       <p class="vg-duration">~25 min</p>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ڈاکٹر+اسرار+احمد+قرآن+اردو+ترجمہ+و+تفسیر+پارہ+1" data-video-id="KjMGYr6nRvo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=%DA%88%D8%A7%DA%A9%D9%B9%D8%B1+%D8%A7%D8%B3%D8%B1%D8%A7%D8%B1+%D8%A7%D8%AD%D9%85%D8%AF+%E2%80%94+%D9%82%D8%B1%D8%A2%D9%86+%D9%85%D8%AC%DB%8C%D8%AF+%D8%AA%D9%81%D8%B3%DB%8C%D8%B1%D8%8C+%D8%B3%D9%88%D8%B1%DB%81+%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D8%AD%DB%81+%DB%B1" data-video-id="ubsjHlvaxpA" target="_blank" rel="noopener">
     <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">قرآن مجید — اردو ترجمہ و تفسیر، پارہ ۱ (ڈاکٹر اسرار احمد)</p>
-      <p class="vg-creator">Ali Butt Live Videos</p>
+      <p class="vg-title">ڈاکٹر اسرار احمد — قرآن مجید تفسیر، سورہ الفاتحہ ۱</p>
+      <p class="vg-creator">TARIQ SHAH Tanzeem islami</p>
       <p class="vg-duration">~60 min</p>
     </div>
   </a>
@@ -138,12 +138,12 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=قرآن+مجید+لفظی+ترجمہ+خود+کریں+سیکھیں+اردو" data-video-id="bOAYnGFeQ-g" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%82%D8%B1%D8%A2%D9%86+%DA%A9%D9%84%D8%A7%D8%B3+%E2%80%94+%D8%B3%D9%88%D8%B1%DB%83+%D8%A7%D9%84%D8%A8%D9%82%D8%B1%DB%81%D8%8C+%D8%AA%D8%B1%D8%AC%D9%85%DB%81+%D9%88+%D8%AA%D9%81%D8%B3%DB%8C%D8%B1" data-video-id="iBUiZg40Pq4" target="_blank" rel="noopener">
     <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">قرآن مجید کا لفظی ترجمہ خود کریں — آغاز</p>
-      <p class="vg-creator">Asad Ullah Jan Al-Azhari</p>
+      <p class="vg-title">قرآن کلاس — سورۃ البقرہ، ترجمہ و تفسیر</p>
+      <p class="vg-creator">Muhamad Waqas Akhundzada</p>
       <p class="vg-duration">~22 min</p>
     </div>
   </a>
@@ -158,12 +158,12 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=قرآن+ترجمہ+لفظ+بہ+لفظ+اردو+معنی+سبق" data-video-id="P0I59JnpYUg" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%A2%DB%8C%D8%AA+%D8%A7%D9%84%DA%A9%D8%B1%D8%B3%DB%8C+%E2%80%94+%D9%84%D9%81%D8%B8+%D8%A8%DB%81+%D9%84%D9%81%D8%B8+%D8%A7%D8%B1%D8%AF%D9%88+%D8%AA%D8%B1%D8%AC%D9%85%DB%81" data-video-id="VZpZNiQI8FE" target="_blank" rel="noopener">
     <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">قرآن کا لفظ بہ لفظ اردو ترجمہ — معنی کے ساتھ سبق</p>
-      <p class="vg-creator">QMA Islamic Tube</p>
+      <p class="vg-title">آیت الکرسی — لفظ بہ لفظ اردو ترجمہ</p>
+      <p class="vg-creator">Muhammad Khan</p>
       <p class="vg-duration">~15 min</p>
     </div>
   </a>

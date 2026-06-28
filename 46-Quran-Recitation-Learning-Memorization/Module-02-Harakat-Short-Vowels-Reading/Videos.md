@@ -90,52 +90,52 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=نورانی+قاعدہ+حرکات+زبر+زیر+پیش+سبق" data-video-id="60CVy9RtIQc" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%AD%D8%B1%DA%A9%D8%A7%D8%AA+%E2%80%94+%D8%B2%D8%A8%D8%B1%D8%8C+%D8%B2%DB%8C%D8%B1%D8%8C+%D9%BE%DB%8C%D8%B4+%28%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81%D8%8C+%D8%AA%D8%AE%D8%AA%DB%8C+%DB%B3%29" data-video-id="TpWTnHoXEAo" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">حرکات — زبر، زیر، پیش (نورانی قاعدہ سبق ۳)</p>
-    <p class="vg-creator">Tajweed-Ul-Quran</p>
+    <p class="vg-title">حرکات — زبر، زیر، پیش (نورانی قاعدہ، تختی ۳)</p>
+    <p class="vg-creator">Learn Quran Anytime</p>
     <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=زبر+زیر+پیش+حرکات+نورانی+قاعدہ+اردو" data-video-id="X6GTzYsEr1w" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B2%D8%A8%D8%B1+%D8%B2%DB%8C%D8%B1+%D9%BE%DB%8C%D8%B4+%E2%80%94+%D8%AD%D8%B1%DA%A9%D8%A7%D8%AA+%DA%A9%D8%A7+%D8%B3%D8%A8%D9%82+%28%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81%D8%8C+%D8%AA%D8%AE%D8%AA%DB%8C+%DB%B3%29" data-video-id="sVPC_yBnSKo" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">زبر زیر پیش — حرکات کا سبق (نورانی قاعدہ)</p>
-    <p class="vg-creator">Online Quran Pak</p>
+    <p class="vg-title">زبر زیر پیش — حرکات کا سبق (نورانی قاعدہ، تختی ۳)</p>
+    <p class="vg-creator">Learn Quran Anytime</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=سکون+جزم+نورانی+قاعدہ+سبق+اردو" data-video-id="CPhQe8VJo8A" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%AC%D8%B2%D9%85+%DB%8C%D8%A7+%D8%B3%DA%A9%D9%88%D9%86+%DA%A9%DB%8C%D8%A7+%DB%81%DB%92%D8%9F+%E2%80%94+%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%D8%B3%D8%A8%D9%82+%D9%86%D9%85%D8%A8%D8%B1+%DB%B1%DB%B0" data-video-id="qlGr_H-yXLY" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">سکون (جزم) — نورانی قاعدہ سبق نمبر ۱۲</p>
-    <p class="vg-creator">Learn Quran with Hafiz Bilal — URDU</p>
+    <p class="vg-title">جزم یا سکون کیا ہے؟ — نورانی قاعدہ سبق نمبر ۱۰</p>
+    <p class="vg-creator">Hadiqa Online Quran Academy</p>
     <p class="vg-duration">~9 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=تشدید+شد+مشق+نورانی+قاعدہ+اردو+سبق" data-video-id="F_U1ueWZgcM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B4%D8%AF+%28%D8%AA%D8%B4%D8%AF%DB%8C%D8%AF%29+%E2%80%94+%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%D8%AA%D8%AE%D8%AA%DB%8C+%D9%86%D9%85%D8%A8%D8%B1+%DB%B1%DB%B2" data-video-id="9M3JP0ifuZk" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">شد (تشدید) کی مشق — نورانی قاعدہ سبق نمبر ۱۸</p>
-    <p class="vg-creator">Learn Quran with Hafiz Bilal — URDU</p>
+    <p class="vg-title">شد (تشدید) — نورانی قاعدہ تختی نمبر ۱۲</p>
+    <p class="vg-creator">NooraNi Stories</p>
     <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=تنوین+حرکات+مشق+نورانی+قاعدہ+اردو+سبق" data-video-id="BVVZMBZNLGM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%AA%D9%86%D9%88%DB%8C%D9%86+%28%D8%AF%D9%88+%D8%B2%D8%A8%D8%B1%29+%D9%88%D8%A7%D9%84%DB%92+%D8%A7%D9%84%D9%81%D8%A7%D8%B8+%DA%A9%DB%8C+%D9%85%D8%B4%D9%82+%E2%80%94+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%DB%8C%D8%B3%D8%B1%D9%86%D8%A7+%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86" data-video-id="7M0sHUw4Zlk" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">تنوین اور حرکات کی مشق — نورانی قاعدہ سبق نمبر ۶</p>
-    <p class="vg-creator">Learn Quran with Hafiz Bilal — URDU</p>
+    <p class="vg-title">تنوین (دو زبر) والے الفاظ کی مشق — قاعدہ یسرنا القرآن</p>
+    <p class="vg-creator">SirMazharTeacher</p>
     <p class="vg-duration">~8 min</p>
   </div>
 </a>
@@ -150,12 +150,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=کھڑی+زبر+کھڑی+زیر+الٹا+پیش+قرآنی+قاعدہ" data-video-id="ajuf2PwnkrY" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%DA%A9%DA%BE%DA%91%DB%8C+%D8%AD%D8%B1%DA%A9%D8%A7%D8%AA+%2F+%D8%A7%D9%84%D9%B9%D8%A7+%D9%BE%DB%8C%D8%B4+%E2%80%94+%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81" data-video-id="NvtzzMMTr5A" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">کھڑی حرکات — کھڑی زبر، کھڑی زیر، الٹا پیش</p>
-    <p class="vg-creator">Learn Quran Live</p>
+    <p class="vg-title">کھڑی حرکات / الٹا پیش — نورانی قاعدہ</p>
+    <p class="vg-creator">islamic education A</p>
     <p class="vg-duration">~7 min</p>
   </div>
 </a>

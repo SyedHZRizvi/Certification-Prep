@@ -120,12 +120,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=آیت+الکرسی+یاد+کرنے+کا+طریقہ" data-video-id="Ln7ZmXmoM5I" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%A2%DB%8C%D8%AA+%D8%A7%D9%84%DA%A9%D8%B1%D8%B3%DB%8C+%E2%80%94+%D9%84%D9%81%D8%B8+%D8%A8%DB%81+%D9%84%D9%81%D8%B8+%D8%B3%DB%8C%DA%A9%DA%BE%DB%8C%DA%BA" data-video-id="VZpZNiQI8FE" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">آیت الکرسی — یاد کرنے کا آسان طریقہ</p>
-    <p class="vg-creator">Mufti Rashid Anwar</p>
+    <p class="vg-title">آیت الکرسی — لفظ بہ لفظ سیکھیں</p>
+    <p class="vg-creator">Muhammad Khan</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
@@ -150,12 +150,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+کہف+تجوید+سبق+آیت+1-17+اردو" data-video-id="y62baazxK7A" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B3%D9%88%D8%B1%DB%83+%DA%A9%DB%81%D9%81+%E2%80%94+%D9%BE%DB%81%D9%84%DB%8C+%D8%AF%D8%B3+%D8%A2%DB%8C%D8%A7%D8%AA" data-video-id="CT6rPYauHx4" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">سورہ کہف — تجوید سبق (آیت 1–17)</p>
-    <p class="vg-creator">Jadeed Noorani Qaida</p>
+    <p class="vg-title">سورۃ کہف — پہلی دس آیات</p>
+    <p class="vg-creator">Amaya Umar</p>
     <p class="vg-duration">~25 min</p>
   </div>
 </a>

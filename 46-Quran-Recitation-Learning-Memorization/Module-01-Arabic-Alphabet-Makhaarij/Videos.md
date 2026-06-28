@@ -98,22 +98,22 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=نورانی+قاعدہ+سبق+1+حروف+تہجی+تجوید+اردو" data-video-id="PCQttweg6B8" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%D8%AA%D8%AE%D8%AA%DB%8C+%D9%86%D9%85%D8%A8%D8%B1+%DB%B1+%E2%80%94+%D8%AD%D8%B1%D9%88%D9%81%D9%90+%D8%AA%DB%81%D8%AC%DB%8C+%D9%85%D8%B9+%D8%AA%D8%AC%D9%88%DB%8C%D8%AF" data-video-id="9toCyQ-qc4I" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">لازمی</span>
-    <p class="vg-title">نورانی قاعدہ سبق نمبر 1 — حروفِ تہجی مع تجوید</p>
-    <p class="vg-creator">Qari Hidayatullah Sindhi</p>
+    <p class="vg-title">نورانی قاعدہ تختی نمبر ۱ — حروفِ تہجی مع تجوید</p>
+    <p class="vg-creator">islamic Dars</p>
     <p class="vg-duration">~15 منٹ</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=نورانی+قاعدہ+سبق+2+عربی+حروف+تجوید+اردو" data-video-id="9gU-CRD2fLk" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%E2%80%94+%DB%B5%DB%B0+%D8%B9%D8%B1%D8%A8%DB%8C+%D8%AD%D8%B1%D9%88%D9%81+%DA%A9%D8%A7+%D8%AA%D8%B9%D8%A7%D8%B1%D9%81" data-video-id="HijODQ4g8_M" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">لازمی</span>
-    <p class="vg-title">نورانی قاعدہ سبق نمبر 2 — عربی حروف مع تجوید</p>
-    <p class="vg-creator">Tajweed-UL-Quran</p>
+    <p class="vg-title">نورانی قاعدہ — ۵۰ عربی حروف کا تعارف</p>
+    <p class="vg-creator">The Islam Message</p>
     <p class="vg-duration">~18 منٹ</p>
   </div>
 </a>

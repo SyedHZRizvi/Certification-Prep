@@ -100,22 +100,22 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=سورہ+فاتحہ+تجوید+کے+مطابق+کیسے+پڑھیں+نماز+اردو" data-video-id="0u4MfRQHoh0" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%B3%D9%88%D8%B1%DB%83+%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D8%AD%DB%81+%D8%AA%D8%AC%D9%88%DB%8C%D8%AF+%DA%A9%DB%92+%D8%B3%D8%A7%D8%AA%DA%BE+%E2%80%94+%D9%86%D9%85%D8%A7%D8%B2+%DA%A9%DB%8C+%D9%BE%DB%81%D9%84%DB%8C+%D8%B3%D9%88%D8%B1%D8%AA" data-video-id="YKuKB1LYmco" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">سورہ فاتحہ تجوید کے مطابق کیسے پڑھیں — نماز کے لیے درست قرات</p>
-    <p class="vg-creator">Hammad ullah Sajid</p>
+    <p class="vg-title">سورۃ الفاتحہ تجوید کے ساتھ — نماز کی پہلی سورت</p>
+    <p class="vg-creator">SM TV ایس ایم ٹی وی</p>
     <p class="vg-duration">~12 منٹ</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=تجوید+آسان+طریقے+سے+سیکھیں+قرآن+قرات+اردو+سبق" data-video-id="gLoOGRV3dqw" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%82%D8%B1%D8%A2%D9%86+%D9%85%D8%AC%DB%8C%D8%AF+%D8%B3%DB%8C%DA%A9%DA%BE%D9%86%DB%92+%DA%A9%D8%A7+%D8%B3%D8%A8+%D8%B3%DB%92+%D8%A2%D8%B3%D8%A7%D9%86+%D8%B7%D8%B1%DB%8C%D9%82%DB%81+%E2%80%94+%D9%84%D9%81%D8%B8+%D8%A8%D9%84%D9%81%D8%B8+%D9%85%D8%B4%D9%82" data-video-id="8zQgbxMmQ2k" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">تجوید آسان طریقے سے سیکھیں — تلاوت کی مشق کا تعارف</p>
-    <p class="vg-creator">Understand Al-Quran Official</p>
+    <p class="vg-title">قرآن مجید سیکھنے کا سب سے آسان طریقہ — لفظ بلفظ مشق</p>
+    <p class="vg-creator">Hafiz Zafar Allahwala</p>
     <p class="vg-duration">~15 منٹ</p>
   </div>
 </a>
@@ -130,12 +130,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=قاعدہ+پڑھانے+اور+پڑھنے+کا+آسان+طریقہ+تجوید+اردو" data-video-id="cOYicGoDTxU" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%D8%AA%D8%AE%D8%AA%DB%8C+%D9%86%D9%85%D8%A8%D8%B1+%DB%B1+%E2%80%94+%D9%85%DA%A9%D9%85%D9%84+%D8%AA%D8%AC%D9%88%DB%8C%D8%AF+%DA%A9%DB%92+%D8%B3%D8%A7%D8%AA%DA%BE" data-video-id="9toCyQ-qc4I" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">قاعدہ پڑھنے اور پڑھانے کا آسان طریقہ — مشق کی بنیاد</p>
-    <p class="vg-creator">Qari Abubakar Hayat</p>
+    <p class="vg-title">نورانی قاعدہ تختی نمبر ۱ — مکمل تجوید کے ساتھ</p>
+    <p class="vg-creator">islamic Dars</p>
     <p class="vg-duration">~10 منٹ</p>
   </div>
 </a>
@@ -150,22 +150,22 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=نورانی+قاعدہ+سبق+حروف+مفردات+تلفظ+مشق+اردو" data-video-id="puxnnwyuPj4" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%82%D8%A7%D8%B9%D8%AF%DB%81+%E2%80%94+%D8%AD%D8%B1%D9%88%D9%81%D9%90+%D9%84%DB%8C%D9%86+%D9%88+%D9%85%D8%AF%DB%81+%DA%A9%DB%92+%D8%AA%D9%84%D9%81%D8%B8+%DA%A9%DB%8C+%D9%85%D8%B4%D9%82" data-video-id="sX39Fwl-RU8" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">نورانی قاعدہ — حروفِ مفردات کے تلفظ کی مشق</p>
-    <p class="vg-creator">MuftiYaseenAcademy</p>
+    <p class="vg-title">نورانی قاعدہ — حروفِ لین و مدہ کے تلفظ کی مشق</p>
+    <p class="vg-creator">Learn Quran Pak (Hafiz Tahir Shah)</p>
     <p class="vg-duration">~14 منٹ</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=حفظ+و+ناظرہ+کورس+تجوید+کے+ساتھ+قرآن+سیکھیں+اردو" data-video-id="6FpveFEAljE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D9%82%D8%B1%D8%A2%D9%86+%DA%A9%D8%B1%DB%8C%D9%85+%D8%AD%D9%81%D8%B8+%DA%A9%D8%B1%D9%86%DB%92+%DA%A9%D8%A7+%D8%A2%D8%B3%D8%A7%D9%86+%D8%B7%D8%B1%DB%8C%D9%82%DB%81+%E2%80%94+%DB%81%D8%B1+%D8%B9%D9%85%D8%B1+%DA%A9%DB%92+%D9%84%DB%8C%DB%92" data-video-id="K3pb4n9y3p0" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">حفظ و ناظرہ کورس — اگلا مرحلہ، تجوید کے ساتھ</p>
-    <p class="vg-creator">Online Quran classes</p>
+    <p class="vg-title">قرآن کریم حفظ کرنے کا آسان طریقہ — ہر عمر کے لیے</p>
+    <p class="vg-creator">Qari Abubakar Hayat</p>
     <p class="vg-duration">~22 منٹ</p>
   </div>
 </a>
