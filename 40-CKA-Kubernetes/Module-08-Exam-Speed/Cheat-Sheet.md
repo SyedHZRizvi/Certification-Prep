@@ -56,7 +56,7 @@ export now="--force --grace-period=0"  # k delete pod nginx $now
 | Create RoleBinding | `k create rolebinding <name> --role=<r> --serviceaccount=<ns>:<sa>` |
 | Create ClusterRole | `k create clusterrole <name> --verb=get,list --resource=nodes` |
 | Create ClusterRoleBinding | `k create clusterrolebinding <name> --clusterrole=<cr> --serviceaccount=<ns>:<sa>` |
-| Check RBAC | `k auth can-i list pods --as=system:serviceaccount:<ns>:<sa>` |
+| Check RBAC (Role-Based Access Control) | `k auth can-i list pods --as=system:serviceaccount:<ns>:<sa>` |
 | Label node | `k label node <node> key=val` |
 | Taint node | `k taint node <node> key=val:NoSchedule` |
 | Remove taint | `k taint node <node> key=val:NoSchedule-` |
@@ -143,7 +143,7 @@ spec:
         matchLabels:
           kubernetes.io/metadata.name: allowed-ns
     ports:
-    - { protocol: TCP, port: 80 }
+    - { protocol: TCP (Transmission Control Protocol), port: 80 }
 ```
 
 ---

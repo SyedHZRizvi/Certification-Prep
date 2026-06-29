@@ -157,7 +157,7 @@ else:
 - Contextual retrieval (Anthropic Sep 2024) = -35% retrieval failure
 - CRAG, Adaptive, Graph, FLARE, Self-RAG
 - Lost-in-the-middle = real; design around it
-- Refusal license = single highest-ROI prompt addition
+- Refusal license = single highest-ROI (Return on Investment) prompt addition
 
 ---
 

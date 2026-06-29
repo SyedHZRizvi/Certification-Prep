@@ -8,14 +8,14 @@
 
 | Component | Port | Protocol |
 |---|---|---|
-| kube-apiserver | 6443 | HTTPS |
+| kube-apiserver | 6443 | HTTPS (HTTP Secure) |
 | etcd (client) | 2379 | HTTPS |
 | etcd (peer) | 2380 | HTTPS |
 | kubelet | 10250 | HTTPS |
 | kube-scheduler | 10259 | HTTPS |
 | kube-controller-manager | 10257 | HTTPS |
-| kube-proxy (metrics) | 10249 | HTTP |
-| NodePort range | 30000–32767 | TCP/UDP |
+| kube-proxy (metrics) | 10249 | HTTP (Hypertext Transfer Protocol) |
+| NodePort range | 30000–32767 | TCP (Transmission Control Protocol)/UDP (User Datagram Protocol) |
 
 ---
 
@@ -28,13 +28,13 @@
 | `/etc/kubernetes/manifests/kube-controller-manager.yaml` | controller-manager static pod config |
 | `/etc/kubernetes/manifests/kube-scheduler.yaml` | scheduler static pod config |
 | `/etc/kubernetes/manifests/etcd.yaml` | etcd static pod config |
-| `/etc/kubernetes/pki/` | All cluster PKI certs and keys |
+| `/etc/kubernetes/pki/` | All cluster PKI (Public Key Infrastructure) certs and keys |
 | `/etc/kubernetes/pki/etcd/` | etcd-specific certs (ca.crt, server.crt, peer.crt) |
 | `/etc/kubernetes/admin.conf` | Admin kubeconfig (copy to `~/.kube/config`) |
 | `/etc/kubernetes/kubelet.conf` | kubelet kubeconfig (auth to apiserver) |
 | `/etc/kubernetes/controller-manager.conf` | controller-manager kubeconfig |
 | `/etc/kubernetes/scheduler.conf` | scheduler kubeconfig |
-| `/var/lib/kubelet/config.yaml` | KubeletConfiguration (cgroupDriver, staticPodPath, DNS) |
+| `/var/lib/kubelet/config.yaml` | KubeletConfiguration (cgroupDriver, staticPodPath, DNS (Domain Name System)) |
 | `/var/lib/etcd/` | etcd data directory (default) |
 | `/run/containerd/containerd.sock` | containerd CRI socket |
 | `/var/run/crio/crio.sock` | CRI-O socket |
@@ -64,7 +64,7 @@
 
 ## etcdctl Commands (Exact Exam Syntax)
 
-> Always prepend `ETCDCTL_API=3` — without it, commands use the deprecated v2 API.
+> Always prepend `ETCDCTL_API (Application Programming Interface)=3` — without it, commands use the deprecated v2 API.
 
 ```bash
 # Take a snapshot backup

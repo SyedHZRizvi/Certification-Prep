@@ -30,7 +30,7 @@
 
 ---
 
-## 📤 SDK Pattern (Vertex AI)
+## 📤 SDK (Software Development Kit) Pattern (Vertex AI)
 
 ```python
 from vertexai.generative_models import GenerativeModel, Part
@@ -44,7 +44,7 @@ pdf = Part.from_uri("gs://b/c.pdf", mime_type="application/pdf")
 r = model.generate_content(["Analyze:", img, audio, video, pdf])
 ```
 
-### Files API (>20MB)
+### Files API (Application Programming Interface) (>20MB)
 
 ```python
 import google.generativeai as genai
@@ -111,7 +111,7 @@ Vertex AI Search (menu/upsell grounding) + POS
 
 - Vertex AI in HIPAA-eligible region
 - Signed BAA
-- CMEK + VPC-SC
+- CMEK + VPC (Virtual Private Cloud)-SC
 - Audit logs
 - Clinician-in-the-loop on every output
 
@@ -151,4 +151,4 @@ If all 5 in <90s, you own this module. ✅
 
 ---
 
-➡️ [Module 5: RAG on Google Cloud](../Module-05-RAG-Google-Cloud/Reading.md)
+➡️ [Module 5: RAG (Retrieval-Augmented Generation) on Google Cloud](../Module-05-RAG-Google-Cloud/Reading.md)

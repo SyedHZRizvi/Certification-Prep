@@ -15,7 +15,7 @@
 | PHS | ✅ | ✅ |
 | **PTA** | ✅ | ❌ |
 | **Federation** | ✅ | ❌ |
-| Seamless SSO | ✅ | ✅ |
+| Seamless SSO (Single Sign-On) | ✅ | ✅ |
 | Password write-back | ✅ | ✅ |
 | **Group write-back** | ✅ | ❌ |
 | **Device write-back** | ✅ (legacy) | ❌ |
@@ -31,11 +31,11 @@
 |----------|---------------------|------|
 | **PHS** (recommended) | Hash-of-hash in Entra | Default for new + DR backup |
 | **PTA** | On-prem only | Policy preventing hash sync |
-| **Federation** (deprecated) | On-prem AD via AD FS | Legacy; migrating away |
+| **Federation** (deprecated) | On-prem AD (Active Directory) via AD FS | Legacy; migrating away |
 
 ### PHS hash design
 ```
-NTLM hash → salted → HMAC-SHA256 (1,000 iterations) → sent over HTTPS to Entra
+NTLM hash → salted → HMAC-SHA256 (1,000 iterations) → sent over HTTPS (HTTP Secure) to Entra
 ```
 
 ### PTA HA
@@ -49,7 +49,7 @@ NTLM hash → salted → HMAC-SHA256 (1,000 iterations) → sent over HTTPS to E
 - Computer account: `AZUREADSSOACC` in on-prem AD
 - Rotate password every **30 days** (Microsoft recommendation)
 - Works with PHS + PTA (not Federation, Federation handles SSO natively)
-- CA + MFA still apply on top
+- CA + MFA (Multi-Factor Authentication) still apply on top
 
 ---
 

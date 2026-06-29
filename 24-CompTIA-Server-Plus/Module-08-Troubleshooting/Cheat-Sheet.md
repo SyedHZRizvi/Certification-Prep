@@ -27,7 +27,7 @@
 | Boot loop | Bootloader / recent update / SEL |
 | BSOD / kernel panic | minidump / `journalctl --boot=-1` |
 | Slow boot then OK | PortFast on switch, mapped drive timeouts |
-| Boots but no network | NIC LEDs / switch port / VLAN |
+| Boots but no network | NIC LEDs / switch port / VLAN (Virtual Local Area Network) |
 
 ---
 
@@ -62,7 +62,7 @@
 | Tool | Use |
 |---|---|
 | `ipconfig /all` · `ip a` | NIC + IP info |
-| `nslookup` · `dig` | DNS resolution |
+| `nslookup` · `dig` | DNS (Domain Name System) resolution |
 | `ping` | Reachability + latency |
 | `traceroute` · `tracert` | Path |
 | `mtr` | Combined trace + ping |
@@ -77,7 +77,7 @@
 
 | Tool | Use |
 |---|---|
-| RAID controller utility (PERC CLI / SSACLI / MegaCLI) | Array + drive status |
+| RAID controller utility (PERC CLI (Command Line Interface) / SSACLI / MegaCLI) | Array + drive status |
 | `smartctl -a /dev/sda` | SMART attributes |
 | `multipath -ll` | MPIO status (Linux) |
 | MPIO snap-in (Windows) | MPIO status |

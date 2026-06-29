@@ -73,7 +73,7 @@ Pick one. You can pivot later. Drift = problem.
 
 ## 🚫 Anti-Patterns To Recognize In Your Own Plan
 
-- ❌ **Tools List Trap**, Listing "Ahrefs, Make.com, Claude API" without linking to projects
+- ❌ **Tools List Trap**, Listing "Ahrefs, Make.com, Claude API (Application Programming Interface)" without linking to projects
 - ❌ **Internal Work Trap**, Relying on past job claims without artifacts
 - ❌ **Polished But Empty Trap**, Building a Webflow site before any project exists
 - ❌ **Hypothetical Subject Trap**, "I'll find a subject when I get to that capstone"
@@ -85,7 +85,7 @@ Pick one. You can pivot later. Drift = problem.
 
 | # | Capstone | Skill Signaled | Module |
 |---|----------|----------------|--------|
-| 1 | SEO + Content Audit | Analytical writing + strategy | M2 |
+| 1 | SEO (Search Engine Optimization) + Content Audit | Analytical writing + strategy | M2 |
 | 2 | Live Paid Campaign | Money-at-stake decision making | M3 |
 | 3 | Marketing Automation Workflow | Systems thinking | M4 |
 | 4 | Attribution Model | Quantitative analysis | M5 |

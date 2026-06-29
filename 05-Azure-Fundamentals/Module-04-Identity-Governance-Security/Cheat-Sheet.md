@@ -8,18 +8,18 @@
 
 | Capability | What |
 |------------|------|
-| **Entra ID** | Cloud identity (formerly Azure AD) |
+| **Entra ID** | Cloud identity (formerly Azure AD (Active Directory)) |
 | **Entra Connect** | Sync on-prem AD ↔ Entra |
-| **SSO** | One login, many apps |
-| **MFA** | 2+ proofs (know/have/are) |
+| **SSO (Single Sign-On)** | One login, many apps |
+| **MFA (Multi-Factor Authentication)** | 2+ proofs (know/have/are) |
 | **Passwordless** | Authenticator, FIDO2, Windows Hello |
 | **Conditional Access** | Policy: when to require MFA/block/etc. (P1+) |
-| **External ID** | B2B (partners) + B2C (customers) |
-| **PIM** | Just-in-time admin roles (P2) |
+| **External ID** | B2B (Business-to-Business) (partners) + B2C (Business-to-Consumer) (customers) |
+| **PIM (Product Information Management)** | Just-in-time admin roles (P2) |
 
 ---
 
-## 🔑 RBAC vs Policy vs Locks (THE BIG THREE)
+## 🔑 RBAC (Role-Based Access Control) vs Policy vs Locks (THE BIG THREE)
 
 | | RBAC | Azure Policy | Resource Lock |
 |---|------|--------------|----------------|
@@ -64,13 +64,13 @@ Initiative = bundle of policies.
 | Service | What |
 |---------|------|
 | **Defender for Cloud** | CSPM + workload protection + Secure Score |
-| **Microsoft Sentinel** | Cloud-native SIEM + SOAR |
+| **Microsoft Sentinel** | Cloud-native SIEM (Security Information and Event Management) + SOAR |
 | **Key Vault** | Secrets, keys, certs (HSM-backed) |
-| **Azure Bastion** | Browser RDP/SSH, no public IPs on VMs |
-| **DDoS Protection** | Always-on DDoS mitigation |
-| **Private Link / Endpoint** | PaaS into your VNet (no public endpoint) |
+| **Azure Bastion** | Browser RDP/SSH (Secure Shell), no public IPs on VMs |
+| **DDoS (Distributed Denial of Service) Protection** | Always-on DDoS mitigation |
+| **Private Link / Endpoint** | PaaS (Platform as a Service) into your VNet (no public endpoint) |
 | **Azure Firewall** | Managed cloud-scale L3-L7 firewall |
-| **WAF** | Web app firewall (on App Gateway or Front Door) |
+| **WAF (Web Application Firewall)** | Web app firewall (on App Gateway or Front Door) |
 | **Microsoft Purview** | Data governance + classification |
 
 ---
@@ -78,7 +78,7 @@ Initiative = bundle of policies.
 ## 🧠 Zero Trust (3 Principles)
 
 1. **Verify explicitly**, authn+authz on every request
-2. **Use least-privilege access**, JIT, JEA, risk-based, scoped
+2. **Use least-privilege access**, JIT (Just-In-Time), JEA, risk-based, scoped
 3. **Assume breach**, segment, encrypt e2e, monitor
 
 ---
@@ -125,7 +125,7 @@ Physical → Identity → Perimeter → Network → Compute → App → Data
 - ❌ One global RG for entire company
 - ❌ No MFA on admin accounts
 - ❌ Storing secrets in code or config files (use Key Vault!)
-- ❌ Exposing VM management ports to internet (use Bastion)
+- ❌ Exposing VM (Virtual Machine) management ports to internet (use Bastion)
 
 ---
 

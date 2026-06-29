@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -654,7 +654,7 @@
 
 ---
 
-**Q:** What is the Web Animations API (WAAPI)?
+**Q:** What is the Web Animations API (Application Programming Interface) (WAAPI)?
 
 **A:** A native browser API for creating and controlling animations without any external library. Supports play, pause, reverse, and seek.
 
@@ -718,7 +718,7 @@
 
 **Q:** What metric does YouTube's A/B thumbnail testing measure?
 
-**A:** Impression click-through rate (CTR), how many viewers who see the thumbnail click through to the video.
+**A:** Impression click-through rate (CTR (Click-Through Rate)), how many viewers who see the thumbnail click through to the video.
 
 ---
 
@@ -860,7 +860,7 @@
 
 **Q:** Can you include client work in your showreel by default?
 
-**A:** Generally yes, if: the project is publicly released, no NDA covers it, and you credit the client. When in doubt, ask.
+**A:** Generally yes, if: the project is publicly released, no NDA (Non-Disclosure Agreement) covers it, and you credit the client. When in doubt, ask.
 
 ---
 

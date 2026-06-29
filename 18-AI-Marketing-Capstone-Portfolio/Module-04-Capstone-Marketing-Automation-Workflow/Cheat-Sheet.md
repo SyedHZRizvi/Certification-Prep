@@ -44,10 +44,10 @@
 
 | You Want... | Pick |
 |-------------|------|
-| Cleanest visual UI | **Make.com** |
+| Cleanest visual UI (User Interface) | **Make.com** |
 | Dev signal / self-host / OSS | **n8n** |
 | Simplest interface | **Zapier** |
-| B2B SaaS / HubSpot ecosystem | **HubSpot Workflows** |
+| B2B (Business-to-Business) SaaS (Software as a Service) / HubSpot ecosystem | **HubSpot Workflows** |
 | Default for this course | **Make.com** |
 
 ---
@@ -77,7 +77,7 @@
 □ Tool picked (and account created)
 □ Subject / use case defined (real or realistic)
 □ Architecture diagram sketched first (top-down)
-□ All API accounts ready (Hunter / Apollo / Slack / Klaviyo / etc.)
+□ All API (Application Programming Interface) accounts ready (Hunter / Apollo / Slack / Klaviyo / etc.)
 □ Test form built (Tally / Typeform free)
 □ Test "scoring inputs" ready (3+ records to test HOT/WARM/COLD)
 □ Sanitization plan ready (so JSON export is safe to share)
@@ -207,7 +207,7 @@ All 5 filled? Ship it.
 Webhook → Hunter enrichment → scoring → Router to HOT/WARM/COLD.
 Each branch fires Slack + email + Salesforce + Notion based on score.
 Replaces ~6 manual hours/week. Lead routing now happens in <30 sec.
-v2 I'd add LLM message classification + dedupe + feedback loop.
+v2 I'd add LLM (Large Language Model) message classification + dedupe + feedback loop.
 Loom + JSON public, you can import and customize in 4 minutes."
 ```
 

@@ -38,15 +38,15 @@
 | Errors + slow throughput | L2 | Duplex mismatch |
 | Broadcast storm | L2 | Loop without STP |
 | MAC flapping | L2 | Loop or duplicate MAC |
-| 169.254.x.x | L3 | APIPA → DHCP failed |
+| 169.254.x.x | L3 | APIPA → DHCP (Dynamic Host Configuration Protocol) failed |
 | Routing loop / TTL exceeded | L3 | Static / dynamic routing |
 | Duplicate IP | L3 | DHCP + static conflict |
-| MTU issue / VPN hangs | L3 | Lower MSS / PMTUD |
+| MTU issue / VPN (Virtual Private Network) hangs | L3 | Lower MSS / PMTUD |
 | Connection refused | L4 | Service not listening |
 | Connection times out | L4 | Firewall drop / overload |
-| DNS NXDOMAIN | L7 | DNS path / resolver |
-| TLS cert error | L6/L7 | Cert expiry / clock skew (NTP!) |
-| HTTP 5xx | L7 | Server / upstream issue |
+| DNS (Domain Name System) NXDOMAIN | L7 | DNS path / resolver |
+| TLS (Transport Layer Security) cert error | L6/L7 | Cert expiry / clock skew (NTP!) |
+| HTTP (Hypertext Transfer Protocol) 5xx | L7 | Server / upstream issue |
 
 ---
 
@@ -86,7 +86,7 @@
 ## 🪛 Console & Out-of-Band Management
 
 - **Console (serial)** = direct local admin access; survives data-plane breakage
-- **Out-of-band mgmt** = separate VLAN / mgmt network; SSH/HTTPS over a path independent of user data
+- **Out-of-band mgmt** = separate VLAN (Virtual Local Area Network) / mgmt network; SSH (Secure Shell)/HTTPS (HTTP Secure) over a path independent of user data
 
 🚨 The Facebook lesson: When you can't reach the data path, OOB or console is the only path back.
 

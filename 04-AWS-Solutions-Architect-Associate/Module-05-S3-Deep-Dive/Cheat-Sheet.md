@@ -1,4 +1,4 @@
-# 📋 Module 5 Cheat Sheet: S3 Deep Dive
+# 📋 Module 5 Cheat Sheet: S3 (Simple Storage Service) Deep Dive
 
 > One page. Print it. Tape to your monitor.
 
@@ -55,9 +55,9 @@
 | CRR (Cross-Region) | DR, residency in another region |
 | SRR (Same-Region) | Log aggregation, access control split |
 
-Requires: **versioning ON** on source AND destination + replication IAM role.
+Requires: **versioning ON** on source AND destination + replication IAM (Identity and Access Management) role.
 **Only NEW objects** replicate (use Batch Replication for existing).
-**RTC** = 15-min SLA for 99.99% of objects.
+**RTC** = 15-min SLA (Service Level Agreement) for 99.99% of objects.
 
 ---
 
@@ -66,7 +66,7 @@ Requires: **versioning ON** on source AND destination + replication IAM role.
 | Feature | What |
 |---------|------|
 | Versioning | Keep every version; delete creates a marker |
-| MFA Delete | Require MFA token to delete versions (root-only enable, CLI) |
+| MFA (Multi-Factor Authentication) Delete | Require MFA token to delete versions (root-only enable, CLI (Command Line Interface)) |
 | Object Lock, Governance | Override possible with special perm |
 | Object Lock, Compliance | NOBODY can override during retention |
 | Legal Hold | Indefinite hold, no retention period |

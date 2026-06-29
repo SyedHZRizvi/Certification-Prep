@@ -18,11 +18,11 @@ title: Windows Server Hybrid Administrator Associate (AZ-800 + AZ-801)
 
 ### 🎯 The promise
 
-The Microsoft Certified: Windows Server Hybrid Administrator Associate (AZ-800 + AZ-801) is the credential for the systems engineer who *runs* the real enterprise the one with on-prem Active Directory, Hyper-V clusters, file servers, DFS, DHCP, IPAM, IIS, plus the Azure Arc / Entra Connect / Azure Monitor / Azure Backup integration every Fortune 500 actually uses in 2026. It is one of the most demanding credentials Microsoft awards at the associate tier passing **two** exams, and one of the most respected in the hybrid-infrastructure career market.
+The Microsoft Certified: Windows Server Hybrid Administrator Associate (AZ-800 + AZ-801) is the credential for the systems engineer who *runs* the real enterprise the one with on-prem Active Directory, Hyper-V clusters, file servers, DFS, DHCP (Dynamic Host Configuration Protocol), IPAM, IIS, plus the Azure Arc / Entra Connect / Azure Monitor / Azure Backup integration every Fortune 500 actually uses in 2026. It is one of the most demanding credentials Microsoft awards at the associate tier passing **two** exams, and one of the most respected in the hybrid-infrastructure career market.
 
 ### 💼 Career outcomes after passing
 
-- **Windows Systems Administrator** ($85K–$125K), running on-prem AD, file servers, Hyper-V
+- **Windows Systems Administrator** ($85K–$125K), running on-prem AD (Active Directory), file servers, Hyper-V
 - **Hybrid Infrastructure Engineer** ($110K–$155K), Windows Server + Azure Arc + Entra Connect at scale
 - **Senior Systems Engineer** ($120K–$170K), design and ops across hybrid environments
 - **Active Directory Engineer / Identity Engineer** ($115K–$165K), AD DS forests, FSMO design, Entra ID integration
@@ -55,12 +55,12 @@ By the end of this track, you'll be able to:
 
 - Deploy and manage **Active Directory Domain Services** at enterprise scale, forests, trusts, FSMO roles, sites, GPOs, and RODCs
 - Integrate on-prem AD with **Microsoft Entra ID** via Entra Connect, password hash sync, pass-through auth, and federation
-- Build resilient networking with **Windows DNS Server, DHCP, IPAM**, and IP Address Management for hybrid environments
+- Build resilient networking with **Windows DNS (Domain Name System) Server, DHCP, IPAM**, and IP Address Management for hybrid environments
 - Design **file servers and storage** using S2D, Storage Replica, DFS-N, DFS-R, ReFS, FSRM, Work Folders, BranchCache, and iSCSI
 - Operate **Hyper-V** at scale, Gen 1 vs Gen 2 VMs, nested virtualization, Hyper-V Replica, shielded VMs, live migration, SR-IOV
 - Onboard servers to **Azure Arc** for centralized management of on-prem, multicloud, and edge Windows Server workloads
 - Monitor everything from a single pane using **Azure Monitor**, the Azure Monitor Agent (AMA), Data Collection Rules, and Log Analytics
-- Secure servers with **Microsoft Defender for Servers**, WDAC, Credential Guard, secured-core, and just-in-time VM access
+- Secure servers with **Microsoft Defender for Servers**, WDAC, Credential Guard, secured-core, and just-in-time VM (Virtual Machine) access
 - Protect data using **Azure Backup (MARS/MABS)** and recover with **Azure Site Recovery (ASR)** and the **Storage Migration Service**
 - Automate with **PowerShell 7, DSC, JEA, Azure Automation, and Azure Automanage**
 
@@ -71,13 +71,13 @@ By the end of this track, you'll be able to:
 | # | Module | Time | What You'll Master |
 |---|--------|------|--------------------|
 | 1 | [Active Directory Domain Services](./Module-01-Active-Directory/Reading.md) | 5 hrs | Domains/forests/trusts, OUs, GPOs, replication, FSMO, sites, AD Recycle Bin, RODC |
-| 2 | [Identity & Entra ID Hybrid Integration](./Module-02-Identity-Entra/Reading.md) | 4 hrs | Entra Connect, Cloud Sync, PHS/PTA/federation, Entra Join, hybrid join, seamless SSO |
+| 2 | [Identity & Entra ID Hybrid Integration](./Module-02-Identity-Entra/Reading.md) | 4 hrs | Entra Connect, Cloud Sync, PHS/PTA/federation, Entra Join, hybrid join, seamless SSO (Single Sign-On) |
 | 3 | [Networking, DNS & DHCP](./Module-03-Networking-DNS/Reading.md) | 4 hrs | DNS zones, conditional forwarders, DNSSEC, DHCP scopes/superscopes, IPAM, firewall, NLB |
 | 4 | [File Servers, Storage & Storage Spaces](./Module-04-File-Storage/Reading.md) | 5 hrs | S2D, Storage Replica, DFS-N/R, ReFS vs NTFS, FSRM, Work Folders, BranchCache, iSCSI |
 | 5 | [Hyper-V & Virtualization](./Module-05-HyperV/Reading.md) | 4 hrs | Gen 1/Gen 2 VMs, nested virt, Hyper-V Replica, shielded VMs, vSwitch, live migration, SR-IOV |
 | 6 | [Hybrid Cloud with Azure Arc](./Module-06-Azure-Arc/Reading.md) | 4 hrs | Arc onboarding, Arc-enabled servers/K8s, policy at scale, Update Management, ESUs via Arc |
 | 7 | [Azure Monitor & Hybrid Monitoring](./Module-07-Azure-Monitor/Reading.md) | 4 hrs | AMA, DCRs, Log Analytics, Workbooks, alerts, VM Insights, perf counters, KQL basics |
-| 8 | [Server Security & Defender](./Module-08-Security-Defender/Reading.md) | 4 hrs | Defender for Servers P1/P2, MDE, JIT VM access, WDAC, Credential Guard, secured-core, Exploit Guard |
+| 8 | [Server Security & Defender](./Module-08-Security-Defender/Reading.md) | 4 hrs | Defender for Servers P1/P2, MDE, JIT (Just-In-Time) VM access, WDAC, Credential Guard, secured-core, Exploit Guard |
 | 9 | [Backup, ASR & Migration](./Module-09-Backup-Migration/Reading.md) | 4 hrs | Azure Backup, MARS, MABS, Recovery Services Vault, ASR, Storage Migration Service, Azure Migrate |
 | 10 | [PowerShell, DSC & Automation](./Module-10-PowerShell-Automation/Reading.md) | 4 hrs | PS 7 vs 5.1, remoting, JEA, DSC, Azure Automation, Automanage, admin scripting |
 
@@ -157,7 +157,7 @@ Also bookmark:
 
 ```
 Week 1–2:  Module 1 (Active Directory) + spin up a 2-DC lab in Hyper-V
-           → Promote a forest, create OUs, link a GPO
+           → Promote a forest, create OUs, link a GPO (Group Policy Object)
 Week 3:    Module 2 (Identity/Entra) → install Entra Connect to a free Entra tenant
 Week 4:    Module 3 (Networking/DNS/DHCP) → configure a conditional forwarder + DHCP failover
 Week 5:    Module 4 (File/Storage) → build a 2-node S2D-like cluster, configure DFS-N

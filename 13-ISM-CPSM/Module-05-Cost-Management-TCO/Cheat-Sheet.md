@@ -105,7 +105,7 @@ Use in FP-EPA contracts on multi-year commodities.
 
 | Metric | Formula |
 |---|---|
-| ROI | (Gain - Cost) / Cost × 100% |
+| ROI (Return on Investment) | (Gain - Cost) / Cost × 100% |
 | Payback | Investment / Annual savings |
 | NPV | Σ discounted cash flows - investment (positive = invest) |
 | IRR | Discount rate where NPV = 0 |

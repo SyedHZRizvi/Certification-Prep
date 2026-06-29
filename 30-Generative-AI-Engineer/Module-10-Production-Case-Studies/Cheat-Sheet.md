@@ -37,7 +37,7 @@
 |-------|------------------|
 | Single-model deployment | 5-20× over-spend |
 | Skip caches | 70-90% over-spend |
-| No streaming | Bad UX |
+| No streaming | Bad UX (User Experience) |
 | No observability | Blind in incidents |
 | Skip eval-in-CI | Regressions ship |
 | Trust LLM with destructive actions | Production incidents |

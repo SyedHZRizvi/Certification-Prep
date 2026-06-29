@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI-Animation/Module-04-Logo-Brand-Motion/Cheat-Sheet/
+permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-04-Logo-Brand-Motion/Cheat-Sheet/
 title: "Module 4 Cheat Sheet: Logo & Brand Motion"
 ---
 

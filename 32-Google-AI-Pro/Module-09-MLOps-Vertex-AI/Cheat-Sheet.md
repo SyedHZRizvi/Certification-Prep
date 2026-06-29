@@ -1,4 +1,4 @@
-# 📋 Module 9 Cheat Sheet: MLOps on Vertex AI
+# 📋 Module 9 Cheat Sheet: MLOps (Machine Learning Operations) on Vertex AI
 
 > Memorize the loop. Drill the components.
 
@@ -61,9 +61,9 @@ model_v2 = aiplatform.Model.upload(
 
 | Type | Use |
 |------|-----|
-| **Online** | Real-time HTTPS/gRPC; autoscale; traffic_split for canary |
+| **Online** | Real-time HTTPS (HTTP Secure)/gRPC; autoscale; traffic_split for canary |
 | **Batch** | Async GCS → GCS; cheapest |
-| **Private** | VPC-only; required for VPC-SC |
+| **Private** | VPC (Virtual Private Cloud)-only; required for VPC-SC |
 
 ```python
 endpoint.deploy(
@@ -140,7 +140,7 @@ fg = FeatureGroup.create(name="customer_features", source_uri="bq://proj.ds.cust
 
 ---
 
-## ⚙️ CI/CD for ML
+## ⚙️ CI/CD (Continuous Integration/Continuous Deployment) for ML
 
 ```
 GitHub / Source Repo

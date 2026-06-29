@@ -1,4 +1,4 @@
-# 📋 Module 4 Cheat Sheet: Master Scheduling & MRP
+# 📋 Module 4 Cheat Sheet: Master Scheduling & MRP (Material Requirements Planning)
 
 > One page. This is the biggest exam-weight module. Master the math.
 
@@ -11,7 +11,7 @@
 | Plans | Finished goods | Components / raw materials |
 | Demand | Independent | Dependent (calculated) |
 | Time bucket | Weekly | Daily/weekly |
-| Driven by | S&OP + orders + forecast | MPS + BOM + inventory + LT |
+| Driven by | S&OP (Sales and Operations Planning) + orders + forecast | MPS + BOM (Bill of Materials) + inventory + LT |
 
 ---
 
@@ -66,11 +66,11 @@ Planned Order Release Date = Receipt Date − Lead Time
 
 | Rule | Order Qty | Use Case |
 |------|-----------|----------|
-| **L4L** | = net req | Low setup, JIT |
-| **EOQ** | √(2DS/H) | Stable demand, high setup |
+| **L4L** | = net req | Low setup, JIT (Just-In-Time) |
+| **EOQ (Economic Order Quantity)** | √(2DS/H) | Stable demand, high setup |
 | **POQ** | Cover N periods | Trade-off |
 | **FOQ** | Fixed Q | Supplier minimum |
-| **Min/Max** | Up to Max when at Min | DRP |
+| **Min/Max** | Up to Max when at Min | DRP (Distribution Requirements Planning) |
 
 ---
 

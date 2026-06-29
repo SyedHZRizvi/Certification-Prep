@@ -58,7 +58,7 @@
 
 | Opcode | BIP | Type | Use |
 |--------|-----|------|-----|
-| **CLTV** | 65 | **Absolute** | Inheritance, vesting |
+| **CLTV (Customer Lifetime Value)** | 65 | **Absolute** | Inheritance, vesting |
 | **CSV** | 112 | **Relative** | Lightning HTLCs |
 
 ---

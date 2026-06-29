@@ -21,7 +21,7 @@ title: Certified Kubernetes Administrator (CKA)
 | Services & Networking | **20%** | Module 4 |
 | Workloads & Scheduling | **15%** | Module 3 |
 | Storage | **10%** | Module 5 |
-| Security (RBAC, ServiceAccounts) | Part of Arch | Module 6 |
+| Security (RBAC (Role-Based Access Control), ServiceAccounts) | Part of Arch | Module 6 |
 | Exam Speed & Strategy | — | Module 8 |
 
 ---
@@ -31,9 +31,9 @@ title: Certified Kubernetes Administrator (CKA)
 | Module | Topic | Exam Domains Covered |
 |--------|-------|----------------------|
 | [Module 1 — Container Foundations](./Module-01-Container-Foundations/) | Docker → Kubernetes rationale, architecture overview | Cluster Architecture |
-| [Module 2 — Cluster Architecture](./Module-02-Cluster-Architecture/) | kubeadm, etcd backup/restore, TLS, HA setups | Cluster Architecture (25%) |
+| [Module 2 — Cluster Architecture](./Module-02-Cluster-Architecture/) | kubeadm, etcd backup/restore, TLS (Transport Layer Security), HA setups | Cluster Architecture (25%) |
 | [Module 3 — Workloads & Scheduling](./Module-03-Workloads-Scheduling/) | Pods, Deployments, DaemonSets, StatefulSets, taints | Workloads & Scheduling (15%) |
-| [Module 4 — Services & Networking](./Module-04-Services-Networking/) | ClusterIP, NodePort, Ingress, NetworkPolicies, DNS | Services & Networking (20%) |
+| [Module 4 — Services & Networking](./Module-04-Services-Networking/) | ClusterIP, NodePort, Ingress, NetworkPolicies, DNS (Domain Name System) | Services & Networking (20%) |
 | [Module 5 — Storage](./Module-05-Storage/) | PV, PVC, StorageClass, ConfigMaps, Secrets | Storage (10%) |
 | [Module 6 — Security & RBAC](./Module-06-Security-RBAC/) | Roles, ClusterRoles, ServiceAccounts, SecurityContexts | Cluster Architecture |
 | [Module 7 — Troubleshooting](./Module-07-Troubleshooting/) | Pod, cluster, networking, logging — the 30% domain | Troubleshooting (30%) |
@@ -72,7 +72,7 @@ title: Certified Kubernetes Administrator (CKA)
 
 | Background | Readiness |
 |-----------|-----------|
-| AWS / Azure cloud practitioner | Ready to start Module 1 — you know VMs and networking |
+| AWS (Amazon Web Services) / Azure cloud practitioner | Ready to start Module 1 — you know VMs and networking |
 | Linux sysadmin | Strong fit — comfort with the terminal is half the battle |
 | Developer deploying containers | Good baseline — focus extra time on Modules 2 and 7 |
 | Complete beginner | Start with CompTIA Linux+ or AWS Cloud Practitioner first |

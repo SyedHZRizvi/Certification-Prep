@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI-Animation/Module-05-Infographic-Data-Viz/Cheat-Sheet/
+permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-05-Infographic-Data-Viz/Cheat-Sheet/
 title: "Module 5 Cheat Sheet: Infographic & Data Viz"
 ---
 

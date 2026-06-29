@@ -9,7 +9,7 @@
 | Approach | Weights? | Data | Cost | When |
 |----------|----------|------|------|------|
 | **Prompt engineering** | No | None | ¢ | First thing to try |
-| **RAG** | No | Your docs (any) | $ | Use private/fresh facts |
+| **RAG (Retrieval-Augmented Generation)** | No | Your docs (any) | $ | Use private/fresh facts |
 | **Fine-tuning** | Yes (small) | Labeled JSONL | $$ | Specific tone / format / niche task |
 | **Continued pre-training** | Yes (deep) | Lots of unlabeled text | $$$$ | Whole new domain vocabulary |
 
@@ -38,7 +38,7 @@ Need private data?  → YES → RAG
 
 | Item | Detail |
 |------|--------|
-| **Data format** | JSONL in S3 |
+| **Data format** | JSONL in S3 (Simple Storage Service) |
 | **Supported models** | Varies, Titan, Llama, Cohere Command, Nova (newer), Claude Haiku (limited) |
 | **Output** | A custom model owned by you, encrypted by your KMS key |
 | **Inference** | Requires **Provisioned Throughput** |
@@ -57,7 +57,7 @@ Need private data?  → YES → RAG
 | **BERTScore** | Semantic similarity (embedding-based) |
 | **HumanEval / pass@k** | Code generation |
 | **FID / CLIPScore** | Image generation |
-| **Accuracy / F1** | Classification by LLM |
+| **Accuracy / F1** | Classification by LLM (Large Language Model) |
 
 ---
 
@@ -73,7 +73,7 @@ Need private data?  → YES → RAG
 ## 🧬 Alignment Vocab
 
 - **Instruction tuning**, turn base into assistant
-- **RLHF**, humans rank → reward model → policy update
+- **RLHF (Reinforcement Learning from Human Feedback)**, humans rank → reward model → policy update
 - **DPO**, newer, simpler alignment with preference pairs
 - **PEFT / LoRA**, train small adapters; the modern fine-tuning default
 

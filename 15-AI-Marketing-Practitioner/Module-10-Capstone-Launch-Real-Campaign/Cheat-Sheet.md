@@ -10,7 +10,7 @@
 WEEK 1, FOUNDATION
   Day 1: Brief
   Day 2: Media brief + ICP validation
-  Day 3: GA4 + conv tracking
+  Day 3: GA4 (Google Analytics 4) + conv tracking
   Day 4: Pixel + CAPI verify
   Day 5: Landing page
   Day 6: Creative (AI pipeline)
@@ -57,10 +57,10 @@ META (5 min):
   ☐ Spend pacing OK?
   ☐ Disapproved ads?
   ☐ Frequency > 4x? Refresh creative
-  ☐ CPM > $25? Audience too narrow
+  ☐ CPM (Cost Per Mille) > $25? Audience too narrow
 
 CONVERSION (5 min):
-  ☐ Today's CPA vs target
+  ☐ Today's CPA (Cost Per Acquisition) vs target
   ☐ 3-day trend
   ☐ Note one observation
 ```
@@ -103,7 +103,7 @@ CONVERSION (5 min):
 
 | Metric | Normal | Diagnose |
 |--------|--------|----------|
-| Day 1-3 CTR | 1-5% | < 0.5% = creative issue |
+| Day 1-3 CTR (Click-Through Rate) | 1-5% | < 0.5% = creative issue |
 | Day 1-3 CPM | $5-$25 | > $40 = audience too narrow |
 | Day 1-3 Conv | 0-3 (small) | Don't panic, learning phase |
 | Day 7 CPA | Could be 2-3x target | Diagnose, don't pause |
@@ -118,7 +118,7 @@ ONE-LINE BRIEF: Who · What · By When
 SINGLE CUSTOMER: Name them
 INSIGHT: Behavioral truth (not feature)
 PROPOSITION: 12 words max
-PRIMARY KPI: Number + threshold
+PRIMARY KPI (Key Performance Indicator): Number + threshold
 GUARDRAIL: Pause trigger
 OUT OF SCOPE: What this is NOT
 ```

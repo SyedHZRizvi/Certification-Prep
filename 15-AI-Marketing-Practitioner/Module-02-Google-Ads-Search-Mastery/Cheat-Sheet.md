@@ -8,7 +8,7 @@
 
 ```
 Account
-└── Campaign  ← BUDGET, BIDDING, GEO, SCHEDULE, NETWORKS
+└── Campaign  ← BUDGET, BIDDING, GEO (Generative Engine Optimization), SCHEDULE, NETWORKS
     └── Ad Group  ← KEYWORDS, AUDIENCES, ADS
         └── Keyword (with match type)
         └── RSA Ad
@@ -23,7 +23,7 @@ Account
 
 | Type | Syntax | Use when |
 |------|--------|----------|
-| Exact | `[keyword]` | Tight intent, B2B niche |
+| Exact | `[keyword]` | Tight intent, B2B (Business-to-Business) niche |
 | Phrase | `"keyword"` | Default safe middle |
 | Broad | `keyword` | Smart Bidding + 30+ conv/mo + audience signal |
 | BMM | `+kw +kw` | ❌ RETIRED 2021, trap answer |
@@ -34,10 +34,10 @@ Account
 
 | Strategy | Use when |
 |----------|----------|
-| Manual CPC | New account, full control |
+| Manual CPC (Cost Per Click) | New account, full control |
 | Maximize Clicks | Traffic only, no conv goal |
 | Maximize Conversions | Have tracking + < 30 conv/mo |
-| **tCPA** | Have CPA target + ≥30 conv/mo |
+| **tCPA** | Have CPA (Cost Per Acquisition) target + ≥30 conv/mo |
 | **tROAS** | Ecom + values + 50+ conv/mo |
 | Target Imp Share | Brand defense |
 
@@ -68,7 +68,7 @@ Ad Rank = Max CPC × Quality Score + Extensions impact
 ```
 
 **Quality Score (1–10) components:**
-1. Expected CTR
+1. Expected CTR (Click-Through Rate)
 2. Ad Relevance
 3. Landing Page Experience
 
@@ -100,7 +100,7 @@ how to         diy            cheap (if premium)
 ## 💵 $200/mo Campaign Checklist
 
 ```
-☐ GA4 + conversion event set up FIRST
+☐ GA4 (Google Analytics 4) + conversion event set up FIRST
 ☐ Conversion imported into Google Ads
 ☐ Campaign: Search Network ONLY (uncheck Display + Search Partners)
 ☐ Geo: 10-mile radius + nearby cities (NOT state-wide)

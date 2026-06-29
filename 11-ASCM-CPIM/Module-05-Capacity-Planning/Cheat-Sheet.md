@@ -8,9 +8,9 @@
 
 | Layer | Horizon | Supports | Detail |
 |-------|---------|----------|--------|
-| **RRP** (Resource Planning) | Years | S&OP | Plants, big equipment, workforce |
+| **RRP** (Resource Planning) | Years | S&OP (Sales and Operations Planning) | Plants, big equipment, workforce |
 | **RCCP** (Rough-Cut CP) | Mo / Wk | MPS | Bill of Resources, critical work centers |
-| **CRP** (Capacity Reqs Plan) | Wk / Day | MRP | Full routings, every work center |
+| **CRP** (Capacity Reqs Plan) | Wk / Day | MRP (Material Requirements Planning) | Full routings, every work center |
 | **I/O Control** | Day / Shift | PAC | Released vs completed work |
 
 🧠 **R-R-C-I** ranges from long to short.

@@ -23,7 +23,7 @@
 | **LangGraph** | State graph + supervisor | Mature, observable, HITL | Production |
 | **CrewAI** | Role + task | Easy to start | Prototype |
 | **AutoGen** | Conversable + code-exec | Code generation | Code teams |
-| **OpenAI Agents SDK** | Handoff | OpenAI-native, minimal | OpenAI-first |
+| **OpenAI Agents SDK (Software Development Kit)** | Handoff | OpenAI-native, minimal | OpenAI-first |
 | **Anthropic Computer Use** | Sensorimotor | GUI automation | Desktop tasks |
 | **MetaGPT / OpenDevin** | SWE-team metaphor | Coding specialists | AI software engineer |
 

@@ -122,7 +122,7 @@ Float on non-critical = slip tolerance.
 
 ---
 
-## 📊 Balanced Procurement KPIs
+## 📊 Balanced Procurement KPIs (Key Performance Indicators)
 
 | Category | Example |
 |---|---|
@@ -170,7 +170,7 @@ Float on non-critical = slip tolerance.
 
 - ✗ "Mandate from above unilaterally"
 - ✗ "Skip stakeholder analysis"
-- ✗ "Cost is the only KPI"
+- ✗ "Cost is the only KPI (Key Performance Indicator)"
 - ✗ "Crash any task to save time"
 - ✗ "Storming = bad team"
 - ✗ "Smooth over an audit finding"

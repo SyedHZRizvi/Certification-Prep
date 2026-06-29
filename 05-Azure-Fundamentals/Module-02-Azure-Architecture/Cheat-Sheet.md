@@ -25,10 +25,10 @@
 ## 🧱 Logical Hierarchy (MEMORIZE)
 
 ```
-🏛️ MANAGEMENT GROUP   (policy + RBAC inheritance, max 6 levels nested)
+🏛️ MANAGEMENT GROUP   (policy + RBAC (Role-Based Access Control) inheritance, max 6 levels nested)
    └── 📦 SUBSCRIPTION  (billing + auth boundary; one Entra tenant)
           └── 🗂️ RESOURCE GROUP  (logical container; can hold multi-region resources!)
-                 └── 💻 RESOURCE  (VM, storage, DB, ...)
+                 └── 💻 RESOURCE  (VM (Virtual Machine), storage, DB, ...)
 ```
 
 **Top-down inheritance:** Policy/RBAC at MG → flows to all subs/RGs/resources below.
@@ -78,7 +78,7 @@ Sovereign clouds are SEPARATE Azure environments, different portal, different id
 |---|----------------|-------------------|
 | Scope | Single datacenter (fault domain + update domain) | Across datacenters in a region |
 | Protects from | Rack failure, update | Whole-datacenter failure |
-| SLA for VMs | 99.95% | 99.99% (across 2+ AZs) |
+| SLA (Service Level Agreement) for VMs | 99.95% | 99.99% (across 2+ AZs) |
 | Cost | No extra | No extra (bandwidth across AZ may cost) |
 
 ---

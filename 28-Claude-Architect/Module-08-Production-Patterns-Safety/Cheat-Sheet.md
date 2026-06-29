@@ -93,7 +93,7 @@ AUTHORITY HIERARCHY (HIGHEST FIRST):
 
 | Layer | Action |
 |-------|--------|
-| Input | Redact PII (Presidio / AWS Comprehend / DLP) BEFORE model |
+| Input | Redact PII (Presidio / AWS (Amazon Web Services) Comprehend / DLP) BEFORE model |
 | Output | Redact again before returning to user |
 | Logs | Redact before storing traces; 30–90 day retention |
 | User ID | Hash in observability |
@@ -107,10 +107,10 @@ AUTHORITY HIERARCHY (HIGHEST FIRST):
 |------|------|
 | Latest features | Anthropic direct |
 | AWS-native enterprise / BAA / data residency in AWS | **Bedrock** |
-| GCP-native enterprise / data residency in GCP | **Vertex** |
+| GCP (Google Cloud Platform)-native enterprise / data residency in GCP | **Vertex** |
 
 Multi-region: **active-passive** is the cheapest meaningful insurance.
-VPC endpoint / Private Service Connect for sensitive workloads.
+VPC (Virtual Private Cloud) endpoint / Private Service Connect for sensitive workloads.
 
 ---
 
@@ -138,7 +138,7 @@ Treat prompts as **code**: versioned, evaluated, gated.
 | Cost spike | Runaway agent | Per-session cost cap |
 | Reddit injection screenshot | Direct prompt injection | Pull integration; layer defenses; red-team |
 | Cache hit ↓ to 10% | Prompt edited | Restore stable prefix |
-| Customer complaints after silent rollout | Model auto-update | Pin model SKU; eval on every version |
+| Customer complaints after silent rollout | Model auto-update | Pin model SKU (Stock Keeping Unit); eval on every version |
 | Truncation epidemic | `stop_reason=max_tokens` | Bump `max_tokens` |
 | Auditor finds PII | Logging gap | Redact at logging layer; check retention |
 | 2-hour 529 | Anthropic outage | Region failover or vendor fallback |

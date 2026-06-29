@@ -24,12 +24,12 @@
 
 ---
 
-## 🏗️ IaaS vs PaaS vs SaaS
+## 🏗️ IaaS (Infrastructure as a Service) vs PaaS (Platform as a Service) vs SaaS (Software as a Service)
 
 | Model | You Manage | AWS Manages | AWS Example |
 |-------|------------|-------------|-------------|
-| **IaaS** | OS, runtime, app, data | HW, network, virt. | EC2, EBS, VPC |
-| **PaaS** | App + data | Everything else | Elastic Beanstalk, RDS |
+| **IaaS** | OS, runtime, app, data | HW, network, virt. | EC2 (Elastic Compute Cloud), EBS, VPC (Virtual Private Cloud) |
+| **PaaS** | App + data | Everything else | Elastic Beanstalk, RDS (Relational Database Service) |
 | **SaaS** | Just settings + data | Entire stack | WorkMail, Chime, QuickSight |
 
 🎯 *"Customer patches the OS"* = IaaS. *"AWS patches the OS"* = PaaS/SaaS.
@@ -51,7 +51,7 @@
 ```
 🌍 Region (geographic area, e.g. us-east-1)
    └─ 🏢 AZ (1+ datacenters, low-latency private fiber)
-        └─ 📡 Edge Location (CDN/DNS PoP, 400+ cities)
+        └─ 📡 Edge Location (CDN (Content Delivery Network)/DNS (Domain Name System) PoP, 400+ cities)
              └─ 🌐 Regional Edge Cache (CloudFront mid-tier)
 ```
 
@@ -59,7 +59,7 @@
 |-------|----------------|---------|
 | Region | ✅ | All services |
 | AZ | ✅ (per service) | EC2, RDS, EBS |
-| Edge | ❌ (auto) | CloudFront, Route 53, WAF |
+| Edge | ❌ (auto) | CloudFront, Route 53, WAF (Web Application Firewall) |
 
 🔥 **HA inside a region = multi-AZ. DR = multi-Region.**
 
@@ -82,9 +82,9 @@
 | Tool | Use case |
 |------|----------|
 | **Console** | Learning, ad-hoc tasks |
-| **CLI** | Scripting (`aws s3 ls`) |
+| **CLI (Command Line Interface)** | Scripting (`aws s3 ls`) |
 | **SDKs** | App code (Python boto3, JS aws-sdk) |
-| **IaC** | Repeatable infra (CloudFormation, CDK) |
+| **IaC (Infrastructure as Code)** | Repeatable infra (CloudFormation, CDK) |
 
 🎯 "Repeatable / version-controlled infra" = **CloudFormation** (or CDK).
 
@@ -94,7 +94,7 @@
 
 | Type | Duration | Example |
 |------|----------|---------|
-| **12-Months** | 1st year | 750 hrs/mo t2.micro EC2, 5 GB S3 |
+| **12-Months** | 1st year | 750 hrs/mo t2.micro EC2, 5 GB S3 (Simple Storage Service) |
 | **Always Free** | Forever | 1M Lambda invocations, 25 GB DynamoDB |
 | **Trials** | 30–60 days | Inspector, Redshift trial |
 
@@ -123,7 +123,7 @@ Usually wrong:
 ## ⚠️ Anti-Patterns To Recognize
 
 - ❌ Single-AZ production deployment claimed as "highly available"
-- ❌ Storing GDPR data in a US Region with no replication controls
+- ❌ Storing GDPR (General Data Protection Regulation) data in a US Region with no replication controls
 - ❌ "Cloud will always be cheaper", not true for steady predictable workloads
 - ❌ Treating Edge Locations as substitutes for AZs
 

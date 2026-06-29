@@ -183,7 +183,7 @@ last -F                                    # full timestamps
 lastlog                                    # last login per user
 lastb                                      # FAILED logins (btmp, root only)
 id                                         # uid/gid/groups
-getent passwd                              # all users (incl LDAP/SSSD)
+getent passwd                              # all users (incl LDAP (Lightweight Directory Access Protocol)/SSSD)
 getent group                               # all groups
 journalctl -u sshd                         # sshd login attempts
 journalctl _COMM=sudo                      # all sudo invocations
@@ -239,4 +239,4 @@ If you can answer all 5 in under 60 seconds, you own this module. ✅
 
 ---
 
-➡️ [Module 6: Networking, SSH & Firewalls](../Module-06-Networking-SSH/Reading.md)
+➡️ [Module 6: Networking, SSH (Secure Shell) & Firewalls](../Module-06-Networking-SSH/Reading.md)

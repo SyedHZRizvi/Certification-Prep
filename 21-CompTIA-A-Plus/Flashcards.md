@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -274,7 +274,7 @@
 
 ## 📱 SECTION 1: MOBILE DEVICES
 
-**Q:** What does MDM stand for?
+**Q:** What does MDM (Mobile Device Management) stand for?
 **A:** Mobile Device Management, central control of phones/tablets (policies, remote wipe, app inventory).
 
 **Q:** Maximum theoretical speed of 5G (sub-6 GHz, mid-band)?
@@ -299,7 +299,7 @@
 **A:** BYOD = user owns; COBO = corporate-owned, business-only; COPE = corp-owned, personally enabled; CYOD = choose-your-own from corporate list.
 
 **Q:** Default port for Apple Push Notification Service (APNs)?
-**A:** TCP 5223 (and 443 fallback for cellular).
+**A:** TCP (Transmission Control Protocol) 5223 (and 443 fallback for cellular).
 
 **Q:** What is hotspot (tethering)?
 **A:** Sharing a phone's cellular data with other devices via Wi-Fi, Bluetooth, or USB.
@@ -308,7 +308,7 @@
 
 ## 🌐 SECTION 2: NETWORKING & PORTS
 
-**Q:** Common ports: HTTP / HTTPS / SSH / Telnet / FTP / SFTP / SMTP / IMAP / POP3 / DNS / DHCP / RDP / SMB / LDAP / LDAPS?
+**Q:** Common ports: HTTP (Hypertext Transfer Protocol) / HTTPS (HTTP Secure) / SSH (Secure Shell) / Telnet / FTP (File Transfer Protocol) / SFTP / SMTP (Simple Mail Transfer Protocol) / IMAP (Internet Message Access Protocol) / POP3 (Post Office Protocol 3) / DNS (Domain Name System) / DHCP (Dynamic Host Configuration Protocol) / RDP / SMB / LDAP (Lightweight Directory Access Protocol) / LDAPS?
 **A:** 80 / 443 / 22 / 23 / 21 / 22 (over SSH) / 25 / 143 / 110 / 53 / 67-68 / 3389 / 445 / 389 / 636.
 
 **Q:** What does DHCP do and which 4 messages does it use?
@@ -323,7 +323,7 @@
 **Q:** Default subnet masks for Class A, B, C?
 **A:** /8 (255.0.0.0), /16 (255.255.0.0), /24 (255.255.255.0).
 
-**Q:** What does NAT do?
+**Q:** What does NAT (Network Address Translation) do?
 **A:** Network Address Translation, maps many private IPs to one public IP at the router.
 
 **Q:** What's the difference between a hub, switch, and router?
@@ -332,7 +332,7 @@
 **Q:** Cat 5e vs Cat 6 vs Cat 6a, max speed and distance?
 **A:** 5e: 1 Gbps @ 100m; 6: 1 Gbps @ 100m or 10 Gbps @ 55m; 6a: 10 Gbps @ 100m.
 
-**Q:** What is PoE and what standards exist?
+**Q:** What is PoE (Power over Ethernet) and what standards exist?
 **A:** Power over Ethernet, 802.3af (15.4W), 802.3at PoE+ (30W), 802.3bt PoE++ (60–100W).
 
 **Q:** 802.11 a/b/g/n/ac/ax/be, frequency bands?
@@ -391,14 +391,14 @@
 **Q:** Type 1 vs Type 2 hypervisor?
 **A:** Type 1 (bare-metal) runs directly on hardware ESXi, Hyper-V, KVM, Xen. Type 2 (hosted) runs on top of an OS VMware Workstation, VirtualBox, Parallels.
 
-**Q:** What is IaaS / PaaS / SaaS?
-**A:** IaaS = raw infrastructure (EC2, VMs); PaaS = managed runtime (App Service, Heroku); SaaS = ready software (Gmail, M365).
+**Q:** What is IaaS (Infrastructure as a Service) / PaaS (Platform as a Service) / SaaS (Software as a Service)?
+**A:** IaaS = raw infrastructure (EC2 (Elastic Compute Cloud), VMs); PaaS = managed runtime (App Service, Heroku); SaaS = ready software (Gmail, M365).
 
 **Q:** What is virtualization's "snapshot"?
-**A:** Point-in-time capture of a VM's disk + memory state. Used for testing/rollback. Not a substitute for backup.
+**A:** Point-in-time capture of a VM (Virtual Machine)'s disk + memory state. Used for testing/rollback. Not a substitute for backup.
 
 **Q:** Public / Private / Hybrid / Community cloud, define each?
-**A:** Public = multi-tenant (AWS, Azure); Private = single org (your data center); Hybrid = mix of public + private with orchestration; Community = shared by orgs with similar needs (gov, healthcare).
+**A:** Public = multi-tenant (AWS (Amazon Web Services), Azure); Private = single org (your data center); Hybrid = mix of public + private with orchestration; Community = shared by orgs with similar needs (gov, healthcare).
 
 **Q:** What is rapid elasticity?
 **A:** Cloud resources can scale up and down automatically with demand, a core NIST cloud characteristic.
@@ -440,8 +440,8 @@
 **Q:** RAID 5 failure: 1 disk shows red. What's the immediate action?
 **A:** Identify the failed disk, replace it with a same-size or larger disk, and let the array rebuild. Don't unplug a working disk by mistake.
 
-**Q:** Network "can't reach 8.8.8.8" but local LAN works, likely cause?
-**A:** Default gateway, ISP issue, DNS not the problem (you used an IP). Test traceroute.
+**Q:** Network "can't reach 8.8.8.8" but local LAN (Local Area Network) works, likely cause?
+**A:** Default gateway, ISP (Internet Service Provider) issue, DNS not the problem (you used an IP). Test traceroute.
 
 ---
 
@@ -485,7 +485,7 @@
 **A:** GRUB2.
 
 **Q:** macOS package format vs install method?
-**A:** `.pkg` (installer), `.dmg` (disk image), App Store, Homebrew (CLI package manager).
+**A:** `.pkg` (installer), `.dmg` (disk image), App Store, Homebrew (CLI (Command Line Interface) package manager).
 
 **Q:** Linux package managers by distro?
 **A:** Debian/Ubuntu = apt/dpkg; RHEL/Fedora = dnf/yum/rpm; Arch = pacman.
@@ -506,7 +506,7 @@
 
 ## 🔐 SECTION 8: SECURITY
 
-**Q:** What is MFA and what are the 3 factor categories?
+**Q:** What is MFA (Multi-Factor Authentication) and what are the 3 factor categories?
 **A:** Multi-Factor Authentication. Factors: Something you KNOW (password), HAVE (token, phone), ARE (biometric). Plus location + behavior in some models.
 
 **Q:** Difference between authentication and authorization?
@@ -537,7 +537,7 @@
 **A:** Encrypting File System, per-file/folder encryption tied to user's account/cert. Different from BitLocker (volume-level).
 
 **Q:** What is a guest network and why use one?
-**A:** Separate Wi-Fi SSID/VLAN for visitors, isolated from internal LAN. Limits lateral movement.
+**A:** Separate Wi-Fi SSID/VLAN (Virtual Local Area Network) for visitors, isolated from internal LAN. Limits lateral movement.
 
 ---
 
@@ -553,7 +553,7 @@
 **A:** (1) Files renamed with new extensions (e.g. .locked); (2) ransom note files in every folder; (3) inability to open formerly working documents.
 
 **Q:** First action when ransomware is suspected on a corporate machine?
-**A:** Isolate (disconnect network, wired and wireless), then notify SOC/IR. Don't pay. Don't reboot before evidence capture if forensics is in scope.
+**A:** Isolate (disconnect network, wired and wireless), then notify SOC (Security Operations Center)/IR. Don't pay. Don't reboot before evidence capture if forensics is in scope.
 
 ---
 

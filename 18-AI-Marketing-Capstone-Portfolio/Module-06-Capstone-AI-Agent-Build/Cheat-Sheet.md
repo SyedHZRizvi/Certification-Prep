@@ -7,7 +7,7 @@
 ## 🎯 The Deliverable
 
 ```
-□ Working agent (Python, Claude API or OpenAI Assistants)
+□ Working agent (Python, Claude API (Application Programming Interface) or OpenAI Assistants)
 □ Multi-step (not just one API call)
 □ Public GitHub repo with README
 □ Sample inputs + outputs in /examples
@@ -49,7 +49,7 @@
 | 2 | Content Brief Generator | Low | Medium |
 | 3 | Competitor Research Agent | Medium | High |
 | 4 | Email Personalization Agent | Medium | High |
-| 5 | SEO Content Generator | Low | Medium |
+| 5 | SEO (Search Engine Optimization) Content Generator | Low | Medium |
 | 6 | Social Media Repurposer | Low | Medium |
 
 ---
@@ -61,7 +61,7 @@
 | Most control + dev signal | **Cursor + Python + Claude API** |
 | Fast, no-code-ish | **Replit Agent + Claude API** |
 | Free Cursor alternative | **VSCode + Continue.dev** |
-| Minimal coding | **Make.com + Claude HTTP module** (weaker signal) |
+| Minimal coding | **Make.com + Claude HTTP (Hypertext Transfer Protocol) module** (weaker signal) |
 
 Default: **Cursor + Python + Claude API**.
 
@@ -125,7 +125,7 @@ ai-marketing-agent/
 1:00, Run it live + show output.
 2:30, Explain one prompt-engineering decision.
 4:00, Limitations + v2.
-4:30, CTA: "Repo at [link]."
+4:30, CTA (Call to Action): "Repo at [link]."
 ```
 
 ---

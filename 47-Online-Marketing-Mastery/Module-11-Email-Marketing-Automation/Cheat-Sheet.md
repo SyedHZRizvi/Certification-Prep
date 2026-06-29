@@ -1,4 +1,4 @@
-# 📋 Module 11 Cheat Sheet: Email Marketing & Automation — GDPR-Compliant Growth
+# 📋 Module 11 Cheat Sheet: Email Marketing & Automation — GDPR (General Data Protection Regulation)-Compliant Growth
 
 > One page. Print it. Review before every campaign.
 
@@ -9,8 +9,8 @@
 | Law | Jurisdiction | Model | Consent Required Before Sending? | Key Penalty |
 |-----|-------------|-------|----------------------------------|-------------|
 | **GDPR** | EU + UK | **OPT-IN** | Yes — explicit, documented, specific | €20M or 4% global turnover (higher of the two) |
-| **CAN-SPAM** | USA | **OPT-OUT** | No — but must honour opt-outs within 10 days | Up to $51,744 per violation |
-| **CASL** | Canada | **OPT-IN** (strictest) | Yes — express or implied (2yr purchase / 6mo inquiry) | Up to CAD $10M per violation |
+| **CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act)** | USA | **OPT-OUT** | No — but must honour opt-outs within 10 days | Up to $51,744 per violation |
+| **CASL (Canada's Anti-Spam Legislation)** | Canada | **OPT-IN** (strictest) | Yes — express or implied (2yr purchase / 6mo inquiry) | Up to CAD $10M per violation |
 
 > **Mnemonic:** GDPR = G-I (Go-In = Opt-IN). CAN-SPAM = CAN leave (OPT-OUT). CASL = C-Always-Strict-List (strictest globally).
 
@@ -31,8 +31,8 @@
 | ESP | Best For | EU Data Residency | GDPR Double Opt-in | E-com Flows | Free Plan |
 |-----|---------|------------------|-------------------|-------------|-----------|
 | **Klaviyo** | E-commerce (Shopify/WooCommerce) | Yes (EU region) | Built-in | Excellent | Yes (500 contacts) |
-| **HubSpot** | B2B, CRM-heavy | Yes | Yes | Good | Yes (limited) |
-| **Mailchimp** | Beginners, SMBs | AWS EU (optional) | Yes | Basic (paid only) | Yes (500 contacts) |
+| **HubSpot** | B2B (Business-to-Business), CRM (Customer Relationship Management)-heavy | Yes | Yes | Good | Yes (limited) |
+| **Mailchimp** | Beginners, SMBs | AWS (Amazon Web Services) EU (optional) | Yes | Basic (paid only) | Yes (500 contacts) |
 | **ActiveCampaign** | Mid-market, complex automations | Yes (EU instance) | Yes | Good | No (trial only) |
 
 ---
@@ -128,7 +128,7 @@ Email 3 (48 hrs):   Time-limited offer — ONLY if margin allows
 
 | Segment | Definition | Strategy |
 |---------|-----------|---------|
-| VIP | Top 20% by LTV | Early access, exclusivity, loyalty |
+| VIP | Top 20% by LTV (Lifetime Value) | Early access, exclusivity, loyalty |
 | Active Engaged | Opened in last 30 days | Full cadence, new products |
 | At-Risk | No open 60–90 days | Reduce frequency, re-engagement |
 | Lapsed | No open 90–180 days | Win-back sequence |
@@ -143,7 +143,7 @@ Email 3 (48 hrs):   Time-limited offer — ONLY if margin allows
 | Subject line | Question vs statement; emoji vs none; length | 5–20% OR difference |
 | Sender name | Brand vs personal name | 5–15% OR difference |
 | Send time | Tue 10am vs Thu 7pm | 5–10% OR difference |
-| CTA copy | "Shop now" vs "Claim your offer" | 10–30% CTR difference |
+| CTA (Call to Action) copy | "Shop now" vs "Claim your offer" | 10–30% CTR difference |
 | Personalisation | First name in subject | 2–6% OR difference |
 
 **Rules:** One variable at a time. Minimum 100 opens per variant. Wait for 95% confidence before declaring a winner.
@@ -172,7 +172,7 @@ Email 3 (48 hrs):   Time-limited offer — ONLY if margin allows
 |------|-------------------|---------------|
 | Discount code | 4–8% | E-commerce |
 | Quiz / assessment | 5–12% | Personalisation, supplements |
-| Checklist / template | 3–6% | B2B, SaaS |
+| Checklist / template | 3–6% | B2B, SaaS (Software as a Service) |
 | Free trial / sample | 6–10% | Subscription products |
 | Ebook / guide | 2–5% | High-ticket, professional services |
 | Webinar | 3–7% | Coaching, consulting, software |
@@ -197,11 +197,11 @@ Email 3 (48 hrs):   Time-limited offer — ONLY if margin allows
 
 > "Unlike CAN-SPAM's opt-out model, GDPR and CASL both require opt-in consent before sending commercial email. CASL's implied consent window is two years from the last purchase."
 
-> "Since Apple Mail Privacy Protection (September 2021), open rate is an unreliable metric. Professional email marketers now prioritise CTOR and Revenue Per Email as primary KPIs."
+> "Since Apple Mail Privacy Protection (September 2021), open rate is an unreliable metric. Professional email marketers now prioritise CTOR and Revenue Per Email as primary KPIs (Key Performance Indicators)."
 
 > "A domain warm-up is non-negotiable when switching ESPs or sending from a new subdomain. Jumping to full volume immediately triggers spam filters because ISPs assign low trust scores to domains with no sending history."
 
-> "Double opt-in is not explicitly required by GDPR text, but is universally recommended by data protection authorities (UK ICO, German DPA) as the gold-standard proof of freely given consent."
+> "Double opt-in is not explicitly required by GDPR text, but is universally recommended by data protection authorities (UK ICO (Information Commissioner's Office), German DPA) as the gold-standard proof of freely given consent."
 
 > "RFM segmentation — Recency, Frequency, Monetary — is the e-commerce standard for identifying VIP customers, at-risk buyers, and lapsed subscribers. Klaviyo and ActiveCampaign both have built-in RFM scoring."
 

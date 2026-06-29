@@ -10,8 +10,8 @@
 |------------|-----------|-----|
 | **Stateless / packet filter** | 5-tuple per packet | Legacy / simple |
 | **Stateful** | 5-tuple + connection state | Workhorse perimeter / segmentation |
-| **NGFW** | Stateful + DPI + app + user + IPS + TLS decrypt | Modern enterprise |
-| **WAF** | HTTP/HTTPS only (OWASP-class) | Protect web apps |
+| **NGFW** | Stateful + DPI + app + user + IPS + TLS (Transport Layer Security) decrypt | Modern enterprise |
+| **WAF (Web Application Firewall)** | HTTP (Hypertext Transfer Protocol)/HTTPS (HTTP Secure) only (OWASP-class) | Protect web apps |
 | **FWaaS / SASE** | Cloud-delivered | Hybrid / remote |
 
 ---
@@ -36,37 +36,37 @@
 
 | Posture check | Goes where |
 |---------------|------------|
-| Patch + AV + encryption + cert OK | Production VLAN |
+| Patch + AV + encryption + cert OK | Production VLAN (Virtual Local Area Network) |
 | Non-compliant | Quarantine VLAN (remediation portal) |
 | Unknown / unmanaged | Guest VLAN (Internet only) |
 | Failed | Deny / event-disable port |
 
-Agent (deeper) vs Agentless (BYOD/IoT, DHCP fingerprint, port profile).
+Agent (deeper) vs Agentless (BYOD/IoT, DHCP (Dynamic Host Configuration Protocol) fingerprint, port profile).
 
 ---
 
 ## 🛣️ Zero Trust
 
 - **Never trust, always verify** (NIST SP 800-207)
-- **PEP** (enforces) / **PE** (decides) / **PA** (translates)
+- **PEP** (enforces) / **PE (Private Equity)** (decides) / **PA** (translates)
 - Adaptive Identity + Threat Scope Reduction + Microsegmentation + Continuous Monitoring
-- ZTNA = identity-aware proxy per app (replaces broad VPN trust)
+- ZTNA (Zero Trust Network Access) = identity-aware proxy per app (replaces broad VPN (Virtual Private Network) trust)
 
 ---
 
 ## 🔐 VPNs
 
-| | IPsec | SSL/TLS VPN | WireGuard |
+| | IPsec | SSL (Secure Sockets Layer)/TLS VPN | WireGuard |
 |--|-------|-------------|-----------|
 | Layer | 3 | 4–7 | 3 |
-| Transport | UDP 500 + 4500 + IP proto 50 | TCP 443 | UDP (single port, configurable) |
+| Transport | UDP (User Datagram Protocol) 500 + 4500 + IP proto 50 | TCP (Transmission Control Protocol) 443 | UDP (single port, configurable) |
 | Mode | Tunnel (S2S) / Transport (H2H) | Clientless or full-tunnel | Tunnel |
 | Use | Site-to-site, remote access | Remote, firewall-friendly | Modern simpler alt |
 
 ### IPsec details
 - **AH** = integrity only (rare in practice)
 - **ESP** = encrypt + integrity + auth (used)
-- **IKE / IKEv2** = key exchange (UDP 500, NAT-T = UDP 4500)
+- **IKE / IKEv2** = key exchange (UDP 500, NAT (Network Address Translation)-T = UDP 4500)
 - **Phase 1** = secure channel between peers · **Phase 2** = ESP tunnel parameters
 
 ---

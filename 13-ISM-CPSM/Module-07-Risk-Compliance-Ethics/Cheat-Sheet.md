@@ -10,7 +10,7 @@
 |---|---|
 | Operational | Supplier failure, quality, delivery |
 | Financial | Bankruptcy, FX, commodity |
-| Strategic | M&A, obsolescence, IP loss |
+| Strategic | M&A (Mergers and Acquisitions), obsolescence, IP loss |
 | Compliance / reputational | Corruption, modern slavery, sanctions |
 | Geopolitical | War, sanctions, trade conflict |
 | Natural / climate | Hurricane, pandemic, drought |
@@ -39,7 +39,7 @@ G = accept · Y = mitigate · R = avoid/transfer/aggressive mitigate
 |---|---|
 | **Avoid** | Risk too large to bear |
 | **Transfer** | Someone else bears it better (insurance, indemnification, hedge) |
-| **Mitigate** | Reduce P or I (dual-source, safety stock, SLA) |
+| **Mitigate** | Reduce P or I (dual-source, safety stock, SLA (Service Level Agreement)) |
 | **Accept** | Treatment cost > expected loss; document |
 
 🧠 Mnemonic: **A.T.M.A.**
@@ -51,8 +51,8 @@ G = accept · Y = mitigate · R = avoid/transfer/aggressive mitigate
 | Term | Meaning |
 |---|---|
 | BIA | Business Impact Analysis |
-| RTO | Recovery Time Objective (how fast we restore) |
-| RPO | Recovery Point Objective (data-loss tolerance) |
+| RTO (Recovery Time Objective) | Recovery Time Objective (how fast we restore) |
+| RPO (Recovery Point Objective) | Recovery Point Objective (data-loss tolerance) |
 | MTD | Max Tolerable Downtime (business stops past this) |
 
 🧠 Rule: **MTD > RTO** or you fail before recovery.

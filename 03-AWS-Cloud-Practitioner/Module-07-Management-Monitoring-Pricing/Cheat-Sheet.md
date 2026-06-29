@@ -9,7 +9,7 @@
 | Service | What |
 |---------|------|
 | **CloudWatch** | Metrics + logs + alarms (+ EventBridge) |
-| **CloudTrail** | Every AWS API call (audit log) |
+| **CloudTrail** | Every AWS API (Application Programming Interface) call (audit log) |
 | **Config** | Resource configurations + compliance rules |
 
 🎯 "Who did X" = **CloudTrail** · "What's X look like" = **Config** · "Is X healthy" = **CloudWatch**
@@ -20,7 +20,7 @@
 
 | Tool | What |
 |------|------|
-| **Session Manager** | Browser shell to EC2 (no SSH) |
+| **Session Manager** | Browser shell to EC2 (Elastic Compute Cloud) (no SSH (Secure Shell)) |
 | **Run Command** | Run commands on many EC2 at once |
 | **Patch Manager** | Auto-patch OS fleets |
 | **Parameter Store** | Free config + secrets |
@@ -62,7 +62,7 @@ Cross-Region         →  $$
 Out to internet      →  $$$$
 ```
 
-**Free services** (pay only for resources): IAM, VPC, CloudFormation, Beanstalk, Organizations, Auto Scaling.
+**Free services** (pay only for resources): IAM (Identity and Access Management), VPC (Virtual Private Cloud), CloudFormation, Beanstalk, Organizations, Auto Scaling.
 
 ---
 
@@ -100,7 +100,7 @@ Out to internet      →  $$$$
 
 ## 🏛️ Marketplace + QuickSight
 
-- **Marketplace** = 3rd-party AMIs/SaaS, billed through AWS
+- **Marketplace** = 3rd-party AMIs/SaaS (Software as a Service), billed through AWS
 - **QuickSight** = serverless BI dashboards (pay per session)
 
 ---
@@ -125,7 +125,7 @@ Wrong:
 ## ⚠️ Anti-Patterns
 
 - ❌ Leaving idle EC2 instances running
-- ❌ Public S3 buckets with sensitive data
+- ❌ Public S3 (Simple Storage Service) buckets with sensitive data
 - ❌ No billing alarms / budgets
 - ❌ Using On-Demand for known steady workloads (use RIs/SP)
 - ❌ Cross-Region replication without realizing data transfer cost

@@ -81,7 +81,7 @@ Right **Quality · Quantity · Time · Place · Price**
 ## 🧰 Supply Management Process (11 Steps)
 
 ```
-Need → Spec → Make-or-buy → Market analysis → Strategy → Solicit (RFI/RFP/RFQ) →
+Need → Spec → Make-or-buy → Market analysis → Strategy → Solicit (RFI/RFP (Request for Proposal)/RFQ (Request for Quotation)) →
 Evaluate → Negotiate/Contract → Manage performance → Pay/Close → Improve
 ```
 

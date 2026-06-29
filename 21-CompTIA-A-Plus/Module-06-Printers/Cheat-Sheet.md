@@ -55,7 +55,7 @@
 | Wi-Fi | SOHO, ensure right SSID |
 | AirPrint | Apple, mDNS, zero-config |
 | Mopria | Cross-platform Android |
-| IPP / IPPS | TCP 631 (also w/ TLS) |
+| IPP / IPPS | TCP (Transmission Control Protocol) 631 (also w/ TLS (Transport Layer Security)) |
 | Print Server | Quota, drivers, central queue |
 
 ---

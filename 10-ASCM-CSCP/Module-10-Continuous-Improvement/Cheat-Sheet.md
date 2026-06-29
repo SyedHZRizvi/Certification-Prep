@@ -55,7 +55,7 @@ Yellow → Green → Black → Master Black Belt → Champion / Sponsor
 - I = Inventory (money tied up)
 - OE = Operating expense
 - Net profit = T − OE
-- ROI = (T − OE) / I
+- ROI (Return on Investment) = (T − OE) / I
 
 **Drum-Buffer-Rope** = constraint sets pace, buffer protects, rope releases at constraint speed.
 
@@ -91,15 +91,15 @@ Affinity · Tree · Relations · Matrix · Matrix data analysis · PDPC · Activ
 
 ---
 
-## 🏆 SC KPIs (recap from Modules 1, 5, 7)
+## 🏆 SC KPIs (Key Performance Indicators) (recap from Modules 1, 5, 7)
 
-| KPI | Formula |
+| KPI (Key Performance Indicator) | Formula |
 |-----|---------|
-| Perfect order | OTIF × undamaged × correct docs |
+| Perfect order | OTIF (On-Time In-Full) × undamaged × correct docs |
 | OTIF | On-time AND in-full |
 | Fill rate | Units shipped / units ordered |
 | Cash-to-cash | DIO + DSO − DPO |
-| Inventory turns | COGS / avg inventory |
+| Inventory turns | COGS (Cost of Goods Sold) / avg inventory |
 | OEE | Availability × Performance × Quality |
 | FPY | Units passing first-time / processed |
 | MAPE | Σ\|A−F\|/ΣA × 100 |
@@ -120,7 +120,7 @@ Affinity · Tree · Relations · Matrix · Matrix data analysis · PDPC · Activ
 
 ## 🌐 Industry 4.0 Stack
 
-IoT · Big Data + Analytics · AI/ML · Blockchain · Digital Twin · Cloud SCM platforms · RPA · AR · Autonomous vehicles/drones
+IoT · Big Data + Analytics · AI/ML · Blockchain · Digital Twin · Cloud SCM (Supply Chain Management) platforms · RPA · AR · Autonomous vehicles/drones
 
 ---
 

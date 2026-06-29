@@ -7,7 +7,7 @@
 
 ## 🌐 [Visit the live course site →](https://cert-hub.pages.dev/)
 
-This repository contains the raw markdown for **46 story-driven self-study courses** across project management, IT systems administration, cloud, AI/GenAI, cybersecurity, supply chain, AI-based digital marketing, Bitcoin/e-commerce, spoken languages, and Quran studies. The polished site is at **[cert-hub.pages.dev](https://cert-hub.pages.dev/)**, same content, prettier UI, auth-gated.
+This repository contains the raw markdown for **46 story-driven self-study courses** across project management, IT systems administration, cloud, AI/GenAI, cybersecurity, supply chain, AI-based digital marketing, Bitcoin/e-commerce, spoken languages, and Quran studies. The polished site is at **[cert-hub.pages.dev](https://cert-hub.pages.dev/)**, same content, prettier UI (User Interface), auth-gated.
 
 ---
 
@@ -47,7 +47,7 @@ Each track is a **guided journey** built on three pillars:
 | 5 | [`23-CompTIA-Linux-Plus/`](./23-CompTIA-Linux-Plus/README.md) | CompTIA Linux+ (XK0-005) | 10 | 90 Q / 90 min |
 | 6 | [`24-CompTIA-Server-Plus/`](./24-CompTIA-Server-Plus/README.md) | CompTIA Server+ (SK0-005) | 10 | 90 Q / 90 min |
 | 7 | [`09-CompTIA-Security-Plus/`](./09-CompTIA-Security-Plus/README.md) | CompTIA Security+ (SY0-701) | 10 | 90 Q / 90 min + PBQs |
-| 8 | [`03-AWS-Cloud-Practitioner/`](./03-AWS-Cloud-Practitioner/README.md) | AWS Cloud Practitioner (CLF-C02) | 8 | 65 Q / 90 min |
+| 8 | [`03-AWS (Amazon Web Services)-Cloud-Practitioner/`](./03-AWS-Cloud-Practitioner/README.md) | AWS Cloud Practitioner (CLF-C02) | 8 | 65 Q / 90 min |
 | 9 | [`04-AWS-Solutions-Architect-Associate/`](./04-AWS-Solutions-Architect-Associate/README.md) | AWS Solutions Architect Associate (SAA-C03) | 10 | 65 Q / 130 min |
 | 10 | [`07-AWS-AI-Practitioner/`](./07-AWS-AI-Practitioner/README.md) | AWS AI Practitioner (AIF-C01) | 8 | 65 Q / 120 min |
 | 11 | [`05-Azure-Fundamentals/`](./05-Azure-Fundamentals/README.md) | Microsoft Azure Fundamentals (AZ-900) | 6 | 50 Q / 45 min |
@@ -209,4 +209,4 @@ Good luck. Let's go.
 
 ## 🔒 License & Use
 
-© 2026 Humayun Zafar. All Rights Reserved. This material is provided for enrolled-student personal study use only, copying, reproduction, or redistribution of the rendered site content is prohibited without prior written consent. All trademarks (PSM, PMP, AWS, Azure, CompTIA A+/Network+/Linux+/Server+/Security+, AZ-800/801, MD-102, SC-300, CSCP, CPIM, CLTD, CPSM, HubSpot Inbound/Content Marketing, Google Ads/GA4 IQ/AI Pro, Meta Blueprint, DMI Professional Diploma, OMCP, CXL, CBP/CBSA/CCAS, Adobe Certified Professional, Blender, Unity, Unreal Engine, Wharton, Shopify, Salesforce) belong to their respective owners (Scrum.org, PMI, Amazon Web Services, Microsoft, CompTIA, ASCM, Institute for Supply Management, HubSpot, Google, Meta, Digital Marketing Institute, Online Marketing Certified Professional, CXL Institute, C4/BTA/UNic, Adobe/Certiport, Blender Foundation, Unity Technologies, Epic Games, Wharton School, Shopify, Salesforce). Not affiliated with any certification body.
+© 2026 Humayun Zafar. All Rights Reserved. This material is provided for enrolled-student personal study use only, copying, reproduction, or redistribution of the rendered site content is prohibited without prior written consent. All trademarks (PSM, PMP, AWS, Azure, CompTIA A+/Network+/Linux+/Server+/Security+, AZ-800/801, MD-102, SC-300, CSCP, CPIM, CLTD, CPSM, HubSpot Inbound/Content Marketing, Google Ads/GA4 (Google Analytics 4) IQ/AI Pro, Meta Blueprint, DMI Professional Diploma, OMCP, CXL, CBP/CBSA/CCAS, Adobe Certified Professional, Blender, Unity, Unreal Engine, Wharton, Shopify, Salesforce) belong to their respective owners (Scrum.org, PMI, Amazon Web Services, Microsoft, CompTIA, ASCM, Institute for Supply Management, HubSpot, Google, Meta, Digital Marketing Institute, Online Marketing Certified Professional, CXL Institute, C4/BTA/UNic, Adobe/Certiport, Blender Foundation, Unity Technologies, Epic Games, Wharton School, Shopify, Salesforce). Not affiliated with any certification body.

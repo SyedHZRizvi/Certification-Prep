@@ -4,7 +4,7 @@
 
 ---
 
-## 🧬 CDP vs DMP vs DXP vs Warehouse
+## 🧬 CDP (Customer Data Platform) vs DMP (Data Management Platform) vs DXP vs Warehouse
 
 | Property | CDP | DMP | DXP | Warehouse |
 |----------|-----|-----|-----|-----------|
@@ -30,12 +30,12 @@
 
 ```
 2017, Safari ITP launches
-2018, GDPR
+2018, GDPR (General Data Protection Regulation)
 2019, Firefox ETP
-2020, CCPA + Google Privacy Sandbox announced
+2020, CCPA (California Consumer Privacy Act) + Google Privacy Sandbox announced
 2021, iOS 14.5 ATT (opt-in 25-35%)
 2023, CPRA
-2024, UA shutdown, GA4 only
+2024, UA shutdown, GA4 (Google Analytics 4) only
 2026, 3P cookie functionally dead in Safari/Firefox;
        unreliable in Chrome under Privacy Sandbox
 ```
@@ -49,13 +49,13 @@ Browser → YOUR collection domain → sGTM container →
   ├─ GA4 Measurement Protocol
   ├─ Meta CAPI
   ├─ Google Ads (Enhanced Conversions)
-  ├─ TikTok Events API
+  ├─ TikTok Events API (Application Programming Interface)
   └─ Warehouse (BigQuery streaming)
 ```
 
 | Platform | Pricing | Best for |
 |----------|---------|----------|
-| GTM-SS on GCP | $120–500/mo | Self-managed teams |
+| GTM (Google Tag Manager)-SS on GCP (Google Cloud Platform) | $120–500/mo | Self-managed teams |
 | Stape.io | $20–100+/mo | SMB, no DevOps |
 | JenTis | €100–500/mo | European / GDPR-strict |
 
@@ -74,7 +74,7 @@ Browser → YOUR collection domain → sGTM container →
 
 ---
 
-## 💵 2026 Cost Reality (DTC at $20M revenue, 2M MTU)
+## 💵 2026 Cost Reality (DTC (Direct-to-Consumer) at $20M revenue, 2M MTU)
 
 | Layer | Cost |
 |-------|------|

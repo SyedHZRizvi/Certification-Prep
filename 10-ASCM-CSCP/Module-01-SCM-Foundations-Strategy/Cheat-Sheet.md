@@ -1,4 +1,4 @@
-# 📋 Module 1 Cheat Sheet: SCM Foundations & Strategy
+# 📋 Module 1 Cheat Sheet: SCM (Supply Chain Management) Foundations & Strategy
 
 > One page. Print it. Tape it to your monitor. Review before the exam.
 
@@ -73,18 +73,18 @@ Memorize: **Material · Information · Cash**
 4. Rationing / shortage gaming
 5. Long lead times
 
-**Fix:** share POS data (VMI, CPFR), smaller batches, EDLP pricing, shorter lead times.
+**Fix:** share POS data (VMI (Vendor Managed Inventory), CPFR (Collaborative Planning, Forecasting, and Replenishment)), smaller batches, EDLP pricing, shorter lead times.
 
 ---
 
 ## 🏆 SCOR Performance Attributes
 
-| Dimension | Attribute | Example KPI |
+| Dimension | Attribute | Example KPI (Key Performance Indicator) |
 |-----------|-----------|------------|
-| Customer-facing | Reliability | Perfect order, OTIF |
+| Customer-facing | Reliability | Perfect order, OTIF (On-Time In-Full) |
 | Customer-facing | Responsiveness | Order cycle time |
 | Customer-facing | Agility | Upside flexibility |
-| Internal-facing | Cost | Total SC mgmt cost, COGS |
+| Internal-facing | Cost | Total SC mgmt cost, COGS (Cost of Goods Sold) |
 | Internal-facing | Asset | Cash-to-cash, inventory days, asset turns |
 
 ---

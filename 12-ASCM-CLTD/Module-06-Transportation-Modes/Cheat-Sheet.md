@@ -99,7 +99,7 @@ Rail is ~3-4× more fuel-efficient than truck per ton-mile.
 
 ---
 
-## 💻 TMS Functions
+## 💻 TMS (Transportation Management System) Functions
 
 - Rate shop, routing optimization, tender mgmt
 - Carrier scorecards
@@ -111,9 +111,9 @@ Rail is ~3-4× more fuel-efficient than truck per ton-mile.
 
 ---
 
-## 📊 Transportation KPIs
+## 📊 Transportation KPIs (Key Performance Indicators)
 
-| KPI | Target |
+| KPI (Key Performance Indicator) | Target |
 |-----|--------|
 | OTD | >98% |
 | Empty miles % | <15% |

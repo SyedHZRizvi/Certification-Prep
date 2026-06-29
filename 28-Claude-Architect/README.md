@@ -7,7 +7,7 @@ title: Claude Architect (Cert Hub Original, Anthropic-Aligned)
 
 **🤖 Generative & Agentic AI** › Claude Architect (Anthropic-aligned, Cert Hub Original)
 
-> **Goal:** Become the engineer in your org who can architect, deploy, and operate production systems on **Claude** Anthropic's frontier model family with the same rigor a cloud architect brings to AWS or Azure. Pass the Cert Hub Claude Architect assessment (60Q / 60min) with 85%+ and walk into any AI engineering team able to ship Claude-powered products end-to-end.
+> **Goal:** Become the engineer in your org who can architect, deploy, and operate production systems on **Claude** Anthropic's frontier model family with the same rigor a cloud architect brings to AWS (Amazon Web Services) or Azure. Pass the Cert Hub Claude Architect assessment (60Q / 60min) with 85%+ and walk into any AI engineering team able to ship Claude-powered products end-to-end.
 >
 > **Duration:** 8–12 weeks part-time (10–14 hrs/week) · 80 study hours total
 > **Cost:** Free (this track) · Anthropic Console signup free; production use is metered (Haiku 4.5 $1/$5 per Mtok, Sonnet 4.6 $3/$15 per Mtok, Opus 4.6 $15/$75 per Mtok as of 2026-05)
@@ -27,7 +27,7 @@ This certification is for the engineer who wants to be on the right side of that
 
 ### 💼 Career outcomes after passing
 
-- **AI Engineer (Claude-focused)** ($150K–$240K base), Building production features on the Anthropic API (Cursor, Vercel, Notion, Asana, Intercom, Klarna, Block, GitLab, Sourcegraph, Replit all hire for this)
+- **AI Engineer (Claude-focused)** ($150K–$240K base), Building production features on the Anthropic API (Application Programming Interface) (Cursor, Vercel, Notion, Asana, Intercom, Klarna, Block, GitLab, Sourcegraph, Replit all hire for this)
 - **Forward-Deployed Engineer (FDE)** Anthropic, Scale AI, Cohere, Mistral ($180K–$280K base + equity) Sit with a Fortune 500 customer and build their first Claude system end-to-end
 - **AI Solutions Architect** ($170K–$260K base), Design enterprise-grade Claude deployments, including governance, observability, cost controls, fallback chains
 - **AI Platform Engineer** ($160K–$240K base), Own the internal "AI gateway" layer (rate limits, prompt caching, observability, model routing) that fronts Claude for the rest of engineering
@@ -43,7 +43,7 @@ This track ladders directly into:
 - **Azure AI Engineer (course 08)**, for Azure OpenAI comparison and Microsoft 365 Copilot integration
 - **Prompt Engineering Specialist (course 29)**, vendor-neutral prompt techniques (zero-shot, CoT, structured output, multi-modal, jailbreak defense)
 - **Generative AI Engineer (course 30)**, vendor-neutral end-to-end GenAI engineering (embeddings, RAG, fine-tuning, evals)
-- **AWS ML Specialty (course 31)**, the deeper ML/MLOps story, including SageMaker, deployment patterns, monitoring
+- **AWS ML Specialty (course 31)**, the deeper ML/MLOps (Machine Learning Operations) story, including SageMaker, deployment patterns, monitoring
 
 ### 🏛️ Why The Cert Hub's version is different
 
@@ -51,7 +51,7 @@ This track ladders directly into:
 - **Anthropic-aligned by construction**, every prompting pattern matches Anthropic's published [prompt engineering documentation](https://docs.anthropic.com/claude/docs/prompt-engineering), every tool-use schema matches the Messages API, every safety pattern reflects the [Responsible Scaling Policy](https://www.anthropic.com/responsible-scaling-policy)
 - **Story-driven lessons (not API-reference recitation)**, Constitutional AI introduced through the *story of why Anthropic exists*; MCP introduced through the *Cursor/Claude Desktop integration*; agentic patterns introduced through real Replit Agent / Lindy postmortems
 - **Original questions only**, every quiz and practice exam written from scratch in the spirit of Anthropic's documented APIs and the published research; no copied dumps
-- **Real-world case studies**, Anthropic's Constitutional AI 2022 paper, the Cursor IDE integration, GitLab Duo's model fallback chain, the November 2024 MCP announcement, the 2024 Claude 3.5 Sonnet computer-use beta, Notion AI's prompt caching ROI numbers
+- **Real-world case studies**, Anthropic's Constitutional AI 2022 paper, the Cursor IDE integration, GitLab Duo's model fallback chain, the November 2024 MCP announcement, the 2024 Claude 3.5 Sonnet computer-use beta, Notion AI's prompt caching ROI (Return on Investment) numbers
 - **One author, one voice**, coherent vocabulary across all 8 modules
 - **Updated for the 2026 Claude 4 model family**, Sonnet 4.6 as the default workhorse, Opus 4.6 for hard reasoning, Haiku 4.5 for high-throughput cheap inference, with the older Claude 3.5 / 3.7 family covered as deprecation context
 
@@ -68,14 +68,14 @@ Begin with [Module 1: Claude Foundations & Constitutional AI →](./Module-01-Cl
 By the end of this track, you'll be able to:
 
 - Explain *why Anthropic exists*, the Constitutional AI paper (Bai et al. 2022), the safety-first split from OpenAI, the Responsible Scaling Policy, and how that shapes Claude's training and refusal behavior
-- Pick the right Claude model (Haiku / Sonnet / Opus, by version) for any task, balancing cost, latency, and capability, and justify the choice to a CFO
+- Pick the right Claude model (Haiku / Sonnet / Opus, by version) for any task, balancing cost, latency, and capability, and justify the choice to a CFO (Chief Financial Officer)
 - Write prompts in Anthropic's preferred conventions: XML-tag scaffolding, role/system separation, examples-first, prefill, stop sequences, and the explicit "thinking" pattern
 - Call the Messages API in Python and TypeScript with streaming, batching, prompt caching (the **90%** cost cut), token counting, and bullet-proof retry logic
 - Define and orchestrate **tools** in JSON Schema, including parallel tool use, multi-turn conversations, tool-result handling, and computer use (Sonnet 3.5 / 4 beta)
 - Build and consume **Model Context Protocol (MCP)** servers and clients, the standard for plugging Claude into external systems (filesystem, GitHub, Slack, your DB)
 - Architect agentic loops with **ReAct**, scratchpad reasoning, hierarchical orchestration, and the right evals to catch silent failure
 - Decide between RAG and stuffing the **200K-token** context window, build contextual-retrieval pipelines (Anthropic's Sept-2024 technique), and ship Claude-native citations
-- Operate a Claude system in production: rate-limit handling, monitoring (Langfuse / Helicone / OpenLLMetry), prompt-injection defense, PII handling, **AWS Bedrock vs Anthropic direct vs GCP Vertex** trade-offs
+- Operate a Claude system in production: rate-limit handling, monitoring (Langfuse / Helicone / OpenLLMetry), prompt-injection defense, PII handling, **AWS Bedrock vs Anthropic direct vs GCP (Google Cloud Platform) Vertex** trade-offs
 
 ---
 
@@ -83,9 +83,9 @@ By the end of this track, you'll be able to:
 
 | # | Module | Hours | What You'll Master |
 |---|--------|-------|--------------------|
-| 1 | [Claude Foundations & Constitutional AI](./Module-01-Claude-Foundations-Constitutional-AI/Reading.md) | 2.5 | Why Anthropic exists; Constitutional AI; RLHF vs CAI; Claude model family; choosing Claude vs GPT vs Gemini |
+| 1 | [Claude Foundations & Constitutional AI](./Module-01-Claude-Foundations-Constitutional-AI/Reading.md) | 2.5 | Why Anthropic exists; Constitutional AI; RLHF (Reinforcement Learning from Human Feedback) vs CAI; Claude model family; choosing Claude vs GPT (Generative Pre-trained Transformer) vs Gemini |
 | 2 | [Prompt Engineering with Claude](./Module-02-Prompt-Engineering-Claude/Reading.md) | 3 | XML tags, system/user roles, examples, prefill, stop sequences, Claude-specific conventions |
-| 3 | [Claude API & SDK Deep Dive](./Module-03-Claude-API-SDK-Deep-Dive/Reading.md) | 3 | Messages API, Python + TS SDKs, streaming, Batch API, prompt caching, retry/backoff |
+| 3 | [Claude API & SDK (Software Development Kit) Deep Dive](./Module-03-Claude-API-SDK-Deep-Dive/Reading.md) | 3 | Messages API, Python + TS SDKs, streaming, Batch API, prompt caching, retry/backoff |
 | 4 | [Tool Use & Function Calling](./Module-04-Tool-Use-Function-Calling/Reading.md) | 3 | JSON Schema tool definitions, parallel tool use, multi-turn flows, computer use |
 | 5 | [Model Context Protocol (MCP)](./Module-05-Model-Context-Protocol-MCP/Reading.md) | 3 | What MCP is, building MCP servers, Claude Desktop integration, ecosystem |
 | 6 | [Agentic Patterns with Claude](./Module-06-Agentic-Patterns/Reading.md) | 3 | ReAct loops, scratchpads, hierarchical agents, evals, anti-patterns, claude-code SDK |
@@ -193,7 +193,7 @@ Weeks 11-12: Flashcards + Final Mock → assessment
 
 ## 🃏 Use the Flashcards
 
-The [Master Flashcards](./Flashcards.md) deck has 100+ cards covering every API parameter, every model SKU, every MCP method, every Constitutional-AI term, every prompting convention. Drill daily, even 10 minutes/day for two weeks crushes a multi-hour cram session.
+The [Master Flashcards](./Flashcards.md) deck has 100+ cards covering every API parameter, every model SKU (Stock Keeping Unit), every MCP method, every Constitutional-AI term, every prompting convention. Drill daily, even 10 minutes/day for two weeks crushes a multi-hour cram session.
 
 ---
 

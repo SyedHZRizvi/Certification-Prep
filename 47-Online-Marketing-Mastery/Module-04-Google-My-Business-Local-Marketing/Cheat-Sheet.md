@@ -1,6 +1,6 @@
 # 📋 Module 04 Cheat Sheet: Google My Business & Local Marketing
 
-> One page. Print it. Review before every campaign, audit, or local SEO pitch.
+> One page. Print it. Review before every campaign, audit, or local SEO (Search Engine Optimization) pitch.
 
 ---
 
@@ -16,7 +16,7 @@
 
 ---
 
-## GBP Optimization Priority Stack
+## GBP (Google Business Profile) Optimization Priority Stack
 
 ### Tier 1 — Foundation (Do First, Non-Negotiable)
 - [ ] Claim + verify the listing
@@ -89,13 +89,13 @@
 
 > Businesses with 100+ photos receive ~520% more calls than average *(industry estimate)*.
 
-**GDPR Note (EU markets):** Obtain written consent before publishing identifiable photos of employees or customers. Applies in France (CNIL), Germany (BDSG), Netherlands (AVG), and all EU states.
+**GDPR (General Data Protection Regulation) Note (EU markets):** Obtain written consent before publishing identifiable photos of employees or customers. Applies in France (CNIL), Germany (BDSG), Netherlands (AVG), and all EU states.
 
 ---
 
 ## Google Posts Quick Reference
 
-| Type | Lifespan | Best Use | CTA Options |
+| Type | Lifespan | Best Use | CTA (Call to Action) Options |
 |------|---------|---------|------------|
 | What's New | 7 days | General updates, blog promos | Learn more, Call, Visit |
 | Event | Until event | Workshops, open days | Register, Learn more |
@@ -173,7 +173,7 @@
 }
 ```
 
-> Schema does NOT directly rank you — it confirms your NAP to Google and enables rich results (star ratings, hours in SERPs).
+> Schema does NOT directly rank you — it confirms your NAP to Google and enables rich results (star ratings, hours in SERPs (Search Engine Results Pages)).
 
 ---
 
@@ -229,7 +229,7 @@ Use these in interviews, exams, and client presentations to demonstrate expertis
 
 - *"For service-area businesses, the correct GBP setup is to hide the address and define a service radius — not to use a fake storefront or shared office address, which is a suspension trigger."*
 
-- *"Local Services Ads operate on a per-lead model, not per-click, which fundamentally changes the ROI calculation — you only pay for calls and messages from qualified in-market customers."*
+- *"Local Services Ads operate on a per-lead model, not per-click, which fundamentally changes the ROI (Return on Investment) calculation — you only pay for calls and messages from qualified in-market customers."*
 
 - *"In the EU, Google Business Profile optimization does not operate in isolation from GDPR — photo consent, review solicitation practices, and data aggregator submissions all touch personal data obligations."*
 

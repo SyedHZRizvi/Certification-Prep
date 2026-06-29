@@ -6,7 +6,7 @@
 
 ## Service Type Comparison
 
-| Type | ClusterIP? | NodePort? | External LB? | DNS CNAME? | When to use |
+| Type | ClusterIP? | NodePort? | External LB? | DNS (Domain Name System) CNAME? | When to use |
 |------|:----------:|:---------:|:------------:|:----------:|-------------|
 | `ClusterIP` | Yes (default) | No | No | No | Internal microservice-to-microservice |
 | `NodePort` | Yes | Yes (30000-32767) | No | No | Direct external access, dev/test |
@@ -124,9 +124,9 @@ spec:
 # Allow DNS when egress is denied (always add this)
 egress:
   - ports:
-    - protocol: UDP
+    - protocol: UDP (User Datagram Protocol)
       port: 53
-    - protocol: TCP
+    - protocol: TCP (Transmission Control Protocol)
       port: 53
 ```
 
@@ -170,7 +170,7 @@ kubectl logs -n kube-system -l k8s-app=kube-proxy
 | `30000–32767` | NodePort valid range |
 | `100` | Max endpoints per EndpointSlice |
 | `53` (UDP+TCP) | DNS port — open in egress when deny-all |
-| `443` | HTTPS for Ingress TLS |
+| `443` | HTTPS (HTTP Secure) for Ingress TLS (Transport Layer Security) |
 | `cluster.local` | Default cluster DNS domain |
 
 ---

@@ -35,9 +35,9 @@
 
 | Metric | Value |
 |--------|-------|
-| **RPO** | ~30 sec (continuous via Mobility Service) |
-| **RTO** | Minutes (depends on VM startup + DNS) |
-| Sources | Hyper-V / VMware / physical / Azure-to-Azure / AWS |
+| **RPO (Recovery Point Objective)** | ~30 sec (continuous via Mobility Service) |
+| **RTO (Recovery Time Objective)** | Minutes (depends on VM (Virtual Machine) startup + DNS (Domain Name System)) |
+| Sources | Hyper-V / VMware / physical / Azure-to-Azure / AWS (Amazon Web Services) |
 | Recovery points | Configurable (24 hourly + 7 daily typical) |
 | App-consistent freq | 1–12 hour |
 | **Test failover** | **Non-disruptive** (parallel test VNet), run quarterly |
@@ -85,7 +85,7 @@ Discover (appliance)  →  Assess (right-sizing)  →  Migrate (via ASR / DMS / 
 
 ## 🪪 ADMT
 
-- Move users/groups/computers between AD domains/forests
+- Move users/groups/computers between AD (Active Directory) domains/forests
 - **Preserves SID History** for resource access continuity
 - "Available but no longer actively developed", community-supported
 - Modern alternative: Entra ID cross-tenant migration

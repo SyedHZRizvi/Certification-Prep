@@ -4,7 +4,7 @@
 
 ---
 
-## 📦 S3 Storage Classes, One-Liner Recall
+## 📦 S3 (Simple Storage Service) Storage Classes, One-Liner Recall
 
 | Class | When |
 |-------|------|
@@ -66,8 +66,8 @@ Firehose buffer: **60 s OR 5 MiB** (whichever first). NOT real-time.
 |------|----------|
 | **Glue ETL (serverless)** | Up to ~TB; pay per DPU-second |
 | **EMR Serverless** | TB+; Spark / Hive / Trino without managing cluster |
-| **EMR on EC2** | Persistent cluster, custom libs, max control |
-| **EMR on EKS** | Spark on existing K8s |
+| **EMR on EC2 (Elastic Compute Cloud)** | Persistent cluster, custom libs, max control |
+| **EMR on EKS (Elastic Kubernetes Service)** | Spark on existing K8s |
 | **Athena** | Ad-hoc SQL on S3; serverless; pay per TB scanned |
 
 ---
@@ -91,7 +91,7 @@ Firehose buffer: **60 s OR 5 MiB** (whichever first). NOT real-time.
 - **Cross-account sharing** via RAM (no copy)
 - Centralised audit through CloudTrail
 
-🚨 LF is ON TOP of IAM, both are evaluated; LF doesn't override IAM `Deny`.
+🚨 LF is ON TOP of IAM (Identity and Access Management), both are evaluated; LF doesn't override IAM `Deny`.
 
 ---
 
@@ -118,7 +118,7 @@ Firehose buffer: **60 s OR 5 MiB** (whichever first). NOT real-time.
 | Online NFS → S3 nightly | **AWS DataSync** |
 | Hybrid NFS that lands in S3 | **Storage Gateway (File)** |
 | Petabyte offline transfer | **Snowball Edge cluster** |
-| SaaS (Salesforce) → S3 | **AppFlow** |
+| SaaS (Software as a Service) (Salesforce) → S3 | **AppFlow** |
 | Trigger on S3 PUT | **S3 Event → Lambda / EventBridge** |
 | Orchestrate multi-step ETL | **Step Functions** |
 
@@ -154,7 +154,7 @@ Memorise this.
 | "Athena bill too high" | Parquet + partition + project |
 | ">15-minute preprocessing" | Glue / SageMaker Processing, not Lambda |
 | "PB-scale archive, 12 h retrieval ok" | Deep Archive |
-| "cheaper than NAT for S3 from VPC" | Gateway VPC Endpoint for S3 |
+| "cheaper than NAT (Network Address Translation) for S3 from VPC (Virtual Private Cloud)" | Gateway VPC Endpoint for S3 |
 
 ---
 

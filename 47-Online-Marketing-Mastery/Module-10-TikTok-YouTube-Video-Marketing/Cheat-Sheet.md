@@ -35,7 +35,7 @@
 |---|---|---|---|
 | **Hook** | 0–3s | Stop the scroll | Visual shock, bold text, rhetorical question |
 | **Build** | 3–final 10s | Deliver value, keep watching | Step reveals, "wait for it" tension |
-| **Payoff** | Final 10s | Reward viewer, drive action | Surprise result, single CTA, loop back to start |
+| **Payoff** | Final 10s | Reward viewer, drive action | Surprise result, single CTA (Call to Action), loop back to start |
 
 **Write the hook first. Then the ending. Then fill in the middle.**
 
@@ -43,11 +43,11 @@
 
 ## TikTok Ad Formats at a Glance
 
-| Format | Skippable | Best for | CPM est. (US) |
+| Format | Skippable | Best for | CPM (Cost Per Mille) est. (US) |
 |---|---|---|---|
 | In-Feed Ad | Yes (after 6s) | Conversions, traffic | $3–$10 |
 | TopView | Yes (after 5s) | Massive brand awareness | $50–$120 |
-| Branded Hashtag Challenge | N/A | UGC campaigns | $150K–$300K flat |
+| Branded Hashtag Challenge | N/A | UGC (User-Generated Content) campaigns | $150K–$300K flat |
 | Spark Ad | Yes | Social proof + conversions | ~In-Feed rates |
 
 **Spark Ads key difference:** Social proof (likes/comments/shares/follows) accumulates on the original organic post, not on an ad object.
@@ -69,7 +69,7 @@
 
 ---
 
-## YouTube SEO Signals
+## YouTube SEO (Search Engine Optimization) Signals
 
 | Signal | Weight | Key Action |
 |---|---|---|
@@ -100,7 +100,7 @@
 | Skippable In-Stream | 12s+ | Yes (after 5s) | 30s watch OR click | Conversions, awareness |
 | Non-Skippable In-Stream | 6–15s | No | CPM (impressions) | Brand recall |
 | Bumper | 6s | No | CPM | Frequency/recall |
-| Video Discovery | Any | N/A | CPC (click) | Subscribers, intent |
+| Video Discovery | Any | N/A | CPC (Cost Per Click) (click) | Subscribers, intent |
 
 **TrueView billing rule:** You only pay when viewer watches 30s (or full video if <30s) OR clicks the CTA.
 
@@ -124,7 +124,7 @@
 | Factor | North America (US/CA) | Europe (UK/EU) |
 |---|---|---|
 | TikTok Shop | US: Full access | UK: Full access; EU: Not available |
-| TikTok Pixel (GDPR) | No consent law equivalent | Explicit consent required; ePrivacy Directive + GDPR |
+| TikTok Pixel (GDPR (General Data Protection Regulation)) | No consent law equivalent | Explicit consent required; ePrivacy Directive + GDPR |
 | Data transfer | Standard US rules | SCCs required for data leaving EU/EEA |
 | YouTube Shorts monetisation | YPP Revenue Share live | YPP Revenue Share live; consent mode affects personalisation |
 | German market language | N/A | German-language content outperforms English in DE market |

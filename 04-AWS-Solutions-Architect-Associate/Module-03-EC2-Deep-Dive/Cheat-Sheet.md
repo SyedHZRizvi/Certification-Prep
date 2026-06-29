@@ -1,4 +1,4 @@
-# 📋 Module 3 Cheat Sheet: EC2 Deep Dive
+# 📋 Module 3 Cheat Sheet: EC2 (Elastic Compute Cloud) Deep Dive
 
 > One page. Print it. Tape to your monitor.
 
@@ -39,15 +39,15 @@
 ## ⚖️ ELB Decision Tree
 
 ```
-HTTP/HTTPS routing, paths, hosts?           → ALB
-TCP/UDP, static IPs, ultra-low latency?     → NLB
+HTTP (Hypertext Transfer Protocol)/HTTPS (HTTP Secure) routing, paths, hosts?           → ALB
+TCP (Transmission Control Protocol)/UDP (User Datagram Protocol), static IPs, ultra-low latency?     → NLB
 Insert 3rd-party firewall appliances?       → GWLB
 ```
 
 | Feature | ALB | NLB | GWLB |
 |---------|-----|-----|------|
 | Layer | 7 | 4 | 3/4 |
-| Static IP | No (DNS) | Yes per AZ | n/a |
+| Static IP | No (DNS (Domain Name System)) | Yes per AZ | n/a |
 | WebSocket | Yes | n/a | n/a |
 | Path-based | ✅ | ❌ | ❌ |
 | Lambda targets | ✅ | ❌ | ❌ |
@@ -98,7 +98,7 @@ Insert 3rd-party firewall appliances?       → GWLB
 - "Spread across multiple AZs in an Auto Scaling Group"
 - "Use Spot for fault-tolerant batch"
 - "Use RI / Savings Plan for steady-state"
-- "Attach IAM role via instance profile"
+- "Attach IAM (Identity and Access Management) role via instance profile"
 - "Use NLB for static IPs and L4"
 - "Use ALB for path-based routing"
 - "Mixed-instances policy with Spot + On-Demand"

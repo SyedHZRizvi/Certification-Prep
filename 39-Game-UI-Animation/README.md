@@ -1,5 +1,5 @@
 ---
-permalink: /39-Game-UI-Animation/
+permalink: /39-Game-UI (User Interface)-Animation/
 title: Game & UI Animation (Cert Hub Original, Real-Time Animation Specialist)
 ---
 
@@ -147,7 +147,7 @@ Week 9:      Module 8 + Final Mock → portfolio finalization
 
 ## 🃏 Use the Flashcards
 
-The [Master Flashcards](./Flashcards.md) deck has 100+ cards covering every key concept, Unity animator properties, Spine rig terminology, GSAP API surface, CSS animation gotchas, game feel vocabulary, VFX shader patterns. Drill 10 minutes/day; it makes a measurable difference.
+The [Master Flashcards](./Flashcards.md) deck has 100+ cards covering every key concept, Unity animator properties, Spine rig terminology, GSAP API (Application Programming Interface) surface, CSS animation gotchas, game feel vocabulary, VFX shader patterns. Drill 10 minutes/day; it makes a measurable difference.
 
 ---
 

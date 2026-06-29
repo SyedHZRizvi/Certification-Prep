@@ -4,7 +4,7 @@
 
 ---
 
-## 🔐 IAM For SageMaker
+## 🔐 IAM (Identity and Access Management) For SageMaker
 
 ```
 Execution role types:
@@ -15,7 +15,7 @@ Execution role types:
 ```
 
 🚨 Never grant `AmazonSageMakerFullAccess` + admin in production.
-✅ Scope to specific S3 prefixes, KMS keys, ECR repos.
+✅ Scope to specific S3 (Simple Storage Service) prefixes, KMS keys, ECR repos.
 ✅ Use **IAM Access Analyzer** to right-size policies.
 
 ---
@@ -35,10 +35,10 @@ Execution role types:
 ## 🌐 No-Internet Training Stack
 
 ```
-Private VPC
-   ├─ Private subnets (no NAT)
+Private VPC (Virtual Private Cloud)
+   ├─ Private subnets (no NAT (Network Address Translation))
    ├─ Gateway VPC Endpoints: S3, DynamoDB (free)
-   ├─ Interface VPC Endpoints (PrivateLink): SageMaker API + Runtime,
+   ├─ Interface VPC Endpoints (PrivateLink): SageMaker API (Application Programming Interface) + Runtime,
    │    ECR API + ECR DKR, STS, KMS, CloudWatch, Bedrock
    └─ Estimator: enable_network_isolation=True
 ```

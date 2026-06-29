@@ -7,7 +7,7 @@
 | Metric | Value |
 |--------|-------|
 | Reachable nodes | ~15,000-20,000 |
-| Total nodes (incl NAT) | ~50,000-100,000 |
+| Total nodes (incl NAT (Network Address Translation)) | ~50,000-100,000 |
 | Mainnet port | **8333** |
 | Testnet3 port | 18333 |
 | Signet port | 38333 |

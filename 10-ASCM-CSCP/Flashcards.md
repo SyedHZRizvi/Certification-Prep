@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -272,7 +272,7 @@
 
 ---
 
-## 📦 SECTION 1: SCM FOUNDATIONS & STRATEGY
+## 📦 SECTION 1: SCM (Supply Chain Management) FOUNDATIONS & STRATEGY
 
 **Q:** What are the three flows of any supply chain?
 **A:** Material, information, and cash.
@@ -305,7 +305,7 @@
 **A:** Demand forecast updating, order batching, price fluctuations, rationing/shortage gaming, long lead times.
 
 **Q:** What is the best long-term remedy for the bullwhip effect?
-**A:** Information sharing across tiers (CPFR, VMI), smaller batches, EDLP pricing, shorter lead times.
+**A:** Information sharing across tiers (CPFR (Collaborative Planning, Forecasting, and Replenishment), VMI (Vendor Managed Inventory)), smaller batches, EDLP pricing, shorter lead times.
 
 **Q:** Define order qualifier vs order winner.
 **A:** Qualifier = minimum criterion to be considered. Winner = the reason the customer chooses YOU.
@@ -361,7 +361,7 @@
 **A:** Independent demand.
 
 **Q:** Which type of demand is calculated, not forecast?
-**A:** Dependent demand, calculated via MRP from the BOM.
+**A:** Dependent demand, calculated via MRP (Material Requirements Planning) from the BOM (Bill of Materials).
 
 **Q:** Simple exponential smoothing formula.
 **A:** F(t+1) = α·A(t) + (1−α)·F(t), where 0 ≤ α ≤ 1.
@@ -398,7 +398,7 @@
 
 ---
 
-## 📦 SECTION 4: SUPPLY PLANNING & S&OP
+## 📦 SECTION 4: SUPPLY PLANNING & S&OP (Sales and Operations Planning)
 
 **Q:** Recite the 5 steps of Wallace/Stahl S&OP cycle.
 **A:** 1. Data Gathering, 2. Demand Review, 3. Supply Review, 4. Pre-S&OP Reconciliation, 5. Executive S&OP Meeting.
@@ -428,7 +428,7 @@
 **A:** Service industries (cannot inventory output) and businesses with variable labor and low fixed-cost capacity.
 
 **Q:** What is lot-for-lot (L4L) ordering?
-**A:** Order exactly the net requirement each period to minimize inventory; suits low-setup-cost JIT environments.
+**A:** Order exactly the net requirement each period to minimize inventory; suits low-setup-cost JIT (Just-In-Time) environments.
 
 **Q:** Define ATP and CTP.
 **A:** ATP (Available-to-Promise) = on-hand + uncommitted future production. CTP (Capable-to-Promise) also considers capacity + material availability.
@@ -440,14 +440,14 @@
 
 ## 📦 SECTION 5: INVENTORY & CAPACITY
 
-**Q:** EOQ formula and assumptions.
+**Q:** EOQ (Economic Order Quantity) formula and assumptions.
 **A:** EOQ = √(2DS/H). Assumes constant demand, constant lead time, no quantity discounts, instantaneous receipt, no stockouts.
 
 **Q:** Safety stock formula (lead-time demand uncertainty only).
 **A:** SS = Z · σ_LT.
 
 **Q:** Reorder point formula.
-**A:** ROP = d · LT + SS.
+**A:** ROP (Reorder Point) = d · LT + SS.
 
 **Q:** Combined formula for σ_LT with variable demand AND variable lead time.
 **A:** σ_LT = √(LT · σ_d² + d² · σ_LT²).
@@ -462,7 +462,7 @@
 **A:** Carrying/holding, ordering/setup, stockout/shortage, acquisition/unit cost.
 
 **Q:** Inventory turns formula.
-**A:** Turns = COGS / Avg inventory value. DIO = 365 / turns.
+**A:** Turns = COGS (Cost of Goods Sold) / Avg inventory value. DIO = 365 / turns.
 
 **Q:** Newsvendor critical ratio formula.
 **A:** Critical Ratio = Cu / (Cu + Co), where Cu = understock cost (lost margin), Co = overstock cost (markdown loss).
@@ -486,7 +486,7 @@
 **Q:** Name the 7 steps of strategic sourcing.
 **A:** 1. Analyze spend, 2. Assess supply market, 3. Develop strategy, 4. Solicit & evaluate (RFx), 5. Negotiate & award, 6. Implement & integrate, 7. Manage performance.
 
-**Q:** Difference between RFI, RFP, RFQ.
+**Q:** Difference between RFI, RFP (Request for Proposal), RFQ (Request for Quotation).
 **A:** RFI = information / capabilities (early discovery). RFP = solution / approach (complex). RFQ = price quote on a defined spec.
 
 **Q:** What does TCO stand for and include?
@@ -504,7 +504,7 @@
 **Q:** Difference between fixed-price and cost-plus contracts.
 **A:** Fixed-price = supplier bears risk (use when scope is clear). Cost-plus = buyer bears risk (use when scope is evolving).
 
-**Q:** What does SLA stand for?
+**Q:** What does SLA (Service Level Agreement) stand for?
 **A:** Service-Level Agreement, defines performance commitments and penalties.
 
 **Q:** What does MFN (Most Favored Nation) clause guarantee?
@@ -523,7 +523,7 @@
 **Q:** Define intermodal vs multimodal.
 **A:** Intermodal = same container moves across modes without rehandling. Multimodal = multiple modes under one contract.
 
-**Q:** Difference between 3PL and 4PL.
+**Q:** Difference between 3PL (Third-Party Logistics) and 4PL (Fourth-Party Logistics).
 **A:** 3PL = multi-function outsourced logistics (typically asset-heavy). 4PL/LLP = asset-light orchestrator of multiple 3PLs.
 
 **Q:** Name the 6 core warehouse operations in order.
@@ -536,7 +536,7 @@
 **A:** Automation brings inventory to a stationary picker, used in high-throughput e-commerce fulfillment.
 
 **Q:** Define perfect order.
-**A:** On-time + in-full + undamaged + correct documentation. The strictest service KPI.
+**A:** On-time + in-full + undamaged + correct documentation. The strictest service KPI (Key Performance Indicator).
 
 **Q:** What is a TEU?
 **A:** Twenty-foot Equivalent Unit, the ocean container standard size.
@@ -627,7 +627,7 @@
 **Q:** FMEA RPN formula.
 **A:** Risk Priority Number = Severity × Occurrence × Detection (each scored 1-10).
 
-**Q:** Difference between RTO and RPO.
+**Q:** Difference between RTO (Recovery Time Objective) and RPO (Recovery Point Objective).
 **A:** RTO = Recovery Time Objective (time to restore). RPO = Recovery Point Objective (maximum acceptable data loss).
 
 **Q:** Name Carroll's 4 levels of CSR pyramid.

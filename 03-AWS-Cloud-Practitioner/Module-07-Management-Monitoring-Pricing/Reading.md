@@ -206,7 +206,7 @@ There are **4 paid support tiers** (plus "Basic" which is free):
 | **Developer** | from $29/mo | Business-hours email | One contact, general guidance, business-hours |
 | **Business** | from $100/mo (3% of usage) | **< 1 hour** | 24/7, multiple contacts, ALL Trusted Advisor checks, AWS Support API |
 | **Enterprise On-Ramp** | from $5,500/mo (10% of usage) | **< 30 min for business-critical** | Pool of Technical Account Managers (TAMs), Concierge for billing |
-| **Enterprise** | from $15,000/mo (varies) | **< 15 min for business-critical** | Dedicated TAM (Total Addressable Market), Concierge, IEM (Infrastructure Event Mgmt), well-architected reviews, training credits |
+| **Enterprise** | from $15,000/mo (varies) | **< 15 min for business-critical** | Dedicated TAM, Concierge, IEM (Infrastructure Event Mgmt), well-architected reviews, training credits |
 
 🔥 **MEMORIZE the response times:**
 - Business: **< 1 hour** for production-down

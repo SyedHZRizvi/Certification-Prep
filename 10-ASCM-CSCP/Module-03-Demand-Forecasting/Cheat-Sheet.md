@@ -14,7 +14,7 @@
 | Cyclical | Econometric / causal |
 | Lumpy / intermittent | Croston's |
 | Independent demand | Forecast |
-| Dependent demand | **Calculate via MRP, do not forecast** |
+| Dependent demand | **Calculate via MRP (Material Requirements Planning), do not forecast** |
 
 ---
 
@@ -56,7 +56,7 @@
 
 ---
 
-## 🤝 CPFR (4 Activities)
+## 🤝 CPFR (Collaborative Planning, Forecasting, and Replenishment) (4 Activities)
 
 1. Strategy & Planning
 2. Demand & Supply Management
@@ -67,7 +67,7 @@
 
 ---
 
-## 🛒 CPFR vs VMI
+## 🛒 CPFR vs VMI (Vendor Managed Inventory)
 
 | | CPFR | VMI |
 |---|------|-----|
@@ -84,7 +84,7 @@
 |---|---------|-------------|
 | Horizon | Hours–days | Weeks–months |
 | Inputs | POS, IoT, weather | Historical |
-| Use | Replenishment | Capacity, S&OP |
+| Use | Replenishment | Capacity, S&OP (Sales and Operations Planning) |
 
 ---
 
@@ -141,4 +141,4 @@ Cover the answers and recite:
 
 ---
 
-➡️ [Module 4: Supply Planning & S&OP](../Module-04-Supply-Planning-SOP/Reading.md)
+➡️ [Module 4: Supply Planning & S&OP](../Module-04-Supply-Planning-SOP (Standard Operating Procedure)/Reading.md)

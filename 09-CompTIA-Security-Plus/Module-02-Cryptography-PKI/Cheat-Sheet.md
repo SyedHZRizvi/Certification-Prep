@@ -10,10 +10,10 @@
 |---|-----------|------------|
 | Keys | 1 shared | 2 (public + private) |
 | Speed | ⚡ Fast | 🐢 Slow |
-| Use | Bulk data, disks, VPN tunnels | Key exchange, signatures |
-| Examples | AES, ChaCha20, 3DES (legacy) | RSA, ECC, DSA, EdDSA |
+| Use | Bulk data, disks, VPN (Virtual Private Network) tunnels | Key exchange, signatures |
+| Examples | AES (Advanced Encryption Standard), ChaCha20, 3DES (legacy) | RSA, ECC, DSA, EdDSA |
 
-**Hybrid:** Use asymmetric to exchange a *symmetric* session key, then use symmetric for the data. (That's TLS.)
+**Hybrid:** Use asymmetric to exchange a *symmetric* session key, then use symmetric for the data. (That's TLS (Transport Layer Security).)
 
 ---
 
@@ -91,7 +91,7 @@ Root CA  ──(signs)──▶  Intermediate CA  ──(signs)──▶  Server
 |---|------|
 | **TPM** | Motherboard chip → device root of trust (BitLocker) |
 | **HSM** | Enterprise tamper-resistant appliance (FIPS 140-2/3) |
-| **KMS** | Cloud key service (AWS KMS, Azure Key Vault) |
+| **KMS** | Cloud key service (AWS (Amazon Web Services) KMS, Azure Key Vault) |
 | **Secure Enclave** | Mobile (iPhone) isolated keystore |
 | **Key escrow** | Trusted 3rd party holds a copy |
 
@@ -117,7 +117,7 @@ Root CA  ──(signs)──▶  Intermediate CA  ──(signs)──▶  Server
 |------|-------|
 | **ECB** | ❌ Never use, patterns leak |
 | **CBC** | Confidentiality only; needs IV |
-| **CTR** | Stream-like, parallelizable |
+| **CTR (Click-Through Rate)** | Stream-like, parallelizable |
 | **GCM** | ✅ Authenticated encryption (conf + integrity) |
 | **CCM** | Auth encryption in WPA2 (CCMP) |
 

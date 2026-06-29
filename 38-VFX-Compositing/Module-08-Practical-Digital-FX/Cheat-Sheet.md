@@ -16,7 +16,7 @@ title: "Module 8 Cheat Sheet: Practical Digital FX"
 
 | Category | Example | Tool |
 |----------|---------|------|
-| Set extension | Expand a city exterior | DMP + Nuke / 3D render |
+| Set extension | Expand a city exterior | DMP (Data Management Platform) + Nuke / 3D render |
 | Sky replacement | Wrong/overcast sky | Roto/key + replacement plate |
 | Wire removal | Stunt rigging | Clean plate + RotoPaint / Silhouette |
 | Beauty/cleanup | Blemish removal, de-aging | Nuke RotoPaint |

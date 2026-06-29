@@ -5,9 +5,9 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) first-party data, cookie deprecation, attribution shifts
 > - [Module 2 AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) hallucinations, training data, bias surface
-> - [Module 6 Email Marketing](../Module-06-Email-Marketing-AI-Personalization/Reading.md) CAN-SPAM, GDPR-as-it-touches-email; this module deepens them
+> - [Module 6 Email Marketing](../Module-06-Email-Marketing-AI-Personalization/Reading.md) CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act), GDPR-as-it-touches-email; this module deepens them
 >
-> This module reads like a legal taxonomy. You don't need a law degree, but you should be ready to learn 9 regulatory acronyms (GDPR, CCPA/CPRA, COPPA (Children's Online Privacy Protection Act), CAN-SPAM, CASL, LGPD, PIPL, PDPA, EU AI Act). Read with a regulatory glossary tab open.
+> This module reads like a legal taxonomy. You don't need a law degree, but you should be ready to learn 9 regulatory acronyms (GDPR, CCPA/CPRA, COPPA (Children's Online Privacy Protection Act), CAN-SPAM, CASL (Canada's Anti-Spam Legislation), LGPD, PIPL, PDPA, EU AI Act). Read with a regulatory glossary tab open.
 
 ---
 

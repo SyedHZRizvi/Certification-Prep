@@ -225,7 +225,7 @@ fs.suid_dumpable = 0
 
 ---
 
-## 🔐 SSH Hardening, The Core 10
+## 🔐 SSH (Secure Shell) Hardening, The Core 10
 
 ```
 Port 22                                    # or non-standard

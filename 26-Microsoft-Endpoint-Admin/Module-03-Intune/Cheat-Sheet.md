@@ -7,8 +7,8 @@
 ## ☁️ Architecture
 
 - Admin portal: **intune.microsoft.com**
-- Cloud SaaS, no on-prem servers
-- Uses each platform's native MDM channel:
+- Cloud SaaS (Software as a Service), no on-prem servers
+- Uses each platform's native MDM (Mobile Device Management) channel:
 
   - Windows MDM stack
   - Apple MDM protocol (requires APNs cert)
@@ -36,7 +36,7 @@
 |------|------|
 | Plan 1 | Core MDM + MAM + config + compliance + apps |
 | Plan 2 | Plan 1 + Advanced Endpoint Analytics + Remote Help base + Specialty devices |
-| Suite | Plan 1 + Plan 2 + EPM + Cloud PKI + Tunnel for MAM + Enterprise App Mgmt |
+| Suite | Plan 1 + Plan 2 + EPM + Cloud PKI (Public Key Infrastructure) + Tunnel for MAM + Enterprise App Mgmt |
 
 Bundled in:
 
@@ -69,7 +69,7 @@ Bundled in:
 
 ---
 
-## 🏢 RBAC + Scope Tags
+## 🏢 RBAC (Role-Based Access Control) + Scope Tags
 
 Built-in roles:
 
@@ -107,10 +107,10 @@ The MAM workhorse. Key settings:
 | Type | When |
 |------|------|
 | **Settings catalog** | Modern default, thousands of settings |
-| Templates | Wi-Fi, VPN, cert, email, kiosk |
-| Administrative templates (ADMX) | Windows GPO equivalent |
+| Templates | Wi-Fi, VPN (Virtual Private Network), cert, email, kiosk |
+| Administrative templates (ADMX) | Windows GPO (Group Policy Object) equivalent |
 | Imported ADMX | Custom ADMX files |
-| **Custom OMA-URI** | Rare CSP not in UI |
+| **Custom OMA-URI** | Rare CSP not in UI (User Interface) |
 | Endpoint Protection (legacy) | Mostly absorbed by Endpoint Security blade |
 
 ---

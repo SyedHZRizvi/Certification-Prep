@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -448,7 +448,7 @@
 
 **Q:** What did El Salvador's September 2021 Bitcoin law do?
 
-**A:** Made Bitcoin legal tender alongside the US dollar. Required (in theory) every merchant to accept BTC, distributed the Chivo wallet to citizens. Was the first nation-state Lightning rollout, and a stress test that revealed UX, custody, and adoption challenges.
+**A:** Made Bitcoin legal tender alongside the US dollar. Required (in theory) every merchant to accept BTC, distributed the Chivo wallet to citizens. Was the first nation-state Lightning rollout, and a stress test that revealed UX (User Experience), custody, and adoption challenges.
 
 ---
 
@@ -456,7 +456,7 @@
 
 **Q:** What is FinCEN and what is an MSB?
 
-**A:** Financial Crimes Enforcement Network (US Treasury bureau). MSB = Money Services Business. Per FIN-2013-G001 (March 2013), exchanges and money transmitters dealing in convertible virtual currency are MSBs, must register, file SARs, run AML.
+**A:** Financial Crimes Enforcement Network (US Treasury bureau). MSB = Money Services Business. Per FIN-2013-G001 (March 2013), exchanges and money transmitters dealing in convertible virtual currency are MSBs, must register, file SARs, run AML (Anti-Money Laundering).
 
 **Q:** What is the FATF Travel Rule (Recommendation 15)?
 
@@ -472,7 +472,7 @@
 
 **Q:** What was the Binance $4.3B settlement (Nov 2023)?
 
-**A:** Binance pled guilty to BSA, IEEPA, and OFAC violations. $4.3B settlement (largest ever in crypto), CZ resigned and was sentenced to 4 months. Lesson: AML/KYC and sanctions screening at exchanges are non-negotiable.
+**A:** Binance pled guilty to BSA, IEEPA, and OFAC violations. $4.3B settlement (largest ever in crypto), CZ resigned and was sentenced to 4 months. Lesson: AML/KYC (Know Your Customer) and sanctions screening at exchanges are non-negotiable.
 
 ---
 
@@ -492,7 +492,7 @@
 
 **Q:** Name three institutional Bitcoin custodians.
 
-**A:** Coinbase Custody (Trust Company, NYDFS-chartered), BitGo Trust, Fidelity Digital Assets, Anchorage Digital Bank (OCC-chartered), Gemini Custody. All offer SOC 2 Type II + insurance.
+**A:** Coinbase Custody (Trust Company, NYDFS-chartered), BitGo Trust, Fidelity Digital Assets, Anchorage Digital Bank (OCC-chartered), Gemini Custody. All offer SOC (Security Operations Center) 2 Type II + insurance.
 
 **Q:** What is a Bitcoin OTC desk?
 

@@ -20,12 +20,12 @@ Azure OpenAI Resource  (kind=OpenAI; gated; separate from multi-service)
 
 ## 💰 Deployment SKUs
 
-| SKU | When |
+| SKU (Stock Keeping Unit) | When |
 |---|---|
 | **Standard** | PAYG per token |
 | **Global Standard** | PAYG, no regional pin |
 | **PTU** (Provisioned Throughput Unit) | Reserved capacity, predictable latency |
-| **Global Batch** | ~50% cheaper async, 24-hr SLA |
+| **Global Batch** | ~50% cheaper async, 24-hr SLA (Service Level Agreement) |
 
 ---
 
@@ -77,7 +77,7 @@ resp = client.chat.completions.create(
 
 ---
 
-## 📚 On Your Data (Native RAG)
+## 📚 On Your Data (Native RAG (Retrieval-Augmented Generation))
 
 ```python
 extra_body={
@@ -146,7 +146,7 @@ Fine-tune file = JSONL, one `{"messages":[...]}` per line.
 
 - ❌ "Use the multi-service resource for Azure OpenAI"
 - ❌ "Fine-tune to add facts"
-- ❌ "Disable content filters by API parameter"
+- ❌ "Disable content filters by API (Application Programming Interface) parameter"
 - ❌ "Higher temperature = more accurate"
 
 ---
@@ -199,7 +199,7 @@ Cannot fully disable filtering without approved exemption.
 
 | Constraint | Lever |
 |---|---|
-| GDPR data residency (EU) | EU Data Zone / region-pinned deployment |
+| GDPR (General Data Protection Regulation) data residency (EU) | EU Data Zone / region-pinned deployment |
 | HIPAA-defensible | Abuse-monitoring opt-out (approved) + Private Endpoints + CMK |
 | EU AI Act foundation model | Disclose synthetic content; document fine-tuning provenance |
 | Brand safety (consumer) | Tightened custom content filter + Protected Material |
@@ -210,7 +210,7 @@ Cannot fully disable filtering without approved exemption.
 | Concept | Source |
 |---|---|
 | Transformer | Vaswani et al. (2017), NeurIPS |
-| Few-shot / in-context learning | Brown et al. (2020), NeurIPS (GPT-3) |
+| Few-shot / in-context learning | Brown et al. (2020), NeurIPS (GPT (Generative Pre-trained Transformer)-3) |
 | Constitutional AI alignment (background) | Bai et al. (2022), Anthropic |
 | Azure OpenAI GA | Microsoft blog (January 2023) |
 | Microsoft RAI Standard v2 | Microsoft (June 2022) |

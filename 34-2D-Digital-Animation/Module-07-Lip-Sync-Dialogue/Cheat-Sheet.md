@@ -19,7 +19,7 @@ title: "Module 7 Cheat Sheet: Lip Sync & Dialogue"
 | **FV** | F, V | Upper teeth on lower lip |
 | **L** | L | Open, tongue tip to palate |
 | **MBP** | M, B, P | Closed or nearly closed |
-| **REST** | Silence, exhale | Relaxed, slight opening |
+| **REST (Representational State Transfer)** | Silence, exhale | Relaxed, slight opening |
 | **WQ** | W, Q | Small round pucker |
 
 **10 groups. Memorize all of them.**

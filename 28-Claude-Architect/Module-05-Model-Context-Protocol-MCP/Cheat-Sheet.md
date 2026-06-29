@@ -6,7 +6,7 @@
 
 ## 🧬 What MCP Is, in 1 Sentence
 
-An **open JSON-RPC 2.0 protocol** for AI applications (clients) to discover and invoke **tools, resources, and prompts** exposed by external processes (servers), transport-agnostic (stdio / HTTP+SSE / Streamable HTTP).
+An **open JSON-RPC 2.0 protocol** for AI applications (clients) to discover and invoke **tools, resources, and prompts** exposed by external processes (servers), transport-agnostic (stdio / HTTP (Hypertext Transfer Protocol)+SSE / Streamable HTTP).
 
 Announced by Anthropic: **November 25, 2024**.
 
@@ -20,7 +20,7 @@ Announced by Anthropic: **November 25, 2024**.
 | **Server** | filesystem, github, postgres, slack, sentry, your-custom-server.py |
 | **Transport** | stdio (local), HTTP+SSE (remote), Streamable HTTP (newer) |
 
-Claude itself does NOT speak MCP, the **host translates** MCP tools into Anthropic Messages API tool definitions.
+Claude itself does NOT speak MCP, the **host translates** MCP tools into Anthropic Messages API (Application Programming Interface) tool definitions.
 
 ---
 
@@ -172,7 +172,7 @@ Find more in public registries (mcp.so, official Anthropic gallery).
 
 | Layer | Control |
 |-------|---------|
-| Transport | TLS for remote; localhost-only for stdio |
+| Transport | TLS (Transport Layer Security) for remote; localhost-only for stdio |
 | Auth | env vars (stdio); OAuth / API keys (remote) |
 | Authorization | per-server, least privilege (e.g., read-only DB role) |
 | Audit | log every tool call with caller + args + result |

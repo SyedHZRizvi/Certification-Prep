@@ -1,4 +1,4 @@
-# Module 6: Security & RBAC — Cheat Sheet
+# Module 6: Security & RBAC (Role-Based Access Control) — Cheat Sheet
 
 > Print this page. Take it to the exam (open-book: kubernetes.io only). Every table below maps directly to CKA tasks.
 

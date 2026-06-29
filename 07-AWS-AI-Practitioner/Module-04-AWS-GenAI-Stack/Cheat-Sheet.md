@@ -10,7 +10,7 @@
 |-------|----------|
 | **Apps** | Amazon Q (Dev, Business, QuickSight, Connect), PartyRock, App Studio, HealthScribe |
 | **Tools** | Amazon Bedrock (FMs + KBs + Agents + Guardrails + Eval) |
-| **Infra** | SageMaker, Trainium (training), Inferentia (inference), EC2 GPU |
+| **Infra** | SageMaker, Trainium (training), Inferentia (inference), EC2 (Elastic Compute Cloud) GPU |
 
 ---
 
@@ -23,11 +23,11 @@
 | Amazon | **Titan** (Text, Embeddings, Image Gen) | Text, embed, image | AWS-native, cost-efficient |
 | Meta | Llama 3 / 3.x | Text (some vision) | Open-weights heritage |
 | Mistral | Mistral, Mixtral, Codestral | Text | Cost-effective reasoning, multilingual |
-| Cohere | Command R/R+, Embed, Rerank | Text + embed + rerank | RAG-optimized |
+| Cohere | Command R/R+, Embed, Rerank | Text + embed + rerank | RAG (Retrieval-Augmented Generation)-optimized |
 | Stability | Stable Diffusion (SDXL, SD3) | Image gen | Text → image |
 | AI21 | Jamba | Text | Long-context efficiency |
 
-🎯 **NOT on Bedrock:** OpenAI GPT, Google Gemini.
+🎯 **NOT on Bedrock:** OpenAI GPT (Generative Pre-trained Transformer), Google Gemini.
 
 ---
 
@@ -46,7 +46,7 @@
 | Variant | Audience | What it does |
 |---------|----------|--------------|
 | **Q Developer** | Engineers | IDE / console code + ops assistant (was CodeWhisperer) |
-| **Q Business** | Business users | Enterprise RAG chatbot over company SaaS + files |
+| **Q Business** | Business users | Enterprise RAG chatbot over company SaaS (Software as a Service) + files |
 | **Q in QuickSight** | Analysts | Natural-language generative BI |
 | **Q in Connect** | Contact-center agents | Real-time response suggestions |
 | **Q in Chat Apps** | Slack / Teams users | Bring Q answers into chat |
@@ -57,10 +57,10 @@
 
 | | Bedrock | JumpStart | PartyRock |
 |---|---------|-----------|-----------|
-| Hosting | Serverless API | Your SageMaker endpoint | Hosted by AWS |
+| Hosting | Serverless API (Application Programming Interface) | Your SageMaker endpoint | Hosted by AWS |
 | Pricing | Per token / MU | Per instance-hour | Free tier sandbox |
 | Model catalog | Curated provider FMs | Broad open-weights library | Bedrock-backed |
-| Best for | Build prod apps fast | Self-host / VPC / fine-tune freely | Demos, no-code |
+| Best for | Build prod apps fast | Self-host / VPC (Virtual Private Cloud) / fine-tune freely | Demos, no-code |
 
 ---
 
@@ -69,7 +69,7 @@
 | Feature | Purpose | Module |
 |---------|---------|--------|
 | Knowledge Bases | Managed RAG | 5 |
-| Agents | LLM plans + calls APIs | 5 |
+| Agents | LLM (Large Language Model) plans + calls APIs | 5 |
 | Guardrails | Safety filters | 7 |
 | Model Evaluation | Compare FMs on your data | 6 |
 | Bedrock Studio | Team prototyping environment | 4 |
@@ -110,7 +110,7 @@ Usually wrong:
 
 | Case | What it proves |
 |------|----------------|
-| **Goldman Sachs Bedrock adoption (re:Invent 2024)** | Regulated industry's GenAI on-ramp = Bedrock + Claude + PrivateLink + IAM resource-level + KMS + invocation logging; 10,000+ engineers using internal tools daily |
+| **Goldman Sachs Bedrock adoption (re:Invent 2024)** | Regulated industry's GenAI on-ramp = Bedrock + Claude + PrivateLink + IAM (Identity and Access Management) resource-level + KMS + invocation logging; 10,000+ engineers using internal tools daily |
 
 ---
 

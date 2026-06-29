@@ -34,7 +34,7 @@ E-commerce is the discipline of selling goods and services online. That sounds s
 | **Marketplace seller** | Brand sells via 3rd-party platforms; platform owns customer | Anker on Amazon, Etsy crafters | Amazon Seller Central, Walmart Marketplace |
 | **Marketplace operator** | You ARE the platform; you take a fee | Amazon, Etsy, eBay, Faire, Whatnot | Mirakl, Yo!Kart, Sharetribe |
 | **B2B / wholesale** | Business sells to other businesses | Procter & Gamble's e-B2B portal | Adobe Commerce B2B, BigCommerce B2B, Faire |
-| **B2B2C (Business-to-Business-to-Consumer) (Business-to-Consumer) (Business-to-Business-to-Consumer) (Business-to-Consumer) / D2R / hybrid** | Brand sells DTC + wholesale + marketplaces simultaneously | Olipop, Magic Spoon | Shopify Plus + Faire + Amazon |
+| **B2B2C (Business-to-Business-to-Consumer) (Business-to-Consumer) (Business-to-Business-to-Consumer) (Business-to-Consumer) (Business-to-Business-to-Consumer) (Business-to-Consumer) / D2R / hybrid** | Brand sells DTC + wholesale + marketplaces simultaneously | Olipop, Magic Spoon | Shopify Plus + Faire + Amazon |
 | **Subscription / replenishment** | Recurring billing for consumable or curated SKUs | Dollar Shave Club, BarkBox, Athletic Greens | Recharge, Skio, Bold Subscriptions |
 | **Social commerce / live commerce** | In-app shopping inside social platforms | TikTok Shop, Instagram Shopping, Whatnot | TikTok Shop, Meta Shops, Shopify Collabs |
 

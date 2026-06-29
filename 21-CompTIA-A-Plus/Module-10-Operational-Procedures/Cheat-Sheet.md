@@ -92,7 +92,7 @@
 
 | Class | Regulation |
 |-------|-----------|
-| **PII** | GDPR, state laws |
+| **PII** | GDPR (General Data Protection Regulation), state laws |
 | **PHI** | HIPAA (US) |
 | **PCI** | PCI-DSS |
 | **CUI** | NIST 800-171 |
@@ -107,7 +107,7 @@
 | Ticket | Per-incident record |
 | KB article | Recurring how-to |
 | Runbook | Step-by-step for a task |
-| SOP | Recurring process |
+| SOP (Standard Operating Procedure) | Recurring process |
 | Network diagram | Topology |
 | CMDB | Inventory + relationships |
 | Change record | What changed, when, by whom |

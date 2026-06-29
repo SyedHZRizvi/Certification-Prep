@@ -1,4 +1,4 @@
-# 📋 Module 2 Cheat Sheet: AI Studio & Gemini API
+# 📋 Module 2 Cheat Sheet: AI Studio & Gemini API (Application Programming Interface)
 
 > One page. Print it. Tape it to your monitor.
 
@@ -9,12 +9,12 @@
 | | **Google AI Studio / Gemini API** | **Vertex AI** |
 |---|-----------------------------------|----------------|
 | URL | `aistudio.google.com` | Google Cloud Console |
-| Python SDK | `google-generativeai` | `google-cloud-aiplatform` (`vertexai.*`) |
+| Python SDK (Software Development Kit) | `google-generativeai` | `google-cloud-aiplatform` (`vertexai.*`) |
 | Node SDK | `@google/generative-ai` | `@google-cloud/vertexai` |
-| Auth | **API key** | **ADC / IAM** (service account, gcloud) |
+| Auth | **API key** | **ADC / IAM (Identity and Access Management)** (service account, gcloud) |
 | Cost | Free tier + paid Gemini API | PAYG, Provisioned Throughput |
 | Best for | Prototyping, hobby, learning | Production, regulated, enterprise |
-| IAM / VPC-SC / CMEK | ❌ | ✅ |
+| IAM / VPC (Virtual Private Cloud)-SC / CMEK | ❌ | ✅ |
 | Signed BAA (HIPAA) | ❌ | ✅ |
 
 ---
@@ -116,10 +116,10 @@ Always check `finish_reason` AND `safety_ratings` AND `usage_metadata`.
 
 | Lever | Savings | Tradeoff |
 |-------|---------|----------|
-| **Streaming** | 0% (UX only) | None |
+| **Streaming** | 0% (UX (User Experience) only) | None |
 | **Smaller tier** (Flash Lite, Flash) | 5–50× | Quality on hard tasks |
 | **Context caching** (explicit) | ~75% on cached prefix | Cache TTL management |
-| **Batch API** | ~50% on input + output | Async (~24h SLA) |
+| **Batch API** | ~50% on input + output | Async (~24h SLA (Service Level Agreement)) |
 | **Provisioned Throughput** | 2–4× at scale | Fixed monthly commitment |
 
 **Stack them:** Batch + Flash + cached prefix → 10× cheaper than baseline Pro.

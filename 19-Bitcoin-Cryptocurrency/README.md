@@ -25,7 +25,7 @@ Bitcoin & Cryptocurrency is the credential ladder that takes you from someone wh
 ### 💼 Career outcomes after passing
 
 - **Blockchain Developer (Bitcoin / Lightning / Stacks)** ($120K–$180K), building wallets, custody, payment rails, BRC-20 tooling
-- **Crypto Compliance Analyst** ($85K–$125K), Travel Rule, KYC/AML, OFAC sanctions screening at exchanges and banks
+- **Crypto Compliance Analyst** ($85K–$125K), Travel Rule, KYC (Know Your Customer)/AML (Anti-Money Laundering), OFAC sanctions screening at exchanges and banks
 - **Crypto Risk Manager** ($110K–$160K), at banks, hedge funds, and asset managers entering the space
 - **Digital Asset Custody Engineer** ($130K–$190K), MPC, multi-sig, HSM-based custody design
 - **Blockchain Solutions Architect** ($140K–$200K), at consulting firms and digital-asset platforms
@@ -201,7 +201,7 @@ This is a *foundations + practitioner* course. It gets you to credible-junior-to
 | Blockchain Solutions Architect (Junior) | Modules 2, 3, 6, 7, 10 |
 | Smart-Contract Auditor (Junior) | Module 10 + a Solidity bootcamp |
 | Lightning Network Engineer / Node Operator | Modules 3, 6, 7 |
-| Crypto Tax Specialist (CPA-track) | Module 8 + a tax-specialist designation |
+| Crypto Tax Specialist (CPA (Cost Per Acquisition)-track) | Module 8 + a tax-specialist designation |
 | Crypto Risk Manager (Bank / Hedge-Fund) | Modules 5, 8, 9 |
 | Bitcoin Educator / Technical Writer | All modules |
 | ETF Operations Associate (BlackRock, Fidelity, Ark) | Modules 5, 9 |
@@ -231,7 +231,7 @@ You've got this. 🚀
 ---
 
 **Prereqs and adjacencies (cross-course refs):**
-- 09-CompTIA-Security-Plus Module-02 (Cryptography & PKI) is the easiest warm-up to Module 2 here.
+- 09-CompTIA-Security-Plus Module-02 (Cryptography & PKI (Public Key Infrastructure)) is the easiest warm-up to Module 2 here.
 - 14-AI-Marketing-Foundations Module-09 (Compliance) reinforces the regulatory chapter posture of Module 8.
 - 11-ASCM-CPIM and 12-ASCM-CLTD modules on inventory and logistics give context for Module 10's CBDC and stablecoin sections.
 

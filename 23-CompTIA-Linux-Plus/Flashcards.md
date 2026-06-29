@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -287,7 +287,7 @@
 **A:** `systemctl get-default` (shows the persistent default) or `systemctl list-units --type=target --state=active` (shows what's running now).
 
 **Q:** Which systemd target replaces SysVinit runlevel 3 vs 5?
-**A:** `multi-user.target` = runlevel 3 (text/CLI multi-user). `graphical.target` = runlevel 5 (multi-user with GUI). `rescue.target` ≈ single-user/runlevel 1.
+**A:** `multi-user.target` = runlevel 3 (text/CLI (Command Line Interface) multi-user). `graphical.target` = runlevel 5 (multi-user with GUI). `rescue.target` ≈ single-user/runlevel 1.
 
 **Q:** What does `systemctl enable nginx` actually do?
 **A:** Creates a symlink from `/etc/systemd/system/<target>.wants/nginx.service` to the unit file, so the service starts at boot. Does NOT start it now, use `systemctl enable --now nginx` for both.
@@ -442,7 +442,7 @@
 
 ---
 
-## 🌐 SECTION 6: NETWORKING & SSH
+## 🌐 SECTION 6: NETWORKING & SSH (Secure Shell)
 
 **Q:** Modern replacement for `ifconfig`?
 **A:** `ip` from the iproute2 suite. `ip addr` (show IPs), `ip link` (interfaces), `ip route` (routing table), `ip neigh` (ARP table). `ifconfig` is deprecated and often not installed by default on modern distros.
@@ -468,8 +468,8 @@
 **Q:** firewalld: add port 8080/tcp permanently to the public zone?
 **A:** `firewall-cmd --zone=public --add-port=8080/tcp --permanent` then `firewall-cmd --reload`. Without `--permanent`, the change is runtime-only and lost on reload.
 
-**Q:** What protocol and port does DNS use?
-**A:** UDP 53 for normal queries (fast, fits in 512 bytes). TCP 53 for zone transfers and large responses (DNSSEC, oversized). Modern: DoT (TCP 853) and DoH (TCP 443).
+**Q:** What protocol and port does DNS (Domain Name System) use?
+**A:** UDP (User Datagram Protocol) 53 for normal queries (fast, fits in 512 bytes). TCP (Transmission Control Protocol) 53 for zone transfers and large responses (DNSSEC, oversized). Modern: DoT (TCP 853) and DoH (TCP 443).
 
 **Q:** Show current routing table on Linux?
 **A:** `ip route` (or `ip route show`). The default route is the line starting `default via`. Add a route: `ip route add 10.0.0.0/24 via 192.168.1.1`. Persist via NetworkManager or /etc/sysconfig/network-scripts/route-* on RHEL.
@@ -506,7 +506,7 @@
 **A:** Why: /dev/sd* names can renumber (USB inserted first boots earlier). UUIDs are stable. How: `lsblk -f` or `blkid` to find UUID; in /etc/fstab: `UUID=12345-abcde / ext4 defaults 0 1`.
 
 **Q:** What is /proc/cpuinfo and /proc/meminfo good for?
-**A:** Live kernel-exposed views of CPU and memory. cpuinfo: per-core model, flags (e.g. `vmx`/`svm` for virtualization, `aes` for AES-NI). meminfo: total/free/buffers/swap. `free -h` and `lscpu` are friendlier wrappers.
+**A:** Live kernel-exposed views of CPU and memory. cpuinfo: per-core model, flags (e.g. `vmx`/`svm` for virtualization, `aes` for AES (Advanced Encryption Standard)-NI). meminfo: total/free/buffers/swap. `free -h` and `lscpu` are friendlier wrappers.
 
 ---
 
@@ -565,7 +565,7 @@
 
 ## 📚 STUDY TIPS
 
-1. Run every command in this deck on a real Linux VM (a free $5 droplet, a Pi, WSL, or a VirtualBox VM). Reading alone doesn't stick.
+1. Run every command in this deck on a real Linux VM (Virtual Machine) (a free $5 droplet, a Pi, WSL, or a VirtualBox VM). Reading alone doesn't stick.
 2. When you "Try again" a card, do the command live, type it, see the output, then mark "Got it."
 3. Shuffle daily. Order memorization is fake mastery.
 4. After two full passes, switch to "Section filter" mode and drill weak sections.

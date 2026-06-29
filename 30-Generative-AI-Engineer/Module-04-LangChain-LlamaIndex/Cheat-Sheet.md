@@ -11,7 +11,7 @@
 | Data-first RAG with rich index types | **LlamaIndex** |
 | Event-driven async pipelines | **LlamaIndex Workflows** or **LangGraph** |
 | Quick prototype | **LlamaIndex** (fastest to first query) |
-| Custom hot path | **Direct provider SDK** |
+| Custom hot path | **Direct provider SDK (Software Development Kit)** |
 
 ---
 
@@ -110,7 +110,7 @@ Modern preferred: LangGraph's `MemorySaver` / `PostgresSaver`.
 ## 🔌 MCP (Model Context Protocol)
 
 - Anthropic, 2024-11. Cross-framework tool/resource/prompt standard.
-- Transports: stdio, HTTP, WebSocket.
+- Transports: stdio, HTTP (Hypertext Transfer Protocol), WebSocket.
 - LangChain & LlamaIndex both have MCP client integrations.
 - Write tool once → all frameworks consume.
 

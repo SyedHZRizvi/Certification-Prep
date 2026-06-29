@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI-Animation/Module-02-AE-Expressions-Scripts/Cheat-Sheet/
+permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-02-AE-Expressions-Scripts/Cheat-Sheet/
 title: "Module 2 Cheat Sheet: AE Expressions & Scripts"
 ---
 

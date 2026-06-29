@@ -18,7 +18,7 @@ title: ASCM CPIM Track
 
 ### 🎯 The promise
 
-The ASCM Certified in Planning and Inventory Management (CPIM) is the deepest, most numerically rigorous certification in supply chain, the one that tests whether you can actually run S&OP, MRP, MPS, capacity planning, and inventory math at a real manufacturing or distribution operation. It is the credential most-cited by hiring managers at Boeing, Lockheed, Caterpillar, Pfizer, Procter & Gamble, and any company that turns raw materials into finished goods. Pass CPIM and you are recognized as the planner who can defend a master schedule under cross-examination.
+The ASCM Certified in Planning and Inventory Management (CPIM) is the deepest, most numerically rigorous certification in supply chain, the one that tests whether you can actually run S&OP (Sales and Operations Planning), MRP (Material Requirements Planning), MPS, capacity planning, and inventory math at a real manufacturing or distribution operation. It is the credential most-cited by hiring managers at Boeing, Lockheed, Caterpillar, Pfizer, Procter & Gamble, and any company that turns raw materials into finished goods. Pass CPIM and you are recognized as the planner who can defend a master schedule under cross-examination.
 
 ### 💼 Career outcomes after passing
 
@@ -26,7 +26,7 @@ The ASCM Certified in Planning and Inventory Management (CPIM) is the deepest, m
 - **Demand Planner** ($80K–$115K), forecasting and S&OP demand consensus
 - **Materials Manager** ($90K–$130K), inventory strategy, supplier scheduling, plant materials policy
 - **Operations Manager** ($110K–$155K), plant-floor leadership; CPIM is increasingly preferred
-- **Supply / Inventory Planning Manager** ($105K–$145K), owning safety stock, EOQ, ABC, replenishment policy
+- **Supply / Inventory Planning Manager** ($105K–$145K), owning safety stock, EOQ (Economic Order Quantity), ABC, replenishment policy
 - **S&OP Manager** ($115K–$155K), running the integrated planning cycle (often laddering into CSCP for the end-to-end role)
 
 ASCM's own member salary data shows CPIM holders earning **a 15–22% premium** over non-certified planners in equivalent roles. CPIM pairs powerfully with **CSCP (course 10)** for the end-to-end supply-chain executive path and with **CLTD (course 12)** for distribution-side leadership.
@@ -69,11 +69,11 @@ By the end of this track, you'll be able to:
 | # | Module | Time | What You'll Master |
 |---|--------|------|--------------------|
 | 1 | [Manufacturing Strategy](./Module-01-Manufacturing-Strategy/Reading.md) | 3 hrs | MTS/MTO/ATO/ETO, order qualifiers vs winners, postponement |
-| 2 | [Demand Planning & Forecasting](./Module-02-Demand-Planning-Forecasting/Reading.md) | 4 hrs | Patterns, smoothing, regression, MAD/MAPE, CPFR |
-| 3 | [S&OP, Sales & Operations Planning](./Module-03-SOP-Sales-Operations-Planning/Reading.md) | 3.5 hrs | 5-step S&OP, IBP, aggregate planning (level/chase/hybrid) |
-| 4 | [Master Scheduling & MRP](./Module-04-Master-Production-Scheduling-MRP/Reading.md) | 4.5 hrs | MPS, time fences, ATP, MRP logic, lot-sizing, BOM levels |
+| 2 | [Demand Planning & Forecasting](./Module-02-Demand-Planning-Forecasting/Reading.md) | 4 hrs | Patterns, smoothing, regression, MAD/MAPE, CPFR (Collaborative Planning, Forecasting, and Replenishment) |
+| 3 | [S&OP, Sales & Operations Planning](./Module-03-SOP (Standard Operating Procedure)-Sales-Operations-Planning/Reading.md) | 3.5 hrs | 5-step S&OP, IBP, aggregate planning (level/chase/hybrid) |
+| 4 | [Master Scheduling & MRP](./Module-04-Master-Production-Scheduling-MRP/Reading.md) | 4.5 hrs | MPS, time fences, ATP, MRP logic, lot-sizing, BOM (Bill of Materials) levels |
 | 5 | [Capacity Planning](./Module-05-Capacity-Planning/Reading.md) | 3.5 hrs | Capacity hierarchy, bottlenecks, TOC, drum-buffer-rope |
-| 6 | [Inventory Management](./Module-06-Inventory-Management/Reading.md) | 4 hrs | EOQ, EPQ, ROP, safety stock, ABC/XYZ, cycle counting |
+| 6 | [Inventory Management](./Module-06-Inventory-Management/Reading.md) | 4 hrs | EOQ, EPQ, ROP (Reorder Point), safety stock, ABC/XYZ, cycle counting |
 | 7 | [Production Activity Control](./Module-07-Production-Activity-Control/Reading.md) | 3 hrs | Dispatching rules, lead-time elements, Gantt, sequencing |
 | 8 | [Quality, Lean & CI](./Module-08-Quality-Lean-CI/Reading.md) | 3.5 hrs | 7 wastes, kanban, takt, SMED, DMAIC, control charts, TPM |
 
@@ -177,7 +177,7 @@ Two additional resources sit at the course root:
 
 | File | What it's for |
 |------|---------------|
-| [**Capstone-Project.md**](./Capstone-Project.md) | A 6–8 week applied capstone in which you act as the newly hired Director of Production & Inventory Control at a $480M industrial-equipment manufacturer. Integrates every module of the course, S&OP design, MRP→DDMRP transition, capacity re-baseline, top-50 SKU kanban pilot, S&OE control tower, 12-month change-management roadmap. Self-graded against a 100-point rubric. |
-| [**Recommended-Readings.md**](./Recommended-Readings.md) | Curated reading list, canonical textbooks (Vollmann/Berry, Hill, Wallace, Goldratt's *The Goal*, Ohno's *Toyota Production System*), seminal HBR/Sloan papers (Lee-Padmanabhan-Whang on bullwhip, Skinner on manufacturing strategy, the HP postponement case), industry resources, and free academic courses (MIT MicroMasters SCM, Stanford OPS, Wharton OM). |
+| [**Capstone-Project.md**](./Capstone-Project.md) | A 6–8 week applied capstone in which you act as the newly hired Director of Production & Inventory Control at a $480M industrial-equipment manufacturer. Integrates every module of the course, S&OP design, MRP→DDMRP transition, capacity re-baseline, top-50 SKU (Stock Keeping Unit) kanban pilot, S&OE control tower, 12-month change-management roadmap. Self-graded against a 100-point rubric. |
+| [**Recommended-Readings.md**](./Recommended-Readings.md) | Curated reading list, canonical textbooks (Vollmann/Berry, Hill, Wallace, Goldratt's *The Goal*, Ohno's *Toyota Production System*), seminal HBR/Sloan papers (Lee-Padmanabhan-Whang on bullwhip, Skinner on manufacturing strategy, the HP postponement case), industry resources, and free academic courses (MIT MicroMasters SCM (Supply Chain Management), Stanford OPS, Wharton OM). |
 
 The capstone is what separates "passed the exam" from "could walk into a graduate-level case discussion and contribute." Strong students engage with the capstone for portfolio value even when the exam is the immediate goal.

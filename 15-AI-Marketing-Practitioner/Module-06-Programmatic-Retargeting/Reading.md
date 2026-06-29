@@ -39,7 +39,7 @@ Programmatic advertising is the automated buying and selling of ad inventory thr
 The infrastructure has 4 main players:
 
 ```
-ADVERTISER → DSP (Demand-Side Platform) → AD (Active Directory) EXCHANGE → SSP (Supply-Side Platform) → PUBLISHER
+ADVERTISER → DSP (Demand-Side Platform) → AD EXCHANGE → SSP (Supply-Side Platform) → PUBLISHER
 
 Example:
   You (advertiser) want to buy a banner on CNN.com.

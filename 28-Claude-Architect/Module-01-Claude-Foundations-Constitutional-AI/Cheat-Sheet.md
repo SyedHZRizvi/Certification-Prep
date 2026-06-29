@@ -11,7 +11,7 @@
 | **Founded** | September 2021 |
 | **HQ** | San Francisco, CA |
 | **Structure** | Public Benefit Corporation (PBC) |
-| **Founders** | Dario Amodei (CEO), Daniela Amodei (President), + 5 senior ex-OpenAI researchers |
+| **Founders** | Dario Amodei (CEO (Chief Executive Officer)), Daniela Amodei (President), + 5 senior ex-OpenAI researchers |
 | **Major investors** | Amazon ($4B+), Google, Spark Capital, Lightspeed, Menlo Ventures |
 | **Revenue (2026)** | $5B+ annualized run-rate (per public reporting) |
 | **Flagship product** | Claude (model family) |
@@ -30,7 +30,7 @@
    c. Model REVISES
    d. (prompt, revised response) → training data
 4. RLAIF: RL with AI preference labels
-   (vs RLHF which uses human preference labels)
+   (vs RLHF (Reinforcement Learning from Human Feedback) which uses human preference labels)
 ```
 
 **Key principles in the constitution:** Helpfulness · Harmlessness · Honesty · Anti-manipulation · UDHR-grounded values
@@ -59,7 +59,7 @@
 | High-volume background job | Haiku |
 | General chat / RAG / 1–3 tool agent | **Sonnet (default)** |
 | Hard reasoning / multi-file refactor / math | Opus |
-| Latency-sensitive UI (<300ms) | Haiku |
+| Latency-sensitive UI (User Interface) (<300ms) | Haiku |
 | Answer goes straight to production w/o review | Opus + evals |
 
 ---
@@ -78,7 +78,7 @@ Analogous to **BSL (BioSafety Levels)** in biology.
 
 ---
 
-## 🔬 Claude vs GPT vs Gemini, When to Pick Which
+## 🔬 Claude vs GPT (Generative Pre-trained Transformer) vs Gemini, When to Pick Which
 
 | Pick Claude when | Pick GPT when | Pick Gemini when |
 |------------------|---------------|------------------|
@@ -94,9 +94,9 @@ Analogous to **BSL (BioSafety Levels)** in biology.
 
 | Path | Strengths | Best for |
 |------|-----------|----------|
-| **Anthropic direct API** | Newest features land here first (computer use, MCP, latest models) | R&D, startups, teams that want bleeding-edge |
-| **AWS Bedrock** | Data stays in your AWS account; AWS billing; AWS IAM | Enterprises on AWS, regulated workloads |
-| **GCP Vertex AI** | Native GCP integration; GCP billing & IAM | Enterprises on GCP |
+| **Anthropic direct API (Application Programming Interface)** | Newest features land here first (computer use, MCP, latest models) | R&D, startups, teams that want bleeding-edge |
+| **AWS (Amazon Web Services) Bedrock** | Data stays in your AWS account; AWS billing; AWS IAM (Identity and Access Management) | Enterprises on AWS, regulated workloads |
+| **GCP (Google Cloud Platform) Vertex AI** | Native GCP integration; GCP billing & IAM | Enterprises on GCP |
 
 ---
 
@@ -174,7 +174,7 @@ Cover the answers and recite:
 2. Three Claude tiers and one use case each? ___
 3. What does ASL-3 commit Anthropic to? ___
 4. Three places you can run Claude in production? ___
-5. The CFO-defensible one-liner for picking Claude over GPT? ___
+5. The CFO (Chief Financial Officer)-defensible one-liner for picking Claude over GPT? ___
 
 If you can answer all 5 in under 90 seconds, you own this module. ✅
 

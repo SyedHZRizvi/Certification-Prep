@@ -118,7 +118,7 @@ Built in **Windows Configuration Designer**. Use for:
 | "Welcome to your new device" generic | Hash not registered or profile not assigned |
 | ESP timeout | App fail or timeout too short |
 | "Securing your device" hangs (self-deploy) | TPM 2.0 attestation failed |
-| 0x80180014 (hybrid) | Intune Connector for AD unhealthy |
+| 0x80180014 (hybrid) | Intune Connector for AD (Active Directory) unhealthy |
 | "Workplace join failed" | User unlicensed or excluded |
 | Win32 stuck "Installing" | Detection rule never returns true |
 

@@ -1,4 +1,4 @@
-# 📋 Module 3 Cheat Sheet: S&OP
+# 📋 Module 3 Cheat Sheet: S&OP (Sales and Operations Planning)
 
 > One page. Print it. The 5 steps are tested *every* exam.
 
@@ -12,7 +12,7 @@
 | 2 | **Demand Review** | Sales / Marketing | Unconstrained demand plan |
 | 3 | **Supply Review** | Operations | Capacity check, supply plan |
 | 4 | **Pre-S&OP / Reconciliation** | Cross-functional | Decision package |
-| 5 | **Executive S&OP** | CEO | Ratified plan |
+| 5 | **Executive S&OP** | CEO (Chief Executive Officer) | Ratified plan |
 
 🧠 **P-D-S-R-E** = Product, Demand, Supply, Reconcile, Execute
 
@@ -50,7 +50,7 @@ Resource Planning (RRP)       ← long-range, plants/shifts
         ↓
 Rough-Cut Capacity Plan (RCCP) ← supports MPS
         ↓
-Capacity Requirements Plan (CRP) ← supports MRP
+Capacity Requirements Plan (CRP) ← supports MRP (Material Requirements Planning)
         ↓
 Input / Output Control         ← supports PAC
 ```
@@ -62,7 +62,7 @@ Input / Output Control         ← supports PAC
 ```
 S&OP / IBP      Family   Month   12-24 mo
    ↓
-MPS             SKU      Week    6-18 wk
+MPS             SKU (Stock Keeping Unit)      Week    6-18 wk
    ↓
 MRP             Comp     Day/wk  1-8 wk
    ↓

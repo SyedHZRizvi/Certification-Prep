@@ -120,7 +120,7 @@ Cheaper than human review, surprisingly well-correlated.
 
 | Framework | Use when |
 |-----------|----------|
-| **Raw Anthropic SDK + 60 lines** | Most cases, maximum control |
+| **Raw Anthropic SDK (Software Development Kit) + 60 lines** | Most cases, maximum control |
 | **claude-agent-sdk** | When you want Anthropic-opinionated defaults (step caps, MCP, hooks) |
 | **LangChain** | Multi-vendor abstraction; mature RAG bits |
 | **LlamaIndex** | RAG-first systems |

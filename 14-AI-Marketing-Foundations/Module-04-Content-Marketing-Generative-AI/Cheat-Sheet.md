@@ -95,7 +95,7 @@ SPOKES:
 - [ ] Logical structure + scannable
 - [ ] SEO (title, meta, H1/H2/H3, internal links, schema)
 - [ ] Visual(s) added
-- [ ] Clear CTA
+- [ ] Clear CTA (Call to Action)
 - [ ] Compliance (no PII; AI disclosure if needed)
 
 ---

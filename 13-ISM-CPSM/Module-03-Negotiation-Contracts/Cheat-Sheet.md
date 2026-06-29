@@ -87,7 +87,7 @@ UCC Statute of Frauds: goods ≥ **$500** → must be in writing.
 
 ## 📋 Essential Contract Clauses
 
-SOW · Pricing/Payment · Delivery/Incoterms · Quality/Acceptance · Warranties · Indemnification · Limitation of Liability · Confidentiality/NDA · IP · Termination · Force Majeure · Dispute Resolution · SLA · Insurance · Change Control · Audit Rights · Code of Conduct
+SOW · Pricing/Payment · Delivery/Incoterms · Quality/Acceptance · Warranties · Indemnification · Limitation of Liability · Confidentiality/NDA (Non-Disclosure Agreement) · IP · Termination · Force Majeure · Dispute Resolution · SLA (Service Level Agreement) · Insurance · Change Control · Audit Rights · Code of Conduct
 
 ---
 

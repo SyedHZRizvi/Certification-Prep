@@ -9,7 +9,7 @@
 | Feature | Free | Basic | **Standard** | **Premium v3** | Isolated v2 |
 |---------|------|-------|--------------|----------------|-------------|
 | Custom domain | ❌ | ✅ | ✅ | ✅ | ✅ |
-| SSL/TLS binding | ❌ | ✅ | ✅ | ✅ | ✅ |
+| SSL (Secure Sockets Layer)/TLS (Transport Layer Security) binding | ❌ | ✅ | ✅ | ✅ | ✅ |
 | Auto-scale | ❌ | ❌ | ✅ | ✅ | ✅ |
 | **Deployment slots** | ❌ | ❌ | ✅ (5) | ✅ (20) | ✅ |
 | Daily backup | ❌ | ❌ | ✅ | ✅ | ✅ |
@@ -38,7 +38,7 @@
 ## 🧭 Compute Decision
 
 ```
-                    Need orchestration / K8s API?
+                    Need orchestration / K8s API (Application Programming Interface)?
                             │
               ┌─── YES ────►  AKS
               │
@@ -65,7 +65,7 @@
 
 | Layer | Notes |
 |-------|-------|
-| Control plane | Free (Standard tier) / paid (Uptime SLA tier) |
+| Control plane | Free (Standard tier) / paid (Uptime SLA (Service Level Agreement) tier) |
 | System node pool | Required, runs CoreDNS etc. |
 | User node pool | Your apps; can autoscale, Spot, Windows |
 | HPA | Scales pod replicas |
@@ -74,7 +74,7 @@
 Networking modes (default-ish → exotic):
 **Azure CNI Overlay** (modern default) → Azure CNI → CNI Powered by Cilium → Kubenet (legacy)
 
-Ingress: LB Service (L4) · **AGIC / App Gateway for Containers** (L7 + WAF) · NGINX · Istio
+Ingress: LB Service (L4) · **AGIC / App Gateway for Containers** (L7 + WAF (Web Application Firewall)) · NGINX · Istio
 
 Storage CSI: **AzureDisk (RWO)** · **AzureFile (RWX)** · Blob CSI
 

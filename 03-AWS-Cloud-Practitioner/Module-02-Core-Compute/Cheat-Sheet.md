@@ -8,8 +8,8 @@
 
 ```
 "Do I need a full OS?"
-   ├─ YES → EC2 (or Lightsail for simple)
-   ├─ "Just a container?" → ECS/EKS on Fargate
+   ├─ YES → EC2 (Elastic Compute Cloud) (or Lightsail for simple)
+   ├─ "Just a container?" → ECS (Elastic Container Service)/EKS (Elastic Kubernetes Service) on Fargate
    └─ "Just code on an event (<15 min)?" → Lambda
 ```
 

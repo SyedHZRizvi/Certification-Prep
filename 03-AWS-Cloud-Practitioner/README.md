@@ -24,7 +24,7 @@ The AWS Certified Cloud Practitioner (CLF-C02) is the credential that says you u
 
 - **Cloud Support Associate** ($65K–$95K), front-line AWS support; CLF-C02 is the explicit baseline
 - **Junior Cloud Engineer / DevOps** ($75K–$110K), first technical cloud role, especially with hands-on lab work
-- **Cloud Sales Engineer / Solutions Consultant** ($90K–$140K + commission), pre-sales role at AWS, AWS partners, or any SaaS vendor selling cloud-resident products
+- **Cloud Sales Engineer / Solutions Consultant** ($90K–$140K + commission), pre-sales role at AWS, AWS partners, or any SaaS (Software as a Service) vendor selling cloud-resident products
 - **Technical Account Manager / Customer Success Engineer** ($85K–$130K), managing cloud customer accounts; CLF-C02 is the entry credential
 - **Project / Program Manager (cloud projects)** ($95K–$135K), non-engineering PM with cloud literacy commands a premium
 
@@ -51,9 +51,9 @@ Begin with [Module 1: Cloud Fundamentals →](./Module-01-Cloud-Fundamentals/Rea
 
 By the end of this track, you'll be able to:
 
-- Explain core cloud concepts (regions, AZs, edge locations, IaaS/PaaS/SaaS)
-- Pick the right AWS service for a given workload (EC2 vs Lambda, S3 vs EBS vs EFS, RDS vs DynamoDB, etc.)
-- Apply the AWS Shared Responsibility Model and basic IAM hygiene
+- Explain core cloud concepts (regions, AZs, edge locations, IaaS (Infrastructure as a Service)/PaaS (Platform as a Service)/SaaS)
+- Pick the right AWS service for a given workload (EC2 (Elastic Compute Cloud) vs Lambda, S3 (Simple Storage Service) vs EBS vs EFS, RDS (Relational Database Service) vs DynamoDB, etc.)
+- Apply the AWS Shared Responsibility Model and basic IAM (Identity and Access Management) hygiene
 - Understand AWS pricing, billing tools, and support plans
 - Speak fluently about the Well-Architected Framework's 6 pillars and migration strategies (the 6 Rs)
 - Pass the CLF-C02 with confidence, no AWS work experience required
@@ -65,11 +65,11 @@ By the end of this track, you'll be able to:
 | # | Module | Time | What You'll Master |
 |---|--------|------|--------------------|
 | 1 | [Cloud Fundamentals](./Module-01-Cloud-Fundamentals/Reading.md) | 3 hrs | What "cloud" really is, AWS global infrastructure, deployment models |
-| 2 | [Core Compute](./Module-02-Core-Compute/Reading.md) | 3 hrs | EC2 families, Lambda, ECS/Fargate, Lightsail, Batch, Outposts |
+| 2 | [Core Compute](./Module-02-Core-Compute/Reading.md) | 3 hrs | EC2 families, Lambda, ECS (Elastic Container Service)/Fargate, Lightsail, Batch, Outposts |
 | 3 | [Core Storage](./Module-03-Core-Storage/Reading.md) | 3 hrs | S3 storage classes, EBS, EFS, FSx, Storage Gateway, Snow Family |
-| 4 | [Networking & CDN](./Module-04-Networking-CDN/Reading.md) | 3 hrs | VPC basics, Route 53, CloudFront, ELB, API Gateway, Direct Connect |
+| 4 | [Networking & CDN (Content Delivery Network)](./Module-04-Networking-CDN/Reading.md) | 3 hrs | VPC (Virtual Private Cloud) basics, Route 53, CloudFront, ELB, API (Application Programming Interface) Gateway, Direct Connect |
 | 5 | [Databases](./Module-05-Databases/Reading.md) | 3 hrs | RDS, Aurora, DynamoDB, ElastiCache, Redshift, DocumentDB, Neptune |
-| 6 | [Security, Identity & Compliance](./Module-06-Security-Identity-Compliance/Reading.md) | 3.5 hrs | IAM, KMS, Shield, GuardDuty, WAF, Macie, Inspector, Shared Responsibility |
+| 6 | [Security, Identity & Compliance](./Module-06-Security-Identity-Compliance/Reading.md) | 3.5 hrs | IAM, KMS, Shield, GuardDuty, WAF (Web Application Firewall), Macie, Inspector, Shared Responsibility |
 | 7 | [Management, Monitoring & Pricing](./Module-07-Management-Monitoring-Pricing/Reading.md) | 3 hrs | CloudWatch, CloudTrail, Config, Trusted Advisor, Cost Explorer, pricing models |
 | 8 | [Well-Architected & Migration](./Module-08-Well-Architected-Migration/Reading.md) | 2.5 hrs | 6 pillars, 6 Rs of migration, CAF, support plans, AWS Partner Network |
 
@@ -165,7 +165,7 @@ Week 4: Modules 7 & 8 → Practice Exam 2 → Final Mock → REAL EXAM
 You don't *need* hands-on for CLF-C02, but 4–6 hours of clicking around the AWS console makes the concepts stick.
 
 - Create a free [AWS Free Tier account](https://aws.amazon.com/free/) (12 months free for many services)
-- Launch a `t2.micro` EC2 instance, SSH in, terminate it
+- Launch a `t2.micro` EC2 instance, SSH (Secure Shell) in, terminate it
 - Create an S3 bucket, upload a file, make it public (then delete it!)
 - Create an IAM user, attach the `ReadOnlyAccess` policy, log in as them
 - Set a $5 Billing Alarm in CloudWatch

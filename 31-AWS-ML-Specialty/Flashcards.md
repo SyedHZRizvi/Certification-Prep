@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -293,7 +293,7 @@
 **A:** L1 Data · L2 Silicon · L3 Frameworks · L4 SageMaker · L5 Managed AI services · L6 Bedrock · L7 Amazon Q applications.
 
 **Q:** What does the Well-Architected ML Lens add to the 6 standard pillars?
-**A:** ML-specific guidance per pillar: Pipelines (Ops), IAM+KMS (Sec), Multi-AZ endpoints (Rel), Trainium/Inferentia (Perf), Spot+MME (Cost), Inferentia2+Graviton (Sustain).
+**A:** ML-specific guidance per pillar: Pipelines (Ops), IAM (Identity and Access Management)+KMS (Sec), Multi-AZ endpoints (Rel), Trainium/Inferentia (Perf), Spot+MME (Cost), Inferentia2+Graviton (Sustain).
 
 **Q:** When is accuracy the WRONG metric?
 **A:** On imbalanced classes (e.g. 99.9% negatives). Use PR-AUC, F1, recall, precision instead.
@@ -305,7 +305,7 @@
 
 ## 🛠️ SECTION 2: DATA ENGINEERING
 
-**Q:** Best S3 storage class for active ML training data?
+**Q:** Best S3 (Simple Storage Service) storage class for active ML training data?
 **A:** S3 Standard (or Intelligent-Tiering for unknown patterns).
 
 **Q:** Max S3 object size?
@@ -318,7 +318,7 @@
 **A:** KDS is low-level, ordered, replayable, sub-second; Firehose is managed delivery with min 60s buffer.
 
 **Q:** What does AWS Glue Crawler do?
-**A:** Scans S3/RDS/Redshift, infers schema and partitions, populates the Glue Data Catalogue.
+**A:** Scans S3/RDS (Relational Database Service)/Redshift, infers schema and partitions, populates the Glue Data Catalogue.
 
 **Q:** What is Athena partition projection?
 **A:** Lets Athena compute partitions from key naming without running a crawler.
@@ -327,7 +327,7 @@
 **A:** Apache Parquet (columnar + Snappy compression + splittable + schema in footer).
 
 **Q:** When is Pipe mode the right SageMaker input mode?
-**A:** Huge datasets where you want to stream RecordIO-protobuf via FIFO without staging to disk.
+**A:** Huge datasets where you want to stream RecordIO-protobuf via FIFO (First In, First Out) without staging to disk.
 
 **Q:** Which service replicates an on-prem DB to S3 continuously with CDC?
 **A:** AWS DMS targeting S3 (Parquet).
@@ -397,7 +397,7 @@
 **Q:** Top XGBoost hyperparameters to control overfitting?
 **A:** max_depth (down), lambda/alpha (up), eta (down) with more num_round + early_stopping, subsample/colsample_bytree (down).
 
-**Q:** SageMaker built-in for sparse high-dim CTR / ad ranking?
+**Q:** SageMaker built-in for sparse high-dim CTR (Click-Through Rate) / ad ranking?
 **A:** Factorization Machines.
 
 **Q:** Built-in for unsupervised tabular anomaly detection?
@@ -441,7 +441,7 @@
 **A:** SMDDP (data parallel) when model fits on one GPU. SMMP (model parallel) when model is too large for one GPU.
 
 **Q:** AWS chip for cost-optimal LLM inference?
-**A:** Inferentia2 (`inf2`) compiled via Neuron SDK.
+**A:** Inferentia2 (`inf2`) compiled via Neuron SDK (Software Development Kit).
 
 **Q:** AWS chip for cost-optimal training of large models?
 **A:** Trainium (trn1/trn2).
@@ -475,7 +475,7 @@
 
 ---
 
-## 🗣️ SECTION 6: MANAGED NLP & CV
+## 🗣️ SECTION 6: MANAGED NLP (Natural Language Processing) & CV
 
 **Q:** Detect sentiment, entities, key phrases, managed service?
 **A:** Amazon Comprehend.
@@ -493,7 +493,7 @@
 **A:** Amazon Lex (intents, utterances, slots, Lambda fulfillment).
 
 **Q:** Enterprise semantic search across 40+ source systems?
-**A:** Amazon Kendra (or Bedrock KB for RAG-LLM answer style).
+**A:** Amazon Kendra (or Bedrock KB for RAG (Retrieval-Augmented Generation)-LLM answer style).
 
 **Q:** Train CV with ~10-50 images per class, no SageMaker?
 **A:** Rekognition Custom Labels.
@@ -556,7 +556,7 @@
 **Q:** Cut Bedrock cost when long shared system prompt repeats?
 **A:** Bedrock Prompt Caching.
 
-**Q:** Run a foundation model inside your own VPC?
+**Q:** Run a foundation model inside your own VPC (Virtual Private Cloud)?
 **A:** SageMaker JumpStart in a VPC OR Bedrock with VPC endpoints (PrivateLink).
 
 **Q:** Enterprise chat over Confluence + SharePoint + ServiceNow?
@@ -674,7 +674,7 @@
 **A:** Custom IAM execution role with `s3:GetObject` on `bucket/prefix/*` + bucket policy as defence in depth.
 
 **Q:** Block ALL outbound network from training container?
-**A:** `enable_network_isolation=True` + private subnets with no NAT (use VPC endpoints).
+**A:** `enable_network_isolation=True` + private subnets with no NAT (Network Address Translation) (use VPC endpoints).
 
 **Q:** Encrypt S3 with audit log per request?
 **A:** SSE-KMS with customer-managed KMS key (CMK).
@@ -686,7 +686,7 @@
 **A:** Gateway endpoints for S3 and DynamoDB.
 
 **Q:** Paid VPC endpoints (per ENI hour + GB)?
-**A:** Interface (PrivateLink) endpoints for SageMaker API/Runtime, ECR API/DKR, KMS, STS, CloudWatch, Bedrock, etc.
+**A:** Interface (PrivateLink) endpoints for SageMaker API (Application Programming Interface)/Runtime, ECR API/DKR, KMS, STS, CloudWatch, Bedrock, etc.
 
 **Q:** Expose SageMaker endpoint to on-prem only (no internet)?
 **A:** PrivateLink Interface VPC Endpoint + Direct Connect.

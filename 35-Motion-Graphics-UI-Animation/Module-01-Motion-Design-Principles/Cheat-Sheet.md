@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI-Animation/Module-01-Motion-Design-Principles/Cheat-Sheet/
+permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-01-Motion-Design-Principles/Cheat-Sheet/
 title: "Module 1 Cheat Sheet: Motion Design Principles"
 ---
 

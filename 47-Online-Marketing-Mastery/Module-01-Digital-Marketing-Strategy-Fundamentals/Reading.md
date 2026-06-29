@@ -349,8 +349,8 @@ Funnel:  TOFU (Awareness) → MOFU (Consideration) → BOFU (Conversion) → Ret
 |---|---|---|---|
 | GDPR | EU + UK | Opt-IN | Explicit consent for email; proper cookie banners |
 | CCPA/CPRA | California | Opt-OUT | "Do Not Sell My Data" link required |
-| CASL | Canada | Opt-IN | Express or implied consent; must identify sender |
-| CAN-SPAM | United States | Opt-OUT | Unsubscribe link required; no deceptive subject lines |
+| CASL (Canada's Anti-Spam Legislation) | Canada | Opt-IN | Express or implied consent; must identify sender |
+| CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act) | United States | Opt-OUT | Unsubscribe link required; no deceptive subject lines |
 
 ---
 

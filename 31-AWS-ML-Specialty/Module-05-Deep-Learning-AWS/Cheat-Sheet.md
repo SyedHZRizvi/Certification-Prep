@@ -44,7 +44,7 @@ Frontier LLMs → SMMP + SMDDP hybrid
 | Component | Why |
 |-----------|-----|
 | **EFA** | HPC-grade networking for fast all-reduce; on p4d/p5/trn |
-| **FSx for Lustre + S3 lazy-load** | Sub-ms file access; multi-node training data |
+| **FSx for Lustre + S3 (Simple Storage Service) lazy-load** | Sub-ms file access; multi-node training data |
 | **S3 Pipe mode** | Stream RecordIO-protobuf without disk staging |
 | **FastFile mode** | S3 mount streaming |
 
@@ -65,7 +65,7 @@ Frontier LLMs → SMMP + SMDDP hybrid
 
 ---
 
-## 🐍 SDK Script-Mode Skeleton
+## 🐍 SDK (Software Development Kit) Script-Mode Skeleton
 
 ```python
 estimator = PyTorch(
@@ -152,4 +152,4 @@ estimator.fit({"train":"s3://.../train/"})
 5. Multi-node networking → ___ ?
 6. Cut labelling cost → ___ ?
 
-➡️ [Module 6: NLP & CV Workflows](../Module-06-NLP-Computer-Vision/Reading.md)
+➡️ [Module 6: NLP (Natural Language Processing) & CV Workflows](../Module-06-NLP-Computer-Vision/Reading.md)

@@ -23,9 +23,9 @@ CompTIA Linux+ (XK0-005) is the credential that takes you from someone who *runs
 ### 💼 Career outcomes after passing
 
 - **Linux Systems Administrator** ($80K–$115K), operating Linux fleets in production
-- **DevOps Engineer** ($105K–$145K), Linux fluency is the foundational requirement; layer on cloud + CI/CD
+- **DevOps Engineer** ($105K–$145K), Linux fluency is the foundational requirement; layer on cloud + CI/CD (Continuous Integration/Continuous Deployment)
 - **Site Reliability Engineer (SRE)** ($120K–$170K), Linux deeply, plus observability + automation
-- **Cloud Engineer (Linux focus)** ($110K–$155K), AWS / Azure / GCP plus production Linux skill
+- **Cloud Engineer (Linux focus)** ($110K–$155K), AWS (Amazon Web Services) / Azure / GCP (Google Cloud Platform) plus production Linux skill
 - **Cybersecurity Engineer (Linux specialization)** ($110K–$155K), incident response, forensics, threat hunting on Linux fleets
 - **Kubernetes / Container Engineer** ($125K–$175K), Linux+ floor, layered with CKA / CKAD certs
 - **Open-Source Software Engineer** ($120K–$180K), at Red Hat, SUSE, Canonical, the Linux Foundation member companies
@@ -37,13 +37,13 @@ Linux+ pairs cleanly with **Network+ (course 22)** and **Security+ (course 09)**
 - **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
 - **Story-driven lessons (not flashcard punishment)**, every command introduced through a real ops scenario (a load-balancer fix at 3am, a kernel-panic forensic walkthrough, a systemd unit-file rescue)
 - **Original questions only**, every quiz and practice exam written from CompTIA's published XK0-005 exam objectives; no copyrighted dumps
-- **Real-world case studies**, the Heartbleed disclosure timeline, the Dirty COW kernel exploit lifecycle, a real outage post-mortem from a SaaS company, systemd vs sysvinit migration battle stories
+- **Real-world case studies**, the Heartbleed disclosure timeline, the Dirty COW kernel exploit lifecycle, a real outage post-mortem from a SaaS (Software as a Service) company, systemd vs sysvinit migration battle stories
 - **One author, one voice**, coherent vocabulary across all 8 modules
 - **Updated for the XK0-005 blueprint**, including systemd-everything, modern containers (Docker, Podman), nftables (not iptables), modern Bash, and the current security-control set (SELinux / AppArmor)
 
 ### 🚀 Ready to start?
 
-Six to eight weeks. Spin up an Ubuntu and a RHEL-derivative VM (Rocky or Alma) on day one. Live in the terminal. Pair this with the official LFCS or LPIC-1 practice questions for additional repetitions.
+Six to eight weeks. Spin up an Ubuntu and a RHEL-derivative VM (Virtual Machine) (Rocky or Alma) on day one. Live in the terminal. Pair this with the official LFCS or LPIC-1 practice questions for additional repetitions.
 
 Begin with [Module 1: Boot & systemd →](./Module-01-Boot-Systemd/Reading.md)
 
@@ -73,7 +73,7 @@ By the end of this track, you'll be able to:
 | 3 | [Package Management (apt/dnf/rpm)](./Module-03-Package-Management/Reading.md) | 2.5 hrs | apt, dnf, rpm, dpkg, repos, snap, flatpak, source builds |
 | 4 | [Bash Scripting & Automation](./Module-04-Bash-Scripting/Reading.md) | 3.5 hrs | Variables, loops, sed/awk/grep, cron, at, systemd timers |
 | 5 | [Users, Groups & sudo](./Module-05-Users-Groups/Reading.md) | 2.5 hrs | /etc/passwd, useradd, sudoers syntax, PAM, password aging |
-| 6 | [Networking, SSH & Firewalls](./Module-06-Networking-SSH/Reading.md) | 3 hrs | `ip`/`ss`, NetworkManager, sshd, iptables vs nftables, firewalld |
+| 6 | [Networking, SSH (Secure Shell) & Firewalls](./Module-06-Networking-SSH/Reading.md) | 3 hrs | `ip`/`ss`, NetworkManager, sshd, iptables vs nftables, firewalld |
 | 7 | [Kernel Modules, Devices, LVM](./Module-07-Kernel-Modules/Reading.md) | 2.5 hrs | uname, modprobe, dmesg, /proc, udev, lsblk, LVM PV/VG/LV |
 | 8 | [Linux Security & Hardening](./Module-08-Security/Reading.md) | 3 hrs | SELinux/AppArmor, LUKS, GPG, fail2ban, sysctl, auditd, SSH hardening |
 

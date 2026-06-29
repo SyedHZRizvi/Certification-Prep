@@ -57,10 +57,10 @@ poller = client.begin_analyze_document(
 |---|---|
 | **Simple** | Keyword + boolean |
 | **Full Lucene** | Fielded, fuzzy, range |
-| **Semantic** | LLM-style re-rank → captions + answers (S1+) |
+| **Semantic** | LLM (Large Language Model)-style re-rank → captions + answers (S1+) |
 | **Vector** | Embedding similarity (HNSW, cosine default) |
 | **Hybrid** | Keyword + vector via Reciprocal Rank Fusion (RRF) |
-| **Hybrid + Semantic** ⭐ | Microsoft's RAG gold standard |
+| **Hybrid + Semantic** ⭐ | Microsoft's RAG (Retrieval-Augmented Generation) gold standard |
 
 ---
 
@@ -86,7 +86,7 @@ poller = client.begin_analyze_document(
 
 ---
 
-## 💰 SKU Reminders
+## 💰 SKU (Stock Keeping Unit) Reminders
 
 | SKU | Semantic | Notes |
 |---|---|---|
@@ -111,7 +111,7 @@ poller = client.begin_analyze_document(
 
 - ❌ "Custom Template for variable layouts"
 - ❌ "Semantic ranker on Free tier"
-- ❌ "Read API for invoice field extraction"
+- ❌ "Read API (Application Programming Interface) for invoice field extraction"
 - ❌ "Vector search alone for RAG"
 - ❌ "Indexer pushes from your app"
 
@@ -158,7 +158,7 @@ If you can answer all 5 in 60 seconds, you own Module 5. ✅
 | Searchable text | `searchable: true` + `analyzer` |
 | Numeric range / equality | `filterable: true` |
 | Order results | `sortable: true` |
-| Facet UI ("brand:Apple (32)") | `facetable: true` |
+| Facet UI (User Interface) ("brand:Apple (32)") | `facetable: true` |
 | Unique ID | `key: true` |
 | Vector | `Collection(Edm.Single)` + `dimensions` + `vectorSearchProfile` |
 
@@ -166,11 +166,11 @@ If you can answer all 5 in 60 seconds, you own Module 5. ✅
 
 | Constraint | Lever |
 |---|---|
-| PHI / GDPR | Private Endpoints + disable public network |
+| PHI / GDPR (General Data Protection Regulation) | Private Endpoints + disable public network |
 | Customer KMS | CMK via Key Vault |
 | Data residency | Region pinning (S0+); EU Data Zone for Azure OpenAI |
 | Audit | Diagnostic settings → Log Analytics |
-| Per-document RBAC | Security trimming (filter by user claims) |
+| Per-document RBAC (Role-Based Access Control) | Security trimming (filter by user claims) |
 
 ## 📖 Citations
 

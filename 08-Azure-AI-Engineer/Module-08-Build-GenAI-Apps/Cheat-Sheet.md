@@ -26,7 +26,7 @@ Hub  (shared infra, security, connections)
 
 | | MaaS | MaaP |
 |---|---|---|
-| Compute | Serverless | Managed VM/cluster you control |
+| Compute | Serverless | Managed VM (Virtual Machine)/cluster you control |
 | Billing | Per-token | Per compute-hour |
 | Use for | Most apps | Custom hardware needs |
 
@@ -38,7 +38,7 @@ Catalog includes: Azure OpenAI, Llama, Mistral, Cohere, NVIDIA, Phi, Hugging Fac
 
 | Node | Use |
 |---|---|
-| LLM | Call a connected model |
+| LLM (Large Language Model) | Call a connected model |
 | Prompt | Jinja2 template → string |
 | Python | Pre/post-processing logic |
 | Lookup / Retrieval | Query AI Search |
@@ -71,7 +71,7 @@ Catalog includes: Azure OpenAI, Llama, Mistral, Cohere, NVIDIA, Phi, Hugging Fac
 
 ---
 
-## 🧩 RAG Quality Knobs
+## 🧩 RAG (Retrieval-Augmented Generation) Quality Knobs
 
 ```
 Chunk size 200–800 tokens · Overlap 10–20%
@@ -197,7 +197,7 @@ If you can answer all 5 in 60 seconds, you own Module 8. ✅
 | Citation provenance | On Your Data + `in_scope:true` |
 | Content safety per RAI | Custom content filter config |
 | Security review | Managed identity + Private Endpoint + CMK |
-| Cost forecast | Deployment SKU mix (Standard / PTU / Global Batch) + token forecast |
+| Cost forecast | Deployment SKU (Stock Keeping Unit) mix (Standard / PTU / Global Batch) + token forecast |
 | Observability dashboard | Foundry monitoring → Application Insights |
 | Go/no-go gate | Foundry Evaluation thresholds before each upgrade |
 

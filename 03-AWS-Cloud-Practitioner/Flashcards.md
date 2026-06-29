@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -284,9 +284,9 @@
 **A:** A Region is a geographic area (e.g., us-east-1). An AZ is one or more isolated data centers within a Region. A Region has 3+ AZs.
 
 **Q:** What's an AWS Edge Location used for?
-**A:** Caching content close to end-users for CloudFront and Route 53 (400+ globally). Edge Locations do NOT run EC2.
+**A:** Caching content close to end-users for CloudFront and Route 53 (400+ globally). Edge Locations do NOT run EC2 (Elastic Compute Cloud).
 
-**Q:** Compare IaaS, PaaS, and SaaS.
+**Q:** Compare IaaS (Infrastructure as a Service), PaaS (Platform as a Service), and SaaS (Software as a Service).
 **A:** IaaS = you control OS/apps/data (e.g., EC2). PaaS = AWS controls everything below the runtime; you just deploy code (e.g., Elastic Beanstalk). SaaS = AWS provides the whole app (e.g., Amazon WorkMail).
 
 **Q:** What's the difference between public, private, and hybrid cloud?
@@ -338,7 +338,7 @@
 **Q:** Does a stopped EC2 instance still incur charges?
 **A:** Yes, for attached EBS volumes. Compute charges stop. Terminate to fully stop all charges.
 
-**Q:** What's the difference between ECS, EKS, and Fargate?
+**Q:** What's the difference between ECS (Elastic Container Service), EKS (Elastic Kubernetes Service), and Fargate?
 **A:** ECS = AWS-native container orchestrator. EKS = managed Kubernetes. Fargate = serverless launch type for ECS/EKS (no EC2 hosts to manage).
 
 **Q:** What is Amazon ECR?
@@ -361,7 +361,7 @@
 ## 💾 SECTION 3: STORAGE
 
 **Q:** Name the 3 storage paradigms and an AWS service for each.
-**A:** Block (EBS), File (EFS, FSx), Object (S3, Glacier).
+**A:** Block (EBS), File (EFS, FSx), Object (S3 (Simple Storage Service), Glacier).
 
 **Q:** What's the maximum size of a single S3 object?
 **A:** 5 TB. Single PUT max is 5 GB; above that requires multipart upload.
@@ -401,7 +401,7 @@
 
 ---
 
-## 🌐 SECTION 4: NETWORKING & CDN
+## 🌐 SECTION 4: NETWORKING & CDN (Content Delivery Network)
 
 **Q:** Compare Security Groups vs NACLs.
 **A:** SG = stateful, instance-level, ALLOW-only. NACL = stateless, subnet-level, ALLOW + DENY.
@@ -409,28 +409,28 @@
 **Q:** How do you block one specific IP from reaching all instances in a subnet?
 **A:** Use a NACL DENY rule (Security Groups can't deny).
 
-**Q:** What's the purpose of a NAT Gateway?
-**A:** Allows instances in a private subnet to make outbound internet calls (for updates, API calls) without being reachable from the internet. NAT Gateway is per-AZ and costs $$.
+**Q:** What's the purpose of a NAT (Network Address Translation) Gateway?
+**A:** Allows instances in a private subnet to make outbound internet calls (for updates, API (Application Programming Interface) calls) without being reachable from the internet. NAT Gateway is per-AZ and costs $$.
 
 **Q:** Name 5 of the 7 Route 53 routing policies.
 **A:** Simple, Weighted, Latency-based, Failover, Geolocation, Geoproximity, Multivalue Answer.
 
-**Q:** Which Route 53 routing policy is best for GDPR data sovereignty?
+**Q:** Which Route 53 routing policy is best for GDPR (General Data Protection Regulation) data sovereignty?
 **A:** Geolocation routing.
 
 **Q:** Which Route 53 routing policy is best for active-passive disaster recovery?
 **A:** Failover routing.
 
 **Q:** Is AWS Direct Connect encrypted by default?
-**A:** No. Direct Connect is private dedicated fiber but not encrypted at Layer 3. Pair with a VPN over it for encryption.
+**A:** No. Direct Connect is private dedicated fiber but not encrypted at Layer 3. Pair with a VPN (Virtual Private Network) over it for encryption.
 
 **Q:** Compare ALB, NLB, and GWLB.
-**A:** ALB = Layer 7 HTTP (path/host routing). NLB = Layer 4 TCP/UDP (ultra-low latency, static IPs). GWLB = Layer 3 for inserting 3rd-party firewalls/IDS.
+**A:** ALB = Layer 7 HTTP (Hypertext Transfer Protocol) (path/host routing). NLB = Layer 4 TCP (Transmission Control Protocol)/UDP (User Datagram Protocol) (ultra-low latency, static IPs). GWLB = Layer 3 for inserting 3rd-party firewalls/IDS.
 
 **Q:** What's the difference between CloudFront and Global Accelerator?
 **A:** CloudFront caches HTTP content at the edge. Global Accelerator gives you 2 static anycast IPs and routes any TCP/UDP traffic over the AWS backbone.
 
-**Q:** What is a VPC Gateway Endpoint used for?
+**Q:** What is a VPC (Virtual Private Cloud) Gateway Endpoint used for?
 **A:** Private access to S3 and DynamoDB from within a VPC, no internet traversal. Free; uses route tables.
 
 **Q:** What is AWS PrivateLink (Interface Endpoint)?
@@ -446,7 +446,7 @@
 
 ## 🗄️ SECTION 5: DATABASES
 
-**Q:** Compare RDS Multi-AZ and Read Replicas.
+**Q:** Compare RDS (Relational Database Service) Multi-AZ and Read Replicas.
 **A:** Multi-AZ = synchronous standby in another AZ for HA + auto-failover (not for reads). Read Replicas = asynchronous copies you can read from to scale reads.
 
 **Q:** What's special about Amazon Aurora's storage?
@@ -477,7 +477,7 @@
 **A:** Fully managed graph database for relationship-heavy queries (Gremlin, SPARQL, openCypher).
 
 **Q:** What is Amazon Athena?
-**A:** Serverless SQL query engine that runs queries directly over data in S3 (no loading required). Pay per query.
+**A:** Serverless SQL (Structured Query Language) query engine that runs queries directly over data in S3 (no loading required). Pay per query.
 
 **Q:** What's the role of AWS DMS + SCT?
 **A:** DMS migrates databases with continuous replication. SCT converts schemas between heterogeneous engines (e.g., Oracle → Aurora PostgreSQL).
@@ -490,7 +490,7 @@
 
 ---
 
-## 🔐 SECTION 6: SECURITY, IAM & COMPLIANCE
+## 🔐 SECTION 6: SECURITY, IAM (Identity and Access Management) & COMPLIANCE
 
 **Q:** State the AWS Shared Responsibility Model in one sentence.
 **A:** AWS is responsible for security OF the cloud (data centers, hardware, virtualization). The customer is responsible for security IN the cloud (data, IAM, OS patches on IaaS, configuration).
@@ -511,7 +511,7 @@
 **A:** Explicit Deny always wins over any Allow.
 
 **Q:** Should you use the root user for daily admin tasks?
-**A:** No, protect root with MFA and use it only for a small set of account-level tasks (e.g., closing the account, billing). Use IAM Admin users / Identity Center for daily work.
+**A:** No, protect root with MFA (Multi-Factor Authentication) and use it only for a small set of account-level tasks (e.g., closing the account, billing). Use IAM Admin users / Identity Center for daily work.
 
 **Q:** What does AWS Organizations + SCPs do?
 **A:** Manages multiple AWS accounts as one org, with consolidated billing, OUs, and Service Control Policies as guardrails on what accounts/OUs are ALLOWED to do.
@@ -523,16 +523,16 @@
 **A:** Automatic secret rotation (e.g., RDS DB passwords). Parameter Store has a free tier but no auto-rotation.
 
 **Q:** What does AWS Certificate Manager (ACM) provide?
-**A:** Free public TLS/SSL certificates for use with AWS-integrated services (ELB, CloudFront, API Gateway).
+**A:** Free public TLS (Transport Layer Security)/SSL (Secure Sockets Layer) certificates for use with AWS-integrated services (ELB, CloudFront, API Gateway).
 
-**Q:** Compare AWS WAF and AWS Shield.
-**A:** WAF = HTTP-layer filtering (SQLi, XSS, geo, rate-limit). Shield = DDoS protection (Standard free / Advanced paid).
+**Q:** Compare AWS WAF (Web Application Firewall) and AWS Shield.
+**A:** WAF = HTTP-layer filtering (SQLi, XSS, geo, rate-limit). Shield = DDoS (Distributed Denial of Service) protection (Standard free / Advanced paid).
 
 **Q:** What does AWS Shield Advanced offer beyond Shield Standard?
 **A:** 24/7 access to the DDoS Response Team (DRT), enhanced attack diagnostics, and cost protection (refunds for scaling/data-transfer charges incurred during attacks). ~$3,000/month.
 
 **Q:** What does GuardDuty do?
-**A:** Intelligent threat detection, analyzes CloudTrail, VPC Flow Logs, DNS logs, and EKS audit logs for anomalies (e.g., crypto-mining, port scans).
+**A:** Intelligent threat detection, analyzes CloudTrail, VPC Flow Logs, DNS (Domain Name System) logs, and EKS audit logs for anomalies (e.g., crypto-mining, port scans).
 
 **Q:** What does Amazon Macie do?
 **A:** Discovers and classifies sensitive data (PII, credit cards, SSNs) inside S3 buckets using machine learning.
@@ -540,7 +540,7 @@
 **Q:** What does Amazon Inspector do?
 **A:** Continuously scans EC2 instances, ECR container images, and Lambda functions for software vulnerabilities (CVEs) and unintended network exposure.
 
-**Q:** Where do you download AWS compliance reports like SOC 2, ISO 27001, PCI DSS?
+**Q:** Where do you download AWS compliance reports like SOC (Security Operations Center) 2, ISO 27001, PCI DSS?
 **A:** AWS Artifact (self-service portal, free).
 
 **Q:** What is AWS Security Hub?
@@ -550,7 +550,7 @@
 **A:** A tool that uses ML and graph analytics to help you investigate the root cause of security events flagged by GuardDuty.
 
 **Q:** What is AWS IAM Identity Center?
-**A:** Federated single sign-on across multiple AWS accounts and 3rd-party SaaS apps (formerly AWS SSO). Replaces creating individual IAM users.
+**A:** Federated single sign-on across multiple AWS accounts and 3rd-party SaaS apps (formerly AWS SSO (Single Sign-On)). Replaces creating individual IAM users.
 
 **Q:** Encryption in transit vs at rest?
 **A:** In transit = encrypted on the wire (TLS/SSL). At rest = encrypted on disk (KMS, SSE-S3, SSE-KMS).
@@ -563,7 +563,7 @@
 **A:** CloudWatch = metrics + logs + alarms. CloudTrail = audit log of every AWS API call. Config = tracks resource configurations over time and evaluates them against compliance rules.
 
 **Q:** What is AWS Systems Manager Session Manager?
-**A:** Browser-based shell access to EC2 instances without SSH keys, bastion hosts, or open port 22. Auditable via CloudTrail.
+**A:** Browser-based shell access to EC2 instances without SSH (Secure Shell) keys, bastion hosts, or open port 22. Auditable via CloudTrail.
 
 **Q:** Name the 5 categories that AWS Trusted Advisor checks.
 **A:** Cost Optimization, Performance, Security, Fault Tolerance, Service Limits.
@@ -621,13 +621,13 @@
 **A:** Rehost, Replatform, Repurchase, Refactor, Retire, Retain.
 
 **Q:** What's a Rehost migration?
-**A:** Lift-and-shift, move a VM to EC2 with no code changes. Lowest effort.
+**A:** Lift-and-shift, move a VM (Virtual Machine) to EC2 with no code changes. Lowest effort.
 
 **Q:** What's a Replatform migration?
 **A:** Lift, tinker, and shift, make minor cloud optimizations (e.g., move a self-managed MySQL on EC2 to Amazon RDS Aurora).
 
 **Q:** What's a Repurchase migration?
-**A:** Switch to a different product (e.g., on-prem CRM → Salesforce SaaS).
+**A:** Switch to a different product (e.g., on-prem CRM (Customer Relationship Management) → Salesforce SaaS).
 
 **Q:** What's a Refactor migration?
 **A:** Re-architect using cloud-native services (e.g., monolith → Lambda + DynamoDB + API Gateway). Highest effort, highest value.

@@ -1,4 +1,4 @@
-# 📋 Module 3 Cheat Sheet: Product Catalog & PIM
+# 📋 Module 3 Cheat Sheet: Product Catalog & PIM (Product Information Management)
 
 > Print and tape to your monitor. PIM hygiene = the foundation of every other discipline.
 
@@ -8,7 +8,7 @@
 
 ```
 PIM   → Product Information Management (master record)
-ERP   → Finance + accounting
+ERP (Enterprise Resource Planning)   → Finance + accounting
 PLM   → Product Lifecycle (design → manufacture)
 DAM   → Digital Assets (images, video)
 CMS   → Marketing content
@@ -23,7 +23,7 @@ PIM is the GLUE for customer-facing channels.
 | Vendor | Pricing | Best for |
 |--------|---------|----------|
 | Akeneo Community | Free (GPL) | Startups, eval |
-| Akeneo Cloud | $50K-$200K/yr | Mid-market DTC |
+| Akeneo Cloud | $50K-$200K/yr | Mid-market DTC (Direct-to-Consumer) |
 | Salsify | $80K-$400K/yr | Brand manufacturers |
 | Pimcore | Free OSS + commercial | Custom builds |
 | Plytix | $15K-$80K/yr | SMB fast launch |
@@ -101,11 +101,11 @@ CULTURAL        → Image alternatives, color symbolism
 
 | Strategy | Catalog Implication |
 |----------|---------------------|
-| MSRP | One price per SKU |
+| MSRP | One price per SKU (Stock Keeping Unit) |
 | Channel-specific | Different per channel |
-| MAP enforcement | Floor for resellers |
+| MAP (Minimum Advertised Price) enforcement | Floor for resellers |
 | Dynamic | Demand/time/segment |
-| B2B price lists | Per-customer |
+| B2B (Business-to-Business) price lists | Per-customer |
 | Geo-pricing | Per-region |
 
 ---
@@ -137,7 +137,7 @@ PDP LCP                   → < 2.5s
 | Auto-translate | DeepL Pro, Smartling AI |
 | Auto-categorize | Algolia, Salsify Cat-AI |
 | Image quality | Bynder Smart Crop |
-| Storefront LLM | Shopify Sidekick |
+| Storefront LLM (Large Language Model) | Shopify Sidekick |
 
 🚨 **EU AI Act 2024:** AI-generated product CLAIMS require transparency.
 

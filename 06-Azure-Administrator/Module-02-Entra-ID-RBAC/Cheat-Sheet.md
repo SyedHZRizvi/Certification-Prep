@@ -1,4 +1,4 @@
-# 📋 Module 2 Cheat Sheet: Entra ID & RBAC
+# 📋 Module 2 Cheat Sheet: Entra ID & RBAC (Role-Based Access Control)
 
 > One page. Print it. Tape it to your monitor. Review before the exam.
 
@@ -8,9 +8,9 @@
 
 | Tier | Headline features |
 |------|-------------------|
-| **Free** | Users, groups, B2B, **Security defaults** |
+| **Free** | Users, groups, B2B (Business-to-Business), **Security defaults** |
 | **P1** | **Conditional Access**, **dynamic groups**, self-service password reset, group-based licensing |
-| **P2** | **Identity Protection** (risk policies), **PIM**, access reviews, entitlement mgmt |
+| **P2** | **Identity Protection** (risk policies), **PIM (Product Information Management)**, access reviews, entitlement mgmt |
 
 🧠 **C-A → P1, Risk/PIM → P2**
 
@@ -31,7 +31,7 @@ Dynamic groups need **P1**.
 
 ```
 SIGNALS                  →   DECISION              →   CONTROLS
-(user, app, device,          allow / block /          MFA, compliant device,
+(user, app, device,          allow / block /          MFA (Multi-Factor Authentication), compliant device,
  location, risk,             require controls)        Hybrid join, app protection,
  client app type)                                     terms of use
 ```
@@ -66,7 +66,7 @@ SMS / Voice / Email OTP   <   Authenticator push (with number matching)   <   FI
 
 | Plane | Examples |
 |-------|----------|
-| **Control** | Storage Account Contributor, VM Contributor, Owner |
+| **Control** | Storage Account Contributor, VM (Virtual Machine) Contributor, Owner |
 | **Data** | Storage Blob Data Reader/Contributor/Owner; Key Vault Secrets User |
 
 🔥 A Contributor on a storage account **cannot** read blobs without a data role.
@@ -88,12 +88,12 @@ SMS / Voice / Email OTP   <   Authenticator push (with number matching)   <   FI
 |------|---------|
 | **System-assigned MI** | Workload tied to one Azure resource |
 | **User-assigned MI** | Shared across resources or surviving resource deletion |
-| **Service principal** | External CI/CD or non-Azure workload |
+| **Service principal** | External CI/CD (Continuous Integration/Continuous Deployment) or non-Azure workload |
 | **Hard-coded secret** | ❌ Never |
 
 ---
 
-## 🤝 B2B vs External ID (B2C)
+## 🤝 B2B vs External ID (B2C (Business-to-Consumer))
 
 | | B2B | External ID (B2C) |
 |---|-----|--------------------|
@@ -140,7 +140,7 @@ Usually **wrong**:
 |------|---------|------|
 | MFA + sign-in policies | Conditional Access | P1 |
 | Risk-based "if leaked credentials → block" | Identity Protection | P2 |
-| JIT role activation with approval | PIM | P2 |
+| JIT (Just-In-Time) role activation with approval | PIM | P2 |
 | "Auto-add HR-imported finance hires to Finance group" | Dynamic groups | P1 |
 | "Country admin manages only that country's users" | Administrative Units | P1+ |
 | Periodic re-justification of access | Access Reviews | P2 |

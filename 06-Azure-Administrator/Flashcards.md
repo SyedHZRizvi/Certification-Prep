@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -312,7 +312,7 @@
 
 ---
 
-## 🪪 SECTION 2: ENTRA ID & RBAC
+## 🪪 SECTION 2: ENTRA ID & RBAC (Role-Based Access Control)
 
 **Q:** Which Entra ID license tier is REQUIRED for Conditional Access?
 **A:** P1.
@@ -320,7 +320,7 @@
 **Q:** Which tier is REQUIRED for Identity Protection (risk-based policies)?
 **A:** P2.
 
-**Q:** What unlocks Privileged Identity Management (PIM)?
+**Q:** What unlocks Privileged Identity Management (PIM (Product Information Management))?
 **A:** Entra ID P2.
 
 **Q:** Dynamic group membership rules require which tier?
@@ -336,7 +336,7 @@
 **A:** Control plane = manage the resource (create, configure, delete). Data plane = read/write data inside the resource (e.g. blob contents, secrets). A Storage Account Contributor cannot read blobs without an explicit data role.
 
 **Q:** What's the difference between PIM "eligible" and "active" assignments?
-**A:** Eligible requires activation (MFA, optional approval, time-bound). Active is permanent, use sparingly.
+**A:** Eligible requires activation (MFA (Multi-Factor Authentication), optional approval, time-bound). Active is permanent, use sparingly.
 
 **Q:** Maximum PIM activation duration by default?
 **A:** 8 hours (can be lowered per role in PIM settings).
@@ -347,7 +347,7 @@
 **Q:** System-assigned vs user-assigned managed identity?
 **A:** System-assigned dies with the parent resource. User-assigned is its own ARM resource, can be attached to many resources, and survives deletion.
 
-**Q:** What's the difference between Entra ID B2B and External ID (formerly B2C)?
+**Q:** What's the difference between Entra ID B2B (Business-to-Business) and External ID (formerly B2C (Business-to-Consumer))?
 **A:** B2B = invite external partners/contractors as guests to your tenant (with RBAC). External ID (B2C) = consumer-facing identity in a separate tenant kind with social IdPs.
 
 **Q:** What does Authenticator number matching defeat?
@@ -388,13 +388,13 @@
 **A:** Associate it with a Stored Access Policy (SAP); delete the SAP to revoke.
 
 **Q:** What's the difference between a Service Endpoint and a Private Endpoint?
-**A:** Service endpoint = subnet firewalled to PaaS over the backbone, PaaS still has a public IP. Private endpoint = real NIC + private IP in your subnet, public access can be disabled. PE requires a linked Private DNS Zone.
+**A:** Service endpoint = subnet firewalled to PaaS (Platform as a Service) over the backbone, PaaS still has a public IP. Private endpoint = real NIC + private IP in your subnet, public access can be disabled. PE (Private Equity) requires a linked Private DNS (Domain Name System) Zone.
 
 **Q:** What prerequisites does a Key Vault need before you can use Customer-Managed Keys (CMK) on a storage account?
 **A:** Soft delete + purge protection enabled. The storage account must use a managed identity granted "Key Vault Crypto Service Encryption User."
 
 **Q:** Default encryption at rest for managed disks and storage accounts?
-**A:** AES-256 with Microsoft-managed keys (MMK). Always on. Cannot disable.
+**A:** AES (Advanced Encryption Standard)-256 with Microsoft-managed keys (MMK). Always on. Cannot disable.
 
 **Q:** Best tool for transferring 50 TB on-prem to Azure with limited bandwidth?
 **A:** Azure Data Box (physical appliance).
@@ -440,7 +440,7 @@
 
 ## 🖥️ SECTION 5: VIRTUAL MACHINES
 
-**Q:** SLAs: single VM with Premium SSD / Availability Set / Availability Zones?
+**Q:** SLAs: single VM (Virtual Machine) with Premium SSD / Availability Set / Availability Zones?
 **A:** 99.9% / 99.95% / 99.99%.
 
 **Q:** Can you add a VM to an Availability Set after creation?
@@ -462,7 +462,7 @@
 **A:** 30 seconds.
 
 **Q:** VMSS Flexible vs Uniform orchestration?
-**A:** Flexible (modern default) supports mixed sizes, AZ integration, up to 1000 instances. Uniform (legacy) is single-SKU, tightly managed.
+**A:** Flexible (modern default) supports mixed sizes, AZ integration, up to 1000 instances. Uniform (legacy) is single-SKU (Stock Keeping Unit), tightly managed.
 
 **Q:** What does HPA scale vs cluster autoscaler? (AKS)
 **A:** HPA scales pod replicas. Cluster autoscaler scales node count in a pool.
@@ -499,7 +499,7 @@
 **A:** Azure Container Instances (ACI).
 
 **Q:** Is the standard AKS control plane paid?
-**A:** No, free in standard tier. Pay for nodes and add-ons. Uptime SLA tier adds a small cost.
+**A:** No, free in standard tier. Pay for nodes and add-ons. Uptime SLA (Service Level Agreement) tier adds a small cost.
 
 **Q:** Three AKS networking modes (modern → legacy)?
 **A:** Azure CNI Overlay (modern default), Azure CNI, Kubenet (legacy, avoid).
@@ -507,7 +507,7 @@
 **Q:** AKS storage driver for RWX (multi-pod read/write)?
 **A:** Azure File CSI driver. (Azure Disk CSI = RWO only.)
 
-**Q:** AKS layer-7 ingress with WAF, best options?
+**Q:** AKS layer-7 ingress with WAF (Web Application Firewall), best options?
 **A:** Application Gateway Ingress Controller (AGIC) or Application Gateway for Containers (AGFC, modern).
 
 ---
@@ -520,7 +520,7 @@
 **Q:** Is VNet peering transitive?
 **A:** No. A↔B and B↔C does NOT imply A↔C. Need a hub firewall + UDRs to transit.
 
-**Q:** Reserved subnet name for the VPN/ExpressRoute gateway?
+**Q:** Reserved subnet name for the VPN (Virtual Private Network)/ExpressRoute gateway?
 **A:** GatewaySubnet (case-sensitive; minimum /29, /27 recommended).
 
 **Q:** Minimum size for AzureFirewallSubnet and AzureBastionSubnet?
@@ -536,7 +536,7 @@
 **A:** A linked Private DNS Zone with a DNS zone group auto-registering the PE's IP.
 
 **Q:** Route-based vs Policy-based VPN, which is modern?
-**A:** Route-based (BGP, IKEv2, multiple tunnels). Policy-based is legacy single-tunnel.
+**A:** Route-based (BGP (Border Gateway Protocol), IKEv2, multiple tunnels). Policy-based is legacy single-tunnel.
 
 **Q:** Three ExpressRoute SKUs?
 **A:** Local (only local metro region), Standard (geopolitical region), Premium (global reach + any region + higher limits).
@@ -575,11 +575,11 @@
 **Q:** Azure Firewall rule processing order?
 **A:** DNAT → Network → Application (within the same priority).
 
-**Q:** Which Azure Firewall SKU supports TLS inspection and IDPS?
+**Q:** Which Azure Firewall SKU supports TLS (Transport Layer Security) inspection and IDPS?
 **A:** Premium only.
 
 **Q:** When to use Application Gateway WAF v2 vs Front Door?
-**A:** AGW = regional L7 + WAF. Front Door = global edge L7 + CDN + WAF.
+**A:** AGW = regional L7 + WAF. Front Door = global edge L7 + CDN (Content Delivery Network) + WAF.
 
 **Q:** What is Traffic Manager?
 **A:** A DNS-based traffic router. It returns an IP to the client; no proxy. Different from L7 services.
@@ -587,7 +587,7 @@
 **Q:** WAF rollout best practice?
 **A:** Detection mode → observe logs → tune rules / exclusions → switch to Prevention mode.
 
-**Q:** Three DDoS protection plans?
+**Q:** Three DDoS (Distributed Denial of Service) protection plans?
 **A:** Basic (free, automatic), DDoS Network Protection (per-VNet, $$$), DDoS IP Protection (per-public-IP, cheaper).
 
 **Q:** Best way to restrict an App Service to only Front Door traffic?
@@ -621,7 +621,7 @@
 **Q:** Azure Migrate's 3 phases?
 **A:** Discover → Assess → Migrate.
 
-**Q:** RPO vs RTO?
+**Q:** RPO (Recovery Point Objective) vs RTO (Recovery Time Objective)?
 **A:** RPO = Recovery Point Objective (max data loss). RTO = Recovery Time Objective (max downtime).
 
 **Q:** How is application-consistent backup achieved on Linux VMs?
@@ -635,7 +635,7 @@
 **A:** Metrics TSDB (90-day retention) and Log Analytics workspace (logs, KQL-queried).
 
 **Q:** What is the modern Azure Monitor agent?
-**A:** Azure Monitor Agent (AMA) + Data Collection Rules. Replaces MMA / OMS Agent.
+**A:** Azure Monitor Agent (AMA) + Data Collection Rules. Replaces MMA / OMS (Order Management System) Agent.
 
 **Q:** What is the language used to query Log Analytics?
 **A:** KQL (Kusto Query Language).

@@ -14,7 +14,7 @@
 | `/usr/bin` | Distro-packaged user binaries |
 | `/usr/local/bin` | Locally compiled / admin scripts |
 | `/opt/<vendor>` | Third-party app trees |
-| `/srv` | Site-served data (web, NFS, FTP) |
+| `/srv` | Site-served data (web, NFS, FTP (File Transfer Protocol)) |
 | `/tmp` | World-writable + sticky; cleared on reboot |
 | `/proc` | procfs, process & kernel info |
 | `/sys` | sysfs, devices & drivers |

@@ -8,7 +8,7 @@
 
 | Era | Identity | Join | Mgmt |
 |-----|----------|------|------|
-| Traditional (pre-2015) | AD | Domain | GPO + SCCM |
+| Traditional (pre-2015) | AD (Active Directory) | Domain | GPO (Group Policy Object) + SCCM |
 | Hybrid (2015–2020) | AD + Entra | Hybrid | SCCM + Intune (co-mgmt) |
 | Modern (2020+) | Entra ID | Entra joined | Intune only |
 | Cloud-native (2023+) | Entra (passwordless) | Entra joined, no AD | Intune + Autopatch + CA |
@@ -33,7 +33,7 @@
 
 | Pattern | Enrollment | Control | When |
 |---------|------------|---------|------|
-| Full MDM | Device enrolled | Full device | Corporate-only |
+| Full MDM (Mobile Device Management) | Device enrolled | Full device | Corporate-only |
 | MAM-WE | Device enrolled (work profile) | Work container only | Some corp + some choice |
 | MAM only | No enrollment | App data only | True BYOD, no enrollment |
 
@@ -42,7 +42,7 @@
 ## 🛡️ Zero Trust, 3 Principles
 
 1. **Verify explicitly**, every signal, every request
-2. **Least privilege**, JIT, JEA, risk-adaptive
+2. **Least privilege**, JIT (Just-In-Time), JEA, risk-adaptive
 3. **Assume breach**, segment, encrypt, minimize blast radius
 
 🚨 If the answer says "trust the corporate network," it's wrong.
@@ -55,7 +55,7 @@
 |----------|------------------|
 | Compliance policies | Device health rules |
 | Windows Update policies | Update rings/deferrals |
-| Resource access policies | Wi-Fi/VPN/cert profiles |
+| Resource access policies | Wi-Fi/VPN (Virtual Private Network)/cert profiles |
 | Endpoint Protection | Defender + firewall settings |
 | Device configuration | Settings catalog |
 | Office Click-to-Run apps | M365 Apps install |
@@ -133,7 +133,7 @@ When you see these, often **wrong**:
 - ❌ Network-location-based trust (defeats Zero Trust)
 - ❌ Forcing MDM on personal devices (privacy + adoption killer)
 - ❌ One join strategy for every persona
-- ❌ Skipping compliance signal in CA (only does MFA, not health)
+- ❌ Skipping compliance signal in CA (only does MFA (Multi-Factor Authentication), not health)
 - ❌ Keeping AD as the only identity source "for resilience"
 
 ---

@@ -11,7 +11,7 @@
 4. Do we have preference data (chosen/rejected)?         → SFT + DPO.
 5. Need privacy / proprietary patterns?                  → QLoRA self-host.
 6. Latency / cost reduction?                             → Distill (small model FT'd on large).
-7. Hard ROI question?                                    → DON'T fine-tune yet.
+7. Hard ROI (Return on Investment) question?                                    → DON'T fine-tune yet.
 ```
 
 ---
@@ -79,8 +79,8 @@ y = W · x + (B · A) · x · (alpha / r)
 | **DPO** | Preference pairs without reward model | `trl.DPOTrainer` |
 | **KTO** | Thumbs-up/down labels | `trl.KTOTrainer` |
 | **ORPO/SimPO** | SFT + preference in one pass | `trl.ORPOTrainer` |
-| **PPO (RLHF)** | RL against reward model | `trl.PPOTrainer` (rare) |
-| **RFT** | Reasoning-trace fine-tune (OpenAI 2024+) | OpenAI API |
+| **PPO (RLHF (Reinforcement Learning from Human Feedback))** | RL against reward model | `trl.PPOTrainer` (rare) |
+| **RFT** | Reasoning-trace fine-tune (OpenAI 2024+) | OpenAI API (Application Programming Interface) |
 
 ---
 
@@ -89,7 +89,7 @@ y = W · x + (B · A) · x · (alpha / r)
 | Provider | Models | Methods | Notes |
 |----------|--------|---------|-------|
 | OpenAI | GPT-4o-mini / 4o / 4.1 / 5 | SFT + DPO + Vision | $$$, no LR control |
-| Anthropic (Bedrock) | Claude Haiku 3+ | SFT + DPO | AWS-only path |
+| Anthropic (Bedrock) | Claude Haiku 3+ | SFT + DPO | AWS (Amazon Web Services)-only path |
 | Google Vertex | Gemini Flash / Pro | SFT | $$ |
 | HuggingFace AutoTrain | Open weights | SFT | Wraps `trl` |
 

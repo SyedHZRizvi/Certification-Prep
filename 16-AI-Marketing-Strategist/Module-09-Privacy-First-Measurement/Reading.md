@@ -333,7 +333,7 @@ You don't need to be a lawyer, but you must know which laws govern which behavio
 | **MHMDA** | Washington | Health-data-specific; very strict |
 | **HIPAA** | US | Health PII |
 | **COPPA (Children's Online Privacy Protection Act)** | US | Kids under 13 |
-| **CASL** | Canada | Email marketing consent |
+| **CASL (Canada's Anti-Spam Legislation)** | Canada | Email marketing consent |
 | **LGPD** | Brazil | GDPR-equivalent |
 | **PIPEDA** | Canada | Federal privacy |
 | **PDPA** | Singapore | GDPR-style |

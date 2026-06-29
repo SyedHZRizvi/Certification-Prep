@@ -25,7 +25,7 @@ The Microsoft Certified: Endpoint Administrator Associate (MD-102) is the creden
 - **Endpoint Administrator / Intune Administrator** ($85K–$120K), owning the Intune tenant and policy set
 - **Modern Workplace Engineer** ($95K–$135K), Windows 11 + Intune + Entra at enterprise scale
 - **Senior Desktop Engineer** ($90K–$130K), typically promoted from Tier-2 with MD-102 in hand
-- **Mobile Device Manager** ($85K–$120K), iOS / Android / Windows MDM specialization
+- **Mobile Device Manager** ($85K–$120K), iOS / Android / Windows MDM (Mobile Device Management) specialization
 - **Modern Workplace Consultant (Microsoft Partner)** ($110K–$155K + bonus), Avanade, Insight, Cognizant, Slalom
 - **Cloud Endpoint Engineer (Microsoft 365 + Azure)** ($105K–$145K), paired with MS-900 / SC-300
 - **Senior Systems Engineer (endpoint specialization)** ($115K–$155K), typical 2–3 years post-MD-102
@@ -58,7 +58,7 @@ By the end of this track, you'll be able to:
 - Operate Microsoft Intune for MDM and MAM across Windows, iOS, Android, macOS, and Linux
 - Build enrollment, compliance, and Conditional Access policies that hold up to an audit
 - Package Win32 / MSI / MSIX / line-of-business apps and deploy them with dependencies and supersedence
-- Harden endpoints with Microsoft Defender for Endpoint, BitLocker, ASR rules, and EDR in block mode
+- Harden endpoints with Microsoft Defender for Endpoint, BitLocker, ASR rules, and EDR (Endpoint Detection and Response) in block mode
 - Govern Windows updates with WUfB rings, feature/quality/driver separation, and expedited rollouts
 - Diagnose every failure mode using Intune reports, Endpoint analytics, the MDM diagnostics report, and the Company Portal
 

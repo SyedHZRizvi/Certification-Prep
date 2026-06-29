@@ -300,7 +300,7 @@ Convert a Meta-paid visitor → email subscriber → first-time buyer → repeat
 ### The Architecture
 
 ```
-META AD (Active Directory) (Reels)
+META AD (Reels)
    ↓ Click
 LANDING PAGE (Unbounce)
    ↓ Email captured (newsletter signup OR lead magnet)

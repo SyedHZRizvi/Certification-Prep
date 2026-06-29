@@ -9,7 +9,7 @@
 | Tool | Best for |
 |------|----------|
 | **Azure Portal** | GUI, dashboards, discovery |
-| **Azure CLI** (`az`) | Cross-platform scripting |
+| **Azure CLI (Command Line Interface)** (`az`) | Cross-platform scripting |
 | **Azure PowerShell** (`Az`) | Windows-shop scripting |
 | **Cloud Shell** | Browser shell, zero install (Bash or PowerShell) |
 | **Azure Mobile App** | On-the-go monitoring + basic ops |
@@ -20,7 +20,7 @@
 
 | | Engine | Best for |
 |---|--------|----------|
-| **ARM templates** | ARM | Original Azure IaC (JSON) |
+| **ARM templates** | ARM | Original Azure IaC (Infrastructure as Code) (JSON) |
 | **Bicep** | ARM (compiles to it) | Modern Azure-only IaC |
 | **Terraform** | HashiCorp | Multi-cloud |
 
@@ -59,10 +59,10 @@
 
 ## 🌐 Azure Arc
 
-Extends Azure management (Policy, Monitor, Defender, RBAC) to:
+Extends Azure management (Policy, Monitor, Defender, RBAC (Role-Based Access Control)) to:
 
 - On-prem servers
-- AWS / GCP resources
+- AWS (Amazon Web Services) / GCP (Google Cloud Platform) resources
 - Kubernetes anywhere
 - SQL Server anywhere
 
@@ -75,7 +75,7 @@ NOT a migration tool, it MANAGES things where they live.
 | Tool | Purpose |
 |------|---------|
 | **Azure Migrate** | Hub for assessing + migrating servers, DBs, web apps |
-| **Azure Site Recovery (ASR)** | Replication-based DR / VM migration |
+| **Azure Site Recovery (ASR)** | Replication-based DR / VM (Virtual Machine) migration |
 | **Database Migration Service (DMS)** | Migrate SQL/MySQL/PostgreSQL/MongoDB |
 | **Azure Data Box** | Mail in TB-PB of data on a physical appliance |
 
@@ -86,7 +86,7 @@ NOT a migration tool, it MANAGES things where they live.
 | Resource | What |
 |----------|------|
 | **Trust Center** | Microsoft's security/privacy/compliance overview |
-| **Service Trust Portal** | Download audit reports (ISO, SOC, HIPAA, etc.) |
+| **Service Trust Portal** | Download audit reports (ISO, SOC (Security Operations Center), HIPAA, etc.) |
 | **Compliance Manager** | Track YOUR org's compliance with frameworks |
 
 ---

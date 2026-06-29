@@ -9,7 +9,7 @@
 | Pillar | Lives In |
 |---|---|
 | **On-Page** | Title tags, meta descriptions, H1/H2/H3, body content, internal links, alt text, URL slug |
-| **Technical** | Speed, mobile, HTTPS, sitemaps, robots.txt, canonical, schema, crawl budget |
+| **Technical** | Speed, mobile, HTTPS (HTTP Secure), sitemaps, robots.txt, canonical, schema, crawl budget |
 | **Off-Page** | Backlinks, brand mentions, reviews, social signals, E-E-A-T |
 
 ---
@@ -54,7 +54,7 @@ T - Trustworthiness  (the site itself: HTTPS, accuracy)
 
 ---
 
-## 🤖 GEO / AEO, Get Cited by AI Overviews
+## 🤖 GEO (Generative Engine Optimization) / AEO (Answer Engine Optimization), Get Cited by AI Overviews
 
 1. **Citations to authoritative sources** in your content
 2. **FAQ sections** (H2 = question, 1–3 sentence answer)

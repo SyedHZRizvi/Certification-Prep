@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -274,8 +274,8 @@
 
 ## 📜 SECTION 1: ACTIVE DIRECTORY DOMAIN SERVICES
 
-**Q:** What is the AD DS logical hierarchy from top to bottom?
-**A:** Forest → Tree → Domain → OU → Object. Forest is the top security boundary; OUs are for GPO and delegation, not security.
+**Q:** What is the AD (Active Directory) DS logical hierarchy from top to bottom?
+**A:** Forest → Tree → Domain → OU → Object. Forest is the top security boundary; OUs are for GPO (Group Policy Object) and delegation, not security.
 
 **Q:** What are the 5 FSMO roles?
 **A:** Forest-wide: Schema Master, Domain Naming Master. Domain-wide: RID Master, PDC Emulator, Infrastructure Master.
@@ -321,7 +321,7 @@
 **A:** Password Hash Sync (PHS), Pass-Through Authentication (PTA), and Federation with AD FS.
 
 **Q:** Which sign-in method is Microsoft's recommended default for hybrid identity?
-**A:** Password Hash Sync with Seamless SSO, the simplest, most resilient option (no on-prem dependency at sign-in).
+**A:** Password Hash Sync with Seamless SSO (Single Sign-On), the simplest, most resilient option (no on-prem dependency at sign-in).
 
 **Q:** What is Seamless SSO?
 **A:** Auto sign-in to Entra ID-joined resources for users on domain-joined corporate devices via a Kerberos ticket exchange to a computer account `AZUREADSSOACC`.
@@ -339,11 +339,11 @@
 **A:** In LocalDB (SQL Server Express) by default. SQL Server full edition is supported for >100,000 objects.
 
 **Q:** What is the "Cloud authentication" recommendation, and why?
-**A:** PHS + Seamless SSO. It removes on-prem dependencies at sign-in time, survives WAN outages, and supports Smart Lockout / leaked credential checks.
+**A:** PHS + Seamless SSO. It removes on-prem dependencies at sign-in time, survives WAN (Wide Area Network) outages, and supports Smart Lockout / leaked credential checks.
 
 ---
 
-## 🌐 SECTION 3: NETWORKING, DNS & DHCP
+## 🌐 SECTION 3: NETWORKING, DNS (Domain Name System) & DHCP (Dynamic Host Configuration Protocol)
 
 **Q:** What's the difference between a stub zone and a conditional forwarder?
 **A:** Stub zone keeps a current list of authoritative NS records for a zone. Conditional forwarder forwards queries for a specific domain to specified IPs, simpler, no zone data.
@@ -367,7 +367,7 @@
 **A:** Inbound rules govern traffic *to* the host; outbound rules govern traffic *from* the host. Default policy in Domain profile: inbound block-unless-allowed, outbound allow.
 
 **Q:** What does Network Load Balancing (NLB) do, and how many nodes?
-**A:** Windows feature for distributing TCP/UDP traffic across up to 32 nodes. Operates at layer 4, no shared storage. Best for stateless web/RDS workloads; *not* recommended for SQL or domain controllers.
+**A:** Windows feature for distributing TCP (Transmission Control Protocol)/UDP (User Datagram Protocol) traffic across up to 32 nodes. Operates at layer 4, no shared storage. Best for stateless web/RDS (Relational Database Service) workloads; *not* recommended for SQL or domain controllers.
 
 ---
 
@@ -392,7 +392,7 @@
 **A:** File Server Resource Manager, quotas, file screens (block .exe etc.), storage reports, file classification, and access denied assistance.
 
 **Q:** What is Work Folders?
-**A:** A self-managed user data sync feature (alternative to OneDrive). Workfolders cmdlets sync a user's folder to multiple corporate devices over HTTPS, with optional Workplace Join authentication.
+**A:** A self-managed user data sync feature (alternative to OneDrive). Workfolders cmdlets sync a user's folder to multiple corporate devices over HTTPS (HTTP Secure), with optional Workplace Join authentication.
 
 **Q:** What is BranchCache and the two modes?
 **A:** Caches content from HQ servers at branch sites. **Hosted Cache** (dedicated server at branch). **Distributed Cache** (peer caching among clients, like BITS).
@@ -404,7 +404,7 @@
 
 ## ⚙️ SECTION 5: HYPER-V & VIRTUALIZATION
 
-**Q:** What's the difference between a Gen 1 and Gen 2 VM?
+**Q:** What's the difference between a Gen 1 and Gen 2 VM (Virtual Machine)?
 **A:** Gen 1 = legacy BIOS boot + IDE controller, can run Windows 2003+/most Linux. Gen 2 = UEFI boot + Secure Boot, SCSI controller, vTPM, supports only Windows 2012+/recent Linux. Use Gen 2 for new builds.
 
 **Q:** What is nested virtualization, and when do you need it?
@@ -458,7 +458,7 @@
 ## 📈 SECTION 7: AZURE MONITOR & HYBRID MONITORING
 
 **Q:** What is Azure Monitor Agent (AMA), and what does it replace?
-**A:** Unified telemetry agent for VMs/Arc machines. Replaces the legacy MMA (Log Analytics agent / OMS agent), MMA retired August 2024.
+**A:** Unified telemetry agent for VMs/Arc machines. Replaces the legacy MMA (Log Analytics agent / OMS (Order Management System) agent), MMA retired August 2024.
 
 **Q:** What is a Data Collection Rule (DCR)?
 **A:** A reusable JSON/portal definition of *what* to collect (perf counters, event logs, syslog, custom logs) and *where* to send it (Log Analytics workspace, Azure Monitor metrics). Replaces MMA workspace-level config.
@@ -485,8 +485,8 @@
 **Q:** What's the difference between Defender for Servers Plan 1 and Plan 2?
 **A:** P1 = Defender for Endpoint integration only. P2 adds vulnerability assessment (Qualys/MDVM), file integrity monitoring, just-in-time VM access, adaptive application controls, network hardening, 500 MB free Log Analytics ingestion per node per day, and regulatory compliance.
 
-**Q:** What is just-in-time (JIT) VM access?
-**A:** Defender for Servers feature (P2) that keeps RDP/SSH ports closed at the NSG until an authorized user requests time-bound access (typically ≤3 hrs).
+**Q:** What is just-in-time (JIT (Just-In-Time)) VM access?
+**A:** Defender for Servers feature (P2) that keeps RDP/SSH (Secure Shell) ports closed at the NSG until an authorized user requests time-bound access (typically ≤3 hrs).
 
 **Q:** What is Windows Defender Application Control (WDAC)?
 **A:** Application allowlisting at the kernel level. Successor to AppLocker; tamper-resistant and policy-based (signed code, hashes, paths). Supports Audit and Enforce modes.
@@ -517,7 +517,7 @@
 **A:** Free, on-prem backup server based on System Center DPM. Backs up VMs, SQL, Exchange, SharePoint to local disk + offloads to Azure. Application-aware.
 
 **Q:** What is Azure Site Recovery (ASR)?
-**A:** DR-as-a-service. Replicates on-prem VMs/physical/AWS or Azure VMs to Azure (or to a paired region for Azure-to-Azure). RPO ~30 sec, RTO minutes via planned/test/unplanned failovers.
+**A:** DR-as-a-service. Replicates on-prem VMs/physical/AWS (Amazon Web Services) or Azure VMs to Azure (or to a paired region for Azure-to-Azure). RPO (Recovery Point Objective) ~30 sec, RTO (Recovery Time Objective) minutes via planned/test/unplanned failovers.
 
 **Q:** What is the Storage Migration Service (SMS)?
 **A:** Built into Windows Admin Center. Inventories source servers (Win Server 2003+ and Linux SMB), transfers files+ACLs, and "cuts over", renames new server and IP to look like old server.
@@ -539,7 +539,7 @@
 **A:** Windows PowerShell 5.1 = legacy, built on .NET Framework, Windows-only, shipped *in* Windows. PowerShell 7 = cross-platform (Win/Linux/macOS), .NET (Core), installed separately, current dev focus.
 
 **Q:** What does PowerShell remoting use under the hood?
-**A:** WS-Management (WSMan) over HTTP 5985 / HTTPS 5986. PowerShell 7 also supports SSH-based remoting cross-platform.
+**A:** WS-Management (WSMan) over HTTP (Hypertext Transfer Protocol) 5985 / HTTPS 5986. PowerShell 7 also supports SSH-based remoting cross-platform.
 
 **Q:** What is Just Enough Administration (JEA)?
 **A:** Role-capability-based PowerShell remoting endpoints that constrain *which* cmdlets and parameters a user can run. Runs sessions as a virtual account with elevated rights even when the caller is non-admin.

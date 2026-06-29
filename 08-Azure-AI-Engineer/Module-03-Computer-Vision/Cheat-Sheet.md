@@ -111,7 +111,7 @@ Custom models: **Language · Brands · Person · Logo**
 
 - ❌ "Use Face to detect emotion"
 - ❌ "Image Analysis = invoice extraction"
-- ❌ "One API call per visual feature"
+- ❌ "One API (Application Programming Interface) call per visual feature"
 - ❌ "Custom Vision exports any domain"
 
 ---
@@ -166,7 +166,7 @@ If you can answer all 5 in 60 seconds, you own Module 3. ✅
 | **EU AI Act Article 5** (2024) | Bans untargeted biometric scraping; restricts public-space biometric surveillance |
 | **EU AI Act Annex III** (2024) | "High-risk" tier: workplace biometric ID, emotion at work |
 | **Microsoft RAI Standard v2** (2022) | Drove Face emotion / age / gender retirement |
-| **GDPR Articles 9 + 22** | Biometric special-category data + automated-decision protection |
+| **GDPR (General Data Protection Regulation) Articles 9 + 22** | Biometric special-category data + automated-decision protection |
 | **Illinois BIPA** (2008) | US state biometric consent law (referenced in US deployments) |
 
 ## 📐 Case-Study Pattern
@@ -175,7 +175,7 @@ If you can answer all 5 in 60 seconds, you own Module 3. ✅
 |---|---|
 | Factory defect QC (edge, low latency) | Custom Vision Compact + ONNX export |
 | Retail shelf compliance | Custom Vision object detection |
-| ID document KYC | Document Intelligence prebuilt ID |
+| ID document KYC (Know Your Customer) | Document Intelligence prebuilt ID |
 | Dealer-bay service video | Video Indexer |
 | Workplace PPE compliance (EU) | Custom Vision object detection (no Face) |
 | Driver attention (cabin) | Speech + carefully scoped Vision (avoid biometrics) |

@@ -1,5 +1,5 @@
 ---
-title: "Module 6 Cheat Sheet: UI Animation, Figma, GSAP & Framer Motion"
+title: "Module 6 Cheat Sheet: UI (User Interface) Animation, Figma, GSAP & Framer Motion"
 ---
 
 # 🗒️ Module 6 Cheat Sheet: UI Animation, Figma, GSAP & Framer Motion
@@ -16,7 +16,7 @@ title: "Module 6 Cheat Sheet: UI Animation, Figma, GSAP & Framer Motion"
 
 ---
 
-## 🟩 GSAP Core API
+## 🟩 GSAP Core API (Application Programming Interface)
 
 ```javascript
 gsap.to(target, { x: 100, opacity: 0, duration: 0.5, ease: 'power2.out' });

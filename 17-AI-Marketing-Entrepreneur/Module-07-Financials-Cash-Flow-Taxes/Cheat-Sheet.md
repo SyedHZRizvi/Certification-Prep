@@ -1,7 +1,7 @@
 # 📋 Module 7 Cheat Sheet: Financials, Cash Flow & Taxes
 
 > One page. Print it. Tape it to your monitor. Review before the exam.
-> ⚖️ NOT tax/legal/financial advice, consult a CPA + attorney for your situation.
+> ⚖️ NOT tax/legal/financial advice, consult a CPA (Cost Per Acquisition) + attorney for your situation.
 
 ---
 
@@ -41,7 +41,7 @@ S-corp at higher profit: 25 / 25 / 50
 | Sole prop | Year 1 / <$50K | None |
 | LLC (single member) | Year 1–2 / <$80K | None |
 | **LLC + S-corp election** | **$80K–$400K profit** | **Significant** |
-| C-corp | Raising VC | N/A, different model |
+| C-corp | Raising VC (Venture Capital) | N/A, different model |
 
 International equivalents: UK Ltd, German GmbH, French SAS/SARL, Canadian fed corp, Australian Pty Ltd, Spanish SL.
 
@@ -65,7 +65,7 @@ Q4 (Sep–Dec)  → Jan 15 (next year)
 | Category | Examples |
 |---|---|
 | Software | Apollo, Claude, ChatGPT, Make, Notion |
-| Cloud/hosting | AWS, Vercel, Cloudflare |
+| Cloud/hosting | AWS (Amazon Web Services), Vercel, Cloudflare |
 | Equipment | Computer, monitor, ergo chair (Section 179) |
 | Professional | CPA, attorney |
 | Education | Courses, books, conferences |
@@ -93,11 +93,11 @@ Q4 (Sep–Dec)  → Jan 15 (next year)
 
 ---
 
-## 📊 P&L Structure
+## 📊 P&L (Profit and Loss) Structure
 
 ```
 Revenue
-- COGS
+- COGS (Cost of Goods Sold)
 = GROSS PROFIT (target 60–80% margin)
 - Operating expenses
 = OPERATING INCOME

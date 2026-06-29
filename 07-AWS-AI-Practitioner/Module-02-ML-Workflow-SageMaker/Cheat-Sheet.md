@@ -8,7 +8,7 @@
 
 ```
 1. Business problem  →  Frame the question
-2. Data collection   →  S3, Kinesis, Glue
+2. Data collection   →  S3 (Simple Storage Service), Kinesis, Glue
 3. Data prep         →  Data Wrangler, Processing Jobs
 4. Train             →  Training Jobs, Autopilot, JumpStart
 5. Evaluate          →  Clarify, metrics
@@ -35,7 +35,7 @@
 | Experiments | Track | Runs, params, metrics |
 | Model Registry | Deploy | Versioned model catalog |
 | Endpoints | Deploy | Real-time / Serverless / Async / Batch |
-| Pipelines | MLOps | CI/CD for ML |
+| Pipelines | MLOps (Machine Learning Operations) | CI/CD (Continuous Integration/Continuous Deployment) for ML |
 | Model Monitor | Monitor | Data / model / bias / attribution drift |
 | Clarify | Eval / Monitor | Bias + explainability |
 | Neo | Deploy | Compile for target hardware |
@@ -47,7 +47,7 @@
 
 | Mode | Latency | Use when… |
 |------|---------|-----------|
-| **Real-time** | ms | Live API, chatbots, recos |
+| **Real-time** | ms | Live API (Application Programming Interface), chatbots, recos |
 | **Serverless** | ms (cold starts) | Spiky / idle traffic |
 | **Asynchronous** | sec–min | Large payloads (~1 GB), longer processing |
 | **Batch transform** | min–hr | One-off scoring of large dataset |
@@ -70,7 +70,7 @@
 |---------|-----|
 | Rekognition | Vision (images + video) |
 | Textract | OCR + form/table extraction |
-| Comprehend | NLP (sentiment, entities, topics); Medical for PHI |
+| Comprehend | NLP (Natural Language Processing) (sentiment, entities, topics); Medical for PHI |
 | Translate | Neural machine translation |
 | Polly | Text → Speech |
 | Transcribe | Speech → Text (Medical + Call Analytics flavors) |

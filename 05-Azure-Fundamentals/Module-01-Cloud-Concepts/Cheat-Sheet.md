@@ -16,11 +16,11 @@
 
 ---
 
-## 🍱 IaaS / PaaS / SaaS
+## 🍱 IaaS (Infrastructure as a Service) / PaaS (Platform as a Service) / SaaS (Software as a Service)
 
 | Model | You manage | Azure example |
 |-------|------------|----------------|
-| **IaaS** | OS + up | Azure VM, VM Scale Sets |
+| **IaaS** | OS + up | Azure VM (Virtual Machine), VM Scale Sets |
 | **PaaS** | Code + data | App Service, Azure SQL DB, AKS, Functions |
 | **SaaS** | Users + data | Microsoft 365, Dynamics 365 |
 
@@ -112,7 +112,7 @@ ALWAYS Microsoft: physical hardware, physical datacenter, physical network.
 - ✅ "Automatically scale based on demand"
 - ✅ "Shared responsibility"
 - ✅ "OpEx model"
-- ✅ "Microsoft Entra ID" (NOT "Azure AD")
+- ✅ "Microsoft Entra ID" (NOT "Azure AD (Active Directory)")
 
 **Usually WRONG:**
 - ❌ "Buy more servers"

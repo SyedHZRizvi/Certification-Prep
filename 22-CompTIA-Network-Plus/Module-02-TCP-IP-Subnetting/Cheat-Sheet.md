@@ -1,4 +1,4 @@
-# 📋 Module 2 Cheat Sheet: TCP/IP & Subnetting
+# 📋 Module 2 Cheat Sheet: TCP (Transmission Control Protocol)/IP & Subnetting
 
 > One page. Print it. Tape it to your monitor. Drill the subnet table cold.
 
@@ -33,7 +33,7 @@
 | Range | Purpose |
 |-------|---------|
 | 127.0.0.0/8 | Loopback (127.0.0.1) |
-| 169.254.0.0/16 | APIPA (DHCP failed) |
+| 169.254.0.0/16 | APIPA (DHCP (Dynamic Host Configuration Protocol) failed) |
 | 0.0.0.0 | This host / default route |
 | 255.255.255.255 | Limited broadcast |
 | 224.0.0.0/4 | Multicast |
@@ -85,7 +85,7 @@ Mask octet pattern (each = previous + power of 2):
 
 ---
 
-## 🔁 NAT Types
+## 🔁 NAT (Network Address Translation) Types
 
 | Type | One-liner |
 |------|-----------|

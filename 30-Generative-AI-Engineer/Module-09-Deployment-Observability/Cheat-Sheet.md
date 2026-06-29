@@ -39,14 +39,14 @@ vllm serve meta-llama/Llama-3.1-8B-Instruct \
 | Provider | Strength |
 |----------|----------|
 | Anthropic / OpenAI / Gemini | Frontier closed models |
-| AWS Bedrock | Enterprise, multi-vendor |
+| AWS (Amazon Web Services) Bedrock | Enterprise, multi-vendor |
 | Azure OpenAI | Microsoft enterprise + compliance |
-| Vertex AI (GCP) | Gemini + open weights |
+| Vertex AI (GCP (Google Cloud Platform)) | Gemini + open weights |
 | Together / Fireworks | Open-weight inference; cheap+fast |
 | Groq | Lowest latency (LPU) |
 | Modal | Serverless GPU |
 | Replicate / RunPod / Lambda / CoreWeave | Various GPU rental |
-| OpenRouter | Aggregator API |
+| OpenRouter | Aggregator API (Application Programming Interface) |
 
 ---
 
@@ -163,7 +163,7 @@ Gateway gives you: routing / retries / fallback / cache / observability / rate l
 - Prompt cache: Anthropic / OpenAI / Gemini, up to 90%
 - Semantic cache: GPTCache / pgvector
 - Speculative decoding: 2-3× speed
-- TTFT > Total latency for perceived UX
+- TTFT > Total latency for perceived UX (User Experience)
 - Klarna optimization: $0.30 → $0.04 per conversation in 6 months
 
 ---

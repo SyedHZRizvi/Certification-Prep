@@ -1,4 +1,4 @@
-# 📋 Module 3 Cheat Sheet: Authentication, MFA & Passwordless
+# 📋 Module 3 Cheat Sheet: Authentication, MFA (Multi-Factor Authentication) & Passwordless
 
 > One page. Print it. Tape it to your monitor. Review before the exam.
 
@@ -93,7 +93,7 @@ Per method:
 |-------|------|
 | **Cloud Kerberos trust** | Modern hybrid (RECOMMENDED 2026) |
 | Key trust | Older hybrid; needs Win Server 2016 KDC |
-| Certificate trust | Legacy; needs AD CS |
+| Certificate trust | Legacy; needs AD (Active Directory) CS |
 | Cloud-only | Pure Entra-joined devices |
 
 ---
@@ -148,7 +148,7 @@ When you see these, often **wrong**:
 
 ## ⚠️ Anti-Patterns
 
-- ❌ Enabling MFA without blocking legacy auth (attacker bypasses via IMAP)
+- ❌ Enabling MFA without blocking legacy auth (attacker bypasses via IMAP (Internet Message Access Protocol))
 - ❌ Mass rollout without TAP for users whose primary device isn't ready
 - ❌ Mandatory FIDO2 with no backup key (one lost key = locked out)
 - ❌ Long-lived multi-use TAP issued by unrestricted helpdesk role

@@ -84,7 +84,7 @@ chown user:grp file
 - Encryption: **FileVault**
 - Recovery: **Cmd+R** at boot (Intel) / hold power (Apple Silicon)
 - Shell: **zsh** (since Catalina)
-- Package: **brew** (Homebrew CLI), `.pkg`, `.dmg`, App Store
+- Package: **brew** (Homebrew CLI (Command Line Interface)), `.pkg`, `.dmg`, App Store
 - Time Machine: built-in backup
 
 ---
@@ -112,7 +112,7 @@ chown user:grp file
 - **Administrator**, install + change; UAC prompts
 - **Microsoft account**, cloud-linked
 - **Local account**, on-device
-- **Domain account**, AD-joined
+- **Domain account**, AD (Active Directory)-joined
 - **UAC** = User Account Control (leave ON)
 
 ---

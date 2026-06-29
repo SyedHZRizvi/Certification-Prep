@@ -46,7 +46,7 @@ Microsoft-published + custom.
 
 ---
 
-## 📋 MDM Diagnostics Report (Windows 11)
+## 📋 MDM (Mobile Device Management) Diagnostics Report (Windows 11)
 
 ```
 Settings → Accounts → Access work or school → 
@@ -74,7 +74,7 @@ Contains:
 | MDM events | Event Viewer → Apps and Services → Microsoft → Windows → DeviceManagement-Enterprise-Diagnostics-Provider |
 | Autopilot ETW | In MDM Diagnostics zip |
 | Defender | Event Viewer → Microsoft → Windows → Windows Defender |
-| BitLocker | Event Viewer → Microsoft → Windows → BitLocker-API |
+| BitLocker | Event Viewer → Microsoft → Windows → BitLocker-API (Application Programming Interface) |
 | **Entra Sign-in log** | Entra admin center → Sign-ins |
 | Audit log | Entra → Audit logs / Intune → Tenant admin → Audit logs |
 

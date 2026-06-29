@@ -1,4 +1,4 @@
-# 📋 Module 8 Cheat Sheet: SEO, Content & Lifecycle Marketing
+# 📋 Module 8 Cheat Sheet: SEO (Search Engine Optimization), Content & Lifecycle Marketing
 
 > Print and tape. Organic is the moat; lifecycle is the engine.
 
@@ -22,7 +22,7 @@
 | Element | Spec |
 |---------|------|
 | `<title>` | 50-60 chars, primary keyword + brand |
-| `<meta description>` | 150-160 chars, action-oriented (CTR not ranking) |
+| `<meta description>` | 150-160 chars, action-oriented (CTR (Click-Through Rate) not ranking) |
 | H1 | Exact product name |
 | Breadcrumb | With `BreadcrumbList` schema |
 | Description | 300+ unique words (no manufacturer-default) |
@@ -55,7 +55,7 @@
 | Solution | When |
 |----------|------|
 | Robots.txt disallow | Zero crawl budget on filter URLs |
-| Meta `noindex` | Crawl-time signal but no SERP |
+| Meta `noindex` | Crawl-time signal but no SERP (Search Engine Results Page) |
 | Canonical to parent | Default; preserves authority |
 | Selective indexing | High-volume facets → static indexed URLs |
 
@@ -93,7 +93,7 @@ Aug 2022, HCU launch | Sep 2023, expansion | Mar 2024, core integration
 
 ---
 
-## 📱 SMS vs Email (Postscript 2024) + TCPA
+## 📱 SMS vs Email (Postscript 2024) + TCPA (Telephone Consumer Protection Act)
 
 | Metric | Email | SMS |
 |--------|-------|-----|

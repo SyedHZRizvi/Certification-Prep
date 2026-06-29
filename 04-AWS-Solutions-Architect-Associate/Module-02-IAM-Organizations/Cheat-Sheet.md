@@ -1,4 +1,4 @@
-# 📋 Module 2 Cheat Sheet: IAM & Organizations
+# 📋 Module 2 Cheat Sheet: IAM (Identity and Access Management) & Organizations
 
 > One page. Print it. Tape it to your monitor. Review before the exam.
 
@@ -8,11 +8,11 @@
 
 | Identity | Long-term creds? | When to use |
 |----------|------------------|-------------|
-| **Root** | Yes (lock with MFA) | Account creation, ~6 root-only tasks |
+| **Root** | Yes (lock with MFA (Multi-Factor Authentication)) | Account creation, ~6 root-only tasks |
 | **IAM User** | Yes | Legacy; external services without IdP |
 | **IAM Group** | No (just container) | Bag of users with shared permissions |
-| **IAM Role** | No (temp via STS) | EC2, Lambda, cross-account, federated |
-| **Federated** | No | SSO via Okta, AD, Google, etc. |
+| **IAM Role** | No (temp via STS) | EC2 (Elastic Compute Cloud), Lambda, cross-account, federated |
+| **Federated** | No | SSO (Single Sign-On) via Okta, AD (Active Directory), Google, etc. |
 
 🧠 **"For humans → Identity Center. For workloads → Role. For 3rd parties → Role + ExternalId."**
 
@@ -71,7 +71,7 @@ Cross-account: identity ∩ resource/role (both must allow)
                                        trust: Account A
                                        perm:  s3:GetObject
   ↓ returns temp creds (15min–12hr)
-  uses temp creds → S3 in Account B
+  uses temp creds → S3 (Simple Storage Service) in Account B
 ```
 
 **3rd-party vendor?** Add `Condition: sts:ExternalId = <secret>` to prevent confused-deputy.
@@ -85,7 +85,7 @@ Cross-account: identity ∩ resource/role (both must allow)
 | EC2 → S3 | IAM Role + instance profile |
 | Lambda → DynamoDB | Lambda execution role |
 | Dev account → Prod read-only | Cross-account role |
-| 3rd-party SaaS access | Role + ExternalId |
+| 3rd-party SaaS (Software as a Service) access | Role + ExternalId |
 | Block users from disabling CloudTrail | SCP deny `cloudtrail:Stop*`, `cloudtrail:DeleteTrail` |
 | Allow resources only in 2 regions | SCP with `aws:RequestedRegion` condition |
 | Cap one dev to "S3 only no matter what" | Permissions boundary |
@@ -118,7 +118,7 @@ Cross-account: identity ∩ resource/role (both must allow)
 
 ## ⚠️ Anti-Patterns
 
-- ❌ Long-term access keys on EC2 / Lambda / ECS
+- ❌ Long-term access keys on EC2 / Lambda / ECS (Elastic Container Service)
 - ❌ IAM user for 3rd-party vendor (use role + ExternalId)
 - ❌ Wildcard `"*"` on production policies
 - ❌ Root access keys (never)

@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI-Animation/Module-10-Showreel-Client-Work/Cheat-Sheet/
+permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-10-Showreel-Client-Work/Cheat-Sheet/
 title: "Module 10 Cheat Sheet: Showreel & Client Work"
 ---
 
@@ -109,7 +109,7 @@ Never do scope-expanding work without agreement on compensation.
 
 Can include in reel if:
 1. Work is publicly released
-2. No NDA covers it
+2. No NDA (Non-Disclosure Agreement) covers it
 3. Client credited in reel/description
 4. No confidential business information exposed
 

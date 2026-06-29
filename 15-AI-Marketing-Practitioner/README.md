@@ -25,10 +25,10 @@ AI Digital Marketing Practitioner is the credential that takes you from someone 
 
 - **Performance Marketer / Paid Media Specialist** ($75K–$110K), running Google + Meta with AI-assisted creative
 - **Growth Marketer** ($85K–$125K), owning the full acquisition stack at an early-stage company
-- **PPC / Paid Search Specialist** ($70K–$100K), Google Ads / Microsoft Ads specialization
+- **PPC (Pay-Per-Click) / Paid Search Specialist** ($70K–$100K), Google Ads / Microsoft Ads specialization
 - **Paid Social Specialist** ($75K–$110K), Meta + TikTok + LinkedIn focus, AI creative pipelines
-- **Marketing Operations Specialist** ($80K–$115K), HubSpot / Klaviyo / GA4 / attribution
-- **In-house Performance Marketing Manager (DTC, B2B SaaS, agency)** ($95K–$135K)
+- **Marketing Operations Specialist** ($80K–$115K), HubSpot / Klaviyo / GA4 (Google Analytics 4) / attribution
+- **In-house Performance Marketing Manager (DTC (Direct-to-Consumer), B2B (Business-to-Business) SaaS (Software as a Service), agency)** ($95K–$135K)
 
 This is course **2 of 5** in the AI Digital Marketing ladder: **Foundations (14) → Practitioner (this course) → Strategist (16) → Entrepreneur (17) → Capstone Portfolio (18)**. Practitioner grads typically land $20K–$30K above Foundations grads in equivalent roles thanks to the hands-on, real-campaign portfolio they build.
 
@@ -37,7 +37,7 @@ This is course **2 of 5** in the AI Digital Marketing ladder: **Foundations (14)
 - **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
 - **Story-driven lessons (not flashcard punishment)**, every channel introduced through a real campaign teardown before any tactics
 - **Original questions only**, every quiz and practice exam written from official Google / Meta / TikTok exam outlines; no copyrighted dumps
-- **Real-world case studies + a real capstone**, 12-week scenario as the new Senior Performance Marketer at a $20M DTC e-commerce brand cutting CAC 25% in 90 days
+- **Real-world case studies + a real capstone**, 12-week scenario as the new Senior Performance Marketer at a $20M DTC e-commerce brand cutting CAC (Customer Acquisition Cost) 25% in 90 days
 - **One author, one voice**, coherent vocabulary across all 10 modules
 - **Updated for the 2026 platform landscape**, Performance Max best practices, Meta Advantage+ shopping, TikTok Spark Ads, LinkedIn predictive audiences, Consent Mode v2, GA4, server-side tracking
 
@@ -53,7 +53,7 @@ Begin with [Module 1: Campaign Strategy & Brief Writing →](./Module-01-Campaig
 
 This track includes two course-root resources that go beyond exam prep:
 
-- 🏆 [**Capstone-Project.md**](./Capstone-Project.md), A 6-deliverable, 12-week scenario where you act as the new Senior Performance Marketer at a $20M DTC e-commerce brand cutting CAC 25% in 90 days. Integrates attribution audit, Google Ads + Meta restructure with AI creative pipeline, CRO, email retention, and a blended scorecard.
+- 🏆 [**Capstone-Project.md**](./Capstone-Project.md), A 6-deliverable, 12-week scenario where you act as the new Senior Performance Marketer at a $20M DTC e-commerce brand cutting CAC 25% in 90 days. Integrates attribution audit, Google Ads + Meta restructure with AI creative pipeline, CRO (Chief Revenue Officer), email retention, and a blended scorecard.
 - 📚 [**Recommended-Readings.md**](./Recommended-Readings.md), The full canonical bibliography: Ellis & Brown's *Hacking Growth*, Croll & Yoskovitz's *Lean Analytics*, Saleh's *Conversion Optimization*, Kohavi/Tang/Xu's *Trustworthy Online Controlled Experiments*; seminal papers on attribution and CRO; industry resources (Marketing Examined, Kasim Aslam, Ben Heath, Common Thread Collective); free academic courses (Google Skillshop, Meta Blueprint, CXL Institute).
 
 ---
@@ -84,7 +84,7 @@ By the end of this track, you'll be able to:
 | 3 | [Google Ads PMax + Display + Video](./Module-03-Google-Ads-PMax-Display-Video/Reading.md) | 4 hrs | PMax architecture, asset groups, YouTube Ads, brand exclusions |
 | 4 | [Meta Ads Mastery (FB + IG)](./Module-04-Meta-Ads-Mastery-FB-IG/Reading.md) | 5 hrs | Business Manager, Pixel + CAPI, Advantage+, DCT, Reels creative |
 | 5 | [TikTok + LinkedIn Ads (B2B)](./Module-05-TikTok-LinkedIn-Ads-B2B/Reading.md) | 4 hrs | TikTok Spark Ads, hooks in 3 seconds, LinkedIn Matched Audiences, ABM |
-| 6 | [Programmatic + Retargeting](./Module-06-Programmatic-Retargeting/Reading.md) | 3 hrs | DSPs, retargeting strategy, CDP-fed audiences, brand safety, attribution |
+| 6 | [Programmatic + Retargeting](./Module-06-Programmatic-Retargeting/Reading.md) | 3 hrs | DSPs, retargeting strategy, CDP (Customer Data Platform)-fed audiences, brand safety, attribution |
 | 7 | [CRO, Landing Pages & Personalization](./Module-07-CRO-Landing-Pages-Personalization/Reading.md) | 4 hrs | Hypothesis testing, sample-size math, Mutiny / Optimizely, heatmaps |
 | 8 | [AI Content Production at Scale](./Module-08-AI-Content-Production-Scale/Reading.md) | 4 hrs | Prompt libraries, Midjourney v6+, Runway / HeyGen, ElevenLabs, Make.com batch |
 | 9 | [Marketing Automation + AI Agents](./Module-09-Marketing-Automation-AI/Reading.md) | 4 hrs | HubSpot Workflows, Klaviyo Flows, Make.com vs Zapier vs n8n, AI tool use |
@@ -163,8 +163,8 @@ This course is built specifically to inoculate you against all 7.
 | Category | Tools |
 |----------|-------|
 | Paid platforms | Google Ads + Google Ads Editor, Meta Ads Manager + Business Manager, TikTok Ads Manager, LinkedIn Campaign Manager, DV360 (intro) |
-| Measurement | GA4, Google Tag Manager, Meta Pixel + Conversions API, Triple Whale, Hyros |
-| AI writing | Claude (Sonnet 4.7), ChatGPT (GPT-5), Gemini 2.5 Pro |
+| Measurement | GA4, Google Tag Manager, Meta Pixel + Conversions API (Application Programming Interface), Triple Whale, Hyros |
+| AI writing | Claude (Sonnet 4.7), ChatGPT (GPT (Generative Pre-trained Transformer)-5), Gemini 2.5 Pro |
 | AI image | Midjourney v7, DALL-E 3, Flux Pro, Adobe Firefly 3 |
 | AI video | Runway Gen-4, Pika 2.0, HeyGen, Synthesia |
 | AI voice | ElevenLabs Multilingual v3 |

@@ -128,7 +128,7 @@
 | Store | Backed by | Use |
 |-------|-----------|-----|
 | **Online** | In-memory + DynamoDB | <100 ms inference lookups |
-| **Offline** | S3 + Glue Catalogue | Training + historical replay |
+| **Offline** | S3 (Simple Storage Service) + Glue Catalogue | Training + historical replay |
 
 Same feature definitions; data dual-written.
 

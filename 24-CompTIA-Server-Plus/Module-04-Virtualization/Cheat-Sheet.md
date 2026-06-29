@@ -26,7 +26,7 @@
 
 ---
 
-## 🧰 VM Lifecycle Objects
+## 🧰 VM (Virtual Machine) Lifecycle Objects
 
 | Object | What | Persistent? | Independent? |
 |---|---|---|---|
@@ -98,11 +98,11 @@
 | **Cluster** | Group of nodes + control plane |
 | **Deployment** | Spec for N identical Pods + rolling updates |
 | **Service** | Stable network endpoint fronting Pods |
-| **Ingress** | HTTP/HTTPS routing |
+| **Ingress** | HTTP (Hypertext Transfer Protocol)/HTTPS (HTTP Secure) routing |
 | **Namespace** | Logical isolation |
 | **ConfigMap / Secret** | Config / sensitive values |
 | **PVC / PV** | Storage abstraction |
-| **kubectl** | The CLI |
+| **kubectl** | The CLI (Command Line Interface) |
 
 ---
 

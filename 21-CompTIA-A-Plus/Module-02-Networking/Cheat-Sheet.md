@@ -8,20 +8,20 @@
 
 | Port | Protocol | Notes |
 |------|----------|-------|
-| 20/21 | FTP | Control / Data |
-| 22 | SSH / SFTP | Encrypted shell |
+| 20/21 | FTP (File Transfer Protocol) | Control / Data |
+| 22 | SSH (Secure Shell) / SFTP | Encrypted shell |
 | 23 | Telnet | **Don't use** |
-| 25 | SMTP | Server-to-server mail |
-| 53 | DNS | TCP+UDP |
-| 67/68 | DHCP | Server/Client (UDP) |
+| 25 | SMTP (Simple Mail Transfer Protocol) | Server-to-server mail |
+| 53 | DNS (Domain Name System) | TCP (Transmission Control Protocol)+UDP (User Datagram Protocol) |
+| 67/68 | DHCP (Dynamic Host Configuration Protocol) | Server/Client (UDP) |
 | 69 | TFTP | PXE, firmware |
-| 80 | HTTP | Web |
-| 110/995 | POP3 / POP3S | Mail fetch |
+| 80 | HTTP (Hypertext Transfer Protocol) | Web |
+| 110/995 | POP3 (Post Office Protocol 3) / POP3S | Mail fetch |
 | 123 | NTP | Time |
-| 143/993 | IMAP / IMAPS | Mail sync |
-| 161/162 | SNMP | Monitor / Trap |
-| 389/636 | LDAP / LDAPS | Directory |
-| 443 | HTTPS | Web encrypted |
+| 143/993 | IMAP (Internet Message Access Protocol) / IMAPS | Mail sync |
+| 161/162 | SNMP (Simple Network Management Protocol) | Monitor / Trap |
+| 389/636 | LDAP (Lightweight Directory Access Protocol) / LDAPS | Directory |
+| 443 | HTTPS (HTTP Secure) | Web encrypted |
 | 445 | SMB | Windows shares |
 | 514 | Syslog | Log forwarding |
 | 587/465 | SMTP submission / SMTPS | Outbound mail |
@@ -52,7 +52,7 @@
 
 **Channels:** 2.4 GHz → 1, 6, 11 (non-overlapping). 5 GHz → many; pick what's clean.
 
-**Security:** WEP/WPA = deprecated. **WPA2-AES** or **WPA3-SAE** only.
+**Security:** WEP/WPA = deprecated. **WPA2-AES (Advanced Encryption Standard)** or **WPA3-SAE** only.
 
 ---
 
@@ -78,7 +78,7 @@
 | `ipconfig /release` | Drop DHCP lease |
 | `ipconfig /renew` | Get new lease |
 | `ipconfig /flushdns` | Clear DNS cache |
-| `ping <host>` | ICMP reachability |
+| `ping <host>` | ICMP (Internet Control Message Protocol) reachability |
 | `tracert <host>` | Hops to host (Win) |
 | `traceroute <host>` | Hops to host (Linux/macOS) |
 | `nslookup <host>` | DNS lookup |
@@ -92,7 +92,7 @@
 
 ```
 7 Application   HTTP, DNS, SMB
-6 Presentation  TLS, JPEG
+6 Presentation  TLS (Transport Layer Security), JPEG
 5 Session       NetBIOS
 4 Transport     TCP, UDP
 3 Network       IP, ICMP, ROUTER
@@ -126,7 +126,7 @@ Mnemonic: **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza **A**way (bo
 - "Switch to WPA3 / WPA2-AES"
 - "Verify default gateway"
 - "Check DNS with nslookup"
-- "Isolate the guest network on a separate SSID/VLAN"
+- "Isolate the guest network on a separate SSID/VLAN (Virtual Local Area Network)"
 
 ❌ Often **wrong**:
 

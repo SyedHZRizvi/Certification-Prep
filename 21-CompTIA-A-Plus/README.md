@@ -57,7 +57,7 @@ By the end of this track, you'll be able to:
 - Install, configure, and repair Windows 10/11, macOS, Linux, iOS, Android, ChromeOS, from the command line as comfortably as from the GUI
 - Diagnose any failure layer-by-layer: power → POST → boot loader → kernel → drivers → OS → network → application
 - Apply the **6-step CompTIA troubleshooting methodology** to any scenario in under 60 seconds of reading
-- Harden endpoints with MFA, encryption (BitLocker, FileVault, LUKS), patching, and basic anti-malware response
+- Harden endpoints with MFA (Multi-Factor Authentication), encryption (BitLocker, FileVault, LUKS), patching, and basic anti-malware response
 - Respond to ransomware, BSODs, boot loops, and "my printer won't print" with a calm, ordered playbook
 - Document tickets, changes, and incidents in a way that survives an audit (or a 3 a.m. phone call from your replacement)
 - Survive the **Performance-Based Questions (PBQs)**, the scenario simulations and drag-and-drop labs that tank pass rates
@@ -68,13 +68,13 @@ By the end of this track, you'll be able to:
 
 | # | Module | Exam | Time | What You'll Master |
 |---|--------|------|------|--------------------|
-| 1 | [Mobile Devices & BYOD](./Module-01-Mobile-Devices/Reading.md) | Core 1 | 2 hrs | Smartphones, tablets, accessories, cellular standards, MDM |
-| 2 | [Networking Fundamentals](./Module-02-Networking/Reading.md) | Core 1 | 3 hrs | Cables, TCP/IP, ports/protocols, wireless, SOHO devices |
+| 1 | [Mobile Devices & BYOD](./Module-01-Mobile-Devices/Reading.md) | Core 1 | 2 hrs | Smartphones, tablets, accessories, cellular standards, MDM (Mobile Device Management) |
+| 2 | [Networking Fundamentals](./Module-02-Networking/Reading.md) | Core 1 | 3 hrs | Cables, TCP (Transmission Control Protocol)/IP, ports/protocols, wireless, SOHO devices |
 | 3 | [Hardware: CPU/RAM/Storage/Power](./Module-03-Hardware/Reading.md) | Core 1 | 3 hrs | Motherboards, sockets, PSU sizing, HDD/SSD/NVMe tiers |
-| 4 | [Virtualization & Cloud Basics](./Module-04-Virtualization-Cloud/Reading.md) | Core 1 | 2 hrs | Hypervisors, VM resourcing, IaaS/PaaS/SaaS |
+| 4 | [Virtualization & Cloud Basics](./Module-04-Virtualization-Cloud/Reading.md) | Core 1 | 2 hrs | Hypervisors, VM (Virtual Machine) resourcing, IaaS (Infrastructure as a Service)/PaaS (Platform as a Service)/SaaS (Software as a Service) |
 | 5 | [Hardware & Network Troubleshooting](./Module-05-Troubleshooting/Reading.md) | Core 1 | 3 hrs | POST/beep codes, RAID failures, layer-by-layer net diag |
 | 6 | [Printers & Peripherals](./Module-06-Printers/Reading.md) | Core 1 | 2 hrs | Laser/inkjet/thermal process, drivers, USB/Thunderbolt |
-| 7 | [Operating Systems (Win/macOS/Linux)](./Module-07-Operating-Systems/Reading.md) | Core 2 | 3.5 hrs | Install types, FS, CLI (cmd/PowerShell/bash), boot |
+| 7 | [Operating Systems (Win/macOS/Linux)](./Module-07-Operating-Systems/Reading.md) | Core 2 | 3.5 hrs | Install types, FS, CLI (Command Line Interface) (cmd/PowerShell/bash), boot |
 | 8 | [Security Fundamentals](./Module-08-Security/Reading.md) | Core 2 | 3 hrs | Physical/logical controls, MFA, malware, social engineering |
 | 9 | [Software Troubleshooting](./Module-09-Software-Troubleshooting/Reading.md) | Core 2 | 2.5 hrs | Boot failures, BSOD, malware removal, app crashes |
 | 10 | [Operational Procedures](./Module-10-Operational-Procedures/Reading.md) | Core 2 | 2 hrs | Documentation, change mgmt, environmental, communication |

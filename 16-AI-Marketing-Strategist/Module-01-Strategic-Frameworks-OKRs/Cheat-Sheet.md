@@ -1,4 +1,4 @@
-# 📋 Module 1 Cheat Sheet: Strategic Frameworks & OKRs
+# 📋 Module 1 Cheat Sheet: Strategic Frameworks & OKRs (Objectives and Key Results)
 
 > One page. Print it. Tape it to your monitor. Review before the exam.
 
@@ -8,9 +8,9 @@
 
 | Level | Horizon | Owner |
 |-------|---------|-------|
-| Corporate | 3–10 yr | CEO / Board |
+| Corporate | 3–10 yr | CEO (Chief Executive Officer) / Board |
 | Business | 1–3 yr | GM |
-| Marketing | 6–18 mo | CMO |
+| Marketing | 6–18 mo | CMO (Chief Marketing Officer) |
 | Campaign | 1–6 mo | Director |
 | Tactic | 1–8 wk | Manager |
 
@@ -56,7 +56,7 @@ Marketing job: **amplify Push and Pull**, **reduce Anxiety and Habit**.
 
 ---
 
-## 🎯 OKR Rules
+## 🎯 OKR (Objective and Key Result) Rules
 
 | Concept | Rule |
 |---------|------|
@@ -111,7 +111,7 @@ When you see these, they're **often wrong**:
 
 ## ⚠️ Anti-Patterns To Recognize
 
-- ❌ **27 KPIs, zero strategy**, no apex, no ownership tree
+- ❌ **27 KPIs (Key Performance Indicators), zero strategy**, no apex, no ownership tree
 - ❌ **Sandbagged OKRs**, consistent 100% attainment
 - ❌ **Initiative-as-KR**, listing activities under Key Results
 - ❌ **Demographics-only segmentation** when behavioral is available
@@ -147,4 +147,4 @@ If you can answer all 5 in under 60 seconds, you own this module. ✅
 
 ---
 
-➡️ [Module 2: CDPs & Server-Side Tracking](../Module-02-CDP-Server-Side-Tracking/Reading.md)
+➡️ [Module 2: CDPs & Server-Side Tracking](../Module-02-CDP (Customer Data Platform)-Server-Side-Tracking/Reading.md)

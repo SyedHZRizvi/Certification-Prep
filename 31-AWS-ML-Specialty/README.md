@@ -18,7 +18,7 @@ title: AWS Certified Machine Learning Specialty Track (MLS-C01)
 
 ### 🎯 The promise
 
-The AWS Certified Machine Learning Specialty (MLS-C01) is the most respected ML-engineering credential in the cloud world. It separates engineers who can *call a model API* from those who can **build, train, evaluate, deploy, and govern** an end-to-end production ML system on the dominant cloud platform, from raw S3 data to a fault-tolerant real-time endpoint with bias monitoring, cost guardrails, and continuous retraining. Where AIF-C01 says "I understand AI"; MLS-C01 says "I ship ML in production at scale."
+The AWS Certified Machine Learning Specialty (MLS-C01) is the most respected ML-engineering credential in the cloud world. It separates engineers who can *call a model API (Application Programming Interface)* from those who can **build, train, evaluate, deploy, and govern** an end-to-end production ML system on the dominant cloud platform, from raw S3 (Simple Storage Service) data to a fault-tolerant real-time endpoint with bias monitoring, cost guardrails, and continuous retraining. Where AIF-C01 says "I understand AI"; MLS-C01 says "I ship ML in production at scale."
 
 It is the hardest of the AWS ML ladder rungs precisely because every domain data engineering, EDA, modelling, MLOps is tested with the depth a hiring manager actually cares about. Passing it puts you in the top 3% of AWS-certified professionals worldwide.
 
@@ -27,9 +27,9 @@ It is the hardest of the AWS ML ladder rungs precisely because every domain data
 - **Machine Learning Engineer (MLE)** ($140K–$210K), the headline role; designs, trains, and operates production ML systems
 - **MLOps Engineer / ML Platform Engineer** ($150K–$220K), builds the SageMaker / Kubeflow / step-function infrastructure other ML teams ride on
 - **Applied Scientist / Senior Data Scientist** ($160K–$240K + equity), Amazon, Meta, Stripe, Capital One, and most FAANG-adjacent shops list MLS-C01 as a preferred credential for ML-leaning DS roles
-- **Senior AI Solutions Architect / Specialty SA** ($175K–$260K), pre-sales role at AWS, AWS Premier Partners (Slalom, Onica, Quantiphi), or any SaaS vendor selling ML features
+- **Senior AI Solutions Architect / Specialty SA** ($175K–$260K), pre-sales role at AWS, AWS Premier Partners (Slalom, Onica, Quantiphi), or any SaaS (Software as a Service) vendor selling ML features
 - **Director / Principal MLE** ($230K–$420K total comp), MLS-C01 is the floor; deep production scars layer on top
-- **Founder / Technical co-founder (AI-native startup)**, VC pattern-matching favours founders who can demonstrate end-to-end production ML chops
+- **Founder / Technical co-founder (AI-native startup)**, VC (Venture Capital) pattern-matching favours founders who can demonstrate end-to-end production ML chops
 
 Average compensation uplift after passing: **18–28%** in the 6–12 months following certification, per Robert Half, Levels.fyi, and Hired's 2024–2025 ML compensation reports. MLS-C01 sits at the top of AWS's coherent ML ladder: **AIF-C01 (course 07) → MLA-C01 (Machine Learning Engineer Associate, planned) → MLS-C01 (this course, the apex)**.
 
@@ -38,7 +38,7 @@ Average compensation uplift after passing: **18–28%** in the 6–12 months fol
 - **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
 - **Story-driven lessons (not flashcard punishment)**, every module is anchored in a real production case study: **Netflix's recommendation engine**, **Capital One's real-time fraud detection on SageMaker**, **Airbnb's dynamic-pricing models**, **Toyota's computer-vision factory inspection**, **JPMorgan's COiN document AI**, **Stripe Radar**, and **NASA JPL's anomaly detection** all appear in worked-example form
 - **Original questions only**, every quiz, practice exam, and final mock is written from the published MLS-C01 Exam Guide; no copyrighted dumps
-- **Real-world code**, Python + Boto3 + SageMaker Python SDK snippets at the level you'd write in production, not pseudocode
+- **Real-world code**, Python + Boto3 + SageMaker Python SDK (Software Development Kit) snippets at the level you'd write in production, not pseudocode
 - **One author, one voice**, coherent ML vocabulary across all 10 modules, all 3 practice exams, and the final mock
 - **Updated for the 2026 MLS-C01 blueprint**, including the **Bedrock-on-SageMaker integration**, **Amazon Q in QuickSight**, **SageMaker JumpStart foundation models**, **Trainium / Inferentia2**, **SMDDP / SMMP distributed training**, and **Clarify SHAP** that older study guides miss
 
@@ -59,10 +59,10 @@ By the end of this track, you'll be able to:
 - **Pick the right algorithm** in SageMaker's 17 built-ins and 100+ JumpStart foundation models, XGBoost vs Linear Learner vs Random Cut Forest vs K-Means vs BlazingText vs Object2Vec, and when to bring your own container
 - **Train deep models efficiently**, TensorFlow / PyTorch / MXNet containers, distributed data parallel (SMDDP), model parallel (SMMP), AWS Trainium and Inferentia2 silicon, mixed precision, EFA networking
 - **Use managed AI services correctly** Comprehend, Rekognition, Textract, Translate, Transcribe, Polly, Lex, Kendra, Personalize, Forecast and know when each beats a custom SageMaker model
-- **Build generative AI in Bedrock**, model gateway, Knowledge Bases for RAG, Agents, Guardrails, fine-tuning; integrate Amazon Q (Business / Developer / QuickSight); deploy foundation models with JumpStart
+- **Build generative AI in Bedrock**, model gateway, Knowledge Bases for RAG (Retrieval-Augmented Generation), Agents, Guardrails, fine-tuning; integrate Amazon Q (Business / Developer / QuickSight); deploy foundation models with JumpStart
 - **Evaluate models rigorously**, train/val/test discipline, k-fold CV, confusion matrix, precision/recall/F1/AUC/RMSE, hyperparameter tuning (HPO), Clarify bias and SHAP explainability, A2I human review
 - **Operate ML in production**, SageMaker Pipelines, Projects, Model Registry, Model Monitor (data drift + model drift), real-time / async / serverless / multi-model endpoints, blue-green and shadow deployments
-- **Secure & cost-optimize ML**, IAM least privilege, VPC isolation, KMS, PrivateLink, Spot training, Savings Plans, multi-model endpoints, Debugger / Profiler for root-causing inefficiency
+- **Secure & cost-optimize ML**, IAM (Identity and Access Management) least privilege, VPC (Virtual Private Cloud) isolation, KMS, PrivateLink, Spot training, Savings Plans, multi-model endpoints, Debugger / Profiler for root-causing inefficiency
 - **Read a 6-line MLS-C01 scenario in 60 seconds** and pick the most accurate, most cost-effective, or most operationally efficient answer
 
 ---
@@ -76,7 +76,7 @@ By the end of this track, you'll be able to:
 | 3 | [EDA & Feature Engineering](./Module-03-EDA-Feature-Engineering/Reading.md) | 4 hrs | Imputation, outliers, scaling, encoding, PCA / t-SNE, Data Wrangler |
 | 4 | [SageMaker Studio & Algorithms](./Module-04-SageMaker-Studio-Algorithms/Reading.md) | 4.5 hrs | Studio IDE, XGBoost, Linear Learner, K-Means, RCF, BlazingText, etc. |
 | 5 | [Deep Learning on AWS](./Module-05-Deep-Learning-AWS/Reading.md) | 4 hrs | TF/PyTorch containers, Trainium/Inferentia, SMDDP, distributed training |
-| 6 | [NLP & Computer Vision Workflows](./Module-06-NLP-Computer-Vision/Reading.md) | 4 hrs | Comprehend, Rekognition, Textract, Translate, Transcribe, Polly, Lex |
+| 6 | [NLP (Natural Language Processing) & Computer Vision Workflows](./Module-06-NLP-Computer-Vision/Reading.md) | 4 hrs | Comprehend, Rekognition, Textract, Translate, Transcribe, Polly, Lex |
 | 7 | [Bedrock & GenAI Services](./Module-07-Bedrock-GenAI-Services/Reading.md) | 4 hrs | Bedrock, Knowledge Bases, Agents, Guardrails, Amazon Q, JumpStart |
 | 8 | [Evaluation, Tuning & Bias](./Module-08-Evaluation-Tuning-Bias/Reading.md) | 4 hrs | CV, metrics, HPO, SageMaker Clarify, SHAP, Amazon A2I |
 | 9 | [MLOps, Pipelines, Deployment, Monitoring](./Module-09-MLOps-Pipelines-Deployment/Reading.md) | 4.5 hrs | Pipelines, Projects, Model Registry, endpoints, Model Monitor |
@@ -171,7 +171,7 @@ Week 5: Flashcards + Final Mock + REAL EXAM
 ## ⚠️ The 7 Most Common Reasons People Fail MLS-C01
 
 1. ❌ **Memorising algorithms instead of comparing them.** Exam asks "which is the BEST algorithm", you must rank XGBoost vs Linear Learner vs K-Means vs Random Cut Forest by use case (tabular / linear / clustering / anomaly).
-2. ❌ **Skipping EDA & Feature Engineering.** 24% of the exam, and the place ML engineers from Kaggle backgrounds *think* they know but get tripped up on the AWS-specific Data Wrangler / QuickSight UI details.
+2. ❌ **Skipping EDA & Feature Engineering.** 24% of the exam, and the place ML engineers from Kaggle backgrounds *think* they know but get tripped up on the AWS-specific Data Wrangler / QuickSight UI (User Interface) details.
 3. ❌ **Ignoring SageMaker's built-in algorithms' hyperparameters.** XGBoost `num_round` / `eta` / `max_depth`, Linear Learner `predictor_type`, K-Means `k`, these *will* be asked.
 4. ❌ **Confusing real-time vs async vs serverless vs multi-model endpoints.** Each solves a specific cost/latency profile. Memorise the trade-off table in Module 9.
 5. ❌ **Not practising scenario reading.** MLS-C01 questions are long, 6 to 10 lines. Train yourself to find the keyword ("imbalanced classes", "millions of features", "low-latency inference", "explainability required") that decides the answer.
@@ -188,13 +188,13 @@ Week 5: Flashcards + Final Mock + REAL EXAM
 
 ## 🏗️ Capstone Project
 
-🔗 **[Capstone Project Atlas Health Pre-Authorization Triage Platform](./Capstone-Project.md)** Once you've finished all 10 modules, the capstone is the graduate-level professional standard synthesis exercise: a 7-deliverable production-ML design for a Series-C health-tech company (~$1.8M Year 1 budget, 9-month timeline, HIPAA + SOC 2 + bias controls + 2-second p95 latency). Rubric scored out of 100. This is the difference between "I passed MLS-C01" and "I could lead this at a real company on Monday."
+🔗 **[Capstone Project Atlas Health Pre-Authorization Triage Platform](./Capstone-Project.md)** Once you've finished all 10 modules, the capstone is the graduate-level professional standard synthesis exercise: a 7-deliverable production-ML design for a Series-C health-tech company (~$1.8M Year 1 budget, 9-month timeline, HIPAA + SOC (Security Operations Center) 2 + bias controls + 2-second p95 latency). Rubric scored out of 100. This is the difference between "I passed MLS-C01" and "I could lead this at a real company on Monday."
 
 ---
 
 ## 📚 Recommended Readings
 
-🔗 **[Recommended Readings full bibliography](./Recommended-Readings.md)** 65+ curated sources: canonical textbooks (Goodfellow's *Deep Learning*, Géron's *Hands-On ML*, Bishop's PRML, Kleppmann's *DDIA*, Huyen's *Designing ML Systems*, Burkov's *MLE*), seminal academic papers (Rosenblatt 1958, Backprop, LeNet, ResNet, Transformer, BERT, GPT-3, Diffusion, XGBoost, SHAP, RAG), the AWS Builders' Library essays (Brooker, Weiss, Cockcroft), re:Invent talks 2018–2024, industry blogs (Netflix, Pinterest, Stripe, Capital One, JPMorgan), and 10 free academic courses (Andrew Ng, Stanford CS229/CS231n/CS224n, MIT 6.S191, fast.ai, Hugging Face). Sequenced by where in the course to engage with each.
+🔗 **[Recommended Readings full bibliography](./Recommended-Readings.md)** 65+ curated sources: canonical textbooks (Goodfellow's *Deep Learning*, Géron's *Hands-On ML*, Bishop's PRML, Kleppmann's *DDIA*, Huyen's *Designing ML Systems*, Burkov's *MLE*), seminal academic papers (Rosenblatt 1958, Backprop, LeNet, ResNet, Transformer, BERT, GPT (Generative Pre-trained Transformer)-3, Diffusion, XGBoost, SHAP, RAG), the AWS Builders' Library essays (Brooker, Weiss, Cockcroft), re:Invent talks 2018–2024, industry blogs (Netflix, Pinterest, Stripe, Capital One, JPMorgan), and 10 free academic courses (Andrew Ng, Stanford CS229/CS231n/CS224n, MIT 6.S191, fast.ai, Hugging Face). Sequenced by where in the course to engage with each.
 
 Short top-5 if you want to read only five things:
 

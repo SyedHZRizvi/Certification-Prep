@@ -9,7 +9,7 @@
 ```
 Block   →  EBS, Instance Store   →  Hard drive feel
 File    →  EFS, FSx              →  Shared network drive
-Object  →  S3, Glacier classes   →  HTTP-accessible buckets
+Object  →  S3 (Simple Storage Service), Glacier classes   →  HTTP (Hypertext Transfer Protocol)-accessible buckets
 ```
 
 ---
@@ -40,7 +40,7 @@ Object  →  S3, Glacier classes   →  HTTP-accessible buckets
 
 ---
 
-## 💽 EBS, Block Storage For EC2
+## 💽 EBS, Block Storage For EC2 (Elastic Compute Cloud)
 
 | Type | Use case |
 |------|----------|
@@ -61,7 +61,7 @@ Object  →  S3, Glacier classes   →  HTTP-accessible buckets
 | Service | Protocol | OS |
 |---------|----------|-----|
 | **EFS** | NFS | Linux |
-| **FSx for Windows** | SMB | Windows (AD-integrated) |
+| **FSx for Windows** | SMB | Windows (AD (Active Directory)-integrated) |
 | **FSx for Lustre** | POSIX | HPC / ML, S3-integrated |
 | **FSx for NetApp ONTAP** | NFS/SMB/iSCSI | NetApp lift & shift |
 | **FSx for OpenZFS** | NFS | ZFS on AWS |
@@ -141,4 +141,4 @@ Wrong:
 
 ---
 
-➡️ [Module 4: Networking & CDN](../Module-04-Networking-CDN/Reading.md)
+➡️ [Module 4: Networking & CDN (Content Delivery Network)](../Module-04-Networking-CDN/Reading.md)

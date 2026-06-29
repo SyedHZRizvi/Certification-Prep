@@ -10,11 +10,11 @@
 TENANT (Entra ID)
    └─ MANAGEMENT GROUPS  (up to 6 levels deep, 10K children)
         └─ SUBSCRIPTIONS  (billing + quota boundary, 1 tenant at a time)
-             └─ RESOURCE GROUPS  (lifecycle + RBAC scope)
-                  └─ RESOURCES  (VM, NSG, storage…)
+             └─ RESOURCE GROUPS  (lifecycle + RBAC (Role-Based Access Control) scope)
+                  └─ RESOURCES  (VM (Virtual Machine), NSG, storage…)
 ```
 
-🧠 **TMS-RR:** Tenant → Mgmt group → Subscription → Resource group → Resource
+🧠 **TMS (Transportation Management System)-RR:** Tenant → Mgmt group → Subscription → Resource group → Resource
 
 ---
 

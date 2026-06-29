@@ -73,7 +73,7 @@ title: "Module 2 Cheat Sheet: Unity Animation System"
 
 ---
 
-## 📐 Key C# API
+## 📐 Key C# API (Application Programming Interface)
 
 ```csharp
 anim.SetFloat("Speed", speed);

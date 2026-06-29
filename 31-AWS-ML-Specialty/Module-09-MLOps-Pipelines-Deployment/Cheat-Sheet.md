@@ -44,7 +44,7 @@ Plus:
 | **Bias Drift** | Clarify post-training bias over time |
 | **Feature Attribution Drift** | SHAP attribution over time |
 
-Pipeline: baseline job → schedule → reports in S3 → CloudWatch alarms.
+Pipeline: baseline job → schedule → reports in S3 (Simple Storage Service) → CloudWatch alarms.
 
 ---
 
@@ -76,7 +76,7 @@ Pipeline: baseline job → schedule → reports in S3 → CloudWatch alarms.
 
 = templated MLOps repo:
 
-- CodeCommit / CodeBuild / CodePipeline (CI/CD)
+- CodeCommit / CodeBuild / CodePipeline (CI/CD (Continuous Integration/Continuous Deployment))
 - SageMaker Pipelines (training workflow)
 - Model Registry
 - Deploy to staging / production endpoints
@@ -123,7 +123,7 @@ Metrics: `InvocationsPerInstance`, `CPUUtilization`, `GPUUtilization`, custom.
 | CloudWatch Logs | Endpoint / job logs |
 | CloudWatch Alarms | Drift / errors / latency / cost |
 | AWS X-Ray | Distributed trace |
-| CloudTrail | API audit log |
+| CloudTrail | API (Application Programming Interface) audit log |
 
 ---
 

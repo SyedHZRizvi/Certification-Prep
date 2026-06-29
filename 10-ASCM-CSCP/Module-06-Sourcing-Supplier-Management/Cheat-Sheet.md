@@ -16,7 +16,7 @@
 
 ---
 
-## 📥 RFI vs RFP vs RFQ
+## 📥 RFI vs RFP (Request for Proposal) vs RFQ (Request for Quotation)
 
 | Doc | Asks For | Use |
 |-----|----------|-----|
@@ -64,7 +64,7 @@ Price alone ≠ true cost. A cheaper printer often costs $thousands more in tone
 | Adversarial | Pure price; frequent switching |
 | Cooperative | Multi-year contracts |
 | Collaborative | Joint forecasting, scorecards |
-| Strategic alliance | Joint R&D, shared P&L, equity |
+| Strategic alliance | Joint R&D, shared P&L (Profit and Loss), equity |
 | Vertical integration | Ownership |
 
 Apply higher maturity to **strategic** items only.
@@ -83,7 +83,7 @@ Apply higher maturity to **strategic** items only.
 | Performance-based | Supplier |
 
 ### Key Clauses
-- SLA · Force majeure · MFN · Liquidated damages · Indemnification · IP ownership
+- SLA (Service Level Agreement) · Force majeure · MFN · Liquidated damages · Indemnification · IP ownership
 
 ---
 

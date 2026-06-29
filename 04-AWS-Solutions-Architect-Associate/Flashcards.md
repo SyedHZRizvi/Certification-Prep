@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -280,13 +280,13 @@
 **Q:** Name the 6 pillars of the Well-Architected Framework.
 **A:** Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, Sustainability.
 
-**Q:** Under the Shared Responsibility Model, who patches the OS on an EC2 instance?
-**A:** The customer (EC2 is IaaS). For RDS, AWS patches the OS, RDS is managed.
+**Q:** Under the Shared Responsibility Model, who patches the OS on an EC2 (Elastic Compute Cloud) instance?
+**A:** The customer (EC2 is IaaS (Infrastructure as a Service)). For RDS (Relational Database Service), AWS patches the OS, RDS is managed.
 
 **Q:** What does Multi-AZ NOT protect against?
 **A:** A full regional outage. For that, you need multi-region replication.
 
-**Q:** Difference between RPO and RTO?
+**Q:** Difference between RPO (Recovery Point Objective) and RTO (Recovery Time Objective)?
 **A:** RPO = max acceptable data loss (in time). RTO = max acceptable downtime.
 
 **Q:** What is an AWS Outpost?
@@ -296,19 +296,19 @@
 **A:** Free. Data OUT to the internet is what costs (typically $0.05–$0.09/GB).
 
 **Q:** What does "most cost-effective" mean on the SAA exam?
-**A:** The cheapest option that still meets all stated requirements (SLA, security, performance).
+**A:** The cheapest option that still meets all stated requirements (SLA (Service Level Agreement), security, performance).
 
 **Q:** Which Well-Architected pillar is most directly improved by Multi-AZ on RDS?
 **A:** Reliability.
 
 ---
 
-## 🔐 SECTION 2: IAM & ORGANIZATIONS
+## 🔐 SECTION 2: IAM (Identity and Access Management) & ORGANIZATIONS
 
 **Q:** What's the difference between an IAM User and an IAM Role?
 **A:** A User has long-term credentials and is typically for a person or external service. A Role has no long-term credentials and is assumed temporarily via STS, returning short-lived credentials.
 
-**Q:** What's the best way for an EC2 instance to access S3?
+**Q:** What's the best way for an EC2 instance to access S3 (Simple Storage Service)?
 **A:** Attach an IAM Role to the instance via an instance profile. Never bake long-term keys into AMIs.
 
 **Q:** In IAM evaluation, who wins between an explicit Deny and an explicit Allow?
@@ -318,12 +318,12 @@
 **A:** A guardrail at the Organizations level that LIMITS (does not grant) the maximum permissions for member accounts.
 
 **Q:** What does ExternalId do in an IAM trust policy?
-**A:** Prevents the "confused deputy" problem when a 3rd-party SaaS vendor accesses your AWS account. The vendor must present the agreed-upon ExternalId.
+**A:** Prevents the "confused deputy" problem when a 3rd-party SaaS (Software as a Service) vendor accesses your AWS account. The vendor must present the agreed-upon ExternalId.
 
 **Q:** Identity-based policy + Resource-based policy in same account: union or intersection?
 **A:** Union, either allowing is sufficient (absent explicit Deny). Cross-account is intersection.
 
-**Q:** What is the modern way to give humans SSO access to many AWS accounts?
+**Q:** What is the modern way to give humans SSO (Single Sign-On) access to many AWS accounts?
 **A:** AWS IAM Identity Center (formerly AWS SSO) with permission sets federated to the corporate IdP.
 
 **Q:** How do you give a mobile app's end users temporary AWS credentials?
@@ -343,13 +343,13 @@
 **A:** Spot (up to 90%) > Reserved Instance Standard 3yr all-upfront (~72%) > Compute Savings Plan (~66%) > Convertible RI (~54%) > On-Demand (0%).
 
 **Q:** When should you use Spot Instances?
-**A:** Fault-tolerant batch workloads with checkpointing, ML training, big-data processing, CI/CD, stateless web tiers.
+**A:** Fault-tolerant batch workloads with checkpointing, ML training, big-data processing, CI/CD (Continuous Integration/Continuous Deployment), stateless web tiers.
 
 **Q:** What does a Compute Savings Plan cover?
 **A:** Hourly compute spend across EC2 (any family, region, size, OS), Fargate, and Lambda, most flexible.
 
 **Q:** Difference between ALB, NLB, and GWLB?
-**A:** ALB = L7 HTTP/HTTPS (path/host routing). NLB = L4 TCP/UDP (static IPs, ultra-low latency). GWLB = inserts 3rd-party network appliances (firewalls/IDS) via GENEVE.
+**A:** ALB = L7 HTTP (Hypertext Transfer Protocol)/HTTPS (HTTP Secure) (path/host routing). NLB = L4 TCP (Transmission Control Protocol)/UDP (User Datagram Protocol) (static IPs, ultra-low latency). GWLB = inserts 3rd-party network appliances (firewalls/IDS) via GENEVE.
 
 **Q:** What are the 3 EC2 placement group types?
 **A:** Cluster (same rack, lowest latency, 1 AZ); Spread (separate hardware, max 7/AZ); Partition (logical racks, up to 7/AZ, for Cassandra, Kafka, HDFS).
@@ -377,7 +377,7 @@
 **A:** SG = stateful, per-ENI, allow-only. NACL = stateless, per-subnet, allow + deny in numbered order.
 
 **Q:** How do you allow private-subnet EC2 instances to reach S3 privately and FOR FREE?
-**A:** Gateway VPC Endpoint for S3 (and DynamoDB). It's free and bypasses NAT.
+**A:** Gateway VPC Endpoint for S3 (and DynamoDB). It's free and bypasses NAT (Network Address Translation).
 
 **Q:** Is VPC peering transitive?
 **A:** NO. If A↔B and B↔C exist, A still cannot reach C. Use a Transit Gateway for transitivity.
@@ -385,7 +385,7 @@
 **Q:** When should you use a Transit Gateway?
 **A:** When connecting 5+ VPCs (and on-prem) in a hub-and-spoke topology. Avoids the mesh-of-peerings nightmare.
 
-**Q:** Direct Connect vs Site-to-Site VPN?
+**Q:** Direct Connect vs Site-to-Site VPN (Virtual Private Network)?
 **A:** DX = private fiber, lowest latency, weeks to provision, NOT encrypted by default. VPN = IPSec over internet, minutes to set up.
 
 **Q:** What's PrivateLink?
@@ -478,7 +478,7 @@
 
 ## 🔌 SECTION 7: DECOUPLING & INTEGRATION
 
-**Q:** SQS Standard vs FIFO?
+**Q:** SQS Standard vs FIFO (First In, First Out)?
 **A:** Standard = best-effort order, at-least-once delivery, nearly unlimited throughput. FIFO = strict order + exactly-once, lower throughput (300/s default, up to 70k with high-throughput mode).
 
 **Q:** What is the SNS-to-SQS fan-out pattern?
@@ -504,7 +504,7 @@
 
 ---
 
-## 🌎 SECTION 8: EDGE, CDN & ROUTING
+## 🌎 SECTION 8: EDGE, CDN (Content Delivery Network) & ROUTING
 
 **Q:** CloudFront vs Global Accelerator?
 **A:** CloudFront CACHES content at the edge for HTTP(S). Global Accelerator only ROUTES TCP/UDP traffic via AWS backbone to the nearest healthy regional endpoint with 2 static IPs.
@@ -521,8 +521,8 @@
 **Q:** Which Route 53 routing policy for active-passive DR?
 **A:** Failover routing with health checks.
 
-**Q:** What does AWS WAF protect against?
-**A:** Layer-7 web attacks: SQL injection, XSS, bots, rate-based attacks. Attaches to CloudFront, ALB, API Gateway, AppSync.
+**Q:** What does AWS WAF (Web Application Firewall) protect against?
+**A:** Layer-7 web attacks: SQL injection, XSS, bots, rate-based attacks. Attaches to CloudFront, ALB, API (Application Programming Interface) Gateway, AppSync.
 
 **Q:** AWS Shield Standard cost?
 **A:** Free for all AWS customers. Shield Advanced is paid (~$3,000/month + bandwidth).
@@ -541,10 +541,10 @@
 **A:** No, install the CloudWatch Agent to publish memory and disk metrics.
 
 **Q:** What does AWS Compute Optimizer do?
-**A:** ML-based rightsizing recommendations for EC2, ASGs, EBS, Lambda, and ECS Fargate. Free.
+**A:** ML-based rightsizing recommendations for EC2, ASGs, EBS, Lambda, and ECS (Elastic Container Service) Fargate. Free.
 
 **Q:** GuardDuty data sources?
-**A:** CloudTrail events, VPC Flow Logs, DNS logs, analyzed by ML. No agents required.
+**A:** CloudTrail events, VPC Flow Logs, DNS (Domain Name System) logs, analyzed by ML. No agents required.
 
 **Q:** What does Amazon Macie do?
 **A:** Discovers and protects sensitive data (PII like SSNs, credit cards) in S3 buckets.

@@ -13,7 +13,7 @@
 - Both subnet NSG + NIC NSG apply, **Deny in either = drop**
 
 ```
-Inbound order : subnet NSG → NIC NSG → VM
+Inbound order : subnet NSG → NIC NSG → VM (Virtual Machine)
 Outbound order: NIC NSG → subnet NSG → next-hop
 ```
 
@@ -30,11 +30,11 @@ Outbound order: NIC NSG → subnet NSG → next-hop
 
 ## 🔥 Azure Firewall
 
-| SKU | Notable |
+| SKU (Stock Keeping Unit) | Notable |
 |-----|---------|
 | Basic | L3/L4, ~250 Mbps |
 | **Standard** | + Threat intel, FQDN tags, DNAT, ~30 Gbps |
-| **Premium** | + TLS inspection, IDPS, URL filtering |
+| **Premium** | + TLS (Transport Layer Security) inspection, IDPS, URL filtering |
 
 Rule order: **DNAT → Network → Application** (within priority)
 
@@ -44,19 +44,19 @@ Subnet name (case-sensitive): `AzureFirewallSubnet`, min `/26`
 
 ## 🚪 Load Balancing Service Picker
 
-| Service | Layer | Scope | WAF | Use when |
+| Service | Layer | Scope | WAF (Web Application Firewall) | Use when |
 |---------|-------|-------|-----|----------|
-| **Standard LB** | L4 | Region | ❌ | TCP/UDP, internal or public |
+| **Standard LB** | L4 | Region | ❌ | TCP (Transmission Control Protocol)/UDP (User Datagram Protocol), internal or public |
 | **Cross-region LB** | L4 | Global | ❌ | Global TCP/UDP |
 | **Application Gateway WAF v2** | L7 | Region | ✅ | Regional web app + WAF |
-| **Front Door (Std/Prem)** | L7 | Global | ✅ | Global web app + WAF + CDN |
-| **Traffic Manager** | DNS | Global | ❌ | DNS-based steering, no proxy |
+| **Front Door (Std/Prem)** | L7 | Global | ✅ | Global web app + WAF + CDN (Content Delivery Network) |
+| **Traffic Manager** | DNS (Domain Name System) | Global | ❌ | DNS-based steering, no proxy |
 
 🧠 **Regional L7 → AGW. Global L7 → Front Door. DNS-only → Traffic Manager.**
 
 ---
 
-## 🛡️ DDoS
+## 🛡️ DDoS (Distributed Denial of Service)
 
 | Plan | Scope |
 |------|-------|
@@ -81,7 +81,7 @@ Often **wrong**:
 - ❌ "NSG is stateless"
 - ❌ "Higher priority number = first"
 - ❌ "ASG works across peered VNets"
-- ❌ "Basic LB has 99.99% SLA"
+- ❌ "Basic LB has 99.99% SLA (Service Level Agreement)"
 - ❌ "Traffic Manager proxies the traffic"
 
 ---

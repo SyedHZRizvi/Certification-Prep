@@ -69,7 +69,7 @@ Train model → produce user/item embeddings → store in **FAISS / ScaNN / Pine
 | Precision @ K | Hit rate in top-K |
 | Recall @ K | Coverage of relevant items |
 | NDCG @ K | Ranking quality (position-weighted) |
-| MAP @ K | Mean average precision |
+| MAP (Minimum Advertised Price) @ K | Mean average precision |
 | Coverage | % of catalog ever recommended |
 | Diversity | Variety in top-K |
 | Serendipity | Relevant + unexpected |
@@ -85,12 +85,12 @@ Train model → produce user/item embeddings → store in **FAISS / ScaNN / Pine
 | Dynamic Yield (Mastercard) | Retail / e-com |
 | Optimizely Personalization | Hybrid experimentation + personalization |
 | Bloomreach Engagement | Composable commerce |
-| BlueShift | B2B + B2C lifecycle |
+| BlueShift | B2B (Business-to-Business) + B2C (Business-to-Consumer) lifecycle |
 | Adobe Target | Adobe enterprise |
 | Algolia Recommend | Search-derived recsys |
 | Constructor.io | E-com search + recsys |
 | Salesforce Personalization | Salesforce stack |
-| Amazon Personalize | AWS-native |
+| Amazon Personalize | AWS (Amazon Web Services)-native |
 | TensorFlow Recommenders | Build-your-own |
 
 ---
@@ -98,7 +98,7 @@ Train model → produce user/item embeddings → store in **FAISS / ScaNN / Pine
 ## 🎨 GenAI Dynamic Creative
 
 ```
-User profile (CDP) → GenAI image (SD/Flux/MJ) + GenAI copy (LLM)
+User profile (CDP (Customer Data Platform)) → GenAI image (SD/Flux/MJ) + GenAI copy (LLM (Large Language Model))
                   ↓
             Bandit picks top variant
                   ↓
@@ -111,11 +111,11 @@ Meta **Advantage+ Creative** and Google **Demand Gen** automate this for paid so
 
 ## 🚨 The 5 Pitfalls
 
-1. Optimizing wrong metric (CTR up, retention down)
+1. Optimizing wrong metric (CTR (Click-Through Rate) up, retention down)
 2. Filter bubble (catalog narrows)
 3. Cold start (new users / new items)
 4. Popularity bias (long tail starves)
-5. Privacy compliance (GDPR right to explanation)
+5. Privacy compliance (GDPR (General Data Protection Regulation) right to explanation)
 
 ---
 

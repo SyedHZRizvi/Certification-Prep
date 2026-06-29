@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -305,7 +305,7 @@
 **A:** 3–5× more expensive on Claude/GPT/Gemini flagships.
 
 **Q:** What does TTFT stand for?
-**A:** Time-To-First-Token, the streaming-latency metric that matters most for chat UX. Aim <500ms for "responsive."
+**A:** Time-To-First-Token, the streaming-latency metric that matters most for chat UX (User Experience). Aim <500ms for "responsive."
 
 **Q:** What is the "Lost in the Middle" finding (Liu et al. 2023)?
 **A:** Information placed in the middle of a long context is recalled significantly worse than at the start or end. Defense: put critical instructions at edges.
@@ -314,7 +314,7 @@
 **A:** As output tokens, often 5–50× more expensive than non-reasoning siblings per visible answer.
 
 **Q:** Where does Anthropic put the `system` parameter?
-**A:** As a top-level field on the Messages API, NOT inside `messages[]` (OpenAI's pattern).
+**A:** As a top-level field on the Messages API (Application Programming Interface), NOT inside `messages[]` (OpenAI's pattern).
 
 **Q:** What is BAA in the LLM context?
 **A:** Business Associate Agreement, HIPAA-compliant vendor contract. Anthropic Enterprise, Azure OpenAI, Vertex Gemini are BAA-eligible; public Groq is not.
@@ -413,7 +413,7 @@
 **A:** Via forced tool use: define a tool with a JSON Schema and call with `tool_choice={"type": "tool", "name": "<your_tool>"}`.
 
 **Q:** What is OpenAI's structured-output activation?
-**A:** `response_format=PydanticModel` (beta SDK) or `response_format={"type": "json_schema", ...}` raw.
+**A:** `response_format=PydanticModel` (beta SDK (Software Development Kit)) or `response_format={"type": "json_schema", ...}` raw.
 
 **Q:** What does Gemini use for schema-enforced JSON?
 **A:** `config={"response_mime_type": "application/json", "response_schema": <PydanticModel-or-JSON-Schema>}`.
@@ -489,7 +489,7 @@
 **Q:** What is a "golden set"?
 **A:** A curated set of input + expected-output pairs used to measure prompt quality. The single most important artifact a prompt engineer owns.
 
-**Q:** Recommended MVP size for a golden set?
+**Q:** Recommended MVP (Minimum Viable Product) size for a golden set?
 **A:** 70–150 examples spanning easy, edge, hard, and adversarial cases.
 
 **Q:** What is G-Eval (Liu et al. 2023)?
@@ -505,7 +505,7 @@
 **A:** Harmonic mean of precision and recall: 2·P·R / (P+R). Useful single number when classes are imbalanced.
 
 **Q:** What does RAGAS measure?
-**A:** RAG-specific metrics: faithfulness (no hallucination beyond context), answer relevance, context precision, context recall.
+**A:** RAG (Retrieval-Augmented Generation)-specific metrics: faithfulness (no hallucination beyond context), answer relevance, context precision, context recall.
 
 **Q:** Cohen's kappa above ~0.7 means what?
 **A:** Substantial inter-annotator agreement between 2 human raters, the task rubric is well-defined.
@@ -591,7 +591,7 @@
 **A:** Normalizes ~100 LLM providers into the OpenAI message format. Adds fallbacks, router, cost tracking, spend caps, retries.
 
 **Q:** Three alternatives to LiteLLM?
-**A:** OpenRouter (hosted gateway), Portkey (gateway with caching), AWS Bedrock (first-party multi-provider).
+**A:** OpenRouter (hosted gateway), Portkey (gateway with caching), AWS (Amazon Web Services) Bedrock (first-party multi-provider).
 
 **Q:** Batch APIs (OpenAI, Anthropic), what's the trade-off?
 **A:** ~50% discount + relaxed rate limits in exchange for ~24-hour turnaround. Excellent for non-realtime workloads.
@@ -666,7 +666,7 @@
 **Q:** Perez & Ribeiro 2022 = ?
 **A:** *Ignore Previous Prompt: Attack Techniques For Language Models*, direct prompt injection foundational paper.
 
-**Q:** What does RLHF stand for?
+**Q:** What does RLHF (Reinforcement Learning from Human Feedback) stand for?
 **A:** Reinforcement Learning from Human Feedback.
 
 **Q:** What does DPO stand for?
@@ -675,7 +675,7 @@
 **Q:** What does TPM / RPM stand for?
 **A:** Tokens-Per-Minute / Requests-Per-Minute, common rate-limit units.
 
-**Q:** What does SLO stand for?
+**Q:** What does SLO (Service Level Objective) stand for?
 **A:** Service Level Objective. Common targets: 99.5% uptime, P95 latency <2s, LLM-judge quality ≥4.2/5, safety violations <0.1%.
 
 **Q:** What does GSM8K stand for?

@@ -60,8 +60,8 @@ When a critical zero-day requires fast deployment:
 
 | Mode | Effect |
 |------|--------|
-| 0 (HTTP only) | No P2P, CDN only |
-| **1 (LAN)** | P2P same NAT/subnet + CDN, **canonical default** |
+| 0 (HTTP (Hypertext Transfer Protocol) only) | No P2P, CDN (Content Delivery Network) only |
+| **1 (LAN (Local Area Network))** | P2P same NAT (Network Address Translation)/subnet + CDN, **canonical default** |
 | **2 (Group)** | P2P across subnets via group ID |
 | 3 (Internet) | Internet-wide P2P |
 | 99 (Simple) | Direct Microsoft Update only |
@@ -83,7 +83,7 @@ Separate policy with three states:
 
 ## 📅 Windows 11 End-of-Servicing
 
-| SKU | Servicing window |
+| SKU (Stock Keeping Unit) | Servicing window |
 |-----|------------------|
 | Home / Pro | **24 months** from release |
 | Enterprise / Education | **36 months** from release |

@@ -31,7 +31,7 @@ Need per-user audit?
 Layered enforcement:
 
 1. SMB connect (Kerberos / key)
-2. **Share-level RBAC** (`Storage File Data SMB Share Reader / Contributor / Elevated Contributor`)
+2. **Share-level RBAC (Role-Based Access Control)** (`Storage File Data SMB Share Reader / Contributor / Elevated Contributor`)
 3. **NTFS ACLs** on files/folders
 
 ---

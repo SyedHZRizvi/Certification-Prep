@@ -69,7 +69,7 @@ War/disrupt → Nation-state
 |------|-------|---------|
 | **IOC** | Indicator of Compromise (artifact) | Bad IP, file hash, malicious domain |
 | **IOA** | Indicator of Attack (behavior) | "Process spawned PowerShell with base64" |
-| **TTP** | Tactics, Techniques, Procedures | "Spearphishing attachment → macro → C2 over HTTPS" |
+| **TTP** | Tactics, Techniques, Procedures | "Spearphishing attachment → macro → C2 over HTTPS (HTTP Secure)" |
 
 **MITRE ATT&CK** = canonical TTP catalog.
 

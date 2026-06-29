@@ -9,11 +9,11 @@
 | Need | Pick |
 |------|------|
 | Buffer work for one consumer | **SQS Standard** |
-| Strict order + exactly-once | **SQS FIFO** |
+| Strict order + exactly-once | **SQS FIFO (First In, First Out)** |
 | Fan-out one event to many subscribers | **SNS** |
-| SNS + content-based routing + SaaS partners | **EventBridge** |
+| SNS + content-based routing + SaaS (Software as a Service) partners | **EventBridge** |
 | Multiple consumers replay events | **Kinesis Data Streams** |
-| "Just ship stream to S3/Redshift/OS" | **Kinesis Firehose** |
+| "Just ship stream to S3 (Simple Storage Service)/Redshift/OS" | **Kinesis Firehose** |
 | Multi-step workflow with retries/branches | **Step Functions Standard** |
 | High-volume short workflow | **Step Functions Express** |
 | Lift-and-shift AMQP/JMS app | **Amazon MQ** |
@@ -40,7 +40,7 @@
 ## 📡 SNS Quick
 
 - Pub/Sub topic
-- Subscribers: SQS, Lambda, HTTP/S, Email/SMS, Firehose, Mobile push
+- Subscribers: SQS, Lambda, HTTP (Hypertext Transfer Protocol)/S, Email/SMS, Firehose, Mobile push
 - Filter policies (JSON) per subscription
 - FIFO topics available (pair with FIFO SQS)
 - High throughput (millions/sec)
@@ -121,4 +121,4 @@ Direct integration with 200+ AWS APIs, no Lambda glue needed.
 
 ---
 
-➡️ [Module 8: Caching, CDN & Edge](../Module-08-Caching-CDN-Edge/Reading.md)
+➡️ [Module 8: Caching, CDN (Content Delivery Network) & Edge](../Module-08-Caching-CDN-Edge/Reading.md)

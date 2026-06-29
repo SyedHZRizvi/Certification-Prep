@@ -16,7 +16,7 @@ Need region-loss survival?
          └─ NO  → GRS   (or RA-GRS for read access)
 ```
 
-| SKU | Copies | Region | AZ | Read 2ndary |
+| SKU (Stock Keeping Unit) | Copies | Region | AZ | Read 2ndary |
 |-----|--------|--------|----|-------------|
 | LRS | 3 | 1 | ❌ | ❌ |
 | ZRS | 3 | 1 | ✅ | ❌ |
@@ -63,16 +63,16 @@ SAS query params to remember:
 |---|---------------|-------------------|--------------------|
 | Has public IP? | Yes | Yes (but firewalled) | Optional, disable for full lockdown |
 | Reachable from internet? | Yes | Restricted | No |
-| Routing | Internet | Azure backbone (from allowed subnet) | Private VNet via PE NIC |
+| Routing | Internet | Azure backbone (from allowed subnet) | Private VNet via PE (Private Equity) NIC |
 
 ---
 
 ## 🔐 Encryption Quick Hit
 
-- At-rest: AES-256 always-on (MMK default, CMK via Key Vault)
+- At-rest: AES (Advanced Encryption Standard)-256 always-on (MMK default, CMK via Key Vault)
 - CMK requires KV soft delete + purge protection + storage MI with Crypto Service Encryption User role
 - Infrastructure encryption = second AES-256 layer (set at creation only)
-- In-transit: enforce TLS 1.2 minimum
+- In-transit: enforce TLS (Transport Layer Security) 1.2 minimum
 
 ---
 

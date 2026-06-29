@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -295,7 +295,7 @@
 **Q:** Is Azure OpenAI included in the multi-service `AIServices` resource?
 **A:** No. Azure OpenAI is always a separate `OpenAI` resource kind.
 
-**Q:** REST header used for subscription-key authentication to Azure AI services?
+**Q:** REST (Representational State Transfer) header used for subscription-key authentication to Azure AI services?
 **A:** `Ocp-Apim-Subscription-Key`.
 
 **Q:** What is required on an Azure AI services resource for Microsoft Entra ID authentication to work?
@@ -304,7 +304,7 @@
 **Q:** Best authentication for code running in Azure App Service that calls an Azure AI service?
 **A:** System-assigned managed identity + `Cognitive Services User` role.
 
-**Q:** Python helper that walks env → managed identity → CLI → VS Code credentials?
+**Q:** Python helper that walks env → managed identity → CLI (Command Line Interface) → VS Code credentials?
 **A:** `DefaultAzureCredential` from `azure.identity`.
 
 **Q:** Free-tier (F0) resource limit per subscription?
@@ -339,7 +339,7 @@
 **A:** Prompt Shields, document (indirect) attack.
 
 **Q:** What does Groundedness Detection compare?
-**A:** An LLM's response against the grounding sources you provide.
+**A:** An LLM (Large Language Model)'s response against the grounding sources you provide.
 
 **Q:** Default Azure OpenAI content filter threshold for new deployments?
 **A:** Medium for Hate/Sexual/Violence/Self-Harm in both prompt and completion.
@@ -470,11 +470,11 @@
 **Q:** Dimensions for `text-embedding-3-small`, `text-embedding-3-large`, `ada-002`?
 **A:** 1536, 3072, 1536.
 
-**Q:** Minimum Azure AI Search SKU for semantic ranker?
+**Q:** Minimum Azure AI Search SKU (Stock Keeping Unit) for semantic ranker?
 **A:** Standard (S1) or higher.
 
 **Q:** What is "hybrid + semantic" search?
-**A:** Keyword + vector merged via Reciprocal Rank Fusion, then semantic re-ranked, Microsoft's RAG gold standard.
+**A:** Keyword + vector merged via Reciprocal Rank Fusion, then semantic re-ranked, Microsoft's RAG (Retrieval-Augmented Generation) gold standard.
 
 **Q:** What is integrated vectorization?
 **A:** A built-in Azure OpenAI Embedding skill in your skillset that vectorizes docs during indexing, no glue code.
@@ -489,7 +489,7 @@
 
 ## 💬 SECTION 6: CONVERSATIONAL AI
 
-**Q:** What does Azure AI Bot Service provide vs the Bot Framework SDK?
+**Q:** What does Azure AI Bot Service provide vs the Bot Framework SDK (Software Development Kit)?
 **A:** Bot Service provides managed hosting + channel connectivity. The Bot Framework SDK is the code-first SDK you build your bot with.
 
 **Q:** Channel for embedding a bot in a custom mobile/web app?
@@ -514,7 +514,7 @@
 **A:** Question Answering (not CLU).
 
 **Q:** Best auth for a bot calling Azure AI Language in production?
-**A:** Managed identity + RBAC role, no keys in code.
+**A:** Managed identity + RBAC (Role-Based Access Control) role, no keys in code.
 
 ---
 
@@ -530,7 +530,7 @@
 **A:** PTU, Provisioned Throughput Units.
 
 **Q:** Deployment SKU for cheapest async batch processing?
-**A:** Global Batch (~50% cheaper, 24-hour SLA).
+**A:** Global Batch (~50% cheaper, 24-hour SLA (Service Level Agreement)).
 
 **Q:** Whisper does what?
 **A:** Speech-to-text (an Azure OpenAI model).
@@ -550,10 +550,10 @@
 **Q:** Default Azure OpenAI content filter threshold?
 **A:** Medium.
 
-**Q:** First step when Azure OpenAI returns HTTP 429?
+**Q:** First step when Azure OpenAI returns HTTP (Hypertext Transfer Protocol) 429?
 **A:** Check the deployment's TPM/RPM quota; add exponential backoff; request quota increase or move to PTU.
 
-**Q:** GPT-4o context window size?
+**Q:** GPT (Generative Pre-trained Transformer)-4o context window size?
 **A:** Approximately 128K tokens.
 
 **Q:** Temperature range for grounded RAG answers?

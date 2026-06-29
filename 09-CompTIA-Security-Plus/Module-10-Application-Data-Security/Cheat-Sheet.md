@@ -24,8 +24,8 @@
 Commit  → Secret scan, pre-commit hooks
 Build   → SAST, SCA, SBOM generation
 Test    → DAST against staging, fuzzing
-Deploy  → Image scan, signing, IaC scan
-Prod    → RASP, WAF, EDR, log monitoring
+Deploy  → Image scan, signing, IaC (Infrastructure as Code) scan
+Prod    → RASP, WAF (Web Application Firewall), EDR (Endpoint Detection and Response), log monitoring
 ```
 
 ---
@@ -54,7 +54,7 @@ PUBLIC → INTERNAL → CONFIDENTIAL → RESTRICTED
 | State | Protection |
 |-------|-----------|
 | **At Rest** | FDE, BitLocker, FileVault, TDE, encrypted backups |
-| **In Transit** | TLS, IPSec, SSH, VPN, S/MIME |
+| **In Transit** | TLS (Transport Layer Security), IPSec, SSH (Secure Shell), VPN (Virtual Private Network), S/MIME |
 | **In Use** | Confidential computing (SGX, SEV, Nitro Enclaves) |
 
 ---
@@ -79,7 +79,7 @@ PUBLIC → INTERNAL → CONFIDENTIAL → RESTRICTED
 |------|---------|
 | **Network DLP** | Email / upload of sensitive content |
 | **Endpoint DLP** | USB, print, screen capture |
-| **Cloud DLP** | SaaS content (M365, Google Drive) |
+| **Cloud DLP** | SaaS (Software as a Service) content (M365, Google Drive) |
 | **Email DLP** | Outbound email specifically |
 
 ---
@@ -109,7 +109,7 @@ PUBLIC → INTERNAL → CONFIDENTIAL → RESTRICTED
 - ✅ "Parameterized queries / prepared statements"
 - ✅ "Pre-commit secret scanning + secrets manager"
 - ✅ "SCA + SBOM + signed artifacts"
-- ✅ "True anonymization" (when GDPR scope must drop)
+- ✅ "True anonymization" (when GDPR (General Data Protection Regulation) scope must drop)
 - ✅ "Confidential computing for in-use data"
 - ❌ "Hardcoded secrets in code"
 - ❌ "Hashing for confidentiality"

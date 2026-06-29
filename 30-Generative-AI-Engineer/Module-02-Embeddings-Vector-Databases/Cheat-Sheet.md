@@ -91,7 +91,7 @@ reranked = reranker.rerank(query, results, top_n=5)
 
 | Reranker | Provider | Notes |
 |----------|----------|-------|
-| Cohere Rerank 3 | API | Best general-purpose; multilingual |
+| Cohere Rerank 3 | API (Application Programming Interface) | Best general-purpose; multilingual |
 | Voyage rerank-2 | API | Domain variants |
 | bge-reranker-v2-m3 | Open weight | Single-GPU friendly |
 | ColBERT v2 / PLAID | Open weight | Late-interaction; Vespa-native |

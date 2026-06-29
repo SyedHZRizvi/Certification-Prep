@@ -12,7 +12,7 @@ title: "Module 1 Cheat Sheet: VFX Pipeline Overview"
 | Pre-Production / Pre-vis | Pre-vis Supervisor | Animatic cuts |
 | Principal Photography | VFX Supervisor | Plates + data package |
 | Post, Matchmove | Matchmove TD | Tracked cameras |
-| Post, 3D/DMP/FX | CG Supervisor | EXR render packages |
+| Post, 3D/DMP (Data Management Platform)/FX | CG Supervisor | EXR render packages |
 | Post, Compositing | Comp Supervisor | Final composite |
 | DI / Color | Colorist | Finished film |
 

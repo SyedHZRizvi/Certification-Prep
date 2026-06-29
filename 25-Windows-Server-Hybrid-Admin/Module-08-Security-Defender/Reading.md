@@ -200,7 +200,7 @@ Credential Guard uses **Virtualization-Based Security (VBS)** + Hyper-V isolatio
 |---------|-----|
 | **Mimikatz / Pass-the-Hash** | NTLM hashes are not in main-LSASS memory |
 | **Pass-the-Ticket** | Kerberos TGTs are not in main-LSASS memory |
-| **Credential theft via SAM (Serviceable Addressable Market)-R / DPAPI** | Out-of-LSASS keys remain protected |
+| **Credential theft via SAM-R / DPAPI** | Out-of-LSASS keys remain protected |
 
 ### Enable Credential Guard (Server 2019+)
 

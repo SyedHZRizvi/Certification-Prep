@@ -1,4 +1,4 @@
-# 📋 Module 6 Cheat Sheet: NLP & CV Managed Services
+# 📋 Module 6 Cheat Sheet: NLP (Natural Language Processing) & CV Managed Services
 
 > Print. Tape. Read.
 
@@ -8,7 +8,7 @@
 
 | Need | Service |
 |------|---------|
-| Sentiment / entities / key phrases | **Comprehend** (pre-trained API) |
+| Sentiment / entities / key phrases | **Comprehend** (pre-trained API (Application Programming Interface)) |
 | Custom doc classifier | **Comprehend Custom Classifier** |
 | Custom NER | **Comprehend Custom Entity** |
 | Drugs / conditions (HIPAA) | **Comprehend Medical** |
@@ -21,7 +21,7 @@
 | Intent-based chatbot | **Lex** |
 | Open-ended conversational AI | **Bedrock Agent** (Module 7) |
 | Semantic enterprise search | **Kendra** |
-| RAG-LLM Q&A over corpus | **Bedrock Knowledge Base** (Module 7) |
+| RAG (Retrieval-Augmented Generation)-LLM Q&A over corpus | **Bedrock Knowledge Base** (Module 7) |
 
 ---
 

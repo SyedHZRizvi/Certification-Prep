@@ -123,7 +123,7 @@ Your Email Service Provider (ESP) is your infrastructure. Choosing the wrong one
 
 ---
 
-## Section 3 — Legal Compliance: GDPR, CAN-SPAM, and CASL
+## Section 3 — Legal Compliance: GDPR, CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act), and CASL
 
 This is the section that separates professional marketers from amateurs. Email law is not optional.
 

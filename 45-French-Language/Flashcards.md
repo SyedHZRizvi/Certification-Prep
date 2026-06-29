@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -819,7 +819,7 @@
 
 **A:** Président-Directeur Général — equivalent to CEO (Chief Executive Officer)
 
-📖 DRH = Directeur des Ressources Humaines (HR Director); DAF = Directeur Administratif et Financier (CFO)
+📖 DRH = Directeur des Ressources Humaines (HR Director); DAF = Directeur Administratif et Financier (CFO (Chief Financial Officer))
 🇵🇰 PDG = چیف ایگزیکٹو آفیسر کا فرانسیسی متبادل
 
 ## Module 9 — Culture, Media & Idioms

@@ -8,9 +8,9 @@
 
 | Level | Controls | Key Rule |
 |-------|----------|----------|
-| **Account** | Billing, users, conversion tracking, linked GA4 | One account per business |
+| **Account** | Billing, users, conversion tracking, linked GA4 (Google Analytics 4) | One account per business |
 | **Campaign** | Budget, network, location, language, bidding strategy, ad schedule | One budget = one campaign |
-| **Ad Group** | Keyword set + matching ads + (if manual) CPC bid | One THEME per ad group |
+| **Ad Group** | Keyword set + matching ads + (if manual) CPC (Cost Per Click) bid | One THEME per ad group |
 | **Keyword / Ad** | Specific search terms bid on; copy shown to users | Keyword in Headline 1 |
 
 **STAG Rule:** 1 Theme → 3–7 Keywords → 1–2 RSAs → 1 Landing Page
@@ -34,7 +34,7 @@
 ## 3. Quality Score (1–10)
 
 ```
-QS = f(Expected CTR ~55%  +  Ad Relevance ~22%  +  Landing Page Experience ~22%)
+QS = f(Expected CTR (Click-Through Rate) ~55%  +  Ad Relevance ~22%  +  Landing Page Experience ~22%)
 ```
 
 | QS | Relative CPC Impact |
@@ -61,13 +61,13 @@ Ad Rank = Max Bid × Quality Score × Extension Impact
 Actual CPC = (Competitor Ad Rank below you ÷ Your Quality Score) + £0.01
 ```
 
-### ROAS
+### ROAS (Return on Ad Spend)
 ```
 ROAS = Revenue from Ads ÷ Ad Spend
 (e.g., £18,000 ÷ £1,000 = 18x = 1,800%)
 ```
 
-### CPA
+### CPA (Cost Per Acquisition)
 ```
 CPA = Total Ad Spend ÷ Number of Conversions
 (e.g., £1,200 ÷ 1,000 = £1.20)
@@ -90,7 +90,7 @@ Conversion history in this campaign?
 | Strategy | Best For | Watch Out |
 |----------|----------|-----------|
 | **Manual CPC** | New campaigns, learning phase | Labor-intensive |
-| **tCPA** | Lead gen, SaaS, fixed-value conversions | Set target too low = Google throttles spend |
+| **tCPA** | Lead gen, SaaS (Software as a Service), fixed-value conversions | Set target too low = Google throttles spend |
 | **tROAS** | E-commerce, variable order values | Needs revenue values in conversion tracking |
 | **Maximize Conversions** | Full budget utilization | CPA can spike |
 | **Maximize Conv. Value** | Revenue maximization | ROAS can drop |
@@ -102,7 +102,7 @@ Conversion history in this campaign?
 | Component | Limit | Key Rule |
 |-----------|-------|----------|
 | Headlines | Up to 15 (max 30 chars each) | Write conceptually diverse — not synonym-spinning |
-| Descriptions | Up to 4 (max 90 chars each) | Include CTA in at least one |
+| Descriptions | Up to 4 (max 90 chars each) | Include CTA (Call to Action) in at least one |
 | Shown at once | 3 headlines + 2 descriptions | Make each headline independently meaningful |
 
 **Pin sparingly.** Pinning all positions defeats the point of AI testing.
@@ -118,10 +118,10 @@ Conversion history in this campaign?
 | **Sitelinks** | Yes | Drive to specific pages (4 links shown) |
 | **Callouts** | No | Short phrases: "Free Delivery," "Award-Winning" |
 | **Structured Snippets** | No | List values under a header: Occasions: Birthdays, Weddings |
-| **Call** | Yes (tap-to-call) | Phone-first B2C/local businesses |
+| **Call** | Yes (tap-to-call) | Phone-first B2C (Business-to-Consumer)/local businesses |
 | **Location** | Yes (maps) | Physical stores; builds trust in DE/FR markets |
 | **Price** | Yes | E-commerce; show specific products + prices |
-| **Lead Form** | In-ad form | B2B lead gen; newsletter sign-up |
+| **Lead Form** | In-ad form | B2B (Business-to-Business) lead gen; newsletter sign-up |
 | **Image** | Yes | Brand differentiation (search partner sites) |
 
 ---
@@ -153,7 +153,7 @@ Conversion history in this campaign?
 
 **Germany-specific:** Phone number and address in ads materially improves CTR — German consumers verify before buying. Use Call and Location assets.
 
-**UK/EU GDPR:** Consent Mode v2 required for conversion tracking on EU/EEA visitors. Non-compliance = incomplete data + potential ICO/DPA action.
+**UK/EU GDPR (General Data Protection Regulation):** Consent Mode v2 required for conversion tracking on EU/EEA visitors. Non-compliance = incomplete data + potential ICO (Information Commissioner's Office)/DPA action.
 
 ---
 

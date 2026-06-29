@@ -83,7 +83,7 @@ Five positions to draw:
 J+S blends all positions as joystick moves.
 ```
 
-**Key fact:** The joystick controller UI is invisible at render time. Animate only the controller.
+**Key fact:** The joystick controller UI (User Interface) is invisible at render time. Animate only the controller.
 
 ---
 

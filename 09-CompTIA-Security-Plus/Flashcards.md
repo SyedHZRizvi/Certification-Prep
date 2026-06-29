@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -324,7 +324,7 @@
 ## 📦 SECTION 2: CRYPTOGRAPHY & PKI
 
 **Q:** Which symmetric algorithm is today's industry default?
-**A:** AES, typically AES-256-GCM for authenticated encryption.
+**A:** AES (Advanced Encryption Standard), typically AES-256-GCM for authenticated encryption.
 
 **Q:** Symmetric vs asymmetric, which is faster and used for bulk data?
 **A:** Symmetric. Asymmetric is too slow for bulk; used for key exchange + signatures.
@@ -354,7 +354,7 @@
 **A:** SAN covers multiple specific hostnames listed; wildcard `*.example.com` covers any single-label subdomain.
 
 **Q:** What does OCSP stapling do?
-**A:** Server pre-fetches the OCSP response and attaches it to TLS so the client doesn't need to query the CA.
+**A:** Server pre-fetches the OCSP response and attaches it to TLS (Transport Layer Security) so the client doesn't need to query the CA.
 
 **Q:** Where does a Root CA's private key ideally live?
 **A:** Offline (only used to sign intermediates), often in an HSM.
@@ -390,10 +390,10 @@
 **Q:** SAML vs OAuth vs OIDC?
 **A:** SAML = XML web SSO; OAuth = authorization (delegated access); OIDC = authentication via JWT id_token on top of OAuth.
 
-**Q:** Which protocol uses TCP 49 and separates AuthN from AuthZ?
+**Q:** Which protocol uses TCP (Transmission Control Protocol) 49 and separates AuthN from AuthZ?
 **A:** TACACS+.
 
-**Q:** Which protocol uses UDP 1812/1813 for network AAA?
+**Q:** Which protocol uses UDP (User Datagram Protocol) 1812/1813 for network AAA?
 **A:** RADIUS.
 
 **Q:** What does Kerberos require to function (timing-wise)?
@@ -403,15 +403,15 @@
 **A:** The AS (Authentication Service) inside the KDC.
 
 **Q:** LDAPS port?
-**A:** 636 (LDAP is 389).
+**A:** 636 (LDAP (Lightweight Directory Access Protocol) is 389).
 
 **Q:** DAC vs MAC?
 **A:** DAC: object owner decides (Unix/Windows files). MAC: system enforces based on labels (military clearance).
 
-**Q:** RBAC vs ABAC?
+**Q:** RBAC (Role-Based Access Control) vs ABAC (Attribute-Based Access Control)?
 **A:** RBAC: permissions per role, users get roles. ABAC: dynamic decisions based on user/resource/environment attributes.
 
-**Q:** What is JIT (Just-in-Time) access?
+**Q:** What is JIT (Just-In-Time) (Just-in-Time) access?
 **A:** Privilege granted on request for a limited time window then auto-revoked. Reduces standing privilege.
 
 **Q:** Name 3 core PAM capabilities.
@@ -482,7 +482,7 @@
 **Q:** What is fileless malware?
 **A:** Malware that lives in memory/registry only, often using PowerShell / WMI / built-in tools, no disk file to scan.
 
-**Q:** Best defense against SQL injection?
+**Q:** Best defense against SQL (Structured Query Language) injection?
 **A:** Parameterized queries / prepared statements.
 
 **Q:** Stored XSS vs Reflected XSS?
@@ -503,7 +503,7 @@
 **Q:** SYN flood, what does it exhaust?
 **A:** The TCP half-open connection table on the target.
 
-**Q:** What is DNS amplification?
+**Q:** What is DNS (Domain Name System) amplification?
 **A:** Attack using spoofed source IPs + DNS servers returning responses much larger than the query, small input, huge output.
 
 **Q:** Sec+ replacement term for MITM?
@@ -538,15 +538,15 @@
 ## 📦 SECTION 6: NETWORK SECURITY
 
 **Q:** SFTP port and protocol?
-**A:** Port 22, over SSH.
+**A:** Port 22, over SSH (Secure Shell).
 
 **Q:** FTPS port and protocol?
-**A:** Port 990 (or 21 with explicit TLS), FTP over TLS, NOT the same as SFTP.
+**A:** Port 990 (or 21 with explicit TLS), FTP (File Transfer Protocol) over TLS, NOT the same as SFTP.
 
 **Q:** IDS vs IPS difference?
 **A:** IDS detects + alerts (out-of-band). IPS detects + blocks (inline).
 
-**Q:** What is a WAF?
+**Q:** What is a WAF (Web Application Firewall)?
 **A:** Web Application Firewall, layer-7 firewall protecting web apps from OWASP-class attacks.
 
 **Q:** What is a DMZ / screened subnet for?
@@ -565,7 +565,7 @@
 **A:** Strongest EAP variant, mutual certificate-based authentication for 802.1X.
 
 **Q:** IPSec Tunnel vs Transport mode?
-**A:** Tunnel mode encrypts the entire IP packet (used for site-to-site VPN). Transport mode encrypts only the payload (host-to-host).
+**A:** Tunnel mode encrypts the entire IP packet (used for site-to-site VPN (Virtual Private Network)). Transport mode encrypts only the payload (host-to-host).
 
 **Q:** AH vs ESP in IPSec?
 **A:** AH = integrity + authentication only. ESP = also confidentiality.
@@ -577,7 +577,7 @@
 **A:** Integrity of DNS records (signed). Does NOT provide encryption, that's DoT/DoH.
 
 **Q:** DoT vs DoH port?
-**A:** DoT (DNS over TLS) = 853. DoH (DNS over HTTPS) = 443.
+**A:** DoT (DNS over TLS) = 853. DoH (DNS over HTTPS (HTTP Secure)) = 443.
 
 **Q:** SNMPv3 advantage over earlier versions?
 **A:** Adds authentication and encryption. v1/v2c are cleartext.
@@ -592,16 +592,16 @@
 **A:** Split = only corporate traffic via VPN, rest direct. Full = all traffic via VPN. Split is faster but less monitored.
 
 **Q:** What is microsegmentation?
-**A:** Per-workload firewall, each VM/container has its own allow-list, often via host agents or SDN.
+**A:** Per-workload firewall, each VM (Virtual Machine)/container has its own allow-list, often via host agents or SDN.
 
 ---
 
 ## 📦 SECTION 7: ENDPOINT, MOBILE & CLOUD
 
-**Q:** EDR vs AV?
+**Q:** EDR (Endpoint Detection and Response) vs AV?
 **A:** EDR adds behavioral telemetry, threat hunting, rollback, and response actions. AV is signature-based detection only.
 
-**Q:** XDR vs EDR?
+**Q:** XDR (Extended Detection and Response) vs EDR?
 **A:** XDR correlates endpoint + network + cloud + email telemetry. EDR is endpoint-only.
 
 **Q:** MDR vs EDR?
@@ -610,16 +610,16 @@
 **Q:** BYOD vs CYOD vs COPE vs COBO?
 **A:** BYOD = Bring Your Own. CYOD = Choose Your Own (from approved list). COPE = Corporate-Owned, Personally Enabled. COBO = Corporate-Owned, Business Only.
 
-**Q:** MDM vs MAM?
+**Q:** MDM (Mobile Device Management) vs MAM?
 **A:** MDM manages the whole device. MAM manages just corporate apps and their data (enables selective wipe).
 
 **Q:** What is UEM?
 **A:** Unified Endpoint Management, single console for mobile + laptop + desktop + IoT.
 
-**Q:** Who is responsible for S3 bucket misconfiguration?
-**A:** The customer (under the shared responsibility model). AWS handles infrastructure; customer handles configuration.
+**Q:** Who is responsible for S3 (Simple Storage Service) bucket misconfiguration?
+**A:** The customer (under the shared responsibility model). AWS (Amazon Web Services) handles infrastructure; customer handles configuration.
 
-**Q:** In IaaS, what does the customer manage?
+**Q:** In IaaS (Infrastructure as a Service), what does the customer manage?
 **A:** Guest OS, runtime, applications, data, network configuration inside the VM, and IAM.
 
 **Q:** What is a CASB?
@@ -628,11 +628,11 @@
 **Q:** What is CSPM?
 **A:** Cloud Security Posture Management, continuously audits cloud configurations against best practices.
 
-**Q:** What is ZTNA?
+**Q:** What is ZTNA (Zero Trust Network Access)?
 **A:** Zero Trust Network Access, identity-aware per-app access, replacing traditional VPN for user access.
 
 **Q:** What is SASE?
-**A:** Secure Access Service Edge, combines SD-WAN with cloud security services (FWaaS, SWG, ZTNA, CASB).
+**A:** Secure Access Service Edge, combines SD-WAN (Wide Area Network) with cloud security services (FWaaS, SWG, ZTNA, CASB).
 
 **Q:** Container security pitfall #1?
 **A:** Running containers as root, a kernel escape compromises the host.
@@ -647,7 +647,7 @@
 
 ## 📦 SECTION 8: SECURITY OPERATIONS
 
-**Q:** What does a SIEM do?
+**Q:** What does a SIEM (Security Information and Event Management) do?
 **A:** Aggregates logs, normalizes them, correlates events, and alerts on suspicious patterns.
 
 **Q:** SIEM vs SOAR?
@@ -720,17 +720,17 @@
 **Q:** What is a risk register?
 **A:** Living catalog of identified risks with owners, treatments, and status.
 
-**Q:** MSA vs SOW vs SLA?
+**Q:** MSA vs SOW vs SLA (Service Level Agreement)?
 **A:** MSA = umbrella contract. SOW = project scope under MSA. SLA = performance metrics + remedies (uptime, response time).
 
-**Q:** What's an NDA?
+**Q:** What's an NDA (Non-Disclosure Agreement)?
 **A:** Non-Disclosure Agreement, confidentiality terms.
 
 **Q:** MOU vs MOA?
 **A:** MOU = non-binding statement of intent. MOA = binding agreement.
 
 **Q:** When is a DPA required?
-**A:** GDPR requires a Data Processing Agreement when a third-party processor handles personal data on your behalf.
+**A:** GDPR (General Data Protection Regulation) requires a Data Processing Agreement when a third-party processor handles personal data on your behalf.
 
 **Q:** When is a BAA required?
 **A:** HIPAA requires a Business Associate Agreement with vendors handling Protected Health Information.
@@ -753,10 +753,10 @@
 **Q:** What is HIPAA?
 **A:** US federal law protecting Protected Health Information (PHI) for healthcare and business associates.
 
-**Q:** RTO definition?
+**Q:** RTO (Recovery Time Objective) definition?
 **A:** Maximum acceptable downtime for a system/process.
 
-**Q:** RPO definition?
+**Q:** RPO (Recovery Point Objective) definition?
 **A:** Maximum acceptable data loss, expressed in time (e.g., "RPO = 4 hours" means you can lose up to 4 hours of recent data).
 
 **Q:** MTBF vs MTTR?
@@ -836,7 +836,7 @@
 **A:** Integrity + publisher authenticity, consumers verify the signature with the publisher's public key before installing.
 
 **Q:** What's the difference between Waterfall and DevSecOps?
-**A:** Waterfall = sequential phases (Requirements → Design → Build → Test → Deploy). DevSecOps = security integrated continuously into CI/CD pipelines.
+**A:** Waterfall = sequential phases (Requirements → Design → Build → Test → Deploy). DevSecOps = security integrated continuously into CI/CD (Continuous Integration/Continuous Deployment) pipelines.
 
 **Q:** Two standards for SBOM format?
 **A:** SPDX and CycloneDX.

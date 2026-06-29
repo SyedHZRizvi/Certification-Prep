@@ -4,7 +4,7 @@
 
 ---
 
-## 🌐 DNS Records, MEMORIZE
+## 🌐 DNS (Domain Name System) Records, MEMORIZE
 
 | Record | What it maps |
 |--------|--------------|
@@ -24,14 +24,14 @@
 - **DMARC**, policy if SPF/DKIM fails (none / quarantine / reject) + reports
 
 ### DNS transports & ports
-- **UDP 53**, standard queries / responses
-- **TCP 53**, zone transfers, responses > 512 bytes
-- **DoT**, TCP 853 over TLS
-- **DoH**, TCP 443 over HTTPS
+- **UDP (User Datagram Protocol) 53**, standard queries / responses
+- **TCP (Transmission Control Protocol) 53**, zone transfers, responses > 512 bytes
+- **DoT**, TCP 853 over TLS (Transport Layer Security)
+- **DoH**, TCP 443 over HTTPS (HTTP Secure)
 
 ---
 
-## 📥 DHCP
+## 📥 DHCP (Dynamic Host Configuration Protocol)
 
 | Step | Message | Direction |
 |------|---------|-----------|
@@ -59,9 +59,9 @@
 
 | Protocol | Port | Encrypted? |
 |----------|------|-----------|
-| FTP control | TCP 21 | NO |
+| FTP (File Transfer Protocol) control | TCP 21 | NO |
 | FTP data (active) | TCP 20 | NO |
-| **SFTP / SCP** | **TCP 22** (SSH) | YES |
+| **SFTP / SCP** | **TCP 22** (SSH (Secure Shell)) | YES |
 | FTPS implicit | TCP 990 | YES (TLS) |
 | FTPS explicit | TCP 21 + AUTH TLS | YES |
 | **TFTP** | **UDP 69** | NO |
@@ -72,11 +72,11 @@
 
 | Protocol | Port | TLS port |
 |----------|------|----------|
-| SMTP server-to-server | 25 | 25+STARTTLS |
+| SMTP (Simple Mail Transfer Protocol) server-to-server | 25 | 25+STARTTLS |
 | SMTP submission | 587 | 587+STARTTLS |
 | SMTPS (legacy) |, | 465 |
-| POP3 | 110 | **995** (POP3S) |
-| IMAP | 143 | **993** (IMAPS) |
+| POP3 (Post Office Protocol 3) | 110 | **995** (POP3S) |
+| IMAP (Internet Message Access Protocol) | 143 | **993** (IMAPS) |
 
 ---
 
@@ -84,15 +84,15 @@
 
 | Service | Port |
 |---------|------|
-| HTTP | TCP 80 |
+| HTTP (Hypertext Transfer Protocol) | TCP 80 |
 | HTTPS | TCP 443 |
 | SSH | TCP 22 |
 | Telnet (don't use) | TCP 23 |
 | RDP | TCP 3389 |
-| LDAP / LDAPS | TCP 389 / 636 |
+| LDAP (Lightweight Directory Access Protocol) / LDAPS | TCP 389 / 636 |
 | Kerberos | TCP/UDP 88 |
 | SIP / SIP-TLS | 5060 / 5061 |
-| SNMP / SNMP trap | UDP 161 / 162 |
+| SNMP (Simple Network Management Protocol) / SNMP trap | UDP 161 / 162 |
 | Syslog | UDP 514 |
 
 ---
@@ -101,10 +101,10 @@
 
 | Option | When |
 |--------|------|
-| **Site-to-Site VPN** | Cheap, fast to deploy, public Internet |
-| **AWS Direct Connect / Azure ExpressRoute / GCP Dedicated Interconnect** | Dedicated, predictable bandwidth, lower latency |
-| **SD-WAN** | Hybrid transports + policy-based routing |
-| **SASE** | SD-WAN + cloud security (ZTNA, CASB, SWG, FWaaS) as one service |
+| **Site-to-Site VPN (Virtual Private Network)** | Cheap, fast to deploy, public Internet |
+| **AWS (Amazon Web Services) Direct Connect / Azure ExpressRoute / GCP (Google Cloud Platform) Dedicated Interconnect** | Dedicated, predictable bandwidth, lower latency |
+| **SD-WAN (Wide Area Network)** | Hybrid transports + policy-based routing |
+| **SASE** | SD-WAN + cloud security (ZTNA (Zero Trust Network Access), CASB, SWG, FWaaS) as one service |
 
 ---
 
@@ -115,7 +115,7 @@
 | Application | Apps / orchestrators |
 | **Control** | Centralized controller; decides policies/routes |
 | **Data** | Switches/routers forwarding by controller rules |
-| Management | SNMP, CLI, NETCONF |
+| Management | SNMP, CLI (Command Line Interface), NETCONF |
 
 **OpenFlow** programs the data plane from the controller.
 

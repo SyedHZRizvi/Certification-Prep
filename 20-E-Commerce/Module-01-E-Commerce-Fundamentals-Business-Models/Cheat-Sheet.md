@@ -8,11 +8,11 @@
 
 | Model | Primary platform | When to use |
 |-------|------------------|-------------|
-| **DTC** | Shopify Plus, Adobe Commerce | Brand + repeat purchase |
+| **DTC (Direct-to-Consumer)** | Shopify Plus, Adobe Commerce | Brand + repeat purchase |
 | **Marketplace seller** | Amazon, Walmart, Etsy | Cash flow + discovery |
 | **Marketplace operator** | Mirakl, Yo!Kart | You ARE the platform |
-| **B2B / wholesale** | Adobe Commerce B2B, Faire | High AOV, account-based |
-| **B2B2C hybrid** | Shopify Plus + Faire + Amazon | Multi-channel scale |
+| **B2B (Business-to-Business) / wholesale** | Adobe Commerce B2B, Faire | High AOV, account-based |
+| **B2B2C (Business-to-Business-to-Consumer) (Business-to-Consumer) hybrid** | Shopify Plus + Faire + Amazon | Multi-channel scale |
 | **Subscription** | Recharge, Skio | Replenishable + low churn |
 | **Social / live commerce** | TikTok Shop, Whatnot | Creator-led discovery |
 
@@ -22,9 +22,9 @@
 
 ```
 AOV  = Revenue / Orders
-CAC  = Total Acquisition Spend / New Customers
+CAC (Customer Acquisition Cost)  = Total Acquisition Spend / New Customers
 CM%  = (Revenue - Variable Costs) / Revenue
-CLV  = AOV × Frequency × Lifespan × Margin %
+CLV (Customer Lifetime Value)  = AOV × Frequency × Lifespan × Margin %
 Payback = CAC / (AOV × CM%)
 ```
 
@@ -85,7 +85,7 @@ Tail:    Niche SKUs (low volume, search-driven)
 Aggregate(tail) > Aggregate(head) when:
 - Shelf space cost = 0 (digital)
 - Search/recommendation is excellent
-- PIM data is clean
+- PIM (Product Information Management) data is clean
 ```
 
 ---
@@ -108,9 +108,9 @@ Aggregate(tail) > Aggregate(head) when:
 - ❌ **Race-to-zero on Amazon**, losing pricing power
 - ❌ **DTC with < 30% gross margin**, can't afford CAC
 - ❌ **B2B portal without account-tiered pricing**, kills enterprise
-- ❌ **Subscription without churn modeling**, can't reach $10M ARR
+- ❌ **Subscription without churn modeling**, can't reach $10M ARR (Annual Recurring Revenue)
 - ❌ **Furniture DTC with bad freight model**, freight eats 25%+ of CM
-- ❌ **Multi-marketplace without OMS**, inventory disasters in 6 months
+- ❌ **Multi-marketplace without OMS (Order Management System)**, inventory disasters in 6 months
 - ❌ **No first-party data strategy**, vulnerable to platform changes
 
 ---
@@ -138,7 +138,7 @@ When you see these, they're often **wrong**:
 
 - A brief is **1,489 words** (Bezos 1997, write yours that tight)
 - Payback period **6-12 months** = healthy DTC; 1-3 = subscription
-- Amazon turned its first **annual profit in 2003** (6 years post-IPO)
+- Amazon turned its first **annual profit in 2003** (6 years post-IPO (Initial Public Offering))
 - TikTok Shop launched US **September 2023**
 - Wharton specialization taught by **Peter Fader + David Bell**
 

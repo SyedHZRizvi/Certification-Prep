@@ -46,11 +46,11 @@ LOW           │  e-cat / Pcard│   bidding/auction│
 | Sole source | Only one supplier exists in the market |
 | Dual source | 2 suppliers, primary + backup (70/30, 80/20) |
 | Multi-source | 2+ concurrent suppliers |
-| Consortium | Multiple buyers pool demand (GPO) |
+| Consortium | Multiple buyers pool demand (GPO (Group Policy Object)) |
 
 ---
 
-## 📄 RFI vs RFP vs RFQ
+## 📄 RFI vs RFP (Request for Proposal) vs RFQ (Request for Quotation)
 
 | Document | Purpose | Output |
 |---|---|---|

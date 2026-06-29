@@ -40,9 +40,9 @@ Idle drive that auto-rebuilds on failure.
 | Granularity | **Block** | **File** |
 | Looks like | Local disk (LUN) | Network share |
 | Protocols | FC, iSCSI, FCoE, NVMe-oF | NFS, SMB |
-| Network | Dedicated fabric (FC) or IP (iSCSI) | Shared LAN |
+| Network | Dedicated fabric (FC) or IP (iSCSI) | Shared LAN (Local Area Network) |
 | Boot from? | Yes | No |
-| Best for | VM datastores, DB | File shares, home dirs |
+| Best for | VM (Virtual Machine) datastores, DB | File shares, home dirs |
 
 ---
 
@@ -50,8 +50,8 @@ Idle drive that auto-rebuilds on failure.
 
 | Protocol | Port / fabric |
 |---|---|
-| **iSCSI** | TCP 3260 |
-| **NFS** | TCP/UDP 2049 |
+| **iSCSI** | TCP (Transmission Control Protocol) 3260 |
+| **NFS** | TCP/UDP (User Datagram Protocol) 2049 |
 | **SMB / CIFS** | TCP 445 |
 | AFP (legacy) | TCP 548 |
 | FC | dedicated FC fabric (no IP) |
@@ -118,7 +118,7 @@ Best dedup ratios: backups (10–30×), VDI golden images, mailboxes.
 
 | | Sync | Async |
 |---|---|---|
-| RPO | **0** | > 0 |
+| RPO (Recovery Point Objective) | **0** | > 0 |
 | Distance | Metro (≤ ~100 km) | Continental |
 | Latency | ≤ ~5 ms one-way | Tolerant |
 | Cost | High | Lower |

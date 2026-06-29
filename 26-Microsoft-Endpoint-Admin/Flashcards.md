@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -275,12 +275,12 @@
 ## 🌐 SECTION 1: MODERN WORKPLACE & STRATEGY
 
 **Q:** What are the three Microsoft Entra device join states for Windows 11?
-**A:** Entra registered (BYOD, personal), Entra joined (cloud-only), and Microsoft Entra hybrid joined (on-prem AD + Entra ID).
+**A:** Entra registered (BYOD, personal), Entra joined (cloud-only), and Microsoft Entra hybrid joined (on-prem AD (Active Directory) + Entra ID).
 
 **Q:** What does Zero Trust assume about every request?
 **A:** Never trust, always verify, explicit verification of identity, device, network location, and signal context for every access decision.
 
-**Q:** Define MDM and MAM in one sentence each.
+**Q:** Define MDM (Mobile Device Management) and MAM in one sentence each.
 **A:** MDM = Mobile Device Management full enrollment and control of the device. MAM = Mobile Application Management protect corporate data inside specific apps without enrolling the device.
 
 **Q:** Which join state is the right answer when "the device is corporate-owned and has no need for on-prem AD"?
@@ -403,7 +403,7 @@
 ## 🛡️ SECTION 6: ENDPOINT SECURITY
 
 **Q:** What's the difference between Microsoft Defender for Endpoint Plan 1 and Plan 2?
-**A:** Plan 1 = next-gen antivirus + ASR + web protection + device control. Plan 2 = Plan 1 + EDR + Threat & Vulnerability Management + Advanced Hunting + auto-investigation.
+**A:** Plan 1 = next-gen antivirus + ASR + web protection + device control. Plan 2 = Plan 1 + EDR (Endpoint Detection and Response) + Threat & Vulnerability Management + Advanced Hunting + auto-investigation.
 
 **Q:** What is an Attack Surface Reduction (ASR) rule?
 **A:** A Defender for Endpoint rule that blocks specific malicious behaviors (Office child processes, credential theft, obfuscated scripts). Available in Audit, Block, or Warn mode.
@@ -412,7 +412,7 @@
 **A:** Audit (logs but allows, for testing), Block (enforces). Warn is a third mode that prompts the user with a one-time bypass.
 
 **Q:** What is BitLocker, and what does Intune's "silent enable" policy do?
-**A:** BitLocker = full-disk encryption (XTS-AES 128/256). Silent enable encrypts the OS drive and escrows the recovery key to Entra ID without user prompts.
+**A:** BitLocker = full-disk encryption (XTS-AES (Advanced Encryption Standard) 128/256). Silent enable encrypts the OS drive and escrows the recovery key to Entra ID without user prompts.
 
 **Q:** Where are BitLocker recovery keys stored when escrowed by Intune?
 **A:** Microsoft Entra ID, on the device object. Admins can retrieve via Intune portal, Entra portal, or Microsoft Graph.
@@ -421,7 +421,7 @@
 **A:** Microsoft Defender for Endpoint blocks malicious artifacts even when a third-party antivirus is the primary AV, passive Defender + active EDR enforcement.
 
 **Q:** What is Microsoft Defender for Cloud Apps (formerly MCAS)?
-**A:** Microsoft's cloud access security broker (CASB), discovers shadow IT, controls SaaS apps, and integrates with Defender for Endpoint device signals.
+**A:** Microsoft's cloud access security broker (CASB), discovers shadow IT, controls SaaS (Software as a Service) apps, and integrates with Defender for Endpoint device signals.
 
 ---
 
@@ -440,7 +440,7 @@
 **A:** A WUfB action that pushes a specific quality update outside the normal ring schedule when a zero-day requires immediate patching.
 
 **Q:** What is Delivery Optimization?
-**A:** Microsoft's peer-to-peer content delivery for Windows updates and Intune apps, devices fetch from peers on the same LAN before pulling from Microsoft.
+**A:** Microsoft's peer-to-peer content delivery for Windows updates and Intune apps, devices fetch from peers on the same LAN (Local Area Network) before pulling from Microsoft.
 
 **Q:** When does a Windows 11 feature update reach end of servicing?
 **A:** 24 months from release for Home/Pro (24H2 example: October 2024 → October 2026), 36 months for Enterprise/Education.
@@ -477,7 +477,7 @@
 
 ## 🧠 STUDY TIPS
 
-1. **Build a test tenant.** A free Microsoft 365 E5 developer tenant lasts 90 days and renews. Enroll a real device or a Hyper-V VM and click through every screen the exam describes.
+1. **Build a test tenant.** A free Microsoft 365 E5 developer tenant lasts 90 days and renews. Enroll a real device or a Hyper-V VM (Virtual Machine) and click through every screen the exam describes.
 2. **Drill the four Autopilot modes.** Self-deploying / pre-provisioned / user-driven / for-existing-devices, be able to name the use case, license requirement, and limitations for each.
 3. **Memorize the licensing matrix.** Which features need Intune Plan 1, Plan 2, Entra ID P1, P2, or M365 E3/E5. The exam asks license-by-feature questions every form.
 4. **Practice with the Company Portal.** Many "what does the user see" questions are unbluffable if you've never opened the Company Portal app.

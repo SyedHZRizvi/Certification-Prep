@@ -16,7 +16,7 @@
 
 ---
 
-## 📦 Golden Set Composition (MVP: 70-150)
+## 📦 Golden Set Composition (MVP (Minimum Viable Product): 70-150)
 
 | Component | Count |
 |-----------|-------|
@@ -61,7 +61,7 @@
 - Latency P50/P95/P99
 - Cost per request
 
-### RAG (RAGAS)
+### RAG (Retrieval-Augmented Generation) (RAGAS)
 - **Faithfulness**, answer uses only retrieved context
 - **Answer relevance**, addresses the question
 - **Context precision**, retrieved chunks are relevant
@@ -77,7 +77,7 @@
 | **DeepEval** | Pytest-style |
 | **RAGAS** | RAG metrics |
 | **OpenAI Evals** | Open-source, comprehensive |
-| **LangSmith** | LangChain stack + human review UI |
+| **LangSmith** | LangChain stack + human review UI (User Interface) |
 | **Braintrust** | Hosted dataset + judge + dashboard |
 | **Phoenix (Arize)** | OSS observability + evals |
 | **Inspect (AISI)** | Safety / capability evals |

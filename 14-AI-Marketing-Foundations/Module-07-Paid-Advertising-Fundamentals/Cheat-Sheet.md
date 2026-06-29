@@ -17,7 +17,7 @@ Google: **Quality Score** (1–10). Meta: **Estimated Action Rate × Ad Quality*
 
 ## 🎯 Quality Score Components (Google)
 
-1. Expected CTR
+1. Expected CTR (Click-Through Rate)
 2. Ad relevance to query
 3. Landing page experience
 
@@ -41,11 +41,11 @@ Target: 7+ ; warning <5.
 
 | Strategy | Use when |
 |---|---|
-| Manual CPC | Niche / tight control |
+| Manual CPC (Cost Per Click) | Niche / tight control |
 | Maximize Clicks | New account, broad traffic |
 | Maximize Conversions | Established conv data |
-| **Target CPA** | Lead gen with cost target |
-| **Target ROAS** | E-comm with revenue tracking |
+| **Target CPA (Cost Per Acquisition)** | Lead gen with cost target |
+| **Target ROAS (Return on Ad Spend)** | E-comm with revenue tracking |
 | Maximize Conversion Value | E-comm scale |
 | Enhanced CPC | Hybrid manual + auto |
 
@@ -57,8 +57,8 @@ Target: 7+ ; warning <5.
 
 | Formula | What it tells you |
 |---|---|
-| **CAC** = total spend ÷ new customers | Cost to win one |
-| **LTV** = AOV × purchases × lifespan | Total value |
+| **CAC (Customer Acquisition Cost)** = total spend ÷ new customers | Cost to win one |
+| **LTV (Lifetime Value)** = AOV × purchases × lifespan | Total value |
 | **LTV:CAC** ≥ 3:1 | Healthy unit economics |
 | **ROAS** = revenue ÷ ad spend | NOT profit |
 | **Break-even ROAS** ≈ 1 / gross margin | 40% margin → 2.5× |
@@ -91,7 +91,7 @@ Target: 7+ ; warning <5.
 
 - **5–20×** higher conv rate vs cold prospecting
 - Cap frequency 3–8 impressions/week
-- **CAPI (Conversions API)** server-side post-iOS-14.5 is mandatory
+- **CAPI (Conversions API (Application Programming Interface))** server-side post-iOS-14.5 is mandatory
 - Google equivalent: **Enhanced Conversions**
 
 ---

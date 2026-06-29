@@ -114,12 +114,12 @@ PEOPLE   ←→   PROFIT
 | GRI | Multi-stakeholder ESG |
 | SASB → ISSB | Industry, financial materiality |
 | TCFD | Climate-financial risk |
-| CDP | Voluntary disclosure |
+| CDP (Customer Data Platform) | Voluntary disclosure |
 | CSRD (EU) | Mandatory EU sustainability |
 
 ---
 
-## 📊 Sustainability KPIs
+## 📊 Sustainability KPIs (Key Performance Indicators)
 
 - Carbon per shipment / per unit
 - Empty miles %

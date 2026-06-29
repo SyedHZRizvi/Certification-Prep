@@ -20,8 +20,8 @@
 
 | Term | Meaning |
 |------|---------|
-| **RPO** | Max acceptable data loss (in time) |
-| **RTO** | Max acceptable downtime |
+| **RPO (Recovery Point Objective)** | Max acceptable data loss (in time) |
+| **RTO (Recovery Time Objective)** | Max acceptable downtime |
 | **MTBF** | Average time between failures |
 | **MTTR** | Average time to repair / recover |
 
@@ -78,7 +78,7 @@ NEW → ASSIGNED → IN PROGRESS → PENDING → RESOLVED → CLOSED
 | Ticket | Per-incident |
 | KB article | Recurring solution |
 | Runbook | Task-specific steps |
-| SOP | Recurring process |
+| SOP (Standard Operating Procedure) | Recurring process |
 | CMDB | Asset + dependency inventory |
 | Network diagram | Topology |
 | Change record | What changed, when, by whom |
@@ -104,9 +104,9 @@ NEW → ASSIGNED → IN PROGRESS → PENDING → RESOLVED → CLOSED
 |---------|-----|
 | Immutable storage | Can't be modified for retention period |
 | Air-gapped | Physically disconnected |
-| MFA-delete | Hardware key needed to remove |
+| MFA (Multi-Factor Authentication)-delete | Hardware key needed to remove |
 | Versioning | Historical recovery |
-| Separate auth domain | Production AD compromise doesn't kill backups |
+| Separate auth domain | Production AD (Active Directory) compromise doesn't kill backups |
 
 ---
 

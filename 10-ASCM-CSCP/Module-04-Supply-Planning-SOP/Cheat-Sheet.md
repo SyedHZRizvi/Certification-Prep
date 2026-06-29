@@ -1,4 +1,4 @@
-# 📋 Module 4 Cheat Sheet: Supply Planning & S&OP
+# 📋 Module 4 Cheat Sheet: Supply Planning & S&OP (Sales and Operations Planning)
 
 > One page. Print it. Tape it to your monitor. Review before the exam.
 
@@ -23,8 +23,8 @@
 |------|---------|-------|----------------|
 | Strategic | 3–10 yrs | $ revenue | RRP |
 | S&OP / Aggregate | 12–24 mo | Family | RRP / RCCP feed |
-| MPS | 3–6 mo | SKU | **RCCP** |
-| MRP | Same as MPS | Component | **CRP** |
+| MPS | 3–6 mo | SKU (Stock Keeping Unit) | **RCCP** |
+| MRP (Material Requirements Planning) | Same as MPS | Component | **CRP** |
 | PAC | Days | Work order | I/O Control |
 
 ---
@@ -66,15 +66,15 @@ Levers: overtime, hire/fire, subcontract, inventory buildup, backorders, demand 
 
 ## 📦 MRP Inputs / Outputs
 
-**Inputs:** MPS · BOM · Inventory records
+**Inputs:** MPS · BOM (Bill of Materials) · Inventory records
 
 **Outputs:** Planned order releases · Reschedule notices · PO recommendations
 
 ### Lot-sizing rules
 | Rule | When |
 |------|------|
-| L4L | Net req each period, low setup, JIT |
-| EOQ | Stable demand |
+| L4L | Net req each period, low setup, JIT (Just-In-Time) |
+| EOQ (Economic Order Quantity) | Stable demand |
 | POQ | Smoothed lumpy |
 | FOQ | Pack-size constraint |
 | Min-max | Spares / MRO |

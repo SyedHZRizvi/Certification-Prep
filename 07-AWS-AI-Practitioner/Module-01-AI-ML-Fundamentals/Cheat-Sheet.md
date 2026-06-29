@@ -108,7 +108,7 @@ Usually wrong:
 - ❌ Trusting **accuracy** on imbalanced data
 - ❌ Calling a system "AI" when it's just **if/else rules**
 - ❌ Throwing a deep neural network at tabular data when XGBoost would crush it
-- ❌ Re-training from scratch when fine-tuning or RAG would do (preview: Module 6)
+- ❌ Re-training from scratch when fine-tuning or RAG (Retrieval-Augmented Generation) would do (preview: Module 6)
 
 ---
 

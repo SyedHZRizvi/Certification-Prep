@@ -9,7 +9,7 @@
 | Term | One-liner |
 |------|-----------|
 | **Foundation Model** | Large, pre-trained, general-purpose, adaptable model |
-| **LLM** | A foundation model for text |
+| **LLM (Large Language Model)** | A foundation model for text |
 | **Transformer** | The neural-net architecture behind modern LLMs |
 | **Token** | A small chunk of text (~3–4 chars) the model consumes |
 | **Embedding** | A vector that represents meaning of text/image/audio |
@@ -32,7 +32,7 @@
 
 ## 👻 Hallucination Mitigations (memorize this list)
 
-1. **RAG**, ground answers in real data (Module 5)
+1. **RAG (Retrieval-Augmented Generation)**, ground answers in real data (Module 5)
 2. **Better prompting**, few-shot, system instructions, "say I don't know"
 3. **Fine-tuning**, embed domain knowledge in weights (Module 6)
 4. **Guardrails**, filter / block bad outputs (Module 7)
@@ -113,9 +113,9 @@ Usually wrong:
 
 | Case | What it proves |
 |------|----------------|
-| **ChatGPT launch (Nov 2022)** | Productized conversational UI + RLHF alignment created the GenAI moment; 100M users in 2 months |
-| **Anthropic Claude 3 on Bedrock (Mar 2024)** | Enterprise frontier model with AWS-native IAM/VPC/Guardrails wrapping |
-| **Italian DPA temporary GDPR ban on ChatGPT (Mar 2023)** | Regulatory exposure for public LLMs without data-subject rights |
+| **ChatGPT launch (Nov 2022)** | Productized conversational UI (User Interface) + RLHF (Reinforcement Learning from Human Feedback) alignment created the GenAI moment; 100M users in 2 months |
+| **Anthropic Claude 3 on Bedrock (Mar 2024)** | Enterprise frontier model with AWS-native IAM (Identity and Access Management)/VPC (Virtual Private Cloud)/Guardrails wrapping |
+| **Italian DPA temporary GDPR (General Data Protection Regulation) ban on ChatGPT (Mar 2023)** | Regulatory exposure for public LLMs without data-subject rights |
 
 ---
 

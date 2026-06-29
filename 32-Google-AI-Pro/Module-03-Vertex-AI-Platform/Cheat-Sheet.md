@@ -25,7 +25,7 @@
 | | **Google AI Studio** | **Vertex AI Studio** |
 |---|----------------------|------------------------|
 | URL | aistudio.google.com | Google Cloud console |
-| Auth | API key | IAM (ADC) |
+| Auth | API (Application Programming Interface) key | IAM (Identity and Access Management) (ADC) |
 | Audit | ❌ | ✅ |
 | Region | Auto-picked | Explicit |
 | Use | Prototyping, hobby | Enterprise prompting |
@@ -47,7 +47,7 @@
 | | **Vertex AI Search** | **Vertex AI Vector Search** |
 |---|---------------------|------------------------------|
 | Former name | Discovery Engine | Matching Engine |
-| What | Managed RAG (chunk+embed+index+retrieve+ground) | Raw ANN index |
+| What | Managed RAG (Retrieval-Augmented Generation) (chunk+embed+index+retrieve+ground) | Raw ANN index |
 | Pick when | "I have docs/sites; build RAG fast" | "I have custom embeddings; need fast vector lookup" |
 | Latency | 200–500ms full RAG | 10–50ms vectors only |
 
@@ -72,7 +72,7 @@
 | Primitive | Protects against | Use when |
 |-----------|------------------|----------|
 | **IAM** | Unauthorized API calls | Always |
-| **VPC-SC** | Data exfiltration outside the perimeter | Regulated, sensitive |
+| **VPC (Virtual Private Cloud)-SC** | Data exfiltration outside the perimeter | Regulated, sensitive |
 | **CMEK** | Inability to control your own keys | Regulator-mandated key control |
 
 🎯 *CMEK and VPC-SC are NOT substitutes, they protect different layers. Use both for HIPAA.*
@@ -116,7 +116,7 @@ Model Monitoring (skew / drift / drift detection + alert)
 
 | Type | Use |
 |------|-----|
-| **Online** | Real-time HTTPS/gRPC, autoscaling, traffic_split for canary |
+| **Online** | Real-time HTTPS (HTTP Secure)/gRPC, autoscaling, traffic_split for canary |
 | **Batch** | Async GCS-in, GCS-out |
 | **Private** | VPC-only (no public internet) |
 

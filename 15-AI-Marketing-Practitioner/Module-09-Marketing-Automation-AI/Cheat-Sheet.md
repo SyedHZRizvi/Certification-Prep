@@ -18,10 +18,10 @@ TRIGGER  →  CONDITION  →  ACTION  →  DELAY  →  next step
 
 | Use case | Platform |
 |----------|----------|
-| **DTC ecom (Shopify)** | Klaviyo |
-| **B2B SaaS / content** | HubSpot |
+| **DTC (Direct-to-Consumer) ecom (Shopify)** | Klaviyo |
+| **B2B (Business-to-Business) SaaS (Software as a Service) / content** | HubSpot |
 | **SMB / service biz** | ActiveCampaign or HubSpot Starter |
-| **Enterprise (SF CRM)** | Salesforce Marketing Cloud |
+| **Enterprise (SF CRM (Customer Relationship Management))** | Salesforce Marketing Cloud |
 | **Cross-tool glue** | Make.com / n8n / Zapier |
 
 ---
@@ -30,7 +30,7 @@ TRIGGER  →  CONDITION  →  ACTION  →  DELAY  →  next step
 
 ```
 1. Hot Lead    , high-intent pages or forms
-2. MQL→SQL     , score threshold + rep notify
+2. MQL (Marketing Qualified Lead)→SQL (Sales Qualified Lead)     , score threshold + rep notify
 3. Onboarding  , post-signup education
 4. Re-engage   , 60+ days inactive
 ```
@@ -45,7 +45,7 @@ TRIGGER  →  CONDITION  →  ACTION  →  DELAY  →  next step
 3. Abandoned Browse     , 3+ product views, no ATC
 4. Post-Purchase        , review + cross-sell
 5. Win-Back             , 90+ days no purchase
-6. Birthday/Anniversary , LTV lift
+6. Birthday/Anniversary , LTV (Lifetime Value) lift
 7. Replenishment        , repeat purchase trigger
 ```
 
@@ -68,21 +68,21 @@ T+96 hours:  EXIT flow
 |------|-------------------|-----|
 | **n8n self-host** | ~free + VPS | Cheapest at scale |
 | Make.com | $9-29/mo | Solo marketers |
-| Zapier | $20-$299+ | Easy UI, expensive |
+| Zapier | $20-$299+ | Easy UI (User Interface), expensive |
 
 ---
 
 ## 🤖 AI Agents: The Pattern
 
 ```
-LLM + TOOLS + PERMISSIONS + HUMAN-REVIEW
+LLM (Large Language Model) + TOOLS + PERMISSIONS + HUMAN-REVIEW
 ```
 
 Real use case: support email → check Shopify order → draft personalized reply → human approves → send.
 
 | Platform | Notes |
 |----------|-------|
-| Claude API tool use | You manage state (more control) |
+| Claude API (Application Programming Interface) tool use | You manage state (more control) |
 | OpenAI Assistants v2 | Server-side state (less code) |
 
 ---
@@ -134,7 +134,7 @@ Make.com (glue: Klaviyo ↔ Meta/Google audiences)
    +
 Meta/Google Customer Match (suppress buyers, retarget non-buyers)
    +
-GA4 (measurement)
+GA4 (Google Analytics 4) (measurement)
 ```
 
 ---

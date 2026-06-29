@@ -36,7 +36,7 @@
 |----------|--------|------|
 | WEP | **BROKEN** (since 2001) | Never the right answer |
 | WPA (TKIP) | Deprecated | |
-| **WPA2** | Acceptable | KRACK 2017; AES-CCMP preferred |
+| **WPA2** | Acceptable | KRACK 2017; AES (Advanced Encryption Standard)-CCMP preferred |
 | **WPA3** | **Current** | SAE handshake, forward secrecy, Enhanced Open |
 
 ### WPA3 highlights
@@ -47,12 +47,12 @@
 ### Personal vs Enterprise
 - **Personal (PSK)** → home/SOHO
 - **Enterprise** → 802.1X + RADIUS + EAP (per-user creds)
-  - **EAP-TLS** = both-side certs (most secure)
+  - **EAP-TLS (Transport Layer Security)** = both-side certs (most secure)
   - **PEAP / EAP-TTLS** = server cert + tunneled user creds
 
 ---
 
-## ⚡ PoE, Power Over Ethernet
+## ⚡ PoE (Power over Ethernet), Power Over Ethernet
 
 | Standard | Max W/port | Use |
 |----------|-----------|-----|
@@ -112,13 +112,13 @@
 
 | Feature | What it does |
 |---------|--------------|
-| NAT/PAT | Many internal → one ISP IP |
+| NAT (Network Address Translation)/PAT | Many internal → one ISP (Internet Service Provider) IP |
 | Port forwarding | Inbound to specific internal host |
 | Stateful firewall | Block unsolicited inbound |
-| Guest network | Separate SSID/VLAN |
+| Guest network | Separate SSID/VLAN (Virtual Local Area Network) |
 | **UPnP** | **Disable** unless needed (auto inbound ports) |
 | **WPS** | **Disable** (PIN brute-forceable, Reaver attack) |
-| QoS | Prioritize VoIP/video |
+| QoS (Quality of Service) | Prioritize VoIP/video |
 
 ---
 

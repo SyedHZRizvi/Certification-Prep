@@ -44,7 +44,7 @@ Reasons email outperforms most channels:
 ## 🧱 Email Marketing 101: The Five Foundations
 
 ### 1. List Building (Permission, Not Purchase)
-- Never buy lists, illegal under CAN-SPAM, GDPR (General Data Protection Regulation), and most local laws.
+- Never buy lists, illegal under CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act), GDPR (General Data Protection Regulation), and most local laws.
 - Use **opt-in forms** with clear value propositions.
 - **Double opt-in** (confirmation email after signup) reduces spam and improves deliverability.
 - Lead magnets (PDF guide, free template, discount, checklist) are the standard exchange.
@@ -208,7 +208,7 @@ Skim these now; Module 9 goes deep.
 - Penalties up to 4% of global revenue or €20M (whichever higher)
 - Applies to anyone marketing to EU residents, not just EU-based companies
 
-### CASL (Canada, 2014)
+### CASL (Canada's Anti-Spam Legislation) (Canada, 2014)
 - Express consent for commercial email
 - Implied consent in limited cases
 - Penalties up to CA$10M

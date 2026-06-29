@@ -35,13 +35,13 @@
 |--------|----------|
 | Discrete | Small ops, one order at a time |
 | Batch | Many small orders, same zone |
-| Zone | Large DC, high SKU count |
+| Zone | Large DC, high SKU (Stock Keeping Unit) count |
 | Wave | Synchronize with carrier pickups |
 | Goods-to-Person (GTP) | High-throughput e-com |
 
 ---
 
-## 🌐 3PL vs 4PL Quick Reference
+## 🌐 3PL (Third-Party Logistics) vs 4PL (Fourth-Party Logistics) Quick Reference
 
 | Tier | Description |
 |------|-------------|
@@ -53,12 +53,12 @@
 
 ---
 
-## 📐 Logistics KPIs
+## 📐 Logistics KPIs (Key Performance Indicators)
 
-| KPI | Definition |
+| KPI (Key Performance Indicator) | Definition |
 |-----|------------|
 | OTD | On-time deliveries / total |
-| OTIF | On-time AND in-full |
+| OTIF (On-Time In-Full) | On-time AND in-full |
 | Perfect order | OTIF + undamaged + correct documentation |
 | Fill rate | Units shipped / units ordered |
 | Order cycle time | Days, order to delivery |

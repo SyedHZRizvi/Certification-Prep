@@ -20,7 +20,7 @@
 ## 📚 KB Pipeline
 
 ```
-Data Sources (S3 / Confluence / SharePoint / Web)
+Data Sources (S3 (Simple Storage Service) / Confluence / SharePoint / Web)
    ↓ chunk (default 300 tok + overlap; or semantic / hierarchical)
    ↓ embed (Titan v2 default; 1024 dims, configurable)
    ↓ store (OpenSearch Serverless default; Aurora pgvector, Pinecone, etc.)
@@ -34,7 +34,7 @@ Data Sources (S3 / Confluence / SharePoint / Web)
 ```
 Agent (base prompt + LLM)
   ├─ Action Groups (Lambdas exposing APIs)
-  ├─ Knowledge Bases (RAG)
+  ├─ Knowledge Bases (RAG (Retrieval-Augmented Generation))
   ├─ Guardrails
   └─ Memory (short + long term)
 ```
@@ -79,7 +79,7 @@ Agent (base prompt + LLM)
 |-|-----------|---------|
 | Hosting | Your endpoint | Serverless |
 | Pricing | Per instance-hour | Per token |
-| Customisation | Full / VPC | Limited fine-tune |
+| Customisation | Full / VPC (Virtual Private Cloud) | Limited fine-tune |
 | Models | 300+ HF / OSS | Curated frontier (Claude/Llama/Titan/Mistral) |
 | Best for | Custom networking, deep fine-tune | Quick start, frontier quality |
 
@@ -120,7 +120,7 @@ Response with citations
 |--------|-------------|
 | "Reduce hallucination" | **RAG / KB** |
 | "Teach company writing style" | **Fine-tune** |
-| "Open-ended chatbot with API calls" | **Bedrock Agent** |
+| "Open-ended chatbot with API (Application Programming Interface) calls" | **Bedrock Agent** |
 | "Block medical-advice topics" | **Guardrails topic filter** |
 | "Verify output grounded in docs" | **Contextual grounding** |
 | "Run Llama in your VPC" | **JumpStart in VPC** or **Bedrock + PrivateLink** |

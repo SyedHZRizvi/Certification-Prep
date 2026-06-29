@@ -29,7 +29,7 @@
 
 ---
 
-## 📐 EOQ
+## 📐 EOQ (Economic Order Quantity)
 
 ```
    EOQ = √(2DS/H)
@@ -40,7 +40,7 @@ Sensitivity: EOQ is robust (square root softens errors).
 
 ---
 
-## 🛡️ Safety Stock & ROP
+## 🛡️ Safety Stock & ROP (Reorder Point)
 
 ```
    SS  = Z · σ_LT
@@ -68,11 +68,11 @@ Variants: ABC-XYZ · VED · HML
 
 ---
 
-## 🔢 KPI Formulas
+## 🔢 KPI (Key Performance Indicator) Formulas
 
 | KPI | Formula |
 |-----|---------|
-| Turns | COGS / avg inventory |
+| Turns | COGS (Cost of Goods Sold) / avg inventory |
 | DIO | 365 / turns |
 | DSO | AR / daily revenue |
 | DPO | AP / daily COGS |
@@ -103,7 +103,7 @@ Look up Z for that probability → order = mean + Z · σ.
 
 ---
 
-## 🏃 Lean / JIT / Kanban
+## 🏃 Lean / JIT (Just-In-Time) / Kanban
 
 - **JIT** = just-in-time deliveries
 - **Kanban** = visual pull signal

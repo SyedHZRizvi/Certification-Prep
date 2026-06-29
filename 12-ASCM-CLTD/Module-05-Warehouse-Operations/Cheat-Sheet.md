@@ -27,8 +27,8 @@ Picking → Packing → Shipping → [Returns]
 
 | Method | Density | Selectivity | Rotation |
 |--------|---------|-------------|----------|
-| Selective racking | Low | High | FIFO ok |
-| Drive-in | High | Low | LIFO |
+| Selective racking | Low | High | FIFO (First In, First Out) ok |
+| Drive-in | High | Low | LIFO (Last In, First Out) |
 | Push-back | Med-high | Med | LIFO |
 | Pallet/carton flow | High | Med | FIFO |
 | Mezzanine | Vertical | High | FIFO ok |
@@ -51,12 +51,12 @@ Picking → Packing → Shipping → [Returns]
 | Pick-to-light | LEDs at bins |
 | Drone | Inventory counting |
 
-**Automate when:** high volume, stable SKU, 24/7, accuracy critical.
+**Automate when:** high volume, stable SKU (Stock Keeping Unit), 24/7, accuracy critical.
 **Don't automate when:** low volume, SKU churn, short lease, low labor cost.
 
 ---
 
-## 📊 KPI Benchmarks
+## 📊 KPI (Key Performance Indicator) Benchmarks
 
 | KPI | Target |
 |-----|--------|
@@ -102,7 +102,7 @@ Picking → Packing → Shipping → [Returns]
 Usually CORRECT:
 
 - ✅ "U-shape for general DC, I-shape for high-volume automated"
-- ✅ "Random putaway is systematic (WMS-tracked)"
+- ✅ "Random putaway is systematic (WMS (Warehouse Management System)-tracked)"
 - ✅ "Cube utilization 65–85% sweet spot"
 - ✅ "Slot A-movers in golden zone"
 

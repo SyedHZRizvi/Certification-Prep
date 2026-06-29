@@ -7,7 +7,7 @@ title: Google AI Pro (Cert Hub Original, Vertex AI + Gemini Aligned)
 
 **🤖 Generative & Agentic AI** › Google AI Pro (Google Cloud-aligned, Cert Hub Original)
 
-> **Goal:** Become the engineer in your org who can architect, deploy, and operate production AI systems on **Google Cloud** Gemini, Vertex AI, Google AI Studio, Agent Builder with the same rigor a cloud architect brings to AWS or Azure. Pass **Google Cloud Generative AI Leader** and ladder into **Google Cloud Professional Machine Learning Engineer (PMLE)**, the two flagship credentials Google ships for the Gemini era.
+> **Goal:** Become the engineer in your org who can architect, deploy, and operate production AI systems on **Google Cloud** Gemini, Vertex AI, Google AI Studio, Agent Builder with the same rigor a cloud architect brings to AWS (Amazon Web Services) or Azure. Pass **Google Cloud Generative AI Leader** and ladder into **Google Cloud Professional Machine Learning Engineer (PMLE)**, the two flagship credentials Google ships for the Gemini era.
 >
 > **Duration:** 8–12 weeks part-time (10–14 hrs/week) · ~90 study hours total
 > **Cost:** Free (this track) · Google AI Studio is free for prototyping · Vertex AI is pay-as-you-go (Gemini 2.5 Flash ~$0.075/$0.30 per Mtok, Gemini 2.5 Pro ~$1.25/$10 per Mtok as of 2026-05); Generative AI Leader exam $99, PMLE exam $200
@@ -23,7 +23,7 @@ Google is the company that *invented the Transformer* the 2017 paper "Attention 
 
 That narrative has reversed. In 2024–2026 Gemini moved from "credible second" to "best multi-modal model on the market," with the **2 million-token context window**, native video understanding, and the Gemini 2.0 / 2.5 family that powers Google Photos search, Wayfair visual product matching, Mercedes-Benz MBUX voice assistant, Snap MyAI, Wendy's FreshAI drive-thru, Shopify Sidekick, Mercado Libre's seller assistant, and Verily's Med-PaLM 2 healthcare deployments. Google Cloud AI revenue grew from a reported **~$3B annualized in 2023 to over $15B in 2026** (per Alphabet earnings disclosures). Vertex AI is now the second-most-deployed enterprise AI platform after AWS Bedrock, and is the *fastest-growing* among Fortune 500 enterprises moving their AI workloads off public chat APIs to private-cloud inference.
 
-There is a specific, dollarized premium on engineers who *understand* how to build with Gemini and Vertex AI its multi-modal native architecture, its 2M context window, its grounding-via-Vertex-AI-Search RAG pattern, its Agent Builder no-code framework, its SynthID watermarking, its IAM/VPC-SC enterprise controls versus engineers who can only call any-model-shaped APIs through generic wrappers. The premium is roughly **20–30%** over the "generic AI engineer" baseline as of 2026, widening rapidly as Google's enterprise market share grows.
+There is a specific, dollarized premium on engineers who *understand* how to build with Gemini and Vertex AI its multi-modal native architecture, its 2M context window, its grounding-via-Vertex-AI-Search RAG (Retrieval-Augmented Generation) pattern, its Agent Builder no-code framework, its SynthID watermarking, its IAM (Identity and Access Management)/VPC (Virtual Private Cloud)-SC enterprise controls versus engineers who can only call any-model-shaped APIs through generic wrappers. The premium is roughly **20–30%** over the "generic AI engineer" baseline as of 2026, widening rapidly as Google's enterprise market share grows.
 
 This certification is for the engineer who wants to be on the right side of that gap.
 
@@ -32,7 +32,7 @@ This certification is for the engineer who wants to be on the right side of that
 - **Google Cloud AI Engineer (Gemini-focused)** ($155K–$250K base), Building production features on Vertex AI (Mercedes-Benz, Wayfair, Mercado Libre, Wendy's, Shopify, Snap, Verily all hire for this)
 - **Vertex AI Solutions Architect** ($175K–$270K base), Design enterprise-grade Gemini deployments with governance, observability, cost controls, multi-region failover
 - **Google Cloud ML Engineer (PMLE)** ($160K–$260K base), Train, deploy, and monitor ML and LLM models on Vertex AI Pipelines / Model Registry / Model Monitoring
-- **Conversational AI / Agent Engineer** ($165K–$260K base), Specialize in Vertex AI Agent Builder + Conversational Agents (formerly Dialogflow CX) for customer-facing voice and chat
+- **Conversational AI / Agent Engineer** ($165K–$260K base), Specialize in Vertex AI Agent Builder + Conversational Agents (formerly Dialogflow CX (Customer Experience)) for customer-facing voice and chat
 - **Forward-Deployed Engineer (FDE)** Google Cloud Customer Engineering, Accenture/Deloitte AI practices ($180K–$290K base + bonus) Sit with a Fortune 500 customer and build their first Gemini system end-to-end
 - **GenAI Platform Engineer** ($170K–$255K base), Own the internal AI-gateway layer (rate limits, prompt caching, model routing, observability) that fronts Gemini for the rest of engineering
 - **Applied AI Researcher (industry)** ($200K–$420K base + RSU), Google DeepMind, Verily, Waymo, X (the moonshot factory), and the broader Alphabet research surface
@@ -47,13 +47,13 @@ This track ladders directly into:
 - **Claude Architect (course 28)**, the Anthropic-aligned sibling track (Claude on Vertex is part of Module 3)
 - **Prompt Engineering Specialist (course 29)**, vendor-neutral prompt techniques (CoT, structured output, jailbreak defense)
 - **Generative AI Engineer (course 30)**, vendor-neutral end-to-end GenAI engineering
-- **AWS ML Specialty (course 31)**, the deeper MLOps story; PMLE is its Google-Cloud sibling
+- **AWS ML Specialty (course 31)**, the deeper MLOps (Machine Learning Operations) story; PMLE is its Google-Cloud sibling
 
 ### 🏛️ Why The Cert Hub's version is different
 
 - **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
 - **Google-aligned by construction**, every prompting pattern matches Google's published [Gemini prompt engineering documentation](https://ai.google.dev/gemini-api/docs/prompting-strategies), every Vertex AI pattern matches the canonical reference architectures, every responsible-AI section reflects Google's [AI Principles](https://ai.google/responsibility/principles/) and [Secure AI Framework (SAIF)](https://safety.google/cybersecurity-advancements/saif/)
-- **Story-driven lessons (not API-reference recitation)**, the Transformer introduced through the *story of why Google's eight 2017-era researchers (the "Attention Is All You Need" authors) reshaped AI*; Vertex AI introduced through *Mercado Libre's seller assistant pivot*; Agent Builder introduced through *Wendy's FreshAI drive-thru postmortem*
+- **Story-driven lessons (not API (Application Programming Interface)-reference recitation)**, the Transformer introduced through the *story of why Google's eight 2017-era researchers (the "Attention Is All You Need" authors) reshaped AI*; Vertex AI introduced through *Mercado Libre's seller assistant pivot*; Agent Builder introduced through *Wendy's FreshAI drive-thru postmortem*
 - **Original questions only**, every quiz and practice exam written from scratch in the spirit of Google's published exam guides for Generative AI Leader and PMLE; no copied dumps
 - **Real-world case studies**, Google Photos Gemini Vision upgrade, Mercado Libre + Vertex AI Search, Wendy's FreshAI menu RAG, Snap MyAI on Gemini, Mercedes-Benz MBUX voice, Shopify Sidekick on Vertex, Verily Med-PaLM 2, Wayfair generative shopping, Adore Me / Carrefour / Best Buy / Discover / DBS Bank Vertex deployments
 - **One author, one voice**, coherent vocabulary across all 10 modules
@@ -72,8 +72,8 @@ Begin with [Module 1: Google AI Landscape & Gemini Model Family →](./Module-01
 By the end of this track, you'll be able to:
 
 - Explain *why Google had the Transformer first*, the Vaswani et al. (2017) paper, the BERT/T5/LaMDA/PaLM lineage, the Google-Brain × DeepMind merger of April 2023, and how Gemini's native-multi-modal architecture differs from GPT/Claude
-- Pick the right Gemini variant (Nano / Flash / Pro / Ultra, by version) for any task, balancing cost, latency, modality, and capability, and justify the choice to a CFO
-- Build, prototype, and ship in **Google AI Studio** (the free interactive playground) and the **Gemini API** in Python, Node, and REST
+- Pick the right Gemini variant (Nano / Flash / Pro / Ultra, by version) for any task, balancing cost, latency, modality, and capability, and justify the choice to a CFO (Chief Financial Officer)
+- Build, prototype, and ship in **Google AI Studio** (the free interactive playground) and the **Gemini API** in Python, Node, and REST (Representational State Transfer)
 - Operate **Vertex AI** in production: Workbench notebooks, Model Garden (Gemini + Claude + Llama + Mistral on Vertex), Endpoints, IAM/VPC-SC, regional residency, Provisioned Throughput vs PAYG pricing
 - Build **native multi-modal** pipelines, text + image + audio + video + PDF in a single Gemini prompt; Google Photos / Wayfair / Mercedes voice-style architectures
 - Architect **RAG on Google Cloud** Vertex AI Search, AlloyDB AI + pgvector, BigQuery vector search, Vertex AI Vector Search, text-embedding-004 / gemini-embedding-001 / multilingual-embedding-002 and know which stack maps to which workload
@@ -94,7 +94,7 @@ By the end of this track, you'll be able to:
 | 3 | [Vertex AI Platform Deep Dive](./Module-03-Vertex-AI-Platform/Reading.md) | 3.5 | Vertex AI vs Google AI Studio; Workbench; Model Garden; Endpoints; IAM/VPC-SC; PAYG vs Provisioned Throughput |
 | 4 | [Multi-Modal AI with Gemini](./Module-04-Multi-Modal-Gemini/Reading.md) | 3 | Native multi-modal; vision (OCR, charts); audio (transcription, diarization); video (frame, action); file API |
 | 5 | [RAG on Google Cloud](./Module-05-RAG-Google-Cloud/Reading.md) | 3 | Vertex AI Search; AlloyDB AI + pgvector; BigQuery vector; Vertex Vector Search; embedding model selection |
-| 6 | [Fine-Tuning & Model Customization on Vertex AI](./Module-06-Fine-Tuning-Vertex-AI/Reading.md) | 3 | SFT on Gemini; RLHF on Vertex; LoRA; distillation; fine-tune vs prompt vs RAG; dataset prep; evaluation |
+| 6 | [Fine-Tuning & Model Customization on Vertex AI](./Module-06-Fine-Tuning-Vertex-AI/Reading.md) | 3 | SFT on Gemini; RLHF (Reinforcement Learning from Human Feedback) on Vertex; LoRA; distillation; fine-tune vs prompt vs RAG; dataset prep; evaluation |
 | 7 | [Agent Builder & Conversational AI](./Module-07-Agent-Builder-Conversational/Reading.md) | 3 | Agent Builder no-code; Conversational Agents; function calling; ADK; multi-agent orchestration |
 | 8 | [Responsible AI on Google Cloud](./Module-08-Responsible-AI-Google/Reading.md) | 3 | Google AI Principles; safety_settings; recitation checker; grounding; SynthID; CMEK; VPC-SC; opt-out |
 | 9 | [MLOps on Vertex AI](./Module-09-MLOps-Vertex-AI/Reading.md) | 3 | Vertex AI Pipelines (Kubeflow); Model Registry; Monitoring (drift); Experiments + Feature Store; Endpoint patterns |
@@ -214,7 +214,7 @@ Optional:    Months 4–6 → PMLE prep + sit PMLE
 
 ## ⚠️ The 8 Most Common Reasons People Underperform
 
-1. ❌ **Confused Google AI Studio with Vertex AI**, Studio is the consumer-facing free playground (API keys, hobby projects); Vertex AI is the enterprise platform (IAM, VPC-SC, billing under your GCP project). Mistake one for the other on the exam and you lose points.
+1. ❌ **Confused Google AI Studio with Vertex AI**, Studio is the consumer-facing free playground (API keys, hobby projects); Vertex AI is the enterprise platform (IAM, VPC-SC, billing under your GCP (Google Cloud Platform) project). Mistake one for the other on the exam and you lose points.
 2. ❌ **Skipped multi-modal**, Gemini is *natively multi-modal*. Treating it as a text-only model leaves the most distinctive Google capability on the table. Module 4 hammers on this.
 3. ❌ **Confused Vertex AI Search with Vector Search**, Vertex AI Search is a managed retrieval-augmented search service (formerly Discovery Engine; ideal for documents + websites). Vertex AI Vector Search is a low-level approximate-nearest-neighbor index (formerly Matching Engine; ideal for custom embeddings). They are different products with different use cases.
 4. ❌ **Underestimated grounding**, "Grounding with Google Search" and "Grounding with Vertex AI Search" are Google's primary anti-hallucination patterns. They are exam favorites and production essentials.
@@ -227,7 +227,7 @@ Optional:    Months 4–6 → PMLE prep + sit PMLE
 
 ## 🃏 Use the Flashcards
 
-The [Master Flashcards](./Flashcards.md) deck has 120+ cards covering every Gemini model SKU, every Vertex AI service, every embedding model, every safety category, every responsible-AI control, every MLOps building block. Drill daily, even 10 minutes/day for two weeks crushes a multi-hour cram session.
+The [Master Flashcards](./Flashcards.md) deck has 120+ cards covering every Gemini model SKU (Stock Keeping Unit), every Vertex AI service, every embedding model, every safety category, every responsible-AI control, every MLOps building block. Drill daily, even 10 minutes/day for two weeks crushes a multi-hour cram session.
 
 ---
 

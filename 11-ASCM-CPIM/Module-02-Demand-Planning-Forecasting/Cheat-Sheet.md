@@ -61,7 +61,7 @@ Tracking Signal: Σe_t / MAD          ← alarm if |TS| > 4
 
 ---
 
-## 🤝 CPFR, 4 Activities
+## 🤝 CPFR (Collaborative Planning, Forecasting, and Replenishment), 4 Activities
 
 1. **Strategy & planning** (joint business plan)
 2. **Demand & supply management** (shared forecasts)
@@ -78,7 +78,7 @@ Retail ──► Wholesale ──► Manufacturer ──► Raw supplier
 ```
 
 **Causes:** order batching, promotions, rationing, demand-signal distortion, long LT
-**Cures:** share POS data, EDLP, smaller orders, shorter LT, CPFR, VMI
+**Cures:** share POS data, EDLP, smaller orders, shorter LT, CPFR, VMI (Vendor Managed Inventory)
 
 ---
 
@@ -88,10 +88,10 @@ Retail ──► Wholesale ──► Manufacturer ──► Raw supplier
 |-------|--------------|
 | Company-wide annual | 3–8% |
 | Family monthly | 8–15% |
-| SKU weekly | 20–40% |
+| SKU (Stock Keeping Unit) weekly | 20–40% |
 | SKU daily | 40–80% |
 
-S&OP forecasts at family level (accurate). MPS at SKU (less accurate → safety stock).
+S&OP (Sales and Operations Planning) forecasts at family level (accurate). MPS at SKU (less accurate → safety stock).
 
 ---
 
@@ -133,4 +133,4 @@ When you see these, often **wrong**:
 
 ---
 
-➡️ [Module 3: S&OP](../Module-03-SOP-Sales-Operations-Planning/Reading.md)
+➡️ [Module 3: S&OP](../Module-03-SOP (Standard Operating Procedure)-Sales-Operations-Planning/Reading.md)

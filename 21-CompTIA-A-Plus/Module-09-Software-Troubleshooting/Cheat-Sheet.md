@@ -49,7 +49,7 @@
 |--------|-----|
 | 4. Safe Mode | Minimal drivers, no network |
 | 5. Safe Mode with Networking | + internet |
-| 6. Safe Mode with Command Prompt | CLI-only |
+| 6. Safe Mode with Command Prompt | CLI (Command Line Interface)-only |
 
 ---
 

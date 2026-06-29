@@ -28,9 +28,9 @@ OUTPOST        →  AWS hardware in YOUR data center
 
 | Pillar | Keyword In Questions |
 |--------|----------------------|
-| **Operational Excellence** | automation, IaC, CloudFormation, runbook |
-| **Security** | least privilege, encryption, KMS, IAM, audit |
-| **Reliability** | Multi-AZ, ASG, RPO, RTO, failover |
+| **Operational Excellence** | automation, IaC (Infrastructure as Code), CloudFormation, runbook |
+| **Security** | least privilege, encryption, KMS, IAM (Identity and Access Management), audit |
+| **Reliability** | Multi-AZ, ASG, RPO (Recovery Point Objective), RTO (Recovery Time Objective), failover |
 | **Performance Efficiency** | low latency, throughput, caching, right-sized |
 | **Cost Optimization** | cheapest, Spot, lifecycle, Reserved |
 | **Sustainability** | Graviton, serverless, managed, energy |
@@ -42,14 +42,14 @@ OUTPOST        →  AWS hardware in YOUR data center
 ## 🤝 Shared Responsibility (one line)
 
 > **AWS:** security **OF** the cloud (hardware, hypervisor, facilities).
-> **You:** security **IN** the cloud (data, IAM, OS on EC2, app code).
+> **You:** security **IN** the cloud (data, IAM, OS on EC2 (Elastic Compute Cloud), app code).
 
 | Service | YOU patch OS? |
 |---------|---------------|
 | EC2 | ✅ Yes |
-| RDS | ❌ No (AWS does) |
+| RDS (Relational Database Service) | ❌ No (AWS does) |
 | Lambda | ❌ No (no OS to patch) |
-| S3 | ❌ No |
+| S3 (Simple Storage Service) | ❌ No |
 
 ---
 
@@ -83,7 +83,7 @@ OUTPOST        →  AWS hardware in YOUR data center
 - "Hard-code credentials in source"
 - "Run a single EC2 instance in one AZ for production"
 - "Skip encryption to reduce cost"
-- "Always pick the cheapest, even if SLA breaks"
+- "Always pick the cheapest, even if SLA (Service Level Agreement) breaks"
 
 ---
 

@@ -8,7 +8,7 @@
 
 | Need | Pick |
 |------|------|
-| OLTP, lift-and-shift Oracle/SQL Server | **RDS** (those engines) |
+| OLTP, lift-and-shift Oracle/SQL Server | **RDS (Relational Database Service)** (those engines) |
 | OLTP, MySQL/PG, high perf | **Aurora** |
 | Global OLTP, cross-region failover | **Aurora Global Database** |
 | Spiky relational workload | **Aurora Serverless v2** |
@@ -18,7 +18,7 @@
 | Cache, no persistence | **Memcached** |
 | Cache, persistence + HA | **Redis** |
 | Analytics, PB scale | **Redshift** |
-| Query S3 from warehouse | **Redshift Spectrum** (or **Athena**) |
+| Query S3 (Simple Storage Service) from warehouse | **Redshift Spectrum** (or **Athena**) |
 | Mongo workload | **DocumentDB** |
 | Graph (social, fraud) | **Neptune** |
 | Time-series (IoT, metrics) | **Timestream** |

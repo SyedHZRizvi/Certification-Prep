@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -314,11 +314,11 @@
 
 ## 🪟 SECTION 2: SERVER ADMINISTRATION
 
-**Q:** What is AD DS?
+**Q:** What is AD (Active Directory) DS?
 **A:** Active Directory Domain Services, Microsoft's directory service. Manages users, computers, groups, GPOs across a Windows domain.
 
 **Q:** What is a Windows Server "role" vs a "feature"?
-**A:** Role = major function (AD DS, DNS, DHCP, IIS, Hyper-V). Feature = supporting capability (Telnet client, BitLocker, .NET Framework, SMB 1.0).
+**A:** Role = major function (AD DS, DNS (Domain Name System), DHCP (Dynamic Host Configuration Protocol), IIS, Hyper-V). Feature = supporting capability (Telnet client, BitLocker, .NET Framework, SMB 1.0).
 
 **Q:** What command starts/stops a service on Linux with systemd?
 **A:** `systemctl start <service>`, `systemctl stop <service>`, `systemctl enable <service>` (auto-start at boot), `systemctl status <service>`.
@@ -326,8 +326,8 @@
 **Q:** Where do systemd service unit files typically live?
 **A:** `/etc/systemd/system/` (admin-defined) and `/lib/systemd/system/` or `/usr/lib/systemd/system/` (package-provided).
 
-**Q:** Default ports: RDP, SSH, WinRM (HTTP/HTTPS)?
-**A:** RDP = TCP 3389. SSH = TCP 22. WinRM = TCP 5985 (HTTP) / TCP 5986 (HTTPS).
+**Q:** Default ports: RDP, SSH (Secure Shell), WinRM (HTTP (Hypertext Transfer Protocol)/HTTPS (HTTP Secure))?
+**A:** RDP = TCP (Transmission Control Protocol) 3389. SSH = TCP 22. WinRM = TCP 5985 (HTTP) / TCP 5986 (HTTPS).
 
 **Q:** What is WinRM?
 **A:** Windows Remote Management, Microsoft's implementation of WS-Management. Used by PowerShell remoting (`Enter-PSSession`, `Invoke-Command`).
@@ -373,10 +373,10 @@
 **A:** An idle drive in the array that automatically rebuilds in place of a failed drive, with no admin action. Cuts the window of vulnerability after a failure.
 
 **Q:** SAN vs NAS, one-line difference?
-**A:** SAN = block-level storage over a dedicated network (FC/iSCSI) looks like a local disk. NAS = file-level storage over LAN (NFS/SMB) looks like a network share.
+**A:** SAN = block-level storage over a dedicated network (FC/iSCSI) looks like a local disk. NAS = file-level storage over LAN (Local Area Network) (NFS/SMB) looks like a network share.
 
 **Q:** Default ports: iSCSI, NFS, SMB?
-**A:** iSCSI = TCP 3260. NFS = TCP/UDP 2049. SMB = TCP 445.
+**A:** iSCSI = TCP 3260. NFS = TCP/UDP (User Datagram Protocol) 2049. SMB = TCP 445.
 
 **Q:** What is a LUN?
 **A:** Logical Unit Number, a slice of SAN storage presented to a host as a block device. Hosts see a LUN as if it were a local disk.
@@ -404,7 +404,7 @@
 **A:** Type 1 = bare-metal (runs directly on hardware) ESXi, Hyper-V, KVM, Xen. Type 2 = hosted (runs on top of an OS) VMware Workstation, VirtualBox.
 
 **Q:** What is vMotion / live migration?
-**A:** Moving a running VM from one physical host to another with no downtime. Requires shared storage and a fast network. VMware = vMotion; Hyper-V = Live Migration; KVM = Live Migration.
+**A:** Moving a running VM (Virtual Machine) from one physical host to another with no downtime. Requires shared storage and a fast network. VMware = vMotion; Hyper-V = Live Migration; KVM = Live Migration.
 
 **Q:** Snapshot vs clone vs template?
 **A:** Snapshot = point-in-time saved state of a VM (deltas, temporary). Clone = full copy of a VM (independent VM). Template = master image used to deploy new VMs.
@@ -416,7 +416,7 @@
 **A:** VM = full OS + kernel + apps (heavyweight, full isolation). Container = process(es) sharing the host kernel via namespaces/cgroups (lightweight, fast startup, less isolation).
 
 **Q:** What does Docker do?
-**A:** Packages apps into containers using a Dockerfile + image. Provides a CLI/daemon for running, pulling, and pushing container images.
+**A:** Packages apps into containers using a Dockerfile + image. Provides a CLI (Command Line Interface)/daemon for running, pulling, and pushing container images.
 
 **Q:** What does Kubernetes do?
 **A:** Orchestrates many containers across many hosts. Handles scheduling, health checks, scaling, service discovery, rolling updates. Pods, Deployments, Services are the core objects.
@@ -428,10 +428,10 @@
 
 ## 🔁 SECTION 5: DISASTER RECOVERY & BACKUP
 
-**Q:** RTO, define and give an example.
+**Q:** RTO (Recovery Time Objective), define and give an example.
 **A:** Recovery Time Objective: maximum tolerable downtime. Example: "Email must be back within 4 hours" → RTO = 4 hr.
 
-**Q:** RPO, define and give an example.
+**Q:** RPO (Recovery Point Objective), define and give an example.
 **A:** Recovery Point Objective: maximum tolerable data loss measured in time. Example: "We can lose at most 15 min of transactions" → RPO = 15 min → need replication/log shipping every ≤15 min.
 
 **Q:** Full backup, what does it back up and what does it set on the archive bit?
@@ -477,7 +477,7 @@
 **Q:** What is the principle of least privilege?
 **A:** Give every account exactly the rights it needs to do its job, no more. Reduces blast radius if the account is compromised.
 
-**Q:** RBAC, define.
+**Q:** RBAC (Role-Based Access Control), define.
 **A:** Role-Based Access Control: permissions assigned to roles, users assigned to roles. Easier to manage than per-user ACLs at scale.
 
 **Q:** Service account best practice?
@@ -505,14 +505,14 @@
 **Q:** What does LACP stand for and what does it do?
 **A:** Link Aggregation Control Protocol (IEEE 802.3ad / 802.1AX). Dynamically negotiates a multi-link aggregate between server and switch. Both ends must support it; switch ports must be in the same LAG.
 
-**Q:** What is a VLAN tag (802.1Q)?
+**Q:** What is a VLAN (Virtual Local Area Network) tag (802.1Q)?
 **A:** 4-byte header inserted in the Ethernet frame identifying which VLAN the frame belongs to. Allows one physical link to carry traffic for many VLANs ("trunk port").
 
 **Q:** What is a jumbo frame and what MTU?
 **A:** Ethernet frame larger than the standard 1500-byte MTU, typically 9000 bytes. Reduces per-packet overhead for large transfers (storage, backups). Every device in the path must support it end-to-end.
 
 **Q:** Layer 4 vs Layer 7 load balancer, difference?
-**A:** L4 = balances on IP+port only (faster, no payload inspection). L7 = balances on HTTP host/path/headers/cookies (smarter routing, SSL termination, WAF integration).
+**A:** L4 = balances on IP+port only (faster, no payload inspection). L7 = balances on HTTP host/path/headers/cookies (smarter routing, SSL (Secure Sockets Layer) termination, WAF (Web Application Firewall) integration).
 
 **Q:** What is KVM-over-IP?
 **A:** Network-accessible Keyboard/Video/Mouse switch, lets you control a server's console (BIOS, OS, even pre-boot) remotely over IP. Don't confuse with KVM the hypervisor.

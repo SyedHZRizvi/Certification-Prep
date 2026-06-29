@@ -23,7 +23,7 @@
 
 | Component | Failing | Passing | Excellent |
 |-----------|---------|---------|-----------|
-| **LinkedIn Headline** | Job title default | Custom but generic | Pattern A/B/C with CTA |
+| **LinkedIn Headline** | Job title default | Custom but generic | Pattern A/B/C with CTA (Call to Action) |
 | **About Section** | Corporate-speak | Custom, listy | Story open + 5 capstones + CTA |
 | **Featured Pins** | 0–2 pins | 3 pins | 4–6 pins with custom titles |
 | **Banner** | Default blue | Custom basic | Custom on-brand |

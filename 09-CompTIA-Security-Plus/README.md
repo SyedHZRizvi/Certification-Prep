@@ -22,14 +22,14 @@ CompTIA Security+ (SY0-701) is the most-required cybersecurity certification on 
 
 ### 💼 Career outcomes after passing
 
-- **SOC Analyst (Tier 1 / Tier 2)** ($65K–$95K), the most common first cybersecurity role; Sec+ is the explicit baseline
+- **SOC (Security Operations Center) Analyst (Tier 1 / Tier 2)** ($65K–$95K), the most common first cybersecurity role; Sec+ is the explicit baseline
 - **Security Analyst** ($75K–$110K), running vulnerability scans, IR playbooks, controls evaluation
 - **Cybersecurity Specialist (DoD / federal contractor)** ($85K–$120K), Sec+ satisfies the 8140 baseline; clearance is the multiplier
 - **GRC Analyst (Governance, Risk, Compliance)** ($80K–$115K), for the framework-fluent path (NIST CSF, ISO 27001, PCI-DSS, HIPAA)
 - **Penetration Tester (Junior)** ($85K–$120K), Sec+ as floor, PenTest+ / OSCP layered on top
 - **Information Security Engineer** ($105K–$145K), typical 2–3 years after Sec+
 
-Sec+ is the foundation of the most diverse cybersecurity ladder in the industry: into **CySA+** (analyst), **PenTest+** / **OSCP** (offensive), **CASP+** / **CISSP** (architect/manager), **CCSP** (cloud security), or laterally into **AWS Security Specialty** / **Azure SC-300 (course 27)**. CompTIA's 2024 salary report puts the average Sec+ holder's compensation at $84K, and 70%+ of US cyber job postings cite Sec+ as preferred or required.
+Sec+ is the foundation of the most diverse cybersecurity ladder in the industry: into **CySA+** (analyst), **PenTest+** / **OSCP** (offensive), **CASP+** / **CISSP** (architect/manager), **CCSP** (cloud security), or laterally into **AWS (Amazon Web Services) Security Specialty** / **Azure SC-300 (course 27)**. CompTIA's 2024 salary report puts the average Sec+ holder's compensation at $84K, and 70%+ of US cyber job postings cite Sec+ as preferred or required.
 
 ### 🏛️ Why The Cert Hub's version is different
 
@@ -55,9 +55,9 @@ By the end of this track, you'll be able to:
 - Recognize every major threat type, threat actor, and attack vector on sight (Sec+ is acronym-heavy, you'll know them cold)
 - Pick the right control (technical/managerial/operational/physical × preventive/detective/corrective/etc.) for any scenario
 - Reason about cryptography: symmetric vs asymmetric, hashing, digital signatures, PKI/certificates
-- Design layered network and endpoint defenses (firewalls, IDS/IPS, EDR, segmentation, Zero Trust)
-- Run the security operations playbook: SIEM, SOAR, IR lifecycle, digital forensics, threat hunting
-- Translate compliance/governance language (NIST CSF, ISO 27001, PCI-DSS, HIPAA, GDPR) into engineering decisions
+- Design layered network and endpoint defenses (firewalls, IDS/IPS, EDR (Endpoint Detection and Response), segmentation, Zero Trust)
+- Run the security operations playbook: SIEM (Security Information and Event Management), SOAR, IR lifecycle, digital forensics, threat hunting
+- Translate compliance/governance language (NIST CSF, ISO 27001, PCI-DSS, HIPAA, GDPR (General Data Protection Regulation)) into engineering decisions
 - Survive Performance-Based Questions (PBQs), the scenario simulations that scare candidates the most
 
 ---
@@ -67,12 +67,12 @@ By the end of this track, you'll be able to:
 | # | Module | Time | What You'll Master |
 |---|--------|------|--------------------|
 | 1 | [Security Fundamentals](./Module-01-Security-Fundamentals/Reading.md) | 2 hrs | CIA, AAA, control types, Zero Trust |
-| 2 | [Cryptography & PKI](./Module-02-Cryptography-PKI/Reading.md) | 3 hrs | AES/RSA/ECC, hashing, signatures, certs |
-| 3 | [Identity & Access Management](./Module-03-Identity-Access-Management/Reading.md) | 2.5 hrs | MFA, SSO, SAML/OAuth, RBAC, PAM |
+| 2 | [Cryptography & PKI](./Module-02-Cryptography-PKI/Reading.md) | 3 hrs | AES (Advanced Encryption Standard)/RSA/ECC, hashing, signatures, certs |
+| 3 | [Identity & Access Management](./Module-03-Identity-Access-Management/Reading.md) | 2.5 hrs | MFA, SSO, SAML/OAuth, RBAC (Role-Based Access Control), PAM |
 | 4 | [Threats & Threat Actors](./Module-04-Threats-Threat-Actors/Reading.md) | 2 hrs | Actors, motivations, vectors, intel sources |
 | 5 | [Vulnerabilities & Attacks](./Module-05-Vulnerabilities-Attacks/Reading.md) | 3.5 hrs | OWASP, malware, network/web/social attacks |
 | 6 | [Network Security](./Module-06-Network-Security/Reading.md) | 3 hrs | Firewalls, IDS/IPS, VPNs, secure protocols |
-| 7 | [Endpoint, Mobile & Cloud](./Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) | 3 hrs | EDR, MDM, cloud shared resp, IaC, IoT/ICS |
+| 7 | [Endpoint, Mobile & Cloud](./Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) | 3 hrs | EDR, MDM (Mobile Device Management), cloud shared resp, IaC (Infrastructure as Code), IoT/ICS |
 | 8 | [Security Operations](./Module-08-Security-Operations/Reading.md) | 3 hrs | SIEM/SOAR, IR, forensics, vuln mgmt |
 | 9 | [GRC, Risk & Compliance](./Module-09-GRC-Risk-Compliance/Reading.md) | 3 hrs | Risk, frameworks, BCP/DR, 3rd-party risk |
 | 10 | [App & Data Security](./Module-10-Application-Data-Security/Reading.md) | 2.5 hrs | SDLC, SAST/DAST, classification, DLP |
@@ -95,7 +95,7 @@ By the end of this track, you'll be able to:
 
 ## 🎯 Capstone Project + Recommended Readings
 
-Once you've completed the 10 modules and three practice exams, you have **two more artifacts** to engage with, these are what separate someone who *passed Sec+* from someone who is *ready to walk into a Stanford CS155 seminar or a CISO interview*:
+Once you've completed the 10 modules and three practice exams, you have **two more artifacts** to engage with, these are what separate someone who *passed Sec+* from someone who is *ready to walk into a Stanford CS155 seminar or a CISO (Chief Information Security Officer) interview*:
 
 - 🛡️ [**Capstone Project CMCU Credit Union CISO scenario**](./Capstone-Project.md) a 6-week integrative project where you stand up a security program from scratch for a fictional regional credit union after a peer-institution breach. Seven deliverables including NIST CSF 2.0 gap assessment, IR playbook + tabletop transcript, board-level metrics dashboard, and a 5-page executive memo. Scored to 100; 70+ is portfolio-grade.
 - 📚 [**Recommended Readings the full literature**](./Recommended-Readings.md) canonical textbooks (Anderson, Schneier, Mitnick), seminal papers (Saltzer-Schroeder 1975, Diffie-Hellman 1976, RSA 1978, Kerberos 1988), industry blogs/podcasts worth subscribing to, and free MIT/Stanford/Cambridge courses to deepen any topic.
@@ -168,10 +168,10 @@ Week 8:    Flashcards drill + Final Mock + PBQ practice → REAL EXAM
 ## ⚠️ The 7 Most Common Reasons People Fail
 
 1. ❌ **Skipped the PBQs in practice**, They're worth a lot of points and take longer than MCQs. Practice them.
-2. ❌ **Memorized definitions but ignored acronyms**, Sec+ tests acronyms constantly (SOAR vs SIEM, EDR vs XDR vs HIDS, SAML vs OAuth vs OIDC).
+2. ❌ **Memorized definitions but ignored acronyms**, Sec+ tests acronyms constantly (SOAR vs SIEM, EDR vs XDR (Extended Detection and Response) vs HIDS, SAML vs OAuth vs OIDC).
 3. ❌ **Treated cryptography as optional**, It's ~10% of the exam by itself. Learn AES, RSA, ECC, SHA-2, HMAC, PKI cold.
 4. ❌ **Confused similar attacks**, On-path vs replay, smishing vs vishing, DAC vs MAC vs RBAC. Flashcards fix this.
-5. ❌ **Ignored governance**, Domain 5 is 20%. Risk, NIST CSF, ISO 27001, BIA, RTO/RPO are heavily tested.
+5. ❌ **Ignored governance**, Domain 5 is 20%. Risk, NIST CSF, ISO 27001, BIA, RTO (Recovery Time Objective)/RPO (Recovery Point Objective) are heavily tested.
 6. ❌ **No time management**, 90 questions in 90 minutes = 60 seconds each. Don't get stuck on PBQs early.
 7. ❌ **Studied old SY0-601 material**, The 701 exam (Nov 2023) added cloud, IoT, supply chain, and Zero Trust depth. Use 701-current resources only.
 

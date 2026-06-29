@@ -18,14 +18,14 @@ title: AWS AI Practitioner Track (AIF-C01)
 
 ### 🎯 The promise
 
-The AWS Certified AI Practitioner (AIF-C01) is the credential that says you can speak the language of modern AI on the dominant cloud platform, Bedrock, SageMaker, Amazon Q, foundation models, RAG, fine-tuning, prompt engineering, guardrails, and the responsible-AI controls that compliance teams now demand. It is the first AWS certification explicitly designed for the generative-AI era, and the cleanest path for any cloud or non-cloud professional to prove AI literacy in 2026 without writing PyTorch from scratch.
+The AWS Certified AI Practitioner (AIF-C01) is the credential that says you can speak the language of modern AI on the dominant cloud platform, Bedrock, SageMaker, Amazon Q, foundation models, RAG (Retrieval-Augmented Generation), fine-tuning, prompt engineering, guardrails, and the responsible-AI controls that compliance teams now demand. It is the first AWS certification explicitly designed for the generative-AI era, and the cleanest path for any cloud or non-cloud professional to prove AI literacy in 2026 without writing PyTorch from scratch.
 
 ### 💼 Career outcomes after passing
 
 - **AI Solutions Engineer / GenAI Engineer** ($110K–$160K), implementing Bedrock, RAG pipelines, agent workflows for product teams
 - **ML Platform Engineer** ($120K–$170K), building and operating SageMaker stacks at scale
 - **AI Product Manager** ($120K–$175K), PMs with credentialed AI literacy are increasingly preferred over generalists
-- **AI Sales Specialist / Solutions Architect (AI focus)** ($130K–$190K + commission), pre-sales role at AWS, AWS partners, and any SaaS vendor selling AI features
+- **AI Sales Specialist / Solutions Architect (AI focus)** ($130K–$190K + commission), pre-sales role at AWS, AWS partners, and any SaaS (Software as a Service) vendor selling AI features
 - **Data Scientist / Applied Scientist** ($125K–$175K), AIF-C01 is the floor; MLA (ML Associate) and MLS (ML Specialty) layer on top
 - **Cloud Architect with AI specialization** ($140K–$200K), premium over generalist Cloud Architect
 
@@ -36,7 +36,7 @@ AIF-C01 is the bottom rung of AWS's new AI ladder: **AIF-C01 (this course) → M
 - **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
 - **Story-driven lessons (not flashcard punishment)**, every module solves a real GenAI problem (customer-support copilot, document search, agent workflow) before introducing services
 - **Original questions only**, quizzes and practice exams written from the AWS Exam Guide; no copyrighted dumps
-- **Real-world case studies**, Anthropic Claude on Bedrock at enterprises, Amazon Q Business deployments, Stripe's internal RAG, Bloomberg GPT lessons
+- **Real-world case studies**, Anthropic Claude on Bedrock at enterprises, Amazon Q Business deployments, Stripe's internal RAG, Bloomberg GPT (Generative Pre-trained Transformer) lessons
 - **One author, one voice**, coherent vocabulary across all 8 modules
 - **Updated for the 2026 AIF-C01 blueprint**, including the latest Bedrock model card additions (Claude Sonnet 4.5, Amazon Nova family) and Guardrails feature set
 
@@ -58,7 +58,7 @@ By the end of this track, you'll be able to:
 - Pick the right **customization strategy** prompt engineering vs RAG vs fine-tuning vs continued pre-training for a given cost/quality scenario
 - Design a **RAG pipeline** with Knowledge Bases for Amazon Bedrock + OpenSearch / Aurora pgvector
 - Apply **Guardrails for Amazon Bedrock**, **SageMaker Clarify**, and **AI Service Cards** to build responsible AI systems
-- Secure AI workloads with IAM, KMS, VPC endpoints, and AWS shared responsibility for AI
+- Secure AI workloads with IAM (Identity and Access Management), KMS, VPC (Virtual Private Cloud) endpoints, and AWS shared responsibility for AI
 - Distinguish **Amazon Q Developer** from **Amazon Q Business** (a high-frequency exam topic)
 
 ---
@@ -74,7 +74,7 @@ By the end of this track, you'll be able to:
 | 5 | [Prompt Engineering & RAG](./Module-05-Prompt-Engineering-RAG/Reading.md) | 5 hrs | Zero/few-shot, CoT, ReAct, prompt injection defense, Knowledge Bases, Bedrock Agents, vector stores |
 | 6 | [Fine-Tuning & Customization](./Module-06-Fine-Tuning-Customization/Reading.md) | 4 hrs | RAG vs fine-tuning vs continued pre-training; evaluation metrics (BLEU, ROUGE, perplexity) |
 | 7 | [Responsible AI](./Module-07-Responsible-AI/Reading.md) | 4 hrs | Bias, fairness, explainability, SageMaker Clarify, Model Cards, AI Service Cards, Bedrock Guardrails |
-| 8 | [AI Security & Governance](./Module-08-AI-Security-Governance/Reading.md) | 4 hrs | Data privacy, PII, encryption, IAM for Bedrock/SageMaker, audit trails, HIPAA/GDPR, shared responsibility for AI |
+| 8 | [AI Security & Governance](./Module-08-AI-Security-Governance/Reading.md) | 4 hrs | Data privacy, PII, encryption, IAM for Bedrock/SageMaker, audit trails, HIPAA/GDPR (General Data Protection Regulation), shared responsibility for AI |
 
 **Total study time:** ~35 hours of reading + 8 hours of videos + 8 hours of quizzes/exams = **~50 hours**
 
@@ -96,7 +96,7 @@ Every practice exam now includes a **Detailed answer rationales** section explai
 
 ## 🧪 Capstone Project
 
-After finishing all 8 modules and the three practice exams, complete the **[Capstone Project](./Capstone-Project.md)**, an integrative case where you are hired as the AI Lead at a mid-size US insurance carrier (~$800M premium) tasked with deploying a Bedrock-powered claims FNOL summarizer in 16 weeks and proposing a 12-month, 5-use-case GenAI roadmap. Six executive-ready deliverables, scored against a 100-point rubric. Designed to be defensible in front of a board, a CISO, and a CFO.
+After finishing all 8 modules and the three practice exams, complete the **[Capstone Project](./Capstone-Project.md)**, an integrative case where you are hired as the AI Lead at a mid-size US insurance carrier (~$800M premium) tasked with deploying a Bedrock-powered claims FNOL summarizer in 16 weeks and proposing a 12-month, 5-use-case GenAI roadmap. Six executive-ready deliverables, scored against a 100-point rubric. Designed to be defensible in front of a board, a CISO (Chief Information Security Officer), and a CFO (Chief Financial Officer).
 
 ## 📚 Recommended Readings
 

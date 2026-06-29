@@ -10,7 +10,7 @@
 |------|------------|-----|
 | Member (cloud-only) | `Member` | `alice@contoso.com` |
 | Member (synced) | `Member` | `alice@contoso.com` |
-| Guest (B2B) | `Guest` | `alice_partner.com#EXT#@contoso.onmicrosoft.com` |
+| Guest (B2B (Business-to-Business)) | `Guest` | `alice_partner.com#EXT#@contoso.onmicrosoft.com` |
 | External member (cross-tenant) | `Member` (homed elsewhere) | their UPN |
 
 🔥 **`UsageLocation`** required before license assignment.
@@ -21,7 +21,7 @@
 
 | Group type | Use case |
 |------------|----------|
-| **Security** | RBAC + CA targeting + app assignment |
+| **Security** | RBAC (Role-Based Access Control) + CA targeting + app assignment |
 | **Microsoft 365** | Adds mailbox + SharePoint + Teams |
 
 | Membership | Notes |
@@ -44,7 +44,7 @@ Operators: `-eq -ne -startsWith -contains -match -in -notIn -any -all`
 ## 💳 Group-Based Licensing
 
 - **Requires P1**
-- Add license SKU to group → members auto-receive
+- Add license SKU (Stock Keeping Unit) to group → members auto-receive
 - Processing time: minutes to hours
 - SKU exhaustion = later users miss out (creation-order resolution)
 - License Admin role can manage
@@ -68,7 +68,7 @@ Operators: `-eq -ne -startsWith -contains -match -in -notIn -any -all`
 | | **External Collaboration Settings** | **Cross-Tenant Access Settings** |
 |---|---|---|
 | Scope | Tenant-wide defaults | Per-partner overrides |
-| Configures | Who can invite, guest perms, OTP, allow/deny domains | Inbound/outbound rules per partner, B2B direct connect, MFA/device trust |
+| Configures | Who can invite, guest perms, OTP, allow/deny domains | Inbound/outbound rules per partner, B2B direct connect, MFA (Multi-Factor Authentication)/device trust |
 
 ---
 
@@ -158,7 +158,7 @@ When you see these, often **wrong**:
 
 - ❌ Letting "Anyone in the org" invite guests in a sensitive tenant
 - ❌ Hundreds of dormant B2B guests with no sponsor
-- ❌ Standing-Owner access for vendors (no PIM, no access review)
+- ❌ Standing-Owner access for vendors (no PIM (Product Information Management), no access review)
 - ❌ Dynamic group rule referencing an attribute nobody populates (`user.department` empty)
 - ❌ Bulk import without setting `UsageLocation` → licenses silently fail
 

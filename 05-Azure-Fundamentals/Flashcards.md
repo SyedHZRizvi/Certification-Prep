@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -277,8 +277,8 @@
 **Q:** What does the cloud convert CapEx into?
 **A:** OpEx, you pay as you use rather than buying assets upfront.
 
-**Q:** Define IaaS, PaaS, and SaaS in one phrase each.
-**A:** IaaS = you manage OS+up (e.g., Azure VM). PaaS = you manage code+data (e.g., App Service). SaaS = you only use it (e.g., Microsoft 365).
+**Q:** Define IaaS (Infrastructure as a Service), PaaS (Platform as a Service), and SaaS (Software as a Service) in one phrase each.
+**A:** IaaS = you manage OS+up (e.g., Azure VM (Virtual Machine)). PaaS = you manage code+data (e.g., App Service). SaaS = you only use it (e.g., Microsoft 365).
 
 **Q:** Name three things that are ALWAYS the customer's responsibility under shared responsibility, regardless of service model.
 **A:** Data, identities/accounts, access management (and endpoints).
@@ -320,7 +320,7 @@
 **Q:** What is a region pair?
 **A:** Two Azure regions in the same geography (often ~300+ mi apart), used for sequential updates and prioritized recovery. GRS replicates to the pair.
 
-**Q:** What VM SLA do you get with 2+ VMs across Availability Zones?
+**Q:** What VM SLA (Service Level Agreement) do you get with 2+ VMs across Availability Zones?
 **A:** 99.99%.
 
 **Q:** What VM SLA do you get with 2+ VMs in an Availability Set?
@@ -346,19 +346,19 @@
 ## 💻 SECTION 3: CORE SERVICES
 
 **Q:** Name the six main Azure compute services and one pick rule each.
-**A:** VM (full OS control), VM Scale Sets (auto-scale identical VMs), App Service (PaaS web/API), ACI (single container), AKS (Kubernetes orchestration), Functions (event-driven serverless).
+**A:** VM (full OS control), VM Scale Sets (auto-scale identical VMs), App Service (PaaS web/API (Application Programming Interface)), ACI (single container), AKS (Kubernetes orchestration), Functions (event-driven serverless).
 
 **Q:** What does Azure Virtual Desktop (AVD) do?
 **A:** Streams multi-session Windows 10/11 desktops to remote workers from Azure.
 
-**Q:** VPN Gateway vs ExpressRoute, pick rule for each?
+**Q:** VPN (Virtual Private Network) Gateway vs ExpressRoute, pick rule for each?
 **A:** VPN Gateway = encrypted over internet, fast to set up, cheaper. ExpressRoute = private dedicated circuit, predictable bandwidth/latency, expensive, weeks to set up.
 
 **Q:** What does VNet Peering do?
 **A:** Privately connects two Azure VNets together (same or different regions).
 
 **Q:** What's the L4 vs L7 vs Global load balancer mapping in Azure?
-**A:** L4 = Azure Load Balancer (TCP/UDP). L7 regional = Application Gateway (with WAF). L7 global = Front Door (with CDN + WAF).
+**A:** L4 = Azure Load Balancer (TCP (Transmission Control Protocol)/UDP (User Datagram Protocol)). L7 regional = Application Gateway (with WAF (Web Application Firewall)). L7 global = Front Door (with CDN (Content Delivery Network) + WAF).
 
 **Q:** What are the four data services in an Azure storage account?
 **A:** Blob (objects), Files (SMB/NFS), Queue (simple messaging), Table (cheap NoSQL).
@@ -392,9 +392,9 @@
 **A:** Microsoft Entra ID.
 
 **Q:** What tool syncs on-prem Active Directory with Microsoft Entra ID?
-**A:** Microsoft Entra Connect (formerly Azure AD Connect).
+**A:** Microsoft Entra Connect (formerly Azure AD (Active Directory) Connect).
 
-**Q:** Define SSO and MFA.
+**Q:** Define SSO (Single Sign-On) and MFA (Multi-Factor Authentication).
 **A:** SSO = one login for many apps. MFA = require 2+ proofs of identity (know/have/are).
 
 **Q:** What does Conditional Access do that plain MFA doesn't?
@@ -403,7 +403,7 @@
 **Q:** What Entra ID tier is required for Conditional Access?
 **A:** P1 or higher.
 
-**Q:** What does RBAC answer?
+**Q:** What does RBAC (Role-Based Access Control) answer?
 **A:** WHO can do WHAT on WHICH resources.
 
 **Q:** Name the four fundamental built-in RBAC roles.
@@ -425,7 +425,7 @@
 **A:** CanNotDelete and ReadOnly. Both apply to everyone, including Owners.
 
 **Q:** Defender for Cloud vs Microsoft Sentinel, when each?
-**A:** Defender for Cloud = posture + workload protection + Secure Score. Sentinel = SIEM + SOAR for multi-source logs and automated response.
+**A:** Defender for Cloud = posture + workload protection + Secure Score. Sentinel = SIEM (Security Information and Event Management) + SOAR for multi-source logs and automated response.
 
 **Q:** The 3 principles of Zero Trust?
 **A:** Verify explicitly, use least-privilege access, assume breach.
@@ -434,12 +434,12 @@
 **A:** Secrets, keys, and certificates (HSM-backed).
 
 **Q:** What is Azure Bastion?
-**A:** Browser-based RDP/SSH to VMs without exposing public IPs on the VMs.
+**A:** Browser-based RDP/SSH (Secure Shell) to VMs without exposing public IPs on the VMs.
 
 **Q:** What is Private Endpoint / Private Link?
 **A:** Brings Azure PaaS services into your private VNet IP space (no public endpoint exposed).
 
-**Q:** External ID, B2B vs B2C?
+**Q:** External ID, B2B (Business-to-Business) vs B2C (Business-to-Consumer)?
 **A:** B2B = invite partner identities. B2C = customer sign-up for your app.
 
 ---
@@ -453,7 +453,7 @@
 **A:** No, it only alerts. You'd wire a Logic App / Function to actually stop things.
 
 **Q:** Reservations vs Savings Plans, what's the difference?
-**A:** Reservations commit to specific SKU for 1/3 years (up to 72% off). Savings Plans commit to hourly compute spend, more flexible across families (up to 65% off).
+**A:** Reservations commit to specific SKU (Stock Keeping Unit) for 1/3 years (up to 72% off). Savings Plans commit to hourly compute spend, more flexible across families (up to 65% off).
 
 **Q:** Spot VMs save up to what % and what's the catch?
 **A:** Up to 90% off, but Azure can evict with 30-second notice. Use only for interruptible/fault-tolerant workloads.
@@ -484,16 +484,16 @@
 ## 🧰 SECTION 6: TOOLS & FEATURES
 
 **Q:** Five Azure management interfaces?
-**A:** Azure Portal, Azure CLI (`az`), Azure PowerShell (`Az`), Cloud Shell (browser), Azure Mobile App.
+**A:** Azure Portal, Azure CLI (Command Line Interface) (`az`), Azure PowerShell (`Az`), Cloud Shell (browser), Azure Mobile App.
 
 **Q:** What is Azure Cloud Shell?
 **A:** Browser-based shell (Bash or PowerShell) with CLI/PS modules pre-installed; backed by a storage account for persistence.
 
 **Q:** What is Bicep, and how is it related to ARM templates?
-**A:** Bicep is a friendlier DSL that compiles to ARM JSON. Same engine, different syntax. Microsoft's recommended modern Azure IaC.
+**A:** Bicep is a friendlier DSL that compiles to ARM JSON. Same engine, different syntax. Microsoft's recommended modern Azure IaC (Infrastructure as Code).
 
 **Q:** When to use Terraform vs Bicep?
-**A:** Terraform = multi-cloud (Azure + AWS + GCP). Bicep = Azure-only, cleaner syntax.
+**A:** Terraform = multi-cloud (Azure + AWS (Amazon Web Services) + GCP (Google Cloud Platform)). Bicep = Azure-only, cleaner syntax.
 
 **Q:** Azure Monitor vs Service Health vs Azure Status, what does each watch?
 **A:** Azure Monitor = YOUR workload (metrics/logs/alerts). Service Health = AZURE platform issues affecting your subs (personalized). Azure Status = public global Azure status page.
@@ -522,11 +522,11 @@
 **Q:** What is Azure Data Box?
 **A:** Physical appliance for shipping TB–PB of data offline to Microsoft for ingestion.
 
-**Q:** Where do you download Microsoft's audit reports (ISO, SOC, HIPAA)?
+**Q:** Where do you download Microsoft's audit reports (ISO, SOC (Security Operations Center), HIPAA)?
 **A:** Service Trust Portal.
 
 **Q:** What does Compliance Manager do?
-**A:** Tracks your organization's compliance with frameworks (ISO, NIST, HIPAA, GDPR, etc.).
+**A:** Tracks your organization's compliance with frameworks (ISO, NIST, HIPAA, GDPR (General Data Protection Regulation), etc.).
 
 ---
 

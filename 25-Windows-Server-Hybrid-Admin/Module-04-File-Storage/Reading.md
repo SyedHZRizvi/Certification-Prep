@@ -391,7 +391,7 @@ Set-IscsiServerTarget -TargetName "TARGET01" `
 **Decision.** Equifax's response to Congress laid out remediation areas that map almost exactly to AZ-800 storage objectives:
 
 1. **Access-Based Enumeration (ABE)**, show users only the folders they have access to. Doesn't *grant* permissions but reduces reconnaissance value. Equifax explicitly cited ABE rollouts as part of file-server hardening.
-2. **Just-in-time access for sensitive shares**, via **Microsoft Defender for Servers P2 JIT (Just-In-Time) VM (Virtual Machine) access** for the server hosting the share, and SAM (Serviceable Addressable Market)-R isolation.
+2. **Just-in-time access for sensitive shares**, via **Microsoft Defender for Servers P2 JIT (Just-In-Time) VM (Virtual Machine) access** for the server hosting the share, and SAM-R isolation.
 3. **File Server Resource Manager (FSRM) classification + file screens**, block obvious exfil tools (`.iso`, `.7z`, `.zip` over a certain size) and classify files by content sensitivity.
 4. **DFS Namespaces** with site-aware referrals so users don't accidentally hit a far-site replica with stale permissions.
 5. **Audit logging of file access** to a Log Analytics workspace via the Azure Monitor Agent (covered in Module 7).

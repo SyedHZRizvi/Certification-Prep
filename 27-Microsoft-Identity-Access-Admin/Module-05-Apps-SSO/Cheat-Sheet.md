@@ -1,4 +1,4 @@
-# 📋 Module 5 Cheat Sheet: Application Registration & SSO
+# 📋 Module 5 Cheat Sheet: Application Registration & SSO (Single Sign-On)
 
 > One page. Print it. Tape it to your monitor. Review before the exam.
 
@@ -10,7 +10,7 @@
 |---|---------------------|-------------------|
 | What | The recipe / manifest / definition | The dish, local instance / service principal |
 | Lives in | Home tenant only | Every tenant that uses the app |
-| Contains | Redirect URIs, secrets, API perms, app roles | User assignments, SSO config, CA targeting |
+| Contains | Redirect URIs, secrets, API (Application Programming Interface) perms, app roles | User assignments, SSO config, CA targeting |
 | Mental model | "Application object" | "Service principal" |
 
 ---
@@ -20,7 +20,7 @@
 | Protocol | Token | Use case |
 |----------|-------|----------|
 | **OIDC** | JWT | Modern web/SPA/mobile/API |
-| **SAML 2.0** | XML assertion | Legacy enterprise SaaS (Workday, Salesforce) |
+| **SAML 2.0** | XML assertion | Legacy enterprise SaaS (Software as a Service) (Workday, Salesforce) |
 | **WS-Federation** | XML | Legacy MS (SharePoint on-prem) |
 
 🚨 OAuth 2.0 ≠ sign-in. OAuth = authorization; OIDC = sign-in.
@@ -50,7 +50,7 @@
 
 - Outbound-only connector on Windows Server
 - No inbound firewall ports
-- Per-app (not VPN)
+- Per-app (not VPN (Virtual Private Network))
 - Supports KCD for backend Kerberos
 - **Requires Entra ID P1**
 
@@ -117,7 +117,7 @@
 3. Set Assignment required = Yes
 4. Assign Users and groups
 5. Configure SCIM provisioning (if supported)
-6. Apply CA: MFA + compliant device
+6. Apply CA: MFA (Multi-Factor Authentication) + compliant device
 7. Pilot user test (sign-in + provisioning)
 8. Roll out
 9. Configure quarterly access review on app role assignments
@@ -171,4 +171,4 @@ Cover the answers, recite:
 
 ---
 
-➡️ [Module 6: Identity Governance & PIM](../Module-06-Governance-PIM/Reading.md)
+➡️ [Module 6: Identity Governance & PIM (Product Information Management)](../Module-06-Governance-PIM/Reading.md)

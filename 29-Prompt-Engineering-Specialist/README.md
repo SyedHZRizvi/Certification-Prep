@@ -9,7 +9,7 @@ title: Prompt Engineering Specialist (Cert Hub Original)
 
 > **Goal:** Become the person on the team who can ship a production-grade prompt the first time across Claude, GPT, Gemini, and Llama and defend it with evals, jailbreak resistance, structured outputs, multi-modal inputs, and a real cost/latency budget.
 > **Duration:** 6–8 weeks part-time (8–12 hrs/week)
-> **Cost:** $0 to enroll · $20–$50 in API credits across providers · No proctored exam, graded by the included Final Mock + capstone prompt portfolio
+> **Cost:** $0 to enroll · $20–$50 in API (Application Programming Interface) credits across providers · No proctored exam, graded by the included Final Mock + capstone prompt portfolio
 > **Difficulty:** Intermediate · Assumes you can read Python and JSON, and have called *any* LLM API at least once
 
 ---
@@ -32,7 +32,7 @@ This Cert-Hub-original course teaches you **vendor-neutral** prompt engineering,
 - **Conversational AI / Chatbot Lead** ($110K–$180K), front-line customer-facing LLM ownership
 - **Solo founder / consultant**, $5K–$25K projects to fix a startup's broken prompts in 2 weeks
 
-The Cert-Hub Prompt Engineering Specialist ladders directly into **Claude Architect (Cert Hub original)**, **Generative AI Engineer (Cert Hub original)**, **AWS AI Practitioner (course 07)**, **Azure AI Engineer (course 08)**, and **AWS ML Specialty (Cert Hub original)**. It is the right next step after AIF-C01 if you want to specialize in the application layer rather than infrastructure.
+The Cert-Hub Prompt Engineering Specialist ladders directly into **Claude Architect (Cert Hub original)**, **Generative AI Engineer (Cert Hub original)**, **AWS (Amazon Web Services) AI Practitioner (course 07)**, **Azure AI Engineer (course 08)**, and **AWS ML Specialty (Cert Hub original)**. It is the right next step after AIF-C01 if you want to specialize in the application layer rather than infrastructure.
 
 ### 🏛️ Why The Cert Hub's version is different
 
@@ -123,7 +123,7 @@ There is no vendor-issued certificate for Prompt Engineering Specialist, this is
 | Assessment | 30+30+60 question practice exams + 12-prompt capstone portfolio |
 | Pass mark | **85%** on the Final Mock + a working portfolio repository |
 | Prerequisites | Basic Python + JSON literacy; AIF-C01 (course 07) or equivalent helps but isn't required |
-| Recommended pairing | Claude Architect (Cert Hub) for the deep Anthropic-stack; Generative AI Engineer (Cert Hub) for RAG + fine-tuning |
+| Recommended pairing | Claude Architect (Cert Hub) for the deep Anthropic-stack; Generative AI Engineer (Cert Hub) for RAG (Retrieval-Augmented Generation) + fine-tuning |
 
 ### Topic Weights
 
@@ -171,8 +171,8 @@ Weeks 7-8: Modules 7, 8 + capstone portfolio + Final Mock
 3. ❌ **Confused JSON mode with tool use**, They produce different guarantees. Module 4 separates them. Read carefully.
 4. ❌ **Treated chain-of-thought as a magic incantation**, CoT helps reasoning tasks; it hurts trivial tasks (slower, more tokens, no quality gain). Wei 2022 quantifies the regime.
 5. ❌ **Underestimated prompt injection**, "It's just a chat bot" is how the Bing/Sydney leak happened. Module 7 is non-optional.
-6. ❌ **Hardcoded a vendor SDK**, `litellm` and `anthropic`/`openai`/`google-genai` clients abstract away. Module 8 covers the multi-provider pattern.
-7. ❌ **No cost dashboard**, A naive few-shot prompt at 50K tokens × 1M calls/month at GPT-5 prices = your CFO calling. Module 8 covers monitoring.
+6. ❌ **Hardcoded a vendor SDK (Software Development Kit)**, `litellm` and `anthropic`/`openai`/`google-genai` clients abstract away. Module 8 covers the multi-provider pattern.
+7. ❌ **No cost dashboard**, A naive few-shot prompt at 50K tokens × 1M calls/month at GPT-5 prices = your CFO (Chief Financial Officer) calling. Module 8 covers monitoring.
 
 ---
 

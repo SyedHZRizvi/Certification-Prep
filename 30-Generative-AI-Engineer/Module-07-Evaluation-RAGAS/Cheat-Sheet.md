@@ -8,7 +8,7 @@
 |-------|----------|-------|
 | **Capability** | Does this model know how to do X? | MMLU, HumanEval, GSM8K, MT-Bench, HELM |
 | **System** | Does my app answer right? | RAGAS, golden sets, Promptfoo, LangSmith |
-| **Production** | Are real users happy? | Thumbs, NPS, replay, traces |
+| **Production** | Are real users happy? | Thumbs, NPS (Net Promoter Score), replay, traces |
 
 ---
 

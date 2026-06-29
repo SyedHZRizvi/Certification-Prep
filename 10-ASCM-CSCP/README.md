@@ -24,7 +24,7 @@ The ASCM Certified Supply Chain Professional (CSCP) is the most globally recogni
 
 - **Senior Supply Chain Analyst** ($85K–$120K), typical first post-CSCP role
 - **Supply Chain Manager** ($100K–$140K), running planning, sourcing, or fulfillment for a product line or region
-- **S&OP / IBP Manager** ($110K–$150K), owns the integrated planning cycle and the cross-functional consensus
+- **S&OP (Sales and Operations Planning) / IBP Manager** ($110K–$150K), owns the integrated planning cycle and the cross-functional consensus
 - **Procurement / Sourcing Manager** ($105K–$145K), supplier strategy, contracts, category leadership
 - **Director, Supply Chain Operations** ($140K–$185K), typical 3–5 years post-CSCP with strong delivery record
 - **Supply Chain Consultant (Big-4 / Gartner / Kearney)** ($130K–$180K + bonus), CSCP is a common signal for the consulting "advanced practitioner" tier
@@ -44,7 +44,7 @@ ASCM publishes salary data showing CSCP holders earn an average **20–30% more*
 
 Twelve to sixteen weeks of disciplined study. ASCM's Learning System as the official content, this curriculum as the conceptual scaffolding, and three practice exams calibrated to the live exam's pacing.
 
-Begin with [Module 1: SCM Foundations & Strategy →](./Module-01-SCM-Foundations-Strategy/Reading.md)
+Begin with [Module 1: SCM (Supply Chain Management) Foundations & Strategy →](./Module-01-SCM-Foundations-Strategy/Reading.md)
 
 ---
 
@@ -55,8 +55,8 @@ By the end of this track, you'll be able to:
 - Map an end-to-end supply chain with SCOR 13.0 vocabulary (Plan, Source, Make, Deliver, Return, Enable)
 - Design supply chain networks, facility location, make-or-buy, segmentation, outsourcing
 - Forecast demand using both qualitative methods and quantitative techniques (MA, ES, regression, MAD/MAPE)
-- Run an S&OP / IBP cycle with MPS, MRP, RCCP, and CRP
-- Calculate EOQ, safety stock, reorder point, perfect-order, OTIF, cash-to-cash and other supply-chain KPIs
+- Run an S&OP / IBP cycle with MPS, MRP (Material Requirements Planning), RCCP, and CRP
+- Calculate EOQ (Economic Order Quantity), safety stock, reorder point, perfect-order, OTIF (On-Time In-Full), cash-to-cash and other supply-chain KPIs (Key Performance Indicators)
 - Apply Incoterms 2020, customs/HS code basics, and international trade compliance
 - Build sustainability, ESG, and risk-management programs into the supply chain
 - Lead continuous improvement using Lean, Six Sigma DMAIC, TOC, and Balanced Scorecard
@@ -69,11 +69,11 @@ By the end of this track, you'll be able to:
 |---|--------|------|--------------------|
 | 1 | [SCM Foundations & Strategy](./Module-01-SCM-Foundations-Strategy/Reading.md) | 4 hrs | SCOR 13.0, value chains, strategy alignment, push vs pull |
 | 2 | [Supply Chain Design](./Module-02-Supply-Chain-Design/Reading.md) | 4 hrs | Network design, facility location, make-or-buy, segmentation |
-| 3 | [Demand & Forecasting](./Module-03-Demand-Forecasting/Reading.md) | 4 hrs | Qualitative + quantitative forecasting, CPFR, MAD/MAPE |
-| 4 | [Supply Planning & S&OP](./Module-04-Supply-Planning-SOP/Reading.md) | 4 hrs | S&OP, MPS, MRP, RCCP, CRP, aggregate planning, IBP |
-| 5 | [Inventory & Capacity](./Module-05-Inventory-Capacity/Reading.md) | 4 hrs | EOQ, safety stock, ABC, JIT, cycle counting |
+| 3 | [Demand & Forecasting](./Module-03-Demand-Forecasting/Reading.md) | 4 hrs | Qualitative + quantitative forecasting, CPFR (Collaborative Planning, Forecasting, and Replenishment), MAD/MAPE |
+| 4 | [Supply Planning & S&OP](./Module-04-Supply-Planning-SOP (Standard Operating Procedure)/Reading.md) | 4 hrs | S&OP, MPS, MRP, RCCP, CRP, aggregate planning, IBP |
+| 5 | [Inventory & Capacity](./Module-05-Inventory-Capacity/Reading.md) | 4 hrs | EOQ, safety stock, ABC, JIT (Just-In-Time), cycle counting |
 | 6 | [Sourcing & Supplier Management](./Module-06-Sourcing-Supplier-Management/Reading.md) | 3.5 hrs | RFx, Kraljic, SRM, TCO, scorecards |
-| 7 | [Logistics, Distribution & Warehousing](./Module-07-Logistics-Distribution-Warehousing/Reading.md) | 3.5 hrs | Transportation modes, 3PL/4PL, DC ops |
+| 7 | [Logistics, Distribution & Warehousing](./Module-07-Logistics-Distribution-Warehousing/Reading.md) | 3.5 hrs | Transportation modes, 3PL (Third-Party Logistics)/4PL (Fourth-Party Logistics), DC ops |
 | 8 | [International Trade & Customs](./Module-08-International-Trade-Customs/Reading.md) | 3.5 hrs | Incoterms 2020 (all 11), HS codes, LCs, FX risk |
 | 9 | [Sustainability, Risk & CSR](./Module-09-Sustainability-Risk-CSR/Reading.md) | 3 hrs | Triple bottom line, circular economy, ISO 31000 / 14001, ESG |
 | 10 | [Continuous Improvement](./Module-10-Continuous-Improvement/Reading.md) | 3 hrs | Lean, Six Sigma DMAIC, TOC, Kaizen, BSC, KPIs |

@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI-Animation/
+permalink: /35-Motion-Graphics-UI (User Interface)-Animation/
 title: Motion Graphics & UI Animation (Cert Hub Original)
 ---
 
@@ -45,7 +45,7 @@ This course bridges that gap. By the end, you will have a showreel, a working Lo
 
 *Salary ranges reflect U.S. market data (2025–2026). Top-of-market figures represent major metro (NYC, SF, LA) or FAANG-adjacent in-house roles. Remote roles at product-led companies track 10–20% below top-of-market for most roles. Freelance day rates vary widely by specialization and client type, see Module 10 for benchmarks.*
 
-The rise of LLM-generated static content is, paradoxically, *increasing* demand for human motion designers. Brands need animated content to stand out. Video content consumption is at an all-time high. Motion is the last thing AI reliably can't do well at a professional level.
+The rise of LLM (Large Language Model)-generated static content is, paradoxically, *increasing* demand for human motion designers. Brands need animated content to stand out. Video content consumption is at an all-time high. Motion is the last thing AI reliably can't do well at a professional level.
 
 ### 🏛️ Why The Cert Hub's Version Is Different
 

@@ -56,7 +56,7 @@ RMSE           = √(Σ(A−F)²/N)       (penalizes big misses)
 ## 🏗️ Seasonal Capacity Tactics
 
 1. Temp/seasonal labor
-2. Overflow lease / 3PL flex
+2. Overflow lease / 3PL (Third-Party Logistics) flex
 3. Mode shift (ocean → air for last-minute)
 4. Sale/clearance demand-smoothing
 5. Pre-build inventory (Lead behavior)

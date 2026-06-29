@@ -1,4 +1,4 @@
-# 📋 Module 3 Cheat Sheet: GA4 Mastery & Custom Events
+# 📋 Module 3 Cheat Sheet: GA4 (Google Analytics 4) Mastery & Custom Events
 
 > One page. Print it. Tape it to your monitor.
 
@@ -166,7 +166,7 @@ ecommerce.*, items (ARRAY<STRUCT>)
 2. Three predictive metrics + threshold? ___
 3. Identifier priority order? ___
 4. UA shutdown date? ___
-5. SQL pattern to extract a parameter? ___
+5. SQL (Sales Qualified Lead) pattern to extract a parameter? ___
 
 ---
 

@@ -9,8 +9,8 @@
 | | Backup | Site Recovery |
 |---|--------|---------------|
 | Purpose | Data loss / corruption / ransomware | Region outage / DR |
-| RPO | Hours (daily) | Seconds (continuous) |
-| RTO | Minutes (file) → hours (full VM) | Minutes (boot at target) |
+| RPO (Recovery Point Objective) | Hours (daily) | Seconds (continuous) |
+| RTO (Recovery Time Objective) | Minutes (file) → hours (full VM (Virtual Machine)) | Minutes (boot at target) |
 | Granularity | File / folder / DB / whole VM | Whole machine |
 | Frequency | Scheduled | Continuous |
 

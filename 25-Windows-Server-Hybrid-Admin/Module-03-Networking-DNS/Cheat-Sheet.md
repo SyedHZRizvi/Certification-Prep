@@ -1,4 +1,4 @@
-# 📋 Module 3 Cheat Sheet: Networking, DNS & DHCP
+# 📋 Module 3 Cheat Sheet: Networking, DNS (Domain Name System) & DHCP (Dynamic Host Configuration Protocol)
 
 > One page. Print it. Tape it to your monitor. Review before the exam.
 
@@ -9,7 +9,7 @@
 | Type | Storage | Writes | Use |
 |------|---------|--------|-----|
 | **Primary (file)** | Disk | Single-master | Standalone DNS server |
-| **Primary (AD-integrated)** | AD | **Multi-master** | Default for AD DNS |
+| **Primary (AD (Active Directory)-integrated)** | AD | **Multi-master** | Default for AD DNS |
 | **Secondary** | Disk | Read-only replica | Disaster fallback, cross-org reads |
 | **Stub** | Disk or AD | NS only, **auto-refreshing** | Track external zone NS dynamics |
 | **Conditional forwarder** | Server config | n/a, forwards to specific IPs | Static partner domain |
@@ -85,7 +85,7 @@
 - **Cannot run on a DC**
 - Per IPAM server: **150 DHCP**, **500 DNS**, **1M IPs**
 - LocalDB by default; SQL Server for large scale
-- Auto-discover via GPO-provisioned access
+- Auto-discover via GPO (Group Policy Object)-provisioned access
 
 ---
 

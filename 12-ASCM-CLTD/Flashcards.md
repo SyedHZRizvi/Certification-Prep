@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -275,7 +275,7 @@
 ## 🗺️ SECTION 1: LOGISTICS STRATEGY & NETWORK
 
 **Q:** The 5 strategic logistics decisions
-**A:** Network design, mode strategy, make-or-buy (3PL/4PL), service segmentation, technology stack.
+**A:** Network design, mode strategy, make-or-buy (3PL (Third-Party Logistics)/4PL (Fourth-Party Logistics)), service segmentation, technology stack.
 
 **Q:** Center-of-gravity formula
 **A:** X = Σ(Vi·xi)/Σ(Vi); Y = Σ(Vi·yi)/Σ(Vi). Weighted by demand volume Vi.
@@ -296,7 +296,7 @@
 **A:** Cross-dock holds NO inventory (transient, sort inbound→outbound in hours). DC stores and picks orders.
 
 **Q:** Forward stocking location
-**A:** Small depot near a key customer, often a JIT OEM. Holds limited inventory close to demand.
+**A:** Small depot near a key customer, often a JIT (Just-In-Time) OEM. Holds limited inventory close to demand.
 
 **Q:** Free Trade Zone (FTZ)
 **A:** US designation; defers customs duty until goods enter US commerce. Enables duty inversion + value-add.
@@ -363,7 +363,7 @@
 **A:** Temp labor, 3PL overflow, mode shift (ocean→air), pre-build inventory, cross-train, pre-position.
 
 **Q:** Bullwhip cure
-**A:** Shared POS / CPFR, smaller batches, EDLP, daily replenishment.
+**A:** Shared POS / CPFR (Collaborative Planning, Forecasting, and Replenishment), smaller batches, EDLP, daily replenishment.
 
 ---
 
@@ -378,7 +378,7 @@
 **Q:** CTP definition
 **A:** Capable to Promise = ATP + planned production/receipts. Future-aware.
 
-**Q:** EDI 850
+**Q:** EDI (Electronic Data Interchange) 850
 **A:** Purchase Order.
 
 **Q:** EDI 855
@@ -399,7 +399,7 @@
 **Q:** Perfect Order at 95% per component
 **A:** 0.95^4 ≈ 81.5%.
 
-**Q:** OTIF
+**Q:** OTIF (On-Time In-Full)
 **A:** On-Time In-Full. Retailer-imposed (Walmart, Target, Kroger) with chargebacks.
 
 **Q:** MABD
@@ -424,7 +424,7 @@
 
 ## 📊 SECTION 4: INVENTORY & DISTRIBUTION
 
-**Q:** DRP vs MRP
+**Q:** DRP (Distribution Requirements Planning) vs MRP (Material Requirements Planning)
 **A:** DRP plans distribution-network replenishment (echelons). MRP explodes BOMs in production.
 
 **Q:** Inventory Position
@@ -437,7 +437,7 @@
 **A:** 90%=1.28, 95%=1.65, 98%=2.05, 99%=2.33, 99.9%=3.09.
 
 **Q:** Reorder Point formula
-**A:** ROP = (d × L) + SS.
+**A:** ROP (Reorder Point) = (d × L) + SS.
 
 **Q:** Bullwhip Effect
 **A:** Amplification of demand variability as it moves upstream in the supply chain.
@@ -489,13 +489,13 @@
 **A:** Pre-distribution (supplier pre-labels), post-distribution (allocate at dock), direct transfer, break-bulk.
 
 **Q:** Random putaway
-**A:** Any available slot, tracked by WMS, systematic, not chaotic.
+**A:** Any available slot, tracked by WMS (Warehouse Management System), systematic, not chaotic.
 
 **Q:** Drive-in racking
-**A:** High density, LIFO, few SKUs deep storage.
+**A:** High density, LIFO (Last In, First Out), few SKUs deep storage.
 
 **Q:** Selective racking
-**A:** Low density, high selectivity, FIFO-friendly, most general DC.
+**A:** Low density, high selectivity, FIFO (First In, First Out)-friendly, most general DC.
 
 **Q:** Pallet flow / gravity flow racking
 **A:** High density, FIFO (load rear, pick front), good for cold storage.
@@ -670,7 +670,7 @@
 **Q:** ATA Carnet
 **A:** Temporary Importation under Bond, duty-free temporary import (samples, trade shows, repair).
 
-**Q:** C-TPAT / AEO / PIP
+**Q:** C-TPAT / AEO (Answer Engine Optimization) / PIP
 **A:** Trusted-trader supply-chain security programs (US / EU / Canada) granting expedited customs.
 
 **Q:** OFAC SDN list
