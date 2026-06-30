@@ -181,7 +181,7 @@ When using distributed rendering (network render farm), the cache must be access
 3. On render nodes, set the Blender file's relative paths to point to the shared drive
 4. Each render node reads the same pre-baked cache, guaranteed identical frames
 
-> 🎯 **What the exam tests:** Baking simulations before rendering on distributed farms is a core certification topic. The exam may specifically ask: "What happens if you render an unbaked fluid simulation across multiple computers?", the answer is "each machine produces different results because the simulation recalculates from random seed."
+> 🎯 **What this checks:** Baking simulations before rendering on distributed farms is a core production skill. A useful self-check: "What happens if you render an unbaked fluid simulation across multiple computers?", the answer is "each machine produces different results because the simulation recalculates from random seed."
 
 ---
 
@@ -233,7 +233,7 @@ Blender 4.x's Geometry Nodes can replicate some physics behaviors procedurally, 
 - Fluid that responds to collision objects
 - Rigid bodies that interact with each other via collision
 
-> 🎯 **What the exam tests:** Blender 4.x certification increasingly covers Geometry Nodes as an animation tool, not just a modeling tool. Know that Geometry Nodes parameters can be keyframed (they appear as properties in the modifier stack and can have F-Curves applied via the Drivers system or right-click → Insert Keyframe).
+> 🎯 **What this checks:** Geometry Nodes is increasingly used as an animation tool in Blender 4.x, not just a modeling tool. Know that Geometry Nodes parameters can be keyframed (they appear as properties in the modifier stack and can have F-Curves applied via the Drivers system or right-click → Insert Keyframe).
 
 ---
 
@@ -304,11 +304,11 @@ When to choose Geometry Nodes procedural animation vs. physics simulation:
 
 **The deciding question:** Does the effect require frame-to-frame state continuity (where what happened in frame N affects frame N+1)? If yes → physics. If the result is predictable from parameters alone, without history → Geometry Nodes.
 
-> 🎯 **What the exam tests:** The boundary between physics simulation and procedural Geometry Nodes is an increasingly important conceptual distinction in Blender 4.x certification. Know the word "deterministic", GN results are deterministic (same inputs always = same output); physics results are not (tiny floating-point variations cause divergence over many frames on different machines).
+> 🎯 **What this checks:** The boundary between physics simulation and procedural Geometry Nodes is an increasingly important conceptual distinction in Blender 4.x. Know the word "deterministic", GN results are deterministic (same inputs always = same output); physics results are not (tiny floating-point variations cause divergence over many frames on different machines).
 
 ---
 
-## 8.8 What the Exam Tests: Physics Module
+## 8.8 Competency Checklist: Physics Module
 
 | Topic | Tested Knowledge |
 |---|---|

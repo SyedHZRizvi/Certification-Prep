@@ -7,7 +7,7 @@
 > - Basic AWS service-naming conventions (S3 buckets, IAM roles, Region selection)
 > - Comfort with the idea of an "API endpoint" and "managed service"
 >
-> If [`03-AWS-Cloud-Practitioner`](../../03-AWS-Cloud-Practitioner/README.md) Module 5 (AWS AI/ML services overview) is fresh, you can move faster through the AI Services menu at the end. If you've never seen IAM roles in action, also skim [`04-AWS-Solutions-Architect-Associate/Module-02-Compute`](../../../04-AWS-Solutions-Architect-Associate/) for context.
+> If [`03-AWS-Cloud-Practitioner`](../../03-AWS-Cloud-Practitioner/README.md) Module 5 (AWS AI/ML services overview) is fresh, you can move faster through the AI Services menu at the end. If you've never seen IAM roles in action, also skim [`04-AWS-Solutions-Architect-Associate/Module-02-Compute`](../../04-AWS-Solutions-Architect-Associate/) for context.
 
 ---
 

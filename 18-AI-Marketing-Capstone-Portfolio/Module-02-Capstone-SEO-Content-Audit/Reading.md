@@ -4,8 +4,8 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md), covered earlier in this course
-> - SEO fundamentals (intent, keyword research, technical SEO, content clusters), covered in [15-AI-Marketing-SEO-Content](../../15-AI-Marketing-Practitioner/README.md), especially Modules 2–6
-> - Spreadsheet basics for keyword-list manipulation, covered briefly in [17-AI-Marketing-Analytics-Automation Module 2](../../17-AI-Marketing-Entrepreneur/README.md)
+> - SEO fundamentals (intent, keyword research, technical SEO, content clusters), covered in [14-AI-Marketing-Foundations Module 3](../../14-AI-Marketing-Foundations/Module-03-SEO-in-the-AI-Era/Reading.md), plus AI content production at scale in [15-AI-Marketing-Practitioner Module 8](../../15-AI-Marketing-Practitioner/Module-08-AI-Content-Production-Scale/Reading.md)
+> - Spreadsheet basics for keyword-list manipulation, covered briefly in [16-AI-Marketing-Strategist Module 3](../../16-AI-Marketing-Strategist/Module-03-GA4-Mastery-Custom-Events/Reading.md)
 > If any of these are shaky, pause and review before continuing, this capstone assumes you know what "Domain Rating" and "content gap" mean before you sit down to build.
 
 ---
@@ -438,5 +438,5 @@ Use these to stress-test your audit thinking before you publish, defending choic
 
 > **Where this leads.**
 > - Inside this course: Module 7 (Personal Brand) will return to this audit when packaging it as a Featured pin on LinkedIn. Module 8 will use the audit as a "first prospect" pitch deck artifact.
-> - Cross-course: [15-AI-Marketing-SEO-Content Module 8](../../15-AI-Marketing-Practitioner/README.md) covers the real-project workflow this capstone is a deliverable of. [17-AI-Marketing-Analytics-Automation Module 4](../../17-AI-Marketing-Entrepreneur/README.md) helps you build the data layer behind the audit's findings.
+> - Cross-course: [15-AI-Marketing-Practitioner Module 8](../../15-AI-Marketing-Practitioner/Module-08-AI-Content-Production-Scale/Reading.md) covers the AI content-production workflow this capstone is a deliverable of. [16-AI-Marketing-Strategist Module 2](../../16-AI-Marketing-Strategist/Module-02-CDP-Server-Side-Tracking/Reading.md) helps you build the data layer behind the audit's findings.
 > - Practice: Practice Exam 1 has 6 questions specifically grading this audit (Q4, Q5, Q6, Q9, Q15, Q30). Make sure those are at "Excellent" before you publish.

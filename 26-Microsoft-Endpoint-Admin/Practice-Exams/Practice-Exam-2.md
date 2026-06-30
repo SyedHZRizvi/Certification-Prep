@@ -250,8 +250,8 @@ C. Compliance posture
 D. Work-from-anywhere
 
 ### 38. Proactive remediations require:
-A. Intune Plan 1
-B. Intune Plan 2 or Suite
+A. An Intune Plan 2 / Suite add-on
+B. A Windows Enterprise/Education/VDA subscription (e.g. via M365 E3) + Intune
 C. Defender for Endpoint only
 D. No license
 
@@ -470,7 +470,7 @@ For EACH wrong answer:
 
 **Q37. Answer: C.** *Why C is correct.* Compliance has its own reports, not in Endpoint Analytics. *Why others wrong.* The other three ARE Endpoint Analytics categories. *Exam-takeaway.* Compliance ≠ analytics.
 
-**Q38. Answer: B.** *Why B is correct.* Plan 2 or Suite required. *Why others wrong.* Plan 1 doesn't include. Defender doesn't deliver. Free doesn't exist. *Exam-takeaway.* Plan 2 gate.
+**Q38. Answer: B.** *Why B is correct.* Remediations are gated by a Windows Enterprise/Education/VDA subscription (plus Intune); an M365 E3 user with only Intune Plan 1 can run them. *Why others wrong.* An Intune Plan 2 / Suite add-on gates **Advanced** Endpoint Analytics, not remediations; Defender doesn't deliver them; they aren't license-free. *Exam-takeaway.* Remediations = Windows-subscription gate, not an Intune-plan gate.
 
 **Q39. Answer: B.** *Why B is correct.* Detect + remediate scripts. *Why others wrong.* Single script insufficient. Not an MSI. Not a config profile. *Exam-takeaway.* The pair-of-scripts pattern.
 

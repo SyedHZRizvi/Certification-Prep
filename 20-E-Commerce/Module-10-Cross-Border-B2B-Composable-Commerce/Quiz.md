@@ -36,7 +36,7 @@ D. €1,000
 
 ---
 
-### Q5. The EU Digital Services Act (DSA) applied to VLOPs starting: *(Understand)*
+### Q5. The EU Digital Services Act (DSA) became applicable to all in-scope online platforms starting: *(Understand)*
 A. May 2018
 B. July 2021
 C. February 17, 2024
@@ -227,7 +227,7 @@ Set at $800 in 2016 (up from $200 in 1993). Under restriction for Chinese-origin
 IOSS applies for non-EU shipments ≤€150. Over €150, standard import scheme applies.
 
 ### Q5: **C. February 17, 2024**
-DSA Regulation 2022/2065 applied to VLOPs from Feb 17, 2024.
+DSA Regulation 2022/2065 became applicable to all in-scope online platforms on Feb 17, 2024. Designated VLOPs/VLOSEs were bound earlier, from August 25, 2023.
 
 ### Q6: **C. 45M+ EU monthly users**
 VLOP = Very Large Online Platform; designated by the European Commission.

@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1, Supply Management Foundations](../Module-01-Supply-Management-Foundations/Reading.md): strategic alignment, Porter's Five Forces, value chain (you'll reuse Porter here for supply-market analysis)
 > - Basic Pareto analysis (80/20)
-> - Cross-course: [ASCM CSCP Module 2](../../10-ASCM-CSCP/Module-02-Supply-Chain-Design/Reading.md) on demand planning and the related Fisher framework
+> - Cross-course: [ASCM CSCP Module 3](../../10-ASCM-CSCP/Module-03-Demand-Forecasting/Reading.md) on demand planning and the related Fisher framework
 > If Module 1 is shaky, pause and review before continuing.
 
 ---

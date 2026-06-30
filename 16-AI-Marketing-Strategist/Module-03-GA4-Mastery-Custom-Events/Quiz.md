@@ -150,9 +150,9 @@ D. `params['page_location']`
 
 ---
 
-### Q19. Free GA4 retains event-level data for: *(Remember)*
+### Q19. Free GA4 retains event-level data for, at most: *(Remember)*
 A. 2 months
-B. 14 months (default; can be raised to 14 in settings)
+B. 14 months (the maximum; the default is 2 months, raised to 14 in settings)
 C. 50 months
 D. Forever
 
@@ -286,7 +286,7 @@ The nested structure that requires UNNEST() to query.
 ### Q18: **B. `SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'page_location'`**
 The canonical pattern. Memorize.
 
-### Q19: **B. 14 months default**
+### Q19: **B. 14 months (max)**
 Default 2 months, can be raised to 14 in Admin → Data Settings → Data Retention. (360 has 50 months.)
 
 ### Q20: **B. 1B**

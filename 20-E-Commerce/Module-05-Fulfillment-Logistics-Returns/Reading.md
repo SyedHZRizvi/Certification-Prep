@@ -317,7 +317,7 @@ For brands shipping internationally, fulfillment splits into:
 
 **Global-e** (NASDAQ:GLBE) is the largest cross-border specialist; powers cross-border for Adidas, Versace, Marc Jacobs, GAP, Hugo Boss. Pricing: 2-6% of order value depending on scope.
 
-🎯 **Exam tip:** Adobe Commerce Business Practitioner asks about cross-border fulfillment in 1-2 questions. The right answer for a brand entering the EU: cross-border specialist (Global-e or Zonos) for the first 12 months, then evaluate in-country 3PL once volume justifies.
+🎯 **Exam tip:** Adobe Commerce Business Practitioner can ask about cross-border fulfillment. The right answer for a brand entering the EU: cross-border specialist (Global-e or Zonos) for the first 12 months, then evaluate in-country 3PL once volume justifies.
 
 ---
 

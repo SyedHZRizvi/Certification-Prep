@@ -119,7 +119,7 @@ Before July 2021, EU sellers had to register for VAT in every member state where
 
 ### EU Digital Services Act (DSA), Regulation 2022/2065
 
-The DSA applied from **February 17, 2024** for VLOPs (Very Large Online Platforms, those with 45M+ monthly EU users). Marketplaces and large e-commerce sites in scope:
+The DSA became applicable to **all in-scope online platforms from February 17, 2024**; designated VLOPs (Very Large Online Platforms, those with 45M+ monthly EU users) were bound earlier, from August 25, 2023 (four months after their April 2023 designation). Marketplaces and large e-commerce sites in scope:
 
 - **Notice-and-action mechanisms**, illegal-content reporting that must be addressed within defined SLAs.
 - **Statement-of-reasons obligations**, sellers must be told *why* their listing was removed.
@@ -216,7 +216,7 @@ Yet the platforms, content, and certifications mostly focus on B2C. Module 10 cl
 **Salesforce Commerce Cloud B2B**, strong fit if already on Salesforce CRM.
 **Sana Commerce**, purpose-built B2B, deep ERP integration (Dynamics 365, SAP).
 
-🧠 **MEMORIZE THIS.** Adobe Commerce B2B (enterprise + quoting depth), Shopify B2B (mid-market + speed), BigCommerce B2B Edition (out-of-box completeness), SAP/Salesforce (enterprise CRM-attached). These are the four named in most exam blueprints.
+🧠 **MEMORIZE THIS.** Adobe Commerce B2B (enterprise + quoting depth), Shopify B2B (mid-market + speed), BigCommerce B2B Edition (out-of-box completeness), SAP/Salesforce (enterprise CRM-attached). These are the four B2B platform archetypes worth knowing cold.
 
 ### EDI (Electronic Data Interchange), B2B's Backbone Protocol
 
@@ -361,7 +361,7 @@ START
 **Outcome.** Through 2023, the bets paid spectacularly: $24B revenue (2022), $32B revenue (2023 estimated), $66B private valuation. Then the regulatory wall:
 
 - **2023:** SEC raised forced-labor concerns (Uyghur Forced Labor Prevention Act compliance). NYSE IPO repeatedly delayed.
-- **February 17, 2024:** EU Digital Services Act (Regulation 2022/2065) applied; Shein classified as a Very Large Online Platform (VLOP), required transparency reporting, illegal-content removal, external audits.
+- **February 17, 2024:** EU Digital Services Act (Regulation 2022/2065) became applicable to all in-scope online platforms. Shein was later designated a Very Large Online Platform (VLOP), triggering transparency reporting, illegal-content removal, and external audits.
 - **March 2024:** France passed "fast-fashion law", €5/item rising to €10/item environmental penalty targeting ultra-fast-fashion imports.
 - **2024:** UK LSE listing paused over labor concerns.
 - **September 2024 → 2025:** US Biden/Trump-era executive orders restricting Section 321 De Minimis on Chinese-origin goods.

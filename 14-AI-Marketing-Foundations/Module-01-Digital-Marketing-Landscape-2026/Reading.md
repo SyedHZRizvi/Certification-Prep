@@ -327,7 +327,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 2 unpacks the AI fundamentals (tokens, context window, RAG) that every channel-level module references; Module 3 turns the SEO bucket of POESM into a 2026 GEO/AEO playbook; Modules 7 and 8 deepen the paid-and-measurement math you met here (ROAS, CAC, attribution).
-> - Cross-course: `15-AI-Marketing-Strategy` (Module 1) revisits the POESM map for executive-level allocation decisions; `16-AI-Marketing-Automation-Workflows` builds the workflow layer on top of these channels.
+> - Cross-course: `15-AI-Marketing-Practitioner` (Module 1) revisits the POESM map for executive-level allocation decisions; `16-AI-Marketing-Strategist` builds the workflow layer on top of these channels.
 > - Practice: Practice Exam 1 has roughly 6–8 questions drawing from this module's frameworks (POESM, funnels, walled gardens, marketing math). Final Mock Exam revisits with cross-module synthesis questions.
 
 ---

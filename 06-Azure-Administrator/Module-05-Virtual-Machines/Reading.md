@@ -388,7 +388,7 @@ When AZ-104 shows you a case study with "data subject to U.S. export controls" a
 
 > **Where this leads.**
 > - Inside this course: Module 6 covers the *managed* compute alternatives (App Service, AKS, ACI), when a VM is the wrong answer; Module 7 covers the network design VMs sit in; Module 8 secures them; Module 9 backs them up.
-> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 4](../../04-AWS-Solutions-Architect-Associate/Module-04-VPC-Deep-Dive/Reading.md) covers EC2 / ASG / placement groups, the AWS analogue; [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) covers VM encryption (ADE) as a control class.
+> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 4](../../04-AWS-Solutions-Architect-Associate/Module-04-VPC-Deep-Dive/Reading.md) covers EC2 / ASG / placement groups, the AWS analogue; [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/) covers VM encryption (ADE) as a control class.
 > - Practice: PE-1 has 7 questions from this module; PE-2 + Final Mock combine VMs with networking and backup.
 
 ---

@@ -397,7 +397,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 7 (Azure OpenAI) deeply integrates with the index you build here through **"On Your Data"**; Module 8 (Foundry) builds the prompt flow + evaluation layer that consumes this retrieval surface.
-> - Cross-course: [`04-AWS-Solutions-Architect-Associate`](../../../04-AWS-Solutions-Architect-Associate/) Module 6 covers OpenSearch + Kendra for AWS comparison; [`06-Azure-Administrator`](../../../06-Azure-Administrator/) deepens Storage + networking for the Blob / Private Endpoint side.
+> - Cross-course: [`04-AWS-Solutions-Architect-Associate`](../../04-AWS-Solutions-Architect-Associate/) Module 6 covers OpenSearch + Kendra for AWS comparison; [`06-Azure-Administrator`](../../06-Azure-Administrator/) deepens Storage + networking for the Blob / Private Endpoint side.
 > - Practice: Practice Exam 2 has ~12 questions from this module (the largest single share in PE2); Final Mock revisits with multi-step case studies.
 
 ---

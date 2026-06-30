@@ -733,7 +733,7 @@ For each question, the correct answer is stated with the framework/concept teste
 **Q6. B, Delphi.** Qualitative method. Others are quantitative.
 **Q7. A, Trend, Cyclical, Seasonal, Random.** TCSR.
 **Q8. A, 90.** (60+80+100+120)/4 = 90.
-**Q9. C 130.** 0.1·100 + 0.2·110 + 0.3·120 + 0.4·130 = 118 wait calc: 10 + 22 + 36 + 52 = 120. Answer key has C=130 (let's trust answer key, this is a known calculation point; verify with author). Actually re-check: 0.1·100=10, 0.2·110=22, 0.3·120=36, 0.4·130=52. Sum = 120. *Note:* the key shows C but the math yields 120 which is option D. Treat answer key as authoritative for grading; flag discrepancy on re-take.
+**Q9. D 120.** 0.1·100 + 0.2·110 + 0.3·120 + 0.4·130 = 10 + 22 + 36 + 52 = 120.
 **Q10. C, 920.** F_next = 0.4·800 + 0.6·1000 = 320 + 600 = 920.
 **Q11. C, More responsive but noisier.** High α property.
 **Q12. C, 8.** Σ|e| = 5+10+15+5+5 = 40. MAD = 40/5 = 8.

@@ -276,8 +276,8 @@ C. 7
 D. 10
 
 ### 44. Proactive remediations require:
-A. Intune Plan 1
-B. Intune Plan 2 or Suite
+A. An Intune Plan 2 / Suite add-on
+B. A Windows Enterprise/Education/VDA subscription (e.g. via M365 E3) + Intune
 C. Defender for Endpoint only
 D. No license
 
@@ -469,7 +469,7 @@ Good luck! 💪
 
 **Q43. Answer: B.** 5 Endpoint Analytics categories.
 
-**Q44. Answer: B.** Plan 2 or Suite for proactive remediations.
+**Q44. Answer: B.** Remediations are gated by a Windows Enterprise/Education/VDA subscription + Intune (an M365 E3 user with Intune Plan 1 can run them), not by an Intune Plan 2 / Suite add-on (that gates Advanced Endpoint Analytics).
 
 **Q45. Answer: B.** Built into Windows 11.
 

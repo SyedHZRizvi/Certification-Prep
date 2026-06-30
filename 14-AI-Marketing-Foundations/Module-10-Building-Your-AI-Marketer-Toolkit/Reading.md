@@ -410,7 +410,7 @@ The lesson scales down: **your stack is only as good as your documentation.** Sp
 | **Self-hosted** | Software running on your own infrastructure |
 | **SaaS** | Software-as-a-Service |
 | **Prompt library** | Your stored collection of reusable AI prompts |
-| **Second brain** | Niklas Lentz's concept; a personal knowledge management system |
+| **Second brain** | Tiago Forte's concept; a personal knowledge management system |
 | **Documentation culture** | Organizational discipline of writing things down |
 
 ---
@@ -439,7 +439,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: This is the capstone-prep module. You're now ready for `Capstone-Project.md`, then Practice Exam 2 and the Final Mock Exam.
-> - Cross-course: `15-AI-Marketing-Strategy` covers stack governance at the executive level (CMO-led tool budget, RFPs); `16-AI-Marketing-Automation-Workflows` builds Make/Zapier/n8n workflows in depth; `17-AI-Marketing-Analytics-Personalization` deepens the CDP and personalization-engine layer; `18-AI-Marketing-Capstone-Portfolio` is the multi-artifact capstone.
+> - Cross-course: `15-AI-Marketing-Practitioner` covers stack governance at the executive level (CMO-led tool budget, RFPs); `16-AI-Marketing-Strategist` builds Make/Zapier/n8n workflows in depth; `17-AI-Marketing-Entrepreneur` deepens the CDP and personalization-engine layer; `18-AI-Marketing-Capstone-Portfolio` is the multi-artifact capstone.
 > - Practice: Practice Exam 2 + Final Mock both have 6–8 tool/stack questions (CDP vs CRM, Make vs Zapier, Notion's role, second brain, stack audit).
 
 ---

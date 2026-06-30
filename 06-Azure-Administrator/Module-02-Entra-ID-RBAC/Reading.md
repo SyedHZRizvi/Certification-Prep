@@ -499,7 +499,7 @@ AZ-104 will test these by scenario: "An admin's password was phished but PIM is 
 
 > **Where this leads.**
 > - Inside this course: Module 8 covers the *network* layer of zero trust (NSG, Firewall, Front Door) that complements the identity layer here; Module 10 sends Entra sign-in logs to Log Analytics so the PIM activations you configured become *auditable*.
-> - Cross-course: [`09-CompTIA-Security-Plus` Modules 1, 3, 4](../../../09-CompTIA-Security-Plus/) go deeper on the threat-modeling and IAM principles behind these features; [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/README.md) modules show how managed identities authenticate AI workloads without secrets.
+> - Cross-course: [`09-CompTIA-Security-Plus` Modules 1, 3, 4](../../09-CompTIA-Security-Plus/) go deeper on the threat-modeling and IAM principles behind these features; [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/README.md) modules show how managed identities authenticate AI workloads without secrets.
 > - Practice: Practice Exam 1 has 6 questions on Entra ID licensing/PIM/RBAC; Final Mock revisits with case-study synthesis (B2B + PIM + Conditional Access in one scenario).
 
 ---

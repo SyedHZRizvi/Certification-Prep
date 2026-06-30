@@ -449,7 +449,7 @@ Toyota's fix list, published in their second-wave disclosure: enable Defender fo
 
 > **Where this leads.**
 > - Inside this course: Module 4 builds on storage by adding the *SMB/NFS file share* layer; Module 8 covers the network-side controls (private endpoint, NSG, Firewall) that lock storage down; Module 10 closes the loop with diagnostic settings + Defender for Storage alerts.
-> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 3](../../04-AWS-Solutions-Architect-Associate/Module-03-EC2-Deep-Dive/Reading.md) covers the equivalent S3 controls, useful for the multi-cloud admin; [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Module 4 covers cloud-storage misconfiguration as a recognized attack class.
+> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 3](../../04-AWS-Solutions-Architect-Associate/Module-03-EC2-Deep-Dive/Reading.md) covers the equivalent S3 controls, useful for the multi-cloud admin; [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/) Module 4 covers cloud-storage misconfiguration as a recognized attack class.
 > - Practice: PE-1 has 9 questions from this module (redundancy SKUs, tiers, SAS, CMK, private endpoint); PE-2 + Final Mock test scenario synthesis.
 
 ---

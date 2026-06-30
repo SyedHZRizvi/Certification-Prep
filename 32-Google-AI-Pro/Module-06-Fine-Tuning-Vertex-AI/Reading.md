@@ -190,7 +190,7 @@ Full-parameter fine-tuning of a Gemini Flash-sized model would be cost-prohibiti
 
 **Distillation** is training a small model (the *student*) to mimic the outputs of a large model (the *teacher*). On Vertex AI:
 
-1. Teacher = Gemini 2.5 Pro or Ultra (or a fine-tuned variant)
+1. Teacher = Gemini 2.5 Pro (or a fine-tuned variant)
 2. Run the teacher on a representative prompt set
 3. Train the student (Gemini 2.5 Flash) on (input, teacher-output) pairs via SFT
 4. Deploy the student at Flash prices with closer-to-Pro quality on the targeted task

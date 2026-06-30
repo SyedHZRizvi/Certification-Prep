@@ -170,7 +170,7 @@ Move-VM -Name "SQL01" -DestinationHost "HV02" -IncludeStorage `
 | Property | Detail |
 |----------|--------|
 | Replication frequency | **30 sec**, **5 min**, or **15 min** intervals |
-| Authentication | **Kerberos** (5986/HTTPS) or **Certificate** (443/HTTPS), for cross-domain or cross-forest |
+| Authentication | **Kerberos** (80/HTTP) or **Certificate** (443/HTTPS), for cross-domain or cross-forest |
 | Replicas | 1 primary → 1 secondary, optional 3rd "extended" replica downstream |
 | Failover types | **Planned**, **Unplanned**, **Test failover** |
 | Recovery points | 1 hour by default; up to **24** hourly snapshots retained |

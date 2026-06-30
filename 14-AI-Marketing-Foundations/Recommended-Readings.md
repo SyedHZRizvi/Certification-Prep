@@ -85,7 +85,7 @@
   - 7 courses, ~6 months at 10 hrs/week. The single best free curriculum overlap with this track. Audit any of the 7 courses individually for free. Engage from Module 1 onward.
 - **HubSpot Academy** (academy.hubspot.com), free, ~80 courses across inbound marketing, content marketing, SEO, email, social. Earn the Inbound Marketing Certification, the Email Marketing Certification, and the Marketing Software Certification. Engage from Module 1 onward.
 - **Google Skillshop** (skillshop.exceedlms.com), free Google Ads, Google Analytics 4, and YouTube certifications. Engage during Modules 3, 7, 8.
-- **Meta Blueprint** (facebook.com/business/learn/certification), free Meta Ads coursework, plus the paid 400-101 Meta Certified Digital Marketing Associate exam ($99). Engage during Module 7.
+- **Meta Blueprint** (facebook.com/business/learn/certification), free Meta Ads coursework, plus the paid 100-101 Meta Certified Digital Marketing Associate exam ($99). Engage during Module 7.
 - **DeepLearning.AI *Generative AI for Everyone*** (Coursera; Andrew Ng, ~6 hours, free audit).
   - The most marketer-friendly LLM introduction available in 2026. Engage during Module 2.
 - **Nielsen Norman Group UX Articles** (nngroup.com/articles), free; the canonical free academic UX research library. Particularly relevant to Modules 4, 7. The "10 Usability Heuristics" article should be read by every landing-page designer.

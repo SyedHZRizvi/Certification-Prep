@@ -350,7 +350,7 @@ B. Klarna's quarterly cost grind
 C. A single hire
 D. None
 
-### 58. The retrieval-bugs-are-64% Anthropic 2024 finding implies:
+### 58. The "retrieval is the dominant failure mode" point from Module 2 implies:
 A. Models are the bottleneck
 B. Most production "the AI got it wrong" tickets are retrieval bugs, not model bugs
 C. Hardware is the bottleneck

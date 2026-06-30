@@ -7,10 +7,10 @@ title: AWS AI Practitioner Track (AIF-C01)
 
 **🤖 AI & ML · AWS** › AI Practitioner (AIF-C01)
 
-> **Goal:** Pass the AWS Certified AI Practitioner (AIF-C01) exam on the first try with a score of 750+
+> **Goal:** Pass the AWS Certified AI Practitioner (AIF-C01) exam on the first try with a score of 700+
 > **Duration:** 4–6 weeks part-time (~40 hours total)
-> **Cost:** $100 USD (associate-level exam, but priced as foundational)
-> **Difficulty:** Foundational/associate · cloud basics + curiosity about GenAI
+> **Cost:** $100 USD (foundational-level exam pricing)
+> **Difficulty:** Foundational · cloud basics + curiosity about GenAI
 
 ---
 
@@ -86,7 +86,7 @@ By the end of this track, you'll be able to:
 |------|-----------------|--------|------------|
 | [Practice-Exam-1](./Practice-Exams/Practice-Exam-1.md) | After Modules 1–4 | 32 Q · 60 min | ⭐⭐⭐ |
 | [Practice-Exam-2](./Practice-Exams/Practice-Exam-2.md) | After Modules 5–8 | 50 Q · 90 min | ⭐⭐⭐⭐ |
-| [Final-Mock-Exam](./Practice-Exams/Final-Mock-Exam.md) | 2–3 days before the real exam | 65 Q · 120 min | ⭐⭐⭐⭐⭐ |
+| [Final-Mock-Exam](./Practice-Exams/Final-Mock-Exam.md) | 2–3 days before the real exam | 65 Q · 90 min | ⭐⭐⭐⭐⭐ |
 
 Every practice exam now includes a **Detailed answer rationales** section explaining why each correct answer is correct *and* why each distractor is wrong, case-method discernment training, applied to AIF-C01.
 
@@ -118,7 +118,7 @@ Also free and worth the time: **AWS Skill Builder → "Standard Exam Prep Plan: 
 |--------|---------------|
 | Provider | AWS (via PSI Pearson VUE / online proctoring) |
 | Cost | $100 USD (50% discount voucher available after passing any other AWS cert) |
-| Time | 120 minutes |
+| Time | 90 minutes |
 | Questions | 65 total (50 scored, 15 unscored, you can't tell which is which) |
 | Pass mark | 700 / 1000 (~70%), scaled score, not raw percentage |
 | Format | Multiple choice + multiple response + ordering + matching + case study |

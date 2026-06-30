@@ -467,7 +467,7 @@ Use these to pressure-test your understanding. Each is defensible from multiple 
 
 > **Where this leads.**
 > - Inside this course: Module 3 covers Performance Max (which absorbs Search demand if you're not careful) and YouTube; Module 10 (Capstone) uses Google Search for half of the $200 launch.
-> - Cross-course: [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Social-Media-AI-Tools/Reading.md) provides paid-channel context; [16-AI-Marketing-Strategist](../../../16-AI-Marketing-Strategist/) deepens organic search alongside paid.
+> - Cross-course: [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Social-Media-AI-Tools/Reading.md) provides paid-channel context; [16-AI-Marketing-Strategist](../../16-AI-Marketing-Strategist/) deepens organic search alongside paid.
 > - Practice: Practice Exam 1 has ~8 questions from this module (match types, RSA limits, Quality Score, Ad Rank, Smart Bidding thresholds).
 
 ---

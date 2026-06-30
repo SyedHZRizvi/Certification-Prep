@@ -293,7 +293,7 @@
 **A:** Stars = high growth + high share. Cash Cows = low growth + high share. Question Marks = high growth + low share. Dogs = low growth + low share.
 
 **Q:** What is JTBD and what are its 4 switching forces?
-**A:** Jobs-to-be-Done (Christensen 2003). 4 forces: Push (frustration), Pull (attraction), Anxiety (fear), Habit (inertia). Marketing amplifies Push + Pull; reduces Anxiety + Habit.
+**A:** Jobs-to-be-Done (Christensen 2005). 4 forces: Push (frustration), Pull (attraction), Anxiety (fear), Habit (inertia). Marketing amplifies Push + Pull; reduces Anxiety + Habit.
 
 **Q:** What's the difference between a Key Result and an Initiative?
 **A:** Key Result = quantitative outcome (a number). Initiative = an activity / project that drives the KR. KR is the outcome; Initiative is the work. Confusing them is the #1 OKR failure mode.

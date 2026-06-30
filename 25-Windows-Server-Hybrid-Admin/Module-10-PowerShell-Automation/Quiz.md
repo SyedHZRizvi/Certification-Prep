@@ -346,4 +346,4 @@ Standard one-to-many remoting pattern.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md) for one-page review, then [Practice Exams](../../../Practice-Exams/)!
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md) for one-page review, then [Practice Exams](../Practice-Exams/)!

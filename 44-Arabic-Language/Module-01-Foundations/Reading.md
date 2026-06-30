@@ -18,7 +18,7 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 
 Arabic is not just a language — it is a gateway to one of the world's great civilisations. Here is why learning Arabic is one of the most rewarding linguistic investments you can make:
 
-- **Scale:** Arabic is spoken by over **160 million native speakers** and understood by hundreds of millions more across 22 countries in the Middle East and North Africa.
+- **Scale:** Arabic is spoken by more than **400 million native speakers** and understood by hundreds of millions more across 22 countries in the Middle East and North Africa.
 - **The Quran:** The Quran was revealed in Arabic. For the 1.8 billion Muslims worldwide, reading and understanding Quranic Arabic is a profound spiritual goal. Modern Standard Arabic (MSA) is directly rooted in Classical Quranic Arabic.
 - **Business:** The Arab world sits atop the world's largest oil reserves and is a growing hub for finance (Dubai, Abu Dhabi, Riyadh), logistics, and tech. Arabic fluency opens doors in the Gulf Cooperation Council (GCC) economies.
 - **Culture and Literature:** Arabic gave the world algebra, algorithms, and the tales of *One Thousand and One Nights*. Arabic poetry, philosophy, and science shaped the Renaissance.
@@ -341,7 +341,7 @@ Arabic is a **diglossia** — meaning there are two distinct registers in use si
 
 عربی زبان محض ایک زبان نہیں — یہ دنیا کی عظیم ترین تہذیبوں میں سے ایک کا دروازہ ہے۔ عربی سیکھنا ایک انتہائی قیمتی سرمایہ کاری ہے:
 
-- **وسعت:** عربی **ایک سو ساٹھ ملین سے زیادہ** مادری زبان بولنے والوں کی زبان ہے، اور مشرق وسطیٰ اور شمالی افریقہ کے ۲۲ ممالک میں پھیلی ہے۔
+- **وسعت:** عربی **چار سو ملین سے زیادہ** مادری زبان بولنے والوں کی زبان ہے، اور مشرق وسطیٰ اور شمالی افریقہ کے ۲۲ ممالک میں پھیلی ہے۔
 - **قرآن کریم:** قرآن عربی زبان میں نازل ہوا۔ دنیا کے ۱۸۰ کروڑ مسلمانوں کے لیے قرآن کو سمجھنا ایک روحانی مقصد ہے۔
 - **تجارت:** خلیجی ممالک دنیا کے سب سے بڑے تیل ذخائر پر بیٹھے ہیں۔ دبئی، ابو ظہبی اور ریاض مالیات اور ٹیکنالوجی کے بڑے مراکز بن رہے ہیں۔
 - **ثقافت:** عربوں نے دنیا کو الجبرا، الگورتھم اور الف لیلیٰ دیے۔

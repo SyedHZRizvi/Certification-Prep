@@ -40,7 +40,7 @@ E-commerce is the discipline of selling goods and services online. That sounds s
 
 🚨 **Trap on the exam:** "E-commerce" in the certification questions usually means DTC + marketplace seller + B2B. Social commerce and live commerce are subsets, not separate models. Don't pick "social commerce" when the question is asking about the overall model classification.
 
-🧠 **MEMORIZE THIS.** The seven models above. Adobe Commerce Business Practitioner asks classification questions in 4-6 of its 60 questions.
+🧠 **MEMORIZE THIS.** The seven models above. Business-model classification is a commonly tested topic on the Adobe Commerce Business Practitioner exam.
 
 ---
 
@@ -151,7 +151,7 @@ Industry conventions:
 - **1:1 to 2:1**, Surviving, not thriving. Risk of running out of cash.
 - **< 1:1**, Losing money on each customer. Burn-rate dependent on growth velocity.
 
-🎯 **Exam tip:** The Adobe Commerce Business Practitioner exam asks about CLV:CAC in 3-5 questions. Memorize that 3:1 is healthy and 5:1+ indicates under-investment. The 2018 Sequoia letter "Adapting to Endure" popularized this framing.
+🎯 **Exam tip:** The Adobe Commerce Business Practitioner exam commonly asks about CLV:CAC. Memorize that 3:1 is healthy and 5:1+ indicates under-investment. Sequoia's 2022 "Adapting to Endure" memo renewed industry focus on this kind of capital-efficiency framing.
 
 ---
 
@@ -188,7 +188,7 @@ The letter was filed with the 10-K every year afterward. Six core principles eme
 
 ## 🆚 DTC vs Marketplace vs B2B, The Honest Trade-Offs
 
-The single most-tested framework on the Adobe Commerce Business Practitioner exam:
+A heavily tested framework on the Adobe Commerce Business Practitioner exam:
 
 | Dimension | DTC | Marketplace Seller | B2B / Wholesale |
 |-----------|-----|--------------------|-----------------| 
@@ -256,7 +256,7 @@ For a new e-commerce business, ask in this order:
 4. **What's the catalog size?** < 50 SKUs → DTC easy. 50-5,000 SKUs → DTC + marketplace. 5,000+ SKUs → B2B portal or marketplace operator.
 5. **Who pays first, customer or business?** B2C only → DTC. B2B → wholesale portal. Both → B2B2C hybrid.
 
-🧠 **MEMORIZE THIS.** The five questions above appear on the Adobe Commerce Business Practitioner exam disguised as scenario questions. Train yourself to ask them in this order.
+🧠 **MEMORIZE THIS.** The five questions above map directly onto the kind of scenario questions commerce certification exams use. Train yourself to ask them in this order.
 
 ---
 

@@ -110,9 +110,9 @@ D. None
 
 ---
 
-### Q14. The MOST common cause of production "the AI got it wrong" tickets (Anthropic 2024 survey, Module 2 footnote): *(Remember)*
+### Q14. The MOST common cause of production "the AI got it wrong" tickets (see Module 2): *(Remember)*
 A. Wrong tokenizer
-B. Retrieval bugs (~64%)
+B. Retrieval bugs
 C. CPU
 D. None
 
@@ -255,8 +255,8 @@ Multi-tenant data requires per-tenant indexes for all three reasons.
 ### Q13: **B. Flying blind**
 Production-engineering 101.
 
-### Q14: **B. Retrieval bugs (~64%)**
-The Anthropic 2024 finding referenced in Module 2. Retrieval is where most "the AI got it wrong" tickets come from.
+### Q14: **B. Retrieval bugs**
+As established in Module 2, retrieval is where most "the AI got it wrong" tickets come from — the right context never reaches the prompt.
 
 ### Q15: **A. Pick a real product, architect it yourself**
 The portfolio exercise.

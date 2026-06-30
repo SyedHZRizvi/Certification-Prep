@@ -369,7 +369,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 5 turns the hub-and-spoke pattern into platform-specific social distribution; Module 6 connects it to email lifecycle sequencing; Module 9 covers the IP/disclosure rules for AI-generated creative.
-> - Cross-course: `15-AI-Marketing-Strategy` Module 4 covers editorial-investment governance (when content compounds vs decays); `16-AI-Marketing-Automation-Workflows` Module 4 automates the brief → draft → publish pipeline.
+> - Cross-course: `15-AI-Marketing-Practitioner` Module 4 covers editorial-investment governance (when content compounds vs decays); `16-AI-Marketing-Strategist` Module 4 automates the brief → draft → publish pipeline.
 > - Practice: Practice Exam 1 has roughly 8–10 questions from this module's frameworks, tools, and Brynjolfsson NBER 2023 stats. Final Mock revisits hub-and-spoke + Mailchimp/BuzzFeed cases.
 
 ---

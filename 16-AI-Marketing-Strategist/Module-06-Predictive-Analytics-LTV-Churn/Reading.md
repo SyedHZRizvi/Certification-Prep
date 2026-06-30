@@ -220,7 +220,7 @@ model = lgb.LGBMClassifier(
     random_state=42
 )
 
-# Calibrate (Platt scaling) so output probabilities are meaningful
+# Calibrate (isotonic regression) so output probabilities are meaningful
 calibrated = CalibratedClassifierCV(model, method='isotonic', cv=5)
 calibrated.fit(X_tr, y_tr)
 

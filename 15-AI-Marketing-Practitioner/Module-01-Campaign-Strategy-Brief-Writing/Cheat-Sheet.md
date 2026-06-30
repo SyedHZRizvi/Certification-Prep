@@ -116,7 +116,7 @@ When you see these, they're often **wrong**:
 
 | Model | Use for |
 |-------|---------|
-| Claude Sonnet 4.7 | Long, nuanced briefs |
+| Claude Sonnet 4.6 | Long, nuanced briefs |
 | ChatGPT GPT-5 | Quick iteration, structure |
 | Gemini 2.5 Pro | Multimodal (image inputs) |
 

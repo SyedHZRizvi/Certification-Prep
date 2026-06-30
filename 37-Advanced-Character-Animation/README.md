@@ -5,7 +5,7 @@ title: Advanced Character Animation, Acting-Level Character Performance
 
 # Advanced Character Animation, Acting-Level Character Performance
 
-> **The course that gets you hired at Pixar, DreamWorks, Riot, or Framestore.**
+> **The course that trains you to the performance standard studios like Pixar, DreamWorks, Riot, and Framestore hire at.**
 
 This is the professional-grade character animation curriculum covering every discipline you need to work at the top tier of the industry. It is built to the same pedagogical standard as the site's engineering and cloud courses, deep, specific, and career-oriented.
 
@@ -32,11 +32,13 @@ This is the professional-grade character animation curriculum covering every dis
 
 | Role | Salary Range | Hiring Studios |
 |------|-------------|----------------|
-| Character Animator | $80,000–$140,000 | Pixar, DreamWorks, Blue Sky, Sony Pictures Animation |
+| Character Animator | $80,000–$140,000 | Pixar, DreamWorks, Illumination, Sony Pictures Animation |
 | Senior Character Animator | $120,000–$180,000 | Feature film studios, Netflix, Apple TV+ |
 | Lead Animator | $140,000–$200,000+ | Major studios; streaming platform content |
 | VFX Character Animator | $90,000–$160,000 | ILM, Weta Digital, Framestore, MPC |
 | Game Character Animator | $80,000–$150,000 | Riot Games, Naughty Dog, Blizzard, EA |
+
+*Salary ranges are illustrative industry estimates, not a guarantee of employment or earnings. Completing this course does not guarantee a job at any studio.*
 
 ---
 

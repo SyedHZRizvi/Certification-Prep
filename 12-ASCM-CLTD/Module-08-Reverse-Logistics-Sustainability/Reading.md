@@ -186,13 +186,12 @@ Broader framework than closed-loop. The 5R hierarchy (and other variants):
 ### The Triple Bottom Line
 
 ```
-       ECONOMIC
-            ↑
-            │
-PEOPLE ←────┼────→ PROFIT
-            │
-            ↓
-   PLANET (environmental)
+        PROFIT
+      (economic)
+          ↑
+          │
+PEOPLE ←──┴──→ PLANET
+(social)     (environmental)
 ```
 
 Sometimes called **People, Planet, Profit** or **3P**.

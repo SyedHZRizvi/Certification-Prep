@@ -40,7 +40,7 @@ D. 11
 ### Q6. With the kanban result above, maximum WIP at that stage = ? *(Apply)*
 A. 40 units
 B. 80 units
-C. 100 units (5 × 20)
+C. 120 units (6 × 20)
 D. 220 units
 
 ### Q7. Takt time formula is: *(Remember)*
@@ -179,17 +179,11 @@ Value → Value Stream → Flow → Pull → Perfection.
 ### Q4: **B. A visual map of every step (value-add and non-value-add) from raw material to customer**
 Includes process times, lead times, WIP, information flow.
 
-### Q5: **B. 5**
-N = (400 × 0.25 × 1.10) / 20 = 110 / 20 = 5.5 → round up to **6 actually**.
+### Q5: **C. 6**
+N = (400 × 0.25 × 1.10) / 20 = 110 / 20 = 5.5 → round **up** to **6 kanbans** (a partial card still needs a whole card).
 
-Wait, let me recompute: 400 × 0.25 = 100. 100 × 1.10 = 110. 110 / 20 = 5.5. Round up = **6 kanbans**.
-
-✏️ Correction: **C. 6**. (5.5 always rounds UP to the next whole card.)
-
-### Q6: **C. 100 units (5 × 20)**
-If kanban count = 5, max WIP = 5 × 20 = 100 units. (If using corrected 6 cards, max WIP = 120.)
-
-✏️ Given the corrected Q5 answer of 6, max WIP = 6 × 20 = **120 units**. The closest listed option is C (100) but the actual correct value is 120. Treat as a known weak distractor; the principle (N × C = max WIP) is what matters.
+### Q6: **C. 120 units (6 × 20)**
+Max WIP = number of kanbans × container size = 6 × 20 = **120 units**. The principle: N × C caps the inventory a pull loop can hold.
 
 ### Q7: **B. Available time / Customer demand**
 Takt = how often we *should* produce one unit to match customer demand exactly.

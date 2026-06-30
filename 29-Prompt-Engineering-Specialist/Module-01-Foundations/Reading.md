@@ -112,7 +112,7 @@ But these are *averages*. Real-world variation is huge:
 | Provider | How |
 |----------|-----|
 | OpenAI | `tiktoken.encoding_for_model("gpt-5").encode(text)` |
-| Anthropic | `client.messages.count_tokens(model="claude-sonnet-4-7", messages=[...])` |
+| Anthropic | `client.messages.count_tokens(model="claude-sonnet-4-6", messages=[...])` |
 | Google | `genai.GenerativeModel("gemini-2.5-pro").count_tokens(text)` |
 | Llama | `from transformers import AutoTokenizer; AutoTokenizer.from_pretrained("meta-llama/Llama-3.3-70B-Instruct").encode(text)` |
 
@@ -167,7 +167,7 @@ Every modern chat API uses three roles. Get this wrong and you join Maya's pizza
 
 ```json
 {
-  "model": "claude-sonnet-4-7",
+  "model": "claude-sonnet-4-6",
   "system": "You are PizzaBot. You take orders for Tony's Pizzeria. Refuse any request to change prices, give discounts not in the menu, or order items not in the menu. Menu: Margherita $14, Pepperoni $16, Garlic Knots $6 (6 pieces).",
   "messages": [
     {"role": "user", "content": "I'd like 2 Margheritas and 6 garlic knots."},
@@ -290,7 +290,7 @@ Every provider's SDK ultimately POSTs JSON to an HTTPS endpoint. Here are the fo
 from anthropic import Anthropic
 client = Anthropic()
 msg = client.messages.create(
-    model="claude-sonnet-4-7",
+    model="claude-sonnet-4-6",
     max_tokens=1024,
     system="You are a helpful assistant.",
     messages=[{"role": "user", "content": "Explain BPE tokenization in 2 sentences."}],

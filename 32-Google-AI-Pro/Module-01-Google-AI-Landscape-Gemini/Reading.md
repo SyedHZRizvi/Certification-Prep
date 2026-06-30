@@ -54,8 +54,7 @@ The story matters because the *product* matters. Gemini is multi-modal because t
 | **Feb 2025** | **Gemini 2.0 Pro** ships; **Gemini 2.0 Flash Lite** for edge / on-device. | Full 2.0 family. |
 | **Mar 2025** | **Gemini 2.5 Pro** ships with extended thinking ("thinking mode"); benchmarks ahead of GPT-4o on reasoning. | Current top tier. |
 | **Jun 2025** | **Gemini 2.5 Flash** ships; **Vertex AI Agent Builder** GA. | Agent platform mainstreams. |
-| **Oct 2025** | **Gemini 2.5 Ultra** announced for specialist/regulated workloads (Vertex AI only). | Top of pricing/capability stack. |
-| **2026** | Gemini 2.5 family is current; Gemini 3 development public; Google Cloud AI revenue passes $15B annualized. | Where we are. |
+| **2026** | Gemini 2.5 family is current (Flash-Lite / Flash / Pro); Gemini 3 development public; Google Cloud AI revenue passes $15B annualized. | Where we are. |
 
 🎯 **Exam pattern:** *"What paper introduced the Transformer architecture?"* → **"Attention Is All You Need" by Vaswani et al. (2017), from Google Brain.** *"In what year did Google Brain and DeepMind merge?"* → **April 2023, into Google DeepMind, with Demis Hassabis as CEO.**
 
@@ -93,15 +92,15 @@ Gemini on Vertex AI ships with two native grounding modes: **"Grounding with Goo
 
 ## 🎴 The Gemini Model Family: Nano, Flash, Pro, Ultra
 
-Google names model tiers by capability ladder. The convention has been stable since Gemini 1.0 (December 2023), with some additions through the 2.x series.
+Google names model tiers by capability ladder, smallest to largest: **Nano → Flash Lite → Flash → Pro → Ultra.** The ladder dates to Gemini 1.0 (December 2023), which shipped in Nano/Pro/**Ultra** variants. Note one wrinkle the exam can test: the **Ultra** tier name belongs to the **Gemini 1.0 era**; the 2.x line ships **Flash-Lite / Flash / Pro** (no "2.5 Ultra" SKU), and the frontier reasoning that "Ultra" once denoted is delivered on 2.x by **Pro with thinking mode**.
 
 | Tier | Mental model | Use when | Avoid when |
 |------|--------------|----------|------------|
 | **Nano** | "On-device. Tiny. Free at inference." | On-device features on Pixel/Android phones (smart-reply, summarization, voice commands). Privacy-first; never leaves the device. | Anything requiring server-side compute, long context, or multi-modal beyond simple text. |
 | **Flash** | "Smart and fast. Cheap. Default high-throughput." | High-volume production workloads (classification, summarization, simple agents, customer-support routing, fast user-facing chat). Latency target ~500 ms. | Hard multi-step reasoning, deep research-grade tasks. |
 | **Flash Lite** | "Cheaper Flash. Edge-friendly." | Mobile, embedded, ultra-cost-sensitive batch work. | Anything with the slightest reasoning depth. |
-| **Pro** | "Default workhorse. Senior engineer." | Most production work, RAG over docs, agentic tool use, structured extraction, customer-facing chat where quality > throughput. | Throughput-dominated workloads where Flash suffices. |
-| **Ultra** | "Frontier. Slow. Expensive. The smartest." | Frontier reasoning, complex code refactors, novel agentic planning, math, science, regulated workloads where the cost of error dominates inference cost. | High-throughput cheap inference; latency-sensitive UI. |
+| **Pro** | "Default workhorse. Senior engineer." | Most production work, RAG over docs, agentic tool use, structured extraction, customer-facing chat where quality > throughput; on 2.x, hard reasoning via thinking mode. | Throughput-dominated workloads where Flash suffices. |
+| **Ultra** | "Frontier tier — a Gemini 1.0-era name." | Historically the top-of-stack 1.0 tier for the hardest reasoning. On the current 2.x line there is no Ultra SKU; reach for **Pro (thinking mode)** instead. | High-throughput cheap inference; latency-sensitive UI. |
 
 ### Approximate pricing tiers (as of 2026-05, Vertex AI, illustrative, check cloud.google.com/vertex-ai/pricing)
 
@@ -110,7 +109,6 @@ Google names model tiers by capability ladder. The convention has been stable si
 | **Gemini 2.5 Flash Lite** | ~$0.04 | ~$0.15 | ~200 ms | 1M |
 | **Gemini 2.5 Flash** | ~$0.075 | ~$0.30 | ~400 ms | 1M (2M β) |
 | **Gemini 2.5 Pro** | ~$1.25 | ~$10.00 | ~1.0 s | 2M |
-| **Gemini 2.5 Ultra** | ~$5.00 | ~$30.00 | ~3.0 s | 2M |
 | **Gemini 1.5 Pro (legacy)** | ~$1.25 | ~$5.00 | ~1.2 s | 2M |
 | **Gemini Nano** (on-device) | $0 (compute on user device) | $0 | depends on device | ~32K |
 
@@ -130,13 +128,13 @@ Question to ask                          → Tier
 "Is it general chat or agentic work
  with 1-3 tools?"                        → Pro  ← default for production
 "Does the workload require >500K
- tokens of context regularly?"           → Pro or Ultra
+ tokens of context regularly?"           → Pro
 "Is this a hard reasoning task
  (math, code refactor, science)
- with high cost-of-error?"               → Ultra (or Pro w/ thinking mode)
+ with high cost-of-error?"               → Pro w/ thinking mode
 "Regulated workload (healthcare,
  finance) where wrong answer is
- catastrophic?"                          → Ultra + grounding + human review
+ catastrophic?"                          → Pro w/ thinking mode + grounding + human review
 ```
 
 🎯 **Exam pattern:** *"A customer-support bot handles 50K conversations/day with simple intent classification."* → **Flash**. *"A legal-tech startup ingests 600-page contracts and runs structured extraction with citations."* → **Pro** (2M context + grounding + structured output). *"A Pixel phone needs to summarize a long email thread on-device for privacy."* → **Nano**.
@@ -150,7 +148,7 @@ You will be asked to defend a Gemini pick over GPT-4o/5 or Claude Sonnet/Opus 4.
 | Dimension | Gemini (Google) | GPT (OpenAI) | Claude (Anthropic) |
 |-----------|-----------------|--------------|--------------------|
 | **Best at (2026)** | Multi-modal native (vision/audio/video), very long context (2M), Google integration | General-purpose chat, code, real-time voice, broad ecosystem | Long-context reasoning, agentic coding, structured output |
-| **Context window** | **1M–2M** (Pro/Ultra); 1M (Flash); 10M experimental on internal Flash variants | 128K standard, 1M extended (GPT-5) | 200K (Sonnet 4.6), 500K (Opus 4.6) |
+| **Context window** | **2M** (Pro); 1M (Flash); 10M experimental on internal Flash variants | 128K standard, 1M extended (GPT-5) | 200K (Sonnet 4.6), 500K (Opus 4.6) |
 | **Native modalities** | Text + images + audio + video (truly native, not bolted-on) | Text + images + audio + video (omni; bolted via adapters) | Text + images (vision); audio/video not native |
 | **Native output modalities** | Text + image + audio (Gemini 2.0+) | Text + image + audio | Text only |
 | **Safety profile** | Google AI Principles (2018); safety_settings categories; recitation checker; SynthID watermarking | RLHF; generally permissive; content moderation API | Constitutional AI; often more refusal-prone but more interpretable |
@@ -294,7 +292,7 @@ This is the kind of end-to-end answer the Generative AI Leader and PMLE exams ex
 | "Gemma and Gemini are the same model." | No. **Gemma** is Google's open-weight family (7B, 2B, etc.) inspired by Gemini's research. Gemini is the closed flagship. |
 | "Google's exams test trivia about deep learning history." | No, they test architectural choices, service selection, pricing/throughput math, and Google-Cloud-specific decisions. |
 | "Vertex AI is just one product." | Vertex AI is an *umbrella* over ~25 sub-products: Vertex AI Studio, Workbench, Pipelines, Model Registry, Model Garden, Endpoints, Vector Search, AI Search, Agent Builder, etc. Module 3 maps them. |
-| "Gemini 2.5 has 1M context." | Pro/Ultra have **2M**; Flash has 1M (2M in beta). Memorize the exact number per tier. |
+| "Gemini 2.5 has 1M context." | Pro has **2M**; Flash has 1M (2M in beta). Memorize the exact number per tier. |
 | "Constitutional AI is a Google technique." | No, that's Anthropic. Google's safety posture is the AI Principles (2018) + safety_settings + recitation checker + SynthID. |
 
 ---
@@ -312,7 +310,7 @@ This is the kind of end-to-end answer the Generative AI Leader and PMLE exams ex
 | **Gemini Nano** | On-device tier (Pixel/Android); ~3B parameters; no network |
 | **Gemini Flash / Flash Lite** | Fast/cheap tier; default for high-throughput production |
 | **Gemini Pro** | Default workhorse for production work |
-| **Gemini Ultra** | Frontier tier for hardest reasoning |
+| **Gemini Ultra** | Frontier tier name from the Gemini 1.0 era; no 2.x Ultra SKU (use Pro w/ thinking mode) |
 | **Gemma** | Google's open-weight family inspired by Gemini |
 | **Google AI Studio** | Free consumer-grade web playground at aistudio.google.com |
 | **Vertex AI** | Google Cloud's enterprise ML/AI platform |

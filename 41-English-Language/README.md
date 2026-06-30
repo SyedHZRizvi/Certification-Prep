@@ -68,7 +68,7 @@ Perfect tenses with timeline diagrams, all 5 conditionals (zero through mixed), 
 Formal writing (cover letters, proposals, reports), business presentations, negotiation language, meeting chairmanship, industry vocabulary (IT, finance, healthcare), IELTS Writing Task 2, email etiquette, LinkedIn and CV writing. Includes 2 full templates with Pakistani professional context.
 
 ### Module 9 — Culture, Idioms & Media (C1/C2)
-100 common idioms with Urdu equivalents, English proverbs, British vs American English differences, British humour and sarcasm explained, Shakespeare's famous lines, formal vs informal register, social media English, news media vocabulary, sports idioms in business.
+60 common idioms with Urdu equivalents, English proverbs, British vs American English differences, British humour and sarcasm explained, Shakespeare's famous lines, formal vs informal register, social media English, news media vocabulary, sports idioms in business.
 
 ### Module 10 — Mastery & Fluency (C2)
 Accent reduction for Urdu speakers, eliminating Urdu grammar interference, fluency techniques and natural filler phrases, storytelling (STAR method), debate structure (PEEL method), spontaneous speech prompts, newspaper editorial analysis, academic writing vocabulary (AWL), IELTS/TOEFL preparation, final fluency self-assessment checklist.

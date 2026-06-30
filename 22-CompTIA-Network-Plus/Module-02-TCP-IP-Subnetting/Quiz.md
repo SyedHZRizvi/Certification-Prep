@@ -245,7 +245,7 @@ Most common loopback. The whole 127.0.0.0/8 is reserved.
 /22 = 22 ones. First 16 bits = 255.255. Next 6 bits in the third octet = `11111100` = 252. Fourth octet = 0.
 
 ### Q6: **B. 30**
-/27 has 32 host bits to mask... wait, /27 has 5 host bits (32−27=5). 2⁵ − 2 = 30.
+/27 leaves 5 host bits (32 − 27 = 5). 2⁵ − 2 = 30 usable hosts.
 
 ### Q7: **C. 192.168.10.128**
 /26 = mask 255.255.255.192. Block size = 256−192 = 64. Multiples of 64 in 4th octet: 0, 64, 128, 192. 150 falls in the 128–191 block → network = 192.168.10.128.

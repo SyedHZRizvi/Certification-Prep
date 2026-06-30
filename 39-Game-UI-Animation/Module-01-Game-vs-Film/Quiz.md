@@ -152,7 +152,7 @@ D. A compression artifact in baked normal maps at low texture resolution
 
 ---
 
-### Q17. Which technique does DOOM Eternal's animation system use instead of traditional clip-based state machines?
+### Q17. Which technique do games like Ubisoft's For Honor and the EA SPORTS FIFA titles use instead of traditional clip-based state machines?
 
 A. Procedural animation via inverse kinematics only
 B. Motion matching, selecting the best pose from a database based on current velocity

@@ -450,7 +450,7 @@
 **A:** ROP = d · LT + SS.
 
 **Q:** Combined formula for σ_LT with variable demand AND variable lead time.
-**A:** σ_LT = √(LT · σ_d² + d² · σ_LT²).
+**A:** σ_LT = √(LT · σ_d² + d² · σ_L²), where σ_d = demand std dev and σ_L = lead-time std dev.
 
 **Q:** Z values for 90%, 95%, 99% service levels.
 **A:** 90% → 1.28, 95% → 1.65, 97.5% → 1.96, 99% → 2.33.

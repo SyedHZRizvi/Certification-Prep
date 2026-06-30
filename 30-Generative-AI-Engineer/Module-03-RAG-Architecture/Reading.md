@@ -388,7 +388,7 @@ You'll see the quality climb from ~60% to ~85%+ on faithfulness, and you'll see 
 
 **The architecture (as disclosed in their tech-blog post and follow-up interviews).** A RAG system over Klarna's internal policy documents, FAQ, and historical-ticket-resolution corpus. Specifics:
 
-- ~95 languages supported (Cohere multilingual embeddings as the primary embedder)
+- 35+ languages supported (Cohere multilingual embeddings as the primary embedder)
 - Multi-query expansion at the pre-retrieval step for ambiguous customer messages
 - Strict guardrails: regulated topics (lending laws, dispute escalation) route to humans
 - Tool calling for: refund issuance, payment-plan modification, dispute creation

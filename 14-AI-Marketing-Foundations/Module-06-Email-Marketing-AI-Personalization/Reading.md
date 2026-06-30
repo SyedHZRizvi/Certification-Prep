@@ -362,7 +362,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 7 covers the paid layer over the email-generated audience (retargeting custom audiences, lookalikes); Module 8 covers email metrics in GA4 + Looker Studio; Module 9 deepens CAN-SPAM, GDPR, and CCPA compliance.
-> - Cross-course: `15-AI-Marketing-Strategy` Module 6 covers lifecycle ROI and the BCG email-vs-other-channel allocation; `16-AI-Marketing-Automation-Workflows` Module 6 wires the welcome series end-to-end with Make/Zapier.
+> - Cross-course: `15-AI-Marketing-Practitioner` Module 6 covers lifecycle ROI and the BCG email-vs-other-channel allocation; `16-AI-Marketing-Strategist` Module 6 wires the welcome series end-to-end with Make/Zapier.
 > - Practice: Practice Exam 2 has roughly 8–10 email questions (deliverability, lifecycle, ESP-by-vertical, Klaviyo case). Final Mock revisits with cross-module synthesis.
 
 ---

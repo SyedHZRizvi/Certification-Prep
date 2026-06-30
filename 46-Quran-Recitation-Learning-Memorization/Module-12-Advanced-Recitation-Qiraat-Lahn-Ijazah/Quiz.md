@@ -274,7 +274,7 @@ D. There is no practical benefit — only scholars need this knowledge
 
 **Q4 — C** · Warsh 'an Nafi' is the standard Qira'ah in Morocco, Algeria, Tunisia, Libya, and most of West Africa.
 
-**Q5 — B** · In Hafs: مَلِكِ (short Alif, 2 beats). In Warsh: مَالِكِ (long Alif Madd, 2+ beats). This is one of the most visible differences in Al-Fatiha.
+**Q5 — A** · In Hafs: مَالِكِ (long Alif). In Warsh: مَلِكِ (short, no Alif). This is one of the most visible differences in Al-Fatiha.
 
 **Q6 — B** · Lahn al-Jali is a gross error that changes the pronunciation of letters, alters vowels, or distorts the meaning.
 

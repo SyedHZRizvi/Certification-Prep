@@ -38,7 +38,7 @@ ASCM data shows CLTD holders earn approximately **15–25% more** than non-certi
 - **Original questions only**, every quiz and practice exam written from the published ASCM Exam Content Manual; no copyrighted dumps
 - **Real-world case studies**, Amazon's two-day Prime promise, FedEx's hub-and-spoke origin story, Suez Canal blockage of 2021, the COVID port crisis, last-mile drone pilots
 - **One author, one voice**, coherent APICS/ASCM vocabulary across all 8 modules
-- **Updated for the 2026 CLTD ECM**, including current Incoterms 2020 nuances, electric-vehicle fleet conversion, omnichannel fulfillment, and reverse-logistics economics
+- **Aligned to the current ASCM CLTD Exam Content Manual**, including current Incoterms 2020 nuances, electric-vehicle fleet conversion, omnichannel fulfillment, and reverse-logistics economics
 
 ### 🚀 Ready to start?
 

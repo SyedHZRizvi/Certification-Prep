@@ -92,7 +92,7 @@ Powered by Stripe under the hood (Shopify Plus customers see Stripe's pricing mi
 
 ---
 
-## 🛡️ PCI-DSS v4.0 (Mandatory March 2025)
+## 🛡️ PCI-DSS v4.0 (Replaced v3.2.1 March 2024; New Requirements Mandatory March 2025)
 
 The Payment Card Industry Data Security Standard, version 4.0, replaces v3.2.1. Maintained by the PCI Security Standards Council (a consortium of Visa, Mastercard, Amex, Discover, JCB).
 
@@ -124,7 +124,7 @@ The Payment Card Industry Data Security Standard, version 4.0, replaces v3.2.1. 
 
 🚨 **Trap on the exam:** PCI-DSS v4.0 added new requirements for **client-side script management** (preventing Magecart-style attacks via JavaScript injection on payment pages). All v4.0 merchants must maintain an inventory of scripts on payment pages, justify each, and detect unauthorized changes. This requirement is mandatory March 2025.
 
-🧠 **MEMORIZE THIS.** PCI-DSS v4.0 became mandatory March 2025. Six new requirements specifically address script management on payment pages (Requirements 6.4.3 and 11.6.1).
+🧠 **MEMORIZE THIS.** PCI-DSS v4.0 superseded v3.2.1 on March 31, 2024; its future-dated new requirements then became mandatory on March 31, 2025. Among those new requirements are the ones addressing script management on payment pages (Requirements 6.4.3 and 11.6.1).
 
 ---
 
@@ -353,7 +353,7 @@ Wallets dramatically improve checkout conversion. Baymard 2024 benchmarks show w
 | Term | Definition |
 |------|------------|
 | **PSP** | Payment Service Provider |
-| **PCI-DSS v4.0** | Payment Card Industry Data Security Standard (mandatory Mar 2025) |
+| **PCI-DSS v4.0** | Payment Card Industry Data Security Standard (replaced v3.2.1 Mar 2024; new requirements mandatory Mar 2025) |
 | **SAQ A / A-EP / D** | Self-Assessment Questionnaire levels |
 | **SCA** | Strong Customer Authentication (PSD2, EU) |
 | **3DS2** | 3-D Secure 2 protocol for SCA |

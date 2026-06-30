@@ -252,8 +252,8 @@
 **Q:** How long was hit stop in Hades (Supergiant Games)?
 **A:** 4–8 frames at 60fps.
 
-**Q:** Which technique does DOOM Eternal use instead of clip-based state machines for locomotion?
-**A:** Motion matching, selecting the best animation pose from a database based on the character's current velocity.
+**Q:** Which technique do games like For Honor (Ubisoft) and the EA SPORTS FIFA titles use instead of clip-based state machines for locomotion?
+**A:** Motion matching, selecting the best animation pose from a database based on the character's current velocity. (DOOM Eternal, by contrast, uses an authored state machine.)
 
 **Q:** What is "coyote time" in platformer animation design?
 **A:** A grace window (0.1–0.15s) after walking off a ledge during which the player can still jump and the animation stays in an edge-peek state.
@@ -265,7 +265,7 @@
 **A:** The tactile, kinesthetic sense of manipulating a virtual object, the feeling of controlling a character, not just seeing it.
 
 **Q:** What animation philosophy did Hades use vs. DOOM Eternal?
-**A:** Hades: readability and exaggeration for top-down camera distance. DOOM: momentum preservation and motion matching for FPS visceral feel.
+**A:** Hades: readability and exaggeration for top-down camera distance. DOOM: momentum preservation and an authored state machine with interruptible clips for FPS visceral feel.
 
 ---
 

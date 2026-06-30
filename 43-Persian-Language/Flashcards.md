@@ -484,7 +484,7 @@
 **A:** "It is from us that it falls on us" — we reap what we sow / we are our own problem
 
 **Q:** Name two major Persian news sources accessible online.
-**A:** BBC Persian (بی‌بی‌سی فارسی — bbcpersian.com) and Iran International (ایران اینترنشنال — iranintl.com)
+**A:** BBC Persian (بی‌بی‌سی فارسی — bbc.com/persian) and Iran International (ایران اینترنشنال — iranintl.com)
 
 **Q:** Which Iranian director won the Academy Award for Best Foreign Film in 2012?
 **A:** Asghar Farhadi (اصغر فرهادی) for A Separation (جدایی نادر از سیمین)

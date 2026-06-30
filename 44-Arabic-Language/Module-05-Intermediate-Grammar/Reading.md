@@ -59,7 +59,7 @@ The imperfect tense covers both present and future actions. It is formed by addi
 
 | Person | Arabic | Transliteration | English |
 |--------|--------|-----------------|---------|
-| He (m. sing) | يَكْتُبُ | yaktubу | he writes / will write |
+| He (m. sing) | يَكْتُبُ | yaktubu | he writes / will write |
 | She (f. sing) | تَكْتُبُ | taktubu | she writes |
 | You (m. sing) | تَكْتُبُ | taktubu | you write (m) |
 | You (f. sing) | تَكْتُبِينَ | taktubīna | you write (f) |
@@ -100,7 +100,7 @@ Broken plurals are Arabic's most challenging feature. The internal vowels change
 |----------------|-----------------|--------|---------|
 | فُعُول | بَيْت (house) | بُيُوت | houses |
 | فُعُول | قَلْب (heart) | قُلُوب | hearts |
-| أَفْعَال | كِتَاب (book) — wait! | No: كُتُب | books |
+| أَفْعَال | قَلَم (pen) | أَقْلَام | pens |
 | أَفْعَال | سَبَب (reason) | أَسْبَاب | reasons |
 | أَفْعَال | لَوْن (colour) | أَلْوَان | colours |
 | أَفْعَال | وَلَد (boy) | أَوْلَاد | boys |
@@ -109,7 +109,7 @@ Broken plurals are Arabic's most challenging feature. The internal vowels change
 | فُعَلَاء | طَبِيب (doctor) | أَطِبَّاء | doctors |
 | فِعَال | رَجُل (man) | رِجَال | men |
 | فِعَال | جَبَل (mountain) | جِبَال | mountains |
-| فُعُل | كُتُب — already shown | — | — |
+| فُعُل | كِتَاب (book) | كُتُب | books |
 | فَوَاعِل | مَسْجِد (mosque) | مَسَاجِد | mosques |
 | مَفَاعِل | مَكْتَب (office) | مَكَاتِب | offices |
 | فُعَلَاء | كَرِيم (generous) | كُرَمَاء | generous ones |

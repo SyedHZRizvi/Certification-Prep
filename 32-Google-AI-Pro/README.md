@@ -57,7 +57,7 @@ This track ladders directly into:
 - **Original questions only**, every quiz and practice exam written from scratch in the spirit of Google's published exam guides for Generative AI Leader and PMLE; no copied dumps
 - **Real-world case studies**, Google Photos Gemini Vision upgrade, Mercado Libre + Vertex AI Search, Wendy's FreshAI menu RAG, Snap MyAI on Gemini, Mercedes-Benz MBUX voice, Shopify Sidekick on Vertex, Verily Med-PaLM 2, Wayfair generative shopping, Adore Me / Carrefour / Best Buy / Discover / DBS Bank Vertex deployments
 - **One author, one voice**, coherent vocabulary across all 10 modules
-- **Updated for the 2026 Gemini 2.5 family**, Gemini 2.5 Pro as the default workhorse, Gemini 2.5 Flash for high-throughput cheap inference, Gemini 2.0 Pro / Flash retained as legacy context, Gemini Nano for on-device (Pixel / Android), with the Ultra tier covered for high-end specialist workloads
+- **Updated for the 2026 Gemini 2.5 family**, Gemini 2.5 Pro as the default workhorse (frontier reasoning via thinking mode), Gemini 2.5 Flash for high-throughput cheap inference, Gemini 2.0 Pro / Flash retained as legacy context, Gemini Nano for on-device (Pixel / Android); the Ultra tier (a Gemini 1.0-era name) covered as historical context
 
 ### 🚀 Ready to start?
 

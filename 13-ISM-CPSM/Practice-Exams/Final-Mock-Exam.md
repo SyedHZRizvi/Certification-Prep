@@ -1,8 +1,8 @@
 # 🧪 Final Mock Exam, ISM CPSM (Full Real-Exam Simulation)
 
-> **Conditions:** Set a **180-minute (3-hour) timer**. **165 questions**. No notes. No breaks longer than your bathroom dash. Treat it exactly like the real CPSM exam.
+> **Conditions:** Set a **180-minute (3-hour) timer**. **165 questions**. No notes. No breaks longer than your bathroom dash. Treat it like a real CPSM exam.
 > **Pass mark:** 124/165 (~75%, equivalent to the ~400 scaled-score real pass mark)
-> **Important:** The real CPSM credential requires passing **three separate** 165-question exams. This mock simulates ONE typical exam, drawn from all blueprints. After scoring well here, buy ISM's official exam-style practice tests for additional Q-banks before sitting any real exam.
+> **Important:** The real CPSM credential requires passing **three separate** exams — Supply Management Core (180 Q / 3 hrs), Supply Management Integration (165 Q / 2 hrs 45 min), and Leadership and Transformation in Supply Management (165 Q / 2 hrs 45 min). This mock simulates ONE typical exam at the 165-question size, drawn from all blueprints. After scoring well here, buy ISM's official exam-style practice tests for additional Q-banks before sitting any real exam.
 
 ---
 
@@ -1048,7 +1048,7 @@ For EACH wrong answer:
 4. Drill similar quiz questions in Module Quiz.md
 5. Retake this mock under real conditions in 1–2 weeks
 
-**Before sitting any real CPSM exam:** Pass this mock at 80%+, then buy ISM's official exam-style practice tests for additional Q-banks. The real CPSM is **3 separate exams** of this size, pace yourself.
+**Before sitting any real CPSM exam:** Pass this mock at 80%+, then buy ISM's official exam-style practice tests for additional Q-banks. The real CPSM is **3 separate exams** (one 180-question Core + two 165-question exams), pace yourself.
 
 ---
 

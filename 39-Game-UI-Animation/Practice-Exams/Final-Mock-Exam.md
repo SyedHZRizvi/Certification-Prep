@@ -1,13 +1,15 @@
 ---
-title: "Final Mock Exam: Game & UI Animation (All 8 Modules)"
+title: "Final Skills-Mastery Check: Game & UI Animation (All 8 Modules)"
 ---
 
-# 🏆 Final Mock Exam: Game & UI Animation
+# 🏆 Final Skills-Mastery Check: Game & UI Animation
+
+> **Note:** This is a self-graded skills-mastery and portfolio-readiness check, not a proctored exam. There is no external "Real-Time Animation Specialist" certification — this is a Cert Hub Original track. Studios hire on your portfolio, not on a score here.
 
 **Scope:** All 8 Modules, complete course coverage
-**Length:** 60 questions · 90 minutes
+**Length:** 60 questions · 90 minutes (self-paced)
 **When to take:** 2–3 days before your portfolio review or studio application
-**Target:** Score 80%+ (48/60) before applying to game studios or motion design roles
+**Target:** 80%+ (48/60) is a good signal you've internalized the material before finalizing your portfolio
 
 ---
 

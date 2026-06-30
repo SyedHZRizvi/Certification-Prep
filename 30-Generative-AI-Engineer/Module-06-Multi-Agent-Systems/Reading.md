@@ -268,16 +268,16 @@ Then:
 
 ---
 
-## 📊 Case Study, Anthropic's "Claude as a Software Engineer" Internal Experiment (2024)
+## 📊 Case Study, Claude as a Software Engineer: Single-Agent vs Multi-Agent (illustrative)
 
-**Situation.** In late 2024, Anthropic published a research blog post about using Claude (specifically Claude 3.5 Sonnet) as a software-engineering assistant *internally* for their own codebases. They tried both single-agent and multi-agent configurations.
+**Situation.** A useful way to see when multi-agent earns its cost is to compare a single tool-using Claude against a planner + coder + reviewer team on the same code-generation workload. The figures below are illustrative of the gap reported for agentic coding harnesses, not a single published Anthropic leaderboard result; treat them as a worked example of the trade-off rather than an exact citation.
 
-**Single-agent (Claude with tools):** Read file, edit file, run tests, search codebase. Achieved roughly 49% on SWE-bench Verified (a benchmark of real GitHub issues that need code changes to resolve).
+**Single-agent (Claude with tools):** Read file, edit file, run tests, search codebase. Anthropic's published agentic harness around the upgraded Claude 3.5 Sonnet scored roughly 49% on SWE-bench Verified (a benchmark of real GitHub issues that need code changes to resolve).
 
-**Multi-agent (planner + coder + reviewer):** A planner Claude reads the issue and writes a step-by-step plan; a coder Claude implements; a reviewer Claude critiques and the coder revises. Achieved roughly **64% on SWE-bench Verified**.
+**Multi-agent (planner + coder + reviewer):** A planner Claude reads the issue and writes a step-by-step plan; a coder Claude implements; a reviewer Claude critiques and the coder revises. On comparable agentic-coding evaluations this kind of role-separated team has reached roughly **64%** — about a 15-point lift over the single-agent baseline.
 
-**The lessons (paraphrasing Anthropic's published commentary):**
-1. **The 15-point gap is real**, multi-agent matters for genuinely difficult, multi-step tasks like code generation.
+**The lessons:**
+1. **The gap is real**, multi-agent matters for genuinely difficult, multi-step tasks like code generation.
 2. **Cost is 3-4× higher.** Each turn of the loop is multiple Claude calls.
 3. **Latency is 2-3× higher.** The loop runs sequentially.
 4. **Quality variance is much lower**, multi-agent reduces the "tail" of catastrophic failures, even when the median quality is similar.
@@ -285,7 +285,7 @@ Then:
 **The honest take:** for *expensive*, *high-stakes*, *high-difficulty* tasks (like code generation against a real codebase), multi-agent earns its cost. For "summarize this email," it's overkill.
 
 **Discussion (Socratic).**
-- **Q1:** Anthropic's planner-coder-reviewer pattern resembles ReAct + reflection at a high level. What does the *role separation* add over single-agent reflection prompting?
+- **Q1:** The planner-coder-reviewer pattern resembles ReAct + reflection at a high level. What does the *role separation* add over single-agent reflection prompting?
 - **Q2:** The 15-point benchmark gain came with 3-4× cost. Sketch a cost-benefit decision rule for when this trade-off is worth it.
 - **Q3:** SWE-bench is *unit tests verifying solutions*. If your real-world task lacks unit tests, how do you replicate the "reviewer" agent's value?
 

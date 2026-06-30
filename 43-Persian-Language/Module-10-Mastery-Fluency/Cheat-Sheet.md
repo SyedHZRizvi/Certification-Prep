@@ -91,7 +91,7 @@
 
 | Publication | Persian | Register | URL |
 |---|---|---|---|
-| BBC Persian | بی‌بی‌سی فارسی | C1 | bbcpersian.com |
+| BBC Persian | بی‌بی‌سی فارسی | C1 | bbc.com/persian |
 | Iran International | ایران اینترنشنال | C1/C2 | iranintl.com |
 | Keyhan | کیهان | C2 | keyhannews.ir |
 | Hamshahri | همشهری | B2/C1 | hamshahrionline.ir |

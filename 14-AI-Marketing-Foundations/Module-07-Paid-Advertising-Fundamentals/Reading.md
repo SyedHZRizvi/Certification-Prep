@@ -344,7 +344,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 8 covers the measurement layer that makes ROAS reporting honest (DDA, MMM, incrementality); Module 9 covers iOS 14.5, ATT, and the privacy stack underneath modern attribution.
-> - Cross-course: `15-AI-Marketing-Strategy` Module 7 covers paid-budget governance (when to scale, when to cut); `16-AI-Marketing-Automation-Workflows` Module 7 wires creative variation pipelines.
+> - Cross-course: `15-AI-Marketing-Practitioner` Module 7 covers paid-budget governance (when to scale, when to cut); `16-AI-Marketing-Strategist` Module 7 wires creative variation pipelines.
 > - Practice: Practice Exam 2 has 10+ questions on PMax / Advantage+, auction mechanics, RMNs, and the Wayfair / P&G cases. Final Mock includes harder synthesis math (break-even ROAS by margin).
 
 ---

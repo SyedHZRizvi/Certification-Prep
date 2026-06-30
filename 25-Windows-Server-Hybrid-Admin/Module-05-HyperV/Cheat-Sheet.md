@@ -58,7 +58,7 @@
 |----------|--------|
 | Mode | **Async** (always) |
 | Intervals | **30 sec / 5 min / 15 min** |
-| Auth | Kerberos (5986) or Certificate (443) |
+| Auth | Kerberos (80) or Certificate (443) |
 | Replicas | Primary → Secondary → Extended (3rd, optional) |
 | Recovery points | 24 hourly snapshots |
 | Failovers | Planned, Unplanned, **Test** (non-disruptive) |

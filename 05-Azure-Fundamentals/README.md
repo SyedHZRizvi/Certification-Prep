@@ -104,7 +104,7 @@ Backup the official path with the **[AZ-900 Exam Skills Outline (PDF)](https://l
 | Cost | $99 USD (varies by country) |
 | Time | 45 minutes (60 min total seat time) |
 | Questions | 40–60 (typically ~45) |
-| Format | Multiple choice, multiple answer, true/false, drag-drop, hot-area, **Yes/No/Yes** scenario sets |
+| Format | Multiple choice, multiple answer, true/false, drag-drop, hot-area, **Yes/No** scenario sets |
 | Pass mark | 700 / 1000 (≈ 70%) |
 | Delivery | Online proctored at home, OR test center |
 | Retake | 24-hour wait after first fail; 14-day wait after subsequent attempts |
@@ -151,7 +151,7 @@ Days 9–10: Flashcards + Final Mock + REAL EXAM
 4. ❌ Didn't understand **shared responsibility**, kept picking "Microsoft" for things customers actually own
 5. ❌ Mixed up **Azure Policy** (compliance rules) vs **RBAC** (who can do what) vs **Locks** (prevent deletion)
 6. ❌ Skipped the **SLA composite calculation** trick (multiply dependent SLAs, see Module 5)
-7. ❌ Didn't practice **Yes/No/Yes** style scenario sets, they're half the exam and trip up first-timers
+7. ❌ Didn't practice **Yes/No** style scenario sets, they're half the exam and trip up first-timers
 
 ---
 

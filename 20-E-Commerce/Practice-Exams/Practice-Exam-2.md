@@ -341,7 +341,7 @@ D. Rank top 8 conversion events per verified domain in priority order; only the 
 
 ---
 
-### 38. The EU Digital Services Act (DSA, Regulation 2022/2065) applied to VLOPs starting:
+### 38. The EU Digital Services Act (DSA, Regulation 2022/2065) became applicable to all in-scope online platforms starting:
 
 A. May 25, 2018
 B. December 31, 2026
@@ -618,9 +618,9 @@ D. Pre-determined sample size based on baseline CR, MDE (Minimum Detectable Effe
 - **Exam-takeaway.** Rank Purchase #1, ATC #2, Initiate Checkout #3, then leads/views, priority matters.
 
 **Q38. Answer: C**
-- **Why C is correct.** DSA applied to VLOPs from February 17, 2024 (Regulation 2022/2065).
+- **Why C is correct.** The DSA became applicable to all in-scope online platforms on February 17, 2024 (Regulation 2022/2065). (Designated VLOPs/VLOSEs were already bound earlier, from August 25, 2023.)
 - **Why the others are wrong.** A is GDPR; B/D ignore the timeline.
-- **Exam-takeaway.** Feb 17, 2024 = DSA-for-VLOPs effective date.
+- **Exam-takeaway.** Feb 17, 2024 = DSA fully applicable to all in-scope platforms.
 
 **Q39. Answer: D**
 - **Why D is correct.** AliExpress (March 2024 DSA proceeding) teaches that marketplaces face higher regulatory scrutiny because they intermediate third-party sellers, the principle behind §4 of the DSA.

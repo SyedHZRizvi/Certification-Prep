@@ -43,7 +43,7 @@ STRUCTURED →
 |-------|-----|-----------|-----|
 | text-embedding-004 | 768 | English | General RAG |
 | text-embedding-005 | 768 | English | Latest |
-| **gemini-embedding-001** | 768 | English+ | Highest quality |
+| **gemini-embedding-001** | 3072 (MRL-truncatable to 1536/768) | English+ | Highest quality |
 | **multilingual-embedding-002** | 768 | 100+ | Multilingual (Mercado Libre's pick) |
 | **multimodalembedding** | 1408 | text + image | Visual search (Wayfair) |
 

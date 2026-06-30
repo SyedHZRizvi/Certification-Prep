@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Basic familiarity with the marketing function (channels: SEO, paid, email, automation), covered in [14-AI-Marketing-Foundations](../../14-AI-Marketing-Foundations/README.md)
 > - The vocabulary of AI-native marketing (prompts, agents, structured output), covered in [14-AI-Marketing-Foundations Module 2](../../14-AI-Marketing-Foundations/Module-02-AI-Fundamentals-for-Marketers/Reading.md)
-> - Practical SEO, paid acquisition, and analytics fundamentals, covered in 15-AI-Marketing-SEO-Content, 16-AI-Marketing-Paid-Acquisition, and 17-AI-Marketing-Analytics-Automation respectively
+> - Practical SEO and paid acquisition, covered in [15-AI-Marketing-Practitioner](../../15-AI-Marketing-Practitioner/README.md), and analytics/attribution fundamentals, covered in [16-AI-Marketing-Strategist](../../16-AI-Marketing-Strategist/README.md)
 > If any of these are shaky, pause and review before continuing, this capstone assumes the four track courses are already done.
 
 ---
@@ -364,5 +364,5 @@ These prompts have no single right answer. Defend your reasoning from the framew
 
 > **Where this leads.**
 > - Inside this course: Module 2 (SEO + Content Audit) is the first capstone you'll build using the P-C-A-R-L structure introduced here. Module 7 returns to the hosting / portfolio-site question with execution-level detail.
-> - Cross-course: 15-AI-Marketing-SEO-Content Module 8 deepens the audit-deliverable craft. 16-AI-Marketing-Paid-Acquisition Modules 5–6 cover the campaign mechanics this course's Module 3 will assume.
+> - Cross-course: [15-AI-Marketing-Practitioner Module 8](../../15-AI-Marketing-Practitioner/Module-08-AI-Content-Production-Scale/Reading.md) deepens the audit-deliverable craft. [15-AI-Marketing-Practitioner Modules 2–5](../../15-AI-Marketing-Practitioner/README.md) cover the campaign mechanics this course's Module 3 will assume.
 > - Practice: Practice Exam 1 covers self-evaluation of Capstones 1–4 (after Module 5). The Final Mock simulates the hiring-manager / first-client conversation your capstones are designed to win.

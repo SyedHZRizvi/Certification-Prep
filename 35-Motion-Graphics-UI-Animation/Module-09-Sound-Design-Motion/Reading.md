@@ -97,7 +97,7 @@ The most powerful alignment: visual motion events aligned with musical beats. Wh
 | **Master License** | Required for using the recorded version (not just the composition) |
 | **Royalty-Free License** | One-time fee; no per-use royalties (Epidemic, Artlist, etc.) |
 | **Creative Commons** | Varies by CC type; read the specific license |
-| **Public Domain** | Compositions published before 1928 (check your jurisdiction) |
+| **Public Domain** | In the U.S., compositions published before 1931 (the cutoff advances one year each January 1; check your jurisdiction) |
 
 ---
 

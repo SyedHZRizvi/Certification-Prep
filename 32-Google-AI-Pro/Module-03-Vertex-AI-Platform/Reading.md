@@ -99,7 +99,7 @@ Already covered in Module 2; consolidating here for the exam.
 **Model Garden** is Vertex AI's catalog of models. Three categories:
 
 ### 1. First-party Google models
-- **Gemini** family (2.5 Pro/Flash/Flash Lite/Ultra; legacy 1.5, 1.0)
+- **Gemini** family (2.5 Pro/Flash/Flash Lite; legacy 1.5, 1.0 incl. the 1.0-era Ultra tier)
 - **Imagen** family (text-to-image, Imagen 3, Imagen 4)
 - **Veo** (text-to-video)
 - **Chirp** family (speech-to-text, text-to-speech)

@@ -5,7 +5,7 @@ title: 3D Animation with Blender, Professional Production Track
 
 # 🎬 3D Animation with Blender, Professional Production Track
 
-**🎨 Creative Technology · 3D Animation** › Blender 4.x, Industry-Readiness Certification
+**🎨 Creative Technology · 3D Animation** › Blender 4.x, Industry-Readiness Track
 
 > **Goal:** Master Blender 4.x from raw geometry to production-quality character animation, and build a portfolio short that gets you hired.
 > **Duration:** 12 weeks part-time (or 6 weeks full-tilt for artists with 2D or game-engine background).
@@ -18,9 +18,9 @@ title: 3D Animation with Blender, Professional Production Track
 
 ### 🎯 The Promise
 
-Blender is no longer "the free alternative." It is the strategic choice. Sony Pictures Animation used Blender for previz on *Spider-Man: Into the Spider-Verse*. Netflix's animation partners Axis Studios, Sun Creature Studio, Titmouse ship Blender-native pipelines to streaming at scale. The Blender Foundation's own open-movie projects *Sprite Fright* (2021), *Charge* (2022), *Cosmos Laundromat* (2015) are peer-reviewed against Hollywood feature pipelines and released as open source, giving students a Rosetta Stone between professional process and accessible tooling.
+Blender is no longer "the free alternative." It is the strategic choice. Sony Pictures Imageworks has adopted Blender for select production tooling (its Grease Pencil inkline work on *Spider-Man: Into the Spider-Verse* has been presented publicly). Netflix's animation partners Axis Studios, Sun Creature Studio, Titmouse ship Blender-native pipelines to streaming at scale. The Blender Foundation's own open-movie projects *Sprite Fright* (2021), *Charge* (2022), *Cosmos Laundromat* (2015) are peer-reviewed against Hollywood feature pipelines and released as open source, giving students a Rosetta Stone between professional process and accessible tooling.
 
-The credential this course builds toward is not a single proctored exam, it is a **portfolio short** that any studio recruiter can watch in 90 seconds. Studios hire animators who can ship; this course ends with a shipped, watchable, 10-second short.
+The credential this course builds toward is not a single proctored exam, it is a **portfolio short** that any studio recruiter can watch in 90 seconds. (The Blender Foundation does not administer a proctored certification; this is a Cert Hub original track, and the quizzes and practice exams in it are self-assessment checks against industry-standard competencies, not a real-world exam.) Studios hire animators who can ship; this course ends with a shipped, watchable, 10-second short.
 
 ### 💼 Career Outcomes
 
@@ -38,7 +38,7 @@ Average freelance rate for a credentialed Blender animator on Contra or Arc.dev:
 
 ### 🏛️ Why This Course Is Different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, every claim is traceable to the Blender manual or a publicly documented production
 - **Open-movie case studies woven through every module**, *Sprite Fright*, *Charge*, *Wing It!*, *Coffee Run* are all documented publicly; we use them like Harvard Business School uses company filings
 - **Keyboard-first workflow enforced from day one**, the gap between a student animator and a studio animator is almost entirely shortcut fluency
 - **Real production benchmarks**, render time targets, polygon budgets, texture resolution constraints drawn from actual studio pipelines
@@ -149,7 +149,7 @@ Week 6:  Module 10 + Final Mock              + Short delivered
 
 ## 🃏 Flashcards
 
-🔗 **[Master Flashcards](./Flashcards.md)**, 110+ cards covering all 10 modules. Use the interactive widget to mark "Got it" and skip mastered cards on future runs.
+🔗 **[Master Flashcards](./Flashcards.md)**, 100+ cards covering all 10 modules. Use the interactive widget to mark "Got it" and skip mastered cards on future runs.
 
 ---
 

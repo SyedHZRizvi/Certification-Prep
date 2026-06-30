@@ -281,9 +281,9 @@
 **A:** April 2023, into Google DeepMind, with Demis Hassabis as CEO.
 
 **Q:** Name the five tiers of the Gemini family.
-**A:** Nano (on-device), Flash Lite, Flash, Pro, Ultra, smallest to largest.
+**A:** Nano (on-device), Flash Lite, Flash, Pro, Ultra, smallest to largest. (Ultra is a Gemini 1.0-era tier; the 2.x line ships Flash-Lite/Flash/Pro.)
 
-**Q:** What is the maximum context window on Gemini 2.5 Pro/Ultra?
+**Q:** What is the maximum context window on Gemini 2.5 Pro?
 **A:** 2 million tokens.
 
 **Q:** What is the typical Gemini 2.5 Flash context window?

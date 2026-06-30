@@ -164,7 +164,7 @@ Persian has two passive constructions:
 | باید بتواند | bāyad betavānad | he should be able to | — |
 | می‌توانستم | mi-tavānestam | I could (past) | می‌توانستم کمک کنم — I could help |
 
-> 🎯 **Urdu cognate:** *بایَد* ↔ Urdu *بایاب/چاہیے* (same root concept). *شاید* is identical in Urdu — *شاید* = perhaps!
+> 🎯 **Urdu cognate:** Persian *باید* (bāyad) ↔ Urdu *چاہیے* (chāhiye) — "must/should," a related concept. *شاید* is identical in Urdu — *شاید* = perhaps!
 
 ---
 

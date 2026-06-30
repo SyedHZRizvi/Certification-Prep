@@ -179,14 +179,8 @@ Built ahead of a known future spike, Christmas, promotions, plant shutdown.
 ### Q4: **A. √(2DS/H)**
 The classic EOQ.
 
-### Q5: **B. 283**
-EOQ = √(2 × 8000 × 25 / 4) = √(400,000 / 4) = √100,000 ≈ **316**… 
-
-Hmm, let me recompute: 2 × 8000 × 25 = 400,000. Divide by H=4: 100,000. √100,000 ≈ 316.
-
-So the right answer is **C. 316**.
-
-✏️ Correction: **C. 316**.
+### Q5: **C. 316**
+EOQ = √(2 × 8,000 × 25 / 4) = √(400,000 / 4) = √100,000 ≈ **316**.
 
 ### Q6: **B. 707**
 EOQ = √(2 × 10000 × 50 / 2) = √500,000 ≈ **707**.

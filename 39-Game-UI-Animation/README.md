@@ -1,11 +1,11 @@
 ---
 permalink: /39-Game-UI-Animation/
-title: Game & UI Animation (Cert Hub Original, Real-Time Animation Specialist)
+title: Game & UI Animation (Cert Hub Original)
 ---
 
 # 🎮 Game & UI Animation Track (Cert Hub Original)
 
-**🎨 Animation & Motion Design** › Game & UI Animation (Real-Time Animation Specialist)
+**🎨 Animation & Motion Design** › Game & UI Animation (real-time animation skills track)
 
 > **Goal:** Master the full real-time animation toolkit Unity Animator, Unreal Animation Blueprints, Spine 2D skeletal rigs, GSAP web animation, and CSS motion design so you can ship polished, performant animation in games, web apps, and native products. Career paths: game animator at studios like Supergiant Games or Riot Games, UI motion designer at companies like Stripe or Linear, technical animator bridging art and engineering.
 >
@@ -19,7 +19,7 @@ title: Game & UI Animation (Cert Hub Original, Real-Time Animation Specialist)
 
 ### 🎯 The Promise
 
-In 2023, Supergiant Games shipped *Hades II* with a seven-person art team and every player review mentioned how good the game *felt*. Not how good it looked. How good it **felt**. That distinction the gap between a technically correct animation and one that reads as *alive*, is the central skill of the real-time animator. It is also the most undervalued and highest-demand skill in the games and tech industries right now.
+In 2024, Supergiant Games launched *Hades II* in early access with a famously small team, and reviewers kept returning to how good the game *felt*. Not how good it looked. How good it **felt**. That distinction the gap between a technically correct animation and one that reads as *alive*, is the central skill of the real-time animator. It is also the most undervalued and highest-demand skill in the games and tech industries right now.
 
 The global game industry generated **$184 billion in revenue in 2023** (Newzoo Global Games Market Report). Riot Games' League of Legends employs more than 60 animators in three studios. Naughty Dog's animation department for *The Last of Us Part II* has been cited in multiple Game Developer Conference talks as the most sophisticated real-time animation system shipped in a single-player game. Epic Games built an entire product line MetaHuman, Control Rig, Motion Warping around the need for better real-time character motion. Unity's animation system is used in an estimated 71% of all mobile games.
 
@@ -83,13 +83,15 @@ By the end of this track, you'll be able to:
 
 ## 🧪 Practice Exams (in `Practice-Exams/`)
 
-| Exam | When To Take It | Length | Difficulty |
+> **There is no external "Real-Time Animation Specialist" exam or proctored certification.** This is a Cert Hub Original skills track. The quizzes and the Final Skills-Mastery Check below are self-assessment and portfolio-readiness checks you grade yourself, not preparation for any third-party test. What you apply to studios with is your portfolio, not a score.
+
+| Self-Assessment | When To Take It | Length | Difficulty |
 |------|-----------------|--------|------------|
 | [Practice-Exam-1](./Practice-Exams/Practice-Exam-1.md) | After Modules 1–4 | 30 Q / 45 min | ⭐⭐⭐ |
 | [Practice-Exam-2](./Practice-Exams/Practice-Exam-2.md) | After Modules 5–7 | 30 Q / 45 min | ⭐⭐⭐⭐ |
-| [Final-Mock-Exam](./Practice-Exams/Final-Mock-Exam.md) | 2–3 days before portfolio review | **60 Q / 90 min** | ⭐⭐⭐⭐⭐ |
+| [Final Skills-Mastery Check](./Practice-Exams/Final-Mock-Exam.md) | 2–3 days before portfolio review | 60 Q / 90 min | ⭐⭐⭐⭐⭐ |
 
-Score 80%+ on the Final Mock before applying to game studios or submitting motion design portfolios.
+Scoring 80%+ on the Final Skills-Mastery Check is a good signal you've internalized the material before you finalize your portfolio for game studios or motion design roles.
 
 ---
 
@@ -119,7 +121,7 @@ Week 2: Modules 3, 4    → Unreal Blueprint + Spine 2D rigging
 Week 3: Module 5        → State machine design + Practice Exam 1
 Week 4: Module 6        → GSAP + Figma handoff + Framer Motion
 Week 5: Modules 7, 8    → CSS/Lottie + VFX/Shaders + Practice Exam 2
-Week 6: Final Mock → portfolio build → job applications
+Week 6: Final Skills-Mastery Check → portfolio build → job applications
 ```
 
 ### 9-Week Relaxed Plan (recommended for working artists)
@@ -128,7 +130,7 @@ Weeks 1-2:   Modules 1, 2 + Unity project build
 Weeks 3-4:   Modules 3, 4 + Spine rigging exercises + Practice Exam 1
 Weeks 5-6:   Module 5 + locomotion state machine project
 Weeks 7-8:   Modules 6, 7 + GSAP ScrollTrigger demo + Lottie integration + Practice Exam 2
-Week 9:      Module 8 + Final Mock → portfolio finalization
+Week 9:      Module 8 + Final Skills-Mastery Check → portfolio finalization
 ```
 
 ---

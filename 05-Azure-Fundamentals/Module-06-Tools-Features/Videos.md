@@ -150,4 +150,4 @@ Answer these in your notebook:
 4. Azure Advisor's 5 recommendation pillars?
 5. What does Azure Arc DO?
 
-If you can answer all 5, you're ready for the [Quiz](./Quiz.md) and the [Practice Exams](../../../Practice-Exams/).
+If you can answer all 5, you're ready for the [Quiz](./Quiz.md) and the [Practice Exams](../Practice-Exams/).

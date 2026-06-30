@@ -25,7 +25,7 @@ title: "Module 12 Cheat Sheet — Advanced Recitation: Qira'at, Lahn & Ijazah"
 
 | Feature | Hafs 'an 'Asim | Warsh 'an Nafi' |
 |---------|----------------|-----------------|
-| **Al-Fatiha: مَلِكِ** | Short — مَلِكِ (Malik) | Long — مَالِكِ (Maalik) |
+| **Al-Fatiha 1:4** | Long — مَالِكِ (Maalik) | Short — مَلِكِ (Malik) |
 | **Madd Munfasil length** | 4–5 beats | 4–6 beats (typically longer) |
 | **Ra' facilitation** | Standard Ra' rules | Some Ra' letters facilitated in specific contexts |
 | **Usage** | ~95% of world | North Africa, West Africa |

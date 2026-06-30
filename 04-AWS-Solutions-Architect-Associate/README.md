@@ -7,7 +7,7 @@ title: AWS Solutions Architect Associate Track (SAA-C03)
 
 **☁️ Cloud · AWS** › Solutions Architect, Associate
 
-> **Goal:** Pass the AWS Certified Solutions Architect – Associate exam (SAA-C03) with 750+/1000
+> **Goal:** Pass the AWS Certified Solutions Architect – Associate exam (SAA-C03) with 720+/1000
 > **Duration:** 8 weeks part-time (or 4 weeks full-tilt if you already know cloud basics)
 > **Cost:** $150 USD (cert is valid 3 years; renewal via recertification exam or higher-level cert)
 > **Difficulty:** Associate · prior AWS exposure (CLF-C02 or equivalent) recommended

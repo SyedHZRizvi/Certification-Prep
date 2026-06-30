@@ -22,7 +22,7 @@ Corpus > 5M or rapidly changing → Full RAG (re-indexing pipeline)
 
 ```python
 client.messages.create(
-  model="claude-sonnet-4-6-...",
+  model="claude-sonnet-4-6",
   max_tokens=...,
   system=[{
     "type":"text",

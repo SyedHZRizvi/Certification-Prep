@@ -445,7 +445,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: This module *is* the apex. The [Capstone Project](../Capstone-Project.md) at the course root applies Modules 1–8 to a real insurer-claims scenario.
-> - Cross-course: [`07-AWS-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) Module 8 covers Bedrock Agents for cross-cloud; [`15-AI-Marketing-Practitioner`](../../../15-AI-Marketing-Practitioner/) and [`17-AI-Marketing-Entrepreneur`](../../../17-AI-Marketing-Entrepreneur/) cover GenAI-product strategy from the marketing/business angle.
+> - Cross-course: [`07-AWS-AI-Practitioner`](../../07-AWS-AI-Practitioner/) Module 8 covers Bedrock Agents for cross-cloud; [`15-AI-Marketing-Practitioner`](../../15-AI-Marketing-Practitioner/) and [`17-AI-Marketing-Entrepreneur`](../../17-AI-Marketing-Entrepreneur/) cover GenAI-product strategy from the marketing/business angle.
 > - Practice: Practice Exam 2 has ~8 questions from this module; Final Mock has full Foundry case studies that revisit every prior module.
 
 ---

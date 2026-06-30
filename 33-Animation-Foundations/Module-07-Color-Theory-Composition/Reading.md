@@ -6,7 +6,7 @@
 
 ## 📖 A Story: How *Inside Out* Tells Its Story in Color
 
-Pete Docter's *Inside Out* (2015) has one of the most thoughtfully designed color scripts in animated film history. The production's color department, led by Pixia Berger, made one foundational decision that governed all color choices: **the Joy-world of Riley's mind would be saturated, bright, high-contrast; the real world (San Francisco) would be progressively desaturated as Riley's emotional state deteriorated**.
+Pete Docter's *Inside Out* (2015) has one of the most thoughtfully designed color scripts in animated film history. The production's color and design department, led by production designer Ralph Eggleston, made one foundational decision that governed all color choices: **the Joy-world of Riley's mind would be saturated, bright, high-contrast; the real world (San Francisco) would be progressively desaturated as Riley's emotional state deteriorated**.
 
 In the opening sequences, when Riley is happy, both the interior (her mind) and the exterior (her life) are warm and bright. As the film progresses and Riley becomes depressed, San Francisco grays and mutes the streets become bluer and colder, the apartment darker and more claustrophobic while simultaneously, the interior world becomes less colorful as islands of personality begin to collapse.
 
@@ -226,7 +226,7 @@ The character's design intent (bright red = energetic, confident, visible) can b
 | **Finding Nemo (2003)** | Ralph Eggleston | Depth as desaturation; artificial tank as oversaturation | Warm reef → cool open ocean → artificially bright tank |
 | **The Incredibles (2004)** | Lou Romano | Retro 1960s palette; heroes in warm, tech in cool | Orange/red heroes against gray-blue supervillain aesthetic |
 | **Up (2009)** | Rona Liu | Saturation as emotional volume | High saturation early life → gray grief → restored warm for adventure |
-| **Inside Out (2015)** | Pixia Berger | Interior world bright vs exterior world desaturating | Joy's yellow fades as Riley's depression deepens |
+| **Inside Out (2015)** | Ralph Eggleston | Interior world bright vs exterior world desaturating | Joy's yellow fades as Riley's depression deepens |
 | **Coco (2017)** | Harley Jessup | Orange marigold complementary against cool purple night | Land of the Dead uses warm/cool complement at maximum intensity |
 | **Wolfwalkers (2020)** | Tomm Moore / Ross Stewart | Two-world contrast through saturation extremes | Town = desaturated; forest = oversaturated beyond naturalism |
 | **Arcane (2021)** | Arnaud Delord | Per-character color identity maintained across all environments | Jinx's blues and Vi's warm pinks remain identifiable in any scene |

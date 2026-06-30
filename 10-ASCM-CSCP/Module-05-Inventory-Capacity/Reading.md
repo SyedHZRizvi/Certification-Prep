@@ -93,12 +93,12 @@ EOQ is **robust**: even ±30% miscalculation of D or H only changes EOQ by ~15% 
 
 ### Combined formula when both demand and lead time vary
 ```
-   σ_LT = √( LT · σ_d² + d² · σ_LT² )
+   σ_LT = √( LT · σ_d² + d² · σ_L² )
 ```
 - LT = average lead time
 - σ_d = std dev of period demand
 - d = average period demand
-- σ_LT = std dev of lead time
+- σ_L = std dev of lead time
 
 ### Reorder Point (ROP)
 ```

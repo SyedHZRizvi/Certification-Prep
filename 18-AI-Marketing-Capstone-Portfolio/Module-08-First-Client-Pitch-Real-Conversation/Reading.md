@@ -518,6 +518,6 @@ These prompts probe the trade-offs in pitching strategy, what to optimize for, w
 
 > **Where this leads.**
 > - Inside this course: This is the final module. The next surface is the Final Mock Exam, then the real-world outreach machine you've built.
-> - Cross-course: If you want to deepen sales/pitch craft, the [16-AI-Marketing-Paid-Acquisition Module 6](../../16-AI-Marketing-Strategist/README.md) "pricing as positioning" concepts apply almost verbatim to consulting tier design.
+> - Cross-course: If you want to deepen sales/pitch craft, the [17-AI-Marketing-Entrepreneur Module 4](../../17-AI-Marketing-Entrepreneur/Module-04-Pricing-Proposals-Contracts/Reading.md) "pricing, proposals & contracts" concepts apply almost verbatim to consulting tier design.
 > - Practice: The [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) simulates the 30-min discovery call your cold messages will produce, Q1, Q11, Q21, Q39 in particular pressure-test what you build here.
 > - **What's next:** 30-day action plan. Send 5 messages this week, 5 next, 5 the week after. Track in a sheet. Iterate on response rates. By week 4 you'll either be in conversations or you'll know exactly what's broken about your outreach.

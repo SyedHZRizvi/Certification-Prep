@@ -358,7 +358,7 @@ You will be asked at least one cross-cloud question. Here is the matrix.
 | Concern | Google Vertex AI | AWS | Azure |
 |---------|------------------|-----|-------|
 | Flagship LLM | Gemini (1st-party) | Claude / Llama / Mistral (3rd-party on Bedrock) | Azure OpenAI (GPT, 1st-party) |
-| Long context | 2M (Gemini Pro/Ultra) | 200K (Claude Sonnet/Haiku), 500K (Claude Opus 4.6) | 128K (GPT-4o), 1M (GPT-5) |
+| Long context | 2M (Gemini Pro) | 200K (Claude Sonnet/Haiku), 500K (Claude Opus 4.6) | 128K (GPT-4o), 1M (GPT-5) |
 | Multi-modal native | Yes (Gemini) | Limited (Claude vision; no audio/video) | Limited (GPT-4o multi-modal) |
 | Managed RAG | Vertex AI Search | Knowledge Bases for Bedrock | Azure AI Search |
 | ANN index | Vertex AI Vector Search | Vector Engine in OpenSearch | Azure AI Search vector |

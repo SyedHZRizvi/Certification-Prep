@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting:
 > - [Module 2 (Cryptographic Foundations)](../Module-02-Cryptographic-Foundations/Reading.md), you must know what a private key, public key, and HASH160 are
 > - [Module 3 (Network & Consensus)](../Module-03-Bitcoin-Network-Consensus/Reading.md), you must know how a transaction works
-> - Cross-course: [09-CompTIA-Security-Plus Module-04 (Identity & Access Management)](../../09-CompTIA-Security-Plus/Module-04-Threats-Threat-Actors/Reading.md) covers the same multi-factor + hardware-token concepts in a corporate-IT frame.
+> - Cross-course: [09-CompTIA-Security-Plus Module-03 (Identity & Access Management)](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md) covers the same multi-factor + hardware-token concepts in a corporate-IT frame.
 
 ---
 
@@ -444,7 +444,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 6 explains how the multi-sig and Taproot scripts work at the protocol layer; Module 7 builds Lightning channels on top of these self-custody primitives; Module 9 audits institutional custody against CCSS.
-> - Cross-course: `09-CompTIA-Security-Plus` Module-04 (IAM) covers MFA, hardware tokens (YubiKey, FIDO2), and the same general "what you have / what you know" framework.
+> - Cross-course: `09-CompTIA-Security-Plus` Module-03 (IAM) covers MFA, hardware tokens (YubiKey, FIDO2), and the same general "what you have / what you know" framework.
 > - Practice: Practice Exam 1 has 6–8 questions from this module (BIP numbers, multi-sig, inheritance). Final Mock asks scenario questions on custody architecture choices.
 
 ---

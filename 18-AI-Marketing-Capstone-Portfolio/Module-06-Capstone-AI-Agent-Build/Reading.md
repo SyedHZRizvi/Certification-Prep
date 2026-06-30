@@ -114,7 +114,7 @@ from anthropic import Anthropic
 client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
 response = client.messages.create(
-    model="claude-sonnet-4-7",  # 2026-current; check Anthropic docs for latest stable
+    model="claude-sonnet-4-6",  # check Anthropic docs for the latest stable model ID
     max_tokens=1024,
     messages=[
         {"role": "user", "content": "Hello, Claude! Write a 1-sentence ad for a watercolor painting course."}
@@ -168,7 +168,7 @@ you produce a content brief in this exact structure:
 
 def generate_brief(topic, audience):
     response = client.messages.create(
-        model="claude-sonnet-4-7",  # 2026-current
+        model="claude-sonnet-4-6",
         max_tokens=2048,
         system=SYSTEM_PROMPT,
         messages=[
@@ -204,7 +204,7 @@ def analyze_competitor(url):
     page_content = scrape_page(url)
     
     response = client.messages.create(
-        model="claude-sonnet-4-7",  # 2026-current
+        model="claude-sonnet-4-6",
         max_tokens=2048,
         system="""You are a competitive intelligence analyst. Given a competitor's 
         homepage content, produce a structured strategic brief.""",
@@ -269,7 +269,7 @@ tools = [
 ]
 
 response = client.messages.create(
-    model="claude-sonnet-4-7",  # 2026-current
+    model="claude-sonnet-4-6",
     max_tokens=2048,
     tools=tools,
     messages=[
@@ -499,8 +499,8 @@ Live execution is key. Anyone can show a screenshot of code. Showing it actually
 
 Claude API pricing (as of writing, verify at console.anthropic.com):
 
-- **Claude 3.7 Sonnet:** ~$3 per 1M input tokens, ~$15 per 1M output tokens
-- **Claude 3.5 Haiku:** ~$0.80 per 1M input, ~$4 per 1M output
+- **Claude Sonnet 4.6:** ~$3 per 1M input tokens, ~$15 per 1M output tokens
+- **Claude Haiku 4.5:** ~$1 per 1M input, ~$5 per 1M output
 
 For a content brief agent:
 
@@ -608,5 +608,5 @@ These prompts probe the line between "useful agent" and "ChatGPT wrapper," and w
 
 > **Where this leads.**
 > - Inside this course: Module 7 (Personal Brand), the GitHub repo + README + cost analysis from this capstone become a Featured pin on LinkedIn. Module 8 will use the agent demo as the "differentiator" slide in the pitch deck.
-> - Cross-course: [14-AI-Marketing-Foundations Module 3](../../14-AI-Marketing-Foundations/Module-03-SEO-in-the-AI-Era/Reading.md) covers the prompt-engineering depth this agent needs. [17-AI-Marketing-Analytics-Automation Module 8](../../17-AI-Marketing-Entrepreneur/README.md) shows how agents like this fit into a full AI-marketing-ops workflow.
+> - Cross-course: [14-AI-Marketing-Foundations Module 3](../../14-AI-Marketing-Foundations/Module-03-SEO-in-the-AI-Era/Reading.md) covers the prompt-engineering depth this agent needs. [17-AI-Marketing-Entrepreneur Module 8](../../17-AI-Marketing-Entrepreneur/README.md) shows how agents like this fit into a full AI-marketing-ops workflow.
 > - Practice: Practice Exam 2 has 4 questions on this capstone (Q13–Q15, Q35). The Final Mock's Q4 ("show me code"), Q10 ("AI in marketing"), and Q35 ("tell me about your AI agent") all grade against the GitHub repo + Loom quality.

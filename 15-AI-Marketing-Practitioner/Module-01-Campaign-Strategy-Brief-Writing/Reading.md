@@ -223,7 +223,7 @@ That last layer "list 3 assumptions" is what separates a usable AI brief from ge
 
 | Model (2026) | Best at | Worst at |
 |--------------|---------|----------|
-| Claude Sonnet 4.7 | Long-form briefs with nuance, brand voice, complex constraints | Real-time data |
+| Claude Sonnet 4.6 | Long-form briefs with nuance, brand voice, complex constraints | Real-time data |
 | ChatGPT GPT-5 | Quick iteration, structured outputs, web search integration | Subtle brand voice |
 | Gemini 2.5 Pro | Multimodal inputs (paste a competitor's ad image), long context | Tone control |
 
@@ -397,7 +397,7 @@ Use these to test your own thinking. None has a single right answer, defend your
 
 > **Where this leads.**
 > - Inside this course: Module 2 builds a Google Search campaign FROM the brief you wrote here; Module 10 (Capstone) reuses the Sunday Studio brief as a real $200 launch.
-> - Cross-course: [14-AI-Marketing-Foundations Module 3](../../14-AI-Marketing-Foundations/Module-03-SEO-in-the-AI-Era/Reading.md) deepens KPI-by-funnel theory; [18-AI-Marketing-Capstone-Portfolio](../../../18-AI-Marketing-Capstone-Portfolio/) collects briefs into a portfolio.
+> - Cross-course: [14-AI-Marketing-Foundations Module 3](../../14-AI-Marketing-Foundations/Module-03-SEO-in-the-AI-Era/Reading.md) deepens KPI-by-funnel theory; [18-AI-Marketing-Capstone-Portfolio](../../18-AI-Marketing-Capstone-Portfolio/) collects briefs into a portfolio.
 > - Practice: Practice Exam 1 has ~6 questions drawn from this module (5W's, ICP tests, KPI hierarchy, anti-patterns).
 
 ---

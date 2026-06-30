@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 2, Kraljic matrix](../Module-02-Category-Management-Sourcing/Reading.md): SRM tiering uses Kraljic outputs directly
 > - [Module 3, Contracts and SLAs](../Module-03-Negotiation-Contracts/Reading.md): SRM enforces what was negotiated
-> - Cross-course: [ASCM CSCP Module 4, SRM & Customer Relationships](../../10-ASCM-CSCP/Module-04-Supply-Planning-SOP/Reading.md) for the broader chain-of-chains relationship view
+> - Cross-course: [ASCM CSCP Module 6, Sourcing & Supplier Management](../../10-ASCM-CSCP/Module-06-Sourcing-Supplier-Management/Reading.md) for the broader chain-of-chains relationship view
 > If either of the above is shaky, pause and review before continuing.
 
 ---
@@ -359,7 +359,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 5 lays the TCO and should-cost math you'll use in QBRs; Module 7 expands risk taxonomy used in scorecards; Module 8 covers the leadership and influence required to make SRM stick.
-> - Cross-course: [ASCM CSCP Module 4](../../10-ASCM-CSCP/Module-04-Supply-Planning-SOP/Reading.md) deepens the chain-of-chains relationship view.
+> - Cross-course: [ASCM CSCP Module 6](../../10-ASCM-CSCP/Module-06-Sourcing-Supplier-Management/Reading.md) deepens the chain-of-chains relationship view.
 > - Practice: Practice Exam 1 has ~18 questions drawn from this module.
 
 ---

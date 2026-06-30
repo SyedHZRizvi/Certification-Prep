@@ -17,7 +17,7 @@ That designer got a raise. This module teaches you why.
 
 ## 🔬 The Expression Language: JavaScript in After Effects
 
-After Effects expressions use a subset of JavaScript (ExtendScript, based on ECMAScript 3). Every property in AE position, rotation, opacity, scale, color can be driven by an expression instead of keyframes.
+After Effects expressions are written in JavaScript. Since AE CC 2019 the default expression engine is a modern JavaScript (V8) engine supporting ES2018+; the legacy ECMAScript-3 (ExtendScript) engine is still selectable under Project Settings → Expressions. Every property in AE position, rotation, opacity, scale, color can be driven by an expression instead of keyframes.
 
 To add an expression: **Alt-click** (Windows) or **Option-click** (Mac) on any property stopwatch. The expression field appears. Everything you type replaces the static value with computed code.
 

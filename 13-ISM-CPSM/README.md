@@ -54,9 +54,11 @@ Unlike most certifications, CPSM is awarded only after you pass **three separate
 
 | Exam | Title | Q | Time | Pass |
 |---|---|---|---|---|
-| Exam 1 | Foundation of Supply Management | 165 | 180 min | 400+ scaled |
-| Exam 2 | Effective Supply Management Performance | 165 | 180 min | 400+ scaled |
-| Exam 3 | Leadership in Supply Management | 165 | 180 min | 400+ scaled |
+| Exam 1 | Supply Management Core | 180 | 180 min (3 hrs) | 400+ scaled |
+| Exam 2 | Supply Management Integration | 165 | 165 min (2 hrs 45 min) | 400+ scaled |
+| Exam 3 | Leadership and Transformation in Supply Management | 165 | 165 min (2 hrs 45 min) | 400+ scaled |
+
+Once you pass an exam, that passing score stays valid for **4 years** — you must pass all three within that window to earn the credential.
 
 This single study track covers **all three blueprints** in one consolidated curriculum. The `Final-Mock-Exam.md` in this course simulates **ONE** typical CPSM exam (165 questions / 180 minutes) so you can practice real-exam pacing. **After passing the mock here, re-study your weakest domains and seriously consider buying ISM's official exam-style practice tests for additional question banks** before sitting any real exam.
 
@@ -137,10 +139,11 @@ Secondary musts:
 |--------|---------------|
 | Issuer | Institute for Supply Management (ISM), US-headquartered |
 | Cost | $589 (member) / $1,179 (non-member) per exam × 3 |
-| Exams | 3 separate exams (Foundation / Performance / Leadership) |
-| Time | 180 minutes per exam |
-| Questions | 165 per exam (multiple choice) |
-| Pass mark | 400+ on a scaled score per exam |
+| Exams | 3 separate exams (Core / Integration / Leadership and Transformation) |
+| Time | Core: 180 min (3 hrs); Integration & Leadership: 165 min (2 hrs 45 min) each |
+| Questions | Core: 180; Integration: 165; Leadership and Transformation: 165 (multiple choice) |
+| Pass mark | 400+ on a 100–600 scaled score per exam |
+| Score validity | Passing scores valid 4 years; all three exams must be passed within that window |
 | Format | Proctored at Prometric test centres or via remote proctor |
 | Eligibility | 3 years of supply-management work experience + bachelor's degree (5 years' experience without a degree) |
 | Recertification | 60 continuing education hours every 3 years |

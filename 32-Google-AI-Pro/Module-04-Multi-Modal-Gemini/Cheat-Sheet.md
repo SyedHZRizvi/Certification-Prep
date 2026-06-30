@@ -8,7 +8,7 @@
 
 | Modality | Formats | Limit |
 |----------|---------|-------|
-| **Text** | UTF-8 | 1M (Flash) / 2M (Pro/Ultra) tokens |
+| **Text** | UTF-8 | 1M (Flash) / 2M (Pro) tokens |
 | **Image** | PNG, JPEG, WebP, HEIC, HEIF | 3,600 images; ≤7MB recommended |
 | **Audio** | MP3, WAV, AIFF, AAC, OGG, FLAC | ~9.5 hours per file |
 | **Video** | MP4, MPEG, MOV, AVI, WebM, … | ~50 minutes per file at 1 fps |

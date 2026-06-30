@@ -26,7 +26,7 @@ D. Suppliers
 ### Q3. A part that is sold as a spare to a customer is: *(Analyze)*
 A. Always dependent demand
 B. Independent demand when sold as a spare; dependent when consumed inside a finished good
-C. Always dependent demand
+C. Always independent demand
 D. Both dependent and independent simultaneously, requiring double counting
 
 ---
@@ -275,10 +275,8 @@ L4L minimizes inventory but is sensitive to setup cost.
 ### Q14: **C. Fixed Order Quantity at 5,000 (or POQ covering several weeks)**
 Supplier minimum constrains the choice. L4L would violate the minimum.
 
-### Q15: **A. 0**
-Cumulative gross demand for frames over the 4 weeks = 3,200. On-hand = 1,000. Lead time = 3 weeks. In week 1, on-hand 1,000 covers week 1's 800 demand; ending on-hand = 200. The system needs releases starting in week 1 ONLY IF the net requirement minus LT offset says so. Week 1's net = 800 − 1,000 = -200 (covered). Week 2's net = 800 − 200 = 600. With LT = 3, that order must release in (2-3) = before week 0 i.e., it's late. The standard CPIM expectation: ASSUMING starting on-hand of 1,000, planned order releases for L4L would be sized to net requirements. Looking only at the question "planned order release in week 1?", for the L4L rule with the data given, the release in week 1 corresponds to a receipt in week (1 + 3) = week 4. Week 4's net requirement = 800 (no on-hand left in week 4). **So the planned order RELEASE in week 1 = 800.**
-
-✏️ Correction: best answer is **C. 800**. The 0 happens only if the planner already has scheduled receipts covering week 4.
+### Q15: **C. 800**
+Gross requirement is 800 frames each week. On-hand 1,000 covers week 1 (net 0) and leaves 200, so week 2's net is 600 and weeks 3–4 net 800 each. With a 3-week lead time, a planned order release in week 1 is the one whose receipt lands in week 4 (1 + 3), and week 4's net requirement under L4L is 800. So the planned order release in week 1 = **800**. (The answer is 0 only if scheduled receipts already cover week 4.)
 
 ### Q16: **A. Considers a replanning of capacity and materials, not just existing schedule**
 ATP works against the current MPS as-is. CTP runs a what-if reschedule.

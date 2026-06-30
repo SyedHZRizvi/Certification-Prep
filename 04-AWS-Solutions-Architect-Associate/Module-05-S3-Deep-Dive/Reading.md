@@ -334,16 +334,16 @@ You now know:
 **Decision (the controversial decision and the architectural one).** Robinhood took two decisions, only one of which is an architecture lesson:
 
 1. **The business decision (controversial).** Robinhood restricted buys of GME and ~10 other names. This was driven by an unprecedented **margin call from the National Securities Clearing Corporation (NSCC)** demanding ~$3B in collateral. The decision was a *financial* one, not a technical one. (This is *not* the SAA lesson.)
-2. **The architecture response (the SAA lesson).** Robinhood's CTO Andy Hu in his March 2021 Congressional testimony and subsequent *AWS Builders' Library* contribution detailed the emergency scaling actions:
+2. **The architecture response (the SAA lesson).** The emergency scaling actions a brokerage at this scale would take map directly onto SAA design patterns. The following is an *illustrative* reconstruction of such a response (figures are hypothetical, for teaching the patterns, not audited disclosures):
 
-   - **Pre-warmed Auto Scaling Groups** were increased from 200 to 2,000+ instances across the order matching path within hours
+   - **Pre-warmed Auto Scaling Groups** scaled out the order matching path by an order of magnitude within hours
    - **S3 throughput** was the unsung hero, Robinhood stored order books and historical trade data in **S3 with Intelligent-Tiering** with thousands of read requests per second per prefix. **They had to redistribute prefixes** (S3 partitions by prefix) to avoid hot-prefix throttling
-   - **DynamoDB Adaptive Capacity** auto-scaled write capacity 50× within minutes
-   - **CloudFront** absorbed a 7× increase in static asset requests; origin servers saw no spike
+   - **DynamoDB Adaptive Capacity** auto-scaled write capacity within minutes
+   - **CloudFront** absorbed a large increase in static asset requests; origin servers saw no spike
    - **ElastiCache Redis** clusters were scaled vertically (largest cache.r6g instances) plus sharded horizontally
-   - **Lambda** order-confirmation handlers fully serverless auto-scaled to **150,000+ concurrent executions** at peak
+   - **Lambda** order-confirmation handlers, fully serverless, auto-scaled to a very high concurrency at peak
 
-**Outcome.** Robinhood survived the surge architecturally; the app stabilized within ~24 hours of the initial spike. They sustained 38M trades on January 27 alone, by far the largest day in U.S. retail brokerage history. The infrastructure passed the test. (The business and reputational fallout from the trading restriction was severe, but that's a different story.)
+**Outcome.** Robinhood survived the surge architecturally; the app stabilized within roughly a day of the initial spike, sustaining record retail-brokerage trading volume. The infrastructure passed the test. (The business and reputational fallout from the trading restriction was severe, but that's a different story.)
 
 **Lesson for the exam / for practitioners.** This case puts the SAA exam's "elasticity" tropes in real terms:
 
@@ -357,7 +357,7 @@ When the SAA exam asks "a brokerage app saw a 10× traffic spike; which design B
 
 **Discussion (Socratic).**
 - **Q1.** Robinhood's S3 throughput problem came from **hot prefixes**. The fix is randomizing key prefixes (`{random}/2021/01/25/order-12345`), but this destroys lexicographic ordering, making manual S3 console browsing painful. Argue both sides: design-for-machine-readability vs design-for-human-debugging.
-- **Q2.** During the surge, Robinhood paid an enormous AWS bill, estimated $4M+ for the week. Was the elasticity *cost-effective* (vs. having had reserved over-capacity)? When does "scale on demand" beat "scale to peak"?
+- **Q2.** During a surge like this, a brokerage pays a large on-demand AWS bill for the spike week. Was the elasticity *cost-effective* (vs. having had reserved over-capacity)? When does "scale on demand" beat "scale to peak"?
 - **Q3.** A counterfactual: if Robinhood had been on a multi-region active-active architecture (Module 10), would the surge have been handled differently? Where would multi-region help vs add complexity?
 
 ---

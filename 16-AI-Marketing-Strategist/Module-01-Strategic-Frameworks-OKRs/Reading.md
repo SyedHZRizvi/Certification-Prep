@@ -235,7 +235,7 @@ Modern marketing teams use a *channel* variant plotting each acquisition channel
 
 ---
 
-## 📐 Framework 6: Jobs-To-Be-Done (Christensen 2003)
+## 📐 Framework 6: Jobs-To-Be-Done (Christensen 2005)
 
 Clayton Christensen's **Jobs-to-Be-Done** (JTBD) framework reframes products around the *progress* a customer is trying to make in a specific situation.
 
@@ -243,7 +243,7 @@ The canonical job statement:
 
 > When [situation], I want to [motivation], so I can [expected outcome].
 
-Example, Christensen's famous milkshake study (McDonald's, 2003):
+Example, Christensen's famous milkshake study (McDonald's, 2005):
 
 - 40% of milkshake sales happened before 8:30 AM
 - The job: *When I have a 30-minute commute and want something filling, with one hand, that lasts the full drive, I want a thick milkshake so I can stop feeling bored and hungry by 10 AM.*
@@ -425,7 +425,7 @@ Each leaf is owned by a team. The Notifications team owns the "sessions/DAU" bra
 | **Five Forces** | Porter's industry-attractiveness model (1979) |
 | **Ansoff Matrix** | Growth strategy by product × market newness (1957) |
 | **BCG Matrix** | Portfolio matrix by market growth × relative share (1970) |
-| **JTBD** | Jobs-to-be-Done, products are "hired" for progress in a specific situation (Christensen 2003) |
+| **JTBD** | Jobs-to-be-Done, products are "hired" for progress in a specific situation (Christensen 2005) |
 | **OKR** | Objectives & Key Results, qualitative goal + 3–5 measurable outcomes (Grove → Doerr) |
 | **Key Result vs Initiative** | KR = outcome / metric. Initiative = activity / project that drives the KR. |
 | **North Star metric** | Single customer-value metric that predicts long-term enterprise value |
@@ -497,4 +497,4 @@ You now know:
 - 📖 **Strategy Beyond the Hockey Stick** by McKinsey's Bradley, Hirt & Smit (2018), the modern follow-up to Porter.
 - 🔗 [Doerr's "What's an OKR?" video on TED](https://www.youtube.com/results?search_query=John+Doerr+OKRs+TED) (~12 min).
 - 🔗 [Reforge's "Mastering Product Strategy" course outline](https://www.reforge.com/courses), free outline, paid course.
-- 🔗 Christensen's 2003 *HBR* article ["Marketing Malpractice"](https://hbr.org/2005/12/marketing-malpractice-the-cause-and-the-cure), JTBD origin paper.
+- 🔗 Christensen's 2005 *HBR* article ["Marketing Malpractice"](https://hbr.org/2005/12/marketing-malpractice-the-cause-and-the-cure), JTBD origin paper.

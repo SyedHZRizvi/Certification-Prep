@@ -43,7 +43,7 @@ D. Light, Medium, Heavy, Heavyweight, Frontier
 
 ---
 
-### Q5. The MAXIMUM context window on Gemini 2.5 Pro/Ultra is approximately: *(Remember)*
+### Q5. The MAXIMUM context window on Gemini 2.5 Pro is approximately: *(Remember)*
 A. 32K tokens
 B. 200K tokens
 C. 1M tokens
@@ -228,7 +228,7 @@ Sundar Pichai announced the merger on April 20, 2023. The merged unit produces G
 Smallest to largest. Nano runs on-device; Flash Lite/Flash are cheap/fast; Pro is default workhorse; Ultra is frontier.
 
 ### Q5: **D. 2M tokens**
-Gemini 1.5 Pro shipped with 1M (Feb 2024), expanded to 2M (May 2024). Gemini 2.5 Pro / Ultra retain 2M.
+Gemini 1.5 Pro shipped with 1M (Feb 2024), expanded to 2M (May 2024). Gemini 2.5 Pro retains 2M. (The "Ultra" tier name is from the Gemini 1.0 era; there is no 2.5 Ultra SKU.)
 
 ### Q6: **B. Natively multi-modal, trained on text + image + audio + video jointly from scratch**
 This is the key architectural distinction vs GPT-4-Vision (bolted-on) and original Claude vision.
@@ -272,10 +272,8 @@ Different grounding services with different use cases. They are distinct product
 ### Q19: **B. Intended use, known limits, evaluation results, safety properties**
 Model cards are your risk-management tool. Read these sections before any production decision.
 
-### Q20: **C. ~$1,500 (well under budget)**
-1M × $0.0005 = $500/day = $15K/month. Wait, re-read: $0.0005 × 1M = $500/day = $15K/month, which is *over* budget. The intended answer should be B (over). Let me recompute: 1M conversations/day × $0.0005 = $500/day × 30 = $15,000/month. So **B** is correct.
-
-*Correction: The right answer for this stem is **B** (~$15K, over budget). This is intentionally a math trap.*
+### Q20: **B. ~$15,000 (over budget, they need to drop to Flash Lite or reduce token usage)**
+1M conversations/day × $0.0005/convo = $500/day × 30 = **$15,000/month**, which is over the $5K budget. This is intentionally a math trap: the per-conversation figure looks tiny, but at 1M/day it blows the budget 3×. Option C (~$1,500) is the wrong intuition that drops a factor of 10.
 
 ### Q21: **B. Trained on text + images + audio + video jointly from scratch, all modalities interleaved**
 This is the textbook description of native multi-modal training, distinct from adapter-based approaches.

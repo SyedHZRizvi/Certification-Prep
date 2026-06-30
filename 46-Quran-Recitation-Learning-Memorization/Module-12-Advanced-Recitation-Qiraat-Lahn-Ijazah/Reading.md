@@ -72,7 +72,7 @@ Each Qira'ah is named after its Imam (master reader) and then its primary narrat
 |---------|------|-------|
 | **Hamzat al-Wasl** | Usually with Kasra | Sometimes facilitated (softened) |
 | **Madd lengths** | Munfasil: 4–5 beats | Munfasil: 4–6 beats (longer) |
-| **Certain vowels** | e.g., مَلِكِ (Malik) in Al-Fatiha | مَالِكِ (Maalik) — longer Alif |
+| **Certain vowels** | e.g., مَالِكِ (Maalik) in Al-Fatiha — longer Alif | مَلِكِ (Malik) — short |
 | **Certain letter sounds** | Standard pronunciation | Ra' facilitation in specific contexts |
 | **Written mushaf** | Rasm Uthmani standard | Same script, different vowel marks |
 
@@ -90,20 +90,20 @@ The word مَلِكِ / مَالِكِ (King/Master) is the single most visible 
 
 | # | Qira'ah | Reads | Pronunciation |
 |---|---------|-------|---------------|
-| 1 | **Warsh 'an Nafi'** | مَالِكِ يَوۡمِ ٱلدِّين | MAA-liki — long Alif |
-| 1 | **Qalun 'an Nafi'** | مَالِكِ يَوۡمِ ٱلدِّين | MAA-liki — long Alif |
-| 2 | **Ibn Kathir al-Makki** | مَالِكِ يَوۡمِ ٱلدِّين | MAA-liki — long Alif |
-| 3 | **Abu 'Amr al-Basri** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short (same as Hafs) |
+| 1 | **Warsh 'an Nafi'** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
+| 1 | **Qalun 'an Nafi'** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
+| 2 | **Ibn Kathir al-Makki** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
+| 3 | **Abu 'Amr al-Basri** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
 | 4 | **Ibn 'Amir al-Shami** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
-| 5 | **Hafs 'an 'Asim** *(baseline)* | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
-| 5 | **Shu'ba 'an 'Asim** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
+| 5 | **Hafs 'an 'Asim** *(baseline)* | مَالِكِ يَوۡمِ ٱلدِّين | MAA-liki — long Alif |
+| 5 | **Shu'ba 'an 'Asim** | مَالِكِ يَوۡمِ ٱلدِّين | MAA-liki — long Alif |
 | 6 | **Hamzah al-Kufi** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
-| 7 | **Al-Kisa'i** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
-| 8 | **Abu Ja'far al-Madani** | مَالِكِ يَوۡمِ ٱلدِّين | MAA-liki — long Alif |
-| 9 | **Ya'qub al-Basri** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
-| 10 | **Khalaf al-Bazzar** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
+| 7 | **Al-Kisa'i** | مَالِكِ يَوۡمِ ٱلدِّين | MAA-liki — long Alif |
+| 8 | **Abu Ja'far al-Madani** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
+| 9 | **Ya'qub al-Basri** | مَالِكِ يَوۡمِ ٱلدِّين | MAA-liki — long Alif |
+| 10 | **Khalaf al-Bazzar** | مَالِكِ يَوۡمِ ٱلدِّين | MAA-liki — long Alif |
 
-**Summary:** Nafi' (Warsh + Qalun), Ibn Kathir, and Abu Ja'far read مَالِكِ — the remaining 8 read مَلِكِ.
+**Summary:** 'Asim (Hafs + Shu'ba), Al-Kisa'i, Ya'qub, and Khalaf read مَالِكِ (long Alif) — the remaining 7 narrations (Nafi' via Warsh + Qalun, Ibn Kathir, Abu 'Amr, Ibn 'Amir, Hamzah, Abu Ja'far) read مَلِكِ.
 
 #### Master Comparison Table 2 — Madd al-Munfasil Beat Lengths
 
@@ -141,13 +141,13 @@ Both are Quran. The meaning is the same; the grammatical structure differs.
 
 > *Region today: Morocco, Algeria, Tunisia, Libya, West Africa (Warsh); Libya, Tunisia, parts of Gulf (Qalun)*
 
-🎵 **Warsh fingerprint:** Long flowing Madds (Munfasil 5–6 beats) + مَالِكِ + Hamza facilitation (Tasheel) in specific positions — the Arabic sounds "rounder" and more drawn out than Hafs
+🎵 **Warsh fingerprint:** Long flowing Madds (Munfasil 5–6 beats) + مَلِكِ (short, no Alif) + Hamza facilitation (Tasheel) in specific positions — the Arabic sounds "rounder" and more drawn out than Hafs
 
-🎵 **Qalun fingerprint:** مَالِكِ + shorter Madds than Warsh (2–4 beats for Munfasil) + occasional Sukoon al-Mad (pause before Madd letter in specific words)
+🎵 **Qalun fingerprint:** مَلِكِ (short) + shorter Madds than Warsh (2–4 beats for Munfasil) + occasional Sukoon al-Mad (pause before Madd letter in specific words)
 
 | Surah | Hafs Reads | Warsh / Qalun Read | Difference |
 |-------|-----------|-------------------|------------|
-| Al-Fatiha 1:4 | مَلِكِ | مَالِكِ | Long Alif — "Maalik" not "Malik" |
+| Al-Fatiha 1:4 | مَالِكِ | مَلِكِ | Short — "Malik" not "Maalik"; Hafs has the long Alif |
 | Al-Kawthar 108:1 (إِنَّآ أَعۡطَيۡنَـٰك) | Munfasil: 4–5 beats | Warsh: 5–6 beats; Qalun: 2–4 beats | Listen for longer flow in Warsh recitations |
 | Al-Baqarah 2:6 (سَوَآءٌ عَلَيۡهِمۡ) | Full Hamza on سَوَاء | Warsh: Hamza softened/facilitated (Tasheel) | Smoother Hamza — subtle audible difference |
 
@@ -157,11 +157,11 @@ Both are Quran. The meaning is the same; the grammatical structure differs.
 
 > *Region today: Historically Mecca and Egypt; today a scholarly tradition*
 
-🎵 **Fingerprint:** مَالِكِ + extremely short Madd al-Munfasil (only 2 beats, same as natural Madd) — this makes the recitation feel faster and more compact than Hafs despite identical letters
+🎵 **Fingerprint:** مَلِكِ (short, no Alif — like Warsh) + extremely short Madd al-Munfasil (only 2 beats, same as natural Madd) — this makes the recitation feel faster and more compact than Hafs
 
 | Surah | Hafs Reads | Ibn Kathir Reads | Difference |
 |-------|-----------|-----------------|------------|
-| Al-Fatiha 1:4 | مَلِكِ | مَالِكِ | Long Alif |
+| Al-Fatiha 1:4 | مَالِكِ | مَلِكِ | Hafs has the long Alif; Ibn Kathir reads short |
 | Al-Kawthar 108:1 | إِنَّآ أَعطَيۡنَـٰك — Munfasil 4–5 beats | 2 beats only — no special extension | Munfasil treated as Tabee'i — shortest of all Qira'at |
 | Al-Ikhlas 112:4 | كُفُوًا أَحَد | كُفُؤًا أَحَد | Hamza position shifts: كُفُوًا (Hafs) vs كُفُؤًا (Ibn Kathir) |
 
@@ -201,7 +201,7 @@ Both are Quran. The meaning is the same; the grammatical structure differs.
 
 > *Hafs: ~95% of world. Shu'ba: scholarly preservation tradition*
 
-🎵 **Hafs fingerprint:** This is your baseline — the Quran you already know. Clear full Hamzas, 4–5 beat Munfasil, مَلِكِ, standard Noon rules.
+🎵 **Hafs fingerprint:** This is your baseline — the Quran you already know. Clear full Hamzas, 4–5 beat Munfasil, مَالِكِ (long Alif in Al-Fatiha 1:4), standard Noon rules.
 
 🎵 **Shu'ba fingerprint:** Same Imam, strikingly different narrator — Shu'ba has unique word-forms that deviate further from Hafs than many expect from a shared Imam.
 
@@ -209,7 +209,7 @@ Both are Quran. The meaning is the same; the grammatical structure differs.
 |-------|-----------|-------------|------------|
 | Al-Baqarah 2:184 | يُطِيقُونَهُۥ — present tense (those who can bear it) | يَطَّوَّقُونَهُۥ — different verb form entirely | Major word-form difference; both are Mutawatir |
 | Al-An'am 6:91 | مَا أَنزَلَ ٱللَّهُ | ما أَنزَلَ — specific voweling and Madd handling differs | Subtle vowel differences in multiple verses |
-| Al-Fatiha | مَلِكِ | مَلِكِ | Same as Hafs in Al-Fatiha |
+| Al-Fatiha 1:4 | مَالِكِ | مَالِكِ | Same as Hafs in Al-Fatiha — both read the long Alif |
 
 ---
 
@@ -245,11 +245,11 @@ Both are Quran. The meaning is the same; the grammatical structure differs.
 
 > *Region today: Madinah and parts of Egypt historically; now scholarly tradition*
 
-🎵 **Fingerprint:** مَالِكِ + specific Idgham (merging) rules that differ from Hafs + Ghunna (nasal resonance) applied in positions where Hafs does not apply it. Abu Ja'far is the "Madinan complement" to Nafi' — both from Madinah, similar in some features.
+🎵 **Fingerprint:** مَلِكِ (short, like Nafi') + specific Idgham (merging) rules that differ from Hafs + Ghunna (nasal resonance) applied in positions where Hafs does not apply it. Abu Ja'far is the "Madinan complement" to Nafi' — both from Madinah, similar in some features.
 
 | Surah | Hafs Reads | Abu Ja'far Reads | Difference |
 |-------|-----------|-----------------|------------|
-| Al-Fatiha 1:4 | مَلِكِ | مَالِكِ | Long Alif — same as Warsh |
+| Al-Fatiha 1:4 | مَالِكِ | مَلِكِ | Short — same as Warsh; Hafs has the long Alif |
 | Al-Baqarah 2:9 | يُخَـٰدِعُونَ (Form III verb) | يُخَدِّعُونَ (Form II verb — different stem) | Different verb form; same meaning |
 | Specific Noon Sakin + Waw/Ya | Standard Hafs Idgham with Ghunna | Abu Ja'far applies Ghunna in certain Noon positions differently | Nuanced nasal differences in flowing recitation |
 
@@ -277,7 +277,7 @@ Both are Quran. The meaning is the same; the grammatical structure differs.
 
 | Surah | Hafs Reads | Khalaf Reads | Difference |
 |-------|-----------|-------------|------------|
-| Al-Fatiha 1:4 | مَلِكِ | مَلِكِ | Same as Hafs — no Alif change |
+| Al-Fatiha 1:4 | مَالِكِ | مَالِكِ | Same as Hafs — both read the long Alif |
 | Word-final Hamza at Waqf (جَآءَ etc.) | Hamza remains at Waqf | Like Hamzah: ء drops and preceding vowel extends | Inherits Hamzah's Waqf Hamza rules |
 | Word-final Alifs in specific words | Normal "aa" sound | Imala: tilted toward "ee" (like Al-Kisa'i) | Combines Hamzah's Waqf rules + Kisa'i's Imala |
 
@@ -288,7 +288,7 @@ Both are Quran. The meaning is the same; the grammatical structure differs.
 > 🎯 **Recommended learning sequence:**
 >
 > 1. **Master Hafs 'an 'Asim completely first** — zero Lahn al-Jali, strong Tajweed. This is your foundation.
-> 2. **Add Warsh 'an Nafi' second** — the most widely recorded and available style after Hafs. Key changes: مَالِكِ, longer Madds, facilitated Hamzas in specific positions.
+> 2. **Add Warsh 'an Nafi' second** — the most widely recorded and available style after Hafs. Key changes: مَلِكِ (short — where Hafs reads the long مَالِكِ), longer Madds, facilitated Hamzas in specific positions.
 > 3. **Study Ibn Kathir next** — introduces the concept of minimal Munfasil (2 beats) which resets your understanding of Madd as flexible, not fixed.
 > 4. **For each new Qira'ah:** (a) Identify its fingerprint feature. (b) Listen to Al-Fatiha in that Qira'ah — you will hear مَالِكِ vs مَلِكِ immediately. (c) Listen to Surah Al-Kawthar — Munfasil differences are clearest in a short surah. (d) Find a certified teacher (Ijazah holder) for proper Talaqqi.
 >
@@ -306,7 +306,7 @@ Written descriptions of Qira'at differences tell you *what* varies — listening
   <div class="vg-thumb">①<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <p class="vg-title">① Nafi' — Warsh Riwayah (Sample 1)</p>
-    <p class="vg-sub">Elongated Madds · Facilitated Hamzas · مَالِكِ</p>
+    <p class="vg-sub">Elongated Madds · Facilitated Hamzas · مَلِكِ (short)</p>
   </div>
 </a>
 

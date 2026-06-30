@@ -35,10 +35,10 @@ Ghalib is the supreme master of Urdu ghazal. Born in Agra, writing in Delhi, his
 
 **شعر ۱:**
 > ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے
-> بہت نکلے مرے ارمانِ لیکن پھر بھی کم نکلے
+> بہت نکلے مرے ارمان لیکن پھر بھی کم نکلے
 >
 > *Hazaaron khwahishein aisi ke har khwahish pe dam nikle*
-> *Bahut nikle mere armaan-e lekin phir bhi kam nikle*
+> *Bahut nikle mere armaan lekin phir bhi kam nikle*
 >
 > Thousands of desires — each desire enough to die for;
 > Many of my longings were fulfilled — yet still too few.
@@ -106,7 +106,7 @@ A **mushaira** is a formal poetry recitation gathering — one of the most belov
 - Poets sit in a gathering; a **chairman** (صدر, sadr) presides
 - Poets recite their own poetry
 - The audience responds with **واہ واہ** (waah waah — "bravo!") or **اور سنایئے** (aur sunaiye — "recite more!")
-- Popular couplets are repeated back by the audience (tarannnum — singing style)
+- Popular couplets are repeated back by the audience (tarannum — singing style)
 
 ### Mushaira Vocabulary
 | Urdu | Transliteration | Meaning |
@@ -139,7 +139,7 @@ A **mushaira** is a formal poetry recitation gathering — one of the most belov
 | 8 | درد کی دوا درد ہے | dard ki dawa dard hai | The cure for pain is pain itself (only those who suffer understand) |
 | 9 | صبر کا پھل میٹھا ہوتا ہے | sabr ka phal meetha hota hai | The fruit of patience is sweet |
 | 10 | خون خون ہوتا ہے | khoon khoon hota hai | Blood is blood (family bonds endure) |
-| 11 | کالا اکشر بھینس برابر | kaala akshar bhaains barabar | A black letter equals a buffalo (illiteracy) |
+| 11 | کالا اکشر بھینس برابر | kaala akshar bhains barabar | A black letter equals a buffalo (illiteracy) |
 | 12 | ایک اور ایک گیارہ | ek aur ek gyaara | Unity is strength (1+1=11) |
 | 13 | آم کے آم گٹھلیوں کے دام | aam ke aam guthliyon ke daam | Double benefit (mangoes and money for seeds) |
 | 14 | بندر کیا جانے ادرک کا سواد | bandar kya jaane adrak ka swaad | A monkey doesn't know the taste of ginger (don't cast pearls before swine) |
@@ -164,7 +164,7 @@ A **mushaira** is a formal poetry recitation gathering — one of the most belov
 | 33 | بازار میں شہرت سے گھر میں عزت ملتی ہے | baazaar mein shuhrat se ghar mein izzat milti hai | Public fame brings home respect |
 | 34 | لوہا لوہے کو کاٹتا ہے | loha lohe ko kaatta hai | Iron cuts iron (fight fire with fire) |
 | 35 | چور کی داڑھی میں تنکا | chor ki daadhi mein tinka | A straw in the thief's beard (guilty conscience) |
-| 36 | ناچ نہ جانے آنگن ٹیڑھا | naach na jaane aangan terhna | A bad dancer blames the floor |
+| 36 | ناچ نہ جانے آنگن ٹیڑھا | naach na jaane aangan terha | A bad dancer blames the floor |
 | 37 | سو سنار کی ایک لوہار کی | so sunaar ki ek lohaar ki | One blacksmith's blow equals a hundred goldsmith's taps |
 | 38 | دودھ کا جلا چھاچھ بھی پھونک پھونک کر پیتا ہے | doodh ka jala chaachh bhi phoonk phoonk kar peeta hai | Once burnt, twice shy |
 | 39 | الفاظ تیر کی طرح ہوتے ہیں | alfaaz teer ki tarah hote hain | Words are like arrows (once released, cannot be taken back) |
@@ -285,7 +285,7 @@ Modern Pakistani Urdu on Twitter/X, Instagram, and WhatsApp has evolved distinct
 
 **شعر ۱:**
 ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے
-بہت نکلے مرے ارمانِ لیکن پھر بھی کم نکلے
+بہت نکلے مرے ارمان لیکن پھر بھی کم نکلے
 
 **شعر ۲:**
 دل ہی تو ہے نہ سنگ و خشت درد سے بھر نہ آئے کیوں

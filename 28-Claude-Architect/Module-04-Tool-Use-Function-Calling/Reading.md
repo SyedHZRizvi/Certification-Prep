@@ -130,7 +130,7 @@ Pass `tools=tools` to `client.messages.create(...)`.
 import anthropic, json
 
 client = anthropic.Anthropic()
-MODEL = "claude-sonnet-4-6-20260301"
+MODEL = "claude-sonnet-4-6"
 
 messages = [
     {"role": "user", "content": "Refund order #12345"}
@@ -303,7 +303,7 @@ Anthropic provides three "anthropic-defined" tools for computer use:
 
 ```python
 response = client.beta.messages.create(
-    model="claude-sonnet-4-6-20260301",
+    model="claude-sonnet-4-6",
     max_tokens=4096,
     tools=[
         {"type": "computer_20241022", "name": "computer", "display_width_px": 1280, "display_height_px": 800, "display_number": 1},

@@ -2,7 +2,7 @@
 
 > **Why this module matters:** Meta's advertising platform reaches 3.3 billion daily active users across Facebook and Instagram, making it the single most powerful demand-generation engine for DTC brands, B2C retailers, and lead-gen businesses alike. Mastering the campaign structure, Pixel, Conversions API, and post-iOS 14 attribution is now a non-negotiable skill for any digital marketer operating in North America or Europe.
 
-> **Prerequisites:** Module 07 (Social Media Fundamentals) or equivalent experience. Basic understanding of sales funnels, website analytics, and customer segmentation will help significantly.
+> **Prerequisites:** Module 07 (Social Media Strategy) or equivalent experience. Basic understanding of sales funnels, website analytics, and customer segmentation will help significantly.
 
 ---
 

@@ -1,6 +1,6 @@
 # 🧪 Final Mock Exam AWS AI Practitioner (AIF-C01) Full Length
 
-> **Conditions:** Set a 120-minute timer. 65 questions. **Real exam conditions**, no notes, no breaks, no Googling.
+> **Conditions:** Set a 90-minute timer. 65 questions. **Real exam conditions**, no notes, no breaks, no Googling.
 > **Pass mark:** 46/65 (~70%). The real exam pass is 700/1000 on a scaled score.
 > **Take this 2–3 days before the real exam.** If you score < 80% here, postpone the real exam by a week.
 

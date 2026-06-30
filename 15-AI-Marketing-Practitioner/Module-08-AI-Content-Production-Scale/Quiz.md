@@ -17,7 +17,7 @@ D. Brief → Design → Build → Test
 
 ### Q2. Best AI model for long-form brand content with nuance in 2026: *(Apply)*
 A. ChatGPT GPT-5
-B. Claude Sonnet 4.7
+B. Claude Sonnet 4.6
 C. Gemini Nano
 D. Midjourney v7
 
@@ -212,7 +212,7 @@ D. It saves tokens
 ### Q1: **B. Strategy → Generation → Refinement → Distribution**
 The pros work in stages. Strategy (human), Generation (AI), Refinement (human QC), Distribution (mixed). Skipping Strategy = generic content. Skipping Refinement = hallucinations published.
 
-### Q2: **B. Claude Sonnet 4.7**
+### Q2: **B. Claude Sonnet 4.6**
 Per the reading: Claude excels at long-form, nuanced, brand-voice-specific content. ChatGPT is faster for structured outputs / variants. Gemini is better for multimodal.
 
 ### Q3: **C. Gemini 2.5 Pro**

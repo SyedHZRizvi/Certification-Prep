@@ -49,9 +49,9 @@ Sensitivity: EOQ is robust (square root softens errors).
 
 **Z values:** 90% → 1.28 · 95% → 1.65 · 97.5% → 1.96 · 99% → 2.33 · 99.99% → 3.72
 
-Combined variability:
+Combined variability (σ_d = demand std dev, σ_L = lead-time std dev):
 ```
-   σ_LT = √(LT · σ_d² + d² · σ_LT²)
+   σ_LT = √(LT · σ_d² + d² · σ_L²)
 ```
 
 ---

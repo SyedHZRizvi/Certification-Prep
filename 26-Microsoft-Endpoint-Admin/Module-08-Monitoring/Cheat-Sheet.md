@@ -33,7 +33,7 @@ Baseline: 80+ across all (Microsoft recommended).
 
 ---
 
-## 🛠️ Proactive Remediations (Plan 2)
+## 🛠️ Proactive Remediations
 
 Pair of PowerShell scripts:
 
@@ -42,7 +42,7 @@ Pair of PowerShell scripts:
 
 Microsoft-published + custom.
 
-🚨 Plan 2 or Suite required.
+🚨 Needs a Windows Enterprise/Education/VDA subscription (e.g. via M365 E3) + Intune. NOT an Intune Plan 2 / Suite add-on.
 
 ---
 
@@ -150,7 +150,7 @@ When you see these, often **wrong**:
 
 - ❌ "Wipe and Retire are the same"
 - ❌ "Endpoint Analytics is Plan 1 fully"
-- ❌ "Proactive remediations free in Plan 1"
+- ❌ "Proactive remediations need an Intune Plan 2 / Suite add-on"
 - ❌ "Restart action factory-resets"
 - ❌ "MDM Diagnostics is a third-party tool"
 
@@ -171,7 +171,7 @@ When you see these, often **wrong**:
 Cover the answers, recite:
 
 1. 5 Endpoint Analytics categories? ___
-2. Proactive remediation = ? + ? scripts (which plan?) ___
+2. Proactive remediation = ? + ? scripts (which subscription gates it?) ___
 3. MDM Diagnostics report, where to generate? ___
 4. Wipe vs Retire vs Fresh Start vs Autopilot Reset? ___
 5. Tool to debug "user blocked by Conditional Access"? ___

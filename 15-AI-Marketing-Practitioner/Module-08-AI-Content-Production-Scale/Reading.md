@@ -67,7 +67,7 @@ The mistake beginners make: trying to generate a video ad in one prompt. The pro
 
 | Use case | Best model |
 |----------|------------|
-| Long-form brand content (essays, threads, briefs) | Claude Sonnet 4.7 |
+| Long-form brand content (essays, threads, briefs) | Claude Sonnet 4.6 |
 | Quick variants + structured outputs (50 headline variations) | ChatGPT GPT-5 |
 | Multimodal (paste image, get copy reacting to it) | Gemini 2.5 Pro |
 | SEO content with web research | ChatGPT (with web search) |
@@ -468,7 +468,7 @@ Each prompt has more than one defensible answer. Argue from the frameworks in th
 
 > **Where this leads.**
 > - Inside this course: Module 9 wires the creative output into marketing-automation flows (email, push, retargeting); Module 10 (Capstone) runs your AI-produced creative in a live $200 campaign.
-> - Cross-course: [16-AI-Marketing-Strategist](../../../16-AI-Marketing-Strategist/) covers AI content for organic SEO (different optimization function); [18-AI-Marketing-Capstone-Portfolio](../../../18-AI-Marketing-Capstone-Portfolio/) collects polished creative into a public portfolio.
+> - Cross-course: [16-AI-Marketing-Strategist](../../16-AI-Marketing-Strategist/) covers AI content for organic SEO (different optimization function); [18-AI-Marketing-Capstone-Portfolio](../../18-AI-Marketing-Capstone-Portfolio/) collects polished creative into a public portfolio.
 > - Practice: Practice Exam 2 has ~7 questions from this module (4-stage pipeline, Brand Voice Project, Midjourney --cref, Runway, HeyGen, voice-clone ethics).
 
 ---

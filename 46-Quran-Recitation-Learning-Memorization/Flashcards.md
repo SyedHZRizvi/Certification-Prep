@@ -606,7 +606,7 @@
 
 **Q:** Who is Warsh 'an Nafi' and where is it used?
 
-**A:** Warsh was a student of Nafi' al-Madani (imam of Madinah). Warsh 'an Nafi' is the standard recitation in Morocco, Algeria, Tunisia, Libya, and West Africa. A notable difference from Hafs: Warsh reads مَالِكِ (Maalik — long Alif) in Al-Fatiha; Hafs reads مَلِكِ (Malik — short).
+**A:** Warsh was a student of Nafi' al-Madani (imam of Madinah). Warsh 'an Nafi' is the standard recitation in Morocco, Algeria, Tunisia, Libya, and West Africa. A notable difference from Hafs: Warsh reads مَلِكِ (Malik — short) in Al-Fatiha; Hafs reads مَالِكِ (Maalik — long Alif).
 
 **Q:** What is Lahn al-Jali (اللَّحن الجَلِي)?
 

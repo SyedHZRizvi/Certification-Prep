@@ -7,7 +7,7 @@ title: "Module 4: Logo & Brand Motion"
 
 ## The 30-Second Problem
 
-In 1997, Nike paid a design firm $35 to design its Swoosh logo. By 2024, that mark was worth an estimated $26 billion. But for most of the 20th century, the Swoosh just sat there, static, flat, silent. When Nike finally built motion guidelines for their brand, they discovered what every brand discovers: a logo that works perfectly in print often needs to be completely rethought for motion. The Swoosh's problem is that it's just a line. How do you animate a line and make it feel worth $26 billion?
+In 1971, Nike paid Carolyn Davidson, a freelance graphic-design student, $35 to design its Swoosh logo. By 2024, that mark was worth an estimated $26 billion. But for most of the 20th century, the Swoosh just sat there, static, flat, silent. When Nike finally built motion guidelines for their brand, they discovered what every brand discovers: a logo that works perfectly in print often needs to be completely rethought for motion. The Swoosh's problem is that it's just a line. How do you animate a line and make it feel worth $26 billion?
 
 This module is about solving exactly that problem, for Nike, Netflix, Google, and every client logo you'll ever animate.
 

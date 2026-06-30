@@ -1,6 +1,6 @@
 # Module 8: Leadership & Project Management 👥
 
-> **Why this module matters:** Exam 3 of CPSM is literally titled *Leadership in Supply Management*. This module is the leadership exam. It tests change management, stakeholders, projects, KPIs, and influence, and CPSM heavily weights judgment scenarios. Master this and Exam 3 becomes very gettable.
+> **Why this module matters:** Exam 3 of CPSM is literally titled *Leadership and Transformation in Supply Management*. This module is the leadership exam. It tests change management, stakeholders, projects, KPIs, and influence, and CPSM heavily weights judgment scenarios. Master this and Exam 3 becomes very gettable.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The entire course so far, leadership is the integrating discipline

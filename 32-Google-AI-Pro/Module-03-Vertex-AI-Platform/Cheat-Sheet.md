@@ -34,7 +34,7 @@
 
 ## 🛍️ Model Garden Highlights
 
-**1st-party:** Gemini 2.5 Pro/Flash/Ultra · Imagen 3/4 · Veo · Chirp (speech) · MedLM · Gemma (open weights)
+**1st-party:** Gemini 2.5 Pro/Flash/Flash Lite · Imagen 3/4 · Veo · Chirp (speech) · MedLM · Gemma (open weights)
 **3rd-party:** **Claude** (Sonnet/Haiku/Opus 4.6) · Llama 3/4 · Mistral · Cohere · AI21 · xAI Grok
 **Embeddings:** text-embedding-004 / 005 · gemini-embedding-001 · multilingual-embedding-002
 

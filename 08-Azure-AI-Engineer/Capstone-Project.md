@@ -21,7 +21,7 @@ You have just been hired as the **Azure AI Engineer** at **Harbor Mutual Insuran
 - **Regulatory:** HIPAA-defensible for PHI-adjacent fields; GLBA for financial data; NAIC Model Bulletin on AI in insurance (2023) compliance posture; preparation for the EU AI Act (2024) if you expand into the EU operations.
 - **Security:** No keys in code; Private Endpoints + disabled public network access; Customer-Managed Keys (CMK) via Key Vault for at-rest encryption of training data and search index; approved Azure OpenAI **abuse-monitoring opt-out** for PHI flows.
 - **Cost ceiling:** $720K/year all-in (Azure consumption + Foundry features). Inflation-adjusted scenarios required for the cost forecast.
-- **Operational:** Go/no-go review against the current Microsoft AI-102 blueprint sections (Plan + Manage; Decision Support; Computer Vision; NLP; Knowledge Mining + Document Intelligence; Generative AI Solutions).
+- **Operational:** Go/no-go review against the current Microsoft AI-102 blueprint sections (Plan + Manage; Generative AI Solutions; Agentic Solutions; Computer Vision; NLP; Knowledge Mining + Information Extraction).
 - **Timeline:** 20 weeks. You will not ship "perfectly", the capstone evaluates how you sequence risk and what you defer.
 
 ---

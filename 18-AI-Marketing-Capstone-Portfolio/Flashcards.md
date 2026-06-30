@@ -474,7 +474,7 @@
 **Q:** What goes in the README for an AI agent repo?
 **A:** What it does, Loom link, how to run, architecture, cost per run, limitations + v2.
 
-**Q:** Approximate cost for Claude 3.7 Sonnet?
+**Q:** Approximate cost for Claude Sonnet 4.6?
 **A:** ~$3 / 1M input tokens, ~$15 / 1M output tokens. Document this in the README.
 
 **Q:** What's a structured output?

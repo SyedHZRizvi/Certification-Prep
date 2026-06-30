@@ -120,7 +120,7 @@ After applying automatic weights, systematic debugging prevents animation proble
 | **Multi-Paint** | Header → Options | Paint multiple selected vertex groups simultaneously |
 | **X Mirror** | Header → Options | Mirrors paint to the opposite .L/.R vertex group |
 
-> 🎯 **What the exam tests:** The **X Mirror** option in Weight Paint mode requires that bones follow the `.L` / `.R` naming convention exactly. When X Mirror is on, painting the `UpperArm.L` vertex group automatically paints the `UpperArm.R` group on the opposite side of the mesh. This only works if the mesh is symmetric (use Mirror Modifier or Symmetrize before weight painting).
+> 🎯 **What this checks:** The **X Mirror** option in Weight Paint mode requires that bones follow the `.L` / `.R` naming convention exactly. When X Mirror is on, painting the `UpperArm.L` vertex group automatically paints the `UpperArm.R` group on the opposite side of the mesh. This only works if the mesh is symmetric (use Mirror Modifier or Symmetrize before weight painting).
 
 ---
 
@@ -233,7 +233,7 @@ The Blender Foundation's *Coffee Run* (2020) was produced by just two artists (D
 
 **The lesson:** For production with tight timelines, weight painting proxy meshes and transferring to final meshes is faster and more reliable than painting directly on the high-resolution character. The *Coffee Run* team painted on a 1,200-polygon proxy and transferred to a 45,000-polygon final mesh.
 
-> 🎯 **What the exam tests:** The **Data Transfer modifier** maps data (vertex groups, normals, UV maps, vertex colors) from one mesh to another based on surface proximity. This is the correct tool for retopology workflows where you've painted weights on a sculpt and need to transfer them to a clean retopology mesh.
+> 🎯 **What this checks:** The **Data Transfer modifier** maps data (vertex groups, normals, UV maps, vertex colors) from one mesh to another based on surface proximity. This is the correct tool for retopology workflows where you've painted weights on a sculpt and need to transfer them to a clean retopology mesh.
 
 ---
 
@@ -311,7 +311,7 @@ The Blender Institute published the character technical director's documentation
 
 **Lip sync shape keys:** The main *Sprite Fright* characters used **FACS-aligned** (Facial Action Coding System) shape keys, a standardized set of 44 action units that map to muscle movements. The production used a subset of the FACS units relevant to their character designs: AU1 (inner brow raise), AU4 (brow lowerer), AU6 (cheek raiser), AU12 (lip corner puller = smile), AU15 (lip corner depressor), AU25 (lips part), AU26 (jaw drop). This FACS-based approach is the industry standard at every major animation studio.
 
-> 🎯 **What the exam tests:** The certification tests awareness of industry-standard facial rigging systems. Know that FACS (Facial Action Coding System) is a system for describing all possible facial movements using numbered Action Units, and that professional Blender rigs use FACS-aligned shape keys for consistency with face capture pipelines.
+> 🎯 **What this checks:** Awareness of industry-standard facial rigging systems. Know that FACS (Facial Action Coding System) is a system for describing all possible facial movements using numbered Action Units, and that professional Blender rigs use FACS-aligned shape keys for consistency with face capture pipelines.
 
 ---
 
@@ -327,11 +327,11 @@ Beyond the Data Transfer modifier (covered in section 6.6b), Blender offers addi
 
 **Sort Vertex Groups by Name:** Alphabetical sort (Object Data → Vertex Groups → Dropdown → Sort Alphabetically) makes finding vertex groups faster in large rigs with 50+ groups.
 
-> 🎯 **What the exam tests:** The Limit Total operation is specifically tested because game engines (Unity, Unreal) only support a maximum of 4 bone influences per vertex. Blender characters with many more influences per vertex (common after Automatic Weights) must have Limit Total applied before export. The certification may ask: what does the Limit Total operation do?, Answer: it reduces each vertex to a maximum number of bone influences and re-normalizes the remaining weights.
+> 🎯 **What this checks:** The Limit Total operation matters because game engines (Unity, Unreal) only support a maximum of 4 bone influences per vertex. Blender characters with many more influences per vertex (common after Automatic Weights) must have Limit Total applied before export. A useful self-check: what does the Limit Total operation do?, Answer: it reduces each vertex to a maximum number of bone influences and re-normalizes the remaining weights.
 
 ---
 
-## 6.9 What the Exam Tests: Weight Painting Module
+## 6.9 Competency Checklist: Weight Painting Module
 
 | Topic | Tested Knowledge |
 |---|---|

@@ -162,11 +162,11 @@ D. Is standard practice for all facial characters
 ---
 
 ### 16.
-Which Blender Foundation open movie used a hybrid toon-shading approach combining 2D drawn aesthetics with 3D geometry?
+Which film is referenced in this course as the case study for a hybrid toon-shading approach combining 2D drawn aesthetics with 3D geometry?
 
 A. Sprite Fright
 B. Charge
-C. **The concept is associated with Sony's The Mitchells vs. the Machines (referenced as a shading case study)**
+C. **Sony's The Mitchells vs. the Machines (referenced as a shading case study)**
 D. Wing It!
 
 ---

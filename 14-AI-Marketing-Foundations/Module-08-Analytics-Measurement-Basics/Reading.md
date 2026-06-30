@@ -373,7 +373,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 9 covers the GDPR, CCPA, and EU AI Act layers that constrain what you can measure; Module 10 covers the stack-and-tools layer (CDPs, dashboards) you wire on top of GA4.
-> - Cross-course: `15-AI-Marketing-Strategy` Module 8 covers measurement governance (when to push for MMM, when to invest in incrementality tests); `16-AI-Marketing-Automation-Workflows` Module 8 automates the dashboard + alerting layer.
+> - Cross-course: `15-AI-Marketing-Practitioner` Module 8 covers measurement governance (when to push for MMM, when to invest in incrementality tests); `16-AI-Marketing-Strategist` Module 8 automates the dashboard + alerting layer.
 > - Practice: Practice Exam 2 has 8–10 measurement questions (GA4, UTM, attribution, Consent Mode, MMM). Final Mock revisits with cross-platform synthesis (Robyn vs Meridian, DDA vs MMM).
 
 ---

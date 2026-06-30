@@ -52,7 +52,7 @@ Best-of-breed services composed via APIs: commercetools or Elastic Path for cart
 
 **MACH stands for:** Microservices, API-first, Cloud-native, Headless. Defined by the **MACH Alliance** (machalliance.org, founded 2020).
 
-🧠 **MEMORIZE THIS.** MACH = Microservices, API-first, Cloud-native, Headless. Adobe Commerce Business Practitioner asks about MACH in 2-3 questions.
+🧠 **MEMORIZE THIS.** MACH = Microservices, API-first, Cloud-native, Headless. MACH is a commonly tested concept on the Adobe Commerce Business Practitioner exam.
 
 ---
 

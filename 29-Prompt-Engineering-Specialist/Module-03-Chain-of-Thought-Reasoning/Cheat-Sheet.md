@@ -235,7 +235,7 @@ raise RuntimeError("Hit max iterations")
 ### Claude Extended Thinking call
 ```python
 client.messages.create(
-    model="claude-sonnet-4-7",
+    model="claude-sonnet-4-6",
     max_tokens=4096,
     thinking={"type": "enabled", "budget_tokens": 8000},
     messages=[{"role": "user", "content": question}]

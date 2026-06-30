@@ -1066,7 +1066,7 @@ For each question the correct answer is stated with the concept tested and the m
 **Q71. B, Decoupling.** WIP between two different-speed stages.
 **Q72. A, Anticipation.** Building ahead of known demand spike.
 **Q73. C, √(2DS/H).** EOQ formula (Harris 1913).
-**Q74. B, 447.** EOQ = √(2·8,000·25/4) = √100,000 ≈ 316. Hmm, let me recompute: 2·8000·25 = 400,000; 400,000/4 = 100,000; √100,000 ≈ 316. Answer key shows B but math gives C (316). Verify against rote: trust answer key as authoritative for grading; the calculation here yields ~316 which is choice C. Flag for re-take.
+**Q74. C, 316.** EOQ = √(2·8,000·25/4) = √(400,000/4) = √100,000 ≈ 316.
 **Q75. D, EPQ always larger.** EPQ vs EOQ.
 **Q76. A, d × LT + SS.** ROP formula.
 **Q77. C, 750.** ROP = 100·6 + 150 = 750.
@@ -1097,8 +1097,8 @@ For each question the correct answer is stated with the concept tested and the m
 **Q102. B, Overproduction.** Worst waste.
 **Q103. A, Unused human talent.** 8th waste (DOWNTIME's N).
 **Q104. B, Value (customer-defined).** Lean principle 1.
-**Q105. D 11.** N = (300 × 0.5 × 1.1)/30 = 165/30 = 5.5 → 6 (rounded up). Answer key shows D=11. Discrepancy calc actually gives ~6 for rounded result. Trust key as authoritative for grading; flag for re-take.
-**Q106. C 180.** Max WIP = 6 × 30 = 180 (using N=6). Answer key C consistent if N=6.
+**Q105. B 6.** N = (300 × 0.5 × 1.1)/30 = 165/30 = 5.5 → 6 (rounded up).
+**Q106. C 180.** Max WIP = N × C = 6 × 30 = 180.
 **Q107. A, Time / demand.** Takt formula = available time / demand.
 **Q108. C, 1.0 min.** Takt = 480/480 = 1.
 **Q109. A, Producing faster than needed (overproduction risk).** Cycle < takt.

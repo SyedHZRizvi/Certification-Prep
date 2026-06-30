@@ -288,12 +288,6 @@ Understanding what studio hiring processes test beyond the reel helps you prepar
 
 ---
 
-## 🔬 The Interview: What Studios Actually Test
-
-Understanding what studio hiring processes test beyond the reel helps you prepare for the full experience of breaking in.
-
----
-
 ## 💬 Socratic Questions for Discussion
 
 1. The hiring animator in the opening story made a decision within 23 seconds of watching each reel. Is this a failure of the hiring process, or an accurate simulation of how audiences engage with animation in the attention economy? What are the implications for how animators should present their work?

@@ -449,7 +449,7 @@ You now know:
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
 2. ✏️ Take the [Quiz](./Quiz.md)
 3. 📋 Review the [Cheat-Sheet](./Cheat-Sheet.md)
-4. ➡️ Take **Practice Exams 1, 2, and Final Mock** in [Practice-Exams/](../../../Practice-Exams/)
+4. ➡️ Take **Practice Exams 1, 2, and Final Mock** in [Practice-Exams/](../Practice-Exams/)
 5. 🎓 Schedule both AZ-800 and AZ-801
 
 ---

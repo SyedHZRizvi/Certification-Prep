@@ -38,7 +38,7 @@ Let's build the analyst toolkit.
 
 ### Why GA4 Is Not Just "UA with a New Interface"
 
-Universal Analytics (UA) died on July 1, 2024. Historical data stopped processing. If you built your career on UA, this is not an upgrade — it is a paradigm shift. The mental model is entirely different.
+Standard (free) Universal Analytics (UA) stopped processing new data on July 1, 2023; paid Analytics 360 (GA360) properties got an extension to July 1, 2024. Access to the UA interface and the API was then shut off on July 1, 2024, taking historical data with it. If you built your career on UA, this is not an upgrade — it is a paradigm shift. The mental model is entirely different.
 
 Think of UA as a **session-first ledger**: every interaction was bucketed into sessions, and sessions into pageviews, goals, and transactions. GA4 is an **event-first stream**: every single interaction fires an event, and you decide after the fact what those events mean.
 

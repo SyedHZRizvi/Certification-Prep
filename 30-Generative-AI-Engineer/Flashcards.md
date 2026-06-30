@@ -724,8 +724,8 @@
 **Q:** The single most-replicated pattern across all 7 case studies?
 **A:** Multi-model routing + caching + RAG + eval-in-CI + observability. The boring infrastructure compounds.
 
-**Q:** What does "the AI got it wrong" usually mean in production (Anthropic 2024 finding)?
-**A:** ~64% of those tickets are retrieval bugs, not model bugs.
+**Q:** What does "the AI got it wrong" usually mean in production RAG?
+**A:** Most of those tickets are retrieval bugs (the right context never reached the prompt), not model bugs.
 
 **Q:** Most important transferable skill in this entire course?
 **A:** The ability to read a production AI product launch and reverse-engineer the team's architectural decisions.

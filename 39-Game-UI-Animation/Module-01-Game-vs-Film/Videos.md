@@ -61,7 +61,7 @@ title: "Module 1 Videos: Game vs. Film Animation"
   <div class="vg-card-body">
     <div class="vg-card-title">GDC: DOOM Eternal, Animation & Motion System</div>
     <div class="vg-card-sub">GDC · 30–45 min</div>
-    <p>id Software's approach to momentum-preserving animation, motion matching, and the Doom Slayer's animation state machine at 60fps.</p>
+    <p>id Software's approach to momentum-preserving animation and the Doom Slayer's authored animation state machine at 60fps.</p>
   </div>
 </a>
 
@@ -105,7 +105,7 @@ title: "Module 1 Videos: Game vs. Film Animation"
   <div class="vg-card-body">
     <div class="vg-card-title">GDC: Motion Matching, The Future of Game Locomotion</div>
     <div class="vg-card-sub">GDC · 45–60 min</div>
-    <p>Deep dive into motion matching (used in DOOM Eternal, FIFA, Ubisoft games), an alternative to state machine animation that selects poses mathematically from a database.</p>
+    <p>Deep dive into motion matching (used in Ubisoft titles like For Honor and in the EA SPORTS FIFA series), an alternative to state machine animation that selects poses mathematically from a database.</p>
   </div>
 </a>
 

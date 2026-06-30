@@ -555,7 +555,7 @@
 **A:** Strategy → Generation → Refinement → Distribution.
 
 **Q:** Best AI model for long-form brand content in 2026?
-**A:** Claude Sonnet 4.7.
+**A:** Claude Sonnet 4.6.
 
 **Q:** Best AI model for multimodal tasks (paste image, get copy)?
 **A:** Gemini 2.5 Pro.

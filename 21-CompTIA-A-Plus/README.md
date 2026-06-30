@@ -7,7 +7,7 @@ title: CompTIA A+ Track (220-1101 + 220-1102)
 
 **🛡️ IT Foundations** › CompTIA A+ (220-1101 Core 1 + 220-1102 Core 2)
 
-> **Goal:** Pass **both** A+ exams (220-1101 Core 1 and 220-1102 Core 2) on the first attempt with a comfortable margin over the 675/700 (Core 1) and 700/900 (Core 2) thresholds.
+> **Goal:** Pass **both** A+ exams (220-1101 Core 1 and 220-1102 Core 2) on the first attempt with a comfortable margin over the 675/900 (Core 1) and 700/900 (Core 2) thresholds.
 > **Duration:** 8–12 weeks part-time (10–14 hrs/week)
 > **Cost:** ~$253 per exam · ~$506 total · A+ certification is valid 3 years and renews with CEUs or a higher CompTIA cert
 > **Difficulty:** Foundational · The universally recognized starting line for IT support, help-desk, and sysadmin careers

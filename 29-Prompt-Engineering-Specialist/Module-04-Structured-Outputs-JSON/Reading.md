@@ -162,7 +162,7 @@ import anthropic
 
 client = anthropic.Anthropic()
 response = client.messages.create(
-    model="claude-sonnet-4-7",
+    model="claude-sonnet-4-6",
     max_tokens=1024,
     tools=[{
         "name": "extract_cart",

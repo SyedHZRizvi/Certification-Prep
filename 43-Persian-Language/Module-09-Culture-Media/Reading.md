@@ -241,7 +241,7 @@ After the Soviet era, Tajik is written in **Cyrillic script** (though the langua
 |---|---|---|
 | Script | Perso-Arabic | Cyrillic (Soviet legacy) |
 | Pronunciation | Tehran standard | Archaic Persian pronunciations preserved |
-| Sample: "I am going" | می‌روم | Мераваи / می‌روم (standard) |
+| Sample: "I am going" | می‌روم | Меравам / می‌روم (standard) |
 | Russian loanwords | Few | Many (Soviet legacy) |
 
 > 🎯 **Fascinating fact:** Tajik preserves certain Old Persian vowel distinctions that Iranian Persian has lost — linguists consider Tajik a "time capsule" of classical Persian phonology.

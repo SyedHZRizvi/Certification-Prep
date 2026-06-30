@@ -184,7 +184,7 @@ Blender 4.x's **Geometry Nodes** system allows parametric modeling, geometry tha
 
 **Geometry Nodes for topology control** (advanced): the **Mesh to Points** + **Points to Volume** + **Volume to Mesh** node chain can be used to convert high-polygon organic sculpts into clean voxel-based meshes for retopology purposes.
 
-> 🎯 **What the exam tests:** The Blender certification covers Geometry Nodes at a basic level, knowing that it is a modifier (added through the modifier stack), that it works with Group Input/Group Output nodes, and that it can be used for instancing and scatter. You are not expected to build complex node trees on the exam.
+> 🎯 **What this checks:** Geometry Nodes at a basic level, knowing that it is a modifier (added through the modifier stack), that it works with Group Input/Group Output nodes, and that it can be used for instancing and scatter. You are not expected to build complex node trees here.
 
 ---
 
@@ -218,17 +218,17 @@ Blender 4.x's **Geometry Nodes** system allows parametric modeling, geometry tha
 
 ---
 
-## 2.7 Sony Pictures Animation and Blender: Hotel Transylvania Pipeline
+## 2.7 Blender's Role in Large-Studio Pipelines
 
-Sony Pictures Animation began integrating Blender into pre-visualization workflows starting around the *Hotel Transylvania* franchise. While the franchise's final renders were produced in Sony's in-house Imageworks renderer, the production pipeline used Blender for:
+In large studios, Blender is most often deployed as a **pre-production and component tool** rather than the final renderer. Typical roles include:
 
 - **Storyboard-to-3D layout:** Rough 3D previs of camera placement and character blocking, done in Blender because of its speed of iteration
-- **Character proportion testing:** Low-poly proxy characters in Blender to test silhouette readability before committing to high-resolution Imageworks models
-- **Crowd duplication previz:** Geometry Nodes (and earlier particle-instance methods) to simulate hotel guest crowd density for environment scale decisions
+- **Character proportion testing:** Low-poly proxy characters to test silhouette readability before committing to high-resolution production models
+- **Crowd duplication previz:** Geometry Nodes (and earlier particle-instance methods) to simulate crowd density for environment scale decisions
 
 **The broader industry trend:** Blender's role in large-studio pipelines is almost always as a **pre-production and previz tool** rather than final renderer, the final renders go through proprietary or licensed renderers (Arnold, RenderMan, V-Ray). Blender bridges the gap between concept art and production, where fast iteration matters more than render quality.
 
-> 🎯 **What the exam tests:** Know the distinction between Blender's role as a complete pipeline (indie films, open movies) versus its role as a component in larger studio pipelines (previz, asset creation, add-on development). The Blender Foundation certification is targeted at complete-pipeline users, but industry context questions appear.
+> 🎯 **What this checks:** Know the distinction between Blender's role as a complete pipeline (indie films, open movies) versus its role as a component in larger studio pipelines (previz, asset creation, add-on development). Industry-context questions favour candidates who understand both.
 
 ---
 
@@ -246,12 +246,12 @@ This hand approach is used by Grant Abbitt and CGCookie tutorials, both built th
 
 ---
 
-## 2.8a The Solitude (2022) Approach: Photorealistic Environments
+## 2.8a Procedural Environments: Photorealistic Detail Without Hand-Modeling
 
-*Solitude* (2022), a short film by Blender artist Alberto Mielgo (Academy Award winner for *The Windshield Wiper*), demonstrated Blender's capability for painterly photorealism in environments. The modeling approach:
+A widely used Blender approach for painterly, photorealistic environments leans on instancing and displacement rather than modeling every object by hand. The modeling approach:
 
-- **Scatter-based environments:** Ground cover (grass, stones, leaves) was placed using Geometry Nodes scatters rather than individual modeling. A single detailed stone model, instanced 10,000 times across a terrain, looks like a rocky beach.
-- **Displacement-based terrain:** The terrain mesh itself was a simple flat plane with a Displacement modifier driven by a procedural noise texture, no hand-modeling of individual rocks or ridges.
+- **Scatter-based environments:** Ground cover (grass, stones, leaves) is placed using Geometry Nodes scatters rather than individual modeling. A single detailed stone model, instanced 10,000 times across a terrain, looks like a rocky beach.
+- **Displacement-based terrain:** The terrain mesh itself is a simple flat plane with a Displacement modifier driven by a procedural noise texture, no hand-modeling of individual rocks or ridges.
 - **Low poly + displacement = high detail:** A 200-polygon plane + Subdivision Level 6 + Displacement texture = millions of polygons of terrain detail at render time, with a file size of under 10 MB.
 
 **Modeling shortcuts for environment work:**
@@ -310,7 +310,7 @@ The **Multires modifier** (Multiresolution) allows non-destructive sculpting at 
 
 ---
 
-## 2.10 What the Exam Tests: Modeling Module
+## 2.10 Competency Checklist: Modeling Module
 
 | Topic | Tested Knowledge |
 |---|---|
@@ -368,7 +368,7 @@ High-resolution sculpts (millions of polygons) created in Sculpt Mode or importe
 
 **Add-ons that help:** The Retopoflow add-on (third-party, paid) provides purpose-built retopology tools (contours, Relax, Tweak) directly in Blender's 3D Viewport.
 
-> 🎯 **What the exam tests:** Retopology is the bridge between sculpting and rigging. The key concept: the high-poly sculpt provides the shape; the low-poly retopology mesh provides the deformation-ready topology. Normal maps baked from the high-poly restore the surface detail onto the low-poly.
+> 🎯 **What this checks:** Retopology is the bridge between sculpting and rigging. The key concept: the high-poly sculpt provides the shape; the low-poly retopology mesh provides the deformation-ready topology. Normal maps baked from the high-poly restore the surface detail onto the low-poly.
 
 ---
 

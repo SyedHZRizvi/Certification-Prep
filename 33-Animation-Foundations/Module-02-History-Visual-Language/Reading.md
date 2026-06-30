@@ -219,7 +219,7 @@ The 2021 Netflix series *Arcane* (produced by Riot Games and Fortiche Production
 - **A hybrid 2D/3D pipeline**, 3D animation treated with 2D painterly textures and manual touch-up to achieve a look impossible in either pure 2D or pure 3D
 - **Cinematic pacing**, the series runs at 24fps with film-quality lighting and staging, breaking from TV animation norms
 - **Adult dramatic complexity**, no villain/hero binary; trauma, addiction, and grief as central themes
-- **Critical and commercial impact**, won the Annie Award for Outstanding Achievement for Animated Feature in 2022 despite being a series
+- **Critical and commercial impact**, became the first animated series to win the Primetime Emmy for Outstanding Animated Program (2022), a category that had previously gone only to network and cable shows
 
 The visual language choices in *Arcane* directly reference:
 - The graphic novel aesthetic of early comics and concept art

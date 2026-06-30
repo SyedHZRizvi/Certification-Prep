@@ -127,7 +127,7 @@ The course includes three practice examinations aligned to CEFR levels:
 | Practice Exam 2 | B1/B2 — Intermediate/Upper-Intermediate | 40 MCQ | 90 min | Verb conjugation, reading comprehension, business phrases, grammar rules |
 | Final Mock Exam | C1/C2 — Advanced/Mastery | 50 MCQ + short answer | 120 min | All modules, classical Arabic, proverbs, advanced grammar, rhetoric |
 
-**Pass mark for Final Mock Exam: 75% (57.5/75 — MCQ + short answer combined)**
+**Pass mark for Final Mock Exam: 75% (56.25/75 — MCQ 50 points + short answer 25 points)**
 
 All exams include a full answer key with explanations.
 

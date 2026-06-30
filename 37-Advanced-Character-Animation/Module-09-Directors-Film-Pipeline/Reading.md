@@ -382,8 +382,4 @@ The Animation Supervisor must balance two competing responsibilities:
 
 When these conflict when the director wants a performance change that the animator feels compromises the shot the Anim Sup's role is to translate, not to adjudicate. The director's creative authority is absolute. The Anim Sup protects the process, not the outcome.
 
-*[Module complete, see README for next steps and related tracks.]*
-
-> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
-
 > *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

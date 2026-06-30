@@ -53,7 +53,7 @@ The rise of LLM-generated static content is, paradoxically, *increasing* demand 
 - **Story-driven lessons with 2024–2026 case studies**, every module opens with a real creative scenario (Apple's Vision Pro launch animation, Stripe's homepage redesign, the Stranger Things title sequence)
 - **Original questions only**, every quiz, practice exam, and mock exam written from the Adobe Certified Professional (ACP) exam objectives, School of Motion curriculum, and Motion Design School syllabi
 - **One author, one voice**, coherent vocabulary across all 10 modules (a "keyframe" is always a keyframe; "easing" always refers to the interpolation curve, never the handle type)
-- **Target certification:** Adobe Certified Professional in After Effects (Adobe/Certiport). Note: School of Motion offers paid course certificates (not industry certifications with exam-based assessment).
+- **Target certification:** Adobe Certified Professional in Visual Effects and Motion Graphics Using Adobe After Effects (Adobe/Certiport). Note: School of Motion offers paid course certificates (not industry certifications with exam-based assessment).
 
 ### 🚀 Ready to Start?
 
@@ -109,6 +109,8 @@ By the end of this course, you'll be able to:
 
 **Plus:** Score 85%+ on the Final Mock before claiming you're "showreel-ready." The questions are written from the same skill rubrics that School of Motion, Buck, and Adobe use in their assessments.
 
+> **Note on format:** This 60-question / 90-minute mock is a deliberately harder, longer Cert Hub Original assessment, not a replica of the real ACP exam. The actual Adobe Certified Professional in Visual Effects and Motion Graphics Using Adobe After Effects exam is shorter (about 50 minutes) and includes live in-application tasks a written mock can't reproduce.
+
 ---
 
 ## 📖 The Single Most Important Resources
@@ -138,13 +140,13 @@ Multiple credentialing paths exist for motion designers:
 
 | Credential | Provider | Notes |
 |------------|----------|-------|
-| **Adobe Certified Professional, After Effects** | Adobe / Certiport | ~$180; tests AE fundamentals, expressions, output; taken at Certiport centers |
+| **Adobe Certified Professional in Visual Effects and Motion Graphics Using Adobe After Effects** | Adobe / Certiport | ~$180; ~50-minute exam; tests AE fundamentals, expressions, output; taken at Certiport centers |
 | **School of Motion, Animation Bootcamp Certificate** | School of Motion | ~$1,000–$1,500; project-graded; industry-recognized |
 | **Motion Design School, Certificate** | Motion Design School | ~$400–$800 per course; AE + Cinema 4D tracks |
 | **Buck Design, Mentorship** | Buck | Selective; portfolio-based; no exam but highest industry signal |
 | **Coursera, Motion Graphics Specialization** | Coursera / CalArts | $50–$200; beginner-accessible; not industry-recognized at the same level |
 
-This course's Final Mock Exam is designed to be harder than the Adobe Certified Professional (ACP) exam because the bar for working at a top studio (Buck, Gentleman Scholar, Oddfellows, Giant Ant) is higher than any certification exam. Pass this final mock at 85%+, and you're prepared for both.
+This course's Final Mock Exam is designed to be harder and longer than the Adobe Certified Professional (ACP) exam because the bar for working at a top studio (Buck, Gentleman Scholar, Oddfellows, Giant Ant) is higher than any certification exam. The real ACP exam is shorter (about 50 minutes) and includes live in-application tasks; our mock is 60 questions / 90 minutes of written assessment. Pass this final mock at 85%+, and you're prepared for both.
 
 ---
 

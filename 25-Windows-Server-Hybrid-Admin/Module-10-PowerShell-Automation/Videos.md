@@ -152,4 +152,4 @@ Answer these in your notebook:
 5. What replaced Azure Automation DSC in 2023?
 6. Azure Automanage profiles, Production vs Dev/Test?
 
-If you can answer all 6, you're ready for the [Quiz](./Quiz.md) and then the [Practice Exams](../../../Practice-Exams/).
+If you can answer all 6, you're ready for the [Quiz](./Quiz.md) and then the [Practice Exams](../Practice-Exams/).

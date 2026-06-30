@@ -380,10 +380,4 @@ Module 9 takes you out of the software and into the production environment, the 
 - SideFX Houdini, Channel Editor documentation (equivalent to Maya Graph Editor in Houdini pipeline)
 - Autodesk, Maya Set Driven Key documentation and tutorials (autodesk.com/maya)
 
-*[Module complete, see README for next steps and related tracks.]*
-
-> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
-
-> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
-
 > *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

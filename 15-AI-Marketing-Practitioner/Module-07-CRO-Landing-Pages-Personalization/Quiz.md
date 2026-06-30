@@ -228,7 +228,7 @@ MDE is what you tell the calculator: "I want to detect a 10% relative lift if it
 Math: 5K visits × 12 months ÷ 2 variants = 30K per variant per year. To detect 10% lift at 2% baseline = ~77K per variant needed. ~9 months minimum.
 
 ### Q7: **B. A B2B website personalization platform (reverse-IP)**
-Mutiny uses Clearbit / 6sense reverse-IP data to detect visitor's company, then serves personalized hero/copy/CTA. Acquired by Salesforce in 2024.
+Mutiny uses Clearbit / 6sense reverse-IP data to detect visitor's company, then serves personalized hero/copy/CTA. It is an independent B2B personalization platform.
 
 ### Q8: **B. Routes each visitor to the variant ML thinks they'll convert on**
 Unbounce doesn't personalize copy per visitor, it uses ML to send Visitor A to Variant 2 because users like A historically converted on V2. Different mechanism.

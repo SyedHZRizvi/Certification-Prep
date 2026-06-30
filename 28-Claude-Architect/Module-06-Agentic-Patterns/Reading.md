@@ -195,7 +195,7 @@ Or, in the API, you may pass a budget hint (where the model exposes it):
 
 ```python
 response = client.messages.create(
-    model="claude-sonnet-4-6-20260301",
+    model="claude-sonnet-4-6",
     max_tokens=4096,
     thinking={"type": "enabled", "budget_tokens": 2000},   # if supported in the API version you're using
     messages=[...]
@@ -348,7 +348,7 @@ This is what powers `claude-code` (the Anthropic CLI). It's the closest thing to
 import { Agent } from "@anthropic-ai/claude-agent-sdk";
 
 const agent = new Agent({
-  model: "claude-sonnet-4-6-20260301",
+  model: "claude-sonnet-4-6",
   system: "You are a helpful coding assistant.",
   tools: [readFileTool, editFileTool, bashTool, searchTool],
   mcpServers: [{ command: "npx", args: ["-y", "@modelcontextprotocol/server-github"] }],

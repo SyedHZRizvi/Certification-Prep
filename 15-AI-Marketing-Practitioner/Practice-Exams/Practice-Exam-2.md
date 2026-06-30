@@ -198,7 +198,7 @@ D. Strategy → Generation → Refinement → Distribution
 A. ChatGPT GPT-5
 B. ElevenLabs
 C. Midjourney
-D. Claude Sonnet 4.7
+D. Claude Sonnet 4.6
 
 ### 33. A Brand Voice Project (Claude Projects / Custom GPT) exists to:
 A. Save money
@@ -484,7 +484,7 @@ D. You can't truly learn marketing without running real campaigns with real mone
 
 **Q31. Answer: D.** Why D is correct: AI content pipeline = Strategy → Generation → Refinement → Distribution. Why wrong: A is amateur framing; B is creative production; C is project management. Exam-takeaway: Stage the pipeline, single-shotting fails.
 
-**Q32. Answer: D.** Why D is correct: Claude Sonnet 4.7 leads on long-form brand content with nuance. Why wrong: A is faster but less nuanced; B is voice (not text); C is image. Exam-takeaway: Claude for brand voice; ChatGPT for speed; Gemini for multimodal.
+**Q32. Answer: D.** Why D is correct: Claude Sonnet 4.6 leads on long-form brand content with nuance. Why wrong: A is faster but less nuanced; B is voice (not text); C is image. Exam-takeaway: Claude for brand voice; ChatGPT for speed; Gemini for multimodal.
 
 **Q33. Answer: B.** Why B is correct: Brand Voice Project (Claude Projects / Custom GPT) holds persistent context voice rules + tone examples + ICP for all future use. Why wrong: A is side benefit; C/D are wrong motivations. Exam-takeaway: Save once, reuse forever = brand voice consistency at scale.
 

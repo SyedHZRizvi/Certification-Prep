@@ -39,7 +39,7 @@ B. Nano, Flash Lite, Flash, Pro, Ultra
 C. Bronze, Silver, Gold, Platinum, Diamond
 D. Light, Medium, Heavy, Heavyweight, Frontier
 
-### 4. The MAXIMUM context window on Gemini 2.5 Pro/Ultra is:
+### 4. The MAXIMUM context window on Gemini 2.5 Pro is:
 A. 32K
 B. 200K
 C. 1M

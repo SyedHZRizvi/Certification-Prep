@@ -84,7 +84,7 @@
 
 ```python
 # Anthropic
-client.messages.create(model="claude-sonnet-4-7", max_tokens=1024,
+client.messages.create(model="claude-sonnet-4-6", max_tokens=1024,
     system="...", messages=[{"role":"user","content":"..."}], temperature=0.2)
 
 # OpenAI

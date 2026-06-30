@@ -373,7 +373,7 @@ The player consciously registers "that hit felt great" without being able to ide
 You've completed all 8 modules of the Game & UI Animation track. Next steps:
 
 1. Build your **portfolio**: a locomotion state machine in Unity or Unreal + a Spine 2D character animation + a GSAP ScrollTrigger marketing page + at least one stylized VFX shader
-2. Take the **[Final Mock Exam](../../Practice-Exams/Final-Mock-Exam.md)**, score 80%+ before applying to studios
+2. Take the **[Final Skills-Mastery Check](../../Practice-Exams/Final-Mock-Exam.md)** to self-assess; 80%+ is a good signal you've internalized the material (it's a self-check, not a required exam)
 3. Apply to: game studios (Unity/Spine/VFX roles), UI motion designer roles (GSAP/Framer Motion), or technical artist positions (shaders/VFX)
 
 ---

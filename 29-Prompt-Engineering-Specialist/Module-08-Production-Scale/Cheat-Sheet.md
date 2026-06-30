@@ -32,7 +32,7 @@
 from litellm import completion
 
 response = completion(
-    model="claude-sonnet-4-7",
+    model="claude-sonnet-4-6",
     messages=[...],
     fallbacks=["gpt-5", "gemini-2.5-pro"]
 )
@@ -224,7 +224,7 @@ If you can answer all 5 in under 60 seconds, you own this module. ✅
 from litellm import completion
 
 response = completion(
-    model="anthropic/claude-sonnet-4-7",
+    model="anthropic/claude-sonnet-4-6",
     messages=[...],
     fallbacks=["openai/gpt-5", "vertex_ai/gemini-2.5-pro"],
     max_retries=3,
@@ -235,7 +235,7 @@ response = completion(
 ### Anthropic prompt cache on long prefix
 ```python
 client.messages.create(
-    model="claude-sonnet-4-7",
+    model="claude-sonnet-4-6",
     max_tokens=1024,
     system=[
         {"type": "text", "text": "<long system prompt + tool descriptions + few-shot>",

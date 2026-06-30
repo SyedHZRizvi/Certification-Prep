@@ -366,7 +366,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 6 covers email lifecycle (the natural pair to social distribution); Module 7 covers the paid layer over social (Meta Ads, TikTok Ads, LinkedIn Ads); Module 9 covers the FTC + EU AI Act disclosure rules for influencer/AI content.
-> - Cross-course: `15-AI-Marketing-Strategy` Module 5 covers social-platform portfolio decisions at the executive level (which 2–3 to bet on); `16-AI-Marketing-Automation-Workflows` Module 5 automates the post-and-listen loop.
+> - Cross-course: `15-AI-Marketing-Practitioner` Module 5 covers social-platform portfolio decisions at the executive level (which 2–3 to bet on); `16-AI-Marketing-Strategist` Module 5 automates the post-and-listen loop.
 > - Practice: Practice Exam 1 has 6–8 social-platform algorithm questions plus the Wendy's, Duolingo, and Lil Miquela cases. Final Mock revisits with cross-platform synthesis.
 
 ---

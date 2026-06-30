@@ -114,11 +114,11 @@ By the end of this track, you will be able to:
 
 | Exam | When To Take It | Length | Time | Pass Mark |
 |------|-----------------|--------|------|-----------|
-| [Practice Exam 1](./Practice-Exams/Practice-Exam-1.md) | After finishing Modules 1–5 | 30 Q | 30 min | 23/30 (75%) |
-| [Practice Exam 2](./Practice-Exams/Practice-Exam-2.md) | After finishing Modules 6–10 | 50 Q | 50 min | 38/50 (75%) |
-| [Final Mock Exam](./Practice-Exams/Final-Mock-Exam.md) | Day before your real CBP exam | **75 Q** | **75 min** | **53/75 (~70%)** |
+| [Practice Exam 1](./Practice-Exams/Practice-Exam-1.md) | After finishing Modules 1–5 | 30 Q | 30 min | 24/30 (~80%) |
+| [Practice Exam 2](./Practice-Exams/Practice-Exam-2.md) | After finishing Modules 6–10 | 50 Q | 50 min | 40/50 (~80%) |
+| [Final Mock Exam](./Practice-Exams/Final-Mock-Exam.md) | Day before your real CBP exam | **75 Q** | **75 min** | **56/75 (~75%)** |
 
-The Final Mock matches the **Certified Bitcoin Professional (CBP)** format exactly, 75 questions, 75 minutes, ~70% pass.
+The Final Mock matches the **Certified Bitcoin Professional (CBP)** format exactly, 75 questions, 75 minutes. Its pass bar is set slightly higher than the real exam (~75% vs the CBP's ~70%) so a clear pass here is a comfortable margin on test day.
 
 ---
 
@@ -177,13 +177,13 @@ Weeks 1–2:  Module 1                  → read the white paper twice; watch An
 Week 3:     Module 2                  → re-read until elliptic curves are no longer scary
 Week 4:     Module 3                  → install Bitcoin Core, sync mainnet headers
 Week 5:     Module 4                  → set up a hardware-wallet test seed; do NOT use real funds yet
-Week 6:     Module 5                  → Practice Exam 1 (target 23/30)
+Week 6:     Module 5                  → Practice Exam 1 (target 24/30)
 Week 7:     Module 6
 Week 8:     Module 7                  → spin up Phoenix or Wallet of Satoshi
 Weeks 9-10: Module 8                  → read MiCA + FATF Recommendation 15 in full
-Week 11:    Module 9                  → Practice Exam 2 (target 38/50)
+Week 11:    Module 9                  → Practice Exam 2 (target 40/50)
 Week 12:    Module 10
-Week 13:    Final Mock (target 53/75)
+Week 13:    Final Mock (target 56/75)
 Week 14:    Book the C4 CBP — sit it
 ```
 

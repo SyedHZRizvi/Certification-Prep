@@ -131,7 +131,7 @@ F-Curve **modifiers** apply mathematical operations to a curve without adding in
 
 **Repeat with Offset** is essential for walk cycles: as the walk cycle repeats, the character's location X/Y progresses forward by the stride distance each cycle, rather than teleporting back to the start position.
 
-> 🎯 **What the exam tests:** F-Curve modifiers (especially Cycles) are heavily tested. Know that a Cycles modifier with **Repeat** mode makes the curve loop but the position value resets to the start, causing the character to teleport. **Repeat with Offset** is the fix for locomotion cycles. Know how to add a modifier: Graph Editor → Properties panel (N) → F-Curve Modifiers → Add.
+> 🎯 **What this checks:** F-Curve modifiers (especially Cycles) are easy to get wrong. Know that a Cycles modifier with **Repeat** mode makes the curve loop but the position value resets to the start, causing the character to teleport. **Repeat with Offset** is the fix for locomotion cycles. Know how to add a modifier: Graph Editor → Properties panel (N) → F-Curve Modifiers → Add.
 
 ---
 
@@ -225,7 +225,7 @@ The twelve principles of animation (Disney, 1981) map directly to Blender tools:
 | **Exaggeration** | Pose values pushed beyond realistic range | Scale transforms to 120–150% in Graph Editor |
 | **Solid Drawing** | Mesh topology + rig quality | Good topology (Module 2) prevents deformation artifacts |
 
-> 🎯 **What the exam tests:** The Blender Foundation certification may reference the twelve principles and ask which Blender feature implements them. Most commonly tested: **Slow In/Slow Out** (F-Curve handle type Auto → creates flat handles = natural ease), **Follow Through** (overshoot in Graph Editor past the final value before settling), and **Anticipation** (pre-action keyframe in opposite direction).
+> 🎯 **What this checks:** Be able to connect the twelve principles to the Blender feature that implements each. Most relevant: **Slow In/Slow Out** (F-Curve handle type Auto → creates flat handles = natural ease), **Follow Through** (overshoot in Graph Editor past the final value before settling), and **Anticipation** (pre-action keyframe in opposite direction).
 
 ---
 
@@ -306,11 +306,11 @@ Character animation without camera animation is incomplete. The camera IS the st
 2. Or: Focus Distance: set manually and keyframe from one value to another over 12–24 frames
 3. F-Stop: 1.4–2.8 = cinematic shallow DoF; 11–22 = everything in focus
 
-> 🎯 **What the exam tests:** Camera animation is covered in Blender certification as part of the animation module. Know that: (1) the camera is just another object, all G/R/S transforms work; (2) focal length is in the Object Data properties; (3) depth of field requires Focus Object or Focus Distance to be set; (4) F-Stop controls the blur amount (lower = more blur).
+> 🎯 **What this checks:** Camera animation is part of the animation skill set. Know that: (1) the camera is just another object, all G/R/S transforms work; (2) focal length is in the Object Data properties; (3) depth of field requires Focus Object or Focus Distance to be set; (4) F-Stop controls the blur amount (lower = more blur).
 
 ---
 
-## 7.9 What the Exam Tests: Animation Module
+## 7.9 Competency Checklist: Animation Module
 
 | Topic | Tested Knowledge |
 |---|---|

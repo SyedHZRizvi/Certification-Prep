@@ -23,7 +23,7 @@ The cause turned out to be the **chunking strategy**. Notion's first chunker spl
 
 The fix wasn't a model upgrade. It was *chunking with overlap*, *header-aware splitting*, and a *small reranker* on top of the dense retriever. The embedding model `text-embedding-3-small` never changed.
 
-In a survey of production GenAI postmortems Anthropic published in 2024, retrieval bugs accounted for **64% of "the AI got it wrong" tickets** at customers running RAG in production. Almost none were the LLM's fault. The LLM only knows what you give it. This module is how you give it the right thing.
+Across published production-RAG postmortems, **the dominant cause of "the AI got it wrong" tickets is retrieval, not the model** — the right chunk never made it into the prompt. Comparatively few are the LLM's fault. The LLM only knows what you give it. This module is how you give it the right thing.
 
 ---
 
@@ -316,11 +316,11 @@ You will not get a single "winner." You will get a *decision matrix*, which is w
 
 **The technique.** At index time, for each chunk, ask Claude Haiku to generate a 50–100 token *contextualization*, "this chunk is from the Authentication section of the v3 API docs and describes the response of POST /token." Prepend this to the chunk before embedding. Apply the same contextualization at sparse-retrieval (BM25) time.
 
-**Results, on Anthropic's eval set:**
-- Embedding-only retrieval failure rate: 5.7%
-- Embedding + BM25 hybrid failure rate: 4.1%
-- Embedding + BM25 + **contextual retrieval**: 2.9% failure
-- Embedding + BM25 + contextual retrieval + Cohere reranking: **1.9% failure**, a **67% reduction** vs baseline
+**Results, on Anthropic's eval set (top-20-chunk retrieval failure rate):**
+- Baseline (embedding-only) failure rate: 5.7%
+- **Contextual Embeddings**: 3.7% failure, a **35% reduction** vs baseline
+- Contextual Embeddings + **Contextual BM25**: 2.9% failure, a **49% reduction**
+- Contextual Embeddings + Contextual BM25 + reranking: **1.9% failure**, a **67% reduction** vs baseline
 
 **The cost.** Each chunk needs one Haiku call. With prompt caching (the same parent document is used to contextualize every chunk inside it), the cost is roughly $1 per million chunks contextualized. Negligible compared to inference cost.
 

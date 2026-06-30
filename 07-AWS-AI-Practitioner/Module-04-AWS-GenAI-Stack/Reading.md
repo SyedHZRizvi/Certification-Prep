@@ -7,7 +7,7 @@
 > - [Module 2: ML Workflow on SageMaker](../Module-02-ML-Workflow-SageMaker/Reading.md), the SageMaker vocabulary you'll contrast Bedrock against
 > - Awareness that "managed service" ≠ "running it yourself", that distinction is the spine of this module
 >
-> AWS Cloud Practitioner (CLF-C02) graduates will move fast here. If service-name recall is shaky, keep [`03-AWS-Cloud-Practitioner/Module-05`](../../../03-AWS-Cloud-Practitioner/) open as a glossary while reading.
+> AWS Cloud Practitioner (CLF-C02) graduates will move fast here. If service-name recall is shaky, keep [`03-AWS-Cloud-Practitioner/Module-05`](../../03-AWS-Cloud-Practitioner/) open as a glossary while reading.
 
 ---
 

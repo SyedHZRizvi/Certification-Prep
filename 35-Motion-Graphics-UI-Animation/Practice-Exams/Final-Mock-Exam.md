@@ -8,10 +8,12 @@ title: "Final Mock Exam: Motion Graphics & UI Animation"
 **Covers:** All 10 Modules  
 **Time:** 90 minutes  
 **Questions:** 60  
-**Passing Score:** 85% (51/60), Adobe Certified Professional standard  
+**Passing Score:** 85% (51/60)  
 **Format:** Multiple choice + scenario-based questions
 
 > Score 85%+ before claiming you're "showreel-ready." These questions are written from the same skill rubrics used by Adobe, School of Motion, and studio creative directors.
+>
+> **Note:** This is a deliberately harder, longer Cert Hub Original assessment, not a replica of the real exam. The actual Adobe Certified Professional in Visual Effects and Motion Graphics Using Adobe After Effects exam is shorter (about 50 minutes) and includes live in-application tasks this written mock can't reproduce.
 
 ---
 

@@ -129,12 +129,12 @@ Also bookmark:
 
 | Domain | Weight |
 |--------|--------|
-| Implement & manage user identities | 25–30% |
+| Implement & manage user identities | 20–25% |
 | Implement authentication & access management | 25–30% |
 | Plan & implement workload identities | 20–25% |
-| Plan & implement identity governance | 20–25% |
+| Plan & automate identity governance | 20–25% |
 
-(Microsoft last refreshed the SC-300 objective domains 2024-10; check the live study guide above before exam day, they tweak weights without warning.)
+(Microsoft last refreshed the SC-300 objective domains 2026-04; check the live study guide above before exam day, they tweak weights without warning.)
 
 ---
 

@@ -36,8 +36,9 @@ Merchant
 ## 🛡️ PCI-DSS v4.0 Cheat Sheet
 
 ```
-Effective: March 2022 published
-Mandatory: March 2025
+Published: March 2022
+Replaced v3.2.1: March 2024
+New requirements mandatory: March 2025
 
 Levels (by Visa/MC volume/yr):
 1: > 6M transactions   → QSA on-site audit
@@ -207,8 +208,8 @@ Travel ~0.2%  Apparel ~0.5%  Electronics ~1.5%
 - **2019**, PSD2 SCA effective (EU)
 - **July 2021**, EU IOSS / OSS launched; €22 exemption eliminated
 - **2022**, PCI-DSS v4.0 published; Klarna 85% valuation crash
-- **2024**, UK FCA BNPL regulation announced
-- **March 2025**, PCI-DSS v4.0 mandatory
+- **March 2024**, PCI-DSS v4.0 replaced v3.2.1; UK FCA BNPL regulation announced
+- **March 2025**, PCI-DSS v4.0 new requirements mandatory
 
 ---
 

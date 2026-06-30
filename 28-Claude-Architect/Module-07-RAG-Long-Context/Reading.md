@@ -239,7 +239,7 @@ In early 2025, Anthropic shipped a **Citations API** feature. When you pass docu
 
 ```python
 response = client.messages.create(
-    model="claude-sonnet-4-6-20260301",
+    model="claude-sonnet-4-6",
     max_tokens=1024,
     messages=[{
         "role": "user",
@@ -348,7 +348,7 @@ The cost is real: 1M tokens × $3/Mtok = $3 per call (Sonnet). Caching helps for
 
 ```python
 response = client.messages.create(
-    model="claude-sonnet-4-6-20260301",
+    model="claude-sonnet-4-6",
     max_tokens=4096,
     messages=[{"role":"user", "content": MEGA_PROMPT_AT_900K_TOKENS}],
     extra_headers={"anthropic-beta": "long-context-1M-2025-01-01"}  # header name varies; check current docs

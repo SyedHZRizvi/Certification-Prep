@@ -308,7 +308,7 @@ You will pick an embedding model for your vectors. The major options on Vertex A
 |-------|------------|-----------|-----|
 | **text-embedding-004** | 768 | English | General-purpose text RAG |
 | **text-embedding-005** | 768 | English | Latest, improved |
-| **gemini-embedding-001** | 768 | English + improved | The Gemini-aligned embedding (highest quality) |
+| **gemini-embedding-001** | 3072 (MRL-truncatable to 1536/768) | English + improved | The Gemini-aligned embedding (highest quality) |
 | **multilingual-embedding-002** | 768 | 100+ languages | Multilingual content (Mercado Libre's pick) |
 | **text-multilingual-embedding-002** | 768 | 100+ languages | Multilingual workloads |
 | **multimodalembedding** | 1408 | text + image | CLIP-style, match text against images |

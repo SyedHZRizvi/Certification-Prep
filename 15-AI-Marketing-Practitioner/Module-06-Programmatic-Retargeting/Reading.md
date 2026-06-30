@@ -405,7 +405,7 @@ Each prompt forces a real trade-off, argue from the frameworks in this module.
 
 > **Where this leads.**
 > - Inside this course: Module 7 covers the landing pages that retargeting traffic lands on; Module 9 wires CDP audiences into HubSpot / Klaviyo automations for retargeting + email co-orchestration.
-> - Cross-course: [14-AI-Marketing-Foundations Module 9](../../14-AI-Marketing-Foundations/Module-09-AI-Ethics-Privacy-Compliance/Reading.md) deepens attribution theory; [17-AI-Marketing-Entrepreneur](../../../17-AI-Marketing-Entrepreneur/) covers MMM + incrementality testing.
+> - Cross-course: [14-AI-Marketing-Foundations Module 9](../../14-AI-Marketing-Foundations/Module-09-AI-Ethics-Privacy-Compliance/Reading.md) deepens attribution theory; [17-AI-Marketing-Entrepreneur](../../17-AI-Marketing-Entrepreneur/) covers MMM + incrementality testing.
 > - Practice: Practice Exam 2 has ~12 questions from this module (DSPs, CDP, attribution windows, MFA, frequency caps, retargeting sequencing).
 
 ---

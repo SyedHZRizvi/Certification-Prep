@@ -64,7 +64,7 @@ D. 12
 ### Q10. Same jobs (A=4, B=2, C=6) sequenced by SPT, average flow time = *(Apply)*
 A. 4.0
 B. 5.33
-C. 6.0
+C. 6.67
 D. 12
 
 ### Q11. A dispatch list is: *(Remember)*
@@ -182,14 +182,8 @@ CR < 1 means insufficient time remaining for the work; process first.
 ### Q9: **C. 7.33**
 FCFS sequence A(4), B(2 → ends day 6), C(6 → ends day 12). Flow times: 4, 6, 12 → average = 22/3 = 7.33.
 
-### Q10: **B. 5.33**
-SPT sequence: B(2), A(2+4=6), C(6+6=12). Flow times: 2, 6, 12 → average = 20/3 = 6.67… 
-
-Hmm, let me re-check. Sequence by SPT: B(2), A(4), C(6). B finishes day 2 (flow=2). A finishes day 2+4=6 (flow=6). C finishes day 6+6=12 (flow=12). Average = (2+6+12)/3 = 20/3 ≈ 6.67.
-
-So strictly the correct answer is approximately **6.67**, which is NOT one of the options. The closest given option is C. 6.0. Let me reconsider…
-
-✏️ Correction: The accurate average flow time for SPT (B,A,C) with processing times 2, 4, 6 is (2+6+12)/3 = **6.67 days**. The option closest is **C. 6.0**; consider this a slight rounding option. Best practice answer: **6.67** ≈ **C (6.0)** if rounded down, but mathematically 6.67. (Treat as a known weak distractor.)
+### Q10: **C. 6.67**
+SPT sequence: B(2), A(2+4=6), C(6+6=12). Flow times: 2, 6, 12 → average = (2+6+12)/3 = 20/3 ≈ **6.67 days**. Note SPT lowers the average vs FCFS (6.67 < 7.33) even though the makespan is unchanged.
 
 ### Q11: **B. A prioritized queue of work at each work center for the operator**
 The shop floor's daily marching orders.

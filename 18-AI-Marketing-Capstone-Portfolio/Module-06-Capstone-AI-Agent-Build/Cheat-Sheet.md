@@ -147,7 +147,7 @@ ai-marketing-agent/
 
 ## 💰 Cost Estimating Cheat Sheet
 
-**Claude 3.7 Sonnet:**
+**Claude Sonnet 4.6:**
 - ~$3 / 1M input tokens
 - ~$15 / 1M output tokens
 

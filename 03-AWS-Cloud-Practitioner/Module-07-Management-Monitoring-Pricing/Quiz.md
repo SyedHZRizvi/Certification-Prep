@@ -64,7 +64,7 @@ D. AWS Trusted Advisor
 
 ### Q8. Which is TRUE about the AWS Basic Support plan? *(Understand)*
 A. Provides 24/7 technical support
-B. Is FREE, billing/account only, no tech support, 7 core Trusted Advisor checks
+B. Is FREE, billing/account only, no tech support, a limited set of Trusted Advisor checks
 C. Includes a Technical Account Manager
 D. Costs $29/mo
 
@@ -229,7 +229,7 @@ Data in = free. Out and cross-AZ/Region = paid. The #1 cost surprise.
 ### Q7: **B. AWS Pricing Calculator**
 The free public tool to estimate cost BEFORE building. Cost Explorer is for analyzing existing spend.
 
-### Q8: **B. Is FREE, billing/account only, no tech support, 7 core Trusted Advisor checks**
+### Q8: **B. Is FREE, billing/account only, no tech support, a limited set of Trusted Advisor checks**
 Basic = the free tier of support. No technical help.
 
 ### Q9: **B. AWS Compute Optimizer**

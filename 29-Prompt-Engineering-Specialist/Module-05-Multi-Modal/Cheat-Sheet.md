@@ -88,7 +88,7 @@ my_file = client.files.upload(file="x.jpg")
 ```python
 # Two-step (auditable transcript)
 transcript = whisper.audio.transcriptions.create(model="whisper-1", file=audio)
-analysis = chat.completions.create(model="claude-sonnet-4-7",
+analysis = chat.completions.create(model="claude-sonnet-4-6",
     messages=[{"role":"user","content":f"Analyze: {transcript.text}"}])
 
 # Direct (lower latency, no text artifact)
@@ -199,7 +199,7 @@ with open("damage.jpg", "rb") as f:
     img_b64 = base64.standard_b64encode(f.read()).decode()
 
 report = client.messages.create(
-    model="claude-sonnet-4-7",
+    model="claude-sonnet-4-6",
     max_tokens=1024,
     response_model=DamageReport,
     messages=[{

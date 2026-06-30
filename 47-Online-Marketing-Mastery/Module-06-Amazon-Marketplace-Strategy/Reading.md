@@ -2,7 +2,7 @@
 
 > **Why this module matters:** Amazon accounts for roughly 40% of all US e-commerce and is the #1 product search engine on Earth — more shoppers start a product search on Amazon than on Google. Selling well on Amazon is no longer optional for consumer brands; it is the difference between a business that scales and one that stagnates.
 
-> **Prerequisites:** You should already understand basic e-commerce concepts (SKUs, fulfilment, conversion rates) and have completed Module 05 (Google Shopping). Familiarity with the concept of a "marketplace" vs. a direct-to-consumer store will accelerate your learning here.
+> **Prerequisites:** You should already understand basic e-commerce concepts (SKUs, fulfilment, conversion rates) and have completed Module 05 (Amazon Sponsored Advertising). Familiarity with the concept of a "marketplace" vs. a direct-to-consumer store will accelerate your learning here.
 
 ---
 

@@ -5,9 +5,9 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md), covered earlier in this course
 > - Lead-scoring & marketing-ops basics (what an MQL/SQL is, what enrichment does), covered in [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Social-Media-AI-Tools/Reading.md)
-> - Make.com / n8n / Zapier mental model (triggers → modules → outputs), covered in [17-AI-Marketing-Analytics-Automation Modules 5–8](../../17-AI-Marketing-Entrepreneur/README.md)
+> - Make.com / n8n / Zapier mental model (triggers → modules → outputs), covered in [15-AI-Marketing-Practitioner Module 9](../../15-AI-Marketing-Practitioner/Module-09-Marketing-Automation-AI/Reading.md)
 > - Webhooks and API basics (what a POST request is, what JSON looks like)
-> If any of these are shaky, pause and complete 17-AI-Marketing-Analytics-Automation Module 5 first, it's the direct prerequisite.
+> If any of these are shaky, pause and complete 15-AI-Marketing-Practitioner Module 9 (Marketing Automation with AI) first, it's the direct prerequisite.
 
 ---
 
@@ -553,5 +553,5 @@ These prompts test whether you understand *why* the reference scenario looks the
 
 > **Where this leads.**
 > - Inside this course: Module 6 (AI Agent) reuses the same architectural-diagram and Loom-walkthrough mental model. Module 7 features the architecture diagram as a recommended portfolio hero image.
-> - Cross-course: [17-AI-Marketing-Analytics-Automation Module 6](../../17-AI-Marketing-Entrepreneur/README.md) deep-dives n8n. Module 8 of 17 covers the full AI-marketing-ops workflow this capstone is an output of.
+> - Cross-course: [15-AI-Marketing-Practitioner Module 9](../../15-AI-Marketing-Practitioner/Module-09-Marketing-Automation-AI/Reading.md) deep-dives marketing automation with AI. [17-AI-Marketing-Entrepreneur Module 8](../../17-AI-Marketing-Entrepreneur/README.md) covers the full AI-marketing-ops workflow this capstone is an output of.
 > - Practice: Practice Exam 1 has 3 questions on this capstone (Q11–Q13, Q32). The Final Mock's Q19 ("Tell me about your automation workflow") is graded against the Loom + JSON quality.

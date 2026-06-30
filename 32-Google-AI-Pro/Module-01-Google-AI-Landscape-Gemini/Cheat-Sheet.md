@@ -39,8 +39,7 @@ PaLM (2022) → PaLM 2 (2023) → Bard (2023)
 Gemini 1.0 (Dec 2023: Nano/Pro/Ultra)
 Gemini 1.5 Pro (Feb 2024: 1M → 2M tokens)
 Gemini 2.0 Flash (Dec 2024: native multi-modal output)
-Gemini 2.5 Pro (Mar 2025: thinking mode)
-Gemini 2.5 Ultra (Oct 2025: top tier)
+Gemini 2.5 Pro (Mar 2025: thinking mode = current top tier)
 ```
 
 🚨 *The Transformer was invented at Google Brain in 2017, predates GPT-1 by months.*
@@ -54,8 +53,9 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 | **Nano** | $0 (on-device) | $0 | depends on device | ~32K | On-device, privacy-first |
 | **2.5 Flash Lite** | $0.04 | $0.15 | ~200ms | 1M | Edge / ultra-cheap batch |
 | **2.5 Flash** | $0.075 | $0.30 | ~400ms | 1M (2M β) | High-throughput default |
-| **2.5 Pro** | $1.25 | $10 | ~1.0s | **2M** | **Default workhorse** |
-| **2.5 Ultra** | $5 | $30 | ~3.0s | 2M | Frontier / hardest |
+| **2.5 Pro** | $1.25 | $10 | ~1.0s | **2M** | **Default workhorse**; frontier reasoning via thinking mode |
+
+> **Ultra:** the **Ultra** tier name is from the **Gemini 1.0 era** — there is no "2.5 Ultra" SKU. On the 2.x line, the hardest reasoning runs on **Pro with thinking mode.**
 
 **Context caching:** ~**75%** off cached input tokens for prefixes reused across requests.
 
@@ -69,10 +69,10 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 | Classification / extraction / routing | Flash or Flash Lite |
 | High-volume background job | Flash |
 | General chat / RAG / 1–3 tool agent | **Pro (default)** |
-| Hard reasoning / multi-file refactor / math | Pro w/ thinking mode, or Ultra |
+| Hard reasoning / multi-file refactor / math | Pro w/ thinking mode |
 | Latency-sensitive UI (<300ms) | Flash Lite |
-| Healthcare / regulated decisions | Ultra + grounding + human review |
-| Multi-modal (image + audio + video in one call) | Pro or Ultra |
+| Healthcare / regulated decisions | Pro w/ thinking mode + grounding + human review |
+| Multi-modal (image + audio + video in one call) | Pro |
 
 ---
 
@@ -128,9 +128,8 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 | Flash Lite | ~$0.0003 | ~$0.0002 |
 | **Flash** | **~$0.0005** | **~$0.0004** |
 | Pro | ~$0.011 | ~$0.008 |
-| Ultra | ~$0.041 | ~$0.030 |
 
-**Mental shortcut:** Flash ≈ 1/20 of Pro. Pro ≈ 1/4 of Ultra. Cache saves ~25–35% in practice.
+**Mental shortcut:** Flash ≈ 1/20 of Pro. Cache saves ~25–35% in practice.
 
 ---
 
@@ -155,8 +154,7 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 | Dec 2024 | Gemini 2.0 Flash (native multi-modal output) |
 | **Mar 2025** | **Gemini 2.5 Pro** (thinking mode) |
 | Jun 2025 | Vertex AI Agent Builder GA |
-| Oct 2025 | Gemini 2.5 Ultra |
-| 2026 | Gemini 2.5 family current, Cloud AI revenue $15B+ |
+| 2026 | Gemini 2.5 family current (Flash-Lite/Flash/Pro), Cloud AI revenue $15B+ |
 
 ---
 
@@ -165,7 +163,7 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 ✅ Often **right**:
 
 - "Gemini is natively multi-modal, trained on text + image + audio + video jointly"
-- "Pro is the default workhorse; Flash for volume, Ultra for hardest"
+- "Pro is the default workhorse; Flash for volume; hardest reasoning = Pro w/ thinking mode"
 - "Vertex AI with VPC-SC + CMEK + signed BAA for regulated workloads"
 - "Context caching cuts cached-input cost by ~75%"
 - "AI Studio for prototyping; Vertex AI for production"
@@ -180,7 +178,7 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 - "Google AI Search and Vertex AI Vector Search are interchangeable" (different products)
 - "Gemini weights are open-source" (closed, Gemma is the open-weight sibling)
 - "Constitutional AI is a Google technique" (Anthropic's)
-- "All Gemini tiers have 2M context" (only Pro/Ultra; Flash is 1M)
+- "All Gemini tiers have 2M context" (only Pro; Flash is 1M)
 - "The Transformer was invented by OpenAI" (Google Brain, 2017)
 
 ---
@@ -189,8 +187,8 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 
 - Transformer = **Vaswani et al. 2017**, Google Brain
 - Brain + DeepMind merger = **April 2023** → Google DeepMind, Demis Hassabis CEO
-- Gemini tiers = **Nano / Flash Lite / Flash / Pro / Ultra**
-- Pro/Ultra context = **2M tokens**; Flash = 1M
+- Gemini tiers = **Nano / Flash Lite / Flash / Pro / Ultra** (Ultra is a 1.0-era tier; 2.x = Flash-Lite/Flash/Pro)
+- Pro context = **2M tokens**; Flash = 1M
 - Context caching = **~75%** off cached input
 - Google AI Principles = **2018**, 7 principles + 4 red lines
 - Two platforms = **Google AI Studio (consumer)** vs **Vertex AI (enterprise)**

@@ -212,7 +212,7 @@ D. 25%
 South Dakota v. Wayfair (2018) overturned Quill (1992). 45 states adopted economic nexus by 2024.
 
 ### Q2: **B. March 2025**
-PCI-DSS v4.0 was published March 2022; mandatory compliance became March 2025.
+PCI-DSS v4.0 was published March 2022 and replaced v3.2.1 on March 31, 2024; its future-dated new requirements (the bulk of what changed) then became mandatory on March 31, 2025.
 
 ### Q3: **B. Merchants where the platform handles all cardholder data**
 SAQ A = lowest burden, applies when card data never touches merchant systems. Shopify, Stripe Checkout merchants qualify.

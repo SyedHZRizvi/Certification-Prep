@@ -568,8 +568,8 @@
 **Q:** Name the 5 categories that AWS Trusted Advisor checks.
 **A:** Cost Optimization, Performance, Security, Fault Tolerance, Service Limits.
 
-**Q:** How many Trusted Advisor checks are available on Basic / Developer Support?
-**A:** 7 core checks. Business and Enterprise unlock ALL checks.
+**Q:** Which Trusted Advisor checks are available on Basic / Developer Support?
+**A:** A limited set — all Service Limits checks plus select Security and Fault Tolerance checks. Business and Enterprise unlock ALL checks.
 
 **Q:** What is AWS Compute Optimizer?
 **A:** ML-based right-sizing recommendations for EC2, EBS, Lambda, and Auto Scaling Groups.

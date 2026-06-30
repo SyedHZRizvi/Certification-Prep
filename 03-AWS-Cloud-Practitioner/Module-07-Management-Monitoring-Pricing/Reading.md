@@ -114,7 +114,7 @@ SSM is a Swiss Army knife of operations tools:
 | **Fault tolerance** | EBS snapshots, Multi-AZ usage |
 | **Service limits** | Approaching account limits |
 
-**Free tier checks:** 7 core checks (basics, MFA on root, service limits, etc.).
+**Free tier checks (Basic / Developer Support):** a limited set — all Service Limits checks plus select Security and Fault Tolerance checks (e.g. MFA on root, S3 bucket permissions).
 **Business / Enterprise Support:** ALL Trusted Advisor checks unlocked.
 
 🎯 **Exam pattern:** "Identify idle EC2 instances to cut costs" → **Trusted Advisor** (or Compute Optimizer).
@@ -202,7 +202,7 @@ There are **4 paid support tiers** (plus "Basic" which is free):
 
 | Plan | Cost | Response time (production down) | Key features |
 |------|------|--------------------------------|-------------|
-| **Basic** | FREE | N/A | Account/billing only, no tech support, 7 core Trusted Advisor checks |
+| **Basic** | FREE | N/A | Account/billing only, no tech support, a limited set of Trusted Advisor checks |
 | **Developer** | from $29/mo | Business-hours email | One contact, general guidance, business-hours |
 | **Business** | from $100/mo (3% of usage) | **< 1 hour** | 24/7, multiple contacts, ALL Trusted Advisor checks, AWS Support API |
 | **Enterprise On-Ramp** | from $5,500/mo (10% of usage) | **< 30 min for business-critical** | Pool of Technical Account Managers (TAMs), Concierge for billing |
@@ -248,7 +248,7 @@ There are **4 paid support tiers** (plus "Basic" which is free):
 
 ## 🚨 Exam Traps
 
-1. **Trusted Advisor's full check set requires Business Support or higher.** Free tier = 7 core checks only.
+1. **Trusted Advisor's full check set requires Business Support or higher.** Free tier (Basic / Developer) = a limited set only (all Service Limits checks + select Security and Fault Tolerance checks).
 2. **Compute Optimizer ≠ Trusted Advisor.** Optimizer = ML right-sizing for EC2/EBS/Lambda; Trusted Advisor = best-practice scoring.
 3. **Cost Explorer is free.** Budgets is free for the first 2 budgets.
 4. **Data transfer IN is free, OUT costs $.** This is the most common surprise on bills.
@@ -267,7 +267,7 @@ There are **4 paid support tiers** (plus "Basic" which is free):
 |---------------|---------|
 | "CloudWatch and CloudTrail are the same" | Watch = metrics/logs; Trail = API audit |
 | "Budgets prevent spend" | They ALERT, they don't stop spending (use SCPs / automation to actually stop) |
-| "All Trusted Advisor checks are free" | Only 7 core checks are free; full set needs Business+ |
+| "All Trusted Advisor checks are free" | Free tier is a limited set (Service Limits + select Security and Fault Tolerance); full set needs Business+ |
 | "Enterprise Support is the cheapest paid tier" | No, Developer is cheapest at $29/mo |
 | "TAMs come with Business" | TAMs start at Enterprise On-Ramp |
 | "Data transfer IN to AWS costs money" | It's free in (mostly); OUT is what's expensive |

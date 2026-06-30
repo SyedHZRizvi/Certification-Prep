@@ -355,7 +355,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 10 covers the CDP + consent-stack tooling that makes compliance operational; the Capstone integrates ethics + first-party-data strategy into the final deliverable.
-> - Cross-course: `15-AI-Marketing-Strategy` Module 9 covers compliance governance (DPO, DPIA process, board-level reporting); `17-AI-Marketing-Analytics-Personalization` Module 8 covers the technical CDP + consent-aware tracking stack.
+> - Cross-course: `15-AI-Marketing-Practitioner` Module 9 covers compliance governance (DPO, DPIA process, board-level reporting); `17-AI-Marketing-Entrepreneur` Module 8 covers the technical CDP + consent-aware tracking stack.
 > - Practice: Practice Exam 2 has 10–12 compliance questions (GDPR cap, EU AI Act tiers, CCPA/CPRA thresholds, COPPA, FTC). Final Mock revisits Gender Shades, Amazon hiring, and Apple Card cases.
 
 ---

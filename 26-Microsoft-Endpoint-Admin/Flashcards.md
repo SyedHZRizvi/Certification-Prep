@@ -456,7 +456,7 @@
 **A:** An Intune feature surfacing device performance scores: Startup performance, Application reliability, Work-from-anywhere, Resource performance, and Battery health.
 
 **Q:** What are proactive remediations?
-**A:** Pairs of PowerShell scripts a detection script and a remediation script that automatically detect and fix problems across your fleet. Requires Intune Plan 2.
+**A:** Pairs of PowerShell scripts a detection script and a remediation script that automatically detect and fix problems across your fleet. Gated by a Windows Enterprise/Education/VDA subscription (e.g. via M365 E3) + Intune, not by an Intune Plan 2 / Suite add-on (that gates Advanced Endpoint Analytics).
 
 **Q:** Where do you go in the Intune portal to see why a device failed enrollment?
 **A:** Devices → Monitor → Enrollment failures, or Troubleshooting + support → Troubleshoot blade for a per-user view.

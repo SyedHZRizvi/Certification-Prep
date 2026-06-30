@@ -187,7 +187,7 @@ from litellm import completion
 
 # Identical interface across providers
 response = completion(
-    model="claude-sonnet-4-7",  # or "gpt-5", "gemini-2.5-pro", "groq/llama-3.3-70b-versatile"
+    model="claude-sonnet-4-6",  # or "gpt-5", "gemini-2.5-pro", "groq/llama-3.3-70b-versatile"
     messages=[{"role": "user", "content": "Hello"}],
     temperature=0.2,
 )
@@ -195,7 +195,7 @@ response = completion(
 
 LiteLLM features that matter in production:
 
-- **Fallbacks**, `fallbacks=["gpt-5", "claude-sonnet-4-7", "gemini-2.5-pro"]`
+- **Fallbacks**, `fallbacks=["gpt-5", "claude-sonnet-4-6", "gemini-2.5-pro"]`
 - **Router**, load-balance across keys/regions
 - **Cost tracking**, built-in cost logging
 - **Rate-limit handling**, automatic retries with backoff

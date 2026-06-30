@@ -213,7 +213,7 @@ The downstream impact:
 - E-commerce CAC rose 18-25% industry-wide between 2020 and 2023.
 - ROAS measurements became fundamentally less reliable; many brands shifted to MMM (Marketing Mix Modeling) and incrementality testing.
 
-**Lesson for the exam / for practitioners.** Platform-policy changes can vaporize attribution overnight. The defense: server-side measurement (CAPI on Meta, Conversions API on Google, GA4 Measurement Protocol), proper domain verification, and 8-event AEM ranking. Brands that didn't implement these in 2021 ran 12-24 months with broken Meta attribution. The exam tests this aggressively, questions on iOS 14.5, ATT, CAPI, AEM, and the recovery playbook are 4-6 questions on most certifications.
+**Lesson for the exam / for practitioners.** Platform-policy changes can vaporize attribution overnight. The defense: server-side measurement (CAPI on Meta, Conversions API on Google, GA4 Measurement Protocol), proper domain verification, and 8-event AEM ranking. Brands that didn't implement these in 2021 ran 12-24 months with broken Meta attribution. Certification exams test this aggressively, questions on iOS 14.5, ATT, CAPI, AEM, and the recovery playbook recur across most commerce and paid-media certifications.
 
 **Discussion (Socratic).**
 - Q1: Apple's framing was "user privacy." Meta's framing was "harm to small businesses." Both contain truth. What's the principle that a regulator should use to balance them?

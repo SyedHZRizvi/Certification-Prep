@@ -382,7 +382,7 @@ The exam tests this through alert/policy/workbook configuration questions. Real 
 
 > **Where this leads.**
 > - Inside this course: this is the closing module. Apply everything in the [Capstone Project](../Capstone-Project.md).
-> - Cross-course: [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Modules 5 and 6 cover the broader incident-response and security-operations discipline; AZ-500 (Security Engineer) deepens Sentinel and Defender for Cloud; [`08-Azure-AI-Engineer`](../../../08-Azure-AI-Engineer/) ML modules use the same Log Analytics + Application Insights pattern for model-monitoring.
+> - Cross-course: [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/) Modules 5 and 6 cover the broader incident-response and security-operations discipline; AZ-500 (Security Engineer) deepens Sentinel and Defender for Cloud; [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/) ML modules use the same Log Analytics + Application Insights pattern for model-monitoring.
 > - Practice: PE-2 has 7 questions on monitoring/governance; Final Mock revisits with cross-domain scenarios (Activity Log + Defender + Action Groups in one case study).
 
 ---

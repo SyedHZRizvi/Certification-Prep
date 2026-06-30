@@ -236,11 +236,12 @@ LLMs are trained to continue text. If you give Claude `{ "name":` as the start o
 - It does **not** work via the Anthropic Workbench chat UI by default, you must use the API or the "raw" mode.
 - Whatever you prefill **counts as output tokens** and is billed accordingly.
 - Be careful with whitespace, `{\n` and `{ ` and `{` behave subtly differently.
+- ⚠️ **Model-version note:** a last-assistant-turn prefill is **rejected with HTTP 400 on current Claude 4.6+ models** (Sonnet 4.6, Opus 4.6/4.7/4.8). For those models, force structured output via **structured outputs** (`output_config.format` with a JSON schema, or `messages.parse()`) or a **forced tool call** (`tool_choice={"type":"tool",...}`, see Module 4) instead. Prefill remains valid on older models and is still the right mental model for *why* output-format steering works.
 
 ```python
 # Python SDK example of prefill
 response = client.messages.create(
-    model="claude-sonnet-4-6-20260301",
+    model="claude-sonnet-4-6",
     max_tokens=1024,
     system="Return only JSON conforming to the schema.",
     messages=[
@@ -278,7 +279,7 @@ response = client.messages.create(
 
 ```python
 response = client.messages.create(
-    model="claude-sonnet-4-6-20260301",
+    model="claude-sonnet-4-6",
     max_tokens=2048,
     messages=[{"role": "user", "content": "Write a Python factorial function:\n```python\n"}],
     stop_sequences=["```"]

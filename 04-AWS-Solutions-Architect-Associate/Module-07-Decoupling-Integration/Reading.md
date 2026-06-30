@@ -306,30 +306,30 @@ You now know:
 
 ---
 
-## 📖 Case Study, Slack's $1.2M Cross-AZ Bandwidth Bill (2019)
+## 📖 Worked Example, The Cross-AZ Bandwidth "Tax" on a Decoupled Architecture
 
-**Situation.** In May 2019 Slack then ~10M daily active users on a heavily AWS-hosted stack published a now-famous engineering retrospective on their blog (`slack.engineering`, post by Joshua Wills and team) titled *"Reducing Slack's Memory Footprint."* Buried in the post was an admission that during a 2018 architecture refactor, Slack had introduced a pattern where two microservices in *different AZs* exchanged messages over an internal SNS topic + SQS queue. Traffic worked perfectly. Latency was fine. Then the AWS bill arrived.
+**Situation.** Consider a high-volume messaging app on a heavily AWS-hosted stack. During an architecture refactor, the team introduces a pattern where two microservices in *different AZs* exchange messages over an internal SNS topic + SQS queue. Traffic works perfectly. Latency is fine. Then the AWS bill arrives. (The figures below are an illustrative worked example, not a specific company's reported numbers.)
 
-**Decision.** The pattern looked like this:
+**Decision.** The pattern looks like this:
 
-- Service A in `us-east-1a` published every user message event to an SNS topic (`message-events`)
-- Service B in `us-east-1b` had an SQS subscription, polled it, and processed each message
-- The SQS messages averaged ~3 KB; volume averaged ~100K msgs/sec sustained
+- Service A in `us-east-1a` publishes every user message event to an SNS topic (`message-events`)
+- Service B in `us-east-1b` has an SQS subscription, polls it, and processes each message
+- The SQS messages average ~3 KB; volume averages ~100K msgs/sec sustained
 - All "inter-AZ" data transfer is charged at **$0.01/GB each way** (so $0.02/GB round-trip)
 - 100K msgs/sec × 3 KB × 2 directions (poll request + response) × 30 days ≈ ~15 TB/month of cross-AZ traffic … at $0.02/GB
 
-The monthly bill for **just that one queue's data transfer** was approximately **$1.2M/year** (roughly $100K/month). Compute and storage costs combined were a fraction of that. The team had unknowingly created a "cross-AZ tax" by deploying producers and consumers in different AZs without considering data-transfer pricing.
+The monthly bill for **just that one queue's data transfer** comes to roughly **$100K/month (~$1.2M/year)** in this scenario. Compute and storage costs combined are a fraction of that. The team has unknowingly created a "cross-AZ tax" by deploying producers and consumers in different AZs without considering data-transfer pricing.
 
-**Outcome.** Slack restructured the topology:
+**Outcome.** The fix is to restructure the topology:
 
 1. **Co-located producers and consumers in the same AZ** where possible, using ASG instance distribution preferences
 2. **Switched the heavy-volume queue from SQS to in-process message passing** (where the same EC2 host had both producer and consumer)
 3. **Added VPC endpoints (PrivateLink)** for SNS and SQS, eliminated NAT data-processing charges on traffic that wasn't actually leaving the VPC
 4. **Aggregated small messages**, batched 100 events into a single SQS message where business logic allowed; this reduced API call cost (SQS is also priced per API call)
 
-Estimated annual savings: ~$1.1M, with no functional change to the application.
+Estimated annual savings in this scenario: roughly the bulk of that ~$1.2M, with no functional change to the application.
 
-**Lesson for the exam / for practitioners.** Slack's lesson is the SAA's hidden curriculum: **decoupling has data-transfer cost**. Exam questions that emphasize "lowest cost" with "decoupled architecture" want you to think about:
+**Lesson for the exam / for practitioners.** The lesson is the SAA's hidden curriculum: **decoupling has data-transfer cost**. Exam questions that emphasize "lowest cost" with "decoupled architecture" want you to think about:
 
 - **VPC endpoints (PrivateLink) for SNS / SQS / EventBridge**, eliminates the NAT data-processing cost (~$0.045/GB) for in-VPC traffic
 - **Same-AZ producer/consumer placement** when the queue's volume is high
@@ -337,10 +337,10 @@ Estimated annual savings: ~$1.1M, with no functional change to the application.
 - **Long polling (1–20s)** to reduce empty-receive API call cost
 - **SNS message filtering at the topic level**, don't fan-out to consumers that don't want a message in the first place; you pay per delivery
 
-When the SAA exam asks "a company is paying too much for SQS data transfer; what's the BEST fix?", the answer is **VPC endpoints (PrivateLink) for SQS + batched receives + colocate consumers in the same AZ as producers**. That's Slack's exact remediation.
+When the SAA exam asks "a company is paying too much for SQS data transfer; what's the BEST fix?", the answer is **VPC endpoints (PrivateLink) for SQS + batched receives + colocate consumers in the same AZ as producers**. That's exactly the remediation in this scenario.
 
 **Discussion (Socratic).**
-- **Q1.** Slack's fix was partly "move queues closer to producers." But this couples the architecture to AZ topology. What's the design trade-off between cost (co-location) and resilience (cross-AZ for fault tolerance)?
+- **Q1.** This fix is partly "move queues closer to producers." But that couples the architecture to AZ topology. What's the design trade-off between cost (co-location) and resilience (cross-AZ for fault tolerance)?
 - **Q2.** An alternative to SQS was *in-process message passing* on the same host. This loses durability. When is in-process the right call, and when is the durability cost of SQS worth $100K/month?
 - **Q3.** EventBridge costs $1 per million events (much pricier per event than SNS at ~$0.50/million). Yet EventBridge wins for filtering and SaaS integrations. Where's the cost/feature break-even between SNS and EventBridge for an event-driven microservices org?
 

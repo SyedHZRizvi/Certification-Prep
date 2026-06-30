@@ -35,7 +35,7 @@ Local fulfillment = inventory pre-positioned → becomes domestic e-com
 | Regulation | Effective | Scope | Penalty |
 |-----------|-----------|-------|---------|
 | GDPR (Reg. 2016/679) | May 25, 2018 | EU data subjects | 4% global rev / €20M |
-| DSA (Reg. 2022/2065) | Feb 17, 2024 (VLOPs) | Marketplaces + VLOPs | 6% global rev |
+| DSA (Reg. 2022/2065) | Feb 17, 2024 (all platforms; VLOPs from Aug 2023) | Marketplaces + VLOPs | 6% global rev |
 | DMA (Reg. 2022/1925) | March 7, 2024 | Gatekeepers | 10% global rev |
 | IOSS (2021 VAT reform) | July 1, 2021 | Non-EU ≤€150 | VAT non-compliance |
 | France fast-fashion | 2024 | Ultra-fast-fashion | €5-10/item by 2030 |

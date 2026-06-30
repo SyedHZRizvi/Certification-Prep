@@ -37,7 +37,7 @@ Server+ pairs naturally with **Linux+ (course 23)**, **Network+ (course 22)**, a
 - **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
 - **Story-driven lessons (not flashcard punishment)**, every concept introduced through a real data-center scenario (a failed RAID rebuild, a SAN multi-path outage, a hypervisor host failure during patching)
 - **Original questions only**, every quiz and practice exam written from CompTIA's published SK0-005 exam objectives; no copyrighted dumps
-- **Real-world case studies**, Knight Capital's 2012 server-deploy disaster, the AWS S3 2017 typo outage, a real hospital's disaster-recovery failover drill, Fukushima Daiichi's data-center power lessons
+- **Real-world case studies**, the Northeast Blackout of 2003 (data-center power), NotPetya / Maersk's 2017 patch-discipline disaster, the 2012 AWS US-East-1 EBS outage, Target's 2013 HVAC breach, and Code Spaces (2014), the day backups lived in the same account as production
 - **One author, one voice**, coherent vocabulary across all 8 modules
 - **Updated for the SK0-005 blueprint**, including current iDRAC / iLO / BMC out-of-band management, NVMe-oF, modern hypervisor licensing realities (post-Broadcom VMware), and current backup-architecture norms (3-2-1-1-0)
 

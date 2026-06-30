@@ -130,7 +130,7 @@ The Outliner is Blender's scene hierarchy manager, equivalent to a layer panel i
 
 **Industry practice from *Sprite Fright*:** The Blender Institute structured the open movie with one Blender file per shot, with linked character assets. The Outliner in each shot file showed only the shot-local objects; characters were instance-linked from library files. This is the standard for any production with more than one character.
 
-### The Properties Panel (Right Side, P Key)
+### The Properties Editor (Right Side)
 
 The Properties panel has icons for 16 categories, arranged top to bottom:
 
@@ -154,7 +154,7 @@ The Properties panel has icons for 16 categories, arranged top to bottom:
 
 ## 1.6 Blender's Coordinate System
 
-Blender uses a **right-handed Z-up coordinate system**, the same convention as architectural visualization but opposite to game engines like Unity (Y-up) or Unreal (Z-up with Y-forward).
+Blender uses a **right-handed Z-up coordinate system**, the same convention as architectural visualization. This differs from game engines: Unity is left-handed and Y-up, while Unreal is left-handed and Z-up with X-forward. The handedness mismatch is why exporters apply an axis conversion on FBX/glTF export.
 
 | Axis | Direction | Color |
 |---|---|---|
@@ -202,7 +202,7 @@ for obj in bpy.context.selected_objects:
     obj.name = prefix + obj.name
 ```
 
-> 🎯 **What the exam tests:** The Blender Foundation's certification includes Python API basics, specifically knowing that `bpy.context.active_object` returns the currently selected object and `bpy.ops.object.delete()` deletes selected objects. Know the three main namespaces: `bpy.data`, `bpy.ops`, `bpy.context`.
+> 🎯 **What this checks:** Python API basics are a core competency, specifically knowing that `bpy.context.active_object` returns the currently selected object and `bpy.ops.object.delete()` deletes selected objects. Know the three main namespaces: `bpy.data`, `bpy.ops`, `bpy.context`.
 
 ---
 
@@ -302,7 +302,7 @@ The shift from proprietary DCC (Digital Content Creation) tools to Blender has a
 | Blender Institute, *Coffee Run* | Full production (2 min, 2 artists) | 2020 |
 | Ian Hubert, *Dynamo Dream* | Solo photorealistic VFX series | 2017–ongoing |
 | Netflix, BlenderKit integration | Netflix funded BlenderKit library for open use | 2022 |
-| Sony Pictures Animation | Blender for pre-visualization and previz on *Hotel Transylvania* franchise | 2018+ |
+| Sony Pictures Imageworks | Adopted Blender for select tooling (e.g. Grease Pencil inkline work shown for *Spider-Verse*) | 2018+ |
 | Ubisoft | Blender add-on development for game asset pipelines | 2020+ |
 | NVIDIA | Official Blender RTX rendering optimizations | 2020+ |
 
@@ -310,7 +310,7 @@ The shift from proprietary DCC (Digital Content Creation) tools to Blender has a
 
 **Ian Hubert's *Dynamo Dream*:** Hubert's ongoing solo VFX series demonstrates what one person can achieve with Blender, photorealistic city environments, composited live-action actors, and feature-film-quality renders at a fraction of traditional studio costs. His "Lazy Tutorials" approach (10-minute videos that show professional shortcuts) has influenced how an entire generation of Blender artists thinks about efficiency.
 
-> 🎯 **What the exam tests:** Blender certification content from the Blender Foundation emphasizes knowing that Blender is used in professional productions, not just for learning. Exam questions may ask which Blender Foundation open movies demonstrate specific techniques (Sprite Fright = character animation + lighting; Charge = environment + single-shot polish; Coffee Run = stylized character + simple pipeline).
+> 🎯 **What this checks:** Industry-context fluency means knowing that Blender is used in professional productions, not just for learning. Be able to say which Blender Foundation open movies demonstrate specific techniques (Sprite Fright = character animation + lighting; Charge = environment + single-shot polish; Coffee Run = stylized character + simple pipeline).
 
 ---
 
@@ -334,9 +334,9 @@ Blender 4.x ships **Geometry Nodes** as a first-class tool, accessible via the G
 
 ---
 
-## 1.10 What the Exam Tests: Interface Module
+## 1.10 Competency Checklist: Interface Module
 
-The Blender Foundation's certification assessment for interface fundamentals covers:
+A studio-ready animator should have command of the following interface fundamentals:
 
 | Topic | Tested Knowledge |
 |---|---|

@@ -305,7 +305,7 @@ You now know:
 - **Predictable scale**, Twitter's traffic peaks (US Sports finals, election nights) are predictable; elasticity premium wasn't worth $200M/year
 - **Engineering capacity**, Twitter had the SRE depth to run a data center; many companies don't, which changes the math
 
-**Outcome.** Twitter/X's repatriation became the high-water mark for the **"come down from the cloud"** movement that emerged in 2022–2024. David Heinemeier Hansson's *37signals* blog post *"Why we're leaving the cloud"* (October 2022, `world.hey.com/dhh`) had set the tone; Twitter validated it at extreme scale. The HBR article *"How Companies Are Trying to Bring the Cloud Down to Earth"* (HBR, 2024) cited Twitter, 37signals, and Dropbox (which had famously partially repatriated in 2017) as the trio defining the pattern.
+**Outcome.** Twitter/X's repatriation became the high-water mark for the **"come down from the cloud"** movement that emerged in 2022–2024. David Heinemeier Hansson's *37signals* blog post *"Why we're leaving the cloud"* (October 2022, `world.hey.com/dhh`) had set the tone; Twitter validated it at extreme scale. The HBR article *"How Companies Are Trying to Bring the Cloud Down to Earth"* (HBR, 2024) cited Twitter, 37signals, and Dropbox (which had famously partially repatriated in 2016) as the trio defining the pattern.
 
 **Lesson for the exam / for practitioners.** The SAA exam does **not** test you on when *NOT* to use AWS, but the FinOps / cost-optimization frame matters for every "most cost-effective" question. The Twitter case sharpens the framing:
 

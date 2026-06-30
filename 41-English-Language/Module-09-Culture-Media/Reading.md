@@ -21,7 +21,7 @@ Language is culture. This module equips you to understand the cultural subtext b
 
 ---
 
-## 1. The 100 Most Common English Idioms (with Urdu Equivalents)
+## 1. 60 of the Most Common English Idioms (with Urdu Equivalents)
 
 ### Category: Effort and Work
 
@@ -329,7 +329,7 @@ Song lyrics are an excellent way to absorb natural English. Here are proven stra
 
 ---
 
-## ۱. ۱۰۰ عام انگریزی محاورے (اردو کے مساوی کے ساتھ)
+## ۱. ۶۰ عام انگریزی محاورے (اردو کے مساوی کے ساتھ)
 
 ### محنت اور کام
 

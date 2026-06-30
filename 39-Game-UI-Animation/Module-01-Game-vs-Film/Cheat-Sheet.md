@@ -87,7 +87,7 @@ title: "Module 1 Cheat Sheet: Game vs. Film Animation"
 | Root Motion | Position/rotation driven by the animation clip's root bone |
 | AnyState | Unity node that allows transitions from any active state |
 | Animation Event | Callback fired at a specific frame within a clip |
-| Motion Matching | Database-driven pose selection by velocity (DOOM Eternal, FIFA) |
+| Motion Matching | Database-driven pose selection by velocity (For Honor, EA SPORTS FIFA, Assassin's Creed) |
 | Hit Stop | Deliberate brief freeze of attacker + defender on impact |
 | Game Feel | Tactile, kinesthetic sensation of controlling a virtual object |
 | LOD | Level of Detail, simplified assets at distance |
@@ -100,7 +100,7 @@ title: "Module 1 Cheat Sheet: Game vs. Film Animation"
 | Game | Studio | Key Philosophy | Bone/Animation Detail |
 |------|--------|---------------|----------------------|
 | Hades | Supergiant Games | Readability, exaggeration, hit stop 4–8f | 2-frame minimum enemy windup; Spine 2D |
-| DOOM Eternal | id Software | Momentum, motion matching, interruption | < 2ms animation budget at 60fps; minimal IK |
+| DOOM Eternal | id Software | Momentum, authored state machine, interruption | < 2ms animation budget at 60fps; minimal IK |
 | Hollow Knight | Team Cherry | Indie budget philosophy, ≤ 30 bones | 28-bone Knight; mesh deform for cloak |
 | Dead Cells | Motion Twin | Low bone count for crisp silhouette | 15–25 bones per enemy; custom C runtime |
 | Valorant | Riot Games | Competitive fairness; silhouette clarity | 16ms input lag budget; hitbox/visual sync |
@@ -142,7 +142,7 @@ title: "Module 1 Cheat Sheet: Game vs. Film Animation"
 |--|--------------|----------------|
 | How clips play | Pre-scripted transitions | Database: best pose match per frame |
 | Input | Parameters trigger transitions | Velocity + direction drive pose selection |
-| Used in | Most games | DOOM Eternal, FIFA, Assassin's Creed |
+| Used in | Most games (incl. DOOM Eternal) | For Honor, EA SPORTS FIFA, Assassin's Creed |
 | Complexity | Manageable for small teams | Requires large motion capture database |
 | Foot sliding | Possible if clip speed ≠ move speed | Minimal, pose is velocity-matched |
 

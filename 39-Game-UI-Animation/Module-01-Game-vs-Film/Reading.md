@@ -101,7 +101,7 @@ One specific engineering detail from that GDC talk: every enemy in Hades has an 
 
 Hit stop the brief freeze of both attacker and defender on a successful hit was tuned to 4–8 frames (0.067–0.133 seconds) to communicate impact without slowing gameplay. The studio used Spine 2D for most 2D characters and Unity for the runtime.
 
-**DOOM Eternal (id Software, 2020)** takes a different philosophy: **visceral physicality**. The game feel is built on what animator Simon Clavet (now at Ubisoft Montreal, then id) described as "momentum preservation" the Doom Slayer's animations are designed so that momentum from a run, jump, or dash is never artificially cancelled. Animations can be interrupted mid-frame by player input, and the state machine uses **motion matching** a technique that samples the current velocity and finds the animation pose that best matches it, rather than playing a prescripted clip.
+**DOOM Eternal (id Software, 2020)** takes a different philosophy: **visceral physicality**. The game feel is built on **momentum preservation** the Doom Slayer's animations are designed so that momentum from a run, jump, or dash is never artificially cancelled. Animations can be interrupted mid-frame by player input, and the Doom Slayer runs on a tightly authored **state machine** with hand-crafted clips and short, aggressively tuned transitions, rather than a database-driven pose-selection system.
 
 id Software's animation budget at 60fps is one of the most documented in the industry. The key constraint: the Doom Slayer's full locomotion + environmental awareness system must complete in under **2ms per frame** at 60fps (leaving the remaining 14.67ms for physics, AI, rendering, and audio). This drove three decisions: (1) the Doom Slayer uses fewer bones than most comparable characters; (2) IK is limited to foot placement only, not full-body; (3) secondary motion (armor, cables, gear) is driven by bone constraints rather than real-time physics simulation.
 
@@ -109,7 +109,7 @@ id Software's animation budget at 60fps is one of the most documented in the ind
 |---|---|---|
 | Studio | Supergiant Games (Seattle, ~20 ppl) | id Software (Dallas, ~100 ppl) |
 | Runtime | Unity + Spine 2D | id Tech 7 (custom) |
-| Philosophy | Readability, exaggeration, hit stop | Momentum, motion matching, interruption |
+| Philosophy | Readability, exaggeration, hit stop | Momentum, authored state machine, interruption |
 | Hit stop duration | 4–8 frames | 2–4 frames (faster, more violent) |
 | Enemy windup floor | 2-frame minimum | N/A (first-person; player cannot see enemy windup like Hades) |
 | Animation ms budget | Not published; indie scale | < 2ms for Doom Slayer locomotion at 60fps |
@@ -270,7 +270,7 @@ Understanding platform-specific constraints is essential for any animator moving
 
 > 🎯 **What the exam tests 6:** A film animation runs at 24fps. A game targets 60fps. Which has the shorter frame budget per frame? The game, 16.67ms vs. 41.67ms for film. The film animator has more than twice the per-frame compute time, but cannot interact with the audience.
 
-> 🎯 **What the exam tests 7:** What is "motion matching" as used in DOOM Eternal and FIFA? Motion matching is a database-driven technique that continuously selects the best-matching animation pose from a large database based on current character velocity, direction, and predicted future motion, rather than playing pre-scripted clips in a state machine.
+> 🎯 **What the exam tests 7:** What is "motion matching" as used in For Honor (Ubisoft) and the EA SPORTS FIFA titles? Motion matching is a database-driven technique that continuously selects the best-matching animation pose from a large database based on current character velocity, direction, and predicted future motion, rather than playing pre-scripted clips in a state machine. (DOOM Eternal, by contrast, uses an authored state machine, not motion matching.)
 
 > 🎯 **What the exam tests 8:** What is "coyote time" in platformer animation? The grace period (typically 0.1–0.15 seconds) after a player walks off a ledge during which they can still jump. The animation system must account for it: play an edge-peek or "late-jump" animation instead of snapping directly to the fall state.
 
@@ -380,11 +380,5 @@ We move from theory to the primary real-time animation tool: Unity's Animator Co
 - 🔗 [Unreal Engine Animation Overview](https://docs.unrealengine.com/5.3/en-US/animation-in-unreal-engine/)
 
 *[Module complete, see README for next steps and related tracks.]*
-
-> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
-
-> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
-
-> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
 > *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

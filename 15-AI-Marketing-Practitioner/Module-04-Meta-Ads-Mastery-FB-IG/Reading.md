@@ -468,7 +468,7 @@ Defend your answers from the frameworks in this module. None is recall, each for
 
 > **Where this leads.**
 > - Inside this course: Module 5 covers TikTok (similar mechanics, faster hook window) and LinkedIn (B2B alternative); Module 6 covers retargeting that complements Meta prospecting; Module 8 builds the AI creative pipeline that feeds DCT.
-> - Cross-course: [14-AI-Marketing-Foundations Module 6](../../14-AI-Marketing-Foundations/Module-06-Email-Marketing-AI-Personalization/Reading.md) covers the organic-social context; [17-AI-Marketing-Entrepreneur](../../../17-AI-Marketing-Entrepreneur/) goes deeper on Meta + Google bid orchestration.
+> - Cross-course: [14-AI-Marketing-Foundations Module 6](../../14-AI-Marketing-Foundations/Module-06-Email-Marketing-AI-Personalization/Reading.md) covers the organic-social context; [17-AI-Marketing-Entrepreneur](../../17-AI-Marketing-Entrepreneur/) goes deeper on Meta + Google bid orchestration.
 > - Practice: Practice Exam 1 has ~9 questions from this module (CAPI, ASC, DCT, Lookalikes, attribution windows, Reels aspect).
 
 ---

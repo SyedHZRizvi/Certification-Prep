@@ -17,7 +17,7 @@ Headers:
 
 Body:
 {
-  "model":            "claude-sonnet-4-6-20260301",
+  "model":            "claude-sonnet-4-6",
   "max_tokens":       1024,
   "system":           "...",                 // or [{type:"text",...}]
   "messages":         [{role, content}, ...],
@@ -40,7 +40,7 @@ Body:
   "id":         "msg_01...",
   "type":       "message",
   "role":       "assistant",
-  "model":      "claude-sonnet-4-6-...",
+  "model":      "claude-sonnet-4-6",
   "content":    [{type:"text", text:"..."}, ...],
   "stop_reason":"end_turn|max_tokens|stop_sequence|tool_use",
   "stop_sequence": "..." | null,

@@ -234,7 +234,7 @@ Module 9 celebrates the heart of Persian civilization — poetry, culture, liter
 ## Further Reading
 
 - Kashani-Sabet, Firoozeh: *Frontier Fictions* — understanding Iranian national identity through language
-- BBC Persian (*bbcpersian.com*) — daily reading practice, authentic C1-level Persian
+- BBC Persian (*bbc.com/persian*) — daily reading practice, authentic C1-level Persian
 - Iran International (*iranintl.com*) — harder register, breaking news vocabulary
 
 </div>

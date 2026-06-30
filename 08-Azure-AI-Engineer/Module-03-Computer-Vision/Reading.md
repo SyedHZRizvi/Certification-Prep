@@ -398,7 +398,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 5 covers the Document Intelligence → AI Search side of structured extraction; Module 8 wires Vision into Foundry agents (e.g., GPT-4o vision + custom file-search).
-> - Cross-course: [`07-AWS-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) Module 4 covers Rekognition + Textract for cross-cloud comparison.
+> - Cross-course: [`07-AWS-AI-Practitioner`](../../07-AWS-AI-Practitioner/) Module 4 covers Rekognition + Textract for cross-cloud comparison.
 > - Practice: Practice Exam 1 has ~5 questions from this module (visual features, Custom Vision domains, Face retirement); Final Mock Exam includes Vision-vs-Doc-Intelligence service-selection cases.
 
 ---

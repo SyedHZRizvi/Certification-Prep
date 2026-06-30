@@ -23,8 +23,8 @@ D. Work-from-anywhere
 ---
 
 ### Q3. Proactive remediations require: *(Remember)*
-A. Intune Plan 1
-B. Intune Plan 2 or Suite
+A. An Intune Plan 2 / Suite add-on
+B. A Windows Enterprise/Education/VDA subscription (e.g. via M365 E3) + Intune
 C. Defender for Endpoint only
 D. No license, free for all
 
@@ -129,7 +129,7 @@ D. App version freshness
 
 **S1:** Endpoint Analytics requires at least Intune Plan 1.
 **S2:** Advanced Endpoint Analytics requires Plan 2 or Suite.
-**S3:** Proactive remediations are bundled in Plan 1.
+**S3:** Proactive remediations require an Intune Plan 2 or Suite add-on.
 
 A. Yes / Yes / No
 B. Yes / No / Yes
@@ -236,8 +236,8 @@ Startup, Application reliability, Work-from-anywhere, Resource performance, Batt
 ### Q2: **C. Compliance posture**
 Compliance has its own reports, not in Endpoint Analytics.
 
-### Q3: **B. Intune Plan 2 or Suite**
-Proactive remediations require Plan 2 minimum.
+### Q3: **B. A Windows Enterprise/Education/VDA subscription (e.g. via M365 E3) + Intune**
+Remediations are gated by a Windows Enterprise E3/E5, Education A3/A5, or Windows VDA subscription (plus Intune), not by an Intune Plan 2 / Suite add-on. An M365 E3 user (Windows Enterprise E3 + Intune Plan 1) can run them. (Plan 2 / Suite is what unlocks **Advanced** Endpoint Analytics, a separate feature.)
 
 ### Q4: **B. A detection script + a remediation script**
 Detection returns exit 0/1; remediation runs on exit 1.
@@ -273,7 +273,7 @@ CA evaluation details show in the Entra Sign-in log.
 Application Reliability tracks crash rate.
 
 ### Q15: **A. Yes / Yes / No**
-Plan 1 needed for basic Endpoint Analytics (Yes). Plan 2 for advanced (Yes). Proactive remediations are Plan 2 (No, not Plan 1).
+Plan 1 needed for basic Endpoint Analytics (Yes). Plan 2 for advanced (Yes). Proactive remediations are gated by a Windows Enterprise/Education/VDA subscription + Intune, not by an Intune Plan 2 / Suite add-on (No).
 
 ### Q16: **B. Open Troubleshooting + Support, find the user, drill into app install report**
 The canonical helpdesk start.
@@ -319,7 +319,7 @@ The Bayer-style operating discipline.
 ## 🃏 Add To Your Flashcards
 
 - 5 Endpoint Analytics categories
-- Proactive remediations = detect + remediate scripts (Plan 2)
+- Proactive remediations = detect + remediate scripts (need a Windows Enterprise/Education/VDA subscription + Intune)
 - MDM Diagnostics report = built-in Windows 11
 - IME logs path: `%ProgramData%\Microsoft\IntuneManagementExtension\Logs`
 - KQL for Advanced Hunting (Plan 2)

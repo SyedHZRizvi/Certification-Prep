@@ -2,7 +2,7 @@
 
 > **Why this module matters:** LinkedIn is where 80% of B2B leads generated through social media actually come from — yet most companies treat it like a digital business card rather than the revenue engine it truly is. Master this module and you will know how to turn a $5,000/month LinkedIn budget into a predictable pipeline machine that outperforms teams of outbound sales reps.
 
-> **Prerequisites:** You should already understand buyer personas (Module 02), content marketing fundamentals (Module 04), and basic paid advertising concepts (Module 06). Familiarity with CRM tools (Salesforce, HubSpot) is helpful but not required.
+> **Prerequisites:** You should already understand buyer personas and the marketing funnel (Module 01) and basic paid advertising concepts (Module 02). Familiarity with CRM tools (Salesforce, HubSpot) is helpful but not required.
 
 ---
 

@@ -128,7 +128,7 @@ When you see these, they're **often wrong**:
 - **Porter's Five Forces**: 1979
 - **Ansoff Matrix**: 1957
 - **BCG Matrix**: 1970
-- **JTBD**: Christensen (2003), milkshake study
+- **JTBD**: Christensen (2005), milkshake study
 - **OKRs**: Andy Grove at Intel (1970s) → John Doerr at Google (1999)
 
 ---

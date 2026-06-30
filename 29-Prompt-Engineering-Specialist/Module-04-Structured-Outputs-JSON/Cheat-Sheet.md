@@ -28,7 +28,7 @@ client.beta.chat.completions.parse(
 
 # Anthropic L2 (via forced tool use)
 client.messages.create(
-    model="claude-sonnet-4-7",
+    model="claude-sonnet-4-6",
     tools=[{"name":"extract","input_schema":{...}}],
     tool_choice={"type":"tool", "name":"extract"},
     messages=[...]

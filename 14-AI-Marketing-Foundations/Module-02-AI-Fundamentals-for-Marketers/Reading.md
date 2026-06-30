@@ -369,7 +369,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 3 applies LLM mechanics to GEO/AEO (how Overviews extract content); Module 4 turns the prompt template into a content workflow; Module 9 deepens the bias, copyright, and Constitutional AI threads.
-> - Cross-course: `15-AI-Marketing-Strategy` Module 2 covers AI portfolio decisions at the executive level; `16-AI-Marketing-Automation-Workflows` Module 3 builds RAG and agentic flows on the foundations from here.
+> - Cross-course: `15-AI-Marketing-Practitioner` Module 2 covers AI portfolio decisions at the executive level; `16-AI-Marketing-Strategist` Module 3 builds RAG and agentic flows on the foundations from here.
 > - Practice: Practice Exam 1 has 5–7 questions on tokens, RAG, hallucinations, and model families. Final Mock Exam adds harder cross-module synthesis (e.g. "RAG vs fine-tune for a regulated industry").
 
 ---

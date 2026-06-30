@@ -228,7 +228,7 @@ User prompt: <<<{user_prompt}>>>
 Assistant response: <<<{assistant_response}>>>
 """
     # Use DIFFERENT family than the model being judged
-    return call_llm(judge_prompt, model="claude-sonnet-4-7", response_format=JudgeResult)
+    return call_llm(judge_prompt, model="claude-sonnet-4-6", response_format=JudgeResult)
 ```
 
 ---

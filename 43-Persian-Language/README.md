@@ -103,6 +103,8 @@ This is the most important fact about this course. Persian was the court languag
 4. Review every incorrect answer by returning to the relevant module's Reading.md
 5. Retake the Final Mock until you consistently score 75%+
 
+> **About real Persian proficiency exams.** The official standardized tests of Persian are **AMFA** and the earlier **SAMFA** (*Standardized Test of Persian Language Proficiency*), administered by the **Saadi Foundation** (Bonyād-e Sa'di), Iran's official body for teaching Persian abroad. Like most language exams, they assess the four skills — **listening, reading, writing, and speaking**. The three exams in this course are **CEFR-modeled practice** built to track your progress through the A1→C2 modules; they are **not** a replica of AMFA/SAMFA and do not confer an official score. If you need a recognized credential, sit the official Saadi Foundation test.
+
 ---
 
 ## 12-Week Study Schedule
@@ -136,10 +138,10 @@ Every Reading.md in this course is **bilingual** — toggle between English and 
 
 | Resource | Type | Level | Link |
 |---|---|---|---|
-| FarsiPod101 | Audio + video course | A1–C1 | farsipos101.com |
+| FarsiPod101 | Audio + video course | A1–C1 | farsipod101.com |
 | Learn Persian with Chai & Conversation | YouTube | A1–B2 | YouTube search |
 | Thackston: *An Introduction to Persian* | Grammar textbook | B1–C2 | Free PDF, Harvard |
-| BBC Persian | News website | B2–C2 | bbcpersian.com |
+| BBC Persian | News website | B2–C2 | bbc.com/persian |
 | Hafiz Divan (bilingual) | Poetry | C1–C2 | Multiple editions |
 | italki | Tutors & language exchange | All levels | italki.com |
 

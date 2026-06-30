@@ -124,7 +124,7 @@ Completing this course makes you exam-ready for three industry credentials. They
 |---|---|---|---|---|
 | **Google Digital Marketing & E-commerce Certificate** | Coursera (Google) | Free with audit (or Coursera subscription) | ~6 months self-paced, 10 hrs/wk | 7 courses, graded projects |
 | **HubSpot Marketing Software Certification** | HubSpot Academy | Free | 1–2 hours | ~60 question exam, free retakes |
-| **Meta Certified Digital Marketing Associate** (400-101) | Meta Blueprint | $99 USD | 90 min | 70 questions, multiple choice |
+| **Meta Certified Digital Marketing Associate** (100-101) | Meta Blueprint | $99 USD | 50 min | 50 questions, multiple choice |
 
 🔗 **Official links:**
 - Google: <https://www.coursera.org/professional-certificates/google-digital-marketing-ecommerce>

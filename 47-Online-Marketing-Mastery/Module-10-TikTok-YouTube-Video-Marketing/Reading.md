@@ -2,7 +2,7 @@
 
 > **Why this module matters:** Short-form video is now the single highest-ROI content format in digital marketing — TikTok alone reaches 1.7 billion monthly active users and YouTube Shorts serves over 70 billion views per day. Brands that cannot produce, optimise, and advertise on these platforms are systematically ceding market share to those that can.
 
-> **Prerequisites:** Modules 1–9 (digital marketing fundamentals, Google Ads, Meta Ads, SEO, email). You should already understand CTR, CPC, CPM, conversion funnels, and basic audience targeting.
+> **Prerequisites:** Modules 1–9 (digital marketing fundamentals, Google Ads, analytics, Amazon Ads, Meta Ads, LinkedIn). You should already understand CTR, CPC, CPM, conversion funnels, and basic audience targeting.
 
 ---
 

@@ -149,7 +149,7 @@ Arabic cuisine is rich and diverse across regions. Here is essential food vocabu
 
 ---
 
-## 5. The 100 Most Common Arabic Verbs
+## 5. The 50 Most Common Arabic Verbs
 
 Learning verbs in their root form (maṣdar — verbal noun) is most efficient. Below are the 50 most essential verbs, given in past tense 3rd person masculine singular (the dictionary form), then the verbal noun:
 

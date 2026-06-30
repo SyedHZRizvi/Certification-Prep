@@ -4,8 +4,8 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md), covered earlier in this course
-> - Marketing analytics & GA4 basics (events, sessions, source/medium), covered in [17-AI-Marketing-Analytics-Automation Module 1](../../17-AI-Marketing-Entrepreneur/README.md) and Module 3
-> - Spreadsheet formulas (QUERY, SUMPRODUCT, SUMIF), covered in [17-AI-Marketing-Analytics-Automation Module 2](../../17-AI-Marketing-Entrepreneur/README.md)
+> - Marketing analytics & GA4 basics (events, sessions, source/medium), covered in [16-AI-Marketing-Strategist Module 3](../../16-AI-Marketing-Strategist/Module-03-GA4-Mastery-Custom-Events/Reading.md)
+> - Spreadsheet formulas (QUERY, SUMPRODUCT, SUMIF), plus the multi-touch attribution groundwork in [16-AI-Marketing-Strategist Module 4](../../16-AI-Marketing-Strategist/Module-04-Multi-Touch-Attribution/Reading.md)
 > - Optional but recommended: Python / pandas basics if you're choosing the Colab path
 > If any of these are shaky, pause and review, Markov chain math is hard enough without also fighting GA4 exports or VLOOKUP.
 
@@ -620,5 +620,5 @@ These prompts probe whether you understand the *limits* of attribution modeling,
 
 > **Where this leads.**
 > - Inside this course: Module 6 (AI Agent), you can build an agent that *automates attribution analysis* from a raw CSV input. That's a fun stretch goal. Module 7 features the comparison chart as a recommended portfolio hero image.
-> - Cross-course: [17-AI-Marketing-Analytics-Automation Module 3](../../17-AI-Marketing-Entrepreneur/README.md) covers the customer-journey data layer this capstone consumes. Module 4 covers dashboards where attribution outputs typically live.
+> - Cross-course: [16-AI-Marketing-Strategist Module 2](../../16-AI-Marketing-Strategist/Module-02-CDP-Server-Side-Tracking/Reading.md) covers the customer-journey data layer this capstone consumes. [16-AI-Marketing-Strategist Module 4](../../16-AI-Marketing-Strategist/Module-04-Multi-Touch-Attribution/Reading.md) covers the multi-touch attribution methods this capstone implements.
 > - Practice: Practice Exam 1 has 3 questions on this capstone (Q14–Q16, Q33). The Final Mock's Q3 ("difference between Last-Click and Markov") and Q20 ("comfort with data analysis") both expect the depth this capstone builds.

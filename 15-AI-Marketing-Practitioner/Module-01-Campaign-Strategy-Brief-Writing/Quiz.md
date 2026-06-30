@@ -97,7 +97,7 @@ D. CPA, conversion volume, or ROAS
 
 ### Q12. Which AI model is best suited for handling long-context briefs with brand voice nuance per the reading? *(Understand)*
 A. ChatGPT GPT-5
-B. Claude Sonnet 4.7
+B. Claude Sonnet 4.6
 C. Gemini 2.5 Pro
 D. Midjourney v7
 
@@ -242,7 +242,7 @@ Top of funnel = awareness = reach, impressions, video views, CPM. Mid funnel = e
 ### Q11: **D. CPA, conversion volume, or ROAS**
 Bottom funnel measures action, conversion volume, cost-per-conversion, or return on ad spend. Brand recall and video view-through rate are top/mid funnel.
 
-### Q12: **B. Claude Sonnet 4.7**
+### Q12: **B. Claude Sonnet 4.6**
 Per the reading: Claude excels at long-form briefs with nuance and brand voice. ChatGPT excels at quick iteration. Gemini excels at multimodal inputs.
 
 ### Q13: **B. Context, Inputs, Task, Validation**

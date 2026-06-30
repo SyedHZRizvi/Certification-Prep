@@ -132,16 +132,16 @@ Pair the study guide with the **[Microsoft Learn AI-102 learning path](https://l
 | Validity | 1 year, renew free online via Microsoft Learn |
 | Prereqs | None official, but you'll suffer without Azure Fundamentals knowledge |
 
-### Domain Weights (Current as of 2025)
+### Domain Weights (Current as of the December 2025 skills update)
 
 | Domain | Weight |
 |--------|--------|
-| Plan and manage an Azure AI solution | 15–20% |
-| Implement decision support solutions | 10–15% |
-| Implement computer vision solutions | 15–20% |
+| Plan and manage an Azure AI solution | 20–25% |
+| Implement generative AI solutions | 15–20% |
+| Implement an agentic solution | 5–10% |
+| Implement computer vision solutions | 10–15% |
 | Implement natural language processing solutions | 15–20% |
-| Implement knowledge mining and document intelligence | 15–20% |
-| Implement generative AI solutions | 10–15% |
+| Implement knowledge mining and information extraction solutions | 15–20% |
 
 ---
 

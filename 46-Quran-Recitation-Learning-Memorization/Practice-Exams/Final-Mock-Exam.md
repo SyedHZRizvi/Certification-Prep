@@ -642,7 +642,7 @@ D. It was personally recited by the Prophet (sallallahu alayhi wa aalihi wasalla
 A key difference between Warsh 'an Nafi' and Hafs 'an 'Asim is:
 
 A. Warsh does not have Ghunnah rules; Hafs does
-B. Warsh reads مَالِكِ (Maalik — long alif) in Al-Fatiha verse 4, while Hafs reads مَلِكِ (Malik — short)
+B. Hafs reads مَالِكِ (Maalik — long alif) in Al-Fatiha verse 4, while Warsh reads مَلِكِ (Malik — short)
 C. Warsh omits the Basmala before every surah; Hafs includes it
 D. Warsh has only 4 Madd types while Hafs has 6
 
@@ -766,7 +766,7 @@ D. A preliminary certificate before receiving the full single-Qira'ah Ijazah
 73. B — "If humans and jinn combined to produce something like this Quran, they could not"
 74. D — 7 Mutawatir; 3 more are authenticated with valid Isnad chains — all 10 are valid
 75. C — Adopted by Pakistan, India, Middle East — ~95% of world's Muslims
-76. B — Warsh: مَالِكِ (long alif); Hafs: مَلِكِ (short) in Al-Fatiha verse 4
+76. B — Hafs: مَالِكِ (long alif); Warsh: مَلِكِ (short) in Al-Fatiha verse 4
 77. C — Lahn al-Jali: changes letters/vowels/meaning — HARAM intentionally
 78. B — Wasl: silent when connected (plain Alif ا); Qat': always pronounced (أ or إ)
 79. B — Hifz → Tajweed → certified sheikh → 'Ardh → Ijazah with Silsilah

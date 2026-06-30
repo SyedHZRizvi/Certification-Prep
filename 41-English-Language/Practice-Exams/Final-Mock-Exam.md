@@ -18,7 +18,7 @@ Read the passage carefully. You will answer 10 questions based on it (Questions 
 >
 > For much of the twentieth century, the spread of English across the globe was perceived — not entirely inaccurately — as an extension of Anglo-American cultural and economic dominance. Critics argued that the promotion of English as a global lingua franca inevitably marginalised indigenous languages and imposed a particular worldview on those who adopted it. This critique, often labelled linguistic imperialism, carries genuine force, particularly in post-colonial contexts where English arrived alongside political subjugation.
 >
-> Yet the twenty-first century has complicated this narrative considerably. English is no longer the exclusive property of the United Kingdom or the United States. It belongs, in a meaningful sense, to the 1.5 billion non-native speakers who use it daily to conduct business, pursue education, and navigate geopolitical relationships. A software engineer in Lahore negotiating a contract with a client in Tokyo, a researcher in Lagos collaborating with a colleague in Berlin — both are using English not as a concession to Western power, but as a genuinely neutral medium of exchange.
+> Yet the twenty-first century has complicated this narrative considerably. English is no longer the exclusive property of the United Kingdom or the United States. It belongs, in a meaningful sense, to the more than one billion non-native speakers who use it daily to conduct business, pursue education, and navigate geopolitical relationships. A software engineer in Lahore negotiating a contract with a client in Tokyo, a researcher in Lagos collaborating with a colleague in Berlin — both are using English not as a concession to Western power, but as a genuinely neutral medium of exchange.
 >
 > The emergence of what linguists call "World Englishes" — regionally distinctive varieties such as Pakistani English, Indian English, Singaporean English, and Nigerian English — further disrupts the old hierarchies. These varieties are not deficient forms of a prestigious British or American standard. They are legitimate, rule-governed, and socially functional linguistic systems in their own right.
 >
@@ -411,7 +411,7 @@ D) "I am very hard working, honest, and dedicated. I will do my best."
 
 3.  C — The author presents both the critique of linguistic imperialism (paragraph 1) AND the counter-argument (paragraphs 2-4), concluding with nuanced practical advice. This is balanced and analytical.
 
-4.  B — "It belongs, in a meaningful sense, to the 1.5 billion non-native speakers who use it daily." Non-native speakers now co-own and outnumber native speakers.
+4.  B — "It belongs, in a meaningful sense, to the more than one billion non-native speakers who use it daily." Non-native speakers now co-own and outnumber native speakers.
 
 5.  C — "Regionally distinctive varieties such as Pakistani English, Indian English, Singaporean English, and Nigerian English." These are defined as legitimate regional varieties.
 

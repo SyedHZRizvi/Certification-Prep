@@ -189,7 +189,7 @@ A **FIDO2 security key** is a hardware device (Yubikey, Feitian, etc.) that perf
 
 1. User signs in to `https://aka.ms/mysecurityinfo` (My Security Info portal).
 2. Clicks **Add sign-in method → Security key**.
-3. Inserts key, sets PIN (8-char PIN inside the key's TPM), touches the key when prompted.
+3. Inserts key, sets PIN (8-char PIN stored in the key's secure element), touches the key when prompted.
 4. Names the key (so multiple keys can be distinguished).
 5. Done, the key can sign in passwordless from supported clients.
 

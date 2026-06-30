@@ -443,7 +443,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 4 turns SEO content strategy into the AI-assisted writing workflow; Module 8 covers GA4 measurement of organic traffic + AI-Overview impressions in Search Console; Module 9 covers the IP/legal angle of programmatic AI content.
-> - Cross-course: `15-AI-Marketing-Strategy` Module 4 covers SEO governance at the executive level (when to invest, when to harvest); `16-AI-Marketing-Automation-Workflows` Module 4 automates the content + schema workflow.
+> - Cross-course: `15-AI-Marketing-Practitioner` Module 4 covers SEO governance at the executive level (when to invest, when to harvest); `16-AI-Marketing-Strategist` Module 4 automates the content + schema workflow.
 > - Practice: Practice Exam 1 has 6–8 SEO questions (E-E-A-T, Core Web Vitals, GEO tactics, programmatic SEO line). Final Mock Exam adds harder synthesis (HubSpot pillar/cluster, AI-Overview optimization, Helpful Content distinctions).
 
 ---

@@ -348,7 +348,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 7 wires content filters + Prompt Shields into Azure OpenAI deployments; Module 8 uses Groundedness as both a Foundry evaluation metric and a runtime Content Safety check.
-> - Cross-course: [`07-AWS-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) covers Bedrock Guardrails for cross-cloud comparison; [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) deepens prompt-injection and supply-chain concerns.
+> - Cross-course: [`07-AWS-AI-Practitioner`](../../07-AWS-AI-Practitioner/) covers Bedrock Guardrails for cross-cloud comparison; [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/) deepens prompt-injection and supply-chain concerns.
 > - Practice: Practice Exam 1 has 3–4 questions from this module (principles, severity, Prompt Shields); Final Mock Exam revisits with case studies that test the four-layer mitigation stack.
 
 ---

@@ -105,7 +105,7 @@ By the end of this track, you'll be able to:
 | Practice-Exam-2 | After Modules 6-9 | 45 Q / 60 min | ⭐⭐⭐⭐ |
 | Final-Mock-Exam | One day before your real cert exam(s) | 60 Q / 60 min | ⭐⭐⭐⭐⭐ |
 
-**Pass mark:** 75% on the Final Mock that means ≥ 45/60. The Final Mock matches the Adobe Certified Expert Adobe Commerce Business Practitioner format (60 questions, 60 minutes).
+**Pass mark:** 75% on the Final Mock that means ≥ 45/60. This 60-question Final Mock is a Cert Hub original spanning the full operator curriculum; it is broader than any single credential. The real Adobe Commerce Business Practitioner Professional exam (AD0-E723) is 50 questions in 100 minutes with a 41/50 pass mark, so treat this mock as harder, broader practice rather than a one-to-one replica.
 
 ---
 
@@ -119,7 +119,7 @@ This is the practitioner-to-architect path. The course prepares you for a four-t
 | 2 (Practitioner) | Google Ads, Shopping Ads Certification | Free | 50 Q / 75 min · 80% pass | [skillshop.exceedlms.com](https://skillshop.exceedlms.com/) |
 | 2 (Practitioner) | Amazon Ads Foundations | Free | 60 Q · 80% pass | [advertising.amazon.com/learn](https://advertising.amazon.com/learn) |
 | 2 (Practitioner) | Meta Blueprint, Commerce | Free | Self-paced | [facebook.com/business/learn](https://www.facebook.com/business/learn) |
-| 3 (Specialist) | Adobe Certified Expert, Adobe Commerce Business Practitioner | $225 USD | 60 Q / 60 min · ~63% pass | [credly.com/adobe](https://www.credly.com/organizations/adobe/badges) |
+| 3 (Specialist) | Adobe Commerce Business Practitioner Professional (AD0-E723) | $125 USD | 50 Q / 100 min · 41/50 pass | [credly.com/adobe](https://www.credly.com/organizations/adobe/badges) |
 | 3 (Specialist) | Shopify Theme Developer | Free | Coding project + exam | [shopify.dev/themes/store/getting-started](https://shopify.dev/themes/store/getting-started) |
 | 4 (Expert) | Wharton Online Digital Marketing & E-Commerce Specialization (Fader / Bell) | $79/mo Coursera | 6-course track | [online.wharton.upenn.edu](https://online.wharton.upenn.edu/) |
 | 4 (Expert) | Salesforce B2C Commerce Cloud Architect | $400 USD | 65 Q / 105 min · ~65% pass | [trailhead.salesforce.com](https://trailhead.salesforce.com/credentials) |
@@ -198,11 +198,11 @@ You don't need ALL of these, pick 1 per category for your stage and go deep.
 | Shopify Dev Store (free Partner account) | Free |
 | Adobe Commerce 30-day trial | Free |
 | Google Skillshop certs | Free |
-| Adobe Commerce Business Practitioner exam | $225 |
+| Adobe Commerce Business Practitioner Professional exam (AD0-E723) | $125 |
 | Wharton Online specialization (optional, Coursera) | $79/mo × 6 mo = ~$474 |
 | Capstone sandbox ad spend (optional) | $100-300 |
 
-**Minimum:** $0 if you skip all the paid certs. **Recommended:** $225 Adobe + $50 sandbox spend = **$275 total**.
+**Minimum:** $0 if you skip all the paid certs. **Recommended:** $125 Adobe + $50 sandbox spend = **$175 total**.
 
 ---
 

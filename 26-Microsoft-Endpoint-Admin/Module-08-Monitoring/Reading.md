@@ -118,7 +118,7 @@ Get-ChildItem "HKCU:\Software\Microsoft\Office\16.0\Outlook\Profiles" |
     Remove-Item -Recurse -Force
 ```
 
-🔥 **MEMORIZE:** Proactive remediations require **Intune Plan 2 (or the Intune Suite)**. Not available in Plan 1.
+🔥 **MEMORIZE:** Remediations (proactive remediations) require a **Windows Enterprise E3/E5, Education A3/A5, or Windows VDA** subscription on the device (plus Intune). They are *not* gated by an Intune Plan 2 / Suite add-on, an M365 E3 user (Windows Enterprise E3 + Intune Plan 1) can run them. (Intune Plan 2 / Suite is what unlocks **Advanced** Endpoint Analytics, a separate feature.)
 
 ---
 
@@ -296,7 +296,7 @@ Per-device remote actions you can trigger from the Intune portal:
 |------|---------|
 | "Wipe and Retire do the same thing" | ❌ Wipe = factory reset; Retire = remove org only |
 | "Endpoint Analytics works in Plan 1 with all features" | ❌ Plan 1 = basic; Plan 2 = advanced |
-| "Proactive remediations are free with Plan 1" | ❌ Requires Plan 2 / Suite |
+| "Proactive remediations need an Intune Plan 2 / Suite add-on" | ❌ They need a Windows Enterprise/Education/VDA subscription (e.g. via M365 E3) + Intune, not Intune Plan 2 |
 | "MDM Diagnostics report is a separate tool" | ❌ Built into Windows 11 |
 | "Troubleshooting blade shows tenant-wide" | ❌ Per-user view |
 | "Advanced Hunting works in Plan 1" | ❌ Plan 2 only |
@@ -331,7 +331,7 @@ The correct sequence:
 | **Startup performance** | Endpoint Analytics category for boot + sign-in time |
 | **Application reliability** | Endpoint Analytics category for app crash rate |
 | **Work-from-anywhere** | Endpoint Analytics cloud-readiness score |
-| **Proactive remediations** | Detection + remediation script pairs (Plan 2) |
+| **Proactive remediations** | Detection + remediation script pairs (need a Windows Enterprise/Education/VDA subscription + Intune) |
 | **Troubleshooting + Support blade** | Per-user view of devices + policies + compliance |
 | **MDM Diagnostics report** | Built-in Windows 11 dump of all MDM policies + sources |
 | **IME logs** | Intune Management Extension logs at `%ProgramData%\Microsoft\IntuneManagementExtension\Logs` |
@@ -355,7 +355,7 @@ You now know:
 
 - 📊 The Intune report surfaces and what each is for
 - 🎯 Endpoint Analytics, 5 categories + scoring + baselines
-- 🛠️ Proactive remediations (Plan 2), detect + fix pattern
+- 🛠️ Proactive remediations (need a Windows Enterprise/Education/VDA subscription + Intune), detect + fix pattern
 - 🐛 Troubleshooting + Support blade, per-user diagnostic view
 - 📋 MDM Diagnostics report, built-in Windows policy dump
 - 🛠️ The 5 most common troubleshooting scenarios + step-by-step approach

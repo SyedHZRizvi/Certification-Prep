@@ -400,7 +400,7 @@
 
 **Q:** What language are AE expressions written in?
 
-**A:** ExtendScript, a superset of ECMAScript 3 (same era as JavaScript). `.jsx` file extension for scripts.
+**A:** JavaScript. Since AE CC 2019 the default expression engine is a modern JavaScript (V8) engine (ES2018+); the legacy ECMAScript-3 (ExtendScript) engine is still selectable. (Scripting, separate from expressions, uses ExtendScript `.jsx` files.)
 
 ---
 

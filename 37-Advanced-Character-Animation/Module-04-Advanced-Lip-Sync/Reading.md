@@ -67,9 +67,9 @@ Scientific studies of speech perception confirm that audiences accurately sync-t
 
 ## 📚 Part 3, Leading the Audio by 2 Frames
 
-This is not a convention. It is a neurological fact.
+This is more than an arbitrary convention, it has a neurological basis.
 
-The human auditory system processes sound and delivers perception approximately 40–80ms before the visual system completes visual processing of the same event. This means that at 24fps (41.7ms per frame), the audience perceives a mouth movement as "in sync" with a sound when the **mouth movement precedes the sound by 2 frames**.
+The human auditory system processes sound slightly faster than the visual system completes its processing of the same event (studies put the gap on the order of tens of milliseconds). Because of this, at 24fps (41.7ms per frame) audiences typically read a mouth movement as "in sync" with a sound when the **mouth movement precedes the sound by about 2 frames**. Treat the exact figure as a calibrated rule of thumb rather than a fixed physical constant, the precise lead varies with frame rate, shot, and viewer.
 
 ### What This Means in Practice
 
@@ -82,7 +82,7 @@ The human auditory system processes sound and delivers perception approximately 
 
 **Practical workflow:** When scrubbing through your timeline with audio playing, place your M/B/P closure key 2 frames before the audio waveform shows that consonant's peak.
 
-> 🎯 **Exam tip:** The 2-frame lead rule is one of the most frequently cited lip sync facts in animation interviews and technical reviews. It is neurological, not conventional.
+> 🎯 **Exam tip:** The 2-frame lead rule is one of the most frequently cited lip sync facts in animation interviews and technical reviews. It has a neurological basis, not an arbitrary convention, though the exact frame count is a rule of thumb that shifts with frame rate.
 
 ---
 
@@ -158,7 +158,7 @@ If the shot will be in close-up (character's face filling the screen), add the f
 |---------|-------------------|
 | Preston Blair Chart | Standard phoneme-to-viseme mapping; M/B/P closures are the only non-negotiable |
 | Less Is More | Over-animating every phoneme creates puppety, unnatural mouth movement |
-| 2-Frame Lead | Mouth must precede audio by 2 frames, neurological, not conventional |
+| 2-Frame Lead | Mouth precedes audio by ~2 frames, neurological basis, not arbitrary (exact count varies with fps) |
 | On 2s vs. 1s | 2s for slow dialogue/stylized; 1s for fast/close-up/emotional |
 | Multilingual | Re-anchor M/B/P closures to new audio; simplify vowels to open/closed |
 | Performance-First | Block body/head/eyes with no mouth; add closures; then refine |
@@ -377,13 +377,5 @@ The entire science of lip sync in animated character performance collapses to on
 - The 80/20 rule of lip sync: 80% of audience perception comes from 20% of the animation work (the closures).
 
 This is why the "less is more" principle is not a shortcut, it is the technically superior approach.
-
-> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
-
-> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
-
-> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
-
-> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
 > *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

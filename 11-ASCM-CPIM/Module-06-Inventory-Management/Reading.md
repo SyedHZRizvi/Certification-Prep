@@ -83,8 +83,6 @@ D = 10,000 units/year, S = $50/order, H = $2/unit/year.
 
 `EOQ = √(2 × 10,000 × 50 / 2) = √(1,000,000 / 2) = √500,000 ≈ 707 units`
 
-Wait, let me re-check: `2 × 10,000 × 50 = 1,000,000`. Divide by H=2: `500,000`. √500,000 ≈ 707.
-
 So order **707 units** each time. Number of orders per year = 10,000 / 707 ≈ **14.1 orders/year**.
 
 ### EOQ Assumptions (the textbook ones, and why they're often violated)

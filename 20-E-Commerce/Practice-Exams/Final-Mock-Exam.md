@@ -1,6 +1,6 @@
 # 🧪 Final Mock Exam, E-Commerce
 
-> **Conditions:** Set a 60-minute timer. 60 questions. Treat it like the real thing (matches Adobe Commerce Business Practitioner blueprint difficulty).
+> **Conditions:** Set a 60-minute timer. 60 questions. This is a Cert Hub original mock covering the full operator curriculum, not a one-to-one replica of any single credential. (For reference, the real Adobe Commerce Business Practitioner Professional exam, AD0-E723, is 50 questions in 100 minutes, 41/50 to pass.) Treat this mock as harder, broader practice.
 > **Pass mark:** 45/60 (75%)
 > Take this AFTER finishing all 10 modules AND your Capstone (or the day before any real cert).
 
@@ -350,7 +350,7 @@ D. $500B
 
 ---
 
-### 39. The EU Digital Services Act (DSA) applied to Very Large Online Platforms (VLOPs) from:
+### 39. The EU Digital Services Act (DSA) became applicable to all in-scope online platforms from:
 
 A. May 25, 2018
 B. February 17, 2024
@@ -758,9 +758,9 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 - **Exam-takeaway.** $66B = Shein peak. Memorize for the case study.
 
 **Q39. Answer: B**
-- **Why B is correct.** DSA applied to VLOPs from February 17, 2024 (Regulation 2022/2065).
+- **Why B is correct.** The DSA became applicable to all in-scope online platforms on February 17, 2024 (Regulation 2022/2065). (Designated VLOPs/VLOSEs were already bound earlier, from August 25, 2023.)
 - **Why the others are wrong.** A is GDPR; C/D miss the effective date.
-- **Exam-takeaway.** Feb 17, 2024 = DSA-for-VLOPs.
+- **Exam-takeaway.** Feb 17, 2024 = DSA fully applicable to all in-scope platforms.
 
 **Q40. Answer: C**
 - **Why C is correct.** VLOP threshold = 45M+ EU monthly users.
@@ -858,7 +858,7 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 - **Exam-takeaway.** Always do the CM math before declaring victory.
 
 **Q59. Answer: B**
-- **Why B is correct.** Compliance-by-design = architect cross-border / B2B / composable initiatives with regulatory + operational redundancy from day one. The certification body explicitly tests this principle (per recent Adobe Commerce Business Practitioner blueprints).
+- **Why B is correct.** Compliance-by-design = architect cross-border / B2B / composable initiatives with regulatory + operational redundancy from day one. Commerce certifications commonly test this principle.
 - **Why the others are wrong.** A/C/D are anti-patterns.
 - **Exam-takeaway.** Build with compliance + redundancy from day one.
 

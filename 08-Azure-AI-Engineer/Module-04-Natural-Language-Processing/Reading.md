@@ -386,7 +386,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 6 wires CLU + Question Answering into Bot Service for production conversational AI; Module 7 covers when Azure OpenAI **replaces** a NLP feature (e.g., GPT-4o for abstractive summarization) and when it complements one.
-> - Cross-course: [`07-AWS-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) covers Comprehend / Translate / Polly / Transcribe for cross-cloud comparison.
+> - Cross-course: [`07-AWS-AI-Practitioner`](../../07-AWS-AI-Practitioner/) covers Comprehend / Translate / Polly / Transcribe for cross-cloud comparison.
 > - Practice: Practice Exam 1 has ~9 questions from this module (the largest single-module share in PE1); Final Mock revisits with Speech / Translator / Language case studies.
 
 ---

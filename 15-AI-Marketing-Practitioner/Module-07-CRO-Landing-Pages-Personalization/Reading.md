@@ -196,7 +196,7 @@ The 2026 wave. Instead of running one landing page for everyone, personalize the
 
 ### Mutiny
 
-Mutiny (acquired by Salesforce in 2024, now part of Marketing Cloud) is the leader in B2B website personalization. How it works:
+Mutiny is an independent B2B website personalization platform, widely used as a leader in the category. How it works:
 
 1. Mutiny detects the visitor's company via reverse-IP lookup (Clearbit / 6sense data)
 2. Based on industry/size/role, it serves a different version of your hero, body, and CTA
@@ -382,7 +382,7 @@ Argue from the frameworks in this module. There's more than one defensible answe
 
 > **Where this leads.**
 > - Inside this course: Module 8 builds the AI creative pipeline that produces variant LP hero images and copy; Module 9 wires LP form submits into HubSpot/Klaviyo automation; Module 10 (Capstone) runs your live LP test.
-> - Cross-course: [14-AI-Marketing-Foundations Module 8](../../14-AI-Marketing-Foundations/Module-08-Analytics-Measurement-Basics/Reading.md) covers lifecycle email that picks up where the LP ends; [16-AI-Marketing-Strategist](../../../16-AI-Marketing-Strategist/) covers LP design for organic traffic specifically.
+> - Cross-course: [14-AI-Marketing-Foundations Module 8](../../14-AI-Marketing-Foundations/Module-08-Analytics-Measurement-Basics/Reading.md) covers lifecycle email that picks up where the LP ends; [16-AI-Marketing-Strategist](../../16-AI-Marketing-Strategist/) covers LP design for organic traffic specifically.
 > - Practice: Practice Exam 2 has ~13 questions from this module (Bayesian vs Frequentist, sample size, MDE, hero anatomy, heatmap tools).
 
 ---

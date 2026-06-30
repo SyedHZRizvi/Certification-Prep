@@ -439,7 +439,7 @@ The exam-favorite trap is reaching for *one* of these when the right answer is *
 
 > **Where this leads.**
 > - Inside this course: Module 10 wires NSG Flow Logs, WAF logs, and Firewall logs into Azure Monitor, the *detection* half of the prevention-detect-respond loop this module covered.
-> - Cross-course: [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Modules 4, 5 cover the threat-actor side (Cl0p, ransomware-as-a-service models, MITRE ATT&CK techniques); [`04-AWS-Solutions-Architect-Associate` Module 8](../../04-AWS-Solutions-Architect-Associate/Module-08-Caching-CDN-Edge/Reading.md) covers the AWS analogues (Security Groups, AWS WAF, Shield, GuardDuty).
+> - Cross-course: [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/) Modules 4, 5 cover the threat-actor side (Cl0p, ransomware-as-a-service models, MITRE ATT&CK techniques); [`04-AWS-Solutions-Architect-Associate` Module 8](../../04-AWS-Solutions-Architect-Associate/Module-08-Caching-CDN-Edge/Reading.md) covers the AWS analogues (Security Groups, AWS WAF, Shield, GuardDuty).
 > - Practice: PE-2 has 12 questions from this module, it's the heaviest single-module test; Final Mock combines with VNet, identity, monitoring.
 
 ---

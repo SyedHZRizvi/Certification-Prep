@@ -138,13 +138,13 @@ In Blender, set color temperature on Area/Point/Spot lights by:
 
 ---
 
-## 4.5b Lighting for *Solitude* (2022), Painterly Naturalistic Light
+## 4.5b Painterly Naturalistic Light: An HDRI-First Approach
 
-Alberto Mielgo's *Solitude* (2022) approached Blender lighting from an oil-painting perspective. The production choices:
+One way to approach Blender lighting from an oil-painting perspective relies on environment light rather than artificial rigs. The production choices:
 
-- **Single dominant HDRI, zero artificial lights:** The entire short was lit purely by HDRI environment maps, no Point, Sun, Spot, or Area lights were added. This creates the diffused, even quality of overcast outdoor daylight.
-- **HDRI selection as art direction:** Each scene used a different HDRI from Poly Haven, the HDRI choice IS the color palette. A warm-sunset HDRI (orange tones, long shadows) creates completely different mood from a grey-overcast HDRI (flat, melancholic).
-- **Emission materials for artificial light:** Any practical light source (a lantern, a fire) was the mesh object itself with an Emission material, not a separate light object. This means the light source and the glow are the same piece of geometry, more physically accurate and easier to animate.
+- **Single dominant HDRI, zero artificial lights:** The scene is lit purely by HDRI environment maps, no Point, Sun, Spot, or Area lights are added. This creates the diffused, even quality of overcast outdoor daylight.
+- **HDRI selection as art direction:** Each scene uses a different HDRI from Poly Haven, the HDRI choice IS the color palette. A warm-sunset HDRI (orange tones, long shadows) creates completely different mood from a grey-overcast HDRI (flat, melancholic).
+- **Emission materials for artificial light:** Any practical light source (a lantern, a fire) is the mesh object itself with an Emission material, not a separate light object. This means the light source and the glow are the same piece of geometry, more physically accurate and easier to animate.
 
 **The lesson:** For painterly or stylized animation, simpler lighting rigs (HDRI only, or HDRI + one key) are often more effective than complex multi-light setups. Realism doesn't require complexity; it requires consistency.
 
@@ -173,7 +173,7 @@ Alberto Mielgo's *Solitude* (2022) approached Blender lighting from an oil-paint
 
 To use: Select the light → Object Properties → Light Linking → + to add objects to the include or exclude list.
 
-> 🎯 **What the exam tests:** Light Linking is a Blender 4.x feature. The exam may ask about Cycles-only vs. EEVEE capabilities. Light Linking works in both Cycles and EEVEE in Blender 4.1+. Before 4.1, this was only achievable through render layers and compositing.
+> 🎯 **What this checks:** Light Linking is a Blender 4.x feature. A common point of confusion is Cycles-only vs. EEVEE capabilities. Light Linking works in both Cycles and EEVEE in Blender 4.1+. Before 4.1, this was only achievable through render layers and compositing.
 
 ---
 
@@ -194,7 +194,7 @@ The Blender Institute published their *Sprite Fright* lighting documentation. Ke
 
 ## 4.6b Cycles vs. EEVEE: Lighting Accuracy Comparison
 
-Understanding what each renderer does well with lighting is critical for certification and for production planning:
+Understanding what each renderer does well with lighting is critical for your own competency check and for production planning:
 
 | Lighting Feature | Cycles (Path Tracing) | EEVEE (Rasterization) |
 |---|---|---|
@@ -262,11 +262,11 @@ The transition between zones used a **World shader node** mixing two Environment
 
 **Rim light placement automation:** Each of the robot character's shots had a rim light that needed to stay behind the character relative to camera. Rather than keyframing the rim light position manually, the lighting artist used a **Track To constraint** on the rim light, the light tracked a target Empty placed at the character's position but offset by a vector pointing toward the camera. As the character moved, the rim light automatically repositioned. This automation saved an estimated 40+ hours of manual rim light keying.
 
-> 🎯 **What the exam tests:** The Blender Foundation certification may reference *Charge* as the case study for single-character lighting. Key facts: zone-based HDRI transitions; emission rock surfaces replacing light objects in interiors; Track To constraint for automated rim light positioning.
+> 🎯 **What this checks:** *Charge* is a useful case study for single-character lighting. Key facts: zone-based HDRI transitions; emission rock surfaces replacing light objects in interiors; Track To constraint for automated rim light positioning.
 
 ---
 
-## 4.8 What the Exam Tests: Lighting Module
+## 4.8 Competency Checklist: Lighting Module
 
 | Topic | Tested Knowledge |
 |---|---|
@@ -319,7 +319,7 @@ The transition between zones used a **World shader node** mixing two Environment
 
 Light Linking eliminates this complexity for most use cases. The result is identical but the setup is 10× simpler.
 
-> 🎯 **What the exam tests:** Light Linking (introduced in 4.1) is a new-to-4.x feature that the Blender Foundation certification covers. Know: (1) it's accessed via Object Properties on the Light object, (2) Include mode = only listed objects receive the light, (3) Exclude mode = listed objects do NOT receive the light, (4) works in both Cycles and EEVEE.
+> 🎯 **What this checks:** Light Linking (introduced in 4.1) is a new-to-4.x feature worth knowing. Know: (1) it's accessed via Object Properties on the Light object, (2) Include mode = only listed objects receive the light, (3) Exclude mode = listed objects do NOT receive the light, (4) works in both Cycles and EEVEE.
 
 ---
 

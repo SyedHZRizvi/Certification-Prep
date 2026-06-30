@@ -332,19 +332,19 @@ You now know:
 
 ## 📖 Case Study, Zoom's Pandemic Scale-Up (March–June 2020)
 
-**Situation.** Zoom Video Communications entered 2020 with ~10M daily meeting participants. By **March 2020**, the COVID-19 pandemic forced a global shift to remote work, school, and social life. Daily participants exploded to **200M by March 2020** and **300M by April 2020**, a **30× increase in 90 days**, the largest documented organic scale event in SaaS history. CEO Eric Yuan's daily standups (described in his Saastr Annual 2021 keynote) covered both architecture decisions and *which AWS service to call next*.
+**Situation.** Zoom Video Communications entered 2020 with roughly 10M daily meeting participants. By **March 2020**, the COVID-19 pandemic forced a global shift to remote work, school, and social life. Daily participants grew explosively, reaching around **300M by April 2020** (a publicly reported figure) — one of the largest organic scale events in SaaS history.
 
-**Decision.** Zoom ran on a hybrid of co-located data centers (for media routing) and AWS (for control plane, recording storage, transcription). The database response (per Hash Bin's *"Architecture of Zoom"* 2021 series and Yuan's investor calls):
+**Decision.** Zoom ran on a hybrid of co-located data centers (for media routing) and AWS (for control plane, recording storage, transcription). The database response below is an *illustrative* reconstruction of how a SaaS platform scales its data layer under such load (specific throughput, replica, node, and capacity figures are hypothetical, chosen to teach the patterns):
 
-1. **DynamoDB On-Demand for meeting metadata.** Zoom moved meeting state from a self-managed PostgreSQL fleet to **DynamoDB On-Demand mode** in early 2020. On-Demand eliminated the "provisioned throughput exceeded" failure mode, DynamoDB auto-scaled write capacity from ~100K writes/sec to ~5M writes/sec within weeks
-2. **Aurora MySQL with Read Replicas** for user account and billing data, they horizontally scaled to **15 read replicas** in the primary region
-3. **ElastiCache Redis** (cluster mode) for session state, sharded across 64 nodes
-4. **S3 with Intelligent-Tiering** for **30 PB of new meeting recordings** in 2020 alone. Older recordings auto-tiered to Glacier
-5. **Aurora Global Database** added in mid-2020 for cross-region failover, Zoom committed to multi-region active-passive after a March 2020 partial outage that exposed single-region risk
+1. **DynamoDB On-Demand for meeting metadata.** Moving meeting state from a self-managed relational fleet to **DynamoDB On-Demand mode** eliminates the "provisioned throughput exceeded" failure mode, since DynamoDB auto-scales write capacity as load climbs
+2. **Aurora MySQL with Read Replicas** for user account and billing data, horizontally scaled with multiple read replicas in the primary region
+3. **ElastiCache Redis** (cluster mode) for session state, sharded across many nodes
+4. **S3 with Intelligent-Tiering** for the large volume of new meeting recordings. Older recordings auto-tiered to Glacier
+5. **Aurora Global Database** for cross-region failover, moving to multi-region active-passive after a single-region risk is exposed
 6. **DynamoDB Streams + Lambda** for asynchronous propagation of meeting state to analytics
-7. **Amazon Transcribe** (which itself sits on DynamoDB internally) for the now-famous AI transcription feature
+7. **Amazon Transcribe** for the now-famous AI transcription feature
 
-**Outcome.** Zoom served 300M daily participants with <1s p99 latency on meeting join a number that would have been unthinkable in late 2019. Revenue grew from $623M (FY2020) to $4.1B (FY2022) a 6.5× revenue increase in 2 years, mostly enabled by the architectural elasticity. The architecture choices became Yuan's most-cited case study in subsequent SaaS investor presentations.
+**Outcome.** Zoom served on the order of 300M daily participants at low join latency — a number that would have been unthinkable in late 2019. Its revenue also grew sharply over the following two fiscal years, with the architectural elasticity a key enabler. The episode became a widely-cited example of cloud-scale elasticity in SaaS.
 
 **Lesson for the exam / for practitioners.** Every "database scaling under unpredictable load" trope on the SAA exam came from this period:
 

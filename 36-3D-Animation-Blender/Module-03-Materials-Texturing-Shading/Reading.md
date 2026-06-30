@@ -147,7 +147,7 @@ Blender's **Texture Paint** workspace allows painting directly on the 3D mesh in
 
 ## 3.5b The Shader Node Cheat Table
 
-Knowing what each node does by memory is tested directly in Blender certification. The following nodes appear most frequently:
+Knowing what each node does by memory is a core competency. The following nodes appear most frequently:
 
 | Node | Category | Input(s) | Output | Key Use |
 |---|---|---|---|---|
@@ -170,7 +170,7 @@ Knowing what each node does by memory is tested directly in Blender certificatio
 | **Fresnel** | Input | IOR, Normal | Fac | Angle-based reflection strength |
 | **Layer Weight** | Input |, | Fresnel, Facing | Edge glow, subsurface edge |
 
-> 🎯 **What the exam tests:** Know which socket type connects to which. BSDF outputs connect only to BSDF or Mix Shader inputs, not directly to the Material Output, you must go through a Shader socket. Color outputs can connect to any Color socket or be converted with the Converter nodes.
+> 🎯 **What this checks:** Know which socket type connects to which. BSDF outputs connect only to BSDF or Mix Shader inputs, not directly to the Material Output, you must go through a Shader socket. Color outputs can connect to any Color socket or be converted with the Converter nodes.
 
 ---
 
@@ -235,7 +235,7 @@ Ian Hubert's ongoing short film series *Dynamo Dream* demonstrates that photorea
 
 **Hubert's material philosophy:** "Make the camera do the work." Textures that look detailed from the camera angle don't need to look detailed from any other angle. This philosophy of camera-first shading significantly reduces the complexity of the node graph and the resolution of textures needed.
 
-> 🎯 **What the exam tests:** The *Dynamo Dream* approach of camera-projected materials is an advanced compositing/shader technique. For the exam, know that the **Object** coordinate input from the Texture Coordinate node projects textures in object space (moves with the object), while the **Window** input projects from the camera angle (perspective-correct for camera-projection techniques).
+> 🎯 **What this checks:** The *Dynamo Dream* approach of camera-projected materials is an advanced compositing/shader technique. Know that the **Object** coordinate input from the Texture Coordinate node projects textures in object space (moves with the object), while the **Window** input projects from the camera angle (perspective-correct for camera-projection techniques).
 
 ---
 
@@ -306,11 +306,11 @@ EEVEE renders materials faster than Cycles but has specific requirements:
 | Screen Space Refraction | Off | Enable for glass materials in EEVEE |
 | Subsurface Translucency | Off | Enable for thin-surface sub-scatter (leaves, ears) |
 
-> 🎯 **What the exam tests:** The Blend Mode setting for transparent materials in EEVEE is a common certification question. Know: Opaque = no transparency; Alpha Clip = cutout/binary opacity; Alpha Blend = smooth transparency; Alpha Hashed = dithered (accurate but noisy). The wrong Blend Mode causes correct shader setups to render as solid (Opaque) or jagged (wrong alpha mode).
+> 🎯 **What this checks:** The Blend Mode setting for transparent materials in EEVEE is a common point of confusion. Know: Opaque = no transparency; Alpha Clip = cutout/binary opacity; Alpha Blend = smooth transparency; Alpha Hashed = dithered (accurate but noisy). The wrong Blend Mode causes correct shader setups to render as solid (Opaque) or jagged (wrong alpha mode).
 
 ---
 
-## 3.9 What the Exam Tests: Materials Module
+## 3.9 Competency Checklist: Materials Module
 
 | Topic | Tested Knowledge |
 |---|---|
@@ -346,7 +346,7 @@ EEVEE renders materials faster than Cycles but has specific requirements:
 
 ## 3.10 Advanced Procedural Material Patterns
 
-Procedural materials require no external texture files and tile infinitely without seams. These patterns appear on the Blender Foundation certification:
+Procedural materials require no external texture files and tile infinitely without seams. These patterns are worth knowing cold:
 
 **Scratched metal procedural:**
 ```
@@ -369,7 +369,7 @@ Original Roughness value → Math (Multiply × 0.1 when wet, × 1.0 when dry)
 Animate the Multiply factor from 1.0 → 0.1 over 24 frames to simulate rain hitting the surface
 ```
 
-> 🎯 **What the exam tests:** Procedural nodes (Noise, Musgrave, Voronoi, ColorRamp) appear on the certification specifically in the context of creating variations without UV maps. Know that Noise Texture with Scale controls the size of the pattern (high Scale = fine noise) and Detail controls the number of noise octaves (high Detail = more complex, finer fractal detail).
+> 🎯 **What this checks:** Procedural nodes (Noise, Musgrave, Voronoi, ColorRamp) matter specifically in the context of creating variations without UV maps. Know that Noise Texture with Scale controls the size of the pattern (high Scale = fine noise) and Detail controls the number of noise octaves (high Detail = more complex, finer fractal detail).
 
 ---
 

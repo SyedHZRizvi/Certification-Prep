@@ -47,7 +47,7 @@ The model learns *cross-modal correlations directly*, that the word "carbonara" 
 
 | Modality | Formats | Practical limits |
 |----------|---------|------------------|
-| **Text** | UTF-8 | Up to 1M tokens (Flash) / 2M tokens (Pro/Ultra) |
+| **Text** | UTF-8 | Up to 1M tokens (Flash) / 2M tokens (Pro) |
 | **Images** | PNG, JPEG, WebP, HEIC, HEIF | Up to 3,600 images in a single prompt; recommended ≤7MB per image; 768×768 ideal resolution (lower = cheaper) |
 | **Audio** | MP3, WAV, AIFF, AAC, OGG, FLAC | Up to ~9.5 hours per audio file (when tokenized); ~30 tokens/second of audio |
 | **Video** | MP4, MPEG, MOV, AVI, FLV, MPG, WebM, WMV, 3GP | Up to ~50 minutes per video (when tokenized); resampled to 1 fps + audio track |

@@ -365,7 +365,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 2 turns the resource model you just learned into a *Responsible AI* control surface (content filters, prompt shields, groundedness). Module 7 deepens the auth + quota story specifically for Azure OpenAI. Module 8 wires it all into Azure AI Foundry projects.
-> - Cross-course: [`05-Azure-Fundamentals`](../../../05-Azure-Fundamentals/) covers the ARM resource model; [`06-Azure-Administrator`](../../../06-Azure-Administrator/) deepens RBAC + managed identity; [`07-AWS-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) gives the cross-cloud comparison if you've worked on Bedrock or SageMaker.
+> - Cross-course: [`05-Azure-Fundamentals`](../../05-Azure-Fundamentals/) covers the ARM resource model; [`06-Azure-Administrator`](../../06-Azure-Administrator/) deepens RBAC + managed identity; [`07-AWS-AI-Practitioner`](../../07-AWS-AI-Practitioner/) gives the cross-cloud comparison if you've worked on Bedrock or SageMaker.
 > - Practice: Practice Exam 1 includes ~7 questions drawing from this module (provisioning, auth, SDK identity); Final Mock Exam revisits the same patterns inside multi-module case studies.
 
 ---

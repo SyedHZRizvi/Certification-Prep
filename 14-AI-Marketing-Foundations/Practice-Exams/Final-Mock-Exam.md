@@ -897,7 +897,7 @@ Once you pass this Final Mock at 75%+:
 
 - 🆓 Take the **HubSpot Marketing Software Certification** (free, ~1–2 hours, free retakes) inside HubSpot Academy.
 - 🆓 Audit the **Google Digital Marketing & E-commerce Professional Certificate** on Coursera (free with audit; ~6 months self-paced).
-- 💰 Schedule the **Meta Certified Digital Marketing Associate** exam (400-101) at $99 USD when you're confident. Schedule via Meta Blueprint.
+- 💰 Schedule the **Meta Certified Digital Marketing Associate** exam (100-101) at $99 USD when you're confident. Schedule via Meta Blueprint.
 
 You've now got the credible foundation. Go earn the real credentials.
 

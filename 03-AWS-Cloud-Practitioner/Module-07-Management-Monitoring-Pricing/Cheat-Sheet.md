@@ -38,7 +38,7 @@
 5. Service Limits
 ```
 
-- Free tier = **7 core checks**
+- Free tier (Basic / Developer) = **limited set** (Service Limits + select Security & Fault Tolerance)
 - Business / Enterprise = **ALL checks**
 
 ---

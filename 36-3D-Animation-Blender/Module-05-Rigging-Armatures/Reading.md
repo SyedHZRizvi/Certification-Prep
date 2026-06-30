@@ -200,7 +200,7 @@ The **Non-Linear Animation (NLA) Editor** is not just for walk cycles, it is a p
 - **Hold:** Holds the last frame's pose before/after the strip (useful for the final pose of a reach action)
 - **Hold Forward:** Holds only after the strip ends
 
-> 🎯 **What the exam tests:** The NLA Editor is heavily tested in Blender certification. Know the difference between **Push Down** (sends the current action to the NLA as a strip, freeing the Action Editor to create a new one) and **Stash** (similar but the strip starts as muted). Muted strips still influence the scene when un-muted.
+> 🎯 **What this checks:** The NLA Editor is a frequent stumbling block. Know the difference between **Push Down** (sends the current action to the NLA as a strip, freeing the Action Editor to create a new one) and **Stash** (similar but the strip starts as muted). Muted strips still influence the scene when un-muted.
 
 ---
 
@@ -291,7 +291,7 @@ For complex facial performances, production rigs combine shape keys AND bones, e
 
 ---
 
-## 5.10 What the Exam Tests: Rigging Module
+## 5.10 Competency Checklist: Rigging Module
 
 | Topic | Tested Knowledge |
 |---|---|
@@ -365,7 +365,7 @@ Production rigs expose **custom properties** so animators can control complex be
 
 **Rigify does this automatically:** The generated rig includes IK/FK sliders pre-built on the limb control bones, accessible in the Item tab (N-Panel) when any limb bone is selected in Pose Mode.
 
-> 🎯 **What the exam tests:** Custom properties + drivers on bones is a Blender certification topic. Know that custom properties are stored on bones (in Pose Mode → Object Properties) and can drive any animatable value through the Driver system (right-click any property → Add Driver).
+> 🎯 **What this checks:** Custom properties + drivers on bones is a key rigging skill. Know that custom properties are stored on bones (in Pose Mode → Object Properties) and can drive any animatable value through the Driver system (right-click any property → Add Driver).
 
 ---
 

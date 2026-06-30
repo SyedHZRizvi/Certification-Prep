@@ -145,7 +145,7 @@ Each asset needs at least a base material. For a 10-second short, use a simple w
 - Environment: Procedural materials (Noise + ColorRamp), no UV mapping needed
 - Background props: Flat vertex color or single-color Principled BSDF with slight roughness variation
 
-> 🎯 **What the exam tests:** The certification includes a practical component, building a complete short scene. Knowing which material approach matches which project goal is directly tested. Flat vertex color = fastest, but limited visual quality. Principled BSDF + texture maps = best quality, requires UV unwrapping. Toon BSDF = stylized look, works with or without UV maps.
+> 🎯 **What this checks:** The capstone is a practical build of a complete short scene. Knowing which material approach matches which project goal is what matters here. Flat vertex color = fastest, but limited visual quality. Principled BSDF + texture maps = best quality, requires UV unwrapping. Toon BSDF = stylized look, works with or without UV maps.
 
 ---
 
@@ -340,9 +340,9 @@ Before uploading to your portfolio:
 
 ---
 
-## 10.10 What the Exam Tests: Short Project Module
+## 10.10 Competency Checklist: Short Project Module
 
-The Blender Foundation's certification capstone assessment evaluates whether candidates can plan and execute a complete production pipeline. Key tested skills:
+This capstone competency check evaluates whether you can plan and execute a complete production pipeline. Key skills:
 
 | Topic | Tested Knowledge |
 |---|---|

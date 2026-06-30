@@ -222,7 +222,7 @@ The *Sprite Fright* compositing pipeline (documented in the Blender Institute pr
 
 **The key insight:** Using **separate View Layers** for characters and backgrounds rendered at different sample counts cut total render time by 40% compared to rendering everything in one layer at the highest sample count. The compositor blended the layers seamlessly.
 
-> 🎯 **What the exam tests:** View Layers are the primary tool for multi-pass, multi-quality rendering in Blender. Know that each View Layer can have its own: (1) object visibility (which objects render in this layer), (2) sample count (via Render Properties → Sampling → override per-layer), and (3) enabled render passes (some layers need Cryptomatte; others don't). This separation is core to any production render pipeline.
+> 🎯 **What this checks:** View Layers are the primary tool for multi-pass, multi-quality rendering in Blender. Know that each View Layer can have its own: (1) object visibility (which objects render in this layer), (2) sample count (via Render Properties → Sampling → override per-layer), and (3) enabled render passes (some layers need Cryptomatte; others don't). This separation is core to any production render pipeline.
 
 ---
 
@@ -307,7 +307,7 @@ Blender's color management system converts between different color spaces throug
 
 ---
 
-## 9.8 What the Exam Tests: Rendering Module
+## 9.8 Competency Checklist: Rendering Module
 
 | Topic | Tested Knowledge |
 |---|---|
@@ -360,7 +360,7 @@ Blender's color management system converts between different color spaces throug
 
 **Production use case:** In *Sprite Fright*, Cryptomatte was used to apply per-character color grade adjustments, each character had a slightly different tonal treatment (warmer for the human protagonist, cooler for the alien sprites) applied in the Compositor using Cryptomatte masks rather than re-rendering with different lighting.
 
-> 🎯 **What the exam tests:** Cryptomatte is tested as a compositing pass, not just a render setting. Know: (1) enabled in View Layer → Passes; (2) accessed in Compositor via Cryptomatte node; (3) levels = how many overlapping objects can be isolated (level 2 = 4 objects per pixel, level 3 = 8 objects per pixel); (4) works with EXR output only (not PNG).
+> 🎯 **What this checks:** Cryptomatte matters as a compositing pass, not just a render setting. Know: (1) enabled in View Layer → Passes; (2) accessed in Compositor via Cryptomatte node; (3) levels = how many overlapping objects can be isolated (level 2 = 4 objects per pixel, level 3 = 8 objects per pixel); (4) works with EXR output only (not PNG).
 
 ---
 

@@ -38,7 +38,7 @@ Headers:
 
 Body:
 {
-  "model": "claude-sonnet-4-6-20260301",
+  "model": "claude-sonnet-4-6",
   "max_tokens": 1024,
   "system": "You are a helpful assistant.",
   "messages": [
@@ -57,7 +57,7 @@ Response (non-streaming):
   "id": "msg_01...",
   "type": "message",
   "role": "assistant",
-  "model": "claude-sonnet-4-6-20260301",
+  "model": "claude-sonnet-4-6",
   "content": [
     {"type": "text", "text": "Hi there! How can I help?"}
   ],
@@ -97,7 +97,7 @@ client = Anthropic(
 )
 
 response = client.messages.create(
-    model="claude-sonnet-4-6-20260301",
+    model="claude-sonnet-4-6",
     max_tokens=1024,
     system="You are a senior Python engineer.",
     messages=[
@@ -118,7 +118,7 @@ async_client = AsyncAnthropic()
 
 async def main():
     response = await async_client.messages.create(
-        model="claude-sonnet-4-6-20260301",
+        model="claude-sonnet-4-6",
         max_tokens=512,
         messages=[{"role": "user", "content": "Hello!"}],
     )
@@ -129,7 +129,7 @@ async def main():
 
 ```python
 with client.messages.stream(
-    model="claude-sonnet-4-6-20260301",
+    model="claude-sonnet-4-6",
     max_tokens=1024,
     messages=[{"role": "user", "content": "Stream a 300-word essay on persimmons."}],
 ) as stream:
@@ -165,7 +165,7 @@ const client = new Anthropic({
 });
 
 const response = await client.messages.create({
-  model: "claude-sonnet-4-6-20260301",
+  model: "claude-sonnet-4-6",
   max_tokens: 1024,
   system: "You are a senior TypeScript engineer.",
   messages: [
@@ -180,7 +180,7 @@ console.log(response.content[0].type === "text" ? response.content[0].text : "")
 
 ```typescript
 const stream = client.messages.stream({
-  model: "claude-sonnet-4-6-20260301",
+  model: "claude-sonnet-4-6",
   max_tokens: 1024,
   messages: [{ role: "user", content: "Stream a haiku about TCP/IP." }],
 });
@@ -230,7 +230,7 @@ Anthropic shipped prompt caching in mid-2024. It works by hashing the prompt pre
 
 ```python
 response = client.messages.create(
-    model="claude-sonnet-4-6-20260301",
+    model="claude-sonnet-4-6",
     max_tokens=1024,
     system=[
         {
@@ -310,7 +310,7 @@ batch = client.messages.batches.create(
         Request(
             custom_id="doc-001",
             params={
-                "model": "claude-sonnet-4-6-20260301",
+                "model": "claude-sonnet-4-6",
                 "max_tokens": 512,
                 "messages": [{"role": "user", "content": f"Summarize:\n{document_1}"}],
             }
@@ -318,7 +318,7 @@ batch = client.messages.batches.create(
         Request(
             custom_id="doc-002",
             params={
-                "model": "claude-sonnet-4-6-20260301",
+                "model": "claude-sonnet-4-6",
                 "max_tokens": 512,
                 "messages": [{"role": "user", "content": f"Summarize:\n{document_2}"}],
             }
@@ -360,7 +360,7 @@ Sometimes you want to know how many tokens a prompt is BEFORE you send it (to fi
 ```python
 # Approximate count using the SDK's built-in counter
 token_count = client.messages.count_tokens(
-    model="claude-sonnet-4-6-20260301",
+    model="claude-sonnet-4-6",
     messages=[{"role": "user", "content": "How many tokens am I?"}],
     system="You are helpful.",
 )

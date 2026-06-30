@@ -1,12 +1,12 @@
 # Module 6: Conversational AI 💬
 
-> **Why this module matters:** AI-102's "decision support" + parts of "NLP" domains cover the chatbot stack: Azure AI Bot Service, Bot Framework, CLU, Question Answering, and how they fit together through orchestration workflows. This module ties Module 4's NLP services into deployable bots.
+> **Why this module matters:** AI-102's "NLP" and "agentic solution" domains cover the chatbot stack: Azure AI Bot Service, Bot Framework, CLU, Question Answering, and how they fit together through orchestration workflows. This module ties Module 4's NLP services into deployable bots.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1 (auth, identities)
 > - Module 4 (CLU + Question Answering at the SDK level)
 > - Basic REST + WebSocket mental model
-> - Optional: project-management chapters from [`02-PMP`](../../../02-PMP/) for "user journey" framing if you've never designed a chatbot conversation flow
+> - Optional: project-management chapters from [`02-PMP`](../../02-PMP/) for "user journey" framing if you've never designed a chatbot conversation flow
 >
 > If "intent" and "entity" feel new, return to Module 4's CLU section first.
 
@@ -391,7 +391,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 7 wires the LLM brain into the bot (Azure OpenAI behind a dialog); Module 8 covers Foundry Agent Service which is the modern "bot+tools" surface Security Copilot is conceptually built on.
-> - Cross-course: [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) covers the SIEM/SOAR side relevant to Security Copilot.
+> - Cross-course: [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/) covers the SIEM/SOAR side relevant to Security Copilot.
 > - Practice: Practice Exam 2 has ~5 questions from this module; Final Mock includes voice + Teams channel composition cases.
 
 ---

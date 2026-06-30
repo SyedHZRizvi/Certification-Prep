@@ -116,7 +116,7 @@ This is a practitioner course, not tied to one exam. After it, you're ready for 
 | Google Ads Display Certification | Free | 50 Q / 75 min · 80% pass | Skillshop |
 | Google Ads Video Certification | Free | 50 Q / 75 min · 80% pass | Skillshop |
 | Google Ads Measurement Certification | Free | 50 Q / 75 min · 80% pass | Skillshop |
-| Meta Certified Media Buying Professional (410-101) | $150 USD | 75 Q / 105 min · ~70% pass | [meta.com/blueprint](https://www.facebook.com/business/learn/certification) |
+| Meta Certified Media Buying Professional (100-101) | $150 USD | 75 Q / 105 min · ~70% pass | [meta.com/blueprint](https://www.facebook.com/business/learn/certification) |
 | TikTok Ads Manager Beginner | Free | ~30 Q · ~70% pass | [tiktok.com/business](https://www.tiktok.com/business/en/learn/badge) |
 
 🎯 **The smart path:** Start with Google Ads Search (free, 80% pass), then Meta MBP ($150, harder), then TikTok (free, easy win).
@@ -164,7 +164,7 @@ This course is built specifically to inoculate you against all 7.
 |----------|-------|
 | Paid platforms | Google Ads + Google Ads Editor, Meta Ads Manager + Business Manager, TikTok Ads Manager, LinkedIn Campaign Manager, DV360 (intro) |
 | Measurement | GA4, Google Tag Manager, Meta Pixel + Conversions API, Triple Whale, Hyros |
-| AI writing | Claude (Sonnet 4.7), ChatGPT (GPT-5), Gemini 2.5 Pro |
+| AI writing | Claude (Sonnet 4.6), ChatGPT (GPT-5), Gemini 2.5 Pro |
 | AI image | Midjourney v7, DALL-E 3, Flux Pro, Adobe Firefly 3 |
 | AI video | Runway Gen-4, Pika 2.0, HeyGen, Synthesia |
 | AI voice | ElevenLabs Multilingual v3 |

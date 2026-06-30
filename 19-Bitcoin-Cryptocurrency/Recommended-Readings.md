@@ -30,8 +30,8 @@
 - **Antonopoulos, Andreas M., *The Internet of Money*, vols. 1–3 (Merkle Bloom, 2016/2017/2019).**
   - Three short volumes of public talks. The best plain-English explanation of what Bitcoin *means*, useful for any board readout, executive briefing, or family-dinner conversation.
 
-- **Lawant, Matt; Hougan, Matt; Lawant, David, *Cryptoassets: The Innovative Investor's Guide to Bitcoin and Beyond*, 2nd ed. (McGraw-Hill, 2024; original 2017 by Burniske & Tatar).**
-  - Updated to include the spot-ETF launch and 2024 institutional landscape. Engage during Module 9.
+- **Burniske, Chris & Tatar, Jack, *Cryptoassets: The Innovative Investor's Guide to Bitcoin and Beyond* (McGraw-Hill, 2017).**
+  - The foundational cryptoasset-as-asset-class framework (taxonomy, valuation, portfolio construction). Engage during Module 9.
 
 - **Hougan, Matt; Lawant, David, *Cryptoassets: The Guide to Bitcoin, Blockchain, and Cryptocurrency for Professional Investors* (CFA Institute Research Foundation, 2021; free PDF at cfainstitute.org).**
   - The CFA Institute's own free monograph. Required reading for any CFA candidate doing the digital-assets specialization. Engage during Module 9.
@@ -246,7 +246,7 @@ If you have time for only 5 books, read in this order:
 2. **Antonopoulos, *Mastering Bitcoin* 2e** (the practitioner reference)
 3. **Narayanan et al., *Bitcoin and Cryptocurrency Technologies*** (the academic counterpart)
 4. **Antonopoulos / Osuntokun / Pickhardt, *Mastering the Lightning Network*** (the L2 reference)
-5. **Hougan & Lawant, *Cryptoassets* (2024 ed.)** (the institutional-investor view)
+5. **Burniske & Tatar, *Cryptoassets*** (the cryptoasset-as-asset-class view)
 
 If you have time for only 3 standards, read:
 
