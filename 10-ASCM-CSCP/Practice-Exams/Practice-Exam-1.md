@@ -514,7 +514,7 @@ Distribute review focus by domain weight:
 ## Detailed answer rationales
 
 ### Q1 (A. Material, information, cash)
-- **Why A is correct.** APICS dictionary lists exactly three flows: material, information, and cash. This is verbatim exam content (Module 1).
+- **Why A is correct.** APICS dictionary lists exactly three flows: material, information, and cash. This is a core definition you'll be tested on (Module 1).
 - **Why others are wrong.** B mixes vocabulary; "people" and "profit" are outcomes, not flows. C lists *actors* in the SC, not flows. D names *concepts* (demand/supply/inventory), not flows.
 - **Exam-takeaway.** Three flows: material, information, cash. Memorize verbatim.
 
