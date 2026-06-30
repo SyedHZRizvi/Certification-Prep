@@ -24,7 +24,7 @@
 
 ---
 
-## 📐 EOQ (Economic Order Quantity) Formula (MEMORIZE)
+## 📐 EOQ Formula (MEMORIZE)
 
 ```
 EOQ = √(2 × D × S / H)
@@ -50,7 +50,7 @@ Where p = production rate, d = demand rate. Always > EOQ.
 
 ---
 
-## 🔁 ROP (Reorder Point) & Safety Stock
+## 🔁 ROP & Safety Stock
 
 ```
 ROP = d × LT + SS
@@ -96,7 +96,7 @@ A-item target: **95%+** (0% tolerance). C items: 90% acceptable.
 ## 📈 Turnover & Days of Supply
 
 ```
-Turnover = Annual COGS (Cost of Goods Sold) / Avg Inventory
+Turnover = Annual COGS / Avg Inventory
 Days of Supply = 365 / Turnover
 ```
 
@@ -109,7 +109,7 @@ Days of Supply = 365 / Turnover
 | Model | Who Owns | Who Plans |
 |-------|----------|-----------|
 | Standard | Customer | Customer |
-| **VMI (Vendor Managed Inventory)** | Customer (usually) | Supplier |
+| **VMI** | Customer (usually) | Supplier |
 | **Consignment** | Supplier (until use) | Either |
 
 ---
@@ -138,7 +138,7 @@ When you see these, often **wrong**:
 - ❌ Blindly applying EOQ when discounts exist
 - ❌ Targeting 100% service (cost rises exponentially)
 - ❌ Ignoring inventory record accuracy
-- ❌ Setting SS = 0 because "we use JIT (Just-In-Time)"
+- ❌ Setting SS = 0 because "we use JIT"
 
 ---
 

@@ -134,7 +134,7 @@ PHASE 3: SPLINE REFINE
 | Jaw open (AU26) | Cheek droop | Cheek sags as jaw drops |
 | Brow raise (AU1) | Forehead skin wrinkle | Horizontal creases appear |
 
-**SDK (Software Development Kit) vs. Expression:** SDK uses animation curves (non-linear, arbitrary mapping). Expression uses math formulas (linear, predictable). SDK is more flexible; expression is more predictable.
+**SDK vs. Expression:** SDK uses animation curves (non-linear, arbitrary mapping). Expression uses math formulas (linear, predictable). SDK is more flexible; expression is more predictable.
 
 ---
 

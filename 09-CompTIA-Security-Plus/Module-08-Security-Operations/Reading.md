@@ -1,12 +1,12 @@
 # Module 8: Security Operations 🛰️
 
-> **Why this module matters:** Domain 4 (Security Operations) is **28%** of the Sec+ exam, the largest single domain. This is where the SOC (Security Operations Center) actually lives: SIEM (Security Information and Event Management), SOAR, incident response, forensics, threat hunting, vulnerability management. Master this and you're more than a quarter of the way to passing.
+> **Why this module matters:** Domain 4 (Security Operations) is **28%** of the Sec+ exam, the largest single domain. This is where the SOC actually lives: SIEM, SOAR, incident response, forensics, threat hunting, vulnerability management. Master this and you're more than a quarter of the way to passing.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Threat actor types, motivations, TTPs](../Module-04-Threats-Threat-Actors/Reading.md), needed to interpret what you're detecting.
 > - [Attack indicators](../Module-05-Vulnerabilities-Attacks/Reading.md), the IOCs/IOAs the SIEM is looking for.
 > - [Network appliances and log sources](../Module-06-Network-Security/Reading.md), what feeds the SIEM.
-> - [Endpoint EDR (Endpoint Detection and Response) and cloud telemetry](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md), major detection sources.
+> - [Endpoint EDR and cloud telemetry](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md), major detection sources.
 > - General Linux/Windows admin literacy, needed for forensics, scripting, and EDR concepts.
 
 ---
@@ -36,7 +36,7 @@ You can't protect what you don't know exists. Sec+ tests asset lifecycle:
 
 | Phase | Activities |
 |-------|-----------|
-| **Acquisition / Procurement** | Vendor risk review, security requirements in RFP (Request for Proposal) |
+| **Acquisition / Procurement** | Vendor risk review, security requirements in RFP |
 | **Assignment / Accounting** | Who owns it, what it does, where it is (CMDB) |
 | **Classification** | What's the data sensitivity? (drives controls) |
 | **Monitoring / Maintenance** | Patch, monitor health, track config drift |
@@ -63,10 +63,10 @@ A **SIEM** collects logs from across the environment, normalizes them, correlate
 ### What feeds a SIEM
 - Endpoints (EDR / OS event logs)
 - Network appliances (firewall, IDS/IPS, proxy)
-- Identity (AD (Active Directory), IdP, MFA)
+- Identity (AD, IdP, MFA)
 - Cloud (CloudTrail, Activity Log, Audit Logs)
 - App logs
-- DNS (Domain Name System), DHCP (Dynamic Host Configuration Protocol), mail gateway
+- DNS, DHCP, mail gateway
 - Vulnerability scanners
 - Threat intel feeds (for IOC enrichment)
 
@@ -75,7 +75,7 @@ A **SIEM** collects logs from across the environment, normalizes them, correlate
 - **Correlation rules** ("if EDR alert + outbound to bad IP within 5 min → escalate")
 - **Alerting + dashboards**
 - **Long-term retention** for compliance
-- **Search & investigation UI (User Interface)**
+- **Search & investigation UI**
 
 ### Important SIEM concepts
 - **UEBA** (User & Entity Behavior Analytics), baseline normal, alert on deviation
@@ -157,7 +157,7 @@ Sec+ uses the **NIST SP 800-61 Rev 2** IR lifecycle (Cichonski, Millar, Grance &
 
 ### Containment strategies
 - **Isolation**, pull network, EDR-quarantine
-- **Segmentation**, VLAN (Virtual Local Area Network) move to a sandbox
+- **Segmentation**, VLAN move to a sandbox
 - **Sinkhole**, redirect C2 DNS to /dev/null
 - **Allow short-term to gather intel?** Sometimes deliberately allow continued (controlled) activity to learn more, risky, deliberate decision
 
@@ -286,7 +286,7 @@ DISCOVER → IDENTIFY → ANALYZE → PRIORITIZE → RESPOND (patch/mitigate/acc
 
 ### Responses to a vulnerability
 1. **Patch**, apply vendor fix
-2. **Mitigate** (compensating control), disable feature, segment, WAF (Web Application Firewall) rule
+2. **Mitigate** (compensating control), disable feature, segment, WAF rule
 3. **Accept**, formal risk acceptance (documented)
 4. **Transfer**, insurance, outsource
 5. **Avoid**, discontinue affected functionality
@@ -351,7 +351,7 @@ A PBQ would let you drag the actions into ordered slots.
 
 **Outcome.** MGM's IT teams responded by **shutting down nearly every internet-facing system** including reservations, room keys, slot machines, ATMs, restaurant POS, and the digital casino-floor systems for **10 days** (10-20 September 2023, with full restoration not until late September). Guests checked in with handwritten keys, couldn't use room charges, found slot machines bricked. The MGM mobile app, websites, and reservation systems went dark. Public statements were silent for days; SEC 8-K disclosure on **12 September 2023**. Total reported impact: **$100M+ in revenue loss** (MGM Q3 2023 earnings call), plus ~$10M in IR costs, plus class-action litigation continuing into 2024-2025. Caesar's Entertainment separately attacked by the *same* group days earlier had quietly paid **~$15M ransom** and avoided MGM's public ordeal. The contrast became a case study in itself: pay-vs-don't-pay calculus.
 
-The **same week**, the FTC and SEC opened investigations. CISA published an advisory on Scattered Spider TTPs (AA23-320A, November 2023). MGM's CFO (Chief Financial Officer) later acknowledged the recovery cost was *less* than the demanded ransom, vindicating the no-pay decision financially even setting aside legal/ethical concerns.
+The **same week**, the FTC and SEC opened investigations. CISA published an advisory on Scattered Spider TTPs (AA23-320A, November 2023). MGM's CFO later acknowledged the recovery cost was *less* than the demanded ransom, vindicating the no-pay decision financially even setting aside legal/ethical concerns.
 
 **Lesson for the exam / for practitioners.** MGM is the textbook 2020s SOC case:
 
@@ -417,9 +417,9 @@ The **same week**, the FTC and SEC opened investigations. CISA published an advi
 | UEBA | User & Entity Behavior Analytics |
 | IR / IRP | Incident Response / Plan |
 | NIST 800-61 | IR lifecycle standard |
-| EDR / XDR (Extended Detection and Response) / MDR | (covered M7) |
+| EDR / XDR / MDR | (covered M7) |
 | MTTR / MTBF / MTTD / MTTC | Mean Time To Recover/Between Failures/Detect/Contain |
-| RTO (Recovery Time Objective) / RPO (Recovery Point Objective) | Recovery Time/Point Objective (M9) |
+| RTO / RPO | Recovery Time/Point Objective (M9) |
 | CVE / CVSS / CWE / EPSS / KEV | Vuln IDs & scoring |
 | SAST / DAST / SCA / IAST | App security testing (M10) |
 | PCAP | Packet capture |
@@ -452,7 +452,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 9](../Module-09-GRC-Risk-Compliance/Reading.md) covers BCP/DR, the post-recovery business-continuity planning that complements technical IR; [Module 10](../Module-10-Application-Data-Security/Reading.md) covers application-layer prevention.
-> - Cross-course: AWS (Amazon Web Services) Solutions Architect (course 04) covers AWS Security Hub, CloudTrail, GuardDuty, the AWS-native SIEM stack. Azure courses cover Sentinel.
+> - Cross-course: AWS Solutions Architect (course 04) covers AWS Security Hub, CloudTrail, GuardDuty, the AWS-native SIEM stack. Azure courses cover Sentinel.
 > - Practice: Practice Exam 2 has ~12 SOC/IR/forensics questions; Final Mock has ~16 (the largest module slice). Order-of-volatility and NIST IR phase order are nearly guaranteed exam questions.
 
 ---

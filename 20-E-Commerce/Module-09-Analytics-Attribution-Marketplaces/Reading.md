@@ -1,12 +1,12 @@
 # Module 9: Analytics, Attribution & Marketplaces 📊
 
-> **Why this module matters:** Modules 1-8 taught you how to *operate* an e-commerce business. This module teaches you how to *measure* it honestly and then how to choose where to sell. Bad analytics produce false confidence; good analytics produce the courage to kill what's not working. The brands that survive 2024-2026 are the ones whose finance team and marketing team agree on a single number. That number is the product of GA4 (Google Analytics 4) + attribution + MMM + incrementality testing and a smart channel-mix decision across DTC (Direct-to-Consumer), Amazon, Walmart Connect, and the international marketplaces. This module is the measurement and channel-strategy capstone.
+> **Why this module matters:** Modules 1-8 taught you how to *operate* an e-commerce business. This module teaches you how to *measure* it honestly and then how to choose where to sell. Bad analytics produce false confidence; good analytics produce the courage to kill what's not working. The brands that survive 2024-2026 are the ones whose finance team and marketing team agree on a single number. That number is the product of GA4 + attribution + MMM + incrementality testing and a smart channel-mix decision across DTC, Amazon, Walmart Connect, and the international marketplaces. This module is the measurement and channel-strategy capstone.
 
 ---
 
 ## 🎯 A Real Story: Walmart Connect's MMM Pivot (2023–2024)
 
-In April 2021, Apple shipped iOS 14.5 with App Tracking Transparency. Multi-Touch Attribution (MTA), the dominant measurement model for the previous decade, broke. Pixel-based conversion tracking became unreliable. Every brand running paid media on Meta, Google, and TikTok lost 30-40% of conversion signal overnight (Module 7 covered the playbook response: CAPI, AEM, Events API (Application Programming Interface), server-side measurement).
+In April 2021, Apple shipped iOS 14.5 with App Tracking Transparency. Multi-Touch Attribution (MTA), the dominant measurement model for the previous decade, broke. Pixel-based conversion tracking became unreliable. Every brand running paid media on Meta, Google, and TikTok lost 30-40% of conversion signal overnight (Module 7 covered the playbook response: CAPI, AEM, Events API, server-side measurement).
 
 But the deeper consequence was structural. Multi-touch attribution as a category Visual IQ, Convertro, Neustar MarketShare was already declining; ATT accelerated the decline into terminal. By 2023, the smart-money analytics conversation had shifted entirely to **Marketing Mix Modeling (MMM)** and **incrementality testing**. MMM, the technique pioneered by P&G econometricians in the 1980s and Anheuser-Busch in the 1990s, was suddenly the modern measurement standard. Meta open-sourced its MMM library (Robyn) in November 2021. Google released Meridian (Bayesian MMM) in 2024. PayPal's open-source LightweightMMM landed in 2022.
 
@@ -21,13 +21,13 @@ The 2024 industry trajectory:
 The lesson is two-fold:
 
 1. **Privacy-first measurement isn't just defensive.** Walmart turned a measurement crisis into a $4B competitive offering. The brands that adopt MMM are not just covering for broken pixels, they're learning the *real* incrementality of each channel.
-2. **Marketplaces are no longer just sales channels, they're measurement infrastructures.** Selling on Walmart isn't just about GMV (Gross Merchandise Value); it's about getting access to Walmart Connect's MMM-blended measurement layer.
+2. **Marketplaces are no longer just sales channels, they're measurement infrastructures.** Selling on Walmart isn't just about GMV; it's about getting access to Walmart Connect's MMM-blended measurement layer.
 
 This module gives you the operating knowledge to measure honestly in the post-ATT world, and to choose the right marketplace mix.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Paid acquisition channels + post-iOS-14.5 measurement basics, covered in [Module 7](../Module-07-Paid-Acquisition-E-Commerce/Reading.md)
-> - SEO (Search Engine Optimization) + lifecycle as organic compounders, covered in [Module 8](../Module-08-SEO-Content-Lifecycle-Marketing/Reading.md)
+> - SEO + lifecycle as organic compounders, covered in [Module 8](../Module-08-SEO-Content-Lifecycle-Marketing/Reading.md)
 > - Catalog hygiene for marketplace feeds, covered in [Module 3](../Module-03-Product-Catalog-Information-Management/Reading.md)
 > - Cross-course: [16-AI-Marketing-Strategist Module 4 Multi-Touch Attribution](../../16-AI-Marketing-Strategist/Module-04-Multi-Touch-Attribution/Reading.md) and [Module 5 Marketing Mix Modeling](../../16-AI-Marketing-Strategist/Module-05-Marketing-Mix-Modeling/Reading.md) go deeper on the math.
 > - Cross-course: [16-AI-Marketing-Strategist Module 3, GA4 Mastery](../../16-AI-Marketing-Strategist/Module-03-GA4-Mastery-Custom-Events/Reading.md) extends the GA4 event taxonomy below.
@@ -95,10 +95,10 @@ Beyond the recommended events, you can register up to **50 custom dimensions** (
 
 GA4's standout feature vs Universal Analytics is **free daily BigQuery export** (sandbox tier; paid tier for streaming). Every event becomes a row in a BigQuery table. This unlocks:
 
-- SQL-level analysis (vs the GA4 UI (User Interface)'s limitations)
+- SQL-level analysis (vs the GA4 UI's limitations)
 - Joining GA4 events with first-party data (orders, customers, inventory)
 - Custom attribution models in SQL or Python (data-driven attribution at row level)
-- Powering MMM and predictive LTV (Lifetime Value) models
+- Powering MMM and predictive LTV models
 
 🧠 **MEMORIZE THIS.** GA4 BigQuery export = free for sandbox tier; the *only* way to do row-level analysis. Always enable on day 1, the historical data isn't backfilled retroactively.
 
@@ -217,7 +217,7 @@ The channel-mix choice is one of the highest-stakes decisions in DTC strategy.
 
 Amazon's US e-commerce market share is roughly 38% (eMarketer 2024 estimate). For most product categories, Amazon is the largest single search engine for purchase intent. Approximately 60% of US online product searches start on Amazon (Search Engine Land surveys).
 
-**The FBA (Fulfillment by Amazon) economics (2026 fee structure):**
+**The FBA economics (2026 fee structure):**
 
 | Cost | Typical rate |
 |------|-------------|
@@ -228,7 +228,7 @@ Amazon's US e-commerce market share is roughly 38% (eMarketer 2024 estimate). Fo
 | Long-term storage | $6.90/cu.ft after 271 days |
 | Returns processing | $1-$3 per return |
 
-Net Amazon take rate: **typically 30-45% of GMV** when all fees + advertising are included. A brand selling at $40 retail nets $22-$28 after Amazon fees + FBA + advertising, before COGS (Cost of Goods Sold).
+Net Amazon take rate: **typically 30-45% of GMV** when all fees + advertising are included. A brand selling at $40 retail nets $22-$28 after Amazon fees + FBA + advertising, before COGS.
 
 🧠 **MEMORIZE THIS.** Amazon take rate is roughly 30-45% of GMV including fees + ads. Plan unit economics accordingly. A brand at 20% contribution margin DTC may be at -5% on Amazon.
 
@@ -276,14 +276,14 @@ Every DTC brand eventually faces: how much marketplace, how much DTC?
 | Strategic posture | Logic | Risk |
 |-------------------|-------|------|
 | **Marketplace-first** | Maximize GMV; let Amazon do the customer acquisition | Amazon owns customer data; race-to-zero pressure |
-| **DTC-first** | Own customer + data + margin | Slower growth; pay full CAC (Customer Acquisition Cost) |
+| **DTC-first** | Own customer + data + margin | Slower growth; pay full CAC |
 | **Hybrid (60/40)** | Both channels; DTC for new/premium, marketplace for replenishment | Channel conflict; pricing complexity |
 | **Marketplace-exclusive** | All-in on Amazon | Single-platform risk |
 | **DTC-only** | No marketplace presence | Smaller addressable market |
 
 The 2024 consensus for sub-$50M DTC brands: 60-70% DTC, 20-30% Amazon, 5-10% Walmart/other. Above $100M: shift toward 40-50% marketplace as scale demands.
 
-🚨 **Trap on the exam:** "Amazon should match DTC pricing exactly." FALSE. Amazon's variable fees + ad costs + return rates differ from DTC; matching DTC retail price often nets a *loss* on Amazon. Build a separate Amazon-channel P&L (Profit and Loss).
+🚨 **Trap on the exam:** "Amazon should match DTC pricing exactly." FALSE. Amazon's variable fees + ad costs + return rates differ from DTC; matching DTC retail price often nets a *loss* on Amazon. Build a separate Amazon-channel P&L.
 
 ### Hau Lee's Triple-A Supply Chain (HBR, 2004), Still Relevant for Marketplaces
 
@@ -291,7 +291,7 @@ Hau Lee's framework (Lee, "The Triple-A Supply Chain," *Harvard Business Review*
 
 - **Agility**, Quickly responding to short-term demand changes (a TikTok product going viral, a competitor stockout)
 - **Adaptability**, Adjusting supply networks over time (shifting from China to Vietnam during the 2018-2024 tariff cycles)
-- **Alignment**, Aligning incentives between brand, marketplace, and 3PL (Third-Party Logistics) (Walmart Connect's MMM data-sharing is a 2024 example of alignment innovation)
+- **Alignment**, Aligning incentives between brand, marketplace, and 3PL (Walmart Connect's MMM data-sharing is a 2024 example of alignment innovation)
 
 ---
 
@@ -316,7 +316,7 @@ The downstream effects:
 - Amazon Ads ($50B+ in 2024) remained #1 in retail media by revenue, but Walmart was closing the rate-gap.
 - Other retail media networks copied the playbook: Target Roundel, Kroger Precision Marketing, Instacart Ads all expanded MMM offerings in 2024.
 - The category US retail media networks crossed $50B in ad spend per eMarketer 2024, up from ~$35B in 2022.
-- Vizio acquisition gave Walmart Connect access to CTV (Connected TV) measurement at scale, closing the offline/online attribution gap.
+- Vizio acquisition gave Walmart Connect access to CTV measurement at scale, closing the offline/online attribution gap.
 
 Mid-market DTC brands that had previously been priced out of MMM consulting could now access MMM-grade measurement bundled with Walmart Connect ad spend. The competitive dynamic flipped: by 2024, *not selling on Walmart* meant *not getting Walmart's MMM measurement*, a measurement gap that Amazon (still click-attributed) couldn't close.
 
@@ -331,7 +331,7 @@ Mid-market DTC brands that had previously been priced out of MMM consulting coul
 
 ## 💬 Discussion, Socratic prompts
 
-1. A DTC brand uses GA4's data-driven attribution and Meta Ads' last-click attribution. Meta reports 4.2x ROAS (Return on Ad Spend); GA4 reports 2.8x for the same campaign. Which is "right," and how would you defend either number in a CFO (Chief Financial Officer) review?
+1. A DTC brand uses GA4's data-driven attribution and Meta Ads' last-click attribution. Meta reports 4.2x ROAS; GA4 reports 2.8x for the same campaign. Which is "right," and how would you defend either number in a CFO review?
 
 2. Geo-holdout incrementality tests cost 5-10% of channel revenue over the test window. A 4-week Meta geo-holdout might cost $200K-$500K. At what brand revenue does the test pay for itself, and what's the lookback-period principle for re-running it?
 
@@ -344,7 +344,7 @@ Mid-market DTC brands that had previously been priced out of MMM consulting coul
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 10 covers cross-border, B2B (Business-to-Business), and composable commerce, the platform and operating choices for global + complex catalogs.
+> - Inside this course: Module 10 covers cross-border, B2B, and composable commerce, the platform and operating choices for global + complex catalogs.
 > - Cross-course: [16-AI-Marketing-Strategist Module 4 Multi-Touch Attribution](../../16-AI-Marketing-Strategist/Module-04-Multi-Touch-Attribution/Reading.md) goes deeper on MTA math; [16-AI-Marketing-Strategist Module 5 MMM](../../16-AI-Marketing-Strategist/Module-05-Marketing-Mix-Modeling/Reading.md) covers the econometrics; [16-AI-Marketing-Strategist Module 3](../../16-AI-Marketing-Strategist/Module-03-GA4-Mastery-Custom-Events/Reading.md) extends GA4 events.
 > - Practice: Practice Exam 2 has ~10 questions drawn from this module (GA4 events, attribution models, MMM vs MTA, marketplace economics, retail media networks).
 

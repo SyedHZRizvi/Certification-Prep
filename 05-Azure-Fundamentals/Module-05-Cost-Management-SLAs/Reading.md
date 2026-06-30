@@ -1,6 +1,6 @@
 # Module 5: Cost Management & SLAs 💰
 
-> **Why this module matters:** This module covers two topics the exam loves to mix up: **forecasting/managing spend** (pricing tools, cost management, tags, reservations) and **service guarantees** (SLAs, composite SLAs, lifecycle stages). Get the composite SLA (Service Level Agreement) math right and you're winning 3–5 questions for free.
+> **Why this module matters:** This module covers two topics the exam loves to mix up: **forecasting/managing spend** (pricing tools, cost management, tags, reservations) and **service guarantees** (SLAs, composite SLAs, lifecycle stages). Get the composite SLA math right and you're winning 3–5 questions for free.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [CapEx vs OpEx](../Module-01-Cloud-Concepts/Reading.md#-capex-vs-opex-you-will-be-tested-on-this), covered in Module 1
@@ -19,9 +19,9 @@ Anna deployed *PizzaTracker.io* to Azure in a hurry. Month 1 bill: $112. Month 2
 
 She digs in. Turns out:
 
-- A developer left a 16-core GPU VM (Virtual Machine) running over the weekend ($340)
+- A developer left a 16-core GPU VM running over the weekend ($340)
 - Logs ballooned to 2 TB in Cool storage that should have been Cold ($90)
-- Egress to a partner API (Application Programming Interface) hit $200 (each customer ping was 2 KB × 4M requests)
+- Egress to a partner API hit $200 (each customer ping was 2 KB × 4M requests)
 - A test database in Cosmos DB was running at provisioned 10,000 RU/s instead of serverless ($420)
 
 She uses **Cost Management**, **Tags**, the **Pricing Calculator**, and finally moves predictable workloads to **Reservations** for a 60% discount. Month 4: $410. Crisis averted.
@@ -36,7 +36,7 @@ Three Azure tools you'll be tested on knowing the *difference* between:
 
 | Tool | When | What it does |
 |------|------|--------------|
-| **Pricing Calculator** | BEFORE you deploy | Estimate cost of *Azure-only* resources by configuring them in a UI (User Interface) |
+| **Pricing Calculator** | BEFORE you deploy | Estimate cost of *Azure-only* resources by configuring them in a UI |
 | **TCO Calculator** | BEFORE you migrate | Compare your **on-prem** cost (servers, storage, network, labor, electricity) vs Azure equivalent |
 | **Microsoft Cost Management** | AFTER you deploy | Analyze, forecast, budget, and alert on actual Azure spend |
 
@@ -59,7 +59,7 @@ The exam loves these. Know them.
 | **Region** | Pricing varies, Brazil/Australia tend to be more expensive than US/Europe |
 | **Bandwidth (egress)** | Data leaving Azure (egress) is billed. Ingress is FREE. |
 | **Subscription type** | EA, MCA, Pay-As-You-Go, Sponsorship, different rates |
-| **Compute size / SKU (Stock Keeping Unit)** | Bigger = more |
+| **Compute size / SKU** | Bigger = more |
 | **Storage tier** | Hot > Cool > Cold > Archive (for storage); access cost is inverse |
 | **OS / licensing** | Linux VMs cheaper than Windows VMs; Hybrid Benefit reduces this |
 | **Reserved vs Pay-As-You-Go** | Reservations save up to 72% |
@@ -253,13 +253,13 @@ The Azure free account includes:
 
 ## 📊 Case Study, GitHub on Azure (2018 acquisition through 2024 Copilot scale-up)
 
-**Situation.** Microsoft acquired **GitHub** for $7.5 billion in stock in October 2018 (Microsoft press release, 2018-10-26). At acquisition, GitHub was serving roughly **31 million developers**, hosting more than **100 million repositories**, and running its own hybrid infrastructure (some AWS (Amazon Web Services), some bare-metal datacenters, custom MySQL clusters). By 2024, GitHub was at **>100 million developers** with billions of API calls per day, and had become the launch substrate for **GitHub Copilot**, Microsoft's most successful AI product line by paid-seat count. The migration from GitHub's pre-acquisition stack to "GitHub on Azure" plus the Copilot scale-up is the canonical Microsoft case for *cost stewardship at planet scale*.
+**Situation.** Microsoft acquired **GitHub** for $7.5 billion in stock in October 2018 (Microsoft press release, 2018-10-26). At acquisition, GitHub was serving roughly **31 million developers**, hosting more than **100 million repositories**, and running its own hybrid infrastructure (some AWS, some bare-metal datacenters, custom MySQL clusters). By 2024, GitHub was at **>100 million developers** with billions of API calls per day, and had become the launch substrate for **GitHub Copilot**, Microsoft's most successful AI product line by paid-seat count. The migration from GitHub's pre-acquisition stack to "GitHub on Azure" plus the Copilot scale-up is the canonical Microsoft case for *cost stewardship at planet scale*.
 
-**Decision.** Microsoft did *not* do a forced lift-and-shift. Nat Friedman (then GitHub CEO (Chief Executive Officer)) and the GitHub team retained operational autonomy, Microsoft's commitment was "GitHub stays GitHub." But over 2018–2023 the infrastructure quietly migrated to Azure for everything where it made economic sense. Key moves:
+**Decision.** Microsoft did *not* do a forced lift-and-shift. Nat Friedman (then GitHub CEO) and the GitHub team retained operational autonomy, Microsoft's commitment was "GitHub stays GitHub." But over 2018–2023 the infrastructure quietly migrated to Azure for everything where it made economic sense. Key moves:
 
 - **Compute migration to Azure**, repositories, Actions, Codespaces, Pages, and the Copilot inference fleet moved to Azure (US East/West + EU North/West + Asia regions). Codespaces specifically was built Azure-native from the start (GitHub Blog, 2020-05-06, "Codespaces beta").
 - **Reservations + Savings Plans for the steady-state estate**, GitHub's repository hosting, search index, and Actions worker pool are 24/7 workloads with predictable baselines. 3-year reservations on the appropriate VM SKUs saved an estimated 50–60% on the steady portion of the bill versus pay-as-you-go (Microsoft customer testimony has cited "tens of millions" annualized).
-- **Spot capacity for the elastic portion**, Actions CI/CD (Continuous Integration/Continuous Deployment) runners absorb massive bursty load (commits at peak working hours, deep idle overnight). Where evictability is acceptable, GitHub uses Spot pricing for cost arbitrage.
+- **Spot capacity for the elastic portion**, Actions CI/CD runners absorb massive bursty load (commits at peak working hours, deep idle overnight). Where evictability is acceptable, GitHub uses Spot pricing for cost arbitrage.
 - **Tagging + Cost Management at scale**, every Azure resource at GitHub carries product / team / environment tags so finance can attribute exactly which Copilot region is costing what. Cost Management exports flow to Power BI for monthly board reporting.
 - **Composite SLA discipline for Copilot** Copilot completions involve Azure OpenAI (99.9% baseline) + Azure App Service Premium (99.95%) + Cosmos DB (99.999%) + the GitHub auth path. The product SLA the company commits to is *deliberately conservative*, recognizing that the composite of dependencies multiplies down a textbook AZ-900 §"Composite SLA" application.
 - **Hybrid Benefit for Windows server workloads**, GitHub's enterprise on-prem connectors and the Windows portion of Actions runners use Azure Hybrid Benefit on the inherited Microsoft licenses (Software Assurance).
@@ -277,7 +277,7 @@ The Azure free account includes:
 2. **Composite SLA discipline at planet scale.** When you stack four Azure services that each have a 99.9–99.99% SLA, the composite is always lower than the worst single component. GitHub publishes Copilot's SLA conservatively because the math doesn't lie. The exam tests this multiplicatively.
 3. **Tags + Cost Management = the *unit economics* answer.** Microsoft would not let GitHub make pricing commitments to developers if it couldn't attribute cost to product-line-and-region. Tags are the AZ-900's exam answer for "how do we chargeback?", they're also the only way a billion-row, planet-scale product runs profitably.
 
-GitHub-on-Azure has been used by Satya Nadella and CFO (Chief Financial Officer) Amy Hood in multiple investor presentations as the canonical example of "the AI platform shift", and the cost discipline behind it is exactly what *The Cloud Adoption Framework: Manage* methodology (Microsoft, current edition checked 2026-05) prescribes.
+GitHub-on-Azure has been used by Satya Nadella and CFO Amy Hood in multiple investor presentations as the canonical example of "the AI platform shift", and the cost discipline behind it is exactly what *The Cloud Adoption Framework: Manage* methodology (Microsoft, current edition checked 2026-05) prescribes.
 
 **Discussion (Socratic).**
 - **Q1:** GitHub uses *3-year Reservations* for steady workloads despite the fact that 3 years is a long time in cloud-economics terms (instance families change, Microsoft sometimes drops list prices). Argue both sides: (a) Reservations are the right answer for known-baseline workloads even with the lock-in risk; (b) Savings Plans (more flexible, smaller discount) are the right answer because they preserve optionality. What's the breakeven workload-volatility threshold?

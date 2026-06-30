@@ -8,7 +8,7 @@
 |---|-----|-----|
 | **Custody** | Exchange holds keys | User holds keys |
 | **Order matching** | Off-chain CLOB | On-chain (AMM or escrow) |
-| **KYC (Know Your Customer)** | Mandatory | Often none |
+| **KYC** | Mandatory | Often none |
 | **Counterparty risk** | YES (FTX, Mt. Gox) | Smart-contract risk only |
 | **Examples** | Coinbase, Kraken, Binance | Uniswap (ETH), Bisq (BTC) |
 
@@ -94,7 +94,7 @@
 | Level | Requirement Highlights |
 |-------|------------------------|
 | **L1** | Secret entropy keygen; basic storage; key-compromise plan |
-| **L2** | Distributed keygen; geographically distributed storage; multi-sig OR MPC; SOC (Security Operations Center) 2 trajectory |
+| **L2** | Distributed keygen; geographically distributed storage; multi-sig OR MPC; SOC 2 trajectory |
 | **L3** | Multi-party key ceremonies; redundant cold storage; quarterly drills; SOC 2 + formal audit |
 
 🧠 Coinbase Custody, BitGo, Anchorage = L3.

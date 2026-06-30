@@ -91,7 +91,7 @@
 | Event | Date | Lost | Failure Mode |
 |-------|------|------|--------------|
 | **Mt. Gox** | Feb 2014 | **~850,000 BTC** | Single hot wallet + no audit |
-| QuadrigaCX | Jan 2019 | $190M CAD | CEO (Chief Executive Officer) died with sole keys |
+| QuadrigaCX | Jan 2019 | $190M CAD | CEO died with sole keys |
 | Celsius | Jul 2022 | $4.7B | Commingled funds + bad lending |
 | FTX | Nov 2022 | $8B+ | Commingled funds + fraud |
 | BlockFi | Nov 2022 | $2B | Yield product collapse |

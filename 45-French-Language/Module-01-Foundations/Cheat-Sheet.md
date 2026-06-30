@@ -133,4 +133,4 @@
 | AI / EI | "ay/eh" | maison (house) |
 | OI | "wah" | moi (me) |
 | EU | rounded "uh" | feu (fire) |
-| UI (User Interface) | "wee" | nuit (night) |
+| UI | "wee" | nuit (night) |

@@ -72,7 +72,7 @@ In professional Arabic contexts, greetings are more formal than casual conversat
 | Arabic | Transliteration | English | اردو |
 |--------|-----------------|---------|------|
 | رَئِيس | raʾīs | president / head / chief | رئیس / صدر |
-| مُدِير عَام | mudīr ʿāmm | general manager / CEO (Chief Executive Officer) | جنرل منیجر |
+| مُدِير عَام | mudīr ʿāmm | general manager / CEO | جنرل منیجر |
 | نَائِب الرَّئِيس | nāʾib ar-raʾīs | vice president | نائب صدر |
 | مُحَاسِب | muḥāsib | accountant | محاسب / اکاؤنٹنٹ |
 | مُهَنْدِس | muhandis | engineer | انجینئر |

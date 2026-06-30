@@ -1,6 +1,6 @@
 # Module 08: Meta Advertising — Facebook & Instagram Campaigns 📣
 
-> **Why this module matters:** Meta's advertising platform reaches 3.3 billion daily active users across Facebook and Instagram, making it the single most powerful demand-generation engine for DTC (Direct-to-Consumer) brands, B2C (Business-to-Consumer) retailers, and lead-gen businesses alike. Mastering the campaign structure, Pixel, Conversions API (Application Programming Interface), and post-iOS 14 attribution is now a non-negotiable skill for any digital marketer operating in North America or Europe.
+> **Why this module matters:** Meta's advertising platform reaches 3.3 billion daily active users across Facebook and Instagram, making it the single most powerful demand-generation engine for DTC brands, B2C retailers, and lead-gen businesses alike. Mastering the campaign structure, Pixel, Conversions API, and post-iOS 14 attribution is now a non-negotiable skill for any digital marketer operating in North America or Europe.
 
 > **Prerequisites:** Module 07 (Social Media Fundamentals) or equivalent experience. Basic understanding of sales funnels, website analytics, and customer segmentation will help significantly.
 
@@ -12,7 +12,7 @@ It was April 2021. Sophie Renard, Head of Digital at *Maison Lumière* — a Par
 
 Three days ago, Apple had shipped iOS 14.5. Twenty-four hours later, her reported conversions had collapsed by 61%.
 
-The numbers were brutal. Where she had been recording 340 purchases a day from Meta ads, she was now seeing 133. Her cost per acquisition had apparently tripled overnight — from €18 to €54. Her CFO (Chief Financial Officer) was in her inbox asking whether they should pause all Meta spend immediately and redirect to Google Shopping.
+The numbers were brutal. Where she had been recording 340 purchases a day from Meta ads, she was now seeing 133. Her cost per acquisition had apparently tripled overnight — from €18 to €54. Her CFO was in her inbox asking whether they should pause all Meta spend immediately and redirect to Google Shopping.
 
 Sophie knew something was wrong, but she couldn't explain it *yet*. Her gut told her the dresses hadn't stopped selling. The issue was visibility, not reality.
 
@@ -36,7 +36,7 @@ She rebuilt the stack in 72 hours:
 
 Within two weeks, reported conversions recovered to 89% of pre-iOS levels. More importantly, she now had a *dual-signal* system: Pixel data plus CAPI data deduplicated by Meta, giving a more accurate picture than she had ever had.
 
-She also found something unexpected: her actual ROAS (Return on Ad Spend) was **higher** than reported pre-iOS. The Pixel had been *over-crediting* Meta with purchases that also appeared in Google Analytics via organic search. The real Meta ROAS was 4.2×, not 3.1× as she had thought.
+She also found something unexpected: her actual ROAS was **higher** than reported pre-iOS. The Pixel had been *over-crediting* Meta with purchases that also appeared in Google Analytics via organic search. The real Meta ROAS was 4.2×, not 3.1× as she had thought.
 
 The lesson: iOS 14.5 didn't kill Meta advertising. It killed *sloppy* Meta advertising. For marketers who rebuilt their measurement stack, it was actually a competitive advantage — because half their competitors paused spend and never came back.
 
@@ -54,7 +54,7 @@ Think of Meta Ads Manager like a **Russian nesting doll** (matryoshka) with exac
 |-------|-----------------|--------------|
 | **Campaign** | The *objective* — what Meta's algorithm optimizes for | Objective (Awareness/Traffic/Engagement/Leads/Sales), Campaign Budget Optimization (CBO) on/off, Advantage Campaign Budget |
 | **Ad Set** | The *audience and delivery* — who sees the ad, when, where, and how much you spend | Audience targeting, placements, schedule, budget (if not CBO), bid strategy, optimization event |
-| **Ad** | The *creative* — the actual ad users see | Format (image/video/carousel/collection), copy, headline, CTA (Call to Action) button, URL, UTM parameters |
+| **Ad** | The *creative* — the actual ad users see | Format (image/video/carousel/collection), copy, headline, CTA button, URL, UTM parameters |
 
 **Memory trick:** Think **C**ampaign = **C**ause (the WHY), **A**d Set = **A**udience (the WHO), **A**d = **A**rt (the WHAT).
 
@@ -104,7 +104,7 @@ The Meta Pixel is a snippet of JavaScript code placed on your website. When some
 | `InitiateCheckout` | Checkout started | MOFU/BOFU |
 | `Purchase` | Order completed | Primary conversion event |
 | `Lead` | Form submitted | Lead gen |
-| `CompleteRegistration` | Signup completed | SaaS (Software as a Service)/Apps |
+| `CompleteRegistration` | Signup completed | SaaS/Apps |
 | `Search` | On-site search used | Intent signal |
 
 ### Why the Pixel Alone Is No Longer Enough
@@ -123,9 +123,9 @@ The Conversions API sends event data directly from your **server** to Meta, bypa
 |---------|-------------|
 | **Event deduplication** | When both Pixel and CAPI fire, Meta uses an `event_id` parameter to deduplicate — avoiding double-counting |
 | **Event match quality (EMQ)** | How well CAPI events match to Meta profiles. Higher EMQ = better attribution. Pass as many customer parameters as possible (email, phone, name, zip code — hashed) |
-| **Server-side vs. Pixel** | CAPI fires from your server (Shopify, WooCommerce, GTM (Google Tag Manager) Server-Side) rather than the user's browser |
+| **Server-side vs. Pixel** | CAPI fires from your server (Shopify, WooCommerce, GTM Server-Side) rather than the user's browser |
 
-**GDPR (General Data Protection Regulation) note for EU campaigns:** Under GDPR (and the UK GDPR post-Brexit), sending hashed customer data to Meta requires a valid legal basis — typically **consent** via a compliant cookie consent banner. The Conversions API does NOT exempt you from GDPR. If a user has not consented to marketing cookies/tracking, you should not send their data to Meta, even server-side. Meta's EU Data Transfer mechanism is covered by SCCs (Standard Contractual Clauses).
+**GDPR note for EU campaigns:** Under GDPR (and the UK GDPR post-Brexit), sending hashed customer data to Meta requires a valid legal basis — typically **consent** via a compliant cookie consent banner. The Conversions API does NOT exempt you from GDPR. If a user has not consented to marketing cookies/tracking, you should not send their data to Meta, even server-side. Meta's EU Data Transfer mechanism is covered by SCCs (Standard Contractual Clauses).
 
 > **Common trap:** "CAPI is GDPR-compliant by default." WRONG. CAPI is a tracking mechanism, not a compliance shortcut. You still need user consent in the EU.
 
@@ -206,7 +206,7 @@ Launched in 2022 and significantly expanded in 2023–2024, Advantage+ Shopping 
 | Format | Best Use Case | Specs to Know |
 |--------|--------------|---------------|
 | **Single Image** | Simple offer, strong visual | 1:1 or 4:5 ratio, 1080×1080 min |
-| **Single Video** | Storytelling, demos, UGC (User-Generated Content) | 4:5 for Feed, 9:16 for Stories/Reels |
+| **Single Video** | Storytelling, demos, UGC | 4:5 for Feed, 9:16 for Stories/Reels |
 | **Carousel** | Multiple products, step-by-step, features | 2–10 cards, each 1:1 |
 | **Collection** | E-commerce product discovery | Requires catalogue |
 | **Reels Ads** | Awareness, younger demographics | 9:16 full-screen, ≤60 sec |
@@ -218,8 +218,8 @@ Launched in 2022 and significantly expanded in 2023–2024, Advantage+ Shopping 
 Creative fatigue occurs when an audience has seen the same ad so many times that engagement drops and costs rise. Signs:
 
 - Frequency > 3.0 in a 7-day window (industry benchmark)
-- CPM (Cost Per Mille) rising week-over-week without audience size change
-- CTR (Click-Through Rate) dropping below 0.5%
+- CPM rising week-over-week without audience size change
+- CTR dropping below 0.5%
 - Comment section filling with "I keep seeing this"
 
 **Managing fatigue:**
@@ -261,7 +261,7 @@ Meta's built-in A/B test (also called "Experiment") lets you test one variable a
 
 | Metric | Formula | Benchmark (Industry estimate) |
 |--------|---------|-------------------------------|
-| **CPC (Cost Per Click)** | Cost / Clicks | €0.50–€1.50 (EU), $0.50–$2.00 (US) |
+| **CPC** | Cost / Clicks | €0.50–€1.50 (EU), $0.50–$2.00 (US) |
 | **CPM** | Cost / 1,000 Impressions | €5–€15 (EU), $8–$25 (US) |
 | **CTR** | Clicks / Impressions × 100 | 0.5–2% is typical |
 | **ROAS** | Revenue / Ad Spend | 2–4× breakeven for most DTC |

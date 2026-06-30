@@ -1,6 +1,6 @@
 # Module 3: Routing & Switching 🔀
 
-> **Why this module matters:** This is where networking becomes a living system. You'll learn how packets find their way across the Internet (routing) and how frames cross a LAN (Local Area Network) floor without colliding (switching). This module is the operational heart of every enterprise network, and ~15 of your 90 exam questions land here.
+> **Why this module matters:** This is where networking becomes a living system. You'll learn how packets find their way across the Internet (routing) and how frames cross a LAN floor without colliding (switching). This module is the operational heart of every enterprise network, and ~15 of your 90 exam questions land here.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1 (OSI layers, especially Layers 2 and 3)
@@ -17,7 +17,7 @@ Imagine a subway station. Trains arrive, the operator looks at the train's desti
 
 Now imagine the citywide transportation authority deciding which subway line a passenger should take to get from the airport to the stadium. The authority maintains a map of *all* lines and their interchange points, picks the cheapest/fastest route, and updates the map whenever a line closes or opens. That's a **router**: a Layer 3 device maintaining a routing table and picking the next-hop IP for each packet.
 
-Switches move things within one zone (the subway station / LAN). Routers move things between zones (different subway lines / different IP networks). Both run continuously, both must converge fast when things change, and both have failure modes you'll get tested on (STP loops, routing-loop fights, VLAN (Virtual Local Area Network) misconfigurations).
+Switches move things within one zone (the subway station / LAN). Routers move things between zones (different subway lines / different IP networks). Both run continuously, both must converge fast when things change, and both have failure modes you'll get tested on (STP loops, routing-loop fights, VLAN misconfigurations).
 
 This module covers both, and the bridging concepts (VLANs, trunking, link aggregation) that knit them together.
 
@@ -34,9 +34,9 @@ A **route** says: "to reach destination network X, send the packet to next-hop I
 | **Default** | `0.0.0.0/0` (matches everything) | Catch-all "send unknown traffic this way" | Loses specificity; bad if multiple paths needed |
 | **Dynamic** | Learned from a routing protocol | Adapts automatically; scales | Protocol complexity, CPU/bandwidth overhead |
 
-🎯 **Exam pattern:** *"A small office has 3 routers and rarely changes, which routing approach?"* → Static (no need for protocol overhead). *"An ISP (Internet Service Provider) with 200 routers across multiple continents?"* → Dynamic (BGP (Border Gateway Protocol), OSPF (Open Shortest Path First)).
+🎯 **Exam pattern:** *"A small office has 3 routers and rarely changes, which routing approach?"* → Static (no need for protocol overhead). *"An ISP with 200 routers across multiple continents?"* → Dynamic (BGP, OSPF).
 
-### Administrative Distance (AD (Active Directory)), Tiebreaker Between Sources
+### Administrative Distance (AD), Tiebreaker Between Sources
 
 When multiple sources teach the router about the *same* destination, AD picks a winner. Lower AD = more trusted.
 
@@ -85,7 +85,7 @@ When multiple sources teach the router about the *same* destination, AD picks a 
 
 - Composite metric, by default uses bandwidth + delay; can include load, reliability, MTU
 - DUAL (Diffusing Update Algorithm), selects loop-free best path; backup "feasible successor" precomputed for fast failover
-- Operates over IP protocol 88 (not TCP (Transmission Control Protocol)/UDP (User Datagram Protocol))
+- Operates over IP protocol 88 (not TCP/UDP)
 - Multicast 224.0.0.10
 
 ### BGP basics
@@ -159,19 +159,19 @@ A **VLAN** is a logical grouping of switch ports that act as if they're on the s
 Inserted into the Ethernet frame between source MAC and EtherType. Contains:
 
 - **TPID** (Tag Protocol ID, 16 bits) = 0x8100
-- **PCP** (Priority Code Point, 3 bits) = CoS / QoS (Quality of Service) priority
+- **PCP** (Priority Code Point, 3 bits) = CoS / QoS priority
 - **DEI** (Drop Eligible Indicator, 1 bit)
 - **VID** (VLAN ID, 12 bits) = the actual VLAN number
 
 ### Native VLAN, the tricky concept
 
-The **native VLAN** is the *one* VLAN on a trunk whose traffic is sent **untagged**. Default = VLAN 1. **Both ends of the trunk MUST agree**, mismatched native VLANs cause VLAN hopping vulnerabilities and CDP (Customer Data Platform)/LLDP errors.
+The **native VLAN** is the *one* VLAN on a trunk whose traffic is sent **untagged**. Default = VLAN 1. **Both ends of the trunk MUST agree**, mismatched native VLANs cause VLAN hopping vulnerabilities and CDP/LLDP errors.
 
 🚨 **Trap on the exam:** Best practice = change the native VLAN from the default (VLAN 1) AND don't use the native VLAN for user traffic.
 
 ### Voice VLAN
 
-Modern switches let one access port carry a single user data VLAN PLUS a separate **voice VLAN** for the IP phone (commonly seen on Cisco). The phone tags voice frames with the voice VLAN ID, but passes the user's PC traffic untagged on the data VLAN. Powered by PoE (Power over Ethernet) (Module 4).
+Modern switches let one access port carry a single user data VLAN PLUS a separate **voice VLAN** for the IP phone (commonly seen on Cisco). The phone tags voice frames with the voice VLAN ID, but passes the user's PC traffic untagged on the data VLAN. Powered by PoE (Module 4).
 
 ### Inter-VLAN routing
 
@@ -264,12 +264,12 @@ Switches need security too. Network+ tests:
 |---------|---------|
 | **Port security** | Limit number of MACs per port; specify allowed MACs |
 | **Sticky MAC** | Dynamically learn the first MAC and treat as static-allowed |
-| **DHCP (Dynamic Host Configuration Protocol) snooping** | Switch tracks legitimate DHCP servers per port; drops DHCP from rogue ports |
+| **DHCP snooping** | Switch tracks legitimate DHCP servers per port; drops DHCP from rogue ports |
 | **Dynamic ARP Inspection (DAI)** | Validates ARP replies against DHCP snooping table, defeats ARP spoofing |
 | **BPDU Guard** | (See STP), disable port if BPDUs received on access-only port |
 | **Disabling unused ports** | Admin shut all unused ports (defense in depth) |
 | **Change default credentials** | Default admin/admin is a hacker's gift |
-| **Disable insecure protocols** | Telnet, HTTP (Hypertext Transfer Protocol), replace with SSH (Secure Shell), HTTPS (HTTP Secure) |
+| **Disable insecure protocols** | Telnet, HTTP, replace with SSH, HTTPS |
 | **Out-of-band management** | Dedicated mgmt VLAN or mgmt port, never on the user data path |
 
 🎯 **Exam pattern:** *"A user plugs a personal Wi-Fi router into a wall port. What switch feature prevents the rogue switch from disrupting STP?"* → BPDU Guard. *"What feature limits the number of MACs that can connect to a port?"* → Port security.
@@ -390,7 +390,7 @@ This case is exactly what Network+ tests when asking, "Why would an enterprise u
 
 **Discussion (Socratic).**
 - **Q1:** If you were the network engineer at PCCW Global the morning of 24 February 2008, what THREE controls (technical + procedural) would you add to your peering policy by end of week? Defend each against the cost of false-positive route rejection that breaks legitimate customer traffic.
-- **Q2:** RPKI adoption stalled at ~50% for 15 years. What economic or operational disincentive keeps networks from adopting it, and what single policy change would tip the equation? Compare to TLS (Transport Layer Security) deployment, which went from <40% in 2014 to ~95% in 2024 once Let's Encrypt made it free and easy.
+- **Q2:** RPKI adoption stalled at ~50% for 15 years. What economic or operational disincentive keeps networks from adopting it, and what single policy change would tip the equation? Compare to TLS deployment, which went from <40% in 2014 to ~95% in 2024 once Let's Encrypt made it free and easy.
 - **Q3:** Pakistan Telecom intended their /24 announcement for internal use only. What's the smallest set of BGP configuration changes (specific config keywords welcome if you know them) on their edge router that would have prevented the leak? Consider both inbound filtering at their upstream and outbound filtering at their own edge.
 
 ---
@@ -415,7 +415,7 @@ You now know:
 4. ➡️ Move on: [Module 4, Wireless & SOHO Networks](../Module-04-Wireless/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 4](../Module-04-Wireless/Reading.md) extends switching into the wireless edge; [Module 6](../Module-06-Security/Reading.md) layers 802.1X, NAC, and ACLs onto the routing/switching substrate; [Module 7](../Module-07-Monitoring-Tools/Reading.md) monitors routers and switches via SNMP (Simple Network Management Protocol), syslog, and NetFlow; [Module 8](../Module-08-Troubleshooting/Reading.md) revisits VLAN and STP misconfiguration as top-cause incidents.
+> - Inside this course: [Module 4](../Module-04-Wireless/Reading.md) extends switching into the wireless edge; [Module 6](../Module-06-Security/Reading.md) layers 802.1X, NAC, and ACLs onto the routing/switching substrate; [Module 7](../Module-07-Monitoring-Tools/Reading.md) monitors routers and switches via SNMP, syslog, and NetFlow; [Module 8](../Module-08-Troubleshooting/Reading.md) revisits VLAN and STP misconfiguration as top-cause incidents.
 > - Cross-course: CompTIA Security+ (course 09) Module 6 (Network Security) builds on these primitives.
 > - Practice: Practice Exam 1 has ~7 routing/switching questions; the Final Mock has ~12.
 

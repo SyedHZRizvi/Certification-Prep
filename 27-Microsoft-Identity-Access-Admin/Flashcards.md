@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -275,15 +275,15 @@
 ## 🪪 SECTION 1: ENTRA ID FUNDAMENTALS
 
 **Q:** What was Microsoft Entra ID called before mid-2023?
-**A:** Azure Active Directory (Azure AD (Active Directory)). Microsoft rebranded but the exam may still use the old term, they mean the same service.
+**A:** Azure Active Directory (Azure AD). Microsoft rebranded but the exam may still use the old term, they mean the same service.
 
 **Q:** Name the four Entra ID editions.
-**A:** Free, Microsoft Entra ID P1, Microsoft Entra ID P2, Microsoft Entra External ID (formerly Azure AD B2C (Business-to-Consumer)).
+**A:** Free, Microsoft Entra ID P1, Microsoft Entra ID P2, Microsoft Entra External ID (formerly Azure AD B2C).
 
 **Q:** Which Entra ID edition is the minimum required for Conditional Access?
 **A:** P1.
 
-**Q:** Which Entra ID edition is required for Identity Protection and PIM (Product Information Management)?
+**Q:** Which Entra ID edition is required for Identity Protection and PIM?
 **A:** P2.
 
 **Q:** What is a tenant in Entra ID?
@@ -295,10 +295,10 @@
 **Q:** How many custom domains can you verify on one tenant?
 **A:** Up to 5,000 verified custom domains per tenant.
 
-**Q:** Difference between directory (Entra) roles and Azure RBAC (Role-Based Access Control) roles?
+**Q:** Difference between directory (Entra) roles and Azure RBAC roles?
 **A:** Entra roles control Entra ID resources (users, groups, apps); Azure RBAC roles control Azure resources (VMs, storage). Different scope, sometimes similar names.
 
-**Q:** What does Entra ID B2B (Business-to-Business) let you do?
+**Q:** What does Entra ID B2B let you do?
 **A:** Invite external users (partners, vendors) as guests using their existing identity provider. They appear in your directory as guest user objects.
 
 **Q:** What does Entra External ID (formerly B2C) do?
@@ -333,7 +333,7 @@
 **A:** `(user.department -eq "Sales")`.
 
 **Q:** What does group-based licensing let you do?
-**A:** Assign a license SKU (Stock Keeping Unit) to a group; members automatically inherit and lose the license as they join/leave the group.
+**A:** Assign a license SKU to a group; members automatically inherit and lose the license as they join/leave the group.
 
 **Q:** What is entitlement management used for?
 **A:** Lets non-admins request bundles of access (an access package) groups, apps, SharePoint sites with approval workflows and time bounds. P2 feature.
@@ -349,7 +349,7 @@
 
 ---
 
-## 🔑 SECTION 3: AUTHENTICATION (MFA (Multi-Factor Authentication) & PASSWORDLESS)
+## 🔑 SECTION 3: AUTHENTICATION (MFA & PASSWORDLESS)
 
 **Q:** Define "passwordless" in Entra terms.
 **A:** A sign-in method that doesn't require a password at all, FIDO2 keys, Windows Hello for Business, Microsoft Authenticator phone sign-in, or certificate-based authentication.
@@ -407,7 +407,7 @@
 **A:** Modifies the session after sign-in, e.g. sign-in frequency, app-enforced restrictions, persistent browser session, Defender for Cloud Apps proxy.
 
 **Q:** What does CA block by default when configured to "block legacy authentication"?
-**A:** Older auth protocols (POP, IMAP (Internet Message Access Protocol), SMTP (Simple Mail Transfer Protocol) AUTH, MAPI, Exchange Online PowerShell pre-modernauth) that don't support MFA, the most common attack vector.
+**A:** Older auth protocols (POP, IMAP, SMTP AUTH, MAPI, Exchange Online PowerShell pre-modernauth) that don't support MFA, the most common attack vector.
 
 **Q:** How do you safely exclude break-glass accounts from CA?
 **A:** Create 2 cloud-only accounts with long unique passwords, store them in a sealed envelope/vault, and add them to "Exclude" on every CA policy.
@@ -420,12 +420,12 @@
 
 ---
 
-## 🔗 SECTION 5: APPLICATIONS & SSO (Single Sign-On)
+## 🔗 SECTION 5: APPLICATIONS & SSO
 
 **Q:** Difference between an "App Registration" and an "Enterprise App"?
-**A:** App Registration = the application's definition (the manifest, redirect URIs, secrets, API (Application Programming Interface) permissions) in your home tenant. Enterprise App = the service principal, the local instance/identity of the app in each tenant that uses it.
+**A:** App Registration = the application's definition (the manifest, redirect URIs, secrets, API permissions) in your home tenant. Enterprise App = the service principal, the local instance/identity of the app in each tenant that uses it.
 
-**Q:** Three SSO protocols Entra supports for SaaS (Software as a Service) apps?
+**Q:** Three SSO protocols Entra supports for SaaS apps?
 **A:** OpenID Connect (OIDC), SAML 2.0, WS-Federation.
 
 **Q:** Which auth protocol does a modern web/SPA app typically use?
@@ -460,7 +460,7 @@
 **A:** Turns "always on" admin role assignments into "eligible, activate just-in-time, with MFA, optional approval, and a time limit." Records every activation for audit.
 
 **Q:** Two kinds of role assignments in PIM?
-**A:** Eligible (must activate JIT (Just-In-Time)) and Active (always assigned, optionally time-bound).
+**A:** Eligible (must activate JIT) and Active (always assigned, optionally time-bound).
 
 **Q:** What license is required for PIM?
 **A:** Entra ID P2.
@@ -531,7 +531,7 @@
 **A:** 7 days for Free, 30 days for P1/P2. Longer retention requires forwarding to Log Analytics or a storage account.
 
 **Q:** Where do you send Entra logs for long-term retention and KQL querying?
-**A:** Configure Diagnostic Settings → send to Log Analytics workspace (KQL), an Event Hub (downstream SIEM (Security Information and Event Management)), or a storage account (archive).
+**A:** Configure Diagnostic Settings → send to Log Analytics workspace (KQL), an Event Hub (downstream SIEM), or a storage account (archive).
 
 **Q:** What is KQL?
 **A:** Kusto Query Language, Microsoft's pipe-style query language used in Log Analytics, Sentinel, Defender, and Resource Graph.
@@ -543,7 +543,7 @@
 **A:** A 0–100% score Microsoft calculates from your identity configuration (MFA registration, legacy auth blocked, admin counts, etc.) with prescriptive improvement actions.
 
 **Q:** What is Microsoft Defender for Identity (formerly ATP)?
-**A:** Agent-based detection on Domain Controllers and AD FS servers, detects on-prem attacks (Golden Ticket, DCSync, lateral movement) and reports to the Defender XDR (Extended Detection and Response) portal.
+**A:** Agent-based detection on Domain Controllers and AD FS servers, detects on-prem attacks (Golden Ticket, DCSync, lateral movement) and reports to the Defender XDR portal.
 
 **Q:** Why use break-glass accounts?
 **A:** Insurance against a tenant-wide lockout caused by misconfigured CA, expired admin MFA, or compromised federation. 2 cloud-only Global Admins, no MFA via federated method, vaulted credentials.

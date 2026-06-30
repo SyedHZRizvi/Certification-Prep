@@ -19,7 +19,7 @@ cd /var/log
 find . -name "*.log" -mtime +7 -exec gzip {} \;
 ```
 
-Cute. Innocuous. Until the day the server's hostname changes and a stale NFS mount drops, so `cd /var/log` silently fails. The script keeps running, in `$HOME`, which is `/root`. `find . -name "*.log"` matches *every* `.log` in the root user's recursive home (some left there by another admin's experiment). And it gzips them. Including a 12 GB SQL (Structured Query Language) dump someone had saved as `dump.log` because they didn't know any better.
+Cute. Innocuous. Until the day the server's hostname changes and a stale NFS mount drops, so `cd /var/log` silently fails. The script keeps running, in `$HOME`, which is `/root`. `find . -name "*.log"` matches *every* `.log` in the root user's recursive home (some left there by another admin's experiment). And it gzips them. Including a 12 GB SQL dump someone had saved as `dump.log` because they didn't know any better.
 
 The next morning Marcus opens a ticket queue full of "where is my data" notes. The fix takes 3 hours of `gunzip`-ing and validating files. The root cause is two lines of bash hygiene the original author skipped:
 
@@ -394,7 +394,7 @@ grep ERROR /var/log/app.log              # match lines
 grep -i "error" log.txt                  # case-insensitive
 grep -v "DEBUG" log.txt                  # INVERT (lines NOT matching)
 grep -n "TODO" *.py                      # show line numbers
-grep -r "API (Application Programming Interface)_KEY" /etc                   # recursive
+grep -r "API_KEY" /etc                   # recursive
 grep -c "ERROR" log.txt                  # count matches
 grep -E "ERROR|FATAL" log.txt            # extended regex (alt: egrep)
 grep -F "literal[.]text" log.txt         # fixed-string (alt: fgrep)
@@ -712,7 +712,7 @@ You now know:
 4. ➡️ Move on: [Module 5, Users, Groups & sudo](../Module-05-Users-Groups/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 5](../Module-05-Users-Groups/Reading.md) your scripts will read `/etc/passwd` with `awk -F:`; [Module 6](../Module-06-Networking-SSH (Secure Shell)/Reading.md) `ssh user@host 'remote_cmd'` is bash-on-bash; [Module 8](../Module-08-Security/Reading.md), auditd rules read like little scripts.
+> - Inside this course: [Module 5](../Module-05-Users-Groups/Reading.md) your scripts will read `/etc/passwd` with `awk -F:`; [Module 6](../Module-06-Networking-SSH/Reading.md) `ssh user@host 'remote_cmd'` is bash-on-bash; [Module 8](../Module-08-Security/Reading.md), auditd rules read like little scripts.
 > - Practice: Practice Exam 1 has ~8 questions drawing from this module; the Final Mock has ~12.
 
 ---

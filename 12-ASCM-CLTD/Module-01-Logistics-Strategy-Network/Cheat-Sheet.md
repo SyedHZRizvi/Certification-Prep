@@ -9,9 +9,9 @@
 ```
 1. Network design  (how many DCs, where, what role)
 2. Mode strategy   (truck/rail/ocean/air mix)
-3. Make-or-buy     (in-house vs 3PL (Third-Party Logistics)/4PL (Fourth-Party Logistics))
+3. Make-or-buy     (in-house vs 3PL/4PL)
 4. Service segmentation (one size vs tiered)
-5. Technology stack (WMS (Warehouse Management System)/TMS (Transportation Management System)/OMS (Order Management System)/Control Tower)
+5. Technology stack (WMS/TMS/OMS/Control Tower)
 ```
 
 Strategic = long-term, capital-intensive, hard to reverse.
@@ -48,7 +48,7 @@ Weights = demand volume Vi. Ignores roads, labor, taxes. Use as *starting point*
 
 | Type | Pattern | Best for |
 |------|---------|----------|
-| Direct | Plant → Customer | High-volume, single-SKU (Stock Keeping Unit) |
+| Direct | Plant → Customer | High-volume, single-SKU |
 | Milk-run | Plant → multi-stop | Multiple small customers |
 | Hub-and-spoke | Plant → Hub → Spoke DCs | Parcel, LTL, consolidation |
 | Cross-dock | Inbound → sort → outbound | Fast-movers, retail replenishment |

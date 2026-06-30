@@ -4,7 +4,7 @@
 
 ---
 
-## VM (Virtual Machine) vs. Container — Core Distinction
+## VM vs. Container — Core Distinction
 
 | Property | Virtual Machine | Container |
 |---|---|---|
@@ -93,7 +93,7 @@
 | **kube-controller-manager** | — | Runs reconciliation loops (ReplicaSet, Node, Endpoints, ServiceAccount) |
 | **cloud-controller-manager** | — | Cloud-specific integrations (load balancers, node lifecycle); optional |
 
-**MEMORIZE:** No component talks directly to another — everything goes through the API (Application Programming Interface) server. etcd loss = cluster config loss.
+**MEMORIZE:** No component talks directly to another — everything goes through the API server. etcd loss = cluster config loss.
 
 ### Worker Node
 
@@ -125,7 +125,7 @@ kubectl apply -f pod.yaml
 |---|---|
 | `docker` | Developer workstation (not exam nodes) |
 | `crictl` | **CKA exam nodes** — use instead of docker |
-| `ctr` | Low-level containerd CLI (Command Line Interface) |
+| `ctr` | Low-level containerd CLI |
 
 | `crictl` command | Equivalent docker command |
 |---|---|
@@ -189,7 +189,7 @@ kubectl apply -f pod.yaml
 | **Pod** | Smallest deployable unit; 1+ containers sharing network + storage |
 | **Deployment** | Manages ReplicaSets; rolling updates; rollback |
 | **ReplicaSet** | Maintains N pod replicas; usually managed by Deployment |
-| **Service** | Stable virtual IP + DNS (Domain Name System) name for a set of pods |
+| **Service** | Stable virtual IP + DNS name for a set of pods |
 | **Namespace** | Virtual cluster; resource isolation within a cluster |
 | **ConfigMap** | Non-sensitive config data injected into pods |
 | **Secret** | Base64-encoded sensitive data (passwords, tokens) |

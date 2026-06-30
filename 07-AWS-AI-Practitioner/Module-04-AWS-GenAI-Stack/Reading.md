@@ -15,7 +15,7 @@
 
 Riya's coffee shop did well, so she opens a full restaurant. Now she has *four* kinds of AI work to do:
 
-1. She wants a **customer-facing chatbot** that helps diners find the right menu item, in any language. → She needs **a foundation model behind an API (Application Programming Interface)**.
+1. She wants a **customer-facing chatbot** that helps diners find the right menu item, in any language. → She needs **a foundation model behind an API**.
 2. Her **back-office staff** wants to ask plain-English questions of all their internal docs ("How many oat-milk cappuccinos did we sell last March?"). → She needs **an enterprise generative-AI assistant**.
 3. Her **kitchen developers** want help writing the POS system code. → She needs **an AI coding assistant**.
 4. A **food blogger marketing intern** wants to *experiment* with AI without touching code. → She needs **a sandbox**.
@@ -42,14 +42,14 @@ That's the whole layout. Now let's pry each one open.
 - A **catalog of foundation models** (text, image, embedding, multimodal)
 - **Serverless inference**, no servers to manage, pay per token
 - **Customization**, fine-tune or do continued pre-training on your data (Module 6)
-- **Knowledge Bases** for RAG (Retrieval-Augmented Generation) (Module 5)
+- **Knowledge Bases** for RAG (Module 5)
 - **Agents** that plan and call your APIs (Module 5)
 - **Guardrails** to block unsafe inputs/outputs (Module 7)
 - **Provisioned Throughput**, reserve dedicated capacity for steady high-volume workloads
 - **Model Evaluation**, built-in human and automated eval (Module 6)
 - **Data stays in your account / Region**; AWS does not use it to train base models
 
-🔥 **Bedrock's superpower:** Switch model providers by changing one API parameter. Same SDK (Software Development Kit), same auth, same observability.
+🔥 **Bedrock's superpower:** Switch model providers by changing one API parameter. Same SDK, same auth, same observability.
 
 ### The Bedrock Foundation Model Catalog (as of 2024–2025)
 
@@ -68,7 +68,7 @@ That's the whole layout. Now let's pry each one open.
 
 🔄 **Verified against the AWS Bedrock model catalog 2026-05.** Exact model versions evolve continuously, what matters for the AIF-C01 is the **provider list above** and which kinds of models each ships. The exam will not ask you to recall specific date-suffixed model IDs; if a question references one, the underlying concept is what's tested.
 
-🎯 **Trap on the exam:** OpenAI's GPT (Generative Pre-trained Transformer) models and Google's Gemini are **NOT** on Bedrock. If you see "GPT-4 on Bedrock" as an answer, it's wrong.
+🎯 **Trap on the exam:** OpenAI's GPT models and Google's Gemini are **NOT** on Bedrock. If you see "GPT-4 on Bedrock" as an answer, it's wrong.
 
 ### Bedrock pricing modes
 
@@ -90,7 +90,7 @@ Amazon Q is AWS's family of **purpose-built generative-AI assistants**. Two flag
 Was **Amazon CodeWhisperer**. Rebranded and expanded in 2024.
 
 - **Audience:** Software engineers, ops engineers, AWS practitioners
-- **What it does:** AI coding assistant, code completion, code explanation, code transformation (e.g., Java 8 → Java 17), unit-test generation, security scanning, AWS console / CLI (Command Line Interface) help, chat about your AWS account
+- **What it does:** AI coding assistant, code completion, code explanation, code transformation (e.g., Java 8 → Java 17), unit-test generation, security scanning, AWS console / CLI help, chat about your AWS account
 - **Where it runs:** VS Code, JetBrains, Visual Studio, AWS Console, CLI, GitHub
 - **Notable feature:** "Amazon Q Developer Agent" can perform multi-step tasks like "implement this Jira ticket end-to-end"
 
@@ -98,7 +98,7 @@ Was **Amazon CodeWhisperer**. Rebranded and expanded in 2024.
 
 - **Audience:** Non-developers, sales, finance, HR, operations
 - **What it does:** An enterprise **RAG-powered chatbot** that answers questions, summarizes, and takes actions on **your company's data**, without you writing any code or building a vector DB by hand
-- **Connectors (40+):** S3 (Simple Storage Service), SharePoint, Confluence, Salesforce, ServiceNow, Slack, Microsoft 365, Google Drive, Jira, Zendesk, etc.
+- **Connectors (40+):** S3, SharePoint, Confluence, Salesforce, ServiceNow, Slack, Microsoft 365, Google Drive, Jira, Zendesk, etc.
 - **Built-in:** Permissions are respected (a user only sees answers from documents they have access to)
 - **Q in QuickSight**, generative BI for dashboards and analytics
 - **Q in Connect**, generative AI for contact-center agents
@@ -139,13 +139,13 @@ We met JumpStart in Module 2. For Module 4, the key thing is: **JumpStart hosts 
 
 - One-click deploy to a SageMaker Endpoint
 - Fine-tune with your own data
-- Run privately in your VPC (Virtual Private Cloud)
+- Run privately in your VPC
 
 | | Bedrock | SageMaker JumpStart |
 |---|---------|---------------------|
 | Hosting | Fully managed, serverless API | You provision an endpoint (instance type, count) |
 | Pricing | Per token / per MU | Per instance-hour |
-| Model catalog | Curated set of provider FMs (Claude, Nova, Titan, Llama, Mistral, Cohere, Stability, AI21) | Bigger open library Hugging Face, Meta, Stability, etc. plus pretrained vision/NLP (Natural Language Processing) models |
+| Model catalog | Curated set of provider FMs (Claude, Nova, Titan, Llama, Mistral, Cohere, Stability, AI21) | Bigger open library Hugging Face, Meta, Stability, etc. plus pretrained vision/NLP models |
 | Customization | Fine-tuning, continued pre-training (provider-supported only) | Full control, fine-tune, modify, BYO code |
 | When to use | Build apps fast against frontier FMs without infra | Self-host open-weights models, deep customization, VPC isolation |
 
@@ -161,7 +161,7 @@ The AIF-C01 occasionally references these, keep them in your mental map:
 | Service / feature | What it is |
 |-------------------|-----------|
 | **Amazon Bedrock Knowledge Bases** | Managed RAG, bring your documents, Bedrock handles chunking, embedding, retrieval (Module 5) |
-| **Amazon Bedrock Agents** | LLM (Large Language Model) agents that plan and call your APIs / Lambda functions (Module 5) |
+| **Amazon Bedrock Agents** | LLM agents that plan and call your APIs / Lambda functions (Module 5) |
 | **Amazon Bedrock Guardrails** | Safety layer, filter PII, denied topics, harmful content (Module 7) |
 | **Amazon Bedrock Model Evaluation** | Built-in framework to compare FMs on your data (Module 6) |
 | **Amazon Bedrock Studio** | Browser-based environment for teams to prototype Bedrock apps |
@@ -187,7 +187,7 @@ AWS itself describes its GenAI offerings as a **three-layer stack**. This shows 
 │  Amazon Bedrock (FMs, KBs, Agents, Guardrails, Eval)     │
 ├──────────────────────────────────────────────────────────┤
 │  BOTTOM LAYER, Infrastructure for training & inference  │
-│  SageMaker, Trainium, Inferentia, GPUs (EC2 (Elastic Compute Cloud) P5/G6/etc.)  │
+│  SageMaker, Trainium, Inferentia, GPUs (EC2 P5/G6/etc.)  │
 └──────────────────────────────────────────────────────────┘
 ```
 
@@ -267,7 +267,7 @@ A practical rule the exam hints at: **start small and cheap, escalate to larger 
 
 - **Anthropic Claude on Bedrock** as the workhorse model, chosen for reasoning quality on financial-document tasks and for the 200K-token context window
 - **VPC Interface Endpoints (PrivateLink)** for Bedrock so all traffic stayed on the AWS backbone, never the public internet
-- **Resource-level IAM (Identity and Access Management)** restricting which model ARNs each business unit could invoke (investment banking gets different access from consumer banking)
+- **Resource-level IAM** restricting which model ARNs each business unit could invoke (investment banking gets different access from consumer banking)
 - **Bedrock Knowledge Bases** indexing internal research, policy, and reference data into **Amazon OpenSearch Serverless** as the vector store
 - **Bedrock Guardrails** for PII filtering, denied topics (e.g., no investment advice from internal tools), and contextual grounding checks on RAG outputs
 - **Bedrock model invocation logging to S3** (KMS-encrypted) for the full prompt + response audit trail demanded by compliance
@@ -324,8 +324,8 @@ You now know:
 ## 💬 Discussion, Socratic prompts
 
 1. **Bedrock vs JumpStart vs PartyRock, the deployment triad.** Three engineers walk into your office: (a) an enterprise architect wants production Claude with VPC isolation, (b) a research scientist wants to fine-tune a 70B open-weights Llama with custom code, (c) a marketing manager wants a no-code AI demo by end of week. Assign each the right AWS service and explain *why* the others don't fit, citing concrete trade-offs (cost model, hosting, customization control, governance).
-2. **Amazon Q Developer vs Q Business the same company, both?** A mid-size firm of 800 employees wants to roll out Amazon Q. Their CTO (Chief Technology Officer) argues for Q Developer for engineers and Q Business for the rest. A skeptic says "one tool is enough pick one." Make the strongest argument for the dual rollout AND the strongest counter. What's the cost / sprawl / training implication of each?
-3. **Provisioned Throughput vs On-Demand on Bedrock.** Sketch the cost crossover. At what monthly token volume does Provisioned Throughput beat On-Demand pricing? How does Batch (50% off, ≤24h SLA (Service Level Agreement)) change the calculation for a customer that has ~70% of its workload as offline / batch-friendly?
+2. **Amazon Q Developer vs Q Business the same company, both?** A mid-size firm of 800 employees wants to roll out Amazon Q. Their CTO argues for Q Developer for engineers and Q Business for the rest. A skeptic says "one tool is enough pick one." Make the strongest argument for the dual rollout AND the strongest counter. What's the cost / sprawl / training implication of each?
+3. **Provisioned Throughput vs On-Demand on Bedrock.** Sketch the cost crossover. At what monthly token volume does Provisioned Throughput beat On-Demand pricing? How does Batch (50% off, ≤24h SLA) change the calculation for a customer that has ~70% of its workload as offline / batch-friendly?
 4. **The "Nova vs Claude" board question.** AWS's first-party Nova family is cheaper and AWS-aligned; Anthropic's Claude has stronger reasoning benchmarks and longer context. A retail CTO needs to choose for a customer-service co-pilot. Build the strongest argument for Nova AND the strongest argument for Claude, citing latency, cost, quality, vendor risk, and strategic alignment. Which would you defend at a board review, and what evaluation experiment would justify the call?
 5. **The 3-layer stack and "where does the value accrue?"** The exam expects "Apps → Tools → Infra." But which layer is most defensible *economically* over the next 5 years: the top layer (Q, PartyRock, customer-facing apps), the middle (Bedrock), or the bottom (Trainium/Inferentia/EC2 GPU)? Defend your answer with reference to commodity vs differentiator dynamics, and the implication for your career: which layer is the safest place to build expertise?
 

@@ -1,12 +1,12 @@
-# Module 10: Cross-Border, B2B (Business-to-Business) & Composable Commerce 🌍
+# Module 10: Cross-Border, B2B & Composable Commerce 🌍
 
-> **Why this module matters:** Most e-commerce books stop at "domestic D2C (Direct-to-Consumer) on Shopify." The real revenue gravity in 2025-2026 has moved elsewhere. Cross-border sales now account for ~22% of global e-commerce GMV (Gross Merchandise Value) (Statista, 2024). B2B e-commerce is a $7.7T market roughly **5x larger than B2C (Business-to-Consumer)** (Gartner, *B2B Commerce Forecast*, 2024). And the architectural conversation has decisively shifted from "which platform" to "which composable stack" MACH-aligned headless commerce is now the default reference architecture for any retailer over ~$200M GMV (Forrester, *MACH Alliance Report*, 2024). This module gives you the operating knowledge to compete in those three arenas: cross-border (tax, duty, fulfillment, regulation), B2B (quoting, net terms, multi-buyer accounts, EDI), and composable commerce (Hydrogen, MACH, commercetools, the Shein-vs-De-Minimis story).
+> **Why this module matters:** Most e-commerce books stop at "domestic D2C on Shopify." The real revenue gravity in 2025-2026 has moved elsewhere. Cross-border sales now account for ~22% of global e-commerce GMV (Statista, 2024). B2B e-commerce is a $7.7T market roughly **5x larger than B2C** (Gartner, *B2B Commerce Forecast*, 2024). And the architectural conversation has decisively shifted from "which platform" to "which composable stack" MACH-aligned headless commerce is now the default reference architecture for any retailer over ~$200M GMV (Forrester, *MACH Alliance Report*, 2024). This module gives you the operating knowledge to compete in those three arenas: cross-border (tax, duty, fulfillment, regulation), B2B (quoting, net terms, multi-buyer accounts, EDI), and composable commerce (Hydrogen, MACH, commercetools, the Shein-vs-De-Minimis story).
 
 ---
 
 ## 🎯 A Real Story: Shein's Rise (2008-2024) and the Wall it Hit
 
-In 2008, a former SEO (Search Engine Optimization) consultant named Chris Xu (Xu Yangtian) founded a wedding-dress dropshipping site in Nanjing, China. He renamed it SheInside in 2012, then Shein in 2015. By 2022 fourteen years later Shein was the most-downloaded shopping app on the Apple App Store globally, larger by downloads than Amazon, AliExpress, or H&M.
+In 2008, a former SEO consultant named Chris Xu (Xu Yangtian) founded a wedding-dress dropshipping site in Nanjing, China. He renamed it SheInside in 2012, then Shein in 2015. By 2022 fourteen years later Shein was the most-downloaded shopping app on the Apple App Store globally, larger by downloads than Amazon, AliExpress, or H&M.
 
 The numbers behind that ascent were unprecedented:
 
@@ -14,8 +14,8 @@ The numbers behind that ascent were unprecedented:
 - **5,000-7,000 new SKUs added per day** by 2023. (For context: Zara, fast-fashion's previous king, added ~500/week.)
 - **5-7 day design-to-delivery cycles** in China's Pearl River Delta, vs. Zara's 3-6 weeks.
 - **300-unit micro-batch initial runs**, scaling only what trended, vs. industry-standard 5,000+ unit minimums.
-- **TikTok-feedback-driven SKU (Stock Keeping Unit) greenlighting:** a creator's organic video could move a Shein product from concept to inventory in 72 hours.
-- **$66B private valuation peak** (April 2023), reportedly ahead of an expected NYSE IPO (Initial Public Offering).
+- **TikTok-feedback-driven SKU greenlighting:** a creator's organic video could move a Shein product from concept to inventory in 72 hours.
+- **$66B private valuation peak** (April 2023), reportedly ahead of an expected NYSE IPO.
 
 Shein's competitive moat wasn't fashion it was a **cross-border supply chain stitched together by software**. Orders shipped direct from Chinese factories to US/EU/UK consumers via the US **De Minimis exemption** Section 321 of the Tariff Act of 1930 (codified at 19 USC 1321), which lets parcels under $800 enter the US duty-free with simplified customs processing. Shein and its rival Temu reportedly accounted for ~30% of US De Minimis parcels by 2024 (over 1 billion parcels annually combined). The economics were transformative: Shein could land a $7 dress in Atlanta with zero import duty, while a US-warehoused competitor paid 16-32% in tariffs on Chinese-origin apparel.
 
@@ -36,9 +36,9 @@ This module gives you the operating knowledge to architect for that world, and t
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Storefront platform fundamentals (Shopify, Adobe Commerce, BigCommerce), covered in [Module 2](../Module-02-Storefront-Platforms-Architecture/Reading.md)
-> - Catalog / PIM (Product Information Management) architecture and feed management, covered in [Module 3](../Module-03-Product-Catalog-Information-Management/Reading.md)
+> - Catalog / PIM architecture and feed management, covered in [Module 3](../Module-03-Product-Catalog-Information-Management/Reading.md)
 > - Payments, tax, and fraud at the domestic level, covered in [Module 4](../Module-04-Payments-Tax-Fraud/Reading.md)
-> - Fulfillment, 3PL (Third-Party Logistics), and returns economics, covered in [Module 5](../Module-05-Fulfillment-Logistics-Returns/Reading.md)
+> - Fulfillment, 3PL, and returns economics, covered in [Module 5](../Module-05-Fulfillment-Logistics-Returns/Reading.md)
 > - Analytics and attribution baseline, covered in [Module 9](../Module-09-Analytics-Attribution-Marketplaces/Reading.md)
 > - Cross-course: [10-ASCM-CSCP Module 7](../../10-ASCM-CSCP/README.md) covers cross-border supply-chain mechanics from the supply-chain-professional angle.
 > If any of these are shaky, pause and review before continuing.
@@ -55,7 +55,7 @@ Cross-border e-commerce means selling to a customer whose **shipping address is 
 | **Shipping** | $4-12/order, 2-5 day | $12-45/order, 5-14 day |
 | **Returns** | 15-25% return rate, $3-8 reverse cost | 8-15% return rate, $25-60 reverse cost |
 | **Currency** | Single currency, no FX exposure | Multi-currency, FX-hedge or repricing needed |
-| **Regulatory** | One regulator (FTC + state AGs) | Multiple (EU DSA, UK CMA, EU GDPR (General Data Protection Regulation), etc.) |
+| **Regulatory** | One regulator (FTC + state AGs) | Multiple (EU DSA, UK CMA, EU GDPR, etc.) |
 
 ### Duty Calculation, The HS Code System
 
@@ -75,7 +75,7 @@ The **Harmonized System (HS)** is the WCO's (World Customs Organization, 1988) g
 ```
 1. DDU (Delivered Duty Unpaid)
    - Buyer pays customs on delivery
-   - Cheaper for seller, worst CX (Customer Experience) (20% abandonment)
+   - Cheaper for seller, worst CX (20% abandonment)
    - Default for unregistered sellers
    
 2. DDP (Delivered Duty Paid)  
@@ -93,7 +93,7 @@ The **Harmonized System (HS)** is the WCO's (World Customs Organization, 1988) g
 
 ### Currency Hedging for Cross-Border Sellers
 
-A US-based seller pricing in EUR/GBP (Google Business Profile)/AUD has FX exposure between **order placement and payment settlement** (typically 24-72 hours via Stripe/Adyen). For most DTC (Direct-to-Consumer) brands under $20M in cross-border revenue, this is small enough to absorb. Above ~$20M, brands typically:
+A US-based seller pricing in EUR/GBP/AUD has FX exposure between **order placement and payment settlement** (typically 24-72 hours via Stripe/Adyen). For most DTC brands under $20M in cross-border revenue, this is small enough to absorb. Above ~$20M, brands typically:
 
 1. **Natural hedging**, pay suppliers in the same currency you collect (e.g., source from Portugal, sell in EUR).
 2. **Forward contracts**, lock FX rates 30-90 days out via Wise Business, Airwallex, or a corporate FX desk.
@@ -123,8 +123,8 @@ The DSA applied from **February 17, 2024** for VLOPs (Very Large Online Platform
 
 - **Notice-and-action mechanisms**, illegal-content reporting that must be addressed within defined SLAs.
 - **Statement-of-reasons obligations**, sellers must be told *why* their listing was removed.
-- **Trader traceability**, KYC (Know Your Customer)-verify all marketplace sellers (Amazon, eBay, AliExpress, Shein, Temu).
-- **Dark-pattern prohibitions**, no manipulative UX (User Experience) patterns (forced sign-up, scarcity timers without basis).
+- **Trader traceability**, KYC-verify all marketplace sellers (Amazon, eBay, AliExpress, Shein, Temu).
+- **Dark-pattern prohibitions**, no manipulative UX patterns (forced sign-up, scarcity timers without basis).
 - **Recommender-system transparency**, explain the algorithm in plain language.
 - **External audits**, annual independent audits, results published.
 
@@ -189,12 +189,12 @@ Yet the platforms, content, and certifications mostly focus on B2C. Module 10 cl
 
 **Adobe Commerce B2B** (formerly Magento B2B Suite), the historic enterprise B2B leader.
 - Company accounts with hierarchical buyers (admin, purchaser, viewer roles).
-- Quote-management workflow (RFQ (Request for Quotation) → quote → counter-offer → PO conversion).
+- Quote-management workflow (RFQ → quote → counter-offer → PO conversion).
 - Shared catalog / catalog-segmentation per company account.
 - Tiered pricing per account or customer group.
 - Credit limits and net-terms tracking.
 - Approval workflows (requisition list → manager approval → PO).
-- ERP (Enterprise Resource Planning)/EDI integration via Adobe IO or Adobe Commerce Connectors.
+- ERP/EDI integration via Adobe IO or Adobe Commerce Connectors.
 - Tested on Adobe Commerce Business Practitioner certification.
 
 **Shopify B2B (on Shopify Plus)**, launched June 2022, dominant in mid-market B2B.
@@ -213,7 +213,7 @@ Yet the platforms, content, and certifications mostly focus on B2C. Module 10 cl
 - Strong EDI capability (X12, EDIFACT).
 
 **SAP Commerce Cloud (Hybris)**, enterprise B2B leader for $1B+ companies.
-**Salesforce Commerce Cloud B2B**, strong fit if already on Salesforce CRM (Customer Relationship Management).
+**Salesforce Commerce Cloud B2B**, strong fit if already on Salesforce CRM.
 **Sana Commerce**, purpose-built B2B, deep ERP integration (Dynamics 365, SAP).
 
 🧠 **MEMORIZE THIS.** Adobe Commerce B2B (enterprise + quoting depth), Shopify B2B (mid-market + speed), BigCommerce B2B Edition (out-of-box completeness), SAP/Salesforce (enterprise CRM-attached). These are the four named in most exam blueprints.
@@ -251,20 +251,20 @@ Step 6: Payment received → A/R reconciled
 
 The single biggest architectural shift of 2020-2026 in e-commerce: the move from **monolithic suites** (Magento 1, Salesforce Commerce Cloud classic) to **composable / headless** architectures organized around the **MACH** principles.
 
-### MACH Defined, Microservices, API (Application Programming Interface)-first, Cloud-native, Headless
+### MACH Defined, Microservices, API-first, Cloud-native, Headless
 
 The MACH Alliance (founded 2020 by commercetools, Contentstack, EPAM, Valtech) codified the term:
 
 - **M Microservices** single-purpose services (cart, checkout, search, PIM) communicating via APIs.
-- **A API-first** every capability exposed as an API before any UI (User Interface) is built.
-- **C Cloud-native SaaS (Software as a Service)** multi-tenant, auto-scaling, vendor-managed.
+- **A API-first** every capability exposed as an API before any UI is built.
+- **C Cloud-native SaaS** multi-tenant, auto-scaling, vendor-managed.
 - **H Headless** frontend (presentation) is decoupled from backend (commerce engine).
 
 **Reference: MACH Alliance Manifesto, 2020** (commercetools / Contentstack / EPAM / Valtech). Updated annually; 2024 manifesto adds emphasis on "best-of-breed composability."
 
 ### The Composable Commerce Thesis (commercetools, ~2019)
 
-Dirk Hörig, commercetools' CEO (Chief Executive Officer), articulated the thesis in 2019 keynotes: enterprise retailers should **assemble** a commerce stack from best-of-breed components rather than buy a monolithic suite. The arguments:
+Dirk Hörig, commercetools' CEO, articulated the thesis in 2019 keynotes: enterprise retailers should **assemble** a commerce stack from best-of-breed components rather than buy a monolithic suite. The arguments:
 
 1. **Best-of-breed beats best-of-suite** for each capability (search: Algolia/Elastic; CMS: Contentstack/Sanity; payments: Stripe/Adyen; PIM: Akeneo/inriver).
 2. **Vendor lock-in is reduced**, swap one component without replatforming.
@@ -284,7 +284,7 @@ The empirical truth (per Forrester *MACH Adoption Report*, 2024): composable win
 │  Deployed on Vercel / Netlify / Cloudflare Pages             │
 └──────────────────────────────────────────────────────────────┘
                               │
-                       (GraphQL / REST (Representational State Transfer) APIs)
+                       (GraphQL / REST APIs)
                               │
 ┌──────────────────────────────────────────────────────────────┐
 │  Commerce Engine (Backend)                                    │
@@ -295,7 +295,7 @@ The empirical truth (per Forrester *MACH Adoption Report*, 2024): composable win
               (Best-of-breed satellite services)
                               │
 ┌──────────────────────────────────────────────────────────────┐
-│ Content │ Search │ PIM │ DAM │ OMS (Order Management System) │ Payments │ Identity │ Tax│
+│ Content │ Search │ PIM │ DAM │ OMS │ Payments │ Identity │ Tax│
 │ Sanity  │ Algolia│ Akeneo│Bynder│fluent│Stripe │Auth0 │Avalara│
 │Contentstack│ Coveo│ inriver│Cloudinary│OneStock│Adyen │Okta│TaxJar│
 └──────────────────────────────────────────────────────────────┘
@@ -313,7 +313,7 @@ Adopters: Allbirds (2022), Crown & Caliber (2023), Glossier (2023 relaunch), Rug
 
 ### Adobe Commerce + Adobe Experience Manager (AEM), The Adobe Composable Stack
 
-Adobe's composable answer: Adobe Commerce (backend) + AEM Sites (frontend CMS) + Adobe Experience Platform (CDP (Customer Data Platform)) + Adobe Analytics + Adobe Target (personalization) + Adobe Sensei (AI). Sold together as the **Adobe Experience Cloud**. Tested heavily on **Adobe Commerce Business Practitioner** certification.
+Adobe's composable answer: Adobe Commerce (backend) + AEM Sites (frontend CMS) + Adobe Experience Platform (CDP) + Adobe Analytics + Adobe Target (personalization) + Adobe Sensei (AI). Sold together as the **Adobe Experience Cloud**. Tested heavily on **Adobe Commerce Business Practitioner** certification.
 
 The Adobe pitch: composable WITHIN one vendor's ecosystem, interop is pre-engineered, identity is unified across the stack, and the AEM-Commerce integration eliminates the headless-CMS dilemma.
 
@@ -388,7 +388,7 @@ By Q4 2024, Shein's per-order economics had inflated 15-25% due to local-fulfill
 
 The next phase of composable commerce (2025-2026) is **agentic**, AI assistants (ChatGPT, Claude, Perplexity, Apple Intelligence) discovering products via Commerce APIs and transacting on the consumer's behalf.
 
-**Reference: OpenAI's GPT (Generative Pre-trained Transformer) Store + Operator (2024-2025); Anthropic's Claude with Browser Use (Q4 2024); Apple Intelligence + ChatGPT integration (2025); Shopify's Storefront MCP server (announced 2024).**
+**Reference: OpenAI's GPT Store + Operator (2024-2025); Anthropic's Claude with Browser Use (Q4 2024); Apple Intelligence + ChatGPT integration (2025); Shopify's Storefront MCP server (announced 2024).**
 
 The architectural implication: storefronts that exist *only* as human-facing UIs will lose discovery to storefronts that expose **structured Commerce APIs** that AI agents can call. This favors composable/MACH architectures over monolithic suites, because the former are API-first by design.
 

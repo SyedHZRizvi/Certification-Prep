@@ -75,7 +75,7 @@ Let's map each department:
 | **Editorial** | Locks picture edit; exports VFX pulls | Avid, Premiere |
 | **Scanning / DPX Prep** | Digitizes film or transcodes camera RAW to working format | ARRIRAW → DPX/EXR |
 | **Plate Prep / Matchmove** | Camera tracking, lens undistortion, stabilization | 3DEqualizer, PFTrack, SynthEyes |
-| **Digital Matte Painting (DMP (Data Management Platform))** | 2.5D or 3D painted extensions of sets and environments | Photoshop, Mari, Nuke |
+| **Digital Matte Painting (DMP)** | 2.5D or 3D painted extensions of sets and environments | Photoshop, Mari, Nuke |
 | **3D Modeling & Rigging** | Creature and vehicle geometry; deformation rigs | Maya, ZBrush, Houdini |
 | **FX / Simulation** | Fluids, destruction, cloth, crowds | Houdini (dominant), Bifrost, Blender |
 | **Lighting & Rendering** | 3D renders in EXR with full AOV (arbitrary output variable) pass breakdown | Arnold, RenderMan, V-Ray |

@@ -26,7 +26,7 @@ Merchant
 
 | PSP | Pricing (US online) | Best for |
 |-----|---------------------|----------|
-| Stripe | 2.9% + $0.30 | Default. Best API (Application Programming Interface). |
+| Stripe | 2.9% + $0.30 | Default. Best API. |
 | Adyen | 0.6% + interchange | Enterprise omnichannel |
 | PayPal Braintree | 2.59% + $0.49 | Marketplace + PayPal wallet |
 | Shopify Payments | Stripe under hood | Shopify merchants |
@@ -92,7 +92,7 @@ Tax vendors: Avalara, TaxJar (Stripe), Vertex, Sovos
 
 MFL = Marketplace Facilitator Law
 - Amazon/Walmart/Etsy collect/remit on behalf of 3P sellers
-- BUT you still owe tax on DTC (Direct-to-Consumer) sales of same products
+- BUT you still owe tax on DTC sales of same products
 ```
 
 ---
@@ -133,7 +133,7 @@ Eliminated July 2021: €22 low-value exemption
 
 | Provider | Notes |
 |----------|-------|
-| Klarna | UK FCA supervision 2024; IPO (Initial Public Offering) planned 2025 |
+| Klarna | UK FCA supervision 2024; IPO planned 2025 |
 | Affirm | NASDAQ since 2021; Amazon/Shopify partners |
 | Afterpay | Block-owned (acquired 2022, $29B) |
 | PayPal Pay-in-4 | Native to PayPal |

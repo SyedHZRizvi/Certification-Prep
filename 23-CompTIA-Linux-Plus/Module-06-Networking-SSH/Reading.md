@@ -1,11 +1,11 @@
-# Module 6: Networking, SSH (Secure Shell) & Firewalls 🌐
+# Module 6: Networking, SSH & Firewalls 🌐
 
 > **Why this module matters:** Domain 4 (Troubleshooting) is 28% of the exam second-biggest and *most* of those questions live here. A server you can't ping, a service you can't reach, a key-based SSH login that prompts for a password, a firewall rule that's in the wrong zone. Linux+ also tests both the modern (`ip`, `ss`, `nftables`, `firewalld`) AND the legacy (`ifconfig`, `netstat`, `iptables`) tooling. You need both. The exam will deliberately mix them.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Module 1 (systemd), NetworkManager and sshd are systemd services
 > - Module 4 (bash), most network troubleshooting is shell pipelines
-> - Basic TCP (Transmission Control Protocol)/IP concepts: IP addresses, ports, TCP vs UDP (User Datagram Protocol), DNS (Domain Name System)
+> - Basic TCP/IP concepts: IP addresses, ports, TCP vs UDP, DNS
 
 ---
 
@@ -177,7 +177,7 @@ resolvectl query example.com              # systemd-resolved native
 
 ## 🎛️ NetworkManager & nmcli
 
-Most modern distros (RHEL/Fedora, Ubuntu desktop, Ubuntu server 18.04+) use NetworkManager to manage interfaces. The CLI (Command Line Interface) is `nmcli`.
+Most modern distros (RHEL/Fedora, Ubuntu desktop, Ubuntu server 18.04+) use NetworkManager to manage interfaces. The CLI is `nmcli`.
 
 ```bash
 nmcli device status                       # interface states (managed?)
@@ -377,7 +377,7 @@ iptables organizes rules into **tables**, each with **chains**, each with **rule
 ```bash
 iptables -L -v -n                         # list all filter rules, verbose, numeric
 iptables -A INPUT -p tcp --dport 22 -j ACCEPT     # allow SSH
-iptables -A INPUT -p tcp --dport 80 -j ACCEPT     # allow HTTP (Hypertext Transfer Protocol)
+iptables -A INPUT -p tcp --dport 80 -j ACCEPT     # allow HTTP
 iptables -A INPUT -i lo -j ACCEPT                 # allow loopback
 iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 iptables -P INPUT DROP                            # default drop policy
@@ -415,7 +415,7 @@ firewalld is a daemon that manages zone-based firewall rules. It runs on top of 
 | `drop` | Discard all incoming; no replies |
 | `block` | Reject all incoming with icmp-host-prohibited |
 | `public` | Default for untrusted nets; only selected services allowed |
-| `external` | NAT (Network Address Translation)-masquerade outgoing; for routers |
+| `external` | NAT-masquerade outgoing; for routers |
 | `dmz` | Limited public services |
 | `work` / `home` / `internal` | Increasingly trusted |
 | `trusted` | Accept all |
@@ -500,7 +500,7 @@ wget https://example.com/file.tar.gz      # download
 
 ## 🔬 Scenario Walkthrough (PBQ-style thinking)
 
-> **Scenario:** A user reports that `https://api.internal.corp:8443` is unreachable from their workstation, but the API (Application Programming Interface) team says the service is up. You SSH to the workstation and run `curl -v https://api.internal.corp:8443/`. It hangs on `Trying 10.0.5.20...`. Walk the troubleshooting steps in order.
+> **Scenario:** A user reports that `https://api.internal.corp:8443` is unreachable from their workstation, but the API team says the service is up. You SSH to the workstation and run `curl -v https://api.internal.corp:8443/`. It hangs on `Trying 10.0.5.20...`. Walk the troubleshooting steps in order.
 
 **Walkthrough:**
 
@@ -514,7 +514,7 @@ wget https://example.com/file.tar.gz      # download
    - **Server-side firewall** (firewalld/iptables on the API host) blocking 8443.
    - **Network firewall** between you and the API blocking 8443.
    - **Server-side service not listening on the expected port**, verify on the API host: `ss -lnp sport :8443`.
-4. **TLS (Transport Layer Security) handshake:** `openssl s_client -connect 10.0.5.20:8443 -servername api.internal.corp`. If it errors:
+4. **TLS handshake:** `openssl s_client -connect 10.0.5.20:8443 -servername api.internal.corp`. If it errors:
 
    - Cert mismatch / expired / untrusted CA.
    - SNI mismatch (server returns wrong cert).
@@ -537,7 +537,7 @@ The PBQ might show the output of step 2 (ping fails) and ask "what's the next co
 | "SSH keys grant root access" | The key is added to a specific user's `authorized_keys`. Root access depends on what *that user* can do. |
 | "`-L` and `-R` are interchangeable" | NO, `-L` listens locally; `-R` listens remotely. Memorize the direction. |
 | "Default sshd port is 22 and can't be changed" | Can be changed in sshd_config. SELinux on RHEL may need `semanage port -a -t ssh_port_t -p tcp 2222`. |
-| "ping uses TCP" | ping uses ICMP (Internet Control Message Protocol). Some networks block ICMP. Use `nc -vz` for TCP-port reachability. |
+| "ping uses TCP" | ping uses ICMP. Some networks block ICMP. Use `nc -vz` for TCP-port reachability. |
 
 ---
 
@@ -572,7 +572,7 @@ The PBQ might show the output of step 2 (ping fails) and ask "what's the next co
 | ICMP | Internet Control Message Protocol (ping) |
 | ARP | Address Resolution Protocol (L2/L3 mapping) |
 | DNS | Domain Name System |
-| DHCP (Dynamic Host Configuration Protocol) | Dynamic Host Configuration Protocol |
+| DHCP | Dynamic Host Configuration Protocol |
 | NAT | Network Address Translation |
 | MTU | Maximum Transmission Unit |
 | MAC | Media Access Control (L2 address) |

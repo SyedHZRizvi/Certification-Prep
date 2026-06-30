@@ -9,7 +9,7 @@
 | AWS | Customer |
 |-----|----------|
 | Physical infra, hypervisor, networks | Your data classification & location |
-| Service availability of Bedrock/SageMaker | IAM (Identity and Access Management) permissions to those services |
+| Service availability of Bedrock/SageMaker | IAM permissions to those services |
 | Base FM training (by providers) | Custom FM fine-tuning data + safety |
 | Guardrails feature availability | **Enabling & configuring Guardrails** |
 | Encryption mechanisms (KMS) | Key choice + key policies |
@@ -23,14 +23,14 @@
 | Restrict to one provider's models | Resource-level policy on Bedrock model ARNs |
 | Per-team Bedrock budgets | SCPs at the Org level + tag-based policies |
 | SageMaker job least privilege | Per-job execution role |
-| Block public internet egress | VPC (Virtual Private Cloud) mode for jobs/endpoints |
+| Block public internet egress | VPC mode for jobs/endpoints |
 
 ---
 
 ## 🌐 Network Privacy
 
 - **PrivateLink VPC Interface Endpoints** for Bedrock Runtime + Agent/KB Runtime
-- **S3 (Simple Storage Service) Gateway endpoints** for training data and RAG (Retrieval-Augmented Generation) corpora
+- **S3 Gateway endpoints** for training data and RAG corpora
 - **VPC endpoint policies** as a second layer of authorization
 
 ---
@@ -39,7 +39,7 @@
 
 | State | Default | Recommended |
 |-------|---------|-------------|
-| In transit | TLS (Transport Layer Security) 1.2+ everywhere | Yes |
+| In transit | TLS 1.2+ everywhere | Yes |
 | At rest (S3) | SSE-S3 | **SSE-KMS (CMK)** for sensitive data |
 | Custom Bedrock model | AWS-managed KMS | **Customer-managed KMS** for audit |
 | In use | n/a | **Nitro Enclaves** for highly sensitive |
@@ -50,12 +50,12 @@
 
 | Service | Captures |
 |---------|----------|
-| **CloudTrail** | API (Application Programming Interface) call metadata (who/what/when) |
+| **CloudTrail** | API call metadata (who/what/when) |
 | **Bedrock model invocation logging** | Actual prompt + response content (opt-in) |
 | **CloudWatch** | Metrics, errors, latency |
 | **AWS Config** | Resource configuration drift |
 | **AWS Audit Manager** | Framework-aligned evidence packages |
-| **AWS Artifact** | Compliance reports (SOC (Security Operations Center), ISO, HIPAA, FedRAMP) |
+| **AWS Artifact** | Compliance reports (SOC, ISO, HIPAA, FedRAMP) |
 
 ---
 
@@ -74,8 +74,8 @@
 | Framework | Domain |
 |-----------|--------|
 | **HIPAA** | Healthcare PHI (BAA required) |
-| **GDPR (General Data Protection Regulation)** | EU residents' personal data |
-| **CCPA (California Consumer Privacy Act) / CPRA** | California residents |
+| **GDPR** | EU residents' personal data |
+| **CCPA / CPRA** | California residents |
 | **PCI DSS** | Payment card data |
 | **SOC 2 / ISO 27001** | Org-wide security |
 | **FedRAMP** | US federal cloud |

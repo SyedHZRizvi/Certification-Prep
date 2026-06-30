@@ -348,7 +348,7 @@ Use this table to identify your current level and what to build next:
 | Nuke | Basic nodes; Merge/Grade | AOV pass workflows; Python basics | Script optimization; Gizmo creation |
 | Color science | Log vs linear concept | ACES workflow; shot matching | DI collaboration; color pipeline setup |
 | Particle FX | CC Particle World | Trapcode Particular; 4-layer fire | Houdini particles; simulation delivery |
-| Invisible FX | Wire removal; sky replacement | Set extension; 1917-style stitches | De-aging pipelines; DMP (Data Management Platform) integration |
+| Invisible FX | Wire removal; sky replacement | Set extension; 1917-style stitches | De-aging pipelines; DMP integration |
 | Action FX | 7-layer explosion | Blender rigid body; muzzle flash | Houdini FLIP/Pyro; full FX supervision |
 
 ---

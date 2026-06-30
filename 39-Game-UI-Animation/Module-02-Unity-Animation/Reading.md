@@ -226,7 +226,7 @@ public class PlayerAnimationEvents : MonoBehaviour {
 
 ---
 
-## 🎯 Unity Animator C# API (Application Programming Interface)
+## 🎯 Unity Animator C# API
 
 ```csharp
 // Get reference

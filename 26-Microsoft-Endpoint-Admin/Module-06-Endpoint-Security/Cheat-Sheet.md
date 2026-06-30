@@ -13,7 +13,7 @@
 | Device control | ✅ | ✅ |
 | Network protection / SmartScreen | ✅ | ✅ |
 | Manual response actions | ✅ | ✅ |
-| **EDR (Endpoint Detection and Response)** | ❌ | ✅ |
+| **EDR** | ❌ | ✅ |
 | **AIR (auto investigation)** | ❌ | ✅ |
 | **TVM (vuln mgmt)** | ❌ | ✅ |
 | **Advanced Hunting (KQL)** | ❌ | ✅ |
@@ -53,7 +53,7 @@ Bundles:
 | Block Office code injection | Office injecting code |
 | Block JS/VBScript launching exe | Scripting-engine droppers |
 | Block obfuscated scripts | Anti-obfuscation engine |
-| Block Win32 API (Application Programming Interface) from Office macros | Macros calling Win32 |
+| Block Win32 API from Office macros | Macros calling Win32 |
 | **Block LSASS credential theft** | Mimikatz-style dumping |
 | Block PSExec / WMI process creation | Lateral movement |
 | Block USB unsigned processes | USB malware |
@@ -72,7 +72,7 @@ Bundles:
 
 | Setting | Recommended |
 |---------|-------------|
-| Encryption | XTS-AES (Advanced Encryption Standard) 256 |
+| Encryption | XTS-AES 256 |
 | Type | Used Space Only (new devices) |
 | Recovery key | Escrow to **Microsoft Entra ID device object** |
 | Silent enablement | Yes (no user prompts) |
@@ -110,11 +110,11 @@ Bundles:
 
 | Tool | What |
 |------|------|
-| **Defender for Cloud Apps** | CASB, discover/control SaaS (Software as a Service) |
+| **Defender for Cloud Apps** | CASB, discover/control SaaS |
 | **Defender Firewall** | Built-in Windows Firewall, Intune-managed |
 | **WDAC** | Windows Defender Application Control, code integrity |
 | **Smart App Control** | Cloud-driven AppLocker successor (Windows 11) |
-| **AppLocker** | Legacy GPO (Group Policy Object) app whitelisting |
+| **AppLocker** | Legacy GPO app whitelisting |
 | **Windows LAPS** | Rotates + escrows local admin password (Entra device object) |
 | **Security baselines** | Microsoft-published pre-configured settings |
 

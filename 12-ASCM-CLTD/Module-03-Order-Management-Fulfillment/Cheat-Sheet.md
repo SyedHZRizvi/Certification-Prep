@@ -7,7 +7,7 @@
 ## 🔄 Order-to-Cash (OTC) Cycle (10 steps)
 
 ```
-1. Inquiry / RFQ (Request for Quotation)
+1. Inquiry / RFQ
 2. Order entry
 3. Validation (credit, fraud, address)
 4. ATP / CTP check
@@ -21,7 +21,7 @@
 
 ---
 
-## 📑 EDI (Electronic Data Interchange) Document Codes (MEMORIZE)
+## 📑 EDI Document Codes (MEMORIZE)
 
 | Code | Document |
 |------|----------|
@@ -47,7 +47,7 @@ CTP = ATP + Planned receipts/production (future-aware)
 | Strategy | Best when |
 |----------|-----------|
 | Discrete | Small DC, few orders |
-| Batch | Many small orders, high SKU (Stock Keeping Unit) overlap |
+| Batch | Many small orders, high SKU overlap |
 | Zone | Large DC, many SKUs, pass-through |
 | Wave | Outbound shipping cutoffs drive timing |
 | Cluster | Small e-com orders, multi-bin carts |
@@ -68,7 +68,7 @@ CTP = ATP + Planned receipts/production (future-aware)
 
 ---
 
-## 📊 Fulfillment KPIs (Key Performance Indicators)
+## 📊 Fulfillment KPIs
 
 ```
 Order fill rate = Orders shipped complete / Total orders
@@ -78,7 +78,7 @@ Unit fill rate  = Units shipped / Units ordered
 Perfect Order = OnTime% × Complete% × Damage-Free% × Correct-Invoice%
 (MULTIPLICATIVE, 95%^4 ≈ 81.5%)
 
-OTIF (On-Time In-Full) = On-Time + In-Full   (retailer-imposed, chargebacks common)
+OTIF = On-Time + In-Full   (retailer-imposed, chargebacks common)
 ```
 
 ---

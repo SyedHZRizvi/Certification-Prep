@@ -4,8 +4,8 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1: AI/ML Fundamentals](../Module-01-AI-ML-Fundamentals/Reading.md), supervised vs unsupervised, training vs inference, overfitting
-> - Basic AWS service-naming conventions (S3 (Simple Storage Service) buckets, IAM (Identity and Access Management) roles, Region selection)
-> - Comfort with the idea of an "API (Application Programming Interface) endpoint" and "managed service"
+> - Basic AWS service-naming conventions (S3 buckets, IAM roles, Region selection)
+> - Comfort with the idea of an "API endpoint" and "managed service"
 >
 > If [`03-AWS-Cloud-Practitioner`](../../03-AWS-Cloud-Practitioner/README.md) Module 5 (AWS AI/ML services overview) is fresh, you can move faster through the AI Services menu at the end. If you've never seen IAM roles in action, also skim [`04-AWS-Solutions-Architect-Associate/Module-02-Compute`](../../../04-AWS-Solutions-Architect-Associate/) for context.
 
@@ -22,7 +22,7 @@ Back to **Riya** from Module 1. She wants to ship her cappuccino-demand model to
 5. **Train.** Run XGBoost on her training set. → *SageMaker Training Job*.
 6. **Tune.** Try 20 combinations of learning rate × tree depth. → *SageMaker Automatic Model Tuning (Hyperparameter Tuning Job)*.
 7. **Evaluate.** Check accuracy, look for bias. → *SageMaker Clarify*.
-8. **Deploy.** Stick the trained model behind an HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure) endpoint. → *SageMaker Real-time Endpoint*.
+8. **Deploy.** Stick the trained model behind an HTTPS endpoint. → *SageMaker Real-time Endpoint*.
 9. **Monitor in production.** Demand patterns might drift in winter. → *SageMaker Model Monitor*.
 10. **Iterate.** Retrain when drift is detected. → Back to step 5.
 
@@ -43,7 +43,7 @@ AWS docs and the exam guide describe the ML lifecycle in **6 or 7 stages**. The 
 4. Train               → Training Jobs, AutoML, JumpStart
 5. Evaluate            → Clarify, model metrics
 6. Deploy              → Endpoints (real-time / serverless / async / batch)
-7. Monitor & iterate   → Model Monitor, MLOps (Machine Learning Operations) Pipelines
+7. Monitor & iterate   → Model Monitor, MLOps Pipelines
 ```
 
 🔥 **MEMORIZE THE STAGES.** Almost every "scenario → service" question wants you to first identify the stage, then pick the right tool.
@@ -60,7 +60,7 @@ Amazon SageMaker is a **managed end-to-end ML platform**. It removes the heavy l
 |------|-----------------|--------------|
 | **SageMaker Studio** | All stages | The browser-based IDE for ML, notebooks, training, deployment, all in one |
 | **SageMaker Canvas** | Train (no-code) | Build ML models visually, no code, for business analysts |
-| **SageMaker Data Wrangler** | Data prep | 300+ built-in data transformations through a visual UI (User Interface) |
+| **SageMaker Data Wrangler** | Data prep | 300+ built-in data transformations through a visual UI |
 | **SageMaker Feature Store** | Feature mgmt | Central, versioned, online + offline store for ML features |
 | **SageMaker Ground Truth** | Data labeling | Managed human-in-the-loop labeling (workforce: your team, vendors, or Mechanical Turk) |
 | **SageMaker Processing Jobs** | Data prep / eval | Run arbitrary container-based data jobs on managed infra |
@@ -73,7 +73,7 @@ Amazon SageMaker is a **managed end-to-end ML platform**. It removes the heavy l
 | **SageMaker Endpoints** | Deploy | Real-time, serverless, async, or batch inference |
 | **SageMaker Model Monitor** | Monitor | Detects data drift, model drift, bias drift, feature attribution drift |
 | **SageMaker Clarify** | Evaluate / monitor | Bias detection + explainability (pre- and post-training) |
-| **SageMaker Pipelines** | All MLOps | CI/CD (Continuous Integration/Continuous Deployment) for ML orchestrates the whole lifecycle |
+| **SageMaker Pipelines** | All MLOps | CI/CD for ML orchestrates the whole lifecycle |
 | **SageMaker Edge Manager** | Deploy (edge) | Optimize and deploy models to edge devices |
 | **SageMaker Neo** | Deploy | Compile models for specific target hardware (faster, smaller) |
 
@@ -182,7 +182,7 @@ This is a *very* common trap on the AIF-C01.
 
 | Layer | Examples | Who uses it |
 |-------|----------|-------------|
-| **AWS AI Services** (pre-built APIs) | Rekognition (vision), Comprehend (NLP (Natural Language Processing)), Translate, Polly (text-to-speech), Transcribe (speech-to-text), Textract (OCR/forms), Lex (chatbots), Forecast (time-series), Personalize (recommendations), Kendra (intelligent search) | App developers, no ML knowledge needed |
+| **AWS AI Services** (pre-built APIs) | Rekognition (vision), Comprehend (NLP), Translate, Polly (text-to-speech), Transcribe (speech-to-text), Textract (OCR/forms), Lex (chatbots), Forecast (time-series), Personalize (recommendations), Kendra (intelligent search) | App developers, no ML knowledge needed |
 | **Amazon SageMaker** | Studio, Training Jobs, JumpStart, etc. | Data scientists / ML engineers, wants control over the model |
 | **Amazon Bedrock** (Module 4) | Anthropic Claude, Amazon Nova, Meta Llama, etc. | Anyone building **generative AI** applications |
 
@@ -259,7 +259,7 @@ This is a *very* common trap on the AIF-C01.
 
 ## 📊 Case Study, Pinterest's MLOps on Amazon SageMaker (2020–2024)
 
-**Situation.** Pinterest's entire business is recommendation: serving the right pin to the right user out of a catalog of ~5 billion pins, ~500 million monthly active users (2024 IR filings), and ~5 billion impressions per day. Pre-2020, Pinterest's ML platform was a sprawl of bespoke Python and Spark pipelines. Each team trained its own models on its own infrastructure; reproducibility was poor, drift detection ad-hoc, and onboarding new ML engineers took weeks. Around 50+ production models powered Home Feed, related-pin, search, shopping, and ads, and the team forecasted the next two years would need that to triple. The CTO (Chief Technology Officer)'s mandate (per the 2021 Pinterest Engineering blog series): "consolidate to one ML platform; reduce time-to-production from weeks to days."
+**Situation.** Pinterest's entire business is recommendation: serving the right pin to the right user out of a catalog of ~5 billion pins, ~500 million monthly active users (2024 IR filings), and ~5 billion impressions per day. Pre-2020, Pinterest's ML platform was a sprawl of bespoke Python and Spark pipelines. Each team trained its own models on its own infrastructure; reproducibility was poor, drift detection ad-hoc, and onboarding new ML engineers took weeks. Around 50+ production models powered Home Feed, related-pin, search, shopping, and ads, and the team forecasted the next two years would need that to triple. The CTO's mandate (per the 2021 Pinterest Engineering blog series): "consolidate to one ML platform; reduce time-to-production from weeks to days."
 
 **Decision.** Starting in 2020 and accelerating through 2022, Pinterest standardized on **Amazon SageMaker** as the unified ML platform, while continuing to run inference at the edge on its own Kubernetes infrastructure. The architecture, as described in AWS and Pinterest joint blog posts (2021–2023) and Pinterest's engineering channel:
 
@@ -285,7 +285,7 @@ This is a *very* common trap on the AIF-C01.
 
 **Discussion (Socratic).**
 - Q1: Pinterest deliberately kept *inference* outside SageMaker for latency reasons but consolidated *training* inside it. Build the strongest argument for each side of this hybrid choice. At what scale (latency budget, request volume, dollar value per ms) does it stop making sense to manage your own inference, and at what scale is the latency penalty of SageMaker Real-time endpoints worth the operational savings?
-- Q2: A competitor (say, a smaller image-platform startup with 20 ML engineers, not 200) wants to copy Pinterest's playbook. Which three SageMaker tools should they adopt first, and which three should they *skip* until later? Defend a sequencing that prioritizes ROI (Return on Investment) over feature completeness.
+- Q2: A competitor (say, a smaller image-platform startup with 20 ML engineers, not 200) wants to copy Pinterest's playbook. Which three SageMaker tools should they adopt first, and which three should they *skip* until later? Defend a sequencing that prioritizes ROI over feature completeness.
 - Q3: Pinterest used Spot Instances for ~70% of training jobs. Spot can be reclaimed with 2-minute notice. What kind of training workloads are safe for Spot, what kind are not, and how would you design a Pipeline that *automatically* falls back from Spot to On-Demand if a job has been preempted three times? (Hint: SageMaker Managed Spot Training has built-in checkpointing.)
 
 ---
@@ -310,7 +310,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 4 contrasts SageMaker (general ML platform) with Amazon Bedrock (managed-FM API); Module 6 returns to SageMaker for *fine-tuning* foundation models; Module 7 returns to SageMaker Clarify for bias detection and to Model Monitor for fairness drift; Module 8 returns to SageMaker for IAM execution roles and VPC (Virtual Private Cloud) mode.
+> - Inside this course: Module 4 contrasts SageMaker (general ML platform) with Amazon Bedrock (managed-FM API); Module 6 returns to SageMaker for *fine-tuning* foundation models; Module 7 returns to SageMaker Clarify for bias detection and to Model Monitor for fairness drift; Module 8 returns to SageMaker for IAM execution roles and VPC mode.
 > - Cross-course: `08-Azure-AI-Engineer` covers Azure Machine Learning (the SageMaker equivalent); `04-AWS-Solutions-Architect-Associate` Module 7 (storage) deepens the S3 + KMS integration patterns under SageMaker training data.
 > - Practice: Practice Exam 1 has 10+ SageMaker questions; the Final Mock Exam revisits with multi-service scenarios.
 
@@ -320,7 +320,7 @@ You now know:
 
 1. **Canvas vs Autopilot vs JumpStart strategic positioning.** A pharma company has three internal teams: data scientists, business analysts, and platform engineers. Each wants "an ML capability." Assign one of the three tools (Canvas / Autopilot / JumpStart) to each team and defend why including the *political* trade-off (data scientists may feel demoted by Canvas; business analysts may feel out-skilled by Autopilot). What's the rollout sequence?
 2. **Batch transform vs Real-time vs Async, the same model, three deployments.** Imagine you've trained a single image-classification model. Sketch three production scenarios where the same model would be best served by Real-time, Batch Transform, and Async respectively. For each, name a concrete payload size, latency budget, and cost rationale. This is the structure of about 1 in 5 questions in Domain 1/2.
-3. **The "use Amazon Comprehend or fine-tune in SageMaker?" debate.** Your team needs sentiment analysis on 50 million customer reviews per month. Comprehend's per-unit cost is moderate but predictable; a fine-tuned in-house model might be 70% cheaper at this volume but adds engineering and maintenance. At what monthly volume does the math flip, and how does the answer change if accuracy requirements are stricter than Comprehend's published benchmarks? Build the TCO comparison framework you'd present to a CFO (Chief Financial Officer).
+3. **The "use Amazon Comprehend or fine-tune in SageMaker?" debate.** Your team needs sentiment analysis on 50 million customer reviews per month. Comprehend's per-unit cost is moderate but predictable; a fine-tuned in-house model might be 70% cheaper at this volume but adds engineering and maintenance. At what monthly volume does the math flip, and how does the answer change if accuracy requirements are stricter than Comprehend's published benchmarks? Build the TCO comparison framework you'd present to a CFO.
 4. **Ground Truth and the labeling-quality dilemma.** A medical-imaging startup needs to label 500,000 X-rays for tumor presence. Public Mechanical Turk is the cheapest path but lacks HIPAA eligibility and clinical expertise. A vendor workforce is HIPAA-eligible but 5× the cost. A private workforce (radiologists on staff) is 20× the cost but produces gold-standard labels. Design a *hybrid* strategy that uses each appropriately. How does Ground Truth's active-learning feature change the math?
 5. **Model Monitor's four drift types in practice.** For each of: (a) a credit-approval model, (b) a YouTube-thumbnail click-through-rate model, (c) a manufacturing-defect computer-vision model, rank the four drift types (data quality, model quality, bias, feature attribution) by which is most likely to fire first in production, and why. Then propose the response runbook for each.
 

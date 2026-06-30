@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -272,7 +272,7 @@
 
 ---
 
-## 📦 SECTION 1: STRATEGIC FRAMEWORKS & OKRs (Objectives and Key Results)
+## 📦 SECTION 1: STRATEGIC FRAMEWORKS & OKRs
 
 **Q:** What does STP stand for?
 **A:** Segmentation, Targeting, Positioning. Foundational marketing framework (Smith 1956, Kotler).
@@ -296,7 +296,7 @@
 **A:** Jobs-to-be-Done (Christensen 2003). 4 forces: Push (frustration), Pull (attraction), Anxiety (fear), Habit (inertia). Marketing amplifies Push + Pull; reduces Anxiety + Habit.
 
 **Q:** What's the difference between a Key Result and an Initiative?
-**A:** Key Result = quantitative outcome (a number). Initiative = an activity / project that drives the KR. KR is the outcome; Initiative is the work. Confusing them is the #1 OKR (Objective and Key Result) failure mode.
+**A:** Key Result = quantitative outcome (a number). Initiative = an activity / project that drives the KR. KR is the outcome; Initiative is the work. Confusing them is the #1 OKR failure mode.
 
 **Q:** What is the expected attainment range for well-formed OKRs per Doerr?
 **A:** 50–70% (or 60–80% depending on team). Consistent 100% attainment indicates sandbagged targets.
@@ -311,23 +311,23 @@
 
 ## 📦 SECTION 2: CDPs & SERVER-SIDE TRACKING
 
-**Q:** What are the 4 canonical CDP (Customer Data Platform) architectural patterns?
+**Q:** What are the 4 canonical CDP architectural patterns?
 **A:** Packaged (Segment, mParticle), Composable / warehouse-native (Hightouch, Census on Snowflake/BigQuery), Self-hosted / OSS (Snowplow, Jitsu, PostHog), Embedded-in-marketing-cloud (Adobe RT-CDP, Salesforce Data Cloud).
 
-**Q:** Difference between a CDP and a DMP (Data Management Platform)?
+**Q:** Difference between a CDP and a DMP?
 **A:** CDPs work with first-party PII / named customer data for activation. DMPs work with third-party / anonymized cookie data, historically for media buying. DMPs are sharply declining in 2024–2026.
 
 **Q:** What does Hightouch do?
-**A:** Reverse ETL, syncs data from the warehouse (Snowflake, BigQuery, Databricks) to SaaS (Software as a Service) marketing destinations. The core tool of the "composable CDP" pattern.
+**A:** Reverse ETL, syncs data from the warehouse (Snowflake, BigQuery, Databricks) to SaaS marketing destinations. The core tool of the "composable CDP" pattern.
 
 **Q:** What is server-side tagging and roughly how much measurement loss does it recover?
 **A:** Server-side tagging sends events from your server (not the browser) to ad/analytics platforms. Recovers ~5–25% of measurement loss versus client-side, NOT 100%.
 
 **Q:** What is Stape.io?
-**A:** Managed hosting + power-ups for Google Tag Manager Server-Side (GTM (Google Tag Manager)-SS). Eliminates DevOps overhead.
+**A:** Managed hosting + power-ups for Google Tag Manager Server-Side (GTM-SS). Eliminates DevOps overhead.
 
 **Q:** Difference between deterministic and probabilistic identity resolution?
-**A:** Deterministic = known explicit links (login, hashed-email match). Probabilistic = ML inference from behavioral/contextual signals. Deterministic is the 2026 default; probabilistic is increasingly restricted under GDPR (General Data Protection Regulation)/CPRA.
+**A:** Deterministic = known explicit links (login, hashed-email match). Probabilistic = ML inference from behavioral/contextual signals. Deterministic is the 2026 default; probabilistic is increasingly restricted under GDPR/CPRA.
 
 **Q:** When did Apple's ITP (Intelligent Tracking Prevention) first launch?
 **A:** 2017 in Safari / WebKit. ITP progressively restricted third-party cookies, then capped first-party cookies set by tracking scripts.
@@ -340,7 +340,7 @@
 
 ---
 
-## 📦 SECTION 3: GA4 (Google Analytics 4) MASTERY
+## 📦 SECTION 3: GA4 MASTERY
 
 **Q:** In GA4, what is the atomic unit of data?
 **A:** An event. Sessions, pageviews, and users are all derived from events.
@@ -378,7 +378,7 @@
 **Q:** Is the GA4 → BigQuery export free?
 **A:** Yes, free for both free GA4 and GA4 360 (was 360-only in Universal Analytics).
 
-**Q:** What SQL (Sales Qualified Lead) pattern extracts a parameter from the GA4 BigQuery `event_params` array?
+**Q:** What SQL pattern extracts a parameter from the GA4 BigQuery `event_params` array?
 **A:** `SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'page_location'`
 
 **Q:** What is GA4's server-side ingestion endpoint called?
@@ -394,7 +394,7 @@
 **Q:** What is the U-shaped (position-based) attribution allocation?
 **A:** 40% first touch + 40% last touch + 20% split among middle touches.
 
-**Q:** What is the W-shaped attribution allocation (common in B2B (Business-to-Business))?
+**Q:** What is the W-shaped attribution allocation (common in B2B)?
 **A:** 22.5% × 4 to First, Lead-creation, Opportunity-creation, Last touch + 10% spread across middle touches.
 
 **Q:** Define Shapley values in the attribution context.
@@ -410,7 +410,7 @@
 **A:** SKAdNetwork. Apple's privacy-preserving iOS install attribution framework. Reports noisy, aggregated, delayed conversion-value signals, cannot identify individual users.
 
 **Q:** How many bits is the SKAN conversion value?
-**A:** 6 bits (0–63 = 64 possible states). The strategist's job is to map LTV (Lifetime Value) bins or behavioral milestones into these 64 states.
+**A:** 6 bits (0–63 = 64 possible states). The strategist's job is to map LTV bins or behavioral milestones into these 64 states.
 
 **Q:** Name three Mobile Measurement Partners (MMPs).
 **A:** AppsFlyer, Branch, Adjust. They handle postback attribution and SKAN aggregation for mobile-app installs.
@@ -458,12 +458,12 @@
 **Q:** In an MMM decomposition, what proportion of revenue does "baseline" typically represent?
 **A:** 50–80%. The "would have happened anyway" share. Marketers consistently underestimate it.
 
-**Q:** A channel has 1.4× ROAS (Return on Ad Spend) and a flat response curve at current spend. Recommendation?
+**Q:** A channel has 1.4× ROAS and a flat response curve at current spend. Recommendation?
 **A:** Decrease spend modestly and reallocate. Flat curve = marginal dollar has very low impact.
 
 ---
 
-## 📦 SECTION 6: PREDICTIVE ANALYTICS, CLV (Customer Lifetime Value), CHURN, UPLIFT
+## 📦 SECTION 6: PREDICTIVE ANALYTICS, CLV, CHURN, UPLIFT
 
 **Q:** What does BG/NBD stand for?
 **A:** Beta-Geometric / Negative Binomial Distribution. Fader & Hardie 2005. The canonical non-contractual CLV model.
@@ -501,7 +501,7 @@
 **Q:** What does RFM stand for and what are the typical score ranges?
 **A:** Recency, Frequency, Monetary. Typically scored on a 1–5 quintile scale per dimension. "555" = Champion; "111" = Lost.
 
-**Q:** What is the LTV:CAC (Customer Acquisition Cost) sustainability floor?
+**Q:** What is the LTV:CAC sustainability floor?
 **A:** 3:1. Below this, customer acquisition is unsustainable. Above 5:1 may indicate under-investment in growth.
 
 ---
@@ -549,7 +549,7 @@
 **A:** L-curve (heavy early dropoff + plateau), Smile curve (some users resurrect after dip), Cliff (sharp drop at a specific tenure point, typically a paywall or trial expiry).
 
 **Q:** Write the NRR formula.
-**A:** NRR = (start ARR (Annual Recurring Revenue) + expansion − contraction − churn) / start ARR. >100% means existing customers grow even ignoring new sales.
+**A:** NRR = (start ARR + expansion − contraction − churn) / start ARR. >100% means existing customers grow even ignoring new sales.
 
 **Q:** What's the best-in-class B2B SaaS NRR bar?
 **A:** >120%. Snowflake, Datadog, Cloudflare, Twilio have all reported NRR >130% at various points.
@@ -580,7 +580,7 @@
 **A:** Basic = tags don't fire when consent is denied (lose 100% of denied-consent measurement). Advanced = tags fire with no cookies + anonymized pings + Google ML modeling of lost conversions (recovers 20–80%).
 
 **Q:** What is Meta's server-side conversion endpoint called?
-**A:** Conversions API (Application Programming Interface) (CAPI). The equivalent for Google Ads is "Enhanced Conversions" / Measurement Protocol depending on the property.
+**A:** Conversions API (CAPI). The equivalent for Google Ads is "Enhanced Conversions" / Measurement Protocol depending on the property.
 
 **Q:** What keys does CAPI use for Pixel + CAPI deduplication?
 **A:** event_id + event_name + event_time + fbc/fbp (Meta's first-party cookies). Event Quality Score in Events Manager reports dedup health.
@@ -589,7 +589,7 @@
 **A:** 15–30% additional attributed conversions within 6 weeks.
 
 **Q:** What is Google's Enhanced Conversions for Leads?
-**A:** The B2B variant. Allows hashed lead identifiers from your CRM (Customer Relationship Management) to be uploaded back to Google Ads, retroactively attributing the lead to its original ad click.
+**A:** The B2B variant. Allows hashed lead identifiers from your CRM to be uploaded back to Google Ads, retroactively attributing the lead to its original ad click.
 
 **Q:** Name 3 of the 7 Chrome Privacy Sandbox APIs.
 **A:** Examples: Topics API, Protected Audience API (formerly FLEDGE), Attribution Reporting API, Private Aggregation API, Shared Storage API, Private State Tokens, CHIPS.
@@ -604,13 +604,13 @@
 **A:** A privacy-preserving multi-party query environment where parties can run queries on combined data without any party seeing the others' raw data. Enforces aggregation thresholds and allowed-query restrictions.
 
 **Q:** Name 4 data clean room platforms.
-**A:** AWS (Amazon Web Services) Clean Rooms, Google Ads Data Hub (ADH), Snowflake Data Clean Room, Meta Audience Insights. (Also InfoSum, Habu/LiveRamp, LiveRamp Safe Haven.)
+**A:** AWS Clean Rooms, Google Ads Data Hub (ADH), Snowflake Data Clean Room, Meta Audience Insights. (Also InfoSum, Habu/LiveRamp, LiveRamp Safe Haven.)
 
 **Q:** What is differential privacy and what does ε control?
 **A:** Mathematical privacy framework that adds calibrated noise to query results so individual records can't be identified. ε (epsilon) controls the privacy/utility trade-off, lower ε = stronger privacy + more noise.
 
 **Q:** Name the 4 dominant privacy regulations driving 2026 marketing decisions.
-**A:** GDPR (EU/EEA/UK), CCPA (California Consumer Privacy Act) / CPRA (California, de facto US standard), MHMDA (Washington health data), COPPA (Children's Online Privacy Protection Act) (US kids).
+**A:** GDPR (EU/EEA/UK), CCPA / CPRA (California, de facto US standard), MHMDA (Washington health data), COPPA (US kids).
 
 **Q:** Why is hashing PII not enough to remove GDPR obligations?
 **A:** A SHA-256 hash is one-way obfuscation but still identifies a person (or links to one). Personal data under GDPR, consent + DPA still required.
@@ -634,16 +634,16 @@
 **Q:** What is the 30-30-30-10 rule for marketing tech-stack spend?
 **A:** 30% Infrastructure (CDP, warehouse, BI), 30% Activation (email/lifecycle/ad tooling), 30% Measurement (MTA, MMM, product analytics, A/B), 10% Experimental (new categories).
 
-**Q:** Name the 5 questions the CFO (Chief Financial Officer) will ask the marketing strategist every quarter.
+**Q:** Name the 5 questions the CFO will ask the marketing strategist every quarter.
 **A:** (1) What did we spend and what did it return? (2) Which channels growing/shrinking and why? (3) How do we know it's incremental? (4) Where is the next $X going? (5) What's the leading indicator?
 
-**Q:** Approximately how much does a typical $20M-revenue DTC (Direct-to-Consumer) brand spend annually on its marketing stack?
+**Q:** Approximately how much does a typical $20M-revenue DTC brand spend annually on its marketing stack?
 **A:** ~$360K, or about 1.8% of revenue.
 
 **Q:** Approximate 2026 US compensation for a Director, Marketing Analytics?
 **A:** $180K–$280K (base + bonus + equity blended).
 
-**Q:** What does a CMO (Chief Marketing Officer) typically earn in 2026 (US, blended)?
+**Q:** What does a CMO typically earn in 2026 (US, blended)?
 **A:** $400K–$1M+ at public-company scale; >$5M for some Fortune-500 CMOs with equity.
 
 **Q:** What is the typical build-vs-buy break-even horizon?

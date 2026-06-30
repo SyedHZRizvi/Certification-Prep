@@ -1,6 +1,6 @@
 # Module 1: Claude Foundations & Constitutional AI 🧬
 
-> **Why this module matters:** Claude is not "another GPT (Generative Pre-trained Transformer)." It was built by people who *left OpenAI in 2021 precisely because they thought the safety story was being shortcut*. Every quirk of the model its refusal patterns, its high IQ score on long-context reasoning, its willingness to push back on a prompt flows from a specific intellectual lineage you cannot understand by reading an API (Application Programming Interface) reference. This module is the lineage.
+> **Why this module matters:** Claude is not "another GPT." It was built by people who *left OpenAI in 2021 precisely because they thought the safety story was being shortcut*. Every quirk of the model its refusal patterns, its high IQ score on long-context reasoning, its willingness to push back on a prompt flows from a specific intellectual lineage you cannot understand by reading an API reference. This module is the lineage.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Basic ML vocabulary (model, weights, training, inference)
@@ -104,7 +104,7 @@ Anthropic has published versions of the constitution. It is not a single documen
 
 ### Why it matters in practice
 
-You will be asked to defend a model choice in front of a CISO (Chief Information Security Officer) or a privacy officer. The defensible answer is:
+You will be asked to defend a model choice in front of a CISO or a privacy officer. The defensible answer is:
 
 > "Claude is trained using Constitutional AI, a process in which the model's harmlessness behavior is shaped by an auditable set of principles rather than by ad-hoc human preference labels. This gives us a more reviewable safety story for regulated workloads."
 
@@ -182,7 +182,7 @@ You will be asked to defend a Claude pick over GPT-4o/5 or Gemini 2.5 / 3 Pro. H
 | **Safety profile** | Constitutional AI, often more refusal-prone but more interpretable | RLHF, generally permissive, occasional alignment drift | Mixed; some Google-internal safety overlays |
 | **Pricing position** | Mid-tier (Sonnet is the standard) | Slightly cheaper at GPT-4o-mini / 5-nano tier | Lowest of the three at Flash tier |
 | **Tool use API shape** | Native JSON Schema, multi-tool parallel by default | Native JSON Schema, parallel tools, function calling | Function calling, ADK |
-| **Hosted on** | Anthropic direct API, AWS (Amazon Web Services) Bedrock, GCP (Google Cloud Platform) Vertex | OpenAI direct API, Azure OpenAI | Google AI Studio, GCP Vertex |
+| **Hosted on** | Anthropic direct API, AWS Bedrock, GCP Vertex | OpenAI direct API, Azure OpenAI | Google AI Studio, GCP Vertex |
 | **Open weights?** | No | No | No (Gemma is the open-weight sibling) |
 | **Strongest customer case studies** | Cursor, Notion, Klarna, GitLab, Replit, Vercel | ChatGPT consumer, Microsoft Copilot, Stripe, Morgan Stanley | Google Workspace, Vertex AI Search, large GCP customers |
 
@@ -230,7 +230,7 @@ Claude 4 family operates in the **ASL-2 to ASL-3** band, depending on capability
 
 ---
 
-## 💰 The Pricing-vs-Capability Decision (CFO (Chief Financial Officer)-Defensible)
+## 💰 The Pricing-vs-Capability Decision (CFO-Defensible)
 
 A CFO does not care about constitutional AI. A CFO cares about $/conversation and the unit economics of your AI feature. Here is the math you must be ready to do live.
 
@@ -270,7 +270,7 @@ The 5x cost differential between Haiku and Sonnet is real. The question is wheth
 
 ## 🔬 Scenario Walkthrough (Architect-Style)
 
-> **Scenario:** Your CTO (Chief Technology Officer) asks: "We want to build a coding assistant for our 800-engineer fleet. Internal-only. No PII, but proprietary source code. Recommend the model and the deployment topology."
+> **Scenario:** Your CTO asks: "We want to build a coding assistant for our 800-engineer fleet. Internal-only. No PII, but proprietary source code. Recommend the model and the deployment topology."
 
 **Walkthrough:**
 1. **Modality / capability**: Code understanding + multi-step refactoring → **Sonnet 4.6 default; Opus 4.6 for hard refactors** (with a router that promotes to Opus when the task is flagged as "deep refactor").
@@ -313,7 +313,7 @@ This is the kind of end-to-end answer the architect role expects from you.
 | **ASL-1 / 2 / 3 / 4 / 5** | AI Safety Levels, capability+risk classes analogous to BSL in biology |
 | **Public Benefit Corporation (PBC)** | Corporate structure that legally requires considering broader societal impact |
 | **Prompt caching** | Anthropic feature that drops cost of repeated prompt prefixes by ~90% |
-| **Workbench** | Anthropic's web UI (User Interface) for prompt iteration (console.anthropic.com) |
+| **Workbench** | Anthropic's web UI for prompt iteration (console.anthropic.com) |
 | **Model card** | Per-model document published by Anthropic with intended use, evals, known limits |
 | **Trust & Safety** | Anthropic team responsible for content moderation, abuse monitoring, RSP enforcement |
 | **Amazon Bedrock** | AWS-managed inference endpoint for Claude (data stays in your AWS account) |
@@ -332,13 +332,13 @@ This is the kind of end-to-end answer the architect role expects from you.
 | DPO | Direct Preference Optimization (an alternative RL technique) |
 | MCP | Model Context Protocol (Module 5) |
 | API | Application Programming Interface |
-| SDK (Software Development Kit) | Software Development Kit |
+| SDK | Software Development Kit |
 
 ---
 
 ## 📊 Case Study, Cursor and the "Claude as Coding Default" Pivot
 
-**Situation.** Cursor (Anysphere, Inc.) launched in 2023 as a fork of VS Code with an "AI native" editor. The early product supported GPT-4 and Claude both. By 2024 they had hundreds of thousands of paying users, and by 2025 they had become one of the fastest-growing developer products in history, reportedly crossing $100M ARR (Annual Recurring Revenue) by mid-2024 and $500M ARR by Q1 2026.
+**Situation.** Cursor (Anysphere, Inc.) launched in 2023 as a fork of VS Code with an "AI native" editor. The early product supported GPT-4 and Claude both. By 2024 they had hundreds of thousands of paying users, and by 2025 they had become one of the fastest-growing developer products in history, reportedly crossing $100M ARR by mid-2024 and $500M ARR by Q1 2026.
 
 **The Claude decision.** Cursor's published model evaluations (and their public blog posts through 2024–2025) repeatedly identified Claude first 3.5 Sonnet, then Sonnet 4, then Sonnet 4.6 as the **best model for agentic coding tasks**: multi-file refactors, "compose"-style requests, agentic test-then-fix workflows. By late 2024 the default model in the Cursor "Composer" agent flow was Claude Sonnet, with Opus available for hard tasks and GPT-4o/5 available as an alternative.
 
@@ -382,7 +382,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 2](../Module-02-Prompt-Engineering-Claude/Reading.md) takes the Constitutional-AI-shaped model and shows how to *prompt* it well. [Module 3](../Module-03-Claude-API-SDK-Deep-Dive/Reading.md) shows how to call it from code. [Module 8](../Module-08-Production-Patterns-Safety/Reading.md) returns to safety in operational depth.
-> - Cross-course: Prompt Engineering Specialist (course 29) builds vendor-neutral prompt skills. Generative AI Engineer (course 30) goes deeper into evals, fine-tuning, MLOps (Machine Learning Operations).
+> - Cross-course: Prompt Engineering Specialist (course 29) builds vendor-neutral prompt skills. Generative AI Engineer (course 30) goes deeper into evals, fine-tuning, MLOps.
 > - Practice: Practice Exam 1 has ~5 questions from this module.
 
 ---

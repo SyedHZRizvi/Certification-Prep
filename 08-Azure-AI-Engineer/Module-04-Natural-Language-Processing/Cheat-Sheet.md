@@ -47,7 +47,7 @@ client.translate(content=[InputTextItem(text="Hello")], to_language=["es","fr"])
 
 | Capability | Notes |
 |---|---|
-| Speech-to-Text (STT) | Real-time SDK (Software Development Kit) or **batch transcription** (REST (Representational State Transfer) + Storage) |
+| Speech-to-Text (STT) | Real-time SDK or **batch transcription** (REST + Storage) |
 | Text-to-Speech (TTS) | 400+ neural voices: `en-US-JennyNeural` |
 | Speech translation | `TranslationRecognizer`, STT + translate in one call |
 | **Custom Speech** | Improve transcription on domain audio (GA) |
@@ -135,7 +135,7 @@ If you can answer all 5 in 60 seconds, you own Module 4. ✅
 |---|---|---|---|---|
 | Real-time SDK | <300ms | ~30 min | Per-second | Live captions, voice commands |
 | Batch (REST) | Async (mins-hrs) | Hours | Per-second + storage | Recorded meetings, hours of audio |
-| Whisper (Azure OpenAI) | Per-call | 25 MB / file | Per-second | Quick transcribe with LLM (Large Language Model) downstream |
+| Whisper (Azure OpenAI) | Per-call | 25 MB / file | Per-second | Quick transcribe with LLM downstream |
 | Speech translation | Real-time | ~30 min | Per-second | Multilingual meetings |
 
 ## 🛡️ Voice + Identity Limited Access
@@ -143,7 +143,7 @@ If you can answer all 5 in 60 seconds, you own Module 4. ✅
 | Feature | Why gated |
 |---|---|
 | **Custom Neural Voice** | Deepfake / impersonation risk; needs voice-talent consent recording per RAI Standard v2 |
-| **Speaker Recognition (Verify/Identify)** | Biometric voice-print; GDPR (General Data Protection Regulation) Article 9 special-category data |
+| **Speaker Recognition (Verify/Identify)** | Biometric voice-print; GDPR Article 9 special-category data |
 | **Custom Person in Video Indexer** | Same biometric concerns as Face Identification |
 
 ## 📐 Case-Study Pattern
@@ -162,7 +162,7 @@ If you can answer all 5 in 60 seconds, you own Module 4. ✅
 |---|---|
 | Transformer | Vaswani et al. (2017), *Attention Is All You Need* |
 | BERT (encoder) | Devlin et al. (2018) |
-| GPT (Generative Pre-trained Transformer)-3 (decoder) | Brown et al. (2020) |
+| GPT-3 (decoder) | Brown et al. (2020) |
 | Microsoft RAI Standard v2 | Microsoft (June 2022) |
 | EU AI Act deepfake disclosure | Reg (EU) 2024/1689 |
 

@@ -5,9 +5,9 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1](../Module-01-Logistics-Strategy-Network/Reading.md) network types, order management is the *software* layer atop the physical network
 > - [Module 2](../Module-02-Capacity-Demand-Logistics/Reading.md) forecasting and ABC velocity, drives ATP/CTP behavior
-> - General EDI (Electronic Data Interchange) / API (Application Programming Interface) concepts at a high level (you'll learn the specific 850/855/856/810 codes here)
+> - General EDI / API concepts at a high level (you'll learn the specific 850/855/856/810 codes here)
 >
-> Cross-course: [CSCP Module 7 (Logistics, Distribution, Warehousing)](../../10-ASCM-CSCP/Module-07-Logistics-Distribution-Warehousing/Reading.md) covers an introductory view of order flow. [CPIM Module 4 (MPS/MRP (Material Requirements Planning))](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) shows how ATP/CTP works *inside* manufacturing planning, which dovetails with the distribution view here.
+> Cross-course: [CSCP Module 7 (Logistics, Distribution, Warehousing)](../../10-ASCM-CSCP/Module-07-Logistics-Distribution-Warehousing/Reading.md) covers an introductory view of order flow. [CPIM Module 4 (MPS/MRP)](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) shows how ATP/CTP works *inside* manufacturing planning, which dovetails with the distribution view here.
 
 ---
 
@@ -17,7 +17,7 @@ A small e-commerce site sells specialty espresso machines. A customer in Phoenix
 
 Behind the scenes, here's what *actually* happens:
 
-1. **Order entry**, customer hits "Buy." Order is created in the OMS (Order Management System).
+1. **Order entry**, customer hits "Buy." Order is created in the OMS.
 2. **Validation**, credit card check, fraud screen, address verification.
 3. **ATP check**, "Available-to-promise" lookup: do we have it? In which DC?
 4. **Allocation**, system reserves the unit at LA DC.
@@ -41,7 +41,7 @@ Order management is the **nervous system** of logistics. This module covers ever
 The single most-tested concept in this module. **Memorize the 10 steps:**
 
 ```
-1. Customer inquiry / RFQ (Request for Quotation)          (pre-order)
+1. Customer inquiry / RFQ          (pre-order)
 2. Order entry                     (channel: web, EDI, phone, sales)
 3. Order validation                (credit, fraud, address, pricing)
 4. ATP / CTP check                 (can we promise?)
@@ -53,7 +53,7 @@ The single most-tested concept in this module. **Memorize the 10 steps:**
 10. Returns (if any)               (Module 8 territory)
 ```
 
-Each step has measurable cycle time. The sum is **OTC cycle time**, a key supply-chain KPI (Key Performance Indicator).
+Each step has measurable cycle time. The sum is **OTC cycle time**, a key supply-chain KPI.
 
 🎯 **Exam tip:** OTC ends with **cash collection**, not delivery. Cash is when value is realized.
 
@@ -65,9 +65,9 @@ Where orders come in shapes how you process them.
 
 | Channel | Typical buyer | Latency | Volume per order |
 |---------|---------------|---------|------------------|
-| **Web / DTC (Direct-to-Consumer)** | Consumer | Real-time | Small (1–3 lines) |
+| **Web / DTC** | Consumer | Real-time | Small (1–3 lines) |
 | **Mobile / App** | Consumer | Real-time | Small |
-| **EDI** | B2B (Business-to-Business) retailers | Batched (4–6/day) | Large (50+ lines) |
+| **EDI** | B2B retailers | Batched (4–6/day) | Large (50+ lines) |
 | **Marketplace (Amazon, Walmart)** | Consumer | Real-time | Small |
 | **Phone / Email / Manual** | Smaller B2B, legacy | Slow | Variable |
 | **EDI 850** | Standard B2B Purchase Order document | | |
@@ -101,7 +101,7 @@ Three terms that get mixed up. Know each cold.
 
 ## 🎯 Order Sourcing & Allocation Strategies
 
-When you have multiple DCs holding the same SKU (Stock Keeping Unit), *which one ships*? Order management systems use these rules:
+When you have multiple DCs holding the same SKU, *which one ships*? Order management systems use these rules:
 
 | Strategy | Logic |
 |----------|-------|
@@ -124,7 +124,7 @@ How firm is your promise to the customer?
 |--------------|----------|
 | **Date promise** | "Ships by Mar 15", flexible if conditions change |
 | **Delivery commitment** | "Delivered by Mar 18", binding (subject to T&Cs) |
-| **Same-day / next-day SLA (Service Level Agreement)** | Often contractual, with credits if missed |
+| **Same-day / next-day SLA** | Often contractual, with credits if missed |
 | **B2B service-level agreement** | Specific OTIF/perfect-order targets, with penalties |
 
 ---
@@ -191,7 +191,7 @@ Accuracy rates (memorize these, exam questions ask):
 
 ---
 
-## 📦 Order Fulfillment KPIs (Key Performance Indicators)
+## 📦 Order Fulfillment KPIs
 
 The CLTD exam loves KPIs. Know these:
 
@@ -249,7 +249,7 @@ Created → Validated → Confirmed → Allocated → Picked → Packed → Ship
 In-Transit → Delivered → Invoiced → Paid → [Returned?] → Closed
 ```
 
-Each state transition triggers an event. WMS (Warehouse Management System)/TMS (Transportation Management System)/OMS integrations rely on event timing.
+Each state transition triggers an event. WMS/TMS/OMS integrations rely on event timing.
 
 ---
 
@@ -291,12 +291,12 @@ Checks:
 
 ## 📜 Case Study, Amazon's Last-Mile Build-Out (2014–2024)
 
-**Situation.** By 2014 Amazon's package volume had grown to ~3 million packages/day in the US. The two major US parcel integrators (UPS and FedEx) were charging ~$4–$8 per package on Amazon volume, a sum that, multiplied across the year, was eating massive margin. UPS and FedEx also had structural service ceilings: Sunday delivery was rare/expensive, and last-mile density in suburban America wasn't optimized for the e-commerce surge Amazon was generating. CEO (Chief Executive Officer) Jeff Bezos famously concluded: "We need to control our own destiny in delivery."
+**Situation.** By 2014 Amazon's package volume had grown to ~3 million packages/day in the US. The two major US parcel integrators (UPS and FedEx) were charging ~$4–$8 per package on Amazon volume, a sum that, multiplied across the year, was eating massive margin. UPS and FedEx also had structural service ceilings: Sunday delivery was rare/expensive, and last-mile density in suburban America wasn't optimized for the e-commerce surge Amazon was generating. CEO Jeff Bezos famously concluded: "We need to control our own destiny in delivery."
 
 **Decision.** Amazon launched what became the largest last-mile build-out in logistics history. Key milestones:
 
 - **2014:** First "Amazon Logistics" pilots; Amazon Flex (gig drivers, 2015) launched in Seattle.
-- **2018:** **Delivery Service Partner (DSP (Demand-Side Platform)) program** launched, Amazon would fund and equip independent small businesses to deliver Amazon packages exclusively. Branded Mercedes-Benz Sprinter vans rolled out. By 2024, the DSP program supported ~3,500 DSP companies and ~280,000 drivers.
+- **2018:** **Delivery Service Partner (DSP) program** launched, Amazon would fund and equip independent small businesses to deliver Amazon packages exclusively. Branded Mercedes-Benz Sprinter vans rolled out. By 2024, the DSP program supported ~3,500 DSP companies and ~280,000 drivers.
 - **2019:** Amazon Air launched commercial aircraft operations from Cincinnati/Northern Kentucky Airport (CVG), its own dedicated cargo hub.
 - **2019:** Amazon ordered **100,000 electric delivery vans from Rivian** (one of the largest single EV orders in history). First vans deployed in Los Angeles in 2021.
 - **2021–2024:** Massive sortation center build-out, by 2024, Amazon operated ~600 last-mile delivery stations in North America, more than UPS and FedEx combined for residential deliveries.
@@ -310,7 +310,7 @@ Checks:
 2. **Order sourcing and DOM**, Amazon's distributed order management system orchestrates across 600+ delivery stations and routes by *closest-to-customer + capacity-aware*, exactly the framework taught in this module.
 3. **Make-or-buy reversal**, Module 1's framework predicts that when logistics becomes the *differentiating* part of your value chain, you in-source. Amazon validated the prediction.
 
-The CLTD exam tests this pattern: in a scenario where logistics is the competitive weapon (Amazon, Tesla, Apple's iPhone supply chain), in-house wins. In a scenario where logistics is undifferentiated (a regional industrial distributor), 3PL (Third-Party Logistics)/4PL (Fourth-Party Logistics) outsourcing wins.
+The CLTD exam tests this pattern: in a scenario where logistics is the competitive weapon (Amazon, Tesla, Apple's iPhone supply chain), in-house wins. In a scenario where logistics is undifferentiated (a regional industrial distributor), 3PL/4PL outsourcing wins.
 
 **Discussion (Socratic).**
 - Q1: Amazon's last-mile build cost an estimated $50B+ in capex over 2014–2024. A smaller e-commerce player (Wayfair, Chewy, Etsy) cannot replicate this. What strategic responses are open to them, and which best mimics Amazon's economics without the capex?
@@ -401,8 +401,8 @@ You now know:
 5. **BOPIS vs ship-from-store.** A regional retailer (50 stores) can implement BOPIS (Buy Online Pick In Store) or ship-from-store. Both leverage store inventory as a fulfillment node. When is each the right choice? What does the demographic of the customer base imply for the choice?
 
 > **Where this leads.**
-> - Inside this course: Module 4 deepens the inventory side (DRP (Distribution Requirements Planning), MEIO, postponement) that ATP/CTP relies on; Module 5 covers the warehouse execution that fulfills the order; Module 6 picks up parcel carrier choice for the outbound leg.
-> - Cross-course: [CPIM Module 4 (MPS/MRP)](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) covers ATP/CTP from the manufacturing side; [CSCP Module 4 (Supply Planning & S&OP (Sales and Operations Planning))](../../10-ASCM-CSCP/Module-04-Supply-Planning-SOP (Standard Operating Procedure)/Reading.md) covers how S&OP feeds order-promising.
+> - Inside this course: Module 4 deepens the inventory side (DRP, MEIO, postponement) that ATP/CTP relies on; Module 5 covers the warehouse execution that fulfills the order; Module 6 picks up parcel carrier choice for the outbound leg.
+> - Cross-course: [CPIM Module 4 (MPS/MRP)](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) covers ATP/CTP from the manufacturing side; [CSCP Module 4 (Supply Planning & S&OP)](../../10-ASCM-CSCP/Module-04-Supply-Planning-SOP/Reading.md) covers how S&OP feeds order-promising.
 > - Practice: Practice Exam 1 has ~16 questions from this module; Final Mock Exam has another 16.
 
 ---

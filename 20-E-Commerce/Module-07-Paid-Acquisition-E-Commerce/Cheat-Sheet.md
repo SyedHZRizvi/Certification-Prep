@@ -1,6 +1,6 @@
 # 📋 Module 7 Cheat Sheet: Paid Acquisition for E-Commerce
 
-> Print and tape. Paid is where the P&L (Profit and Loss) lives or dies.
+> Print and tape. Paid is where the P&L lives or dies.
 
 ---
 
@@ -22,13 +22,13 @@
 ## 🔄 Post-iOS 14.5 Measurement Stack
 
 ```
-Browser:    GA4 (Google Analytics 4) (gtag.js), Meta Pixel, TikTok Pixel
+Browser:    GA4 (gtag.js), Meta Pixel, TikTok Pixel
    +
-Server-side: GA4 Measurement Protocol, Meta CAPI, TikTok Events API (Application Programming Interface)
+Server-side: GA4 Measurement Protocol, Meta CAPI, TikTok Events API
    +
 Tag mgmt:   Google Tag Manager (client + server containers)
    +
-CDP (Customer Data Platform)-style:  Triple Whale, Northbeam, Lifesight
+CDP-style:  Triple Whale, Northbeam, Lifesight
    +
 MMM:        Recast, Meta Robyn (open-source), Bain MMM
    +
@@ -61,7 +61,7 @@ Incrementality: Geo-holdouts (5-10% market, 4 weeks)
 
 | Campaign Type | What it does |
 |---------------|-------------|
-| Sponsored Products | Keyword/ASIN (Amazon Standard Identification Number)-targeted CPC (Cost Per Click) |
+| Sponsored Products | Keyword/ASIN-targeted CPC |
 | Sponsored Brands | Banner + logo + carousel |
 | Sponsored Display | Audience-targeted, on/off Amazon |
 
@@ -72,8 +72,8 @@ Incrementality: Geo-holdouts (5-10% market, 4 weeks)
 - Category (broader)
 
 **Metrics:**
-- **ACoS (Advertising Cost of Sale)** = Ad Spend / Ad Revenue (target 25-35%)
-- **TACoS (Total Advertising Cost of Sale)** = Ad Spend / Total Revenue (the honest measure)
+- **ACoS** = Ad Spend / Ad Revenue (target 25-35%)
+- **TACoS** = Ad Spend / Total Revenue (the honest measure)
 
 ---
 
@@ -97,7 +97,7 @@ Winning 2024 playbook:
 
 | Stage | Tool |
 |-------|------|
-| Concept | Claude / GPT (Generative Pre-trained Transformer) |
+| Concept | Claude / GPT |
 | Image | Midjourney v7, Flux, Firefly |
 | Video | Runway Gen-4, Pika 2.0, HeyGen |
 | Voice | ElevenLabs |
@@ -111,7 +111,7 @@ Winning 2024 playbook:
 
 ---
 
-## 📊 ROAS (Return on Ad Spend) Math (MEMORIZE)
+## 📊 ROAS Math (MEMORIZE)
 
 ```
 ROAS  = Ad Revenue / Ad Spend
@@ -143,10 +143,10 @@ Healthy feed disapproval rate: **< 5%**.
 ## ⚡ Failure Modes
 
 - ❌ No CAPI = 30-40% conversion signal lost
-- ❌ No brand exclusions = 20-40% CAC (Customer Acquisition Cost) inflation via cannibalization
+- ❌ No brand exclusions = 20-40% CAC inflation via cannibalization
 - ❌ Blended ROAS reported without CM = false profit
 - ❌ ACoS measured, TACoS ignored = Amazon Ads cannibalizes organic
-- ❌ TikTok without creator strategy = half the CVR (Conversion Rate)
+- ❌ TikTok without creator strategy = half the CVR
 - ❌ Pinterest ignored = missing high-intent shopping
 - ❌ Domain unverified + no AEM ranking = Meta tracks wrong event
 
@@ -191,4 +191,4 @@ If all 6 cleanly in 90 sec, you own this module. ✅
 
 ---
 
-➡️ [Module 8: SEO (Search Engine Optimization), Content & Lifecycle Marketing](../Module-08-SEO-Content-Lifecycle-Marketing/Reading.md)
+➡️ [Module 8: SEO, Content & Lifecycle Marketing](../Module-08-SEO-Content-Lifecycle-Marketing/Reading.md)

@@ -26,8 +26,8 @@ L5  MANAGED:     Comprehend · Rekognition · Textract · Translate · Transcrib
                  · Polly · Lex · Kendra · Personalize · Forecast · Fraud Detector
 L4  PLATFORM:    SageMaker (Studio · Pipelines · Endpoints · Clarify · Monitor)
 L3  FRAMEWORKS:  TF · PyTorch · MXNet · HF · XGBoost · scikit · Spark MLlib
-L2  SILICON:     EC2 (Elastic Compute Cloud) P/G (GPUs) · Trn (Trainium) · Inf (Inferentia) · EFA · FSx
-L1  DATA:        S3 (Simple Storage Service) · Glue · Lake Formation · Athena · Redshift · EMR · Kinesis
+L2  SILICON:     EC2 P/G (GPUs) · Trn (Trainium) · Inf (Inferentia) · EFA · FSx
+L1  DATA:        S3 · Glue · Lake Formation · Athena · Redshift · EMR · Kinesis
 ```
 
 **Rule of thumb:** *Managed (L5) > Bedrock (L6) > SageMaker (L4) > Custom EC2 (L2/L3)*, pick highest layer that meets requirements.
@@ -139,7 +139,7 @@ Clarify (SHAP) + Model Monitor (drift) + Pipelines (nightly retrain)
 | Pillar | The ML Move |
 |--------|-------------|
 | Operational Excellence | **SageMaker Pipelines + Projects + Model Registry** |
-| Security | **IAM (Identity and Access Management) least-priv + VPC (Virtual Private Cloud) + KMS + Clarify bias** |
+| Security | **IAM least-priv + VPC + KMS + Clarify bias** |
 | Reliability | **Multi-AZ endpoints + Model Monitor + retrain** |
 | Performance Efficiency | **Trainium / Inferentia2 + SMDDP** |
 | Cost Optimization | **Spot training + MME + serverless inference** |

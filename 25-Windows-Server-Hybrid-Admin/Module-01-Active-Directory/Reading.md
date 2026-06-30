@@ -1,10 +1,10 @@
 # Module 1: Active Directory Domain Services 🌳
 
-> **Why this module matters:** AD (Active Directory) DS is 30–35% of AZ-800 by far the heaviest single domain. It's also the foundation everything else builds on: Group Policy targeting, hybrid identity, file-server permissions, Hyper-V live migration auth, even Azure Arc onboarding all assume a working forest. Get the FSMO roles, replication topology, and GPO precedence rules wired into reflex memory and you've already locked down a third of the exam.
+> **Why this module matters:** AD DS is 30–35% of AZ-800 by far the heaviest single domain. It's also the foundation everything else builds on: Group Policy targeting, hybrid identity, file-server permissions, Hyper-V live migration auth, even Azure Arc onboarding all assume a working forest. Get the FSMO roles, replication topology, and GPO precedence rules wired into reflex memory and you've already locked down a third of the exam.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - DNS (Domain Name System) basics (A records, SRV records, what a forwarder does), covered later in Module 3, but a primer helps
-> - Basic TCP (Transmission Control Protocol)/IP networking (subnets, default gateways, what port 389 vs 636 is)
+> - DNS basics (A records, SRV records, what a forwarder does), covered later in Module 3, but a primer helps
+> - Basic TCP/IP networking (subnets, default gateways, what port 389 vs 636 is)
 > - The Windows Server admin GUI (Server Manager, ADUC) and PowerShell basics
 >
 > If those are shaky, pause and review before continuing. This module assumes you've at least *seen* a domain controller before, even if you've never promoted one yourself.
@@ -13,7 +13,7 @@
 
 ## 🏰 A Story: The Marriage of Two Companies
 
-Imagine it's Monday morning at Contoso, a 1,800-person regional manufacturer. Last Friday, Contoso closed a deal to acquire Fabrikam, a 700-person specialty engineering firm two states over. Both companies have run their own Active Directory forests for fifteen years. By Wednesday, the CEO (Chief Executive Officer) wants every Contoso employee to be able to open Fabrikam's shared engineering drives. By Friday, the procurement VP wants a single sign-on view across both ERPs.
+Imagine it's Monday morning at Contoso, a 1,800-person regional manufacturer. Last Friday, Contoso closed a deal to acquire Fabrikam, a 700-person specialty engineering firm two states over. Both companies have run their own Active Directory forests for fifteen years. By Wednesday, the CEO wants every Contoso employee to be able to open Fabrikam's shared engineering drives. By Friday, the procurement VP wants a single sign-on view across both ERPs.
 
 You're the senior systems administrator. Your boss puts six questions on the whiteboard:
 
@@ -24,7 +24,7 @@ You're the senior systems administrator. Your boss puts six questions on the whi
 5. The Fabrikam DCs are 8 ms away. Do we put them in a different **site**?
 6. Their domain controller in the Houston branch lives in an unlocked broom closet. What about that one?
 
-Every answer in this module ladders up to one of those six questions. Active Directory has been around since Windows 2000, and the answers haven't changed nearly as much as you'd think. The protocols (Kerberos v5, LDAP (Lightweight Directory Access Protocol) v3, DNS SRV records) are older than half the engineers in your team. The product gets renamed; the fundamentals are eternal.
+Every answer in this module ladders up to one of those six questions. Active Directory has been around since Windows 2000, and the answers haven't changed nearly as much as you'd think. The protocols (Kerberos v5, LDAP v3, DNS SRV records) are older than half the engineers in your team. The product gets renamed; the fundamentals are eternal.
 
 By the end of this module you'll have all six answers, plus a way of thinking about AD that scales from a 12-person law firm to a 200,000-seat global enterprise.
 
@@ -280,7 +280,7 @@ OUs do two things:
 1. **GPO targeting**, link policies to a specific OU
 2. **Delegation**, give a team admin rights over *just* their OU without making them Domain Admins
 
-### Delegate control via UI (User Interface)
+### Delegate control via UI
 
 In ADUC: right-click OU → Delegate Control → choose user/group → check tasks (reset passwords, modify group membership, create user/computer accounts, etc.).
 
@@ -331,7 +331,7 @@ Restore-ADObject -Identity "ObjectGUID-here"
 
 ## 🏚️ Read-Only Domain Controllers (RODC)
 
-You have a small branch office in a strip mall. The "server room" is a closet a janitor can pick the lock on. You need authentication at the branch (slow WAN (Wide Area Network)), but losing that DC to theft cannot mean a full forest re-key.
+You have a small branch office in a strip mall. The "server room" is a closet a janitor can pick the lock on. You need authentication at the branch (slow WAN), but losing that DC to theft cannot mean a full forest re-key.
 
 **RODC = read-only AD copy + selective password caching + role separation.**
 
@@ -490,7 +490,7 @@ The exam will phrase this as scenario: "A security team detects unusual Kerberos
 | "RODC caches all passwords" | ❌ Only accounts explicitly in the Allowed RODC Password Replication Group |
 | "Infrastructure Master must always be on a non-GC" | ❌ Only in multi-domain forests where not every DC is a GC |
 | "AD Recycle Bin can be disabled" | ❌ One-way operation |
-| "Distribution groups can be used for RBAC (Role-Based Access Control)" | ❌ Only security groups have SIDs and can be on ACLs |
+| "Distribution groups can be used for RBAC" | ❌ Only security groups have SIDs and can be on ACLs |
 | "gMSAs work without the KDS root key" | ❌ Add-KdsRootKey is a one-time prerequisite per forest |
 | "FGPP can target an OU" | ❌ Only users and global security groups |
 
@@ -546,8 +546,8 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 2 plugs your on-prem AD into Microsoft Entra ID for cloud-based services (Conditional Access, MFA (Multi-Factor Authentication), app SSO (Single Sign-On)). Module 4's file servers rely on AD security groups for share permissions. Module 5's Hyper-V live migration uses Kerberos against your DCs. Module 6's Azure Arc onboarding can target every AD-joined server you have.
-> - Cross-course: [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md) covers Entra ID independently, it's the cloud-side counterpart to this module. [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md) covers the IAM (Identity and Access Management) principles behind AD's design.
+> - Inside this course: Module 2 plugs your on-prem AD into Microsoft Entra ID for cloud-based services (Conditional Access, MFA, app SSO). Module 4's file servers rely on AD security groups for share permissions. Module 5's Hyper-V live migration uses Kerberos against your DCs. Module 6's Azure Arc onboarding can target every AD-joined server you have.
+> - Cross-course: [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md) covers Entra ID independently, it's the cloud-side counterpart to this module. [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md) covers the IAM principles behind AD's design.
 > - Practice: Practice Exam 1 has 9 questions on AD; Practice Exam 2 has 4 (hybrid integration); Final Mock has a case study spanning AD + Entra Connect + RODC.
 
 ---

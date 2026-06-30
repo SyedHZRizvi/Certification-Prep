@@ -144,7 +144,7 @@ F-Curve **modifiers** apply mathematical operations to a curve without adding in
 | **Bezier** | Smooth curve, handle-controlled | Default for animation; natural motion |
 | **Linear** | Straight line between keyframes | Machine motion, electronic movement |
 | **Constant** | Jumps instantly at the keyframe | Light switches, frame-exact triggers |
-| **Sine / Elastic / Bounce / Back** | Easing functions with oscillation | UI (User Interface) animation, bouncy characters |
+| **Sine / Elastic / Bounce / Back** | Easing functions with oscillation | UI animation, bouncy characters |
 
 **Setting interpolation:**
 - Select keyframes in the Graph Editor

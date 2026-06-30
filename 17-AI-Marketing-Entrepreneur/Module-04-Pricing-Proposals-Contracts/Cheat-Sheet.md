@@ -117,7 +117,7 @@ When you see these in answers, they're often correct:
 - ✅ "Anchor with a higher reference price..."
 - ✅ "Send a proposal with 3 options..."
 - ✅ "MSA + SOW structure..."
-- ✅ "Include the ROI (Return on Investment) projection section..."
+- ✅ "Include the ROI projection section..."
 
 When you see these, they're often **wrong**:
 
@@ -154,6 +154,6 @@ If you can answer all 5 in under 60 seconds, you own this module. ✅
 
 ---
 
-> ⚖️ Not legal/financial advice, consult a licensed attorney and CPA (Cost Per Acquisition) for your jurisdiction.
+> ⚖️ Not legal/financial advice, consult a licensed attorney and CPA for your jurisdiction.
 
 ➡️ [Module 5: AI Marketing Tech Stack](../Module-05-AI-Marketing-Tech-Stack-Cost-Efficient/Reading.md)

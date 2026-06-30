@@ -6,7 +6,7 @@
 
 ## ⛑️ The 4 DR Strategies
 
-| Strategy | RPO (Recovery Point Objective) | RTO (Recovery Time Objective) | Cost | What's Running In DR Region |
+| Strategy | RPO | RTO | Cost | What's Running In DR Region |
 |----------|-----|-----|------|-----------------------------|
 | **Backup & Restore** | Hours | Hours | $ | Nothing, backups only |
 | **Pilot Light** | Minutes | 10s of min | $$ | Core data + DB; compute off |
@@ -22,12 +22,12 @@
 | Need | Pick |
 |------|------|
 | Migrate DBs with minimal downtime | **DMS + SCT** |
-| Lift-and-shift VMs to EC2 (Elastic Compute Cloud) | **Application Migration Service (MGN)** |
+| Lift-and-shift VMs to EC2 | **Application Migration Service (MGN)** |
 | Inventory on-prem servers + deps | **Application Discovery Service** |
 | Bulk offline transfer (TB-PB) | **Snowball Edge / Snowmobile** |
 | Online file/object sync | **DataSync** |
 | Replace physical tape library | **Tape Gateway (VTL)** |
-| iSCSI volumes backed by S3 (Simple Storage Service) | **Volume Gateway** |
+| iSCSI volumes backed by S3 | **Volume Gateway** |
 | NFS/SMB → S3 archive | **File Gateway** |
 | Managed SFTP/FTPS → S3 | **AWS Transfer Family** |
 | Containerize Java/.NET app | **App2Container** |
@@ -43,7 +43,7 @@
 | Low latency to metro outside region | **Local Zone** |
 | 5G mobile edge | **Wavelength** |
 | Private fiber, lowest latency | **Direct Connect** |
-| Quick IPSec from on-prem | **Site-to-Site VPN (Virtual Private Network)** |
+| Quick IPSec from on-prem | **Site-to-Site VPN** |
 | One DX → many VPCs | **DX Gateway** |
 
 ---
@@ -53,7 +53,7 @@
 | Source | Cross-region option |
 |--------|---------------------|
 | S3 | CRR |
-| RDS (Relational Database Service) | Snapshot copy / Read Replica in another region |
+| RDS | Snapshot copy / Read Replica in another region |
 | Aurora | Aurora Global Database (<1s) |
 | DynamoDB | Global Tables (multi-active) |
 | EBS | Snapshot copy cross-region |
@@ -78,7 +78,7 @@
 
 - "Multi-AZ alone is regional DR"
 - "Active-active is always best"
-- "Just use FTP (File Transfer Protocol)" (use Transfer Family)
+- "Just use FTP" (use Transfer Family)
 - "DMS converts schemas" (no, SCT does)
 - "Outposts is owned by AWS in their DC" (no, yours)
 

@@ -8,23 +8,23 @@
 
 | Service | Port |
 |---------|------|
-| SSH (Secure Shell) / SCP / SFTP | **22** |
+| SSH / SCP / SFTP | **22** |
 | Telnet (insecure) | 23 |
-| SMTP (Simple Mail Transfer Protocol) | 25 / **587** / **465** (TLS (Transport Layer Security)) |
-| DNS (Domain Name System) / DNSSEC | **53** |
+| SMTP | 25 / **587** / **465** (TLS) |
+| DNS / DNSSEC | **53** |
 | DoT | **853** |
 | DoH | 443 |
-| HTTP (Hypertext Transfer Protocol) / HTTPS (HTTP Secure) | 80 / **443** |
+| HTTP / HTTPS | 80 / **443** |
 | POP3S / IMAPS | 995 / 993 |
 | NTP | 123 |
 | Kerberos | **88** |
-| LDAP (Lightweight Directory Access Protocol) / LDAPS | 389 / **636** |
-| SNMP (Simple Network Management Protocol) / Traps | 161 / 162 (use v3) |
+| LDAP / LDAPS | 389 / **636** |
+| SNMP / Traps | 161 / 162 (use v3) |
 | Syslog / Syslog-TLS | 514 / **6514** |
 | RDP | **3389** |
-| RADIUS | 1812 / 1813 (UDP (User Datagram Protocol)) |
-| TACACS+ | **49** (TCP (Transmission Control Protocol)) |
-| FTP (File Transfer Protocol) / FTPS | 21 / **990** |
+| RADIUS | 1812 / 1813 (UDP) |
+| TACACS+ | **49** (TCP) |
+| FTP / FTPS | 21 / **990** |
 | SMB | **445** |
 
 ---
@@ -35,7 +35,7 @@
 |------|-------|-----|
 | Stateful | 3-4 | Tracks connections |
 | **NGFW** | 3-7 | Stateful + L7 + IPS + identity |
-| **WAF (Web Application Firewall)** | 7 (web only) | OWASP attacks |
+| **WAF** | 7 (web only) | OWASP attacks |
 | **UTM** | 3-7 | NGFW + AV + URL filter |
 | Host-based | endpoint | Per-machine |
 
@@ -84,18 +84,18 @@ Internet → [NGFW] → DMZ → [NGFW] → Internal → [NGFW] → Secure
 
 EAP variants: **EAP-TLS** (mutual cert, strongest), PEAP, EAP-TTLS, EAP-FAST.
 
-NAC adds **posture** checks (patched? EDR (Endpoint Detection and Response)? encrypted disk?).
+NAC adds **posture** checks (patched? EDR? encrypted disk?).
 
 ---
 
-## 🚇 VPN (Virtual Private Network)
+## 🚇 VPN
 
 | Topology | When |
 |----------|------|
 | Site-to-site | HQ ↔ branch (IPSec Tunnel mode) |
 | Remote access | User → corp |
 | Always-on | Auto-connects off-network |
-| Clientless SSL (Secure Sockets Layer) VPN | Browser-only |
+| Clientless SSL VPN | Browser-only |
 | Split tunnel | Only corp traffic via VPN |
 | Full tunnel | All traffic via VPN |
 
@@ -132,7 +132,7 @@ IPSec: **AH** (integrity/auth only) vs **ESP** (also conf). **Tunnel** mode = wh
 - ✅ "Jump server with MFA + session recording"
 - ❌ "Allow all + log"
 - ❌ "PPTP / SNMPv1 / Telnet"
-- ❌ "Web server in the internal LAN (Local Area Network)"
+- ❌ "Web server in the internal LAN"
 - ❌ "Split tunnel for high-security users"
 
 ---

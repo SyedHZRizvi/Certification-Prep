@@ -4,7 +4,7 @@
 
 ---
 
-## 📋 DRP (Distribution Requirements Planning) Record Template
+## 📋 DRP Record Template
 
 | Week | 1 | 2 | 3 | 4 | 5 |
 |------|---|---|---|---|---|
@@ -19,7 +19,7 @@
 
 ---
 
-## 🛡️ Safety Stock & ROP (Reorder Point)
+## 🛡️ Safety Stock & ROP
 
 ```
 SS  = Z × σ × √L
@@ -43,7 +43,7 @@ Z-scores:
 | Promotions, launches | Stable demand |
 | Risk: forces stock | Risk: bullwhip |
 
-**Bullwhip cures:** shared POS (CPFR (Collaborative Planning, Forecasting, and Replenishment)), smaller batches, daily replenishment, EDLP.
+**Bullwhip cures:** shared POS (CPFR), smaller batches, daily replenishment, EDLP.
 
 ---
 
@@ -71,7 +71,7 @@ Z-scores:
 | FSN | Movement (Fast/Slow/Non) |
 | VED | Criticality (spares) |
 
-ABC-XYZ matrix: A-X → JIT (Just-In-Time), C-Z → drop or kit.
+ABC-XYZ matrix: A-X → JIT, C-Z → drop or kit.
 
 ---
 
@@ -96,7 +96,7 @@ ABC-XYZ matrix: A-X → JIT (Just-In-Time), C-Z → drop or kit.
 | Opportunity | At bin-zero |
 | Control group | Same items, test process |
 
-**KPI (Key Performance Indicator):** IRA = bins in tolerance / total counted (target 95–99%).
+**KPI:** IRA = bins in tolerance / total counted (target 95–99%).
 
 ---
 
@@ -111,7 +111,7 @@ Usually CORRECT:
 
 Usually WRONG:
 
-- ❌ "DRP and MRP (Material Requirements Planning) are the same"
+- ❌ "DRP and MRP are the same"
 - ❌ "Higher service is always better"
 - ❌ "Push is always best"
 - ❌ "Annual physical = cycle count"

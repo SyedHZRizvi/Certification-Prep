@@ -124,7 +124,7 @@ client.beta.messages.create(
 ```
 
 - ⚠️ Beta, behavior may change
-- Sandbox in Docker/VM (Virtual Machine)
+- Sandbox in Docker/VM
 - Each screenshot ≈ 1500 tokens
 - Set step caps + watchdog timers
 - Require explicit confirmation for destructive actions
@@ -180,7 +180,7 @@ Conceptually similar; **code is NOT 1:1 portable.**
 | `Bash` | Run shell command |
 | `Grep` | Ripgrep search |
 | `Glob` | File pattern match |
-| `WebFetch` | HTTP (Hypertext Transfer Protocol) fetch |
+| `WebFetch` | HTTP fetch |
 | `WebSearch` | Web search |
 | `Skill` | Invoke specialized sub-flow |
 

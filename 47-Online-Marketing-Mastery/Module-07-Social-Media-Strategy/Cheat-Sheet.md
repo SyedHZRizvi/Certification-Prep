@@ -23,7 +23,7 @@
 | TikTok | 18–34 | Brand discovery | Short video (7–60s) | Interest graph |
 | Instagram Reels | 18–44 | Consideration + shopping | Reels + Stories | Hybrid (social + interest) |
 | Facebook | 35–65+ | Community + retargeting | Video + groups | Social graph (evolved EdgeRank) |
-| LinkedIn | 25–55 pro | B2B (Business-to-Business) leads + thought leadership | Native video + documents | Dwell time |
+| LinkedIn | 25–55 pro | B2B leads + thought leadership | Native video + documents | Dwell time |
 | YouTube | All ages | Education + search capture | Long video + Shorts | Search + recommendation |
 | Pinterest | 25–50, female-skew | Discovery + shopping | Static + idea pins | Semantic search + saves |
 
@@ -62,7 +62,7 @@
 - Dwell time is the primary ranking signal
 - Native content >>> external links (LinkedIn demotes external URLs)
 - Documents/carousels: highest organic reach surface
-- Creator Mode: switches to "Follow" default CTA (Call to Action); boosts personal account reach
+- Creator Mode: switches to "Follow" default CTA; boosts personal account reach
 - Company pages: ~5–10% organic reach; personal creator accounts: 20–40%
 
 ---
@@ -111,7 +111,7 @@ ER = (Total Engagements / Total Reach) × 100
 ?utm_source=[instagram]&utm_medium=social&utm_campaign=[name]&utm_content=[post-id]
 ```
 
-**Influencer ROI (Return on Investment):**
+**Influencer ROI:**
 ```
 ROI = (Revenue Attributed / Total Spend) × 100
 Track via: unique UTM links + promo codes per influencer
@@ -150,7 +150,7 @@ Track via: unique UTM links + promo codes per influencer
 
 | Platform | Feature | Markets | Best For |
 |---|---|---|---|
-| Instagram Shopping | Product tags in Reels/posts/Stories | US, UK, CA + more | DTC (Direct-to-Consumer) fashion, beauty, home |
+| Instagram Shopping | Product tags in Reels/posts/Stories | US, UK, CA + more | DTC fashion, beauty, home |
 | TikTok Shop | In-feed shopping + live commerce | US, UK, DE, FR + expanding | Entertainment-led product discovery |
 | Pinterest Shopping | Product pins + Verified Merchant | US, UK, CA, AU | Inspiration-to-purchase |
 
@@ -158,7 +158,7 @@ Track via: unique UTM links + promo codes per influencer
 
 ## Social Listening Tools
 
-| Tool | Best For | GDPR (General Data Protection Regulation) Note |
+| Tool | Best For | GDPR Note |
 |---|---|---|
 | Hootsuite | Full-suite monitoring + scheduling | Review DPA for EU data |
 | Sprout Social | Enterprise analytics | Review DPA for EU data |
@@ -172,7 +172,7 @@ Track via: unique UTM links + promo codes per influencer
 
 | Rule | Market | What It Means |
 |---|---|---|
-| GDPR Article 6 | EU / UK | UGC (User-Generated Content) in paid ads requires explicit written consent — hashtag use is NOT enough |
+| GDPR Article 6 | EU / UK | UGC in paid ads requires explicit written consent — hashtag use is NOT enough |
 | GDPR pixel compliance | EU | Meta pixel consent management required before tracking EU visitors |
 | FTC disclosure | US / Canada | #ad or #sponsored required on all paid/gifted influencer posts |
 | ASA disclosure | UK | #ad or #gifted required; applies to all paid AND gifted content |
@@ -203,7 +203,7 @@ Track via: unique UTM links + promo codes per influencer
 - *"GDPR requires explicit written consent for UGC in paid media — a hashtag is not a data processing agreement."*
 - *"A content calendar structured around content pillars ensures algorithmic consistency, brand message coherence, and sustainable production workflows."*
 - *"LinkedIn's algorithm rewards dwell time — this is why native documents and carousels outperform external links, which the algorithm actively demotes."*
-- *"UTM parameters are the minimum viable tracking setup for social — without them, attribution in GA4 (Google Analytics 4) defaults to 'direct' and the data is meaningless."*
+- *"UTM parameters are the minimum viable tracking setup for social — without them, attribution in GA4 defaults to 'direct' and the data is meaningless."*
 
 ---
 

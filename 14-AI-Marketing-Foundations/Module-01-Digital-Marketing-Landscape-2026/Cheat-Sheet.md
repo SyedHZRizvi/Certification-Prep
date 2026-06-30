@@ -11,7 +11,7 @@
 | **Paid** | Yes (if you pay) | Google Ads, Meta Ads, sponsored posts |
 | **Owned** | Yes | Your blog, email list, app |
 | **Earned** | No (you influence) | PR mentions, organic backlinks, reviews |
-| **Shared** | Partially | UGC (User-Generated Content), Reddit threads, community discussions |
+| **Shared** | Partially | UGC, Reddit threads, community discussions |
 
 🧠 Memory: "**P**lease **O**wn **E**very **S**ale", Paid, Owned, Earned, Shared.
 
@@ -40,14 +40,14 @@
 
 | Term | Formula | Quick read |
 |---|---|---|
-| **CAC (Customer Acquisition Cost)** | Total spend ÷ new customers | Cost to win one |
-| **LTV (Lifetime Value)** | Avg revenue × avg lifespan | Total value of one |
+| **CAC** | Total spend ÷ new customers | Cost to win one |
+| **LTV** | Avg revenue × avg lifespan | Total value of one |
 | **LTV:CAC** | LTV ÷ CAC | Target ≥ 3:1 |
 | **AOV** | Revenue ÷ orders | Bigger basket = better |
-| **CPM (Cost Per Mille)** | Spend ÷ (impressions ÷ 1000) | Awareness pricing |
-| **CPC (Cost Per Click)** | Spend ÷ clicks | Auction efficiency |
-| **CPA (Cost Per Acquisition)** | Spend ÷ conversions | Channel-level CAC |
-| **ROAS (Return on Ad Spend)** | Revenue ÷ ad spend | **NOT** the same as ROI (Return on Investment) |
+| **CPM** | Spend ÷ (impressions ÷ 1000) | Awareness pricing |
+| **CPC** | Spend ÷ clicks | Auction efficiency |
+| **CPA** | Spend ÷ conversions | Channel-level CAC |
+| **ROAS** | Revenue ÷ ad spend | **NOT** the same as ROI |
 
 🚨 ROAS ≠ ROI. ROAS uses revenue; ROI uses profit.
 
@@ -59,10 +59,10 @@
 |---|---|---|
 | **Google** | Alphabet | Performance Max |
 | **Meta** | Meta | Advantage+ Shopping |
-| **Amazon** | Amazon | Sponsored Products + DSP (Demand-Side Platform) |
+| **Amazon** | Amazon | Sponsored Products + DSP |
 | **TikTok** | ByteDance | Smart Performance Campaigns |
 
-Outside the walls: **Microsoft Advertising** (B2B (Business-to-Business) via LinkedIn), **The Trade Desk** (open programmatic + CTV (Connected TV)).
+Outside the walls: **Microsoft Advertising** (B2B via LinkedIn), **The Trade Desk** (open programmatic + CTV).
 
 ---
 
@@ -81,7 +81,7 @@ Outside the walls: **Microsoft Advertising** (B2B (Business-to-Business) via Lin
 - **4Ps** (Kotler/McCarthy), Product, Price, Place, Promotion
 - **4Cs** (Lauterborn), Customer, Cost, Convenience, Communication
 - **JTBD** (Christensen, Harvard), what job is the product hired for
-- **OKRs (Objectives and Key Results) / KPIs (Key Performance Indicators)**, objectives + measurable results
+- **OKRs / KPIs**, objectives + measurable results
 - **SOSTAC**, Situation, Objectives, Strategy, Tactics, Action, Control
 
 ---

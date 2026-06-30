@@ -26,12 +26,12 @@
 
 | Model | You manage | Examples |
 |-------|------------|----------|
-| **IaaS (Infrastructure as a Service)** | OS + above | AWS (Amazon Web Services) EC2 (Elastic Compute Cloud), Azure VMs |
-| **PaaS (Platform as a Service)** | App + data | App Service, Beanstalk, Heroku |
-| **SaaS (Software as a Service)** | Data + config only | M365, Salesforce, Slack |
+| **IaaS** | OS + above | AWS EC2, Azure VMs |
+| **PaaS** | App + data | App Service, Beanstalk, Heroku |
+| **SaaS** | Data + config only | M365, Salesforce, Slack |
 
 ### 4 Deployment Models
-- **Public**, multi-tenant 3rd-party (AWS, Azure, GCP (Google Cloud Platform))
+- **Public**, multi-tenant 3rd-party (AWS, Azure, GCP)
 - **Private**, single org (on-prem or hosted)
 - **Community**, shared by similar orgs (gov, health)
 - **Hybrid**, mix with orchestration
@@ -50,7 +50,7 @@
 
 ---
 
-## 📦 VM (Virtual Machine) vs Container Cheat
+## 📦 VM vs Container Cheat
 
 | | VM | Container |
 |--|----|-----------| 

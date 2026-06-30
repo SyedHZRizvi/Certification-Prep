@@ -8,10 +8,10 @@
 
 | Component | What |
 |-----------|------|
-| **Conversational Agents** | Structured-flow conversational AI (formerly **Dialogflow CX (Customer Experience)**) |
-| **Search Agents** | Pre-built RAG (Retrieval-Augmented Generation) chat over Vertex AI Search |
+| **Conversational Agents** | Structured-flow conversational AI (formerly **Dialogflow CX**) |
+| **Search Agents** | Pre-built RAG chat over Vertex AI Search |
 | **Function Calling** | Gemini's native tool-use |
-| **ADK** | Open-source SDK (Software Development Kit) for multi-step + multi-agent |
+| **ADK** | Open-source SDK for multi-step + multi-agent |
 | **Agent Garden** | Pre-built templates |
 | **Tool Registry** | Central tool definitions |
 
@@ -26,7 +26,7 @@
 | **Intent** | What the user wants |
 | **Slot / Parameter** | Typed data point (`cuisine: string`, `party_size: number`) |
 | **Fulfillment** | Response or webhook execution |
-| **Webhook** | Your HTTPS (HTTP Secure) endpoint called by the agent |
+| **Webhook** | Your HTTPS endpoint called by the agent |
 | **Generative fallback** | LLM-synthesized reply when no intent matches |
 
 ---
@@ -126,7 +126,7 @@ Audio → Chirp + Gemini Flash (speech-to-intent)
 Merchant query
    → Gemini Pro
    → ADK (multi-step)
-   → Function calls (Shopify Admin API (Application Programming Interface))
+   → Function calls (Shopify Admin API)
    → Vertex AI Search (help docs)
    → Conversational Agents for guided flows
 ```
@@ -158,7 +158,7 @@ Merchant query
 
 ## 🆚 Cross-Cloud
 
-| | Google | Microsoft | AWS (Amazon Web Services) |
+| | Google | Microsoft | AWS |
 |---|--------|-----------|------|
 | Product | Agent Builder | Copilot Studio | Bedrock Agents |
 | LLM | Gemini | Azure OpenAI | Multi-vendor (Claude, Llama, …) |

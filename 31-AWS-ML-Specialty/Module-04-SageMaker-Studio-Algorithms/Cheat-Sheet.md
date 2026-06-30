@@ -7,7 +7,7 @@
 ## 🖥️ Studio Anatomy
 
 ```
-Studio Domain (per account/VPC (Virtual Private Cloud))
+Studio Domain (per account/VPC)
    ├─ User profiles (one per data scientist)
    ├─ Spaces (JupyterLab, Code Editor, RStudio)
    ├─ Apps (Data Wrangler, Canvas, TensorBoard)
@@ -18,7 +18,7 @@ Studio Domain (per account/VPC (Virtual Private Cloud))
 
 ---
 
-## 🐍 SDK (Software Development Kit) 5-Step Pattern
+## 🐍 SDK 5-Step Pattern
 
 ```
 1. role = sagemaker.get_execution_role()
@@ -36,7 +36,7 @@ Studio Domain (per account/VPC (Virtual Private Cloud))
 - **XGBoost**, tabular workhorse (cls/reg/rank)
 - **Linear Learner**, fast lin/log w/ HPO
 - **k-NN**, lazy learner
-- **Factorization Machines**, sparse CTR (Click-Through Rate)
+- **Factorization Machines**, sparse CTR
 - **PCA**, dim. reduction
 
 ### Unsupervised
@@ -85,7 +85,7 @@ Studio Domain (per account/VPC (Virtual Private Cloud))
 |------|----------|
 | **File mode** (default) | <100 GB data, simple |
 | **Pipe mode** | Huge data, RecordIO-protobuf, fast start |
-| **FastFile mode** | S3 (Simple Storage Service) mount streaming; medium data |
+| **FastFile mode** | S3 mount streaming; medium data |
 
 ---
 

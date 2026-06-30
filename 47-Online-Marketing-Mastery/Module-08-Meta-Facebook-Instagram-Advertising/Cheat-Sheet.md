@@ -10,7 +10,7 @@
 |-------|----------|--------------|
 | **Campaign** | *The WHY* — objective | Objective, CBO on/off |
 | **Ad Set** | *The WHO* — audience + budget | Targeting, placements, budget, bid, schedule |
-| **Ad** | *The WHAT* — creative | Format, copy, image/video, CTA (Call to Action), URL |
+| **Ad** | *The WHAT* — creative | Format, copy, image/video, CTA, URL |
 
 **Memory:** C = Cause (why) · A = Audience (who) · A = Art (what)
 
@@ -23,9 +23,9 @@
 | Awareness | Impressions, ad recall | Brand launch, reach goals |
 | Traffic | Link clicks, LPVs | Blog posts, top-funnel |
 | Engagement | Reactions, video views | Community building |
-| Leads | Form fills, lead events | B2B (Business-to-Business), lead gen |
+| Leads | Form fills, lead events | B2B, lead gen |
 | App Promotion | Installs, in-app events | Mobile apps |
-| **Sales** | **Conversions, ROAS (Return on Ad Spend)** | **E-commerce (use this)** |
+| **Sales** | **Conversions, ROAS** | **E-commerce (use this)** |
 
 > **Trap:** Never use Traffic to drive purchases — it optimizes for clickers, not buyers.
 
@@ -40,18 +40,18 @@
 | `InitiateCheckout` | Checkout started | MOFU/BOFU |
 | **`Purchase`** | **Order complete** | **BOFU (primary)** |
 | `Lead` | Form submitted | BOFU (lead gen) |
-| `CompleteRegistration` | Account created | BOFU (SaaS (Software as a Service)) |
+| `CompleteRegistration` | Account created | BOFU (SaaS) |
 
 ---
 
-## 4. Pixel vs. Conversions API (Application Programming Interface) — Side by Side
+## 4. Pixel vs. Conversions API — Side by Side
 
 | Feature | Meta Pixel | Conversions API (CAPI) |
 |---------|------------|------------------------|
 | Fires from | User's browser | Advertiser's server |
 | Blocked by ATT? | YES | NO |
 | Blocked by ad blockers? | YES | NO |
-| GDPR (General Data Protection Regulation) applies? | YES | YES |
+| GDPR applies? | YES | YES |
 | Deduplication needed? | N/A | YES — via `event_id` |
 | EU opt-out impact | High (55–70% signal loss) | Minimal |
 
@@ -130,9 +130,9 @@
 
 | Metric | Formula | Typical Range |
 |--------|---------|---------------|
-| CPC (Cost Per Click) | Cost ÷ Clicks | €0.50–€1.50 (EU) / $0.50–$2.00 (US) |
-| CPM (Cost Per Mille) | Cost ÷ (Impressions/1000) | €5–€15 (EU) / $8–$25 (US) |
-| CTR (Click-Through Rate) | Clicks ÷ Impressions × 100 | 0.5–2.0% |
+| CPC | Cost ÷ Clicks | €0.50–€1.50 (EU) / $0.50–$2.00 (US) |
+| CPM | Cost ÷ (Impressions/1000) | €5–€15 (EU) / $8–$25 (US) |
+| CTR | Clicks ÷ Impressions × 100 | 0.5–2.0% |
 | ROAS | Revenue ÷ Ad Spend | 2–4× breakeven (varies by margin) |
 | Frequency | Impressions ÷ Reach | Keep <3.0 (cold), <5.0 (retargeting) |
 

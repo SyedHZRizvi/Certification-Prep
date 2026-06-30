@@ -1,18 +1,18 @@
 # Module 7: Logistics, Distribution & Warehousing 🚛
 
-> **Why this module matters:** Logistics is where supply chains actually move. Expect 8–12 exam questions on transportation mode trade-offs, warehouse operations, DC types, and 3PL (Third-Party Logistics)/4PL (Fourth-Party Logistics) relationships. The vocabulary is dense and the trade-offs are calculable.
+> **Why this module matters:** Logistics is where supply chains actually move. Expect 8–12 exam questions on transportation mode trade-offs, warehouse operations, DC types, and 3PL/4PL relationships. The vocabulary is dense and the trade-offs are calculable.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Network design (centralized vs decentralized, crossdock, hub-and-spoke)](../Module-02-Supply-Chain-Design/Reading.md), Module 2
-> - [Inventory math (EOQ (Economic Order Quantity), SS, ROP (Reorder Point))](../Module-05-Inventory-Capacity/Reading.md), Module 5
-> - [Supplier contracts and SLA (Service Level Agreement) basics](../Module-06-Sourcing-Supplier-Management/Reading.md), Module 6
+> - [Inventory math (EOQ, SS, ROP)](../Module-05-Inventory-Capacity/Reading.md), Module 5
+> - [Supplier contracts and SLA basics](../Module-06-Sourcing-Supplier-Management/Reading.md), Module 6
 > Course `12-ASCM-CLTD` (Certified in Logistics, Transportation, and Distribution) takes this module's content 4× deeper if logistics is your career focus.
 
 ---
 
 ## 🚢 A Story: The Sneaker Brand That Stopped Flying
 
-Naomi runs logistics for **Apex Footwear**, a $400M sneaker brand. Their factory in Vietnam shipped finished product to the US via air for years, fast, but $4.80/pair in freight. The CFO (Chief Financial Officer) finally insisted: "Why are we paying jet-engine costs on $80 sneakers?"
+Naomi runs logistics for **Apex Footwear**, a $400M sneaker brand. Their factory in Vietnam shipped finished product to the US via air for years, fast, but $4.80/pair in freight. The CFO finally insisted: "Why are we paying jet-engine costs on $80 sneakers?"
 
 Naomi ran the math:
 
@@ -24,7 +24,7 @@ Naomi ran the math:
 
 The pure ocean move saved $4.35/pair on 8M pairs = **$34.8M/yr**, but added $2.2M of in-transit inventory and 27 days of lead time. They piloted a **hybrid**: 85% ocean for replenishment, 15% air for hot SKUs and seasonal launches.
 
-Year-end results: $29M saved in freight, stockouts down 11%, on-time launches at 96%. The right answer wasn't "all air" or "all ocean." It was matching the mode to the SKU (Stock Keeping Unit).
+Year-end results: $29M saved in freight, stockouts down 11%, on-time launches at 96%. The right answer wasn't "all air" or "all ocean." It was matching the mode to the SKU.
 
 That's logistics strategy. This module gives you the vocabulary and trade-offs to defend those choices on the exam.
 
@@ -154,16 +154,16 @@ A 4PL doesn't own assets, it owns the *integration*. A 3PL typically owns wareho
 
 ## 📐 Logistics Performance Metrics
 
-| KPI (Key Performance Indicator) | Formula / Definition | Notes |
+| KPI | Formula / Definition | Notes |
 |-----|---------------------|-------|
 | **On-time delivery (OTD)** | Deliveries on time / total | Supplier-facing |
-| **OTIF (On-Time In-Full)** | On-time AND in-full | Stricter than OTD |
+| **OTIF** | On-time AND in-full | Stricter than OTD |
 | **Perfect order** | OTIF + undamaged + correct documentation | The gold standard |
 | **Fill rate** | Units shipped / units ordered | Service measure |
 | **Order cycle time** | Days from order entry to delivery | Customer-facing |
 | **Cost per unit shipped** | Total logistics cost / units | Efficiency measure |
 | **Damage rate** | Damaged units / total shipped | Quality |
-| **Inventory accuracy** | Cycle counts confirming WMS (Warehouse Management System) | DC health |
+| **Inventory accuracy** | Cycle counts confirming WMS | DC health |
 | **Dock-to-stock time** | Receiving → putaway complete | Receiving health |
 | **Lines per hour (picking)** | Productivity by zone | DC efficiency |
 
@@ -261,7 +261,7 @@ Reverse logistics handles flows of returns, recalls, repairs, recycling, and end
 
 **Decision.** Mid-December 2023, Maersk (Copenhagen) and CMA CGM (Marseille) committed to Cape routing for indefinite duration. MSC (Geneva), the world's largest by capacity, followed. By Q1 2024 ~90% of Asia-Europe container volume had shifted. Logistics responses cascaded down: 3PLs renegotiated rates, demand-shifted to **air freight** for time-critical cargo (air rates Asia-EU spiked 100-200%), and shippers like IKEA, Walmart, Tesla announced shortages or price surcharges. The Suez Canal Authority lost ~$2B in transit fee revenue in H1 2024. The combat coalition Operation Prosperity Guardian (US, UK, France, others) escorted some vessels through the Red Sea, but commercial insurance premiums quintupled, pushing most carriers to Cape routing anyway.
 
-**Outcome.** As of mid-2024, Red Sea transit volume was 50-60% below pre-attack baseline. Container freight rates Asia-EU rose 200-300% Q1 2024 vs Q4 2023 (Drewry's WCI). Inventory days at European retailers crept up 5-10 days as buffer against the longer lane. The crisis became a logistics case study in MIT CTL's 2024 *Supply Chain Frontiers* and ASCM's *SCM (Supply Chain Management) Now* 2024 issues. Notably, Maersk's Q1 2024 EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) rose vs Q4 2023, spot freight gains more than offset diversion costs, mirroring their 2021 Suez performance. Strategically: nearshoring and India / Mexico sourcing accelerated, multimodal Asia-EU rail (China Railway Express through Russia, Trans-Caspian rail through Central Asia) saw a 30%+ volume jump.
+**Outcome.** As of mid-2024, Red Sea transit volume was 50-60% below pre-attack baseline. Container freight rates Asia-EU rose 200-300% Q1 2024 vs Q4 2023 (Drewry's WCI). Inventory days at European retailers crept up 5-10 days as buffer against the longer lane. The crisis became a logistics case study in MIT CTL's 2024 *Supply Chain Frontiers* and ASCM's *SCM Now* 2024 issues. Notably, Maersk's Q1 2024 EBITDA rose vs Q4 2023, spot freight gains more than offset diversion costs, mirroring their 2021 Suez performance. Strategically: nearshoring and India / Mexico sourcing accelerated, multimodal Asia-EU rail (China Railway Express through Russia, Trans-Caspian rail through Central Asia) saw a 30%+ volume jump.
 
 **Lesson for the exam / for practitioners.** This case is the modern follow-on to the 2021 Suez (Maersk Ever Given) story same chokepoint, different failure mode. On the exam, expect questions on **mode-shift economics** (when does air make sense for cargo previously moving by ocean?), **3PL/4PL crisis governance** (multi-carrier orchestration when individual carriers diverge), and the **inventory-vs-transit math** (the safety-stock cost of a 14-day lengthened lane). The structural lesson: global logistics is fragile to geopolitics; "resilience over efficiency" (the post-2020 mantra) means active route diversification, dual-port strategies, and contractual capacity reservation not just safety stock.
 
@@ -328,7 +328,7 @@ You now know:
 - 🏭 Warehouse types, operations, picking + storage strategies
 - 🌐 3PL vs 4PL vs LLP
 - 📦 Packaging tiers and sustainability
-- 📐 Key logistics KPIs (Key Performance Indicators) (OTD, OTIF, perfect order)
+- 📐 Key logistics KPIs (OTD, OTIF, perfect order)
 - 🌐 Distribution network strategies (DC, drop-ship, crossdock, milk run)
 - ↩️ Reverse logistics and the closed-loop concept
 - 🚢 Containers, pallets, ULDs

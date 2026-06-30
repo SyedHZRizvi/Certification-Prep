@@ -39,7 +39,7 @@ Stack cost: ~$220–$240/mo
 
 | Tool | $/mo |
 |---|---|
-| Apollo (B2B (Business-to-Business) data) | $79 |
+| Apollo (B2B data) | $79 |
 | Smartlead (cold email) | $39 |
 | 3 Workspace inboxes | $18 |
 | LinkedIn SalesNav | $99 |
@@ -85,7 +85,7 @@ Worth a 20-minute call this week to see if we'd be a fit?
 
 ---
 
-## 📥 Inbound Compounding Math (B2B SaaS (Software as a Service) Google Ads niche)
+## 📥 Inbound Compounding Math (B2B SaaS Google Ads niche)
 
 | Year | Followers | Calls/yr | Revenue |
 |---|---|---|---|
@@ -130,7 +130,7 @@ Ask at day 60–90 after a clear win.
 | $10–25K | ✅ Viable |
 | $25K+ | ✅ Strong |
 
-CAC (Customer Acquisition Cost) typically $800–$2,500 per booked call.
+CAC typically $800–$2,500 per booked call.
 
 ---
 

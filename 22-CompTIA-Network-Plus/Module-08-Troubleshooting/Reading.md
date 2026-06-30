@@ -13,7 +13,7 @@
 
 A help-desk tech receives a ticket: "Internet is down." The tech walks to the user's desk. The user's PC has no IP, the address shows `169.254.x.x` (APIPA). The tech reboots the PC. Internet comes back. Ticket closed.
 
-Two days later, the same user calls again. Same issue. Same reboot fix. Two days after that, *six other people* in the same hallway have the same problem. After the tech reboots a few of them, escalation reveals the root cause: the DHCP (Dynamic Host Configuration Protocol) scope had been gradually exhausted by IoT devices that took 1-day leases but kept reappearing as new "clients" due to a misconfigured DHCP option. The actual fix was to increase the scope and extend the lease time.
+Two days later, the same user calls again. Same issue. Same reboot fix. Two days after that, *six other people* in the same hallway have the same problem. After the tech reboots a few of them, escalation reveals the root cause: the DHCP scope had been gradually exhausted by IoT devices that took 1-day leases but kept reappearing as new "clients" due to a misconfigured DHCP option. The actual fix was to increase the scope and extend the lease time.
 
 **Reboots are not troubleshooting. Documentation is not bureaucracy. Following the methodology is not slow, it's how you don't have the same ticket reopen ten times.**
 
@@ -49,7 +49,7 @@ This is the most-tested concept in Domain 5. It appears on the exam **directly**
 | **Bottom-up OSI** (start at L1, work up) | When the symptom is physical (no link light, totally disconnected) |
 | **Divide and conquer** | Start in the middle (L3/L4 connectivity) and bisect from there |
 
-🎯 **Exam pattern:** *"A user reports their browser can load www.google.com but not the internal app"* DNS (Domain Name System) works (resolves Google), L1-L4 works (Internet works) start at the *internal-specific* failure point (app server, auth, internal DNS, firewall rule for internal subnet). Use divide-and-conquer.
+🎯 **Exam pattern:** *"A user reports their browser can load www.google.com but not the internal app"* DNS works (resolves Google), L1-L4 works (Internet works) start at the *internal-specific* failure point (app server, auth, internal DNS, firewall rule for internal subnet). Use divide-and-conquer.
 
 ---
 
@@ -75,7 +75,7 @@ The exam quizzes you on recognizing the symptom → layer pattern. Memorize the 
 | **Duplex mismatch** | One end full, other end half, works but with collisions/runts/lost packets | Check interface counters (errors, collisions); set both ends to auto, or hard-code both ends identically |
 | **Broadcast storm** | L2 loop without STP, malicious tool, faulty NIC | Disable affected port; ensure STP enabled and converged |
 | **MAC flapping** | Same MAC seen on multiple ports (loop or duplicate MAC) | Switch log; isolate the offending port |
-| **VLAN (Virtual Local Area Network) mismatch** | Access port on wrong VLAN; trunk native VLAN mismatch | `show interface switchport`; reconfigure |
+| **VLAN mismatch** | Access port on wrong VLAN; trunk native VLAN mismatch | `show interface switchport`; reconfigure |
 | **STP problems** | Slow convergence, port stuck blocking, BPDU Guard error-disable | `show spanning-tree`; check for PortFast on trunks (BAD) |
 
 ### Layer 3, Network Issues
@@ -89,7 +89,7 @@ The exam quizzes you on recognizing the symptom → layer pattern. Memorize the 
 | **Asymmetric routing** | Traffic out one path, back via another; can break stateful inspection | Capture on multiple paths; check firewall logs |
 | **ARP cache poisoning** | Attacker on segment | Verify ARP entries match expected MAC; enable DAI |
 | **Duplicate IP** | Two devices claim same IP | `arp -a`; check DHCP for static + scope conflict |
-| **MTU mismatch / fragmentation issues** | VPN (Virtual Private Network) overhead reduces effective MTU; ICMP (Internet Control Message Protocol)-blocking firewall breaks PMTUD | `ping <ip> -l 1472 -f` on Windows to find max payload; lower TCP (Transmission Control Protocol) MSS clamp |
+| **MTU mismatch / fragmentation issues** | VPN overhead reduces effective MTU; ICMP-blocking firewall breaks PMTUD | `ping <ip> -l 1472 -f` on Windows to find max payload; lower TCP MSS clamp |
 
 ### Layer 4, Transport Issues
 
@@ -98,16 +98,16 @@ The exam quizzes you on recognizing the symptom → layer pattern. Memorize the 
 | **Connection refused** | Service not listening on port; firewall blocking | `netstat`; `telnet host port`; check firewall |
 | **Connection times out** | Firewall silently drops; route asymmetry; destination overloaded | Trace path; review firewall logs |
 | **Slow throughput** | Window size too small; high latency × small window = low throughput (BDP); packet loss causing retransmits | Wireshark TCP analysis; tune window |
-| **Port exhaustion** (NAT (Network Address Translation)) | NAT table full from too many sessions / NAT slipstreaming | Increase NAT table size; check for client gone wild |
+| **Port exhaustion** (NAT) | NAT table full from too many sessions / NAT slipstreaming | Increase NAT table size; check for client gone wild |
 
 ### Layer 7, Application Issues
 
 | Symptom | Likely cause | Diagnosis |
 |---------|--------------|-----------|
 | **DNS resolution failure** | Resolver unreachable; record missing; cache poisoning | `nslookup`; flush DNS cache; check resolver |
-| **TLS (Transport Layer Security) / certificate errors** | Expired cert; clock skew (NTP!); wrong hostname; untrusted CA | Browser cert details; check NTP; verify chain |
-| **HTTP (Hypertext Transfer Protocol) 4xx / 5xx errors** | 404 = not found; 403 = forbidden; 500 = server error; 502/504 = upstream issue | Logs on server / load balancer / WAF (Web Application Firewall) |
-| **Slow page load (waterfall)** | Many small assets, HTTP/1.1 no-keepalive, large CSS/JS, missing CDN (Content Delivery Network) | Browser DevTools; HTTP/2 enablement |
+| **TLS / certificate errors** | Expired cert; clock skew (NTP!); wrong hostname; untrusted CA | Browser cert details; check NTP; verify chain |
+| **HTTP 4xx / 5xx errors** | 404 = not found; 403 = forbidden; 500 = server error; 502/504 = upstream issue | Logs on server / load balancer / WAF |
+| **Slow page load (waterfall)** | Many small assets, HTTP/1.1 no-keepalive, large CSS/JS, missing CDN | Browser DevTools; HTTP/2 enablement |
 | **Authentication failures** | Bad creds; locked account; SAML/OIDC misconfig; clock skew | Identity provider logs |
 
 ---
@@ -119,7 +119,7 @@ The exam quizzes you on recognizing the symptom → layer pattern. Memorize the 
 | **Weak signal (RSSI)** | Distance, obstruction, RF interference | Site survey, signal meter (NetSpot, Ekahau) |
 | **Roaming drops** | Sticky client; no 802.11k/v/r; bad AP placement | Enable assisted roaming; site survey |
 | **Slow throughput on Wi-Fi** | Channel congestion; old standard (b/g); 2.4 vs 5 GHz | Switch to 5/6 GHz, change channel |
-| **Captive portal stuck** | DNS misconfig; HTTPS (HTTP Secure) interception failure; expired session | Manually navigate to captive portal URL |
+| **Captive portal stuck** | DNS misconfig; HTTPS interception failure; expired session | Manually navigate to captive portal URL |
 | **Channel overlap** | Multiple APs on same/adjacent channels | Channel survey; reassign 1/6/11 (2.4) |
 | **No connection / wrong PSK** | Typo; WPA3-only AP and WPA2-only client | Verify PSK; check standard compatibility |
 | **DFS event** | AP yielded channel due to radar; brief outage | Change to non-DFS channel; accept brief outages |
@@ -153,7 +153,7 @@ The exam quizzes you on recognizing the symptom → layer pattern. Memorize the 
 | **Cat6a** | 10 GbE | RJ45 | 100 m |
 | **Cat7 / Cat8** | 10–40 GbE | GG45 / TERA / RJ45 | 30–100 m |
 | **Coax (RG-6 / RG-59)** | Cable / satellite | F-connector | 100+ m |
-| **Multi-mode fiber (OM3/OM4/OM5)** | LAN (Local Area Network) / data center | LC, SC, ST | 300–550 m at 10 GbE |
+| **Multi-mode fiber (OM3/OM4/OM5)** | LAN / data center | LC, SC, ST | 300–550 m at 10 GbE |
 | **Single-mode fiber (OS1/OS2)** | Long-haul | LC, SC | 10–80 km |
 
 ### Termination standards
@@ -169,7 +169,7 @@ The exam quizzes you on recognizing the symptom → layer pattern. Memorize the 
 | Method | Use |
 |--------|-----|
 | **Console port** (serial) | Direct USB/serial connection to switch/router for initial config or recovery, often the *only* access if the network is broken |
-| **Out-of-band management** (separate mgmt VLAN or dedicated mgmt network) | SSH (Secure Shell)/HTTPS to the device on a path NOT carrying user data, survives data-plane failures |
+| **Out-of-band management** (separate mgmt VLAN or dedicated mgmt network) | SSH/HTTPS to the device on a path NOT carrying user data, survives data-plane failures |
 | **DRAC / iDRAC / iLO** (server-specific) | Out-of-band server management; survives OS crashes |
 
 🎯 **Exam pattern:** *"You broke the only data-path link to a remote router by changing an interface config. How do you fix it?"* → Console port (serial) or out-of-band management network.
@@ -178,7 +178,7 @@ The exam quizzes you on recognizing the symptom → layer pattern. Memorize the 
 
 ## 🔬 Scenario Walkthrough, Through The 7 Steps
 
-> **Scenario:** A user reports they cannot reach internal CRM (Customer Relationship Management). You walk through the methodology.
+> **Scenario:** A user reports they cannot reach internal CRM. You walk through the methodology.
 
 **Step 1 Identify the problem.** User confirms: only CRM is affected; other internal apps work; started ~1 hour ago. No recent changes per the user. Check change management yesterday a network engineer made a firewall rule change "to tighten ACLs on the corporate segment." ✅ Possible related change.
 
@@ -246,7 +246,7 @@ This walkthrough is the **exact pattern PBQs test**. Practice it on every scenar
 | PMTUD | Path MTU Discovery |
 | RSSI / SNR | Signal strength / Signal-to-Noise Ratio |
 | DFS | Dynamic Frequency Selection |
-| RFP (Request for Proposal) | Right Foot Path? No, RF Path (informal) |
+| RFP | Right Foot Path? No, RF Path (informal) |
 | iLO / iDRAC / IPMI | Server out-of-band management |
 | LACP | Link Aggregation Control Protocol |
 | KB | Knowledge Base (documentation) |
@@ -255,7 +255,7 @@ This walkthrough is the **exact pattern PBQs test**. Practice it on every scenar
 
 ---
 
-## 📊 Case Study, The 2021 Facebook Outage (BGP (Border Gateway Protocol) Self-Inflicted)
+## 📊 Case Study, The 2021 Facebook Outage (BGP Self-Inflicted)
 
 **Situation.** On **4 October 2021** at **15:39 UTC**, Facebook (now Meta) including Facebook, Instagram, WhatsApp, Oculus, Workplace went **globally offline for ~6 hours**. The outage affected 3.5 billion users. It became, briefly, the largest enterprise outage in history.
 
@@ -290,7 +290,7 @@ The post-mortem reads exactly like a **CompTIA 7-step methodology gone wrong**:
 This case is exactly what Network+ tests when asking about troubleshooting methodology, out-of-band management, and the importance of verifying *full* functionality (Step 6) after a change. The Meta outage is the canonical "Verify and Document failed" cautionary tale even though the post-mortem itself was excellent.
 
 **Discussion (Socratic).**
-- **Q1:** You inherit an enterprise where the network team's badge access depends on AD (Active Directory) which depends on DNS which depends on the network. Apply the lesson from Facebook: list THREE concrete architectural changes you'd make in your first 90 days to break this dependency loop.
+- **Q1:** You inherit an enterprise where the network team's badge access depends on AD which depends on DNS which depends on the network. Apply the lesson from Facebook: list THREE concrete architectural changes you'd make in your first 90 days to break this dependency loop.
 - **Q2:** Facebook's outage was triggered by a "routine maintenance command." How would a robust change-management process (Module 6 / Sec+ Module 1) have caught it before global deployment? Be specific about staging, peer review, and impact analysis.
 - **Q3:** Compare Meta's response (public post-mortem within 24 hours, deep technical detail) to a hypothetical organization that says nothing publicly. What organizational signals does each choice send to the engineering community, to customers, and to regulators? Defend your preferred approach.
 

@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -283,13 +283,13 @@
 **Q:** Name the four most-tested funnel frameworks.
 **A:** AIDA (Attention/Interest/Desire/Action), AARRR (Acquisition/Activation/Retention/Referral/Revenue), RACE (Reach/Act/Convert/Engage), TOFU/MOFU/BOFU.
 
-**Q:** What is ROAS (Return on Ad Spend)?
-**A:** Return on Ad Spend = revenue from ads ÷ ad spend. NOT the same as ROI (Return on Investment).
+**Q:** What is ROAS?
+**A:** Return on Ad Spend = revenue from ads ÷ ad spend. NOT the same as ROI.
 
-**Q:** What is the formula for CAC (Customer Acquisition Cost)?
+**Q:** What is the formula for CAC?
 **A:** Total marketing & sales spend ÷ new customers acquired.
 
-**Q:** What's a healthy LTV (Lifetime Value):CAC ratio?
+**Q:** What's a healthy LTV:CAC ratio?
 **A:** 3:1 or higher.
 
 **Q:** What is AOV?
@@ -324,7 +324,7 @@
 ## 🧠 SECTION 2: AI FUNDAMENTALS
 
 **Q:** What does AI stand for, and what sits underneath it?
-**A:** Artificial Intelligence. Underneath: ML → Deep Learning → Generative AI → LLM (Large Language Model) → Foundation Model.
+**A:** Artificial Intelligence. Underneath: ML → Deep Learning → Generative AI → LLM → Foundation Model.
 
 **Q:** When was the Transformer paper published?
 **A:** 2017, "Attention Is All You Need" (Vaswani et al., Google).
@@ -345,9 +345,9 @@
 **A:** Training is the multi-month, very expensive build of the model. Inference is the cheap, fast query step (you pay for inference).
 
 **Q:** Name 5 foundation-model families.
-**A:** GPT (Generative Pre-trained Transformer) (OpenAI), Claude (Anthropic), Gemini (Google), Llama (Meta), Mistral.
+**A:** GPT (OpenAI), Claude (Anthropic), Gemini (Google), Llama (Meta), Mistral.
 
-**Q:** What is RAG (Retrieval-Augmented Generation)?
+**Q:** What is RAG?
 **A:** Retrieval-Augmented Generation, embed your docs, store in vector DB, retrieve relevant ones at query time, feed to LLM.
 
 **Q:** When should you choose RAG over fine-tuning?
@@ -513,10 +513,10 @@
 **Q:** Which ESP is dominant in Shopify e-commerce?
 **A:** Klaviyo.
 
-**Q:** What's the CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act) unsubscribe window?
+**Q:** What's the CAN-SPAM unsubscribe window?
 **A:** 10 business days.
 
-**Q:** What's the GDPR (General Data Protection Regulation) maximum fine?
+**Q:** What's the GDPR maximum fine?
 **A:** 4% of global annual revenue OR €20M, whichever is higher.
 
 **Q:** Best ESPs for creator newsletters?
@@ -536,7 +536,7 @@
 **A:** Bid × ad quality × user signals (not bid alone).
 
 **Q:** What are the three components of Google's Quality Score?
-**A:** Expected CTR (Click-Through Rate), ad relevance, landing page experience.
+**A:** Expected CTR, ad relevance, landing page experience.
 
 **Q:** What is Performance Max?
 **A:** Google's AI-driven multi-placement campaign type (Search, YouTube, Display, Discover, Gmail, Maps in one).
@@ -550,7 +550,7 @@
 **Q:** If gross margin is 40%, what's break-even ROAS (before opex)?
 **A:** ~2.5× (since 1 / 0.4 = 2.5).
 
-**Q:** What is Conversions API (Application Programming Interface) (CAPI)?
+**Q:** What is Conversions API (CAPI)?
 **A:** Meta's server-side conversion-tracking API, primarily a response to iOS 14.5 ATT.
 
 **Q:** What's Enhanced Conversions?
@@ -579,7 +579,7 @@
 ## 📊 SECTION 8: ANALYTICS & MEASUREMENT
 
 **Q:** When was Universal Analytics sunset?
-**A:** July 1, 2023 (GA4 (Google Analytics 4) is the only version since).
+**A:** July 1, 2023 (GA4 is the only version since).
 
 **Q:** What's the core measurement unit in GA4?
 **A:** The event (everything is an event, including page views).
@@ -636,7 +636,7 @@
 **Q:** What did the Gender Shades study (Buolamwini 2018) show?
 **A:** Commercial facial-recognition systems had error rates of 0.8% for light-skinned men and up to 34.7% for dark-skinned women.
 
-**Q:** What is COPPA (Children's Online Privacy Protection Act)?
+**Q:** What is COPPA?
 **A:** US Children's Online Privacy Protection Act (1998, updated 2013); protects under-13s.
 
 **Q:** Brazil's GDPR equivalent?
@@ -668,9 +668,9 @@
 ## 🛠️ SECTION 10: AI MARKETER TOOLKIT
 
 **Q:** Name the 6 stack tiers in this course.
-**A:** 1) Foundation (LLM + notes), 2) Content/Creative, 3) Distribution/Channel, 4) Measurement/CRM (Customer Relationship Management), 5) Workflow/Automation, 6) Specialized AI.
+**A:** 1) Foundation (LLM + notes), 2) Content/Creative, 3) Distribution/Channel, 4) Measurement/CRM, 5) Workflow/Automation, 6) Specialized AI.
 
-**Q:** CDP (Customer Data Platform) vs CRM vs ESP vs MA platform, define each.
+**Q:** CDP vs CRM vs ESP vs MA platform, define each.
 **A:** CDP = unifies customer data (Segment). CRM = relationship database (Salesforce). ESP = sends email (Klaviyo). MA platform = automation + often CRM (HubSpot).
 
 **Q:** Zapier vs Make vs n8n, differentiate.
@@ -714,7 +714,7 @@
 You should be able to instantly answer:
 
 - The 4 channel buckets (POESM) + funnel frameworks
-- The 8 marketing-math acronyms (CAC, LTV, ROAS, ROI, AOV, CPA (Cost Per Acquisition), CPC (Cost Per Click), CPM (Cost Per Mille))
+- The 8 marketing-math acronyms (CAC, LTV, ROAS, ROI, AOV, CPA, CPC, CPM)
 - The 5 foundation-model families
 - RAG vs Fine-Tuning trade-offs
 - The 3 SEO pillars + E-E-A-T
@@ -723,7 +723,7 @@ You should be able to instantly answer:
 - Email's DMA $36 ROI + SPF/DKIM/DMARC
 - PMax vs Advantage+ (Google vs Meta)
 - GA4 + UTM + DDA + Consent Mode v2
-- GDPR + EU AI Act + COPPA + CCPA (California Consumer Privacy Act)/CPRA basics
+- GDPR + EU AI Act + COPPA + CCPA/CPRA basics
 - CDP vs CRM vs ESP vs MA platform
 
 Good luck! 🚀

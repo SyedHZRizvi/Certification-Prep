@@ -38,11 +38,11 @@ Average compensation uplift after passing: **15–25%** in the 6–12 months fol
 - **Original questions only**, every quiz and practice exam written from Microsoft's published skills-measured outline; no copyrighted dumps
 - **Real-world capstone scenario**, a 14-week scenario standing up a HIPAA + HITRUST production Azure landing zone for a 4,200-person regional health system on a $1.6M budget
 - **One author, one voice**, coherent vocabulary across all 10 modules, three practice exams, and the capstone
-- **Updated for the 2026 AZ-104 blueprint**, including Microsoft Entra terminology, current VPN (Virtual Private Network) Gateway/ExpressRoute pricing tiers, and the latest Azure Monitor + Policy posture
+- **Updated for the 2026 AZ-104 blueprint**, including Microsoft Entra terminology, current VPN Gateway/ExpressRoute pricing tiers, and the latest Azure Monitor + Policy posture
 
 ### 🚀 Ready to start?
 
-Six to eight weeks of evening study, a $10–$25/month pay-as-you-go Azure subscription so every CLI (Command Line Interface) and PowerShell snippet sticks as finger memory, and three practice exams that match the live exam's difficulty curve.
+Six to eight weeks of evening study, a $10–$25/month pay-as-you-go Azure subscription so every CLI and PowerShell snippet sticks as finger memory, and three practice exams that match the live exam's difficulty curve.
 
 Begin with [Module 1: Subscriptions & Resource Hierarchy →](./Module-01-Subscriptions-Resource-Hierarchy/Reading.md)
 
@@ -53,7 +53,7 @@ Begin with [Module 1: Subscriptions & Resource Hierarchy →](./Module-01-Subscr
 By the end of this track, you'll be able to:
 
 - Design and manage Azure subscriptions, management groups, and resource hierarchy
-- Configure Microsoft Entra ID, RBAC (Role-Based Access Control), Conditional Access, and PIM (Product Information Management)
+- Configure Microsoft Entra ID, RBAC, Conditional Access, and PIM
 - Stand up storage accounts, blobs, file shares, and File Sync, and pick the right redundancy
 - Deploy and manage virtual machines, scale sets, App Services, ACI, and AKS
 - Build virtual networks with peering, VPN/ExpressRoute, NSGs, Application Gateway, and Load Balancer
@@ -68,13 +68,13 @@ By the end of this track, you'll be able to:
 | # | Module | Time | What You'll Master |
 |---|--------|------|--------------------|
 | 1 | [Subscriptions & Resource Hierarchy](./Module-01-Subscriptions-Resource-Hierarchy/Reading.md) | 3 hrs | Tenants → mgmt groups → subs → RGs, tags, cost mgmt, moving resources |
-| 2 | [Entra ID & RBAC](./Module-02-Entra-ID-RBAC/Reading.md) | 4 hrs | Users, groups, B2B (Business-to-Business), Conditional Access, MFA (Multi-Factor Authentication), RBAC, custom roles, PIM |
+| 2 | [Entra ID & RBAC](./Module-02-Entra-ID-RBAC/Reading.md) | 4 hrs | Users, groups, B2B, Conditional Access, MFA, RBAC, custom roles, PIM |
 | 3 | [Storage Accounts & Blobs](./Module-03-Storage-Accounts-Blobs/Reading.md) | 4 hrs | Account kinds, LRS/ZRS/GRS/GZRS, tiers, lifecycle, encryption, SAS, AzCopy |
 | 4 | [Azure Files & File Sync](./Module-04-Azure-Files-File-Sync/Reading.md) | 2.5 hrs | SMB/NFS shares, AD auth, File Sync, cloud tiering, snapshots |
-| 5 | [Virtual Machines](./Module-05-Virtual-Machines/Reading.md) | 4 hrs | VM (Virtual Machine) sizes, AZ vs AS, managed disks, images, extensions, VMSS, autoscale |
+| 5 | [Virtual Machines](./Module-05-Virtual-Machines/Reading.md) | 4 hrs | VM sizes, AZ vs AS, managed disks, images, extensions, VMSS, autoscale |
 | 6 | [App Services & Containers](./Module-06-App-Services-Containers/Reading.md) | 3 hrs | App Service plans, slots, scaling, ACI, AKS clusters & node pools |
 | 7 | [Virtual Networks](./Module-07-Virtual-Networks/Reading.md) | 4 hrs | VNets, subnets, peering, endpoints, VPN Gateway types, ExpressRoute, hub-spoke |
-| 8 | [Network Security](./Module-08-Network-Security/Reading.md) | 4 hrs | NSGs, ASGs, Azure Firewall, App Gateway WAF (Web Application Firewall), Front Door, Load Balancer, DNS (Domain Name System) |
+| 8 | [Network Security](./Module-08-Network-Security/Reading.md) | 4 hrs | NSGs, ASGs, Azure Firewall, App Gateway WAF, Front Door, Load Balancer, DNS |
 | 9 | [Backup, Recovery & Migration](./Module-09-Backup-Recovery-Migration/Reading.md) | 3 hrs | Recovery Services vault, VM/file backup, ASR, Azure Migrate |
 | 10 | [Monitor & Governance](./Module-10-Monitor-Governance/Reading.md) | 3 hrs | Monitor, Log Analytics, alerts, Policy & initiatives, Locks |
 

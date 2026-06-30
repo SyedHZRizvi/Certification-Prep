@@ -8,9 +8,9 @@
 
 ```
 ┌─────────────────────────────────────────┐
-│        YOUR BOT CODE (SDK (Software Development Kit))              │  ← Bot Framework SDK (C#/JS/Py/Java)
+│        YOUR BOT CODE (SDK)              │  ← Bot Framework SDK (C#/JS/Py/Java)
 └─────────────┬───────────────────────────┘
-              │ HTTP (Hypertext Transfer Protocol) endpoint
+              │ HTTP endpoint
 ┌─────────────▼───────────────────────────┐
 │         AZURE AI BOT SERVICE            │  ← hosting + channels + auth
 └──┬────┬────┬────┬─────┬─────┬──────────┘
@@ -81,7 +81,7 @@ class MyBot(ActivityHandler):
 
 ## 🃏 Adaptive Cards
 
-Channel-portable JSON UI (User Interface). Render natively in Teams, Web Chat, and other supporting channels.
+Channel-portable JSON UI. Render natively in Teams, Web Chat, and other supporting channels.
 
 ---
 
@@ -132,7 +132,7 @@ If you can answer all 5 in 60 seconds, you own Module 6. ✅
 | Bot Framework | Foundry Agent Service |
 |---|---|
 | Bot | Agent / Assistant |
-| Channel | UI you build atop the Assistants API (Application Programming Interface) |
+| Channel | UI you build atop the Assistants API |
 | TurnContext | Run + Thread + Message |
 | Dialog | Tool sequence chosen by the model |
 | ConversationState | Persistent Thread |
@@ -148,7 +148,7 @@ This isomorphism is why Module 8 builds the *modern* analog of Module 6.
 |---|---|
 | Bot Service | App Registration (created on provision) |
 | Calling AI Language for CLU | **Managed identity** + `Cognitive Services User` role |
-| Calling Azure OpenAI for LLM (Large Language Model) | Managed identity + `Cognitive Services OpenAI User` role |
+| Calling Azure OpenAI for LLM | Managed identity + `Cognitive Services OpenAI User` role |
 | Calling Cosmos for state | Managed identity + `Cosmos DB Built-in Data Contributor` |
 | OAuth user sign-in | Connection Setting on the Azure Bot resource |
 

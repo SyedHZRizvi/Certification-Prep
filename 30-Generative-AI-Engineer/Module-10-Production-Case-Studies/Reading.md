@@ -63,7 +63,7 @@ This module is seven such case studies, each read as an engineering document. Pi
 2. **Codebase context at scale.** Long-context (100K+) Claude Sonnet, prompt-cached per session, refreshed incrementally.
 3. **Latency obsession.** Cursor's engineering blog is full of TTFT optimization stories, they ship the same model as Copilot but feel 2× faster.
 4. **Multi-provider routing.** Claude 3.5 / 4.x Sonnet for heavy reasoning; GPT-4o-mini for trivial completions; OpenAI o-series for "reasoning mode."
-5. **Inline edit + chat unified UI (User Interface)**, the user doesn't pick "this is a question" vs "this is an edit"; the system decides.
+5. **Inline edit + chat unified UI**, the user doesn't pick "this is a question" vs "this is an edit"; the system decides.
 
 **The retrieval architecture** (as disclosed in their public engineering content):
 
@@ -157,7 +157,7 @@ This module is seven such case studies, each read as an engineering document. Pi
 
 **The infrastructure** (per Khan engineering posts + press):
 
-- GPT-4 (then GPT-4o, then GPT-5) backbone, via OpenAI API (Application Programming Interface)
+- GPT-4 (then GPT-4o, then GPT-5) backbone, via OpenAI API
 - Custom retrieval over Khan Academy's structured curriculum (skill trees, prerequisite graphs)
 - Multi-modal in 2024+ (math notation via vision)
 - District-scale telemetry pipelines for educator oversight
@@ -248,7 +248,7 @@ This module is seven such case studies, each read as an engineering document. Pi
 | **Fine-tuning?** | Yes (Codex era) | Yes (custom code embedder) | No (disclosed) | Some | No (disclosed) | Yes (heuristic-rules generation) | Yes (frontier training) |
 | **Safety severity** | Medium | Medium | Medium | High (financial) | Very high (minors) | Very high (financial) | Frontier |
 | **Latency criticality** | High (autocomplete) | Extreme (autocomplete) | Medium | Medium | Medium | Low | Medium |
-| **Eval depth** | Acceptance-rate KPI (Key Performance Indicator) | A/B everywhere | RAGAS-style | Faithfulness gate | Educator review | GBT-baseline regression | Frontier-research |
+| **Eval depth** | Acceptance-rate KPI | A/B everywhere | RAGAS-style | Faithfulness gate | Educator review | GBT-baseline regression | Frontier-research |
 
 The matrix is the deliverable: any GenAI product you encounter can be slotted into something like this. Use it.
 

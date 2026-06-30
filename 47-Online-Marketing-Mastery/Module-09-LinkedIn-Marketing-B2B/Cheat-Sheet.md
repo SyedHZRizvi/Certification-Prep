@@ -1,4 +1,4 @@
-# 📋 Module 09 Cheat Sheet: LinkedIn Marketing — B2B (Business-to-Business) Strategies & Thought Leadership
+# 📋 Module 09 Cheat Sheet: LinkedIn Marketing — B2B Strategies & Thought Leadership
 
 > One page. Print it. Review before every campaign and before every exam or interview.
 
@@ -31,7 +31,7 @@
 | Poll | 1.2x | Research, engagement, ICP insight | Use to qualify audience interests |
 | Native Video | 0.9x | Product demos, events | First 3 sec critical; captions mandatory |
 | Image Post | 0.7x | Infographics, quotes | Custom design >> stock photo |
-| Article/Newsletter | 0.4x feed + SEO (Search Engine Optimization) | Deep expertise | Best for SEO + newsletter subscribers |
+| Article/Newsletter | 0.4x feed + SEO | Deep expertise | Best for SEO + newsletter subscribers |
 | Sponsored Content | Paid | Lead Gen Forms, gated content | 1,200 x 628px; <150 chars body text |
 | Message Ad (InMail) | Paid | Event invites, demos, trials | 30–35% open rate benchmark |
 
@@ -39,7 +39,7 @@
 
 ## LinkedIn Ads Format Benchmarks
 
-| Format | Funnel | CPM (Cost Per Mille) North America | CPM Europe |
+| Format | Funnel | CPM North America | CPM Europe |
 |---|---|---|---|
 | Sponsored Content — Single Image | Mid | $65–95 | €45–70 |
 | Sponsored Content — Carousel | Mid | $70–100 | €50–75 |
@@ -60,7 +60,7 @@
 | **Completion rate — Average** | 6–9% | |
 | **Completion rate — Good** | 8–12% | Target this |
 | **Completion rate — Excellent** | >12% | |
-| **CPL (Cost Per Lead) — B2B SaaS (Software as a Service) (North America)** | $75–200 | |
+| **CPL — B2B SaaS (North America)** | $75–200 | |
 | **CPL — B2B SaaS (Europe)** | €55–150 | |
 | **CPL — Professional Services (NA)** | $150–400 | |
 | **CPL — Professional Services (EU)** | €120–320 | |
@@ -93,7 +93,7 @@
 CPL = Total Ad Spend ÷ Number of Leads
 ```
 
-**ROAS (Return on Ad Spend) (Pipeline-Based):**
+**ROAS (Pipeline-Based):**
 ```
 ROAS = (Leads × Average Deal Value × Close Rate) ÷ Ad Spend
 Example: 50 leads × $20,000 ACV × 8% close = $80,000 pipeline ÷ $5,000 spend = 16x
@@ -111,7 +111,7 @@ Example: 50 employees × 500 connections × 1 post/week = 25,000 weekly impressi
 
 | Metric | North America | Europe |
 |---|---|---|
-| Sponsored Content CTR (Click-Through Rate) | 0.35–0.60% | 0.30–0.55% |
+| Sponsored Content CTR | 0.35–0.60% | 0.30–0.55% |
 | Lead Gen Form Completion Rate | 8–12% (good) | 8–12% (good) |
 | InMail Open Rate | 30–35% | 28–33% |
 | Sales Navigator InMail Accept Rate | 15–25% | 15–25% |
@@ -129,7 +129,7 @@ Example: 50 employees × 500 connections × 1 post/week = 25,000 weekly impressi
 | **E** | Evidence | What data/case study proves it? |
 | **A** | Antagonist | What does conventional wisdom get wrong? |
 | **R** | Resolution | What should readers do differently now? |
-| **L** | Lead Magnet | What deeper resource can you offer (optional CTA (Call to Action))? |
+| **L** | Lead Magnet | What deeper resource can you offer (optional CTA)? |
 
 ---
 
@@ -137,7 +137,7 @@ Example: 50 employees × 500 connections × 1 post/week = 25,000 weekly impressi
 
 | Step | Purpose | Example |
 |---|---|---|
-| **HOOK** | Force a pause before "see more" | "I got fired for this email to our CEO (Chief Executive Officer). Here's what happened:" |
+| **HOOK** | Force a pause before "see more" | "I got fired for this email to our CEO. Here's what happened:" |
 | **GAP** | Create curiosity gap; compel "see more" click | "The reason surprised everyone. It had nothing to do with money." |
 | **VALUE** | Deliver insight that makes reader smarter | Concrete framework, counter-intuitive data, or actionable lesson |
 
@@ -159,7 +159,7 @@ Goal: Content engagement, dwell time
 Stage 3 — DECISION
 Format: Lead Gen Form or Message Ad
 Audience: Engaged users (retargeting via Insight Tag or ad engagement)
-Goal: MQL (Marketing Qualified Lead) capture
+Goal: MQL capture
 
 Stage 4 — NURTURE
 Format: Retargeting Sponsored Content
@@ -189,10 +189,10 @@ Goal: Move to sales-qualified conversation
 | Plan | Monthly Cost | InMail Credits | Key Features |
 |---|---|---|---|
 | Core | $99/seat | 50/month | Advanced lead search, account lists, alerts |
-| Advanced | $169/seat | 50/month | CRM (Customer Relationship Management) sync (Salesforce/HubSpot), TeamLink, Smart Links |
+| Advanced | $169/seat | 50/month | CRM sync (Salesforce/HubSpot), TeamLink, Smart Links |
 | Advanced Plus | Enterprise pricing | 50/month | CRM writeback, advanced reporting, admin controls |
 
-**EU note:** Verify your DPA (Data Processing Agreement) terms before syncing LinkedIn data to EU-hosted CRMs due to GDPR (General Data Protection Regulation) cross-border data transfer rules.
+**EU note:** Verify your DPA (Data Processing Agreement) terms before syncing LinkedIn data to EU-hosted CRMs due to GDPR cross-border data transfer rules.
 
 ---
 

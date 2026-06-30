@@ -1,13 +1,13 @@
 # Module 2: Productizing AI Marketing Services 📦
 
-> **Why this module matters:** A productized service is the difference between selling your time and selling an *outcome*. The first model caps your income at hours-worked. The second model lets a solo operator hit $1M ARR (Annual Recurring Revenue). This module is the playbook for turning your skills into productized SKUs, scoping them so they cannot bleed, and using AI to deliver 5x faster than your costs imply.
+> **Why this module matters:** A productized service is the difference between selling your time and selling an *outcome*. The first model caps your income at hours-worked. The second model lets a solo operator hit $1M ARR. This module is the playbook for turning your skills into productized SKUs, scoping them so they cannot bleed, and using AI to deliver 5x faster than your costs imply.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The wedge-selection vocabulary from [Module 1](../Module-01-Niche-Service-Offering/Reading.md), vertical / channel / deliverable axes, the 100/10/1 test, the difference between productized vs retainer vs hourly
 > - Basic delivery experience in your chosen wedge (you've done the work for at least one client or employer, even if not productized)
-> - Familiarity with at least one LLM (Large Language Model) (Claude or ChatGPT) for content + analysis drafting, the AI-leverage table in §AI Leverage Question assumes you've used these tools in practice (see [`14-AI-Marketing-Foundations` Module 2](../../14-AI-Marketing-Foundations/Module-02-AI-Fundamentals-for-Marketers/Reading.md) if not)
+> - Familiarity with at least one LLM (Claude or ChatGPT) for content + analysis drafting, the AI-leverage table in §AI Leverage Question assumes you've used these tools in practice (see [`14-AI-Marketing-Foundations` Module 2](../../14-AI-Marketing-Foundations/Module-02-AI-Fundamentals-for-Marketers/Reading.md) if not)
 >
-> If you have not yet picked a wedge, pause and complete the Module 1 5-day drill first, the SKU (Stock Keeping Unit) you'll productize here is the deliverable underneath that wedge. Without the wedge, you'll productize the wrong thing.
+> If you have not yet picked a wedge, pause and complete the Module 1 5-day drill first, the SKU you'll productize here is the deliverable underneath that wedge. Without the wedge, you'll productize the wrong thing.
 
 ---
 
@@ -54,9 +54,9 @@ Here's a representative catalog of what AI-leveraged operators in the marketing 
 | Google Ads Audit | $1,500–$2,500 | 5–7 days | 14-page PDF + 30-min Loom + implementation checklist |
 | Meta Ads Audit | $1,500–$2,500 | 5–7 days | Same structure as above for Meta |
 | LinkedIn Profile Optimization | $1,200–$2,400 | 5 days | Profile rewrite + content plan + 5 posts |
-| SEO (Search Engine Optimization) Technical Audit | $2,000–$3,500 | 7–10 days | Crawl report + prioritized roadmap |
-| Email Deliverability Audit | $1,500–$2,800 | 7 days | DNS (Domain Name System) audit + warm-up plan + revised templates |
-| GA4 (Google Analytics 4) Setup + Migration | $2,500–$3,500 | 10 days | Events + conversions + custom dimensions |
+| SEO Technical Audit | $2,000–$3,500 | 7–10 days | Crawl report + prioritized roadmap |
+| Email Deliverability Audit | $1,500–$2,800 | 7 days | DNS audit + warm-up plan + revised templates |
+| GA4 Setup + Migration | $2,500–$3,500 | 10 days | Events + conversions + custom dimensions |
 
 ### Tier 2, Mid-ticket builds ($3,500–$9,500)
 
@@ -73,7 +73,7 @@ Here's a representative catalog of what AI-leveraged operators in the marketing 
 
 | Service | Price | Delivery | What's included |
 |---|---|---|---|
-| Full Funnel Build (DTC (Direct-to-Consumer)) | $12,000–$22,000 | 6 weeks | Pixel + offers + creatives + email + tracking |
+| Full Funnel Build (DTC) | $12,000–$22,000 | 6 weeks | Pixel + offers + creatives + email + tracking |
 | Account-Based Marketing Build | $15,000–$25,000 | 8 weeks | ICP + 50-account list + personalized outreach + content |
 | Marketing Systems Audit + 90-day Plan | $9,500–$15,000 | 21 days | 90-page deliverable + exec readout + execution playbook |
 | Webinar Funnel Build | $12,000–$18,000 | 6 weeks | Landing + email + slides + replay funnel |
@@ -101,7 +101,7 @@ A productized service is only profitable if AI gives you meaningful leverage. Th
 
 | Step | Before AI (hours) | With AI (hours) | Leverage |
 |---|---|---|---|
-| Pull data exports from Google Ads API (Application Programming Interface) | 1.5 | 0.5 | 3x |
+| Pull data exports from Google Ads API | 1.5 | 0.5 | 3x |
 | Analyze search-term report | 4 | 0.75 | 5x |
 | Identify quality-score issues | 2 | 0.5 | 4x |
 | Diagnose conversion-tracking gaps | 2 | 1 | 2x |
@@ -139,11 +139,11 @@ This is **AI leverage**. When you productize, you build the playbook *around the
 
 ## ⚙️ The Anatomy of a Productized Service (Use This Template)
 
-Every productized service needs the following components documented in your SOP (Standard Operating Procedure) library. This is the blueprint Hannah used and that you should build for each SKU.
+Every productized service needs the following components documented in your SOP library. This is the blueprint Hannah used and that you should build for each SKU.
 
 ### Component 1, The promise (one sentence)
 
-> *"In 7 business days, we will deliver a 14-page Google Ads audit identifying the 5 highest-ROI (Return on Investment) changes for your account, with implementation steps you can execute yourself or hand to any agency."*
+> *"In 7 business days, we will deliver a 14-page Google Ads audit identifying the 5 highest-ROI changes for your account, with implementation steps you can execute yourself or hand to any agency."*
 
 This sentence goes on the sales page. It is your contract.
 
@@ -231,7 +231,7 @@ Productized services should allow ONE revision round. Beyond that, additional re
 
 ## 📜 Service-Level Agreements (SLAs) for Productized Services
 
-An SLA (Service Level Agreement) is the explicit contract about timing, quality, and remedies. For productized work, your SLA should cover:
+An SLA is the explicit contract about timing, quality, and remedies. For productized work, your SLA should cover:
 
 | SLA Element | Productized Audit example | Productized Subscription example |
 |---|---|---|
@@ -268,7 +268,7 @@ Workshop Digital (US, ~25 person agency, public on their blog and case studies) 
 
 Lesson: **Audit-as-wedge is a proven pattern. Sell the cheap thing; the relationship sells the recurring thing.**
 
-### Case study 3, Carry the Load (B2B (Business-to-Business) content subscription)
+### Case study 3, Carry the Load (B2B content subscription)
 
 A small B2B content agency (public case study on Indie Hackers, ~$640K ARR, 3-person team) productized a content subscription at $4,800/month: 8 blog posts + 30 social posts + 4 newsletters per month, AI-drafted and human-edited. Their process:
 
@@ -418,7 +418,7 @@ You now know:
 
 Use these as journal prompts, study-group questions, or interview-prep drills. Each is open-ended; the best answers cite the 5 Fixed Anchors, the 10 components of a productized service, the AI-leverage table, and at least one named case (Designjoy, Hannah's Tear-Down, Workshop Digital, Carry the Load).
 
-1. **The "bespoke client" carve-out.** A senior CMO (Chief Marketing Officer) loves your productized $6,500 Klaviyo flow build but asks for "a small custom dashboard at the end, should only take you a couple hours with AI, right?" Walk through how each of the 5 Fixed Anchors gets violated if you say yes once, and design a response that preserves the relationship without breaking the SKU. Then construct the counter-argument: when *should* an experienced operator accept a one-off bespoke addition? (Reference the scope-change menu and Brett Williams's "one at a time" rule.)
+1. **The "bespoke client" carve-out.** A senior CMO loves your productized $6,500 Klaviyo flow build but asks for "a small custom dashboard at the end, should only take you a couple hours with AI, right?" Walk through how each of the 5 Fixed Anchors gets violated if you say yes once, and design a response that preserves the relationship without breaking the SKU. Then construct the counter-argument: when *should* an experienced operator accept a one-off bespoke addition? (Reference the scope-change menu and Brett Williams's "one at a time" rule.)
 2. **Audit-as-wedge vs subscription-first.** Workshop Digital uses the cheap audit ($4,500) as the entry to a higher-ticket retainer (~40% conversion). Brett Williams skips the audit entirely and sells the $4,995/mo Designjoy subscription day-one. Which model fits a brand-new Year-1 founder with no proof, and which fits a Year-2 operator with case studies? Defend the right wedge for each stage and name the conditions that flip the answer.
 3. **Where AI leverage breaks down.** The reading claims audit/analysis is the highest-leverage row (5–8x) and strategic positioning is low-leverage (~2x). A founder argues that with frontier models in 2026 the positioning row will also become 5–8x within 18 months. Build the strongest case for that argument and the strongest case against. If they're right, how should you re-architect the AI Leverage column of your SKU catalog? If they're wrong, why is positioning structurally different?
 4. **The "12 SKU" temptation.** A Year-2 founder with one successful SKU at $4,500/mo is tempted to launch 8 more SKUs because every prospect call surfaces a different ask. Use the 1 SKU → 2 SKU → 3 SKU expansion logic to push back. Then construct the strongest case *for* expansion, under what specific signals (retention curve, deliverable overlap, sales-cycle data) would adding the second SKU actually be the right move at Year 2 rather than Year 3?

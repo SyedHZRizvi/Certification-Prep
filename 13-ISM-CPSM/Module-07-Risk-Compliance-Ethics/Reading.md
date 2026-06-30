@@ -105,7 +105,7 @@ CPSM expects you to know and apply each.
 | Supplier financial failure | Credit monitoring; reduce dependency; escrow; payment security; second source |
 | Single-source dependency | Develop dual source; design in interchangeability |
 | Quality | Audits; SQE engineers; SPC; first-article inspection; warranty |
-| Delivery | Safety stock; VMI (Vendor Managed Inventory); lead time buffers; carrier diversification |
+| Delivery | Safety stock; VMI; lead time buffers; carrier diversification |
 | Currency | Forward contracts; options; natural hedge; currency clause |
 | Commodity price | FP-EPA indexed contracts; hedging; forward buy; substitution |
 | Geopolitical | Country diversification; nearshoring; political-risk insurance |
@@ -259,7 +259,7 @@ Every CPSM professional is bound by ISM's ethical standards. Core obligations:
 
 **Situation.** In 2010, Foxconn's Longhua "iPhone City" facility in Shenzhen made global headlines after a cluster of worker suicides, 14 confirmed deaths by mid-2010 against a workforce of ~400,000. Foxconn was Apple's largest assembler; Apple was Foxconn's largest customer. The crisis exposed Apple's then-light supply-chain labor visibility (Apple's first Supplier Code of Conduct dated only to 2005, audits to 2006). What followed over the next 14 years became the most-watched supply-chain labor case in modern business, threading through multiple regulatory regimes.
 
-**Decision.** Apple, with Tim Cook taking over supply chain leadership (and later CEO (Chief Executive Officer) in 2011), executed a multi-decade response:
+**Decision.** Apple, with Tim Cook taking over supply chain leadership (and later CEO in 2011), executed a multi-decade response:
 
 1. **Supplier Responsibility Reports**, annual, public, with growing detail. By 2024, Apple was publishing audit findings on hundreds of suppliers including remediation plans.
 2. **Independent monitoring**, Fair Labor Association (FLA) brought in for Foxconn 2012 audit; findings included excessive working hours, underage workers in some facilities, unsafe conditions.
@@ -311,7 +311,7 @@ Note four exam-relevant patterns: (1) when an audit finds a labor violation, the
 1. **Identify** risks (workshops, supplier mapping, scenario planning)
 2. **Assess** probability × impact
 3. **Treat** (Avoid / Transfer / Mitigate / Accept)
-4. **Monitor** with KPIs (Key Performance Indicators), scorecards, external intel
+4. **Monitor** with KPIs, scorecards, external intel
 5. **Review** the register periodically and after every incident
 
 ---
@@ -357,7 +357,7 @@ Note four exam-relevant patterns: (1) when an audit finds a labor violation, the
 2. **Risk treatment economics revisited.** Module 7 says "accept" the risk when treatment cost exceeds expected loss. But low-probability/high-impact events (Black Swans) systematically violate expected-value math, Nassim Taleb's argument. Build the case that supply organizations should *over*-mitigate Black Swan supply-chain risks even when the textbook math says accept.
 3. **The single source you can't get rid of.** A category manager has a single-source supplier in a high-risk jurisdiction. Switching is genuinely impossible for 2-3 years. What's the BEST risk treatment when avoidance is not feasible, transfer is partial, and mitigation has hit a ceiling?
 4. **ISM ethics vs local practice.** ISM's code is absolute: decline gifts of significant value. Yet in some markets, refusing a customary gift is a serious offense. Defend a *policy* that resolves this tension at a global company, what would you write in the supplier code of conduct?
-5. **Scope 3 emissions as procurement's KPI (Key Performance Indicator).** For most companies, Scope 3 is 70-90% of total emissions. Defend the case that procurement should own Scope 3 reduction as its #1 KPI, OR defend the case that it should remain Sustainability's KPI with procurement as a contributor. Which would you push?
+5. **Scope 3 emissions as procurement's KPI.** For most companies, Scope 3 is 70-90% of total emissions. Defend the case that procurement should own Scope 3 reduction as its #1 KPI, OR defend the case that it should remain Sustainability's KPI with procurement as a contributor. Which would you push?
 
 ---
 

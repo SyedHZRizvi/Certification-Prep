@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-08-Social-Media-Animation/Cheat-Sheet/
+permalink: /35-Motion-Graphics-UI-Animation/Module-08-Social-Media-Animation/Cheat-Sheet/
 title: "Module 8 Cheat Sheet: Social Media Animation"
 ---
 
@@ -82,7 +82,7 @@ title: "Module 8 Cheat Sheet: Social Media Animation"
 ## Thumbnail A/B Test (YouTube)
 
 - Use YouTube Studio native A/B testing
-- Metric: Impression CTR (Click-Through Rate)
+- Metric: Impression CTR
 - What works: Faces > Text > Abstract
 - High contrast colors beat neutral
 - Question format titles increase curiosity clicks

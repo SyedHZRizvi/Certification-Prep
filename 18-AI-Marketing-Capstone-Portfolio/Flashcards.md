@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -300,7 +300,7 @@
 
 ---
 
-## 🔍 SECTION 2: SEO (Search Engine Optimization) + CONTENT AUDIT CAPSTONE
+## 🔍 SECTION 2: SEO + CONTENT AUDIT CAPSTONE
 
 **Q:** What are the 7 sections of a portfolio-grade SEO audit?
 **A:** (1) Executive Summary, (2) Keyword Opportunity, (3) Technical SEO Scan, (4) Content Gap Analysis, (5) Top-Page Audit, (6) 90-Day Content Roadmap, (7) Recommendations Summary.
@@ -340,10 +340,10 @@
 **A:** $150 (target $180–$220). Real money makes it real.
 
 **Q:** Minimum runtime?
-**A:** 14 consecutive days. Meta needs 7+ to learn; Google needs 10+ for stable CPL (Cost Per Lead).
+**A:** 14 consecutive days. Meta needs 7+ to learn; Google needs 10+ for stable CPL.
 
 **Q:** Default budget split for the $200 campaign?
-**A:** $100 Google + $100 Meta. Adjust based on subject (B2B (Business-to-Business) = more Google; DTC (Direct-to-Consumer) = more Meta).
+**A:** $100 Google + $100 Meta. Adjust based on subject (B2B = more Google; DTC = more Meta).
 
 **Q:** What's the 3-variant creative test pattern?
 **A:** Always launch with 3 creative variants per platform. Tests learning, not just delivery.
@@ -354,10 +354,10 @@
 **Q:** What's CPL?
 **A:** Cost Per Lead. Total spend / number of leads. Key efficiency metric.
 
-**Q:** What's CTR (Click-Through Rate)?
+**Q:** What's CTR?
 **A:** Click-Through Rate. Clicks / impressions. Healthy varies by channel (search 3-8%; social 0.8-2.5%).
 
-**Q:** What's ROAS (Return on Ad Spend)?
+**Q:** What's ROAS?
 **A:** Return on Ad Spend. Revenue / spend. 1.0 = break-even. 2.0 = $2 returned per $1 spent.
 
 **Q:** What's a Meta Lookalike Audience?
@@ -370,7 +370,7 @@
 **A:** Showing what didn't work is the highest-trust signal. Hiding failures reads as fake.
 
 **Q:** LinkedIn carousel slide count for the post-mortem?
-**A:** 6–10 slides. Cover → Challenge → Plan → Inflection → Results → What worked/didn't → Lessons → CTA (Call to Action).
+**A:** 6–10 slides. Cover → Challenge → Plan → Inflection → Results → What worked/didn't → Lessons → CTA.
 
 ---
 
@@ -383,7 +383,7 @@
 **A:** Make.com. Best visual UI + decent free tier.
 
 **Q:** What's the reference scenario for this capstone?
-**A:** Webhook → Enrichment → Scoring → Router (HOT/WARM/COLD) → channel-specific actions (Slack/Klaviyo/CRM (Customer Relationship Management)/Notion).
+**A:** Webhook → Enrichment → Scoring → Router (HOT/WARM/COLD) → channel-specific actions (Slack/Klaviyo/CRM/Notion).
 
 **Q:** What's the dev-signal alternative to Make.com?
 **A:** n8n (self-hosted). Shows you're comfortable in technical environments.
@@ -392,13 +392,13 @@
 **A:** A module that branches the workflow based on a condition. Equivalent to IF/switch in code.
 
 **Q:** What's a Webhook?
-**A:** A custom HTTP (Hypertext Transfer Protocol) endpoint that any service can POST to. Most flexible trigger type.
+**A:** A custom HTTP endpoint that any service can POST to. Most flexible trigger type.
 
 **Q:** What's an "operation" in Make.com?
 **A:** Each module execution = 1 operation. Make's billing unit.
 
 **Q:** Why include enrichment + scoring + routing as 3 separate layers?
-**A:** Shows architectural thinking. A single API (Application Programming Interface) call doesn't demonstrate systems design.
+**A:** Shows architectural thinking. A single API call doesn't demonstrate systems design.
 
 **Q:** What to remove before publishing JSON / blueprint?
 **A:** API keys, OAuth tokens, real customer/lead PII, real Slack workspace IDs, real email addresses.
@@ -451,13 +451,13 @@
 **A:** Multi-step orchestration, structured prompts, possibly tool use. Agent does multiple things autonomously; chat does one.
 
 **Q:** Default API recommendation?
-**A:** Claude API. Cleaner SDK (Software Development Kit) + strong structured output. OpenAI Assistants is a viable alt.
+**A:** Claude API. Cleaner SDK + strong structured output. OpenAI Assistants is a viable alt.
 
 **Q:** What's a system prompt?
 **A:** Instructions to the model about its role / format. Sent with `system` parameter; persists across user messages.
 
 **Q:** What's tool use / function calling?
-**A:** Letting an LLM (Large Language Model) call external functions during reasoning. Major signal upgrade vs single-call chat.
+**A:** Letting an LLM call external functions during reasoning. Major signal upgrade vs single-call chat.
 
 **Q:** What's the difference between Cursor and Continue.dev?
 **A:** Cursor is the polished paid editor ($20/mo). Continue.dev is free open-source. Both AI pair-programmers.

@@ -54,7 +54,7 @@ Adobe Animate includes a library of built-in ease presets accessible from the Pr
 | **Bounce** | Bounce In, Bounce Out, Bounce In-Out | Dropped objects, ball impacts |
 | **Elastic** | Elastic In, Elastic Out, Elastic In-Out | Springs, coils, antenna wobble |
 | **Sine** | Sine In, Sine Out, Sine In-Out | Gentle, organic character motion |
-| **Back** | Back In (slight overshoot at start), Back Out (overshoot at end) | Logo settle, UI (User Interface) elements |
+| **Back** | Back In (slight overshoot at start), Back Out (overshoot at end) | Logo settle, UI elements |
 
 For most character animation, the most-used presets are Ease In, Ease Out, and variations of Sine. Bounce and Elastic are useful for secondary elements (a bag swinging on a character's shoulder, a spring coiling) but should be used sparingly for primary character motion.
 

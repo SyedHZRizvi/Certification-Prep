@@ -9,7 +9,7 @@
 ```
 VPC /16
  ├── Public subnet  (route 0.0.0.0/0 → IGW)
- ├── Private subnet (route 0.0.0.0/0 → NAT (Network Address Translation) GW)
+ ├── Private subnet (route 0.0.0.0/0 → NAT GW)
  └── DB subnet      (no internet route at all)
 ```
 
@@ -23,7 +23,7 @@ CIDR: /16 max, /28 min. Use RFC1918 (`10/8`, `172.16/12`, `192.168/16`).
 |------|-----|
 | Outbound IPv4 internet | NAT Gateway (one per AZ for HA) |
 | Outbound IPv6 internet | Egress-Only IGW |
-| Outbound to S3 (Simple Storage Service)/DynamoDB | Gateway Endpoint (free!) |
+| Outbound to S3/DynamoDB | Gateway Endpoint (free!) |
 | Outbound to other AWS svcs | Interface Endpoint (PrivateLink) |
 
 🧠 **"NAT for general internet. Endpoints for AWS services."**
@@ -48,7 +48,7 @@ Your own service across VPCs? → PrivateLink (NLB-backed)
 | 5+ VPCs and/or on-prem | **Transit Gateway** |
 | Single-service cross-VPC | **PrivateLink** |
 | On-prem private fiber, lowest latency | **Direct Connect** |
-| On-prem over internet, quick to set up | **Site-to-Site VPN (Virtual Private Network)** |
+| On-prem over internet, quick to set up | **Site-to-Site VPN** |
 | Encrypt DX | **MACsec** or **VPN over DX** |
 | Remote employees laptops → VPC | **AWS Client VPN** |
 
@@ -114,7 +114,7 @@ Your own service across VPCs? → PrivateLink (NLB-backed)
 - ❌ Public subnet for database
 - ❌ Same NACL for all subnets ("one big NACL")
 - ❌ DX with no backup VPN
-- ❌ Open SSH (Secure Shell) (port 22) to 0.0.0.0/0
+- ❌ Open SSH (port 22) to 0.0.0.0/0
 - ❌ Using IGW route to reach S3 (use gateway endpoint)
 
 ---

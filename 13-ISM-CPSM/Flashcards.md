@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -338,7 +338,7 @@
 **Q:** Dual sourcing typically means?
 **A:** Two suppliers, often with primary/backup or 70/30 / 80/20 split for risk mitigation.
 
-**Q:** RFI vs RFP (Request for Proposal) vs RFQ (Request for Quotation)?
+**Q:** RFI vs RFP vs RFQ?
 **A:** RFI = learn about the market (capability). RFP = solve a complex/undefined need (best value). RFQ = get firm price on a defined spec.
 
 **Q:** When do reverse auctions work BEST?
@@ -419,7 +419,7 @@
 **A:** Quality, Cost, Delivery, Service (often + Innovation, ESG/sustainability, Risk).
 
 **Q:** When to invest in supplier development?
-**A:** Strategic supplier, fixable capability gap, motivated supplier, high switching cost, positive ROI (Return on Investment) on the investment.
+**A:** Strategic supplier, fixable capability gap, motivated supplier, high switching cost, positive ROI on the investment.
 
 **Q:** US recognized diverse-supplier categories?
 **A:** MBE, WBE, SDVOSB, VBE, LGBTQ-owned, DOBE, 8(a), HUBZone, SBE.
@@ -562,7 +562,7 @@
 **Q:** Conflict minerals (3TG)?
 **A:** Tin, Tungsten, Tantalum, Gold, covered by US Dodd-Frank §1502 reporting for SEC-listed companies.
 
-**Q:** RTO (Recovery Time Objective), RPO (Recovery Point Objective), MTD definitions?
+**Q:** RTO, RPO, MTD definitions?
 **A:** RTO = Recovery Time Objective (how fast we restore). RPO = Recovery Point Objective (acceptable data-loss window). MTD = Maximum Tolerable Downtime (business stops past this). Rule: MTD > RTO.
 
 **Q:** UK Modern Slavery Act 2015 threshold?
@@ -638,7 +638,7 @@
 **Q:** PERT three-point estimate formula?
 **A:** (Optimistic + 4 × Most likely + Pessimistic) / 6.
 
-**Q:** SMART KPI (Key Performance Indicator)?
+**Q:** SMART KPI?
 **A:** Specific, Measurable, Achievable, Relevant, Time-bound.
 
 **Q:** Spend Under Management (SUM)?

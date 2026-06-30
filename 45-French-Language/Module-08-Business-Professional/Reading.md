@@ -28,7 +28,7 @@ French corporate culture values precision, hierarchy, and formality. Knowing the
 | société (f.) | /sɔ.sje.te/ | company / firm | کمپنی |
 | siège social (m.) | /sjɛʒ sɔ.sjal/ | headquarters | مرکزی دفتر |
 | filiale (f.) | /fi.ljal/ | subsidiary | ذیلی کمپنی |
-| PDG (m.) | /pe.de.ʒe/ | CEO (Chief Executive Officer) (Président-Directeur Général) | سی ای او |
+| PDG (m.) | /pe.de.ʒe/ | CEO (Président-Directeur Général) | سی ای او |
 | directeur (m.) | /di.ʁɛk.tœʁ/ | director / manager | ڈائریکٹر |
 | cadre (m.) | /kadʁ/ | executive / manager | ایگزیکٹو |
 | employé(e) (m./f.) | /ɑ̃.plwa.je/ | employee | ملازم |

@@ -323,7 +323,7 @@ The player consciously registers "that hit felt great" without being able to ide
 
 > 🎯 **What the exam tests 9:** In Hades, what four gameplay messages does VFX color language communicate? (1) Threat red/orange, enemy attack windup; (2) Ability blue/purple, player ability activation; (3) Reward gold/green, pickups and healing; (4) Damage confirmation white flash + ability color, hit landed.
 
-> 🎯 **What the exam tests 10:** What is the "first read" principle in Bungie's Destiny 2 VFX design? A weapon's VFX must communicate what the weapon IS before the player reads any damage numbers or UI (User Interface). The muzzle flash, trail, and impact effect create an immediately recognizable weapon identity readable in peripheral vision.
+> 🎯 **What the exam tests 10:** What is the "first read" principle in Bungie's Destiny 2 VFX design? A weapon's VFX must communicate what the weapon IS before the player reads any damage numbers or UI. The muzzle flash, trail, and impact effect create an immediately recognizable weapon identity readable in peripheral vision.
 
 ---
 

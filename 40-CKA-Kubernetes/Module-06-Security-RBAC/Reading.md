@@ -1,4 +1,4 @@
-# Module 6: Security & RBAC (Role-Based Access Control)
+# Module 6: Security & RBAC
 
 > **CKA Domain:** Cluster Architecture, Installation & Configuration — 25% of exam weight
 >
@@ -8,14 +8,14 @@
 
 ## 1. The Three Gates: Authentication → Authorization → Admission Control
 
-Every request to the Kubernetes API (Application Programming Interface) server passes through three sequential checkpoints. Think of arriving at the hospital:
+Every request to the Kubernetes API server passes through three sequential checkpoints. Think of arriving at the hospital:
 
 1. **Authentication** — *"Who are you?"* The receptionist checks your government-issued ID. Kubernetes checks certificates, bearer tokens, OIDC tokens, or kubeconfig credentials.
-2. **Authorization** — *"Are you allowed in this area?"* Security checks whether your role permits what you are trying to do. Kubernetes uses RBAC (or ABAC (Attribute-Based Access Control), Node, Webhook modes; RBAC is the default and the one tested on the CKA).
+2. **Authorization** — *"Are you allowed in this area?"* Security checks whether your role permits what you are trying to do. Kubernetes uses RBAC (or ABAC, Node, Webhook modes; RBAC is the default and the one tested on the CKA).
 3. **Admission Control** — *"Does your request meet hospital policy?"* Admission controllers inspect (and optionally mutate) the request before it is persisted. Examples: `LimitRanger`, `ResourceQuota`, `PodSecurity`, custom webhook controllers.
 
 ```
-Client → [TLS (Transport Layer Security)] → kube-apiserver
+Client → [TLS] → kube-apiserver
                      │
               ┌──────▼──────┐
               │ Authn (Who?)│  ← certificates, tokens, OIDC
@@ -430,7 +430,7 @@ There are two types:
 
 **ValidatingWebhookConfiguration** — can *reject* or *allow* the request but cannot modify it (e.g., enforce naming conventions, block privileged containers).
 
-Webhooks call an HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure) endpoint you register. If the webhook server is unavailable and `failurePolicy: Fail` is set, the request is rejected. If `failurePolicy: Ignore`, the request is allowed through. This is a critical operational consideration.
+Webhooks call an HTTPS endpoint you register. If the webhook server is unavailable and `failurePolicy: Fail` is set, the request is rejected. If `failurePolicy: Ignore`, the request is allowed through. This is a critical operational consideration.
 
 ```yaml
 apiVersion: admissionregistration.k8s.io/v1

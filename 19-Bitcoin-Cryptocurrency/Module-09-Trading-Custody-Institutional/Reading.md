@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 4 (Wallets, Keys, Self-Custody)](../Module-04-Wallets-Keys-Self-Custody/Reading.md), single-sig vs multi-sig, hot/cold separation
 > - [Module 6 (Bitcoin Script & Programmability)](../Module-06-Bitcoin-Script-Programmability/Reading.md), P2WSH, Taproot, MuSig2
-> - [Module 8 (Regulatory & Compliance)](../Module-08-Regulatory-Compliance-Tax/Reading.md), Travel Rule, KYC (Know Your Customer), AML (Anti-Money Laundering) obligations
+> - [Module 8 (Regulatory & Compliance)](../Module-08-Regulatory-Compliance-Tax/Reading.md), Travel Rule, KYC, AML obligations
 
 ---
 
@@ -21,7 +21,7 @@ What happened next looked like a starting gun. By **mid-March 2024**, IBIT alone
 
 Behind the headline AUM number, something quieter but more important happened: **Bitcoin became a workflow.** Compliance teams at pension funds, RIAs, family offices, and corporate treasuries no longer had to negotiate around "is this even an investible asset class?" They had a 13F-reportable, tax-clean, custody-insured ticker on NYSE. The question shifted from *whether* to *how much*.
 
-The bridge that made that shift possible is **institutional custody**. Coinbase Custody (the qualified custodian behind 8 of the 11 ETFs), BitGo, Anchorage, Fidelity Digital Assets, and a small ecosystem of MPC/multi-sig vendors had spent the prior 6-8 years building cold-storage, multi-sig, geographically-distributed, audited, SOC (Security Operations Center) 2 / CCSS-certified infrastructure precisely for this moment. The ETF approval was the catalyst; the custody stack was the gunpowder.
+The bridge that made that shift possible is **institutional custody**. Coinbase Custody (the qualified custodian behind 8 of the 11 ETFs), BitGo, Anchorage, Fidelity Digital Assets, and a small ecosystem of MPC/multi-sig vendors had spent the prior 6-8 years building cold-storage, multi-sig, geographically-distributed, audited, SOC 2 / CCSS-certified infrastructure precisely for this moment. The ETF approval was the catalyst; the custody stack was the gunpowder.
 
 This module unpacks the full machine: exchange architecture, custody hierarchies, market structure, on-chain analysis, and the regulatory plumbing that connects institutional capital to a permissionless network.
 
@@ -156,7 +156,7 @@ The **CryptoCurrency Security Standard (CCSS)**, published by the **CryptoCurren
 
 ## 💼 Case Study, BlackRock's iShares Bitcoin Trust (IBIT) Launch (January 11, 2024)
 
-**Situation.** In June 2023, BlackRock the world's largest asset manager at $9 trillion AUM filed an S-1 to launch a spot Bitcoin ETF. The filing was met with skepticism. BlackRock CEO (Chief Executive Officer) Larry Fink had called Bitcoin "an index of money laundering" in 2017. The SEC had rejected every spot Bitcoin ETF application for ten consecutive years. And Grayscale's $20B GBTC Trust the dominant institutional vehicle was trading at a 50%+ discount to NAV, suggesting deep market dysfunction.
+**Situation.** In June 2023, BlackRock the world's largest asset manager at $9 trillion AUM filed an S-1 to launch a spot Bitcoin ETF. The filing was met with skepticism. BlackRock CEO Larry Fink had called Bitcoin "an index of money laundering" in 2017. The SEC had rejected every spot Bitcoin ETF application for ten consecutive years. And Grayscale's $20B GBTC Trust the dominant institutional vehicle was trading at a 50%+ discount to NAV, suggesting deep market dysfunction.
 
 Three things were different in 2023. First, the August 2023 D.C. Circuit ruling in *Grayscale v. SEC* found the SEC's denial reasoning "arbitrary and capricious." Second, BlackRock had a 575-1 record on prior ETF approvals (Bloomberg, 2023) and named Coinbase Custody as custodian, a regulated NYDFS trust company. Third, Fidelity, ARK/21Shares, Bitwise, Invesco, Valkyrie, VanEck, WisdomTree, Hashdex, Franklin Templeton, and Grayscale all filed competing S-1s, presenting the SEC with a fait accompli.
 
@@ -253,7 +253,7 @@ A modern Bitcoin market has four classes of participants whose interactions dete
 | **Arbitrageurs** | Trade price discrepancies across venues / products | Seconds to hours |
 | **Institutional asset managers** | Build / rebalance long-term positions via OTC + ETFs | Months to years |
 
-**Market makers** are typically paid via **maker rebates**, exchanges pay them a small rebate (e.g., -0.01%) for posting limit orders that add liquidity (the "maker" side), while charging fees (0.02-0.10%) to traders who take liquidity (the "taker" side). The net rebate is how MMs earn their P&L (Profit and Loss); if they get filled, they immediately hedge into another venue.
+**Market makers** are typically paid via **maker rebates**, exchanges pay them a small rebate (e.g., -0.01%) for posting limit orders that add liquidity (the "maker" side), while charging fees (0.02-0.10%) to traders who take liquidity (the "taker" side). The net rebate is how MMs earn their P&L; if they get filled, they immediately hedge into another venue.
 
 **Arbitrageurs** keep prices coherent across venues. The classic CME-vs-Binance arbitrage: when CME BTC futures trade $200 above Binance spot, arbs short CME / long Binance until prices converge. This is also how spot ETF "creation/redemption" arbitrage keeps IBIT NAV pegged to spot Bitcoin.
 
@@ -341,7 +341,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 10 zooms out to the broader blockchain ecosystem (Ethereum, rollups, DeFi, stablecoins), most of which depends on institutional custody primitives covered here. The Capstone Project requires an end-to-end custody architecture you must defend.
-> - Cross-course: `04-AWS (Amazon Web Services)-Solutions-Architect-Associate` Module-09 (Security & Identity) overlaps on HSM design; `09-CompTIA-Security-Plus` Module-08 (Cryptographic Solutions) overlaps on threshold cryptography.
+> - Cross-course: `04-AWS-Solutions-Architect-Associate` Module-09 (Security & Identity) overlaps on HSM design; `09-CompTIA-Security-Plus` Module-08 (Cryptographic Solutions) overlaps on threshold cryptography.
 > - Practice: Practice Exam 2 has 6-8 questions on custody, ETFs, and on-chain analytics. Final Mock has scenario questions on architecting custody for an institutional client.
 
 ---
@@ -349,7 +349,7 @@ You now know:
 ## 💬 Discussion, Socratic prompts
 
 1. **The custodian-concentration problem.** Eight of eleven U.S. spot Bitcoin ETFs use Coinbase Custody. From a systemic-risk standpoint, this is more concentrated than the equity-ETF custodian landscape (where BNY Mellon, State Street, and JPM split flow). Build the strongest case that this is acceptable AND the strongest case that the SEC should have demanded custodian diversity as a condition of approval. Which would you defend?
-2. **MPC vs multi-sig for a $500M corporate treasury.** A CFO (Chief Financial Officer) asks you to choose between (a) BitGo MPC with 3-of-5 employee approvals, or (b) Casa multi-sig with 3-of-5 hardware wallets distributed across executives + a recovery key with a lawyer. List the failure modes for each. What's the org-design implication of choosing one over the other?
+2. **MPC vs multi-sig for a $500M corporate treasury.** A CFO asks you to choose between (a) BitGo MPC with 3-of-5 employee approvals, or (b) Casa multi-sig with 3-of-5 hardware wallets distributed across executives + a recovery key with a lawyer. List the failure modes for each. What's the org-design implication of choosing one over the other?
 3. **The "qualified custodian" debate.** Some argue self-custody (with hardware wallets + multi-sig) should be treated as a qualified-custodian-equivalent for institutional purposes. The SEC's 2023 proposed Custody Rule expansion would have prohibited that. Construct the principled argument on each side. Which is right for a $10M family office, and which for a $10B pension fund?
 4. **On-chain analysis and information asymmetry.** Glassnode sells institutional-tier analytics for $30K-150K/year. The same data is technically public (it's on-chain). Is the inequality of access to high-quality interpretation a feature or a problem of Bitcoin's "permissionless" design? How does this compare to traditional equity-research subscriptions?
 5. **The "ETF is not Bitcoin" argument.** Pierre Rochard and others have argued that IBIT defeats the point of Bitcoin: you don't have keys, you don't have sovereignty, you can be censored. Counter: ETFs onboard a different set of users at a different scale, complementing (not replacing) self-custody. Which framing is right? Is there a scenario where the ETF wrappers become a vulnerability for the network itself?

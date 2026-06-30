@@ -80,7 +80,7 @@
 
 ---
 
-## 🔌 Minimum Viable API (Application Programming Interface) Calls
+## 🔌 Minimum Viable API Calls
 
 ```python
 # Anthropic

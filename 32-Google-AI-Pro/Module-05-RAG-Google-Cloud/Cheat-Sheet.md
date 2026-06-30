@@ -1,4 +1,4 @@
-# 📋 Module 5 Cheat Sheet: RAG (Retrieval-Augmented Generation) on Google Cloud
+# 📋 Module 5 Cheat Sheet: RAG on Google Cloud
 
 > Five RAG stacks. Pick by workload. Memorize the decision tree.
 
@@ -134,7 +134,7 @@ Re-indexed weekly to monthly per region.
 
 ## ✏️ Quick Self-Check
 
-1. Five GCP (Google Cloud Platform) RAG stacks? ___
+1. Five GCP RAG stacks? ___
 2. Vertex AI Search vs Vector Search? ___
 3. Google's multilingual embedder name? ___
 4. Two grounding modes? ___

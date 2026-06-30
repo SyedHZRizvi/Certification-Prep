@@ -64,8 +64,8 @@ Layer 7: Application      → Did the user click the right thing?
 Layer 6: Presentation     → Cert / encryption issue?
 Layer 5: Session          → Login / session expired?
 Layer 4: Transport        → Port blocked? Firewall?
-Layer 3: Network          → IP / routing / DNS (Domain Name System) / gateway?
-Layer 2: Data Link        → Switch port up? VLAN (Virtual Local Area Network) right? MAC right?
+Layer 3: Network          → IP / routing / DNS / gateway?
+Layer 2: Data Link        → Switch port up? VLAN right? MAC right?
 Layer 1: Physical         → Cable plugged in? Link light?
 ```
 
@@ -159,12 +159,12 @@ Walk down the OSI stack:
 
 | Symptom | Likely cause |
 |---------|--------------|
-| `ipconfig` shows 169.254.x.x | APIPA, DHCP (Dynamic Host Configuration Protocol) failed (check cable, router, DHCP server) |
+| `ipconfig` shows 169.254.x.x | APIPA, DHCP failed (check cable, router, DHCP server) |
 | `ping 8.8.8.8` works; `ping google.com` fails | DNS broken |
 | `ping gateway` works; `ping 8.8.8.8` fails | Internet down upstream / gateway has no internet |
 | Intermittent dropouts on wireless | Interference, weak signal, AP overloaded |
 | Slow on wired only | Negotiated speed (gigabit dropped to 100 Mbps, cable issue) |
-| Connection drops every few minutes | DHCP lease, AP roaming, ISP (Internet Service Provider) issue |
+| Connection drops every few minutes | DHCP lease, AP roaming, ISP issue |
 | Specific website only fails | DNS, HOSTS file, browser issue |
 | All wireless devices dropped | Restart AP/router |
 
@@ -178,14 +178,14 @@ Walk down the OSI stack:
 | 5 GHz devices won't see SSID | 5 GHz weaker through walls; try 2.4 GHz SSID instead |
 | Newer 6E/7 device can't see 6 GHz SSID | Country-code / regional regulation, AP firmware |
 
-### CLI (Command Line Interface) tools (Windows)
+### CLI tools (Windows)
 
 | Tool | Use |
 |------|-----|
 | `ipconfig /all` | Full NIC info |
 | `ipconfig /release` then `/renew` | Force new DHCP lease |
 | `ipconfig /flushdns` | Clear DNS cache (after fixing a DNS issue) |
-| `ping host` | ICMP (Internet Control Message Protocol) reachability |
+| `ping host` | ICMP reachability |
 | `tracert host` | Hops to a destination |
 | `pathping host` | tracert + per-hop loss measurement |
 | `nslookup host` | DNS lookup |
@@ -274,7 +274,7 @@ Walk down the OSI stack:
 | "RAID can replace backup" | NO. RAID survives hardware failure; backup survives ransomware, fire, mistake. |
 | "Always replace the failed RAID disk immediately, all at once" | Replace one at a time; let rebuild complete before pulling the next. |
 | "Beep codes are universal" | They differ by BIOS vendor. Consult the manual. |
-| "If you can ping the gateway, internet works" | No, only L3 to gateway. ISP / WAN (Wide Area Network) could still be down. |
+| "If you can ping the gateway, internet works" | No, only L3 to gateway. ISP / WAN could still be down. |
 | "Reformatting is a quick fix for slow PCs" | Rarely the right first step. Profile the bottleneck first. |
 
 ---
@@ -331,7 +331,7 @@ Walk down the OSI stack:
 **Discussion (Socratic).**
 - **Q1:** Modern data centers increasingly use RAID 60 (dual-parity over multiple stripe sets). Map the math: why is RAID 60 attractive for a 24-disk system?
 - **Q2:** A small business has a 4-disk NAS in RAID 5 with 4 TB drives. Should they migrate to RAID 6 (using the same disks, losing 4 TB capacity)? Argue for and against.
-- **Q3:** The firm in this case study restored from a nightly backup. They lost 5.5 hours. What RPO (Recovery Point Objective) target would have prevented the trading loss, and what technologies would meet that RPO?
+- **Q3:** The firm in this case study restored from a nightly backup. They lost 5.5 hours. What RPO target would have prevented the trading loss, and what technologies would meet that RPO?
 
 ---
 

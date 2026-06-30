@@ -1,8 +1,8 @@
-# Module 12: SEO (Search Engine Optimization) & Content Marketing — Organic Authority Building
+# Module 12: SEO & Content Marketing — Organic Authority Building
 
 ## The Dutch Software Company That Rewrote the Rules
 
-In January 2023, a B2B (Business-to-Business) software company headquartered in Amsterdam faced a familiar problem: they were spending €180,000 per year on Google Ads, their cost-per-lead had climbed to €420, and the sales team kept grumbling that paid traffic converted at half the rate of "people who found us themselves." Their CMO (Chief Marketing Officer), Eva Brouwer, set a goal that her board considered reckless: cut the paid budget by 60% within twelve months and replace that revenue pipeline with organic search.
+In January 2023, a B2B software company headquartered in Amsterdam faced a familiar problem: they were spending €180,000 per year on Google Ads, their cost-per-lead had climbed to €420, and the sales team kept grumbling that paid traffic converted at half the rate of "people who found us themselves." Their CMO, Eva Brouwer, set a goal that her board considered reckless: cut the paid budget by 60% within twelve months and replace that revenue pipeline with organic search.
 
 Twelve months later, organic traffic was up 340%. Paid spend was down to €72,000. And cost-per-lead from organic had settled at €38 — roughly one-eleventh of what paid had cost.
 
@@ -20,7 +20,7 @@ A more useful definition: **SEO is the discipline of aligning your content and t
 
 Google processes approximately 8.5 billion searches per day globally. Of those, roughly 63% originate from mobile devices. In the United States, 68% of all online experiences begin with a search engine (BrightEdge, 2024). In Germany, that figure is 73%; in the Netherlands, 71%.
 
-What makes organic traffic valuable isn't just volume — it's intent. A person who types "best CRM (Customer Relationship Management) software for manufacturing companies" into Google is further along the buying journey than someone who scrolls past your LinkedIn ad. Organic search captures people in active research mode.
+What makes organic traffic valuable isn't just volume — it's intent. A person who types "best CRM software for manufacturing companies" into Google is further along the buying journey than someone who scrolls past your LinkedIn ad. Organic search captures people in active research mode.
 
 ### The Three Pillars of Modern SEO
 
@@ -48,9 +48,9 @@ Google classifies search intent into four categories. Every keyword you target s
 
 **Commercial investigation:** The searcher is evaluating options before buying. ("Best SEO tools for agencies," "Ahrefs vs Semrush.") High conversion potential — these people are close to a decision.
 
-**Transactional:** The searcher is ready to buy, sign up, or download. ("Buy Semrush Pro," "Start HubSpot free trial.") Highest conversion rate, highest competition, highest CPC (Cost Per Click) in paid.
+**Transactional:** The searcher is ready to buy, sign up, or download. ("Buy Semrush Pro," "Start HubSpot free trial.") Highest conversion rate, highest competition, highest CPC in paid.
 
-Eva's team at the Amsterdam software company did something clever: they tagged every keyword in their database with intent *and* buyer stage. A keyword like "what is contract lifecycle management software" is informational but also early-stage awareness. A keyword like "CLM software for procurement teams pricing" is commercial investigation at late stage. Different content, different CTA (Call to Action), different success metrics.
+Eva's team at the Amsterdam software company did something clever: they tagged every keyword in their database with intent *and* buyer stage. A keyword like "what is contract lifecycle management software" is informational but also early-stage awareness. A keyword like "CLM software for procurement teams pricing" is commercial investigation at late stage. Different content, different CTA, different success metrics.
 
 ### Tool Comparison: Ahrefs vs. Semrush vs. Google Keyword Planner
 
@@ -61,7 +61,7 @@ Eva's team at the Amsterdam software company did something clever: they tagged e
 | Search volume accuracy | High (clickstream data) | High (clickstream data) | Moderate (ranges) |
 | Keyword difficulty score | 0-100, domain-based | 0-100, page-based | Low/Medium/High only |
 | Competitor keyword gap | Yes (Site Explorer) | Yes (Gap analysis) | No |
-| SERP (Search Engine Results Page) feature tracking | Yes (full) | Yes (full) | Limited |
+| SERP feature tracking | Yes (full) | Yes (full) | Limited |
 | Free tier | Limited (via Ahrefs Webmaster Tools) | Limited (via Semrush Free) | Yes (Google Ads account required) |
 | Best for | Backlink analysis + content gaps | Full-suite + reporting | Budget estimation |
 | Monthly cost (2025) | From $129 (Lite) | From $139.95 (Pro) | Free |
@@ -80,7 +80,7 @@ For businesses operating in Europe, both Ahrefs and Semrush provide strong data 
 
 5. **Prioritize by business value:** High-intent keywords targeting buyers are worth 5-10x more than informational keywords, even if search volume is lower.
 
-6. **Check SERP features:** Does the SERP for this keyword show a Featured Snippet? A People Also Ask box? An AI Overview? This affects the realistic CTR (Click-Through Rate) you can expect.
+6. **Check SERP features:** Does the SERP for this keyword show a Featured Snippet? A People Also Ask box? An AI Overview? This affects the realistic CTR you can expect.
 
 ---
 
@@ -144,7 +144,7 @@ Google officially uses Core Web Vitals (CWV) as a ranking signal. CWV measures r
 | Interaction to Next Paint (INP) | How responsive the page feels to clicks | ≤ 200 ms | > 500 ms |
 | Cumulative Layout Shift (CLS) | How much the page jumps around during load | ≤ 0.1 | > 0.25 |
 
-LCP is typically the hardest to fix. Common causes of slow LCP: unoptimized hero images, render-blocking JavaScript, slow server response times (TTFB), and lack of CDN (Content Delivery Network). In Europe, CDN selection matters significantly — a site hosted only in US data centers will have noticeably higher TTFB for users in Warsaw or Stockholm.
+LCP is typically the hardest to fix. Common causes of slow LCP: unoptimized hero images, render-blocking JavaScript, slow server response times (TTFB), and lack of CDN. In Europe, CDN selection matters significantly — a site hosted only in US data centers will have noticeably higher TTFB for users in Warsaw or Stockholm.
 
 INP replaced FID (First Input Delay) as the official CWV metric in March 2024. INP measures responsiveness across *all* interactions, not just the first one. Heavy JavaScript frameworks and bloated third-party scripts are the primary culprits.
 
@@ -158,7 +158,7 @@ If Google can't crawl your page, it can't rank it. Key areas:
 
 **XML Sitemap:** A map of your important pages, submitted to Google Search Console. Should include all canonical, indexable URLs. Should *not* include paginated pages, duplicate content, or noindex pages.
 
-**Canonical Tags:** When the same content appears at multiple URLs (common with e-commerce filters, URL parameters, HTTPS (HTTP Secure)/HTTP (Hypertext Transfer Protocol) variations), use `<link rel="canonical" href="[preferred URL]">` to tell Google which version to index.
+**Canonical Tags:** When the same content appears at multiple URLs (common with e-commerce filters, URL parameters, HTTPS/HTTP variations), use `<link rel="canonical" href="[preferred URL]">` to tell Google which version to index.
 
 **noindex tags:** Use `<meta name="robots" content="noindex">` on pages you don't want in the index — thank-you pages, admin areas, duplicate filtered pages. Don't noindex pages you want to rank.
 
@@ -172,7 +172,7 @@ Structured data is code you add to your pages (in JSON-LD format, typically) tha
 - **Product schema** → price, availability, and ratings appear in shopping results
 - **Organization/LocalBusiness schema** → powers the Knowledge Panel
 
-For B2B content marketing, FAQ and HowTo schema deliver the best ROI (Return on Investment). The Amsterdam company added FAQ schema to 23 of their highest-traffic pages and saw average CTR increase by 18% within 60 days — without any change in rankings.
+For B2B content marketing, FAQ and HowTo schema deliver the best ROI. The Amsterdam company added FAQ schema to 23 of their highest-traffic pages and saw average CTR increase by 18% within 60 days — without any change in rankings.
 
 ---
 
@@ -204,7 +204,7 @@ In 2022, Google added an extra E to its quality evaluator guidelines. **E-E-A-T*
 
 **Trustworthiness:** Is the site honest, transparent, and safe? This includes clear authorship, accurate contact information, privacy policy, secure HTTPS, and accurate content.
 
-For European businesses, GDPR (General Data Protection Regulation) compliance is part of Trustworthiness. A site with a compliant cookie consent mechanism and clear privacy policy signals to both Google and users that you take data protection seriously.
+For European businesses, GDPR compliance is part of Trustworthiness. A site with a compliant cookie consent mechanism and clear privacy policy signals to both Google and users that you take data protection seriously.
 
 ---
 
@@ -333,7 +333,7 @@ Organic SEO is a long-term investment. Most meaningful results appear in months 
 **Conversion (lagging indicator):**
 - Organic-sourced leads / signups / purchases
 - Cost per organic lead
-- Revenue attributed to organic traffic (requires proper GA4 (Google Analytics 4) attribution setup)
+- Revenue attributed to organic traffic (requires proper GA4 attribution setup)
 
 **Authority (long-term indicator):**
 - Domain Rating (Ahrefs) or Authority Score (Semrush) growth

@@ -2,7 +2,7 @@
 
 > **Why this module matters:** Social media is no longer optional — it is the primary discovery engine for brands across every demographic. Mastering platform selection, algorithm mechanics, and content planning separates brands that grow organically from those that burn budget chasing reach they could have earned for free.
 
-> **Prerequisites:** Module 01 (Digital Marketing Strategy Fundamentals) — you should understand marketing funnels, audience segmentation, and basic KPI (Key Performance Indicator) measurement before diving into platform-specific tactics.
+> **Prerequisites:** Module 01 (Digital Marketing Strategy Fundamentals) — you should understand marketing funnels, audience segmentation, and basic KPI measurement before diving into platform-specific tactics.
 
 ---
 
@@ -63,8 +63,8 @@ A platform only works if you score at least 2/3. If your audience is there but y
 | **TikTok** | 18–34 (rapidly broadening) | Brand discovery, entertainment | Short video (7–60s optimal) | Interest graph | High (new accounts discoverable) |
 | **Instagram** | 18–44 | Brand consideration, shopping | Reels, Stories, static | Social + interest hybrid | Low–medium (2–6% typical) |
 | **Facebook** | 35–65+ | Community, local, retargeting | Video, groups, events | Social graph (EdgeRank evolved) | Very low (1–4% typical) |
-| **LinkedIn** | 25–55 professionals | B2B (Business-to-Business) lead gen, thought leadership | Text posts, articles, video | Engagement + dwell time | Medium (creator mode helps) |
-| **YouTube** | All ages | Education, entertainment, product research | Long-form video, Shorts | Search + recommendation | Medium–high (SEO (Search Engine Optimization)-driven) |
+| **LinkedIn** | 25–55 professionals | B2B lead gen, thought leadership | Text posts, articles, video | Engagement + dwell time | Medium (creator mode helps) |
+| **YouTube** | All ages | Education, entertainment, product research | Long-form video, Shorts | Search + recommendation | Medium–high (SEO-driven) |
 | **Pinterest** | 25–50, female-skew | Discovery, inspiration, shopping | Static, idea pins | Semantic search + saves | Medium–high (evergreen) |
 | **X (Twitter)** | 25–45 | Real-time, news, niche communities | Text, threads, images | Recency + engagement | Low–medium |
 | **Snapchat** | 13–25 | Entertainment, ephemeral | Stories, spotlight | Friend-first + discovery | Medium (Spotlight = TikTok-like) |
@@ -73,7 +73,7 @@ A platform only works if you score at least 2/3. If your audience is there but y
 
 | Market | Key Distinction |
 |---|---|
-| **UK** | LinkedIn adoption higher for B2C (Business-to-Consumer) than in US; Facebook Groups still very active for local commerce |
+| **UK** | LinkedIn adoption higher for B2C than in US; Facebook Groups still very active for local commerce |
 | **Germany** | XING competes with LinkedIn for professional networking; WhatsApp Business critical for direct commerce |
 | **France** | Instagram dominates youth marketing; Snapchat has unusually high adult penetration vs other EU markets |
 | **Netherlands** | LinkedIn penetration among highest globally (>50% of working population); Twitter/X still relevant for news |
@@ -84,11 +84,11 @@ A platform only works if you score at least 2/3. If your audience is there but y
 > **Common Trap #1:** B2B company launches TikTok because it's trending.
 > Decision makers aged 45+ are on LinkedIn. Dancing mascots will not generate enterprise leads. Spend that energy on LinkedIn Articles.
 
-> **Common Trap #2:** DTC (Direct-to-Consumer) fashion brand invests only in Facebook.
+> **Common Trap #2:** DTC fashion brand invests only in Facebook.
 > Fashion discovery has migrated to Instagram Reels and TikTok. Facebook still converts older demographics but discovery is dead there.
 
 > **Common Trap #3:** Local restaurant tries to build a YouTube channel.
-> YouTube requires serious production investment and long-form content. For local discovery, Google Business Profile + Instagram Stories + TikTok delivers far better ROI (Return on Investment).
+> YouTube requires serious production investment and long-form content. For local discovery, Google Business Profile + Instagram Stories + TikTok delivers far better ROI.
 
 ---
 
@@ -112,7 +112,7 @@ Facebook's algorithm has evolved dramatically since the original EdgeRank formul
 - **Comments (especially back-and-forth threads)** — A 10-comment thread beats 100 likes
 - **"Meaningful interactions"** — Interactions between friends and family outrank brand-to-user interactions
 
-**GDPR (General Data Protection Regulation) Note (EU/UK):** Facebook's interest-based targeting and cross-site tracking data use has been constrained by GDPR enforcement since 2018. Meta has faced fines exceeding €1.2 billion (2023 record fine from the Irish DPC). For European campaigns, ensure your consent management platform (CMP) is compliant before running any Facebook tracking pixels.
+**GDPR Note (EU/UK):** Facebook's interest-based targeting and cross-site tracking data use has been constrained by GDPR enforcement since 2018. Meta has faced fines exceeding €1.2 billion (2023 record fine from the Irish DPC). For European campaigns, ensure your consent management platform (CMP) is compliant before running any Facebook tracking pixels.
 
 ### Instagram: The Reels Boost
 
@@ -161,9 +161,9 @@ LinkedIn's algorithm heavily weights **dwell time** — how long a user pauses o
 - Document/carousel posts (PDFs uploaded natively) have some of the highest organic reach on the platform
 - Polls drive comment velocity without requiring high production effort
 
-**LinkedIn Creator Mode:** Enabling Creator Mode switches your profile from "Connect" to "Follow" as the default CTA (Call to Action). This allows building large audiences without needing mutual connections. Combined with the Top Voice / Collaborative Articles program, it dramatically expands reach for thought leaders.
+**LinkedIn Creator Mode:** Enabling Creator Mode switches your profile from "Connect" to "Follow" as the default CTA. This allows building large audiences without needing mutual connections. Combined with the Top Voice / Collaborative Articles program, it dramatically expands reach for thought leaders.
 
-**B2B Algorithm Truth:** LinkedIn's algorithm still heavily rewards **human posts over company page posts**. Your CEO (Chief Executive Officer)'s personal post will outperform the company page post 5:1 on average (industry estimate). This is why LinkedIn strategy for B2B almost always involves activating employee advocacy.
+**B2B Algorithm Truth:** LinkedIn's algorithm still heavily rewards **human posts over company page posts**. Your CEO's personal post will outperform the company page post 5:1 on average (industry estimate). This is why LinkedIn strategy for B2B almost always involves activating employee advocacy.
 
 ---
 
@@ -180,7 +180,7 @@ Content pillars are the 3–5 recurring themes that define your brand's social m
 
 **The 5-Pillar Model (adapt to your brand):**
 
-| Pillar | Purpose | Example (for a B2B SaaS (Software as a Service)) | Algorithm Signal |
+| Pillar | Purpose | Example (for a B2B SaaS) | Algorithm Signal |
 |---|---|---|---|
 | **Educational** | Build authority, capture search interest | "3 things most marketing teams get wrong about attribution" | Saves, shares |
 | **Inspirational** | Emotional connection, shareability | Customer success stories, before/after | Shares, comments |
@@ -323,7 +323,7 @@ Influencer marketing is now a $21 billion+ industry globally (industry estimate,
 
 **Measurement Framework for Influencer Campaigns:**
 
-1. **Awareness metrics:** Reach, impressions, CPM (Cost Per Mille) (compare to your paid media benchmarks)
+1. **Awareness metrics:** Reach, impressions, CPM (compare to your paid media benchmarks)
 2. **Engagement metrics:** Engagement rate, comments quality (are they discussing the product?)
 3. **Traffic metrics:** UTM-tagged clicks to landing page, session quality
 4. **Conversion metrics:** Promo code redemptions, affiliate link clicks, direct attribution
@@ -353,7 +353,7 @@ Social listening is the practice of monitoring brand mentions, competitor activi
 
 Social commerce — the ability to discover and purchase products without leaving a social platform — is the fastest-growing segment of e-commerce.
 
-**Global social commerce GMV (Gross Merchandise Value) (industry estimates):**
+**Global social commerce GMV (industry estimates):**
 - 2022: ~$724 billion (primarily China-driven via WeChat/Douyin)
 - 2024: ~$1.1 trillion globally
 - North America 2024: ~$67 billion

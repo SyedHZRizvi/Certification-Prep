@@ -10,7 +10,7 @@
 |------|-----|
 | Hybrid Entra Join (device writeback) | **Entra Connect Sync** |
 | PTA, Federation, complex attribute rules | **Entra Connect Sync** |
-| Multi-disconnected-forest M&A (Mergers and Acquisitions) scenario | **Entra Cloud Sync** |
+| Multi-disconnected-forest M&A scenario | **Entra Cloud Sync** |
 | Lightweight HA on 2+ servers without SQL | **Entra Cloud Sync** |
 | Pure cloud-first PHS deployment | **Entra Cloud Sync** |
 
@@ -24,13 +24,13 @@
 |--------|-------------------------------|----------|-------|
 | **PHS** ⭐ | None | New tenants, simplicity | Microsoft's recommended default |
 | **PTA** | PTA Agents (need 3 min) | "Password never leaves on-prem" requirement | Outbound 443 only |
-| **Federation (AD (Active Directory) FS)** | AD FS farm + WAP | Custom MFA (Multi-Factor Authentication), third-party IdP | Being deprecated, migrate off |
+| **Federation (AD FS)** | AD FS farm + WAP | Custom MFA, third-party IdP | Being deprecated, migrate off |
 
 🔥 PHS and PTA **can coexist**, PHS as fallback for PTA agent outages.
 
 ---
 
-## 🚪 Seamless SSO (Single Sign-On) (SSSO)
+## 🚪 Seamless SSO (SSSO)
 
 - Works with **PHS or PTA** (NOT federation)
 - Backed by `AZUREADSSOACC$` computer account
@@ -67,7 +67,7 @@ FIDO2 / Windows Hello / Passkeys  >  Authenticator push + number match  >  CBA  
 
 | Property | AD DS | Entra DS | Entra ID |
 |----------|-------|----------|----------|
-| Protocols | LDAP (Lightweight Directory Access Protocol), Kerberos, NTLM | LDAP, Kerberos, NTLM | OAuth, OIDC, SAML |
+| Protocols | LDAP, Kerberos, NTLM | LDAP, Kerberos, NTLM | OAuth, OIDC, SAML |
 | DCs you manage | Yes | No (Microsoft) | None |
 | Schema editable | Yes | No | No |
 | Group Policy | Yes | Limited | No |
@@ -75,7 +75,7 @@ FIDO2 / Windows Hello / Passkeys  >  Authenticator push + number match  >  CBA  
 
 ---
 
-## 🌐 Cross-Tenant Access Settings (replaces legacy B2B (Business-to-Business))
+## 🌐 Cross-Tenant Access Settings (replaces legacy B2B)
 
 - **Inbound**, what other tenants can do in yours
 - **Outbound**, what yours can do in theirs
@@ -98,7 +98,7 @@ Usually **wrong**:
 
 - ❌ "Use Cloud Sync for Hybrid Entra Join"
 - ❌ "PHS sends the plaintext password"
-- ❌ "Federation is the best UX (User Experience)"
+- ❌ "Federation is the best UX"
 - ❌ "Entra Joined and Hybrid Entra Joined are the same"
 - ❌ "Entra DS replaces Entra Connect"
 
@@ -141,4 +141,4 @@ Usually **wrong**:
 
 ---
 
-➡️ [Module 3: Networking, DNS (Domain Name System) & DHCP (Dynamic Host Configuration Protocol)](../Module-03-Networking-DNS/Reading.md)
+➡️ [Module 3: Networking, DNS & DHCP](../Module-03-Networking-DNS/Reading.md)

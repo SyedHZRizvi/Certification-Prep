@@ -86,7 +86,7 @@ Ingestion cost (with full-doc caching): **~$1.02 per million tokens**.
 For every claim, cite [chunk_id]. If not in chunks, say so.
 ```
 
-### Native Citations API (Application Programming Interface)
+### Native Citations API
 
 ```python
 messages=[{

@@ -1,6 +1,6 @@
 # Module 6: Server Security & Hardening 🔒
 
-> **Why this module matters:** Security and DR together carry ~24% of SK0-005. Module 5 covered DR; this one covers the *prevention* side. You'll learn the **physical** controls that keep someone from walking out with a server, the **firmware** controls (Secure Boot, UEFI passwords) that keep the boot path trustworthy, the **access** controls (RBAC (Role-Based Access Control), service accounts with least privilege) that keep credentials small and revocable, and the **operational** controls (patch management, CIS baselines, HIDS/HIPS) that keep the running system honest.
+> **Why this module matters:** Security and DR together carry ~24% of SK0-005. Module 5 covered DR; this one covers the *prevention* side. You'll learn the **physical** controls that keep someone from walking out with a server, the **firmware** controls (Secure Boot, UEFI passwords) that keep the boot path trustworthy, the **access** controls (RBAC, service accounts with least privilege) that keep credentials small and revocable, and the **operational** controls (patch management, CIS baselines, HIDS/HIPS) that keep the running system honest.
 
 > **Prerequisites for this module.** Before starting:
 > - Modules 1–5 (especially OOB management from Module 1 and admin from Module 2)
@@ -46,7 +46,7 @@ Sec+/Server+ ask about physical security constantly. The 4 axes you must know:
 - **Bollard**, short post that prevents vehicle ramming.
 - **Faraday cage**, RF-shielded enclosure (used for high-security comms or to prevent emanations).
 - **CCTV (recording vs monitored)**, recording = detective; visible = deterrent; monitored = preventive (because someone can respond live).
-- **Badge readers**, proximity (RFID (Radio Frequency Identification)), smart card, biometric (fingerprint, iris).
+- **Badge readers**, proximity (RFID), smart card, biometric (fingerprint, iris).
 - **Cipher locks / mechanical PIN pads**, common on server-room secondary doors.
 - **HSM (Hardware Security Module)**, tamper-resistant device for cryptographic keys; often in its own physical enclosure with seismic + intrusion sensors.
 
@@ -106,7 +106,7 @@ Beats per-user ACLs at scale. Easy to audit ("show me everyone in DB Admin").
 | **DAC** (Discretionary AC) | Owner sets permissions | Linux file modes, Windows NTFS ACLs |
 | **MAC** (Mandatory AC) | System enforces by labels (clearance) | Military / classified systems; Bell-LaPadula |
 | **RBAC** | By role | Most enterprise apps |
-| **ABAC (Attribute-Based Access Control)** (Attribute-Based AC) | Policy evaluates attributes (user dept, time, device posture, location) | Cloud / dynamic policy (XACML, AWS (Amazon Web Services) IAM (Identity and Access Management) policies) |
+| **ABAC** (Attribute-Based AC) | Policy evaluates attributes (user dept, time, device posture, location) | Cloud / dynamic policy (XACML, AWS IAM policies) |
 
 🎯 **Exam pattern:** *"Manage access for 5,000 users across 30 applications."* → **RBAC** (or ABAC if attributes drive decisions).
 
@@ -121,20 +121,20 @@ Services (DBs, web apps, agents, scripts) run as accounts. Best practice:
 | **Long random passwords / managed credentials** | Stop password reuse, prevent brute force |
 | **No interactive logon** | Service account shouldn't log on at desktop |
 | **No shared between services** | Same blast-radius argument |
-| **Group Managed Service Accounts (gMSAs) on Windows** | Auto-rotated by AD (Active Directory), no admin password to know |
-| **Cloud: managed identities** (Azure MI, AWS instance roles, GCP (Google Cloud Platform) service accounts) | No long-lived credentials |
+| **Group Managed Service Accounts (gMSAs) on Windows** | Auto-rotated by AD, no admin password to know |
+| **Cloud: managed identities** (Azure MI, AWS instance roles, GCP service accounts) | No long-lived credentials |
 | **Vault for secrets** | HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, CyberArk |
 
 🚨 **Trap on the exam:** A "service" account used for interactive logons (admins SSHing in as the service account) is a common audit finding. Lock it down.
 
 ### Privileged Access Management (PAM)
 
-PAM tools (BeyondTrust, CyberArk, Delinea, AWS Session Manager, Azure PIM (Product Information Management)) provide:
+PAM tools (BeyondTrust, CyberArk, Delinea, AWS Session Manager, Azure PIM) provide:
 
-- **Just-in-time (JIT (Just-In-Time)) elevation**, admin requests rights, approval workflow, time-boxed grant
+- **Just-in-time (JIT) elevation**, admin requests rights, approval workflow, time-boxed grant
 - **Session recording**, full keystroke / screen capture for privileged sessions
 - **Credential vaulting**, admins never see the actual password
-- **MFA (Multi-Factor Authentication) on elevation**, extra factor required to invoke privilege
+- **MFA on elevation**, extra factor required to invoke privilege
 - **Automatic rotation**, passwords rotate after each use
 
 🎯 **Exam pattern:** *"Eliminate standing privileged access while still enabling admins to do their jobs."* → **JIT via PAM**.
@@ -201,7 +201,7 @@ Each benchmark covers an OS/app, organized as:
 
 ---
 
-## 🛡️ HIDS / HIPS / EDR (Endpoint Detection and Response)
+## 🛡️ HIDS / HIPS / EDR
 
 | Tool | What |
 |---|---|
@@ -216,7 +216,7 @@ Each benchmark covers an OS/app, organized as:
 ### Network-side counterparts (covered more in Sec+ / Network+)
 
 - **NIDS / NIPS**, Network-side IDS/IPS at network choke points
-- **WAF (Web Application Firewall)**, Web Application Firewall for HTTP (Hypertext Transfer Protocol)/HTTPS (HTTP Secure)
+- **WAF**, Web Application Firewall for HTTP/HTTPS
 - **Firewall**, host firewall (Windows Defender Firewall, firewalld, iptables, pf) + perimeter firewalls
 
 ---
@@ -230,15 +230,15 @@ A consolidated checklist of what "hardening" actually means in practice on a pro
 - ✅ Apply CIS/STIG baseline
 - ✅ Remove unused roles/features/packages (smaller attack surface)
 - ✅ Disable unused services + close unused ports
-- ✅ Disable SMB 1.0 (Windows); disable Telnet, FTP (File Transfer Protocol) (use SFTP/FTPS), unencrypted protocols
+- ✅ Disable SMB 1.0 (Windows); disable Telnet, FTP (use SFTP/FTPS), unencrypted protocols
 - ✅ Enforce password policy (length, complexity, history, lockout)
 - ✅ Enforce MFA for admin accounts and remote access
 - ✅ Disable default accounts (or rename + strong password)
-- ✅ Patch within defined SLA (Service Level Agreement) (e.g., critical < 7 days, high < 30 days)
+- ✅ Patch within defined SLA (e.g., critical < 7 days, high < 30 days)
 - ✅ Enable host firewall + drop default-deny rule for ingress
 - ✅ Encrypt data at rest (BitLocker on Windows, LUKS on Linux, SED drives)
-- ✅ Encrypt data in transit (TLS (Transport Layer Security) 1.2/1.3 minimum, SSH (Secure Shell) key auth)
-- ✅ Enable detailed audit logging; ship to SIEM (Security Information and Event Management)
+- ✅ Encrypt data in transit (TLS 1.2/1.3 minimum, SSH key auth)
+- ✅ Enable detailed audit logging; ship to SIEM
 - ✅ Install EDR/HIPS + FIM
 - ✅ Configure NTP from authoritative source
 - ✅ Set UEFI password + Secure Boot + TPM-backed encryption
@@ -290,7 +290,7 @@ A mature program:
 **Walkthrough.**
 
 1. **Physical.** Server room behind a **badge-reader + biometric door**; access control vestibule (mantrap) for the data hall corridor. **Caged racks** with key + combination lock. **CCTV** monitored + recorded with 30-day retention. **Motion sensors** wired into the alarm system. **Visitor log** for any non-employee.
-2. **Firmware.** Every server: **UEFI password** + **Secure Boot** + **TPM 2.0** + **Self-Encrypting Drives**. **BitLocker** (Windows) / **LUKS** (Linux) with TPM-bound keys. **BMC/iDRAC/iLO** on a **separate management VLAN (Virtual Local Area Network)**, default credentials changed, MFA on the management portal.
+2. **Firmware.** Every server: **UEFI password** + **Secure Boot** + **TPM 2.0** + **Self-Encrypting Drives**. **BitLocker** (Windows) / **LUKS** (Linux) with TPM-bound keys. **BMC/iDRAC/iLO** on a **separate management VLAN**, default credentials changed, MFA on the management portal.
 3. **Identity.** **RBAC** roles for each function (DB Admin, App Admin, Help Desk). **gMSAs** for Windows services; **systemd dynamic users** + Vault-issued tokens for Linux services. **PAM (BeyondTrust)** for JIT elevation with MFA. **Tiered Administration**, Tier 0 (DCs) accounts never log on to Tier 1/2 hosts.
 4. **Patch.** **WSUS + MECM** for Windows. **Red Hat Satellite** for RHEL. SLA: **critical < 7 days, high < 30 days, medium < 90 days**. Monthly vulnerability scan with **Tenable Nessus**.
 5. **Baseline.** Apply **CIS Benchmark Level 1** to every host, with selected Level 2 controls. Audited monthly with **CIS-CAT**.
@@ -313,7 +313,7 @@ This is the kind of integration question Server+ PBQs ask. Every control maps to
 | "RBAC is the same as DAC." | RBAC = roles; DAC = owner discretion. Different models. |
 | "Service accounts can share if convenient." | One compromise → all services compromised. Never share. |
 | "Patches break things, so we don't apply them." | Unpatched systems are the #1 breach vector. The answer is *test* and *staged rollout*, not *skip*. |
-| "CIS benchmarks are optional." | They're an industry standard, frequently required by SOC (Security Operations Center) 2 / PCI-DSS / ISO 27001 audits. |
+| "CIS benchmarks are optional." | They're an industry standard, frequently required by SOC 2 / PCI-DSS / ISO 27001 audits. |
 | "Secure Boot only matters on Windows." | Linux distros (RHEL, Ubuntu, SUSE) all support Secure Boot now. Use it. |
 | "Disabling logging removes attack evidence." | And makes incident response impossible. Audit logs are non-negotiable; ship them to SIEM. |
 | "JIT is too slow for admins to do their jobs." | Modern PAM tools provision in seconds. Speed isn't the bottleneck; culture is. |
@@ -356,7 +356,7 @@ This is the kind of integration question Server+ PBQs ask. Every control maps to
 | JIT | Just-in-Time |
 | MFA | Multi-Factor Authentication |
 | HIDS / HIPS | Host Intrusion Detection / Prevention System |
-| EDR / XDR (Extended Detection and Response) | Endpoint Detection & Response / Extended DR |
+| EDR / XDR | Endpoint Detection & Response / Extended DR |
 | FIM | File Integrity Monitoring |
 | TPM | Trusted Platform Module |
 | SED | Self-Encrypting Drive |
@@ -376,7 +376,7 @@ This is the kind of integration question Server+ PBQs ask. Every control maps to
 
 **Situation.** In late 2013, Target's network was breached by attackers who initially gained access via stolen credentials from **Fazio Mechanical Services**, a third-party HVAC vendor with remote network access for billing and project management. The HVAC vendor's user account had access to Target's vendor portal; once inside, attackers pivoted through the corporate network to reach the Point-of-Sale environment, deployed memory-scraping malware ("Kaptoxa"), and exfiltrated **40 million payment cards + 70 million customer records** during the 2013 holiday shopping season (Krebs on Security, December 2013 to January 2014; US Senate Commerce Committee Majority Staff Report, *A "Kill Chain" Analysis of the 2013 Target Data Breach*, 26 March 2014).
 
-**Outcome.** $292M total cost (Target 10-K filings 2014–2017): $202M in legal/settlement costs, $90M in incident response. CIO + CEO (Chief Executive Officer) both resigned. Brought third-party risk management into board-level discussions across the Fortune 500.
+**Outcome.** $292M total cost (Target 10-K filings 2014–2017): $202M in legal/settlement costs, $90M in incident response. CIO + CEO both resigned. Brought third-party risk management into board-level discussions across the Fortune 500.
 
 **Lesson for the exam / for practitioners.**
 

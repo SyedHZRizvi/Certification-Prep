@@ -9,7 +9,7 @@ title: Generative AI Engineer (Cert Hub Original)
 
 > **Goal:** Become the engineer your company calls when "we want to ship something with an LLM and we don't know where to start", from architecting the right RAG pipeline, to fine-tuning when prompting isn't enough, to running the whole thing in production with observability, guardrails, and a cost model that doesn't bankrupt the team.
 > **Duration:** 10–14 weeks part-time (8–12 hrs/week)
-> **Cost:** $0 for the curriculum. Plan ~$50–$150 in API (Application Programming Interface) credits (Anthropic, OpenAI, Cohere, Pinecone free tier, Hugging Face) for the labs.
+> **Cost:** $0 for the curriculum. Plan ~$50–$150 in API credits (Anthropic, OpenAI, Cohere, Pinecone free tier, Hugging Face) for the labs.
 > **Difficulty:** Intermediate–Advanced · Assumes you can already write Python comfortably and have shipped at least one web service.
 
 ---
@@ -60,9 +60,9 @@ By the end of this course, you'll be able to:
 - Build the same RAG twice once in LangChain (LCEL + agents), once in LlamaIndex (query engines) and reason about which to ship
 - Fine-tune an open-source LLM with LoRA / QLoRA on a single consumer GPU; know when to fine-tune vs RAG vs prompt
 - Coordinate multiple agents with CrewAI, AutoGen, and LangGraph, and recognize when a single agent is the better choice
-- Evaluate a RAG system with RAGAS (faithfulness, answer relevancy, context precision/recall); set up regression tests in CI/CD (Continuous Integration/Continuous Deployment)
-- Add guardrails input/output filtering, PII detection (Presidio), prompt-injection defense without crippling UX (User Experience)
-- Deploy with vLLM, TGI, Modal, Replicate, AWS (Amazon Web Services) Bedrock, or the Anthropic API; instrument with Langfuse / LangSmith / Phoenix; build a cost dashboard
+- Evaluate a RAG system with RAGAS (faithfulness, answer relevancy, context precision/recall); set up regression tests in CI/CD
+- Add guardrails input/output filtering, PII detection (Presidio), prompt-injection defense without crippling UX
+- Deploy with vLLM, TGI, Modal, Replicate, AWS Bedrock, or the Anthropic API; instrument with Langfuse / LangSmith / Phoenix; build a cost dashboard
 - Read a production GenAI postmortem (Cursor, Notion, Stripe) and identify the architectural decisions you'd make differently
 
 ---
@@ -105,7 +105,7 @@ By the end of this course, you'll be able to:
 - 🟩 **[OpenAI Cookbook](https://github.com/openai/openai-cookbook)**, 200+ runnable recipes for every common pattern
 - 🟪 **[LangChain Academy](https://academy.langchain.com/)**, free courses on LCEL, LangGraph, evals
 - 🟧 **[LlamaIndex Documentation](https://docs.llamaindex.ai/)**, exemplary documentation; arguably the best in the ecosystem
-- 🟨 **[Hugging Face's NLP (Natural Language Processing) and LLM Course](https://huggingface.co/learn)**, open-source-first; covers transformers, PEFT, RLHF (Reinforcement Learning from Human Feedback)
+- 🟨 **[Hugging Face's NLP and LLM Course](https://huggingface.co/learn)**, open-source-first; covers transformers, PEFT, RLHF
 - 🟦 **[DeepLearning.AI Short Courses](https://learn.deeplearning.ai/)**, 1-hour focused courses on RAG, agents, evals, fine-tuning
 
 Honorable mentions:

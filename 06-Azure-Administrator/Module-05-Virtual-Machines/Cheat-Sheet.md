@@ -24,9 +24,9 @@ Suffixes: `s`=Premium SSD · `d`=local NVMe · `a`=AMD · `_v5`=gen 5
 
 ## 🏗️ SLAs
 
-| Config | SLA (Service Level Agreement) |
+| Config | SLA |
 |--------|-----|
-| Single VM (Virtual Machine) w/ Premium SSD | 99.9% |
+| Single VM w/ Premium SSD | 99.9% |
 | Availability Set | 99.95% |
 | Availability Zones (≥2) | **99.99%** |
 
@@ -38,7 +38,7 @@ AS: max 3 FDs × 20 UDs · Must set at VM create · Mutually exclusive with AZ
 
 ## 💾 Managed Disks
 
-| SKU (Stock Keeping Unit) | Max IOPS | OS disk? |
+| SKU | Max IOPS | OS disk? |
 |-----|----------|----------|
 | Standard HDD | ~500 | ✅ |
 | Standard SSD | ~6,000 | ✅ |
@@ -51,7 +51,7 @@ AS: max 3 FDs × 20 UDs · Must set at VM create · Mutually exclusive with AZ
 ## 🔐 Encryption Layers
 
 ```
-SSE (default) ─→ AES (Advanced Encryption Standard)-256 at storage (MMK or CMK)
+SSE (default) ─→ AES-256 at storage (MMK or CMK)
 Host encryption ─→ encrypts temp + cache at host
 ADE ─→ BitLocker / dm-crypt in guest OS
 Confidential disks ─→ TEE-backed (specialized)

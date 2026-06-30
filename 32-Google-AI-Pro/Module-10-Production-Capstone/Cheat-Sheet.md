@@ -35,13 +35,13 @@ Voice → Nano on-device (wake + intent)
 
 ```
 Merchant → Gemini Pro on Vertex AI + ADK (multi-step)
-        + function calls (Shopify Admin API (Application Programming Interface), per-merchant scoping)
+        + function calls (Shopify Admin API, per-merchant scoping)
         + Vertex AI Search (help docs grounding)
         + Conversational Agents (guided flows)
         + context caching
 ```
 
-🎯 Win: multi-tenant isolation via IAM (Identity and Access Management) scoping; ADK + Conversational Agents complementary.
+🎯 Win: multi-tenant isolation via IAM scoping; ADK + Conversational Agents complementary.
 
 ---
 
@@ -60,7 +60,7 @@ At search → ANN top-K + keyword + date filter → Gemini rerank
 ## 🏥 Verily Med-PaLM 2
 
 ```
-Vertex AI in HIPAA region + signed BAA + CMEK + VPC (Virtual Private Cloud)-SC
+Vertex AI in HIPAA region + signed BAA + CMEK + VPC-SC
    → Med-PaLM 2 (specialist) + grounded against clinical guidelines (Vertex AI Search)
    → safety_settings (DANGEROUS loosened) + recitation + SynthID
    → clinician-in-the-loop + audit log every call
@@ -77,7 +77,7 @@ Vertex AI in HIPAA region + signed BAA + CMEK + VPC (Virtual Private Cloud)-SC
 2. Cache stable prefixes (~75% off)
 3. Batch where you can (~50% off)
 4. Provisioned Throughput >5K RPM steady
-5. Retrieve, don't stuff (RAG (Retrieval-Augmented Generation) over long context)
+5. Retrieve, don't stuff (RAG over long context)
 6. Distill Pro → Flash for narrow tasks
 7. Monitor cost from day 1 (Cloud Billing budgets)
 8. Multi-agent specialists vs one generalist
@@ -93,7 +93,7 @@ Stacking can yield 10-100× savings.
 □ IAM least privilege
 □ VPC-SC perimeter
 □ CMEK
-□ TLS (Transport Layer Security) (default)
+□ TLS (default)
 □ Cloud Audit Logs + retention
 □ Secret Manager for keys
 □ Workload Identity (no SA keys)
@@ -114,7 +114,7 @@ Stacking can yield 10-100× savings.
 
 ## 🆚 Cross-Cloud Quick Reference
 
-| Concern | Google Vertex AI | AWS (Amazon Web Services) Bedrock | Azure OpenAI |
+| Concern | Google Vertex AI | AWS Bedrock | Azure OpenAI |
 |---------|------------------|-------------|--------------|
 | Flagship | Gemini (native multi-modal, 2M) | Claude (200K-500K) | GPT (128K-1M) |
 | Managed RAG | Vertex AI Search | Knowledge Bases | Azure AI Search |
@@ -128,7 +128,7 @@ Stacking can yield 10-100× savings.
 ## 🎯 The 4 Architectural Patterns to Memorize
 
 1. **Voice/agent (Wendy's, Mercedes):** Conversational Agents + function calling + Gemini synthesis + Chirp
-2. **Multi-tenant SaaS (Software as a Service) (Shopify):** ADK + function calling + per-tenant IAM + cached shared context
+2. **Multi-tenant SaaS (Shopify):** ADK + function calling + per-tenant IAM + cached shared context
 3. **Massive semantic search (Photos):** Batch-index with LLM + ANN query
 4. **Regulated decision support (Verily):** Specialist model + grounding + HIPAA stack + human-in-loop
 
@@ -145,7 +145,7 @@ For any GenAI workload, articulate:
 5. **Multi-modal needs** (text only or vision/audio/video)
 6. **Agent pattern** (Conversational Agents / ADK / function calling / hybrid)
 7. **Security stack** (CMEK / VPC-SC / BAA / IAM)
-8. **MLOps (Machine Learning Operations) loop** (Pipelines / Registry / Monitoring)
+8. **MLOps loop** (Pipelines / Registry / Monitoring)
 9. **Cost levers** (caching / Batch / Provisioned Throughput / tier choice)
 10. **Responsible controls** (safety_settings / SynthID / grounding / human-in-loop)
 11. **Failure modes + mitigations**

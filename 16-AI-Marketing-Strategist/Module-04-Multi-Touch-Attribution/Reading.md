@@ -4,8 +4,8 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Basic probability and conditional probability (`P(A|B)` is intuitive), high-school stats refresher is enough.
-> - GA4 (Google Analytics 4)'s data model and Key Events from [Module 3](../Module-03-GA4-Mastery-Custom-Events/Reading.md), DDA runs on top of these.
-> - Server-side tracking + CAPI concepts from [Module 2](../Module-02-CDP (Customer Data Platform)-Server-Side-Tracking/Reading.md), your MTA accuracy depends on what survives the privacy stack.
+> - GA4's data model and Key Events from [Module 3](../Module-03-GA4-Mastery-Custom-Events/Reading.md), DDA runs on top of these.
+> - Server-side tracking + CAPI concepts from [Module 2](../Module-02-CDP-Server-Side-Tracking/Reading.md), your MTA accuracy depends on what survives the privacy stack.
 > - A reading-level familiarity with linear regression, covered at intro depth in [Course 15 Module 1: Campaign Strategy & Brief Writing](../../15-AI-Marketing-Practitioner/Module-01-Campaign-Strategy-Brief-Writing/Reading.md).
 > If Shapley values or Markov chains are new to you, that's expected, this module teaches both from first principles.
 
@@ -13,7 +13,7 @@
 
 ## 🧦 A Story: How Stitch Fix's Attribution Model Cost and Then Saved $80M
 
-January 2019. Stitch Fix has been growing 25% YoY using last-click attribution. The model says paid search (branded + non-branded) drives 47% of acquisition. The CMO (Chief Marketing Officer) doubles search budget. Q1 revenue grows 8%, below the 25% trend. Q2 grows 4%. The CMO is fired.
+January 2019. Stitch Fix has been growing 25% YoY using last-click attribution. The model says paid search (branded + non-branded) drives 47% of acquisition. The CMO doubles search budget. Q1 revenue grows 8%, below the 25% trend. Q2 grows 4%. The CMO is fired.
 
 The new VP of Marketing Science runs a holdout test: turn off paid search in three test geos. In two of three, organic + direct traffic absorbs ~85% of the lost paid-search clicks within 14 days. *Paid search was cannibalizing organic.* Last-click had been crediting paid search with conversions that would have happened anyway. The team had been over-investing in a channel that was largely *incremental zero*.
 
@@ -236,7 +236,7 @@ In production, you'd run this against millions of paths and use libraries like *
 | Vendor | Focus | Approach | Price tier |
 |--------|-------|----------|-----------|
 | **Rockerbox** | Mid-market & enterprise | MTA + MMM + incrementality unified | $$$ ($60K–$300K/yr) |
-| **Northbeam** | DTC (Direct-to-Consumer) e-commerce | Hybrid MTA/MMM, "Performance Score" | $$ ($30K–$150K/yr) |
+| **Northbeam** | DTC e-commerce | Hybrid MTA/MMM, "Performance Score" | $$ ($30K–$150K/yr) |
 | **Triple Whale** | Shopify DTC | Pixel + post-purchase survey hybrid | $ ($5K–$30K/yr) |
 | **Hyros** | Info products / coaches | Click-tracking heavy, last-touch hybrid | $ ($5K–$40K/yr) |
 | **Wicked Reports** | DTC | Last-touch + first-touch hybrid | $$ ($15K–$60K/yr) |
@@ -329,7 +329,7 @@ INCREMENTALITY  ←──┼──→  MMM (Marketing Mix Modeling)
 |--------------|--------------|-------------------------|
 | Click-based digital channels | Mix includes TV/radio/OOH/podcast | Need causal evidence |
 | Daily/weekly bid decisions | Quarterly budget allocation | Validating MTA / MMM |
-| Path-level questions | Channel-level questions | High-stakes ROI (Return on Investment) defense |
+| Path-level questions | Channel-level questions | High-stakes ROI defense |
 
 **Reconciliation rule:** If MTA says paid search drove 47% of conversions and MMM says 18%, **MMM is closer to the truth for budget allocation**, but MTA is fine for *tactical bid* decisions inside paid search. They are answering different questions.
 
@@ -377,7 +377,7 @@ INCREMENTALITY  ←──┼──→  MMM (Marketing Mix Modeling)
 
 1. Stitch Fix's last-click model said paid search drove 47% of acquisition. A geo-holdout said the true incremental contribution was 18%. If you were the CMO who *just* signed off on the search budget based on the 47% number, how do you communicate the discovery to the board, and what governance change ensures you don't repeat the mistake on a different channel next year?
 2. Shapley-value attribution and Markov-chain attribution typically produce *similar* channel rankings but different point values. When the numbers disagree by 5–10%, is that a *bug* or a *feature*? How would you operationalize a process that uses both without paralysis?
-3. GA4 DDA needs 400 conversions per type / 30 days. A B2B (Business-to-Business) SaaS (Software as a Service) team has 80. The vendor sales pitch is to buy a third-party MTA. What's the strategist's honest framing of *what the vendor can and cannot deliver* at that conversion volume, and the alternative path that may serve the team better?
+3. GA4 DDA needs 400 conversions per type / 30 days. A B2B SaaS team has 80. The vendor sales pitch is to buy a third-party MTA. What's the strategist's honest framing of *what the vendor can and cannot deliver* at that conversion volume, and the alternative path that may serve the team better?
 4. Apple's SKAdNetwork 4 / AdAttributionKit gives advertisers a *postback* with limited and delayed conversion-value information. Some advertisers run blind; others over-fit creative to the SKAN signal. What's a defensible mobile-measurement strategy in 2026 that doesn't make either mistake?
 5. The "measurement triangle" combines MTA + MMM + incrementality. In practice, most teams run only one. Pick a hypothetical company (DTC e-com, B2B SaaS, retail enterprise) and argue which two-of-three combo is the *minimum viable* triangle for them, and why dropping the third is acceptable for now.
 
@@ -419,5 +419,5 @@ You now know:
 - 🔗 [Google's "Attribution Modeling" Skillshop course](https://skillshop.withgoogle.com/), free.
 - 🔗 [Meta Marketing Science Whitepaper Library](https://www.facebook.com/business/m/marketing-science), strong incrementality content.
 - 🔗 [Northbeam's "Performance Score" methodology](https://www.northbeam.io/methodology), read the small print.
-- 🔗 [The Pareto/NBD vs BG/NBD comparison Fader & Hardie](https://www.brucehardie.com/papers.html) for CLV (Customer Lifetime Value) (Module 6 prep).
+- 🔗 [The Pareto/NBD vs BG/NBD comparison Fader & Hardie](https://www.brucehardie.com/papers.html) for CLV (Module 6 prep).
 - 🔗 [ChannelAttribution R package](https://cran.r-project.org/web/packages/ChannelAttribution/), production-grade Markov MTA.

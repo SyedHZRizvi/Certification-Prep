@@ -1,4 +1,4 @@
-# 📋 Module 6 Cheat Sheet: Predictive Analytics, CLV (Customer Lifetime Value), Churn & Propensity
+# 📋 Module 6 Cheat Sheet: Predictive Analytics, CLV, Churn & Propensity
 
 > One page. Print it. Tape it to your monitor.
 
@@ -98,9 +98,9 @@ M = Monetary  (5 = AOV > $200, 1 = < $25)
 | Tool | Stack | Use case |
 |------|-------|----------|
 | DataRobot | Standalone | General AutoML |
-| Vertex AI Tabular | GCP (Google Cloud Platform) / BigQuery | If on GCP |
-| Amazon Personalize | AWS (Amazon Web Services) | Managed recsys |
-| Snowflake Cortex ML | Snowflake | SQL (Sales Qualified Lead)-native ML |
+| Vertex AI Tabular | GCP / BigQuery | If on GCP |
+| Amazon Personalize | AWS | Managed recsys |
+| Snowflake Cortex ML | Snowflake | SQL-native ML |
 | Microsoft Fabric AutoML | Azure | Microsoft stack |
 | Hightouch Match Booster | Reverse-ETL native | Audience scoring |
 
@@ -111,7 +111,7 @@ M = Monetary  (5 = AOV > $200, 1 = < $25)
 ```
 1. Build 12-month CLV model (BG/NBD + GG)
 2. Distribution check (top/bottom deciles)
-3. Set CAC (Customer Acquisition Cost) ceiling (e.g., 30% of CLV)
+3. Set CAC ceiling (e.g., 30% of CLV)
 4. Activate (top decile → bid up; bottom → exclude)
 5. Build 30-day churn model + retention budget
 6. Measure with quarterly geo-holdout
@@ -127,7 +127,7 @@ M = Monetary  (5 = AOV > $200, 1 = < $25)
 - "Calibrate before using as a probability threshold..."
 - "Target middle deciles for marketing, top deciles are sure things..."
 - "Uplift modeling finds Persuadables..."
-- "LTV (Lifetime Value):CAC ≥ 3:1 is the sustainability floor..."
+- "LTV:CAC ≥ 3:1 is the sustainability floor..."
 
 ❌ Often wrong:
 

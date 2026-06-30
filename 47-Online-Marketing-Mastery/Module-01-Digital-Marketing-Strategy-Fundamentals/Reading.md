@@ -32,7 +32,7 @@ The kicker? Dubin's customer acquisition cost (CAC) in those early viral days wa
 
 1. Strategy before tactics. Dubin didn't say "let's run Google Ads." He said "who is my customer, what do they hate, and how do I reach them at scale cheaply?"
 2. Frameworks make decisions faster. When you understand TOFU/MOFU/BOFU, you know immediately that a viral video is a TOFU play — it builds awareness, not conversions.
-3. KPIs (Key Performance Indicators) tell you the truth. Vanity metrics (27M views!) are nice. But Dubin lived and died by CAC, LTV, churn rate, and monthly recurring revenue.
+3. KPIs tell you the truth. Vanity metrics (27M views!) are nice. But Dubin lived and died by CAC, LTV, churn rate, and monthly recurring revenue.
 4. The walled garden trap. Eventually DSC *did* pay for Facebook and Google ads — and became dependent on them. Their paid CAC rose from ~$8 to ~$94 before the acquisition. Strategy must account for what happens when the "free" channel dries up.
 
 Now let's build the strategic toolkit that makes you the Michael Dubin of whatever industry you're in.
@@ -68,10 +68,10 @@ RACE is the digital-marketing-specific evolution of SOSTAC. It's customer-journe
 
 | Stage | Goal | Channels | Key Metrics |
 |---|---|---|---|
-| **Reach** | Build awareness, drive traffic | SEO (Search Engine Optimization), paid search, social ads, PR, influencers | Impressions, reach, website sessions, share of voice |
-| **Act** | Encourage interaction on site/app | Content marketing, UX (User Experience), landing pages, lead magnets | Pages per visit, time on site, leads generated, micro-conversions |
+| **Reach** | Build awareness, drive traffic | SEO, paid search, social ads, PR, influencers | Impressions, reach, website sessions, share of voice |
+| **Act** | Encourage interaction on site/app | Content marketing, UX, landing pages, lead magnets | Pages per visit, time on site, leads generated, micro-conversions |
 | **Convert** | Turn prospects into customers | Email nurture, retargeting, cart abandonment flows, promotions | Conversion rate, revenue, ROAS, CPA |
-| **Engage** | Build loyalty and advocacy | Email CRM (Customer Relationship Management), loyalty programmes, community, social | Repeat purchase rate, NPS (Net Promoter Score), LTV, churn rate |
+| **Engage** | Build loyalty and advocacy | Email CRM, loyalty programmes, community, social | Repeat purchase rate, NPS, LTV, churn rate |
 
 **North American note:** American marketers often use "Attract → Engage → Delight" (HubSpot's flywheel) which maps closely to RACE. Neither is wrong — RACE is more metric-focused; the flywheel is more philosophy.
 
@@ -115,9 +115,9 @@ The funnel maps Bloom's taxonomy of cognition onto buying behaviour:
 | BOFU | Urgency, social proof, risk-removal | Free trials, testimonials, money-back guarantees, demos | "Cancel anytime" messaging, first month free offers |
 | Retention | Value demonstration, community, exclusivity | Newsletters, loyalty rewards, upsells, surveys | DSC's "Dollar Shave Club Club" magazine, product bundles |
 
-### The B2B (Business-to-Business) Funnel Looks Different
+### The B2B Funnel Looks Different
 
-In North American B2B (SaaS (Software as a Service), enterprise, professional services), the funnel is longer and involves multiple decision-makers. A typical B2B SaaS path: **Content download (TOFU) → Webinar attendance (MOFU) → Free trial (MOFU/BOFU) → Demo with sales (BOFU) → Contract negotiation → Close.** Average B2B purchase cycle: 3–12 months (industry estimate, Gartner/Forrester research).
+In North American B2B (SaaS, enterprise, professional services), the funnel is longer and involves multiple decision-makers. A typical B2B SaaS path: **Content download (TOFU) → Webinar attendance (MOFU) → Free trial (MOFU/BOFU) → Demo with sales (BOFU) → Contract negotiation → Close.** Average B2B purchase cycle: 3–12 months (industry estimate, Gartner/Forrester research).
 
 > **Common trap:** Building only BOFU content ("Buy now!" ads) without TOFU/MOFU support. If prospects have never heard of you, even the best conversion page fails. You need to fill the top of the funnel to have a bottom of funnel.
 
@@ -150,7 +150,7 @@ A buyer persona is a semi-fictional representation of your ideal customer, built
 
 | Dimension | North America (US/Canada) | Europe (UK/DE/FR/NL/Nordics) |
 |---|---|---|
-| Data collection | Relatively permissive (CCPA (California Consumer Privacy Act) in California is opt-out by default) | Strict (GDPR (General Data Protection Regulation) is opt-in by default — see Section 5) |
+| Data collection | Relatively permissive (CCPA in California is opt-out by default) | Strict (GDPR is opt-in by default — see Section 5) |
 | Payment preferences | Credit card dominant; Buy Now Pay Later (Klarna, Afterpay) growing | Bank transfer + local methods (iDEAL in NL, SEPA, Klarna dominant in Nordics) |
 | Trust signals | Reviews (Amazon, Google, Trustpilot), influencer endorsements | Trustpilot, Verified badges, privacy policy compliance signals |
 | Work culture | "Move fast" — shorter sales cycles in SMB | More relationship-driven, longer evaluation in mid-market |
@@ -162,7 +162,7 @@ A buyer persona is a semi-fictional representation of your ideal customer, built
 
 ### The Big Four Performance Metrics
 
-Every marketing KPI (Key Performance Indicator) you'll ever encounter is a variation or combination of four core metrics:
+Every marketing KPI you'll ever encounter is a variation or combination of four core metrics:
 
 **1. Customer Acquisition Cost (CAC)**
 
@@ -182,7 +182,7 @@ Example: If Dollar Shave Club spent $500,000 on marketing in Q1 2013 and acquire
 | Financial services | $300–$1,200 |
 | B2B enterprise | $3,000–$15,000+ |
 
-**2. Customer Lifetime Value (LTV or CLV (Customer Lifetime Value))**
+**2. Customer Lifetime Value (LTV or CLV)**
 
 ```
 LTV = Average Purchase Value × Purchase Frequency × Customer Lifespan
@@ -202,7 +202,7 @@ LTV:CAC = Customer Lifetime Value / Customer Acquisition Cost
 |---|---|
 | < 1:1 | You're losing money on every customer. Stop scaling. |
 | 1:1 to 2:1 | Break-even or marginal. Fix before scaling. |
-| 3:1 | Healthy. Standard benchmark for VC (Venture Capital)-backed SaaS. |
+| 3:1 | Healthy. Standard benchmark for VC-backed SaaS. |
 | 5:1+ | Exceptional. You're leaving money on the table — invest more in acquisition. |
 
 DSC at acquisition: estimated LTV ~$216, CAC ~$94 = ratio of ~2.3:1. Tight but defensible with their scale.
@@ -215,9 +215,9 @@ ROAS = Revenue Generated from Ads / Ad Spend
 
 Example: You spend £10,000 on Google Shopping ads and generate £40,000 in sales → ROAS = 4x (or 400%).
 
-**ROAS vs ROI (Return on Investment) — don't confuse them:**
+**ROAS vs ROI — don't confuse them:**
 - ROAS measures gross revenue vs ad spend only
-- ROI measures net profit vs total investment (including COGS (Cost of Goods Sold), fulfilment, overhead)
+- ROI measures net profit vs total investment (including COGS, fulfilment, overhead)
 - A ROAS of 4x sounds great; if your margin is 20%, you're actually barely breaking even
 
 **5. Cost Per Acquisition (CPA)**
@@ -249,11 +249,11 @@ The 2018 enforcement of GDPR (EU) and the 2020 enforcement of CCPA (California) 
 | **Consent for cookies** | Required (via cookie banner) | Required for "sale" of personal info |
 | **Marketing implication** | Email list must be consent-based; no pre-ticked boxes | Must have "Do Not Sell My Personal Information" link |
 | **Penalty** | Up to 4% of global revenue or €20M | Up to $7,500 per intentional violation |
-| **Regulator** | Country-level DPAs (ICO (Information Commissioner's Office) in UK, CNIL in France, BfDI in Germany) | California Privacy Protection Agency (CPPA) |
+| **Regulator** | Country-level DPAs (ICO in UK, CNIL in France, BfDI in Germany) | California Privacy Protection Agency (CPPA) |
 
 ### Practical Marketing Implications of GDPR
 
-1. **Email marketing:** You must have a legal basis for every email you send to an EU person. "Legitimate interest" can work for B2B, but B2C (Business-to-Consumer) email requires explicit consent. No pre-ticked opt-in boxes. No confusing double-negatives ("Uncheck this box if you do NOT want to NOT receive emails").
+1. **Email marketing:** You must have a legal basis for every email you send to an EU person. "Legitimate interest" can work for B2B, but B2C email requires explicit consent. No pre-ticked opt-in boxes. No confusing double-negatives ("Uncheck this box if you do NOT want to NOT receive emails").
 
 2. **Cookie banners:** Required in the EU and UK. Users must be able to reject all non-essential cookies. "Accept all / Reject all" must be equally prominent. Dark patterns (hiding the reject button) have attracted heavy fines in France and Germany.
 
@@ -275,7 +275,7 @@ A "walled garden" is a closed digital ecosystem where a platform controls the us
 |---|---|---|---|---|
 | **Google** | 4.9B (Search + YouTube) | Search intent, display, video | Unmatched intent data | Expensive in competitive niches |
 | **Meta (Facebook/Instagram)** | 3.3B | Social feed, stories, Reels | Rich demographic + interest | iOS 14+ signal loss; brand safety concerns |
-| **Amazon** | 310M active buyers (US/EU) | Sponsored products, DSP (Demand-Side Platform) | Purchase behaviour data | Primarily e-commerce; limited B2B |
+| **Amazon** | 310M active buyers (US/EU) | Sponsored products, DSP | Purchase behaviour data | Primarily e-commerce; limited B2B |
 | **TikTok** | 1.7B | Short video, in-feed ads | Engagement + discovery | Brand safety; regulatory risk in US/EU; younger skew |
 
 ### Why "Walled Gardens" Matter for Strategy
@@ -290,7 +290,7 @@ Each platform measures success differently, uses different attribution models, a
 
 | Technology | What It Does | Who Uses It |
 |---|---|---|
-| **Google Privacy Sandbox / Topics API (Application Programming Interface)** | Assigns browser-based interest topics without sharing identity | Chrome (replacing 3P cookies) |
+| **Google Privacy Sandbox / Topics API** | Assigns browser-based interest topics without sharing identity | Chrome (replacing 3P cookies) |
 | **Contextual targeting** | Show ads based on content of the page, not user history | Premium publishers (NYT, Guardian, etc.) |
 | **First-party data / CRM** | You own it — email, purchase history, login data | Every marketer with a list |
 | **Server-side tracking** | Analytics sent server-to-server, bypassing browser restrictions | Technical teams; GA4 + server containers |
@@ -349,8 +349,8 @@ Funnel:  TOFU (Awareness) → MOFU (Consideration) → BOFU (Conversion) → Ret
 |---|---|---|---|
 | GDPR | EU + UK | Opt-IN | Explicit consent for email; proper cookie banners |
 | CCPA/CPRA | California | Opt-OUT | "Do Not Sell My Data" link required |
-| CASL (Canada's Anti-Spam Legislation) | Canada | Opt-IN | Express or implied consent; must identify sender |
-| CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act) | United States | Opt-OUT | Unsubscribe link required; no deceptive subject lines |
+| CASL | Canada | Opt-IN | Express or implied consent; must identify sender |
+| CAN-SPAM | United States | Opt-OUT | Unsubscribe link required; no deceptive subject lines |
 
 ---
 

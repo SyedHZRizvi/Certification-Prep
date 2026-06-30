@@ -6,7 +6,7 @@
 
 | Regime | Originated For | Bitcoin Implication |
 |--------|---------------|---------------------|
-| **AML (Anti-Money Laundering)** | Drug & organized crime (1970s) | KYC (Know Your Customer), monitoring, SAR |
+| **AML** | Drug & organized crime (1970s) | KYC, monitoring, SAR |
 | **CTF** | Post-9/11 | OFAC sanctions screening |
 | **Securities reg** | 1933/1934 Acts | Howey test for tokens |
 | **Crypto-native** | 2018-2024 | MiCA, VASP, MSB, VAUPA |
@@ -21,7 +21,7 @@
 | Update | **FIN-2019-G001** (May 9, 2019) |
 | Parent statute | **Bank Secrecy Act 1970** |
 | Register form | Form 107 within 180 days |
-| SAR / CTR (Click-Through Rate) | ≥ $2,000 suspicious / > $10,000 cash |
+| SAR / CTR | ≥ $2,000 suspicious / > $10,000 cash |
 | State licensing | 49 MTLs (NY = BitLicense) |
 | Records | 5-year retention |
 
@@ -93,9 +93,9 @@ Originator + beneficiary info travels with VASP-to-VASP transfers. Scope = **VAS
 
 | Method | What |
 |--------|------|
-| **FIFO (First In, First Out)** | First-in, first-out (default) |
+| **FIFO** | First-in, first-out (default) |
 | **HIFO** | Highest-in, first-out (minimizes gain) |
-| **LIFO (Last In, First Out)** | Last-in, first-out (uncertain IRS acceptance) |
+| **LIFO** | Last-in, first-out (uncertain IRS acceptance) |
 | **Specific ID** | Designate exact lots (requires recordkeeping) |
 
 🎯 **2025+ rule**: must track basis **wallet-by-wallet** (not universal).

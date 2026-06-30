@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-10-Showreel-Client-Work/Reading/
+permalink: /35-Motion-Graphics-UI-Animation/Module-10-Showreel-Client-Work/Reading/
 title: "Module 10: Showreel & Client Work"
 ---
 
@@ -78,7 +78,7 @@ Do NOT organize chronologically (worst mistake) or alphabetically (absurd). Orga
 
 > 🎯 **Exam Callout 5:** **Spec work** creating design work without payment in hopes of winning a project is considered unethical by the motion design community and by professional organizations including AIGA. The exam frames a spec work scenario and asks whether participating is recommended. The answer is always: no.
 
-> 🎯 **Exam Callout 6:** Can you use client work in your showreel? Generally yes, if: the project has been publicly released, there is no NDA (Non-Disclosure Agreement), and the contract doesn't explicitly prohibit portfolio use. The exam tests these three conditions.
+> 🎯 **Exam Callout 6:** Can you use client work in your showreel? Generally yes, if: the project has been publicly released, there is no NDA, and the contract doesn't explicitly prohibit portfolio use. The exam tests these three conditions.
 
 > 🎯 **Exam Callout 7:** The most important single conversation in a client project is the **reference call**, a 30-minute session reviewing 5–10 video references together to surface aesthetic preferences the client can't articulate in a written brief. The exam tests: what is the purpose of the reference call?
 
@@ -154,8 +154,8 @@ Understanding the studio landscape helps you position yourself for the right opp
 |------|----------|---------------|---------------------|---------------|
 | **Tier 1 (Global Elite)** | Buck, Gentleman Scholar, Oddfellows, Giant Ant | Brand films, app launches, cultural moments | $900–$2,500/day | Showreel-only; usually personal referrals |
 | **Tier 2 (Strong Regional)** | Blind, Trollbäck+Company, Elastic | TV titles, network promos, commercial | $700–$1,500/day | Showreel + relevant work samples |
-| **Tier 3 (Mid-market)** | Most independent studios (10–50 staff) | B2B (Business-to-Business) explainers, social content, corporate video | $450–$900/day | Reel + relevant industry experience |
-| **In-House (Tech)** | Airbnb, Spotify, Google, Meta | Product animations, brand, UX (User Experience) motion | Full-time or $600–$1,800/day | Portfolio + AE/code skill + culture fit |
+| **Tier 3 (Mid-market)** | Most independent studios (10–50 staff) | B2B explainers, social content, corporate video | $450–$900/day | Reel + relevant industry experience |
+| **In-House (Tech)** | Airbnb, Spotify, Google, Meta | Product animations, brand, UX motion | Full-time or $600–$1,800/day | Portfolio + AE/code skill + culture fit |
 | **Agency (Embedded)** | Creative depts of ad agencies | Campaign video, social, brand | $400–$800/day | Generalist reel |
 
 ### The Reel-to-Rate Relationship
@@ -277,7 +277,7 @@ The showreel is the minimum viable portfolio for a motion designer. A full profe
 | **Motionographer** | Motion design community | Featured work (apply for features) | As warranted |
 | **Instagram** | Clients + community | Short-form WIP, behind-the-scenes, final pieces | 3–5x per week |
 | **LinkedIn** | In-house teams, tech companies | Career narrative + selected work | 1–2x per week |
-| **Personal website** | All; SEO (Search Engine Optimization)-driven discovery | Portfolio + contact + rates | Always current |
+| **Personal website** | All; SEO-driven discovery | Portfolio + contact + rates | Always current |
 
 ### The Case Study as Supplementary Asset
 

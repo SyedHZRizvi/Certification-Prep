@@ -61,7 +61,7 @@ Defenses:
 - Token-bucket limiter
 - Exponential backoff + jitter
 - Spillover routing (Anthropic ↔ OpenAI ↔ Gemini)
-- **Batch API (Application Programming Interface) → 50% discount** for non-realtime
+- **Batch API → 50% discount** for non-realtime
 - Queue + drain pattern
 
 ---
@@ -72,8 +72,8 @@ Defenses:
 |--------|-----|
 | prompt_version, model, params | Attribution |
 | input, output, tokens, cost | Eval + bill |
-| latency P50/P95/P99 + TTFT | UX (User Experience) health |
-| cache_hit (prompt + semantic) | Cost ROI (Return on Investment) |
+| latency P50/P95/P99 + TTFT | UX health |
+| cache_hit (prompt + semantic) | Cost ROI |
 | LLM-judge score | Quality regression |
 | safety violations | Risk |
 
@@ -177,7 +177,7 @@ Done
 
 ❌ Often **wrong**:
 
-- "Hardcode a vendor SDK (Software Development Kit) and ship"
+- "Hardcode a vendor SDK and ship"
 - "Caching is automatic on every provider"
 - "Semantic cache is always safe"
 - "Just use GPT-5 for everything"
@@ -205,7 +205,7 @@ Cover the answers and recite:
 
 1. Two cache types and when each? ___
 2. LiteLLM's three killer features? ___
-3. SLO (Service Level Objective) targets, uptime, latency, quality? ___
+3. SLO targets, uptime, latency, quality? ___
 4. CI pipeline steps in order? ___
 5. Anthropic vs OpenAI vs Gemini cache tagging? ___
 

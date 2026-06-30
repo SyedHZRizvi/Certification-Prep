@@ -3,9 +3,9 @@
 > **Why this module matters:** AZ-900 loves "which service does X?" questions. This module is your map. Compute, networking, storage, databases, know what each does in one breath. ~35–40% of the exam lives in this module's territory.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [IaaS (Infrastructure as a Service) / PaaS (Platform as a Service) / SaaS (Software as a Service) service models and shared responsibility](../Module-01-Cloud-Concepts/Reading.md#-the-three-service-models-iaas-paas-saas), covered in Module 1
+> - [IaaS / PaaS / SaaS service models and shared responsibility](../Module-01-Cloud-Concepts/Reading.md#-the-three-service-models-iaas-paas-saas), covered in Module 1
 > - [The Azure resource hierarchy + regions + AZs](../Module-02-Azure-Architecture/Reading.md), covered in Module 2
-> - Basic networking vocabulary: IP address, subnet, load balancer, DNS (Domain Name System), HTTPS (HTTP Secure) vs TCP (Transmission Control Protocol)/UDP (User Datagram Protocol)
+> - Basic networking vocabulary: IP address, subnet, load balancer, DNS, HTTPS vs TCP/UDP
 >
 > This is the biggest module in the course, it's where you learn the named Azure services the exam expects you to recognize on sight. If you're not yet solid on "Microsoft manages X in PaaS, I manage Y," pause and re-read Module 1 §3 before continuing.
 
@@ -16,7 +16,7 @@
 Anna's pizza app from Module 1 has grown. *PizzaTracker.io* now serves 4 cities. She needs to build:
 
 1. A **website** for customers to order
-2. A **mobile API (Application Programming Interface)** for the iOS app
+2. A **mobile API** for the iOS app
 3. **Real-time order tracking** (GPS pings every 10 seconds)
 4. A **database** of menus, customers, and orders
 5. **Storage** for pizza photos and uploaded receipts
@@ -34,7 +34,7 @@ Compute is anything that runs your code or workload. Azure has six main flavors.
 |---------|-----------|----------|---------|
 | **Azure Virtual Machine (VM)** | Full IaaS VM, you control OS | Lift-and-shift, legacy apps, full OS control | Quick, simple web apps; serverless |
 | **VM Scale Sets (VMSS)** | Group of identical VMs that auto-scale together | Horizontally scaling stateless workloads | Single-instance / stateful |
-| **Azure App Service** | PaaS for web apps + APIs (managed OS + runtime) | Web apps, REST (Representational State Transfer) APIs, mobile back-ends | Heavy custom OS needs |
+| **Azure App Service** | PaaS for web apps + APIs (managed OS + runtime) | Web apps, REST APIs, mobile back-ends | Heavy custom OS needs |
 | **Azure Container Instances (ACI)** | Single Docker container, fastest container | Short jobs, dev/test, simple containerized workloads | Multi-container orchestration |
 | **Azure Kubernetes Service (AKS)** | Managed Kubernetes (PaaS control plane) | Microservices, container orchestration at scale | Tiny, single-container apps |
 | **Azure Functions** | Serverless, event-driven code (FaaS) | "When X happens, run this small piece of code" | Long-running processes (>10 min default) |
@@ -66,12 +66,12 @@ Compute is anything that runs your code or workload. Azure has six main flavors.
 | **Virtual Network (VNet)** | Private network in Azure (your slice of IP space) | The container for all networked resources |
 | **Subnet** | A slice of a VNet | Segment workloads (web/app/db tiers) |
 | **VNet Peering** | Connects two VNets privately | Connect a hub-and-spoke or two regions privately |
-| **VPN (Virtual Private Network) Gateway** | Encrypted tunnel from on-prem to Azure over public internet | Site-to-site VPN, point-to-site (remote workers) |
+| **VPN Gateway** | Encrypted tunnel from on-prem to Azure over public internet | Site-to-site VPN, point-to-site (remote workers) |
 | **ExpressRoute** | Dedicated **private** circuit from on-prem to Azure (not over internet) | Predictable bandwidth, low latency, very secure hybrid |
 | **Azure DNS** | Host your DNS zones in Azure | Manage `pizzatracker.io` records in Azure |
 | **Azure Load Balancer** | Layer-4 (TCP/UDP) load balancer | Distribute traffic across VMs |
-| **Azure Application Gateway** | Layer-7 (HTTP (Hypertext Transfer Protocol)/HTTPS) load balancer + WAF (Web Application Firewall) | Web apps, SSL (Secure Sockets Layer) termination, path-based routing |
-| **Azure Front Door** | Global L7 entry point + CDN (Content Delivery Network) + WAF | Multi-region web apps, global routing |
+| **Azure Application Gateway** | Layer-7 (HTTP/HTTPS) load balancer + WAF | Web apps, SSL termination, path-based routing |
+| **Azure Front Door** | Global L7 entry point + CDN + WAF | Multi-region web apps, global routing |
 | **Azure CDN** | Cache content at edge locations close to users | Speed up static assets globally |
 | **Azure Firewall** | Managed, cloud-scale stateful firewall | Centralized network filtering for VNets |
 | **NSG (Network Security Group)** | Basic allow/deny rules on subnets/NICs | Free, simple firewall-ish rules |
@@ -225,7 +225,7 @@ It supports multiple APIs: **NoSQL (native), MongoDB, Cassandra, Gremlin (graph)
 | **Azure AI Services** (formerly Cognitive Services) | Pre-built AI APIs (vision, speech, language) |
 | **Azure AI Foundry** | Build, evaluate, deploy AI apps (umbrella for Azure OpenAI + ML) |
 | **Azure Machine Learning** | Build, train, deploy custom ML models |
-| **Azure OpenAI Service** | GPT (Generative Pre-trained Transformer)-4, embeddings, DALL-E via Azure |
+| **Azure OpenAI Service** | GPT-4, embeddings, DALL-E via Azure |
 
 ---
 
@@ -308,12 +308,12 @@ It supports multiple APIs: **NoSQL (native), MongoDB, Cassandra, Gremlin (graph)
 
 ## 📊 Case Study, Walgreens Boots Alliance's Azure migration (2018–2023)
 
-**Situation.** Walgreens Boots Alliance (WBA) is the world's largest pharmacy retailer, more than 9,000 stores in the U.S. (Walgreens) plus the UK Boots chain, ~10,000+ stores worldwide, and roughly **380,000 employee endpoints** as of 2023. Before 2018, WBA's IT estate was a sprawl of acquired-company datacenters from decades of M&A (Mergers and Acquisitions) (Walgreens + Alliance Boots merged in 2014; Rite Aid stores were added in 2017–2018). The retailer was running point-of-sale, e-commerce, prescription-management, and customer-facing apps on owned hardware in roughly a dozen U.S. and EU datacenters. None of the pieces talked easily to each other. CEO (Chief Executive Officer) Stefano Pessina announced a multi-year cloud strategy in 2018 with Microsoft as the partner of record (Walgreens / Microsoft joint announcement, 2019-01-15).
+**Situation.** Walgreens Boots Alliance (WBA) is the world's largest pharmacy retailer, more than 9,000 stores in the U.S. (Walgreens) plus the UK Boots chain, ~10,000+ stores worldwide, and roughly **380,000 employee endpoints** as of 2023. Before 2018, WBA's IT estate was a sprawl of acquired-company datacenters from decades of M&A (Walgreens + Alliance Boots merged in 2014; Rite Aid stores were added in 2017–2018). The retailer was running point-of-sale, e-commerce, prescription-management, and customer-facing apps on owned hardware in roughly a dozen U.S. and EU datacenters. None of the pieces talked easily to each other. CEO Stefano Pessina announced a multi-year cloud strategy in 2018 with Microsoft as the partner of record (Walgreens / Microsoft joint announcement, 2019-01-15).
 
 **Decision.** WBA committed to a **7-year strategic partnership with Microsoft** worth a "multi-billion-dollar" book of business. The headline moves:
 
 - Migrate Walgreens.com, the **myWalgreens** loyalty platform, the pharmacy management system, and the corporate productivity stack to Azure + Microsoft 365, about **380,000 endpoints** to M365 and the core retail/e-commerce stack to Azure (Microsoft press release, 2019-01-15)
-- Use **Azure Virtual Machines + VM Scale Sets** for the lifted-and-shifted Windows Server applications (legacy ERP (Enterprise Resource Planning), pharmacy back-office, Rite Aid systems)
+- Use **Azure Virtual Machines + VM Scale Sets** for the lifted-and-shifted Windows Server applications (legacy ERP, pharmacy back-office, Rite Aid systems)
 - Use **Azure App Service + Azure SQL Database** for the rebuilt e-commerce front-end
 - Deploy globally across **US East / US West / North Europe / UK South** for latency-to-store plus regulatory residency (UK Boots data stays in UK South)
 - Use **Azure Site Recovery + Azure Backup** to replace on-prem DR setups
@@ -330,13 +330,13 @@ It supports multiple APIs: **NoSQL (native), MongoDB, Cassandra, Gremlin (graph)
 **Lesson for the exam / for practitioners.** Three AZ-900 concepts are visible end-to-end:
 
 1. **Compute service-picker discipline.** WBA didn't move *everything* to one Azure compute service. Legacy ERP → VMs (lift-and-shift IaaS). New e-commerce → App Service (PaaS). Vaccine-scheduling APIs → Azure Functions + Cosmos DB. Bulk batch jobs → ACI / Spot. The exam's "which service?" questions reflect exactly this discipline, different workloads → different services.
-2. **Hybrid + sovereignty in one company.** UK Boots data sits in UK South (GDPR (General Data Protection Regulation)). U.S. Walgreens data sits in US East/West (HIPAA, state pharmacy boards). One global identity (Microsoft Entra ID, formerly Azure AD (Active Directory)) ties them together. This is the canonical multi-region, multi-regulatory pattern the exam tests.
+2. **Hybrid + sovereignty in one company.** UK Boots data sits in UK South (GDPR). U.S. Walgreens data sits in US East/West (HIPAA, state pharmacy boards). One global identity (Microsoft Entra ID, formerly Azure AD) ties them together. This is the canonical multi-region, multi-regulatory pattern the exam tests.
 3. **Cloud economics under pressure.** Even at 380K-endpoint scale, the math worked out, but WBA's later cost issues are a reminder that the cloud isn't a magic profitability switch. It's an *agility* lever; whether the business converts agility into profit is up to leadership. (See the §6 discussion in Module 1.)
 
 Microsoft has used the WBA case in multiple Microsoft Mechanics and Ignite sessions as the canonical "Fortune 500 enterprise lift-and-shift + modernization" reference (Microsoft Mechanics, "Walgreens on Azure," 2022-09; Microsoft Ignite 2023).
 
 **Discussion (Socratic).**
-- **Q1:** WBA chose Azure exclusively over a multi-cloud (AWS (Amazon Web Services) + Azure) strategy. Argue both sides. At what point in WBA's growth did exclusivity stop being "vendor lock-in" and start being "strategic depth with one partner"? What's the contract clause you'd insist on if you were WBA's CIO signing the 2019 deal?
+- **Q1:** WBA chose Azure exclusively over a multi-cloud (AWS + Azure) strategy. Argue both sides. At what point in WBA's growth did exclusivity stop being "vendor lock-in" and start being "strategic depth with one partner"? What's the contract clause you'd insist on if you were WBA's CIO signing the 2019 deal?
 - **Q2:** WBA's lift-and-shift of legacy ERP onto Azure VMs (IaaS) preserved the OS, the patch cycles, and the operational pain, they just moved it to someone else's hardware. A purist would argue this is the *wrong* migration pattern and they should have refactored to PaaS. Defend the lift-and-shift choice at WBA's scale and timeline (380K endpoints in 7 years). When is lift-and-shift the *strategically correct* answer rather than a copout?
 - **Q3:** During COVID vaccine rollout (Dec 2020 – mid-2021), Walgreens' Azure-hosted scheduling system absorbed an unprecedented spike, millions of appointments booked in a single week. Compare this to Anna's pizza-shop scaling story in Module 1. At what enterprise scale does the *cloud-as-utility* argument stop being a marketing pitch and become an existential requirement? (Cite the auto-scale economics and the seasonality argument explicitly.)
 
@@ -363,7 +363,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 4 secures every service named here (RBAC (Role-Based Access Control) + Policy + Locks across compute / network / storage / data); Module 5 puts cost and SLA (Service Level Agreement) math on top, including the composite-SLA calculation across App Service + SQL DB which this module names; Module 6 introduces the tools (Bicep, Azure Migrate, Azure Monitor) that operationalize this service catalog.
+> - Inside this course: Module 4 secures every service named here (RBAC + Policy + Locks across compute / network / storage / data); Module 5 puts cost and SLA math on top, including the composite-SLA calculation across App Service + SQL DB which this module names; Module 6 introduces the tools (Bicep, Azure Migrate, Azure Monitor) that operationalize this service catalog.
 > - Cross-course: `06-Azure-Administrator` Module 3–7 (AZ-104) covers the same services at *operational* depth, networking deep-dive, storage performance tuning, VM lifecycle management. `08-Azure-AI-Engineer` (AI-102) builds on the Cosmos DB + Azure OpenAI services introduced here.
 > - Practice: Practice Exam 1 (after Modules 1–3) draws roughly 10–12 questions from this module's service catalog. Final Mock Exam includes the Cosmos DB "multi-API" question (Q50) which is canonical.
 
@@ -371,11 +371,11 @@ You now know:
 
 ## 💬 Discussion, Socratic prompts
 
-1. **The compute-service decision tree under pressure.** A team gets a request to "host this thing on Azure", it's a Python script that processes 100GB of CSV files once a week from a partner FTP (File Transfer Protocol). Walk through the service-picker decision: VM vs App Service vs Functions vs ACI vs AKS. What's the *cheapest* answer? The *fastest* answer? The *easiest-to-hand-off-to-an-intern* answer? Which is the *right* answer, and why is it not the cheapest? (Cite the Module 3 compute table.)
-2. **ExpressRoute vs VPN at the breakeven.** A 200-person company is moving its primary database to Azure. ExpressRoute would cost ~$3,000/month plus a one-time circuit setup fee (telco involvement, 6–8 weeks). VPN Gateway costs ~$140/month and is up in an afternoon. The CFO (Chief Financial Officer) loves VPN; the database team's SLO (Service Level Objective) is sub-50ms write latency from the on-prem application servers. Argue both sides. What's the *workload characteristic* that flips the answer between them, and at what company size do you stop being able to justify ExpressRoute's cost? (Reference the VPN-vs-ExpressRoute table.)
+1. **The compute-service decision tree under pressure.** A team gets a request to "host this thing on Azure", it's a Python script that processes 100GB of CSV files once a week from a partner FTP. Walk through the service-picker decision: VM vs App Service vs Functions vs ACI vs AKS. What's the *cheapest* answer? The *fastest* answer? The *easiest-to-hand-off-to-an-intern* answer? Which is the *right* answer, and why is it not the cheapest? (Cite the Module 3 compute table.)
+2. **ExpressRoute vs VPN at the breakeven.** A 200-person company is moving its primary database to Azure. ExpressRoute would cost ~$3,000/month plus a one-time circuit setup fee (telco involvement, 6–8 weeks). VPN Gateway costs ~$140/month and is up in an afternoon. The CFO loves VPN; the database team's SLO is sub-50ms write latency from the on-prem application servers. Argue both sides. What's the *workload characteristic* that flips the answer between them, and at what company size do you stop being able to justify ExpressRoute's cost? (Reference the VPN-vs-ExpressRoute table.)
 3. **Cosmos DB as the universal answer (trap).** A junior architect tries to pick Cosmos DB for *every* new project because "globally distributed multi-model NoSQL with single-digit-ms latency" sounds best. List the three workload profiles where Cosmos DB is *the wrong choice*, and what the right Azure database service is for each. (Hint: think about a regulated SQL Server lift-and-shift, a tiny in-memory cache, and a relational reporting workload.)
 4. **The blob tier optimization problem.** A media company stores **5 PB of raw video footage** that is accessed *maybe once per quarter*. Their finance team budgeted Hot tier "to be safe." Calculate (qualitatively) the cost difference of Hot vs Cool vs Cold vs Archive. What's the right tier, and what's the trap nobody mentions until the first time they need to rehydrate? When would you *intentionally* over-pay for Hot instead of Archive, even at this access pattern?
-5. **L4 vs L7 vs global L7.** A retailer has a regional e-commerce site (single Azure region, US East), serving Black-Friday-scale spikes. The current stack uses an Azure Load Balancer (L4) in front of App Service. The new VP of Engineering wants to swap in Front Door (global L7 + WAF + CDN) instead "because best practices." Walk through the *honest* cost-benefit. When is L4 the right tool and L7 over-engineering? When does going global (Front Door) actually help a *single-region* business? (Hint: latency, DDoS (Distributed Denial of Service) protection, and TLS (Transport Layer Security) termination economics.)
+5. **L4 vs L7 vs global L7.** A retailer has a regional e-commerce site (single Azure region, US East), serving Black-Friday-scale spikes. The current stack uses an Azure Load Balancer (L4) in front of App Service. The new VP of Engineering wants to swap in Front Door (global L7 + WAF + CDN) instead "because best practices." Walk through the *honest* cost-benefit. When is L4 the right tool and L7 over-engineering? When does going global (Front Door) actually help a *single-region* business? (Hint: latency, DDoS protection, and TLS termination economics.)
 
 ---
 

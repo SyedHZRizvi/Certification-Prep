@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -281,7 +281,7 @@
 **A:** Vertical (industry), Channel (delivery medium), Deliverable (productized service). Most high-performers stack two.
 
 **Q:** What is a "stacked wedge"?
-**A:** Niching along 2–3 axes simultaneously (e.g., Google Ads + addiction-recovery centers). Typically achieves $700K–$1.5M Year-2 ARR (Annual Recurring Revenue) ceilings.
+**A:** Niching along 2–3 axes simultaneously (e.g., Google Ads + addiction-recovery centers). Typically achieves $700K–$1.5M Year-2 ARR ceilings.
 
 **Q:** Why does niching multiply your hourly rate?
 **A:** Specialists are perceived as solving a specific painful problem and command 3–8x generalist rates.
@@ -333,7 +333,7 @@
 **A:** $150–$250/hr effective.
 
 **Q:** How many SKUs should you have Year 1?
-**A:** 1 SKU (Stock Keeping Unit) Year 1, 2 SKUs Year 2, 3 SKUs Year 3. Resist adding more.
+**A:** 1 SKU Year 1, 2 SKUs Year 2, 3 SKUs Year 3. Resist adding more.
 
 **Q:** What's the rule on revisions in productized services?
 **A:** One revision round included. Additional revisions at a flat fee ($250–$500).
@@ -361,7 +361,7 @@
 **A:** ~$235/mo: Apollo $79 + Smartlead $39 + 3 inboxes $18 + LinkedIn SalesNav $99.
 
 **Q:** Minimum ACV for paid ads to make math sense?
-**A:** $7,500+. Below that, paid CAC (Customer Acquisition Cost) ($800–$2,500 per booked call) doesn't pay back.
+**A:** $7,500+. Below that, paid CAC ($800–$2,500 per booked call) doesn't pay back.
 
 **Q:** What is the Justin Welsh content engine?
 **A:** 5 LinkedIn posts/week + weekly newsletter, ~8 hr/week, repurposed across 5 LinkedIn + 5 tweets + 1 video per newsletter.
@@ -389,7 +389,7 @@
 **A:** 30–50%. Above 50% often signals underpricing.
 
 **Q:** What are the 7 sections of a proposal that closes?
-**A:** Cover + recap, problem, approach, ROI (Return on Investment) projection, investment (3 options), timeline + next steps, logistics + FAQ.
+**A:** Cover + recap, problem, approach, ROI projection, investment (3 options), timeline + next steps, logistics + FAQ.
 
 **Q:** What is a kill fee?
 **A:** Penalty paid by the client if they cancel mid-engagement. Typically 25–50% of unbilled balance.
@@ -422,7 +422,7 @@
 **Q:** What's the Year-1 solo with outbound stack cost target?
 **A:** ~$430/mo (Tier 2).
 
-**Q:** What's the recommended LLM (Large Language Model) choice for a solo Year-1 founder?
+**Q:** What's the recommended LLM choice for a solo Year-1 founder?
 **A:** ChatGPT Plus OR Claude Pro at $20/mo, plus a free secondary.
 
 **Q:** How do Make.com, n8n, and Zapier compare on cost?
@@ -432,13 +432,13 @@
 **A:** No. Pick ONE. They do 90% of the same work.
 
 **Q:** What's in the "sucker stack" to skip Year 1?
-**A:** HubSpot Marketing Hub Pro, Salesforce, ZoomInfo (use Apollo), Outreach.io/Salesloft, multiple SEO (Search Engine Optimization) tools simultaneously.
+**A:** HubSpot Marketing Hub Pro, Salesforce, ZoomInfo (use Apollo), Outreach.io/Salesloft, multiple SEO tools simultaneously.
 
 **Q:** Tool spend should target what % of revenue?
 **A:** 1–2%.
 
 **Q:** Recommended Year-1 analytics stack cost?
-**A:** $0, GA4 (Google Analytics 4) + Search Console + Looker Studio + Microsoft Clarity.
+**A:** $0, GA4 + Search Console + Looker Studio + Microsoft Clarity.
 
 **Q:** What's the day-1 security stack?
 **A:** YubiKey 5 NFC ($50 once) + 1Password or Bitwarden ($3–$8/mo). Cheapest insurance you can buy.
@@ -488,7 +488,7 @@
 **A:** 4, business checking, business savings (tax bucket), personal checking, personal savings.
 
 **Q:** When does the S-corp election typically make sense (US)?
-**A:** $80K–$400K profit, paired with a reasonable salary + distributions split, with CPA (Cost Per Acquisition) guidance.
+**A:** $80K–$400K profit, paired with a reasonable salary + distributions split, with CPA guidance.
 
 **Q:** US quarterly estimated tax deadlines?
 **A:** April 15, June 15, Sept 15, January 15 (next year).
@@ -571,7 +571,7 @@
 **A:** Founder of Contrarian Thinking. Niched into "boring business acquisition" content. Newsletter at ~700K subs by 2025; sponsorships, agency, fund.
 
 **Q:** Who is Anthony Pierri?
-**A:** Founder of FletchPMM (positioning advisory for B2B (Business-to-Business) SaaS (Software as a Service)). $1M+ ARR primarily from LinkedIn inbound + content.
+**A:** Founder of FletchPMM (positioning advisory for B2B SaaS). $1M+ ARR primarily from LinkedIn inbound + content.
 
 **Q:** Who is Sam Parr?
 **A:** Founder of The Hustle (sold to HubSpot for ~$27M in 2021). Now runs Hampton, a founders' community. Frequent host of My First Million podcast.
@@ -589,7 +589,7 @@
 **A:** Founder of Late Checkout. Public commentator on AI-leveraged agency builds and the AI-native team model.
 
 **Q:** Who is Khe Hy?
-**A:** Founder of RadReads. Solopreneur finance + leverage frameworks; "family CFO (Chief Financial Officer)" model.
+**A:** Founder of RadReads. Solopreneur finance + leverage frameworks; "family CFO" model.
 
 ---
 

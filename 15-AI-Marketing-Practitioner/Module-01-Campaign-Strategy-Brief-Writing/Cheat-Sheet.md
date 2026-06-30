@@ -11,7 +11,7 @@ WHO   →  One person. Name them. Specific.
 WHAT  →  One behavior change. Measurable.
 WHY   →  The insight. Not a feature.
 WHERE →  The channels. Not "all of them."
-HOW   →  KPIs (Key Performance Indicators) with NUMBERS.
+HOW   →  KPIs with NUMBERS.
 ```
 🧠 Memory hook: **"Who What Why Where How"**, say it aloud before every brief.
 
@@ -28,12 +28,12 @@ HOW   →  KPIs (Key Performance Indicators) with NUMBERS.
 
 ---
 
-## 📐 KPI (Key Performance Indicator) Tiers (Don't Mix Levels)
+## 📐 KPI Tiers (Don't Mix Levels)
 
 | Tier | What it measures | Example metrics |
 |------|------------------|-----------------|
-| Primary KPI | Success | CPA (Cost Per Acquisition), ROAS (Return on Ad Spend), conversions, qualified leads |
-| Secondary KPI | Health | CTR (Click-Through Rate), CPC (Cost Per Click), CPM (Cost Per Mille), frequency |
+| Primary KPI | Success | CPA, ROAS, conversions, qualified leads |
+| Secondary KPI | Health | CTR, CPC, CPM, frequency |
 | Guardrail KPI | Pause trigger | "Stop if CPA > $60 for 3 days" |
 
 ---
@@ -117,7 +117,7 @@ When you see these, they're often **wrong**:
 | Model | Use for |
 |-------|---------|
 | Claude Sonnet 4.7 | Long, nuanced briefs |
-| ChatGPT GPT (Generative Pre-trained Transformer)-5 | Quick iteration, structure |
+| ChatGPT GPT-5 | Quick iteration, structure |
 | Gemini 2.5 Pro | Multimodal (image inputs) |
 
 ---

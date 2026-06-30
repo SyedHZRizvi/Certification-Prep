@@ -1,9 +1,9 @@
 # Module 2: Azure Architecture 🌍
 
-> **Why this module matters:** Every Azure resource every VM (Virtual Machine), every database, every load balancer lives inside a *geographic* and *organizational* hierarchy. Get this hierarchy wrong on the exam and you'll lose 5–10 questions. Get it right and a whole class of "where do I apply this policy?" questions become free points.
+> **Why this module matters:** Every Azure resource every VM, every database, every load balancer lives inside a *geographic* and *organizational* hierarchy. Get this hierarchy wrong on the exam and you'll lose 5–10 questions. Get it right and a whole class of "where do I apply this policy?" questions become free points.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Cloud service models (IaaS (Infrastructure as a Service) / PaaS (Platform as a Service) / SaaS (Software as a Service)) and shared responsibility](../Module-01-Cloud-Concepts/Reading.md), covered in Module 1
+> - [Cloud service models (IaaS / PaaS / SaaS) and shared responsibility](../Module-01-Cloud-Concepts/Reading.md), covered in Module 1
 > - [High availability vs disaster recovery distinctions](../Module-01-Cloud-Concepts/Reading.md#-fault-tolerance-disaster-recovery-and-ha--dont-mix-them-up), covered in Module 1
 > - Basic networking literacy: what a datacenter is, what "region" and "zone" mean in everyday English
 >
@@ -67,7 +67,7 @@ Azure currently has **60+ regions** in **140+ countries**, by far the largest cl
 - **Zonal**, your VM is *pinned* to a specific AZ (e.g., AZ-1)
 - **Zone-redundant**, Azure spreads the service across all 3 AZs automatically (e.g., zone-redundant storage, zone-redundant SQL DB)
 
-🎯 **Exam pattern:** "Customer wants 99.99% VM SLA (Service Level Agreement) with in-region HA" → **deploy VMs across multiple Availability Zones**.
+🎯 **Exam pattern:** "Customer wants 99.99% VM SLA with in-region HA" → **deploy VMs across multiple Availability Zones**.
 
 ---
 
@@ -129,7 +129,7 @@ Memorize the chain:
 
 | Level | What it is | Purpose | Inheritance |
 |-------|------------|---------|-------------|
-| **Management Group** | Container for multiple subscriptions | Apply policies/RBAC (Role-Based Access Control) at scale to many subs at once | Children inherit |
+| **Management Group** | Container for multiple subscriptions | Apply policies/RBAC at scale to many subs at once | Children inherit |
 | **Subscription** | Billing + auth boundary | Spending limit, separate billing, owner | Children inherit |
 | **Resource Group** | Logical container for resources | Group by lifecycle / app / environment | Resources inherit some settings |
 | **Resource** | Actual stuff (VM, storage, DB) | Does the work |, |
@@ -153,7 +153,7 @@ Memorize the chain:
 
 ## 🏷️ Microsoft Entra Tenants & the Big Picture
 
-Above the resource hierarchy sits the **Microsoft Entra ID tenant** (formerly Azure AD (Active Directory) tenant).
+Above the resource hierarchy sits the **Microsoft Entra ID tenant** (formerly Azure AD tenant).
 
 ```
 🏛️ ENTRA ID TENANT  (your company's identity directory)
@@ -192,7 +192,7 @@ When choosing a region for deployment, consider:
 | Factor | Why |
 |--------|-----|
 | **Latency** to users | Pick regions close to your customers |
-| **Data residency / sovereignty** | Some data must stay in specific countries (GDPR (General Data Protection Regulation), etc.) |
+| **Data residency / sovereignty** | Some data must stay in specific countries (GDPR, etc.) |
 | **Service availability** | Not every Azure service is in every region (e.g., some AI services US-only at launch) |
 | **Price** | Pricing varies by region, US/Europe usually cheaper than Brazil/Asia |
 | **Compliance certifications** | Specific regions hold specific certs (HIPAA, FedRAMP, IRAP, etc.) |
@@ -239,15 +239,15 @@ When choosing a region for deployment, consider:
 
 ## 📊 Case Study, H&R Block's *AI Tax Assist* on Azure OpenAI (2024 tax season)
 
-**Situation.** H&R Block has prepared U.S. tax returns since 1955 and files roughly **20+ million returns per year** in a brutally seasonal pattern, over half of annual volume hits in a four-week window between February and April. By 2023, the company was losing share to TurboTax (Intuit) in the DIY-software segment. CEO (Chief Executive Officer) Jeff Jones bet that generative AI could differentiate the product: if a customer could literally *ask the software a tax question* and get a cited, accurate, audit-defensible answer, that would shift the value proposition from "form filler" to "AI tax expert in your pocket." H&R Block went public with this strategy at **Microsoft Build 2024** (Microsoft Build 2024 keynote, 2024-05-21; H&R Block press release, 2024-01-25, "AI Tax Assist").
+**Situation.** H&R Block has prepared U.S. tax returns since 1955 and files roughly **20+ million returns per year** in a brutally seasonal pattern, over half of annual volume hits in a four-week window between February and April. By 2023, the company was losing share to TurboTax (Intuit) in the DIY-software segment. CEO Jeff Jones bet that generative AI could differentiate the product: if a customer could literally *ask the software a tax question* and get a cited, accurate, audit-defensible answer, that would shift the value proposition from "form filler" to "AI tax expert in your pocket." H&R Block went public with this strategy at **Microsoft Build 2024** (Microsoft Build 2024 keynote, 2024-05-21; H&R Block press release, 2024-01-25, "AI Tax Assist").
 
 **Decision.** H&R Block partnered with Microsoft to ship **AI Tax Assist** for the 2023 tax year filing season (Jan–Apr 2024), built on:
 
-- **Azure OpenAI Service** for the LLM (Large Language Model) layer (GPT (Generative Pre-trained Transformer)-4 + GPT-4 Turbo behind a private endpoint)
+- **Azure OpenAI Service** for the LLM layer (GPT-4 + GPT-4 Turbo behind a private endpoint)
 - A **private Azure region** (US East + paired West) so no taxpayer PII ever left Microsoft's enterprise boundary, directly addressing the Cloud Adoption Framework's "regulated data" pattern
 - **Retrieval-Augmented Generation (RAG)** over H&R Block's proprietary corpus of IRS publications, state-by-state tax law, and 70 years of internal tax-prep playbooks, so the model's answers were grounded in the same source material a tax pro would cite
-- Resource isolation at the **subscription level**, with Azure Policy enforcing US-only regions and a dedicated **management group** for tax-season workloads (so audit trails for SOC (Security Operations Center) 2 / IRS Section 7216 compliance were trivial to produce)
-- Scaling that absorbed the seasonal spike, H&R Block's API (Application Programming Interface) call volume jumped roughly **400× from December 2023 to peak-April 2024**, then collapsed back to baseline within a week of the IRS deadline
+- Resource isolation at the **subscription level**, with Azure Policy enforcing US-only regions and a dedicated **management group** for tax-season workloads (so audit trails for SOC 2 / IRS Section 7216 compliance were trivial to produce)
+- Scaling that absorbed the seasonal spike, H&R Block's API call volume jumped roughly **400× from December 2023 to peak-April 2024**, then collapsed back to baseline within a week of the IRS deadline
 
 **Outcome.** AI Tax Assist was used by **millions** of H&R Block customers in its first season (H&R Block FY2024 Q4 earnings call, 2024-08-20). The company's online-channel revenue grew double-digit percent year-over-year its strongest DIY season in a decade. H&R Block's stock (NYSE: HRB) gained roughly 35% across 2024. Internally, the company reported that without Azure's elastic capacity model the launch would have required either (a) building out a sized-for-peak GPU cluster that would sit 95% idle nine months a year, or (b) accepting visible degradation at peak filing weeks both unacceptable.
 
@@ -297,7 +297,7 @@ You now know:
 
 Use these as journal prompts or whiteboard prompts with a peer.
 
-1. **The landing-zone allocation problem.** A 6,000-employee insurance company is moving from a single Azure subscription (an unintentional "Big Bang") to a proper hierarchy. The cloud team proposes 1 management-group per business unit (Insurance, Investments, IT-Shared) and 1 subscription per environment per BU (Dev/Test/Prod × 3 = 9 subscriptions minimum). The CFO (Chief Financial Officer) objects that "10 subscriptions for one company is bureaucratic overkill." Build the strongest case for the *6,000-employee-grade* hierarchy versus the *startup-grade* single-subscription model. Where exactly does the breakeven sit (employees? annual Azure spend? regulatory exposure?), and what's the principled framework? (Hint: Microsoft's Enterprise-Scale Landing Zone reference architecture.)
+1. **The landing-zone allocation problem.** A 6,000-employee insurance company is moving from a single Azure subscription (an unintentional "Big Bang") to a proper hierarchy. The cloud team proposes 1 management-group per business unit (Insurance, Investments, IT-Shared) and 1 subscription per environment per BU (Dev/Test/Prod × 3 = 9 subscriptions minimum). The CFO objects that "10 subscriptions for one company is bureaucratic overkill." Build the strongest case for the *6,000-employee-grade* hierarchy versus the *startup-grade* single-subscription model. Where exactly does the breakeven sit (employees? annual Azure spend? regulatory exposure?), and what's the principled framework? (Hint: Microsoft's Enterprise-Scale Landing Zone reference architecture.)
 2. **Region-pair design under sovereignty.** A pharma company needs to deploy a clinical-trial data platform that is regulated by both **FDA 21 CFR Part 11** (US) and **EMA Annex 11** (EU). The same dataset must be available, with low latency, to teams in Cambridge MA, Basel CH, and Tokyo JP. Walk through the region-and-region-pair design you would propose. What's the trade-off between deploying *one* primary region per regulatory boundary (3 primaries × paired = 6 regions) versus a *single primary in each geography* (3 regions with cross-region replication outside)? Cite the §"Sovereign Regions" table from this reading.
 3. **The "RG location is metadata" trap.** A new hire creates a `rg-prod-uk` resource group in the West Europe region "because that's the closest". Six months later, the team realizes that some of the resources inside live in East US (the developer's default). The compliance officer is furious, *did this violate data residency?* Walk through what the answer actually is, citing the Module 2 rule that "RG location is metadata, not a residency boundary." Then propose the governance fix (Azure Policy at the management-group level) that prevents this from happening again.
 4. **Management-group depth vs flatness.** Microsoft allows up to 6 levels of management-group nesting beneath the root. A consulting firm models the entire company structure corporate → division → business unit → product family → product → environment into a 6-deep tree. A senior consultant argues this is overkill and increases blast radius for policy mistakes (one misclick at the top breaks 12 layers down). Defend both positions. What's the practical heuristic for *how deep is too deep* in management-group nesting?

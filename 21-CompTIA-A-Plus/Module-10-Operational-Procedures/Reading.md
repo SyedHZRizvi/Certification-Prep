@@ -38,7 +38,7 @@ This module teaches you that mindset. Documentation, change management, environm
 | **License inventory** | Software licenses + expiration |
 | **Acceptable Use Policy (AUP)** | What users may/may not do |
 | **Password policy** | Strength, expiry, complexity |
-| **MoU / SLA (Service Level Agreement)** | External commitments |
+| **MoU / SLA** | External commitments |
 
 ### What makes a good ticket
 
@@ -220,7 +220,7 @@ Human static can reach **35,000 V**. Modern CMOS components can fail at **10–1
 
 | Data class | Regulation | Examples |
 |------------|------------|----------|
-| **PII** | GDPR (General Data Protection Regulation), state laws | Name + SSN, name + DOB, name + address |
+| **PII** | GDPR, state laws | Name + SSN, name + DOB, name + address |
 | **PHI** | HIPAA (US) | Health records |
 | **PCI** | PCI-DSS | Credit card data |
 | **CUI** | NIST SP 800-171 (US gov contracts) | Controlled Unclassified Info |
@@ -304,7 +304,7 @@ This is the kind of judgment A+ tests, there's no technical fix, but there is a 
 
 ## 📊 Case Study, The 2019 Capital One Data Breach & The Inadequate Change Review
 
-**Situation.** In July 2019, Capital One disclosed a breach exposing data on **~106 million** US and Canadian customers, names, addresses, credit scores, ~140,000 SSNs, and ~80,000 bank account numbers. The attacker was a former AWS (Amazon Web Services) employee who exploited a misconfigured **AWS WAF (Web Application Firewall)** (Web Application Firewall) to perform Server-Side Request Forgery (SSRF), pivoted to EC2 (Elastic Compute Cloud) instance metadata service, retrieved an IAM (Identity and Access Management) role's temporary credentials, then used those credentials to list and download S3 (Simple Storage Service) buckets containing the data.
+**Situation.** In July 2019, Capital One disclosed a breach exposing data on **~106 million** US and Canadian customers, names, addresses, credit scores, ~140,000 SSNs, and ~80,000 bank account numbers. The attacker was a former AWS employee who exploited a misconfigured **AWS WAF** (Web Application Firewall) to perform Server-Side Request Forgery (SSRF), pivoted to EC2 instance metadata service, retrieved an IAM role's temporary credentials, then used those credentials to list and download S3 buckets containing the data.
 
 **The change-management angle.** Court filings (US v. Paige Thompson, 2022) revealed that the misconfigured WAF was *known* to Capital One's security team for weeks before exploitation. Multiple internal tickets had flagged the open SSRF path. The change ticket to remediate had been opened, prioritized as "P2, non-urgent", and was waiting in a queue behind other work. Once exploited, exfiltration completed in ~36 hours undetected.
 

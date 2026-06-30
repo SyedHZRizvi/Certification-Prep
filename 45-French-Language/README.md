@@ -69,7 +69,7 @@ French is spoken by over 320 million people across 5 continents — from Paris t
 | **Week 1** | Getting Started | Module 01 | 45 min/day |
 | **Week 2** | Building Vocabulary | Module 02 | 45 min/day |
 | **Week 3** | Grammar Foundations | Module 03 | 60 min/day |
-| **Week 4** | Practical Use + Practice Exam 1 | Module 04 + PE (Private Equity)-1 | 60 min/day |
+| **Week 4** | Practical Use + Practice Exam 1 | Module 04 + PE-1 | 60 min/day |
 | **Week 5** | Intermediate Step-Up | Modules 05–06 | 75 min/day |
 | **Week 6** | Advanced Grammar + Practice Exam 2 | Module 07 + PE-2 | 75 min/day |
 | **Week 7** | Professional & Cultural French | Modules 08–09 | 90 min/day |

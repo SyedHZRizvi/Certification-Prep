@@ -35,7 +35,7 @@ A "full node" is any computer running Bitcoin Core (or one of the compatible alt
 | Component | Count (2026 estimates) | Source |
 |-----------|------------------------|--------|
 | Reachable full nodes (listening) | ~15,000–20,000 | Bitnodes.io, Luke-jr's snapshot |
-| Total full nodes (incl. behind NAT (Network Address Translation)) | ~50,000–100,000 | Researchers' estimates |
+| Total full nodes (incl. behind NAT) | ~50,000–100,000 | Researchers' estimates |
 | Lightning nodes | ~12,000 public + tens of thousands private | mempool.space, 1ML |
 | Mining pools (significant) | ~10–12 | Hashrate trackers |
 | Reachable archival nodes | ~70% of reachable nodes | Hold full historical chain |
@@ -45,9 +45,9 @@ A "full node" is any computer running Bitcoin Core (or one of the compatible alt
 
 ### Node default port + protocol
 
-- **Mainnet** TCP (Transmission Control Protocol) port 8333. Plaintext binary protocol. No TLS (Transport Layer Security) (see Module 2 Heartbleed discussion).
+- **Mainnet** TCP port 8333. Plaintext binary protocol. No TLS (see Module 2 Heartbleed discussion).
 - **Testnet3** port 18333. **Signet** port 38333. **Regtest** port 18444.
-- Modern peer discovery via **DNS (Domain Name System) seeds** (hardcoded list of high-availability nodes) → exchange `addr` messages.
+- Modern peer discovery via **DNS seeds** (hardcoded list of high-availability nodes) → exchange `addr` messages.
 - Some nodes also accept Tor and I2P connections for privacy.
 
 ### What a full node DOES
@@ -238,7 +238,7 @@ A **soft fork** restricts the previously-valid set of blocks. Non-upgraded nodes
 
 **Examples (CBP tests these):**
 - **P2SH (BIP-16)**, April 2012
-- **CLTV (Customer Lifetime Value), CSV**, 2015-2016
+- **CLTV, CSV**, 2015-2016
 - **SegWit (BIPs 141, 143, 144)**, August 2017
 - **Taproot (BIPs 340, 341, 342)**, November 2021
 
@@ -441,7 +441,7 @@ You now know:
 1. **The 0.8/0.7 governance precedent.** In March 2013 a small group of developers and miners coordinated on IRC to abandon a longer chain in favor of the previously-canonical chain. Was this a vindication of decentralization (small social network responded effectively) or a violation (a few people decided for everyone)? How does your answer change at $10K/BTC vs $100K/BTC vs $1M/BTC?
 2. **Probabilistic vs deterministic finality.** PBFT-style chains (Cosmos, HotStuff) have deterministic finality after a single round (~1-2 seconds). Bitcoin's probabilistic finality takes ~1 hour for the same confidence. What does Bitcoin gain by giving up deterministic finality, and at what value-at-risk does the trade-off favor PBFT-style chains?
 3. **The big-block / small-block debate revisited.** The BCH fork was 9 years ago in 2026. SegWit + Lightning won the technical debate; BCH market-share lost the financial debate. Construct the strongest argument that the small-block / Lightning camp made the right call AND the strongest argument they didn't. What would have happened if both camps had agreed to a 4 MB compromise in 2016?
-4. **51% attack as a market event.** Quantify: if Bitcoin's hashrate is 600 EH/s and an attacker rents that much from AWS (Amazon Web Services)-equivalent, what's the per-hour cost? At what BTC price is the cost-benefit clearly negative? Use back-of-envelope numbers, perfection isn't required, defensible reasoning is.
+4. **51% attack as a market event.** Quantify: if Bitcoin's hashrate is 600 EH/s and an attacker rents that much from AWS-equivalent, what's the per-hour cost? At what BTC price is the cost-benefit clearly negative? Use back-of-envelope numbers, perfection isn't required, defensible reasoning is.
 5. **Hard-fork-as-asset-class question.** Should an institutional Bitcoin custodian hold the hard-fork coin (BCH, BSV) automatically delivered to its custody clients post-fork? Custody risk, audit risk, regulatory risk, work through each.
 
 ---

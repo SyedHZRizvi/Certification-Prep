@@ -1,10 +1,10 @@
-# 📋 Module 6 Cheat Sheet: Conversion Optimization & UX (User Experience)
+# 📋 Module 6 Cheat Sheet: Conversion Optimization & UX
 
-> Print and tape. CVR (Conversion Rate) is the multiplier that decides whether paid spend pays back.
+> Print and tape. CVR is the multiplier that decides whether paid spend pays back.
 
 ---
 
-## 📊 DTC (Direct-to-Consumer) CVR Benchmarks (2026)
+## 📊 DTC CVR Benchmarks (2026)
 
 | Category | Median | Top quartile |
 |----------|--------|--------------|
@@ -16,7 +16,7 @@
 | Electronics | 1.5-2.5% | 3-5% |
 | Subscription | 3.5-5.5% | 8-12% |
 
-🧠 **Top quartile = 3-5x median.** Driven by CRO (Chief Revenue Officer) discipline.
+🧠 **Top quartile = 3-5x median.** Driven by CRO discipline.
 
 ---
 
@@ -83,7 +83,7 @@ CLS  ≤ 0.1          (Cumulative Layout Shift)
 6. Trust signals (reviews ★, badges)
 7. Description ≥ 200 words
 8. Specs table
-9. Customer reviews + UGC (User-Generated Content) photos
+9. Customer reviews + UGC photos
 10. Sticky ATC on mobile
 ```
 
@@ -125,11 +125,11 @@ Best practices:
 
 | Vendor | Best for |
 |--------|----------|
-| Mutiny | B2B (Business-to-Business) / SaaS (Software as a Service) landing pages |
+| Mutiny | B2B / SaaS landing pages |
 | Dynamic Yield | Enterprise |
 | Optimizely Personalization | CMS-integrated |
 | Bloomreach | Content + commerce |
-| Klaviyo Web/Push | DTC, predicted-CLV (Customer Lifetime Value) signals |
+| Klaviyo Web/Push | DTC, predicted-CLV signals |
 | Shopify Audiences | First-party Shopify |
 
 **Honest lift: 3-8%**

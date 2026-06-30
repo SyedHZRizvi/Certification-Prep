@@ -27,7 +27,7 @@ AI Digital Marketing Foundations is the credential that takes you from someone w
 - **SEO Analyst** ($55K–$80K), increasingly AI-Overview-aware; AI literacy is now a differentiator
 - **Marketing Automation Specialist** ($65K–$90K), HubSpot / Marketo / Klaviyo orchestration
 - **Junior Performance Marketer** ($60K–$85K), running Google Ads, Meta Ads, TikTok Ads under supervision
-- **Content Marketer (AI-assisted)** ($55K–$80K), owning content production with Claude / GPT (Generative Pre-trained Transformer) / generative tools
+- **Content Marketer (AI-assisted)** ($55K–$80K), owning content production with Claude / GPT / generative tools
 
 *Salary ranges are illustrative figures drawn from publicly available compensation surveys (e.g., Glassdoor, LinkedIn Salary Insights, Levels.fyi) for US/Canada/UK markets as of 2024–2025. Actual compensation varies by location, employer size, experience, and economic conditions. These figures are for general orientation only and do not constitute a compensation guarantee.*
 
@@ -40,7 +40,7 @@ This is course **1 of 5** in The Cert Hub's AI Digital Marketing ladder: **Found
 - **Original questions only**, quizzes and practice exams written from the three official industry exam outlines; no copyrighted dumps
 - **Real-world case studies**, Liquid Death's positioning, Patagonia's storytelling, Duolingo's TikTok, Glossier's community, and the early Klaviyo flows that built Allbirds
 - **One author, one voice**, coherent vocabulary across all 10 modules
-- **Updated for the 2026 AI-marketing landscape**, Google AI Overviews, Performance Max, Meta's Advantage+ shopping campaigns, Consent Mode v2, GA4 (Google Analytics 4) enhanced measurement, the post-cookie measurement stack
+- **Updated for the 2026 AI-marketing landscape**, Google AI Overviews, Performance Max, Meta's Advantage+ shopping campaigns, Consent Mode v2, GA4 enhanced measurement, the post-cookie measurement stack
 
 ### 🚀 Ready to start?
 
@@ -55,9 +55,9 @@ Begin with [Module 1: Digital Marketing Landscape 2026 →](./Module-01-Digital-
 This track has two perfect audiences:
 
 1. **The total newcomer.** You've never run an ad, never heard of UTM tagging, never set up a Google Analytics property, and the modern marketing stack feels like alphabet soup. Start here.
-2. **The veteran adapting to the AI era.** You shipped campaigns when "the funnel" had three stages and Facebook had organic reach. Now your CEO (Chief Executive Officer) is asking about AI Overviews, your CMO (Chief Marketing Officer) wants a "GenAI content engine," and the youngest person on your team is using Midjourney for ad creative. Catch up here.
+2. **The veteran adapting to the AI era.** You shipped campaigns when "the funnel" had three stages and Facebook had organic reach. Now your CEO is asking about AI Overviews, your CMO wants a "GenAI content engine," and the youngest person on your team is using Midjourney for ad creative. Catch up here.
 
-Either way, by the end of this track you will be able to walk into a 2026 marketing job interview and discuss AI Overviews, RAG (Retrieval-Augmented Generation), Performance Max, Consent Mode v2, and predictive send time without faking it.
+Either way, by the end of this track you will be able to walk into a 2026 marketing job interview and discuss AI Overviews, RAG, Performance Max, Consent Mode v2, and predictive send time without faking it.
 
 ---
 
@@ -65,7 +65,7 @@ Either way, by the end of this track you will be able to walk into a 2026 market
 
 This track includes two course-root resources that go beyond exam prep:
 
-- 🏆 [**Capstone-Project.md**](./Capstone-Project.md), A 7-deliverable, 8-week scenario where you act as the new Marketing Manager at a Series-A B2B (Business-to-Business) SaaS (Software as a Service) company taking MRR (Monthly Recurring Revenue) from $115K to $200K. Integrates ICP, content calendar, paid testing, GA4, AI tooling, OKRs (Objectives and Key Results), and a board 1-pager.
+- 🏆 [**Capstone-Project.md**](./Capstone-Project.md), A 7-deliverable, 8-week scenario where you act as the new Marketing Manager at a Series-A B2B SaaS company taking MRR from $115K to $200K. Integrates ICP, content calendar, paid testing, GA4, AI tooling, OKRs, and a board 1-pager.
 - 📚 [**Recommended-Readings.md**](./Recommended-Readings.md), The full canonical bibliography: Cialdini's *Influence*, Berger's *Contagious*, Sheridan's *They Ask You Answer*, Miller's *StoryBrand*; seminal HBR papers (Porter, Christensen JTBD, Doerr OKRs); industry resources (HubSpot, Marketing Examples, SparkToro); free academic courses (Andrew Ng's *Generative AI for Everyone*, Google Skillshop, Meta Blueprint).
 
 ---
@@ -80,9 +80,9 @@ By the end of this track, you will be able to:
 - **Build** an AI-assisted content pipeline using ChatGPT / Claude / Gemini for long-form, Jasper or Copy.ai for short-form, Midjourney or DALL-E for images, and Synthesia or HeyGen for video.
 - **Run** a multi-platform social strategy with Buffer, Hootsuite, FeedHive, or Postwise, and read 2026 algorithm dynamics on Meta, TikTok, LinkedIn, X, YouTube, Pinterest, and Threads.
 - **Send** lifecycle email with AI subject-line optimization, predictive send time, and dynamic content using Klaviyo, HubSpot, ActiveCampaign, Mailchimp, or Beehiiv.
-- **Launch** paid campaigns on Google, Meta, and TikTok including Performance Max and Advantage+ Shopping and do the ROAS (Return on Ad Spend) / CAC (Customer Acquisition Cost) / LTV (Lifetime Value) math.
+- **Launch** paid campaigns on Google, Meta, and TikTok including Performance Max and Advantage+ Shopping and do the ROAS / CAC / LTV math.
 - **Measure** everything in Google Analytics 4 with proper UTM tagging, Looker Studio dashboards, Consent Mode v2, and Enhanced Conversions.
-- **Stay compliant** with GDPR (General Data Protection Regulation), CCPA (California Consumer Privacy Act), COPPA (Children's Online Privacy Protection Act), FTC AI-disclosure rules, and the cookie-deprecation timeline.
+- **Stay compliant** with GDPR, CCPA, COPPA, FTC AI-disclosure rules, and the cookie-deprecation timeline.
 - **Assemble** your personal AI Marketer Toolkit, the right tools, the right tier, the right prompt library, the right workflows.
 
 ---
@@ -131,7 +131,7 @@ Completing this course makes you exam-ready for three industry credentials. They
 - HubSpot: <https://academy.hubspot.com/courses/marketing-software>
 - Meta Blueprint: <https://www.facebook.com/business/learn/certification>
 
-> **Reality check:** Each of those three has its own platform-specific quirks (HubSpot wants you to know HubSpot's UI (User Interface); Meta wants you to know Ads Manager). This course teaches the **fundamentals all three exams assume**, the channels, the funnel, the math, the AI workflows. Plan to spend a final 4–8 hours platform-specific cramming inside each provider's own academy before you sit each exam.
+> **Reality check:** Each of those three has its own platform-specific quirks (HubSpot wants you to know HubSpot's UI; Meta wants you to know Ads Manager). This course teaches the **fundamentals all three exams assume**, the channels, the funnel, the math, the AI workflows. Plan to spend a final 4–8 hours platform-specific cramming inside each provider's own academy before you sit each exam.
 
 ---
 
@@ -195,9 +195,9 @@ For senior strategist or director roles, you'll still need 3–7 years of channe
 
 1. ❌ Studied "tactics" (which button to click in Ads Manager) instead of **frameworks** (when to bid on Search vs Display). The frameworks transfer; the buttons change every 6 months.
 2. ❌ Memorized definitions without **doing the workflow** end-to-end at least once on a real (or sandbox) account.
-3. ❌ Got the math wrong because they confused **ROAS, ROI (Return on Investment), CAC, LTV, AOV, and CPA (Cost Per Acquisition)** under time pressure. Module 7 drills these.
+3. ❌ Got the math wrong because they confused **ROAS, ROI, CAC, LTV, AOV, and CPA** under time pressure. Module 7 drills these.
 4. ❌ Treated AI as a magic button. The exams test whether you understand **when AI helps and when it hurts**, not whether you can type a prompt.
-5. ❌ Skipped the **privacy & ethics** module because it felt "soft." Then they failed the 10–15% of questions that test GDPR, CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act), FTC AI disclosure, and Consent Mode.
+5. ❌ Skipped the **privacy & ethics** module because it felt "soft." Then they failed the 10–15% of questions that test GDPR, CAN-SPAM, FTC AI disclosure, and Consent Mode.
 6. ❌ Practiced under leisurely conditions, not at the real exam's question-per-minute pace.
 7. ❌ Skipped flashcard review. Spaced repetition is undefeated for terminology-dense content like this.
 

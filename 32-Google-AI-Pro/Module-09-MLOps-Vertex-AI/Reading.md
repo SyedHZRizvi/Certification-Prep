@@ -1,6 +1,6 @@
-# Module 9: MLOps (Machine Learning Operations) on Vertex AI ⚙️
+# Module 9: MLOps on Vertex AI ⚙️
 
-> **Why this module matters:** This is the heaviest-weight module of the **Professional Machine Learning Engineer (PMLE)** exam, roughly 35% of the blueprint touches the topics here. Even on the Generative AI Leader exam, MLOps fluency is what separates a "knows the API (Application Programming Interface)" engineer from a "ships in production" architect. By the end of this module you can describe, draw, and code the canonical Vertex AI MLOps loop: training → registry → deployment → monitoring → retrain.
+> **Why this module matters:** This is the heaviest-weight module of the **Professional Machine Learning Engineer (PMLE)** exam, roughly 35% of the blueprint touches the topics here. Even on the Generative AI Leader exam, MLOps fluency is what separates a "knows the API" engineer from a "ships in production" architect. By the end of this module you can describe, draw, and code the canonical Vertex AI MLOps loop: training → registry → deployment → monitoring → retrain.
 
 > **Prerequisites for this module.** Modules 1–8 finished. Module 3 in particular, you should know what Workbench, Pipelines, Registry, Endpoints, and Monitoring are at a one-line level. This module gives you depth on each.
 
@@ -8,7 +8,7 @@
 
 ## 📖 A Story: Why Vodafone Stopped Editing Notebooks
 
-It is January 2022. **Vodafone's** ML platform team in Newbury, UK, supports ~300 ML models across the company, from customer-churn predictors to network-anomaly detectors to call-quality forecasts. Their published case study (Google Cloud Next 2023) describes a pattern that will sound familiar to any ML team without MLOps: every model was a Jupyter notebook on someone's laptop or VM (Virtual Machine), trained by hand, copied to production via SSH (Secure Shell), monitored via "wait for someone to complain."
+It is January 2022. **Vodafone's** ML platform team in Newbury, UK, supports ~300 ML models across the company, from customer-churn predictors to network-anomaly detectors to call-quality forecasts. Their published case study (Google Cloud Next 2023) describes a pattern that will sound familiar to any ML team without MLOps: every model was a Jupyter notebook on someone's laptop or VM, trained by hand, copied to production via SSH, monitored via "wait for someone to complain."
 
 The team's pre-MLOps process for shipping a model update:
 
@@ -104,7 +104,7 @@ The PMLE exam tests every arrow on this diagram.
 - **ML Metadata (MLMD)**, backing store for "what produced this artifact, with what inputs"
 - **Schedule**, cron-style or trigger-based
 - **Retry + caching**, re-running an unchanged step uses cached output
-- **Visualization**, pipeline graph in the Vertex AI UI (User Interface)
+- **Visualization**, pipeline graph in the Vertex AI UI
 
 ### Defining a pipeline in KFP
 
@@ -248,7 +248,7 @@ job = model.batch_predict(
 
 Async; no scaling concerns; cheapest per prediction.
 
-### Private Endpoint (VPC (Virtual Private Cloud)-SC)
+### Private Endpoint (VPC-SC)
 
 ```python
 private_endpoint = aiplatform.PrivateEndpoint.create(
@@ -286,7 +286,7 @@ Module 3 covered the breakeven. From an MLOps view:
 | **Training/serving skew** | Features at serving differ from training distribution | The model's predictions on prod data are unreliable |
 | **Prediction drift** | Distribution of predictions shifts over time | World is changing; model is stale |
 | **Data drift** | Distribution of input features shifts over time | Upstream pipeline change or world change |
-| **Quality drift** | Ground-truth accuracy drops (when labels arrive) | The real KPI (Key Performance Indicator) |
+| **Quality drift** | Ground-truth accuracy drops (when labels arrive) | The real KPI |
 
 ### Configuration
 
@@ -439,7 +439,7 @@ Implementation: a Vertex AI Pipeline that takes the trigger from Cloud Scheduler
 |-------|------|------|
 | **Application logs** | Cloud Logging | Every API call, request/response metadata, error stack traces |
 | **Latency / spans** | Cloud Trace | End-to-end distributed tracing for multi-step calls |
-| **Metrics + dashboards** | Cloud Monitoring | Counters, gauges, histograms; alerts; SLO (Service Level Objective) tracking |
+| **Metrics + dashboards** | Cloud Monitoring | Counters, gauges, histograms; alerts; SLO tracking |
 | **Cost** | Cloud Billing reports + Vertex AI Pricing Calculator | Per-project, per-service spend |
 | **GenAI quality** | Vertex AI Evaluation Service + custom LLM-as-judge | Sampled prod-call quality |
 
@@ -447,7 +447,7 @@ Implementation: a Vertex AI Pipeline that takes the trigger from Cloud Scheduler
 
 ---
 
-## ⚙️ CI/CD (Continuous Integration/Continuous Deployment) for ML
+## ⚙️ CI/CD for ML
 
 Standard pattern on Google Cloud:
 
@@ -537,7 +537,7 @@ You now know:
 - 🔁 **Continuous Training** triggers
 - 🛡️ **Observability**, Logging + Trace + Monitoring + Cost
 - ⚙️ **CI/CD for ML** with Cloud Build + Artifact Registry
-- 📊 **Vodafone numbers**, the MLOps ROI (Return on Investment)
+- 📊 **Vodafone numbers**, the MLOps ROI
 
 **Next:** [Module 10, Production Patterns & Capstone](../Module-10-Production-Capstone/Reading.md)
 

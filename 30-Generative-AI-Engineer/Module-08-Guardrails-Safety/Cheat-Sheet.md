@@ -22,7 +22,7 @@
 |------|---------|
 | **NeMo Guardrails** | Declarative flows in Colang; enterprise |
 | **Guardrails AI** | Python validators; structured-output enforcement |
-| **OpenAI Moderation API (Application Programming Interface)** | Free hosted category scoring |
+| **OpenAI Moderation API** | Free hosted category scoring |
 | **Llama Guard 3 (8B)** | Self-host safety classifier |
 | **Presidio** | PII detection + anonymization |
 | **Detoxify** | Toxic content classification |
@@ -113,7 +113,7 @@ Or `outlines.from_pydantic(MySchema)` for open-source. Schema-constrained genera
 |-------|-----|
 | Skip safety in v1 | Defense-in-depth from day 1 |
 | Trust user/retrieved/tool content as instructions | Provenance + privilege separation |
-| Block-everything | Tune thresholds; preserve UX (User Experience) |
+| Block-everything | Tune thresholds; preserve UX |
 | Skip audit logs | Always log trace_id + all inputs/outputs |
 | Use one guardrail layer | Layered, independent |
 | Allow destructive actions without HITL | `interrupt_before` |

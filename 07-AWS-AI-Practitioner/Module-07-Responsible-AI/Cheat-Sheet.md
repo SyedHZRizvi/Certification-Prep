@@ -21,10 +21,10 @@ Fairness · Explainability · Robustness · Privacy & Security · Transparency �
 | **SageMaker Model Cards** | Your model docs | Transparency, Governance |
 | **AWS AI Service Cards** | AWS's docs for AWS AI services | Transparency |
 | **Amazon A2I** | Human-in-the-loop reviews | Controllability, Safety |
-| **Macie** | PII discovery in S3 (Simple Storage Service) | Privacy |
+| **Macie** | PII discovery in S3 | Privacy |
 | **SageMaker Model Monitor (bias drift)** | Detect fairness drift in prod | Fairness |
-| **Bedrock Model Evaluation** | Auto / Human / LLM (Large Language Model)-judge / KB eval | Fairness, Robustness |
-| **AWS Artifact** | Compliance reports (SOC (Security Operations Center), ISO, HIPAA) | Governance |
+| **Bedrock Model Evaluation** | Auto / Human / LLM-judge / KB eval | Fairness, Robustness |
+| **AWS Artifact** | Compliance reports (SOC, ISO, HIPAA) | Governance |
 | **CloudTrail / Audit Manager** | Audit trail for AI APIs | Governance |
 
 ---
@@ -35,7 +35,7 @@ Fairness · Explainability · Robustness · Privacy & Security · Transparency �
 2. **Denied topics**, your custom prohibitions
 3. **Word / profanity filters**, exact words
 4. **Sensitive information / PII**, detect / block / redact
-5. **Contextual grounding check**, flags ungrounded RAG (Retrieval-Augmented Generation) outputs (hallucination guard)
+5. **Contextual grounding check**, flags ungrounded RAG outputs (hallucination guard)
 6. **(Image content filters)**, newer, for multimodal
 
 Applies to: input, output, all Bedrock invocations (direct, Agents, KBs).

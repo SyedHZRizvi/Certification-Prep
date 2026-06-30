@@ -16,7 +16,7 @@
 7.  Send outbound + engage on LinkedIn
 8.  Book discovery calls
 9.  Run discovery (PACT-O)
-10. Send proposal (3 options, ROI (Return on Investment))
+10. Send proposal (3 options, ROI)
 11. Proposal-review call + close
 12. Kickoff + deliver + convert to retainer
 ```

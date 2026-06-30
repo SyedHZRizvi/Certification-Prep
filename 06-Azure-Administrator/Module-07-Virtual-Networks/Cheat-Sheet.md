@@ -12,7 +12,7 @@
 
 | Subnet name | Min size | Used by |
 |-------------|----------|---------|
-| `GatewaySubnet` | /29 (use /27) | VPN (Virtual Private Network)/ER gateway |
+| `GatewaySubnet` | /29 (use /27) | VPN/ER gateway |
 | `AzureFirewallSubnet` | /26 | Azure Firewall |
 | `AzureBastionSubnet` | /26 | Bastion |
 | `RouteServerSubnet` | /27 | Route Server |
@@ -35,7 +35,7 @@ Toggles to know:
 ## 🏛️ Hub-Spoke (THE pattern)
 
 ```
-on-prem ─[VPN/ER]─► HUB (Firewall, Gateway, Bastion, DNS (Domain Name System))
+on-prem ─[VPN/ER]─► HUB (Firewall, Gateway, Bastion, DNS)
                     │
         peering ────┴──── peering
         ▼                     ▼
@@ -51,7 +51,7 @@ UDRs on spokes: `0.0.0.0/0 → VirtualAppliance (Firewall private IP)`
 | | Service endpoint | Private endpoint |
 |---|------------------|------------------|
 | What | Firewall toggle + backbone route | Real NIC + private IP |
-| PaaS (Platform as a Service) public IP | Still public | Optional, can disable |
+| PaaS public IP | Still public | Optional, can disable |
 | DNS | Public FQDN | Needs **Private DNS Zone** |
 | Cost | Mostly free | Per-hour + data |
 
@@ -103,7 +103,7 @@ Often **wrong**:
 
 - ❌ "Peering is transitive"
 - ❌ "Service endpoint = private IP"
-- ❌ "Basic VPN supports BGP (Border Gateway Protocol)"
+- ❌ "Basic VPN supports BGP"
 - ❌ "Same CIDR on peered VNets"
 - ❌ "Private endpoint works without a Private DNS Zone"
 
@@ -111,8 +111,8 @@ Often **wrong**:
 
 ## ⚠️ Anti-Patterns
 
-- ❌ Public IPs on every VM (Virtual Machine) (use Bastion)
-- ❌ Peering meshes for >5 spokes (use Virtual WAN (Wide Area Network))
+- ❌ Public IPs on every VM (use Bastion)
+- ❌ Peering meshes for >5 spokes (use Virtual WAN)
 - ❌ Storage account with public access + no firewall
 - ❌ Skipping the Private DNS Zone
 - ❌ Mixing route-based and policy-based VPN
@@ -123,7 +123,7 @@ Often **wrong**:
 
 1. 5 reserved IPs per subnet, name 'em? ___
 2. Is peering transitive? Workaround? ___
-3. SP vs PE (Private Equity), which gets a private IP? ___
+3. SP vs PE, which gets a private IP? ___
 4. Why does PE need a Private DNS Zone? ___
 5. Route-based VS policy-based, pick which for BGP? ___
 

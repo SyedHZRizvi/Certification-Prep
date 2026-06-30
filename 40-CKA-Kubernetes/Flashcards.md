@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -280,11 +280,11 @@
 
 **Q:** What does etcd store in a Kubernetes cluster?
 
-**A:** All cluster state — API (Application Programming Interface) objects, node registrations, pod assignments, Secrets, ConfigMaps, and RBAC (Role-Based Access Control) policies. It is the single source of truth for the entire cluster. The API server is the only component that reads and writes etcd directly.
+**A:** All cluster state — API objects, node registrations, pod assignments, Secrets, ConfigMaps, and RBAC policies. It is the single source of truth for the entire cluster. The API server is the only component that reads and writes etcd directly.
 
 **Q:** What are the four control plane components and what does each do?
 
-**A:** kube-apiserver: the REST (Representational State Transfer) gateway; all components communicate through it. etcd: key-value store for cluster state. kube-scheduler: assigns pods to nodes based on resources and constraints. kube-controller-manager: runs controllers (ReplicaSet, Node, Endpoints, etc.) that reconcile desired vs actual state.
+**A:** kube-apiserver: the REST gateway; all components communicate through it. etcd: key-value store for cluster state. kube-scheduler: assigns pods to nodes based on resources and constraints. kube-controller-manager: runs controllers (ReplicaSet, Node, Endpoints, etc.) that reconcile desired vs actual state.
 
 **Q:** What does the kubelet do on each node?
 
@@ -368,7 +368,7 @@
 
 **Q:** What are the four Service types in Kubernetes and what does each expose?
 
-**A:** ClusterIP: internal-only virtual IP, reachable only within the cluster. NodePort: opens a port on every node's external IP (range 30000–32767), also creates a ClusterIP. LoadBalancer: provisions a cloud load balancer and assigns an external IP, also creates NodePort and ClusterIP. ExternalName: maps the Service to a DNS (Domain Name System) CNAME (no proxying, no selector).
+**A:** ClusterIP: internal-only virtual IP, reachable only within the cluster. NodePort: opens a port on every node's external IP (range 30000–32767), also creates a ClusterIP. LoadBalancer: provisions a cloud load balancer and assigns an external IP, also creates NodePort and ClusterIP. ExternalName: maps the Service to a DNS CNAME (no proxying, no selector).
 
 **Q:** How does Kubernetes DNS resolve a Service FQDN?
 
@@ -380,7 +380,7 @@
 
 **Q:** What is the difference between Ingress and a Service?
 
-**A:** A Service operates at Layer 4 (TCP (Transmission Control Protocol)/UDP (User Datagram Protocol)) and provides stable access to pods. An Ingress operates at Layer 7 (HTTP (Hypertext Transfer Protocol)/HTTPS (HTTP Secure)) and provides host-based and path-based routing, TLS (Transport Layer Security) termination, and name-based virtual hosting — all using a single external IP via an Ingress controller (e.g., nginx, Traefik).
+**A:** A Service operates at Layer 4 (TCP/UDP) and provides stable access to pods. An Ingress operates at Layer 7 (HTTP/HTTPS) and provides host-based and path-based routing, TLS termination, and name-based virtual hosting — all using a single external IP via an Ingress controller (e.g., nginx, Traefik).
 
 **Q:** What happens to ingress traffic when no NetworkPolicy selects a pod?
 
@@ -464,7 +464,7 @@
 
 **Q:** What is the difference between authentication and authorization in Kubernetes?
 
-**A:** Authentication verifies who is making the request (certificate CN, bearer token, OIDC). Authorization determines what the authenticated user is allowed to do — in Kubernetes this is handled by RBAC (and optionally ABAC (Attribute-Based Access Control) or webhook modes). Authentication happens first; if it fails, authorization is never checked.
+**A:** Authentication verifies who is making the request (certificate CN, bearer token, OIDC). Authorization determines what the authenticated user is allowed to do — in Kubernetes this is handled by RBAC (and optionally ABAC or webhook modes). Authentication happens first; if it fails, authorization is never checked.
 
 **Q:** What is a NetworkPolicy and what CNI requirement must be met for it to work?
 
@@ -486,7 +486,7 @@
 
 **Q:** A node shows NotReady. What are the first three things to check?
 
-**A:** 1. kubectl describe node <node-name> — check the Conditions section for disk pressure, memory pressure, PID pressure, or network unavailability. 2. SSH (Secure Shell) to the node and run systemctl status kubelet — check if kubelet is running and read its error output. 3. journalctl -u kubelet -n 100 — read recent kubelet logs for certificate errors, API server connectivity issues, or runtime failures.
+**A:** 1. kubectl describe node <node-name> — check the Conditions section for disk pressure, memory pressure, PID pressure, or network unavailability. 2. SSH to the node and run systemctl status kubelet — check if kubelet is running and read its error output. 3. journalctl -u kubelet -n 100 — read recent kubelet logs for certificate errors, API server connectivity issues, or runtime failures.
 
 **Q:** How do you drain a node safely before maintenance?
 

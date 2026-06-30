@@ -3,9 +3,9 @@
 > **Why this module matters:** The biggest mistake new agency founders make is being "a full-service marketing partner for ambitious brands." Nobody hires that. They hire the person who is famous for one thing. This module teaches you how to pick that one thing your *wedge* and turn it into a business model that pays your rent within 90 days.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Basic marketing literacy: ICP, CAC (Customer Acquisition Cost), LTV (Lifetime Value), ARR (Annual Recurring Revenue), retainer vs project (covered in [`14-AI-Marketing-Foundations` Module 1](../../14-AI-Marketing-Foundations/Module-01-Digital-Marketing-Landscape-2026/Reading.md))
+> - Basic marketing literacy: ICP, CAC, LTV, ARR, retainer vs project (covered in [`14-AI-Marketing-Foundations` Module 1](../../14-AI-Marketing-Foundations/Module-01-Digital-Marketing-Landscape-2026/Reading.md))
 > - General AI fluency: prompting Claude/ChatGPT, awareness of what AI is good vs bad at (covered in [`14-AI-Marketing-Foundations` Module 2](../../14-AI-Marketing-Foundations/Module-02-AI-Fundamentals-for-Marketers/Reading.md))
-> - One channel of personal proficiency ads, SEO (Search Engine Optimization), content, email, paid social, or analytics at the level where you've shipped real client or employer results (anything covered in courses 14–16 will do)
+> - One channel of personal proficiency ads, SEO, content, email, paid social, or analytics at the level where you've shipped real client or employer results (anything covered in courses 14–16 will do)
 >
 > No prior agency-ownership experience is required. If you've never run your own book of clients, this module assumes you are coming from an in-house or freelance background and walks you through the wedge-selection decision from first principles. If positioning frameworks (Morgan, Stark, Enns) are new, that's expected; the module names them with citations as it introduces them.
 
@@ -19,7 +19,7 @@ It's January 2024. Three marketers in three different cities each decide to laun
 
 **Jordan in Austin** picked **"general AI marketing consulting for SMBs."** Smart guy. Great with ChatGPT. But every conversation started from scratch, sometimes SEO, sometimes paid, sometimes content, sometimes "can you fix my Mailchimp?" Two years in, he has eleven clients but each one is different, the average engagement is $1,800/month, and he is grinding 65 hours a week. Revenue: about $238K. Net after taxes and tools: roughly $130K. He is exhausted and is starting to consider going back to in-house work.
 
-**Sam in Toronto** picked **"the AI content engine, productized service for B2B (Business-to-Business) SaaS (Software as a Service) companies, $4,500/month."** Same deliverable every time: 12 blog posts, 60 LinkedIn posts, 12 newsletter editions, all reviewed and refined by Sam, AI-drafted by Claude + Jasper. Same Notion onboarding. Same Loom walkthrough. Same Slack channel. Two years in, Sam has twenty-two SaaS clients, $1.19M ARR, one full-time editor making $72K, one US-based contract editor, and works 38 hours a week.
+**Sam in Toronto** picked **"the AI content engine, productized service for B2B SaaS companies, $4,500/month."** Same deliverable every time: 12 blog posts, 60 LinkedIn posts, 12 newsletter editions, all reviewed and refined by Sam, AI-drafted by Claude + Jasper. Same Notion onboarding. Same Loom walkthrough. Same Slack channel. Two years in, Sam has twenty-two SaaS clients, $1.19M ARR, one full-time editor making $72K, one US-based contract editor, and works 38 hours a week.
 
 Same skills. Same money to start. Three radically different two-year outcomes, driven almost entirely by the *positioning decision* each made in week one.
 
@@ -107,7 +107,7 @@ Borrowed from Philip Morgan's positioning consulting and refined by Jonathan Sta
 |---|---|---|
 | Can list 100 named cos? | Easily too broad | Yes manageable |
 | 10 shared watering holes? | No, fragmented | Yes (RevGenius, Pavilion, FinTech Sandbox, etc.) |
-| One sharp shared problem? | Too many to count | Compliance-friendly demand-gen post-CCPA (California Consumer Privacy Act) |
+| One sharp shared problem? | Too many to count | Compliance-friendly demand-gen post-CCPA |
 | Verdict | Too broad | Sharp, fundable |
 
 > 🚨 **Trap on the exam (and in real life):** Saying "B2B" or "SaaS" or "e-commerce" is not a niche. It is a category. A niche is *industry + size + geography + buyer role + deliverable*.
@@ -124,7 +124,7 @@ You pick an industry and own it. Examples:
 
 - "AI marketing for **addiction-recovery centers**" (Maya's pick)
 - "AI marketing for **boutique law firms**"
-- "AI marketing for **DTC (Direct-to-Consumer) supplement brands $1M–$10M ARR**"
+- "AI marketing for **DTC supplement brands $1M–$10M ARR**"
 - "AI marketing for **community banks under $2B AUM**"
 
 **Pros:** Deep knowledge becomes a moat. Word-of-mouth is incredibly tight in tight industries. Premium pricing.
@@ -166,7 +166,7 @@ The best founders pick **vertical + deliverable** (e.g., Maya: addiction-recover
 | Vertical + deliverable | "Google Ads management for recovery centers" | $700K–$1.5M |
 | Channel + deliverable | "Klaviyo flow audit for Shopify brands $5M+" | $600K–$1.2M |
 
-Numbers above synthesize Tropical MBA Dynamite Circle survey medians (2022–2024), Latka agency data, and Brett Williams's public Designjoy MRR (Monthly Recurring Revenue) disclosures. Treat as orientation, not guarantee.
+Numbers above synthesize Tropical MBA Dynamite Circle survey medians (2022–2024), Latka agency data, and Brett Williams's public Designjoy MRR disclosures. Treat as orientation, not guarantee.
 
 ---
 
@@ -259,11 +259,11 @@ This composite is drawn from publicly available rate data and several anonymized
 
 - Niched into a tightly-regulated industry (addiction recovery has FDA-style ad approvals).
 - Charged a flat $5,500/mo per location (no scope creep; outcome was clear).
-- Used AI (Claude for ad copy variants, GPT (Generative Pre-trained Transformer) for landing-page hypothesis, Optmyzr for bid mgmt).
+- Used AI (Claude for ad copy variants, GPT for landing-page hypothesis, Optmyzr for bid mgmt).
 - Outsourced asset prep to a $2,400/mo Philippines contractor.
 - 19 clients × $5,500 = $104.5K/mo recurring. Net of ~32% costs.
 
-**Lesson:** Industries with high CPC (Cost Per Click) + regulatory complexity often pay multiples of "normal" industries. Find them.
+**Lesson:** Industries with high CPC + regulatory complexity often pay multiples of "normal" industries. Find them.
 
 ### Case study 3, "Brett Williams / Designjoy"
 
@@ -399,7 +399,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 2 turns your wedge into a fixed-scope productized SKU (Stock Keeping Unit) (the 5 Fixed Anchors); Module 3 picks the two acquisition channels you'll use to land the first 3 clients in that wedge; Module 4 prices the SKU using value-based + decoy logic; Module 8 (Capstone) walks the full 47-day arc from cold email → signed retainer for the wedge you pick here.
+> - Inside this course: Module 2 turns your wedge into a fixed-scope productized SKU (the 5 Fixed Anchors); Module 3 picks the two acquisition channels you'll use to land the first 3 clients in that wedge; Module 4 prices the SKU using value-based + decoy logic; Module 8 (Capstone) walks the full 47-day arc from cold email → signed retainer for the wedge you pick here.
 > - Cross-course: `14-AI-Marketing-Foundations` Module 1 gave you the POESM map and walled-garden math your buyers live inside; `16-AI-Marketing-Strategist` Modules 1–3 cover the strategic frameworks (Porter, BCG, Ansoff, JTBD) you'll use when you sell strategy alongside execution to bigger clients in Year 2–3.
 > - Practice: Practice Exam 1 has roughly 6–8 questions drawing directly from this module (100/10/1 test, wedge axes, stacked wedge, productized vs retainer vs hourly, Designjoy economics). Final Mock Exam revisits with cross-module synthesis (e.g., "given Maya's wedge + Module 4 pricing math, what does her Year-2 ARR ceiling look like?").
 
@@ -411,9 +411,9 @@ Use these as journal prompts, study-group questions, or interview-prep drills. E
 
 1. **Vertical vs deliverable, under capital constraint.** A founder with $14K of savings and 10 years of B2B-SaaS in-house marketing experience is choosing between (a) a pure vertical wedge ("AI marketing for community banks under $2B AUM") and (b) a pure deliverable wedge ("The $2,500 PMax Tear-Down any e-commerce vertical"). Build the strongest case for each, then defend the one you'd pick personally show how the 100/10/1 test, the Year-2 ARR ceiling table, and the cashflow timing of each path drive your answer.
 2. **The Jordan rebuttal.** Jordan (the "generalist composite" in the opening story) hits $238K Year-2 working 65 hr/week. He argues that's a perfectly fine outcome, better than his old W-2, and he likes the variety. Construct the strongest defense of Jordan's position you can. Then construct the counter-argument from Maya's perspective. Which would you defend at a Hampton AMA, and what does that say about which kind of founder this course is actually for?
-3. **The big-agency objection.** A CMO (Chief Marketing Officer) at a $40M ARR SaaS pushes back: "Why would I hire a one-person specialist instead of a 25-person agency that covers ads + SEO + content + email?" Build her strongest argument for the agency, then your strongest counter for the specialist. At what client revenue size and engagement complexity does the trade-off flip? (Reference the Storyblok lesson and Brett Williams's positioning, and use the ACV math from Module 3 §7 to support the flip-point.)
-4. **The "boring is a feature" principle.** Codie Sanchez built a brand on the most underglamorized niche imaginable, "boring local businesses for first-time acquirers." Why does boringness function as a moat in agency positioning, when in product the conventional wisdom is "make it lovable"? Defend the principle, then construct the strongest objection (e.g., "boring niches have small TAM (Total Addressable Market) and burn out founders"). At what stage of an agency's life does each view dominate?
-5. **The premature-broaden trap.** A Year-2 founder running a successful "Klaviyo flow build for Shopify $5M+" wedge is being told by a VC (Venture Capital)-adjacent advisor that he should expand to "all DTC email + SMS for all platforms" to grow faster. Walk through why this is usually the wrong move at Year 2 (use the Storyblok counter-pattern + the Maya/Sam case studies), and then construct the *narrow* set of conditions under which broadening might actually be correct.
+3. **The big-agency objection.** A CMO at a $40M ARR SaaS pushes back: "Why would I hire a one-person specialist instead of a 25-person agency that covers ads + SEO + content + email?" Build her strongest argument for the agency, then your strongest counter for the specialist. At what client revenue size and engagement complexity does the trade-off flip? (Reference the Storyblok lesson and Brett Williams's positioning, and use the ACV math from Module 3 §7 to support the flip-point.)
+4. **The "boring is a feature" principle.** Codie Sanchez built a brand on the most underglamorized niche imaginable, "boring local businesses for first-time acquirers." Why does boringness function as a moat in agency positioning, when in product the conventional wisdom is "make it lovable"? Defend the principle, then construct the strongest objection (e.g., "boring niches have small TAM and burn out founders"). At what stage of an agency's life does each view dominate?
+5. **The premature-broaden trap.** A Year-2 founder running a successful "Klaviyo flow build for Shopify $5M+" wedge is being told by a VC-adjacent advisor that he should expand to "all DTC email + SMS for all platforms" to grow faster. Walk through why this is usually the wrong move at Year 2 (use the Storyblok counter-pattern + the Maya/Sam case studies), and then construct the *narrow* set of conditions under which broadening might actually be correct.
 
 There are no "official" answers, defend your reasoning with specifics. Strong responses cite at least one named framework (100/10/1, the three wedge axes, the 5 Fixed Anchors from Module 2 preview), one named case, and one piece of marketing or unit-economics math.
 
@@ -421,7 +421,7 @@ There are no "official" answers, defend your reasoning with specifics. Strong re
 
 ## 📚 Further Reading (Optional)
 
-> ⚖️ **Disclaimer:** Income references in this module are illustrative and drawn from public interviews, surveys, and rate data. Actual results vary widely. This is not professional financial advice, for personalized guidance, consult a CPA (Cost Per Acquisition) or licensed financial advisor.
+> ⚖️ **Disclaimer:** Income references in this module are illustrative and drawn from public interviews, surveys, and rate data. Actual results vary widely. This is not professional financial advice, for personalized guidance, consult a CPA or licensed financial advisor.
 
 - 📖 *The Positioning Manual*, Philip Morgan (free guide; the canonical text on agency positioning)
 - 📖 *Hourly Billing Is Nuts*, Jonathan Stark

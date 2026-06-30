@@ -1,13 +1,13 @@
 # Module 7: Virtual Networks 🕸️
 
-> **Why this module matters:** Networking is 15–20% of the AZ-104 exam, but it shows up *everywhere else* too, every VM (Virtual Machine), App Service, AKS cluster, and storage account scenario eventually hinges on a VNet decision. Master subnets, peering, endpoints, and gateways here and the next module (Network Security) clicks immediately.
+> **Why this module matters:** Networking is 15–20% of the AZ-104 exam, but it shows up *everywhere else* too, every VM, App Service, AKS cluster, and storage account scenario eventually hinges on a VNet decision. Master subnets, peering, endpoints, and gateways here and the next module (Network Security) clicks immediately.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1](../Module-01-Subscriptions-Resource-Hierarchy/Reading.md): subscriptions and regions, VNets are region-scoped.
 > - [Module 3](../Module-03-Storage-Accounts-Blobs/Reading.md): private endpoints (introduced briefly there; deepened here).
-> - Networking 101: CIDR notation (`10.0.0.0/16` = 65,536 addresses), private RFC-1918 ranges, what a default gateway is, the DNS (Domain Name System) lookup flow. If you can read a routing table, you're fine. If "subnet mask" feels foreign, do the *Networking Basics* learning path on Microsoft Learn first.
+> - Networking 101: CIDR notation (`10.0.0.0/16` = 65,536 addresses), private RFC-1918 ranges, what a default gateway is, the DNS lookup flow. If you can read a routing table, you're fine. If "subnet mask" feels foreign, do the *Networking Basics* learning path on Microsoft Learn first.
 >
-> Network design is a topic where a bad foundation compounds. You can repair an Entra ID design with a few policies; you can't easily repair a VNet whose address space is already overlapping with on-prem, because that breaks peering and VPN (Virtual Private Network) at the same time.
+> Network design is a topic where a bad foundation compounds. You can repair an Entra ID design with a few policies; you can't easily repair a VNet whose address space is already overlapping with on-prem, because that breaks peering and VPN at the same time.
 
 ---
 
@@ -32,7 +32,7 @@ A **VNet** is a region-scoped slice of private IP space. You define:
 
 - An **address space** (one or more CIDR blocks, e.g. `10.0.0.0/16`)
 - A list of **subnets** inside that address space
-- Optional DDoS (Distributed Denial of Service) protection, IPv6, DNS settings
+- Optional DDoS protection, IPv6, DNS settings
 
 Rules to memorize:
 
@@ -80,7 +80,7 @@ $vnet | Set-AzVirtualNetwork
 | `AzureFirewallSubnet` | Azure Firewall (minimum /26) |
 | `AzureBastionSubnet` | Azure Bastion (minimum /26) |
 | `RouteServerSubnet` | Azure Route Server (minimum /27) |
-| `AzureFirewallManagementSubnet` | Azure Firewall Basic SKU (Stock Keeping Unit) |
+| `AzureFirewallManagementSubnet` | Azure Firewall Basic SKU |
 
 🔥 **MEMORIZE the names exactly.** They're case-sensitive and Azure won't accept variations.
 
@@ -88,7 +88,7 @@ $vnet | Set-AzVirtualNetwork
 
 ## 🔁 VNet Peering
 
-Connect two VNets so resources can talk over the Azure backbone via **private IPs**, without going through a gateway, the internet, or NAT (Network Address Translation).
+Connect two VNets so resources can talk over the Azure backbone via **private IPs**, without going through a gateway, the internet, or NAT.
 
 | Property | Detail |
 |----------|--------|
@@ -166,7 +166,7 @@ The canonical enterprise design:
 
 ## 🌍 Service Endpoints
 
-A way to "extend the VNet identity" to specific Azure PaaS (Platform as a Service) services (Storage, SQL, Key Vault, etc.), allowing those services to **firewall to specific subnets** without internet routing.
+A way to "extend the VNet identity" to specific Azure PaaS services (Storage, SQL, Key Vault, etc.), allowing those services to **firewall to specific subnets** without internet routing.
 
 | Property | Detail |
 |----------|--------|
@@ -231,7 +231,7 @@ az network private-dns link vnet create \
     --virtual-network vnet-prod-eus \
     --registration-enabled false
 
-# Auto-register the PE (Private Equity)'s IP in the zone
+# Auto-register the PE's IP in the zone
 az network private-endpoint dns-zone-group create \
     --resource-group rg-net \
     --endpoint-name pe-st-blob \
@@ -267,7 +267,7 @@ On-prem firewall ─── IPsec tunnel over Internet ─── Azure VPN Gatewa
 
 | SKU | Tunnel BW | Type | Notes |
 |-----|-----------|------|-------|
-| Basic | 100 Mbps | Legacy | No BGP (Border Gateway Protocol), no AZs, no Basic IP on Standard LB → being deprecated |
+| Basic | 100 Mbps | Legacy | No BGP, no AZs, no Basic IP on Standard LB → being deprecated |
 | VpnGw1 / 2 / 3 | 650 Mbps → 1.25 Gbps → 1.25 Gbps | Route-based | BGP, multi-tunnel, **active-active** |
 | VpnGw1AZ / 2AZ / 3AZ | Same | Zone-redundant | Preferred for prod |
 | VpnGw4 / 5 (+ AZ) | up to 10 Gbps | Modern | Highest throughput |
@@ -471,7 +471,7 @@ Address space planning followed CAF guidance: each region got a `/16`, each trus
 
 > **Where this leads.**
 > - Inside this course: Module 8 covers the firewall, NSG, App Gateway, and Front Door layers that sit on top of this VNet design; Module 9 covers cross-region DR which depends on inter-region peering or ExpressRoute Global Reach; Module 10 wires NSG Flow Logs and Connection Monitor into Azure Monitor.
-> - Cross-course: [`04-AWS (Amazon Web Services)-Solutions-Architect-Associate` Module 5](../../04-AWS-Solutions-Architect-Associate/Module-05-S3 (Simple Storage Service)-Deep-Dive/Reading.md) covers AWS Transit Gateway (the AWS analogue to hub-spoke); [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Module 3 covers segmentation as a security control.
+> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 5](../../04-AWS-Solutions-Architect-Associate/Module-05-S3-Deep-Dive/Reading.md) covers AWS Transit Gateway (the AWS analogue to hub-spoke); [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Module 3 covers segmentation as a security control.
 > - Practice: PE-2 has 9 questions from this module; Final Mock revisits with private-endpoint + DNS scenarios in case-study form.
 
 ---
@@ -481,7 +481,7 @@ Address space planning followed CAF guidance: each region got a `/16`, each trus
 1. **Address-space planning sins.** A common mistake: somebody picks `10.0.0.0/24` for the first VNet "to keep it small" and three years later the org's address space is a patchwork. Defend a default-CIDR-allocation standard for new tenants. (Hint: CAF recommends a `/16` per landing zone with reserved sub-allocations, argue for or against that bigness.)
 2. **Service endpoint vs. private endpoint, when each wins.** Service endpoints are cheaper and simpler but the PaaS service keeps a public IP. Private endpoints get you a real private IP but cost per hour and require Private DNS Zone management. For a 50-storage-account fleet, when does the operational cost of PE per account exceed its security value?
 3. **VPN vs. ExpressRoute economics.** ExpressRoute Standard at 1 Gbps via a provider costs $5,000–$15,000/month all-in. A VpnGw5AZ S2S VPN tops at 10 Gbps for ~$700/month. Defend why ExpressRoute is *still* the right answer for a regulated workload. What does the "private circuit, no internet transit" property actually buy you that BGP-failover-paired VPN doesn't?
-4. **Hub-spoke vs. Virtual WAN (Wide Area Network).** Azure Virtual WAN provides managed hubs with built-in firewall/gateway/Bastion. When does manual hub-spoke beat VWAN, and when has VWAN become the better default? (Hint: it's about who owns the firewall configuration and how many regional hubs you need.)
+4. **Hub-spoke vs. Virtual WAN.** Azure Virtual WAN provides managed hubs with built-in firewall/gateway/Bastion. When does manual hub-spoke beat VWAN, and when has VWAN become the better default? (Hint: it's about who owns the firewall configuration and how many regional hubs you need.)
 5. **DNS-resolution chain for private endpoints.** A VM in a spoke VNet tries to reach `storageacct1.blob.core.windows.net` through a private endpoint defined in the hub. Trace every DNS hop, identify which Private DNS Zone needs which link to which VNet, and explain *exactly* why the failure mode "resolves to the public IP" happens. (This is one of the top-three AZ-104 trick questions.)
 
 ---
@@ -493,5 +493,5 @@ Address space planning followed CAF guidance: each region got a `/16`, each trus
 - 📖 [VPN Gateway SKUs](https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)
 - 📖 [ExpressRoute SKUs](https://learn.microsoft.com/azure/expressroute/expressroute-faqs)
 - 📖 [Private endpoints overview](https://learn.microsoft.com/azure/private-link/private-endpoint-overview)
-- 📖 John Savill's *AZ-104 Study Cram* and *Hub-Spoke Deep Dive* on YouTube (2024–2025 revisions), Microsoft Azure Field CTO (Chief Technology Officer); the most-watched practitioner walkthrough of these patterns.
+- 📖 John Savill's *AZ-104 Study Cram* and *Hub-Spoke Deep Dive* on YouTube (2024–2025 revisions), Microsoft Azure Field CTO; the most-watched practitioner walkthrough of these patterns.
 - 📖 Microsoft *Cloud Adoption Framework, Network topology and connectivity* design area (current revision; checked 2026-05).

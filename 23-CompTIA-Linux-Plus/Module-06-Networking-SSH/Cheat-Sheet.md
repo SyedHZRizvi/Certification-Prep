@@ -1,4 +1,4 @@
-# 📋 Module 6 Cheat Sheet: Networking, SSH (Secure Shell) & Firewalls
+# 📋 Module 6 Cheat Sheet: Networking, SSH & Firewalls
 
 > One page. Print it. Tape it to your monitor. Review before the exam.
 
@@ -30,7 +30,7 @@ ip addr add 10.0.0.5/24 dev eth0
 ## 📡 ss (replaces netstat)
 
 ```bash
-ss -tulpn                     # TCP (Transmission Control Protocol)+UDP (User Datagram Protocol), listening, processes, numeric
+ss -tulpn                     # TCP+UDP, listening, processes, numeric
 ss -t -a                      # all TCP
 ss -tn state established      # established only
 ss -lnp sport :22             # who's listening on 22?
@@ -39,7 +39,7 @@ ss -s                         # summary stats
 
 ---
 
-## 🗺️ DNS (Domain Name System) / Name Resolution
+## 🗺️ DNS / Name Resolution
 
 | File | Use |
 |------|-----|

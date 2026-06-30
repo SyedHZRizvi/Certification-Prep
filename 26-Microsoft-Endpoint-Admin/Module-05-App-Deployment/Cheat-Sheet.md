@@ -12,7 +12,7 @@
 | **LOB (raw MSI)** | Simple MSI, no extras |
 | **Microsoft Store app (new)** | Store apps |
 | **Microsoft 365 Apps** | Office Click-to-Run built-in |
-| **Web app / web link** | Browser SaaS (Software as a Service) |
+| **Web app / web link** | Browser SaaS |
 
 ---
 
@@ -112,7 +112,7 @@ Install context: **System** (default) or **User**
 
 | Channel | When |
 |---------|------|
-| **Managed devices** (MDM (Mobile Device Management)) | Device enrolled |
+| **Managed devices** (MDM) | Device enrolled |
 | **Managed apps** (MAM) | APP-protected app |
 
 Pushes:
@@ -126,7 +126,7 @@ Pushes:
 
 ## 📚 App Categories
 
-UX (User Experience) labels (Productivity, Engineering, HR, etc.) for Company Portal catalog tabs. Not access control.
+UX labels (Productivity, Engineering, HR, etc.) for Company Portal catalog tabs. Not access control.
 
 ---
 

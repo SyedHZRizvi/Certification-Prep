@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -278,16 +278,16 @@
 **A:** Who, What, Why, Where, How.
 
 **Q:** What's the difference between a creative brief and a media brief?
-**A:** Creative brief is for designers/writers/editors (insight + tone + key message). Media brief is for buyers/analysts (channel mix + budget + KPIs (Key Performance Indicators)).
+**A:** Creative brief is for designers/writers/editors (insight + tone + key message). Media brief is for buyers/analysts (channel mix + budget + KPIs).
 
 **Q:** Maximum recommended brief length?
 **A:** 1-2 pages. Longer means you haven't decided yet.
 
-**Q:** What is a Primary KPI (Key Performance Indicator)?
+**Q:** What is a Primary KPI?
 **A:** The ONE metric that defines success for a campaign. Numeric. Threshold-based.
 
 **Q:** What is a Guardrail KPI?
-**A:** The pause-trigger metric. "Stop if CPA (Cost Per Acquisition) > $X for N consecutive days."
+**A:** The pause-trigger metric. "Stop if CPA > $X for N consecutive days."
 
 **Q:** What is the "Insight" in a brief?
 **A:** A non-obvious behavioral truth about the customer. NOT a feature or benefit.
@@ -330,10 +330,10 @@
 **A:** 15 headlines (30 chars each), 4 descriptions (90 chars each).
 
 **Q:** What's the formula for Ad Rank?
-**A:** Max CPC (Cost Per Click) bid × Quality Score + Expected impact of extensions.
+**A:** Max CPC bid × Quality Score + Expected impact of extensions.
 
 **Q:** Three components of Quality Score?
-**A:** Expected CTR (Click-Through Rate), Ad Relevance, Landing Page Experience.
+**A:** Expected CTR, Ad Relevance, Landing Page Experience.
 
 **Q:** What's the difference between "Search Terms" and "Keywords"?
 **A:** Search Terms are what searchers actually typed. Keywords are what YOU bid on.
@@ -373,7 +373,7 @@
 **A:** 15 seconds.
 
 **Q:** YouTube Shorts ad spec?
-**A:** Vertical 9:16, 6-60 seconds, CPM (Cost Per Mille) pricing.
+**A:** Vertical 9:16, 6-60 seconds, CPM pricing.
 
 **Q:** What pricing model do In-Feed (Discovery) YouTube ads use?
 **A:** CPC, you pay only when the user clicks to watch.
@@ -410,7 +410,7 @@
 **A:** Limits spend on existing customers, forces Meta to prospect new customers.
 
 **Q:** What are DCT's axes?
-**A:** Hook × Body × CTA (Call to Action), typically 4 × 4 × 4 = up to 64 variants.
+**A:** Hook × Body × CTA, typically 4 × 4 × 4 = up to 64 variants.
 
 **Q:** Minimum impressions before judging a DCT variant?
 **A:** ~1,000 per variant. Killing at 100 impressions is just noise.
@@ -443,7 +443,7 @@
 **Q:** TikTok hook window vs Meta?
 **A:** TikTok: 1.5-3 seconds (faster than Meta's 3 seconds).
 
-**Q:** TikTok's server-side conversion API (Application Programming Interface) equivalent?
+**Q:** TikTok's server-side conversion API equivalent?
 **A:** Events API (their CAPI).
 
 **Q:** Cross-posting Meta Reels to TikTok typical performance?
@@ -465,16 +465,16 @@
 **A:** LinkedIn CPCs are 5-10x higher BUT leads convert to closed-won at much higher rates. Compare the right metric.
 
 **Q:** What is Sales Navigator?
-**A:** LinkedIn's premium ABM tool for sales teams ($99/seat), builds prospect lists, maps account committees, integrates with CRM (Customer Relationship Management).
+**A:** LinkedIn's premium ABM tool for sales teams ($99/seat), builds prospect lists, maps account committees, integrates with CRM.
 
 ---
 
 ## 📦 SECTION 6: Programmatic + Retargeting
 
-**Q:** What is a DSP (Demand-Side Platform)?
+**Q:** What is a DSP?
 **A:** Demand-Side Platform, where advertisers buy programmatic ad inventory.
 
-**Q:** What is an SSP (Supply-Side Platform)?
+**Q:** What is an SSP?
 **A:** Supply-Side Platform, where publishers sell their inventory.
 
 **Q:** What's the largest independent DSP?
@@ -483,10 +483,10 @@
 **Q:** What's DV360?
 **A:** Display & Video 360, Google's enterprise programmatic DSP, part of Google Marketing Platform.
 
-**Q:** Which DSP specializes in dynamic product retargeting for DTC (Direct-to-Consumer)?
+**Q:** Which DSP specializes in dynamic product retargeting for DTC?
 **A:** Criteo.
 
-**Q:** What does a CDP (Customer Data Platform) do?
+**Q:** What does a CDP do?
 **A:** Customer Data Platform, unifies customer data and syncs audiences to ad platforms in real time.
 
 **Q:** Recommended frequency cap per user per day?
@@ -498,7 +498,7 @@
 **Q:** Average DTC customer brand touches before buying (2024 research)?
 **A:** 25-30 touches.
 
-**Q:** What is MFA (Multi-Factor Authentication)?
+**Q:** What is MFA?
 **A:** Made-For-Advertising sites, low-quality sites built only to harvest ad spend. ANA 2024: ~20% of open-web display waste.
 
 **Q:** What is IVT?
@@ -507,12 +507,12 @@
 **Q:** What do DoubleVerify and IAS do?
 **A:** Industry-standard ad verification, fraud detection, viewability, brand safety.
 
-**Q:** What does CTV (Connected TV) stand for?
+**Q:** What does CTV stand for?
 **A:** Connected TV, programmatic streaming inventory (Hulu, Disney+, Roku, etc.).
 
 ---
 
-## 📦 SECTION 7: CRO (Chief Revenue Officer) + Landing Pages
+## 📦 SECTION 7: CRO + Landing Pages
 
 **Q:** What are the 4 stages of the CRO cycle?
 **A:** Observe, Hypothesize, Test, Iterate.
@@ -530,7 +530,7 @@
 **A:** The probability of detecting an effect IF it exists. Typically 0.80.
 
 **Q:** Mutiny's specialty?
-**A:** B2B (Business-to-Business) website personalization via reverse-IP detection, personalizes copy by visitor's company.
+**A:** B2B website personalization via reverse-IP detection, personalizes copy by visitor's company.
 
 **Q:** What does Unbounce Smart Traffic do?
 **A:** Uses ML to route each visitor to the variant most likely to convert them.
@@ -603,7 +603,7 @@
 **Q:** Best automation platform for DTC ecom Shopify store?
 **A:** Klaviyo.
 
-**Q:** Best automation platform for B2B SaaS (Software as a Service) / content marketing?
+**Q:** Best automation platform for B2B SaaS / content marketing?
 **A:** HubSpot.
 
 **Q:** What's HubSpot's automation engine called?
@@ -624,11 +624,11 @@
 **Q:** Speed-to-lead impact (HBR research) of contacting within 5 minutes vs hours?
 **A:** 3-10x higher conversion rate.
 
-**Q:** What is LLM (Large Language Model) "tool use"?
+**Q:** What is LLM "tool use"?
 **A:** The LLM's ability to call functions/APIs to take actions in the world (vs just generating text).
 
 **Q:** What's a webhook?
-**A:** A URL that receives an HTTP (Hypertext Transfer Protocol) POST when an event happens in another app.
+**A:** A URL that receives an HTTP POST when an event happens in another app.
 
 **Q:** What are SPF, DKIM, and DMARC?
 **A:** Email authentication standards required for good deliverability.

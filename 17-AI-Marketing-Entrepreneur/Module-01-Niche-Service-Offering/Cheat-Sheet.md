@@ -27,7 +27,7 @@ audience  deliverable  proof point
 
 ## 🔪 The Three Wedge Axes
 
-| Axis | Example | Year-2 ARR (Annual Recurring Revenue) ceiling |
+| Axis | Example | Year-2 ARR ceiling |
 |---|---|---|
 | Vertical (industry) | "AI marketing for dental groups" | $300K–$700K |
 | Channel (medium) | "Klaviyo expert for Shopify" | $250K–$600K |
@@ -124,6 +124,6 @@ If you can answer all 5 in under 60 seconds, you own this module. ✅
 
 ---
 
-> ⚖️ All financial figures are illustrative. Not professional advice, consult a CPA (Cost Per Acquisition) / business coach for your situation.
+> ⚖️ All financial figures are illustrative. Not professional advice, consult a CPA / business coach for your situation.
 
 ➡️ [Module 2: Productizing AI Marketing Services](../Module-02-Productizing-AI-Marketing-Services/Reading.md)

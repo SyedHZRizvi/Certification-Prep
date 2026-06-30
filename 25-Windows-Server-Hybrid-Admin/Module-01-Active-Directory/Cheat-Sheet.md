@@ -8,9 +8,9 @@
 
 ```
 FOREST  ◄── Security + Schema boundary
-└── TREE  ◄── Contiguous DNS (Domain Name System) namespace
+└── TREE  ◄── Contiguous DNS namespace
     └── DOMAIN  ◄── Replication + admin boundary
-        └── OU  ◄── Delegation + GPO (Group Policy Object) targeting (NOT security)
+        └── OU  ◄── Delegation + GPO targeting (NOT security)
             └── OBJECT  ◄── User / Computer / Group
 ```
 
@@ -87,7 +87,7 @@ Prerequisite for gMSA: `Add-KdsRootKey -EffectiveImmediately` (forest-wide, one-
 
 ---
 
-## ♻️ AD (Active Directory) Recycle Bin
+## ♻️ AD Recycle Bin
 
 - **One-way enable:** `Enable-ADOptionalFeature -Identity "Recycle Bin Feature" -Scope ForestOrConfigurationSet -Target "contoso.com"`
 - Forest functional level ≥ **2008 R2**
@@ -152,7 +152,7 @@ Usually **wrong**:
 | Add domain to existing forest | Domain Naming Master |
 | Track who holds FSMOs | `netdom query fsmo` |
 | Time problems forest-wide | Verify PDC Emulator in forest root has external time source |
-| Branch with bad WAN (Wide Area Network) + locked closet | RODC |
+| Branch with bad WAN + locked closet | RODC |
 | Per-group password rules | FGPP / PSO |
 | Auto-rotated service account on multiple servers | gMSA |
 | Recovering a deleted user with attributes | AD Recycle Bin (enable BEFORE the deletion) |

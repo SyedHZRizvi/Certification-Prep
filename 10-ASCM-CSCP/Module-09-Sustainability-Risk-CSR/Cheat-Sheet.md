@@ -42,7 +42,7 @@ Coined by John Elkington, 1994.
 | GRI | Reporting standards |
 | SASB | Industry-specific ESG |
 | TCFD | Climate financial disclosure |
-| CDP (Customer Data Platform) | Carbon investor questionnaire |
+| CDP | Carbon investor questionnaire |
 | SBTi | Science-based targets |
 | EU CSRD | Mandatory EU sustainability reporting |
 
@@ -72,7 +72,7 @@ Each scored 1–10. High RPN = high priority.
 
 ---
 
-## 🛡️ BCP, DRP (Distribution Requirements Planning), RTO (Recovery Time Objective), RPO (Recovery Point Objective)
+## 🛡️ BCP, DRP, RTO, RPO
 
 | Term | Meaning |
 |------|---------|
@@ -104,7 +104,7 @@ Each scored 1–10. High RPN = high priority.
 
 ## 🌐 UN SDGs
 
-17 goals adopted 2015 with 2030 targets. Key SCM (Supply Chain Management)-relevant: 8, 9, 12, 13, 17.
+17 goals adopted 2015 with 2030 targets. Key SCM-relevant: 8, 9, 12, 13, 17.
 
 ---
 
@@ -133,7 +133,7 @@ Each scored 1–10. High RPN = high priority.
 
 ## 🔄 Resilience Levers
 
-Redundancy · Flexibility · Visibility · Collaboration (CPFR (Collaborative Planning, Forecasting, and Replenishment)/SRM) · Diversification · Postponement
+Redundancy · Flexibility · Visibility · Collaboration (CPFR/SRM) · Diversification · Postponement
 
 ---
 

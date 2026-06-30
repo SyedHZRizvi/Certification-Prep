@@ -1,14 +1,14 @@
 # Module 8: Server Security & Defender 🛡️
 
-> **Why this module matters:** Security is 25–30% of AZ-801, by far the heaviest single domain on the second exam. Defender for Servers, WDAC, Credential Guard, JIT VM (Virtual Machine) access, and Secured-core server appear in nearly every scenario. The exam loves *"given this threat, which combination of controls is the right answer?"* Build the muscle memory of mapping CVEs and attack patterns to Microsoft's defenses and you've locked down the largest single chunk of AZ-801.
+> **Why this module matters:** Security is 25–30% of AZ-801, by far the heaviest single domain on the second exam. Defender for Servers, WDAC, Credential Guard, JIT VM access, and Secured-core server appear in nearly every scenario. The exam loves *"given this threat, which combination of controls is the right answer?"* Build the muscle memory of mapping CVEs and attack patterns to Microsoft's defenses and you've locked down the largest single chunk of AZ-801.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Azure Arc (Module 6), Defender for Servers extends naturally over Arc
 > - Azure Monitor + Log Analytics (Module 7), Defender writes to the same workspace
-> - On-prem AD (Active Directory) (Module 1), Credential Guard / Protected Users protect AD credentials
+> - On-prem AD (Module 1), Credential Guard / Protected Users protect AD credentials
 > - General security concepts (CIA triad, principle of least privilege), [`09-CompTIA-Security-Plus` Module 1](../../09-CompTIA-Security-Plus/Module-01-Security-Fundamentals/Reading.md)
 >
-> If those are shaky, pause and review. This module assumes you can already explain "what an EDR (Endpoint Detection and Response) does" and "what BitLocker protects."
+> If those are shaky, pause and review. This module assumes you can already explain "what an EDR does" and "what BitLocker protects."
 
 ---
 
@@ -23,15 +23,15 @@ Six things happen in that 90 seconds all *defensive* and the attack dies:
 3. **Credential Guard** isolates LSASS so even if the beacon had gained admin rights, Mimikatz cannot extract NTLM hashes or Kerberos tickets.
 4. **WDAC** policy blocks the second-stage payload because it isn't on the allowlist.
 5. **Just-in-time VM access** on the SQL Server keeps RDP closed by default, the attacker cannot pivot in.
-6. **Sentinel/Defender XDR (Extended Detection and Response) alert** fires within 4 minutes, the SOC (Security Operations Center) is paged, the user's account is force-rotated, and the workstation is isolated by 4:08 a.m.
+6. **Sentinel/Defender XDR alert** fires within 4 minutes, the SOC is paged, the user's account is force-rotated, and the workstation is isolated by 4:08 a.m.
 
-The hospital's CISO (Chief Information Security Officer) told the board the next morning: *"We were never in danger. The Cobalt Strike beacon never even successfully called home, because Defender XDR's network protection blocked the C2 domain reputation-wise. The kill happened at five separate layers."*
+The hospital's CISO told the board the next morning: *"We were never in danger. The Cobalt Strike beacon never even successfully called home, because Defender XDR's network protection blocked the C2 domain reputation-wise. The kill happened at five separate layers."*
 
 Defense in depth, automated. That is what this module teaches.
 
 ---
 
-## 🛡️ Microsoft Defender for Servers (Defender for Cloud SKU (Stock Keeping Unit))
+## 🛡️ Microsoft Defender for Servers (Defender for Cloud SKU)
 
 **Defender for Servers** is the Microsoft Defender for Cloud server-protection SKU. It's a *bundle*, it doesn't replace MDE; it includes MDE plus other server-specific controls.
 
@@ -71,7 +71,7 @@ az security pricing create --name "StorageAccounts" --tier "Standard"
 
 ## 🔓 Just-In-Time (JIT) VM Access
 
-JIT keeps **RDP (3389), SSH (Secure Shell) (22), and WinRM (5985/5986)** ports *closed* at the NSG. An authorized user requests time-bound access (typically ≤3 hours), Defender opens the port from the user's source IP only, then auto-closes.
+JIT keeps **RDP (3389), SSH (22), and WinRM (5985/5986)** ports *closed* at the NSG. An authorized user requests time-bound access (typically ≤3 hours), Defender opens the port from the user's source IP only, then auto-closes.
 
 | Property | Detail |
 |----------|--------|
@@ -93,7 +93,7 @@ $jitPolicy = @{
             @{
                 Id = "/subscriptions/.../virtualMachines/SRV01"
                 Ports = @(
-                    @{ Number = 3389; Protocol = "TCP (Transmission Control Protocol)"; AllowedSourceAddressPrefix = "*"; MaxRequestAccessDuration = "PT3H" },
+                    @{ Number = 3389; Protocol = "TCP"; AllowedSourceAddressPrefix = "*"; MaxRequestAccessDuration = "PT3H" },
                     @{ Number = 22;   Protocol = "TCP"; AllowedSourceAddressPrefix = "*"; MaxRequestAccessDuration = "PT3H" }
                 )
             }
@@ -109,7 +109,7 @@ Start-AzJitNetworkAccessPolicy `
     -VirtualMachine @{ Id = "...SRV01"; Ports = @( @{ Number = 3389; AllowedSourceAddressPrefix = "1.2.3.4"; EndTimeUtc = (Get-Date).AddHours(2) } ) }
 ```
 
-🚨 **Trap:** JIT requires the **Microsoft.Compute/virtualMachines/openConnectionPortDirectly/action** RBAC (Role-Based Access Control) permission. Built into Owner / VM Contributor; for least-privilege, scope a custom role to JIT-only.
+🚨 **Trap:** JIT requires the **Microsoft.Compute/virtualMachines/openConnectionPortDirectly/action** RBAC permission. Built into Owner / VM Contributor; for least-privilege, scope a custom role to JIT-only.
 
 ---
 
@@ -145,7 +145,7 @@ Set-MpPreference -AttackSurfaceReductionRules_Ids "D4F940AB-401B-4EFC-AADC-AD5F3
                  -AttackSurfaceReductionRules_Actions Enabled
 ```
 
-ASR rules are best deployed via GPO (Group Policy Object), Intune, or Defender for Endpoint Security Configuration Management, not one-server-at-a-time. The list has ~17 named rules; common ones:
+ASR rules are best deployed via GPO, Intune, or Defender for Endpoint Security Configuration Management, not one-server-at-a-time. The list has ~17 named rules; common ones:
 
 - Block all Office apps from creating child processes
 - Block credential stealing from LSASS
@@ -163,7 +163,7 @@ ASR rules are best deployed via GPO (Group Policy Object), Intune, or Defender f
 |---|--------------|----------|
 | Layer | User-mode + kernel-mode hybrid | **Kernel-mode** |
 | Tamper resistance | Limited | **Very high, even local admin can't bypass** |
-| Policy distribution | GPO | GPO, MEM, MDM (Mobile Device Management), MSI |
+| Policy distribution | GPO | GPO, MEM, MDM, MSI |
 | Audit / Enforce modes | Yes | Yes |
 | Rule types | Path, publisher, hash | Signed code, file hash, FilePath, FilePublisher, custom (PEAuthenticode) |
 | Microsoft recommendation in 2026 | Legacy, migrate to WDAC | **Use this** |
@@ -217,7 +217,7 @@ Credential Guard uses **Virtualization-Based Security (VBS)** + Hyper-V isolatio
 
 Add admin users to the **Protected Users** AD group:
 
-- Forces Kerberos AES (Advanced Encryption Standard) (no DES, no RC4)
+- Forces Kerberos AES (no DES, no RC4)
 - Disables NTLM auth (cannot use Pass-the-Hash even on legacy SMB)
 - Disables unconstrained delegation
 - Disables credential caching on the local machine (no offline auth)
@@ -335,7 +335,7 @@ A **PAW** is a hardened admin workstation that is itself a Tier-0 asset:
 - *Recovery runbooks*, what to do when *any* security agent breaks boot
 - *Defender for Cloud's secure score*, a baseline you can verify against any agent's claims
 
-The exam will phrase this as: *"A SOC manager wants EDR coverage on 1,200 Windows Servers (mix of Azure, on-prem, AWS (Amazon Web Services)) with the simplest licensing and operational model. What's the recommendation?"* → **Defender for Servers P2 across the whole fleet via Arc** (covers Azure-native, Arc-projected on-prem, AWS EC2 (Elastic Compute Cloud) via Arc).
+The exam will phrase this as: *"A SOC manager wants EDR coverage on 1,200 Windows Servers (mix of Azure, on-prem, AWS) with the simplest licensing and operational model. What's the recommendation?"* → **Defender for Servers P2 across the whole fleet via Arc** (covers Azure-native, Arc-projected on-prem, AWS EC2 via Arc).
 
 **Discussion (Socratic).**
 - **Q1.** CrowdStrike's outage was a kernel-mode driver bug. Defender Antivirus also runs partly in kernel mode. Build the case that "single-vendor EDR is structurally riskier than dual-vendor," and the counter-argument that "two vendors = two attack surfaces = more risk." Which side is structurally stronger?
@@ -416,9 +416,9 @@ You now know:
 ## 💬 Discussion, Socratic prompts
 
 1. **Defender for Servers P1 vs P2.** A 1,200-server enterprise debates: P1 everywhere ($75K/year), P2 everywhere ($225K/year), or mixed (P2 on Tier-0 only, P1 on Tier-1 and Tier-2). Defend the mixed approach and identify the operational complexity it creates.
-2. **WDAC adoption barriers.** WDAC in Enforce mode breaks legacy installers that use unsigned code. Build the rollout plan: which servers go first, what's the audit-period duration, what's the rollback if an Enforce policy locks out RDP, and how do you handle the legacy ERP (Enterprise Resource Planning) that ships unsigned `.exe` files in nightly updates?
-3. **Credential Guard incompatibility.** Some kernel-mode drivers (older anti-virus, some VPN (Virtual Private Network) clients, some hardware management agents) cannot run under HVCI. Build the migration plan: discovery (Microsoft's HVCI Readiness Tool), driver-vendor outreach, replacement timeline. Where do you absolutely-must-deploy CredGuard despite the cost, and where do you accept the residual risk?
-4. **JIT vs always-on bastion.** JIT keeps RDP closed; Azure Bastion provides a managed RDP proxy with built-in MFA (Multi-Factor Authentication) and no public IP. Defend each: JIT for ad-hoc emergency access; Bastion for routine admin sessions. What's the cost trade-off and the security trade-off?
+2. **WDAC adoption barriers.** WDAC in Enforce mode breaks legacy installers that use unsigned code. Build the rollout plan: which servers go first, what's the audit-period duration, what's the rollback if an Enforce policy locks out RDP, and how do you handle the legacy ERP that ships unsigned `.exe` files in nightly updates?
+3. **Credential Guard incompatibility.** Some kernel-mode drivers (older anti-virus, some VPN clients, some hardware management agents) cannot run under HVCI. Build the migration plan: discovery (Microsoft's HVCI Readiness Tool), driver-vendor outreach, replacement timeline. Where do you absolutely-must-deploy CredGuard despite the cost, and where do you accept the residual risk?
+4. **JIT vs always-on bastion.** JIT keeps RDP closed; Azure Bastion provides a managed RDP proxy with built-in MFA and no public IP. Defend each: JIT for ad-hoc emergency access; Bastion for routine admin sessions. What's the cost trade-off and the security trade-off?
 5. **CrowdStrike lessons applied at home.** Your enterprise standardizes on Defender for Servers P2. Build the resilience plan: how do you stage Defender updates, what's the boot-failure recovery runbook, and what's the *operational* argument for or against a secondary EDR vendor?
 
 ---

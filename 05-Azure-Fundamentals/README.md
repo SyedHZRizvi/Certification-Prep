@@ -52,10 +52,10 @@ Begin with [Module 1: Cloud Concepts →](./Module-01-Cloud-Concepts/Reading.md)
 By the end of this track, you'll be able to:
 
 - Explain the cloud business model in plain English (CapEx vs OpEx, consumption pricing)
-- Tell the difference between IaaS (Infrastructure as a Service), PaaS (Platform as a Service), and SaaS (Software as a Service) in 10 seconds
+- Tell the difference between IaaS, PaaS, and SaaS in 10 seconds
 - Pick the right Azure compute / storage / database service for a given scenario
 - Read an Azure resource hierarchy (mgmt group → subscription → RG → resource) without panic
-- Explain Microsoft Entra ID, RBAC (Role-Based Access Control), Azure Policy, and Defender for Cloud
+- Explain Microsoft Entra ID, RBAC, Azure Policy, and Defender for Cloud
 - Use the Pricing Calculator, TCO Calculator, and Cost Management to estimate spend
 - Pass the AZ-900, and have the vocabulary to move on to AZ-104 next
 
@@ -70,7 +70,7 @@ By the end of this track, you'll be able to:
 | 3 | [Core Services](./Module-03-Core-Services/Reading.md) | 5 hrs | Compute, networking, storage, databases, the big map |
 | 4 | [Identity, Governance & Security](./Module-04-Identity-Governance-Security/Reading.md) | 4 hrs | Entra ID, RBAC, Policy, Locks, Defender, Sentinel, Zero Trust |
 | 5 | [Cost Management & SLAs](./Module-05-Cost-Management-SLAs/Reading.md) | 3 hrs | Pricing tools, Reservations, Spot, Hybrid Benefit, SLAs |
-| 6 | [Tools & Features](./Module-06-Tools-Features/Reading.md) | 3 hrs | Portal, CLI (Command Line Interface), Cloud Shell, ARM/Bicep, Monitor, Advisor |
+| 6 | [Tools & Features](./Module-06-Tools-Features/Reading.md) | 3 hrs | Portal, CLI, Cloud Shell, ARM/Bicep, Monitor, Advisor |
 
 **Total study time:** ~21 hours of reading + 5 hours of videos + 4 hours of quizzes = **~30 hours**
 
@@ -145,12 +145,12 @@ Days 9–10: Flashcards + Final Mock + REAL EXAM
 
 ## ⚠️ The 7 Most Common Reasons People Fail
 
-1. ❌ Studied "Azure VMs" but couldn't pick between **VM (Virtual Machine) Scale Sets, App Service, ACI, AKS, and Functions** on a scenario question (Module 3 fixes this)
-2. ❌ Confused old "**Azure AD (Active Directory)**" name, Microsoft renamed it to **Microsoft Entra ID** in 2023. The exam uses the new name.
+1. ❌ Studied "Azure VMs" but couldn't pick between **VM Scale Sets, App Service, ACI, AKS, and Functions** on a scenario question (Module 3 fixes this)
+2. ❌ Confused old "**Azure AD**" name, Microsoft renamed it to **Microsoft Entra ID** in 2023. The exam uses the new name.
 3. ❌ Memorized service names but couldn't map them to a use case ("which service provides X?")
 4. ❌ Didn't understand **shared responsibility**, kept picking "Microsoft" for things customers actually own
 5. ❌ Mixed up **Azure Policy** (compliance rules) vs **RBAC** (who can do what) vs **Locks** (prevent deletion)
-6. ❌ Skipped the **SLA (Service Level Agreement) composite calculation** trick (multiply dependent SLAs, see Module 5)
+6. ❌ Skipped the **SLA composite calculation** trick (multiply dependent SLAs, see Module 5)
 7. ❌ Didn't practice **Yes/No/Yes** style scenario sets, they're half the exam and trip up first-timers
 
 ---

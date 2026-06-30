@@ -1,10 +1,10 @@
 # Module 6: Databases on AWS 🗃️
 
-> **Why this module matters:** Picking the right database is the most common SAA scenario question. RDS (Relational Database Service) Multi-AZ vs Read Replicas, when to choose Aurora vs DynamoDB, ElastiCache Redis vs Memcached, each pair is asked over and over. Get them straight and you'll bank 8–12 questions.
+> **Why this module matters:** Picking the right database is the most common SAA scenario question. RDS Multi-AZ vs Read Replicas, when to choose Aurora vs DynamoDB, ElastiCache Redis vs Memcached, each pair is asked over and over. Get them straight and you'll bank 8–12 questions.
 
 > **Prerequisites for this module.**
 > - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md), Region/AZ, Reliability pillar
-> - [Module 2](../Module-02-IAM (Identity and Access Management)-Organizations/Reading.md), IAM auth on RDS, Secrets Manager
+> - [Module 2](../Module-02-IAM-Organizations/Reading.md), IAM auth on RDS, Secrets Manager
 > - [Module 4](../Module-04-VPC-Deep-Dive/Reading.md), databases live in private subnets
 > - Familiarity with relational (SQL) and non-relational (NoSQL) data models, *Designing Data-Intensive Applications* (Kleppmann 2017) chapters 1–3 is the canonical reference
 > - Understanding of OLTP vs OLAP at a conceptual level
@@ -88,7 +88,7 @@ Automatically grow storage when you hit 90% (no downtime).
 ### RDS Backups
 - **Automated backups**, daily snapshot + transaction logs, retain 1–35 days
 - **Manual snapshots**, retained until you delete them
-- Snapshots are stored in S3 (Simple Storage Service) (managed by AWS), can be copied cross-region
+- Snapshots are stored in S3 (managed by AWS), can be copied cross-region
 
 🎯 **Exam pattern:** "RDS disaster recovery to another region" → Cross-region **snapshot copy** (or use Aurora Global Database for hot DR).
 
@@ -279,7 +279,7 @@ Columnar storage, MPP (massively parallel processing). For **OLAP / analytics**,
 
 1. **Multi-AZ vs Read Replicas**, HA vs read scaling. Don't conflate.
 2. **DynamoDB + DAX** for sub-ms reads on hot keys.
-3. **Aurora Global Database** for cross-region RPO (Recovery Point Objective)/RTO (Recovery Time Objective) under a second.
+3. **Aurora Global Database** for cross-region RPO/RTO under a second.
 4. **Aurora Serverless v2** for spiky relational workloads.
 5. **Redis (not Memcached)** when failover/persistence required.
 6. **Redshift** for analytics. RDS is OLTP. Don't mix them up.
@@ -332,7 +332,7 @@ You now know:
 
 ## 📖 Case Study, Zoom's Pandemic Scale-Up (March–June 2020)
 
-**Situation.** Zoom Video Communications entered 2020 with ~10M daily meeting participants. By **March 2020**, the COVID-19 pandemic forced a global shift to remote work, school, and social life. Daily participants exploded to **200M by March 2020** and **300M by April 2020**, a **30× increase in 90 days**, the largest documented organic scale event in SaaS (Software as a Service) history. CEO (Chief Executive Officer) Eric Yuan's daily standups (described in his Saastr Annual 2021 keynote) covered both architecture decisions and *which AWS service to call next*.
+**Situation.** Zoom Video Communications entered 2020 with ~10M daily meeting participants. By **March 2020**, the COVID-19 pandemic forced a global shift to remote work, school, and social life. Daily participants exploded to **200M by March 2020** and **300M by April 2020**, a **30× increase in 90 days**, the largest documented organic scale event in SaaS history. CEO Eric Yuan's daily standups (described in his Saastr Annual 2021 keynote) covered both architecture decisions and *which AWS service to call next*.
 
 **Decision.** Zoom ran on a hybrid of co-located data centers (for media routing) and AWS (for control plane, recording storage, transcription). The database response (per Hash Bin's *"Architecture of Zoom"* 2021 series and Yuan's investor calls):
 
@@ -378,7 +378,7 @@ When the SAA exam describes "a SaaS workload sees unpredictable 10× spikes; dat
 
 > **Where this leads.**
 > - **Inside this course:** Module 07 (Decoupling) covers DynamoDB Streams → Lambda CDC patterns. Module 08 (Caching) covers ElastiCache and DAX in depth. Module 09 (Monitoring) covers Performance Insights and Database Activity Streams. Module 10 (DR) covers cross-region DB patterns (Aurora Global, DynamoDB Global Tables).
-> - **Cross-course:** `06-Azure-Administrator` Module 06 covers the equivalent Azure SQL / Cosmos DB story. `07-AWS-AI-Practitioner` Module 04 covers vector databases (OpenSearch Serverless, Aurora with pgvector) for RAG (Retrieval-Augmented Generation).
+> - **Cross-course:** `06-Azure-Administrator` Module 06 covers the equivalent Azure SQL / Cosmos DB story. `07-AWS-AI-Practitioner` Module 04 covers vector databases (OpenSearch Serverless, Aurora with pgvector) for RAG.
 > - **Practice:** Practice Exam 2 has 7 database questions; Final Mock has 6. Combined with Module 5 (S3), data-layer questions are roughly 20% of the exam.
 > - **Real world:** Spin up an Aurora Serverless v2 instance ($0.06/ACU-hour) and a DynamoDB table; compare the two for a small CRUD app.
 

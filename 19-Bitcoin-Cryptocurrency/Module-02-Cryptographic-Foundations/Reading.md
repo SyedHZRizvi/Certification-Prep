@@ -6,7 +6,7 @@
 > - [Module 1 of this course](../Module-01-Bitcoin-White-Paper-Origins/Reading.md), knowing what Bitcoin is and where it came from
 > - Basic discrete math: modular arithmetic at a high-school level
 > - Comfort with binary, hexadecimal, and the idea that a "key" can be a very large number
-> - Cross-course: [09-CompTIA-Security-Plus Module-02 (Cryptography & PKI (Public Key Infrastructure))](../../09-CompTIA-Security-Plus/Module-02-Cryptography-PKI/Reading.md) is the security-engineer's parallel, if you finished that, this module will be a smooth extension. If not, you'll learn the relevant primitives here.
+> - Cross-course: [09-CompTIA-Security-Plus Module-02 (Cryptography & PKI)](../../09-CompTIA-Security-Plus/Module-02-Cryptography-PKI/Reading.md) is the security-engineer's parallel, if you finished that, this module will be a smooth extension. If not, you'll learn the relevant primitives here.
 >
 > No prior cryptography coursework is required, but if you've never seen the words "elliptic curve" or "RIPEMD-160" they're going to appear about 60 times in the next 4,000 words.
 
@@ -37,7 +37,7 @@ Bitcoin uses **four** cryptographic primitives. Memorize them; every later modul
 | 3 | **Digital signatures** (ECDSA, Schnorr) | Authentication + non-repudiation | Every spend |
 | 4 | **Merkle trees** | Compact commitment to a set; SPV proofs | Block headers, future Taproot scripts |
 
-🎯 **MEMORIZE THIS.** A common CBP and CBSA question is *"which primitive does Bitcoin NOT directly use?"* with distractors like *RSA, AES (Advanced Encryption Standard), Diffie-Hellman, ZKPs, Pedersen commitments.* Answer: Bitcoin doesn't directly use any of those at the protocol layer (though some appear in Lightning, Liquid, and L2s, Module 7).
+🎯 **MEMORIZE THIS.** A common CBP and CBSA question is *"which primitive does Bitcoin NOT directly use?"* with distractors like *RSA, AES, Diffie-Hellman, ZKPs, Pedersen commitments.* Answer: Bitcoin doesn't directly use any of those at the protocol layer (though some appear in Lightning, Liquid, and L2s, Module 7).
 
 ---
 
@@ -107,7 +107,7 @@ Where `p = 2^256 − 2^32 − 977`, a specific 256-bit prime that gives the curv
 | Curve order `n` | ~2^256 (slightly less) |
 | Bits of security | ~128 |
 
-🚨 **Trap on the exam.** Bitcoin uses secp256k**1**, NOT secp256**r1** (also called NIST P-256, which is what TLS (Transport Layer Security), smart cards, and Apple's Secure Enclave use). Satoshi explicitly avoided NIST curves because of post-2007 suspicions about NIST-curve parameter selection (the "Dual_EC_DRBG affair"). This is a common confusion on CBSA.
+🚨 **Trap on the exam.** Bitcoin uses secp256k**1**, NOT secp256**r1** (also called NIST P-256, which is what TLS, smart cards, and Apple's Secure Enclave use). Satoshi explicitly avoided NIST curves because of post-2007 suspicions about NIST-curve parameter selection (the "Dual_EC_DRBG affair"). This is a common confusion on CBSA.
 
 ### From private key → public key → address
 
@@ -278,7 +278,7 @@ Inside each block:
 
 **Decision.** Within weeks, virtually every TLS-using site rotated certificates, revoked old ones, forced password resets, and updated to OpenSSL 1.0.1g. Cloudflare ran a public challenge, security researchers were able to retrieve private keys from a vulnerable test server using only Heartbleed reads, confirming the worst-case interpretation.
 
-**Outcome.** Heartbleed was not a flaw in TLS itself, in RSA, in AES, or in SHA-256. It was a flaw in **a specific implementation** of one TLS feature. Every cryptographic primitive remained sound. The lesson for Bitcoin was profound and indirect: *Bitcoin runs almost no TLS in its consensus path.* The Bitcoin Core node-to-node protocol is a plaintext binary protocol on port 8333; the wallet-to-node communication is HTTP (Hypertext Transfer Protocol)/JSON or the more modern PSBT files. Bitcoin's cryptographic surface area is dramatically smaller than a typical TLS-using web service.
+**Outcome.** Heartbleed was not a flaw in TLS itself, in RSA, in AES, or in SHA-256. It was a flaw in **a specific implementation** of one TLS feature. Every cryptographic primitive remained sound. The lesson for Bitcoin was profound and indirect: *Bitcoin runs almost no TLS in its consensus path.* The Bitcoin Core node-to-node protocol is a plaintext binary protocol on port 8333; the wallet-to-node communication is HTTP/JSON or the more modern PSBT files. Bitcoin's cryptographic surface area is dramatically smaller than a typical TLS-using web service.
 
 **Lesson for the exam / for practitioners.** Two principles:
 
@@ -298,7 +298,7 @@ Common CBSA traps include claims Bitcoin uses X when it doesn't.
 
 | Familiar primitive | Used in Bitcoin? | Where you'll see it instead |
 |---|---|---|
-| **RSA** | ❌ No | TLS, email (PGP/GPG), SSH (Secure Shell) legacy |
+| **RSA** | ❌ No | TLS, email (PGP/GPG), SSH legacy |
 | **AES** | ❌ Not at consensus layer | Wallet-file encryption (BIP-38) is the only standardized AES usage; otherwise hot-wallet software may encrypt-at-rest, but it's not consensus |
 | **Diffie-Hellman key exchange** | ❌ Not at consensus | TLS handshakes outside Bitcoin |
 | **HMAC** | ✅ HMAC-SHA512 for BIP-32 child-key derivation |  |

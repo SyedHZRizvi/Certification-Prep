@@ -50,7 +50,7 @@
 4. My process (week by week)
 5. What I cost (3 pricing tiers visible)
 6. Why me (3 differentiators with proof)
-7. Next steps + CTA (Call to Action) ("no hard feelings" option)
+7. Next steps + CTA ("no hard feelings" option)
 ```
 
 Built in Canva. ~1 hour.
@@ -69,7 +69,7 @@ I noticed you shipped [specific recent thing]. Really [specific reaction].
 I'm a marketer who's been building a portfolio this year. 
 One of the pieces is [1-line specific].
 
-Curious, is [content/SEO (Search Engine Optimization)/paid/automation] something you're thinking 
+Curious, is [content/SEO/paid/automation] something you're thinking 
 about for [their product]? If not, no worries.
 
 Either way, would love to follow your build.

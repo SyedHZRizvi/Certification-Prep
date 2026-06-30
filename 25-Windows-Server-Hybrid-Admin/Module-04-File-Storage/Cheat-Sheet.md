@@ -23,13 +23,13 @@
 | 2 | **2-way mirror only** |
 | 3 | 3-way mirror |
 | 4 | 3-way mirror **or** dual parity |
-| 6+ | Mirror-accelerated parity (MAP (Minimum Advertised Price)) |
+| 6+ | Mirror-accelerated parity (MAP) |
 
 ---
 
 ## 🔁 Storage Replica
 
-| Mode | Latency | RPO (Recovery Point Objective) | Best for |
+| Mode | Latency | RPO | Best for |
 |------|---------|-----|----------|
 | **Synchronous** | ≤ ~5 ms RTT | **0** | Metro pair |
 | **Asynchronous** | Any | Eventual | Cross-region DR |
@@ -92,8 +92,8 @@ DFS-N max targets per folder: **32**
 
 ## 💼 Work Folders
 
-- HTTPS (HTTP Secure) (port 443) only
-- AD (Active Directory) + Workplace Join + Conditional Access
+- HTTPS (port 443) only
+- AD + Workplace Join + Conditional Access
 - Self-managed alternative to OneDrive
 
 ---

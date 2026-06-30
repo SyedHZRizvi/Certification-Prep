@@ -1,4 +1,4 @@
-# Module 12 Cheat Sheet: SEO (Search Engine Optimization) & Content Marketing
+# Module 12 Cheat Sheet: SEO & Content Marketing
 
 **Quick Reference Card | Semrush SEO · HubSpot SEO · Ahrefs Academy**
 
@@ -30,8 +30,8 @@
 **Core Metrics to Evaluate:**
 - **Search Volume** — monthly average searches (use 3-month rolling average)
 - **Keyword Difficulty (KD)** — Ahrefs: domain-based 0-100; Semrush: page-based 0-100
-- **CPC (Cost Per Click)** — proxy for commercial value (higher CPC = more buyer intent)
-- **SERP (Search Engine Results Page) Features** — does the SERP show AI Overview, Featured Snippet, PAA? Reduces organic CTR (Click-Through Rate)
+- **CPC** — proxy for commercial value (higher CPC = more buyer intent)
+- **SERP Features** — does the SERP show AI Overview, Featured Snippet, PAA? Reduces organic CTR
 
 **Target KD by Domain Rating:**
 - DR 0-20 → target KD ≤ 20
@@ -83,7 +83,7 @@
 | INP (Interaction to Next Paint) | Overall interactivity | ≤ 200ms | 200ms – 500ms | > 500ms |
 | CLS (Cumulative Layout Shift) | Visual stability | ≤ 0.1 | 0.1 – 0.25 | > 0.25 |
 
-**Common LCP Fixes:** Optimize hero image (WebP, preload), use CDN (Content Delivery Network), reduce TTFB, defer non-critical JS
+**Common LCP Fixes:** Optimize hero image (WebP, preload), use CDN, reduce TTFB, defer non-critical JS
 **Common INP Fixes:** Reduce JS bundle size, break up long tasks, remove heavy third-party scripts
 **Common CLS Fixes:** Set explicit width/height on images, avoid late-loading ads, use `font-display: swap`
 
@@ -106,7 +106,7 @@
 - Submit at: Google Search Console → Sitemaps
 
 **Canonical Tags:**
-- Use on: duplicate URLs, paginated pages, syndicated content, HTTP (Hypertext Transfer Protocol)/HTTPS (HTTP Secure) or www/non-www variants
+- Use on: duplicate URLs, paginated pages, syndicated content, HTTP/HTTPS or www/non-www variants
 - Format: `<link rel="canonical" href="https://example.com/preferred-url/" />`
 - Self-referencing canonicals on every page are best practice
 
@@ -162,7 +162,7 @@ Rules:
 | Experience | Author bios with personal case studies, "I tested this" sections, original data |
 | Expertise | Author credentials, industry certifications, publication in respected journals |
 | Authoritativeness | Backlinks from industry publications, brand mentions, awards, speaker profiles |
-| Trustworthiness | HTTPS, accurate contact info, clear privacy policy, GDPR (General Data Protection Regulation) compliance, factual accuracy |
+| Trustworthiness | HTTPS, accurate contact info, clear privacy policy, GDPR compliance, factual accuracy |
 
 **Most critical for:** Health, finance, legal, safety (YMYL) content
 **European note:** GDPR-compliant cookie consent and privacy policy are Trustworthiness signals
@@ -263,7 +263,7 @@ Rules:
 
 ---
 
-## 14. Measuring Organic ROI (Return on Investment)
+## 14. Measuring Organic ROI
 
 **Leading Indicators (months 1-6):**
 - Keyword ranking improvements for target terms
@@ -272,13 +272,13 @@ Rules:
 
 **Quality Indicators (ongoing):**
 - Organic CTR vs. industry benchmarks
-- Scroll depth and time on page (GA4 (Google Analytics 4))
+- Scroll depth and time on page (GA4)
 - Pages per session from organic channel
 
 **Revenue Indicators (months 6-18):**
 - Organic-sourced leads / trials / purchases (GA4 attribution)
-- Cost per organic lead vs. paid CPL (Cost Per Lead)
-- Revenue attributed to organic (requires GA4 → CRM (Customer Relationship Management) data connection)
+- Cost per organic lead vs. paid CPL
+- Revenue attributed to organic (requires GA4 → CRM data connection)
 
 **ROI Formula:**
 ```

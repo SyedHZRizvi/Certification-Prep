@@ -15,7 +15,7 @@
 
 Meet Jamie, the new logistics director at a mid-size toy retailer. In her first March, she walks the DC floor: half-empty racks, idle forklifts, three workers eating lunch on stacked pallets. She calls a meeting: "We can downsize. We're paying for capacity we don't use."
 
-Six months later, it's October. The receiving dock backs up because trailers can't unload fast enough. Pickers run double shifts. Trucks sit waiting for dock doors. Jamie's CFO (Chief Financial Officer) asks why outbound shipments are late.
+Six months later, it's October. The receiving dock backs up because trailers can't unload fast enough. Pickers run double shifts. Trucks sit waiting for dock doors. Jamie's CFO asks why outbound shipments are late.
 
 Jamie learned the **logistics capacity paradox** the hard way:
 
@@ -124,7 +124,7 @@ This is *the* high-yield content of this module. CLTD aligns capacity to demand 
 | Best for | Seasonal businesses, retail (esp. toys, apparel) |
 
 ### Hybrids
-- **Chase + Level mix:** Maintain a base load with permanent staff, flex peaks with temps/3PL (Third-Party Logistics) overflow.
+- **Chase + Level mix:** Maintain a base load with permanent staff, flex peaks with temps/3PL overflow.
 - **Cushion-based:** Hold a planned slack (e.g., 15% extra dock doors) to absorb noise.
 
 🧠 **Memory hook:** *Lead leads. Lag lags. Match matches.* (And every textbook calls "Chase" and "Match" the same thing.)
@@ -142,7 +142,7 @@ This is *the* high-yield content of this module. CLTD aligns capacity to demand 
 
 ## 🐢🐇 Slow Movers vs Fast Movers
 
-Capacity decisions vary by SKU (Stock Keeping Unit) velocity.
+Capacity decisions vary by SKU velocity.
 
 | Velocity tier | Behavior | Capacity treatment |
 |---------------|----------|---------------------|
@@ -161,7 +161,7 @@ Two storage zones often emerge:
 
 ## 📊 Demand Forecasting for Logistics
 
-In Module 4 we cover DRP (Distribution Requirements Planning). Here we cover *the forecast itself*.
+In Module 4 we cover DRP. Here we cover *the forecast itself*.
 
 ### Forecasting methods (CLTD-tested)
 
@@ -210,7 +210,7 @@ The CLTD body of knowledge describes a 6-step capacity-planning cycle. Memorize 
 3. Compare to current capacity (gap analysis)
 4. Identify alternatives (build, outsource, mode-shift, defer)
 5. Select & implement (with budgets, lead times)
-6. Monitor & adjust (KPIs (Key Performance Indicators), monthly review, S&OP (Sales and Operations Planning) integration)
+6. Monitor & adjust (KPIs, monthly review, S&OP integration)
 ```
 
 This is **CRP for logistics**, Capacity Requirements Planning. It must integrate with the broader S&OP / IBP cycle.
@@ -271,7 +271,7 @@ If a single resource limits flow, that's the **bottleneck**. Eli Goldratt's Five
 
 **Decision.** The two responded *differently*:
 
-- **UPS (CEO (Chief Executive Officer) Carol Tomé, just appointed June 2020) cut accounts.** UPS imposed shipper-by-shipper *volume caps* in October 2020, refusing additional volume from large e-commerce shippers (most famously Gap and L.L. Bean for several weeks) when they exceeded their pre-agreed daily quotas. Tomé's framing: "better-not-bigger." UPS hired ~100,000 seasonal workers, leased temporary aircraft, but explicitly chose to *protect service quality and pricing power* over volume.
+- **UPS (CEO Carol Tomé, just appointed June 2020) cut accounts.** UPS imposed shipper-by-shipper *volume caps* in October 2020, refusing additional volume from large e-commerce shippers (most famously Gap and L.L. Bean for several weeks) when they exceeded their pre-agreed daily quotas. Tomé's framing: "better-not-bigger." UPS hired ~100,000 seasonal workers, leased temporary aircraft, but explicitly chose to *protect service quality and pricing power* over volume.
 - **FedEx (CEO Fred Smith) chased volume.** FedEx Ground hired 70,000 seasonal workers, expanded Sunday delivery aggressively, and accepted incremental volume but absorbed degraded on-time performance (FedEx Ground OT% fell to ~88% during peak vs ~95% target). FedEx Ground's 2020 revenue grew ~33% Y/Y but per-package operating margins compressed sharply.
 
 **Outcome.** By 2022 results were diverging clearly. UPS posted record operating margins (13.5% in 2021, peaking at ~14% in 2022) and stock outperformed FedEx by ~40% over the 2020–2022 window. FedEx posted a massive earnings miss in September 2022 ($0.74B operating-income shortfall vs guidance, attributed to e-com volume normalization), CEO Raj Subramaniam (Fred Smith's successor) announced a $1B cost-cut program, and FedEx Express began parking aircraft. By 2024, both were in active retrenchment: FedEx merged FedEx Ground + Express into "Network 2.0" (one combined US delivery network) and announced 1,800 layoffs; UPS announced 12,000 layoffs in early 2024 after the Teamsters contract pushed labor costs up ~30%.
@@ -354,7 +354,7 @@ You now know:
 
 1. **The 85% utilization wall.** Hopp & Spearman's *Factory Physics* shows that queueing wait time approaches infinity as utilization → 100% with any variability. Yet finance teams routinely push DC managers to "hit 95% utilization to justify the rent." Build the strongest argument for the finance side AND for the operations side. Where should a CLTD-grade director actually settle the dial, and what data would shift it?
 
-2. **Forecast accuracy ROI (Return on Investment).** Improving SKU-level forecast MAPE from 25% to 18% might cost $1.2M in a demand-sensing platform. The forecast feeds DRP, which feeds DC capacity. When is that investment worth it, and how would you build the business case?
+2. **Forecast accuracy ROI.** Improving SKU-level forecast MAPE from 25% to 18% might cost $1.2M in a demand-sensing platform. The forecast feeds DRP, which feeds DC capacity. When is that investment worth it, and how would you build the business case?
 
 3. **Match-strategy moral hazard.** Match (chase) strategies routinely hire ~30% seasonal labor. Amazon's seasonal-hiring announcements (~250K each Q4 2020–2024) drew labor-practice criticism. If your CFO loves match for the cost story but HR pushes back on the labor-volatility story, how do you adjudicate as logistics director?
 

@@ -17,7 +17,7 @@
 
 The bet is bold: Lightning, a technology released in production by Lightning Labs only 3 years earlier, was supposed to instantly become the de-facto payments rail for a country. McDonald's, Starbucks, Pizza Hut, and Walmart operating in El Salvador accept Chivo-Lightning. So do roadside vendors who'd never previously had a payment terminal of any kind.
 
-What actually happened over 2021-2024 was messier than the marketing suggested. **Chivo had bugs.** **Onboarding KYC (Know Your Customer) was a disaster.** Many citizens immediately cashed out their $30 of BTC into USD (~40% per Bank of El Salvador surveys). The Bitcoin Beach community at El Zonte where the experiment had been bottom-up since 2019 actually adopted Lightning for daily commerce; most of the rest of the country didn't.
+What actually happened over 2021-2024 was messier than the marketing suggested. **Chivo had bugs.** **Onboarding KYC was a disaster.** Many citizens immediately cashed out their $30 of BTC into USD (~40% per Bank of El Salvador surveys). The Bitcoin Beach community at El Zonte where the experiment had been bottom-up since 2019 actually adopted Lightning for daily commerce; most of the rest of the country didn't.
 
 But the *Lightning Network itself* did something it had never done at scale: it processed a country's worth of micropayment volume reliably, with sub-cent fees and sub-second latency, alongside a national fiat payment rail. As of 2026, **Strike, Cash App, Wallet of Satoshi, Phoenix, and Breez** between them carry significantly more Lightning volume monthly than Visa carries in mid-tier corridors like US-Philippines.
 
@@ -163,7 +163,7 @@ The Lightning protocol's onion construction is called **Sphinx** (Danezis & Gold
 | 7 | P2P node and channel discovery |
 | 8 | Encrypted and authenticated transport |
 | 9 | Feature flags |
-| 10 | DNS (Domain Name System) bootstrap |
+| 10 | DNS bootstrap |
 | 11 | Invoice protocol (BOLT-11) |
 | 12 | Offers (the post-BOLT-11 reusable invoice spec) |
 
@@ -222,7 +222,7 @@ Lightning's hardest operational challenge: **liquidity management**. A channel m
 | **Magma** (Amboss) | Liquidity auction marketplace |
 | **Rebalancing** | Pay yourself through the network to shift balance within your channels |
 
-🎯 **Exam tip.** Splicing (specified in 2023, deployed 2024+) is the major UX (User Experience) improvement: a node operator can add or withdraw funds from a channel without closing and reopening it. Pre-splicing, every liquidity change was a channel close.
+🎯 **Exam tip.** Splicing (specified in 2023, deployed 2024+) is the major UX improvement: a node operator can add or withdraw funds from a channel without closing and reopening it. Pre-splicing, every liquidity change was a channel close.
 
 ---
 

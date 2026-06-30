@@ -1,11 +1,11 @@
-# Module 4: Networking & CDN (Content Delivery Network) 🌐
+# Module 4: Networking & CDN 🌐
 
 > **Why this module matters:** Networking is where most beginners freeze. The good news: CLF-C02 only tests the *concepts*, not the routing tables. Master the 8 services in this module and you'll handle every networking question.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Cloud Fundamentals](../Module-01-Cloud-Fundamentals/Reading.md), Regions, AZs, Edge Locations
-> - [Core Storage](../Module-03-Core-Storage/Reading.md), what S3 (Simple Storage Service) is (CloudFront often sits in front of it)
-> - Basic networking literacy: what an IP address, subnet, and DNS (Domain Name System) name are
+> - [Core Storage](../Module-03-Core-Storage/Reading.md), what S3 is (CloudFront often sits in front of it)
+> - Basic networking literacy: what an IP address, subnet, and DNS name are
 >
 > No CCNA needed, CLF-C02 keeps networking conceptual. If you've configured a home router's port forwarding, you know enough about the underlying network model to handle this module.
 
@@ -17,12 +17,12 @@ Maria's pizza shops now serve 50 cities worldwide. Each shop needs:
 
 - A **plot of land** (its own private street with addresses) → **VPC**
 - A **front door** for customers (public entrance) → **Internet Gateway**
-- A **back door** for staff only (private) → **NAT (Network Address Translation) Gateway**
+- A **back door** for staff only (private) → **NAT Gateway**
 - A **doorbell** that routes guests to the right shop based on location → **Route 53**
 - A **traffic cop** out front that distributes lunch-rush customers across all 4 cashiers → **Elastic Load Balancer**
 - A **cache of pizzas** pre-positioned in 400+ cities so customers don't wait → **CloudFront**
 - A **dedicated armored truck route** between her warehouse and shops (no public road) → **Direct Connect**
-- A **mobile app API (Application Programming Interface)** for online orders → **API Gateway**
+- A **mobile app API** for online orders → **API Gateway**
 
 Each of these maps to one AWS service. Memorize the analogy and you'll never confuse them.
 
@@ -37,11 +37,11 @@ Each of these maps to one AWS service. Memorize the analogy and you'll never con
 ```
    VPC: 10.0.0.0/16
    ├─ Public Subnet  (10.0.1.0/24), has route to Internet Gateway
-   │   └─ EC2 (Elastic Compute Cloud) web servers (with Elastic IPs or ELB)
+   │   └─ EC2 web servers (with Elastic IPs or ELB)
    ├─ Private Subnet (10.0.2.0/24), no internet access (or via NAT)
    │   └─ EC2 application servers
    └─ Private Subnet (10.0.3.0/24), for databases
-       └─ RDS (Relational Database Service) instance
+       └─ RDS instance
 ```
 
 ### Key VPC building blocks (CLF-level)
@@ -75,7 +75,7 @@ Each of these maps to one AWS service. Memorize the analogy and you'll never con
 
 | Option | What it is | When to use |
 |--------|------------|-------------|
-| **VPN (Virtual Private Network) (Site-to-Site)** | Encrypted IPsec tunnel over the internet | Fast to set up, encrypted, but variable latency |
+| **VPN (Site-to-Site)** | Encrypted IPsec tunnel over the internet | Fast to set up, encrypted, but variable latency |
 | **AWS Direct Connect** | Dedicated private fiber from your DC to AWS | High bandwidth (1/10/100 Gbps), low latency, predictable, takes weeks to provision |
 | **Direct Connect + VPN** | Use VPN as backup over DX | Belt-and-suspenders for critical workloads |
 | **AWS Transit Gateway** | Hub for many VPCs + on-prem | Scale beyond a few VPC peerings |
@@ -106,7 +106,7 @@ Each of these maps to one AWS service. Memorize the analogy and you'll never con
 
 Route 53 also does **domain registration** and **health checks**.
 
-🎯 **Exam shortcut:** "Send EU users to the EU region for GDPR (General Data Protection Regulation)" → **Geolocation routing.** "Send users to lowest-latency endpoint" → **Latency-based.**
+🎯 **Exam shortcut:** "Send EU users to the EU region for GDPR" → **Geolocation routing.** "Send users to lowest-latency endpoint" → **Latency-based.**
 
 ---
 
@@ -118,7 +118,7 @@ CloudFront launched in November 2008. The general "CDN" architecture pattern pus
 
 Key concepts:
 
-- **Origin**, where the original content lives (S3 bucket, ELB, EC2, custom HTTP (Hypertext Transfer Protocol))
+- **Origin**, where the original content lives (S3 bucket, ELB, EC2, custom HTTP)
 - **Distribution**, your CloudFront configuration
 - **Edge Location**, global PoP that caches the content
 - **OAC (Origin Access Control)**, locks S3 origin so only CloudFront can fetch from it (replaces old OAI)
@@ -128,7 +128,7 @@ CloudFront also offers:
 - **Field-level encryption** for sensitive fields
 - **Signed URLs / Cookies** for paid / private content
 - **Lambda@Edge** and **CloudFront Functions**, run code at the edge
-- **Integration with AWS WAF (Web Application Firewall) and Shield** for DDoS (Distributed Denial of Service) protection
+- **Integration with AWS WAF and Shield** for DDoS protection
 
 🎯 **Exam pattern:** "Serve a global website with low latency and DDoS protection" → **CloudFront + WAF + Shield**.
 
@@ -140,8 +140,8 @@ CloudFront also offers:
 
 | Type | Layer | Best for | Notes |
 |------|-------|----------|-------|
-| **Application Load Balancer (ALB)** | Layer 7 (HTTP/HTTPS (HTTP Secure)) | Web apps, microservices, container routing | Path/host-based rules, WebSockets, HTTP/2 |
-| **Network Load Balancer (NLB)** | Layer 4 (TCP (Transmission Control Protocol)/UDP (User Datagram Protocol)) | Ultra-low latency, millions of req/sec, static IP | Preserves source IP |
+| **Application Load Balancer (ALB)** | Layer 7 (HTTP/HTTPS) | Web apps, microservices, container routing | Path/host-based rules, WebSockets, HTTP/2 |
+| **Network Load Balancer (NLB)** | Layer 4 (TCP/UDP) | Ultra-low latency, millions of req/sec, static IP | Preserves source IP |
 | **Gateway Load Balancer (GWLB)** | Layer 3 | Insert 3rd-party security appliances (firewalls, IDS) | Operates at IP level |
 | **Classic Load Balancer (CLB)** | Layer 4/7 | Legacy only, being deprecated | Don't pick on exam unless asked |
 
@@ -167,7 +167,7 @@ Difference from CloudFront:
 
 ## 🛜 Amazon API Gateway
 
-**API Gateway = managed gateway for REST (Representational State Transfer), HTTP, and WebSocket APIs.** Handles auth, throttling, transformations, caching.
+**API Gateway = managed gateway for REST, HTTP, and WebSocket APIs.** Handles auth, throttling, transformations, caching.
 
 Common pattern: **API Gateway → Lambda** = fully serverless backend.
 
@@ -264,14 +264,14 @@ By default, EC2 → S3 traffic goes out the IGW (over the public internet). **VP
 
 ## 🏛️ Case Study, Netflix: AWS + Open Connect (2008–present)
 
-**Situation.** In August 2008 five years before Netflix's "all-in" AWS announcement a corrupted database in Netflix's own Los Gatos data center caused three days of DVD-shipping downtime. CEO (Chief Executive Officer) Reed Hastings concluded that running their own physical infrastructure was a strategic liability. By 2008, streaming was growing fast and Netflix did not want to be in the data-center business while also reinventing how the world watches TV.
+**Situation.** In August 2008 five years before Netflix's "all-in" AWS announcement a corrupted database in Netflix's own Los Gatos data center caused three days of DVD-shipping downtime. CEO Reed Hastings concluded that running their own physical infrastructure was a strategic liability. By 2008, streaming was growing fast and Netflix did not want to be in the data-center business while also reinventing how the world watches TV.
 
 **Decision.** Netflix made two layered architectural bets between 2008 and 2016:
 
 1. **Migrate everything except video delivery to AWS** (2008–2015). The control plane, recommendation engine, encoding pipeline, billing, A/B testing, all on AWS. By January 2016, Netflix announced the on-prem data center was closed. Yury Izrailevsky (then VP Cloud) blogged the milestone (*"Completing the Netflix Cloud Migration,"* Netflix Tech Blog, Feb 2016).
 2. **Build their own CDN Open Connect (OCAs) for the actual video bits** (2011 onwards). Rather than pay AWS CloudFront margin on petabytes/hour of streaming, Netflix shipped purpose-built cache appliances to ISPs around the world for free. Comcast, Verizon, Telstra, Liberty Global, KPN, all install Open Connect Appliances in their PoPs. By 2024, Open Connect delivers ~95% of Netflix traffic; CloudFront / AWS is used only for sub-second control-plane responses, fallback, and ramp-up.
 
-**Outcome.** Netflix is the largest video-streaming service in the world (~270M paid subscribers, 2024 Q1). Streaming-quality metrics consistently outperform competitors because Open Connect terminates *inside* the ISP (Internet Service Provider)'s network, eliminating the "ISP-to-CDN" hop entirely. Compute / control-plane elasticity comes from AWS; bandwidth economics come from Open Connect. Netflix open-sourced major pieces of its AWS-native stack: **Chaos Monkey** (2011), **Hystrix** (2012), **Eureka** (2012), and the entire **Spinnaker** continuous-delivery platform (2014, co-developed with Google).
+**Outcome.** Netflix is the largest video-streaming service in the world (~270M paid subscribers, 2024 Q1). Streaming-quality metrics consistently outperform competitors because Open Connect terminates *inside* the ISP's network, eliminating the "ISP-to-CDN" hop entirely. Compute / control-plane elasticity comes from AWS; bandwidth economics come from Open Connect. Netflix open-sourced major pieces of its AWS-native stack: **Chaos Monkey** (2011), **Hystrix** (2012), **Eureka** (2012), and the entire **Spinnaker** continuous-delivery platform (2014, co-developed with Google).
 
 **Lesson for the exam / for practitioners.** Netflix is the textbook case for *"AWS for what's elastic; build-your-own for what's high-bandwidth and predictable."* On CLF-C02, Netflix is the implicit example whenever the exam mentions "global content delivery" or CloudFront. For practitioners, the lesson is sharper: at high enough scale, **the CDN bill is its own business model**, not a line item, and the same logic that Dropbox applied to S3 (Module 3) Netflix applied to CloudFront. AWS's response was to add the **CloudFront Save Plans / committed-use pricing** that didn't exist when Netflix made its decision.
 

@@ -18,7 +18,7 @@
 
 ---
 
-## 🔐 MFA (Multi-Factor Authentication) Factor Categories
+## 🔐 MFA Factor Categories
 
 | Factor | Examples |
 |--------|----------|
@@ -51,7 +51,7 @@
 | Whaling | Exec-targeted |
 | Smishing | SMS |
 | Vishing | Phone/voice |
-| Pharming | DNS (Domain Name System) / typo domain |
+| Pharming | DNS / typo domain |
 | Shoulder surfing | Watching screen |
 | Tailgating | Following badged person |
 | Dumpster diving | Trash searching |
@@ -63,7 +63,7 @@
 
 - ❌ WEP, broken, never use
 - ❌ WPA, deprecated
-- ✅ WPA2-AES (Advanced Encryption Standard), solid baseline
+- ✅ WPA2-AES, solid baseline
 - ✅✅ WPA3-SAE, modern, recommended
 - 🏢 WPA2/3-Enterprise = 802.1X + RADIUS (per-user)
 

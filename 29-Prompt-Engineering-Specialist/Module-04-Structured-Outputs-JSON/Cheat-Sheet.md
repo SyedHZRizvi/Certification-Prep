@@ -65,7 +65,7 @@ class Severity(str, Enum):
     LOW = "LOW"; MED = "MED"; HIGH = "HIGH"
 
 class Item(BaseModel):
-    sku: str = Field(..., pattern=r"^SKU (Stock Keeping Unit)-\d{6}$")
+    sku: str = Field(..., pattern=r"^SKU-\d{6}$")
     qty: int = Field(..., ge=1, le=20)
     color: str | None = None
     severity: Severity                  # enum
@@ -240,7 +240,7 @@ class ExtractedTicket(BaseModel):
     def must_be_real_customer(cls, v: str | None) -> str | None:
         if v is None:
             return v
-        # Lookup in real CRM (Customer Relationship Management); raise on miss → instructor retries
+        # Lookup in real CRM; raise on miss → instructor retries
         if not crm.exists(v):
             raise ValueError(f"Customer {v} not found in CRM")
         return v

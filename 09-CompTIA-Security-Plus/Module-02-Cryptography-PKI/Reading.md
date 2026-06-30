@@ -1,13 +1,13 @@
 # Module 2: Cryptography & PKI 🔐
 
-> **Why this module matters:** Crypto shows up in every domain, TLS (Transport Layer Security), VPNs, signatures, password hashing, certificate errors, file encryption. About 10% of exam questions touch crypto directly, and PBQs love to test certificate chains. Get this module right and the rest of Sec+ gets noticeably easier.
+> **Why this module matters:** Crypto shows up in every domain, TLS, VPNs, signatures, password hashing, certificate errors, file encryption. About 10% of exam questions touch crypto directly, and PBQs love to test certificate chains. Get this module right and the rest of Sec+ gets noticeably easier.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [CIA triad and non-repudiation](../Module-01-Security-Fundamentals/Reading.md), Confidentiality (what encryption provides), Integrity (what hashing provides), and Non-repudiation (what digital signatures provide). Cryptography is the *mechanism* under each.
 > - Basic binary math, what a "256-bit key" means, why doubling the key length squares the brute-force time, what XOR does.
 > - Hex and Base64, you'll see both in cert files and hashes.
 >
-> If any of this is shaky, pause: this module compounds. Get cryptography wrong and Modules 3 (MFA), 6 (TLS/VPN (Virtual Private Network)), and 10 (data states) become much harder.
+> If any of this is shaky, pause: this module compounds. Get cryptography wrong and Modules 3 (MFA), 6 (TLS/VPN), and 10 (data states) become much harder.
 
 ---
 
@@ -53,7 +53,7 @@ Now you know all four primitives. The rest of this module is which algorithm, wh
 |------|-------------------|-------|
 | **ECB** (Electronic Codebook) | Encryption only, **never use** | Identical plaintext blocks → identical ciphertext (penguin meme leaks pattern) |
 | **CBC** (Cipher Block Chaining) | Confidentiality | Needs an IV; padding oracle attacks if not careful |
-| **CTR (Click-Through Rate)** (Counter) | Confidentiality, parallelizable | Stream-like behavior from a block cipher |
+| **CTR** (Counter) | Confidentiality, parallelizable | Stream-like behavior from a block cipher |
 | **GCM** (Galois/Counter Mode) | **Confidentiality + Integrity (authenticated encryption)** | Modern default. TLS 1.2/1.3, IPSec. **AES-GCM is the right answer.** |
 | **CCM** | Auth encryption | Used in WPA2 (AES-CCMP) |
 
@@ -70,7 +70,7 @@ Now you know all four primitives. The rest of this module is which algorithm, wh
 | **RSA** | 2048-bit min (3072 recommended; 4096 strong) | Encryption + signatures | Most common; based on factoring large primes |
 | **DSA** (Digital Signature Algorithm) | 2048-bit | **Signatures only** (not encryption) | NIST standard |
 | **ECC** / **ECDSA** | 256-bit ECC ≈ 3072-bit RSA strength | Encryption + signatures (ECDSA = signatures) | Much smaller keys, faster, great for mobile/IoT |
-| **EdDSA / Ed25519** | 256-bit | Signatures | Modern, fast, used in SSH (Secure Shell) and TLS 1.3 |
+| **EdDSA / Ed25519** | 256-bit | Signatures | Modern, fast, used in SSH and TLS 1.3 |
 | **ElGamal** | Variable | Encryption + signatures | Less common; basis of DSA |
 
 ### Key Exchange (just agreeing on a shared secret over an open wire)
@@ -199,7 +199,7 @@ Browser walks the chain. Any break → "untrusted certificate" warning.
 | Term | What |
 |------|------|
 | **HSM** (Hardware Security Module) | Tamper-resistant device that generates/stores keys; FIPS 140-2/3 validated |
-| **KMS** (Key Management Service) | Cloud-managed key store (AWS (Amazon Web Services) KMS, Azure Key Vault, GCP (Google Cloud Platform) KMS) |
+| **KMS** (Key Management Service) | Cloud-managed key store (AWS KMS, Azure Key Vault, GCP KMS) |
 | **TPM** (Trusted Platform Module) | Hardware chip on motherboard; root of trust for device, stores BitLocker key |
 | **Secure Enclave** | iPhone equivalent; isolated keystore |
 | **Key Escrow** | Trusted 3rd party holds a copy of the key (for legal/recovery) |
@@ -258,7 +258,7 @@ A distributed, append-only ledger of hashed blocks. Each block contains the hash
 4. **Fixes** (in order of cleanliness):
 
    - **Best:** Replace the server cert with one issued by a publicly trusted CA (Let's Encrypt, DigiCert, etc.). The chain now ends at a root already in the trust store.
-   - **Acceptable for internal-only sites:** Push "Example Internal CA"'s public certificate into every endpoint's trust store via GPO (Group Policy Object)/MDM (Mobile Device Management). The chain now resolves.
+   - **Acceptable for internal-only sites:** Push "Example Internal CA"'s public certificate into every endpoint's trust store via GPO/MDM. The chain now resolves.
    - **Wrong:** Tell users to "click through" the warning. That's a long-term security debt.
 
 PBQ might show you 4 certs and ask "drag them in order Root → Intermediate → Server" or "which cert needs to be installed in the trust store?"
@@ -269,13 +269,13 @@ PBQ might show you 4 certs and ask "drag them in order Root → Intermediate →
 
 | Misconception | Reality |
 |---------------|---------|
-| "SSL (Secure Sockets Layer) is the same as TLS" | SSL is dead (all versions deprecated). TLS replaced it. People say "SSL cert" but mean TLS. |
+| "SSL is the same as TLS" | SSL is dead (all versions deprecated). TLS replaced it. People say "SSL cert" but mean TLS. |
 | "MD5 is fine for file integrity" | NO, broken since 2004. Use SHA-256+. (Some non-security file-dedup uses still exist.) |
 | "Hashing encrypts data" | NO, hashing is one-way; you can't decrypt it. |
 | "Asymmetric encrypts the big stuff" | NO, symmetric encrypts bulk; asymmetric exchanges the symmetric key. |
 | "ECB is fine for big files" | NO, ECB leaks structure (penguin meme). Use CBC or GCM. |
 | "Salting passwords is optional if hash is strong" | NO, always salt. Pepper is bonus. |
-| "Code signing certs are for HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure)" | NO, they sign executables/scripts. Different cert type. |
+| "Code signing certs are for HTTPS" | NO, they sign executables/scripts. Different cert type. |
 | "Wildcard certs are safer because they cover everything" | NO, if `*.x.com` private key leaks, every subdomain is compromised. |
 | "EV certs are still required for e-commerce" | NO, browsers no longer show the green bar; EV is rarely worth the premium. |
 | "OCSP requires the client to phone home" | YES, unless OCSP **stapling** is enabled (server fetches & attaches it). |

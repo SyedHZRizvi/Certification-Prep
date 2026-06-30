@@ -91,7 +91,7 @@ GOAL: < 10-minute setup
 
 | | Push | Pull |
 |---|------|------|
-| Trigger | Schedule (MRP (Material Requirements Planning)) | Downstream demand (kanban) |
+| Trigger | Schedule (MRP) | Downstream demand (kanban) |
 | WIP | High | Limited |
 | Inventory | High | Low |
 

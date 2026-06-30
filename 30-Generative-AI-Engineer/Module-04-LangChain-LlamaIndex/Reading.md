@@ -1,6 +1,6 @@
 # Module 4: LangChain, LlamaIndex & LangGraph 🦜🦙
 
-> **Why this module matters:** In 2026, almost every production GenAI system that isn't built directly on raw API (Application Programming Interface) SDKs is built on one of these three frameworks. They are the SQLAlchemy, Django, and Kubernetes of GenAI, opinionated, occasionally annoying, and absolutely essential to learn before you build anything serious. This module is the engineering of choosing one (or several), and not regretting it 6 months later.
+> **Why this module matters:** In 2026, almost every production GenAI system that isn't built directly on raw API SDKs is built on one of these three frameworks. They are the SQLAlchemy, Django, and Kubernetes of GenAI, opinionated, occasionally annoying, and absolutely essential to learn before you build anything serious. This module is the engineering of choosing one (or several), and not regretting it 6 months later.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Modules 1–3
@@ -311,7 +311,7 @@ Anthropic introduced MCP in November 2024, a standardized server protocol for ex
 
 ```python
 # Tool definitions don't change; the transport does. MCP gives you:
-# - stdio, HTTP (Hypertext Transfer Protocol), WebSocket transports
+# - stdio, HTTP, WebSocket transports
 # - capability negotiation
 # - resource discovery
 # - prompt templates exposed by the server
@@ -321,7 +321,7 @@ We cover MCP in Module 6 (multi-agent) and Module 9 (deployment).
 
 ---
 
-## 🧱 Direct-SDK (Software Development Kit) vs Framework, When Frameworks Get in the Way
+## 🧱 Direct-SDK vs Framework, When Frameworks Get in the Way
 
 Frameworks add abstractions. Abstractions leak.
 

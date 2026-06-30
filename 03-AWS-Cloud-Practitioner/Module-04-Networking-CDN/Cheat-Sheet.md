@@ -1,15 +1,15 @@
-# 📋 Module 4 Cheat Sheet: Networking & CDN (Content Delivery Network)
+# 📋 Module 4 Cheat Sheet: Networking & CDN
 
 > One page. Print it. Tape it to your monitor.
 
 ---
 
-## 🏘️ VPC (Virtual Private Cloud) Anatomy
+## 🏘️ VPC Anatomy
 
 ```
    VPC: 10.0.0.0/16  (your private cloud network)
    ├─ IGW (public road)
-   ├─ NAT (Network Address Translation) Gateway (private→outbound only, per AZ)
+   ├─ NAT Gateway (private→outbound only, per AZ)
    ├─ Public Subnet (route to IGW)
    │   └─ Web tier / ELB
    └─ Private Subnet (route to NAT)
@@ -27,7 +27,7 @@
 | Rules | ALLOW only | ALLOW + DENY |
 | Default | In: deny / Out: allow | All allow |
 
-🎯 Block bad IP at subnet = **NACL**. Allow port 80 to EC2 (Elastic Compute Cloud) = **SG**.
+🎯 Block bad IP at subnet = **NACL**. Allow port 80 to EC2 = **SG**.
 
 ---
 
@@ -48,14 +48,14 @@
 ## 📦 CloudFront (CDN)
 
 - Caches at **400+ Edge Locations**
-- Origins: S3 (Simple Storage Service), ALB, EC2, custom HTTP (Hypertext Transfer Protocol)
+- Origins: S3, ALB, EC2, custom HTTP
 - **OAC** locks S3 origin to CF only
-- Integrates with **WAF (Web Application Firewall), Shield, Lambda@Edge**
+- Integrates with **WAF, Shield, Lambda@Edge**
 
 CloudFront vs Global Accelerator:
 
 - **CloudFront** = caches HTTP content
-- **Global Accelerator** = anycast IPs + AWS backbone, any TCP (Transmission Control Protocol)/UDP (User Datagram Protocol)
+- **Global Accelerator** = anycast IPs + AWS backbone, any TCP/UDP
 
 ---
 
@@ -74,7 +74,7 @@ CloudFront vs Global Accelerator:
 
 | Option | Notes |
 |--------|-------|
-| **Site-to-Site VPN (Virtual Private Network)** | Encrypted IPsec over internet; hours to set up |
+| **Site-to-Site VPN** | Encrypted IPsec over internet; hours to set up |
 | **Direct Connect (DX)** | Dedicated 1/10/100 Gbps; NOT encrypted by default; weeks to set up |
 | **DX + VPN** | Encryption over DX |
 | **Transit Gateway** | Hub for many VPCs + on-prem |
@@ -93,9 +93,9 @@ CloudFront vs Global Accelerator:
 
 ---
 
-## 🛜 API (Application Programming Interface) Gateway
+## 🛜 API Gateway
 
-- Managed REST (Representational State Transfer) / HTTP / WebSocket APIs
+- Managed REST / HTTP / WebSocket APIs
 - Handles auth, throttling, transformations, caching
 - Pair with **Lambda** for fully serverless backends
 
@@ -103,7 +103,7 @@ CloudFront vs Global Accelerator:
 
 ## 🏆 Exam Power Phrases
 
-✅ "Use Geolocation routing for GDPR (General Data Protection Regulation) / sovereignty"
+✅ "Use Geolocation routing for GDPR / sovereignty"
 ✅ "Use Failover routing for DR"
 ✅ "Use NACL to deny a specific IP at the subnet"
 ✅ "Use CloudFront + WAF + Shield for global secure delivery"

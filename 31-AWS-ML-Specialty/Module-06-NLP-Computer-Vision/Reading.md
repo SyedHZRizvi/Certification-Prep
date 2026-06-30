@@ -1,6 +1,6 @@
-# Module 6: NLP (Natural Language Processing) & Computer Vision Workflows 🗣️👁️
+# Module 6: NLP & Computer Vision Workflows 🗣️👁️
 
-> **Why this module matters:** AWS has a dozen *managed AI services* that solve NLP and CV problems with a single API (Application Programming Interface) call, no model training, no infrastructure. The MLS-C01 exam tests whether you can recognise when one of these (Comprehend, Rekognition, Textract, Translate, Transcribe, Polly, Lex, Kendra, Personalize, Forecast, Fraud Detector) is the BEST answer and when to instead build a custom SageMaker / Bedrock solution. This module makes you fluent in the "managed vs custom" decision and the specific capabilities of each managed L5 service.
+> **Why this module matters:** AWS has a dozen *managed AI services* that solve NLP and CV problems with a single API call, no model training, no infrastructure. The MLS-C01 exam tests whether you can recognise when one of these (Comprehend, Rekognition, Textract, Translate, Transcribe, Polly, Lex, Kendra, Personalize, Forecast, Fraud Detector) is the BEST answer and when to instead build a custom SageMaker / Bedrock solution. This module makes you fluent in the "managed vs custom" decision and the specific capabilities of each managed L5 service.
 
 > **Prerequisites for this module.** Modules 1–5 of this course. Helpful background:
 > - Basic understanding of NLP tasks (classification, NER, summarisation, translation), Module 1 covered the families
@@ -66,7 +66,7 @@ Comprehend has both **pre-trained APIs** and **custom models**.
 | Capability | Use |
 |------------|-----|
 | **Custom Classifier** | Multi-class or multi-label document classifier (e.g. "billing / shipping / technical" support tickets) |
-| **Custom Entity Recognizer** | Domain-specific NER (e.g. "product SKU (Stock Keeping Unit)", "lab test code") |
+| **Custom Entity Recognizer** | Domain-specific NER (e.g. "product SKU", "lab test code") |
 | **Topic Modelling** | Discover topics across a corpus (LDA under the hood) |
 
 🎯 **Exam pattern.** *"Classify customer-support tickets into 12 categories with minimal MLOps."* → **Comprehend Custom Classifier** (managed AutoML).
@@ -88,7 +88,7 @@ A specialised vertical of Comprehend with built-in vocabularies for healthcare:
 | Feature | Purpose |
 |---------|---------|
 | **Real-time translation** | API call, ~75 language pairs |
-| **Batch translation** | Translate large document collections in S3 (Simple Storage Service) |
+| **Batch translation** | Translate large document collections in S3 |
 | **Custom Terminology** | Force certain terms to translate a specific way (e.g. product names) |
 | **Active Custom Translation (ACT)** | Domain-specific translation using parallel data (legal, medical, etc.) |
 | **Profanity filter** | Mask profane content |
@@ -100,7 +100,7 @@ A specialised vertical of Comprehend with built-in vocabularies for healthcare:
 | Mode | Use |
 |------|-----|
 | **Batch** | Process audio file in S3 |
-| **Streaming** | Real-time transcription (HTTP (Hypertext Transfer Protocol)/2 + WebSocket) |
+| **Streaming** | Real-time transcription (HTTP/2 + WebSocket) |
 | **Call Analytics** | Specialised for contact-centre calls (sentiment, talk-listen ratio, redaction) |
 | **Medical Transcribe** | Specialised for clinician-patient conversations |
 
@@ -160,7 +160,7 @@ Where Comprehend is per-document NLP, **Kendra** is *across* a document corpus. 
 
 🎯 **Exam pattern.** *"Build an internal search engine across SharePoint, Confluence, and S3 for a 5,000-person company."* → **Amazon Kendra**.
 
-🚨 **Trap.** Kendra ≠ Bedrock Knowledge Bases. Kendra is search; KBs are RAG (Retrieval-Augmented Generation)-augmented LLM answers (Module 7). They are sometimes combined.
+🚨 **Trap.** Kendra ≠ Bedrock Knowledge Bases. Kendra is search; KBs are RAG-augmented LLM answers (Module 7). They are sometimes combined.
 
 ---
 
@@ -315,7 +315,7 @@ Pre-built fraud-detection workflows:
 🎯 **Decision factors:**
 - **"Minimum operational overhead"** → managed L5
 - **"Custom domain vocabulary"** → custom L5 or SageMaker
-- **"Frontier-model quality (GPT (Generative Pre-trained Transformer)-4-class)"** → Bedrock
+- **"Frontier-model quality (GPT-4-class)"** → Bedrock
 - **"Proprietary model architecture"** → SageMaker BYO container
 - **"On-premise deployment required"** → SageMaker BYO container (or Bedrock with PrivateLink)
 

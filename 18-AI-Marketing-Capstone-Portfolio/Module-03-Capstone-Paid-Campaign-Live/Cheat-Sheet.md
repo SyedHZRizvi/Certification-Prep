@@ -29,10 +29,10 @@
 | **Subject Choice** | Hypothetical | Real subject, verbal OK | Real subject, written permission, testimonial planned |
 | **Brief Document** | None | Written | Written + dated before launch, includes success criteria |
 | **Conversion Tracking** | Missing | Installed | Installed + verified + documented in post-mortem |
-| **Creative Variants** | 1 per platform | 2–3 per platform | 3+ per platform, mix of AI-generated + UGC (User-Generated Content) + static |
+| **Creative Variants** | 1 per platform | 2–3 per platform | 3+ per platform, mix of AI-generated + UGC + static |
 | **Live Runtime** | <7 days | 10–13 days | 14+ days with daily check-ins |
 | **Daily Log** | Missing | Sporadic | 14 dated entries, decisions w/ rationale |
-| **Final Numbers Table** | Vague claims | Listed numbers | Full table: spend, CPC (Cost Per Click), CPL (Cost Per Lead), conversions, ROAS (Return on Ad Spend), by channel |
+| **Final Numbers Table** | Vague claims | Listed numbers | Full table: spend, CPC, CPL, conversions, ROAS, by channel |
 | **Post-Mortem Hook** | Generic open | Decent open | Opens with most interesting moment |
 | **Failure Documentation** | Hidden | Mentioned | Failures featured prominently w/ screenshots |
 | **Lessons Section** | Missing | Generic | 3+ specific actionable lessons |
@@ -48,8 +48,8 @@
 
 | Subject Type | Google | Meta |
 |-------------|--------|------|
-| B2B (Business-to-Business) SaaS (Software as a Service), bottom-of-funnel | $150 | $50 |
-| DTC (Direct-to-Consumer), strong visual | $60 | $140 |
+| B2B SaaS, bottom-of-funnel | $150 | $50 |
+| DTC, strong visual | $60 | $140 |
 | Local service | $130 | $70 |
 | Personal brand / newsletter | $50 | $150 |
 | Default (when unsure) | $100 | $100 |
@@ -84,10 +84,10 @@
 | Spend          | $XXX   | $XXX  | $XXX  |
 | Impressions    | XXXX   | XXXX  | XXXX  |
 | Clicks         | XXX    | XXX   | XXX   |
-| CTR (Click-Through Rate)            | X.X%   | X.X%  | X.X%  |
+| CTR            | X.X%   | X.X%  | X.X%  |
 | CPC            | $X.XX  | $X.XX |,     |
 | Conversions    | XX     | XX    | XX    |
-| CPL / CPA (Cost Per Acquisition)      | $XX    | $XX   | $XX   |
+| CPL / CPA      | $XX    | $XX   | $XX   |
 | Revenue        | $XXX   | $XXX  | $XXX  |
 | ROAS           | X.Xx   | X.Xx  | X.Xx  |
 ```
@@ -123,7 +123,7 @@ Include this table. Even (especially) if numbers are ugly.
 7. What worked (image + 1 line)
 8. What didn't (image + 1 line)
 9. Lessons (3 bullets)
-10. CTA (Call to Action): "Full case study: [link]"
+10. CTA: "Full case study: [link]"
 ```
 
 Built in Canva. 1:1 ratio. Posted with text hook + DM ask.

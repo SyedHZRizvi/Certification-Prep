@@ -4,7 +4,7 @@
 
 ---
 
-## 🌐 GA4 (Google Analytics 4) Quick Facts
+## 🌐 GA4 Quick Facts
 
 - **UA sunset:** July 1, 2023 → **GA4 only**
 - Core unit: **events** (everything is an event)
@@ -55,9 +55,9 @@ Free Google dashboard tool. Connects to GA4, Google Ads, Search Console, BigQuer
 |---|---|---|
 | **Consent Mode v2** | Google | Mandatory EU since March 2024 |
 | **Enhanced Conversions** | Google | Hashed user data, server-side |
-| **CAPI** | Meta | Server-side conversion API (Application Programming Interface) |
+| **CAPI** | Meta | Server-side conversion API |
 | **Events API** | TikTok | Server-side equivalent |
-| **Server-side GTM (Google Tag Manager)** | Universal | Browser-independent tracking |
+| **Server-side GTM** | Universal | Browser-independent tracking |
 
 ---
 
@@ -81,7 +81,7 @@ MMM (aggregate channel impact)
   +
 Incrementality testing (true lift)
   +
-First-party data (CRM (Customer Relationship Management), server-side)
+First-party data (CRM, server-side)
 ```
 
 No single model is "right." Triangulate.

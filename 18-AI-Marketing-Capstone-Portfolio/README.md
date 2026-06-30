@@ -9,7 +9,7 @@ title: AI Digital Marketing Capstone Portfolio
 
 > **Goal:** Ship 5 real, recruiter-grade portfolio pieces + a personal-brand presence + a first-client pitch you can send Monday morning.
 > **Duration:** 6–8 weeks part-time (most students take ~50 hours of focused work)
-> **Cost:** ~$200–$400 in tools (Ahrefs trial, $200 paid-ads budget, Make.com Core plan, Claude API (Application Programming Interface) credits). Most line items are skippable with free tiers.
+> **Cost:** ~$200–$400 in tools (Ahrefs trial, $200 paid-ads budget, Make.com Core plan, Claude API credits). Most line items are skippable with free tiers.
 > **Difficulty:** Expert · capstone, completion of courses 14–17 (or equivalent) assumed
 
 ---
@@ -22,10 +22,10 @@ The AI Digital Marketing Capstone Portfolio is the final, proof-of-work course i
 
 ### 💼 Career outcomes after completing
 
-- **Senior In-House Marketing Hire (B2B (Business-to-Business) SaaS (Software as a Service), DTC (Direct-to-Consumer), healthtech, fintech)** ($110K–$170K), portfolio is the closing argument
+- **Senior In-House Marketing Hire (B2B SaaS, DTC, healthtech, fintech)** ($110K–$170K), portfolio is the closing argument
 - **Performance / Growth Marketing Manager** ($120K–$165K), typical bracket for candidates entering with a real measurement portfolio
-- **Marketing Operations / Analytics Manager** ($115K–$155K), the GA4 (Google Analytics 4) / attribution / CDP (Customer Data Platform) work in this capstone is hireable on its own
-- **AI Marketing Consultant (first 3 clients at $5K–$15K MRR (Monthly Recurring Revenue) each)** ($120K–$240K Year-1 realized income), direct conversion of the portfolio into agency revenue
+- **Marketing Operations / Analytics Manager** ($115K–$155K), the GA4 / attribution / CDP work in this capstone is hireable on its own
+- **AI Marketing Consultant (first 3 clients at $5K–$15K MRR each)** ($120K–$240K Year-1 realized income), direct conversion of the portfolio into agency revenue
 - **Fractional Head of Growth at seed/Series A startups** ($150K–$250K)
 - **Specialized Productized Service Operator** ($100K–$300K profit Year 1)
 
@@ -71,7 +71,7 @@ This track includes two course-root resources that frame the entire 8-module por
 
 | # | Capstone | What You'll Have In Hand |
 |---|----------|--------------------------|
-| 1 | SEO (Search Engine Optimization) + Content Audit | 15–20 page PDF + 90-day content roadmap for a real business |
+| 1 | SEO + Content Audit | 15–20 page PDF + 90-day content roadmap for a real business |
 | 2 | Live Paid Campaign | $200 spent on Google + Meta, full post-mortem case study (blog + LinkedIn carousel) |
 | 3 | Marketing Automation Workflow | Make.com / n8n / Zapier scenario with 5+ steps, Loom walkthrough, JSON export |
 | 4 | Attribution Model | Public Google Sheet (or Colab) with Shapley or Markov multi-touch model + dashboard |

@@ -4,16 +4,16 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md), covered earlier in this course
-> - Lead-scoring & marketing-ops basics (what an MQL (Marketing Qualified Lead)/SQL is, what enrichment does), covered in [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Social-Media-AI-Tools/Reading.md)
+> - Lead-scoring & marketing-ops basics (what an MQL/SQL is, what enrichment does), covered in [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Social-Media-AI-Tools/Reading.md)
 > - Make.com / n8n / Zapier mental model (triggers → modules → outputs), covered in [17-AI-Marketing-Analytics-Automation Modules 5–8](../../17-AI-Marketing-Entrepreneur/README.md)
-> - Webhooks and API (Application Programming Interface) basics (what a POST request is, what JSON looks like)
+> - Webhooks and API basics (what a POST request is, what JSON looks like)
 > If any of these are shaky, pause and complete 17-AI-Marketing-Analytics-Automation Module 5 first, it's the direct prerequisite.
 
 ---
 
 ## 🎬 A Story: The Marketer Who Replaced A 3-Person Team
 
-Picture an agency that hires Mariana, a marketer they think is mid-level. First Monday, the CEO (Chief Executive Officer) says: *"We get 80 leads/week from our paid social. Right now, our SDR team manually qualifies, scores, emails them. They're drowning. Can you help?"*
+Picture an agency that hires Mariana, a marketer they think is mid-level. First Monday, the CEO says: *"We get 80 leads/week from our paid social. Right now, our SDR team manually qualifies, scores, emails them. They're drowning. Can you help?"*
 
 Mariana spends Tuesday and Wednesday with the SDR team, sketching what they actually do. By Thursday she has a Make.com scenario open with 9 connected modules:
 
@@ -22,7 +22,7 @@ Typeform webhook → Clearbit enrichment → Scoring formula → Branch:
   IF score ≥ 70 → Slack ping + Salesforce hot lead + Cal.com booking link
   IF score 40-69 → Klaviyo "nurture" sequence + Salesforce warm lead
   IF score < 40  → Klaviyo "low touch" + Salesforce cold lead
-ALL → Notion CRM (Customer Relationship Management) mirror for visibility
+ALL → Notion CRM mirror for visibility
 ```
 
 Friday morning she demos it. The SDR team's first reaction is suspicion. By the following Friday, they've stopped checking their inbox before noon, the workflow has already routed leads, sent emails, and booked 4 demos overnight while they slept.
@@ -53,10 +53,10 @@ The Make.com scenario itself? A JSON file you could import in 4 minutes. But the
 
 | Tool | Best For | Cost | Tradeoff |
 |------|----------|------|----------|
-| **Make.com** | Visual workflows, complex branching | Free tier (1k ops/mo); $9/mo Core plan | Best UI (User Interface), paid tier needed for some integrations |
+| **Make.com** | Visual workflows, complex branching | Free tier (1k ops/mo); $9/mo Core plan | Best UI, paid tier needed for some integrations |
 | **n8n** | Self-hostable, code-friendly, dev signal | Free if self-hosted; $20/mo cloud | More technical, fewer pre-built apps |
 | **Zapier** | Simplest, most integrations | Free for 100 tasks/mo; $20/mo+ | Linear flows only, expensive at scale |
-| **HubSpot Workflows** | If you'll work in B2B (Business-to-Business) SaaS (Software as a Service) | Free CRM tier | Walled garden, doesn't show "I can build anywhere" |
+| **HubSpot Workflows** | If you'll work in B2B SaaS | Free CRM tier | Walled garden, doesn't show "I can build anywhere" |
 | **Pipedream** | Code-heavy automation | Free; $19/mo | Best if you want to write some JS |
 | **Activepieces** | OSS alternative to Make | Free self-hosted | Newer, fewer integrations |
 
@@ -220,7 +220,7 @@ For portfolio, self-hosted is the better signal. But cloud is fine if you don't 
 n8n uses "nodes" instead of "modules." The flow is the same:
 
 1. **Webhook node**, receives the form POST.
-2. **HTTP (Hypertext Transfer Protocol) Request node**, calls Hunter.io API to enrich.
+2. **HTTP Request node**, calls Hunter.io API to enrich.
 3. **Function node** JavaScript scoring logic. (This is the n8n superpower write custom JS.)
 4. **IF node** (or **Switch node**), branches on score.
 5. **Slack / Klaviyo / Notion nodes**, actions per branch.
@@ -444,7 +444,7 @@ If the "lead capture → route" scenario doesn't fit your subject, here are alte
 2. Create Notion workspace from template for them
 3. Send welcome email + onboarding video link
 4. Schedule day-3 check-in email
-5. Day-7: poll NPS (Net Promoter Score), route low scores to founder Slack
+5. Day-7: poll NPS, route low scores to founder Slack
 6. Day-14: upsell offer based on usage data
 ```
 
@@ -547,7 +547,7 @@ These prompts test whether you understand *why* the reference scenario looks the
 2. **The reading recommends Make.com as the default, but flags n8n (self-hosted) as the right pick if you're targeting "dev-tools / AI-engineering marketing roles."** A senior hiring manager at a B2B SaaS pushes back: *"n8n self-hosted is a maintenance burden no one will ever assign you. Make.com is the boring right answer for 95% of marketing teams."* How do you weigh portfolio signal vs operational reality? When does showing n8n hurt rather than help?
 3. **The "security & privacy gotchas" section says to strip API keys and PII before publishing JSON exports.** A pragmatic counter-argument: most students take this so seriously they never publish at all, killing the portfolio piece. What's the minimum sanitization that's actually necessary, versus the paranoid maximum? Where's the line?
 4. **The reading describes the JSON export as "the GitHub repo equivalent for marketing automation."** But unlike a GitHub repo, no one will actually *import* and run your Make.com scenario, they'd need to reconnect every credential. Is the JSON export a real signal or a vanity artifact? How would you defend its inclusion to a skeptical engineer?
-5. **The four variations (lead routing, content distribution, abandoned-cart, customer onboarding, competitor monitoring) all meet the 5+ step rule.** But for a portfolio targeting B2B SaaS roles vs DTC (Direct-to-Consumer) e-commerce roles vs agency-owner clients, the "right" variation is different. Pick a target audience and defend which variation tells the strongest story for them, and why the others would actively undersell you.
+5. **The four variations (lead routing, content distribution, abandoned-cart, customer onboarding, competitor monitoring) all meet the 5+ step rule.** But for a portfolio targeting B2B SaaS roles vs DTC e-commerce roles vs agency-owner clients, the "right" variation is different. Pick a target audience and defend which variation tells the strongest story for them, and why the others would actively undersell you.
 
 ---
 

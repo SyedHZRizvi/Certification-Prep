@@ -156,7 +156,7 @@ When you see these, they're often wrong:
 - ❌ "Instant final settlement"
 - ❌ "Free transactions"
 - ❌ "Satoshi is Craig Wright / Nick Szabo / Hal Finney" (any specific name)
-- ❌ "Turing-complete smart-contract VM (Virtual Machine)" (that's Ethereum)
+- ❌ "Turing-complete smart-contract VM" (that's Ethereum)
 
 ---
 

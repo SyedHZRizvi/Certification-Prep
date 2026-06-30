@@ -3,7 +3,7 @@
 > **Why this module matters:** Compute is *where your code runs*. If you can't pick the right compute service (EC2 vs Lambda vs Fargate) in 5 seconds, you'll bleed time on the exam. This module gives you the decision tree.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Cloud Fundamentals](../Module-01-Cloud-Fundamentals/Reading.md), Regions, AZs, IaaS (Infrastructure as a Service) vs PaaS (Platform as a Service) vs SaaS (Software as a Service)
+> - [Cloud Fundamentals](../Module-01-Cloud-Fundamentals/Reading.md), Regions, AZs, IaaS vs PaaS vs SaaS
 > - Basic familiarity with what a virtual machine is (one OS running on top of a hypervisor)
 > - Basic familiarity with what a container is (a packaged app with its OS-level dependencies)
 >
@@ -30,7 +30,7 @@ Each option suits a different situation. Sometimes you NEED the rented kitchen b
    MORE CONTROL                              LESS OPS WORK
    ←─────────────────────────────────────────────────────────→
    On-prem    EC2    ECS on EC2   ECS/EKS on Fargate    Lambda
-            (VM (Virtual Machine))    (containers)  (containers, serverless)  (functions)
+            (VM)    (containers)  (containers, serverless)  (functions)
 ```
 
 The further right you go, the **less you manage**, but the more constrained your runtime.
@@ -41,7 +41,7 @@ The further right you go, the **less you manage**, but the more constrained your
 
 EC2 was AWS's second public service, announced by Chris Pinkham and Benjamin Black in August 2006 (per Werner Vogels' *All Things Distributed*, 2016 retrospective "10 Lessons from 10 Years of Amazon Web Services"). It is the original IaaS service and still the most-used compute service on AWS by total revenue (per AWS earnings disclosures, 2024 Q4).
 
-**EC2 = rent a virtual machine.** You pick the OS, CPU, RAM, disk, network. You SSH (Secure Shell) in. You install whatever software you want. AWS bills you per second (Linux) or per hour (Windows).
+**EC2 = rent a virtual machine.** You pick the OS, CPU, RAM, disk, network. You SSH in. You install whatever software you want. AWS bills you per second (Linux) or per hour (Windows).
 
 ### Instance families (the letter prefix tells you the workload)
 
@@ -144,7 +144,7 @@ Lambda was announced at AWS re:Invent 2014 by Werner Vogels and is generally cre
 
 ### When Lambda shines
 
-- Event-driven workloads (S3 (Simple Storage Service) upload → resize image)
+- Event-driven workloads (S3 upload → resize image)
 - Short tasks (<15 min)
 - Sporadic / unpredictable load
 - "Glue" code between AWS services
@@ -165,7 +165,7 @@ Lambda was announced at AWS re:Invent 2014 by Werner Vogels and is generally cre
 
 | Service | One-liner | When to use |
 |---------|-----------|-------------|
-| **Lightsail** | Pre-packaged VPS (server + IP + DNS (Domain Name System) + DB bundle) | Small business websites, devs who want simplicity |
+| **Lightsail** | Pre-packaged VPS (server + IP + DNS + DB bundle) | Small business websites, devs who want simplicity |
 | **AWS Batch** | Managed batch job runner (queues jobs, spins up EC2/Fargate) | Scientific computing, video transcoding pipelines |
 | **AWS Elastic Beanstalk** | PaaS, upload code, AWS handles EC2 + ELB + Auto Scaling | Devs who want "git push to deploy" without learning AWS |
 | **AWS App Runner** | Fully managed container app service | Run a container with zero infra knowledge |
@@ -222,7 +222,7 @@ ASG benefits:
 3. **Spot Instances can be reclaimed** with a 2-minute warning. Use ONLY for fault-tolerant workloads.
 4. **Reserved Instances are zone- or region-scoped** and tied to instance family. Savings Plans are more flexible.
 5. **Fargate is NOT a separate service from ECS/EKS**, it's a *launch type*. You still need ECS or EKS to orchestrate.
-6. **Elastic Beanstalk is free**, you only pay for the underlying EC2/RDS (Relational Database Service)/ELB resources.
+6. **Elastic Beanstalk is free**, you only pay for the underlying EC2/RDS/ELB resources.
 7. **Lightsail bills monthly** (predictable), unlike EC2's per-second billing.
 
 ---
@@ -278,16 +278,16 @@ ASG benefits:
 - **Reserved Instances + Savings Plans** for the always-on dispatch core (~30% of fleet), locked-in 3-year discounts on the baseline that won't go away.
 - **Lambda** for glue: SNS notifications, image processing for driver-onboarding selfies, webhook ingestion from payment processors.
 
-By 2019 Lyft disclosed in its S-1 (IPO (Initial Public Offering) filing) that it had a "minimum AWS commitment of $300M over 3 years", making AWS one of Lyft's largest fixed-cost vendors.
+By 2019 Lyft disclosed in its S-1 (IPO filing) that it had a "minimum AWS commitment of $300M over 3 years", making AWS one of Lyft's largest fixed-cost vendors.
 
 **Outcome.** Lyft scaled to ~30M monthly active riders and ~3M drivers (2024 Q1 disclosure) on this AWS-native stack, without ever building its own data center. The aggressive Spot adoption let it absorb ML training costs that would otherwise have made the unit economics unworkable. However, the AWS lock-in is well documented as a *strategic risk* in Lyft's annual 10-K filings every year since 2019, "concentration risk with AWS" is listed under risk factors. Lyft is the textbook example of *what good cloud-native compute looks like* AND of *what cloud lock-in feels like at IPO scale*.
 
 **Lesson for the exam / for practitioners.** Lyft is the canonical answer to a half-dozen CLF-C02 exam patterns: "spiky demand" → Auto Scaling Groups; "fault-tolerant batch at 90% off" → Spot; "always-on baseline + flexibility" → Savings Plans (more flexible than RIs); "GPU ML training" → accelerated `g`/`p` family. When the exam asks "which compute service for a workload that has a steady 24/7 baseline plus heavy weekend spikes?", the answer pattern is Lyft's pattern: RIs/SP for baseline + ASG of On-Demand for the elastic top + Spot for batch.
 
 **Discussion (Socratic).**
-- Q1: Lyft's $300M+ AWS commit means moving off AWS would be 2–3 years and possibly $100M+ of engineering work. Was committing publicly to that lock-in (rather than maintaining multi-cloud optionality from day 1) the right call? Argue both sides; pick one and defend in front of a CFO (Chief Financial Officer).
+- Q1: Lyft's $300M+ AWS commit means moving off AWS would be 2–3 years and possibly $100M+ of engineering work. Was committing publicly to that lock-in (rather than maintaining multi-cloud optionality from day 1) the right call? Argue both sides; pick one and defend in front of a CFO.
 - Q2: A junior engineer argues "let's move 100% of dispatch onto Spot, Spot is 90% cheaper and our service is stateless." Walk through why that's wrong (or right). What is the *correct* Spot percentage for a dispatch service that must respond in < 200 ms?
-- Q3: Uber (Lyft's direct competitor) historically ran a hybrid of GCP (Google Cloud Platform) + on-prem + AWS, then consolidated heavily onto Google Cloud (2023). At what point does single-cloud lock-in become a strategic vulnerability significant enough to justify the integration cost of multi-cloud? What metrics would you watch?
+- Q3: Uber (Lyft's direct competitor) historically ran a hybrid of GCP + on-prem + AWS, then consolidated heavily onto Google Cloud (2023). At what point does single-cloud lock-in become a strategic vulnerability significant enough to justify the integration cost of multi-cloud? What metrics would you watch?
 
 ---
 
@@ -346,4 +346,4 @@ You now know:
 - 🎙️ **Lyft @ AWS re:Invent *"How Lyft Uses AWS to Scale Ride-Hailing"* (re:Invent 2019, ARC305)** the engineering case for Lyft's compute mix. YouTube; ~60 min.
 - 📰 **Lyft S-1 / Form 10-K (annual)**, primary-source disclosure of AWS commitment, concentration risk, and infrastructure spend.
 - 📄 **Roberts, M. *"Serverless Architectures"* (martinfowler.com, August 2016)** the definitive long-form essay that defined "serverless" as a software-architecture pattern, not just a billing model.
-- 📄 **AWS *EC2 Spot Best Practices* whitepaper (last updated 2023)** the canonical guide to using Spot in production safely, including the rebalance recommendation API (Application Programming Interface).
+- 📄 **AWS *EC2 Spot Best Practices* whitepaper (last updated 2023)** the canonical guide to using Spot in production safely, including the rebalance recommendation API.

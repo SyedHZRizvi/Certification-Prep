@@ -78,7 +78,7 @@ INVEST when:
 - High switching cost
 - Capability gap is fixable
 - Supplier is motivated
-- Positive ROI (Return on Investment)
+- Positive ROI
 
 DON'T invest when:
 
@@ -141,7 +141,7 @@ Level 4: Executive sponsors / C-suite
 
 - ❌ "Treat all suppliers the same"
 - ❌ "Switch immediately when they fail"
-- ❌ "Skip to the supplier CEO (Chief Executive Officer)"
+- ❌ "Skip to the supplier CEO"
 - ❌ "Diversity is just CSR"
 - ❌ "Score everyone identically"
 

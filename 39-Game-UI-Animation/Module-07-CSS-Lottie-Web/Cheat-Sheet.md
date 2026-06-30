@@ -49,7 +49,7 @@ title: "Module 7 Cheat Sheet: CSS Animation, Lottie & Rive"
 | Optimize | LottieFiles Optimizer → target **< 50KB** |
 | Implement | `lottie.loadAnimation({ renderer: 'svg', ... })` |
 
-### Lottie API (Application Programming Interface)
+### Lottie API
 
 ```javascript
 const anim = lottie.loadAnimation({
@@ -79,7 +79,7 @@ anim.playSegments([10, 50], true);
 | Runtime | Playback only | Interactive state machine |
 | File | JSON (20–80KB) | .riv binary (5–30KB) |
 | Interactivity | None | First-class inputs |
-| Best for | Illustrations, loaders | Buttons, game UI (User Interface), micro-interactions |
+| Best for | Illustrations, loaders | Buttons, game UI, micro-interactions |
 
 ### Rive JS Input Types
 

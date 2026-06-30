@@ -1,11 +1,11 @@
 # Module 6: Sourcing & Supplier Management 🤝
 
-> **Why this module matters:** Sourcing is the bridge between strategy and execution. The CSCP tests the **sourcing process (RFI / RFP (Request for Proposal) / RFQ (Request for Quotation))**, **Kraljic segmentation**, **TCO**, and **SRM maturity** in nearly every form. Domain 2 (Design) ~20% and Domain 3 (Execution) ~40% both lean here.
+> **Why this module matters:** Sourcing is the bridge between strategy and execution. The CSCP tests the **sourcing process (RFI / RFP / RFQ)**, **Kraljic segmentation**, **TCO**, and **SRM maturity** in nearly every form. Domain 2 (Design) ~20% and Domain 3 (Execution) ~40% both lean here.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [The Kraljic matrix (preview)](../Module-02-Supply-Chain-Design/Reading.md), Module 2
 > - [Make-or-buy and outsourcing concepts](../Module-02-Supply-Chain-Design/Reading.md), Module 2
-> - [Forecast variability and CPFR (Collaborative Planning, Forecasting, and Replenishment)](../Module-03-Demand-Forecasting/Reading.md), Module 3
+> - [Forecast variability and CPFR](../Module-03-Demand-Forecasting/Reading.md), Module 3
 > - Basic contract vocabulary (you'll meet contract types in this module)
 > Module 13 (`13-ISM-CPSM`) goes 4× deeper on sourcing strategy if procurement is your career focus.
 
@@ -121,7 +121,7 @@ A printer that costs $200 less upfront might cost $3,000 more in ink, repairs, a
 | **Geographic location** | Lead time, freight, currency, tariff exposure |
 | **Cultural fit / management** | Ethics, communication style |
 | **Sustainability / ESG** | Carbon, labor practices, scope-3 emissions |
-| **Cybersecurity** | NIST/ISO posture (especially for SaaS (Software as a Service)) |
+| **Cybersecurity** | NIST/ISO posture (especially for SaaS) |
 
 ---
 
@@ -151,7 +151,7 @@ SRM maturity ladder:
 | **Adversarial / transactional** | Pure price competition; switch often |
 | **Cooperative** | Multi-year contracts; basic information sharing |
 | **Collaborative** | Joint forecasting (CPFR), shared scorecards |
-| **Strategic alliance** | Joint R&D, shared P&L (Profit and Loss) on programs, equity |
+| **Strategic alliance** | Joint R&D, shared P&L on programs, equity |
 | **Vertical integration** | Ownership |
 
 🎯 **Exam tip:** Higher maturity is NOT always better. Apply it where the supplier is **strategic**. Adversarial sourcing is fine for routine commodities.
@@ -167,7 +167,7 @@ SRM maturity ladder:
 | **Time & Materials (T&M)** | Buyer | Hourly services |
 | **Indefinite Delivery / Indefinite Quantity (IDIQ)** | Shared | Unknown total quantity |
 | **Master Service Agreement (MSA)** | Shared | Multi-project relationships |
-| **Performance-based** | Supplier | Outcomes are measurable (SLA (Service Level Agreement)) |
+| **Performance-based** | Supplier | Outcomes are measurable (SLA) |
 
 ### Key clauses to know
 - **SLA**, service-level agreement, defines performance & penalties
@@ -183,7 +183,7 @@ SRM maturity ladder:
 
 | Tool | Use |
 |------|-----|
-| **e-Catalog / Punch-out** | Supplier hosts catalog; buyer pulls into ERP (Enterprise Resource Planning) |
+| **e-Catalog / Punch-out** | Supplier hosts catalog; buyer pulls into ERP |
 | **e-RFx platform** | Automates RFI/RFP/RFQ workflows |
 | **e-Auction / reverse auction** | Real-time competitive bidding |
 | **Contract lifecycle management (CLM)** | Repository + workflow for contracts |
@@ -238,7 +238,7 @@ We saw this in Module 2 from a network angle. Sourcing lens emphasizes:
 
 ## 📊 Case Study, P&G Connect+Develop (2003-2024)
 
-**Situation.** In 2000-2001, Procter & Gamble (Cincinnati) faced an innovation crisis. CEO (Chief Executive Officer) Durk Jager had over-invested in internal R&D; the stock had cratered 50% in 2000. New CEO A.G. Lafley calculated: P&G had 9,000 R&D scientists, but globally there were ~1.5M scientists working on equivalent challenges. P&G's R&D-internally generated only 15% of product innovations. The "make everything in-house" sourcing philosophy was failing. Lafley made innovation strategy a sourcing strategy.
+**Situation.** In 2000-2001, Procter & Gamble (Cincinnati) faced an innovation crisis. CEO Durk Jager had over-invested in internal R&D; the stock had cratered 50% in 2000. New CEO A.G. Lafley calculated: P&G had 9,000 R&D scientists, but globally there were ~1.5M scientists working on equivalent challenges. P&G's R&D-internally generated only 15% of product innovations. The "make everything in-house" sourcing philosophy was failing. Lafley made innovation strategy a sourcing strategy.
 
 **Decision.** Lafley launched **Connect+Develop** (C+D) in 2003 restructuring P&G's external sourcing of *innovation*. The goal: 50% of innovations to come from external sources by 2010. The C+D operating model treated external scientists, startups, and university labs as a *supplier network*. Three innovations made it work: (1) **Tier classification by Kraljic logic**: routine innovations sourced via online open calls (Innocentive, NineSigma); leverage innovations via venture investments; bottleneck/strategic via deep partnerships (e.g., Clorox + P&G's joint Glad ForceFlex 2002 partnership, Olay's Pro-X co-development with biotech firms). (2) **Standardized RFP-equivalent processes** for innovation explicit specs, deliverables, IP rules, time-bound. (3) **Internal "tech entrepreneurs"** in 70+ countries who scouted external IP. Note: this was *not* outsourcing R&D. It was sourcing *additive* innovation while retaining strategic IP.
 
@@ -324,7 +324,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 7 picks up logistics-side contracts (3PL (Third-Party Logistics)/4PL (Fourth-Party Logistics)); Module 8 layers international contract considerations (Incoterms, LCs) onto your sourcing toolkit; Module 9 connects supplier-base management to ESG / modern slavery compliance.
+> - Inside this course: Module 7 picks up logistics-side contracts (3PL/4PL); Module 8 layers international contract considerations (Incoterms, LCs) onto your sourcing toolkit; Module 9 connects supplier-base management to ESG / modern slavery compliance.
 > - Cross-course: `13-ISM-CPSM` Modules 2-4 deepen Kraljic into category management and SRM strategy; `11-ASCM-CPIM` adds the manufacturing-side procurement detail.
 > - Practice: Practice Exam 2 has ~15 sourcing questions including Kraljic scenarios; Final Mock has ~10.
 

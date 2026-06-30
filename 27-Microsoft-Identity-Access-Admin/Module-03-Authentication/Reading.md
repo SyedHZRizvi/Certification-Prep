@@ -1,4 +1,4 @@
-# Module 3: Authentication, MFA (Multi-Factor Authentication) & Passwordless 🔑
+# Module 3: Authentication, MFA & Passwordless 🔑
 
 > **Why this module matters:** Microsoft published an internal study in 2019 that found 99.9% of compromised accounts had no MFA enabled. *Five years later, the number hadn't moved much.* The single highest-leverage action you can take in identity security is to require MFA, then push beyond MFA to phishing-resistant passwordless. The SC-300 exam knows this, and tests how well you can roll it out without locking people out, alienating users, or breaking service accounts.
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 🪪 A Story: The Mass MFA Enrollment That Almost Killed The CFO (Chief Financial Officer)
+## 🪪 A Story: The Mass MFA Enrollment That Almost Killed The CFO
 
 October 2024. A 6,500-employee insurance carrier rolls out MFA to "everyone, by Friday." On Monday morning, the IT team turns on Security Defaults. By 10 AM the CFO can't sign in to Excel on her iPad because Authenticator on her phone is in its app-store update loop. By 11 AM she's en route to a board meeting where she presents quarterly earnings, *from a personal laptop she signs in to with her saved Chrome password*, because the bypass route was never closed. By noon, an attacker who'd been quietly trying her credentials for months is now inside, downloading the financial model. By 2 PM the IT team is in war-room mode. The CFO's phone has Authenticator installed by 3 PM. The breach forensics will take six weeks. The press release will say "human error."
 
@@ -17,7 +17,7 @@ What went wrong was not MFA. What went wrong was the *rollout*. They:
 
 - Didn't pilot with combined registration first.
 - Didn't provide a Temporary Access Pass for users whose primary device wasn't ready.
-- Didn't disable legacy auth before enabling MFA, so the attacker's IMAP (Internet Message Access Protocol) path stayed open.
+- Didn't disable legacy auth before enabling MFA, so the attacker's IMAP path stayed open.
 - Didn't tell the CFO what to do if Authenticator failed (no break-glass plan for an executive).
 
 This module is the right rollout. By the end you'll know which methods to enable, in what order, with what fallbacks, and how to push beyond MFA to **phishing-resistant passwordless**, the only auth control that actually stops modern attacks.
@@ -214,7 +214,7 @@ Windows Hello for Business is biometric (face / fingerprint) or PIN-based sign-i
 |------------------|---------------|
 | **Cloud Kerberos trust** (recommended 2026) | Hybrid scenarios, Windows Hello uses cloud-issued Kerberos ticket for on-prem resources |
 | **Key trust** (older hybrid) | Requires Windows Server 2016 KDC + certificate trust |
-| **Certificate trust** (legacy) | Requires AD (Active Directory) CS / PKI (Public Key Infrastructure), complex |
+| **Certificate trust** (legacy) | Requires AD CS / PKI, complex |
 | **Cloud-only** | No on-prem AD; pure Entra-joined devices |
 
 Configuration is done via:
@@ -233,7 +233,7 @@ Entra-native certificate-based authentication lets users present an X.509 certif
 
 | Use case | Detail |
 |----------|--------|
-| Federal / DoD environments | FedRAMP High, IL5; smart cards (CAC (Customer Acquisition Cost), PIV) |
+| Federal / DoD environments | FedRAMP High, IL5; smart cards (CAC, PIV) |
 | Healthcare with smart-card-based access | Hospitals using badge readers |
 | Replacing AD FS for CBA | Move CBA from AD FS to Entra directly (no federation needed) |
 
@@ -333,7 +333,7 @@ You now know:
 
 **Decision.** Microsoft IT pursued a three-phase plan:
 
-1. **Block all legacy authentication** (2018–2020). Used Conditional Access to enforce modern auth across Microsoft 365, Exchange, and OS sign-in. ~98% of all credential-stuffing attacks targeted legacy protocols (POP / IMAP / SMTP (Simple Mail Transfer Protocol) AUTH); blocking them cut attack volume by 99% within months.
+1. **Block all legacy authentication** (2018–2020). Used Conditional Access to enforce modern auth across Microsoft 365, Exchange, and OS sign-in. ~98% of all credential-stuffing attacks targeted legacy protocols (POP / IMAP / SMTP AUTH); blocking them cut attack volume by 99% within months.
 2. **Mandate Authenticator with number matching** (2021–2023). Replaced SMS/voice for all employees. Number matching specifically defeated push-bombing, the user had to type a number from the sign-in screen *into* the app, so silent push acceptance couldn't grant access. Microsoft published guidance and rolled it out tenant-wide in Feb 2023 for all customers.
 3. **Phishing-resistant passwordless for all** (2022–2024). Mandated FIDO2 or Windows Hello for Business for all employees with admin role access. Created internal training and shipped Yubikeys to ~150,000 employees. By end of 2024, Microsoft reported ~98% of employee sign-ins occurred passwordless; ~70% of employees had completely removed passwords from their accounts (no password to recover; only FIDO2 + Hello).
 
@@ -342,7 +342,7 @@ You now know:
 - **Credential-based attacks against Microsoft IT** fell 95% from 2018 peak.
 - **Password-related help desk calls** dropped 87% (those left were edge cases like new hires waiting for keys).
 - **Sign-in time** fell ~30% (face / Hello / FIDO2 is faster than typing a 24-character password + an Authenticator code).
-- **Cost-of-attack analysis** found that the FIDO2 rollout had net positive ROI (Return on Investment) within 14 months including the cost of the keys (~$50/admin × ~5,000 admins = ~$250K capex) due to help-desk savings alone.
+- **Cost-of-attack analysis** found that the FIDO2 rollout had net positive ROI within 14 months including the cost of the keys (~$50/admin × ~5,000 admins = ~$250K capex) due to help-desk savings alone.
 
 **Lesson for the exam / for practitioners.** Microsoft IT is the largest at-scale phishing-resistant deployment in the world, and they publish the playbook openly. SC-300 scenarios about "rolling out passwordless" expect you to know the Microsoft pattern: block legacy auth FIRST → enforce number matching → introduce TAP for bootstrapping → mandate FIDO2/Hello for admins → expand to all users. The order matters because each phase removes attack surface that the next phase couldn't defend against.
 
@@ -354,8 +354,8 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 4 builds Conditional Access policies that *target* these auth methods; Module 6 layers PIM (Product Information Management) activation MFA on top.
-> - Cross-course: [`09-CompTIA-Security-Plus` Module 4](../../09-CompTIA-Security-Plus/Module-04-Threats-Threat-Actors/Reading.md) covers the underlying PKI / FIDO crypto; [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC (Role-Based Access Control)/Reading.md) covers RBAC scenarios that interact with these policies.
+> - Inside this course: Module 4 builds Conditional Access policies that *target* these auth methods; Module 6 layers PIM activation MFA on top.
+> - Cross-course: [`09-CompTIA-Security-Plus` Module 4](../../09-CompTIA-Security-Plus/Module-04-Threats-Threat-Actors/Reading.md) covers the underlying PKI / FIDO crypto; [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md) covers RBAC scenarios that interact with these policies.
 
 ---
 

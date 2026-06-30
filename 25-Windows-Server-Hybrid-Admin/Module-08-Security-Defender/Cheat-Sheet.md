@@ -8,11 +8,11 @@
 
 | Feature | P1 | **P2** |
 |---------|-----|---------|
-| MDE (EDR (Endpoint Detection and Response)) | ✅ | ✅ |
+| MDE (EDR) | ✅ | ✅ |
 | Defender Antivirus | ✅ | ✅ |
 | Vulnerability Assessment | ❌ | **✅ MDVM or Qualys** |
 | File Integrity Monitoring | ❌ | ✅ |
-| **JIT (Just-In-Time) VM (Virtual Machine) access** | ❌ | **✅** |
+| **JIT VM access** | ❌ | **✅** |
 | Adaptive Application Controls | ❌ | ✅ |
 | Network Hardening | ❌ | ✅ |
 | Regulatory Compliance | ❌ | ✅ |
@@ -25,7 +25,7 @@
 
 ## 🔓 JIT VM Access (P2)
 
-- Closes RDP/SSH (Secure Shell)/WinRM ports at NSG by default
+- Closes RDP/SSH/WinRM ports at NSG by default
 - Request opens port for **time-bound** access (default ≤ 3 hrs)
 - Per-request source IP (specific / range / any)
 - Requires `Microsoft.Compute/virtualMachines/openConnectionPortDirectly/action`
@@ -59,7 +59,7 @@
 - **Kernel mode**, tamper-resistant
 - **Audit** mode first, **Enforce** mode after
 - Rule types: signed code, hash, FilePath, FilePublisher
-- Distributed via GPO (Group Policy Object), MEM, MDM (Mobile Device Management), MSI
+- Distributed via GPO, MEM, MDM, MSI
 
 🚨 Always Audit for 7+ days before Enforce.
 
@@ -161,7 +161,7 @@ Usually **wrong**:
 | Block Office macro attacks | ASR "Block Office apps creating child processes" |
 | Kernel-level app allowlisting | WDAC (modern AppLocker) |
 | Defeat Mimikatz / Pass-the-Hash | Credential Guard + VBS |
-| Disable NTLM for admin accounts | Protected Users AD (Active Directory) group |
+| Disable NTLM for admin accounts | Protected Users AD group |
 | Hardware-rooted trust + max integrity | Secured-core server |
 | Tier-0 admin workstation | PAW |
 | Detect "user added to Domain Admins" | Log alert on Event 4732 |

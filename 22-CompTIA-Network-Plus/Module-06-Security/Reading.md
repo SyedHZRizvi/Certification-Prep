@@ -1,10 +1,10 @@
 # Module 6: Network Security Fundamentals 🔒
 
-> **Why this module matters:** Domain 4 (Network Security) is **14% of the exam**, and the concepts here are the gateway to your next cert (Security+, the natural follow-on). You'll learn how firewalls actually decide, the IDS/IPS family, the modern VPN (Virtual Private Network) tool kit (IPsec, SSL (Secure Sockets Layer)/TLS (Transport Layer Security), SD-WAN (Wide Area Network)), and the access controls (NAC, 802.1X, ACLs) that hold the line.
+> **Why this module matters:** Domain 4 (Network Security) is **14% of the exam**, and the concepts here are the gateway to your next cert (Security+, the natural follow-on). You'll learn how firewalls actually decide, the IDS/IPS family, the modern VPN tool kit (IPsec, SSL/TLS, SD-WAN), and the access controls (NAC, 802.1X, ACLs) that hold the line.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Modules 1–5 (OSI, IP, ports, DNS (Domain Name System), DHCP (Dynamic Host Configuration Protocol), basic switching/routing)
-> - The TCP (Transmission Control Protocol) 3-way handshake (Module 1), stateful firewalls depend on this
+> - Modules 1–5 (OSI, IP, ports, DNS, DHCP, basic switching/routing)
+> - The TCP 3-way handshake (Module 1), stateful firewalls depend on this
 > - VLANs (Module 3), segmentation is the foundation of network security
 
 ---
@@ -13,7 +13,7 @@
 
 In medieval times, security meant a moat, a high wall, and a single guarded gate. Anything that got past the wall was trusted. This worked beautifully when "inside" and "outside" were geographically obvious, a literal castle and the surrounding countryside.
 
-Modern enterprise networking destroyed this metaphor decades ago. Your "inside" now includes employees working from coffee shops, IoT cameras, third-party SaaS (Software as a Service) apps, contractor laptops, the CEO (Chief Executive Officer)'s iPad on her sailboat, and a developer in another country with full SSH (Secure Shell) access. There is no longer an obvious "inside." The castle wall is full of holes by design.
+Modern enterprise networking destroyed this metaphor decades ago. Your "inside" now includes employees working from coffee shops, IoT cameras, third-party SaaS apps, contractor laptops, the CEO's iPad on her sailboat, and a developer in another country with full SSH access. There is no longer an obvious "inside." The castle wall is full of holes by design.
 
 The modern answer is **Zero Trust**, never trust based on network location; verify every request, every time. This module covers the toolkit: firewalls (still essential at the perimeter and between segments), IDS/IPS (the eyes/ears), VPNs (the encrypted tunnels for legitimate users), NAC (posture-checking devices at the door), and 802.1X (per-user authentication at every switch port and SSID).
 
@@ -28,9 +28,9 @@ A **firewall** evaluates packets against a rule set and decides allow/deny. The 
 | Generation | Decision basis | Pros | Cons |
 |------------|----------------|------|------|
 | **Stateless / packet filter** | Each packet in isolation: source/dest IP, port, protocol | Fast, simple | Can't distinguish "legitimate reply" from "unsolicited incoming" |
-| **Stateful** | Tracks connection state (TCP handshake state, UDP (User Datagram Protocol) flow timeouts); auto-allows reply traffic | The dominant enterprise model since the late 90s | Doesn't inspect application content |
+| **Stateful** | Tracks connection state (TCP handshake state, UDP flow timeouts); auto-allows reply traffic | The dominant enterprise model since the late 90s | Doesn't inspect application content |
 | **Next-Generation (NGFW)** | Stateful + deep packet inspection (DPI), application identification, user identity, IDS/IPS, TLS decryption | Application-aware policy, modern control | More expensive, requires more CPU |
-| **Web Application Firewall (WAF)** | HTTP (Hypertext Transfer Protocol)/HTTPS (HTTP Secure) only; understands OWASP-class attacks (SQLi, XSS, CSRF) | Protects web apps specifically | App-layer only |
+| **Web Application Firewall (WAF)** | HTTP/HTTPS only; understands OWASP-class attacks (SQLi, XSS, CSRF) | Protects web apps specifically | App-layer only |
 | **Cloud / FWaaS** | Firewall as a service (delivered from cloud edge, part of SASE) | No on-prem hardware, scales | Vendor lock-in, requires Internet path |
 
 ### Stateful firewall, how it actually works
@@ -38,7 +38,7 @@ A **firewall** evaluates packets against a rule set and decides allow/deny. The 
 A connection state table tracks:
 
 - **Source/dest IP** + **source/dest port**
-- **Protocol** (TCP/UDP/ICMP (Internet Control Message Protocol))
+- **Protocol** (TCP/UDP/ICMP)
 - **Connection state** (SYN sent, established, time-wait, etc.)
 - **Counters** (bytes/packets, timestamps)
 
@@ -111,7 +111,7 @@ A **NAC** posture-checks devices BEFORE granting network access. Examples: Cisco
 
 | Result | Action |
 |--------|--------|
-| Compliant | Assign production VLAN (Virtual Local Area Network), full network access |
+| Compliant | Assign production VLAN, full network access |
 | Non-compliant | Quarantine VLAN with remediation portal (auto-patch, install AV) |
 | Unknown / unmanaged | Guest VLAN with Internet-only |
 | Failed | Deny access (event-disable port) |
@@ -143,12 +143,12 @@ Module 1 introduced Zero Trust in passing; this module dives a level deeper for 
 
 | Component | Role |
 |-----------|------|
-| **Policy Engine (PE (Private Equity))** | Evaluates the request against policy + signals → allow/deny |
+| **Policy Engine (PE)** | Evaluates the request against policy + signals → allow/deny |
 | **Policy Administrator (PA)** | Translates the decision into session config |
 | **Policy Enforcement Point (PEP)** | Actually allows/blocks the traffic |
 | **Adaptive Identity** | Risk-based auth (device, location, time, behavior) |
 | **Threat Scope Reduction** | Limit what each principal can reach |
-| **Continuous diagnostics** | SIEM (Security Information and Event Management), EDR (Endpoint Detection and Response), NDR feeding signals back to the PE |
+| **Continuous diagnostics** | SIEM, EDR, NDR feeding signals back to the PE |
 
 ### Comparison to traditional perimeter
 
@@ -185,7 +185,7 @@ Defined in **RFC 4301** (Kent & Seo, 2005) and many companion RFCs. The dominant
 1. **Phase 1**, establish a secure channel between peers (Main Mode or Aggressive Mode in IKEv1; single exchange in IKEv2)
 2. **Phase 2**, negotiate ESP/AH parameters for actual data tunnels
 
-**Ports:** UDP 500 (IKE), UDP 4500 (NAT (Network Address Translation)-Traversal), Protocol 50 (ESP), Protocol 51 (AH).
+**Ports:** UDP 500 (IKE), UDP 4500 (NAT-Traversal), Protocol 50 (ESP), Protocol 51 (AH).
 
 ### SSL/TLS VPN, the user-friendly remote-access option
 
@@ -198,8 +198,8 @@ Defined in **RFC 4301** (Kent & Seo, 2005) and many companion RFCs. The dominant
 
 ### Modern VPN alternatives
 
-- **WireGuard** (Donenfeld, 2017), open standard, much simpler code base than IPsec; built into the Linux kernel since 5.6 (2020); used by NordVPN, Mullvad, AWS (Amazon Web Services) Client VPN
-- **ZTNA (Zero Trust Network Access)** (Zero Trust Network Access), replaces VPNs with per-application identity-aware proxies; users don't get "the network," they get specific apps
+- **WireGuard** (Donenfeld, 2017), open standard, much simpler code base than IPsec; built into the Linux kernel since 5.6 (2020); used by NordVPN, Mullvad, AWS Client VPN
+- **ZTNA** (Zero Trust Network Access), replaces VPNs with per-application identity-aware proxies; users don't get "the network," they get specific apps
 
 🎯 **Exam pattern:** *"Encrypted site-to-site between two data centers"* → IPsec tunnel mode. *"Remote employee needs to access a web app from a coffee shop"* → SSL/TLS VPN or ZTNA.
 
@@ -213,14 +213,14 @@ Defined in **IEEE 802.1X-2020**. Authenticates *devices* before granting network
 |------|-----|------|
 | **Supplicant** | Client device (Windows, Mac, iPhone, IP camera) | Sends credentials |
 | **Authenticator** | Switch / WAP | Passes EAP frames between supplicant and server; opens/closes the port based on the answer |
-| **Authentication Server** | RADIUS server (Cisco ISE, NPS (Net Promoter Score), FreeRADIUS) | Validates credentials against directory, returns Accept/Reject |
+| **Authentication Server** | RADIUS server (Cisco ISE, NPS, FreeRADIUS) | Validates credentials against directory, returns Accept/Reject |
 
 ### EAP methods (from Module 4, recall)
 
 | EAP method | Authentication | Use case |
 |------------|----------------|----------|
 | **EAP-TLS** | Certs on both sides | Most secure; enterprise managed devices |
-| **PEAP** | Server cert + user cred in TLS tunnel | Easier; AD (Active Directory)-integrated |
+| **PEAP** | Server cert + user cred in TLS tunnel | Easier; AD-integrated |
 | **EAP-TTLS** | Server cert + flexible inner methods | Mixed environments |
 | **EAP-FAST** | Cisco's PAC-based lightweight method | Cisco shops |
 
@@ -256,7 +256,7 @@ Network+ tests physical security too. The exam-tested terms:
 
 ## 🔬 Scenario Walkthrough, VPN vs Direct Web Access
 
-> **Scenario:** A remote employee can reach a public website (https://saas.example.com) from her laptop but cannot reach the internal CRM (Customer Relationship Management) (https://crm.corp.local). She has the SSL/TLS VPN client installed but hasn't connected. What's happening?
+> **Scenario:** A remote employee can reach a public website (https://saas.example.com) from her laptop but cannot reach the internal CRM (https://crm.corp.local). She has the SSL/TLS VPN client installed but hasn't connected. What's happening?
 
 **Walkthrough:**
 1. **Public DNS** resolves `saas.example.com` → public IP → reachable from any Internet-connected device.
@@ -280,7 +280,7 @@ This is a high-value scenario question, many candidates miss the *DNS resolution
 | "Firewalls protect against all attacks" | Firewalls block what they're configured to block; misconfigured rules + zero-day exploits + insider abuse bypass them. Defense in depth. |
 | "IDS blocks attacks" | NO, IDS only *detects/alerts*. IPS blocks. |
 | "Stateful firewalls inspect application content" | They track connection state but don't deep-inspect payload. NGFW does DPI. |
-| "VPN = encryption" | VPNs encrypt the tunnel, but everything *inside* the corporate network may still be plaintext on the LAN (Local Area Network). |
+| "VPN = encryption" | VPNs encrypt the tunnel, but everything *inside* the corporate network may still be plaintext on the LAN. |
 | "IPsec runs over TCP" | IPsec uses **UDP 500/4500** for IKE; ESP/AH are IP protocols 50/51, not TCP. |
 | "WPA3 replaces 802.1X" | WPA3-Personal replaces PSK; WPA3-Enterprise uses 802.1X + EAP. They serve different scopes. |
 | "NAC is enough on its own" | NAC controls admission; you still need segmentation, firewalls, monitoring, EDR. |
@@ -333,9 +333,9 @@ This is a high-value scenario question, many candidates miss the *DNS resolution
 | AH / ESP | Authentication Header / Encapsulating Security Payload |
 | IKE / IKEv2 | Internet Key Exchange |
 | ACL | Access Control List |
-| MFA (Multi-Factor Authentication) | Multi-Factor Authentication |
+| MFA | Multi-Factor Authentication |
 | SIEM | Security Information and Event Management |
-| EDR / XDR (Extended Detection and Response) | Endpoint / Extended Detection and Response |
+| EDR / XDR | Endpoint / Extended Detection and Response |
 | DLP | Data Loss Prevention |
 
 ---
@@ -355,7 +355,7 @@ From the vendor portal, the attackers pivoted into Target's internal corporate n
 - **$10 million** consumer class action settlement (2015)
 - CEO and CIO resigned; massive trust loss; share price dropped ~46% in months
 - Subsequent **PCI-DSS audit failures** as the segmentation gaps were exposed
-- An **inline FireEye IPS** that Target had purchased and deployed *did* detect the exfiltration but **alerts were ignored**, a SOC (Security Operations Center) operational failure on top of the architectural failure
+- An **inline FireEye IPS** that Target had purchased and deployed *did* detect the exfiltration but **alerts were ignored**, a SOC operational failure on top of the architectural failure
 
 **Lesson for the exam / for practitioners.** Map every Network+ Module 6 concept onto Target:
 

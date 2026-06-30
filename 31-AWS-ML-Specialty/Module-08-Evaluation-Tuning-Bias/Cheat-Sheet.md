@@ -69,7 +69,7 @@ Parameter types: `ContinuousParameter`, `IntegerParameter`, `CategoricalParamete
 - **DI** (Disparate Impact), ratio of positive prediction rates
 - **DPPL**, diff in positive prediction rates
 - **DAR / DRR**, acceptance / rejection diffs
-- **AD (Active Directory) / RD / SD**, accuracy / recall / specificity diffs
+- **AD / RD / SD**, accuracy / recall / specificity diffs
 - **FT**, counterfactual flip test
 - **TE**, treatment equality (FP/FN ratio)
 

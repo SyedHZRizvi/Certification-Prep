@@ -1,13 +1,13 @@
-# Module 5: S3 (Simple Storage Service) Deep Dive 🪣
+# Module 5: S3 Deep Dive 🪣
 
 > **Why this module matters:** S3 is the most-tested individual service on SAA. Storage classes, lifecycle, encryption, replication, durability, access controls, expect 7–10 questions purely on S3. The good news: it's all rules-based. Memorize the right facts and pick up easy points.
 
 > **Prerequisites for this module.**
 > - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md), Region/AZ vocabulary
-> - [Module 2](../Module-02-IAM (Identity and Access Management)-Organizations/Reading.md), bucket policies are resource-based IAM policies
+> - [Module 2](../Module-02-IAM-Organizations/Reading.md), bucket policies are resource-based IAM policies
 > - [Module 4](../Module-04-VPC-Deep-Dive/Reading.md), Gateway VPC Endpoints are *S3-specific*
 > - Familiarity with object storage concepts (S3 is the canonical example, but Azure Blob, Google Cloud Storage, MinIO all share the model)
-> - Understanding of HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure) and signed URLs at a conceptual level
+> - Understanding of HTTPS and signed URLs at a conceptual level
 
 ---
 
@@ -171,11 +171,11 @@ Requirements:
 ### Replication notes
 - Only objects created **after** replication is enabled are replicated (use **Batch Replication** for existing objects).
 - Replication is asynchronous (usually seconds, can be minutes for large objects).
-- **S3 Replication Time Control (RTC)** guarantees 99.99% of objects replicate within 15 minutes (with an SLA (Service Level Agreement)).
+- **S3 Replication Time Control (RTC)** guarantees 99.99% of objects replicate within 15 minutes (with an SLA).
 
 ---
 
-## 🔒 Versioning, Object Lock, MFA (Multi-Factor Authentication) Delete
+## 🔒 Versioning, Object Lock, MFA Delete
 
 ### Versioning
 When enabled, S3 keeps every version of every object. Delete creates a "delete marker." Easy rollback for ransomware or accidents.
@@ -193,7 +193,7 @@ Plus **Legal Hold** (no retention period; just indefinite hold).
 🎯 **Exam pattern:** "Regulatory requirement to keep records immutable for 7 years, no override possible" → **Object Lock Compliance mode**.
 
 ### MFA Delete
-Requires MFA to delete a version or change versioning state. Can only be enabled by the root user via CLI (Command Line Interface).
+Requires MFA to delete a version or change versioning state. Can only be enabled by the root user via CLI.
 
 ---
 
@@ -334,7 +334,7 @@ You now know:
 **Decision (the controversial decision and the architectural one).** Robinhood took two decisions, only one of which is an architecture lesson:
 
 1. **The business decision (controversial).** Robinhood restricted buys of GME and ~10 other names. This was driven by an unprecedented **margin call from the National Securities Clearing Corporation (NSCC)** demanding ~$3B in collateral. The decision was a *financial* one, not a technical one. (This is *not* the SAA lesson.)
-2. **The architecture response (the SAA lesson).** Robinhood's CTO (Chief Technology Officer) Andy Hu in his March 2021 Congressional testimony and subsequent *AWS Builders' Library* contribution detailed the emergency scaling actions:
+2. **The architecture response (the SAA lesson).** Robinhood's CTO Andy Hu in his March 2021 Congressional testimony and subsequent *AWS Builders' Library* contribution detailed the emergency scaling actions:
 
    - **Pre-warmed Auto Scaling Groups** were increased from 200 to 2,000+ instances across the order matching path within hours
    - **S3 throughput** was the unsung hero, Robinhood stored order books and historical trade data in **S3 with Intelligent-Tiering** with thousands of read requests per second per prefix. **They had to redistribute prefixes** (S3 partitions by prefix) to avoid hot-prefix throttling
@@ -375,8 +375,8 @@ When the SAA exam asks "a brokerage app saw a 10× traffic spike; which design B
 ## ➡️ Where This Leads
 
 > **Where this leads.**
-> - **Inside this course:** Module 06 (Databases) covers the DynamoDB / Aurora pairing that S3 typically sits next to. Module 07 (Decoupling) covers S3 event notifications → Lambda / SQS / EventBridge. Module 08 (CloudFront, edge) covers the CDN (Content Delivery Network) that wraps S3 in 95% of production deployments. Module 10 (DR) covers cross-region replication.
-> - **Cross-course:** `03-AWS-Cloud-Practitioner` Module 04 has a gentler S3 intro. `07-AWS-AI-Practitioner` Module 03 covers S3 + Bedrock for RAG (Retrieval-Augmented Generation) (retrieval-augmented generation), same storage, different application.
+> - **Inside this course:** Module 06 (Databases) covers the DynamoDB / Aurora pairing that S3 typically sits next to. Module 07 (Decoupling) covers S3 event notifications → Lambda / SQS / EventBridge. Module 08 (CloudFront, edge) covers the CDN that wraps S3 in 95% of production deployments. Module 10 (DR) covers cross-region replication.
+> - **Cross-course:** `03-AWS-Cloud-Practitioner` Module 04 has a gentler S3 intro. `07-AWS-AI-Practitioner` Module 03 covers S3 + Bedrock for RAG (retrieval-augmented generation), same storage, different application.
 > - **Practice:** Practice Exam 1 has 7 S3 questions; Final Mock has 8. S3 is the highest-frequency single service on the exam.
 > - **Real world:** Spin up a static-site S3 bucket with CloudFront + OAC + Block Public Access, under $1/month and the canonical pattern.
 

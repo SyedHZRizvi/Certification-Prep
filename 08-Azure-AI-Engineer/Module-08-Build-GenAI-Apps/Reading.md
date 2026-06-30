@@ -1,6 +1,6 @@
 # Module 8: Build Generative AI Apps 🛠️
 
-> **Why this module matters:** This module is the apex. You'll tie together Azure AI Search, Azure OpenAI, Content Safety, and evaluation tools through **Azure AI Foundry** to ship a real GenAI app, including prompt flow, model catalog, evaluation, monitoring, RAG (Retrieval-Augmented Generation) patterns, Semantic Kernel basics, and agent patterns.
+> **Why this module matters:** This module is the apex. You'll tie together Azure AI Search, Azure OpenAI, Content Safety, and evaluation tools through **Azure AI Foundry** to ship a real GenAI app, including prompt flow, model catalog, evaluation, monitoring, RAG patterns, Semantic Kernel basics, and agent patterns.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Modules 1, 2, 5, 7, Foundry assumes you can already provision resources, apply RAI controls, build a search index, and deploy a model.
@@ -48,13 +48,13 @@ Hub                       ← Azure resource; shared infra, security, connection
 
 ### Connections
 
-Foundry **Connections** are reusable, RBAC (Role-Based Access Control)-secured handles to external services:
+Foundry **Connections** are reusable, RBAC-secured handles to external services:
 
 - Azure OpenAI
 - Azure AI Search
 - Azure AI services
 - Azure Blob Storage / Data Lake
-- API (Application Programming Interface) Key endpoints
+- API Key endpoints
 - Microsoft Fabric / OneLake
 
 Use connections instead of hardcoding endpoints + keys in code.
@@ -65,9 +65,9 @@ Use connections instead of hardcoding endpoints + keys in code.
 
 Foundry's **Model catalog** lists thousands of models:
 
-- **Azure OpenAI models** (GPT (Generative Pre-trained Transformer)-4o, etc.), first-class deployments
+- **Azure OpenAI models** (GPT-4o, etc.), first-class deployments
 - **Models as a Service (MaaS)**, pay-per-token serverless deployments of partner models (Llama, Mistral, Cohere, NVIDIA, etc.)
-- **Models as a Platform (MaaP)**, deploy to a managed compute (you control the VM (Virtual Machine)/cluster)
+- **Models as a Platform (MaaP)**, deploy to a managed compute (you control the VM/cluster)
 - **Open-source / Hugging Face** models
 
 You can:
@@ -83,7 +83,7 @@ You can:
 
 ## 🌊 Prompt Flow
 
-**Prompt flow** is Foundry's visual DAG orchestrator for LLM (Large Language Model) apps. You define **nodes** (prompts, Python functions, LLM calls, tool calls), connect them, run them, and version them.
+**Prompt flow** is Foundry's visual DAG orchestrator for LLM apps. You define **nodes** (prompts, Python functions, LLM calls, tool calls), connect them, run them, and version them.
 
 ### Anatomy of a flow
 
@@ -122,7 +122,7 @@ A flow node can have **variants**, multiple prompt versions you run in parallel 
 
 ### Deployment
 
-A finished flow becomes a **managed online endpoint** (with auth, autoscale, monitoring). You hit one HTTP (Hypertext Transfer Protocol) URL; Foundry handles the orchestration.
+A finished flow becomes a **managed online endpoint** (with auth, autoscale, monitoring). You hit one HTTP URL; Foundry handles the orchestration.
 
 ---
 
@@ -145,7 +145,7 @@ Two evaluation modes:
 - **Built-in evaluators**, Foundry provides metric implementations (mostly LLM-as-judge)
 - **Custom evaluators**, Your code, integrated into the eval runs
 
-You bring a **dataset** (question + golden answer + grounding sources) and the eval produces a scored CSV/JSON + a UI (User Interface) dashboard.
+You bring a **dataset** (question + golden answer + grounding sources) and the eval produces a scored CSV/JSON + a UI dashboard.
 
 🎯 **Exam pattern:** *"How do you compare two prompt variants on quality before deploying?"* → Run them through an **evaluation** with the same dataset and compare metrics.
 
@@ -275,7 +275,7 @@ run = project.agents.create_and_process_run(thread.id, agent.id)
 
 ## 🛠️ Semantic Kernel (SK)
 
-**Semantic Kernel** is Microsoft's open-source SDK (Software Development Kit) (C#, Python, Java) for orchestrating LLM + plugins from your code (think: LangChain, by Microsoft).
+**Semantic Kernel** is Microsoft's open-source SDK (C#, Python, Java) for orchestrating LLM + plugins from your code (think: LangChain, by Microsoft).
 
 | Concept | Meaning |
 |---|---|
@@ -329,7 +329,7 @@ Use SK when you want **portable** orchestration code (run locally, multi-cloud, 
 | Multi-provider orchestration from app code | **Semantic Kernel** |
 | Compare 3 prompt variants | **Evaluation** runs with built-in metrics |
 | Add Llama or Mistral | **Model catalog** → MaaS deployment |
-| Cheapest async batch processing | **Global Batch** SKU (Stock Keeping Unit) on Azure OpenAI |
+| Cheapest async batch processing | **Global Batch** SKU on Azure OpenAI |
 
 ---
 
@@ -411,7 +411,7 @@ Use SK when you want **portable** orchestration code (run locally, multi-cloud, 
 
 1. **Hub vs Project, when to split.** A startup launching one GenAI app: do they need a Hub? A 50-team enterprise: how many Hubs and how many Projects? Defend your topology, citing reuse, RBAC blast-radius, and connection sprawl.
 2. **MaaS vs MaaP for non-Microsoft models.** A team wants to deploy Llama 3 for a specific RAG application. They consider MaaS (serverless pay-per-token), MaaP (managed compute they scale), and Azure OpenAI fine-tuned GPT-4o-mini. Walk through cost + latency + operational-burden + lock-in.
-3. **Prompt flow vs Semantic Kernel.** Both can orchestrate the same LLM + tools. Argue both sides: when does the *visual DAG* of prompt flow beat the *code SDK* of Semantic Kernel, and vice versa? Where do you draw the line at a mature engineering org with strong CI/CD (Continuous Integration/Continuous Deployment)?
+3. **Prompt flow vs Semantic Kernel.** Both can orchestrate the same LLM + tools. Argue both sides: when does the *visual DAG* of prompt flow beat the *code SDK* of Semantic Kernel, and vice versa? Where do you draw the line at a mature engineering org with strong CI/CD?
 4. **Evaluation as the release gate.** Foundry's Evaluation workflow is "nice to have" for many teams. Argue the case that it should be a *gate*, no model upgrade ships without passing your eval set. Counter the case that it's wasteful. Where's the principled line?
 5. **Agent ReAct vs Plan-and-Execute.** Yao et al. (2023)'s ReAct interleaves reasoning and tool calls. Wei et al. (2022)'s chain-of-thought is the precursor. Plan-and-Execute first builds a plan, then runs each step. For a complex insurer-claims workflow (the Capstone scenario), defend a choice. What does that choice cost you when the model's plan is wrong?
 
@@ -445,7 +445,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: This module *is* the apex. The [Capstone Project](../Capstone-Project.md) at the course root applies Modules 1–8 to a real insurer-claims scenario.
-> - Cross-course: [`07-AWS (Amazon Web Services)-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) Module 8 covers Bedrock Agents for cross-cloud; [`15-AI-Marketing-Practitioner`](../../../15-AI-Marketing-Practitioner/) and [`17-AI-Marketing-Entrepreneur`](../../../17-AI-Marketing-Entrepreneur/) cover GenAI-product strategy from the marketing/business angle.
+> - Cross-course: [`07-AWS-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) Module 8 covers Bedrock Agents for cross-cloud; [`15-AI-Marketing-Practitioner`](../../../15-AI-Marketing-Practitioner/) and [`17-AI-Marketing-Entrepreneur`](../../../17-AI-Marketing-Entrepreneur/) cover GenAI-product strategy from the marketing/business angle.
 > - Practice: Practice Exam 2 has ~8 questions from this module; Final Mock has full Foundry case studies that revisit every prior module.
 
 ---

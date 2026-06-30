@@ -68,7 +68,7 @@ The first cost-control checkpoint. Customer requests return; system issues a **R
 - Validates eligibility (within return window, not consumable)
 - Triggers shipping label
 - Pre-categorizes reason for return
-- Creates an expected-receipt in the WMS (Warehouse Management System)
+- Creates an expected-receipt in the WMS
 
 ### Step 2: Receipt
 
@@ -128,7 +128,7 @@ Field service or central repair depot. Common for IT, medical, automotive afters
 
 ### Packaging returns
 
-Reusable totes, pallets, IBCs (Intermediate Bulk Containers) routed back to origin. **Asset tracking** (RFID (Radio Frequency Identification), barcode) is the enabling tech.
+Reusable totes, pallets, IBCs (Intermediate Bulk Containers) routed back to origin. **Asset tracking** (RFID, barcode) is the enabling tech.
 
 ### End-of-life (EOL)
 
@@ -231,7 +231,7 @@ Sometimes called **People, Planet, Profit** or **3P**.
 |-----------|-------|
 | **GHG Protocol** | The global standard for corporate accounting |
 | **Science-Based Targets initiative (SBTi)** | Sets climate targets aligned with Paris Agreement |
-| **CDP (Customer Data Platform) (Carbon Disclosure Project)** | Voluntary disclosure platform |
+| **CDP (Carbon Disclosure Project)** | Voluntary disclosure platform |
 | **TCFD** | Task Force on Climate-related Financial Disclosures |
 | **GLEC Framework** | Logistics-specific GHG accounting (mode-by-mode factors) |
 | **SmartWay (EPA)** | US carrier emissions program |
@@ -296,9 +296,9 @@ Mode factors (rough; GLEC):
 - **Lean & Green**, European logistics CO₂ reduction
 - **Green Truck Partnership**, emissions reduction for trucking
 
-### Sustainability KPIs (Key Performance Indicators) (CLTD-testable)
+### Sustainability KPIs (CLTD-testable)
 
-| KPI (Key Performance Indicator) | What it measures |
+| KPI | What it measures |
 |-----|------------------|
 | **Carbon per shipment** | kg CO₂e / shipment |
 | **Carbon per unit** | kg CO₂e / unit shipped |
@@ -337,7 +337,7 @@ Drives both cost and emissions.
 
 **Situation.** Following the Fukushima earthquake (2011), the Thailand floods (2011), and the Tianjin port explosion (2015), global shippers realized their supply chains lacked real-time risk visibility. A volcanic eruption, a port strike, or a hurricane could disrupt deliveries for weeks before anyone in the logistics control tower knew. DHL Supply Chain, the world's largest contract logistics provider, developed an internal capability to monitor ~150 risk types (geopolitical, climate, labor, supply, regulatory) globally, and decided to commercialize it.
 
-**Decision.** In 2018 DHL launched **Resilience360** as a standalone subscription SaaS (Software as a Service) platform, sold to non-DHL shippers including Cisco, Daimler, GlaxoSmithKline, and Procter & Gamble. Key capabilities through 2024:
+**Decision.** In 2018 DHL launched **Resilience360** as a standalone subscription SaaS platform, sold to non-DHL shippers including Cisco, Daimler, GlaxoSmithKline, and Procter & Gamble. Key capabilities through 2024:
 
 - **Real-time risk monitoring**, feeds from 30,000+ public + private sources (news, weather, port data, government alerts) classified by AI/ML.
 - **Supplier mapping**, visibility of tier-1, tier-2, tier-3 suppliers' physical locations matched against risk events.
@@ -345,20 +345,20 @@ Drives both cost and emissions.
 - **Scenario simulation** "what if Port of Long Beach closes for 3 days?" model the impact on specific SKUs and lanes.
 - **2021:** Spun out as **Everstream Analytics** via partnership with private-equity firm Columbia Capital. DHL retained a stake.
 - **2022:** Everstream acquired **NEXST** (specialized in supply chain risk) and rolled it into the platform.
-- **2024:** Everstream Analytics partnered with several major TMS (Transportation Management System) providers (project44, FourKites) for embedded risk visibility. Platform was tracking ~4M+ active shipments daily.
+- **2024:** Everstream Analytics partnered with several major TMS providers (project44, FourKites) for embedded risk visibility. Platform was tracking ~4M+ active shipments daily.
 
 **Outcome.** Resilience360/Everstream demonstrated several Module 8 + cross-module concepts:
 
 - During the 2024 Red Sea Houthi attacks (see Module 6 case), Everstream-subscribing shippers received automated routing recommendations within hours, while non-subscribing shippers needed days of manual analysis.
 - During the 2024 Baltimore Francis Scott Key Bridge collapse (March 2024 cargo ship strike → bridge collapse → Port of Baltimore closure for ~3 months), Everstream subscribers had pre-modeled scenarios for Port of Baltimore disruptions and could shift to NY/NJ or Norfolk within hours.
 - Adoption: by Q4 2024, ~600+ major shippers globally subscribed to Everstream-class platforms (also from competitors Riskmethods/Sphera, Interos, Sayari).
-- Business model validation: DHL's pivot from "logistics provider" to also "risk-visibility SaaS vendor" generated ~€200M annual SaaS revenue by 2024, a 4PL (Fourth-Party Logistics)/5PL evolution.
+- Business model validation: DHL's pivot from "logistics provider" to also "risk-visibility SaaS vendor" generated ~€200M annual SaaS revenue by 2024, a 4PL/5PL evolution.
 
 **Lesson for the exam / for practitioners.** Three Module 8 themes converge here:
 
 1. **Reverse logistics is one of many supply-chain risk dimensions, not a standalone topic.** Risk visibility platforms monitor *forward* (delivery delays), *reverse* (recall events, product safety alerts), *supplier* (financial distress, ESG violations), and *regulatory* (sanctions, customs changes), all in one frame.
 
-2. **The 5PL evolution.** A risk-visibility platform integrates data from carriers, customs, weather, suppliers, news, exactly the data-orchestrator role that Module 1 defined as 5PL. DHL effectively created a 5PL business as a sustainability+resilience layer atop its 3PL (Third-Party Logistics)/4PL operations.
+2. **The 5PL evolution.** A risk-visibility platform integrates data from carriers, customs, weather, suppliers, news, exactly the data-orchestrator role that Module 1 defined as 5PL. DHL effectively created a 5PL business as a sustainability+resilience layer atop its 3PL/4PL operations.
 
 3. **ESG / TCFD risk reporting requires this data.** TCFD (Task Force on Climate-related Financial Disclosures) and the EU CSRD require companies to disclose climate-related supply-chain risk. Without a platform like Everstream, this disclosure is essentially impossible at scale. Module 8's ESG reporting frameworks (GRI, SASB, TCFD, ISSB, CSRD) are *demand drivers* for these platforms.
 

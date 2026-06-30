@@ -1,6 +1,6 @@
 # Module 8: Leadership & Project Management 👥
 
-> **Why this module matters:** Exam 3 of CPSM is literally titled *Leadership in Supply Management*. This module is the leadership exam. It tests change management, stakeholders, projects, KPIs (Key Performance Indicators), and influence, and CPSM heavily weights judgment scenarios. Master this and Exam 3 becomes very gettable.
+> **Why this module matters:** Exam 3 of CPSM is literally titled *Leadership in Supply Management*. This module is the leadership exam. It tests change management, stakeholders, projects, KPIs, and influence, and CPSM heavily weights judgment scenarios. Master this and Exam 3 becomes very gettable.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The entire course so far, leadership is the integrating discipline
@@ -13,12 +13,12 @@
 
 ## 🏢 A Story: The Transformation That Almost Didn't Happen
 
-A global consumer-goods company decided to roll out a new e-procurement platform across 32 business units in 18 months. Tech installed it. Procurement was trained. Then... nothing. Six months later, only 9% of POs flowed through the new system. The CFO (Chief Financial Officer) threatened to cancel the program.
+A global consumer-goods company decided to roll out a new e-procurement platform across 32 business units in 18 months. Tech installed it. Procurement was trained. Then... nothing. Six months later, only 9% of POs flowed through the new system. The CFO threatened to cancel the program.
 
 A new supply VP took over. She didn't add features. She didn't fire anyone. She did six things:
 
 1. **Found the urgency.** Pulled spend data showing $40M of leakage from off-platform buying.
-2. **Built a coalition.** Got the CFO, three BU presidents, and the COO (Chief Operating Officer) publicly behind the change.
+2. **Built a coalition.** Got the CFO, three BU presidents, and the COO publicly behind the change.
 3. **Set a clear vision.** "Every dollar visible. Every supplier vetted. No exceptions."
 4. **Communicated relentlessly.** Town halls, weekly updates, dashboards.
 5. **Removed obstacles.** Killed the parallel "informal" payment route.
@@ -122,7 +122,7 @@ MONITOR     │   KEEP SATISFIED
 | Quadrant | Tactic |
 |---|---|
 | High Power + High Interest | Manage closely (CFO sponsor of a transformation) |
-| High Power + Low Interest | Keep satisfied (CEO (Chief Executive Officer) of another BU) |
+| High Power + Low Interest | Keep satisfied (CEO of another BU) |
 | Low Power + High Interest | Keep informed (end users of new procurement tool) |
 | Low Power + Low Interest | Monitor (peripheral observers) |
 
@@ -212,7 +212,7 @@ Slack (float) on non-critical tasks = how long they can slip without delaying pr
 
 A modern supply organization tracks balanced KPIs. Examples:
 
-| Category | KPI (Key Performance Indicator) |
+| Category | KPI |
 |---|---|
 | **Financial** | Cost savings $ · cost avoidance · working capital · spend under management |
 | **Quality** | PPM defects · supplier-caused customer complaints |
@@ -291,10 +291,10 @@ Supply rarely acts alone. Common cross-functional partners:
 | High-level scope | IT prof services, marketing services, contingent labor |
 | Objectives | (1) Spend visibility 95% by Q2; (2) Preferred supplier list with diverse spend 25%; (3) 15% cost savings by year-end |
 | Out of scope | Direct material spend |
-| Milestones | Spend baseline (M1), category strategies (M3), RFP (Request for Proposal) launches (M5), awards (M8), full implementation (M12) |
-| Stakeholders | CFO, BU finance leaders, HR, IT, marketing CMO (Chief Marketing Officer) |
+| Milestones | Spend baseline (M1), category strategies (M3), RFP launches (M5), awards (M8), full implementation (M12) |
+| Stakeholders | CFO, BU finance leaders, HR, IT, marketing CMO |
 | High-level risks | Supplier resistance, BU non-adoption, change-management gaps |
-| Budget | Project cost $250K; expected ROI (Return on Investment) year 1 |
+| Budget | Project cost $250K; expected ROI year 1 |
 | Approval | CFO sign-off date |
 
 ---
@@ -342,7 +342,7 @@ Note three exam-relevant patterns: (1) when a CPSM scenario describes a leader p
 
 **Discussion (Socratic).**
 - Q1: Toyota's free supplier-development engineering looks like a gift to competitors who also use those suppliers. Defend the strategy from Toyota's perspective. Then identify the structural reason a Western public-company peer (e.g., GM, Ford) might struggle to replicate it.
-- Q2: Liker's Two Pillars look like soft values, but they translate into hard P&L (Profit and Loss) outcomes (the 2021 chip shortage being Exhibit A). Build the 90-second elevator pitch you'd give a new MBA-trained CFO who doesn't believe "respect for people" is a CFO concern.
+- Q2: Liker's Two Pillars look like soft values, but they translate into hard P&L outcomes (the 2021 chip shortage being Exhibit A). Build the 90-second elevator pitch you'd give a new MBA-trained CFO who doesn't believe "respect for people" is a CFO concern.
 - Q3: Hoshin Kanri (policy deployment) is a slow, consensus-driven cycle. In a 2026 environment of rapid AI disruption and shifting tariff regimes, defend the position that Hoshin Kanri is *more* relevant than ever, and then defend that it's *less* relevant. Which would you bring to an ISM World keynote?
 
 ---

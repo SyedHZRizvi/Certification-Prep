@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Module 4 (Claude tool use semantics)
-> - Basic HTTP (Hypertext Transfer Protocol) and JSON-RPC concepts
+> - Basic HTTP and JSON-RPC concepts
 > - Standard I/O and process spawning (`stdin`, `stdout`, subprocess)
 > - The general idea of "client/server architecture"
 
@@ -18,7 +18,7 @@ Three months earlier this would have been impossible. Each AI app had a bespoke 
 
 What changed: on November 25, 2024, Anthropic published the **Model Context Protocol** as an open spec and shipped reference implementations (in Python and TypeScript) and a starter library of MCP servers (filesystem, GitHub, Slack, Postgres, sqlite, Brave Search, fetch, memory, time, puppeteer, gdrive, gmaps). MCP was Anthropic's contribution to a problem the entire industry had: *the tool layer needs a standard before AI agents are useful at scale*.
 
-By Q1 2026, **Claude Desktop**, **Cursor**, **Windsurf**, **Zed**, **Sourcegraph Cody**, **Lindy**, **Block (Square)**, **Replit**, **Apollo MCP for Salesforce**, and dozens of others have shipped MCP-client support. There is a public MCP server registry. Building a "Claude integration" for your SaaS (Software as a Service) company means **building one MCP server** and the entire ecosystem can use it. This module is how that works.
+By Q1 2026, **Claude Desktop**, **Cursor**, **Windsurf**, **Zed**, **Sourcegraph Cody**, **Lindy**, **Block (Square)**, **Replit**, **Apollo MCP for Salesforce**, and dozens of others have shipped MCP-client support. There is a public MCP server registry. Building a "Claude integration" for your SaaS company means **building one MCP server** and the entire ecosystem can use it. This module is how that works.
 
 ---
 
@@ -37,7 +37,7 @@ That sentence is the whole module in compressed form. The rest is making it oper
 │  CLIENT (AI app, Claude Desktop / Cursor / your app)        │
 │                                                              │
 │  ┌────────────────────────────────────────────────────────┐  │
-│  │  Claude model (via Anthropic API (Application Programming Interface))                      │  │
+│  │  Claude model (via Anthropic API)                      │  │
 │  └────────────────────────────────────────────────────────┘  │
 │                          ▲                                   │
 │   Tool definitions       │     Tool call results             │
@@ -222,7 +222,7 @@ The standard JSON-RPC method names you must recognize:
 
 ## 🛠️ Building Your First MCP Server (Python)
 
-The official Python SDK (Software Development Kit) is `mcp` (`pip install mcp`).
+The official Python SDK is `mcp` (`pip install mcp`).
 
 ```python
 # server.py, a tiny MCP server exposing two tools and one resource
@@ -363,7 +363,7 @@ By Q1 2026 the MCP ecosystem includes:
 - **Anthropic's reference servers**, filesystem, github, gitlab, postgres, sqlite, brave-search, fetch, memory, puppeteer, gdrive, google-maps, slack, sentry, time
 - **Block (Square), GitLab, Replit, Apollo (Salesforce MCP), Cloudflare, Stripe, Linear, Notion, Atlassian, Figma, MongoDB, Snowflake**, first-party MCP servers from these companies
 - **Community registries**, searchable indexes like `mcp.so`, `mcphub`, the official Anthropic spec site listings
-- **Claude Code**, Anthropic's CLI (Command Line Interface) exposes MCP server config; many users add 5–15 servers
+- **Claude Code**, Anthropic's CLI exposes MCP server config; many users add 5–15 servers
 - **Cursor / Windsurf / Zed / Cody**, all expose MCP server configuration in settings
 
 The pattern: a SaaS company publishes an MCP server (often `npx`-runnable). Any MCP-aware AI app can adopt it in two lines of config. The flywheel more clients → more value to publish a server → more servers → more reason to be a client is precisely the "USB-C for AI" story.
@@ -384,7 +384,7 @@ MCP is transport-agnostic; security depends on the transport.
 
 - Server needs proper auth, **OAuth 2.0**, **API keys**, **mTLS**, depending on deployment.
 - The 2025 spec evolution added a recommended **OAuth-style flow** for remote MCP authorization.
-- Threats: standard HTTP threats (TLS (Transport Layer Security) termination, replay, SSRF) plus tool-injection threats (a malicious server could expose tools that lie about what they do).
+- Threats: standard HTTP threats (TLS termination, replay, SSRF) plus tool-injection threats (a malicious server could expose tools that lie about what they do).
 
 ### Tool-call authorization
 
@@ -455,7 +455,7 @@ When you use these in claude-code, the tools appear in your Bash / Read / etc. t
    - Log all tool calls to Splunk / Datadog for review
    - Periodic re-review when servers update
 
-5. **User UX (User Experience):**
+5. **User UX:**
    - Engineers query naturally: "What's the open issue list for project X with priority high?"
    - Claude routes via the GitHub MCP server, summarizes, surfaces in chat
 

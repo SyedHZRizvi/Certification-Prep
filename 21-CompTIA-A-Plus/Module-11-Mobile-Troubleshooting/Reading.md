@@ -3,7 +3,7 @@
 > **Why this module matters:** Mobile troubleshooting plus general Software Troubleshooting together make **22% of the 220-1102 exam**. While Module 9 focused on Windows/desktop OS issues, this module zeroes in on mobile-specific failures: battery, connectivity, sync, performance, app installs. Help-desk tickets in 2026 are increasingly mobile-first, every IT pro needs this fluency.
 
 > **Prerequisites for this module.** You need:
-> - Module 1 (mobile hardware + MDM (Mobile Device Management))
+> - Module 1 (mobile hardware + MDM)
 > - Module 8 (security + malware basics on mobile)
 > - Module 9 (general software-troubleshooting mindset)
 
@@ -77,7 +77,7 @@ This is mobile support in 2026. The phones themselves rarely fail, it's the **po
 3. **Correct SSID joined?** ("Forget" + rejoin if password changed)
 4. **Other devices working on this SSID?** (isolates phone vs network)
 5. **Phone IP valid?** (Settings → Wi-Fi → tap (i) → IP)
-6. **Captive portal?** (Open browser; force-trigger a non-HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure) site to see)
+6. **Captive portal?** (Open browser; force-trigger a non-HTTPS site to see)
 7. **MDM Wi-Fi profile current?** (corporate Wi-Fi may need re-pushed cert)
 8. **Phone too far from AP?** (signal strength)
 
@@ -113,7 +113,7 @@ This is mobile support in 2026. The phones themselves rarely fail, it's the **po
 
 | Symptom | Cause |
 |---------|-------|
-| Email not syncing | Password expired, MFA (Multi-Factor Authentication) challenge, MDM compliance lost |
+| Email not syncing | Password expired, MFA challenge, MDM compliance lost |
 | Calendar events missing | Sync filter (e.g., only "next 30 days"), account corruption |
 | Contacts gone | iCloud / Google Sync toggle off |
 | Photos not backing up | Cloud account out of space, sync paused for low battery / cellular |
@@ -207,7 +207,7 @@ This is mobile support in 2026. The phones themselves rarely fail, it's the **po
 | **Smishing** | SMS with malicious link |
 | **Malicious app** | Trojan in Play Store or sideload |
 | **Public USB charging** | "Juice jacking", only charge from your own bricks |
-| **Public Wi-Fi MITM** | Use VPN (Virtual Private Network) on untrusted networks |
+| **Public Wi-Fi MITM** | Use VPN on untrusted networks |
 | **SS7 / SIM swap** | Attacker convinces carrier to port phone number → bypasses SMS MFA |
 
 ---
@@ -219,7 +219,7 @@ This is mobile support in 2026. The phones themselves rarely fail, it's the **po
 **Walkthrough:**
 1. **Identify**, Only corporate email is failing. Personal email (different account, same Mail app) works. So Mail app + iPhone itself are functional.
 2. **Theory**, Likely: (a) corporate Exchange ActiveSync profile disabled by MDM compliance; (b) password expired; (c) MFA challenge missed; (d) Conditional Access blocking the sign-in.
-3. **Test**, Check Intune compliance dashboard for this device. Check Azure AD (Active Directory) sign-in logs for failed corporate-mail sign-ins. Check that the user's password is current.
+3. **Test**, Check Intune compliance dashboard for this device. Check Azure AD sign-in logs for failed corporate-mail sign-ins. Check that the user's password is current.
 4. **Plan**, Most common: device fell out of compliance. Show user the Company Portal app's "How to be compliant" steps (usually: install latest iOS update). Once compliant, profile auto-restores.
 5. **Verify**, Wait 5-15 min for Conditional Access re-evaluation; user receives mail again.
 6. **Document**, KB: "iPhone mail stopped → check Intune compliance first."

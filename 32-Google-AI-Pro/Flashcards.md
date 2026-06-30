@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -278,7 +278,7 @@
 **A:** "Attention Is All You Need", Vaswani et al. at Google Brain, June 2017.
 
 **Q:** When did Google Brain and DeepMind merge?
-**A:** April 2023, into Google DeepMind, with Demis Hassabis as CEO (Chief Executive Officer).
+**A:** April 2023, into Google DeepMind, with Demis Hassabis as CEO.
 
 **Q:** Name the five tiers of the Gemini family.
 **A:** Nano (on-device), Flash Lite, Flash, Pro, Ultra, smallest to largest.
@@ -318,19 +318,19 @@
 
 ---
 
-## 🛠️ SECTION 2: AI STUDIO & GEMINI API (Application Programming Interface)
+## 🛠️ SECTION 2: AI STUDIO & GEMINI API
 
 **Q:** What is Google AI Studio?
 **A:** The free browser-based playground at aistudio.google.com for prototyping with Gemini using API keys.
 
-**Q:** What is the Python SDK (Software Development Kit) for the Gemini API?
+**Q:** What is the Python SDK for the Gemini API?
 **A:** `google-generativeai` (the Gemini API package, distinct from Vertex AI).
 
 **Q:** What is the Python SDK path for Vertex AI Gemini?
 **A:** `vertexai.generative_models` inside the `google-cloud-aiplatform` package.
 
 **Q:** What auth does the Gemini API use vs Vertex AI?
-**A:** Gemini API uses API keys. Vertex AI uses Application Default Credentials (ADC) / IAM (Identity and Access Management).
+**A:** Gemini API uses API keys. Vertex AI uses Application Default Credentials (ADC) / IAM.
 
 **Q:** How do you force JSON-Schema-conformant output from Gemini?
 **A:** Set `response_mime_type="application/json"` AND `response_schema=<schema>` in generation_config.
@@ -345,7 +345,7 @@
 **A:** `model.count_tokens(prompt)`, free endpoint.
 
 **Q:** What discount does the Batch API give?
-**A:** ~50% off input AND output tokens; async with ~24h SLA (Service Level Agreement).
+**A:** ~50% off input AND output tokens; async with ~24h SLA.
 
 **Q:** What discount does Vertex AI explicit context caching give?
 **A:** ~75% off cached input tokens.
@@ -379,7 +379,7 @@
 **A:** 200+ models: Gemini, Claude, Llama, Mistral, Cohere, AI21, Gemma, and many more under one IAM/billing surface.
 
 **Q:** What is Vertex AI Studio?
-**A:** Enterprise version of AI Studio, same prompting UI but under your GCP (Google Cloud Platform) project's IAM, audit, billing, region.
+**A:** Enterprise version of AI Studio, same prompting UI but under your GCP project's IAM, audit, billing, region.
 
 **Q:** What is Vertex AI Workbench?
 **A:** Managed Jupyter / Colab Enterprise notebooks with IAM-integrated access to BigQuery and Vertex AI.
@@ -399,14 +399,14 @@
 **Q:** What does CMEK protect?
 **A:** Data at rest, encrypted with your KMS keys (rotate, disable, destroy).
 
-**Q:** What does VPC (Virtual Private Cloud) Service Controls protect?
+**Q:** What does VPC Service Controls protect?
 **A:** Data exfiltration outside a configured perimeter (compromised SA, insider, etc.).
 
 **Q:** What region serves German data residency?
 **A:** `europe-west3` (Frankfurt). `europe-west1` is Belgium.
 
 **Q:** What is Vertex AI Search?
-**A:** Managed RAG (Retrieval-Augmented Generation) service (formerly Discovery Engine), chunking + embedding + index + retrieval + reranking + grounding.
+**A:** Managed RAG service (formerly Discovery Engine), chunking + embedding + index + retrieval + reranking + grounding.
 
 **Q:** What is Vertex AI Vector Search?
 **A:** ANN index primitive (formerly Matching Engine). Brings your own embeddings + chunking.
@@ -414,7 +414,7 @@
 **Q:** Where do containerized models live for serving?
 **A:** Artifact Registry (formerly Container Registry).
 
-**Q:** What is Spotify's MLOps (Machine Learning Operations) consolidation story on Vertex AI?
+**Q:** What is Spotify's MLOps consolidation story on Vertex AI?
 **A:** 3,000+ models consolidated onto Vertex AI (Workbench + Pipelines + Registry + Feature Store + Endpoints + Monitoring), one platform replaced bespoke per-team pipelines.
 
 ---
@@ -520,7 +520,7 @@
 ## 🔧 SECTION 6: FINE-TUNING
 
 **Q:** Name the five rungs of the customization ladder.
-**A:** Better prompt → few-shot prompting → RAG → SFT → RLHF (Reinforcement Learning from Human Feedback) / DPO.
+**A:** Better prompt → few-shot prompting → RAG → SFT → RLHF / DPO.
 
 **Q:** What is fine-tuning good at?
 **A:** Style/tone, output format, vocabulary, task specialization.
@@ -569,7 +569,7 @@
 **A:** Umbrella over Conversational Agents, Search Agents, Function Calling, ADK, Agent Garden.
 
 **Q:** What was Conversational Agents previously called?
-**A:** Dialogflow CX (Customer Experience) (Dialogflow ES is the older sibling still around).
+**A:** Dialogflow CX (Dialogflow ES is the older sibling still around).
 
 **Q:** Core abstractions in Conversational Agents?
 **A:** Flow, Page, Intent, Slot/Parameter, Fulfillment, Webhook.
@@ -658,7 +658,7 @@
 **A:** Kubeflow Pipelines v2 (KFP) DAG of containerized steps with ML metadata (MLMD) for artifact + parameter + metric lineage.
 
 **Q:** What's the difference between Pipelines and Cloud Build?
-**A:** Pipelines = ML-specific metadata + artifact lineage. Cloud Build = generic CI/CD (Continuous Integration/Continuous Deployment). Pipelines is for ML workflows; Cloud Build is for code-side CI.
+**A:** Pipelines = ML-specific metadata + artifact lineage. Cloud Build = generic CI/CD. Pipelines is for ML workflows; Cloud Build is for code-side CI.
 
 **Q:** What does Model Registry store?
 **A:** Trained models with versions, artifacts, metadata, lineage to training pipeline runs.
@@ -721,7 +721,7 @@
 **Q:** Top 6 security checklist items?
 **A:** IAM least privilege · VPC-SC · CMEK · Cloud Audit Logs · Secret Manager (not env vars) · Region pinned + BAA.
 
-**Q:** When pick Google Vertex AI over AWS (Amazon Web Services) Bedrock?
+**Q:** When pick Google Vertex AI over AWS Bedrock?
 **A:** Native multi-modal (especially video), 2M context, EU + workspace integration, cheapest at Flash tier, Gemma open-weight option.
 
 **Q:** When pick AWS Bedrock over Vertex AI?

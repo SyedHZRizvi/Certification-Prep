@@ -42,7 +42,7 @@ Average compensation uplift after passing: **15–25%** in the 6–12 months fol
 
 ### 🚀 Ready to start?
 
-Eight weeks of focused study, real hands-on Console + CLI (Command Line Interface) work in your own AWS account, and three practice exams that feel like the real thing. That's the program.
+Eight weeks of focused study, real hands-on Console + CLI work in your own AWS account, and three practice exams that feel like the real thing. That's the program.
 
 Begin with [Module 1: Foundations & Well-Architected →](./Module-01-Foundations-Well-Architected/Reading.md)
 
@@ -53,10 +53,10 @@ Begin with [Module 1: Foundations & Well-Architected →](./Module-01-Foundation
 By the end of this track, you'll be able to:
 
 - Design **resilient** multi-AZ and multi-region architectures
-- Pick the **right compute** (EC2 (Elastic Compute Cloud) family, ASG, Lambda, ECS (Elastic Container Service), Fargate) for the workload
-- Design **secure** systems with IAM (Identity and Access Management), KMS, Security Groups, NACLs, and least privilege
+- Pick the **right compute** (EC2 family, ASG, Lambda, ECS, Fargate) for the workload
+- Design **secure** systems with IAM, KMS, Security Groups, NACLs, and least privilege
 - Build **decoupled** systems with SQS / SNS / EventBridge / Step Functions
-- Choose between RDS (Relational Database Service), Aurora, DynamoDB, ElastiCache, and Redshift, and know **when** to use each
+- Choose between RDS, Aurora, DynamoDB, ElastiCache, and Redshift, and know **when** to use each
 - Optimize **cost** with the right purchase options, storage tiers, and lifecycle policies
 - Pick the right **DR strategy** (Backup & Restore → Pilot Light → Warm Standby → Multi-Site)
 - Read a scenario in 60 seconds and pick the **most cost-effective** or **most resilient** answer
@@ -70,11 +70,11 @@ By the end of this track, you'll be able to:
 | 1 | [Foundations & Well-Architected](./Module-01-Foundations-Well-Architected/Reading.md) | 2.5 hrs | 6 pillars, shared responsibility, global infra |
 | 2 | [IAM & Organizations](./Module-02-IAM-Organizations/Reading.md) | 3 hrs | Users, roles, policies, SCPs, Identity Center, STS |
 | 3 | [EC2 Deep Dive](./Module-03-EC2-Deep-Dive/Reading.md) | 3.5 hrs | Instance families, purchase options, ASG, ELB |
-| 4 | [VPC Deep Dive](./Module-04-VPC-Deep-Dive/Reading.md) | 4 hrs | Subnets, NAT (Network Address Translation), endpoints, TGW, Direct Connect |
-| 5 | [S3 (Simple Storage Service) Deep Dive](./Module-05-S3-Deep-Dive/Reading.md) | 3 hrs | Storage classes, lifecycle, encryption, replication |
+| 4 | [VPC Deep Dive](./Module-04-VPC-Deep-Dive/Reading.md) | 4 hrs | Subnets, NAT, endpoints, TGW, Direct Connect |
+| 5 | [S3 Deep Dive](./Module-05-S3-Deep-Dive/Reading.md) | 3 hrs | Storage classes, lifecycle, encryption, replication |
 | 6 | [Databases](./Module-06-Databases/Reading.md) | 3.5 hrs | RDS, Aurora, DynamoDB, ElastiCache, Redshift |
 | 7 | [Decoupling & Integration](./Module-07-Decoupling-Integration/Reading.md) | 3 hrs | SQS, SNS, EventBridge, Step Functions, Kinesis |
-| 8 | [Caching, CDN (Content Delivery Network) & Edge](./Module-08-Caching-CDN-Edge/Reading.md) | 2.5 hrs | CloudFront, Global Accelerator, DAX |
+| 8 | [Caching, CDN & Edge](./Module-08-Caching-CDN-Edge/Reading.md) | 2.5 hrs | CloudFront, Global Accelerator, DAX |
 | 9 | [Monitoring & Cost Optimization](./Module-09-Monitoring-Cost-Optimization/Reading.md) | 2.5 hrs | CloudWatch, CloudTrail, X-Ray, Cost Explorer |
 | 10 | [DR, Migration & Hybrid](./Module-10-DR-Migration-Hybrid/Reading.md) | 2.5 hrs | DR strategies, DMS, Snow family, Storage Gateway |
 
@@ -180,7 +180,7 @@ Week 4: Flashcards + Final Mock + REAL EXAM
 
 ## 🏗️ Capstone Project
 
-🔗 **[Capstone Project Larkin Health Analytics migration](./Capstone-Project.md)** Once you've finished all 10 modules, the capstone is the graduate-level professional standard synthesis exercise: a 7-deliverable migration design for a Series-C healthcare SaaS (Software as a Service) (~$2.8M budget, 9-month deadline, HIPAA + GDPR (General Data Protection Regulation) + SOC (Security Operations Center) 2). Rubric scored out of 100. This is the difference between "I passed SAA" and "I could lead this at a real company on Monday."
+🔗 **[Capstone Project Larkin Health Analytics migration](./Capstone-Project.md)** Once you've finished all 10 modules, the capstone is the graduate-level professional standard synthesis exercise: a 7-deliverable migration design for a Series-C healthcare SaaS (~$2.8M budget, 9-month deadline, HIPAA + GDPR + SOC 2). Rubric scored out of 100. This is the difference between "I passed SAA" and "I could lead this at a real company on Monday."
 
 ---
 

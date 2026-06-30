@@ -1,13 +1,13 @@
 # Module 4: Natural Language Processing 🗣️
 
-> **Why this module matters:** NLP is 15–20% of AI-102 and is split across three services, Azure AI Language, Translator, and Speech. The exam tests each by SDK (Software Development Kit) call shape, by feature name, and by service selection. Don't mix them up.
+> **Why this module matters:** NLP is 15–20% of AI-102 and is split across three services, Azure AI Language, Translator, and Speech. The exam tests each by SDK call shape, by feature name, and by service selection. Don't mix them up.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The Azure AI resource model + auth, [Module 1](../Module-01-AI-Services-Overview/Reading.md)
 > - Responsible-AI principles (PII Detection sits here for a reason), [Module 2](../Module-02-Responsible-AI-Content-Safety/Reading.md)
 > - Optional but helpful: the attention/transformer mental model from Vaswani et al. (2017), *"Attention Is All You Need"*, NeurIPS, every modern NLP feature in this module descends from that line of work.
 >
-> If you've never written a Python function that calls an HTTP (Hypertext Transfer Protocol) API (Application Programming Interface), walk through Module 1's snippets first.
+> If you've never written a Python function that calls an HTTP API, walk through Module 1's snippets first.
 
 ---
 
@@ -70,7 +70,7 @@ for r in client.recognize_pii_entities(docs):
     print(r.redacted_text)
 ```
 
-### REST (Representational State Transfer) shape
+### REST shape
 
 ```http
 POST /language/:analyze-text?api-version=2023-04-01
@@ -94,7 +94,7 @@ Ocp-Apim-Subscription-Key: <KEY>
 |---|---|---|
 | What it does | Picks the most important sentences from the source | Generates new sentences that summarize |
 | Risk | Sentences feel disjointed | Can hallucinate |
-| Cost | Lower | Higher (LLM (Large Language Model)-backed) |
+| Cost | Lower | Higher (LLM-backed) |
 | Use when | You need traceable highlights | You want a polished paragraph |
 
 🎯 **Exam pattern:** *"Generate a 3-sentence paragraph summary"* → abstractive. *"Highlight the 3 most important sentences"* → extractive.
@@ -314,7 +314,7 @@ print(result.translations["es"])
 | **Abstractive Summarization** | Generates new summary sentences (LLM-backed) |
 | **CLU** | Conversational Language Understanding, intent + entity (replaces LUIS) |
 | **Question Answering** | KB-based Q&A in Language service (replaces QnA Maker) |
-| **Language Studio** | Portal UI (User Interface) for training custom Language models |
+| **Language Studio** | Portal UI for training custom Language models |
 | **Translator** | Standalone service for text/document/custom translation |
 | **Document Translation** | Async, batch translation that preserves doc format |
 | **Custom Translator** | Train your own translation model from parallel corpora |
@@ -340,7 +340,7 @@ print(result.translations["es"])
 - **Azure AI Speech** for voice in/out, STT (real-time + batch), TTS using Neural Voices for accessibility, and Speech Translation in pilot markets.
 - An **Orchestration Workflow** routes between Sparky's CLU command intents and a Question Answering knowledge base over Walmart's help-center content.
 
-Critically, the team applied **Responsible AI** controls from Module 2: PII Detection upstream of every GPT (Generative Pre-trained Transformer)-4o prompt; gender_neutral_caption equivalents in image-rich flows; Translator's region-header was set correctly so EU customer text stayed in EU Data Zones for GDPR (General Data Protection Regulation).
+Critically, the team applied **Responsible AI** controls from Module 2: PII Detection upstream of every GPT-4o prompt; gender_neutral_caption equivalents in image-rich flows; Translator's region-header was set correctly so EU customer text stayed in EU Data Zones for GDPR.
 
 **Outcome.** By H2 2024, Sparky had been rolled out broadly across Walmart's online surface area. Walmart's investor-day materials cited a measurable lift in conversion among assistants users vs control. Microsoft used Sparky as a flagship reference at Build 2024 and again at Ignite 2024 for "enterprise GenAI with composed Azure AI services", exactly the pattern this module teaches.
 
@@ -356,7 +356,7 @@ Critically, the team applied **Responsible AI** controls from Module 2: PII Dete
 ## 💬 Discussion, Socratic prompts
 
 1. **CLU vs Question Answering vs Orchestration.** A retail chatbot needs both "track my order" (command) and "what's your return policy?" (FAQ). One PM proposes a single GPT-4o prompt with both tools. Another proposes the canonical Azure stack (CLU + QA + Orchestration). Walk through the trade-offs (latency, cost, maintainability, fallback behaviour, observability). At what conversation volume does each architecture decisively beat the other?
-2. **Custom Translator's economics.** Training a Custom Translator model for legal terminology takes a parallel corpus of ~10K sentence pairs and engineering time. Argue both sides at a CFO (Chief Financial Officer) meeting: when does the per-token translation savings + accuracy lift make it a winning investment, and when does the engineering time make it overkill?
+2. **Custom Translator's economics.** Training a Custom Translator model for legal terminology takes a parallel corpus of ~10K sentence pairs and engineering time. Argue both sides at a CFO meeting: when does the per-token translation savings + accuracy lift make it a winning investment, and when does the engineering time make it overkill?
 3. **Extractive vs Abstractive summarization.** Build the strongest case for extractive (no hallucination risk, citations point to source sentences) AND for abstractive (better reads, paragraph-style summary). For a clinical note-summarization product, which would you ship in 2026, and why?
 4. **Custom Neural Voice's ethical edge.** Microsoft's Custom Neural Voice is Limited Access *and* requires recorded voice-talent consent. Walk through why those two layers (Microsoft gate + customer-side consent) exist redundantly. Argue both sides of "redundant controls": efficiency-minded engineers might trim one; an EU AI Act regulator might say neither is enough.
 5. **The region-header trap.** Translator's global resource needs `Ocp-Apim-Subscription-Region` in the request. From a Cornell systems-design view, what does that API decision tell you about how Microsoft thought about cross-region routing? What would the better design look like, and why was that design rejected?
@@ -386,7 +386,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 6 wires CLU + Question Answering into Bot Service for production conversational AI; Module 7 covers when Azure OpenAI **replaces** a NLP feature (e.g., GPT-4o for abstractive summarization) and when it complements one.
-> - Cross-course: [`07-AWS (Amazon Web Services)-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) covers Comprehend / Translate / Polly / Transcribe for cross-cloud comparison.
+> - Cross-course: [`07-AWS-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) covers Comprehend / Translate / Polly / Transcribe for cross-cloud comparison.
 > - Practice: Practice Exam 1 has ~9 questions from this module (the largest single-module share in PE1); Final Mock revisits with Speech / Translator / Language case studies.
 
 ---

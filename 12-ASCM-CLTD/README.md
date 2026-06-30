@@ -18,13 +18,13 @@ title: ASCM CLTD Track (Certified in Logistics, Transportation and Distribution)
 
 ### 🎯 The promise
 
-The ASCM Certified in Logistics, Transportation and Distribution (CLTD) is the only globally recognized credential dedicated exclusively to logistics, transportation, distribution, and warehousing leadership. While CSCP covers the end-to-end chain and CPIM covers planning and inventory, CLTD is the depth credential for the physical movement of goods, networks, modes, warehouses, fleets, customs, last-mile, and reverse logistics. Pass CLTD and you are the operator any DTC (Direct-to-Consumer) brand, 3PL (Third-Party Logistics), or retailer needs to design and run their distribution footprint.
+The ASCM Certified in Logistics, Transportation and Distribution (CLTD) is the only globally recognized credential dedicated exclusively to logistics, transportation, distribution, and warehousing leadership. While CSCP covers the end-to-end chain and CPIM covers planning and inventory, CLTD is the depth credential for the physical movement of goods, networks, modes, warehouses, fleets, customs, last-mile, and reverse logistics. Pass CLTD and you are the operator any DTC brand, 3PL, or retailer needs to design and run their distribution footprint.
 
 ### 💼 Career outcomes after passing
 
 - **Logistics Manager** ($85K–$120K), running a single DC or transportation lane
 - **Warehouse / DC Manager** ($85K–$125K), facility-level leadership across receiving, putaway, picking, shipping
-- **Transportation Manager** ($90K–$130K), owning carrier strategy, TMS (Transportation Management System), lane optimization
+- **Transportation Manager** ($90K–$130K), owning carrier strategy, TMS, lane optimization
 - **Director of Logistics** ($120K–$170K), multi-site leadership; CLTD is increasingly preferred
 - **Distribution / Fulfillment Operations Manager** ($95K–$135K), common at DTC and e-commerce employers
 - **Supply Chain Consultant Logistics practice** ($110K–$160K + bonus) Big-4 and boutique consulting
@@ -56,7 +56,7 @@ By the end of this track, you'll be able to:
 - Plan capacity for warehouses, fleets, and DCs across seasonal and slow/fast-moving SKUs
 - Run an order-to-cash cycle with ATP/CTP, allocation, wave/zone/batch picking, and perfect-order metrics
 - Configure DRP (Distribution Requirements Planning) for multi-echelon inventory with postponement and push/pull replenishment
-- Operate a modern warehouse receive, put-away, slot, pick, pack, ship with WMS (Warehouse Management System), AS/RS, AGV, voice and pick-to-light
+- Operate a modern warehouse receive, put-away, slot, pick, pack, ship with WMS, AS/RS, AGV, voice and pick-to-light
 - Choose the right transportation mode (FTL, LTL, intermodal, rail, ocean FCL/LCL, air, parcel, pipeline) and TMS strategy
 - Apply Incoterms 2020 (all 11), customs/HS basics, FTZs, USMCA/EU/CPTPP and global compliance
 - Build reverse logistics, returns, refurbish/remanufacture/recycle, ISO 14001 and green-logistics programs
@@ -69,9 +69,9 @@ By the end of this track, you'll be able to:
 |---|--------|------|--------------------|
 | 1 | [Logistics Strategy & Network](./Module-01-Logistics-Strategy-Network/Reading.md) | 4 hrs | Strategy, greenfield/brownfield, hub-and-spoke, center-of-gravity |
 | 2 | [Capacity & Demand for Logistics](./Module-02-Capacity-Demand-Logistics/Reading.md) | 3.5 hrs | Capacity planning, demand forecasting, slow vs fast movers |
-| 3 | [Order Management & Fulfillment](./Module-03-Order-Management-Fulfillment/Reading.md) | 3.5 hrs | OTC cycle, ATP/CTP, picking strategies, perfect order, OTIF (On-Time In-Full) |
+| 3 | [Order Management & Fulfillment](./Module-03-Order-Management-Fulfillment/Reading.md) | 3.5 hrs | OTC cycle, ATP/CTP, picking strategies, perfect order, OTIF |
 | 4 | [Inventory & Distribution](./Module-04-Inventory-Distribution/Reading.md) | 4 hrs | DRP, multi-echelon, postponement, push/pull, cycle counting |
-| 5 | [Warehouse Operations](./Module-05-Warehouse-Operations/Reading.md) | 4 hrs | Layouts, WMS, slotting, AS/RS, AGV, voice/light, KPIs (Key Performance Indicators) |
+| 5 | [Warehouse Operations](./Module-05-Warehouse-Operations/Reading.md) | 4 hrs | Layouts, WMS, slotting, AS/RS, AGV, voice/light, KPIs |
 | 6 | [Transportation Modes](./Module-06-Transportation-Modes/Reading.md) | 4 hrs | FTL/LTL/intermodal/rail/ocean/air/parcel/pipeline, TMS |
 | 7 | [Global Logistics & Customs](./Module-07-Global-Logistics-Customs/Reading.md) | 4 hrs | Incoterms 2020, customs, HS, FTZs, USMCA/EU/CPTPP |
 | 8 | [Reverse Logistics & Sustainability](./Module-08-Reverse-Logistics-Sustainability/Reading.md) | 3 hrs | Returns, refurbish/recycle, ISO 14001, GRI/SASB, circular |
@@ -94,7 +94,7 @@ By the end of this track, you'll be able to:
 
 ## 🎓 Capstone & Deep Readings
 
-- **[Capstone Project](./Capstone-Project.md)**, End-to-end logistics transformation case. You play newly-hired Director of Global Logistics at a $720M building-materials distributor; deliver 7 artifacts in 8 weeks (network optimization, TMS RFP (Request for Proposal), carrier scorecard, reverse-logistics redesign, trade-compliance baseline, risk register, sustainability scorecard). graduate-level professional rubric (90+ = excellent).
+- **[Capstone Project](./Capstone-Project.md)**, End-to-end logistics transformation case. You play newly-hired Director of Global Logistics at a $720M building-materials distributor; deliver 7 artifacts in 8 weeks (network optimization, TMS RFP, carrier scorecard, reverse-logistics redesign, trade-compliance baseline, risk register, sustainability scorecard). graduate-level professional rubric (90+ = excellent).
 - **[Recommended Readings](./Recommended-Readings.md)**, Canonical textbooks (Christopher, Bowersox, Coyle, Frazelle, Tompkins), seminal HBR/Sloan papers (Forrester 1958, Lee 1997, Lee 2004 Triple-A), the GLEC Framework, *The Box* and *Ninety Percent of Everything*, industry resources (CSCMP, FreightWaves, Gartner, Loadstar), and free MIT/Stanford courses.
 
 ---
@@ -169,7 +169,7 @@ For a 16-week schedule: stretch Weeks 1–8 by 50%, add a transportation-deep-di
 4. ❌ Underestimated the **global** scope, half the exam is non-US (HS codes, customs, FX, regional FTAs)
 5. ❌ Skipped sustainability/reverse, it is only ~9% but easy points if studied
 6. ❌ Didn't time-budget, 3.5 hours / 150 questions = **84 seconds per question**; ran out of time on the last 20
-7. ❌ Treated **DRP** like MRP (Material Requirements Planning), they look similar but DRP pulls from DCs upstream, MRP explodes BOMs downstream
+7. ❌ Treated **DRP** like MRP, they look similar but DRP pulls from DCs upstream, MRP explodes BOMs downstream
 
 ---
 

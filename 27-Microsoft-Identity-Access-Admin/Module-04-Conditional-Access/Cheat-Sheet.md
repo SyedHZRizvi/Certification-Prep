@@ -11,7 +11,7 @@ ASSIGNMENTS                    CONDITIONS                  GRANT                
 ───────────                    ──────────                  ─────                       ───────
 Users (incl/excl)              User risk                   Block OR                    Sign-in frequency
 Target resources               Sign-in risk                Grant + controls:           Persistent browser
-  (apps / actions / auth ctx)  Device platform               MFA (Multi-Factor Authentication)                       App-enforced restr.
+  (apps / actions / auth ctx)  Device platform               MFA                       App-enforced restr.
                                Location                      Auth strength              CAS proxy (DCA)
                                Client app                    Compliant device          CAE
                                Filter for devices            Hybrid Entra join         Resilience defaults
@@ -174,4 +174,4 @@ Cover the answers, recite:
 
 ---
 
-➡️ [Module 5: Application Registration & SSO (Single Sign-On)](../Module-05-Apps-SSO/Reading.md)
+➡️ [Module 5: Application Registration & SSO](../Module-05-Apps-SSO/Reading.md)

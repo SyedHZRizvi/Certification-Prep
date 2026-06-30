@@ -4,9 +4,9 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [The CIA triad and defense-in-depth](../Module-01-Security-Fundamentals/Reading.md), segmentation and zones are the textbook application of defense-in-depth.
-> - [TLS (Transport Layer Security) and PKI](../Module-02-Cryptography-PKI/Reading.md), needed for VPN (Virtual Private Network), HTTPS (HTTP Secure), SSH (Secure Shell), IPSec, and DNSSEC questions.
-> - [IAM and federation](../Module-03-Identity-Access-Management/Reading.md), needed for 802.1X, RADIUS, and ZTNA (Zero Trust Network Access) questions.
-> - OSI Layer 1-7 model and TCP (Transmission Control Protocol)/IP basics, covered in CompTIA Network+ or equivalent. If you can't name what layer DNS (Domain Name System), ARP, TLS, BGP (Border Gateway Protocol), HTTP (Hypertext Transfer Protocol), and Ethernet live at, pause and review.
+> - [TLS and PKI](../Module-02-Cryptography-PKI/Reading.md), needed for VPN, HTTPS, SSH, IPSec, and DNSSEC questions.
+> - [IAM and federation](../Module-03-Identity-Access-Management/Reading.md), needed for 802.1X, RADIUS, and ZTNA questions.
+> - OSI Layer 1-7 model and TCP/IP basics, covered in CompTIA Network+ or equivalent. If you can't name what layer DNS, ARP, TLS, BGP, HTTP, and Ethernet live at, pause and review.
 
 ---
 
@@ -53,28 +53,28 @@ Every layer doing one job, layered together, that's defense in depth and network
 
 | Service | Port | Notes |
 |---------|------|-------|
-| FTP (File Transfer Protocol) | 20 (data) / 21 (control) | Insecure |
+| FTP | 20 (data) / 21 (control) | Insecure |
 | **SFTP** | 22 (SSH) | Secure file transfer over SSH |
 | **FTPS** | 990 (or 21 + 989) | FTP over TLS, different from SFTP! |
 | SSH / SCP | 22 | Secure remote shell |
 | Telnet | 23 | Insecure, never on internet |
-| SMTP (Simple Mail Transfer Protocol) | 25 (plain) / 587 (submission) / 465 (SMTPS) | |
-| DNS | 53 (UDP (User Datagram Protocol)/TCP) | |
+| SMTP | 25 (plain) / 587 (submission) / 465 (SMTPS) | |
+| DNS | 53 (UDP/TCP) | |
 | **DNSSEC** | 53 | DNS with signatures (integrity, not confidentiality) |
 | HTTP / **HTTPS** | 80 / 443 | |
-| POP3 (Post Office Protocol 3) / POP3S | 110 / 995 | |
+| POP3 / POP3S | 110 / 995 | |
 | **NTP** | 123 UDP | Time sync (Kerberos depends!) |
 | **NetBIOS / SMB** | 137-139 / 445 | Windows file share |
-| IMAP (Internet Message Access Protocol) / IMAPS | 143 / 993 | |
-| **LDAP (Lightweight Directory Access Protocol) / LDAPS** | 389 / 636 | |
+| IMAP / IMAPS | 143 / 993 | |
+| **LDAP / LDAPS** | 389 / 636 | |
 | **Kerberos** | 88 | TCP/UDP |
 | **RDP** | 3389 | |
-| **SNMP (Simple Network Management Protocol) / SNMPv3** | 161 / 162 | Use v3 for encrypted/authenticated |
+| **SNMP / SNMPv3** | 161 / 162 | Use v3 for encrypted/authenticated |
 | **Syslog** | 514 UDP / 6514 TCP TLS | |
 | **RADIUS** | 1812/1813 UDP | |
 | **TACACS+** | 49 TCP | |
 | **TFTP** | 69 UDP | Insecure file transfer |
-| MS SQL (Structured Query Language) | 1433 | |
+| MS SQL | 1433 | |
 | MySQL | 3306 | |
 | PostgreSQL | 5432 | |
 | Redis | 6379 | |
@@ -127,16 +127,16 @@ INTERNET
 | Zone | Purpose |
 |------|---------|
 | **DMZ / screened subnet** | Public-internet-reachable services live here, isolated from internal |
-| **Internal** | Employee LAN (Local Area Network) |
+| **Internal** | Employee LAN |
 | **Management network** | Out-of-band admin access (jump servers live here) |
 | **Secure / restricted zone** | Crown jewels, DB, HSM, financial systems |
-| **Extranet** | B2B (Business-to-Business) partner-facing segment |
+| **Extranet** | B2B partner-facing segment |
 | **Intranet** | Internal employee web/portal |
 | **Guest network** | Visitors, BYOD, IoT, isolated from corporate |
 
 ### Segmentation vs Microsegmentation
 - **Segmentation** = network broken into zones via VLANs / subnets / firewalls (coarse-grained)
-- **Microsegmentation** = per-workload firewall (often via host agents or SDN); each VM (Virtual Machine)/container has its own allow-list
+- **Microsegmentation** = per-workload firewall (often via host agents or SDN); each VM/container has its own allow-list
 
 ### SDN (Software-Defined Networking)
 - Decouples **control plane** (decision-making) from **data plane** (packet forwarding)
@@ -198,13 +198,13 @@ EAP variants for 802.1X:
 | **EAP-TTLS** | Similar to PEAP, more flexible inner methods |
 | **EAP-FAST** | Cisco; tunneled credentials |
 
-**NAC** (Network Access Control) goes further: checks **posture** (patch level, EDR (Endpoint Detection and Response) running, disk encryption) before allowing on. Non-compliant device → quarantine VLAN (Virtual Local Area Network) with remediation server.
+**NAC** (Network Access Control) goes further: checks **posture** (patch level, EDR running, disk encryption) before allowing on. Non-compliant device → quarantine VLAN with remediation server.
 
 ### Port security (switch-level)
 - **Sticky MAC**, first MAC seen is bound to the port
 - **MAC filtering**, explicit allow-list
 - **Disable unused ports**, basic hygiene
-- **DHCP (Dynamic Host Configuration Protocol) snooping**, blocks rogue DHCP servers
+- **DHCP snooping**, blocks rogue DHCP servers
 - **Dynamic ARP Inspection (DAI)**, validates ARP messages against DHCP binding table
 - **BPDU Guard / Root Guard**, protect STP from manipulation
 
@@ -219,7 +219,7 @@ EAP variants for 802.1X:
 | **Site-to-site VPN** | Connect two LANs (HQ ↔ branch) permanently |
 | **Remote access VPN** | Individual user from anywhere → corporate network |
 | **Always-on VPN** | Auto-connects when off corporate net |
-| **Clientless / SSL (Secure Sockets Layer) VPN** | Browser-only (HTTPS gateway, no installed client) |
+| **Clientless / SSL VPN** | Browser-only (HTTPS gateway, no installed client) |
 | **Split tunnel** | Only corp-bound traffic via VPN; rest goes direct |
 | **Full tunnel** | All traffic via VPN |
 
@@ -267,15 +267,15 @@ EAP variants for 802.1X:
 | **Honeypot / Honeynet** | Decoy system/network designed to lure attackers |
 | **Deception technology** | Modern honeypot, false credentials, files, hosts to trick attackers |
 | **Tunneling (good)** | VPNs, SSH tunnels, encryption for legitimate use |
-| **Tunneling (attacker)** | DNS tunneling, ICMP (Internet Control Message Protocol) tunneling, exfil via "innocent" protocols |
-| **NAT (Network Address Translation) / PAT** | Network/Port Address Translation, many private IPs share a public IP |
+| **Tunneling (attacker)** | DNS tunneling, ICMP tunneling, exfil via "innocent" protocols |
+| **NAT / PAT** | Network/Port Address Translation, many private IPs share a public IP |
 | **NAT traversal** | Techniques like STUN to get through NAT for P2P |
 
 ---
 
 ## 🔬 Scenario Walkthrough (PBQ-style)
 
-> **Scenario:** Your company has 3 web servers, 2 DB servers, a corporate file server, a CFO (Chief Financial Officer)'s laptop, and a partner extranet portal. You're given a blank diagram with these zones: Internet, DMZ, Internal, Secure Zone, Extranet. Place each appliance/system correctly.
+> **Scenario:** Your company has 3 web servers, 2 DB servers, a corporate file server, a CFO's laptop, and a partner extranet portal. You're given a blank diagram with these zones: Internet, DMZ, Internal, Secure Zone, Extranet. Place each appliance/system correctly.
 
 **Walkthrough:**
 
@@ -313,7 +313,7 @@ A real PBQ might pre-place some boxes and let you drag the rest, scoring placeme
 
 **Discussion (Socratic).**
 - **Q1:** Colonial paid the ransom (then mostly used their own backups anyway). The FBI clawed back 36% of it. Build the strongest argument for *and against* paying ransom in a critical-infrastructure context. Reference the OFAC Advisory (US Treasury, October 2020/September 2021) on potential sanctions liability for ransom payments to designated entities.
-- **Q2:** The leaked credential was for an *ex-employee* account that was never disabled. Joiner-Mover-Leaver discipline (Module 3) is supposed to catch this. Whose job was it IT, HR, or the SOC (Security Operations Center) to ensure that account was disabled? Design a control architecture that makes this kind of failure impossible rather than possible-but-monitored. Estimate the *cost* of that architecture and defend it against a budget objection.
+- **Q2:** The leaked credential was for an *ex-employee* account that was never disabled. Joiner-Mover-Leaver discipline (Module 3) is supposed to catch this. Whose job was it IT, HR, or the SOC to ensure that account was disabled? Design a control architecture that makes this kind of failure impossible rather than possible-but-monitored. Estimate the *cost* of that architecture and defend it against a budget objection.
 - **Q3:** Colonial's IT/OT segmentation prevented the *physical* worst case but did not prevent the *operational* worst case (shutdown decision). Should the lesson be "tighter segmentation" or "design business processes that can continue when IT is degraded"? Argue both. Reference NIST SP 800-82 (ICS/OT) and the Purdue Reference Model.
 
 ---
@@ -405,8 +405,8 @@ You now know:
 4. ➡️ [Module 7, Endpoint, Mobile & Cloud Security](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 7](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) covers ZTNA / SASE / SSE, the modern replacements for VPN; [Module 8](../Module-08-Security-Operations/Reading.md) covers SIEM (Security Information and Event Management) ingest from firewall/IDS/IPS logs; [Module 9](../Module-09-GRC-Risk-Compliance/Reading.md) covers BCP/DR planning for the Colonial-style critical-infrastructure scenario.
-> - Cross-course: AWS (Amazon Web Services) Solutions Architect (course 04) covers AWS-native equivalents (Security Groups, NACLs, VPC (Virtual Private Cloud), Route 53 DNS Firewall, GuardDuty). Azure Administrator (course 06) covers NSGs and Azure Firewall.
+> - Inside this course: [Module 7](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) covers ZTNA / SASE / SSE, the modern replacements for VPN; [Module 8](../Module-08-Security-Operations/Reading.md) covers SIEM ingest from firewall/IDS/IPS logs; [Module 9](../Module-09-GRC-Risk-Compliance/Reading.md) covers BCP/DR planning for the Colonial-style critical-infrastructure scenario.
+> - Cross-course: AWS Solutions Architect (course 04) covers AWS-native equivalents (Security Groups, NACLs, VPC, Route 53 DNS Firewall, GuardDuty). Azure Administrator (course 06) covers NSGs and Azure Firewall.
 > - Practice: Practice Exam 2 has ~10 network-security questions; Final Mock has ~12. Port numbers + SFTP-vs-FTPS are extremely common Sec+ "easy points."
 
 ---

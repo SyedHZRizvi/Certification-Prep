@@ -1,6 +1,6 @@
 # Module 1: Google AI Landscape & Gemini Model Family 🟦
 
-> **Why this module matters:** Gemini is not "another GPT." It comes from the company that *invented the Transformer in the first place* the 2017 Vaswani et al. paper that gave us GPT, Claude, and every modern LLM. Every quirk of the model its native multi-modal architecture, its 2-million-token context, its tight integration with Google Search and Workspace, its tiered Nano/Flash/Pro/Ultra family, flows from a specific intellectual lineage you cannot understand by reading an API (Application Programming Interface) reference. This module is the lineage.
+> **Why this module matters:** Gemini is not "another GPT." It comes from the company that *invented the Transformer in the first place* the 2017 Vaswani et al. paper that gave us GPT, Claude, and every modern LLM. Every quirk of the model its native multi-modal architecture, its 2-million-token context, its tight integration with Google Search and Workspace, its tiered Nano/Flash/Pro/Ultra family, flows from a specific intellectual lineage you cannot understand by reading an API reference. This module is the lineage.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Basic ML vocabulary (model, weights, training, inference, tokens, context window)
@@ -18,11 +18,11 @@ It is June 2017. A small team at Google Brain Ashish Vaswani, Noam Shazeer, Niki
 
 What the paper does not say, because in 2017 it would have sounded absurd, is this: every Large Language Model you will use for the rest of your career GPT-3, GPT-4, Claude 1 through 4, Gemini 1 through 2.5, LLaMA, Mistral, DeepSeek, Qwen every single one is a direct architectural descendant of this paper. Within five years, the Transformer will be the most influential machine-learning paper of the century. Within seven years, the paper will be cited over 100,000 times. Within nine years, "Attention Is All You Need" will be in computer-science textbooks the way "On Computable Numbers" by Turing is.
 
-By 2018 Google has used the architecture to build **BERT** (Bidirectional Encoder Representations from Transformers a bidirectional Transformer for understanding language) and **T5** (Text-to-Text Transfer Transformer a unified framing of every NLP (Natural Language Processing) task as text-in/text-out). By 2021 it has built **LaMDA** (Language Model for Dialogue Applications) internally good enough that an engineer publicly claimed it had become sentient. By 2022 it has built **PaLM** (Pathways Language Model) 540 billion parameters, the largest dense model trained at the time. By 2023 it has built **PaLM 2**, the model behind the first iteration of Google Bard.
+By 2018 Google has used the architecture to build **BERT** (Bidirectional Encoder Representations from Transformers a bidirectional Transformer for understanding language) and **T5** (Text-to-Text Transfer Transformer a unified framing of every NLP task as text-in/text-out). By 2021 it has built **LaMDA** (Language Model for Dialogue Applications) internally good enough that an engineer publicly claimed it had become sentient. By 2022 it has built **PaLM** (Pathways Language Model) 540 billion parameters, the largest dense model trained at the time. By 2023 it has built **PaLM 2**, the model behind the first iteration of Google Bard.
 
-And then, in November 2022, **OpenAI ships ChatGPT** built on a model architecture Google invented, trained with a technique (RLHF (Reinforcement Learning from Human Feedback)) Google co-developed (Christiano et al. 2017 was a Google Brain × OpenAI joint paper) and absolutely captures the public imagination. Google's stock drops $100B on the Bard launch demo flub in February 2023. The narrative for the next eighteen months is that *the company that invented the Transformer has been outflanked by a startup using its own technology*.
+And then, in November 2022, **OpenAI ships ChatGPT** built on a model architecture Google invented, trained with a technique (RLHF) Google co-developed (Christiano et al. 2017 was a Google Brain × OpenAI joint paper) and absolutely captures the public imagination. Google's stock drops $100B on the Bard launch demo flub in February 2023. The narrative for the next eighteen months is that *the company that invented the Transformer has been outflanked by a startup using its own technology*.
 
-That narrative is wrong by 2024 and dead by 2026. In April 2023, Sundar Pichai announces that **Google Brain and DeepMind will merge** into a single unit: **Google DeepMind**. Demis Hassabis takes over as CEO (Chief Executive Officer) of the merged organization. Six months later, in December 2023, **Gemini 1.0 ships** in Nano, Pro, and Ultra variants the first model from the merged team. February 2024: **Gemini 1.5 Pro** ships with a **1-million-token context window**, then expands to **2 million tokens** far beyond anything OpenAI or Anthropic offers. December 2024: **Gemini 2.0** ships with native multi-modal output (text *and* image *and* audio) and native tool use. March 2025: **Gemini 2.5 Pro** ships with extended thinking ("thinking mode") and benchmarks ahead of GPT-4o and Claude Sonnet 4.5 on reasoning tasks. By Q1 2026 Gemini powers **Google Photos search, Google Workspace AI (Gemini for Workspace), Google Cloud Vertex AI, Snap MyAI, Mercedes-Benz MBUX, Wendy's FreshAI, Shopify Sidekick, Mercado Libre seller assistant, Wayfair visual product matching, and most of the Pixel on-device intelligence (via Gemini Nano)**. Google Cloud AI revenue, per Alphabet earnings, has gone from ~$3B annualized in 2023 to **over $15B** in 2026.
+That narrative is wrong by 2024 and dead by 2026. In April 2023, Sundar Pichai announces that **Google Brain and DeepMind will merge** into a single unit: **Google DeepMind**. Demis Hassabis takes over as CEO of the merged organization. Six months later, in December 2023, **Gemini 1.0 ships** in Nano, Pro, and Ultra variants the first model from the merged team. February 2024: **Gemini 1.5 Pro** ships with a **1-million-token context window**, then expands to **2 million tokens** far beyond anything OpenAI or Anthropic offers. December 2024: **Gemini 2.0** ships with native multi-modal output (text *and* image *and* audio) and native tool use. March 2025: **Gemini 2.5 Pro** ships with extended thinking ("thinking mode") and benchmarks ahead of GPT-4o and Claude Sonnet 4.5 on reasoning tasks. By Q1 2026 Gemini powers **Google Photos search, Google Workspace AI (Gemini for Workspace), Google Cloud Vertex AI, Snap MyAI, Mercedes-Benz MBUX, Wendy's FreshAI, Shopify Sidekick, Mercado Libre seller assistant, Wayfair visual product matching, and most of the Pixel on-device intelligence (via Gemini Nano)**. Google Cloud AI revenue, per Alphabet earnings, has gone from ~$3B annualized in 2023 to **over $15B** in 2026.
 
 The story matters because the *product* matters. Gemini is multi-modal because the company that built it has been building multi-modal systems (Photos, YouTube, Maps) since 2010. Gemini has a 2M context window because the company that built it runs the largest TPU fleet on Earth. Gemini grounds its answers with Google Search because the company that built it *is* Google Search. These are not bugs. They are the direct, traceable consequence of eight researchers writing a paper in 2017 and the company they worked for spending nine years compounding the advantage.
 
@@ -85,7 +85,7 @@ Gemini 1.5 Pro shipped with a 1M-token context window in Feb 2024, expanded to 2
 
 ### 3. Grounding with Google Search (built-in)
 
-Gemini on Vertex AI ships with two native grounding modes: **"Grounding with Google Search"** (the model can issue real-time search queries and cite results) and **"Grounding with Vertex AI Search"** (the model retrieves from your private corpus indexed in Vertex AI Search). These are not third-party RAG (Retrieval-Augmented Generation); they are first-party features. The grounded response includes machine-readable citations to the source URLs (Google Search) or document IDs (Vertex AI Search).
+Gemini on Vertex AI ships with two native grounding modes: **"Grounding with Google Search"** (the model can issue real-time search queries and cite results) and **"Grounding with Vertex AI Search"** (the model retrieves from your private corpus indexed in Vertex AI Search). These are not third-party RAG; they are first-party features. The grounded response includes machine-readable citations to the source URLs (Google Search) or document IDs (Vertex AI Search).
 
 **Why it matters for the exam:** "A travel-tech startup needs current flight prices in its assistant." → "Grounding with Google Search" on Gemini, in one API call.
 
@@ -101,7 +101,7 @@ Google names model tiers by capability ladder. The convention has been stable si
 | **Flash** | "Smart and fast. Cheap. Default high-throughput." | High-volume production workloads (classification, summarization, simple agents, customer-support routing, fast user-facing chat). Latency target ~500 ms. | Hard multi-step reasoning, deep research-grade tasks. |
 | **Flash Lite** | "Cheaper Flash. Edge-friendly." | Mobile, embedded, ultra-cost-sensitive batch work. | Anything with the slightest reasoning depth. |
 | **Pro** | "Default workhorse. Senior engineer." | Most production work, RAG over docs, agentic tool use, structured extraction, customer-facing chat where quality > throughput. | Throughput-dominated workloads where Flash suffices. |
-| **Ultra** | "Frontier. Slow. Expensive. The smartest." | Frontier reasoning, complex code refactors, novel agentic planning, math, science, regulated workloads where the cost of error dominates inference cost. | High-throughput cheap inference; latency-sensitive UI (User Interface). |
+| **Ultra** | "Frontier. Slow. Expensive. The smartest." | Frontier reasoning, complex code refactors, novel agentic planning, math, science, regulated workloads where the cost of error dominates inference cost. | High-throughput cheap inference; latency-sensitive UI. |
 
 ### Approximate pricing tiers (as of 2026-05, Vertex AI, illustrative, check cloud.google.com/vertex-ai/pricing)
 
@@ -156,7 +156,7 @@ You will be asked to defend a Gemini pick over GPT-4o/5 or Claude Sonnet/Opus 4.
 | **Safety profile** | Google AI Principles (2018); safety_settings categories; recitation checker; SynthID watermarking | RLHF; generally permissive; content moderation API | Constitutional AI; often more refusal-prone but more interpretable |
 | **Pricing position** | **Cheapest at Flash tier**; competitive at Pro | Slightly cheaper at GPT-4o-mini / 5-nano tier | Mid-tier (Sonnet is the standard) |
 | **Tool use API shape** | Function calling on Gemini; native ADK (Agent Development Kit) | Native JSON Schema, parallel tools, function calling | Native JSON Schema, multi-tool parallel by default |
-| **Hosted on** | Google AI Studio (free dev), GCP (Google Cloud Platform) Vertex AI (enterprise) | OpenAI direct API, Azure OpenAI | Anthropic direct API, AWS (Amazon Web Services) Bedrock, GCP Vertex |
+| **Hosted on** | Google AI Studio (free dev), GCP Vertex AI (enterprise) | OpenAI direct API, Azure OpenAI | Anthropic direct API, AWS Bedrock, GCP Vertex |
 | **Open-weight sibling?** | **Gemma** (1, 2, 3), Google's open-weight family (different from Gemini; same trainings, ~7B/2B sizes) | No | No |
 | **Best customer cases** | Google Photos, Snap MyAI, Mercedes MBUX, Wendy's FreshAI, Mercado Libre, Wayfair, Shopify Sidekick, Verily | ChatGPT consumer, Microsoft Copilot, Stripe, Morgan Stanley | Cursor, Notion, Klarna, GitLab, Replit, Vercel |
 
@@ -216,14 +216,14 @@ Google's responsible-AI posture is **built into Vertex AI as concrete controls**
 - **Grounding**, first-party retrieval to reduce hallucination
 - **SynthID**, Google's invisible watermark for AI-generated images, audio, and (announced 2024) text. Generated content carries a forensically detectable signature.
 - **Customer-Managed Encryption Keys (CMEK)**, your own KMS keys encrypt data at rest in Vertex AI
-- **VPC (Virtual Private Cloud) Service Controls (VPC-SC)**, perimeter that prevents data exfiltration from your Vertex AI project
+- **VPC Service Controls (VPC-SC)**, perimeter that prevents data exfiltration from your Vertex AI project
 - **Training-data opt-out**, by default, Vertex AI prompts and responses are NOT used to train Google's models (the consumer Gemini app is different; in Vertex AI, your data is yours)
 
 🎯 **Exam pattern:** *"A healthcare provider asks: can we use Gemini on Vertex AI with PHI under HIPAA?"* → Yes, with **CMEK + VPC-SC + signed BAA + HIPAA-eligible region**. Google publishes the list of HIPAA-eligible Vertex AI products.
 
 ---
 
-## 💰 The Pricing-vs-Capability Decision (CFO (Chief Financial Officer)-Defensible)
+## 💰 The Pricing-vs-Capability Decision (CFO-Defensible)
 
 A CFO does not care about Transformers. A CFO cares about $/conversation and the unit economics of your AI feature. Here is the math you must be ready to do live on Google Cloud pricing.
 
@@ -267,11 +267,11 @@ Beyond PAYG (pay-as-you-go) per-token pricing, Vertex AI offers **Provisioned Th
 
 ## 🔬 Scenario Walkthrough (Architect-Style)
 
-> **Scenario:** Your CTO (Chief Technology Officer) asks: "We want to build a multi-modal customer-support agent for our consumer-electronics company. Customers upload photos of broken products, describe the issue in voice, and need step-by-step troubleshooting. 50K conversations/day. Recommend the model and the deployment topology."
+> **Scenario:** Your CTO asks: "We want to build a multi-modal customer-support agent for our consumer-electronics company. Customers upload photos of broken products, describe the issue in voice, and need step-by-step troubleshooting. 50K conversations/day. Recommend the model and the deployment topology."
 
 **Walkthrough:**
 1. **Modality / capability**: Image (broken product photo) + audio (user voice) + text (troubleshooting steps) → **Gemini 2.5 Pro** is the natural fit. Native multi-modal means one model handles all inputs in one call. (GPT-4o would also work; Claude is text+image only, audio would need transcription pre-step.)
-2. **Deployment topology**: Customer photos + voice + addresses = PII. Three real options Google AI Studio (no, consumer-grade), Vertex AI (yes enterprise IAM (Identity and Access Management), VPC-SC, CMEK), Vertex AI with Provisioned Throughput (yes at scale). Pick **Vertex AI** with VPC-SC + CMEK; if 50K/day steady → consider Provisioned Throughput.
+2. **Deployment topology**: Customer photos + voice + addresses = PII. Three real options Google AI Studio (no, consumer-grade), Vertex AI (yes enterprise IAM, VPC-SC, CMEK), Vertex AI with Provisioned Throughput (yes at scale). Pick **Vertex AI** with VPC-SC + CMEK; if 50K/day steady → consider Provisioned Throughput.
 3. **Throughput sizing**: 50K conversations × ~3 turns × ~1 model call/turn = 150K Gemini calls/day = ~1.7 calls/sec average, with 5–10x peaks. PAYG handles this; Provisioned Throughput becomes attractive above ~30 calls/sec sustained.
 4. **Caching**: Stable system prompt + product catalog context → strong fit for explicit context caching → ~75% cost savings on the cached portion.
 5. **Grounding**: Ground to Vertex AI Search indexed over your product manuals (private corpus). Halucinations on "your specific product's warranty terms" are user-hostile; grounding makes them factual.
@@ -322,8 +322,8 @@ This is the kind of end-to-end answer the Generative AI Leader and PMLE exams ex
 | **Vertex AI Search** | Managed retrieval-augmented search (formerly Discovery Engine) |
 | **Vertex AI Vector Search** | Approximate nearest-neighbor index (formerly Matching Engine) |
 | **Vertex AI Agent Builder** | No-code/low-code agent platform on Vertex |
-| **Conversational Agents** | Vertex's structured-flow conversational AI product (formerly Dialogflow CX (Customer Experience)) |
-| **ADK (Agent Development Kit)** | Google's open-source SDK (Software Development Kit) for building Gemini agents |
+| **Conversational Agents** | Vertex's structured-flow conversational AI product (formerly Dialogflow CX) |
+| **ADK (Agent Development Kit)** | Google's open-source SDK for building Gemini agents |
 | **safety_settings** | Per-call configuration for harm thresholds (harassment, hate, sexual, dangerous) |
 | **Recitation checker** | Auto-detection of training-data verbatim recitation |
 | **SynthID** | Google's invisible watermark for AI-generated images/audio/text |
@@ -378,7 +378,7 @@ This is the kind of end-to-end answer the Generative AI Leader and PMLE exams ex
 - **Long-doc summarization** of seller-policy documents (some run 50+ pages); 2M context handles this.
 - **Cost is acceptable** because seller assistance is a value-added feature with measurable revenue lift, not a high-volume background job.
 
-**Decision and outcome.** Public case-study numbers (Google Cloud Next 2024 keynote, Mercado Libre engineering blog 2024): sellers using the assistant ship listings ~3× faster, ~30% more buyer questions get same-hour responses, and Mercado Libre reports double-digit-percent improvement in seller satisfaction NPS (Net Promoter Score) in markets where the feature is rolled out.
+**Decision and outcome.** Public case-study numbers (Google Cloud Next 2024 keynote, Mercado Libre engineering blog 2024): sellers using the assistant ship listings ~3× faster, ~30% more buyer questions get same-hour responses, and Mercado Libre reports double-digit-percent improvement in seller satisfaction NPS in markets where the feature is rolled out.
 
 **Lesson for the architect.**
 - **Pick managed services when the workload matches**, don't build custom RAG when Vertex AI Search fits, unless you have specific reasons (latency floor, model-side embedding, hybrid stack).
@@ -412,7 +412,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 2](../Module-02-AI-Studio-Gemini-API/Reading.md) takes the Gemini family and shows how to *call* it. [Module 3](../Module-03-Vertex-AI-Platform/Reading.md) shows the enterprise platform around it. [Module 8](../Module-08-Responsible-AI-Google/Reading.md) returns to safety in operational depth.
-> - Cross-course: Prompt Engineering Specialist (course 29) builds vendor-neutral prompt skills. Claude Architect (course 28) is the Anthropic-aligned sibling. AWS ML Specialty (course 31) is the AWS-MLOps (Machine Learning Operations) sibling.
+> - Cross-course: Prompt Engineering Specialist (course 29) builds vendor-neutral prompt skills. Claude Architect (course 28) is the Anthropic-aligned sibling. AWS ML Specialty (course 31) is the AWS-MLOps sibling.
 > - Practice: Practice Exam 1 has ~5–6 questions from this module.
 
 ---

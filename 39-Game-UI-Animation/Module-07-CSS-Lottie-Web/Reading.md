@@ -169,7 +169,7 @@ const animation = lottie.loadAnimation({
   path: '/animations/loading.json'
 });
 
-// Control API (Application Programming Interface)
+// Control API
 animation.play();
 animation.pause();
 animation.stop();
@@ -202,7 +202,7 @@ animation.playSegments([10, 50], true);  // play frames 10–50
 | File size | JSON (20–80KB typical) | .riv binary (5–30KB typical) |
 | Interactivity | None natively | First-class: inputs drive state machine |
 | Animation type | Pre-exported timeline | Real-time, responsive to JS/game inputs |
-| Best for | Icon animations, loaders, illustrations | Buttons, micro-interactions, game UI (User Interface) |
+| Best for | Icon animations, loaders, illustrations | Buttons, micro-interactions, game UI |
 
 ### Rive Web Runtime Example
 

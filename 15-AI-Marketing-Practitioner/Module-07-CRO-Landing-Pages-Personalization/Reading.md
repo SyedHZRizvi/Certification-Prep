@@ -1,4 +1,4 @@
-# Module 7: CRO (Chief Revenue Officer), Landing Pages & Personalization 🎯
+# Module 7: CRO, Landing Pages & Personalization 🎯
 
 > **Why this module matters:** Conversion rate is the multiplier on every dollar of ad spend. Move conversion rate from 2% to 4% and you double the value of your campaigns without changing budget. This module gives you the math and the tools to do that responsibly.
 
@@ -24,7 +24,7 @@ The lesson isn't "use bigger photos." It's that **a single well-designed A/B tes
 This module teaches you the CRO discipline: hypothesis → test → measure → iterate. Plus the 2026 stack of tools (Mutiny, Optimizely, Hotjar) that make it executable for solo marketers and small teams.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Funnel-stage KPIs (Key Performance Indicators) and conversion definitions, covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md)
+> - Funnel-stage KPIs and conversion definitions, covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md)
 > - Where paid traffic actually lands and why creative-LP alignment matters, covered in [Module 2](../Module-02-Google-Ads-Search-Mastery/Reading.md) and [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
 > - Basic statistical thinking (percentages, sample sizes, confidence), if shaky, review high-school stats before proceeding
 > If any of these are shaky, pause and review before continuing.
@@ -130,7 +130,7 @@ Just use a calculator. [Evan Miller's sample size calculator](https://www.evanmi
 - **Paid traffic going to one campaign-specific page**: Unbounce or Leadpages
 - **Funnel with offers + upsells + downsells**: ClickFunnels
 - **Marketing-led brand site that occasionally needs landing pages**: Webflow
-- **Quick founder MVP (Minimum Viable Product)**: Carrd or a Notion page
+- **Quick founder MVP**: Carrd or a Notion page
 
 🎯 **Exam tip:** The most common test in landing page optimization is: campaign-specific landing page vs. homepage. Campaign-specific consistently wins by 2-5x. NEVER send paid traffic to your homepage.
 
@@ -145,7 +145,7 @@ The 8-section above-the-fold-to-bottom layout that consistently works:
    - Headline (the proposition from your brief, 1 sentence)
    - Subhead (clarifying the headline in 1 sentence)
    - Hero image/video (product in use OR result, not just product)
-   - Primary CTA (Call to Action) (1 button, action verb, contrasting color)
+   - Primary CTA (1 button, action verb, contrasting color)
 
 2. SOCIAL PROOF STRIP
    - Logos of clients / "As seen in" badges OR
@@ -196,13 +196,13 @@ The 2026 wave. Instead of running one landing page for everyone, personalize the
 
 ### Mutiny
 
-Mutiny (acquired by Salesforce in 2024, now part of Marketing Cloud) is the leader in B2B (Business-to-Business) website personalization. How it works:
+Mutiny (acquired by Salesforce in 2024, now part of Marketing Cloud) is the leader in B2B website personalization. How it works:
 
 1. Mutiny detects the visitor's company via reverse-IP lookup (Clearbit / 6sense data)
 2. Based on industry/size/role, it serves a different version of your hero, body, and CTA
 3. Each version is A/B tested under the hood
 
-Real example (publicly shared by Mutiny CEO (Chief Executive Officer) Jaleh Rezaei at SaaStr 2023): a B2B SaaS (Software as a Service) company personalized their hero to say "Used by [visitor's industry] companies including [logos of 3 competitors]", conversion lift: 42%.
+Real example (publicly shared by Mutiny CEO Jaleh Rezaei at SaaStr 2023): a B2B SaaS company personalized their hero to say "Used by [visitor's industry] companies including [logos of 3 competitors]", conversion lift: 42%.
 
 ### Dynamic Yield
 
@@ -224,7 +224,7 @@ Tools that show you what users actually do on your site.
 
 ### Hotjar (free tier; paid from $32/mo)
 
-The default for most SMB / DTC (Direct-to-Consumer). Three core features:
+The default for most SMB / DTC. Three core features:
 
 - **Heatmaps**: where users click, move, and scroll
 - **Session Replays**: watch real user sessions (anonymized) frame-by-frame
@@ -256,7 +256,7 @@ You're optimizing the Sunday Studio Pilates apparel landing page. Goal: lift pur
 Day 1-2: Install Hotjar OR Microsoft Clarity. Set up heatmaps + replay.
 Day 3:   Watch 10 session replays of non-converters. Take notes.
 Day 4:   Read first heatmap data. Identify 3 friction points.
-Day 5:   Pull GA4 (Google Analytics 4) funnel report. Where do users drop off most?
+Day 5:   Pull GA4 funnel report. Where do users drop off most?
 Day 6:   Synthesize observations. Write 3-5 specific hypotheses.
 ```
 
@@ -291,7 +291,7 @@ Day 16+: Set up next test.
 | Add comparison table | 5-15% |
 | Mobile-specific layout | 10-50% on mobile |
 
-🎯 You want compounding ~5-10% lifts. Three winning tests in a quarter = ~25% total conversion rate lift = massively higher ROAS (Return on Ad Spend) on every paid campaign.
+🎯 You want compounding ~5-10% lifts. Three winning tests in a quarter = ~25% total conversion rate lift = massively higher ROAS on every paid campaign.
 
 ---
 
@@ -376,7 +376,7 @@ Argue from the frameworks in this module. There's more than one defensible answe
 2. Airbnb's "bigger photos" test doubled conversion. A founder reads this and proposes you run the same test on YOUR site. Walk through what's right about the heuristic and what's wrong about the inference, and how you'd actually use Airbnb's lesson responsibly.
 3. The reading recommends one CTA above the fold. Stripe famously has multiple CTAs on its homepage. Reconcile, when is "one CTA" right, when is "menu of CTAs" right, and what's the underlying principle?
 4. Booking.com reports ~90% of their tests are negative (no lift). Defend the case that this is GOOD news for their process, and the case that it's bad news for their hypothesis quality. What would you change either way?
-5. Personalization (Mutiny, Dynamic Yield) lifts conversion 15-40% per the case studies. Argue when personalization is worth the integration cost for a $50K MRR (Monthly Recurring Revenue) B2B SaaS, and when it's premature optimization that distracts from a broken funnel.
+5. Personalization (Mutiny, Dynamic Yield) lifts conversion 15-40% per the case studies. Argue when personalization is worth the integration cost for a $50K MRR B2B SaaS, and when it's premature optimization that distracts from a broken funnel.
 
 ---
 
@@ -395,4 +395,4 @@ Argue from the frameworks in this module. There's more than one defensible answe
 - 📖 [Mutiny Personalization Playbook](https://www.mutinyhq.com/playbook)
 - 📖 [Booking.com's Experimentation Blog](https://booking.ai/), academic-quality writeups
 - 📖 [Stripe Atlas Optimizing Landing Pages for Conversion](https://stripe.com/atlas/guides) startup-focused
-- 📖 [GoodUI Patterns that Work in UX (User Experience)](https://goodui.org/) battle-tested UX patterns
+- 📖 [GoodUI Patterns that Work in UX](https://goodui.org/) battle-tested UX patterns

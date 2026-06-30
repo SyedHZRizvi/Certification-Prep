@@ -1,6 +1,6 @@
 # Module 8: Linux Security & Hardening 🔒
 
-> **Why this module matters:** Domain 2 (Security) is 21% of XK0-005 about 19 questions and most of them live here. SELinux alone gets 4–6 questions. AppArmor, LUKS, GPG, fail2ban, auditd, sysctl, and SSH (Secure Shell) hardening fill the rest. PBQs are notorious for "SELinux blocked nginx from reading a custom path, fix it" scenarios. This module makes SELinux less mysterious and the rest of the hardening stack actionable.
+> **Why this module matters:** Domain 2 (Security) is 21% of XK0-005 about 19 questions and most of them live here. SELinux alone gets 4–6 questions. AppArmor, LUKS, GPG, fail2ban, auditd, sysctl, and SSH hardening fill the rest. PBQs are notorious for "SELinux blocked nginx from reading a custom path, fix it" scenarios. This module makes SELinux less mysterious and the rest of the hardening stack actionable.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Module 2 (permissions), DAC is the foundation MAC extends
@@ -15,7 +15,7 @@ Meet Liam. He's deploying a custom Python web app on RHEL 9. He configures nginx
 
 ```bash
 $ curl -I http://localhost/static/logo.png
-HTTP (Hypertext Transfer Protocol)/1.1 403 Forbidden
+HTTP/1.1 403 Forbidden
 ```
 
 He checks file permissions, all `644 nginx:nginx` and nginx can definitely `cat` the files via `sudo -u nginx cat /srv/myapp/static/logo.png`. He restarts nginx. He bounces SELinux. Same result.
@@ -451,7 +451,7 @@ net.ipv4.ip_forward = 0
 # Disable IP source routing (defense against source-route attacks)
 net.ipv4.conf.all.accept_source_route = 0
 
-# Drop ICMP (Internet Control Message Protocol) redirects (defense against L2 MITM)
+# Drop ICMP redirects (defense against L2 MITM)
 net.ipv4.conf.all.accept_redirects = 0
 net.ipv4.conf.all.secure_redirects = 0
 
@@ -464,7 +464,7 @@ net.ipv4.conf.all.log_martians = 1
 # Disable ICMP broadcast responses (Smurf attack defense)
 net.ipv4.icmp_echo_ignore_broadcasts = 1
 
-# TCP (Transmission Control Protocol) SYN cookies (DDoS (Distributed Denial of Service) mitigation)
+# TCP SYN cookies (DDoS mitigation)
 net.ipv4.tcp_syncookies = 1
 
 # Address Space Layout Randomization
@@ -507,13 +507,13 @@ Pair with:
 - `firewall-cmd --add-service=ssh --permanent` (only the right zone)
 - `fail2ban` watching `/var/log/secure` (RHEL) / `/var/log/auth.log` (Debian)
 - Key-based auth + `~/.ssh/` permissions correct (Module 6)
-- 2FA (Two-Factor Authentication) via PAM (e.g., `pam_google_authenticator.so`) for the truly paranoid
+- 2FA via PAM (e.g., `pam_google_authenticator.so`) for the truly paranoid
 
 ---
 
 ## 🔬 Scenario Walkthrough (PBQ-style thinking)
 
-> **Scenario:** A RHEL 9 server runs an internal-tools API (Application Programming Interface). The CISO (Chief Information Security Officer) requires: (a) SELinux in enforcing mode; (b) only ssh on port 2222 (NOT 22) reachable; (c) only members of group `apiops` can SSH; (d) failed SSH logins must be banned for 1 hour after 5 attempts; (e) `/etc/passwd` modifications must be audit-logged with key "passwd-watch". You apply changes one at a time and verify. What's the minimum command set?
+> **Scenario:** A RHEL 9 server runs an internal-tools API. The CISO requires: (a) SELinux in enforcing mode; (b) only ssh on port 2222 (NOT 22) reachable; (c) only members of group `apiops` can SSH; (d) failed SSH logins must be banned for 1 hour after 5 attempts; (e) `/etc/passwd` modifications must be audit-logged with key "passwd-watch". You apply changes one at a time and verify. What's the minimum command set?
 
 **Walkthrough:**
 
@@ -629,14 +629,14 @@ This is exactly the shape of a multi-part PBQ. Walk through systematically; veri
 | MAC | Mandatory Access Control |
 | DAC | Discretionary Access Control |
 | ACL | Access Control List |
-| RBAC (Role-Based Access Control) | Role-Based Access Control |
+| RBAC | Role-Based Access Control |
 | AVC | Access Vector Cache (SELinux denial message) |
 | LUKS | Linux Unified Key Setup |
 | LSM | Linux Security Module (SELinux/AppArmor framework) |
 | GPG | GNU Privacy Guard |
-| PKI (Public Key Infrastructure) | Public Key Infrastructure |
+| PKI | Public Key Infrastructure |
 | SSH | Secure Shell |
-| MFA (Multi-Factor Authentication) | Multi-Factor Authentication |
+| MFA | Multi-Factor Authentication |
 | TPM | Trusted Platform Module (hardware key store) |
 
 ---

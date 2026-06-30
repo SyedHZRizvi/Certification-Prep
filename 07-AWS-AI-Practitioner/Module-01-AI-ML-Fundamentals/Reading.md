@@ -90,7 +90,7 @@ You give the model **just the inputs**. It finds patterns on its own.
 An **agent** takes actions in an **environment**, receives a **reward or penalty**, and learns the policy that maximizes long-term reward. Foundational formalism: Sutton & Barto, *Reinforcement Learning: An Introduction* (2nd ed., MIT Press, 2018, free online).
 
 - Famous example: AlphaGo (Silver et al., *Nature*, 2016), robot locomotion, ad bidding, AWS DeepRacer (the toy car you train with RL).
-- Variant on the exam: **RLHF (Reinforcement Learning from Human Feedback) Reinforcement Learning from Human Feedback** (Christiano et al., NeurIPS 2017; popularized for LLMs by Ouyang et al., "Training language models to follow instructions with human feedback," NeurIPS 2022 the *InstructGPT* paper). Used to fine-tune LLMs: humans rank responses, the model learns to prefer the higher-ranked ones. This is how Claude, GPT (Generative Pre-trained Transformer), and most modern chat LLMs are aligned. Anthropic's variant, **Constitutional AI / RLAIF** (Bai et al., 2022), substitutes a written constitution + an AI grader for some of the human labeling.
+- Variant on the exam: **RLHF Reinforcement Learning from Human Feedback** (Christiano et al., NeurIPS 2017; popularized for LLMs by Ouyang et al., "Training language models to follow instructions with human feedback," NeurIPS 2022 the *InstructGPT* paper). Used to fine-tune LLMs: humans rank responses, the model learns to prefer the higher-ranked ones. This is how Claude, GPT, and most modern chat LLMs are aligned. Anthropic's variant, **Constitutional AI / RLAIF** (Bai et al., 2022), substitutes a written constitution + an AI grader for some of the human labeling.
 
 ### Side-by-side
 
@@ -195,7 +195,7 @@ Memorize the column on the left. These are the words the AIF-C01 expects you to 
 | Data shape | Examples | Typical models |
 |------------|----------|----------------|
 | **Structured** | Rows in a database, CSVs, tabular sales data | XGBoost, linear/logistic regression, random forest |
-| **Semi-structured** | JSON, XML, logs | Often parsed → structured, then tabular models; or NLP (Natural Language Processing) if free text |
+| **Semi-structured** | JSON, XML, logs | Often parsed → structured, then tabular models; or NLP if free text |
 | **Unstructured** | Images, audio, video, free-form text | Deep learning, CNNs for images, RNNs/Transformers for text/audio |
 
 The exam likes to set up a scenario ("a hospital has 10 years of MRI scans and wants to detect tumors") and ask you which approach. *Images → deep learning, almost always.*
@@ -271,7 +271,7 @@ The exam likes to set up a scenario ("a hospital has 10 years of MRI scans and w
 **Discussion (Socratic).**
 - Q1: AlphaFold's training data was a curated public archive (the PDB) reflecting decades of expensive wet-lab work. If you wanted to apply the AlphaFold *playbook* to a new domain (say, predicting weather-station microclimates from satellite imagery), what's the equivalent of "the PDB" for your domain, and how much money / time would building it require?
 - Q2: Pre-AlphaFold, structural biology was a 20-year career. Now an undergraduate with internet access can predict any protein in seconds. Where on the *displacement vs augmentation* spectrum did AlphaFold actually land, and what does the evidence (Nobel awarded to *Hassabis and Jumper*, not "AI"; Baker still won for human-led design) suggest about how high-skill careers reshape rather than disappear?
-- Q3: AlphaFold 2 was open-sourced; AlphaFold 3 (2024) was *initially* released only via a web server with usage limits and no commercial-use license, drawing pushback from academic biologists. What's the trade-off DeepMind implicitly accepted, and how does it parallel the *open-weights vs closed-API (Application Programming Interface)* tension you'll see between Meta's Llama (on Bedrock) and Anthropic's Claude (also on Bedrock)?
+- Q3: AlphaFold 2 was open-sourced; AlphaFold 3 (2024) was *initially* released only via a web server with usage limits and no commercial-use license, drawing pushback from academic biologists. What's the trade-off DeepMind implicitly accepted, and how does it parallel the *open-weights vs closed-API* tension you'll see between Meta's Llama (on Bedrock) and Anthropic's Claude (also on Bedrock)?
 
 ---
 

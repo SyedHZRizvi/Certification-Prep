@@ -6,18 +6,18 @@
 
 ## 🚦 Administrative Distance, Memorize Order
 
-| Source | AD (Active Directory) |
+| Source | AD |
 |--------|----|
 | Directly connected | 0 |
 | Static | 1 |
 | eBGP | 20 |
 | EIGRP (internal) | 90 |
-| OSPF (Open Shortest Path First) | 110 |
+| OSPF | 110 |
 | RIPv2 | 120 |
 | iBGP | 200 |
 | Unknown | 255 |
 
-🧠 "**Connect Static Easily, OSPF Right In, BGP (Border Gateway Protocol)-2**" (0, 1, 90, 110, 120, 200)
+🧠 "**Connect Static Easily, OSPF Right In, BGP-2**" (0, 1, 90, 110, 120, 200)
 
 ---
 
@@ -33,7 +33,7 @@
 
 ---
 
-## 🏷️ VLAN (Virtual Local Area Network) Quick Block
+## 🏷️ VLAN Quick Block
 
 - **802.1Q** tag = 4 bytes, VID = 12 bits → **4,094 usable VLANs** (0 + 4095 reserved)
 - **Access port** = 1 VLAN, untagged (end host)
@@ -83,10 +83,10 @@
 
 - **Port security**: limit MACs per port, allow-list specific MACs
 - **Sticky MAC**: switch learns first MAC, treats as static-allowed
-- **DHCP (Dynamic Host Configuration Protocol) snooping**: drops DHCP from rogue (non-trusted) ports
+- **DHCP snooping**: drops DHCP from rogue (non-trusted) ports
 - **DAI**: validates ARPs against DHCP-snooping table
 - **BPDU Guard**: see STP table above
-- Disable unused ports, replace Telnet/HTTP (Hypertext Transfer Protocol) with SSH (Secure Shell)/HTTPS (HTTP Secure), change defaults
+- Disable unused ports, replace Telnet/HTTP with SSH/HTTPS, change defaults
 - **Out-of-band mgmt**: dedicated mgmt VLAN/port
 
 ---
@@ -121,7 +121,7 @@ Often **wrong**:
 - ❌ "Disable STP to speed convergence"
 - ❌ "RIP for any non-trivial network"
 - ❌ "PortFast on a trunk"
-- ❌ "Hub solves a slow LAN (Local Area Network)"
+- ❌ "Hub solves a slow LAN"
 - ❌ "VLANs require separate physical switches"
 
 ---

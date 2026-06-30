@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [The CIA triad and control types](../Module-01-Security-Fundamentals/Reading.md), every actor in this module is attempting to violate one or more.
 > - [IAM concepts](../Module-03-Identity-Access-Management/Reading.md), most attacks chain through credential or identity compromise.
-> - General internet topology (DNS (Domain Name System), public IPs, TLS (Transport Layer Security)), useful for understanding C2 infrastructure and watering-hole attacks.
+> - General internet topology (DNS, public IPs, TLS), useful for understanding C2 infrastructure and watering-hole attacks.
 
 ---
 
@@ -36,7 +36,7 @@ Sec+ recognizes these actor categories. **Memorize the capability, intent, and e
 | **Hacktivist** | 🟢 Mixed | Modest | **Philosophical / political** | Anonymous, Anti-state takedowns |
 | **Insider threat** | varies | Already inside | Revenge, financial, ideology, coercion | Snowden, disgruntled admin |
 | **Unskilled attacker** ("script kiddie") | 🔴 Low | Low | Curiosity, ego | Teens running Metasploit modules |
-| **Shadow IT** | varies | varies | Convenience (not malicious) | Marketing buys SaaS (Software as a Service) without security review |
+| **Shadow IT** | varies | varies | Convenience (not malicious) | Marketing buys SaaS without security review |
 
 ### Internal vs External
 
@@ -169,9 +169,9 @@ Knowing your enemy = better defense. Sec+ tests these intel categories:
 
 ## 🔬 Scenario Walkthrough (PBQ-style)
 
-> **Scenario:** A SOC (Security Operations Center) analyst reviews these three concurrent incidents:
+> **Scenario:** A SOC analyst reviews these three concurrent incidents:
 > 1. A long-time DBA's account exfiltrated 4 GB of customer PII to a personal Dropbox at 4 a.m. They were just denied a promotion.
-> 2. Your CFO (Chief Financial Officer)'s email is being used to wire-fraud vendors. The attacker has spent weeks researching internal vendor relationships.
+> 2. Your CFO's email is being used to wire-fraud vendors. The attacker has spent weeks researching internal vendor relationships.
 > 3. Your investor-relations website was defaced with a political slogan within hours of an unrelated industry controversy.
 >
 > Classify each by **actor type + primary motivation + recommended detection.**
@@ -182,7 +182,7 @@ Knowing your enemy = better defense. Sec+ tests these intel categories:
 |---|-------|------------|-------------------|
 | 1 | **Insider threat** | Revenge (recent denial) | **DLP** alert on PII volume + UEBA flagging off-hours bulk transfer |
 | 2 | **Organized crime** (sophisticated; BEC) | Financial | **DMARC/SPF/DKIM** to detect impersonation + email anomaly detection + wire-approval workflow |
-| 3 | **Hacktivist** | Philosophical / political | **Web defacement monitoring** + WAF (Web Application Firewall) + integrity monitoring on web root |
+| 3 | **Hacktivist** | Philosophical / political | **Web defacement monitoring** + WAF + integrity monitoring on web root |
 
 PBQ might present 4 incidents + 4 actor names and ask you to drag-match.
 
@@ -194,19 +194,19 @@ PBQ might present 4 incidents + 4 actor names and ask you to drag-match.
 
 **Decision.** Rather than steal code or burn the foothold, the attackers added a **malicious DLL (SolarWinds.Orion.Core.BusinessLayer.dll)** to legitimate Orion software updates. The trojanized DLL was signed with SolarWinds' valid code-signing certificate meaning every customer's automatic update mechanism trusted it. From **March to June 2020**, SolarWinds digitally signed and shipped the backdoored update (later named **SUNBURST**) to ~18,000 customers worldwide. SUNBURST sat dormant for 12-14 days post-install to evade dynamic analysis, then beaconed to a domain (`avsvmcloud[.]com`) using DGA-generated subdomains that looked like Orion telemetry. From the 18,000 compromised customers, the attackers hand-selected **~100 high-value targets** for second-stage **TEARDROP** and **RAINDROP** payloads sufficient operational security to evade detection for **8-9 months**.
 
-**Outcome.** Disclosure came not from SolarWinds or the US government but from **FireEye (now Mandiant)**, which on **8 December 2020** publicly disclosed that its own red-team tools had been stolen. FireEye's investigation traced the breach to SolarWinds Orion. Microsoft, the US Treasury, Commerce, State, DHS, and Energy departments all confirmed breaches by 14 December. The Microsoft CEO (Chief Executive Officer) Satya Nadella publicly stated SolarWinds was "the largest and most sophisticated attack the world has ever seen." Remediation cost the US federal government an estimated **$100+ billion** (Brookings Institution estimate, 2021). SolarWinds' stock fell 40% in one week. The CEO retired. In October 2023 the **SEC charged SolarWinds and its CISO (Chief Information Security Officer) with securities fraud** for misleading investors about cybersecurity practices, the first time a public-company CISO faced personal SEC charges. The charges against the CISO personally were dismissed by a federal judge in July 2024, but the case against the company continued.
+**Outcome.** Disclosure came not from SolarWinds or the US government but from **FireEye (now Mandiant)**, which on **8 December 2020** publicly disclosed that its own red-team tools had been stolen. FireEye's investigation traced the breach to SolarWinds Orion. Microsoft, the US Treasury, Commerce, State, DHS, and Energy departments all confirmed breaches by 14 December. The Microsoft CEO Satya Nadella publicly stated SolarWinds was "the largest and most sophisticated attack the world has ever seen." Remediation cost the US federal government an estimated **$100+ billion** (Brookings Institution estimate, 2021). SolarWinds' stock fell 40% in one week. The CEO retired. In October 2023 the **SEC charged SolarWinds and its CISO with securities fraud** for misleading investors about cybersecurity practices, the first time a public-company CISO faced personal SEC charges. The charges against the CISO personally were dismissed by a federal judge in July 2024, but the case against the company continued.
 
 **Lesson for the exam / for practitioners.** This case touches almost every concept in Module 4:
 
-- **Actor classification.** SVR is the textbook **APT / nation-state**, patient (8-9 months pre-detection), well-resourced (custom malware that evaded every commercial AV/EDR (Endpoint Detection and Response)), motivated by **espionage** (intelligence collection), not financial. Sec+ tests this distinction: a campaign with no monetization but extensive persistence is APT, not organized crime.
+- **Actor classification.** SVR is the textbook **APT / nation-state**, patient (8-9 months pre-detection), well-resourced (custom malware that evaded every commercial AV/EDR), motivated by **espionage** (intelligence collection), not financial. Sec+ tests this distinction: a campaign with no monetization but extensive persistence is APT, not organized crime.
 - **Supply-chain vector.** SUNBURST exploited *trust* in vendor software updates. The compromised code was *signed* with a legitimate certificate. The exam asks: which threat vector is illustrated?, answer is **supply chain**, specifically **vendor / software supply chain**. Compare with Kaseya (2021, RMM-as-vector) and CCleaner (2017, same pattern).
 - **Threat intel sources.** The detection came from a *private commercial* source (FireEye), not government feeds. **CISA's Emergency Directive 21-01** (13 December 2020) ordered all federal civilian agencies to disconnect Orion immediately. This is exactly the kind of cross-sector sharing that **ISACs / AIS / STIX-TAXII** are designed to enable; SolarWinds also drove faster updates to those programs.
 - **IOC vs IOA.** Static IOCs (`avsvmcloud[.]com`, file hashes of the trojanized DLL) were published within days; **IOA** patterns (long dormant period after install + DGA-generated subdomains + targeting of Active Directory) generalized to detect *future* similar attacks, these IOAs became part of MITRE ATT&CK as new techniques.
 - **The CISO-personal-liability angle.** The SEC's case against the CISO marked an inflection point: corporate security disclosures are now SEC-relevant under the **Cybersecurity Disclosure Rule** (effective December 2023; companies must disclose material cybersecurity incidents within 4 business days). Sec+ Domain 5 (GRC) covers this.
 
 **Discussion (Socratic).**
-- **Q1:** SolarWinds' build pipeline was compromised for months. Modern secure-CI/CD (Continuous Integration/Continuous Deployment) practice (Module 10) emphasizes reproducible builds, signed provenance (SLSA / Sigstore), and SBOMs. If you were SolarWinds' new CISO in 2021, what *three* technical controls would you prioritize in the first 90 days, and how would you decide between fixing the build pipeline versus offering customers better runtime detection? Argue each side.
-- **Q2:** ~18,000 customers were exposed; ~100 were hand-selected for stage-2 implants. The other 17,900 were not exploited but still trusted a backdoored binary in their environment. Were those 17,900 *breached* or merely *compromised*? Defend a definition with reference to NIST SP 800-61 (Module 8) IR terminology, and explain how this affects breach-notification obligations under GDPR (General Data Protection Regulation)/state laws.
+- **Q1:** SolarWinds' build pipeline was compromised for months. Modern secure-CI/CD practice (Module 10) emphasizes reproducible builds, signed provenance (SLSA / Sigstore), and SBOMs. If you were SolarWinds' new CISO in 2021, what *three* technical controls would you prioritize in the first 90 days, and how would you decide between fixing the build pipeline versus offering customers better runtime detection? Argue each side.
+- **Q2:** ~18,000 customers were exposed; ~100 were hand-selected for stage-2 implants. The other 17,900 were not exploited but still trusted a backdoored binary in their environment. Were those 17,900 *breached* or merely *compromised*? Defend a definition with reference to NIST SP 800-61 (Module 8) IR terminology, and explain how this affects breach-notification obligations under GDPR/state laws.
 - **Q3:** The SEC charged the CISO personally. Critics argue this chills security-honesty (CISOs will hide problems to avoid personal liability); proponents argue it's the only way to force public-company boards to take cybersecurity seriously. Build the strongest argument on each side, then state which you'd defend in a CISO peer-network discussion and why.
 
 ---
@@ -287,7 +287,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 5](../Module-05-Vulnerabilities-Attacks/Reading.md) covers *how* actors execute (the techniques in the MITRE ATT&CK matrix); [Module 8](../Module-08-Security-Operations/Reading.md) covers detection, threat hunting, and incident response on actor behaviors; [Module 9](../Module-09-GRC-Risk-Compliance/Reading.md) covers third-party / supply-chain risk programs that SolarWinds put on every CISO agenda.
-> - Cross-course: AWS (Amazon Web Services) AI Practitioner (course 07) discusses prompt-injection threats, a new "AI-era" actor capability.
+> - Cross-course: AWS AI Practitioner (course 07) discusses prompt-injection threats, a new "AI-era" actor capability.
 > - Practice: Practice Exam 1 has ~5 actor/intel questions; Final Mock has ~8.
 
 ---

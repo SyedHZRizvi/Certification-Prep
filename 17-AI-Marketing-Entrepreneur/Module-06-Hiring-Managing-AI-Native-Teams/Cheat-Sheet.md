@@ -98,7 +98,7 @@ Hire on **7.5+ aggregate**.
 
 ---
 
-## 📋 Every SOP (Standard Operating Procedure) Has
+## 📋 Every SOP Has
 
 ```
 1. Trigger      (when this fires)
@@ -184,6 +184,6 @@ If you can answer all 5 in under 60 seconds, you own this module. ✅
 
 ---
 
-> ⚖️ Hiring + tax classification is legally complex. Always consult a CPA (Cost Per Acquisition) + employment attorney before hiring.
+> ⚖️ Hiring + tax classification is legally complex. Always consult a CPA + employment attorney before hiring.
 
 ➡️ [Module 7: Financials, Cash Flow & Taxes](../Module-07-Financials-Cash-Flow-Taxes/Reading.md)

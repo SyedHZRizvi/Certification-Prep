@@ -1,6 +1,6 @@
 # Module 5: Disaster Recovery & Backup 🔁
 
-> **Why this module matters:** Disaster recovery and backup carry the heaviest weight in CompTIA's "Security & DR" domain (~24% of SK0-005). The exam will hand you scenarios with two numbers an **RTO (Recovery Time Objective)** and an **RPO (Recovery Point Objective)** and ask you to pick a backup type, replication strategy, or site model. If you cannot match `RPO = 15 min` to "log shipping every 15 minutes" in your sleep, you will fail this domain.
+> **Why this module matters:** Disaster recovery and backup carry the heaviest weight in CompTIA's "Security & DR" domain (~24% of SK0-005). The exam will hand you scenarios with two numbers an **RTO** and an **RPO** and ask you to pick a backup type, replication strategy, or site model. If you cannot match `RPO = 15 min` to "log shipping every 15 minutes" in your sleep, you will fail this domain.
 
 > **Prerequisites for this module.** Before starting:
 > - Modules 1–4 (especially storage replication from Module 3 and snapshots from Module 4)
@@ -144,7 +144,7 @@ Restore on Thursday: Sun full + Wed D. Fast. But Wed D is large.
 | **Snapshot** | Point-in-time on the same array; short-term rollback (Module 4) |
 | **Image / bare-metal backup** | Full system image for entire-server restore (boot drive included) |
 | **File-level backup** | Granular file restore |
-| **VM (Virtual Machine)-aware backup** | Veeam, Commvault, native, backs up entire VMs with application consistency |
+| **VM-aware backup** | Veeam, Commvault, native, backs up entire VMs with application consistency |
 | **Application-consistent backup** | Uses VSS (Windows) or pre/post scripts (Linux) to quiesce DBs before snap |
 
 ---
@@ -193,7 +193,7 @@ Gives ~13 months of recoverable history without storing every single daily forev
 
 Modern variants:
 
-- **GFS + cloud archive**, Sons/Fathers on disk for fast restore; Grandfathers to cloud cold storage (S3 (Simple Storage Service) Glacier, Azure Archive)
+- **GFS + cloud archive**, Sons/Fathers on disk for fast restore; Grandfathers to cloud cold storage (S3 Glacier, Azure Archive)
 - **Retention-policy-based**, backup software handles "retain dailies for 30 days, weeklies for 12 weeks, monthlies for 12 months" automatically
 
 🎯 **Exam pattern:** *"How long can we restore data after a deletion under standard GFS?"* → Up to ~13 months (depending on the specific rotation set).
@@ -241,7 +241,7 @@ Modern enterprise patterns:
 - **Hypervisor-level replication**, Hyper-V Replica, VMware vSphere Replication, Zerto
 - **Backup-level replication**, backups replicated from primary backup target to secondary (Veeam Backup Copy, Commvault aux copy)
 
-🎯 **Exam pattern:** *"The DR plan calls for RPO ≤ 30 seconds for SQL (Structured Query Language) databases across two metro DCs."* → **Synchronous DB log shipping** (or AlwaysOn AG synchronous-commit) over metro fiber.
+🎯 **Exam pattern:** *"The DR plan calls for RPO ≤ 30 seconds for SQL databases across two metro DCs."* → **Synchronous DB log shipping** (or AlwaysOn AG synchronous-commit) over metro fiber.
 
 ---
 
@@ -250,7 +250,7 @@ Modern enterprise patterns:
 | | **BCP** (Business Continuity Plan) | **DR** (Disaster Recovery) |
 |---|---|---|
 | Scope | Entire business operation people, process, alt sites, comms, supply chain | Technical IT recovery systems, data, apps |
-| Owner | Executive / COO (Chief Operating Officer) / BCM team | IT / CTO (Chief Technology Officer) |
+| Owner | Executive / COO / BCM team | IT / CTO |
 | Includes | Crisis comms, alt staffing, supplier failover, customer comms, finance access | RTO/RPO/RTPO, runbooks, infra recovery |
 | Tested by | Tabletop exercises, full-scale drills | DR exercises, restore tests |
 
@@ -262,7 +262,7 @@ Modern enterprise patterns:
 |---|---|
 | **BIA** | Business Impact Analysis (sets RTO/RPO/MTD) |
 | **BCP** | Business Continuity Plan |
-| **DRP (Distribution Requirements Planning)** | Disaster Recovery Plan (the IT subset) |
+| **DRP** | Disaster Recovery Plan (the IT subset) |
 | **IRP** | Incident Response Plan (security event-driven) |
 | **Crisis Communication Plan** | Who calls whom; press, regulators, customers |
 | **Succession plan** | Who acts if key staff are unavailable |
@@ -298,10 +298,10 @@ Modern ransomware variants actively seek and destroy backups before encrypting p
 |---|---|
 | **Immutable backups** | Write-Once-Read-Many (WORM) on the backup target; cannot be deleted or modified for the retention period |
 | **Air-gapped backups** | Physically disconnected media (offline tape, removed external drive) |
-| **Separate credentials** | Backup admin account uses MFA (Multi-Factor Authentication), separate from domain admin |
+| **Separate credentials** | Backup admin account uses MFA, separate from domain admin |
 | **Object lock in S3 / equivalents** | Cloud-side WORM (S3 Object Lock, Azure Blob immutable storage) |
 | **Linux-based backup server** | Some ransomware targets only Windows; using Linux can blunt that |
-| **Tested isolation** | Backup server not joined to production AD (Active Directory); backup network on its own VLAN (Virtual Local Area Network) |
+| **Tested isolation** | Backup server not joined to production AD; backup network on its own VLAN |
 
 🎯 **Exam pattern:** *"After a ransomware incident, the org found all backup files encrypted. How could this have been prevented?"* → **Immutable / air-gapped backups + separate backup credentials**.
 
@@ -315,7 +315,7 @@ When disaster strikes, your team works the **runbook**:
 |---|---|
 | 1. Declare disaster | A named person (CIO, on-call lead) formally declares, triggers BCP team |
 | 2. Activate IR / DR plans | Crisis comms; status page; vendor escalations |
-| 3. Failover | Promote DR site, redirect DNS (Domain Name System)/traffic |
+| 3. Failover | Promote DR site, redirect DNS/traffic |
 | 4. Verify | Functional smoke tests, user comms |
 | 5. Operate at DR | Standard run-book mode for as long as needed |
 | 6. Plan failback | When primary returns, sync data back, schedule cutover |
@@ -337,7 +337,7 @@ When disaster strikes, your team works the **runbook**:
 
 ## 🔬 Scenario Walkthrough (PBQ-style thinking)
 
-> **Scenario.** Diego's hospital network (from the opening story) has 4 sites: primary data center, a colo 25 km away with dark fiber, a cloud account, and an off-site tape vault 80 km away. The CFO (Chief Financial Officer) has allocated budget for one upgrade. Patient drug-allergy data needs RPO=0/RTO=5min. EMR/lab needs RPO=15min/RTO=2hr. Email needs RPO=1hr/RTO=4hr. Marketing photos need RPO=24hr/RTO=7days. Build the plan.
+> **Scenario.** Diego's hospital network (from the opening story) has 4 sites: primary data center, a colo 25 km away with dark fiber, a cloud account, and an off-site tape vault 80 km away. The CFO has allocated budget for one upgrade. Patient drug-allergy data needs RPO=0/RTO=5min. EMR/lab needs RPO=15min/RTO=2hr. Email needs RPO=1hr/RTO=4hr. Marketing photos need RPO=24hr/RTO=7days. Build the plan.
 
 **Walkthrough.**
 
@@ -412,20 +412,20 @@ This is the kind of integration question Server+ PBQs ask. Notice how every busi
 | VSS | Volume Shadow Copy Service |
 | WORM | Write Once Read Many |
 | AG | Always-On Availability Group (SQL Server) |
-| SLA (Service Level Agreement) | Service Level Agreement |
+| SLA | Service Level Agreement |
 
 ---
 
 ## 📊 Case Study, Code Spaces (2014): The Day Backups Were the Same as Production
 
-**Situation.** Code Spaces, a small UK-based source-code hosting company, ran its entire infrastructure production AND backups on a single AWS (Amazon Web Services) account. On 17 June 2014, an attacker gained access to that AWS account (root credentials, no MFA) and demanded ransom. When Code Spaces refused, the attacker began deleting EC2 (Elastic Compute Cloud) instances, S3 buckets, EBS volumes, and AMIs, including the backups. Within hours the company was *gone*. (Code Spaces public statement, 18 June 2014.)
+**Situation.** Code Spaces, a small UK-based source-code hosting company, ran its entire infrastructure production AND backups on a single AWS account. On 17 June 2014, an attacker gained access to that AWS account (root credentials, no MFA) and demanded ransom. When Code Spaces refused, the attacker began deleting EC2 instances, S3 buckets, EBS volumes, and AMIs, including the backups. Within hours the company was *gone*. (Code Spaces public statement, 18 June 2014.)
 
 **Outcome.** Code Spaces ceased operations entirely. Customers lost code. The company never recovered.
 
 **Lesson for the exam / for practitioners.**
 
 - **3-2-1 means *separation*.** Production and backups in the same AWS account, same credentials, same blast radius = effectively *one* copy.
-- **Backup credentials must be separate**, different IAM (Identity and Access Management) role, different MFA, different control plane.
+- **Backup credentials must be separate**, different IAM role, different MFA, different control plane.
 - **Immutability is a backstop.** S3 Object Lock didn't exist in 2014. It does now. Use it.
 - **Air-gapped or offline copies survive credential compromise.** Tape doesn't care if you have root.
 - **DR plans must include "what if attacker has all credentials?"** This is a "tabletop scenario" that didn't get run.
@@ -436,7 +436,7 @@ This is the scenario Server+ tests when asking "how do you protect backups from 
 **Discussion (Socratic).**
 - **Q1:** Your company is 100% on AWS in one region. Argue both sides of "move backups to a different cloud" vs "use cross-account + S3 Object Lock within AWS."
 - **Q2:** A ransomware actor compromises your backup admin's laptop. What controls would have detected this BEFORE backups were deleted, and at what cost?
-- **Q3:** Tape was uncool in 2014, but Code Spaces would have survived with tape. Is tape's resurgence (LTO-9 = 18 TB native) a real DR option for a 100 TB modern SaaS (Software as a Service), or just nostalgia?
+- **Q3:** Tape was uncool in 2014, but Code Spaces would have survived with tape. Is tape's resurgence (LTO-9 = 18 TB native) a real DR option for a 100 TB modern SaaS, or just nostalgia?
 
 ---
 
@@ -464,7 +464,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 6](../Module-06-Security/Reading.md) hardens the systems we just learned to back up; [Module 7](../Module-07-Networking/Reading.md) covers DNS failover / GSLB for site cutover; [Module 8](../Module-08-Troubleshooting/Reading.md) diagnoses recovery failures.
-> - Cross-course: **AWS Solutions Architect** maps these concepts to AWS Backup, RDS (Relational Database Service) PITR, multi-AZ, multi-region. **Azure Administrator** maps to Azure Backup, Site Recovery, Geo-Redundant Storage. **Security+** covers BCP/DRP from the security-program perspective.
+> - Cross-course: **AWS Solutions Architect** maps these concepts to AWS Backup, RDS PITR, multi-AZ, multi-region. **Azure Administrator** maps to Azure Backup, Site Recovery, Geo-Redundant Storage. **Security+** covers BCP/DRP from the security-program perspective.
 > - Practice: Practice Exam 2 has ~9 questions from this module; the Final Mock has ~13.
 
 ---

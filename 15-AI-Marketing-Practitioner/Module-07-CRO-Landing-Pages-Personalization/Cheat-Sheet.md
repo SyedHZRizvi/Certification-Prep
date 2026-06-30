@@ -1,4 +1,4 @@
-# 📋 Module 7 Cheat Sheet: CRO (Chief Revenue Officer) + Landing Pages
+# 📋 Module 7 Cheat Sheet: CRO + Landing Pages
 
 > One page. Print it. Tape it to your monitor.
 
@@ -58,7 +58,7 @@ Calculator: **evanmiller.org/ab-testing/sample-size.html**
 ## 🎨 Landing Page Anatomy (8 Sections)
 
 ```
-1. HERO       , Headline + subhead + ONE CTA (Call to Action)
+1. HERO       , Headline + subhead + ONE CTA
 2. SOCIAL PROOF, Logos OR star rating
 3. PROBLEM    , Pain agitation
 4. SOLUTION   , 3 features → 3 benefits
@@ -78,7 +78,7 @@ Calculator: **evanmiller.org/ab-testing/sample-size.html**
 | Instapage | Enterprise |
 | Webflow | Multi-page sites |
 | ClickFunnels | Funnels + upsells |
-| Carrd | $19/yr MVP (Minimum Viable Product) |
+| Carrd | $19/yr MVP |
 | Leadpages | SMB / coaches |
 
 ---
@@ -87,7 +87,7 @@ Calculator: **evanmiller.org/ab-testing/sample-size.html**
 
 | Tool | How |
 |------|-----|
-| **Mutiny** | Reverse-IP B2B (Business-to-Business); personalizes copy per company |
+| **Mutiny** | Reverse-IP B2B; personalizes copy per company |
 | **Dynamic Yield** | Ecom product recs + dynamic copy |
 | **Optimizely Personalization** | Rules-based for enterprise |
 | **Unbounce Smart Traffic** | ML routes visitor to best variant |

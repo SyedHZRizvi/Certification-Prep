@@ -8,15 +8,15 @@
 
 | Role | Default port(s) |
 |---|---|
-| **AD (Active Directory) DS** | LDAP (Lightweight Directory Access Protocol) 389 / LDAPS 636 / GC 3268-9 / Kerberos 88 / SMB 445 |
+| **AD DS** | LDAP 389 / LDAPS 636 / GC 3268-9 / Kerberos 88 / SMB 445 |
 | **AD CS** | 80/443 |
 | **AD FS** | 443 |
-| **DNS (Domain Name System)** | 53 |
-| **DHCP (Dynamic Host Configuration Protocol)** | 67/68 |
+| **DNS** | 53 |
+| **DHCP** | 67/68 |
 | **File Services (SMB)** | 445 |
 | **IIS** | 80/443 |
 | **Hyper-V** | (see Module 4) |
-| **RDS (Relational Database Service)** | 3389 + 443 (RD Gateway) |
+| **RDS** | 3389 + 443 (RD Gateway) |
 | **WSUS** | 8530/8531 |
 | **WDS** | 67/68/4011 |
 
@@ -67,10 +67,10 @@ Unit files: `/etc/systemd/system/` (admin) · `/usr/lib/systemd/system/` (packag
 
 | Protocol | Port | Use |
 |---|---|---|
-| **SSH (Secure Shell)** | TCP (Transmission Control Protocol) 22 | Linux CLI (Command Line Interface) / tunnel |
+| **SSH** | TCP 22 | Linux CLI / tunnel |
 | **RDP** | TCP 3389 | Windows desktop |
-| **WinRM HTTP (Hypertext Transfer Protocol)** | TCP 5985 | PS remoting (dev only) |
-| **WinRM HTTPS (HTTP Secure)** | TCP 5986 | PS remoting (prefer) |
+| **WinRM HTTP** | TCP 5985 | PS remoting (dev only) |
+| **WinRM HTTPS** | TCP 5986 | PS remoting (prefer) |
 | **Telnet** | TCP 23 | ❌ cleartext, never use |
 | **RD Gateway** | TCP 443 | RDP over HTTPS |
 
@@ -114,7 +114,7 @@ Unit files: `/etc/systemd/system/` (admin) · `/usr/lib/systemd/system/` (packag
 |---|---|
 | Forest | Top container, shares schema |
 | Domain | Replication boundary |
-| OU | Logical container, GPO (Group Policy Object) target |
+| OU | Logical container, GPO target |
 | GPO | Group Policy Object |
 | DC | Domain Controller |
 | GC | Global Catalog |
@@ -130,7 +130,7 @@ Unit files: `/etc/systemd/system/` (admin) · `/usr/lib/systemd/system/` (packag
 
 - "Check time sync first" (Kerberos)
 - "Use Server Core for production"
-- "Use RD Gateway + MFA (Multi-Factor Authentication) instead of exposing 3389"
+- "Use RD Gateway + MFA instead of exposing 3389"
 - "Use WinRM HTTPS"
 - "Spread DCs across hosts (anti-affinity)"
 - "Tiered administration (Tier 0/1/2)"

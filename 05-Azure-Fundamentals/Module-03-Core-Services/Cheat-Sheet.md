@@ -8,9 +8,9 @@
 
 | Need | Service |
 |------|---------|
-| Full OS control / legacy | **VM (Virtual Machine)** |
+| Full OS control / legacy | **VM** |
 | Auto-scale identical VMs | **VM Scale Set** |
-| Web app / API (Application Programming Interface), no OS | **App Service** |
+| Web app / API, no OS | **App Service** |
 | One container, fast | **ACI** |
 | Container orchestration at scale | **AKS** |
 | Event-driven serverless code | **Functions** |
@@ -24,14 +24,14 @@
 |------|---------|
 | Private network in Azure | **Virtual Network (VNet)** |
 | Connect 2 VNets | **VNet Peering** |
-| On-prem ↔ Azure over internet | **VPN (Virtual Private Network) Gateway** |
+| On-prem ↔ Azure over internet | **VPN Gateway** |
 | On-prem ↔ Azure private circuit | **ExpressRoute** |
 | Basic allow/deny rules | **NSG** |
 | Managed cloud firewall | **Azure Firewall** |
-| Global L7 + WAF (Web Application Firewall) + CDN (Content Delivery Network) | **Front Door** |
+| Global L7 + WAF + CDN | **Front Door** |
 | Regional L7 + WAF | **Application Gateway** |
-| L4 (TCP (Transmission Control Protocol)/UDP (User Datagram Protocol)) | **Load Balancer** |
-| DNS (Domain Name System)-based global routing | **Traffic Manager** |
+| L4 (TCP/UDP) | **Load Balancer** |
+| DNS-based global routing | **Traffic Manager** |
 | Host DNS zones | **Azure DNS** |
 | CDN for static content | **Azure CDN** |
 
@@ -74,9 +74,9 @@
 
 | Service | Use |
 |---------|-----|
-| **Azure SQL Database** | Cloud-native managed SQL (PaaS (Platform as a Service)) |
+| **Azure SQL Database** | Cloud-native managed SQL (PaaS) |
 | **Azure SQL Managed Instance** | Lift-and-shift SQL Server (PaaS, near-100% compat) |
-| **SQL Server on VM** | Total SQL Server control (IaaS (Infrastructure as a Service)) |
+| **SQL Server on VM** | Total SQL Server control (IaaS) |
 | **Cosmos DB** | Global NoSQL multi-model, multi-region writes, <10ms |
 | **Azure DB for MySQL Flexible Server** | Managed MySQL |
 | **Azure DB for PostgreSQL Flexible Server** | Managed PostgreSQL |

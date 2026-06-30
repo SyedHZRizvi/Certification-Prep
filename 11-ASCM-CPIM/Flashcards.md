@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -362,7 +362,7 @@
 **Q:** Forecast aggregation principle?
 **A:** Forecasts are more accurate at higher aggregation levels and longer time buckets.
 
-**Q:** What is CPFR (Collaborative Planning, Forecasting, and Replenishment)?
+**Q:** What is CPFR?
 **A:** Collaborative Planning, Forecasting & Replenishment, a framework for sharing forecasts between trading partners.
 
 **Q:** What is the bullwhip effect?
@@ -373,7 +373,7 @@
 
 ---
 
-## 🤝 SECTION 3: S&OP (Sales and Operations Planning)
+## 🤝 SECTION 3: S&OP
 
 **Q:** Name the 5 S&OP steps in order.
 **A:** Product/Portfolio Review → Demand Review → Supply Review → Pre-S&OP / Reconciliation → Executive S&OP.
@@ -385,10 +385,10 @@
 **A:** Operations.
 
 **Q:** Who chairs the Executive S&OP (Step 5)?
-**A:** The CEO (Chief Executive Officer) (or top executive).
+**A:** The CEO (or top executive).
 
 **Q:** At what aggregation level does S&OP plan?
-**A:** Product family level (not SKU (Stock Keeping Unit)).
+**A:** Product family level (not SKU).
 
 **Q:** S&OP planning horizon?
 **A:** 12–24 months, rolling cadence.
@@ -416,7 +416,7 @@
 
 ---
 
-## 🗓️ SECTION 4: MASTER SCHEDULING & MRP (Material Requirements Planning)
+## 🗓️ SECTION 4: MASTER SCHEDULING & MRP
 
 **Q:** MPS plans what type of demand?
 **A:** Independent (customer/forecast-driven), finished goods.
@@ -440,13 +440,13 @@
 **A:** Release date = Receipt date − Lead time.
 
 **Q:** What is low-level coding in MRP?
-**A:** Assigning each item the deepest level it appears in any BOM (Bill of Materials), so MRP processes it once with all parent demands netted.
+**A:** Assigning each item the deepest level it appears in any BOM, so MRP processes it once with all parent demands netted.
 
 **Q:** Define CTP (Capable-to-Promise).
 **A:** Like ATP, but considers replanning capacity and materials, not just existing schedule.
 
 **Q:** Name 5 lot-sizing rules.
-**A:** Lot-for-Lot (L4L), EOQ (Economic Order Quantity), Period Order Quantity (POQ), Fixed Order Quantity (FOQ), Min/Max.
+**A:** Lot-for-Lot (L4L), EOQ, Period Order Quantity (POQ), Fixed Order Quantity (FOQ), Min/Max.
 
 **Q:** What are the 4 MRP action messages?
 **A:** Release (now), Reschedule in (earlier), Reschedule out (later), Cancel.
@@ -529,7 +529,7 @@
 **A:** EPQ is always LARGER than EOQ; multiplied by √(p/(p−d)).
 
 **Q:** Reorder Point formula?
-**A:** ROP (Reorder Point) = (average daily demand × lead time) + safety stock.
+**A:** ROP = (average daily demand × lead time) + safety stock.
 
 **Q:** σ over lead time (independence) formula?
 **A:** σ_LT = σ_daily × √LT.
@@ -556,12 +556,12 @@
 **A:** ≥95% (with 0% tolerance, must be exact).
 
 **Q:** Inventory turnover formula?
-**A:** Annual COGS (Cost of Goods Sold) ÷ Average inventory.
+**A:** Annual COGS ÷ Average inventory.
 
 **Q:** Days of supply formula?
 **A:** 365 ÷ Turnover (they are reciprocals × 365).
 
-**Q:** Define VMI (Vendor Managed Inventory).
+**Q:** Define VMI.
 **A:** Vendor-managed inventory, supplier monitors and replenishes customer's inventory level; customer usually still owns.
 
 **Q:** Define consignment.

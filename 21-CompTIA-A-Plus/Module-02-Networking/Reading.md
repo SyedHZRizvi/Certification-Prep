@@ -109,34 +109,34 @@ Connector: **F-type** (screw-on threaded).
 |----------|------|-------|
 | WEP | 1997 | Cracked since 2001. **Never use.** |
 | WPA | 2003 | Stopgap. **Deprecated.** |
-| WPA2 (AES (Advanced Encryption Standard)-CCMP) | 2004 | Long-time default. Still widely used. |
+| WPA2 (AES-CCMP) | 2004 | Long-time default. Still widely used. |
 | WPA3 | 2018 | Stronger (SAE handshake replaces PSK), default for new devices since ~2020 |
 
 Enterprise modes (WPA2-Enterprise / WPA3-Enterprise) use **802.1X / RADIUS / EAP** for per-user credentials instead of a shared PSK.
 
 ---
 
-## 🌐 TCP (Transmission Control Protocol)/IP Fundamentals
+## 🌐 TCP/IP Fundamentals
 
 ### IPv4 essentials
 
 - **Address format:** 32 bits, written as 4 octets `192.168.1.10`
 - **Subnet mask:** marks the network vs host portion. `255.255.255.0` = `/24` = first 24 bits are network.
 - **Default gateway:** the router IP your host uses to reach off-network destinations.
-- **DNS (Domain Name System) server:** translates names (`google.com`) to IPs (`142.250.190.78`).
+- **DNS server:** translates names (`google.com`) to IPs (`142.250.190.78`).
 
 ### Private IP ranges (RFC 1918)
 
 | Range | Mask | Common use |
 |-------|------|-----|
-| 10.0.0.0 – 10.255.255.255 | /8 | Large enterprise, AWS (Amazon Web Services) VPC (Virtual Private Cloud), Azure VNet |
+| 10.0.0.0 – 10.255.255.255 | /8 | Large enterprise, AWS VPC, Azure VNet |
 | 172.16.0.0 – 172.31.255.255 | /12 | Mid-size, common in cloud and Docker bridge |
 | 192.168.0.0 – 192.168.255.255 | /16 | Home routers (192.168.0.1 or 192.168.1.1 default) |
 
 ### Special / loopback / APIPA
 
 - **127.0.0.0/8**, loopback (`127.0.0.1`)
-- **169.254.0.0/16** APIPA (Automatic Private IP Addressing) assigned by Windows when DHCP (Dynamic Host Configuration Protocol) fails
+- **169.254.0.0/16** APIPA (Automatic Private IP Addressing) assigned by Windows when DHCP fails
 - **224.0.0.0/4**, multicast
 - **255.255.255.255**, limited broadcast
 
@@ -161,21 +161,21 @@ A subnet mask of `/24` = 256 addresses (254 usable: 1 network + 1 broadcast rese
 
 | Port | Protocol | Purpose |
 |------|----------|---------|
-| 20/21 | FTP (File Transfer Protocol) | File transfer (control/data) |
-| 22 | SSH (Secure Shell) / SFTP / SCP | Encrypted shell + file transfer |
+| 20/21 | FTP | File transfer (control/data) |
+| 22 | SSH / SFTP / SCP | Encrypted shell + file transfer |
 | 23 | Telnet | Unencrypted remote shell, **do not use** |
-| 25 | SMTP (Simple Mail Transfer Protocol) | Mail server-to-server |
-| 53 | DNS | Name resolution (TCP and UDP (User Datagram Protocol)) |
+| 25 | SMTP | Mail server-to-server |
+| 53 | DNS | Name resolution (TCP and UDP) |
 | 67/68 | DHCP | IP assignment (server/client) |
 | 69 | TFTP | Trivial FTP, firmware updates, PXE boot |
-| 80 | HTTP (Hypertext Transfer Protocol) | Web (unencrypted) |
-| 110 | POP3 (Post Office Protocol 3) | Mail fetch |
+| 80 | HTTP | Web (unencrypted) |
+| 110 | POP3 | Mail fetch |
 | 123 | NTP | Time sync |
 | 137-139 | NetBIOS | Legacy Windows |
-| 143 | IMAP (Internet Message Access Protocol) | Mail sync |
-| 161/162 | SNMP (Simple Network Management Protocol) | Device monitoring |
-| 389 | LDAP (Lightweight Directory Access Protocol) | Directory (unencrypted) |
-| 443 | HTTPS (HTTP Secure) | Web (encrypted) |
+| 143 | IMAP | Mail sync |
+| 161/162 | SNMP | Device monitoring |
+| 389 | LDAP | Directory (unencrypted) |
+| 443 | HTTPS | Web (encrypted) |
 | 445 | SMB | Windows file sharing |
 | 465 | SMTPS | Legacy encrypted SMTP |
 | 514 | Syslog | Log forwarding |
@@ -202,8 +202,8 @@ A subnet mask of `/24` = 256 addresses (254 usable: 1 network + 1 broadcast rese
 
 A typical home/small-office router is *multiple devices in one box*:
 
-1. **Modem** (often separate), translates between ISP (Internet Service Provider) medium (cable, DSL, fiber) and Ethernet
-2. **Router**, does NAT (Network Address Translation) and forwards between LAN (Local Area Network) and WAN (Wide Area Network)
+1. **Modem** (often separate), translates between ISP medium (cable, DSL, fiber) and Ethernet
+2. **Router**, does NAT and forwards between LAN and WAN
 3. **Switch**, 4–8 LAN ports
 4. **Wireless AP**, broadcasts SSID(s)
 5. **DHCP server**, hands out IPs to clients
@@ -263,7 +263,7 @@ A typical home/small-office router is *multiple devices in one box*:
 | `ipconfig /all` | Windows | Show all interface IPs, DNS, DHCP |
 | `ip a` | Linux | Same as ipconfig |
 | `ifconfig` | macOS/Linux legacy | Show interfaces |
-| `ping <host>` | All | ICMP (Internet Control Message Protocol) echo to test reachability |
+| `ping <host>` | All | ICMP echo to test reachability |
 | `tracert` / `traceroute` | Win / Linux,macOS | Show hops to a destination |
 | `nslookup` / `dig` | Win / Linux | DNS lookup |
 | `netstat -ano` | All | Active connections + PIDs |
@@ -312,7 +312,7 @@ This is layer-by-layer thinking: physical (cable plugged in?) → link (DHCP got
 | **DNS** | Domain Name System, name → IP (TCP/UDP 53) |
 | **NAT** | Network Address Translation, many private IPs ↔ one public |
 | **APIPA** | 169.254.0.0/16 self-assigned when DHCP fails |
-| **PoE (Power over Ethernet) / PoE+ / PoE++** | Power over Ethernet (15.4 / 30 / 60–100W) |
+| **PoE / PoE+ / PoE++** | Power over Ethernet (15.4 / 30 / 60–100W) |
 | **SSID** | Wi-Fi network name |
 | **WPA3-SAE** | Modern Wi-Fi auth, replaces 4-way PSK handshake |
 | **802.1X / EAP / RADIUS** | Enterprise Wi-Fi auth (per-user creds) |
@@ -340,13 +340,13 @@ This is layer-by-layer thinking: physical (cable plugged in?) → link (DHCP got
 
 ---
 
-## 📊 Case Study, The 2016 Dyn DDoS (Distributed Denial of Service) (Mirai Botnet)
+## 📊 Case Study, The 2016 Dyn DDoS (Mirai Botnet)
 
 **Situation.** On 21 October 2016, Dyn (a major Managed DNS provider) suffered three massive distributed-denial-of-service (DDoS) waves between 11:10 UTC and 21:11 UTC. At peak, attack traffic exceeded **1.2 Tbps**, at the time, the largest DDoS ever recorded.
 
 **The network detail.** The attack was launched by the **Mirai botnet** roughly 100,000 compromised IoT devices: IP cameras, DVRs, home routers, baby monitors. The exploit chain was almost embarrassingly simple: Mirai scanned the public internet for Telnet (port 23) open with default credentials (`admin/admin`, `root/root`, factory defaults from a handful of manufacturers). Devices became bots in seconds. Once enlisted, each bot sent UDP and TCP floods at Dyn's authoritative DNS servers and Dyn's customers (Twitter, GitHub, Reddit, Spotify, Netflix, Airbnb, Box, PayPal, Pinterest, Sony PlayStation Network) were unreachable for hours on the US East Coast.
 
-**Decision and outcome.** Dyn mitigated by aggressive Anycast re-routing, BGP (Border Gateway Protocol) scrubbing partnerships, and customer-side fail-over to secondary DNS providers (Google Public DNS, Cloudflare). The incident drove the cybersecurity industry to (a) demand vendors stop shipping devices with default Telnet credentials, (b) deprecate Telnet (port 23) entirely from any production exposure, and (c) advocate for **multi-provider DNS strategies**, having your domain delegated to two competing DNS providers so one outage doesn't kill you.
+**Decision and outcome.** Dyn mitigated by aggressive Anycast re-routing, BGP scrubbing partnerships, and customer-side fail-over to secondary DNS providers (Google Public DNS, Cloudflare). The incident drove the cybersecurity industry to (a) demand vendors stop shipping devices with default Telnet credentials, (b) deprecate Telnet (port 23) entirely from any production exposure, and (c) advocate for **multi-provider DNS strategies**, having your domain delegated to two competing DNS providers so one outage doesn't kill you.
 
 **Lesson for the exam / for practitioners.**
 - **Telnet (port 23) should be disabled or filtered at every perimeter.** SSH (port 22) replaces it.

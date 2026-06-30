@@ -3,7 +3,7 @@
 > **Why this module matters:** Domain 2 of the CSCP is "Supply Chain Design", about 20% of your exam. Strategy in Module 1 said *what* you compete on; this module says *how the network is shaped to deliver it*. Get this wrong, and every operational decision later compounds the mistake.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [SCOR 13.0 vocabulary](../Module-01-SCM (Supply Chain Management)-Foundations-Strategy/Reading.md), covered in Module 1
+> - [SCOR 13.0 vocabulary](../Module-01-SCM-Foundations-Strategy/Reading.md), covered in Module 1
 > - [Hau Lee's strategy matrix](../Module-01-SCM-Foundations-Strategy/Reading.md), covered in Module 1
 > - Basic make-or-buy logic and value-chain concept (Porter)
 > - Square-root math and linear-programming intuition (helpful, not required)
@@ -146,7 +146,7 @@ The cornerstone strategic question. The exam will give you a scenario and ask wh
 | Direction | Definition | Example |
 |-----------|------------|---------|
 | **Backward / upstream** | Acquiring or operating supplier activities | Sami buying the wheat field; Tesla operating lithium mines |
-| **Forward / downstream** | Acquiring or operating customer activities | Apple opening retail stores; Nike DTC (Direct-to-Consumer) |
+| **Forward / downstream** | Acquiring or operating customer activities | Apple opening retail stores; Nike DTC |
 | **Horizontal** | Acquiring a competitor at the same stage | Marriott buying Starwood |
 
 **Trade-off:** integration captures more margin but reduces flexibility and ties up capital. Modern firms (Nike, Apple) selectively integrate where it's strategic.
@@ -260,7 +260,7 @@ Cost
 
 ## 📊 Case Study, Boeing 787 Dreamliner Outsourcing (2007-2013)
 
-**Situation.** In the early 2000s, Boeing's commercial airplanes group (Seattle) faced an existential question: how to fund and build the next-generation 787 "Dreamliner" a clean-sheet composite-fuselage aircraft while Airbus's A380 was eating government-subsidized lunch. Then-CEO (Chief Executive Officer) Jim McNerney and then-VP Mike Bair championed a radically outsourced design: instead of Boeing's traditional 70% in-house build (the 737/747 pattern), the 787 would be ~70% outsourced. Tier-1 partners would design AND build major sub-assemblies (the carbon-composite wing in Japan, the center fuselage in Italy at Alenia, the forward fuselage at Spirit AeroSystems in Wichita, the landing gear from Messier-Dowty in France). Boeing would do final integration in Everett, Washington, flying complete sub-assemblies in on its specially-modified 747 "Dreamlifter." The promise: parallel development cut time-to-market from 6 years to 4, and Boeing's capital expenditure would drop by 40%.
+**Situation.** In the early 2000s, Boeing's commercial airplanes group (Seattle) faced an existential question: how to fund and build the next-generation 787 "Dreamliner" a clean-sheet composite-fuselage aircraft while Airbus's A380 was eating government-subsidized lunch. Then-CEO Jim McNerney and then-VP Mike Bair championed a radically outsourced design: instead of Boeing's traditional 70% in-house build (the 737/747 pattern), the 787 would be ~70% outsourced. Tier-1 partners would design AND build major sub-assemblies (the carbon-composite wing in Japan, the center fuselage in Italy at Alenia, the forward fuselage at Spirit AeroSystems in Wichita, the landing gear from Messier-Dowty in France). Boeing would do final integration in Everett, Washington, flying complete sub-assemblies in on its specially-modified 747 "Dreamlifter." The promise: parallel development cut time-to-market from 6 years to 4, and Boeing's capital expenditure would drop by 40%.
 
 **Decision.** Boeing committed in 2003-2004. By 2007, when first flight was due, none of the major assemblies fit. Center-fuselage barrels arrived from Italy with components missing Alenia had subcontracted to Vought Aircraft Industries, which had subcontracted further to Israeli and Korean suppliers Boeing didn't know existed. Boeing's "system integrator" model assumed Tier-1 partners had Boeing-grade systems engineering capability. They didn't. Tier-2 and Tier-3 suppliers were invisible to Seattle. By 2008, Boeing had to **buy Vought outright** for $580M to gain visibility, then later acquire chunks of the South Carolina fuselage operation. First flight slipped from 2007 → 2009. First customer delivery (ANA) slipped from 2008 → September 2011 three years late.
 
@@ -351,7 +351,7 @@ You now know:
 
 ## 💬 Discussion, Socratic prompts
 
-1. **The Apple-Vietnam-India hedge.** Apple has spent 2022-2025 diversifying iPhone assembly from Foxconn-Zhengzhou (China) to Tata (India) and Luxshare (Vietnam). Foxconn's per-unit costs are still lowest. Using the make-or-buy + offshoring framework from this module, what discount rate / probability of disruption justifies Apple's diversification? Defend a position to a CFO (Chief Financial Officer) who argues "stay with the cheapest."
+1. **The Apple-Vietnam-India hedge.** Apple has spent 2022-2025 diversifying iPhone assembly from Foxconn-Zhengzhou (China) to Tata (India) and Luxshare (Vietnam). Foxconn's per-unit costs are still lowest. Using the make-or-buy + offshoring framework from this module, what discount rate / probability of disruption justifies Apple's diversification? Defend a position to a CFO who argues "stay with the cheapest."
 2. **Center-of-gravity vs LP.** A pretzel maker has 14 customers across the US with annual demand from 8K to 280K cases. The CFO wants the new DC location to be solved by "center-of-gravity in 30 minutes." Build the strongest argument for CoG AND the strongest for full transport LP. At what scale does CoG's simplicity stop being worth it?
 3. **The single-source argument that works.** A medical-device firm sources its single most critical component (custom pressure sensor) from one Swiss supplier with 99.97% on-time, 0 defects in 7 years. Internal audit insists on dual-source. The procurement director resists, arguing "the qualification cost alone is $4M and a second source weakens the relationship." Defend both positions and identify the *one* scenario in which single-source survives audit.
 4. **Service supply chain design.** A 200-bed hospital network is doing its first-ever supply-chain redesign. They've copied an Amazon-style central-DC + spokes blueprint. What's wrong with that as a service operation (capacity-buffered, intangible, perishable), and what 3 changes would you propose?

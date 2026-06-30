@@ -7,7 +7,7 @@
 > - One semester of calculus (gradients, partial derivatives), Khan Academy's *Multivariable Calculus* unit 4 is enough
 > - One semester of linear algebra (matrix multiplication, eigenvectors), 3Blue1Brown's *Essence of Linear Algebra* YouTube series is enough
 > - High-school probability (Bayes' rule, conditional probability)
-> - Familiarity with AWS console fundamentals (S3 (Simple Storage Service), IAM (Identity and Access Management), basic EC2 (Elastic Compute Cloud)), if you have **CLF-C02 (course 03)** or **AIF-C01 (course 07)** done, you are ahead
+> - Familiarity with AWS console fundamentals (S3, IAM, basic EC2), if you have **CLF-C02 (course 03)** or **AIF-C01 (course 07)** done, you are ahead
 > - If you have done **SAA-C03 (course 04)**, the architecture vocabulary in §6 will feel like a refresher
 
 ---
@@ -145,7 +145,7 @@ AWS organises its ML services in a deliberate seven-layer stack. The exam tests 
 ├─────────────────────────────────────────────────────────────────────┤
 │  L6  GENERATIVE AI MODEL GATEWAY                                    │
 │      Amazon Bedrock (Claude, Llama, Mistral, Titan, Cohere, ...)    │
-│      Knowledge Bases for RAG (Retrieval-Augmented Generation), Agents, Guardrails                    │
+│      Knowledge Bases for RAG, Agents, Guardrails                    │
 ├─────────────────────────────────────────────────────────────────────┤
 │  L5  MANAGED AI SERVICES (TASK-SPECIFIC, NO MODEL TRAINING)         │
 │      Comprehend, Rekognition, Textract, Translate, Transcribe,      │
@@ -187,11 +187,11 @@ AWS organises its ML services in a deliberate seven-layer stack. The exam tests 
 | Predict next month's sales | L5 / L4 | **Amazon Forecast** (managed) or **DeepAR** in SageMaker |
 | Recommend products to users | L5 / L4 | **Amazon Personalize** (managed) or **Factorization Machines** in SageMaker |
 | Train a custom 1-billion-parameter LLM | L4 + L2 | **SageMaker training jobs on Trainium clusters** |
-| Run a foundation model behind your VPC (Virtual Private Cloud) | L4 / L6 | **SageMaker JumpStart** or **Bedrock with PrivateLink** |
+| Run a foundation model behind your VPC | L4 / L6 | **SageMaker JumpStart** or **Bedrock with PrivateLink** |
 | Code-assist your devs | L7 | **Amazon Q Developer** |
 | Let business users chat with their warehouse | L7 | **Amazon Q in QuickSight** |
 
-🚨 **Exam trap.** *"The team needs to detect known faces. Should they train a CNN from scratch on SageMaker?"* → **No**. **Amazon Rekognition** already does this with a single API (Application Programming Interface) call. Use a managed service before you build.
+🚨 **Exam trap.** *"The team needs to detect known faces. Should they train a CNN from scratch on SageMaker?"* → **No**. **Amazon Rekognition** already does this with a single API call. Use a managed service before you build.
 
 ---
 
@@ -418,7 +418,7 @@ You now know:
 **re:Invent talks (search via Videos.md cards)**
 - 🎤 **AIM319 (2022): Capital One Real-time fraud detection on SageMaker** the canonical reference architecture
 - 🎤 **AIM303 (2023): How to choose the right SageMaker built-in algorithm**
-- 🎤 **Werner Vogels keynote 2023 / 2024**, annual ML / GenAI strategy update from AWS's CTO (Chief Technology Officer)
+- 🎤 **Werner Vogels keynote 2023 / 2024**, annual ML / GenAI strategy update from AWS's CTO
 
 **Textbooks**
 - 📖 **Goodfellow, Bengio, Courville (2016).** *Deep Learning.* MIT Press, chapters 5, 6
@@ -523,4 +523,4 @@ predictor.delete_model()
 
 Total cost for this lab: ~$1-3 USD if you delete the endpoint within an hour.
 
-🎯 **What you should now appreciate.** Five lines of meaningful SDK (Software Development Kit) code went from raw data to a trained, deployed binary classifier. This is the leverage SageMaker provides. The next 9 modules add depth, but the *shape* of every training and deployment workflow follows this 5-step pattern.
+🎯 **What you should now appreciate.** Five lines of meaningful SDK code went from raw data to a trained, deployed binary classifier. This is the leverage SageMaker provides. The next 9 modules add depth, but the *shape* of every training and deployment workflow follows this 5-step pattern.

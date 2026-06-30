@@ -8,9 +8,9 @@
 
 | Protocol | Plain | Encrypted | Use Case |
 |----------|-------|-----------|----------|
-| **POP3 (Post Office Protocol 3)** | 110 | 995 | One-device-only; downloads & often deletes |
-| **IMAP (Internet Message Access Protocol)** | 143 | 993 | Multi-device sync; mail stays on server |
-| **SMTP (Simple Mail Transfer Protocol)** | 25 / 587 | 465 | Outbound only |
+| **POP3** | 110 | 995 | One-device-only; downloads & often deletes |
+| **IMAP** | 143 | 993 | Multi-device sync; mail stays on server |
+| **SMTP** | 25 / 587 | 465 | Outbound only |
 | **Exchange ActiveSync (EAS)** |, | 443 | Microsoft sync + policy enforcement |
 
 🚨 *Multi-device user? → IMAP or EAS. NEVER POP3.*
@@ -51,11 +51,11 @@
 
 ---
 
-## 🎛️ MDM (Mobile Device Management) Capabilities (Top 10)
+## 🎛️ MDM Capabilities (Top 10)
 
 1. Enrollment (DEP / Zero-Touch)
 2. Passcode + encryption policy push
-3. Wi-Fi / VPN (Virtual Private Network) / email profile push
+3. Wi-Fi / VPN / email profile push
 4. App push (required/blocked)
 5. Compliance check (OS version, jailbreak)
 6. Selective wipe (corporate only)
@@ -85,7 +85,7 @@
 | Bluetooth Class 1 | ~100m | Long-range BT speakers |
 | Bluetooth Class 2 | ~10m | Headphones, keyboards |
 | NFC | <10 cm | Apple Pay, tap-to-pair |
-| RFID (Radio Frequency Identification) (passive) | cm | Badges, hotel keys |
+| RFID (passive) | cm | Badges, hotel keys |
 | IR | line-of-sight | TV remote (legacy) |
 
 ---

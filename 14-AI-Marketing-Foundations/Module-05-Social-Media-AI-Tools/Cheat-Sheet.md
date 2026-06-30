@@ -12,7 +12,7 @@
 | **Facebook** | Meta | Friends/groups + Reels |
 | **Threads** | Meta | Following + recommendations |
 | **TikTok** | ByteDance | Completion + rewatch + hook + niche affiliation (NOT followers) |
-| **YouTube** | Alphabet | CTR (Click-Through Rate) + AVD + retention + session time |
+| **YouTube** | Alphabet | CTR + AVD + retention + session time |
 | **LinkedIn** | Microsoft | Dwell time + comments + recency (suppresses outbound links) |
 | **X** | X Corp | Engagement velocity + Premium boost |
 | **Pinterest** | Pinterest | Freshness + visual relevance (DRIVES OUTBOUND) |
@@ -34,7 +34,7 @@
 
 ## 🌟 Influencer Tiers
 
-| Tier | Follower Range | Best ROI (Return on Investment) |
+| Tier | Follower Range | Best ROI |
 |---|---|---|
 | Nano | 1K–10K | High engagement, low reach |
 | **Micro** | **10K–100K** | **Highest ROI most brands** |

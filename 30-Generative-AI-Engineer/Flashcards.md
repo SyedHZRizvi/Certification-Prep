@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -513,7 +513,7 @@
 **A:** ~14 GB total vs ~74 GB. QLoRA enables consumer-GPU fine-tuning.
 
 **Q:** What is DPO?
-**A:** Direct Preference Optimization, train on (chosen, rejected) pairs without a reward model. Cheaper than PPO + RLHF (Reinforcement Learning from Human Feedback); widely deployed.
+**A:** Direct Preference Optimization, train on (chosen, rejected) pairs without a reward model. Cheaper than PPO + RLHF; widely deployed.
 
 **Q:** What is KTO?
 **A:** Kahneman-Tversky Optimization, like DPO but uses thumbs-up/down labels instead of pairs.
@@ -565,7 +565,7 @@
 **A:** Planner + Coder + Reviewer = ~64% vs single-agent ~49% on SWE-bench Verified, at 3-4× cost.
 
 **Q:** What does the "researcher agent" anti-pattern look like?
-**A:** An "agent" that just wraps a search-API (Application Programming Interface) call. That's a function, not an agent, no LLM-driven decision-making.
+**A:** An "agent" that just wraps a search-API call. That's a function, not an agent, no LLM-driven decision-making.
 
 **Q:** Reflection pattern?
 **A:** Same model called as "critic" on its own output, then "reviser" to incorporate critique. Often labeled multi-agent.
@@ -673,7 +673,7 @@
 **A:** p50, p95, p99, TTFT (time-to-first-token), TTLT, throughput.
 
 **Q:** What is TTFT and why does it matter?
-**A:** Time to first token. Perceived UX (User Experience) is dominated by TTFT, not total generation time. Stream first token fast.
+**A:** Time to first token. Perceived UX is dominated by TTFT, not total generation time. Stream first token fast.
 
 **Q:** What is semantic caching?
 **A:** Embed each query; return cached answer when cosine sim > threshold with a cached query (typ. ≥ 0.97).

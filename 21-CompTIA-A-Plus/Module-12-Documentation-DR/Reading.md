@@ -11,19 +11,19 @@
 
 ## 📚 A Story: The Backup That Saved a 53-Year-Old Manufacturing Company
 
-Meet Aleksandra. She's the head of IT at a 53-year-old machine-tools manufacturer in Pittsburgh. The company makes precision parts for the aerospace industry. The CAD/CAM systems holding 50 years of proprietary tooling designs run on Windows Server 2019 with SQL (Structured Query Language) Server. Backups go to a Veeam appliance in the same building, replicated nightly to AWS (Amazon Web Services) S3 (Simple Storage Service) in `us-east-2` (Ohio).
+Meet Aleksandra. She's the head of IT at a 53-year-old machine-tools manufacturer in Pittsburgh. The company makes precision parts for the aerospace industry. The CAD/CAM systems holding 50 years of proprietary tooling designs run on Windows Server 2019 with SQL Server. Backups go to a Veeam appliance in the same building, replicated nightly to AWS S3 in `us-east-2` (Ohio).
 
-On a Friday evening in February, the production VLAN (Virtual Local Area Network) catches a ransomware infection, Lockbit 3.0. The variant encrypts files on attached drives, including the on-prem Veeam backups (Veeam's "Insider Protection" wasn't enabled). The company's production CAD/CAM data, plus 50 years of designs, are encrypted.
+On a Friday evening in February, the production VLAN catches a ransomware infection, Lockbit 3.0. The variant encrypts files on attached drives, including the on-prem Veeam backups (Veeam's "Insider Protection" wasn't enabled). The company's production CAD/CAM data, plus 50 years of designs, are encrypted.
 
 Saturday morning. Aleksandra activates her DR plan. She:
 
-1. **Verifies the S3 backup is intact**, versioning enabled, MFA (Multi-Factor Authentication)-delete required for deletion. The attacker couldn't reach it. Last full backup: Friday at 4:00 a.m., before infection.
-2. **Spins up replacement infrastructure**, fresh Windows Server 2022 VMs on AWS EC2 (Elastic Compute Cloud) (per her runbook). Restores SQL backups + file shares from S3.
+1. **Verifies the S3 backup is intact**, versioning enabled, MFA-delete required for deletion. The attacker couldn't reach it. Last full backup: Friday at 4:00 a.m., before infection.
+2. **Spins up replacement infrastructure**, fresh Windows Server 2022 VMs on AWS EC2 (per her runbook). Restores SQL backups + file shares from S3.
 3. **Validates**, runs the documented "smoke test" procedure: open 5 representative CAD files, query 10 representative SQL records, confirm checksums match.
 4. **Rebuilds the on-prem environment**, reimage every desktop and server; restore from clean cloud baseline.
 5. **Cutover**, production resumes Monday morning, ~60 hours after infection. Loss: roughly 14 hours of work (Friday afternoon between 4 a.m. backup and 6 p.m. detection).
 
-She lost no orders. No customer was angry. The company's insurance covered the ~$45K of cloud infrastructure cost. The CEO (Chief Executive Officer) ordered champagne for the team.
+She lost no orders. No customer was angry. The company's insurance covered the ~$45K of cloud infrastructure cost. The CEO ordered champagne for the team.
 
 The reason this worked? **Documentation.** Aleksandra's DR plan written 9 months earlier, *tested in October* with a tabletop exercise, *partially tested in November* with a real S3-restore drill turned a catastrophic event into a 60-hour inconvenience.
 
@@ -58,7 +58,7 @@ Every IT interaction with a user should generate a ticket. The ticket is *the* c
 | **Reproduction steps** | What user did to trigger |
 | **Actions taken** | Chronological list |
 | **Resolution** | What fixed it |
-| **Time spent** | For SLA (Service Level Agreement) reporting |
+| **Time spent** | For SLA reporting |
 | **Tags** | For knowledge-base searchability |
 
 ### Severity matrix (typical SMB)
@@ -174,7 +174,7 @@ REFERENCE: Change ticket #1234
 | **Incremental** | Changes since *last backup of any type* | Slow (full + every incremental) | Fast + small |
 | **Differential** | Changes since *last full backup* | Medium (full + last diff) | Medium |
 | **Synthetic full** | Server combines a full + incrementals into a fresh full | Fast | Done offline |
-| **Snapshot** | Point-in-time (VM (Virtual Machine), ZFS, BTRFS, APFS) | Very fast | Very fast |
+| **Snapshot** | Point-in-time (VM, ZFS, BTRFS, APFS) | Very fast | Very fast |
 
 ### The 3-2-1 backup rule (memorize)
 
@@ -256,7 +256,7 @@ Best practice: **at least one tabletop per year + one partial restore per quarte
 | **Air-gapped** | Physically disconnected (tape rotated to vault) |
 | **MFA-delete** | Removing requires hardware-token confirmation |
 | **Versioning** | Multiple historical versions retained |
-| **Separate auth domain** | Backup admin credentials NOT in production AD (Active Directory) |
+| **Separate auth domain** | Backup admin credentials NOT in production AD |
 
 Modern ransomware specifically targets backups. The 2024 trend: attackers spend days inside the network deleting backups before encrypting production. **Test that your backups are not reachable from a compromised admin account.**
 
@@ -314,7 +314,7 @@ This is the modern ransomware reality, local backups are the *first target*. Wit
 | **Air-gapped** | Physically disconnected backup |
 | **Veeam / Acronis / Commvault** | Backup software vendors |
 | **S3 Object Lock** | AWS immutable storage feature |
-| **KB / Runbook / SOP (Standard Operating Procedure)** | Documentation types (recap) |
+| **KB / Runbook / SOP** | Documentation types (recap) |
 | **Ticket lifecycle** | New → Assigned → In Progress → Resolved → Closed |
 
 ### Acronyms cheat-row (Module 12)
@@ -328,7 +328,7 @@ This is the modern ransomware reality, local backups are the *first target*. Wit
 | MTTR | Mean Time To Recovery / Repair |
 | SLA | Service Level Agreement |
 | OLA | Operational Level Agreement |
-| KPI (Key Performance Indicator) | Key Performance Indicator |
+| KPI | Key Performance Indicator |
 | KB | Knowledge Base |
 | SOP | Standard Operating Procedure |
 | RFC | Request For Change |
@@ -397,7 +397,7 @@ You now know:
 
 **Case-study sources:**
 - 📄 Andy Greenberg, *Sandworm* (Doubleday, 2019), definitive book on NotPetya & Maersk
-- 📄 [Maersk CISO (Chief Information Security Officer) Adam Banks, RSAC 2018 keynote](https://www.rsaconference.com/), first-hand recovery story
+- 📄 [Maersk CISO Adam Banks, RSAC 2018 keynote](https://www.rsaconference.com/), first-hand recovery story
 
 **Practitioner / exam:**
 - 📖 [Professor Messer 220-1102 final review](https://www.professormesser.com/free-a-plus-training/220-1102/220-1102-video-training-course/)

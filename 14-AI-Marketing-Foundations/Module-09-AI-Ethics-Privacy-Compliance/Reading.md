@@ -1,13 +1,13 @@
 # Module 9: AI Ethics, Privacy & Compliance ⚖️
 
-> **Why this module matters:** Privacy and AI-ethics regulation is the area where ignorance is most expensive. GDPR (General Data Protection Regulation) fines, FTC enforcement, EU AI Act compliance, and state-level laws (CCPA, CPRA, Texas Data Privacy Act, Virginia CDPA) are no longer theoretical. This module is the legal floor every 2026 marketer must know.
+> **Why this module matters:** Privacy and AI-ethics regulation is the area where ignorance is most expensive. GDPR fines, FTC enforcement, EU AI Act compliance, and state-level laws (CCPA, CPRA, Texas Data Privacy Act, Virginia CDPA) are no longer theoretical. This module is the legal floor every 2026 marketer must know.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) first-party data, cookie deprecation, attribution shifts
 > - [Module 2 AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) hallucinations, training data, bias surface
-> - [Module 6 Email Marketing](../Module-06-Email-Marketing-AI-Personalization/Reading.md) CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act), GDPR-as-it-touches-email; this module deepens them
+> - [Module 6 Email Marketing](../Module-06-Email-Marketing-AI-Personalization/Reading.md) CAN-SPAM, GDPR-as-it-touches-email; this module deepens them
 >
-> This module reads like a legal taxonomy. You don't need a law degree, but you should be ready to learn 9 regulatory acronyms (GDPR, CCPA/CPRA, COPPA (Children's Online Privacy Protection Act), CAN-SPAM, CASL (Canada's Anti-Spam Legislation), LGPD, PIPL, PDPA, EU AI Act). Read with a regulatory glossary tab open.
+> This module reads like a legal taxonomy. You don't need a law degree, but you should be ready to learn 9 regulatory acronyms (GDPR, CCPA/CPRA, COPPA, CAN-SPAM, CASL, LGPD, PIPL, PDPA, EU AI Act). Read with a regulatory glossary tab open.
 
 ---
 
@@ -109,7 +109,7 @@ Singapore's Personal Data Protection Act. Penalties up to **SGD 10% of revenue o
 By 2026, most US states have passed or are considering CCPA-style laws. Key ones to know:
 
 - **Virginia CDPA** (Jan 2023)
-- **Colorado CPA (Cost Per Acquisition)** (July 2023)
+- **Colorado CPA** (July 2023)
 - **Connecticut CTDPA** (July 2023)
 - **Utah UCPA** (Dec 2023)
 - **Texas DPSA** (July 2024)
@@ -187,7 +187,7 @@ A separate but related story.
 
 Google's set of replacement APIs:
 
-- **Topics API (Application Programming Interface)**, browser assigns user-interest topics; ads use those instead of cookies
+- **Topics API**, browser assigns user-interest topics; ads use those instead of cookies
 - **Protected Audience API** (formerly FLEDGE), on-device remarketing
 - **Attribution Reporting API**, privacy-preserving conversion measurement
 
@@ -233,7 +233,7 @@ Data your company collects directly from your customers/users, with their consen
 - **It's yours.** No platform can take it away.
 - **It's compliant.** Consent is at the point of collection.
 - **It's high-quality.** You know exactly where it came from.
-- **It powers AI.** RAG (Retrieval-Augmented Generation), lookalike audiences, personalization, all rely on first-party data.
+- **It powers AI.** RAG, lookalike audiences, personalization, all rely on first-party data.
 
 ### How to build it
 1. **Capture email at every meaningful touchpoint** (with consent + clear value).
@@ -362,7 +362,7 @@ You now know:
 
 ## 💬 Discussion, Socratic prompts
 
-1. **Compliance as moat or compliance as tax.** A founder of a Series-B SaaS (Software as a Service) argues GDPR/CCPA/EU AI Act compliance is overhead that disadvantages startups vs Big Tech (who can hire compliance teams). A regulator counters that compliance is exactly what protects citizens *from* Big Tech and forces real privacy investment. Steel-man both. Where does compliance actually create competitive advantage (durable moat) vs become a cost-of-doing-business tax that flattens the playing field downward? Pick one and defend.
+1. **Compliance as moat or compliance as tax.** A founder of a Series-B SaaS argues GDPR/CCPA/EU AI Act compliance is overhead that disadvantages startups vs Big Tech (who can hire compliance teams). A regulator counters that compliance is exactly what protects citizens *from* Big Tech and forces real privacy investment. Steel-man both. Where does compliance actually create competitive advantage (durable moat) vs become a cost-of-doing-business tax that flattens the playing field downward? Pick one and defend.
 2. **First-party data: ethical floor or just rebranded tracking?** "First-party + zero-party data" is the most-cited 2026 strategic response to cookie deprecation. A privacy advocate argues this just relocates surveillance from third parties to first parties without reducing total data collection. A marketer responds that first-party = consented = ethically distinct. Construct both arguments. Where do you place the ethical line, and what disclosure obligations should the marketer commit to publicly even when not legally required?
 3. **The Apple Card case study, re-examined.** New York DFS investigated and found *no* statistical bias in the Apple Card / Goldman Sachs algorithm, yet the episode became a canonical "algorithmic discrimination" case. Should marketers care more about *measurable* bias or *perceived* bias? What does this case teach about communications around AI decisions vs the AI decisions themselves? Be specific about what Goldman should have done in the first 72 hours after the public claims went viral.
 4. **EU AI Act tiers too broad, too narrow, or right?** The EU AI Act puts most marketing AI into "Limited Risk" (disclosure required) and reserves "High-Risk" for hiring/credit/etc. A compliance attorney argues this is too lenient AI ad targeting affecting protected classes should be High-Risk. A marketer counters that High-Risk classification would freeze marketing AI development. Make both cases. Where would *you* draw the AI-marketing/High-Risk line, and why?

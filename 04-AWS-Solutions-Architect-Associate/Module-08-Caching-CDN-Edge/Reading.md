@@ -1,13 +1,13 @@
-# Module 8: Caching, CDN (Content Delivery Network) & Edge 🌎
+# Module 8: Caching, CDN & Edge 🌎
 
 > **Why this module matters:** SAA loves "low latency for global users" and "reduce origin load" scenarios. CloudFront and Global Accelerator are the two main weapons. Add ElastiCache and DAX for application-tier caching. Get the decision tree right and 5–7 questions become trivial.
 
 > **Prerequisites for this module.**
 > - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md), Edge locations, Route 53 basics
 > - [Module 4](../Module-04-VPC-Deep-Dive/Reading.md), VPC and ALB/NLB topology (origins for CloudFront)
-> - [Module 5](../Module-05-S3 (Simple Storage Service)-Deep-Dive/Reading.md), S3 is the most common CloudFront origin; Origin Access Control
-> - [Module 6](../Module-06-Databases/Reading.md), DynamoDB is what DAX caches; RDS (Relational Database Service)/Aurora is what ElastiCache caches
-> - Basic HTTP (Hypertext Transfer Protocol) knowledge: TTL, Cache-Control headers, request/response cycle, signed URL concept
+> - [Module 5](../Module-05-S3-Deep-Dive/Reading.md), S3 is the most common CloudFront origin; Origin Access Control
+> - [Module 6](../Module-06-Databases/Reading.md), DynamoDB is what DAX caches; RDS/Aurora is what ElastiCache caches
+> - Basic HTTP knowledge: TTL, Cache-Control headers, request/response cycle, signed URL concept
 
 ---
 
@@ -30,7 +30,7 @@ CloudFront is a global CDN with 600+ edge locations. It caches static and dynami
 | Concept | What |
 |---------|------|
 | **Distribution** | Your CloudFront deployment (a public URL like `d123.cloudfront.net`) |
-| **Origin** | Where the original content lives (S3, ALB, EC2 (Elastic Compute Cloud), custom HTTP) |
+| **Origin** | Where the original content lives (S3, ALB, EC2, custom HTTP) |
 | **Behavior** | Per-path rule (e.g., `/images/*` → S3 origin, `/api/*` → ALB origin) |
 | **Cache Policy** | What headers/query strings/cookies are part of the cache key |
 | **Origin Request Policy** | What headers/params are forwarded to the origin |
@@ -72,8 +72,8 @@ CloudFront is a global CDN with 600+ edge locations. It caches static and dynami
 
 ### Security features
 
-- **WAF (Web Application Firewall)** (Web Application Firewall) attached to the distribution
-- **AWS Shield Standard** included for free (basic DDoS (Distributed Denial of Service)); **Shield Advanced** is paid
+- **WAF** (Web Application Firewall) attached to the distribution
+- **AWS Shield Standard** included for free (basic DDoS); **Shield Advanced** is paid
 - **Geo restriction**, block by country
 - **Signed URLs / signed cookies**, restrict access (signed URL: single object; signed cookie: many objects)
 - **Field-level encryption**, encrypt specific fields in POST bodies
@@ -89,7 +89,7 @@ CloudFront is a global CDN with 600+ edge locations. It caches static and dynami
 | | CloudFront | Global Accelerator |
 |---|------------|---------------------|
 | Caching | Yes | No |
-| Layer | L7 (HTTP) | L4 (TCP (Transmission Control Protocol)/UDP (User Datagram Protocol)) |
+| Layer | L7 (HTTP) | L4 (TCP/UDP) |
 | Use | Static/cacheable web content | Non-cacheable: gaming, IoT, voice, APIs |
 | Static IPs | Random (per edge) | **2 static Anycast IPs** |
 | Health checks & failover | Edge-level | Regional endpoint health checks; auto-failover |
@@ -130,14 +130,14 @@ In this module we focus on **how to use** ElastiCache for caching, not just on w
 DAX is a write-through cache **only for DynamoDB**. Lives in a VPC. Single-digit microsecond reads for cached items, 10x improvement for typical workloads. Cluster is fault-tolerant across AZs.
 
 🎯 **DAX vs ElastiCache for DynamoDB:**
-- **DAX** is purpose-built; same DynamoDB API (Application Programming Interface); transparent to your code.
+- **DAX** is purpose-built; same DynamoDB API; transparent to your code.
 - **ElastiCache** is more flexible but requires you to write the cache logic.
 
 🎯 **Exam pattern:** "Repeated reads of same DynamoDB items, want microsecond latency, minimum code change" → **DAX**.
 
 ---
 
-## 🗺️ Route 53, DNS (Domain Name System) at Global Scale
+## 🗺️ Route 53, DNS at Global Scale
 
 Route 53 is AWS's authoritative DNS, but it's also a key part of the edge/global story because of **routing policies**.
 
@@ -153,7 +153,7 @@ Route 53 is AWS's authoritative DNS, but it's also a key part of the edge/global
 | **IP-based** | Route by client IP range |
 
 ### Health checks
-- HTTP/HTTPS (HTTP Secure)/TCP, check endpoint
+- HTTP/HTTPS/TCP, check endpoint
 - Calculated, combine other health checks
 - CloudWatch alarm, check a CW alarm state
 
@@ -200,7 +200,7 @@ Putting it together for a global app:
              us-east-1               eu-west-1               ap-south-1
    CloudFront (static + API edge cache)  +  Global Accelerator (dynamic API)
                 ↓                                                ↓
-            ALB → ECS (Elastic Container Service)                                       ALB → ECS
+            ALB → ECS                                       ALB → ECS
                 ↓                                                ↓
    Aurora Global Database (primary in us-east-1, replicas in others)
    ElastiCache cluster per region · DAX in front of DynamoDB Global Tables
@@ -284,7 +284,7 @@ You now know:
 - **December 7, 2021 (~10:30 ET, 18:34 ET):** A network capacity issue in us-east-1 triggered cascading failures across many AWS services (EC2 control plane, ECS, Lambda, EventBridge, the AWS Console itself). Per AWS's official post-event summary (`aws.amazon.com/message/12721/`), the trigger was an automated scaling event that overwhelmed internal services. Effects rippled to Disney+, Netflix (partially), Robinhood, Coinbase, Tinder, McDonald's app, and the AWS Service Health Dashboard itself (irony noted in the post-mortem).
 - **June 13, 2023 (~12:11 ET, 16:30 ET):** A Lambda subsystem failure in us-east-1 cascaded to API Gateway, EventBridge, and dozens of customer applications. AWS's post-event summary detailed an internal database issue that affected Lambda's invocation path.
 
-Both incidents shared a pattern: **a single-region outage degraded global services that relied on us-east-1 for control plane operations**, even when their workloads were in other regions. The reason: many AWS *global* services (IAM (Identity and Access Management), Route 53 control plane, CloudFront control plane, Organizations) have **their primary endpoints in us-east-1**.
+Both incidents shared a pattern: **a single-region outage degraded global services that relied on us-east-1 for control plane operations**, even when their workloads were in other regions. The reason: many AWS *global* services (IAM, Route 53 control plane, CloudFront control plane, Organizations) have **their primary endpoints in us-east-1**.
 
 **Decision.** Companies that came out best had pre-existing multi-region architectures:
 
@@ -314,7 +314,7 @@ Note also: **CloudFront caching itself** insulates against origin outages for th
 
 **Discussion (Socratic).**
 - **Q1.** AWS's own *Service Health Dashboard* was unreachable during parts of the December 2021 outage because *it also ran in us-east-1*. Defend AWS's choice to centralize. What's the architectural reason AWS would put the SHD in one region, and what's the right pattern?
-- **Q2.** A startup CTO (Chief Technology Officer) argues: "us-east-1 is cheapest and most-feature-complete; multi-region triples our cost. We'll accept the outage risk." For what kinds of business and what SLA (Service Level Agreement) does this argument actually hold up?
+- **Q2.** A startup CTO argues: "us-east-1 is cheapest and most-feature-complete; multi-region triples our cost. We'll accept the outage risk." For what kinds of business and what SLA does this argument actually hold up?
 - **Q3.** The June 2023 outage affected EventBridge and Lambda, which means many "event-driven" architectures stopped processing events. If you'd built a backup path through SQS (which uses a different subsystem), would you have survived? Argue for and against intentionally building redundant async paths.
 
 ---

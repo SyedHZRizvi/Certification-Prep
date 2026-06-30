@@ -61,7 +61,7 @@ All body parts = **Graphic** symbols (not Movie Clips, must sync to parent timel
 | **FV** | F, V | Upper teeth on lower lip |
 | **L** | L | Open, tongue tip to roof |
 | **MBP** | M, B, P | Closed or nearly closed |
-| **REST (Representational State Transfer)** | Silence, exhale | Relaxed, slight opening |
+| **REST** | Silence, exhale | Relaxed, slight opening |
 | **WQ** | W, Q | Small round pucker |
 
 **It appears on exams. 10 groups. No exceptions.**

@@ -18,7 +18,7 @@ title: ISM CPSM Track (Certified Professional in Supply Management)
 
 ### 🎯 The promise
 
-The ISM Certified Professional in Supply Management (CPSM) is the highest credential the Institute for Supply Management awards, the global standard for procurement, sourcing, supplier management, and category leadership. While CSCP and CPIM cover the *operational* supply chain, CPSM is the *commercial* supply chain: contracts, negotiation, supplier relationships, sustainability, risk, and the strategic spend that often equals 60–70% of a company's revenue. Pass CPSM and you are recognized as the procurement leader the CFO (Chief Financial Officer) trusts to defend a billion dollars of category spend.
+The ISM Certified Professional in Supply Management (CPSM) is the highest credential the Institute for Supply Management awards, the global standard for procurement, sourcing, supplier management, and category leadership. While CSCP and CPIM cover the *operational* supply chain, CPSM is the *commercial* supply chain: contracts, negotiation, supplier relationships, sustainability, risk, and the strategic spend that often equals 60–70% of a company's revenue. Pass CPSM and you are recognized as the procurement leader the CFO trusts to defend a billion dollars of category spend.
 
 ### 💼 Career outcomes after passing
 
@@ -26,7 +26,7 @@ The ISM Certified Professional in Supply Management (CPSM) is the highest creden
 - **Category Manager** ($100K–$140K), owning the strategy for a specific spend category (IT, logistics, MRO, marketing)
 - **Procurement Manager** ($105K–$145K), leading a buying team; CPSM is increasingly preferred
 - **Sourcing Director** ($130K–$180K), owning a function's sourcing strategy and supplier portfolio
-- **Chief Procurement Officer track** ($180K–$280K + bonus), CPSM is one of two credentials (with CIPS MCIPS) recognized for CPO (Chief Product Officer)-track hiring
+- **Chief Procurement Officer track** ($180K–$280K + bonus), CPSM is one of two credentials (with CIPS MCIPS) recognized for CPO-track hiring
 - **Supply Chain / Procurement Consultant (Big-4)** ($120K–$170K + bonus), Deloitte, KPMG, EY procurement transformation practice
 
 ISM's own Salary Survey (annual) shows CPSM holders earn an average **~$30K more** than non-certified peers in equivalent procurement roles, a roughly 25–30% premium. CPSM is the procurement complement to the supply-chain ladder formed by **CSCP (course 10)**, **CPIM (course 11)**, and **CLTD (course 12)**.
@@ -87,10 +87,10 @@ By the end of this track you'll be able to:
 | 2 | [Category Management & Sourcing](./Module-02-Category-Management-Sourcing/Reading.md) | 3.5 hrs | Spend analysis, Kraljic matrix, sourcing process, e-sourcing |
 | 3 | [Negotiation & Contracts](./Module-03-Negotiation-Contracts/Reading.md) | 3.5 hrs | BATNA, ZOPA, contract types, UCC, SLAs, force majeure |
 | 4 | [Supplier Relationship Management](./Module-04-Supplier-Relationship-Management/Reading.md) | 3 hrs | SRM tiering, scorecards, supplier development, diversity |
-| 5 | [Cost Management & TCO](./Module-05-Cost-Management-TCO/Reading.md) | 3 hrs | TCO, should-cost, value analysis, hedging, ROI (Return on Investment) |
+| 5 | [Cost Management & TCO](./Module-05-Cost-Management-TCO/Reading.md) | 3 hrs | TCO, should-cost, value analysis, hedging, ROI |
 | 6 | [International Supply](./Module-06-International-Supply/Reading.md) | 3 hrs | Incoterms 2020, FX risk, FCPA, tariffs, FTAs, culture |
 | 7 | [Risk, Compliance & Ethics](./Module-07-Risk-Compliance-Ethics/Reading.md) | 3.5 hrs | Risk register, BCP, conflict minerals, ISM ethics code |
-| 8 | [Leadership & Project Management](./Module-08-Leadership-Project-Management/Reading.md) | 3 hrs | Kotter, ADKAR, Tuckman, stakeholders, KPIs (Key Performance Indicators), influence |
+| 8 | [Leadership & Project Management](./Module-08-Leadership-Project-Management/Reading.md) | 3 hrs | Kotter, ADKAR, Tuckman, stakeholders, KPIs, influence |
 
 **Total study time:** ~25 hours of reading + 10 hours of videos + 10 hours of quizzes & exams = **~45 hours**
 

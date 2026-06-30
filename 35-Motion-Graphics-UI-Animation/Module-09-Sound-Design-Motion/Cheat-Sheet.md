@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-09-Sound-Design-Motion/Cheat-Sheet/
+permalink: /35-Motion-Graphics-UI-Animation/Module-09-Sound-Design-Motion/Cheat-Sheet/
 title: "Module 9 Cheat Sheet: Sound Design & Motion"
 ---
 

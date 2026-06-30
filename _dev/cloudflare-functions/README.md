@@ -23,7 +23,7 @@ During **Phase 3** of the Cloudflare migration. At that point this directory mov
 Once Phase 3 is closer:
 
 ```bash
-# Install wrangler (Cloudflare CLI (Command Line Interface))
+# Install wrangler (Cloudflare CLI)
 npm install -g wrangler
 
 # Test locally against a fake KV
@@ -32,7 +32,7 @@ wrangler pages dev _site --kv CERT_HUB_USERS
 # Pre-populate fake users via wrangler kv
 wrangler kv key put --binding=CERT_HUB_USERS \
   "user:test-student@example.com" \
-  '{"role":"student","courses":["03-AWS (Amazon Web Services)-Cloud-Practitioner"],"subscription_ends_at":"2027-01-01"}'
+  '{"role":"student","courses":["03-AWS-Cloud-Practitioner"],"subscription_ends_at":"2027-01-01"}'
 ```
 
 Then visit `http://localhost:8788/03-AWS-Cloud-Practitioner/Module-01-Cloud-Fundamentals/Reading/` with a header simulating Cloudflare Access:

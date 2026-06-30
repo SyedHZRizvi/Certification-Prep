@@ -11,7 +11,7 @@
 | Firmware | BIOS | UEFI + Secure Boot |
 | Boot disk | IDE | SCSI |
 | vTPM | No | **Yes** |
-| Shielded VM (Virtual Machine) support | No | **Yes** |
+| Shielded VM support | No | **Yes** |
 | Max boot disk | 2 TB | 64 TB |
 | Convert in-place | n/a | **Cannot convert from Gen 1** |
 
@@ -40,7 +40,7 @@
 | Downtime | ~700 ms typical |
 | Storage | Shared (CSV) OR **Shared-Nothing** (SMB 3.0) |
 | Auth | **Kerberos** (constrained delegation) OR CredSSP |
-| Perf options | TCP (Transmission Control Protocol)/IP, **Compression** (default), SMB Direct (RDMA) |
+| Perf options | TCP/IP, **Compression** (default), SMB Direct (RDMA) |
 
 ### Compare migration types
 
@@ -100,7 +100,7 @@ Guarded Host (Hyper-V), keys released, VM boots
 |----------|----------|
 | CPU | vCPU count, Reserve %, Weight, Limit %, Compatibility Mode |
 | Memory | Min, Startup, Max, Memory Weight, Smart Paging |
-| Storage | **VHDX preferred** (64 TB, 4K-aligned), Differencing disks, **QoS (Quality of Service) Min/Max IOPS** |
+| Storage | **VHDX preferred** (64 TB, 4K-aligned), Differencing disks, **QoS Min/Max IOPS** |
 
 ### VHD vs VHDX
 
@@ -118,7 +118,7 @@ Guarded Host (Hyper-V), keys released, VM boots
 |---------|------|
 | **VMQ** | Default; per-VM queues at 10 GbE+ |
 | **vRSS** | Multi-core scaling inside the VM |
-| **SR-IOV** | Wire-speed VMs (FW, NFV), **bypasses vSwitch (no VLAN (Virtual Local Area Network)/extensions)** |
+| **SR-IOV** | Wire-speed VMs (FW, NFV), **bypasses vSwitch (no VLAN/extensions)** |
 
 ---
 
@@ -174,14 +174,14 @@ Usually **wrong**:
 | New production VM with vTPM | Gen 2 |
 | Wire-speed network throughput for a firewall VM | SR-IOV |
 | VM mobility across hosts without shared storage | Shared-Nothing Live Migration (SMB 3.0) |
-| Cross-site VM DR with 30-sec RPO (Recovery Point Objective) | Hyper-V Replica @ 30 sec |
+| Cross-site VM DR with 30-sec RPO | Hyper-V Replica @ 30 sec |
 | Multi-tenant hosting with admin-isolation | Shielded VMs + HGS (TPM-trusted) |
 | Hyper-V lab inside Hyper-V | Nested virtualization |
 | 64 TB disk size | VHDX |
 | Upload disk to Azure | VHD (convert from VHDX first) |
 | Per-VM IOPS throttling | Storage QoS Min/Max IOPS |
 | Test DR failover without disrupting prod | `Start-VMFailover -AsTest` |
-| Hide rogue DHCP (Dynamic Host Configuration Protocol) from a VM | vSwitch DHCP guard |
+| Hide rogue DHCP from a VM | vSwitch DHCP guard |
 | NIC team for S2D Hyper-V | SET (not LBFO) |
 
 ---

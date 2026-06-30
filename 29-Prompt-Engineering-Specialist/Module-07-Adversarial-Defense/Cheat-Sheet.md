@@ -105,7 +105,7 @@ Reinforce in prompts with delimiters + explicit "data not instructions" labels.
 | Tool | Purpose |
 |------|---------|
 | **LlamaGuard 3** | Input/output safety classifier (Meta, open) |
-| **OpenAI Moderation API (Application Programming Interface)** | Free, comprehensive |
+| **OpenAI Moderation API** | Free, comprehensive |
 | **Anthropic safety classifier** | Bedrock / Workbench |
 | **Perspective API** | Toxicity scoring (Google) |
 | **Azure Content Safety** | Image + text |
@@ -120,7 +120,7 @@ Reinforce in prompts with delimiters + explicit "data not instructions" labels.
 
 | Term | Definition |
 |------|------------|
-| **RLHF (Reinforcement Learning from Human Feedback)** | Humans rank → reward model → RL fine-tune |
+| **RLHF** | Humans rank → reward model → RL fine-tune |
 | **RLAIF** | Same but AI does the ranking |
 | **DPO** | Direct Preference Optimization (no RL needed) |
 | **Constitutional AI** | Self-critique against principles (Anthropic) |

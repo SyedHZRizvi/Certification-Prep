@@ -7,12 +7,12 @@
 ## 🧰 The 6-Tier Stack Map
 
 ```
-1. FOUNDATION       → LLM (Large Language Model) (ChatGPT/Claude/Gemini), Notion, Drive
+1. FOUNDATION       → LLM (ChatGPT/Claude/Gemini), Notion, Drive
 2. CONTENT/CREATIVE → Long-form AI, short-form AI, SEO optimizer,
                       image (Midjourney/DALL-E/Firefly),
                       video (Synthesia/Runway), voice (ElevenLabs)
 3. DISTRIBUTION     → ESP, social schedulers, podcasting, community
-4. MEASUREMENT      → GA4 (Google Analytics 4), Looker Studio, Mixpanel/Amplitude, CRM (Customer Relationship Management), CDP (Customer Data Platform)
+4. MEASUREMENT      → GA4, Looker Studio, Mixpanel/Amplitude, CRM, CDP
 5. AUTOMATION       → Zapier / Make / n8n + Sheets / Airtable
 6. SPECIALIZED      → Transcription, meeting AI, sales AI,
                       research (Perplexity), voice-to-notes
@@ -87,7 +87,7 @@ ASSET LIBRARY
 1. List every paid tool + monthly cost
 2. "Did I use in last 30 days?"
 3. "Is free alternative good enough?"
-4. Cancel bottom 20% by ROI (Return on Investment)
+4. Cancel bottom 20% by ROI
 
 ---
 

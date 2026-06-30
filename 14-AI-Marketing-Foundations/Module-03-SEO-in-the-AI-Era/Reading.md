@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) POESM, TOFU/MOFU/BOFU, walled gardens; AI Overviews are introduced there
-> - [Module 2 AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) embeddings, RAG (Retrieval-Augmented Generation), and how LLMs "read" your content; GEO (Generative Engine Optimization)/AEO (Answer Engine Optimization) depends on it
+> - [Module 2 AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) embeddings, RAG, and how LLMs "read" your content; GEO/AEO depends on it
 > - Basic HTML literacy: knowing what a `<title>` tag, an H1, and a meta description are
 >
 > If you've never set up Google Search Console or used an SEO tool (Ahrefs, SEMrush, Moz), open a free trial alongside this reading, the tactical sections benefit from following along.
@@ -53,7 +53,7 @@ What lets Google crawl, render, and index your site at all.
 **Includes:**
 - **Site speed** (Core Web Vitals: LCP, INP, CLS, Google's official 2026 metrics)
 - **Mobile-friendliness** (mobile-first indexing since 2019; absolute in 2026)
-- **HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure)** (encrypted; non-HTTPS is penalized)
+- **HTTPS** (encrypted; non-HTTPS is penalized)
 - **XML sitemaps** (a list of your URLs for crawlers)
 - **Robots.txt** (which paths crawlers can access)
 - **Canonical tags** (which version of duplicate pages is the "real" one)
@@ -103,7 +103,7 @@ New workflow: still all of that, **plus** AI-augmented expansion and topic clust
 **Tools used:** Ahrefs, SEMrush, or Moz (any one) + ChatGPT/Claude + a spreadsheet.
 
 #### Step 1: Seed list
-Pick 5–10 broad topics relevant to your business. For a project management SaaS (Software as a Service), this might be: "project management," "team productivity," "agency operations," "client communication," "task tracking," etc.
+Pick 5–10 broad topics relevant to your business. For a project management SaaS, this might be: "project management," "team productivity," "agency operations," "client communication," "task tracking," etc.
 
 #### Step 2: AI-assisted expansion
 Paste this into ChatGPT or Claude:
@@ -120,7 +120,7 @@ Group them by user intent. Format as a markdown table.
 #### Step 3: Pull search volume + difficulty
 Take your AI-expanded list into Ahrefs / SEMrush / Moz and pull search volume + difficulty (KD/DA) for each. You're looking for queries with:
 
-- **Volume ≥ 100/month** (lower is fine for niche B2B (Business-to-Business))
+- **Volume ≥ 100/month** (lower is fine for niche B2B)
 - **Difficulty ≤ 30** (for newer sites; established sites can go higher)
 - **High commercial intent** if BOFU is the goal
 
@@ -141,8 +141,8 @@ Pick your top 20 for the next 3 months.
 
 | Tool | Strength | Pricing model (general) |
 |---|---|---|
-| **Surfer SEO** | Real-time content optimization, NLP (Natural Language Processing)-driven on-page suggestions | Subscription tiers |
-| **Frase** | AI-driven outline + brief generation from SERPs (Search Engine Results Pages) | Subscription tiers |
+| **Surfer SEO** | Real-time content optimization, NLP-driven on-page suggestions | Subscription tiers |
+| **Frase** | AI-driven outline + brief generation from SERPs | Subscription tiers |
 | **MarketMuse** | Topic-model-based content planning | Subscription tiers (enterprise lean) |
 | **Clearscope** | High-end content scoring | Premium subscription |
 | **Ahrefs / SEMrush / Moz** | Full SEO suites with AI features layered in | Subscription tiers |
@@ -158,7 +158,7 @@ Pick your top 20 for the next 3 months.
 The single biggest conceptual shift in SEO since 2018 is the move from **keyword matching** to **semantic search** and **entity-based ranking**.
 
 ### Old model: keyword match
-You type "best CRM (Customer Relationship Management) for small business." Google looks for pages containing the literal phrase "best CRM for small business." Pages with that exact phrase rank well.
+You type "best CRM for small business." Google looks for pages containing the literal phrase "best CRM for small business." Pages with that exact phrase rank well.
 
 ### New model: semantic + entity
 You type "best CRM for small business." Google now:
@@ -401,7 +401,7 @@ Voice queries are longer, more conversational, and more question-shaped. Optimiz
 | **Off-page SEO** | External signals (backlinks, brand mentions, reviews) |
 | **E-E-A-T** | Experience, Expertise, Authoritativeness, Trustworthiness |
 | **YMYL** | Your Money or Your Life, high-stakes content held to higher E-E-A-T |
-| **Core Web Vitals** | LCP, INP, CLS, Google's UX (User Experience)-as-ranking metrics |
+| **Core Web Vitals** | LCP, INP, CLS, Google's UX-as-ranking metrics |
 | **LCP** | Largest Contentful Paint, load speed of largest element (≤ 2.5s good) |
 | **INP** | Interaction to Next Paint responsiveness (≤ 200ms good) replaced FID in March 2024 |
 | **CLS** | Cumulative Layout Shift, visual stability (≤ 0.1 good) |
@@ -415,7 +415,7 @@ Voice queries are longer, more conversational, and more question-shaped. Optimiz
 | **Canonical tag** | Tells Google which version of duplicate pages is the original |
 | **hreflang** | Language/region targeting tag for international SEO |
 | **CrUX** | Chrome User Experience Report, Google's real-user CWV data |
-| **SERP (Search Engine Results Page)** | Search Engine Results Page |
+| **SERP** | Search Engine Results Page |
 
 ---
 
@@ -442,7 +442,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 4 turns SEO content strategy into the AI-assisted writing workflow; Module 8 covers GA4 (Google Analytics 4) measurement of organic traffic + AI-Overview impressions in Search Console; Module 9 covers the IP/legal angle of programmatic AI content.
+> - Inside this course: Module 4 turns SEO content strategy into the AI-assisted writing workflow; Module 8 covers GA4 measurement of organic traffic + AI-Overview impressions in Search Console; Module 9 covers the IP/legal angle of programmatic AI content.
 > - Cross-course: `15-AI-Marketing-Strategy` Module 4 covers SEO governance at the executive level (when to invest, when to harvest); `16-AI-Marketing-Automation-Workflows` Module 4 automates the content + schema workflow.
 > - Practice: Practice Exam 1 has 6–8 SEO questions (E-E-A-T, Core Web Vitals, GEO tactics, programmatic SEO line). Final Mock Exam adds harder synthesis (HubSpot pillar/cluster, AI-Overview optimization, Helpful Content distinctions).
 
@@ -452,7 +452,7 @@ You now know:
 
 1. **The TOFU-SEO sunsetting question.** A B2B content team's existing 200 "what is X" blog posts collectively bring 60% of their organic traffic, but per Search Console, AI-Overview impressions on those queries are climbing 20% month-over-month while clicks fall. Three options: (a) hard-pivot the content team to BOFU + branded; (b) keep TOFU but rewrite every post for GEO citation (FAQ + stats + expert quotes + author bio); (c) shrink the content team and re-allocate spend to retargeting. Make the case for one, then steel-man the strongest objection. Which is right when the content team is 3 people vs 15?
 2. **E-E-A-T and the small-team brand.** Google's E-E-A-T framework rewards Experience + Expertise + Authoritativeness + Trust. A SMB has none of the conventional signals (no Wikipedia entry, no major-publication bylines, no industry awards). What's the *minimum credible* set of E-E-A-T signals they can build in 90 days that materially changes AI-Overview citation probability? Cite specific tactics from the reading (author bios, citations, schema) and rank them by cost vs likely impact.
-3. **Programmatic SEO under the Helpful Content rule.** A travel-tech founder wants to ship 50,000 "Best Restaurants in {neighborhood}" pages. Google's March 2024 Scaled Content Abuse policy will deindex if the content is "lightly-edited AI at scale." The Airbnb playbook from the reading argues this *can* be done well. Where exactly is the line? Design a publication threshold (e.g. "at least N hand-written sentences per page; at least M unique stats; human review of every Xth page") that you'd actually defend to Google's quality raters and to your CFO (Chief Financial Officer).
+3. **Programmatic SEO under the Helpful Content rule.** A travel-tech founder wants to ship 50,000 "Best Restaurants in {neighborhood}" pages. Google's March 2024 Scaled Content Abuse policy will deindex if the content is "lightly-edited AI at scale." The Airbnb playbook from the reading argues this *can* be done well. Where exactly is the line? Design a publication threshold (e.g. "at least N hand-written sentences per page; at least M unique stats; human review of every Xth page") that you'd actually defend to Google's quality raters and to your CFO.
 4. **Schema as a double-edged sword.** Schema markup increases the odds AI engines extract and cite your content, but it also *gives them what they need to answer the query without sending the user to your page*. Construct the argument that schema is net-positive for an authority publisher (high-trust source) but net-negative for a low-margin affiliate site. Where does the trade-off flip?
 5. **The "writing for citation, not for ranking" thesis.** HubSpot's Inbound 2024 talk argued the 2026 SEO bar is no longer "rank #1" but "be the most-cited source the AI Overview uses." Construct two scenarios one for a service-area local business, one for a global SaaS where this reframing changes your actual content choices (page structure, length, author signals, internal linking). What stays the same in both, and what diverges?
 

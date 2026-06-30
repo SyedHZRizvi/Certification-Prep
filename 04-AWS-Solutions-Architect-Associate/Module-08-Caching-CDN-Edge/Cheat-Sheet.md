@@ -1,4 +1,4 @@
-# 📋 Module 8 Cheat Sheet: Caching, CDN (Content Delivery Network) & Edge
+# 📋 Module 8 Cheat Sheet: Caching, CDN & Edge
 
 > One page. Print it. Tape to your monitor.
 
@@ -8,11 +8,11 @@
 
 | Need | Pick |
 |------|------|
-| Cache static + dynamic HTTP (Hypertext Transfer Protocol) at edge | **CloudFront** |
+| Cache static + dynamic HTTP at edge | **CloudFront** |
 | Static IPs + L4 routing to multi-region | **Global Accelerator** |
-| DNS (Domain Name System) routing (latency, failover, geo, weighted, etc.) | **Route 53** |
-| L7 firewall (SQLi/XSS, bot) | **AWS WAF (Web Application Firewall)** |
-| Free DDoS (Distributed Denial of Service) protection | **Shield Standard** (free) |
+| DNS routing (latency, failover, geo, weighted, etc.) | **Route 53** |
+| L7 firewall (SQLi/XSS, bot) | **AWS WAF** |
+| Free DDoS protection | **Shield Standard** (free) |
 | Premium DDoS protection + cost protection | **Shield Advanced** ($$$) |
 | Org-wide WAF/SG policy | **Firewall Manager** |
 | Cache DB queries | **ElastiCache** (Redis if HA needed) |
@@ -22,7 +22,7 @@
 
 ## ☁️ CloudFront Quick
 
-- **OAC** = lock S3 (Simple Storage Service) origin to CF (replaces OAI)
+- **OAC** = lock S3 origin to CF (replaces OAI)
 - **Behaviors** = per-path routing rules to origins
 - **Cache Policy** = what's in the cache key
 - **Signed URL** = 1 file ; **Signed Cookie** = many files
@@ -39,7 +39,7 @@
 | | CloudFront | Global Accelerator |
 |---|------------|---------------------|
 | Caches | ✅ | ❌ |
-| Layer | L7 HTTP | L4 TCP (Transmission Control Protocol)/UDP (User Datagram Protocol) |
+| Layer | L7 HTTP | L4 TCP/UDP |
 | IPs | Random | **2 static Anycast IPs** |
 | Use | Web/static/dynamic HTTP | Gaming, IoT, voice, APIs needing static IPs |
 

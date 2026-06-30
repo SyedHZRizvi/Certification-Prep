@@ -1,11 +1,11 @@
-# Module 4: Supply Planning & S&OP (Sales and Operations Planning) 🗓️
+# Module 4: Supply Planning & S&OP 🗓️
 
-> **Why this module matters:** S&OP / IBP is the "executive heartbeat" of supply chain. The CSCP expects you to recite Wallace/Stahl's five-step monthly cycle, link aggregate plans to MPS and MRP (Material Requirements Planning), and explain RCCP vs CRP cold. Multi-question scenarios in Domain 3 hinge on this.
+> **Why this module matters:** S&OP / IBP is the "executive heartbeat" of supply chain. The CSCP expects you to recite Wallace/Stahl's five-step monthly cycle, link aggregate plans to MPS and MRP, and explain RCCP vs CRP cold. Multi-question scenarios in Domain 3 hinge on this.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Forecasting methods + error metrics](../Module-03-Demand-Forecasting/Reading.md), Module 3
-> - [CPFR (Collaborative Planning, Forecasting, and Replenishment) and one-number forecasting](../Module-03-Demand-Forecasting/Reading.md), Module 3
-> - [The bullwhip effect](../Module-01-SCM (Supply Chain Management)-Foundations-Strategy/Reading.md), Module 1
+> - [CPFR and one-number forecasting](../Module-03-Demand-Forecasting/Reading.md), Module 3
+> - [The bullwhip effect](../Module-01-SCM-Foundations-Strategy/Reading.md), Module 1
 > - Basic BOM and routing intuition
 > If you've never read about Bill of Materials structures or MRP, skim a quick intro before tackling the MRP section.
 
@@ -13,7 +13,7 @@
 
 ## 🏗️ A Story: The Forklift Maker's Monday Meeting
 
-Anita is VP of Operations at **Cargolift**, a 1,400-employee forklift manufacturer. For years, her Monday operations meeting was chaos. Sales would commit to orders the plant couldn't build. Finance would complain about excess inventory of slow-selling models. The CEO (Chief Executive Officer) would slam the table and demand "alignment."
+Anita is VP of Operations at **Cargolift**, a 1,400-employee forklift manufacturer. For years, her Monday operations meeting was chaos. Sales would commit to orders the plant couldn't build. Finance would complain about excess inventory of slow-selling models. The CEO would slam the table and demand "alignment."
 
 In Q2 2021 they rolled out a formal S&OP process. **Five steps, once a month, every month.** Sales forecasted at product family level. Operations matched capacity. Finance translated the plan into cash. The executive team reviewed it together. They agreed on **one plan**, not three.
 
@@ -27,7 +27,7 @@ This is what S&OP buys you. But to get there, you need the vocabulary: aggregate
 
 ```
    ┌──────────────────────────────────────────────────┐
-   │   Strategic Plan (3–10 yrs), facilities, M&A (Mergers and Acquisitions)    │
+   │   Strategic Plan (3–10 yrs), facilities, M&A    │
    └──────────────────────────────────────────────────┘
                           │
    ┌──────────────────────▼──────────────────────────┐
@@ -35,7 +35,7 @@ This is what S&OP buys you. But to get there, you need the vocabulary: aggregate
    └──────────────────────────────────────────────────┘
                           │
    ┌──────────────────────▼──────────────────────────┐
-   │   Master Production Schedule (3–6 mo, SKU (Stock Keeping Unit))      │
+   │   Master Production Schedule (3–6 mo, SKU)      │
    └──────────────────────────────────────────────────┘
                           │
    ┌──────────────────────▼──────────────────────────┐
@@ -51,7 +51,7 @@ Each tier translates the previous tier into more granular numbers. **The plans m
 
 | Level | Horizon | Unit of Plan | Owner |
 |-------|---------|--------------|-------|
-| Strategic | 3–10 yrs | $ revenue | CEO / CFO (Chief Financial Officer) |
+| Strategic | 3–10 yrs | $ revenue | CEO / CFO |
 | S&OP / Aggregate | 12–24 mo | Product families | Cross-functional |
 | MPS | 3–6 mo | SKU / end-item | Master scheduler |
 | MRP | Same as MPS | Components | MRP planner |
@@ -76,7 +76,7 @@ Operations evaluates whether forecasted demand can be met given capacity, materi
 Cross-functional team reconciles demand and supply, surfaces remaining gaps and decisions needed at the executive meeting.
 
 ### Step 5, Executive S&OP Meeting
-The C-suite reviews KPIs (Key Performance Indicators), debates options, and **commits to one plan** that drives all downstream planning.
+The C-suite reviews KPIs, debates options, and **commits to one plan** that drives all downstream planning.
 
 ```
    1. Data        2. Demand      3. Supply      4. Pre-S&OP    5. Exec S&OP
@@ -178,8 +178,8 @@ MRP explodes the MPS through the **Bill of Materials (BOM)** to produce time-pha
 
 | Rule | Logic | Use |
 |------|-------|-----|
-| **Lot-for-lot (L4L)** | Order exactly net requirement each period | Low setup cost, JIT (Just-In-Time) |
-| **EOQ (Economic Order Quantity)** | Fixed quantity from EOQ formula | Stable demand |
+| **Lot-for-lot (L4L)** | Order exactly net requirement each period | Low setup cost, JIT |
+| **EOQ** | Fixed quantity from EOQ formula | Stable demand |
 | **POQ** (period order quantity) | Fixed time window | Smoothed lumpy demand |
 | **FOQ** (fixed order quantity) | Predetermined | Pack-size constraints |
 | **Min-max** | Reorder to max when min hit | Maintenance/spares |
@@ -336,7 +336,7 @@ You now know:
 2. **DTF vs PTF in a 2-day-lead-time business.** A grocery wholesaler has 2-day customer lead time and 60-day supplier lead time. Where should DTF and PTF sit, and what makes that placement controversial within the firm?
 3. **Chase vs level under inflation.** Inflation 2022-2024 changed the labor-cost math for chase strategies. Argue whether a chase strategy that was correct in 2019 should be revisited under 2024 labor markets.
 4. **IBP is just a rename.** A skeptical operations director says "IBP is what Oliver Wight calls S&OP plus PowerPoint slides, there's no real difference." Build the rebuttal using specific IBP capabilities (financial integration, NPI, scenario planning).
-5. **The 2025 AI-augmented S&OP.** Generative AI tools (Anthropic Claude, OpenAI GPT (Generative Pre-trained Transformer)-4) now draft S&OP narratives, summarize variance, and propose scenarios. Where do humans still need to own decisions in the 5-step cycle, and where is AI sufficient?
+5. **The 2025 AI-augmented S&OP.** Generative AI tools (Anthropic Claude, OpenAI GPT-4) now draft S&OP narratives, summarize variance, and propose scenarios. Where do humans still need to own decisions in the 5-step cycle, and where is AI sufficient?
 
 ---
 

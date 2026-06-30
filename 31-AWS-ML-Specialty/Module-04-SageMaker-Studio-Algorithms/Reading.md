@@ -10,11 +10,11 @@
 
 ---
 
-## 🍕 A Story: One IDE, One API (Application Programming Interface), Seventeen Algorithms
+## 🍕 A Story: One IDE, One API, Seventeen Algorithms
 
 Meet Aditi. She is a data scientist at JPMorgan's COiN ("Contract Intelligence") team. In 2017 she built a model to triage commercial-loan documents that previously took 360,000 attorney-hours per year to review. The model used a custom Spark MLlib pipeline, custom feature extraction, and a self-hosted CPU cluster. The model worked beautifully, but every new project required reinventing the wheel.
 
-In 2020 her team moved to **Amazon SageMaker**. Where Aditi used to write 800 lines of orchestration glue, she now writes 8. The same `estimator.fit()` API works for XGBoost, Linear Learner, Object2Vec, BlazingText, and the team's own PyTorch container. Training data comes from S3 (Simple Storage Service); the model artifact goes back to S3; an endpoint is one `model.deploy()` call. Hyperparameter tuning, distributed training, model monitoring, all become a checkbox.
+In 2020 her team moved to **Amazon SageMaker**. Where Aditi used to write 800 lines of orchestration glue, she now writes 8. The same `estimator.fit()` API works for XGBoost, Linear Learner, Object2Vec, BlazingText, and the team's own PyTorch container. Training data comes from S3; the model artifact goes back to S3; an endpoint is one `model.deploy()` call. Hyperparameter tuning, distributed training, model monitoring, all become a checkbox.
 
 In 2024 the team retrains 14 models nightly across three lines of business. The data scientists ship 5× more experiments per quarter. JPMorgan's per-model cost-to-build fell ~70%.
 
@@ -30,8 +30,8 @@ SageMaker Studio is a fully-managed, web-based ML IDE. It is the default place t
 
 | Component | What it does |
 |-----------|--------------|
-| **Studio domain** | Tenant-scoped environment (one per AWS account / VPC (Virtual Private Cloud)) |
-| **User profile** | One per data scientist; tied to IAM (Identity and Access Management) execution role |
+| **Studio domain** | Tenant-scoped environment (one per AWS account / VPC) |
+| **User profile** | One per data scientist; tied to IAM execution role |
 | **Spaces** | Per-user / shared workspace running JupyterLab, Code Editor (VS Code), RStudio |
 | **Notebooks** | Managed Jupyter notebooks with auto-shutdown, kernel selection |
 | **Code Editor** | VS Code in the browser |
@@ -50,7 +50,7 @@ SageMaker Studio is a fully-managed, web-based ML IDE. It is the default place t
 | Shutdown | Manual or lifecycle script | Auto-shutdown |
 | Cost | Pay per instance hour | Pay per kernel session |
 | Persistent storage | EBS volume | EFS (shared across users) |
-| Best for | Long-running EC2 (Elastic Compute Cloud)-style work | Modern data science |
+| Best for | Long-running EC2-style work | Modern data science |
 | Recommended? | Legacy; new projects use Studio | ✅ Default |
 
 🎯 **Exam pattern.** *"Reduce notebook costs from idle notebooks left running overnight."* → **Studio lifecycle config / auto-shutdown** OR **Studio idle-shutdown** OR a lifecycle script that stops notebook instances after N minutes idle.
@@ -69,11 +69,11 @@ SageMaker Studio is a fully-managed, web-based ML IDE. It is the default place t
 | `ml.inf1 / ml.inf2` | AWS Inferentia | Cost-optimised inference |
 | `ml.graviton (m7g, c7g)` | ARM-based | Cheaper notebooks for general work |
 
-🎯 **Exam pattern.** *"Cost-optimise inference for a high-traffic NLP (Natural Language Processing) model."* → **Inferentia2 (inf2)** instances; ~50% cheaper than equivalent GPU instances.
+🎯 **Exam pattern.** *"Cost-optimise inference for a high-traffic NLP model."* → **Inferentia2 (inf2)** instances; ~50% cheaper than equivalent GPU instances.
 
 ---
 
-## 🐍 The SageMaker Python SDK (Software Development Kit), The Five-Line Pattern
+## 🐍 The SageMaker Python SDK, The Five-Line Pattern
 
 The exam will show you SDK code snippets. **Recognise this pattern.**
 
@@ -404,7 +404,7 @@ Older AWS algorithm. For new seq2seq work (translation, summarisation), **Bedroc
 
 🎯 **Exam pattern.** *"Forecast next 30 days of demand for 5,000 SKUs at a retailer."* → **DeepAR** (built-in) OR **Amazon Forecast** (managed).
 
-🚨 **Trap.** A single ARIMA model per SKU (Stock Keeping Unit) does not benefit from cross-series patterns. DeepAR's whole point is sharing parameters across series.
+🚨 **Trap.** A single ARIMA model per SKU does not benefit from cross-series patterns. DeepAR's whole point is sharing parameters across series.
 
 ---
 
@@ -415,7 +415,7 @@ When you don't want to pick an algorithm at all:
 | Tool | What it does |
 |------|--------------|
 | **SageMaker Autopilot** | Reads tabular CSV / Parquet, runs AutoML across multiple algorithms + HPO, surfaces best model and full code (white-box AutoML) |
-| **SageMaker Canvas** | No-code ML for business analysts; tabular forecasting / classification / regression via a UI (User Interface) |
+| **SageMaker Canvas** | No-code ML for business analysts; tabular forecasting / classification / regression via a UI |
 | **SageMaker JumpStart** | Pre-built solutions and foundation models (covered in Module 7) |
 
 🎯 **Exam pattern.** *"Business analyst with no Python wants to build a churn-prediction model."* → **SageMaker Canvas**.
@@ -465,7 +465,7 @@ A SageMaker training job involves these moving parts:
 ┌─────────────────────────────────────────────────────────────┐
 │ 3. Train mode for data delivery                             │
 │    File mode (full copy to disk)                            │
-│    Pipe mode (stream via FIFO (First In, First Out); RecordIO-protobuf)           │
+│    Pipe mode (stream via FIFO; RecordIO-protobuf)           │
 │    FastFile mode (S3 streaming via mount)                   │
 └────────────────────┬────────────────────────────────────────┘
                      ↓
@@ -552,7 +552,7 @@ Runs the same training script on a local Docker daemon, no spin-up time, no AWS 
 ## 🚨 Top Exam Traps (Module 4 Themes)
 
 1. **"Tabular workhorse"** → XGBoost first; Linear Learner if simpler/interpretable; Factorization Machines if sparse.
-2. **"Many sparse one-hot features for CTR (Click-Through Rate)"** → Factorization Machines.
+2. **"Many sparse one-hot features for CTR"** → Factorization Machines.
 3. **"Unsupervised tabular anomaly detection"** → Random Cut Forest.
 4. **"User-IP pair anomaly"** → IP Insights.
 5. **"Probabilistic forecast across many SKUs"** → DeepAR (or Amazon Forecast for managed).
@@ -594,7 +594,7 @@ Runs the same training script on a local Docker daemon, no spin-up time, no AWS 
 
 1. **"XGBoost or DL?"** On tabular data, XGBoost typically wins. Argue when a DL model BECOMES competitive on tabular (hint: very large rows, high-cardinality categoricals, or learned embeddings).
 2. **The built-in vs script-mode trade-off.** Built-ins are turnkey; script mode is flexible. At what team size does flexibility win? At what size does turnkey win?
-3. **DeepAR vs ARIMA vs Forecast (managed).** All three solve forecasting. Pick a SaaS (Software as a Service) retailer with 5,000 SKUs and argue which to choose; what changes the answer if the team has 1 ML engineer vs 50?
+3. **DeepAR vs ARIMA vs Forecast (managed).** All three solve forecasting. Pick a SaaS retailer with 5,000 SKUs and argue which to choose; what changes the answer if the team has 1 ML engineer vs 50?
 4. **The "everything is a transformer" critique.** As of 2026, transformer-based foundation models can sometimes outperform XGBoost on small tabular tasks via in-context learning (TabPFN, etc.). Is this real, or a benchmark artefact?
 5. **AutoML's compounding cost.** Autopilot trains *many* candidate models. At what dataset size does AutoML become wasteful versus a single well-chosen baseline?
 

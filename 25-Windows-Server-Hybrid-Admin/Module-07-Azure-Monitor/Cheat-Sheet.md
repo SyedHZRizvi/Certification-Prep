@@ -8,7 +8,7 @@
 
 ```
 ┌───────────────────────────────────────┐
-│        AZURE MONITOR (UI (User Interface))             │
+│        AZURE MONITOR (UI)             │
 │  Workbooks / Alerts / Insights / Map  │
 └───────────────────────────────────────┘
         │                       │
@@ -36,12 +36,12 @@
 
 | Property | Detail |
 |----------|--------|
-| AMA replaces | MMA / OMS (Order Management System) / Log Analytics agent (retired Aug 2024) |
+| AMA replaces | MMA / OMS / Log Analytics agent (retired Aug 2024) |
 | Config model | **Data Collection Rules (DCRs)** centralized in Azure |
 | One DCR → many machines | Yes (via DCR Associations) |
 | Multi-home | Yes (multiple DCR associations per machine) |
 | Cross-platform | Windows + Linux |
-| Required for | Container Insights, VM (Virtual Machine) Insights, Defender for Servers telemetry |
+| Required for | Container Insights, VM Insights, Defender for Servers telemetry |
 
 🔥 **DCR design rule:** One DCR per **workload archetype** (web, SQL, DC, file).
 
@@ -98,11 +98,11 @@ Plus `let`, `take`, `count()`, `percentile()`, `parse`.
 ## 🛟 Action Groups Destinations
 
 - Email / SMS / voice / push
-- Webhook (HTTP (Hypertext Transfer Protocol) POST)
+- Webhook (HTTP POST)
 - Logic App (workflow)
 - Azure Function (serverless code)
 - Azure Automation runbook
-- Event Hub (stream to SIEM (Security Information and Event Management))
+- Event Hub (stream to SIEM)
 - ITSM (ServiceNow, Cherwell)
 
 ---

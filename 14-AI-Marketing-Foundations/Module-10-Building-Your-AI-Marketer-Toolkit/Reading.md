@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Modules 1–9 of this course (this is the capstone-prep module; it assumes everything before it)
 > - In particular: [Module 2 AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) (prompt structure), [Module 8 Analytics](../Module-08-Analytics-Measurement-Basics/Reading.md) (the measurement stack), and [Module 9, Compliance](../Module-09-AI-Ethics-Privacy-Compliance/Reading.md) (the privacy floor)
-> - Comfort signing up for free tiers of unfamiliar SaaS (Software as a Service), many sections are most useful with the tool open alongside the reading
+> - Comfort signing up for free tiers of unfamiliar SaaS, many sections are most useful with the tool open alongside the reading
 >
 > If you're parachuting in without completing earlier modules, you'll recognize the tool names but may miss the strategic logic for *why* this stack is structured this way. Don't skip ahead.
 
@@ -42,7 +42,7 @@ Below is a comprehensive map of every category you'll likely need. Pick one tool
 
 | Category | Tool Options | Free Tier? |
 |---|---|---|
-| **General LLM (Large Language Model) (paid)** | ChatGPT Plus, Claude Pro, Gemini Advanced | Free tiers available; pay for production |
+| **General LLM (paid)** | ChatGPT Plus, Claude Pro, Gemini Advanced | Free tiers available; pay for production |
 | **Note-taking + Second Brain** | Notion, Obsidian, Logseq, Apple Notes | Most have generous free |
 | **Cloud storage** | Google Drive, OneDrive, Dropbox | All have free tier |
 | **Calendar + Email** | Google Workspace, Microsoft 365 | Paid for custom domain |
@@ -80,16 +80,16 @@ Below is a comprehensive map of every category you'll likely need. Pick one tool
 | **Community** | Circle, Discord, Slack, Skool, Mighty Networks |
 | **Forms + Surveys** | Typeform, Tally, Google Forms, SurveyMonkey |
 
-### Tier 4, Measurement + CRM (Customer Relationship Management)
+### Tier 4, Measurement + CRM
 
 | Category | Tool Options |
 |---|---|
-| **Web analytics** | GA4 (Google Analytics 4) (free), Plausible, Fathom, Matomo |
+| **Web analytics** | GA4 (free), Plausible, Fathom, Matomo |
 | **Dashboards** | Looker Studio (free), Power BI, Tableau, Metabase |
 | **Product / event analytics** | Mixpanel, Amplitude, PostHog |
 | **CRM, SMB** | HubSpot CRM (free), Pipedrive, Close, Folk, Attio |
 | **CRM, Enterprise** | Salesforce, HubSpot Enterprise, Microsoft Dynamics |
-| **CDP (Customer Data Platform)** | Segment, RudderStack, mParticle, Tealium, BlueConic |
+| **CDP** | Segment, RudderStack, mParticle, Tealium, BlueConic |
 | **Tag management** | Google Tag Manager (free), Tealium iQ |
 | **Heatmaps + session replay** | Hotjar, FullStory, Microsoft Clarity (free) |
 
@@ -195,14 +195,14 @@ When you feed Notion → ChatGPT or Claude (via integrations or copy-paste) alon
 
 ---
 
-## 🛠️ Tutorial: Build a "GTM (Google Tag Manager) Engine" with Make + AI
+## 🛠️ Tutorial: Build a "GTM Engine" with Make + AI
 
 This is the kind of workflow that wins jobs. Try it.
 
 ### What it does
 - Trigger: new lead fills out your website form
 - Step 1: Make enriches the lead with company data via Clearbit / Apollo
-- Step 2: Make sends the company info + form responses to ChatGPT (or Claude) via API (Application Programming Interface)
+- Step 2: Make sends the company info + form responses to ChatGPT (or Claude) via API
 - Step 3: AI scores the lead 1–10 and writes a personalized first-touch email
 - Step 4: Make creates a CRM record + drafts the email in your ESP
 - Step 5: Make pings your sales rep in Slack with the lead summary
@@ -268,7 +268,7 @@ preferred channels, exact words they use.
 ```
 Generate 10 variations of Facebook ad copy for {PRODUCT} targeting
 {AUDIENCE}. Use the {FRAMEWORK} framework (HSO / PAS / BAB / AIDA).
-Each variation: hook (3s), body, CTA (Call to Action). Format as a markdown table
+Each variation: hook (3s), body, CTA. Format as a markdown table
 with framework labeled.
 ```
 
@@ -290,7 +290,7 @@ takeaways for our own positioning.
 ### 8. The SEO Outline Builder
 ```
 For the keyword "{KEYWORD}" targeting {AUDIENCE}, draft a Skyscraper
-outline that would beat the current top-3 SERP (Search Engine Results Page) results. Include:
+outline that would beat the current top-3 SERP results. Include:
 H1 + 6–10 H2 + sub-H3, FAQ section (8 questions), schema types
 to use, internal link opportunities.
 ```
@@ -335,7 +335,7 @@ Decision rules for your stack:
 1. List every paid tool + monthly cost
 2. For each: "Did I use this in the last 30 days?"
 3. For each: "Is the free / cheaper alternative actually good enough?"
-4. Cancel the bottom 20% by ROI (Return on Investment)
+4. Cancel the bottom 20% by ROI
 
 You'll find $200–$1,000/month of bloat in even small marketing stacks.
 
@@ -405,7 +405,7 @@ The lesson scales down: **your stack is only as good as your documentation.** Sp
 | **Low-code / No-code** | Building workflows without traditional coding (Zapier, Make, n8n) |
 | **Agent / Agentic AI** | AI that takes multi-step actions on your behalf |
 | **API** | Application Programming Interface (how tools talk to each other) |
-| **Webhook** | A real-time HTTP (Hypertext Transfer Protocol) callback (event → action) |
+| **Webhook** | A real-time HTTP callback (event → action) |
 | **OSS** | Open-Source Software |
 | **Self-hosted** | Software running on your own infrastructure |
 | **SaaS** | Software-as-a-Service |
@@ -439,7 +439,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: This is the capstone-prep module. You're now ready for `Capstone-Project.md`, then Practice Exam 2 and the Final Mock Exam.
-> - Cross-course: `15-AI-Marketing-Strategy` covers stack governance at the executive level (CMO (Chief Marketing Officer)-led tool budget, RFPs); `16-AI-Marketing-Automation-Workflows` builds Make/Zapier/n8n workflows in depth; `17-AI-Marketing-Analytics-Personalization` deepens the CDP and personalization-engine layer; `18-AI-Marketing-Capstone-Portfolio` is the multi-artifact capstone.
+> - Cross-course: `15-AI-Marketing-Strategy` covers stack governance at the executive level (CMO-led tool budget, RFPs); `16-AI-Marketing-Automation-Workflows` builds Make/Zapier/n8n workflows in depth; `17-AI-Marketing-Analytics-Personalization` deepens the CDP and personalization-engine layer; `18-AI-Marketing-Capstone-Portfolio` is the multi-artifact capstone.
 > - Practice: Practice Exam 2 + Final Mock both have 6–8 tool/stack questions (CDP vs CRM, Make vs Zapier, Notion's role, second brain, stack audit).
 
 ---
@@ -449,7 +449,7 @@ You now know:
 1. **Mastery vs coverage in the stack.** The reading says "master 2–3 per category." A founder argues that as AI tools commoditize, the right move is to actively *try every new tool* because the next one might be 10× better and cancel the old one. Construct the strongest argument for "stay with proven tools 18+ months" and the strongest for "rotate aggressively as the market evolves." How do you build a stack that's stable enough to ship work but flexible enough to upgrade?
 2. **Prompt library as portable career capital.** The reading argues a 200-prompt personal library is a career moat. A skeptic says: when LLMs become 100× better, your hand-tuned prompts become irrelevant, you're investing in a depreciating asset. Steel-man both. What's the half-life of a well-engineered prompt today, and what *kind* of prompt has the longest half-life?
 3. **The Make + Zapier + n8n choice.** Make is visual + complex flows; Zapier is simple + most integrations; n8n is open-source + self-hostable. For a 5-person marketing team running 10 workflows, which would you commit to? Defend with reference to (a) maintenance burden, (b) lock-in risk, (c) data-residency concerns from Module 9, and (d) total cost of ownership over 24 months.
-4. **CDP as the "right" investment for mid-market.** Segment ($120K+/year at scale) and competitors are pitched as the bridge from siloed channels to unified intelligence. A CFO (Chief Financial Officer) objects: "We're 50 employees with $5M revenue, a CDP is over-spec." A marketing-ops lead counters: "Without a CDP, our first-party data strategy is hot air." Make both cases. At what revenue + headcount + channel-count *does* a CDP start to pay back in 12 months?
+4. **CDP as the "right" investment for mid-market.** Segment ($120K+/year at scale) and competitors are pitched as the bridge from siloed channels to unified intelligence. A CFO objects: "We're 50 employees with $5M revenue, a CDP is over-spec." A marketing-ops lead counters: "Without a CDP, our first-party data strategy is hot air." Make both cases. At what revenue + headcount + channel-count *does* a CDP start to pay back in 12 months?
 5. **The "documentation culture" claim from Stripe.** The reading argues Stripe's documentation discipline is what makes their AI integrations work, that AI quality is a function of input quality, and input is documentation. A skeptic argues this is post-hoc rationalization; Stripe wins for product reasons unrelated to docs. Construct both. What's an experiment you'd run inside your own team to test whether a 90-day documentation push actually moves the AI-output quality needle?
 
 ---

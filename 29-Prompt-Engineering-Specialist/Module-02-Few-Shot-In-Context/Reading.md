@@ -13,7 +13,7 @@
 
 ## 📖 A Story: The Compliance Team That Saved a Bank $4.6M
 
-Meet Yuki, a senior risk analyst at a mid-tier European bank. Her team's job: classify every incoming customer support ticket into one of 47 regulatory categories (GDPR (General Data Protection Regulation)-Data, AML (Anti-Money Laundering)-Suspicious, MIFID-Investment, Complaint-Hardship, etc.). Two human analysts, working full-time, hit ~89% accuracy and a 14-day backlog.
+Meet Yuki, a senior risk analyst at a mid-tier European bank. Her team's job: classify every incoming customer support ticket into one of 47 regulatory categories (GDPR-Data, AML-Suspicious, MIFID-Investment, Complaint-Hardship, etc.). Two human analysts, working full-time, hit ~89% accuracy and a 14-day backlog.
 
 In Q3 2024, leadership greenlit an AI pilot. The first proposal: **fine-tune a small classifier** on 18 months of labeled tickets. Cost estimate: €420K and 4 months. Yuki proposed a different path:
 
@@ -21,7 +21,7 @@ In Q3 2024, leadership greenlit an AI pilot. The first proposal: **fine-tune a s
 2. **Week 2:** A 12-shot prompt, 12 carefully curated examples (one per high-volume category plus 5 hard edge cases). Accuracy: **88%**.
 3. **Week 3:** A retrieval-augmented few-shot prompt that pulls the **5 most-similar historical tickets** at runtime from a vector index. Accuracy: **94.2%**.
 
-Total cost of Yuki's solution: €11K in API (Application Programming Interface) spend + ~3 weeks of engineering. Total cost avoided: ~€400K and 16 weeks. The compliance team redeployed two analysts to a higher-value triage role; the bank's regulator audit pass rate jumped from 91% to 99%.
+Total cost of Yuki's solution: €11K in API spend + ~3 weeks of engineering. Total cost avoided: ~€400K and 16 weeks. The compliance team redeployed two analysts to a higher-value triage role; the bank's regulator audit pass rate jumped from 91% to 99%.
 
 The point isn't that few-shot beats fine-tuning every time (it doesn't, Module 8 covers when fine-tuning wins). The point is that **in-context learning is so powerful that you should always try it first**, and that the *quality* of your examples often matters more than the *quantity*. This module is how Yuki picked those 12 examples.
 
@@ -164,7 +164,7 @@ retrieved_examples = vector_index.search(new_input_embedding, top_k=5)
 prompt = build_fewshot_prompt(retrieved_examples, new_input)
 ```
 
-This is what Yuki's bank did in Week 3. Results: a 6+ point lift over static few-shot. Used by GitHub Copilot, Cursor, Replit Ghostwriter, and most production RAG (Retrieval-Augmented Generation)-meets-classification systems.
+This is what Yuki's bank did in Week 3. Results: a 6+ point lift over static few-shot. Used by GitHub Copilot, Cursor, Replit Ghostwriter, and most production RAG-meets-classification systems.
 
 ### Strategy 3: Hardest-example mining
 
@@ -411,7 +411,7 @@ This is the *playbook*. You'll repeat this flow on every classification or extra
 
 **Situation.** In May 2020, OpenAI published *Language Models are Few-Shot Learners* (Brown et al., NeurIPS 2020). The paper described GPT-3, a 175B-parameter transformer, and more importantly demonstrated that with sufficient scale, models could perform **dozens of tasks** they were never explicitly fine-tuned for, **just from a few examples in the prompt**.
 
-**The result that shocked the field.** Across 42 NLP (Natural Language Processing) benchmarks (translation, question answering, common-sense reasoning, arithmetic, SuperGLUE, LAMBADA, Winograd), GPT-3 with few-shot prompting matched or exceeded fine-tuned BERT-class models on many. On translation, GPT-3 few-shot rivaled supervised SOTA for high-resource languages. On reading comprehension, it set new state-of-the-art on TriviaQA.
+**The result that shocked the field.** Across 42 NLP benchmarks (translation, question answering, common-sense reasoning, arithmetic, SuperGLUE, LAMBADA, Winograd), GPT-3 with few-shot prompting matched or exceeded fine-tuned BERT-class models on many. On translation, GPT-3 few-shot rivaled supervised SOTA for high-resource languages. On reading comprehension, it set new state-of-the-art on TriviaQA.
 
 **Why it mattered commercially.** Before Brown 2020, deploying NLP meant: collect 10K+ labeled examples → fine-tune BERT → wait days → re-deploy when distribution shifted. After Brown 2020, the recipe became: write a prompt with 5 examples → ship the same day → update the prompt when distribution shifted. The economic gradient was so steep it created an entire industry startups, enterprise teams, vendor APIs in 24 months.
 
@@ -428,7 +428,7 @@ This is the *playbook*. You'll repeat this flow on every classification or extra
 
 **Discussion (Socratic).**
 - **Q1:** Brown 2020 used 32-shot prompts. With today's 1M-context models, would you go to 200 shots? Where does the marginal benefit break even with cost?
-- **Q2:** A startup CTO (Chief Technology Officer) says "few-shot is just memorization." Argue both sides. What evidence in the GPT-3 paper supports each view?
+- **Q2:** A startup CTO says "few-shot is just memorization." Argue both sides. What evidence in the GPT-3 paper supports each view?
 - **Q3:** Brown 2020 measured English benchmarks. How does the conclusion change for low-resource languages, and what does that imply about the example-selection strategy?
 
 ---
@@ -453,7 +453,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 3](../Module-03-Chain-of-Thought-Reasoning/Reading.md) layers reasoning examples on top of few-shot. [Module 4](../Module-04-Structured-Outputs-JSON/Reading.md) revisits format learning for JSON. [Module 6](../Module-06-Evaluation-AB-Testing/Reading.md) is how Yuki measured Week 1 vs Week 3.
-> - Cross-course: AWS (Amazon Web Services) AI Practitioner (course 07) covers Bedrock's prompt-management tools. Claude Architect (Cert Hub) goes deep on Anthropic's XML-tagged few-shot.
+> - Cross-course: AWS AI Practitioner (course 07) covers Bedrock's prompt-management tools. Claude Architect (Cert Hub) goes deep on Anthropic's XML-tagged few-shot.
 > - Practice: Practice Exam 1 has ~4 questions from this module.
 
 ---

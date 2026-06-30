@@ -1,12 +1,12 @@
 # Module 1: E-Commerce Fundamentals & Business Models 🛒
 
-> **Why this module matters:** Every e-commerce decision you'll make for the next twelve months platform choice, paid budget, fulfillment network, marketplace strategy only makes sense once you can answer one question: what is the unit-economics model of this business, and at what stage is it? This module fixes the language. By the end, you'll be able to read a Shopify P&L (Profit and Loss) the way a Wharton MBA reads a 10-K.
+> **Why this module matters:** Every e-commerce decision you'll make for the next twelve months platform choice, paid budget, fulfillment network, marketplace strategy only makes sense once you can answer one question: what is the unit-economics model of this business, and at what stage is it? This module fixes the language. By the end, you'll be able to read a Shopify P&L the way a Wharton MBA reads a 10-K.
 
 ---
 
 ## 🎯 A Real Story: How Bezos's 1997 Letter Still Runs Amazon
 
-It's October 1997. Amazon has just IPO (Initial Public Offering)'d at $18 a share, market cap $438M. The company sold $147.8M of books that year and lost $27.6M doing it. Jeff Bezos, age 33, sits down to write his first annual letter to shareholders. He calls it "It's All About the Long Term." The letter is 1,489 words. It will be re-printed in every Amazon annual letter for the next twenty-five years.
+It's October 1997. Amazon has just IPO'd at $18 a share, market cap $438M. The company sold $147.8M of books that year and lost $27.6M doing it. Jeff Bezos, age 33, sits down to write his first annual letter to shareholders. He calls it "It's All About the Long Term." The letter is 1,489 words. It will be re-printed in every Amazon annual letter for the next twenty-five years.
 
 The 1997 letter codifies six principles: obsess over customers, take bold investment bets, prioritize cash flow over GAAP, hire and retain the best, measure operating excellence relentlessly, and most famously **operate as a Day 1 company**, never Day 2. Day 2, Bezos warned, "is stasis. Followed by irrelevance. Followed by excruciating, painful decline. Followed by death. And that is why it is always Day 1."
 
@@ -14,7 +14,7 @@ Twenty-seven years later, Amazon is a $1.7 trillion company that sells $570B of 
 
 That's the bar. It isn't about the books-vs-everything-store pivot. It's about an operating principle written in 1997 still shaping a $1.7T company's quarterly reviews in 2026. **The brief is the company.** If you can write that kind of operating doctrine for your own business in 2,000 words, you've already done more strategic work than most $50M DTC brands ever do.
 
-This module gives you the language, DTC, marketplace, B2B (Business-to-Business), hybrid; AOV, CAC (Customer Acquisition Cost), CLV (Customer Lifetime Value), contribution margin, payback period; long-tail vs head; the Fader customer-centricity frame; the Bezos Day-1 doctrine. By the end, you'll have written the first draft of your own business-model canvas.
+This module gives you the language, DTC, marketplace, B2B, hybrid; AOV, CAC, CLV, contribution margin, payback period; long-tail vs head; the Fader customer-centricity frame; the Bezos Day-1 doctrine. By the end, you'll have written the first draft of your own business-model canvas.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Basic financial vocabulary (revenue, cost, margin), covered in [02-PMP Module 3](../../02-PMP/Module-03-Process-Domain/Reading.md)
@@ -34,7 +34,7 @@ E-commerce is the discipline of selling goods and services online. That sounds s
 | **Marketplace seller** | Brand sells via 3rd-party platforms; platform owns customer | Anker on Amazon, Etsy crafters | Amazon Seller Central, Walmart Marketplace |
 | **Marketplace operator** | You ARE the platform; you take a fee | Amazon, Etsy, eBay, Faire, Whatnot | Mirakl, Yo!Kart, Sharetribe |
 | **B2B / wholesale** | Business sells to other businesses | Procter & Gamble's e-B2B portal | Adobe Commerce B2B, BigCommerce B2B, Faire |
-| **B2B2C (Business-to-Business-to-Consumer) (Business-to-Consumer) (Business-to-Business-to-Consumer) (Business-to-Consumer) (Business-to-Business-to-Consumer) (Business-to-Consumer) / D2R / hybrid** | Brand sells DTC + wholesale + marketplaces simultaneously | Olipop, Magic Spoon | Shopify Plus + Faire + Amazon |
+| **B2B2C / D2R / hybrid** | Brand sells DTC + wholesale + marketplaces simultaneously | Olipop, Magic Spoon | Shopify Plus + Faire + Amazon |
 | **Subscription / replenishment** | Recurring billing for consumable or curated SKUs | Dollar Shave Club, BarkBox, Athletic Greens | Recharge, Skio, Bold Subscriptions |
 | **Social commerce / live commerce** | In-app shopping inside social platforms | TikTok Shop, Instagram Shopping, Whatnot | TikTok Shop, Meta Shops, Shopify Collabs |
 
@@ -67,7 +67,7 @@ That's it. The denominator is *orders*, not customers, a customer can place mult
 | Consumer electronics | $80-$600 |
 | Luxury jewelry | $400-$3,500 |
 
-🎯 **Exam tip:** AOV is the lever every CRO (Chief Revenue Officer) test influences. A 12% AOV lift from a "frequently bought together" widget can fund a 20% paid-acquisition budget increase. Memorize the AOV ranges, Adobe Commerce questions reference them.
+🎯 **Exam tip:** AOV is the lever every CRO test influences. A 12% AOV lift from a "frequently bought together" widget can fund a 20% paid-acquisition budget increase. Memorize the AOV ranges, Adobe Commerce questions reference them.
 
 ### 2. CAC, Customer Acquisition Cost
 
@@ -78,7 +78,7 @@ CAC = Total Customer Acquisition Spend / Number of New Customers Acquired
 Two flavors:
 
 - **Marketing CAC**: paid-media spend only divided by new customers. Easy to calculate from ad-platform exports.
-- **Blended CAC** (or "Fully Loaded CAC"): all customer-acquisition costs media, agency fees, salaries of the acquisition team, tooling divided by new customers. The CFO (Chief Financial Officer) version. The one Series B+ boards use.
+- **Blended CAC** (or "Fully Loaded CAC"): all customer-acquisition costs media, agency fees, salaries of the acquisition team, tooling divided by new customers. The CFO version. The one Series B+ boards use.
 
 The Common Thread Collective 2024 ECD Quarterly reports DTC blended CAC ranges from $38 (beauty) to $312 (mattress/furniture). Categories with high consideration cycles have high CAC.
 
@@ -88,7 +88,7 @@ The Common Thread Collective 2024 ECD Quarterly reports DTC blended CAC ranges f
 
 ```
 Contribution Margin % = (Revenue - Variable Costs) / Revenue
-Variable Costs = COGS (Cost of Goods Sold) + Pick/Pack + Shipping + Payment Processing + Returns Cost
+Variable Costs = COGS + Pick/Pack + Shipping + Payment Processing + Returns Cost
 ```
 
 **This is the most important number in DTC.** It's the dollar amount per order that pays for everything else, marketing, salaries, rent, software, debt service. If contribution margin is 38% and CAC equals 38% of AOV, you break even on order 1. If contribution margin is 22%, you can't afford CAC > 22% of AOV without burning cash.
@@ -168,7 +168,7 @@ Bezos's first shareholder letter (1997, [aboutamazon.com](https://aboutamazon.co
 | Operational excellence | Measure rigorously, fix root causes | Andon Cord; the 5 Whys; weekly business reviews |
 | Take big bets, with discipline | Fail in proportion to the size of the company | Type-1 (one-way door, slow) vs Type-2 (two-way door, fast) decisions |
 
-🧠 **MEMORIZE THIS.** Type-1 vs Type-2 decisions (Bezos 2015 Letter). Type-1 = irreversible (replatforming from Shopify to Adobe Commerce, hiring a CEO (Chief Executive Officer)). Type-2 = reversible (testing a TikTok creative; launching a Shopify dev store). Amazon teaches: make Type-2 decisions in days, Type-1 in weeks-to-months. Most companies invert this.
+🧠 **MEMORIZE THIS.** Type-1 vs Type-2 decisions (Bezos 2015 Letter). Type-1 = irreversible (replatforming from Shopify to Adobe Commerce, hiring a CEO). Type-2 = reversible (testing a TikTok creative; launching a Shopify dev store). Amazon teaches: make Type-2 decisions in days, Type-1 in weeks-to-months. Most companies invert this.
 
 ---
 
@@ -180,7 +180,7 @@ Bezos's first shareholder letter (1997, [aboutamazon.com](https://aboutamazon.co
 
 The letter was filed with the 10-K every year afterward. Six core principles emerged: customer obsession, long-term thinking, Day 1 always, hire the best, operational excellence, take bold bets.
 
-**Outcome.** Amazon's stock fell to under $6 in 2001 during the dot-com crash. Amazon did not turn a meaningful annual profit until 2003 six years after the IPO. By 2026, Amazon trades at ~$200/share (after a 20-for-1 split in 2022, so ~$4,000 pre-split equivalent), market cap $1.7T, $570B retail GMV (Gross Merchandise Value) plus $400B third-party seller GMV. The 1997 letter is reprinted in every annual report. AWS (Amazon Web Services) invented in 2006 alone generates more annual revenue than the entire 1997 Amazon. The "Day 1" doctrine is taped to walls in every Amazon office. Bryar and Carr's *Working Backwards* (St. Martin's, 2021) written by ex-Amazon executives, codified the operating mechanisms.
+**Outcome.** Amazon's stock fell to under $6 in 2001 during the dot-com crash. Amazon did not turn a meaningful annual profit until 2003 six years after the IPO. By 2026, Amazon trades at ~$200/share (after a 20-for-1 split in 2022, so ~$4,000 pre-split equivalent), market cap $1.7T, $570B retail GMV plus $400B third-party seller GMV. The 1997 letter is reprinted in every annual report. AWS invented in 2006 alone generates more annual revenue than the entire 1997 Amazon. The "Day 1" doctrine is taped to walls in every Amazon office. Bryar and Carr's *Working Backwards* (St. Martin's, 2021) written by ex-Amazon executives, codified the operating mechanisms.
 
 **Lesson for the exam / for practitioners.** A business model is an *operating doctrine*, not a P&L. The numbers follow the doctrine. Bezos understood that the cost of optimizing for the next quarter was the option value of being a 25-year company. Operators who can't articulate their long-term doctrine cannot make the Type-1 decisions that compound over a decade. Every certification body Adobe, Salesforce, Wharton Online tests this principle in some form: when given a multi-year strategic trade-off, the right answer is almost always the one that preserves long-term optionality, even at the cost of short-term margin.
 
@@ -196,9 +196,9 @@ The single most-tested framework on the Adobe Commerce Business Practitioner exa
 | Owns pricing? | Yes | Partially (Buy Box pressure) | Yes (price-list per customer) |
 | Margin per order | High (35-65%) | Medium (15-30% net of platform fees) | High (40-60%) but smaller volumes |
 | Volume potential | Slow ramp | Fast scale (existing demand) | Slow ramp; account-based |
-| Marketing spend | Heavy (CAC = 25-40% of LTV (Lifetime Value)) | Mostly platform ads (~10-15%) | Sales-led; longer cycles |
+| Marketing spend | Heavy (CAC = 25-40% of LTV) | Mostly platform ads (~10-15%) | Sales-led; longer cycles |
 | Conversion rate | 1.5-3.5% | 8-15% on Amazon | Higher (intent-driven) |
-| Best for | Brand-building, repeat purchase | Cash-flow + brand discovery | High AOV, low SKU (Stock Keeping Unit) count |
+| Best for | Brand-building, repeat purchase | Cash-flow + brand discovery | High AOV, low SKU count |
 
 🚨 **Trap on the exam:** Adobe Commerce questions often present "should this company go DTC or marketplace?" scenarios. The right answer is usually *both*, with the qualifier that **the brand's North Star metric should be DTC GMV growth + marketplace as a discovery/cash-flow channel**, not marketplace as the primary destination. Brands that go marketplace-first lose the customer data, lose pricing power, and become commodity sellers.
 
@@ -213,8 +213,8 @@ The academic predecessor: Brynjolfsson, Hu & Smith's 2003 *Management Science* p
 The exam-relevant takeaways:
 
 1. **Aggregate demand for niche SKUs can exceed demand from top SKUs** when shelf space cost is zero (digital).
-2. **Discovery is the bottleneck**, not inventory. Whoever has the best search, recommendation, and SEO (Search Engine Optimization) wins.
-3. **Long-tail strategies require PIM (Product Information Management) discipline.** You can't merchandise 50,000 SKUs without clean attribute data.
+2. **Discovery is the bottleneck**, not inventory. Whoever has the best search, recommendation, and SEO wins.
+3. **Long-tail strategies require PIM discipline.** You can't merchandise 50,000 SKUs without clean attribute data.
 
 🧠 **MEMORIZE THIS.** Long tail = niche demand aggregation; sources are Anderson 2006 and Brynjolfsson 2003. Adobe Commerce + Magento documentation references the long tail in catalog-management discussions because Magento's strength is large, faceted-search-driven catalogs.
 
@@ -265,9 +265,9 @@ For a new e-commerce business, ask in this order:
 1. **Race-to-zero on Amazon.** Brands that go Amazon-first lose pricing power within 18 months because Buy Box competition is brutal.
 2. **DTC with < 30% gross margin.** Can't afford the CAC. Categories like consumer electronics resale almost always die DTC.
 3. **B2B portal without account-tiered pricing.** Wholesale customers expect price lists; not having them kills enterprise.
-4. **Subscription without churn modeling.** Recurly's 2024 benchmarks: DTC sub-businesses with > 8% monthly churn typically don't reach $10M ARR (Annual Recurring Revenue).
+4. **Subscription without churn modeling.** Recurly's 2024 benchmarks: DTC sub-businesses with > 8% monthly churn typically don't reach $10M ARR.
 5. **Furniture DTC with bad freight model.** ~$200-$400 freight per order can erase 25%+ of contribution margin if not priced correctly.
-6. **Multi-marketplace without OMS (Order Management System).** Sellers who run Shopify + Amazon + Walmart + Etsy + eBay without an order-management system have inventory disasters within 6 months.
+6. **Multi-marketplace without OMS.** Sellers who run Shopify + Amazon + Walmart + Etsy + eBay without an order-management system have inventory disasters within 6 months.
 7. **No first-party data strategy.** Brands that rely 100% on third-party platforms have no defensible position when iOS, ATT, Privacy Sandbox, or Amazon policy changes.
 
 ---
@@ -281,7 +281,7 @@ Liquid Death is a useful reference because their model is documented in intervie
 - **2024 revenue:** ~$268M (publicly disclosed in pitch).
 - **AOV** (Amazon + retail blended): ~$24 (a 12-pack of cans).
 - **Contribution margin:** ~52% (CPG-mountain-water economics, cheap product, expensive can + brand).
-- **Channel mix:** ~25% DTC via shop.liquiddeath.com; ~30% Amazon FBA (Fulfillment by Amazon); ~45% retail (7-Eleven, Whole Foods, Target).
+- **Channel mix:** ~25% DTC via shop.liquiddeath.com; ~30% Amazon FBA; ~45% retail (7-Eleven, Whole Foods, Target).
 - **Marketing CAC** (estimated): ~$8-$14 per DTC customer (heavily branded YouTube + Meta + TikTok creator-led).
 - **Payback period:** ~3-4 months on the DTC channel (3-4 reorders).
 - **CLV:CAC** (estimated): ~6:1 on DTC (over-invested in DTC because retail margin is thinner).
@@ -352,7 +352,7 @@ Use these to test your own thinking. None has a single right answer, defend your
 
 > **Where this leads.**
 > - Inside this course: Module 2 makes you choose a platform (Shopify vs Adobe Commerce vs headless) using the unit economics you defined here. Module 7 reuses CAC + contribution margin as the paid-acquisition success criteria. Module 9 uses CLV as the attribution-truth-test.
-> - Cross-course: [15-AI-Marketing-Practitioner Module 1](../../15-AI-Marketing-Practitioner/Module-01-Campaign-Strategy-Brief-Writing/Reading.md) deepens campaign-brief writing for e-commerce; [16-AI-Marketing-Strategist Module 3](../../16-AI-Marketing-Strategist/Module-03-GA4 (Google Analytics 4)-Mastery-Custom-Events/Reading.md) goes deeper on CLV modeling with Klaviyo predictive CLV.
+> - Cross-course: [15-AI-Marketing-Practitioner Module 1](../../15-AI-Marketing-Practitioner/Module-01-Campaign-Strategy-Brief-Writing/Reading.md) deepens campaign-brief writing for e-commerce; [16-AI-Marketing-Strategist Module 3](../../16-AI-Marketing-Strategist/Module-03-GA4-Mastery-Custom-Events/Reading.md) goes deeper on CLV modeling with Klaviyo predictive CLV.
 > - Practice: Practice Exam 1 has ~8 questions drawn from this module (business-model classification, the 5 unit-economics metrics, CLV:CAC benchmark, Bezos principles, Long Tail).
 
 ---

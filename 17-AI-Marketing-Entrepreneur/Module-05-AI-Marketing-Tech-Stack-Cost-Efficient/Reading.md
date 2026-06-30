@@ -3,9 +3,9 @@
 > **Why this module matters:** Most founders overspend on tools in Year 1, $1,500–$3,000/month before they've made $10,000. This module shows you how to build a complete AI-marketing agency stack on $200/month as a solo operator (or $1,000–$1,500/month as a small team) without sacrificing delivery quality. The goal: maximum AI leverage, minimum monthly burn.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - A drafted SKU (Stock Keeping Unit) + delivery process from [Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md), you cannot buy the right tools until you know what you're delivering
+> - A drafted SKU + delivery process from [Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md), you cannot buy the right tools until you know what you're delivering
 > - The outbound + inbound channel choice from [Module 3](../Module-03-Client-Acquisition-Channels/Reading.md), the $235/mo outbound tier is only worth subscribing to if outbound is one of your two channels
-> - General familiarity with the categories of tools in marketing operations (LLMs, CRMs, SEO (Search Engine Optimization) tools, email platforms, automation), [`14-AI-Marketing-Foundations` Modules 3–7](../../../14-AI-Marketing-Foundations/) and [`15-AI-Marketing-Practitioner`](../../../15-AI-Marketing-Practitioner/) cover most of these in product depth
+> - General familiarity with the categories of tools in marketing operations (LLMs, CRMs, SEO tools, email platforms, automation), [`14-AI-Marketing-Foundations` Modules 3–7](../../../14-AI-Marketing-Foundations/) and [`15-AI-Marketing-Practitioner`](../../../15-AI-Marketing-Practitioner/) cover most of these in product depth
 > - Comfort with the idea that **tool spend should be 1–2% of revenue**, not 5–10% (the central principle of the module)
 >
 > If you have not yet finalized your SKU or channel choice, this module will feel like a shopping list rather than an audit framework. Pause to finish Modules 2–3 first.
@@ -98,10 +98,10 @@ Your stack should fit into exactly 9 categories. We'll cover each.
 
 | # | Category | Year-1 solo | Small team (3–5) |
 |---|---|---|---|
-| 1 | LLM (Large Language Model) (chat) | $25/mo | $75/mo |
+| 1 | LLM (chat) | $25/mo | $75/mo |
 | 2 | Image / video AI | $30/mo | $60/mo |
 | 3 | Productivity / docs | Free–$10/mo | $50/mo |
-| 4 | Project mgmt / CRM (Customer Relationship Management) | Free–$15/mo | $40/mo |
+| 4 | Project mgmt / CRM | Free–$15/mo | $40/mo |
 | 5 | Outbound stack | $220/mo | $400/mo |
 | 6 | SEO / research | $99/mo | $150/mo |
 | 7 | Email + automation | Free–$20/mo | $100/mo |
@@ -155,7 +155,7 @@ You don't need 6 image tools. Pick 1–2.
 | **Adobe Firefly** | Brand-safe commercial imagery | $5/mo (bundled with CC) |
 | **Ideogram** | Logos + typography | $7–$20/mo |
 | **Leonardo.ai** | Style-consistent variations | $10–$48/mo |
-| **Flux (via Replicate)** | Per-image API (Application Programming Interface) | ~$0.003–$0.012/image |
+| **Flux (via Replicate)** | Per-image API | ~$0.003–$0.012/image |
 | **Runway** | AI video | $15–$95/mo |
 | **Luma Dream Machine** | Premium AI video | $10–$95/mo |
 | **Pika** | AI video alternative | $10–$70/mo |
@@ -213,7 +213,7 @@ We covered the math in Module 3. Recap:
 
 | Tool | Use | Cost (2026, verify) |
 |---|---|---|
-| **Apollo** | B2B (Business-to-Business) data + ICP filtering | $79/mo |
+| **Apollo** | B2B data + ICP filtering | $79/mo |
 | **Clay** | AI enrichment | $149/mo (if needed) |
 | **Smartlead** | Cold email sending | $39/mo |
 | **Instantly** | Smartlead alternative | $37/mo |
@@ -244,7 +244,7 @@ This is where ad spend on "tools" can spiral. You probably need ONE of the follo
 | **Moz Pro** | Veteran SEO tool | $99–$599/mo |
 | **Keywords Everywhere** | Free + paid extension | $1.50–$10/mo (credit packs) |
 | **AlsoAsked** | People-also-ask research | $15/mo |
-| **GA4 (Google Analytics 4) + Search Console** | Analytics + organic data | Free |
+| **GA4 + Search Console** | Analytics + organic data | Free |
 
 > 🎯 **Recommended Year-1 solo:** **Pick ONE of Ahrefs Lite ($129) OR SEMrush Pro ($139)**. Add Surfer ONLY if you're selling SEO content services, then it's $59/mo Essentials.
 
@@ -413,9 +413,9 @@ Some real ways to extend free tiers:
 |---|---|---|
 | **1Password** OR **Bitwarden** | Password manager | $3–$8/mo individual, $10–$20/mo team |
 | **Cloudflare Tunnel / Zero Trust Free** | Zero-trust access | Free |
-| **YubiKey 5 NFC** | Hardware MFA (Multi-Factor Authentication) | $50 one-time |
+| **YubiKey 5 NFC** | Hardware MFA | $50 one-time |
 | **Backup software (Backblaze)** | Disk backup | $9/mo |
-| **NordVPN or Proton VPN (Virtual Private Network)** | VPN | $4–$8/mo |
+| **NordVPN or Proton VPN** | VPN | $4–$8/mo |
 | **Microsoft Defender / macOS Built-in** | AV | Free |
 
 > 🎯 **MEMORIZE THIS:** Get a YubiKey + 1Password Day 1. The first time a client's account gets phished because you reused a password, you're done.
@@ -424,7 +424,7 @@ Some real ways to extend free tiers:
 
 ## 🧪 Case Studies: Real Founder Stacks
 
-### Case 1, Brett Williams / Designjoy ($1.5M ARR (Annual Recurring Revenue) solo)
+### Case 1, Brett Williams / Designjoy ($1.5M ARR solo)
 
 Publicly disclosed components (per podcasts):
 
@@ -473,7 +473,7 @@ From multiple anonymized founder surveys (Hampton, Indie Hackers, Tropical MBA),
 
 ## 💼 Case Study, Jordan Platten's "$200/Month AI Marketing Agency Stack" Rebuild (2023–2024)
 
-**Situation.** Jordan Platten (UK-based agency operator, ~480K-subscriber YouTube channel as of 2024, founder of Affluent.co agency-training program) publicly documented his agency's full stack in 2022: 47 active SaaS (Software as a Service) subscriptions across HubSpot Marketing Hub Professional ($890/mo), Salesforce Essentials ($25/user × 7), ZoomInfo Professional ($14K/yr), Outreach.io ($130/user × 5), Ahrefs Standard ($249), SEMrush Guru ($279), Hootsuite Team ($249), and a long tail of "we might need this" tools. Monthly tool burn averaged ~$4,200, growing 18% YoY as plans auto-upgraded. The agency ran at $52K MRR (Monthly Recurring Revenue) with 9 retainer clients so tool spend was 8.1% of revenue, well above the 1–2% benchmark cited above. Platten described the situation on his June 2023 YouTube case study ("I Cancelled $4,000 in SaaS Here's What Replaced It," ~340K views, verified via his channel archive) as "death by a thousand auto-renewals."
+**Situation.** Jordan Platten (UK-based agency operator, ~480K-subscriber YouTube channel as of 2024, founder of Affluent.co agency-training program) publicly documented his agency's full stack in 2022: 47 active SaaS subscriptions across HubSpot Marketing Hub Professional ($890/mo), Salesforce Essentials ($25/user × 7), ZoomInfo Professional ($14K/yr), Outreach.io ($130/user × 5), Ahrefs Standard ($249), SEMrush Guru ($279), Hootsuite Team ($249), and a long tail of "we might need this" tools. Monthly tool burn averaged ~$4,200, growing 18% YoY as plans auto-upgraded. The agency ran at $52K MRR with 9 retainer clients so tool spend was 8.1% of revenue, well above the 1–2% benchmark cited above. Platten described the situation on his June 2023 YouTube case study ("I Cancelled $4,000 in SaaS Here's What Replaced It," ~340K views, verified via his channel archive) as "death by a thousand auto-renewals."
 
 **Decision.** Over 90 days in Q3 2023, Platten ran a documented stack rebuild against the 4-question subscription test in this module (the test wasn't his framework but maps cleanly onto what he applied). Cancellations and replacements (all publicly named in his video + the follow-up Notion doc he released): HubSpot Pro → HubSpot CRM Free + Notion + Make.com ($0 + $10 + $16); Salesforce → Folk CRM ($24/user); ZoomInfo → Apollo ($79/mo, single seat); Outreach.io → Smartlead ($39); SEMrush Guru → Ahrefs Lite alone ($129, killed SEMrush entirely); Hootsuite → Buffer Essentials ($6) + manual; Lavender + WarmlyAI → free Apollo enrichment. He kept Claude Pro ($20), Midjourney Basic ($10), Google Workspace ($14/user × 4), GA4/Search Console/Clarity (free), and Bonsai ($25). Final post-rebuild stack documented at $387/mo (he was running outbound, so the $235 outbound tier was included). The full stack-vs-stack diff is in the pinned comment of that video and the Notion teardown.
 
@@ -555,7 +555,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 6 adds the per-seat cost of team licenses (LLM, Notion, ClickUp) once you cross the hiring threshold; Module 7 treats tool spend as a P&L (Profit and Loss) OpEx line and benchmarks it against the 1–2%-of-revenue target; Module 8 (Capstone) uses the Tier-2 outbound stack to run Vera's 47-day playbook.
+> - Inside this course: Module 6 adds the per-seat cost of team licenses (LLM, Notion, ClickUp) once you cross the hiring threshold; Module 7 treats tool spend as a P&L OpEx line and benchmarks it against the 1–2%-of-revenue target; Module 8 (Capstone) uses the Tier-2 outbound stack to run Vera's 47-day playbook.
 > - Cross-course: `15-AI-Marketing-Practitioner` covers product-level depth on most of the tools in this catalog (Klaviyo, HubSpot, Apollo, Claude/ChatGPT/Gemini specifics); `16-AI-Marketing-Strategist` Modules 6–8 walk the analytics + predictive stacks (GA4, Looker Studio, Triple Whale, PostHog) at greater depth.
 > - Practice: Practice Exam 2 has roughly 4–6 questions drawing from this module (Year-1 stack target, outbound stack cost, SEO single-pick rule, sucker stack, tool-spend %). Final Mock Exam revisits with synthesis questions linking stack design to the hiring + financial decisions downstream.
 

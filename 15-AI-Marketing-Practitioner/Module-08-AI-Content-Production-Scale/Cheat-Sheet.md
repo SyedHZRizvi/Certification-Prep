@@ -22,7 +22,7 @@
 | Use case | Model |
 |----------|-------|
 | Long brand content | **Claude Sonnet 4.7** |
-| Variants + structure | **ChatGPT GPT (Generative Pre-trained Transformer)-5** |
+| Variants + structure | **ChatGPT GPT-5** |
 | Multimodal (image-in) | **Gemini 2.5 Pro** |
 | SEO w/ web research | ChatGPT (web search) |
 | Brand voice fidelity | Claude Projects |

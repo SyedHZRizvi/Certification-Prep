@@ -105,7 +105,7 @@ title: "Module 6 Cheat Sheet: Nuke Fundamentals"
 | Paradigm | Layer-based (timeline) | Node graph (DAG) |
 | Multi-channel EXR | Limited | Native (Shuffle node) |
 | Film pipeline | Broadcast/commercial | Feature film standard |
-| Python scripting | Limited ExtendScript | Full Python API (Application Programming Interface) |
+| Python scripting | Limited ExtendScript | Full Python API |
 | Deep compositing | No | Yes |
 | Scene-linear workflow | Via OpenColorIO plugin | Native |
 | Team collaboration | Single artist | 50+ artists simultaneously |

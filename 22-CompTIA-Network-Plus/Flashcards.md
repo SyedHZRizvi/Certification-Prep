@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -286,10 +286,10 @@
 **Q:** Which OSI layer do port numbers live at?
 **A:** Layer 4 (Transport).
 
-**Q:** TCP (Transmission Control Protocol) vs UDP (User Datagram Protocol), which layer?
+**Q:** TCP vs UDP, which layer?
 **A:** Both Layer 4 (Transport).
 
-**Q:** Which OSI layer does HTTP (Hypertext Transfer Protocol) live at?
+**Q:** Which OSI layer does HTTP live at?
 **A:** Layer 7 (Application).
 
 **Q:** At what OSI layer does a hub operate?
@@ -336,7 +336,7 @@
 **A:** 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16.
 
 **Q:** APIPA range?
-**A:** 169.254.0.0/16. Self-assigned when DHCP (Dynamic Host Configuration Protocol) fails.
+**A:** 169.254.0.0/16. Self-assigned when DHCP fails.
 
 **Q:** Loopback IPv4 range?
 **A:** 127.0.0.0/8 (commonly 127.0.0.1).
@@ -356,7 +356,7 @@
 **Q:** What is VLSM?
 **A:** Variable Length Subnet Mask, different subnet sizes within a single network for efficient address use.
 
-**Q:** NAT (Network Address Translation) vs PAT, one-line difference?
+**Q:** NAT vs PAT, one-line difference?
 **A:** NAT translates IPs 1:1. PAT (overload) translates many internal IPs to one public IP using unique port numbers.
 
 **Q:** IPv6 loopback address?
@@ -385,7 +385,7 @@
 ## 🔀 SECTION 3: ROUTING & SWITCHING
 
 **Q:** Distance vector vs link state, name one of each.
-**A:** Distance vector: RIP (or EIGRP, hybrid). Link state: OSPF (Open Shortest Path First), IS-IS.
+**A:** Distance vector: RIP (or EIGRP, hybrid). Link state: OSPF, IS-IS.
 
 **Q:** What is OSPF's metric?
 **A:** Cost (based on bandwidth: reference bandwidth / link bandwidth).
@@ -396,10 +396,10 @@
 **Q:** RIP max hop count?
 **A:** 15. 16 = unreachable.
 
-**Q:** BGP (Border Gateway Protocol), what does it do?
+**Q:** BGP, what does it do?
 **A:** Border Gateway Protocol, routes between autonomous systems on the Internet. The "Internet's routing protocol."
 
-**Q:** Default 802.1Q VLAN (Virtual Local Area Network) tag size?
+**Q:** Default 802.1Q VLAN tag size?
 **A:** 4 bytes added to the Ethernet header. VLAN ID = 12 bits (max 4,094 usable VLANs).
 
 **Q:** Access port vs trunk port?
@@ -449,7 +449,7 @@
 **A:** SAE (Simultaneous Authentication of Equals), replaces WPA2's PSK 4-way handshake, defeats offline dictionary attacks.
 
 **Q:** WPA2 Enterprise authentication uses?
-**A:** 802.1X with RADIUS + EAP (PEAP, EAP-TLS (Transport Layer Security), etc.).
+**A:** 802.1X with RADIUS + EAP (PEAP, EAP-TLS, etc.).
 
 **Q:** What is a captive portal?
 **A:** Web page that intercepts HTTP requests on a guest network, forcing terms-of-use or sign-in before granting Internet access.
@@ -464,7 +464,7 @@
 
 ## 🗂️ SECTION 5: NETWORK SERVICES & CLOUD
 
-**Q:** DNS (Domain Name System) A record, what does it map?
+**Q:** DNS A record, what does it map?
 **A:** Hostname → IPv4 address.
 
 **Q:** DNS AAAA record, what does it map?
@@ -483,7 +483,7 @@
 **A:** SPF, DKIM, DMARC anti-spam records; domain ownership verification.
 
 **Q:** DNS SRV record, purpose?
-**A:** Locate the host and port for a specific service (used by SIP, AD (Active Directory), XMPP).
+**A:** Locate the host and port for a specific service (used by SIP, AD, XMPP).
 
 **Q:** DNS NS record?
 **A:** Names the authoritative name servers for a zone.
@@ -506,22 +506,22 @@
 **Q:** NTP port and protocol?
 **A:** UDP 123.
 
-**Q:** FTP (File Transfer Protocol), control + data ports?
+**Q:** FTP, control + data ports?
 **A:** TCP 21 (control), TCP 20 (active-mode data).
 
 **Q:** SFTP port?
-**A:** TCP 22 (it's FTP over SSH (Secure Shell)).
+**A:** TCP 22 (it's FTP over SSH).
 
 **Q:** TFTP port and protocol?
 **A:** UDP 69. No auth, used for switch/router firmware uploads and PXE boot.
 
-**Q:** AWS (Amazon Web Services) dedicated cloud link?
+**Q:** AWS dedicated cloud link?
 **A:** AWS Direct Connect.
 
 **Q:** Azure dedicated cloud link?
 **A:** Azure ExpressRoute.
 
-**Q:** SD-WAN (Wide Area Network), one-line definition?
+**Q:** SD-WAN, one-line definition?
 **A:** Software-Defined WAN, centrally managed overlay that intelligently routes traffic across multiple links (MPLS, broadband, LTE) based on policy and link health.
 
 ---
@@ -552,7 +552,7 @@
 **Q:** IPsec, two modes?
 **A:** Transport mode (encrypts payload only, host-to-host) and Tunnel mode (encrypts entire packet, gateway-to-gateway VPNs).
 
-**Q:** SSL (Secure Sockets Layer)/TLS VPN (Virtual Private Network) benefits over IPsec?
+**Q:** SSL/TLS VPN benefits over IPsec?
 **A:** Works over TCP 443 (firewall-friendly), often clientless (browser-based), easier remote-user deployment.
 
 **Q:** 802.1X, what does it do?
@@ -562,7 +562,7 @@
 
 ## 📊 SECTION 7: MONITORING & TOOLS
 
-**Q:** SNMP (Simple Network Management Protocol), port and purpose?
+**Q:** SNMP, port and purpose?
 **A:** UDP 161 (queries), UDP 162 (traps). Polls device metrics like CPU, interface counters, errors.
 
 **Q:** Three SNMP versions?
@@ -586,11 +586,11 @@
 **Q:** What command shows the path a packet takes to a destination on Windows?
 **A:** `tracert`. (Linux/macOS: `traceroute`.)
 
-**Q:** What command tests reachability with ICMP (Internet Control Message Protocol) echo?
+**Q:** What command tests reachability with ICMP echo?
 **A:** `ping`.
 
 **Q:** `nslookup` vs `dig`, purpose?
-**A:** Both perform DNS lookups from the CLI (Command Line Interface). `dig` (Linux/macOS) gives more detailed output; `nslookup` is cross-platform.
+**A:** Both perform DNS lookups from the CLI. `dig` (Linux/macOS) gives more detailed output; `nslookup` is cross-platform.
 
 **Q:** What does Wireshark do?
 **A:** Captures and analyzes packets on the wire (or wireless). The gold-standard packet analyzer.
@@ -640,7 +640,7 @@
 **A:** Telnet (cleartext, don't use). TCP.
 
 **Q:** Port 25?
-**A:** SMTP (Simple Mail Transfer Protocol). TCP.
+**A:** SMTP. TCP.
 
 **Q:** Port 53?
 **A:** DNS. UDP for queries, TCP for zone transfers.
@@ -655,22 +655,22 @@
 **A:** HTTP. TCP.
 
 **Q:** Port 110?
-**A:** POP3 (Post Office Protocol 3). TCP.
+**A:** POP3. TCP.
 
 **Q:** Port 123?
 **A:** NTP. UDP.
 
 **Q:** Port 143?
-**A:** IMAP (Internet Message Access Protocol). TCP.
+**A:** IMAP. TCP.
 
 **Q:** Ports 161, 162?
 **A:** SNMP queries (161) and SNMP traps (162). UDP.
 
 **Q:** Port 389?
-**A:** LDAP (Lightweight Directory Access Protocol). TCP/UDP.
+**A:** LDAP. TCP/UDP.
 
 **Q:** Port 443?
-**A:** HTTPS (HTTP Secure) (HTTP over TLS). TCP.
+**A:** HTTPS (HTTP over TLS). TCP.
 
 **Q:** Port 445?
 **A:** SMB (Windows file sharing). TCP.

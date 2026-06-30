@@ -38,8 +38,8 @@
 |---|---|
 | **DAC** | Owner decides (Linux/NTFS ACLs) |
 | **MAC** | System enforces by clearance label (military) |
-| **RBAC (Role-Based Access Control)** | Roles grant permissions (most enterprise) |
-| **ABAC (Attribute-Based Access Control)** | Policy on attributes (cloud-flexible) |
+| **RBAC** | Roles grant permissions (most enterprise) |
+| **ABAC** | Policy on attributes (cloud-flexible) |
 
 ---
 
@@ -51,7 +51,7 @@
 - **LAPS**, unique per-machine local admin passwords
 - **Credential Guard**, LSA isolation vs Mimikatz
 - **Tiered Admin** (Tier 0 / 1 / 2)
-- **PAM + JIT (Just-In-Time)**, time-boxed elevation with MFA (Multi-Factor Authentication)
+- **PAM + JIT**, time-boxed elevation with MFA
 - **MFA** for admin + remote access
 
 ---
@@ -77,7 +77,7 @@
 |---|---|
 | **CIS Benchmarks** | Industry standard L1 (basic) / L2 (strict) |
 | **DISA STIGs** | US DoD-mandated |
-| **Microsoft Security Baselines** | Official GPO (Group Policy Object) templates |
+| **Microsoft Security Baselines** | Official GPO templates |
 | **Vendor guides** | RHEL, Ubuntu, vSphere |
 
 ---
@@ -89,7 +89,7 @@
 | **AV** | Signature-based malware detection (legacy core) |
 | **HIDS** | Host detects, alerts |
 | **HIPS** | Host detects AND blocks |
-| **EDR (Endpoint Detection and Response)** | Behavioral + telemetry + IR (CrowdStrike, Defender, SentinelOne) |
+| **EDR** | Behavioral + telemetry + IR (CrowdStrike, Defender, SentinelOne) |
 | **FIM** | File integrity monitoring (Tripwire, AIDE, OSSEC) |
 
 ---
@@ -98,11 +98,11 @@
 
 ✅ CIS/STIG baseline
 ✅ Remove unused roles/packages
-✅ Disable SMB1, Telnet, FTP (File Transfer Protocol), unencrypted protocols
-✅ Patch within SLA (Service Level Agreement) (critical < 7d, high < 30d)
+✅ Disable SMB1, Telnet, FTP, unencrypted protocols
+✅ Patch within SLA (critical < 7d, high < 30d)
 ✅ Host firewall default-deny ingress
-✅ Encrypt at rest + in transit (TLS (Transport Layer Security) 1.2/1.3, SSH (Secure Shell) key)
-✅ Audit logging → SIEM (Security Information and Event Management)
+✅ Encrypt at rest + in transit (TLS 1.2/1.3, SSH key)
+✅ Audit logging → SIEM
 ✅ EDR + HIPS + FIM
 ✅ NTP from authoritative source
 ✅ UEFI pw + Secure Boot + TPM + SED

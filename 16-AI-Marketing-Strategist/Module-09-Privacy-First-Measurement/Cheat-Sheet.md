@@ -45,7 +45,7 @@ POST graph.facebook.com/v18.0/{pixel_id}/events
 ## 🔑 Google Enhanced Conversions
 
 - **Web:** sends hashed email/phone alongside conversion
-- **Leads:** uploads hashed lead ID after CRM (Customer Relationship Management) stage
+- **Leads:** uploads hashed lead ID after CRM stage
 - **Recipe:** lowercase + trim + SHA-256
 
 ---
@@ -57,14 +57,14 @@ POST graph.facebook.com/v18.0/{pixel_id}/events
 | Conversion value | 6 bits = 0–63 |
 | Postback timing | Randomized 24–144 hr delay |
 | Identification | None at user level |
-| Strategist's lever | Design the 6–8 LTV (Lifetime Value) bins encoded into conversion value |
+| Strategist's lever | Design the 6–8 LTV bins encoded into conversion value |
 | Apple 2024+ | AdAttributionKit (broader, more granular) |
 
 ---
 
 ## 🌐 Privacy Sandbox, 7 APIs
 
-| API (Application Programming Interface) | Purpose |
+| API | Purpose |
 |-----|---------|
 | Topics | Interest-based targeting (470-topic taxonomy, 3/week) |
 | Protected Audience (FLEDGE) | On-device remarketing auction |
@@ -80,13 +80,13 @@ POST graph.facebook.com/v18.0/{pixel_id}/events
 
 | Platform | Provider |
 |----------|----------|
-| AWS (Amazon Web Services) Clean Rooms | Amazon |
+| AWS Clean Rooms | Amazon |
 | Google Ads Data Hub (ADH) | Google |
 | Meta Audience Insights | Meta |
 | Snowflake Clean Room | Snowflake (2026 default) |
 | InfoSum | Independent |
 | Habu (LiveRamp) | LiveRamp 2024 acq |
-| LiveRamp Safe Haven | LiveRamp (CTV (Connected TV)) |
+| LiveRamp Safe Haven | LiveRamp (CTV) |
 
 **Rules:** aggregation thresholds, allowed-query restrictions, differential privacy.
 
@@ -107,11 +107,11 @@ Used in: SKAN, Attribution Reporting API, clean-room outputs.
 
 | Law | Where | Key issue |
 |-----|-------|-----------|
-| GDPR (General Data Protection Regulation) | EU/EEA/UK | Lawful basis, consent, DSAR |
-| CCPA (California Consumer Privacy Act) / CPRA | California | "Sale/sharing", GPC |
-| VCDPA / CPA (Cost Per Acquisition) / CTDPA / UCPA / TDPSA | VA / CO / CT / UT / TX | CCPA-style |
+| GDPR | EU/EEA/UK | Lawful basis, consent, DSAR |
+| CCPA / CPRA | California | "Sale/sharing", GPC |
+| VCDPA / CPA / CTDPA / UCPA / TDPSA | VA / CO / CT / UT / TX | CCPA-style |
 | MHMDA | Washington | Health data; brutal |
-| COPPA (Children's Online Privacy Protection Act) | US | Kids <13 |
+| COPPA | US | Kids <13 |
 | LGPD | Brazil | GDPR-style |
 
 **Top 4 strategist must know:** GDPR · CCPA/CPRA · MHMDA · COPPA.

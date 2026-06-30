@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-01-Motion-Design-Principles/Reading/
+permalink: /35-Motion-Graphics-UI-Animation/Module-01-Motion-Design-Principles/Reading/
 title: "Module 1: Motion Design Principles"
 ---
 
@@ -212,7 +212,7 @@ The simplest motion that achieves the goal is the right motion. Buck's work is n
 
 Apple's motion design is defined by two principles above all others: **physics-based spring animations** and **purposeful staging**.
 
-Every iOS transition is a spring: it has mass, stiffness, and damping. The developer-facing API (Application Programming Interface) is `UISpringTimingParameters`. The design-facing vocabulary is "feel heavy/light" and "feel bouncy/stiff." This is not metaphor, there is a literal physics simulation running behind every animation in UIKit.
+Every iOS transition is a spring: it has mass, stiffness, and damping. The developer-facing API is `UISpringTimingParameters`. The design-facing vocabulary is "feel heavy/light" and "feel bouncy/stiff." This is not metaphor, there is a literal physics simulation running behind every animation in UIKit.
 
 The staging rule: one thing at a time. In an iOS alert, the overlay fades in, then the card scales up. Never simultaneously. The hierarchy is always: context first, content second.
 

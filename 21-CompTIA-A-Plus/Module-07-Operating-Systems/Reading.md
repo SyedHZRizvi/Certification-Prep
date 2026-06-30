@@ -7,7 +7,7 @@
 > - Module 3 (hardware basics, boot devices, TPM, UEFI)
 > - Module 5 (troubleshooting methodology)
 >
-> Hands-on suggestion: spin up a Windows 11 VM (Virtual Machine), a Linux Ubuntu VM, and (if you have a Mac) explore Terminal. 30 minutes in each = an enormous payoff for this module.
+> Hands-on suggestion: spin up a Windows 11 VM, a Linux Ubuntu VM, and (if you have a Mac) explore Terminal. 30 minutes in each = an enormous payoff for this module.
 
 ---
 
@@ -23,7 +23,7 @@ She checks the spec. 8th-gen i5, 16 GB RAM, 512 GB SSD. Should be fine. She runs
 
 The PC has TPM 2.0 on its motherboard (Wei verifies in the spec sheet), but it's *disabled in BIOS*. She enters UEFI setup, flips TPM from "Disabled" to "Enabled", flips Boot mode from "Legacy + UEFI" to "UEFI only", enables Secure Boot. Saves. Reboots. The old Windows 10 install won't boot (MBR doesn't work with UEFI-only).
 
-11:58 p.m. She has to convert the disk from MBR to GPT (Generative Pre-trained Transformer). `mbr2gpt.exe /convert /allowFullOS` from a Windows 10 recovery console runs in 4 minutes without data loss. Reboots. Windows 10 starts. She runs the Windows 11 installer. **It works.** Done by 1:14 a.m.
+11:58 p.m. She has to convert the disk from MBR to GPT. `mbr2gpt.exe /convert /allowFullOS` from a Windows 10 recovery console runs in 4 minutes without data loss. Reboots. Windows 10 starts. She runs the Windows 11 installer. **It works.** Done by 1:14 a.m.
 
 The 380-PC migration finished on schedule. But Wei learned the hard way: the **Windows 11 requirements stack is real** TPM 2.0, UEFI, Secure Boot, GPT and you have to enable all of them coherently.
 
@@ -104,7 +104,7 @@ This module gives you the OS-layer vocabulary and the troubleshooting muscle to 
 | **Recovery** | Cmd+R at boot → macOS Recovery; or Cmd+Option+R for internet recovery |
 | **Package management** | App Store, .pkg installer, .dmg disk image, Homebrew (`brew`) |
 | **Default shell** | zsh since macOS 10.15 Catalina (was bash) |
-| **Built-in remote** | Screen Sharing (VNC-based, port 5900), SSH (Secure Shell) (port 22) |
+| **Built-in remote** | Screen Sharing (VNC-based, port 5900), SSH (port 22) |
 
 ### Common macOS keyboard shortcuts
 
@@ -239,7 +239,7 @@ chmod 755 script.sh
 | **Standard User** | Run apps; can't install or change system |
 | **Administrator** | Can install, change system, but UAC prompts |
 | **Guest** (deprecated) | Very limited; mostly disabled |
-| **Microsoft account** | Cloud-linked, MFA (Multi-Factor Authentication), OneDrive integration |
+| **Microsoft account** | Cloud-linked, MFA, OneDrive integration |
 | **Local account** | On-device only |
 | **Domain account** | Joined to Active Directory |
 | **Built-in Administrator** (disabled by default) | True elevated; bypass UAC |
@@ -311,7 +311,7 @@ chmod 755 script.sh
 | Acronym | Meaning |
 |---------|---------|
 | OS | Operating System |
-| GUI / CLI (Command Line Interface) | Graphical / Command Line Interface |
+| GUI / CLI | Graphical / Command Line Interface |
 | BIOS / UEFI | Basic IO System / Unified Extensible Firmware Interface |
 | TPM | Trusted Platform Module |
 | MBR / GPT | Master Boot Record / GUID Partition Table |

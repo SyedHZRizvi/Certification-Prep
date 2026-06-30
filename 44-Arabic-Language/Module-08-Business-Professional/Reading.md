@@ -28,7 +28,7 @@ Imagine reading Al-Jazeera, drafting a corporate memo in Arabic, or navigating a
 |--------|-----------------|---------|------|
 | مَجْلِس الإِدَارَة | majlisu l-idāra | Board of Directors | بورڈ آف ڈائریکٹرز |
 | رَئِيس مَجْلِس الإِدَارَة | raʾīsu majlisi l-idāra | Chairman of the Board | چیئرمین بورڈ |
-| الرَّئِيس التَّنْفِيذِي | ar-raʾīs at-tanfīdhī | CEO (Chief Executive Officer) / Executive Director | سی ای او |
+| الرَّئِيس التَّنْفِيذِي | ar-raʾīs at-tanfīdhī | CEO / Executive Director | سی ای او |
 | مُدِير عَام | mudīr ʿāmm | General Manager | جنرل منیجر |
 | قِسْم | qism | department | شعبہ |
 | إِدَارَة | idāra | administration / management | انتظامیہ / ادارہ |

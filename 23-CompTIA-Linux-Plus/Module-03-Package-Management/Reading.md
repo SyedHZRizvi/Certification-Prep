@@ -11,7 +11,7 @@
 
 ## 🍕 A Story: The Package Conflict at 2 a.m.
 
-Meet Wei. She's pulled an emergency support ticket: a development cluster's CI runner started failing every build at midnight. The error: `python3-pip: command not found`. She SSH (Secure Shell)'s in. Indeed, `which pip3` returns nothing.
+Meet Wei. She's pulled an emergency support ticket: a development cluster's CI runner started failing every build at midnight. The error: `python3-pip: command not found`. She SSH's in. Indeed, `which pip3` returns nothing.
 
 She runs `apt install python3-pip` on the first node:
 
@@ -339,7 +339,7 @@ Search the contents of all available packages (not just installed). `apt install
 
 ### `dnf-plugins-core`
 
-Adds `dnf config-manager`, `dnf copr enable`, etc. Often required for adding repos via CLI (Command Line Interface) on Fedora.
+Adds `dnf config-manager`, `dnf copr enable`, etc. Often required for adding repos via CLI on Fedora.
 
 ### `dpkg-reconfigure`
 
@@ -443,7 +443,7 @@ The PBQ would test step 3 specifically, the answer is `rpm --import`, NOT `gpgch
 
 **Outcome.** Linux package managers had effectively zero analogous catastrophic outages. Three architectural reasons:
 
-1. **Distribution-curated repositories.** Debian's archive, Fedora's koji build system, RHEL's CDN (Content Delivery Network) don't let an individual maintainer "unpublish" a package atomically. Removal is a multi-person multi-step process with a `removed-from-stable` archive.
+1. **Distribution-curated repositories.** Debian's archive, Fedora's koji build system, RHEL's CDN don't let an individual maintainer "unpublish" a package atomically. Removal is a multi-person multi-step process with a `removed-from-stable` archive.
 2. **GPG signing + content-addressable storage.** Every package is signed by the distro's key. Mirrors verify integrity. A bad mirror cannot inject a Trojan.
 3. **Versioned dependency declarations + system snapshotting.** `apt` and `dnf` install specific versions; `dnf history undo` lets you roll back a single transaction. Even if a "bad" update lands, recovery is one command.
 

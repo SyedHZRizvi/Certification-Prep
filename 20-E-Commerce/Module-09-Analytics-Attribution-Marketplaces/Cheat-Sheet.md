@@ -4,7 +4,7 @@
 
 ---
 
-## 📊 GA4 (Google Analytics 4) Event Taxonomy (use EXACT names; case-sensitive snake_case)
+## 📊 GA4 Event Taxonomy (use EXACT names; case-sensitive snake_case)
 
 | Event | When | Required params |
 |-------|------|----------------|
@@ -57,7 +57,7 @@ User → Event → Parameters (25/event; 50 custom dimensions; 50 custom metrics
 | **Robyn** | Meta (open-source, Nov 2021) | Ridge regression |
 | **Meridian** | Google (2024) | Bayesian; Ads-integrated |
 | **LightweightMMM** | Google (originally PayPal 2022) | Bayesian, lightweight |
-| **Recast** | Recast.ai | DTC (Direct-to-Consumer)-focused managed |
+| **Recast** | Recast.ai | DTC-focused managed |
 | **Walmart Connect MMM** | Walmart (2023+) | First-party purchase data |
 
 🧠 **MMM = aggregate econometrics. Privacy-compliant. No per-keyword optimization.**
@@ -83,18 +83,18 @@ User → Event → Parameters (25/event; 50 custom dimensions; 50 custom metrics
 |-------------|-----------|-------|
 | **Amazon US** | 30-45% | $50B+ ad revenue 2024 |
 | **Walmart Marketplace** | 20-35% | Fastest-growing |
-| **Mercado Libre (LATAM)** | 20-30% | $124B GMV (Gross Merchandise Value) 2024 |
+| **Mercado Libre (LATAM)** | 20-30% | $124B GMV 2024 |
 | **JD.com / Tmall (China)** | 20-50% | Localization-heavy |
 | **Rakuten (Japan)** | 15-30% | Loyalty-driven |
 | **Coupang (Korea)** | 20-30% | Rocket Delivery |
 | **Flipkart (India)** | 15-25% | Walmart-owned |
 | **Shopee / Lazada (SE Asia)** | 15-25% | 6+ markets |
 
-🧠 **Amazon 30-45% means $40 retail nets $22-$28 before COGS (Cost of Goods Sold).**
+🧠 **Amazon 30-45% means $40 retail nets $22-$28 before COGS.**
 
 ---
 
-## 💰 Amazon FBA (Fulfillment by Amazon) Fee Quick-Ref (2026)
+## 💰 Amazon FBA Fee Quick-Ref (2026)
 
 ```
 Referral:     8-15% (15% standard)
@@ -112,7 +112,7 @@ Long-term:    $6.90/cu.ft after 271 days
 2024 ad revenue:    $4B+ (~30% YoY)
 Data advantage:     First-party purchase data ~90% US households
 Measurement edge:   MMM-as-a-service to top advertisers (2023+)
-Vizio acquisition:  Q4 2024, $2.3B → CTV (Connected TV) measurement
+Vizio acquisition:  Q4 2024, $2.3B → CTV measurement
 ```
 
 🧠 **MMM-blended attribution = competitive moat vs Amazon's click-attributed.**
@@ -123,7 +123,7 @@ Vizio acquisition:  Q4 2024, $2.3B → CTV (Connected TV) measurement
 
 ```
 Browser:    GA4, Meta Pixel, TikTok Pixel
-Server:     CAPI, Events API (Application Programming Interface), GA4 Measurement Protocol
+Server:     CAPI, Events API, GA4 Measurement Protocol
 Identity:   User-ID stitching at login + purchase
 Analytics:  GA4 + BigQuery (SQL-level)
 Attribution: DDA (in-channel) + MMM (cross-channel)
@@ -172,4 +172,4 @@ If 7/7 in 90 sec, you own this module. ✅
 
 ---
 
-➡️ [Module 10: Cross-Border, B2B (Business-to-Business) & Composable Commerce](../Module-10-Cross-Border-B2B-Composable-Commerce/Reading.md)
+➡️ [Module 10: Cross-Border, B2B & Composable Commerce](../Module-10-Cross-Border-B2B-Composable-Commerce/Reading.md)

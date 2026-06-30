@@ -6,7 +6,7 @@
 
 ## 🧱 The Four Prompt Parts
 
-| Part | Where in API (Application Programming Interface) | Purpose |
+| Part | Where in API | Purpose |
 |------|--------------|---------|
 | **System** | `system="..."` | Role + format + constraints; stable; cacheable |
 | **User message(s)** | `messages: [{role:"user", content:"..."}]` | Per-turn variable input/payload |
@@ -166,4 +166,4 @@ If you can answer all 5 in under 60 seconds, you own this module. ✅
 
 ---
 
-➡️ [Module 3: Claude API & SDK (Software Development Kit) Deep Dive](../Module-03-Claude-API-SDK-Deep-Dive/Reading.md)
+➡️ [Module 3: Claude API & SDK Deep Dive](../Module-03-Claude-API-SDK-Deep-Dive/Reading.md)

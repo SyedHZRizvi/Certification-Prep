@@ -60,9 +60,9 @@ AAA was standardized for network access by the IETF in the RADIUS specs (Rigney 
 
 | Letter | Means | Example | Tool |
 |--------|-------|---------|------|
-| **Authentication** | Prove you are who you say you are | Username + password + TOTP code | LDAP (Lightweight Directory Access Protocol), MFA |
-| **Authorization** | Decide what you're allowed to do | "Maria can read /payroll but not /admin" | RBAC (Role-Based Access Control), ABAC (Attribute-Based Access Control), ACLs |
-| **Accounting (or Auditing)** | Record what you did | Log: "Maria opened /payroll/Q3.xlsx at 09:14" | SIEM (Security Information and Event Management), audit logs |
+| **Authentication** | Prove you are who you say you are | Username + password + TOTP code | LDAP, MFA |
+| **Authorization** | Decide what you're allowed to do | "Maria can read /payroll but not /admin" | RBAC, ABAC, ACLs |
+| **Accounting (or Auditing)** | Record what you did | Log: "Maria opened /payroll/Q3.xlsx at 09:14" | SIEM, audit logs |
 
 🧠 **Memory hook:** "Who are you? → What can you do? → What did you do?"
 
@@ -97,7 +97,7 @@ Sec+ specifically names two planes, **MEMORIZE both**:
 - **Adaptive Identity**, risk-based authentication: more challenge if you're logging in from a new device, country, or odd time
 - **Threat Scope Reduction**, limit what each user/service can reach (least privilege at the network level)
 - **Policy-Driven Access Control**, decisions come from explicit, centrally managed policy, not from network location
-- **Policy Engine (PE (Private Equity))**, brain that evaluates the policy and outputs allow/deny
+- **Policy Engine (PE)**, brain that evaluates the policy and outputs allow/deny
 - **Policy Administrator (PA)**, translates the decision into a session (configures the PEP)
 - **Policy Enforcement Point (PEP)**, the gate that actually lets traffic through (a proxy, identity-aware load balancer, etc.)
 - **Implicit Trust Zone**, the *small* trusted segment a verified session is allowed into (after the PEP)
@@ -139,7 +139,7 @@ Sec+ loves to ask: *"This is what type / what category of control?"* You must cl
 | **Detective** | Spots the event during or after | SIEM alert, IDS, motion sensor, audit log |
 | **Corrective** | Fixes things after an event | Patch, restore from backup, quarantine malware |
 | **Compensating** | Alternative when the primary control isn't feasible | Air-gapped legacy system + extra logging because you can't patch it |
-| **Directive** | Tells people what to do (policy/guidance) | AUP, "must use VPN (Virtual Private Network)" rule, sign saying "no tailgating" |
+| **Directive** | Tells people what to do (policy/guidance) | AUP, "must use VPN" rule, sign saying "no tailgating" |
 
 🚨 **Common confusion:**
 - **Deterrent** discourages, relies on the attacker *deciding* not to act
@@ -155,7 +155,7 @@ Sec+ loves to ask: *"This is what type / what category of control?"* You must cl
 | Quarterly access review | Managerial | Detective |
 | Antivirus quarantining a file | Technical | Corrective |
 | Biometric scanner at the data center door | Physical | Preventive |
-| Required SOC (Security Operations Center) 2 audit clause in vendor contract | Managerial | Directive |
+| Required SOC 2 audit clause in vendor contract | Managerial | Directive |
 
 ---
 
@@ -171,7 +171,7 @@ Process:
 4. Identify the **gaps**, where you fall short
 5. Prioritize and remediate (this becomes the security roadmap)
 
-🎯 **Exam pattern:** *"The CISO (Chief Information Security Officer) wants to know what's missing to meet ISO 27001."* → Run a **gap analysis**.
+🎯 **Exam pattern:** *"The CISO wants to know what's missing to meet ISO 27001."* → Run a **gap analysis**.
 
 ---
 
@@ -186,15 +186,15 @@ A change request (new firewall rule, server reboot, software upgrade) can break 
 | **Test results** | Was it validated in a non-prod environment? |
 | **Backout plan** | If it goes sideways, how do we revert? |
 | **Maintenance window** | Scheduled time to minimize disruption |
-| **Standard operating procedure (SOP (Standard Operating Procedure))** | Documented step-by-step for repeatable changes |
+| **Standard operating procedure (SOP)** | Documented step-by-step for repeatable changes |
 | **Ownership** | One named person responsible for the change |
 | **Stakeholders** | Everyone who needs to be notified |
 | **Allow / deny lists** | Updates require change control to avoid lockouts |
-| **Restricted activities** | High-risk actions (e.g., DNS (Domain Name System) changes) need extra approval |
+| **Restricted activities** | High-risk actions (e.g., DNS changes) need extra approval |
 | **Downtime** | Planned vs unplanned, both have implications |
 | **Service / Application restart** | Often part of a change; affects availability |
 | **Legacy applications** | May not survive certain changes, flag in impact analysis |
-| **Dependencies** | A change to A might break B (e.g., upgrading a TLS (Transport Layer Security) lib affects 12 services) |
+| **Dependencies** | A change to A might break B (e.g., upgrading a TLS lib affects 12 services) |
 
 **Technical implications of change**: documentation updates, version control, diagrams, updating the CMDB (Configuration Management Database), runbooks.
 
@@ -276,9 +276,9 @@ This is what a PBQ might show as a diagram, drag the labels (PEP, PE, PA, Adapti
 
 **Situation.** Equifax, one of the three major US consumer credit-reporting bureaus, ran a public consumer-dispute portal on Apache Struts 2. On 7 March 2017, the Apache Software Foundation disclosed **CVE-2017-5638**, a remote-code-execution flaw in Struts' Jakarta Multipart parser, with a patch available the same day. US-CERT (now CISA) issued a public advisory the next day. Equifax's IT operations team circulated an internal "patch within 48 hours" directive on 9 March 2017.
 
-**Decision.** Equifax did *not* patch the dispute portal. The mandated patch never reached the affected server because the scanning tool used to verify compliance was misconfigured (the scan ran from a network segment that could not reach the host). On 10 March 2017 attackers exploited the unpatched flaw. They moved laterally onto file servers and ran undetected for **76 days** (mid-May through 29 July 2017). A SSL (Secure Sockets Layer) certificate on the network-monitoring device had expired 19 months earlier, so encrypted exfiltration traffic was never inspected. Equifax detected the breach only when the certificate was renewed in late July 2017.
+**Decision.** Equifax did *not* patch the dispute portal. The mandated patch never reached the affected server because the scanning tool used to verify compliance was misconfigured (the scan ran from a network segment that could not reach the host). On 10 March 2017 attackers exploited the unpatched flaw. They moved laterally onto file servers and ran undetected for **76 days** (mid-May through 29 July 2017). A SSL certificate on the network-monitoring device had expired 19 months earlier, so encrypted exfiltration traffic was never inspected. Equifax detected the breach only when the certificate was renewed in late July 2017.
 
-**Outcome.** **147.9 million** US consumers (45% of the US adult population), 15 million UK residents, and 19,000 Canadian records were exposed SSNs, dates of birth, addresses, driver's-license numbers, and ~209,000 credit-card numbers. Equifax's CEO (Chief Executive Officer), CIO, and CSO retired within weeks. Equifax paid **$575–700 million** in a 2019 settlement with the FTC, CFPB, and 50 US states/territories the largest data-breach settlement to that point (FTC press release, 22 July 2019). The US House Oversight Committee published a 96-page post-mortem ("The Equifax Data Breach," December 2018) that became required reading in corporate-governance and risk classes at Harvard Business School and Wharton.
+**Outcome.** **147.9 million** US consumers (45% of the US adult population), 15 million UK residents, and 19,000 Canadian records were exposed SSNs, dates of birth, addresses, driver's-license numbers, and ~209,000 credit-card numbers. Equifax's CEO, CIO, and CSO retired within weeks. Equifax paid **$575–700 million** in a 2019 settlement with the FTC, CFPB, and 50 US states/territories the largest data-breach settlement to that point (FTC press release, 22 July 2019). The US House Oversight Committee published a 96-page post-mortem ("The Equifax Data Breach," December 2018) that became required reading in corporate-governance and risk classes at Harvard Business School and Wharton.
 
 **Lesson for the exam / for practitioners.** Equifax violated **all three** CIA pillars simultaneously and failed at the basic control-management discipline this module teaches:
 
@@ -315,7 +315,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 2](../Module-02-Cryptography-PKI/Reading.md) operationalizes Integrity (hashing, signatures) and Confidentiality (encryption); [Module 3](../Module-03-Identity-Access-Management/Reading.md) deepens AAA into MFA, SAML/OIDC, and PAM; [Module 9](../Module-09-GRC-Risk-Compliance/Reading.md) revisits control classification under NIST SP 800-53.
-> - Cross-course: AWS (Amazon Web Services) Solutions Architect Associate (course 04) Module on Security uses the same CIA/AAA vocabulary in AWS-specific terms (KMS, IAM, CloudTrail). Azure Administrator (course 06) covers Conditional Access, the Microsoft implementation of Adaptive Identity.
+> - Cross-course: AWS Solutions Architect Associate (course 04) Module on Security uses the same CIA/AAA vocabulary in AWS-specific terms (KMS, IAM, CloudTrail). Azure Administrator (course 06) covers Conditional Access, the Microsoft implementation of Adaptive Identity.
 > - Practice: Practice Exam 1 has ~8 questions drawing from this module; the Final Mock has ~10.
 
 ---

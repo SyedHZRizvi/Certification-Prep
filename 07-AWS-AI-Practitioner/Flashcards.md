@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -289,8 +289,8 @@
 **Q:** What is unsupervised CLUSTERING used for?
 **A:** Grouping similar items without predefined categories (e.g., customer segmentation).
 
-**Q:** What does RLHF (Reinforcement Learning from Human Feedback) stand for and what is it used for?
-**A:** Reinforcement Learning from Human Feedback, aligns LLMs with human preferences (used for Claude/GPT (Generative Pre-trained Transformer)-style chat models).
+**Q:** What does RLHF stand for and what is it used for?
+**A:** Reinforcement Learning from Human Feedback, aligns LLMs with human preferences (used for Claude/GPT-style chat models).
 
 **Q:** What is overfitting?
 **A:** When a model memorizes the training data and performs poorly on new (test) data, high training accuracy, low test accuracy.
@@ -336,7 +336,7 @@
 **A:** A visual data prep tool with 300+ built-in transformations.
 
 **Q:** What is SageMaker Feature Store?
-**A:** A central, versioned store for ML features, online for low-latency inference, offline (S3 (Simple Storage Service)) for training.
+**A:** A central, versioned store for ML features, online for low-latency inference, offline (S3) for training.
 
 **Q:** What is SageMaker Ground Truth?
 **A:** A managed data labeling service with public, private, and vendor workforces (and active learning).
@@ -345,7 +345,7 @@
 **A:** Real-time, Serverless, Asynchronous, Batch Transform.
 
 **Q:** When to use Batch Transform?
-**A:** When scoring a whole dataset offline with no live API (Application Programming Interface) needed.
+**A:** When scoring a whole dataset offline with no live API needed.
 
 **Q:** When to use Asynchronous Inference?
 **A:** Large payloads (up to ~1 GB) and longer processing time (seconds to minutes).
@@ -363,7 +363,7 @@
 **A:** A managed service for extracting text plus structured data (tables, forms) from documents, OCR++.
 
 **Q:** What is Amazon Comprehend?
-**A:** A managed NLP (Natural Language Processing) service for sentiment, entities, key phrases, language detection. Comprehend Medical adds PHI extraction.
+**A:** A managed NLP service for sentiment, entities, key phrases, language detection. Comprehend Medical adds PHI extraction.
 
 **Q:** What is Amazon Polly?
 **A:** Managed text-to-speech with lifelike voices.
@@ -411,11 +411,11 @@
 **Q:** What does MAX TOKENS control?
 **A:** The maximum length of the model's response.
 
-**Q:** What is a hallucination in an LLM (Large Language Model)?
+**Q:** What is a hallucination in an LLM?
 **A:** A confidently wrong / invented output that sounds plausible but isn't factually grounded.
 
 **Q:** Name 3 ways to reduce hallucinations.
-**A:** RAG (Retrieval-Augmented Generation) (ground in real data), better prompting (few-shot + system instructions), lower temperature, and using Bedrock Guardrails contextual grounding.
+**A:** RAG (ground in real data), better prompting (few-shot + system instructions), lower temperature, and using Bedrock Guardrails contextual grounding.
 
 **Q:** What is a multimodal model?
 **A:** A model that natively handles more than one input/output modality (e.g., text + image, like Claude vision or Amazon Nova).
@@ -483,7 +483,7 @@
 **A:** Reason + Act + Observe loop, interleaves reasoning with calling external tools/APIs. The pattern behind Bedrock Agents.
 
 **Q:** What is prompt injection?
-**A:** Malicious user input that overrides the system prompt, the "SQL (Structured Query Language) injection" of LLMs.
+**A:** Malicious user input that overrides the system prompt, the "SQL injection" of LLMs.
 
 **Q:** Direct vs Indirect prompt injection?
 **A:** Direct = user types the malicious prompt. Indirect = malicious instructions are hidden in content the LLM ingests (PDF, web page, RAG corpus).
@@ -609,7 +609,7 @@
 ## 📦 SECTION 8: AI SECURITY & GOVERNANCE
 
 **Q:** Under the AWS Shared Responsibility Model for AI, what is the CUSTOMER responsible for?
-**A:** Data classification, IAM (Identity and Access Management) least-privilege, Guardrails configuration, fine-tuning data safety, reviewing audit logs, all "in the cloud" choices.
+**A:** Data classification, IAM least-privilege, Guardrails configuration, fine-tuning data safety, reviewing audit logs, all "in the cloud" choices.
 
 **Q:** What IAM action invokes a Bedrock model?
 **A:** `bedrock:InvokeModel` (and `bedrock:InvokeModelWithResponseStream` for streaming).
@@ -618,7 +618,7 @@
 **A:** Use a resource-level IAM policy that limits `bedrock:InvokeModel` to specific model ARNs.
 
 **Q:** How do you make Bedrock API traffic stay private off the public internet?
-**A:** Use a PrivateLink VPC (Virtual Private Cloud) interface endpoint for Bedrock Runtime (and Agent / KB Runtime).
+**A:** Use a PrivateLink VPC interface endpoint for Bedrock Runtime (and Agent / KB Runtime).
 
 **Q:** What does AWS CloudTrail log for Bedrock?
 **A:** API call METADATA, who called what, when. NOT the prompt/response content.
@@ -630,10 +630,10 @@
 **A:** ML-powered PII / sensitive data discovery and classification in S3 buckets.
 
 **Q:** Macie vs Bedrock Guardrails for PII?
-**A:** Macie = discovery at REST (Representational State Transfer) in S3 (e.g., before ingesting into a KB). Guardrails = filter/redact at INFERENCE time on prompts/responses.
+**A:** Macie = discovery at REST in S3 (e.g., before ingesting into a KB). Guardrails = filter/redact at INFERENCE time on prompts/responses.
 
 **Q:** What's in AWS Artifact?
-**A:** AWS compliance reports (SOC (Security Operations Center), ISO, HIPAA, FedRAMP) for download.
+**A:** AWS compliance reports (SOC, ISO, HIPAA, FedRAMP) for download.
 
 **Q:** What does AWS Audit Manager do?
 **A:** Aggregates audit evidence into framework-aligned packages (NIST, ISO, PCI, etc.).
@@ -641,7 +641,7 @@
 **Q:** What is a BAA and when do you need one?
 **A:** Business Associate Addendum, required to run HIPAA-regulated workloads on AWS (must also use HIPAA-eligible services).
 
-**Q:** Does GDPR (General Data Protection Regulation) apply to a US-based AI service?
+**Q:** Does GDPR apply to a US-based AI service?
 **A:** Yes, if the service processes personal data of EU residents. GDPR is based on data subject location, not company HQ.
 
 **Q:** What is model extraction (model theft)?

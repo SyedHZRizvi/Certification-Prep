@@ -34,7 +34,7 @@ What broke tier-1's flow? They were *reinstalling* the most aggressive remediati
 | **"BOOTMGR is missing"** | Corrupt or missing boot manager, repair via `bootrec` |
 | **"NTLDR is missing"** | Legacy XP-era; pre-UEFI; repair from install media |
 | **"BCD failure" / "Boot Configuration Data missing"** | BCD store corrupt, `bootrec /rebuildbcd` |
-| **"Operating system not found"** | Boot order wrong, drive not detected, MBR/GPT (Generative Pre-trained Transformer) mismatch |
+| **"Operating system not found"** | Boot order wrong, drive not detected, MBR/GPT mismatch |
 | **Black screen, no cursor** | GPU driver, monitor cable, sometimes corrupt user profile |
 | **Boot loops** | Updates failed mid-install; BSOD on boot; corrupt drivers |
 | **Stuck on "Preparing automatic repair"** | Multiple failed boots, Windows enters WinRE |
@@ -115,7 +115,7 @@ A Windows kernel panic with a stop code. Modern Windows 10/11 shows a stop code 
 | **High CPU at idle** | Background scan, Windows Update, malware, runaway process | Task Manager → Processes |
 | **High disk usage at idle** | Antivirus scan, indexing, Windows Update, malware | Resource Monitor → Disk |
 | **High memory** | Memory leak in an app, too little RAM, lots of browser tabs | Task Manager → Memory tab |
-| **Slow internet** | Browser cache, malware, DNS (Domain Name System), ISP (Internet Service Provider), full disk | `netstat`, browser dev tools |
+| **Slow internet** | Browser cache, malware, DNS, ISP, full disk | `netstat`, browser dev tools |
 | **PC overheating + throttling** | Dust, dead fan, dried thermal paste | HWiNFO64 |
 
 ### Pagefile / virtual memory
@@ -213,7 +213,7 @@ ipconfig /all
 ipconfig /flushdns
 ipconfig /release && ipconfig /renew
 netsh winsock reset                       # Reset Winsock catalog
-netsh int ip reset                        # Reset TCP (Transmission Control Protocol)/IP stack
+netsh int ip reset                        # Reset TCP/IP stack
 
 # Boot
 bootrec /fixmbr / /fixboot / /scanos / /rebuildbcd
@@ -306,7 +306,7 @@ The Windows Update rollback path is one of the most valuable WinRE tricks for "e
 | PUP | Potentially Unwanted Program |
 | RAM / ROM | Random/Read-Only Memory |
 | HDD / SSD | Hard Disk Drive / Solid State Drive |
-| GPO (Group Policy Object) | Group Policy Object |
+| GPO | Group Policy Object |
 
 ---
 
@@ -316,7 +316,7 @@ The Windows Update rollback path is one of the most valuable WinRE tricks for "e
 
 **The technical detail.** CrowdStrike Falcon Sensor is a kernel-mode driver. Its content updates (Rapid Response Content) were pushed independently of the main driver code, ostensibly to deliver threat-intelligence updates without driver re-signing. The faulty content file contained data the parser couldn't handle, dereferencing a null pointer at kernel level → instant BSOD → reboot loop. Because the driver loaded at boot, affected machines BSOD'd on every restart.
 
-**Decision and outcome.** Recovery required *physical access* to each machine, boot to WinRE / Safe Mode, navigate to `C:\Windows\System32\drivers\CrowdStrike`, delete the problematic file, reboot. Some BitLocker-encrypted machines required the recovery key (often stored in Azure AD (Active Directory) / Entra ID) to access WinRE. Cloud-managed fleets could automate via Intune remediation scripts once initial recovery was done; but the first-boot recovery had to be hand-touched on millions of devices.
+**Decision and outcome.** Recovery required *physical access* to each machine, boot to WinRE / Safe Mode, navigate to `C:\Windows\System32\drivers\CrowdStrike`, delete the problematic file, reboot. Some BitLocker-encrypted machines required the recovery key (often stored in Azure AD / Entra ID) to access WinRE. Cloud-managed fleets could automate via Intune remediation scripts once initial recovery was done; but the first-boot recovery had to be hand-touched on millions of devices.
 
 Estimated global economic impact: **$5.4 billion** (Parametrix Insurance estimate). Delta sued CrowdStrike for over $500M. CISA issued an emergency directive within hours. CrowdStrike published a [post-incident review](https://www.crowdstrike.com/blog/falcon-update-for-windows-hosts-technical-details/) on 24 July 2024 admitting test failures.
 
@@ -328,7 +328,7 @@ Estimated global economic impact: **$5.4 billion** (Parametrix Insurance estimat
 **Discussion (Socratic).**
 - **Q1:** Imagine you are the IT lead at a 300-laptop firm on the morning of 19 July 2024. Walk through your first 4 hours: triage, communication, recovery sequencing.
 - **Q2:** The incident triggered debate about whether kernel-mode security software should be allowed at all (vs userspace alternatives). Argue both sides, Linux uses eBPF for similar use cases; Microsoft is rumored to be redesigning Windows endpoint security APIs.
-- **Q3:** A small-business owner asks if they should "uninstall their EDR (Endpoint Detection and Response)" because of this incident. Make the argument that the right lesson is *better deployment* of EDR, not removal.
+- **Q3:** A small-business owner asks if they should "uninstall their EDR" because of this incident. Make the argument that the right lesson is *better deployment* of EDR, not removal.
 
 ---
 

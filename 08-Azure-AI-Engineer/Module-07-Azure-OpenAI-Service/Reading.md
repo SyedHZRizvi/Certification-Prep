@@ -1,13 +1,13 @@
 # Module 7: Azure OpenAI Service 🧠
 
-> **Why this module matters:** Generative AI is 10–15% of AI-102 on paper, but it's the area that grows every exam refresh. Master deployments, prompts, content filters, fine-tuning, and "On Your Data" for RAG (Retrieval-Augmented Generation).
+> **Why this module matters:** Generative AI is 10–15% of AI-102 on paper, but it's the area that grows every exam refresh. Master deployments, prompts, content filters, fine-tuning, and "On Your Data" for RAG.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1 (Azure resource model, auth)
 > - Module 2 (Responsible AI; content filters appear here)
 > - Module 5 (Azure AI Search; "On Your Data" assumes you know what an index is)
 > - The transformer concept from Vaswani et al. (2017), every model in this module descends from that architecture
-> - The few-shot in-context learning idea from Brown et al. (2020), "Language Models are Few-Shot Learners" (the GPT (Generative Pre-trained Transformer)-3 paper)
+> - The few-shot in-context learning idea from Brown et al. (2020), "Language Models are Few-Shot Learners" (the GPT-3 paper)
 >
 > Optional: Anthropic's *Constitutional AI* paper (Bai et al., 2022) for an alternative view on alignment, useful context, not exam material.
 
@@ -53,7 +53,7 @@ Azure OpenAI Resource (the gateway, keys, endpoint, region, quota)
         └── dalle-prod         → base model: dall-e-3
 ```
 
-When you call the API (Application Programming Interface), you target a **deployment name** (not the model name). The deployment maps to a specific model + version, with its own **TPM/RPM quota** and **content filter** configuration.
+When you call the API, you target a **deployment name** (not the model name). The deployment maps to a specific model + version, with its own **TPM/RPM quota** and **content filter** configuration.
 
 ```bash
 az cognitiveservices account deployment create \
@@ -69,12 +69,12 @@ az cognitiveservices account deployment create \
 
 ### Deployment SKUs / pricing models
 
-| SKU (Stock Keeping Unit) | Description |
+| SKU | Description |
 |---|---|
 | **Standard** | Pay-as-you-go per token |
 | **Global Standard** | Cheaper PAYG, routes globally (no regional pinning) |
 | **Provisioned Throughput Units (PTU)** | Reserve dedicated capacity; predictable latency + cost |
-| **Global Batch** | Async batched completions, ~50% cheaper, 24-hr SLA (Service Level Agreement) |
+| **Global Batch** | Async batched completions, ~50% cheaper, 24-hr SLA |
 
 🎯 **Exam pattern:** "Need predictable latency + reserved capacity" → **PTUs**. "Need cheapest async processing of millions of items" → **Global Batch**. "Standard chat app" → **Standard / Global Standard**.
 
@@ -100,7 +100,7 @@ az cognitiveservices account deployment create \
 
 ## 📡 Calling Azure OpenAI from Python
 
-The OpenAI SDK (Software Development Kit) 1.x speaks both OpenAI.com and Azure OpenAI, for Azure, use `AzureOpenAI`.
+The OpenAI SDK 1.x speaks both OpenAI.com and Azure OpenAI, for Azure, use `AzureOpenAI`.
 
 ### Chat completion
 
@@ -302,7 +302,7 @@ Eligible base models: `gpt-4o-mini`, `gpt-35-turbo`, others (regional).
 | **RPM** (Requests Per Minute) | Per-deployment quota |
 | **PTU** | Provisioned Throughput Unit, reserves capacity |
 
-When a request exceeds quota you get **HTTP (Hypertext Transfer Protocol) 429**. Mitigate with:
+When a request exceeds quota you get **HTTP 429**. Mitigate with:
 
 1. Client-side retries with exponential backoff
 2. Request a quota increase via Azure portal
@@ -351,7 +351,7 @@ This overlaps with Azure AI Vision but is more "describe what you see" / "reason
 | "Higher temperature is always better" | For RAG / grounded answers, keep it low (0.0–0.3) |
 | "Fine-tune to add knowledge" | RAG is for knowledge; fine-tune for style/format |
 | "Content filters can be turned off" | Only via approved exemption |
-| "Azure OpenAI is the same as OpenAI.com" | Same models, but Azure adds RBAC (Role-Based Access Control), private networking, region pinning, content filters, BYO data |
+| "Azure OpenAI is the same as OpenAI.com" | Same models, but Azure adds RBAC, private networking, region pinning, content filters, BYO data |
 | "DALL-E is in every region" | No, model availability varies; check the docs |
 
 ---
@@ -416,9 +416,9 @@ This overlaps with Azure AI Vision but is more "describe what you see" / "reason
 
 ## 💬 Discussion, Socratic prompts
 
-1. **PTU vs Standard vs Global Batch under load.** A team forecasts 10× traffic for a Black Friday peak. Walk through the cost + latency + commitment trade-offs of (a) Standard with quota increase, (b) PTU reserved for the peak window, (c) Global Batch for the analyzable / async portion, (d) some hybrid. Defend your recommendation against a CFO (Chief Financial Officer) who hates "use it or lose it" commitments.
-2. **"On Your Data" with `in_scope: true` vs custom RAG.** On Your Data gets you to RAG in minutes; custom RAG with prompt flow gets you control over chunking, re-ranking, multi-step reasoning. Build the case for each at a $5M-ARR (Annual Recurring Revenue) startup vs a $5B-ARR enterprise. Where's the decisive break?
-3. **Fine-tuning vs RAG, revisited.** A team wants the LLM (Large Language Model) to consistently produce JSON in a specific schema. They consider (a) fine-tuning, (b) `response_format: json_schema` (when supported), (c) prompt-engineering + retries. Walk through cost, maintainability, and accuracy. When is each correct?
+1. **PTU vs Standard vs Global Batch under load.** A team forecasts 10× traffic for a Black Friday peak. Walk through the cost + latency + commitment trade-offs of (a) Standard with quota increase, (b) PTU reserved for the peak window, (c) Global Batch for the analyzable / async portion, (d) some hybrid. Defend your recommendation against a CFO who hates "use it or lose it" commitments.
+2. **"On Your Data" with `in_scope: true` vs custom RAG.** On Your Data gets you to RAG in minutes; custom RAG with prompt flow gets you control over chunking, re-ranking, multi-step reasoning. Build the case for each at a $5M-ARR startup vs a $5B-ARR enterprise. Where's the decisive break?
+3. **Fine-tuning vs RAG, revisited.** A team wants the LLM to consistently produce JSON in a specific schema. They consider (a) fine-tuning, (b) `response_format: json_schema` (when supported), (c) prompt-engineering + retries. Walk through cost, maintainability, and accuracy. When is each correct?
 4. **Content filter exemption ethics.** Microsoft allows approved customers to request exemption from default content filters and from 30-day abuse logging. From a Stanford-operations-review perspective, build the strongest case that those exemptions should *not exist* (or should be much harder to obtain). Counter with the case that they're a feature, not a bug. Cite the Microsoft Responsible AI Standard v2 (2022) and EU AI Act (2024).
 5. **Temperature in production.** Set temperature=0 for grounded RAG answers; temperature=1+ for creative copy. Where's the boundary? Defend a temperature policy for: (a) customer-support bot, (b) marketing copy generator, (c) clinical notes drafting. What does each tell you about the Responsible-AI principle that's binding for that use case?
 
@@ -450,7 +450,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 8 wraps every Azure OpenAI primitive in Azure AI Foundry's project / prompt flow / agent / evaluation surface; the Capstone project then composes Modules 1–8 into a real production deployment.
-> - Cross-course: [`07-AWS (Amazon Web Services)-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) Module 6 covers Bedrock + Claude on AWS for cross-cloud comparison; [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) deepens prompt-injection + GenAI threat modeling.
+> - Cross-course: [`07-AWS-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) Module 6 covers Bedrock + Claude on AWS for cross-cloud comparison; [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) deepens prompt-injection + GenAI threat modeling.
 > - Practice: Practice Exam 2 has ~10 questions from this module; Final Mock has full Azure OpenAI case studies.
 
 ---

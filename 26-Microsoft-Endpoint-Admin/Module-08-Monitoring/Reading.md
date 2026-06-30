@@ -1,6 +1,6 @@
 # Module 8: Monitoring, Reporting & Troubleshooting 📊
 
-> **Why this module matters:** Every other module assumed things worked. Module 8 is what you do when they don't. Endpoint analytics, Intune reports, the MDM (Mobile Device Management) diagnostics report, log collection, these are the tools that turn 4-hour helpdesk tickets into 4-minute fixes. MD-102 weights monitoring and troubleshooting at ~10–15% and the exam loves "device sync stuck" and "Autopilot failed" scenarios.
+> **Why this module matters:** Every other module assumed things worked. Module 8 is what you do when they don't. Endpoint analytics, Intune reports, the MDM diagnostics report, log collection, these are the tools that turn 4-hour helpdesk tickets into 4-minute fixes. MD-102 weights monitoring and troubleshooting at ~10–15% and the exam loves "device sync stuck" and "Autopilot failed" scenarios.
 
 > **Prerequisites for this module.** Before starting:
 > - Modules 1–7, this module references all of them.
@@ -204,7 +204,7 @@ The zip contains:
 | 2 | Confirm an Autopilot profile is assigned to the device's group |
 | 3 | Check the Autopilot device's enrollment status in Intune |
 | 4 | Pull Autopilot ETW traces via MDM Diagnostics |
-| 5 | If hybrid: verify Intune Connector for AD (Active Directory) is healthy |
+| 5 | If hybrid: verify Intune Connector for AD is healthy |
 
 ### Scenario 5: Conditional Access blocking a legitimate user
 
@@ -227,7 +227,7 @@ The zip contains:
 | **Event Viewer, MDM events** | Apps and Services Logs → Microsoft → Windows → DeviceManagement-Enterprise-Diagnostics-Provider |
 | **Autopilot ETW** | Included in MDM Diagnostics zip |
 | **Defender for Endpoint logs** | Apps and Services Logs → Microsoft → Windows → Windows Defender |
-| **BitLocker logs** | Apps and Services Logs → Microsoft → Windows → BitLocker-API (Application Programming Interface) |
+| **BitLocker logs** | Apps and Services Logs → Microsoft → Windows → BitLocker-API |
 | **Sign-in logs (Entra ID)** | Microsoft Entra admin center → Sign-ins |
 | **Audit logs (Entra ID)** | Microsoft Entra admin center → Audit logs |
 | **Intune Audit logs** | Tenant administration → Audit logs |
@@ -390,7 +390,7 @@ You now know:
 - **Helpdesk tickets in "device slow" / "app crash" categories**: dropped ~57% within 12 months of Endpoint Analytics + proactive remediations enablement.
 - **Median sign-in time**: improved from 89 seconds to 41 seconds.
 - **Outlook crash rate**: dropped 84% after proactive remediation for cached profile bloat went live.
-- **Hardware refresh ROI (Return on Investment)**: refresh decisions are now data-driven; the fleet refresh cycle stretched from 36 to 48 months because high-performing devices are kept longer.
+- **Hardware refresh ROI**: refresh decisions are now data-driven; the fleet refresh cycle stretched from 36 to 48 months because high-performing devices are kept longer.
 - **Microsoft baseline achievement**: 92% of fleet now at 80+ across all 5 Endpoint Analytics categories (up from 31% baseline).
 - **IT staff productivity**: helpdesk team reduced from 47 FTEs to 38 FTEs while ticket volume per device dropped substantially.
 

@@ -5,7 +5,7 @@
 | Arabic | Transliteration | English | اردو |
 |--------|-----------------|---------|------|
 | مَجْلِس الإِدَارَة | majlisu l-idāra | Board of Directors | بورڈ |
-| الرَّئِيس التَّنْفِيذِي | ar-raʾīs at-tanfīdhī | CEO (Chief Executive Officer) | سی ای او |
+| الرَّئِيس التَّنْفِيذِي | ar-raʾīs at-tanfīdhī | CEO | سی ای او |
 | مُدِير عَام | mudīr ʿāmm | General Manager | جنرل منیجر |
 | قِسْم | qism | department | شعبہ |
 | إِدَارَة | idāra | management / administration | ادارہ |

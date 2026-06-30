@@ -1,5 +1,5 @@
 <style>
-.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI (User Interface)',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
+.fc-app{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:1.5rem auto 2.5rem;padding:1.25rem;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(99,102,241,.10),0 2px 6px rgba(0,0,0,.04);border:1px solid #eef0fb;color:#1f2937}
 .fc-app *{box-sizing:border-box}
 .fc-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between;margin-bottom:.85rem}
 .fc-controls-left,.fc-controls-right{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
@@ -281,7 +281,7 @@
 **A:** Public Benefit Corporation (PBC), legally required to consider broader societal impact.
 
 **Q:** Who are the two most prominent Anthropic founders?
-**A:** Dario Amodei (CEO (Chief Executive Officer)) and Daniela Amodei (President). They were senior OpenAI researchers before founding Anthropic.
+**A:** Dario Amodei (CEO) and Daniela Amodei (President). They were senior OpenAI researchers before founding Anthropic.
 
 **Q:** What is the founding paper of Constitutional AI?
 **A:** Bai et al. (2022), "Constitutional AI: Harmlessness from AI Feedback."
@@ -292,7 +292,7 @@
 **Q:** What does RLAIF stand for?
 **A:** Reinforcement Learning from AI Feedback, the RL phase of Constitutional AI.
 
-**Q:** What does RLHF (Reinforcement Learning from Human Feedback) stand for?
+**Q:** What does RLHF stand for?
 **A:** Reinforcement Learning from Human Feedback, OpenAI's pioneered RL training methodology.
 
 **Q:** What are the three Claude model tiers?
@@ -314,12 +314,12 @@
 **A:** Amazon ($4B+) and Google. Also Spark Capital, Lightspeed, Menlo Ventures.
 
 **Q:** What three places can you deploy Claude in production?
-**A:** Anthropic direct API (Application Programming Interface), AWS (Amazon Web Services) Bedrock, GCP (Google Cloud Platform) Vertex AI.
+**A:** Anthropic direct API, AWS Bedrock, GCP Vertex AI.
 
 **Q:** Which deployment gets latest features first?
 **A:** Anthropic direct API; Bedrock and Vertex have a slight feature lag.
 
-**Q:** What is the CFO (Chief Financial Officer)-defensible one-liner for picking Claude over GPT (Generative Pre-trained Transformer) in a regulated industry?
+**Q:** What is the CFO-defensible one-liner for picking Claude over GPT in a regulated industry?
 **A:** "Claude is trained using Constitutional AI, an auditable safety methodology, which provides a more defensible safety story for regulated workloads."
 
 ---
@@ -370,12 +370,12 @@
 
 ---
 
-## 🔌 SECTION 3: CLAUDE API & SDK (Software Development Kit)
+## 🔌 SECTION 3: CLAUDE API & SDK
 
 **Q:** What is the single endpoint for Claude's chat-style API?
 **A:** `POST /v1/messages`.
 
-**Q:** What is the required HTTP (Hypertext Transfer Protocol) header for API version pinning?
+**Q:** What is the required HTTP header for API version pinning?
 **A:** `anthropic-version: 2023-06-01` (or current canonical pin).
 
 **Q:** What header opts you into preview features like prompt caching, computer use, or MCP beta?
@@ -397,7 +397,7 @@
 **A:** Approximately 1024 tokens. Marking smaller content does nothing.
 
 **Q:** What discount does the Batch API offer?
-**A:** Approximately 50% on both input AND output tokens. Hours SLA (Service Level Agreement).
+**A:** Approximately 50% on both input AND output tokens. Hours SLA.
 
 **Q:** What is the SDK helper for token counting without inference?
 **A:** `client.messages.count_tokens(...)`.
@@ -648,7 +648,7 @@
 **A:** An enterprise opt-in where Anthropic does not retain prompts/responses beyond what's required to serve the request.
 
 **Q:** What network feature keeps Bedrock/Vertex traffic off the public internet?
-**A:** VPC (Virtual Private Cloud) endpoints (AWS) / Private Service Connect (GCP).
+**A:** VPC endpoints (AWS) / Private Service Connect (GCP).
 
 **Q:** What is the appropriate engineering response to a Reddit screenshot of your bot revealing its system prompt?
 **A:** Activate kill switch (pause feature), assess blast radius, fix layered defenses (authority hierarchy + output moderation + injection detection), red-team, then phased re-enable.

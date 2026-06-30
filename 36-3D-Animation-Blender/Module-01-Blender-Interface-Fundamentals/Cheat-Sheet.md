@@ -149,7 +149,7 @@ title: "Module 1 Cheat Sheet: Blender Interface & Fundamentals"
 
 ---
 
-## Python API (Application Programming Interface) Quick Reference
+## Python API Quick Reference
 
 | Expression | Returns / Does |
 |---|---|

@@ -171,7 +171,7 @@ Week    14:  Module 10 + Final Mock + portfolio polish
 3. ❌ **Ignoring audio**, The best animators cut to audio first. Every beat, every consonant, every breath is a keyframe opportunity. Module 7 teaches this; don't skip it.
 4. ❌ **Over-rigging**, A rig with 200 bones and a joystick for every finger is not a great rig. It's a liability. A great rig is the *minimum* structure for the motion the character needs. Module 6 explains the calculus.
 5. ❌ **Not watching enough reference**, Watch *everything*: live action reference for weight and timing, great cartoons for style and exaggeration, bad cartoons to understand what not to do. Your eye must outpace your hand.
-6. ❌ **Wrong frame rate for the job**, 24fps for cinematic, 12fps for that hand-drawn anime feel, 30fps for broadcast TV, 60fps for gaming UI (User Interface). Module 9 explains the tradeoffs; choosing wrong wastes render time and looks wrong.
+6. ❌ **Wrong frame rate for the job**, 24fps for cinematic, 12fps for that hand-drawn anime feel, 30fps for broadcast TV, 60fps for gaming UI. Module 9 explains the tradeoffs; choosing wrong wastes render time and looks wrong.
 7. ❌ **Shipping without color space correction**, sRGB in Animate vs. Rec.709 in After Effects vs. P3 in Premiere. One wrong toggle and your beautifully graded color explodes on someone else's monitor. Module 9 covers this.
 
 ---

@@ -12,7 +12,7 @@
 
 ## 🚒 A Story: The 3 a.m. Pager
 
-Meet Aanya. She's the on-call sysadmin for an e-commerce platform. At 3:07 a.m. her phone vibrates: monitoring says the checkout API (Application Programming Interface) is returning 504 errors at a 12% rate. CFO (Chief Financial Officer) emails the on-call lead by 3:15 a.m.
+Meet Aanya. She's the on-call sysadmin for an e-commerce platform. At 3:07 a.m. her phone vibrates: monitoring says the checkout API is returning 504 errors at a 12% rate. CFO emails the on-call lead by 3:15 a.m.
 
 Aanya's bad version of this story:
 
@@ -24,7 +24,7 @@ Aanya's good version of this story:
 - Steps 1-3 narrow the problem to "DB write latency spiked at 2:58 a.m."
 - Step 4 maps to "a SAN path failed and MPIO is in degraded fallback."
 - Step 5 fails the bad path, traffic re-balances on the healthy path, latency drops, 504s stop.
-- Step 6 writes a clean post-mortem: root cause = optic going bad on storage NIC, replaced under SLA (Service Level Agreement) the next morning.
+- Step 6 writes a clean post-mortem: root cause = optic going bad on storage NIC, replaced under SLA the next morning.
 
 Total outage in the good version: 18 minutes. In the bad version: 4 hours and a damaged career. The difference is **discipline + methodology + good documentation + the right diagnostic vocabulary**. That's this module.
 
@@ -86,8 +86,8 @@ Each vendor publishes a beep-code table. Common patterns:
 | OS won't load past splash | Driver issue, missing kernel module, corrupt FS | Safe Mode (Windows) / single-user / `rescue.target` (Linux) |
 | BSOD / kernel panic at boot | Memory, driver, or firmware bug | Check minidump (Windows) / `journalctl` last-boot (Linux) |
 | "Operating system not found" | UEFI/BIOS boot order misconfigured, drive disconnected | Boot order; check drive presence in firmware |
-| Slow boot, then OK | Many possible: STP convergence on switch (no PortFast), waiting for unmapped network drives, AD (Active Directory) timeout | Check timing; PortFast on switch port |
-| Server boots but no network | NIC link down, wrong VLAN (Virtual Local Area Network)/IP, DHCP (Dynamic Host Configuration Protocol) failure | NIC LEDs; switch port status; `ip a` / `ipconfig` |
+| Slow boot, then OK | Many possible: STP convergence on switch (no PortFast), waiting for unmapped network drives, AD timeout | Check timing; PortFast on switch port |
+| Server boots but no network | NIC link down, wrong VLAN/IP, DHCP failure | NIC LEDs; switch port status; `ip a` / `ipconfig` |
 
 🎯 **Exam pattern:** *"Server passes POST then says 'No bootable device.' Drive LEDs are green."* → **Check UEFI/BIOS boot order** OR **RAID volume not initialized/failed** at controller level.
 
@@ -137,7 +137,7 @@ If the SEL shows correctable ECC errors on one DIMM trending upward → schedule
 
 | Symptom | Where to look |
 |---|---|
-| Slow I/O on a specific volume | Hot/cold tiering, RAID rebuild in progress, snapshot chain too long (VM (Virtual Machine)), full pool (thin), MPIO failover |
+| Slow I/O on a specific volume | Hot/cold tiering, RAID rebuild in progress, snapshot chain too long (VM), full pool (thin), MPIO failover |
 | Drive LED amber | RAID controller status, SEL |
 | Array rebuilding | RAID controller; monitor for second failure |
 | "Disk is offline" in Windows | Disk Management → Online; verify SAN connection; check MPIO |
@@ -148,11 +148,11 @@ If the SEL shows correctable ECC errors on one DIMM trending upward → schedule
 
 | Tool | What |
 |---|---|
-| **RAID controller utility** (PERC CLI (Command Line Interface) for Dell, SSACLI for HPE, MegaCLI for LSI) | Array status, drive details, rebuild progress |
+| **RAID controller utility** (PERC CLI for Dell, SSACLI for HPE, MegaCLI for LSI) | Array status, drive details, rebuild progress |
 | **SMART attributes** | Drive self-reported health (smartctl) |
 | **`iostat -xz 1`** (Linux) | Per-device I/O latency + utilization |
 | **`perfmon`** (Windows) | Disk read/write counters, queue length, latency |
-| **Storage array UI (User Interface)** (vendor) | Health, replication status, capacity |
+| **Storage array UI** (vendor) | Health, replication status, capacity |
 | **Multipath status** | `multipath -ll` (Linux) / MPIO snap-in (Windows) |
 | **VMware esxtop** | `d` for disk, watch DAVG / KAVG latency |
 
@@ -219,8 +219,8 @@ Diagnosing "the server is slow" means *finding the saturated resource*.
 
 | Symptom | First tool |
 |---|---|
-| Cannot reach a host by name | `nslookup` / `dig`, is DNS (Domain Name System) resolving? |
-| Resolves but cannot connect | `ping` (ICMP (Internet Control Message Protocol)), `traceroute` / `tracert` (path) |
+| Cannot reach a host by name | `nslookup` / `dig`, is DNS resolving? |
+| Resolves but cannot connect | `ping` (ICMP), `traceroute` / `tracert` (path) |
 | Connection times out on a port | `nc -vz host port` / `Test-NetConnection host -Port port` |
 | Connected but slow | `iperf3` for end-to-end throughput baseline |
 | Sporadic drops | Switch port counters (CRC errors, runts, giants), cable, optic |
@@ -240,7 +240,7 @@ Diagnosing "the server is slow" means *finding the saturated resource*.
 | `ping host` | ICMP reachability + latency |
 | `traceroute host` / `tracert host` | Path |
 | `mtr host` | Combined traceroute + ping over time |
-| `nc -vz host port` | TCP (Transmission Control Protocol) port open check |
+| `nc -vz host port` | TCP port open check |
 | `Test-NetConnection host -Port port` | PowerShell equivalent |
 | `iperf3 -c server` | Throughput test |
 | `tcpdump -ni eth0 port 443` | Packet capture |
@@ -349,7 +349,7 @@ Runbooks are tested under fire. Run them in tabletop exercises (Module 5).
 **Walkthrough.**
 
 1. **Identify the problem.** Get specifics, what does "slow" mean? Time to load page? When did it start? Just this user, or company-wide? Any recent changes? You check monitoring: SharePoint p95 latency tripled at 14:32 today, affecting all users. No changes are logged in the change calendar.
-2. **Establish a theory.** Three candidates: (a) SharePoint app server hit a CPU/RAM/disk bottleneck; (b) SQL (Structured Query Language) Server backend is slow; (c) network path is degraded.
+2. **Establish a theory.** Three candidates: (a) SharePoint app server hit a CPU/RAM/disk bottleneck; (b) SQL Server backend is slow; (c) network path is degraded.
 3. **Test the theory.** Open Resource Monitor on the SharePoint server CPU 22%, RAM 50%, disk latency 4 ms. Not saturated. Open SQL Server Activity Monitor `WRITELOG` waits dominating, disk queue chronically full on the log volume. Investigate the storage path: `multipath -ll` shows one of two paths failed at 14:32. Theory confirmed: lost a storage path; MPIO is in degraded fallback; SQL log writes are bottlenecked.
 4. **Plan + implement.** Plan: identify and fail the bad path explicitly, schedule replacement of the bad SFP+ optic during the next maintenance window. Communicate via Slack to stakeholders. Implement: `multipath -f /dev/mapper/badpath` and verify SQL latency drops.
 5. **Verify + preventive.** SharePoint p95 latency back to baseline. Add monitoring alert for "any MPIO path down > 5 min", would have paged at 14:37, not at user complaint at 16:15.
@@ -421,9 +421,9 @@ Total time to resolution: ~30 min. Documentation discipline turned a 4-hour scra
 
 ---
 
-## 📊 Case Study, The 2012 AWS (Amazon Web Services) US-East-1 EBS Outage (Why Bottleneck Diagnosis Matters)
+## 📊 Case Study, The 2012 AWS US-East-1 EBS Outage (Why Bottleneck Diagnosis Matters)
 
-**Situation.** On 22 October 2012 AWS US-East-1 (the largest AWS region at the time) suffered a major outage of the EBS (Elastic Block Storage) service. A latent memory leak in the EBS storage server software triggered a feedback loop: EBS servers became unresponsive, customers' EC2 (Elastic Compute Cloud) instances saw degraded volumes, instances were terminated and re-launched (compounding the load on remaining servers), and the cascade tore through availability zones. The outage took down portions of Netflix, Reddit, Heroku, Pinterest, and many other major services for ~6 hours (AWS public post-mortem, 22 October 2012).
+**Situation.** On 22 October 2012 AWS US-East-1 (the largest AWS region at the time) suffered a major outage of the EBS (Elastic Block Storage) service. A latent memory leak in the EBS storage server software triggered a feedback loop: EBS servers became unresponsive, customers' EC2 instances saw degraded volumes, instances were terminated and re-launched (compounding the load on remaining servers), and the cascade tore through availability zones. The outage took down portions of Netflix, Reddit, Heroku, Pinterest, and many other major services for ~6 hours (AWS public post-mortem, 22 October 2012).
 
 **Diagnostic challenge.** From the *customer* side, symptoms were chaotic: EC2 instances unresponsive, EBS volume metrics "frozen," API calls timing out, sometimes intermittent recovery. Customers who followed methodology, escalated through AWS Support, and held off on bulk-restarting their own workloads recovered faster than those who panicked and did "everything at once", which compounded the load.
 

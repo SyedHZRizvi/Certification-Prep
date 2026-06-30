@@ -8,7 +8,7 @@
 
 | Family | Resource Type | Use |
 |--------|---------------|-----|
-| **Arc-enabled servers** | `Microsoft.HybridCompute/machines` | RBAC (Role-Based Access Control), Policy, Monitor, Defender, Update, ESU |
+| **Arc-enabled servers** | `Microsoft.HybridCompute/machines` | RBAC, Policy, Monitor, Defender, Update, ESU |
 | **Arc-enabled Kubernetes** | `Microsoft.Kubernetes/connectedClusters` | GitOps, Policy, Defender for Containers, App Services |
 | **Arc-enabled data services** | `Microsoft.AzureArcData/...` | SQL Server, SQL MI on K8s, PostgreSQL Hyperscale |
 
@@ -35,7 +35,7 @@
 
 | Method | Best for |
 |--------|----------|
-| **Group Policy startup script** | Existing AD (Active Directory)-joined Windows fleet |
+| **Group Policy startup script** | Existing AD-joined Windows fleet |
 | **Ansible / Puppet / Chef** | Linux + heterogeneous |
 | **SCCM application** | Existing SCCM-managed fleet |
 | **VMware vCenter connector** | ESXi VMs (newer) |
@@ -72,7 +72,7 @@
 
 - Windows Server 2008 R2 ESU through 2023 (Azure-only)
 - Windows Server **2012 / 2012 R2 ESU through Oct 2026**
-- Per-core ESU SKU (Stock Keeping Unit) billed to Azure sub
+- Per-core ESU SKU billed to Azure sub
 - Requires Arc onboarding + license link in portal
 
 ---
@@ -89,7 +89,7 @@
 
 | Capability | Detail |
 |------------|--------|
-| Distributions | **Any conformant K8s** (AKS, EKS (Elastic Kubernetes Service), GKE, OpenShift, K3s, RKE, kubeadm) |
+| Distributions | **Any conformant K8s** (AKS, EKS, GKE, OpenShift, K3s, RKE, kubeadm) |
 | GitOps | Flux v2 (CNCF graduated) |
 | Policy | Azure Policy for K8s (OPA/Gatekeeper backend) |
 | Monitor | Container Insights (AMA + DCR) |
@@ -102,7 +102,7 @@
 
 When you see these, they're often **correct**:
 
-- ✅ "Outbound HTTPS (HTTP Secure) only, no inbound ports"
+- ✅ "Outbound HTTPS only, no inbound ports"
 - ✅ "Use Azure Connected Machine Onboarding role for SP"
 - ✅ "Apply policy at the management group scope"
 - ✅ "DINE effect with a remediation task for existing resources"
@@ -112,7 +112,7 @@ When you see these, they're often **correct**:
 
 Usually **wrong**:
 
-- ❌ "Arc requires inbound RDP/SSH (Secure Shell)"
+- ❌ "Arc requires inbound RDP/SSH"
 - ❌ "Owner role to onboard (least privilege violation)"
 - ❌ "Arc K8s only works with AKS"
 - ❌ "ESU is free with Arc onboarding"
@@ -141,7 +141,7 @@ Usually **wrong**:
 | Run a script on Arc machine without inbound port | Run Command |
 | Auto-install AMA on every Arc machine | Policy DINE at MG + remediation task |
 | Govern new subs automatically | Policy at MG scope |
-| Onboard 5,000 servers fast | GPO (Group Policy Object) (Windows) / Ansible (Linux) startup script |
+| Onboard 5,000 servers fast | GPO (Windows) / Ansible (Linux) startup script |
 | Arc in air-gapped network | Arc Private Link with Private Endpoints |
 | Validate connectivity before onboarding | `azcmagent check` |
 

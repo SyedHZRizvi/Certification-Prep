@@ -42,15 +42,15 @@ Example: AV=$200k, EF=30%, ARO=0.25 → SLE=$60k, **ALE=$15k/yr**.
 
 | Acronym | Means |
 |---------|-------|
-| **NDA (Non-Disclosure Agreement)** | Confidentiality |
+| **NDA** | Confidentiality |
 | **MSA** | Umbrella contract |
 | **SOW** | Project scope under MSA |
-| **SLA (Service Level Agreement)** | Performance metrics + remedies |
+| **SLA** | Performance metrics + remedies |
 | **MOU** | Non-binding intent |
 | **MOA** | Binding agreement |
 | **BPA** | Business partnership |
 | **ISA** | System interconnection |
-| **DPA** | GDPR (General Data Protection Regulation) processor |
+| **DPA** | GDPR processor |
 | **BAA** | HIPAA business associate |
 
 ---
@@ -60,7 +60,7 @@ Example: AV=$200k, EF=30%, ARO=0.25 → SLE=$60k, **ALE=$15k/yr**.
 | Frameworks (voluntary) | Regs (mandatory) |
 |------------------------|------------------|
 | NIST CSF, 800-53, RMF | HIPAA, HITECH |
-| ISO 27001 / 27002 | GDPR, CCPA (California Consumer Privacy Act) |
+| ISO 27001 / 27002 | GDPR, CCPA |
 | CIS Controls v8 | PCI-DSS (contractual) |
 | COBIT | SOX, GLBA |
 | CSA CCM (cloud) | FISMA, FedRAMP |
@@ -73,8 +73,8 @@ Example: AV=$200k, EF=30%, ARO=0.25 → SLE=$60k, **ALE=$15k/yr**.
 
 | Acronym | Means |
 |---------|-------|
-| **RTO (Recovery Time Objective)** | Max acceptable DOWNTIME |
-| **RPO (Recovery Point Objective)** | Max acceptable DATA LOSS (time) |
+| **RTO** | Max acceptable DOWNTIME |
+| **RPO** | Max acceptable DATA LOSS (time) |
 | **MTTR** | Avg time to recover |
 | **MTBF** | Avg between failures |
 | **MTTD** | Avg time to detect |

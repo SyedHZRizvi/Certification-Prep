@@ -15,7 +15,7 @@
 
 It's October 2024. Cursor the AI-native IDE built on top of Claude and GPT-4 pushes an update to their inline-edit feature. Within 90 minutes, the on-call engineer is paged. Latency on the autocomplete endpoint has tripled. Tail-p99 is at 4.2 seconds. Users are tweeting screenshots of the spinning cursor and unsubscribing.
 
-The team's first instinct, naturally: model regression. Did Anthropic ship a slower variant? Did OpenAI's API (Application Programming Interface) degrade? They check both. Both clean. Next theory: vector DB. Latency normal. Next: their own retrieval layer. Normal.
+The team's first instinct, naturally: model regression. Did Anthropic ship a slower variant? Did OpenAI's API degrade? They check both. Both clean. Next theory: vector DB. Latency normal. Next: their own retrieval layer. Normal.
 
 Eight hours into the incident, a junior engineer notices something in the trace logs: the **input token count** on the slow requests is roughly 5× what it should be. The team digs in. The culprit is a one-line change to how they assembled the prompt a developer had switched a code-context renderer from `tiktoken.cl100k_base` to a generic `transformers.AutoTokenizer.from_pretrained("gpt2")` because the latter was "easier to install in CI." The GPT-2 tokenizer is *brutal* on code it splits `function`, `return`, and `=>` into multiple tokens each, while `cl100k_base` (the GPT-4 / GPT-4o tokenizer) treats them efficiently. The same code snippet that was 800 tokens in the old tokenizer was now 4,000 in the new one. Five times the input. Five times the cost. And, because attention is **quadratic** in sequence length, twenty-five times the compute.
 
@@ -51,7 +51,7 @@ Every modern LLM Claude 4.7, GPT-5, Gemini 2.x, Llama 4, Mistral, DeepSeek-V3, Q
 
 The training story is even simpler: feed the model billions of next-token-prediction tasks ("given these tokens, what comes next?"), update weights with stochastic gradient descent for months on tens of thousands of GPUs. The model that emerges is, mathematically, a *very* high-dimensional conditional probability distribution over a fixed vocabulary.
 
-Everything else instruction tuning, RLHF (Reinforcement Learning from Human Feedback), constitutional AI, agents, RAG, tool use is post-hoc surgery on this same predictor.
+Everything else instruction tuning, RLHF, constitutional AI, agents, RAG, tool use is post-hoc surgery on this same predictor.
 
 ---
 

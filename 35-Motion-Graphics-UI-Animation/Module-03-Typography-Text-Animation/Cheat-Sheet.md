@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-03-Typography-Text-Animation/Cheat-Sheet/
+permalink: /35-Motion-Graphics-UI-Animation/Module-03-Typography-Text-Animation/Cheat-Sheet/
 title: "Module 3 Cheat Sheet: Typography & Text Animation"
 ---
 

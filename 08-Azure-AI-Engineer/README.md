@@ -23,7 +23,7 @@ The Microsoft Certified: Azure AI Engineer Associate (AI-102) is the credential 
 ### 💼 Career outcomes after passing
 
 - **Azure AI Engineer** ($115K–$160K), building Azure OpenAI / AI Foundry solutions for enterprises
-- **GenAI / LLM (Large Language Model) Application Engineer** ($120K–$175K), implementing RAG (Retrieval-Augmented Generation), agent workflows, copilots
+- **GenAI / LLM Application Engineer** ($120K–$175K), implementing RAG, agent workflows, copilots
 - **AI Solutions Architect (Microsoft track)** ($135K–$190K), premium over generalist architects
 - **Machine Learning Engineer (Azure ML focus)** ($125K–$170K), training and deploying custom models on Azure ML
 - **Data Scientist (Azure ecosystem)** ($120K–$165K), AI-102 plus DP-100 is a recurring premium combination
@@ -59,7 +59,7 @@ By the end of this track, you'll be able to:
 - Stand up a RAG (retrieval-augmented generation) app with Azure AI Search + Azure OpenAI
 - Deploy and govern generative AI models from Azure AI Foundry (formerly AI Studio)
 - Apply Microsoft's Responsible AI principles with Content Safety, prompt shields, and groundedness checks
-- Read and write the Python SDK (Software Development Kit) calls the exam loves to test
+- Read and write the Python SDK calls the exam loves to test
 
 ---
 
@@ -107,7 +107,7 @@ Two course-root deliverables built to a graduate-level professional standard:
 
 🔗 **[Official AI-102 Study Guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-102)**, Microsoft updates the skills outline every few months. Print the latest one. If the study guide lists a service, make sure you can:
 
-1. Provision it from the portal AND with the Azure CLI (Command Line Interface)
+1. Provision it from the portal AND with the Azure CLI
 2. Authenticate against it with both key and Entra ID
 3. Call its top endpoint with the Python SDK
 4. Recall its main pricing tier difference (free vs standard)
@@ -158,7 +158,7 @@ Week 3: Module 4 (NLP)
 Week 4: Module 5 (Document Intelligence + AI Search)
         → Index a PDF library, run vector + semantic queries
 Week 5: Module 6 (Conversational AI) + Module 7 (Azure OpenAI)
-        → Deploy GPT (Generative Pre-trained Transformer)-4o, wire On Your Data to your AI Search index
+        → Deploy GPT-4o, wire On Your Data to your AI Search index
 Week 6: Module 8 (Build GenAI Apps) + REVIEW
         → Build a prompt flow in Foundry, run eval
         → Take PRACTICE EXAM 2, then FINAL MOCK
@@ -169,7 +169,7 @@ Week 6: Module 8 (Build GenAI Apps) + REVIEW
 
 ## ⚠️ The 7 Most Common Reasons People Fail AI-102
 
-1. ❌ Studied AWS (Amazon Web Services) AI services and assumed Azure works the same way (it does NOT)
+1. ❌ Studied AWS AI services and assumed Azure works the same way (it does NOT)
 2. ❌ Memorized service names but couldn't tell which SDK method to call in a code snippet
 3. ❌ Confused Azure AI Search **indexer** with **index** with **skillset** (3 different things)
 4. ❌ Didn't practice the difference between **prebuilt** and **custom** Document Intelligence models

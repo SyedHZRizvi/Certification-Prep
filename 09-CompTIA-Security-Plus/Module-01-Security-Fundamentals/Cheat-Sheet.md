@@ -33,7 +33,7 @@ IDENTIFICATION → AUTHENTICATION → AUTHORIZATION → ACCOUNTING
 | **Control Plane** | Policy Engine, Policy Administrator, Adaptive Identity, Threat Scope Reduction, Policy-Driven Access Control |
 | **Data Plane** | Policy Enforcement Point (PEP), Subject/System, Implicit Trust Zone |
 
-🧠 **PE (Private Equity) thinks. PA tells. PEP does.**
+🧠 **PE thinks. PA tells. PEP does.**
 
 Adaptive Identity = risk-based auth (signals: device, location, time, behavior).
 
@@ -43,9 +43,9 @@ Adaptive Identity = risk-based auth (signals: device, location, time, behavior).
 
 | TYPE ↓  CATEGORY → | Preventive | Deterrent | Detective | Corrective | Compensating | Directive |
 |---|---|---|---|---|---|---|
-| **Technical** | Firewall, MFA | Login banner | IDS, SIEM (Security Information and Event Management) | AV quarantine | Extra logging | "Use VPN (Virtual Private Network)" config |
+| **Technical** | Firewall, MFA | Login banner | IDS, SIEM | AV quarantine | Extra logging | "Use VPN" config |
 | **Managerial** | Hiring policy | Audit threat | Quarterly review | Lessons learned | Risk acceptance | AUP |
-| **Operational** | Awareness training | "Reward for fraud" sign | Guard patrol | IR drill | Manual review | SOP (Standard Operating Procedure) |
+| **Operational** | Awareness training | "Reward for fraud" sign | Guard patrol | IR drill | Manual review | SOP |
 | **Physical** | Lock, mantrap | Visible camera | Motion sensor | Repair lock | Second guard | "No tailgating" sign |
 
 🧠 Rule: **same device can fit multiple cells** depending on what it's doing.

@@ -10,8 +10,8 @@
 ┌─────────────────────────────────────────────────────┐
 │  CUSTOMER  →  Security IN the cloud                 │
 │  - Customer data                                    │
-│  - IAM (Identity and Access Management) users, roles, permissions, MFA (Multi-Factor Authentication)               │
-│  - OS patching (on EC2 (Elastic Compute Cloud))                             │
+│  - IAM users, roles, permissions, MFA               │
+│  - OS patching (on EC2)                             │
 │  - SG / NACL config                                 │
 │  - Encryption (which keys, where)                   │
 │  - App code, secrets                                │
@@ -20,7 +20,7 @@
 │  - Physical data centers                            │
 │  - Hardware, network                                │
 │  - Hypervisor                                       │
-│  - Managed-service OS patching (RDS (Relational Database Service), Lambda, etc.)  │
+│  - Managed-service OS patching (RDS, Lambda, etc.)  │
 └─────────────────────────────────────────────────────┘
 ```
 
@@ -35,7 +35,7 @@
 | **Root** | Lock with MFA. Daily tasks NEVER. |
 | **User** | Long-lived identity (human or legacy app) |
 | **Group** | Bucket of users sharing policies |
-| **Role** | Temporary creds, EC2 → S3 (Simple Storage Service), cross-account, federation |
+| **Role** | Temporary creds, EC2 → S3, cross-account, federation |
 | **Policy** | JSON Allow/Deny rules |
 
 Rules:
@@ -66,7 +66,7 @@ Rules:
 | **CloudHSM** | FIPS 140-2 Level 3 dedicated HSM |
 | **Secrets Manager** | Store + **auto-rotate** secrets |
 | **Parameter Store** | Free-tier secrets (no auto-rotate) |
-| **ACM** | Free public TLS (Transport Layer Security) certs (ELB, CF, API (Application Programming Interface) GW) |
+| **ACM** | Free public TLS certs (ELB, CF, API GW) |
 
 ---
 
@@ -74,8 +74,8 @@ Rules:
 
 | Service | Role | What it does |
 |---------|------|--------------|
-| **WAF (Web Application Firewall)** | Preventive | HTTP (Hypertext Transfer Protocol)-layer filter (SQLi, XSS, geo, rate) |
-| **Shield Standard** | Preventive | Free DDoS (Distributed Denial of Service) protection (auto) |
+| **WAF** | Preventive | HTTP-layer filter (SQLi, XSS, geo, rate) |
+| **Shield Standard** | Preventive | Free DDoS protection (auto) |
 | **Shield Advanced** | Preventive | DDoS + DRT + cost protection (~$3K/mo) |
 | **GuardDuty** | Detective | Anomaly detection (logs) |
 | **Macie** | Detective | S3 PII discovery |
@@ -92,7 +92,7 @@ Rules:
 | **CloudTrail** | Who did which API call when |
 | **Config** | Resource config tracking + rules |
 | **Audit Manager** | Automated evidence collection |
-| **Artifact** | Download SOC (Security Operations Center), ISO, PCI, FedRAMP reports |
+| **Artifact** | Download SOC, ISO, PCI, FedRAMP reports |
 
 🎯 CloudTrail = "who did X" · Config = "what's the state of X"
 
@@ -105,7 +105,7 @@ Rules:
 - **PCI DSS**, payment cards
 - **HIPAA**, US healthcare
 - **FedRAMP** Moderate / High, US federal
-- **GDPR (General Data Protection Regulation)**, EU data protection
+- **GDPR**, EU data protection
 - **NIST 800-53**, US federal controls
 
 ---

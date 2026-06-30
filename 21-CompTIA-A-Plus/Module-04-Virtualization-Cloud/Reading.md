@@ -1,22 +1,22 @@
 # Module 4: Virtualization & Cloud Basics ☁️
 
-> **Why this module matters:** Only 11% of the 220-1101 exam about 10 questions but the vocabulary you learn here recurs everywhere. Every job posting that mentions "VMs", "EC2 (Elastic Compute Cloud)", "App Service", or "containers" expects you to speak this language fluently. The actual A+ scope is *intentionally narrow*: definitions, basic deployment models, resource sizing, common gotchas.
+> **Why this module matters:** Only 11% of the 220-1101 exam about 10 questions but the vocabulary you learn here recurs everywhere. Every job posting that mentions "VMs", "EC2", "App Service", or "containers" expects you to speak this language fluently. The actual A+ scope is *intentionally narrow*: definitions, basic deployment models, resource sizing, common gotchas.
 
 > **Prerequisites for this module.** Comfort with:
 > - Module 3 (CPU, RAM, storage basics)
 > - Module 2 (IP addressing, ports, VMs use them too)
 >
-> If you've never opened VirtualBox or VMware Workstation, install one (free) on your home PC and create a Linux VM (Virtual Machine) as you read. Hands-on is 10× more memorable than text.
+> If you've never opened VirtualBox or VMware Workstation, install one (free) on your home PC and create a Linux VM as you read. Hands-on is 10× more memorable than text.
 
 ---
 
 ## 🏗️ A Story: The Department That Got 200 Servers in 4 Hours
 
-Meet Tomás. He's the IT manager at a mid-size accounting firm. It's the second week of January, peak tax-season ramp-up. The CFO (Chief Financial Officer) walks in and says, "We need 200 sandboxed Windows-with-Office environments by Friday for the seasonal staff orientation. Identical config. Each isolated. We tried renting 200 laptops; the vendor can't ship them till March."
+Meet Tomás. He's the IT manager at a mid-size accounting firm. It's the second week of January, peak tax-season ramp-up. The CFO walks in and says, "We need 200 sandboxed Windows-with-Office environments by Friday for the seasonal staff orientation. Identical config. Each isolated. We tried renting 200 laptops; the vendor can't ship them till March."
 
-The old Tomás (10 years ago) would have laughed and quit on the spot. Today's Tomás opens his laptop. He spins up a **Windows Server 2025 with Hyper-V** on the firm's existing 2-socket EPYC server (128 cores, 1 TB RAM). He creates a **golden image** a baseline Windows 11 VM with all the firm's tax software, MFA (Multi-Factor Authentication) configured, group-policy joined. He uses **PowerShell + Hyper-V** to clone it 200 times, each with a unique computer name and MAC. Total VM provisioning: 47 minutes. Network configuration (a dedicated VLAN (Virtual Local Area Network), isolated from production): another hour. By Friday lunch, 200 brand-new "PCs" exist except they're VMs running on one physical box.
+The old Tomás (10 years ago) would have laughed and quit on the spot. Today's Tomás opens his laptop. He spins up a **Windows Server 2025 with Hyper-V** on the firm's existing 2-socket EPYC server (128 cores, 1 TB RAM). He creates a **golden image** a baseline Windows 11 VM with all the firm's tax software, MFA configured, group-policy joined. He uses **PowerShell + Hyper-V** to clone it 200 times, each with a unique computer name and MAC. Total VM provisioning: 47 minutes. Network configuration (a dedicated VLAN, isolated from production): another hour. By Friday lunch, 200 brand-new "PCs" exist except they're VMs running on one physical box.
 
-When tax season ends in mid-April, Tomás shuts the VMs down, archives the disks to S3 (Simple Storage Service), and reclaims the 14 TB of disk. Net cost: ~$0 above existing hardware. He spends the saved money on a Friday team lunch.
+When tax season ends in mid-April, Tomás shuts the VMs down, archives the disks to S3, and reclaims the 14 TB of disk. Net cost: ~$0 above existing hardware. He spends the saved money on a Friday team lunch.
 
 **That is what virtualization is for.** It separates the *idea* of a computer from the *physical* hardware. You can pack many "computers" onto one box, clone them in seconds, throw them away when done, and never touch a screwdriver.
 
@@ -96,7 +96,7 @@ NIST SP 800-145 (Mell & Grance, September 2011) defines cloud by **5 essential c
 
 ### 5 essential characteristics
 
-1. **On-demand self-service**, provision resources via a portal/API (Application Programming Interface) without human intervention
+1. **On-demand self-service**, provision resources via a portal/API without human intervention
 2. **Broad network access**, accessible over the internet by standard devices
 3. **Resource pooling**, multi-tenant; physical resources dynamically assigned
 4. **Rapid elasticity**, scale up and down quickly (auto-scaling groups)
@@ -106,12 +106,12 @@ NIST SP 800-145 (Mell & Grance, September 2011) defines cloud by **5 essential c
 
 | Model | What the provider gives | What you manage | Example |
 |-------|--------------------------|-----------------|---------|
-| **IaaS (Infrastructure as a Service)** (Infrastructure as a Service) | Virtual hardware (VMs, networks, disks) | OS + everything above | AWS (Amazon Web Services) EC2, Azure VMs, GCP (Google Cloud Platform) Compute Engine |
-| **PaaS (Platform as a Service)** (Platform as a Service) | OS + runtime (Java, .NET, Python) | App code + data | AWS Elastic Beanstalk, Azure App Service, Heroku |
-| **SaaS (Software as a Service)** (Software as a Service) | Whole application | Data + user config | Microsoft 365, Google Workspace, Salesforce, Slack |
+| **IaaS** (Infrastructure as a Service) | Virtual hardware (VMs, networks, disks) | OS + everything above | AWS EC2, Azure VMs, GCP Compute Engine |
+| **PaaS** (Platform as a Service) | OS + runtime (Java, .NET, Python) | App code + data | AWS Elastic Beanstalk, Azure App Service, Heroku |
+| **SaaS** (Software as a Service) | Whole application | Data + user config | Microsoft 365, Google Workspace, Salesforce, Slack |
 
 🎯 **Exam pattern:**
-- *"You want to run a custom Windows-based ERP (Enterprise Resource Planning) exactly as it ran on-prem"* → **IaaS**
+- *"You want to run a custom Windows-based ERP exactly as it ran on-prem"* → **IaaS**
 - *"You want to deploy a web app without managing servers or OS patching"* → **PaaS**
 - *"You want email + spreadsheets for your team, no IT involvement"* → **SaaS**
 

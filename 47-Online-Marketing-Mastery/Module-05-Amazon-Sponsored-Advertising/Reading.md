@@ -2,7 +2,7 @@
 
 > **Why this module matters:** Amazon is the world's largest product search engine — 74% of US shoppers start product searches directly on Amazon (industry estimate, 2024), bypassing Google entirely. Mastering Amazon's ad stack means capturing buyers at the precise moment of purchase intent, something no other platform can match.
 
-> **Prerequisites:** Module 01 (Digital Marketing Fundamentals), basic understanding of PPC (Pay-Per-Click) concepts (CPC (Cost Per Click), impressions, clicks), familiarity with the Amazon Seller Central or Vendor Central interface.
+> **Prerequisites:** Module 01 (Digital Marketing Fundamentals), basic understanding of PPC concepts (CPC, impressions, clicks), familiarity with the Amazon Seller Central or Vendor Central interface.
 
 ---
 
@@ -46,7 +46,7 @@ The workhorse. Sponsored Products are keyword- or product-targeted ads that appe
 **Key characteristics:**
 - Cost-per-click (CPC) model
 - Available to third-party sellers (Seller Central) and vendors (Vendor Central)
-- Can target by keyword OR by ASIN (Amazon Standard Identification Number)/category (product targeting)
+- Can target by keyword OR by ASIN/category (product targeting)
 - Two campaign types: **Auto** (Amazon chooses targeting) and **Manual** (you choose targeting)
 - Ads appear as "Sponsored" label above and within search results, and on competitor PDPs
 
@@ -70,11 +70,11 @@ The retargeter. Sponsored Display ads appear on and off Amazon — on competitor
 **Key characteristics:**
 - Targets audiences, not just keywords: you can retarget shoppers who viewed your product but didn't buy, or target shoppers who viewed competitor products
 - Two targeting modes: **Audiences** (behaviour-based) and **Contextual** (product/category-based)
-- CPC and CPM (Cost Per Mille) (cost per thousand impressions) bidding options
+- CPC and CPM (cost per thousand impressions) bidding options
 - Lower average CPC than SP, but lower purchase intent
 - Particularly powerful for re-engagement: "You looked at this copper bowl 3 days ago. It's still here."
 
-**GDPR (General Data Protection Regulation) / European note:** Sponsored Display's audience targeting relies on Amazon's first-party data (purchase history, browse history). Because this data stays within Amazon's walled garden and users have agreed to Amazon's T&Cs, it does not trigger third-party cookie consent requirements the way Google Display Network retargeting does. This makes SD relatively GDPR-compliant by design — a genuine competitive advantage for European sellers vs. running retargeting on external platforms.
+**GDPR / European note:** Sponsored Display's audience targeting relies on Amazon's first-party data (purchase history, browse history). Because this data stays within Amazon's walled garden and users have agreed to Amazon's T&Cs, it does not trigger third-party cookie consent requirements the way Google Display Network retargeting does. This makes SD relatively GDPR-compliant by design — a genuine competitive advantage for European sellers vs. running retargeting on external platforms.
 
 ### 1.4 Amazon DSP (Demand-Side Platform)
 
@@ -106,7 +106,7 @@ Amazon uses a **modified second-price auction** (also called a Vickrey-style auc
 | Competitor A | £0.90 | — |
 | Competitor B | £0.70 | — |
 
-In practice, Amazon's auction is more complex — it incorporates **Ad Rank**, which blends bid amount with **predicted CTR (Click-Through Rate)** (how likely your ad is to be clicked based on historical data) and **relevancy score**. A lower bid with a highly relevant, high-converting product can beat a higher bid from a poorly optimised listing.
+In practice, Amazon's auction is more complex — it incorporates **Ad Rank**, which blends bid amount with **predicted CTR** (how likely your ad is to be clicked based on historical data) and **relevancy score**. A lower bid with a highly relevant, high-converting product can beat a higher bid from a poorly optimised listing.
 
 This is crucial: **your listing quality directly affects your ad costs.** Optimising your product title, images, and bullet points is not separate from your advertising strategy — it is part of it.
 
@@ -137,7 +137,7 @@ You can view and adjust bids for each of these sub-types in Campaign Manager. Ad
 
 ---
 
-## Section 3: The Metrics That Matter — ACoS, TACoS (Total Advertising Cost of Sale), and ROAS (Return on Ad Spend)
+## Section 3: The Metrics That Matter — ACoS, TACoS, and ROAS
 
 If Amazon PPC had a holy trinity, it would be ACoS, TACoS, and ROAS. Candidates who confuse these in an interview do not get the job.
 

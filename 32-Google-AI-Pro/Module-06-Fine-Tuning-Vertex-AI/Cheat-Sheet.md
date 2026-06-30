@@ -1,6 +1,6 @@
 # 📋 Module 6 Cheat Sheet: Fine-Tuning on Vertex AI
 
-> Climb the ladder. Don't fine-tune what a prompt or RAG (Retrieval-Augmented Generation) can fix.
+> Climb the ladder. Don't fine-tune what a prompt or RAG can fix.
 
 ---
 
@@ -11,7 +11,7 @@
 2. Few-shot prompting (3–10 exemplars)
 3. RAG (Module 5)
 4. Supervised Fine-Tuning (SFT)
-5. RLHF (Reinforcement Learning from Human Feedback) / DPO
+5. RLHF / DPO
 ```
 
 🎯 *Most "I should fine-tune" instincts are wrong. Try 1–3 first.*

@@ -1,4 +1,4 @@
-# 📋 Capstone 1 Deliverable Rubric: SEO (Search Engine Optimization) + Content Audit
+# 📋 Capstone 1 Deliverable Rubric: SEO + Content Audit
 
 > The rubric for grading your SEO audit before publishing. Print this. Grade honestly.
 

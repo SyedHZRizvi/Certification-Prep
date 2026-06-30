@@ -37,13 +37,13 @@ Server+ pairs naturally with **Linux+ (course 23)**, **Network+ (course 22)**, a
 - **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
 - **Story-driven lessons (not flashcard punishment)**, every concept introduced through a real data-center scenario (a failed RAID rebuild, a SAN multi-path outage, a hypervisor host failure during patching)
 - **Original questions only**, every quiz and practice exam written from CompTIA's published SK0-005 exam objectives; no copyrighted dumps
-- **Real-world case studies**, Knight Capital's 2012 server-deploy disaster, the AWS (Amazon Web Services) S3 (Simple Storage Service) 2017 typo outage, a real hospital's disaster-recovery failover drill, Fukushima Daiichi's data-center power lessons
+- **Real-world case studies**, Knight Capital's 2012 server-deploy disaster, the AWS S3 2017 typo outage, a real hospital's disaster-recovery failover drill, Fukushima Daiichi's data-center power lessons
 - **One author, one voice**, coherent vocabulary across all 8 modules
 - **Updated for the SK0-005 blueprint**, including current iDRAC / iLO / BMC out-of-band management, NVMe-oF, modern hypervisor licensing realities (post-Broadcom VMware), and current backup-architecture norms (3-2-1-1-0)
 
 ### 🚀 Ready to start?
 
-Five to seven weeks. Spin up a free ESXi (or Proxmox or XCP-ng) host or two on home hardware to make every concept tactile. Run an iSCSI target. Build a small AD (Active Directory) lab. Take a backup, restore it.
+Five to seven weeks. Spin up a free ESXi (or Proxmox or XCP-ng) host or two on home hardware to make every concept tactile. Run an iSCSI target. Build a small AD lab. Take a backup, restore it.
 
 Begin with [Module 1: Server Hardware →](./Module-01-Server-Hardware/Reading.md)
 
@@ -54,12 +54,12 @@ Begin with [Module 1: Server Hardware →](./Module-01-Server-Hardware/Reading.m
 By the end of this track, you'll be able to:
 
 - Identify server hardware on sight, chassis form factors, redundant PSUs, ECC RAM modules, hot-swap bays, RAID controllers, and out-of-band management cards (iDRAC, iLO, IPMI, BMC)
-- Administer both Windows Server (AD DS, DNS (Domain Name System), DHCP (Dynamic Host Configuration Protocol), IIS, Hyper-V) and Linux servers (systemd, common daemons, package managers)
+- Administer both Windows Server (AD DS, DNS, DHCP, IIS, Hyper-V) and Linux servers (systemd, common daemons, package managers)
 - Design storage systems: pick the right RAID level, decide SAN vs NAS, configure iSCSI/Fibre Channel, set up LUN masking and multipathing
 - Stand up virtualization environments using VMware vSphere, Hyper-V, KVM, plus containers (Docker, Kubernetes basics)
-- Plan disaster recovery, define RTO (Recovery Time Objective)/RPO (Recovery Point Objective), pick backup strategies (full/incremental/differential/synthetic), implement the 3-2-1 rule, choose cold/warm/hot sites
-- Harden servers, RBAC (Role-Based Access Control), service accounts with least privilege, patch management, CIS benchmarks, HIDS/HIPS
-- Configure server-grade networking, NIC teaming, LACP, VLAN (Virtual Local Area Network) tagging, jumbo frames, load balancers
+- Plan disaster recovery, define RTO/RPO, pick backup strategies (full/incremental/differential/synthetic), implement the 3-2-1 rule, choose cold/warm/hot sites
+- Harden servers, RBAC, service accounts with least privilege, patch management, CIS benchmarks, HIDS/HIPS
+- Configure server-grade networking, NIC teaming, LACP, VLAN tagging, jumbo frames, load balancers
 - Troubleshoot systematically, interpret POST codes, beep codes, LED indicators; isolate performance bottlenecks across CPU/RAM/disk/network
 
 ---
@@ -69,7 +69,7 @@ By the end of this track, you'll be able to:
 | # | Module | Time | What You'll Master |
 |---|--------|------|--------------------|
 | 1 | [Server Hardware & Components](./Module-01-Server-Hardware/Reading.md) | 3 hrs | Form factors, ECC, redundant PSUs, RAID controllers, IPMI/iDRAC/iLO/BMC |
-| 2 | [Server Administration (Windows & Linux)](./Module-02-Server-Administration/Reading.md) | 3.5 hrs | Windows Server roles, systemd, RDP/SSH (Secure Shell)/WinRM remote management |
+| 2 | [Server Administration (Windows & Linux)](./Module-02-Server-Administration/Reading.md) | 3.5 hrs | Windows Server roles, systemd, RDP/SSH/WinRM remote management |
 | 3 | [Storage: RAID, SAN, NAS](./Module-03-Storage/Reading.md) | 3.5 hrs | RAID 0/1/5/6/10, Fibre Channel, iSCSI, NFS, SMB, dedup, thin/thick |
 | 4 | [Virtualization & Containers](./Module-04-Virtualization/Reading.md) | 3 hrs | Type 1 vs Type 2 hypervisors, vSphere, Hyper-V, KVM, Docker, Kubernetes |
 | 5 | [Disaster Recovery & Backup](./Module-05-Disaster-Recovery/Reading.md) | 3 hrs | RTO/RPO, backup types, 3-2-1, GFS, hot/warm/cold sites, replication |
@@ -159,7 +159,7 @@ Week 7:    Module 8 + Flashcards drill + Final Mock → REAL EXAM
 2. ❌ **Confused SAN with NAS**, SAN is block (presents LUNs over FC/iSCSI); NAS is file (NFS/SMB). Sec+ tests every angle.
 3. ❌ **Memorized RTO/RPO but couldn't apply them**, Scenarios give you a tolerance and ask you to pick a backup/replication strategy. Practice with numbers.
 4. ❌ **Skipped Linux**, At least 30% of admin questions assume systemd/SSH/permissions. Don't avoid Linux because you're Windows-first.
-5. ❌ **Treated virtualization as "the same as VM (Virtual Machine) in my laptop"** Type 1 vs Type 2, vMotion/live migration, snapshots vs templates vs clones all tested.
+5. ❌ **Treated virtualization as "the same as VM in my laptop"** Type 1 vs Type 2, vMotion/live migration, snapshots vs templates vs clones all tested.
 6. ❌ **Ignored out-of-band management**, iDRAC, iLO, IPMI, BMC are critical Server+ vocabulary. Know what they do and how they differ from in-band.
 7. ❌ **No time management on PBQs**, Like Sec+, the PBQs eat clock. Skip them, do the MCQs, return.
 

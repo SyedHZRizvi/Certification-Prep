@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting you should be comfortable with:
 > - Modules 1–2 (hardware, basic admin)
 > - Decimal arithmetic in your head, at minimum multiplying small integers
-> - Basic TCP (Transmission Control Protocol)/IP (ports, IP routing)
+> - Basic TCP/IP (ports, IP routing)
 >
 > If those are shaky, pause and review before continuing.
 
@@ -20,7 +20,7 @@ Five years later, "now" is a lot bigger:
 - The database is 1.6 TB and growing at 8 GB/week
 - Backups, photos, and shipping manifests have spilled onto a USB drive bolted to the back of the server
 - Last quarter a drive failed; rebuild took 11 hours and nobody could check inventory
-- The CFO (Chief Financial Officer) wants overnight reports, currently impossible because the disks max out at 200 IOPS
+- The CFO wants overnight reports, currently impossible because the disks max out at 200 IOPS
 
 Sam needs to do *all* of the following in one project:
 
@@ -115,7 +115,7 @@ Stripe across mirrored pairs:
 
 - 4 disks minimum, in pairs. Capacity = N/2. Survives the loss of one disk *per mirror pair*.
 - **Write penalty 2**, far better than RAID 5/6 for write-heavy DB workloads.
-- **Reality check:** the gold standard for **databases** (SQL (Structured Query Language), MySQL, Postgres). Best IOPS-vs-redundancy mix. 50% capacity cost.
+- **Reality check:** the gold standard for **databases** (SQL, MySQL, Postgres). Best IOPS-vs-redundancy mix. 50% capacity cost.
 
 ### RAID 0+1 vs RAID 1+0 (rare but exam-trappy)
 
@@ -169,9 +169,9 @@ This is the second most-tested storage concept. Get it cold.
 | **Granularity** | Block-level | File-level |
 | **Looks like to host** | A local disk (LUN) | A network share |
 | **Protocols** | Fibre Channel (FC), iSCSI, FCoE, NVMe-oF | NFS, SMB/CIFS |
-| **Network** | Dedicated SAN fabric (FC) or IP (iSCSI) | Shared LAN (Local Area Network) |
+| **Network** | Dedicated SAN fabric (FC) or IP (iSCSI) | Shared LAN |
 | **Typical filesystems** | Whatever the host puts on it (NTFS, ext4, XFS, VMFS) | NFS / SMB shares |
-| **Use cases** | VM (Virtual Machine) datastores, databases, anything needing raw block | File shares, home directories, archives |
+| **Use cases** | VM datastores, databases, anything needing raw block | File shares, home directories, archives |
 | **Cost** | High ($) | Lower |
 | **Complexity** | High (zoning, masking, multipathing) | Lower (just mount the share) |
 | **Boot from?** | Yes (boot-from-SAN) | No (typically) |
@@ -201,7 +201,7 @@ This is the second most-tested storage concept. Get it cold.
 
 | Protocol | Default port | Native to |
 |---|---|---|
-| **NFS** (Network File System) | TCP/UDP (User Datagram Protocol) 2049 | Unix/Linux; NFS v3 stateless, v4 stateful w/ ACLs |
+| **NFS** (Network File System) | TCP/UDP 2049 | Unix/Linux; NFS v3 stateless, v4 stateful w/ ACLs |
 | **SMB / CIFS** (Server Message Block) | TCP 445 (modern) | Windows; macOS, Linux via Samba |
 | **AFP** (Apple Filing Protocol) | TCP 548 | macOS (legacy), Apple now prefers SMB |
 
@@ -257,7 +257,7 @@ Move "hot" (frequently accessed) data to fast media (SSD/NVMe) and "cold" data t
 |---|---|
 | **Manual tiering** | Per-LUN or per-volume by admin |
 | **Auto-tiering** | Sub-LUN, by array policy, block heat maps |
-| **Lifecycle policies** (cloud) | Object storage moves after N days (S3 (Simple Storage Service) → Glacier) |
+| **Lifecycle policies** (cloud) | Object storage moves after N days (S3 → Glacier) |
 
 ---
 
@@ -303,7 +303,7 @@ Two distinct strategies on the exam:
 | | **Synchronous** | **Asynchronous** |
 |---|---|---|
 | Write returns when | BOTH local AND remote ack | Local ack only; remote catches up |
-| RPO (Recovery Point Objective) | **0** (no data loss possible) | > 0 (data loss possible) |
+| RPO | **0** (no data loss possible) | > 0 (data loss possible) |
 | Latency tolerance | Low (typically < 5 ms one-way for metro distance) | High (continental) |
 | Distance | Metro / campus (~ ≤100 km) | Continental / intercontinental |
 | Cost | Higher (low-latency dark fiber, redundant links) | Lower |
@@ -329,14 +329,14 @@ Two distinct strategies on the exam:
 
 ## 🔬 Scenario Walkthrough (PBQ-style thinking), Back to Sam
 
-> **Scenario.** Sam (the aquarium-chain CTO (Chief Technology Officer)) needs more capacity + IOPS + double-failure tolerance + replication to a second building 800 m away. Budget is moderate; downtime tolerance is low. Pick the architecture.
+> **Scenario.** Sam (the aquarium-chain CTO) needs more capacity + IOPS + double-failure tolerance + replication to a second building 800 m away. Budget is moderate; downtime tolerance is low. Pick the architecture.
 
 **Walkthrough.**
 
 1. **Server-internal RAID.** Replace 2× 4 TB SATA RAID 1 with **8× 2 TB SAS SSDs** in **RAID 10** behind a **hardware RAID controller with FBWC** in a 2U chassis. That's 8 TB usable, very high IOPS, survives one drive per mirror pair, and rebuilds fast.
 2. **Bulk capacity tier.** Add a small **NAS** (NFS share) for photos, manifests, and the USB-drive contents. Tier old photos there; keep DB on the SSD array.
 3. **Double-failure tolerance.** RAID 10 only survives one drive per pair. If Sam genuinely fears 2-disk fails, run the bulk NAS on **RAID 6** (survives 2 simultaneous) or run a **hot spare** on the RAID 10 array.
-4. **Replication to the other building.** Two metro buildings, 800 m, dark fiber available → **synchronous replication** of the DB volume to a second array in building 2. RPO = 0. If WAN (Wide Area Network) had been continental: asynchronous + RPO ≥ a few minutes.
+4. **Replication to the other building.** Two metro buildings, 800 m, dark fiber available → **synchronous replication** of the DB volume to a second array in building 2. RPO = 0. If WAN had been continental: asynchronous + RPO ≥ a few minutes.
 5. **Backup target.** Backups land on the NAS (compressed, deduped) → off-site copy nightly to cloud or tape (covered in Module 5).
 6. **Access control.** **LUN masking** at the storage array so only the DB server sees its LUN. SMB shares on the NAS scoped per-team (Module 6).
 7. **Multipathing.** Both DB hosts use **MPIO** with two HBAs and two FC switches → no single path failure can take the DB offline.
@@ -410,7 +410,7 @@ This is the kind of integration question Server+ PBQs ask. Notice how every choi
 | HBA | Host Bus Adapter |
 | DSM | Device-Specific Module (Windows MPIO plugin) |
 | RPO | Recovery Point Objective |
-| RTO (Recovery Time Objective) | Recovery Time Objective |
+| RTO | Recovery Time Objective |
 
 ---
 
@@ -457,7 +457,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 4](../Module-04-Virtualization/Reading.md) sits hypervisors on top of these storage tiers (datastores, VMDK/VHDX, NFS); [Module 5](../Module-05-Disaster-Recovery/Reading.md) builds backups and DR atop snapshots, replication, and tape; [Module 7](../Module-07-Networking/Reading.md) covers jumbo frames and iSCSI VLANs; [Module 8](../Module-08-Troubleshooting/Reading.md) diagnoses array LEDs, paths, and slow rebuilds.
-> - Cross-course: **AWS (Amazon Web Services) Solutions Architect** Module on storage covers EBS, EFS, FSx, S3 in the same conceptual frame. **Azure Administrator** maps to Managed Disks, Azure Files, Blob Storage tiers.
+> - Cross-course: **AWS Solutions Architect** Module on storage covers EBS, EFS, FSx, S3 in the same conceptual frame. **Azure Administrator** maps to Managed Disks, Azure Files, Blob Storage tiers.
 > - Practice: Practice Exam 1 has ~11 questions from this module; the Final Mock has ~16.
 
 ---

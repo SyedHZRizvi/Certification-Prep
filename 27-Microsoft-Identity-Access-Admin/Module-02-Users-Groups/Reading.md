@@ -1,19 +1,19 @@
 # Module 2: Users, Groups & External Identities 👥
 
-> **Why this module matters:** Every Conditional Access policy targets a user or group. Every license is assigned to a user or group. Every PIM (Product Information Management) assignment, every access package, every app role is anchored on a user or group. If your user-and-group hygiene is broken dynamic rules that lie, stale guests with admin rights, orphaned M365 groups *nothing* downstream is trustworthy. SC-300 dedicates 25–30% of its weight to this layer for exactly that reason.
+> **Why this module matters:** Every Conditional Access policy targets a user or group. Every license is assigned to a user or group. Every PIM assignment, every access package, every app role is anchored on a user or group. If your user-and-group hygiene is broken dynamic rules that lie, stale guests with admin rights, orphaned M365 groups *nothing* downstream is trustworthy. SC-300 dedicates 25–30% of its weight to this layer for exactly that reason.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The tenant, license tiers, and role systems from [Module 1](../Module-01-Entra-ID-Fundamentals/Reading.md).
 > - The principle of least privilege and "joiner / mover / leaver" lifecycle thinking, covered in [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md).
-> - The Azure RBAC (Role-Based Access Control) inheritance model, [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md).
+> - The Azure RBAC inheritance model, [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md).
 
 ---
 
 ## 🪪 A Story: The Guest User Who Owned Production
 
-It's 2023. A boutique consultancy is hired to help a fintech "clean up some Conditional Access." On day three the consultant runs a casual `Get-MgUser -Filter "userType eq 'Guest'"` and finds **2,147 guest users**. The youngest invitation was last Tuesday. The oldest was from 2019. One guest, `consultant_oldagency.com#EXT#@fintech.onmicrosoft.com`, had been **Owner of the production Azure subscription for 4 years**. The agency that owned the email had been dissolved in 2021. Nobody not the CTO (Chief Technology Officer), not the security team, not the auditors who'd just signed a SOC (Security Operations Center) 2 had ever asked "who actually still works here?"
+It's 2023. A boutique consultancy is hired to help a fintech "clean up some Conditional Access." On day three the consultant runs a casual `Get-MgUser -Filter "userType eq 'Guest'"` and finds **2,147 guest users**. The youngest invitation was last Tuesday. The oldest was from 2019. One guest, `consultant_oldagency.com#EXT#@fintech.onmicrosoft.com`, had been **Owner of the production Azure subscription for 4 years**. The agency that owned the email had been dissolved in 2021. Nobody not the CTO, not the security team, not the auditors who'd just signed a SOC 2 had ever asked "who actually still works here?"
 
-The guest user couldn't be reached. The Microsoft account that backed it was unrecoverable. The fintech had two options: (1) leave a ghost Owner on production indefinitely, or (2) remove it and pray nothing was integration-coded against that identity. They picked (2). They removed it. Three CI/CD (Continuous Integration/Continuous Deployment) pipelines broke immediately. Half a SOC 2 audit was redone.
+The guest user couldn't be reached. The Microsoft account that backed it was unrecoverable. The fintech had two options: (1) leave a ghost Owner on production indefinitely, or (2) remove it and pray nothing was integration-coded against that identity. They picked (2). They removed it. Three CI/CD pipelines broke immediately. Half a SOC 2 audit was redone.
 
 What went wrong was not "guests are bad." Guests are fine. **Guest identity governance** was missing, no access reviews, no inactive-user disablement, no entitlement management. The consultancy's first deliverable became "stand up entitlement management + access reviews on all guests." Once that ran, the population of guest users in the tenant dropped from 2,147 to 86 within six weeks. Everyone breathed again.
 
@@ -26,8 +26,8 @@ This module is how to make that *not* happen to you.
 | Type | `userType` | Created via | Sign-in identity |
 |------|------------|-------------|------------------|
 | **Member (cloud-only)** | `Member` | Entra portal → Create new user | `alice@contoso.com` |
-| **Member (synced from on-prem)** | `Member` (or `synced`) | Entra Connect / Cloud Sync from AD (Active Directory) | `alice@contoso.com` |
-| **Guest (B2B (Business-to-Business))** | `Guest` | Invitation, redeemed by external user | `alice_partner.com#EXT#@contoso.onmicrosoft.com` |
+| **Member (synced from on-prem)** | `Member` (or `synced`) | Entra Connect / Cloud Sync from AD | `alice@contoso.com` |
+| **Guest (B2B)** | `Guest` | Invitation, redeemed by external user | `alice_partner.com#EXT#@contoso.onmicrosoft.com` |
 | **External member** | `Member` (but homed in another tenant) | Cross-tenant sync with member-like perms | `alice@partner.com` (their home tenant) |
 
 🎯 **Exam tip:** A B2B guest's UPN always has the form `<theiremail>_<theirdomain>#EXT#@<yourtenant>.onmicrosoft.com`. The `#EXT#` substring is what dynamic group rules and CA conditions look for.
@@ -138,7 +138,7 @@ You can convert *Security* groups between assigned and dynamic; M365 groups, you
 
 ## 💳 Group-Based Licensing
 
-Assign a Microsoft 365 / Entra license SKU (Stock Keeping Unit) to a group; every member auto-receives the license. When they leave the group, the license is reclaimed.
+Assign a Microsoft 365 / Entra license SKU to a group; every member auto-receives the license. When they leave the group, the license is reclaimed.
 
 | Concept | Behavior |
 |---------|----------|
@@ -201,7 +201,7 @@ Per-partner inbound/outbound rules, more granular than the tenant-wide collabora
 | Tab | Controls |
 |-----|----------|
 | **Default settings** | Baseline for all unspecified partners |
-| **Organizational settings** | Override per partner (e.g. "Trust Acme's MFA (Multi-Factor Authentication) + compliant device claims") |
+| **Organizational settings** | Override per partner (e.g. "Trust Acme's MFA + compliant device claims") |
 | **Microsoft cloud settings** | Cross-cloud (commercial ↔ Gov, ↔ China) |
 
 CTAS is where you enable **B2B direct connect** (Teams shared channels, partner's users appear in your Teams without a guest invitation). B2B direct connect requires explicit mutual enablement on both sides.
@@ -217,7 +217,7 @@ Upload a PDF, attach it to a Conditional Access policy, and users must accept it
 | Use case | Example policy |
 |----------|----------------|
 | All users sign a code-of-conduct on first sign-in | TOU policy on All cloud apps |
-| Guests must accept NDA (Non-Disclosure Agreement) before accessing project SharePoint | TOU policy on SharePoint Online, guests only |
+| Guests must accept NDA before accessing project SharePoint | TOU policy on SharePoint Online, guests only |
 | Periodic re-acceptance every 12 months | TOU with frequency setting |
 
 ```powershell
@@ -405,7 +405,7 @@ You now know:
 
 **Situation.** Walmart's enterprise Entra tenant supports ~2.3 million associates plus tens of thousands of supplier, agency, and contractor identities. By 2021 the supplier-collaboration estate had grown organically: 400,000+ B2B guest objects, many unused for >2 years, several with elevated SharePoint or Teams roles. A security audit identified 1,800 guests with privileged group memberships from acquisitions Walmart had divested, three with effective Owner access via inherited group nesting.
 
-**Decision.** Walmart's IAM (Identity and Access Management) team (publicly described at Microsoft Ignite 2023) implemented a four-step governance program:
+**Decision.** Walmart's IAM team (publicly described at Microsoft Ignite 2023) implemented a four-step governance program:
 
 1. **Catalog all B2B**. Used `Get-MgUser -Filter "userType eq 'Guest'" -All` + Microsoft Graph data exports to Power BI for inventory by sponsor, last sign-in, role memberships.
 2. **Migrate ad-hoc access to access packages**. New supplier engagements onboarded via entitlement management with sponsor approval, time-bound assignments (default 90 days), and mandatory access reviews.
@@ -441,7 +441,7 @@ You now know:
 2. **B2B collaboration vs B2B direct connect.** Both let Teams shared channels span tenants. When is the direct connect path the right answer, and what does it cost in governance terms (no guest object = no group membership = no Conditional Access targeting)?
 3. **Entitlement management for internal users.** Most orgs use entitlement management exclusively for external partners. Build the case for using access packages internally, what does it replace, and what's the cost of the cultural shift from "ticket the help desk" to "request via access portal"?
 4. **AU vs separate tenant.** A multinational asks: "Should we give Spain its own Entra tenant or just use an Administrative Unit?" Walk through the decision matrix, when does multi-tenant become the right answer, and what's the cost?
-5. **Lifecycle Workflows pricing.** Lifecycle Workflows are a separate SKU (Entra ID Governance) on top of P2. Make the CFO (Chief Financial Officer)-friendly business case for the upcharge; quantify "manual leaver process" labor and identity-incident risk.
+5. **Lifecycle Workflows pricing.** Lifecycle Workflows are a separate SKU (Entra ID Governance) on top of P2. Make the CFO-friendly business case for the upcharge; quantify "manual leaver process" labor and identity-incident risk.
 
 ---
 

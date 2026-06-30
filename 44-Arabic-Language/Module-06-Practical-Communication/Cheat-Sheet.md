@@ -40,7 +40,7 @@
 | Arabic | Transliteration | English |
 |--------|-----------------|---------|
 | رَئِيس | raʾīs | president / chief |
-| مُدِير عَام | mudīr ʿāmm | CEO (Chief Executive Officer) / general manager |
+| مُدِير عَام | mudīr ʿāmm | CEO / general manager |
 | مُحَاسِب | muḥāsib | accountant |
 | مُهَنْدِس | muhandis | engineer |
 | مُحَامٍ | muḥāmī | lawyer |

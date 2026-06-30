@@ -52,7 +52,7 @@ my_file = client.files.upload(file="x.jpg")
 |------|-----|
 | ≥512×512 resolution | Vision needs detail |
 | Pre-rotate to upright | EXIF often ignored |
-| Crop to ROI (Return on Investment) | Saves tokens, improves focus |
+| Crop to ROI | Saves tokens, improves focus |
 | Label multi-image (`Image 1: ...`) | Avoid conflation |
 | Avoid adding red arrows | Some models over-attend overlays |
 | Use structured outputs | Vision has many failure modes; schema models them |

@@ -1,10 +1,10 @@
 # Module 5: Hyper-V & Virtualization ⚙️
 
-> **Why this module matters:** Hyper-V is 15–20% of AZ-800. But it's also the *building block* you need for every later module: the Hyper-V Replica scenario maps to Azure Site Recovery in Module 9; the shielded-VM (Virtual Machine) model maps to Defender for Servers in Module 8; the live-migration concepts map to Azure VM mobility. Get Hyper-V into reflex memory and the rest of the cert becomes a series of "ah, that's the same idea, just in the cloud" moments.
+> **Why this module matters:** Hyper-V is 15–20% of AZ-800. But it's also the *building block* you need for every later module: the Hyper-V Replica scenario maps to Azure Site Recovery in Module 9; the shielded-VM model maps to Defender for Servers in Module 8; the live-migration concepts map to Azure VM mobility. Get Hyper-V into reflex memory and the rest of the cert becomes a series of "ah, that's the same idea, just in the cloud" moments.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - x86_64 CPU virtualization concepts (VT-x, AMD-V, SLAT/EPT)
-> - NIC concepts (MAC address, VLAN (Virtual Local Area Network), NIC teaming)
+> - NIC concepts (MAC address, VLAN, NIC teaming)
 > - Active Directory authentication, [Module 1](../Module-01-Active-Directory/Reading.md)
 > - Storage Spaces Direct + CSV, [Module 4](../Module-04-File-Storage/Reading.md) (Hyper-V live migration usually runs on S2D)
 >
@@ -14,7 +14,7 @@
 
 ## 🚛 A Story: The Moving Truck With No Driver
 
-It's Saturday afternoon at 1:17 p.m. Your business-critical SQL Server is running on a Hyper-V host. The host has a memory module starting to throw correctable ECC errors, Dell says replace within 48 hours. The CFO (Chief Financial Officer) is sitting in a board meeting that runs until 4 p.m. and *cannot* tolerate so much as a 30-second blip on the SQL workload.
+It's Saturday afternoon at 1:17 p.m. Your business-critical SQL Server is running on a Hyper-V host. The host has a memory module starting to throw correctable ECC errors, Dell says replace within 48 hours. The CFO is sitting in a board meeting that runs until 4 p.m. and *cannot* tolerate so much as a 30-second blip on the SQL workload.
 
 You click "Live Migrate" in Hyper-V Manager. You select the destination host, the destination storage, click "Next." Hyper-V copies the SQL VM's memory page-by-page to the destination host *while the VM is still running*. When the residual delta is small enough to copy in milliseconds, the VM is paused, the last delta is sent, ownership transfers, and the VM resumes on the new host. Total downtime: 700 milliseconds. The SQL clients didn't even notice.
 
@@ -107,7 +107,7 @@ Connect-VMNetworkAdapter -VMName "SQL01" -SwitchName "External-Production"
 | **VLAN** | Per-vNIC VLAN tagging (`Set-VMNetworkAdapterVlan`) |
 | **NIC Teaming (LBFO / SET)** | LBFO = legacy bond; **SET = Switch Embedded Teaming**, the modern S2D-compatible team |
 | **MAC address spoofing** | Allow VM to use non-default MAC (required for nested virt, NLB) |
-| **DHCP (Dynamic Host Configuration Protocol) guard** | Drops DHCP-server-like packets from this VM (anti-rogue-DHCP) |
+| **DHCP guard** | Drops DHCP-server-like packets from this VM (anti-rogue-DHCP) |
 | **Router guard** | Drops router-advertisement packets from this VM |
 | **Port mirroring** | Source/destination ports for capture |
 | **Bandwidth management** | Per-VM minimum and maximum bandwidth |
@@ -141,7 +141,7 @@ Set-VMHost -VirtualMachineMigrationAuthenticationType Kerberos `
 
 Enable-VMMigration
 
-# Constrained delegation in AD (Active Directory) (one-time)
+# Constrained delegation in AD (one-time)
 # For each Hyper-V host: open AD computer properties → Delegation tab →
 #   "Trust this computer for delegation to specified services only"
 #   → Use Kerberos only → Add CIFS and Microsoft Virtual System Migration Service for partner host
@@ -155,7 +155,7 @@ Move-VM -Name "SQL01" -DestinationHost "HV02" -IncludeStorage `
 
 | Option | What it does |
 |--------|--------------|
-| **TCP (Transmission Control Protocol)/IP** | Plain unoptimized transfer |
+| **TCP/IP** | Plain unoptimized transfer |
 | **Compression** (default) | Memory pages compressed before send (CPU cost ↑, network ↓) |
 | **SMB Direct (RDMA)** | Best, uses RDMA NICs for low latency, low CPU |
 
@@ -170,7 +170,7 @@ Move-VM -Name "SQL01" -DestinationHost "HV02" -IncludeStorage `
 | Property | Detail |
 |----------|--------|
 | Replication frequency | **30 sec**, **5 min**, or **15 min** intervals |
-| Authentication | **Kerberos** (5986/HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure)) or **Certificate** (443/HTTPS), for cross-domain or cross-forest |
+| Authentication | **Kerberos** (5986/HTTPS) or **Certificate** (443/HTTPS), for cross-domain or cross-forest |
 | Replicas | 1 primary → 1 secondary, optional 3rd "extended" replica downstream |
 | Failover types | **Planned**, **Unplanned**, **Test failover** |
 | Recovery points | 1 hour by default; up to **24** hourly snapshots retained |
@@ -257,7 +257,7 @@ Initialize-HgsServer -HgsServiceName "HGS01" `
 | Memory | **Smart Paging** | Disk-backed paging when host runs out, only for restarts, not normal operations |
 | Storage | VHD vs VHDX | **VHDX recommended**: up to 64 TB, corruption-resistant, 4K-aligned |
 | Storage | Differencing disk | Child VHD pointing to parent for snapshots / templates |
-| Storage | **QoS (Quality of Service) Min/Max IOPS** | Per-VHD throttling |
+| Storage | **QoS Min/Max IOPS** | Per-VHD throttling |
 
 ### VHD vs VHDX
 
@@ -351,9 +351,9 @@ docker run -d --isolation=hyperv mcr.microsoft.com/windows/nanoserver:ltsc2022
 2. **Asynchronous replication is cheap insurance.** Many of the lost SMB customers had paid €5/month for "backup" they thought was cross-zone but was actually local to SBG2.
 3. **Test failovers, not just back-up.** Backups untested for failover are theater.
 4. **Diversify the metadata store.** OVHcloud's customer-facing portal was down for days; recovery was slowed because metadata about *which* services lived in SBG2 was itself in SBG2.
-5. **Be explicit about RPO (Recovery Point Objective)/RTO (Recovery Time Objective) with customers.** Many customers conflated "high availability" with "disaster recovery", they're different.
+5. **Be explicit about RPO/RTO with customers.** Many customers conflated "high availability" with "disaster recovery", they're different.
 
-**Outcome.** OVHcloud later acquired Smart Network Solutions and refactored its product line to include explicit "Datacenter Resilience" tiers with cross-region default replication. Insurance payouts were estimated at €105M (Insurance Insider, June 2021). The breach became a Stanford GSB case study (no public reference yet) on the cost of customers misunderstanding shared-responsibility models in IaaS (Infrastructure as a Service).
+**Outcome.** OVHcloud later acquired Smart Network Solutions and refactored its product line to include explicit "Datacenter Resilience" tiers with cross-region default replication. Insurance payouts were estimated at €105M (Insurance Insider, June 2021). The breach became a Stanford GSB case study (no public reference yet) on the cost of customers misunderstanding shared-responsibility models in IaaS.
 
 **Lesson for the exam / for practitioners.** AZ-800 / AZ-801 won't test you on OVHcloud, but it tests the building blocks:
 

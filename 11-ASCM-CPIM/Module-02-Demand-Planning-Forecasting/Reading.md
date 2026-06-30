@@ -1,6 +1,6 @@
 # Module 2: Demand Planning & Forecasting 📈
 
-> **Why this module matters:** Every downstream plan S&OP (Sales and Operations Planning), MPS, MRP (Material Requirements Planning), capacity, inventory is built on top of the demand forecast. A bad forecast doesn't just hurt; it cascades. CPIM tests this domain heavily because *math you don't recognize loses you 8 points fast*.
+> **Why this module matters:** Every downstream plan S&OP, MPS, MRP, capacity, inventory is built on top of the demand forecast. A bad forecast doesn't just hurt; it cascades. CPIM tests this domain heavily because *math you don't recognize loses you 8 points fast*.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1: Manufacturing Strategy](../Module-01-Manufacturing-Strategy/Reading.md), particularly the MTS/ATO/MTO distinction; the forecast horizon and granularity depends on the chosen environment
@@ -159,7 +159,7 @@ These show up on every CPIM exam. Three to five questions involve a calculation.
 
 ---
 
-## 🤝 CPFR (Collaborative Planning, Forecasting, and Replenishment), Collaborative Planning, Forecasting & Replenishment
+## 🤝 CPFR, Collaborative Planning, Forecasting & Replenishment
 
 > **Citation.** CPFR was developed by the **Voluntary Interindustry Commerce Standards (VICS)** Association in 1998, originating from the 1995–1996 Walmart / Warner-Lambert pilot (Listerine on a 6-month CPFR program; on-shelf availability went from 87% to 98% while inventory dropped 25%). The framework was formalized in *CPFR: An Overview* (VICS, 1998; revised 2004) and is now stewarded by GS1 US. ASCM Dictionary (16th ed., 2022) includes the canonical 4-step description used below.
 
@@ -187,13 +187,13 @@ The 4 main activities:
 
 **Causes of bullwhip (Lee, Padmanabhan & Whang, 1997):** demand-signal processing (over-reaction to recent orders), order batching (weekly/monthly orders mask daily demand), price fluctuations (forward-buying during promotions), and rationing/shortage gaming (over-ordering when supply is constrained). The 4 causes are tested on the exam in this exact form.
 
-**Cures:** share POS data (eliminate signal distortion), smaller more frequent orders (kill batching), EDLP (everyday low price, Walmart's signature, eliminates forward-buying), allocation by historical share not current order (kill the gaming incentive), shorter lead times, and VMI (Vendor Managed Inventory)/CPFR.
+**Cures:** share POS data (eliminate signal distortion), smaller more frequent orders (kill batching), EDLP (everyday low price, Walmart's signature, eliminates forward-buying), allocation by historical share not current order (kill the gaming incentive), shorter lead times, and VMI/CPFR.
 
 ---
 
 ## 🧮 Forecasting Aggregation Principle
 
-**Forecasts are more accurate at higher levels of aggregation and longer time buckets, and less accurate at the individual SKU (Stock Keeping Unit) + day level.**
+**Forecasts are more accurate at higher levels of aggregation and longer time buckets, and less accurate at the individual SKU + day level.**
 
 | Aggregation | Forecast Error (typical MAPE) |
 |-------------|-------------------------------|
@@ -280,7 +280,7 @@ This is *why* S&OP forecasts at the product-family level (Module 3) they're accu
 
 **Decision.** Cisco continued accepting the inflated channel orders as a demand signal, locked in long-lead-time components with suppliers on take-or-pay clauses, and provided "buy commitment" guarantees to multiple tier-2 suppliers (the optical-component makers most exposed). When demand turned in Q4 2000 telecom capex collapsed first, then enterprise IT channel partners cancelled forward orders en masse. Cisco still owed the supplier commitments. The exact pattern Lee, Padmanabhan & Whang (1997) had described four years earlier: **rationing/shortage gaming + demand-signal distortion + long lead times = catastrophic upstream amplification.**
 
-**Outcome.** In Q3 FY2001 (reported May 2001) Cisco wrote off **$2.25 billion of inventory**, the largest such write-off in tech history at the time. Cisco's stock fell from a peak of $80 in March 2000 to under $14 by April 2001. The write-off was, in CFO (Chief Financial Officer) Larry Carter's own words, "essentially the entire 9-month inventory accumulation that had been built on an erroneous demand signal that the system could not reverse fast enough." JDSU took an even larger write-off ($45B in goodwill + inventory across 2001, though most was goodwill from the acquired SDL/JDS Uniphase merger). The Solectron / Celestica EMS contractors restructured. Cisco re-engineered its planning around explicit S&OP gates, near-supplier collaboration (eventually evolving into a CPFR-style program with key suppliers by 2005), and a shorter cumulative-lead-time supply chain.
+**Outcome.** In Q3 FY2001 (reported May 2001) Cisco wrote off **$2.25 billion of inventory**, the largest such write-off in tech history at the time. Cisco's stock fell from a peak of $80 in March 2000 to under $14 by April 2001. The write-off was, in CFO Larry Carter's own words, "essentially the entire 9-month inventory accumulation that had been built on an erroneous demand signal that the system could not reverse fast enough." JDSU took an even larger write-off ($45B in goodwill + inventory across 2001, though most was goodwill from the acquired SDL/JDS Uniphase merger). The Solectron / Celestica EMS contractors restructured. Cisco re-engineered its planning around explicit S&OP gates, near-supplier collaboration (eventually evolving into a CPFR-style program with key suppliers by 2005), and a shorter cumulative-lead-time supply chain.
 
 **Lesson for the exam / for practitioners.** Cisco's write-off remains the canonical bullwhip case-study used in MIT Sloan, Wharton OMP, Stanford GSB, and Harvard Business School operations classes. It demonstrates *every* Lee–Padmanabhan–Whang cause simultaneously: (1) demand-signal processing (Cisco extrapolated linear demand from a non-linear curve); (2) order batching (long-lead-time supplier orders amplified the variance); (3) shortage gaming (channel partners over-ordered to secure allocation); (4) price/promotional fluctuation was minor here, but the *take-or-pay* contract incentives were a structural equivalent. The CPIM exam-takeaway: **the bullwhip is not "the supplier's problem" or "the retailer's problem", it's a system property. Cures must be applied at every tier (share POS data, smaller batches, allocation by historical share, shorter lead times). One actor changing alone cannot stop it.**
 
@@ -307,7 +307,7 @@ You now know:
 1. 🎥 Watch the videos in `Videos.md`, especially exponential smoothing
 2. ✏️ Take `Quiz.md`, aim for 20/26 minimum
 3. 📋 Memorize `Cheat-Sheet.md` formulas
-4. ➡️ Move to [Module 3: S&OP](../Module-03-SOP (Standard Operating Procedure)-Sales-Operations-Planning/Reading.md)
+4. ➡️ Move to [Module 3: S&OP](../Module-03-SOP-Sales-Operations-Planning/Reading.md)
 
 ---
 
@@ -336,4 +336,4 @@ You now know:
 - 📖 ASCM Dictionary, 16th edition (2022), entries for forecast error, MAD, MAPE, tracking signal, exponential smoothing, CPFR, bullwhip.
 - 📰 *The Bullwhip Effect in Supply Chains* Lee, Padmanabhan & Whang, *Sloan Management Review* 38(3), Spring 1997 the seminal article. Pair with the *Management Science* 43(4) 1997 companion.
 - 📰 *Industrial Dynamics: A Major Breakthrough for Decision Makers* Forrester, Jay W., *Harvard Business Review*, Jul–Aug 1958 the original demand-amplification insight.
-- 📰 *Cisco Systems, Inc.: Implementing ERP (Enterprise Resource Planning)* Cooper & Markus, *Harvard Business School Case* 9-699-022 (1999) pre-write-off context; pair with the post-mortem coverage in *Business Week* "Cisco's Comeback" (Nov 2003).
+- 📰 *Cisco Systems, Inc.: Implementing ERP* Cooper & Markus, *Harvard Business School Case* 9-699-022 (1999) pre-write-off context; pair with the post-mortem coverage in *Business Week* "Cisco's Comeback" (Nov 2003).

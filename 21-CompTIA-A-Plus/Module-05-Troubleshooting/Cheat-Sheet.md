@@ -25,16 +25,16 @@
 L1  → cable, link light
 L2  → ipconfig, valid MAC
 L3  → IP not 169.254.x.x; ping gateway
-L3  → DNS (Domain Name System), ping 8.8.8.8 vs ping google.com
+L3  → DNS, ping 8.8.8.8 vs ping google.com
 L4  → Test-NetConnection -Port 443 host
 L7  → app-specific
 ```
 
 | Symptom | Likely |
 |---------|--------|
-| 169.254.x.x | APIPA → DHCP (Dynamic Host Configuration Protocol) failure |
+| 169.254.x.x | APIPA → DHCP failure |
 | Pings IP, not name | DNS broken |
-| Pings gateway, not internet | WAN (Wide Area Network) / ISP (Internet Service Provider) issue |
+| Pings gateway, not internet | WAN / ISP issue |
 | Slow Wi-Fi at lunchtime | AP overloaded, 2.4 GHz crowded |
 | Gigabit dropped to 100 Mbps | Bad cable pair |
 
@@ -70,14 +70,14 @@ L7  → app-specific
 
 ---
 
-## 🛠️ CLI (Command Line Interface) Cheat, Diagnostic Toolkit
+## 🛠️ CLI Cheat, Diagnostic Toolkit
 
 ### Windows
 ```
 ipconfig /all                    full NIC info
 ipconfig /release /renew         force DHCP
 ipconfig /flushdns               clear DNS cache
-ping <host>                      ICMP (Internet Control Message Protocol) test
+ping <host>                      ICMP test
 tracert <host>                   hops
 pathping <host>                  tracert + loss
 nslookup <host> [server]         DNS test

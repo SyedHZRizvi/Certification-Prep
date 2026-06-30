@@ -19,7 +19,7 @@ Maria returns from a week of PTO. Her inbox has:
 2. A ticket from San Diego, *"I left the company laptop in a coffee shop. Need to remote-wipe it. NOW."*
 3. A ticket from a contractor *"I can't open the project files on my Mac keeps saying I'm not enrolled."*
 4. A ticket from a sales rep, *"My Android phone won't let me copy from Outlook to my personal Notes app, and that's by design but my manager wants an exception."*
-5. A ticket from the CFO (Chief Financial Officer), *"What's our Intune license posture? Are we paying for Plan 2 features we don't use?"*
+5. A ticket from the CFO, *"What's our Intune license posture? Are we paying for Plan 2 features we don't use?"*
 6. A request from legal, *"We're being acquired by a German company. They have their own M365 tenant. What's the plan to migrate our 1,400 devices?"*
 
 In 30 years of IT, the laptop-in-the-coffee-shop scenario was the worst Maria would face. Today it's one of six things she'll handle before lunch, and every one of them lives in the same console. **Microsoft Intune.** This module teaches you the console, the architecture, and the licensing matrix that decides which buttons you're allowed to push.
@@ -28,7 +28,7 @@ In 30 years of IT, the laptop-in-the-coffee-shop scenario was the worst Maria wo
 
 ## 🏗️ The Intune Architecture (MEMORIZE THIS)
 
-Microsoft Intune is a cloud SaaS (Software as a Service). There is no on-prem Intune server. The components:
+Microsoft Intune is a cloud SaaS. There is no on-prem Intune server. The components:
 
 ```
                    ┌─────────────────────────────────────┐
@@ -105,7 +105,7 @@ This is one of the most frequently tested topics. Memorize the matrix:
 |------|----------|------|
 | **Microsoft Intune Plan 1** | Core MDM + MAM + Configuration profiles + Compliance + Apps + Endpoint security baselines | Default for M365 E3 |
 | **Microsoft Intune Plan 2** | Plan 1 + **Advanced Endpoint Analytics** + Remote Help base + Specialty device management (AR/VR/IoT) | Add-on |
-| **Microsoft Intune Suite** | Plan 1 + Plan 2 + **Endpoint Privilege Management (EPM)** + **Microsoft Tunnel for MAM** + Remote Help advanced + Cloud PKI (Public Key Infrastructure) + Enterprise App Management + Advanced Analytics | Premium add-on |
+| **Microsoft Intune Suite** | Plan 1 + Plan 2 + **Endpoint Privilege Management (EPM)** + **Microsoft Tunnel for MAM** + Remote Help advanced + Cloud PKI + Enterprise App Management + Advanced Analytics | Premium add-on |
 
 Bundled in larger packages:
 | Bundle | Includes Intune |
@@ -124,7 +124,7 @@ Bundled in larger packages:
 
 Intune lives inside a Microsoft Entra ID tenant. Permissions come from two role models:
 
-### Built-in Intune RBAC (Role-Based Access Control) roles
+### Built-in Intune RBAC roles
 
 | Role | What |
 |------|------|
@@ -178,7 +178,7 @@ Special groups:
 
 ## 🛡️ App Protection Policies (APP), The MAM Workhorse
 
-App protection policies are the way you protect corporate data inside apps without enrolling the device. APP applies to apps that integrate with the **Microsoft Intune App SDK (Software Development Kit)** or are wrapped with the App Wrapping Tool, most importantly Microsoft 365 apps (Outlook, OneDrive, Teams, Edge, Word, Excel, PowerPoint).
+App protection policies are the way you protect corporate data inside apps without enrolling the device. APP applies to apps that integrate with the **Microsoft Intune App SDK** or are wrapped with the App Wrapping Tool, most importantly Microsoft 365 apps (Outlook, OneDrive, Teams, Edge, Word, Excel, PowerPoint).
 
 ### Common APP settings
 
@@ -228,8 +228,8 @@ Configuration profiles are how Intune applies device settings. There are several
 
 | Profile type | What |
 |--------------|------|
-| **Settings catalog** | The modern, flexible UI (User Interface) listing every available setting (~thousands across platforms). Microsoft's preferred surface. |
-| **Templates** | Pre-built templates (Wi-Fi, VPN (Virtual Private Network), certificate, email, kiosk, OEMConfig, etc.) |
+| **Settings catalog** | The modern, flexible UI listing every available setting (~thousands across platforms). Microsoft's preferred surface. |
+| **Templates** | Pre-built templates (Wi-Fi, VPN, certificate, email, kiosk, OEMConfig, etc.) |
 | **Administrative templates** | Group Policy-style ADMX-backed settings for Windows |
 | **Imported ADMX** | Custom ADMX/ADML files you upload |
 | **Custom (OMA-URI)** | Direct OMA-URI custom CSP paths, for settings not exposed in UI |
@@ -299,7 +299,7 @@ You now know:
 
 ## 📊 Case Study, Heineken Global Intune Adoption (2020–2024)
 
-**Situation.** Heineken N.V. (the world's second-largest brewer, ~80,000 employees in 70 countries) faced a textbook fragmented endpoint management story circa 2019: ~85,000 endpoints across Windows, iOS, Android, and macOS, with each region running a different mix of ConfigMgr, MobileIron (a legacy MDM), AirWatch, and Intune. App protection was inconsistent. The CISO (Chief Information Security Officer) could not answer "how many of our devices have current Defender signatures?" with a single number. The COVID-19 work-from-home shift in March 2020 made the fragmentation untenable: VPN concentrators saturated, BYOD enrollment requests spiked 400%, and remote IT support was nearly impossible to standardize.
+**Situation.** Heineken N.V. (the world's second-largest brewer, ~80,000 employees in 70 countries) faced a textbook fragmented endpoint management story circa 2019: ~85,000 endpoints across Windows, iOS, Android, and macOS, with each region running a different mix of ConfigMgr, MobileIron (a legacy MDM), AirWatch, and Intune. App protection was inconsistent. The CISO could not answer "how many of our devices have current Defender signatures?" with a single number. The COVID-19 work-from-home shift in March 2020 made the fragmentation untenable: VPN concentrators saturated, BYOD enrollment requests spiked 400%, and remote IT support was nearly impossible to standardize.
 
 **Decision.** Heineken's central IT, advised by Microsoft FastTrack, consolidated on **Microsoft Intune as the single MDM/MAM authority** for all platforms (Microsoft customer story, *Heineken, Modern Workplace Transformation*, 2022, refreshed 2024):
 
@@ -314,7 +314,7 @@ You now know:
 
 - **Device management consolidation**: from 4 MDM vendors to 1 (Intune) across the entire fleet of ~85,000 endpoints.
 - **BYOD adoption**: ~22,000 personal devices enrolled in MAM (no device enrollment, app-protected only), a 4× increase over the legacy MobileIron BYOD count.
-- **Defender signal coverage**: from estimated 50% (legacy AV mix) to >98% of fleet on Defender for Endpoint with EDR (Endpoint Detection and Response).
+- **Defender signal coverage**: from estimated 50% (legacy AV mix) to >98% of fleet on Defender for Endpoint with EDR.
 - **MTTR for "lost phone"**: from "open ticket, queue 24h, IT calls user" to **under 5 minutes** (self-service remote wipe via Company Portal).
 - **App protection compliance**: 99.4% of users on protected versions of Outlook + Teams + OneDrive (vs ~70% in fragmented state).
 - **Annual licensing cost**: Heineken does not disclose the figure, but Microsoft's M365 E5 + Intune Suite is *more* expensive per seat than the previous fragmented spend; the business case rested on operational simplification + risk reduction, not raw cost.
@@ -325,7 +325,7 @@ You now know:
 **Discussion (Socratic).**
 - **Q1.** Heineken did a clean cutover from MobileIron + AirWatch to Intune, not a parallel migration. Argue both sides: when is a clean cutover the right answer, and when does parallel migration justify the operational complexity?
 - **Q2.** Heineken's BYOD model uses MAM-only (no enrollment). A risk-averse legal team at a peer brewer argues that MAM-only is insufficient because IT cannot wipe the entire device. Defend MAM-only by naming the two specific protections it provides that MDM cannot match (hint: think about user privacy and adoption rates).
-- **Q3.** Heineken's scope-tag model means an EMEA admin literally cannot see APAC devices. A new CTO (Chief Technology Officer) asks why scope tags aren't just RBAC. Defend scope tags as a separate concept by identifying the one scenario where scope tags work and RBAC alone would fail.
+- **Q3.** Heineken's scope-tag model means an EMEA admin literally cannot see APAC devices. A new CTO asks why scope tags aren't just RBAC. Defend scope tags as a separate concept by identifying the one scenario where scope tags work and RBAC alone would fail.
 
 ---
 

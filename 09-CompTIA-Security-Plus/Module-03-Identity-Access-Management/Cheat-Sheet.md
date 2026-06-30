@@ -45,12 +45,12 @@ Hardware token + PIN  ← strongest
 | Protocol | Format | Purpose | Where |
 |----------|--------|---------|-------|
 | **SAML 2.0** | XML | Web SSO | Enterprise legacy web apps |
-| **OAuth 2.0** | JSON tokens | **Authorization** | Delegated API (Application Programming Interface) access |
+| **OAuth 2.0** | JSON tokens | **Authorization** | Delegated API access |
 | **OIDC** | JWT id_token | **Authentication on OAuth** | Modern login (mobile/API) |
-| **LDAP (Lightweight Directory Access Protocol) / LDAPS** | Binary | Directory lookup | 389 / 636 |
+| **LDAP / LDAPS** | Binary | Directory lookup | 389 / 636 |
 | **Kerberos** | Tickets | Mutual auth | Windows domain |
-| **RADIUS** | UDP (User Datagram Protocol) 1812/1813 | Network AAA (combined) | Wi-Fi, VPN (Virtual Private Network) |
-| **TACACS+** | TCP (Transmission Control Protocol) 49 | Device admin AAA (separated) | Cisco mgmt |
+| **RADIUS** | UDP 1812/1813 | Network AAA (combined) | Wi-Fi, VPN |
+| **TACACS+** | TCP 49 | Device admin AAA (separated) | Cisco mgmt |
 
 🧠 *SAML = XML web SSO. OAuth = ACCESS. OIDC = LOGIN.*
 
@@ -73,9 +73,9 @@ Needs **time sync** (≤5 min skew). Tickets, not passwords, traverse the wire.
 |-------|----------------|
 | **DAC** | Object owner (Unix/Windows files) |
 | **MAC** | System enforces labels (military) |
-| **RBAC (Role-Based Access Control)** | Permissions per role → users get roles (enterprise default) |
+| **RBAC** | Permissions per role → users get roles (enterprise default) |
 | **Rule-Based** | If-then rules (time, IP, etc.) |
-| **ABAC (Attribute-Based Access Control)** | Attributes of user + resource + env (cloud, dynamic) |
+| **ABAC** | Attributes of user + resource + env (cloud, dynamic) |
 
 🧠 **D**iscretion. **M**andatory. **R**ole. **A**ttribute. **Rule.**
 
@@ -85,8 +85,8 @@ Needs **time sync** (≤5 min skew). Tickets, not passwords, traverse the wire.
 
 - Password vaulting + credential injection
 - Session recording (video/keystroke)
-- **JIT (Just-In-Time) access**, request → approved 60 min → auto-revoke
-- Ephemeral credentials (AWS (Amazon Web Services) STS, SSH (Secure Shell) certs)
+- **JIT access**, request → approved 60 min → auto-revoke
+- Ephemeral credentials (AWS STS, SSH certs)
 - Approval workflows
 - Privileged account discovery
 

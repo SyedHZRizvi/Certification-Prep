@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-02-AE-Expressions-Scripts/Reading/
+permalink: /35-Motion-Graphics-UI-Animation/Module-02-AE-Expressions-Scripts/Reading/
 title: "Module 2: AE Expressions & Scripts"
 ---
 

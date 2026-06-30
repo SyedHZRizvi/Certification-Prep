@@ -13,8 +13,8 @@
 | stakeholder | Anyone with an interest in the outcome | حصہ دار |
 | milestone | A key checkpoint or target date in a project | اہم مرحلہ |
 | deliverable | A tangible output or result | قابلِ فراہمی نتیجہ |
-| ROI (Return on Investment) | Return on Investment | سرمایہ کاری پر منافع |
-| KPI (Key Performance Indicator) | Key Performance Indicator | کارکردگی کا اہم اشارہ |
+| ROI | Return on Investment | سرمایہ کاری پر منافع |
+| KPI | Key Performance Indicator | کارکردگی کا اہم اشارہ |
 | due diligence | Thorough investigation before a decision | محتاط تحقیق |
 | onboarding | The process of integrating a new employee | نئے ملازم کو شامل کرنا |
 | bottom line | The final profit/loss figure; ultimate concern | آخری نتیجہ / منافع |

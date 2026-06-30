@@ -1,4 +1,4 @@
-# 📋 Module 6 Cheat Sheet: Identity Governance & PIM (Product Information Management)
+# 📋 Module 6 Cheat Sheet: Identity Governance & PIM
 
 > One page. Print it. Tape it to your monitor. Review before the exam.
 
@@ -8,7 +8,7 @@
 
 ```
 ELIGIBLE                       →  ACTIVATION  →     ACTIVE                →   EXPIRATION
-(can JIT (Just-In-Time)-activate; inactive)      (MFA (Multi-Factor Authentication) + just.)     (limited duration)         (auto deactivate)
+(can JIT-activate; inactive)      (MFA + just.)     (limited duration)         (auto deactivate)
                                   (optional approval)
                                   (optional ticket)
 ```
@@ -28,7 +28,7 @@ ELIGIBLE                       →  ACTIVATION  →     ACTIVE                �
 | Product | Manages |
 |---------|---------|
 | PIM for **Entra Roles** | Directory roles (GA, User Admin, etc.) |
-| PIM for **Azure Resources** | Azure RBAC (Role-Based Access Control) roles |
+| PIM for **Azure Resources** | Azure RBAC roles |
 | PIM for **Groups** | Membership of **role-assignable** groups (set at creation) |
 
 ---
@@ -75,7 +75,7 @@ CATALOG (delegated owner)
   │     └── ASSIGNMENT POLICY 2 (external: sponsor + security approve, 90d, monthly review)
   └── CONNECTED ORGANIZATIONS (external Entra tenants)
 
-CUSTOM EXTENSIONS = Logic Apps on package events (Governance SKU (Stock Keeping Unit))
+CUSTOM EXTENSIONS = Logic Apps on package events (Governance SKU)
 ```
 
 ---

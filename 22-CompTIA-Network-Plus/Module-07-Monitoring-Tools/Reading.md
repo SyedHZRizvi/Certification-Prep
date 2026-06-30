@@ -1,11 +1,11 @@
 # Module 7: Monitoring, Performance & Tools 📊
 
-> **Why this module matters:** You can't fix what you can't see. This module gives you the **visibility plane**, SNMP (Simple Network Management Protocol), syslog, NetFlow for collecting data; ping/traceroute/nslookup/dig for ad-hoc investigation; Wireshark for deep-dive packet analysis; latency/jitter/throughput metrics for performance baselines. Combined with Module 8 (troubleshooting methodology), this is how working engineers actually diagnose problems.
+> **Why this module matters:** You can't fix what you can't see. This module gives you the **visibility plane**, SNMP, syslog, NetFlow for collecting data; ping/traceroute/nslookup/dig for ad-hoc investigation; Wireshark for deep-dive packet analysis; latency/jitter/throughput metrics for performance baselines. Combined with Module 8 (troubleshooting methodology), this is how working engineers actually diagnose problems.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Modules 1–6
 > - The OSI model, every tool maps to specific layers
-> - The concept of UDP (User Datagram Protocol) vs TCP (Transmission Control Protocol) (for understanding why most monitoring uses UDP)
+> - The concept of UDP vs TCP (for understanding why most monitoring uses UDP)
 
 ---
 
@@ -15,7 +15,7 @@ A doctor walks into the ER. The patient is clearly in distress, pale, sweating, 
 
 That's networking without monitoring. A "slow internet" ticket is meaningless until someone measures: latency to what, packet loss where, error rates on which interface, since when, baseline vs current? Without numbers, you reboot the router and hope. With numbers, you diagnose.
 
-This module gives you every measurement tool Network+ tests on, the everyday CLI (Command Line Interface) utilities, the enterprise telemetry protocols, the packet analyzer for deep dives, and the performance metrics every SLA (Service Level Agreement) depends on.
+This module gives you every measurement tool Network+ tests on, the everyday CLI utilities, the enterprise telemetry protocols, the packet analyzer for deep dives, and the performance metrics every SLA depends on.
 
 ---
 
@@ -26,7 +26,7 @@ This module gives you every measurement tool Network+ tests on, the everyday CLI
 The time for a packet to travel from source to destination (one-way) or round-trip (RTT, measured by ping). Measured in milliseconds.
 
 **Typical RTT ranges:**
-- LAN (Local Area Network): 0.1–1 ms
+- LAN: 0.1–1 ms
 - Same continent: 10–80 ms
 - Trans-Atlantic: 70–150 ms
 - Geosynchronous satellite: 500+ ms
@@ -62,8 +62,8 @@ Percentage of packets that don't arrive. >1% is concerning for VoIP; >5% breaks 
 | **SLA** (Service Level Agreement) | Contract: vendor commits to X uptime / Y latency / Z packet loss |
 | **MTBF** | Mean Time Between Failures |
 | **MTTR** | Mean Time To Repair |
-| **RTO (Recovery Time Objective)** | Recovery Time Objective, how long before service restored after failure |
-| **RPO (Recovery Point Objective)** | Recovery Point Objective, how much data loss is acceptable |
+| **RTO** | Recovery Time Objective, how long before service restored after failure |
+| **RPO** | Recovery Point Objective, how much data loss is acceptable |
 
 ---
 
@@ -84,7 +84,7 @@ A **baseline** is a recorded snapshot of "normal" averages for interface utiliza
 
 ### ping
 
-Tests reachability via **ICMP (Internet Control Message Protocol) Echo Request / Reply**. Defined in RFC 792 (Postel, 1981).
+Tests reachability via **ICMP Echo Request / Reply**. Defined in RFC 792 (Postel, 1981).
 
 ```
 $ ping 8.8.8.8
@@ -131,7 +131,7 @@ google.com.    300    IN    A    142.250.190.78
 **Useful options:**
 - `dig MX example.com`, query specific record type
 - `dig @8.8.8.8 example.com`, query a specific resolver
-- `dig +trace example.com`, walk the DNS (Domain Name System) hierarchy manually
+- `dig +trace example.com`, walk the DNS hierarchy manually
 - `nslookup -type=MX example.com`, equivalent record-type query
 
 ### ipconfig / ifconfig / ip
@@ -139,7 +139,7 @@ google.com.    300    IN    A    142.250.190.78
 | Platform | Command | What it shows |
 |----------|---------|---------------|
 | Windows | `ipconfig` | IP, mask, gateway per interface |
-| Windows | `ipconfig /all` | + MAC, DHCP (Dynamic Host Configuration Protocol) server, DNS, lease |
+| Windows | `ipconfig /all` | + MAC, DHCP server, DNS, lease |
 | Windows | `ipconfig /release` + `/renew` | Drop and re-request DHCP lease |
 | Windows | `ipconfig /flushdns` | Clear DNS cache |
 | Linux | `ifconfig` (legacy) or `ip addr` | Per-interface config |
@@ -233,7 +233,7 @@ Defined originally in **RFC 1157** (Case et al., 1990); SNMPv3 in **RFC 3411–3
 |---------|------|-----------|--------|
 | **SNMPv1** | Plaintext community string ("public") | None | Deprecated |
 | **SNMPv2c** | Plaintext community string | None, still very common, still insecure | Common, but use v3 |
-| **SNMPv3** | User-based auth (MD5/SHA) | DES/AES (Advanced Encryption Standard) | **Current** |
+| **SNMPv3** | User-based auth (MD5/SHA) | DES/AES | **Current** |
 
 🚨 **Trap on the exam:** SNMPv1/v2c send credentials in cleartext. **Always v3 for production.**
 
@@ -287,9 +287,9 @@ Defined in **RFC 5424** (Gerhards, 2009). Standard for sending log messages from
 ### Transport
 
 - **UDP 514**, traditional (unreliable, no encryption)
-- **TCP 6514** with TLS (Transport Layer Security), modern secure variant
+- **TCP 6514** with TLS, modern secure variant
 
-### Centralized log management (SIEM (Security Information and Event Management))
+### Centralized log management (SIEM)
 
 A **SIEM** (Security Information and Event Management) aggregates logs from many sources, normalizes them, correlates events, and alerts on patterns. Common platforms: Splunk, Elastic (ELK), Microsoft Sentinel, IBM QRadar, ArcSight.
 
@@ -321,7 +321,7 @@ Where SNMP gives you **device** metrics and syslog gives you **events**, NetFlow
 - Stores flow records in a database
 - Visualizes top talkers, applications, security alerts
 
-🎯 **Exam pattern:** *"Identify the top bandwidth consumers on the WAN (Wide Area Network) link"* → NetFlow / sFlow.
+🎯 **Exam pattern:** *"Identify the top bandwidth consumers on the WAN link"* → NetFlow / sFlow.
 
 ---
 
@@ -332,7 +332,7 @@ The gold-standard GUI packet capture and analysis tool. Open source. Created by 
 ### What it does
 
 - **Capture** packets from a NIC (in promiscuous mode if supported)
-- **Decode** protocols at every layer (Ethernet → IP → TCP → HTTP (Hypertext Transfer Protocol) → JSON)
+- **Decode** protocols at every layer (Ethernet → IP → TCP → HTTP → JSON)
 - **Filter** captured traffic by protocol, IP, port, etc.
 - **Save** captures as `.pcap` / `.pcapng` files for sharing
 - **Analyze** TCP handshakes, retransmissions, RTT, follow streams
@@ -342,7 +342,7 @@ The gold-standard GUI packet capture and analysis tool. Open source. Created by 
 | Filter | What it shows |
 |--------|---------------|
 | `ip.addr == 10.0.0.5` | All traffic to/from 10.0.0.5 |
-| `tcp.port == 443` | All HTTPS (HTTP Secure) traffic |
+| `tcp.port == 443` | All HTTPS traffic |
 | `http.request.method == "POST"` | POST requests only |
 | `dns` | DNS only |
 | `tcp.analysis.retransmission` | TCP retransmits, diagnose loss |
@@ -450,7 +450,7 @@ This is a textbook performance investigation, the answer wasn't "the network" or
 | NMS | Network Management Station |
 | IPFIX | IP Flow Information Export (RFC 7011) |
 | SIEM | Security Information and Event Management |
-| SLA / SLO (Service Level Objective) / SLI | Service Level Agreement / Objective / Indicator |
+| SLA / SLO / SLI | Service Level Agreement / Objective / Indicator |
 | MTBF / MTTR | Mean Time Between Failures / To Repair |
 | RTO / RPO | Recovery Time / Point Objective |
 | ICMP | Internet Control Message Protocol |
@@ -473,7 +473,7 @@ A few of the technical practices:
 - **Syslog → centralized logging** (Logstash → Kafka → ClickHouse / similar), query of "what's slow in São Paulo?" answerable in seconds
 - **Synthetic monitoring**, bots in every region continuously DNS-query 1.1.1.1 to detect regressions before users do
 
-**Outcome.** Cloudflare 1.1.1.1 achieved **<14 ms median resolver latency globally** by 2024 (per their public reports), faster than Google's 8.8.8.8 in most regions. When incidents occurred (notable: the **17 July 2020 outage** caused by a misconfigured BGP (Border Gateway Protocol) route filter), the post-mortem was published within 24 hours with **specific telemetry-derived root cause** ("a router config change triggered an unintended cascade of BGP withdrawals; the issue propagated globally in 27 seconds and was contained in 3 minutes via rollback").
+**Outcome.** Cloudflare 1.1.1.1 achieved **<14 ms median resolver latency globally** by 2024 (per their public reports), faster than Google's 8.8.8.8 in most regions. When incidents occurred (notable: the **17 July 2020 outage** caused by a misconfigured BGP route filter), the post-mortem was published within 24 hours with **specific telemetry-derived root cause** ("a router config change triggered an unintended cascade of BGP withdrawals; the issue propagated globally in 27 seconds and was contained in 3 minutes via rollback").
 
 The 1.1.1.1 service is now the **textbook example** of how the monitoring stack NetFlow + SNMP + syslog + tracing + synthetic monitoring + public dashboards turns "a network you operate" into "a service you can actually reason about."
 

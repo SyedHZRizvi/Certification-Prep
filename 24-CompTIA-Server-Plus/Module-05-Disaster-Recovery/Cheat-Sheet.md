@@ -8,8 +8,8 @@
 
 | | Asks |
 |---|---|
-| **RTO (Recovery Time Objective)** | How long can we be down? |
-| **RPO (Recovery Point Objective)** | How much data can we lose? |
+| **RTO** | How long can we be down? |
+| **RPO** | How much data can we lose? |
 
 ```
 disaster
@@ -106,9 +106,9 @@ Modern **3-2-1-1-0**:
 | | BCP | DR |
 |---|---|---|
 | Scope | Whole business (people, comms, alt sites, supply chain) | IT systems & data |
-| Owner | COO (Chief Operating Officer) / BCM | CTO (Chief Technology Officer) / IT |
+| Owner | COO / BCM | CTO / IT |
 
-**Hierarchy:** BIA → BCP → DRP (Distribution Requirements Planning) → IRP (security events).
+**Hierarchy:** BIA → BCP → DRP → IRP (security events).
 
 ---
 
@@ -124,10 +124,10 @@ Modern **3-2-1-1-0**:
 
 ## 🧊 Ransomware-Resistant Backups
 
-- Immutable (WORM / S3 (Simple Storage Service) Object Lock)
+- Immutable (WORM / S3 Object Lock)
 - Air-gapped (offline tape, removed drive)
-- Separate credentials + MFA (Multi-Factor Authentication) for backup admin
-- Backup server NOT joined to production AD (Active Directory)
+- Separate credentials + MFA for backup admin
+- Backup server NOT joined to production AD
 - Different cloud account / region
 - Tested restoration
 
@@ -148,7 +148,7 @@ Modern **3-2-1-1-0**:
 
 - "Snapshot = backup"
 - "Sync replication across continents"
-- "Backups in the same AWS (Amazon Web Services) account as production"
+- "Backups in the same AWS account as production"
 - "Running backups = working backups"
 - "Cold site for life-critical workload"
 - "One backup copy is enough"

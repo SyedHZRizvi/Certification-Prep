@@ -10,7 +10,7 @@
 MONOLITHIC: One platform owns storefront + commerce engine
             (Shopify Basic, Magento Open Source)
 
-HEADLESS:   Decoupled frontend, one commerce engine via API (Application Programming Interface)
+HEADLESS:   Decoupled frontend, one commerce engine via API
             (Hydrogen + Shopify, PWA Studio + Adobe Commerce)
 
 COMPOSABLE: Best-of-breed services composed across many vendors
@@ -23,10 +23,10 @@ COMPOSABLE: Best-of-breed services composed across many vendors
 
 ## 🏪 Platform Sweet Spots
 
-| Platform | GMV (Gross Merchandise Value) | TCO Y1 | Best for |
+| Platform | GMV | TCO Y1 | Best for |
 |----------|-----|--------|----------|
-| Shopify Plus | $1M-$250M | $40K-$200K | Speed, DTC (Direct-to-Consumer), opinionated |
-| Adobe Commerce | $20M-$500M | $250K-$1.5M | Complex B2B (Business-to-Business)+B2C (Business-to-Consumer) |
+| Shopify Plus | $1M-$250M | $40K-$200K | Speed, DTC, opinionated |
+| Adobe Commerce | $20M-$500M | $250K-$1.5M | Complex B2B+B2C |
 | BigCommerce | $1M-$100M | $30K-$200K | Multi-storefront, no transaction fees |
 | Salesforce CC | $100M-$5B | $750K-$5M | Enterprise B2C, Einstein AI |
 | Composable (MACH) | $250M-$10B | $1M-$3M | Strategic differentiation |
@@ -77,7 +77,7 @@ Shopify B2B     → B2B module (2023, expanded 2024)
 
 ```
 Magento Open Source → Free, GPL-3 (self-hosted)
-Adobe Commerce      → Commercial, managed AWS (Amazon Web Services) hosting
+Adobe Commerce      → Commercial, managed AWS hosting
 PWA Studio          → React + Apollo headless framework
 Page Builder        → No-code page editor
 GraphQL API         → Modern headless API
@@ -94,7 +94,7 @@ Magento 2           → Current version line (M1 deprecated June 2020)
 | CMS | Contentful, Sanity, Storyblok, Contentstack |
 | Search | Algolia, Bloomreach, Constructor |
 | Personalization | Bloomreach, Dynamic Yield, Mutiny |
-| PIM (Product Information Management) | Akeneo, Salsify, Plytix |
+| PIM | Akeneo, Salsify, Plytix |
 | Payments | Stripe, Adyen, Mollie |
 | Frontend | Vue Storefront, Hydrogen, Next.js Commerce |
 

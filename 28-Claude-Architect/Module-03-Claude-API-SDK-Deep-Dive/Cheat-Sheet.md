@@ -1,4 +1,4 @@
-# 📋 Module 3 Cheat Sheet: Claude API (Application Programming Interface) & SDK (Software Development Kit) Deep Dive
+# 📋 Module 3 Cheat Sheet: Claude API & SDK Deep Dive
 
 > One page. Tape it next to your terminal. Reference during every coding session.
 
@@ -147,7 +147,7 @@ batch = client.messages.batches.create(requests=[
 ```
 
 - **50% off** input AND output
-- Hours SLA (Service Level Agreement) (NOT real-time)
+- Hours SLA (NOT real-time)
 - Up to 10,000 requests per batch
 - Combine with caching for compound savings
 
@@ -203,8 +203,8 @@ Multiply by ~0.33 for Haiku, ~5× for Opus.
 | Path | Client class | Best for |
 |------|--------------|----------|
 | Anthropic direct | `Anthropic(api_key=...)` | Startups, R&D, latest features |
-| AWS (Amazon Web Services) Bedrock | `AnthropicBedrock(aws_region=...)` | AWS-native enterprises, data residency |
-| GCP (Google Cloud Platform) Vertex | `AnthropicVertex(project_id=..., region=...)` | GCP-native enterprises |
+| AWS Bedrock | `AnthropicBedrock(aws_region=...)` | AWS-native enterprises, data residency |
+| GCP Vertex | `AnthropicVertex(project_id=..., region=...)` | GCP-native enterprises |
 
 ---
 

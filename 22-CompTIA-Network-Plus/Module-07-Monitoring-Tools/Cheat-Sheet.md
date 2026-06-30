@@ -17,19 +17,19 @@
 
 | Acronym | Meaning |
 |---------|---------|
-| **SLA (Service Level Agreement)** | Service Level Agreement |
+| **SLA** | Service Level Agreement |
 | **MTBF** | Mean Time Between Failures |
 | **MTTR** | Mean Time To Repair |
-| **RTO (Recovery Time Objective)** | Recovery Time Objective (how fast back) |
-| **RPO (Recovery Point Objective)** | Recovery Point Objective (how much data loss) |
+| **RTO** | Recovery Time Objective (how fast back) |
+| **RPO** | Recovery Point Objective (how much data loss) |
 
 ---
 
-## 🔊 SNMP (Simple Network Management Protocol)
+## 🔊 SNMP
 
 | Element | Detail |
 |---------|--------|
-| **Ports** | UDP (User Datagram Protocol) 161 (query) / UDP 162 (trap) |
+| **Ports** | UDP 161 (query) / UDP 162 (trap) |
 | **MIB / OID** | Hierarchical data tree / dotted address |
 | **Operations** | GET / GETNEXT / GETBULK / SET / RESPONSE / TRAP / INFORM |
 | **v1 / v2c** | Cleartext community strings, **insecure** |
@@ -42,7 +42,7 @@
 
 | Element | Detail |
 |---------|--------|
-| **Port** | UDP 514 (TLS (Transport Layer Security) = TCP (Transmission Control Protocol) 6514) |
+| **Port** | UDP 514 (TLS = TCP 6514) |
 | **Format** | `<priority>1 timestamp host app procid msgid msg` |
 
 ### Severity (MEMORIZE)
@@ -73,15 +73,15 @@
 
 ---
 
-## 🔧 CLI (Command Line Interface) Tools, Quick Reference
+## 🔧 CLI Tools, Quick Reference
 
 | Tool | Purpose |
 |------|---------|
-| **ping** | ICMP (Internet Control Message Protocol) reachability + RTT |
+| **ping** | ICMP reachability + RTT |
 | **traceroute / tracert** | Map hops via TTL-incrementing |
 | **mtr** | Live ping + traceroute combined |
-| **nslookup / dig** | DNS (Domain Name System) lookups |
-| **ipconfig / ifconfig / ip** | IP config, MAC, DHCP (Dynamic Host Configuration Protocol) info |
+| **nslookup / dig** | DNS lookups |
+| **ipconfig / ifconfig / ip** | IP config, MAC, DHCP info |
 | **netstat / ss** | Connections + listening ports |
 | **arp** | IP ↔ MAC mapping (local segment) |
 | **nmap** | Port scanner / discovery |
@@ -102,7 +102,7 @@
 | Filter | Use |
 |--------|-----|
 | `ip.addr == 10.0.0.5` | Traffic to/from IP |
-| `tcp.port == 443` | All HTTPS (HTTP Secure) |
+| `tcp.port == 443` | All HTTPS |
 | `http.request.method == "POST"` | POSTs only |
 | `tcp.analysis.retransmission` | Find packet loss |
 | `tcp.flags.syn == 1 and tcp.flags.ack == 0` | New TCP handshakes |
@@ -132,7 +132,7 @@ Often **right**:
 - ✅ "SNMPv3 for security"
 - ✅ "NetFlow for bandwidth top-talkers"
 - ✅ "Wireshark for protocol-level diagnosis"
-- ✅ "QoS (Quality of Service) to fix jitter for VoIP"
+- ✅ "QoS to fix jitter for VoIP"
 
 Often **wrong**:
 
@@ -154,7 +154,7 @@ Often **wrong**:
 - Baseline before changes
 - Jitter destroys real-time apps; >30 ms for VoIP is bad
 - TCP retransmissions in Wireshark = packet loss along path
-- HTTP (Hypertext Transfer Protocol)/2 fixes connection-per-asset waterfalls
+- HTTP/2 fixes connection-per-asset waterfalls
 
 ---
 

@@ -17,7 +17,7 @@
 ## 💸 Cost Factors
 
 - **Region** (Brazil/AU pricier; US/EU cheaper)
-- **Resource size / SKU (Stock Keeping Unit)**
+- **Resource size / SKU**
 - **OS** (Linux < Windows; Hybrid Benefit reduces)
 - **Storage tier** (Hot/Cool/Cold/Archive)
 - **Bandwidth**, **ingress = FREE, egress = $$$**
@@ -34,7 +34,7 @@
 | **Reservation** | 1 or 3 yr (specific SKU) | Up to 72% | Steady prod |
 | **Savings Plan** | 1 or 3 yr hourly compute $ | Up to 65% | Flexible across families |
 | **Spot** | None (evictable) | Up to 90% | Batch, dev, fault-tolerant |
-| **Hybrid Benefit** | Bring own license | Up to 85% (VM (Virtual Machine)) | Existing Win/SQL SA orgs |
+| **Hybrid Benefit** | Bring own license | Up to 85% (VM) | Existing Win/SQL SA orgs |
 | **Dev/Test** | MSDN tied | Reduced | Non-prod |
 
 ⚠️ All of these are still **OpEx**.
@@ -59,7 +59,7 @@
 
 ---
 
-## 📜 SLA (Service Level Agreement) Cheats (memorize)
+## 📜 SLA Cheats (memorize)
 
 | Tier | Downtime / yr |
 |------|---------------|

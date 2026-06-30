@@ -176,7 +176,7 @@ When you see these, often **correct**:
 When you see these, often **wrong**:
 
 - ❌ "Lean means fewer workers"
-- ❌ "Kanban replaces MRP (Material Requirements Planning)"
+- ❌ "Kanban replaces MRP"
 - ❌ "Six Sigma is just statistics"
 - ❌ "Run faster than takt to build buffer"
 - ❌ "Higher Cpk is always better"

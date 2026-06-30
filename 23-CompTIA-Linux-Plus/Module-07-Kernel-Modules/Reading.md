@@ -69,7 +69,7 @@ The Linux kernel is a single executable file (`/boot/vmlinuz-<version>`) but mos
                 │    /boot/vmlinuz-<version>)          │
                 ├──────────────────────────────────────┤
                 │  Always-resident core: scheduler,    │
-                │  VM (Virtual Machine), syscalls, fundamental drivers   │
+                │  VM, syscalls, fundamental drivers   │
                 └──────────────────────────────────────┘
                                 ↑↓ load on demand
                 ┌──────────────────────────────────────┐
@@ -194,7 +194,7 @@ dmidecode -t system                       # manufacturer, model, serial
 dmidecode -t processor                    # CPU info from SMBIOS
 ```
 
-🎯 **Exam pattern:** *"How do I find the system's serial number from CLI (Command Line Interface)?"* → `dmidecode -s system-serial-number`.
+🎯 **Exam pattern:** *"How do I find the system's serial number from CLI?"* → `dmidecode -s system-serial-number`.
 
 ---
 
@@ -427,7 +427,7 @@ sudo pvremove /dev/sdb1 /dev/sdc1 /dev/sdd1
 For setting up the underlying partitions (the `/dev/sdb1`s that PVs are built on):
 
 ```bash
-fdisk /dev/sdb                            # interactive, MBR (and GPT (Generative Pre-trained Transformer) in recent versions)
+fdisk /dev/sdb                            # interactive, MBR (and GPT in recent versions)
 gdisk /dev/sdb                            # interactive, GPT-only
 parted /dev/sdb                           # interactive OR scriptable, GPT+MBR
 parted /dev/sdb mklabel gpt
@@ -555,7 +555,7 @@ This is a typical PBQ, given 4 blank disks, build a resilient LVM stack and a fu
 |---------|---------|
 | LVM | Logical Volume Manager |
 | PV / VG / LV | Physical Volume / Volume Group / Logical Volume |
-| PE (Private Equity) | Physical Extent (LVM allocation unit, default 4 MB) |
+| PE | Physical Extent (LVM allocation unit, default 4 MB) |
 | LE | Logical Extent (LV's view of PE) |
 | RAID | Redundant Array of Independent Disks |
 | mdadm | Multiple Disk Administration (Linux software RAID) |
@@ -570,7 +570,7 @@ This is a typical PBQ, given 4 blank disks, build a resilient LVM stack and a fu
 
 ## 📊 Case Study, The Heartbleed Initramfs Problem (Spring 2014)
 
-**Situation.** On 7 April 2014, the [Heartbleed CVE-2014-0160](https://heartbleed.com/) bug in OpenSSL was disclosed. Every Linux system running OpenSSL 1.0.1–1.0.1f needed the OpenSSL library patched, restarted, AND every long-running TLS (Transport Layer Security) process (web, mail, VPN (Virtual Private Network)) restarted to actually load the patched library. Sysadmins worldwide began emergency `apt-get upgrade && systemctl restart nginx postfix dovecot ...` runs.
+**Situation.** On 7 April 2014, the [Heartbleed CVE-2014-0160](https://heartbleed.com/) bug in OpenSSL was disclosed. Every Linux system running OpenSSL 1.0.1–1.0.1f needed the OpenSSL library patched, restarted, AND every long-running TLS process (web, mail, VPN) restarted to actually load the patched library. Sysadmins worldwide began emergency `apt-get upgrade && systemctl restart nginx postfix dovecot ...` runs.
 
 **Decision.** A subset of admins discovered an unexpected snag: their boot was breaking after the upgrade. The root cause was that their LUKS-encrypted root filesystem used a kernel module (`dm-crypt` + a specific cipher) that was provided by a package that depended on the *old* OpenSSL ABI. The upgrade pulled in a new OpenSSL, but the initramfs (which had been rebuilt at the moment of the original install months earlier) still referenced the old ABI. After reboot, the initramfs couldn't unlock the LUKS volume because libcrypto in the initramfs was inconsistent with the installed kernel modules.
 

@@ -1,10 +1,10 @@
 # Module 6: App Services & Containers 📦
 
-> **Why this module matters:** Not every workload needs a VM (Virtual Machine). Azure has three "managed compute" tracks: App Service (PaaS (Platform as a Service) web apps), Azure Container Instances (one-off containers), and AKS (managed Kubernetes). The AZ-104 exam tests when to pick which and how to configure plans, slots, scaling, and the basics of node pools.
+> **Why this module matters:** Not every workload needs a VM. Azure has three "managed compute" tracks: App Service (PaaS web apps), Azure Container Instances (one-off containers), and AKS (managed Kubernetes). The AZ-104 exam tests when to pick which and how to configure plans, slots, scaling, and the basics of node pools.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 5](../Module-05-Virtual-Machines/Reading.md): VM sizing and availability concepts, App Service plans, ACI, and AKS node pools all sit on VMs underneath.
-> - [Module 2](../Module-02-Entra-ID-RBAC (Role-Based Access Control)/Reading.md): managed identity, every modern App Service or AKS workload should authenticate to other Azure services via MI, not stored secrets.
+> - [Module 2](../Module-02-Entra-ID-RBAC/Reading.md): managed identity, every modern App Service or AKS workload should authenticate to other Azure services via MI, not stored secrets.
 > - Container fundamentals: a working mental model of Docker images, layers, and `docker run`. If "container," "image," and "registry" are new, watch the Microsoft Learn "Introduction to Docker containers" 30-minute path before this module.
 > - For the AKS half: the concept of a Kubernetes pod, deployment, and service. AZ-104 does not test YAML, but the case-study questions assume you know what a pod is.
 >
@@ -28,15 +28,15 @@ Most exam questions are "given X scenario, which compute service fits?" Memorize
 
 ## 🌐 Azure App Service
 
-A **fully managed PaaS** for hosting web apps, REST (Representational State Transfer) APIs, mobile back-ends, and Windows/Linux containers.
+A **fully managed PaaS** for hosting web apps, REST APIs, mobile back-ends, and Windows/Linux containers.
 
 | Concept | What it is |
 |---------|------------|
-| **App Service plan (ASP)** | The compute SKU (Stock Keeping Unit) you pay for, VMs are under the hood but invisible to you |
+| **App Service plan (ASP)** | The compute SKU you pay for, VMs are under the hood but invisible to you |
 | **App Service** | One web app (one URL like `https://app-x.azurewebsites.net`) running inside a plan |
 | **Deployment slot** | A side-by-side copy of an app (e.g. `staging`) you can swap into production |
 | **Custom domain** | `www.contoso.com` mapped to the app |
-| **SSL (Secure Sockets Layer)/TLS (Transport Layer Security) binding** | A managed cert or BYO cert attached to the custom domain |
+| **SSL/TLS binding** | A managed cert or BYO cert attached to the custom domain |
 | **Configuration** | App settings + connection strings (env vars at runtime) |
 | **WEBSITE_RUN_FROM_PACKAGE** | App setting that points to a zipped package URL |
 | **Easy Auth** | Built-in Entra ID / Google / Facebook sign-in at the platform layer |
@@ -48,7 +48,7 @@ A **fully managed PaaS** for hosting web apps, REST (Representational State Tran
 | **F1 (Free)** | Hobby | 60 CPU min/day · no custom domain |
 | **D1 (Shared)** | Light dev | Shared VMs · custom domain · no SSL |
 | **B1–B3 (Basic)** | Dev/test | Dedicated VM · manual scale · 3 instances max |
-| **S1–S3 (Simple Storage Service) (Standard)** | Small prod | Auto-scale · deployment slots (5) · daily backups |
+| **S1–S3 (Standard)** | Small prod | Auto-scale · deployment slots (5) · daily backups |
 | **P0v3–P3v3 (Premium v3)** | Prod | Auto-scale, slots (20), zone redundancy, faster CPUs |
 | **I1v2–I3v2 (Isolated v2)** | Regulated prod | Runs inside an **App Service Environment (ASE)** in your VNet |
 
@@ -56,7 +56,7 @@ A **fully managed PaaS** for hosting web apps, REST (Representational State Tran
 
 🔥 **VNet integration (outbound)** Standard or higher. **Inbound private endpoint** Premium v3 / Isolated.
 
-### Create an App Service via CLI (Command Line Interface)
+### Create an App Service via CLI
 
 ```bash
 # Plan first
@@ -173,7 +173,7 @@ Managed Kubernetes. Microsoft runs the **control plane** for free (you only pay 
 ```
 Control plane (managed)
       │
-   API (Application Programming Interface) server  ──────────────────────────────┐
+   API server  ──────────────────────────────┐
                                               ▼
              ┌──────────── Node Pool: system  ┐
              │   • CoreDNS, kube-proxy        │
@@ -203,7 +203,7 @@ Control plane (managed)
 | Option | Notes |
 |--------|-------|
 | **Standard Load Balancer + Service of type LoadBalancer** | Basic public exposure |
-| **Application Gateway Ingress Controller (AGIC)** | Layer-7 + WAF (Web Application Firewall) |
+| **Application Gateway Ingress Controller (AGIC)** | Layer-7 + WAF |
 | **Application Gateway for Containers** | Modern replacement for AGIC |
 | **NGINX Ingress** | Open-source, widely used |
 | **Istio service mesh** | Built-in option for advanced traffic management |
@@ -277,7 +277,7 @@ az aks get-credentials \
 2. ✅ Create the **production web app** on that plan.
 3. ✅ Create a **`staging`** deployment slot.
 4. ✅ Configure **slot-specific app settings** (mark "Slot setting" where appropriate).
-5. ✅ Set up **CI/CD (Continuous Integration/Continuous Deployment)** to deploy to `staging` (GitHub Actions / Azure DevOps).
+5. ✅ Set up **CI/CD** to deploy to `staging` (GitHub Actions / Azure DevOps).
 6. ✅ Run **smoke tests** against `https://app-x-staging.azurewebsites.net`.
 7. ✅ **Auto-swap** or manually `az webapp deployment slot swap` once tests pass.
 8. ✅ Watch for issues; if anything breaks, **swap back** to roll back instantly.
@@ -344,13 +344,13 @@ You now know:
 
 ## 📊 Case Study, Heineken's "Brewing a Better Connected Company" on Azure (2022–2024)
 
-**Situation.** Heineken N.V., the world's second-largest brewer (165+ breweries across 70 countries, ~85,000 employees), undertook the **"Brewing a Better Connected Company"** digital transformation in 2022. The challenge: hundreds of plant-floor applications (MES, OEE dashboards, beer-line PLC integration), a legacy monolithic e-commerce platform for B2B (Business-to-Business) partners, plus a global SAP estate. The architecture was a patchwork of VMs in three data centers across the Netherlands and Mexico, with each acquisition (Cruzcampo, Tiger Beer, Lagunitas, Beavertown) layering its own application stack. Time-to-deploy a new market pilot was 6–9 months; cloud was minimal.
+**Situation.** Heineken N.V., the world's second-largest brewer (165+ breweries across 70 countries, ~85,000 employees), undertook the **"Brewing a Better Connected Company"** digital transformation in 2022. The challenge: hundreds of plant-floor applications (MES, OEE dashboards, beer-line PLC integration), a legacy monolithic e-commerce platform for B2B partners, plus a global SAP estate. The architecture was a patchwork of VMs in three data centers across the Netherlands and Mexico, with each acquisition (Cruzcampo, Tiger Beer, Lagunitas, Beavertown) layering its own application stack. Time-to-deploy a new market pilot was 6–9 months; cloud was minimal.
 
 **Decision.** Heineken partnered with Microsoft (announced at Microsoft Ignite 2022; refreshed publicly in 2024) on a tri-modal Azure compute strategy that lines up exactly with this module's three managed-compute options:
 
 1. **Azure Kubernetes Service (AKS)** for the new microservice-based e-commerce platform replacing the monolith. Node pools spanned three AZs in `westeurope`; Azure CNI Overlay was the networking mode (chosen to conserve VNet IPs given the org's 165-site network topology). **Cluster autoscaler** scaled nodes between 6 and 60 based on pending-pod pressure; **Horizontal Pod Autoscaler (HPA)** scaled per-service pods on RPS metrics fed from App Insights.
 2. **Azure App Service Premium v3** for the customer-facing partner portals (B2B "MyHeineken" and consumer apps), with **deployment slots** for blue-green releases, **Easy Auth** for Entra ID and social IdP sign-in, and **VNet integration** to talk to the AKS APIs over private endpoints.
-3. **Azure Container Instances (ACI)** for bursty integration jobs, a single ACI spins up to ingest a partner EDI (Electronic Data Interchange) feed, processes it, and exits. ACI was chosen over AKS for these because the *concurrency model* is "one job, one container, sub-30-sec startup, no orchestration overhead."
+3. **Azure Container Instances (ACI)** for bursty integration jobs, a single ACI spins up to ingest a partner EDI feed, processes it, and exits. ACI was chosen over AKS for these because the *concurrency model* is "one job, one container, sub-30-sec startup, no orchestration overhead."
 
 The architecture mapped to public Microsoft customer references (*Heineken, Building a more connected, sustainable, agile business with Microsoft*, Microsoft customer stories, 2022; refreshed 2024) and to industry coverage (*Computing UK*, *Heineken modernises with Microsoft Azure*, 2023-06).
 
@@ -369,7 +369,7 @@ The architecture mapped to public Microsoft customer references (*Heineken, Buil
 When AZ-104 hands you a scenario, map it to one of those three. The exam *never* uses the language "Heineken's MES platform", but the patterns are identical to "a global brewer wants to deploy microservices in Western Europe with private network integration." That is the AKS answer.
 
 **Discussion (Socratic).**
-- **Q1.** Heineken chose Azure CNI **Overlay** mode for AKS rather than standard Azure CNI. Defend the choice on VNet-IP-conservation grounds, and identify the *one workload class* where Overlay's NAT (Network Address Translation) semantics force you back to standard CNI. (Hint: workloads that require their pod IP to be directly reachable from on-prem.)
+- **Q1.** Heineken chose Azure CNI **Overlay** mode for AKS rather than standard Azure CNI. Defend the choice on VNet-IP-conservation grounds, and identify the *one workload class* where Overlay's NAT semantics force you back to standard CNI. (Hint: workloads that require their pod IP to be directly reachable from on-prem.)
 - **Q2.** The team picked App Service Premium v3 over Premium v2 for new deployments. What does v3 buy you over v2 that justifies the price uplift? At what scale does App Service Isolated v2 (ASE) become the right move instead? Where does the line sit for a B2B portal with sensitive data?
 - **Q3.** Heineken uses ACI for EDI ingestion. A consultant suggests Azure Functions on a Consumption plan would be cheaper. Build the case for ACI and the case for Functions. What's the architectural fork, when is the container abstraction worth the cold-start cost difference?
 
@@ -378,7 +378,7 @@ When AZ-104 hands you a scenario, map it to one of those three. The exam *never*
 > **Where this leads.**
 > - Inside this course: Module 7 covers the VNet design AKS and App Service VNet integration sit on; Module 8 covers the Front Door + Private Link origin pattern Heineken's portals use; Module 10 covers Container Insights and Workspace-based App Insights.
 > - Cross-course: [`08-Azure-AI-Engineer`](../../../08-Azure-AI-Engineer/) modules deploy AI workloads on AKS using the same patterns; AZ-204 (Developer) goes deeper on App Service deployment slot mechanics.
-> - Practice: PE (Private Equity)-2 has 7 questions from this module; Final Mock revisits with case-study synthesis (App Service + private endpoint + WAF in one scenario).
+> - Practice: PE-2 has 7 questions from this module; Final Mock revisits with case-study synthesis (App Service + private endpoint + WAF in one scenario).
 
 ---
 

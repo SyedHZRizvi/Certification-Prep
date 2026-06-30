@@ -372,7 +372,7 @@ After choosing the mode, choose the carrier.
 | Lane coverage | Where they actually serve |
 | Capacity availability | Will they take the load? |
 | Equipment availability | Reefer, flatbed, etc. |
-| Technology / API (Application Programming Interface) | EDI (Electronic Data Interchange), real-time tracking |
+| Technology / API | EDI, real-time tracking |
 | Financial stability | Avoid carrier bankruptcy |
 | Compliance | DOT scores, hazmat, customs |
 | Sustainability | Carbon, EV fleet, SmartWay |
@@ -428,9 +428,9 @@ Modern shippers run a TMS.
 
 ---
 
-## 📊 Transportation KPIs (Key Performance Indicators)
+## 📊 Transportation KPIs
 
-| KPI (Key Performance Indicator) | Formula | Target |
+| KPI | Formula | Target |
 |-----|---------|--------|
 | On-Time Delivery (OTD) | On-time / total | >98% |
 | Cost per mile | Total cost / miles | Trended |
@@ -458,7 +458,7 @@ Modern shippers run a TMS.
 
 **Outcome.** The market effects through 2024:
 
-- **Asia → Northern Europe transit:** stretched from ~30 days to ~45 days. Shippers adjusted DRP (Distribution Requirements Planning) models (longer lead times → more safety stock → higher inventory holding cost).
+- **Asia → Northern Europe transit:** stretched from ~30 days to ~45 days. Shippers adjusted DRP models (longer lead times → more safety stock → higher inventory holding cost).
 - **Container freight rates spiked:** Shanghai Containerized Freight Index (SCFI) rose from ~$1,000/FEU (late 2023) to ~$3,500/FEU (March 2024), a ~250% increase. Then peaked ~$5,000/FEU mid-2024 before easing late 2024.
 - **Carrier profits surged:** Maersk's 2024 Q2 ocean revenue beat estimates by ~$1B. The freight super-cycle effectively returned in compressed form.
 - **Capacity absorption:** The longer route effectively *absorbed* the global container fleet capacity overhang that had built up post-pandemic, what was projected as a 2024 freight-rate crash never fully materialized.
@@ -567,7 +567,7 @@ You now know:
 
 3. **Yellow Freight bankruptcy (July 2023).** When Yellow collapsed, ~30,000 shippers were stranded. Many had been chasing the lowest LTL rate (Yellow undercut competition for years). Argue: *should* the supply chain industry have seen the collapse coming, and what does it teach about carrier-financial-stability screening?
 
-4. **TMS build vs buy.** A $400M distributor has been running rate-shopping in spreadsheets. A modern TMS (MercuryGate, Manhattan, Blue Yonder, Oracle OTM) costs $200K–$600K/yr SaaS (Software as a Service) plus implementation. The CFO (Chief Financial Officer) wants ROI (Return on Investment) proof. Frame the business case, what 3 metrics would you forecast to hit 18-month payback?
+4. **TMS build vs buy.** A $400M distributor has been running rate-shopping in spreadsheets. A modern TMS (MercuryGate, Manhattan, Blue Yonder, Oracle OTM) costs $200K–$600K/yr SaaS plus implementation. The CFO wants ROI proof. Frame the business case, what 3 metrics would you forecast to hit 18-month payback?
 
 5. **Intermodal vs all-truck on the same lane.** For LA→Chicago freight, intermodal is ~$2,200/40' container and 7 days; FTL is ~$4,000 and 4 days. When does each win, and how does the customer's *downstream* economics factor in?
 

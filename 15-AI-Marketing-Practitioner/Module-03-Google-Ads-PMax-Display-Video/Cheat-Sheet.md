@@ -63,9 +63,9 @@ PMax / NEW:     Audience = SIGNAL (hint; can serve outside)
 | Format | Length | Pricing | Pay when |
 |--------|--------|---------|----------|
 | **Skippable In-Stream** | 5s–3min | CPV | Viewer hits 30s OR full play |
-| **Non-Skippable** | 15s max | CPM (Cost Per Mille) | Impression |
+| **Non-Skippable** | 15s max | CPM | Impression |
 | **Shorts** | 6–60s, vertical | CPM | Impression |
-| **In-Feed (Discovery)** | Any | CPC (Cost Per Click) | User clicks to watch |
+| **In-Feed (Discovery)** | Any | CPC | User clicks to watch |
 
 ---
 
@@ -75,7 +75,7 @@ PMax / NEW:     Audience = SIGNAL (hint; can serve outside)
 0–3s:   HOOK (question / pattern interrupt / claim / demo / stat)
 3–10s:  DEMONSTRATE product solving problem
 10–25s: PROOF (testimonial / stat / review snippet)
-25–30s: CTA (Call to Action) + URL overlay + brand reveal
+25–30s: CTA + URL overlay + brand reveal
 ```
 
 🚨 **NO logo intros**, they kill retention.

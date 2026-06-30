@@ -11,7 +11,7 @@
 | **Founding paper of Transformer** | Vaswani et al. 2017, "Attention Is All You Need" |
 | **Authors** | 8 Google Brain researchers (Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin) |
 | **DeepMind acquired** | 2014 (UK lab) |
-| **Brain × DeepMind merger** | April 2023 → **Google DeepMind**, CEO (Chief Executive Officer) Demis Hassabis |
+| **Brain × DeepMind merger** | April 2023 → **Google DeepMind**, CEO Demis Hassabis |
 | **Gemini 1.0** | December 2023 (Nano, Pro, Ultra) |
 | **Gemini 1.5 Pro 1M context** | February 2024; 2M tokens by May 2024 |
 | **Gemini 2.5 Pro** | March 2025 (thinking mode, top-tier reasoning) |
@@ -68,9 +68,9 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 | On-device features (Pixel/Android) | Nano |
 | Classification / extraction / routing | Flash or Flash Lite |
 | High-volume background job | Flash |
-| General chat / RAG (Retrieval-Augmented Generation) / 1–3 tool agent | **Pro (default)** |
+| General chat / RAG / 1–3 tool agent | **Pro (default)** |
 | Hard reasoning / multi-file refactor / math | Pro w/ thinking mode, or Ultra |
-| Latency-sensitive UI (User Interface) (<300ms) | Flash Lite |
+| Latency-sensitive UI (<300ms) | Flash Lite |
 | Healthcare / regulated decisions | Ultra + grounding + human review |
 | Multi-modal (image + audio + video in one call) | Pro or Ultra |
 
@@ -102,7 +102,7 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 | Multi-modal native (video/audio) | Real-time voice | Agentic coding |
 | 1M–2M context required | Already on Azure | Structured extraction |
 | Grounding to Google Search | Custom GPTs / Assistants | Long-doc reasoning |
-| Already on GCP (Google Cloud Platform) / Workspace | Broadest tool ecosystem | Constitutional-AI safety story |
+| Already on GCP / Workspace | Broadest tool ecosystem | Constitutional-AI safety story |
 | On-device (Nano) | | Prompt-caching economics |
 | Cheapest at Flash tier | | |
 
@@ -115,7 +115,7 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 | Path | Strengths | Best for |
 |------|-----------|----------|
 | **Google AI Studio** (aistudio.google.com) | Free, instant, no GCP project needed | Prototyping, hobby projects, learning |
-| **Vertex AI** (cloud.google.com/vertex-ai) | IAM (Identity and Access Management), VPC (Virtual Private Cloud)-SC, CMEK, billing, regions, audit, Provisioned Throughput | Enterprise, regulated, scale |
+| **Vertex AI** (cloud.google.com/vertex-ai) | IAM, VPC-SC, CMEK, billing, regions, audit, Provisioned Throughput | Enterprise, regulated, scale |
 
 🚨 *AI Studio = consumer-grade. Vertex AI = enterprise-grade. NEVER confuse these on the exam.*
 
@@ -214,4 +214,4 @@ If you can answer all 5 in under 90 seconds, you own this module. ✅
 
 ---
 
-➡️ [Module 2: Google AI Studio & Gemini API (Application Programming Interface)](../Module-02-AI-Studio-Gemini-API/Reading.md)
+➡️ [Module 2: Google AI Studio & Gemini API](../Module-02-AI-Studio-Gemini-API/Reading.md)

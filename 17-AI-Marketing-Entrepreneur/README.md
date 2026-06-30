@@ -7,12 +7,12 @@ title: AI Digital Marketing Entrepreneur Track
 
 **📣 AI Marketing** › Course 4 of 5, Entrepreneur (Cert Hub original)
 
-> **Goal:** Launch your own AI-powered marketing agency or freelance practice, from positioning to first client to $100K–$500K ARR (Annual Recurring Revenue).
+> **Goal:** Launch your own AI-powered marketing agency or freelance practice, from positioning to first client to $100K–$500K ARR.
 > **Duration:** 6 weeks part-time (or compressed to 3 if you're already a Strategist-level operator)
 > **Cost:** Free (this curriculum) + ~$200–$500/mo operating stack, verify on each vendor's site.
 > **Difficulty:** Expert · Strategist-level experience assumed
 
-> **Income & financial disclaimer:** All revenue ranges, income figures, ARR projections, and timeline estimates in this course are illustrative examples drawn from publicly shared community data (Hampton, Latka, Indie Hackers surveys, and individual founder disclosures). They are not guarantees, predictions, or typical outcomes. Individual results depend on prior experience, market conditions, effort, local regulation, and many other factors outside the scope of this curriculum. Nothing in this course constitutes financial, legal, investment, or tax advice. Consult a licensed attorney and CPA (Cost Per Acquisition) in your jurisdiction before making business, tax, or financial decisions.
+> **Income & financial disclaimer:** All revenue ranges, income figures, ARR projections, and timeline estimates in this course are illustrative examples drawn from publicly shared community data (Hampton, Latka, Indie Hackers surveys, and individual founder disclosures). They are not guarantees, predictions, or typical outcomes. Individual results depend on prior experience, market conditions, effort, local regulation, and many other factors outside the scope of this curriculum. Nothing in this course constitutes financial, legal, investment, or tax advice. Consult a licensed attorney and CPA in your jurisdiction before making business, tax, or financial decisions.
 
 ---
 
@@ -26,9 +26,9 @@ AI Digital Marketing Entrepreneur is the credential for the marketer who has dec
 
 - **Solo AI Marketing Consultant** ($100K–$200K profit Year 1), fractional engagements with 3–6 clients
 - **Boutique AI Marketing Agency Owner** ($200K–$500K profit Year 1–2), 1–3 contractors, productized services
-- **Fractional CMO (Chief Marketing Officer) / Head of Growth** ($150K–$300K Year 1), typical positioning for ex-VP marketers
+- **Fractional CMO / Head of Growth** ($150K–$300K Year 1), typical positioning for ex-VP marketers
 - **Specialized Productized Service Operator** ($100K–$400K profit), single offer, ICP-tight, AI-leveraged delivery
-- **Acquired Agency Owner (exit path)**, agencies in the $1M–$3M EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) range exit at 3–6x; Year 5+ scenarios
+- **Acquired Agency Owner (exit path)**, agencies in the $1M–$3M EBITDA range exit at 3–6x; Year 5+ scenarios
 
 This is course **4 of 5** in the ladder: **Foundations (14) → Practitioner (15) → Strategist (16) → Entrepreneur (this course) → Capstone Portfolio (18)**. While the corporate ladder caps at roughly $250K–$300K total comp for senior in-house marketing leaders, the entrepreneurial path can compound past that within 24–36 months for the right operator.
 
@@ -37,9 +37,9 @@ This is course **4 of 5** in the ladder: **Foundations (14) → Practitioner (15
 - **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
 - **Story-driven lessons (not flashcard punishment)**, every module includes the launch story of a real boutique AI marketing operator
 - **Original frameworks only**, every template, contract clause, pricing model, and one-page proposal is original
-- **A real Capstone**, 12-week scenario launching your own AI marketing agency with 7 deliverables (positioning memo, productized service spec, client-acquisition pipeline, contracts, tech-stack architecture, first contractor JD, 12-month P&L (Profit and Loss) projection)
+- **A real Capstone**, 12-week scenario launching your own AI marketing agency with 7 deliverables (positioning memo, productized service spec, client-acquisition pipeline, contracts, tech-stack architecture, first contractor JD, 12-month P&L projection)
 - **One author, one voice**, coherent vocabulary across all 8 modules
-- **Updated for the 2026 AI-leveraged services economy**, Claude / GPT (Generative Pre-trained Transformer) / Veo / Sora in delivery workflows, productization at AI-economics margins, fractional + retainer pricing patterns
+- **Updated for the 2026 AI-leveraged services economy**, Claude / GPT / Veo / Sora in delivery workflows, productization at AI-economics margins, fractional + retainer pricing patterns
 
 ### 🚀 Ready to start?
 
@@ -117,7 +117,7 @@ MONTH 1   →  Complete this curriculum, lock your wedge, build sample deliverab
 MONTH 2   →  Build site + outbound stack + ICP list + first cold sends
 MONTH 3   →  First 5 discovery calls; first paying client
 MONTH 4   →  3 clients live; first upsell to retainer
-MONTH 5   →  $20K MRR (Monthly Recurring Revenue); first hire decision (probably a Filipino VA)
+MONTH 5   →  $20K MRR; first hire decision (probably a Filipino VA)
 MONTH 6   →  $30–50K MRR; sustainable cadence; first testimonial published
 ```
 
@@ -129,7 +129,7 @@ MONTH 6   →  $30–50K MRR; sustainable cadence; first testimonial published
 
 ### Q: Do I need to have completed Foundations + Practitioner + Strategist?
 
-Not strictly, but you should have **equivalent experience**. This course assumes you know how to actually do marketing work. If you've been an in-house marketer for 3+ years and feel solid on Google Ads, content, SEO (Search Engine Optimization), and analytics, you're ready. If you're newer, complete the earlier courses first.
+Not strictly, but you should have **equivalent experience**. This course assumes you know how to actually do marketing work. If you've been an in-house marketer for 3+ years and feel solid on Google Ads, content, SEO, and analytics, you're ready. If you're newer, complete the earlier courses first.
 
 ### Q: How much money do I need to start?
 
@@ -176,7 +176,7 @@ The ranges are drawn from public sources: Hampton + Latka + Tropical MBA surveys
 
 ## 🎓 No Direct Industry Certification, Why?
 
-Unlike PMP or AWS (Amazon Web Services), there is no industry-recognized "AI marketing entrepreneur" certification. That's because:
+Unlike PMP or AWS, there is no industry-recognized "AI marketing entrepreneur" certification. That's because:
 
 1. The field is too new (most "AI agency" patterns emerged 2023–2025)
 2. Real proof is revenue, not credentials
@@ -186,7 +186,7 @@ Instead, the closest credentials you should consider:
 
 - **Indie Hackers** (free community + showcase)
 - **Hampton** ($9K/yr founder community, for $1M+ founders)
-- **Pavilion** ($1.8K–$5K/yr, for B2B (Business-to-Business) operators)
+- **Pavilion** ($1.8K–$5K/yr, for B2B operators)
 - **MicroConf Connect** (free + paid tiers, bootstrappers)
 - **Founders Club** (varies)
 - **Tropical MBA / Dynamite Circle** ($1.8K/yr, lifestyle agencies)
@@ -199,7 +199,7 @@ Instead, the closest credentials you should consider:
 ## 🚦 Recommended Path
 
 ```
-Week 1:   Modules 1 & 2 → Wedge locked + first SKU (Stock Keeping Unit) designed
+Week 1:   Modules 1 & 2 → Wedge locked + first SKU designed
 Week 2:   Modules 3 & 4 → Outbound stack live + first sends + proposal template
 Week 3:   Modules 5 & 6 → Tools optimized + hiring playbook drafted
 Week 4:   Modules 7 & 8 → Financial system set up + capstone playbook started

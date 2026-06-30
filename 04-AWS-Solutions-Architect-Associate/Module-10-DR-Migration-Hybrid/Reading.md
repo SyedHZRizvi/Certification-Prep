@@ -5,9 +5,9 @@
 > **Prerequisites for this module.**
 > - All prior modules, DR is the culmination
 > - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md), Reliability pillar
-> - [Module 6](../Module-06-Databases/Reading.md), Aurora Global, DynamoDB Global Tables, RDS (Relational Database Service) cross-region
-> - [Module 8](../Module-08-Caching-CDN (Content Delivery Network)-Edge/Reading.md), Route 53 routing policies for failover
-> - Conceptual familiarity with **RPO (Recovery Point Objective) / RTO (Recovery Time Objective) / MTTR**, covered in any business continuity textbook; the ISO 22301 standard is the formal reference
+> - [Module 6](../Module-06-Databases/Reading.md), Aurora Global, DynamoDB Global Tables, RDS cross-region
+> - [Module 8](../Module-08-Caching-CDN-Edge/Reading.md), Route 53 routing policies for failover
+> - Conceptual familiarity with **RPO / RTO / MTTR**, covered in any business continuity textbook; the ISO 22301 standard is the formal reference
 > - Understanding of homogeneous vs heterogeneous database migration (you'll see DMS + SCT pair)
 
 ---
@@ -30,7 +30,7 @@ Ordered cheapest → most expensive (and worst RPO/RTO → best):
 
 | Strategy | RPO | RTO | Cost | Description |
 |----------|-----|-----|------|-------------|
-| **Backup & Restore** | Hours | Hours | $ | Just back up to S3 (Simple Storage Service)/Glacier; rebuild infra from IaC (Infrastructure as Code) on disaster |
+| **Backup & Restore** | Hours | Hours | $ | Just back up to S3/Glacier; rebuild infra from IaC on disaster |
 | **Pilot Light** | Minutes | 10s of minutes | $$ | Core data already replicated; minimal compute on standby (e.g., DB running, app servers off) |
 | **Warm Standby** | Seconds–minutes | Minutes | $$$ | Scaled-down full stack always running; scale up on failover |
 | **Multi-Site Active-Active** | Near zero | Near zero | $$$$ | Both regions serving traffic; failover is just removing one from rotation |
@@ -56,7 +56,7 @@ Ordered cheapest → most expensive (and worst RPO/RTO → best):
 
 ## 🔁 AWS Backup
 
-Centralized backup service that supports EBS, EC2 (Elastic Compute Cloud) AMI, RDS, Aurora, DynamoDB, EFS, FSx, Storage Gateway, S3 (preview-graduating), and more.
+Centralized backup service that supports EBS, EC2 AMI, RDS, Aurora, DynamoDB, EFS, FSx, Storage Gateway, S3 (preview-graduating), and more.
 
 - **Backup plans** (frequency, retention, lifecycle to cold storage)
 - **Backup vaults** with vault lock (WORM for backups)
@@ -121,7 +121,7 @@ Supports homogeneous (Oracle→Oracle) and heterogeneous (Oracle→Aurora-PG) mi
 
 ## 💻 AWS Application Migration Service (MGN)
 
-The successor to "Server Migration Service / CloudEndure Migration." Replicates source servers (physical, VM (Virtual Machine), or cloud) block-by-block into AWS. Lift-and-shift entire VMs to EC2 with minimal downtime.
+The successor to "Server Migration Service / CloudEndure Migration." Replicates source servers (physical, VM, or cloud) block-by-block into AWS. Lift-and-shift entire VMs to EC2 with minimal downtime.
 
 🎯 **Exam pattern:** "Lift-and-shift hundreds of VMs from VMware to EC2" → **MGN (Application Migration Service)**.
 
@@ -131,9 +131,9 @@ The successor to "Server Migration Service / CloudEndure Migration." Replicates 
 |---------|------|
 | **AWS Migration Hub** | Dashboard tracking all migrations |
 | **AWS Application Discovery Service** | Inventories on-prem servers + dependencies |
-| **AWS App2Container** | Containerize Java/.NET apps to ECS (Elastic Container Service)/EKS (Elastic Kubernetes Service) |
+| **AWS App2Container** | Containerize Java/.NET apps to ECS/EKS |
 | **AWS Mainframe Modernization** | Migrate mainframe apps |
-| **AWS Transfer Family** | Managed SFTP/FTPS/FTP (File Transfer Protocol) into S3/EFS |
+| **AWS Transfer Family** | Managed SFTP/FTPS/FTP into S3/EFS |
 
 ---
 
@@ -142,7 +142,7 @@ The successor to "Server Migration Service / CloudEndure Migration." Replicates 
 | Pattern | Use |
 |---------|-----|
 | **Direct Connect** | Private fiber to AWS (1/10/100 Gbps) |
-| **Site-to-Site VPN (Virtual Private Network)** | IPSec tunnel over internet (quick to set up, backup for DX) |
+| **Site-to-Site VPN** | IPSec tunnel over internet (quick to set up, backup for DX) |
 | **AWS Outposts** | AWS-managed rack in your DC; consume AWS services locally |
 | **AWS Local Zones / Wavelength** | Compute in metro / 5G edge close to users |
 | **Storage Gateway** | Local file/iSCSI/tape backed by AWS |
@@ -270,7 +270,7 @@ You now know:
 
 - Multi-region active-active topology
 - Hardware-isolated backup vaults (AWS would later commercialize this with Backup vault lock and cross-account vault copy)
-- WAF (Web Application Firewall), intrusion detection, and behavioral anomaly monitoring (equivalents of WAF + GuardDuty + Inspector + Macie)
+- WAF, intrusion detection, and behavioral anomaly monitoring (equivalents of WAF + GuardDuty + Inspector + Macie)
 - Per-tier network segmentation (the modern AWS equivalent: separate VPCs / accounts per environment, SCPs to enforce)
 - Mandatory quarterly DR Game Days
 
@@ -278,7 +278,7 @@ You now know:
 
 - "Records must be **immutable** for 7 years, no one (including root) can delete" → **S3 Object Lock in Compliance mode**
 - "Backups must survive a compromise of the source account" → **AWS Backup with cross-account vault copy**
-- "Detect unusual API (Application Programming Interface) activity automatically" → **GuardDuty**
+- "Detect unusual API activity automatically" → **GuardDuty**
 - "Encrypt backups at rest with a separate KMS key" → **AWS Backup with customer-managed KMS keys**
 - "Continuous compliance check that backups exist" → **AWS Config rules**
 
@@ -304,7 +304,7 @@ When the SAA exam asks "company suffered ransomware that encrypted production da
 2. **DMS + SCT for heterogeneous migration.** SCT converts 70–90% of schemas automatically; the rest is manual. At what schema complexity does the manual conversion overhead make DMS+SCT a *worse* answer than rewriting the app?
 3. **Snowball Edge vs DataSync over 10 Gbps Direct Connect.** Both can move 100 TB. DX is faster *once provisioned* (weeks); Snowball is offline (days end-to-end). Build the decision tree.
 4. **AWS Outposts vs full repatriation.** Outposts is "AWS in your data center." If you'd repatriate anyway, why Outposts vs. just running your own infrastructure? Where does the AWS API consistency pay for itself?
-5. **Multi-Site active-active for SaaS (Software as a Service), is it worth it?** Most SaaS apps run active-passive. Active-active triples the infrastructure cost (and operational complexity). What kind of business / SLA (Service Level Agreement) / customer commitment justifies it?
+5. **Multi-Site active-active for SaaS, is it worth it?** Most SaaS apps run active-passive. Active-active triples the infrastructure cost (and operational complexity). What kind of business / SLA / customer commitment justifies it?
 
 ---
 
@@ -342,7 +342,7 @@ When the SAA exam asks "company suffered ransomware that encrypted production da
 **Industry / incident references**
 - 📄 **U.S. House of Representatives hearing (June 2011).** *"The Threat of Data Theft to American Consumers"*, formal Congressional testimony on the Sony PSN breach.
 - 📰 **Krebs on Security archive**, multi-part deep-dive on Sony PSN and subsequent industry response.
-- 📰 **Werner Vogels *"Recovery Time and Recovery Point Objectives: Plan, Don't React"*** AWS CTO (Chief Technology Officer) blog post that frames the 4-tier DR ladder.
+- 📰 **Werner Vogels *"Recovery Time and Recovery Point Objectives: Plan, Don't React"*** AWS CTO blog post that frames the 4-tier DR ladder.
 
 **Books**
 - 📖 **Kim, Behr, Spafford (2013).** *The Phoenix Project.* IT Revolution Press. Novelized but pedagogically rigorous; chapter 35 on DR is required reading.

@@ -268,7 +268,7 @@ Both productions demonstrate that After Effects is not just a "motion graphics t
 | TV animation (mid-budget) | Primary compositing | Character + BG assembly, effects, grade |
 | Feature animation | Secondary (Nuke preferred) | Temp comps, marketing material |
 | Commercial / YouTube | Primary tool | Full pipeline from rig to delivery |
-| Game cinematics | Secondary | 2D cutscenes, UI (User Interface) animation |
+| Game cinematics | Secondary | 2D cutscenes, UI animation |
 | Motion graphics agencies | Primary | Full animation + compositing in AE |
 
 AE proficiency is the single most-requested skill in 2D animation job postings outside of pure hand-drawn studios.

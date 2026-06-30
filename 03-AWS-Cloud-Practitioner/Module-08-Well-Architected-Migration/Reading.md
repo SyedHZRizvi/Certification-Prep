@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Cloud Fundamentals](../Module-01-Cloud-Fundamentals/Reading.md), the 6 benefits of cloud
-> - [Core Compute](../Module-02-Core-Compute/Reading.md), [Storage](../Module-03-Core-Storage/Reading.md), [Networking](../Module-04-Networking-CDN (Content Delivery Network)/Reading.md), [Databases](../Module-05-Databases/Reading.md), every Well-Architected pillar maps to services from these modules
+> - [Core Compute](../Module-02-Core-Compute/Reading.md), [Storage](../Module-03-Core-Storage/Reading.md), [Networking](../Module-04-Networking-CDN/Reading.md), [Databases](../Module-05-Databases/Reading.md), every Well-Architected pillar maps to services from these modules
 > - [Security & Identity](../Module-06-Security-Identity-Compliance/Reading.md), the entirety of the Security pillar
 > - [Management & Pricing](../Module-07-Management-Monitoring-Pricing/Reading.md), Cost Optimization pillar levers
 >
@@ -19,7 +19,7 @@ Now that Maria's pizza empire spans 50 cities, she sits down with an AWS archite
 1. **Operational Excellence:** Can you deploy a menu change in 1 hour, or does it take 3 weeks?
 2. **Security:** Can a hacker dump your customer database? Is it encrypted?
 3. **Reliability:** When AZ `us-east-1a` goes down, do you keep serving pizza?
-4. **Performance Efficiency:** Are you using the right tools for each workload (RDS (Relational Database Service) vs DynamoDB vs Redshift)?
+4. **Performance Efficiency:** Are you using the right tools for each workload (RDS vs DynamoDB vs Redshift)?
 5. **Cost Optimization:** Are you running idle resources? Are you on On-Demand when RIs would save 60%?
 6. **Sustainability:** Are you minimizing the carbon footprint of your AWS usage?
 
@@ -50,7 +50,7 @@ The framework draws conceptually from earlier work: NIST SP 800-53 (security con
 
 Design principles:
 
-- Perform operations as code (IaC (Infrastructure as Code), automate)
+- Perform operations as code (IaC, automate)
 - Make frequent, small, reversible changes
 - Refine operations procedures frequently
 - Anticipate failure (chaos engineering)
@@ -62,7 +62,7 @@ Services: CloudFormation, Systems Manager, CloudWatch, CodePipeline
 
 Design principles:
 
-- Implement a strong identity foundation (least privilege, MFA (Multi-Factor Authentication))
+- Implement a strong identity foundation (least privilege, MFA)
 - Enable traceability (CloudTrail, Config)
 - Apply security at all layers (defense in depth)
 - Automate security best practices
@@ -70,7 +70,7 @@ Design principles:
 - Keep people away from data (no direct access; programmatic only)
 - Prepare for security events
 
-Services: IAM (Identity and Access Management), KMS, GuardDuty, Macie, WAF (Web Application Firewall), Shield
+Services: IAM, KMS, GuardDuty, Macie, WAF, Shield
 
 ### Pillar 3: Reliability
 
@@ -82,7 +82,7 @@ Design principles:
 - Stop guessing capacity (use Auto Scaling)
 - Manage change in automation
 
-Services: Auto Scaling, Multi-AZ RDS, S3 (Simple Storage Service) CRR, Route 53 failover, Backup
+Services: Auto Scaling, Multi-AZ RDS, S3 CRR, Route 53 failover, Backup
 
 ### Pillar 4: Performance Efficiency
 
@@ -137,9 +137,9 @@ The migration-strategies taxonomy comes from Gartner's 5 Rs (Stephen Orban then 
 
 | # | R | Description | Effort |
 |---|---|-------------|--------|
-| 1 | **Rehost** | "Lift and shift", pick up VM (Virtual Machine), drop on EC2 (Elastic Compute Cloud) | Low |
+| 1 | **Rehost** | "Lift and shift", pick up VM, drop on EC2 | Low |
 | 2 | **Replatform** | "Lift, tinker, and shift", minor optimizations (e.g., move DB to RDS) | Low–Med |
-| 3 | **Repurchase** | Switch to a different product (e.g., on-prem CRM (Customer Relationship Management) → Salesforce) | Med |
+| 3 | **Repurchase** | Switch to a different product (e.g., on-prem CRM → Salesforce) | Med |
 | 4 | **Refactor / Re-architect** | Rewrite using cloud-native services | High |
 | 5 | **Retire** | Decommission, you don't need this app any more | Trivial |
 | 6 | **Retain** | Keep on-prem (for now); revisit later | Trivial |
@@ -163,7 +163,7 @@ The migration-strategies taxonomy comes from Gartner's 5 Rs (Stephen Orban then 
 | **AWS Application Migration Service (MGN)** | Lift-and-shift servers (replaces older SMS / CloudEndure) |
 | **AWS Database Migration Service (DMS)** | Migrate / replicate databases (+ SCT for cross-engine) |
 | **AWS DataSync** | Bulk data transfer (NFS/SMB/S3/EFS) over internet/DX, automated |
-| **AWS Transfer Family** | Managed SFTP / FTPS / FTP (File Transfer Protocol) → S3 or EFS |
+| **AWS Transfer Family** | Managed SFTP / FTPS / FTP → S3 or EFS |
 | **AWS Snow Family** | Petabyte physical transfer (Module 3) |
 | **AWS Migration Hub** | Central console to track migration progress across services |
 | **Application Discovery Service** | Discover on-prem apps and dependencies (agent or agentless) |
@@ -318,7 +318,7 @@ The customers who fared best in the outage had three things in common (documente
 4. The Reliability pillar's *"automatically recover from failure"* principle isn't optional for tier-1 workloads.
 
 **Discussion (Socratic).**
-- Q1: A startup CFO (Chief Financial Officer) objects: "Multi-Region doubles our AWS bill, we serve 200K users. The US-EAST-1 outage was 7 hours. We can afford 7 hours of downtime once every 18 months." Walk through the actual SLA (Service Level Agreement) math. At what user-count, revenue, or business-criticality does multi-Region become defensible?
+- Q1: A startup CFO objects: "Multi-Region doubles our AWS bill, we serve 200K users. The US-EAST-1 outage was 7 hours. We can afford 7 hours of downtime once every 18 months." Walk through the actual SLA math. At what user-count, revenue, or business-criticality does multi-Region become defensible?
 - Q2: Several services that *thought* they were multi-Region in December 2021 still went down because they depended on a us-east-1 control-plane service (specifically IAM and S3 global endpoints). Walk through how you would *audit* an application to confirm true Region independence. What signal would tell you "you only think you're multi-Region"?
 - Q3: Reed Hastings (Netflix) once said "the cloud is the only way to fail well." Defend or refute that, citing the US-EAST-1 outage. Is multi-cloud the answer instead of multi-Region?
 

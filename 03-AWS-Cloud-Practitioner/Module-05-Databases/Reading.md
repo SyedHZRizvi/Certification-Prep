@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Cloud Fundamentals](../Module-01-Cloud-Fundamentals/Reading.md), Multi-AZ vs cross-Region patterns
 > - [Core Storage](../Module-03-Core-Storage/Reading.md), block vs file vs object (databases sit on top of all three)
-> - Basic SQL (Structured Query Language) literacy: rows, columns, indexes, joins
+> - Basic SQL literacy: rows, columns, indexes, joins
 > - Conceptual familiarity with the difference between OLTP (transactional, write-heavy) and OLAP (analytical, read-heavy) workloads
 >
 > If you've used a relational DB at any point (MySQL, PostgreSQL, SQLite) you have the baseline. If "ACID," "schema," and "key-value" all feel familiar, you're well-prepared.
@@ -17,7 +17,7 @@
 Maria's pizza empire generates 4 very different kinds of data:
 
 1. **The order log**, relational: customers, orders, items, payments. ACID required (you can't half-charge a credit card).
-   → That's **RDS (Relational Database Service)** (or **Aurora**).
+   → That's **RDS** (or **Aurora**).
 2. **The active cart of every customer browsing the menu right now**, needs millisecond reads, billions of small items, schema changes weekly.
    → That's **DynamoDB**.
 3. **Sub-millisecond menu lookups** (avoid hitting the DB every time the home page loads).
@@ -36,7 +36,7 @@ Each tool has a job. CLF-C02 expects you to *match scenarios to services*. Let's
    (SQL, ACID)          (Schema-flex)        (Sub-ms cache)         (OLAP scans)
    ───────────          ──────────────        ──────────────         ──────────────
    RDS, Aurora          DynamoDB, DocumentDB  ElastiCache            Redshift
-                        Neptune (graph)                              (also: Athena over S3 (Simple Storage Service))
+                        Neptune (graph)                              (also: Athena over S3)
                         Keyspaces (Cassandra)
                         Timestream (time-series)
                         QLDB (ledger)
@@ -154,7 +154,7 @@ Use cases: session store, leaderboards, page caching, real-time analytics counte
 
 ## 📄 Amazon DocumentDB, MongoDB-Compatible
 
-**DocumentDB = managed JSON document database, API (Application Programming Interface)-compatible with MongoDB.**
+**DocumentDB = managed JSON document database, API-compatible with MongoDB.**
 
 Use when:
 
@@ -277,7 +277,7 @@ Supports **Gremlin**, **SPARQL**, **openCypher** query languages.
 
 ## 🏛️ Case Study, Airbnb Migrates from Sharded MySQL to Amazon Aurora (2017–2020)
 
-**Situation.** Airbnb grew from "two air mattresses in 2008" to ~7 million listings and ~150 million users by 2018. The booking-engine database (`bookings`) had been a single MySQL on EC2 (Elastic Compute Cloud) instance for years; by 2017 it was a manually-sharded MySQL fleet maintained by a small SRE team. The DBAs were oncall every weekend for failover incidents. The peak Friday-night booking surge pushed the primaries to 90%+ utilization. Schema migrations took weeks of careful coordination.
+**Situation.** Airbnb grew from "two air mattresses in 2008" to ~7 million listings and ~150 million users by 2018. The booking-engine database (`bookings`) had been a single MySQL on EC2 instance for years; by 2017 it was a manually-sharded MySQL fleet maintained by a small SRE team. The DBAs were oncall every weekend for failover incidents. The peak Friday-night booking surge pushed the primaries to 90%+ utilization. Schema migrations took weeks of careful coordination.
 
 **Decision.** Between 2017 and 2020, Airbnb's data infrastructure team migrated the largest OLTP workloads to **Amazon Aurora MySQL** in phases:
 
@@ -321,7 +321,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 6 (Security) covers RDS / Aurora / DynamoDB encryption at rest, IAM (Identity and Access Management) database authentication, and Secrets Manager rotation for DB credentials. Module 8 (Well-Architected) revisits database choices under the Reliability and Performance Efficiency pillars.
+> - Inside this course: Module 6 (Security) covers RDS / Aurora / DynamoDB encryption at rest, IAM database authentication, and Secrets Manager rotation for DB credentials. Module 8 (Well-Architected) revisits database choices under the Reliability and Performance Efficiency pillars.
 > - Cross-course: `04-AWS-Solutions-Architect-Associate` Module 5 deepens with Aurora Serverless v2, Aurora Global Database, DynamoDB Streams, and the consistent-vs-eventually-consistent read trade-offs.
 > - Practice: Practice Exam 2 has 10 database questions (Qs 13–21, 46). Final Mock Exam has 9 database questions in the Cloud Tech & Services domain.
 

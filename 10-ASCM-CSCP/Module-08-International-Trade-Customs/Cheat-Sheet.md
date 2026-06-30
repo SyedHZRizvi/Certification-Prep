@@ -82,7 +82,7 @@ First 6 digits = global; last 2–4 = country-specific tariff line.
 - Insurance certificate
 - Letter of credit
 - ATA Carnet (temp admission)
-- C-TPAT / AEO (Answer Engine Optimization) (trusted trader)
+- C-TPAT / AEO (trusted trader)
 
 ---
 

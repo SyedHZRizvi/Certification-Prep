@@ -11,7 +11,7 @@
     └── ML  (learn from data)
         └── Deep Learning  (multi-layer neural nets)
             └── Generative AI  (creates new content)
-                └── LLM (Large Language Model)  (text-based GenAI)
+                └── LLM  (text-based GenAI)
                     └── Foundation Model  (a pretrained, adaptable LLM)
 ```
 
@@ -33,7 +33,7 @@
 
 | Family | Maker | Best For |
 |---|---|---|
-| **GPT (Generative Pre-trained Transformer)** | OpenAI | General use; reasoning; ecosystem |
+| **GPT** | OpenAI | General use; reasoning; ecosystem |
 | **Claude** | Anthropic | Long-form writing; large context; safety |
 | **Gemini** | Google | Multimodal; Google Workspace integration |
 | **Llama** | Meta | Open-source; self-hosting |
@@ -41,7 +41,7 @@
 
 ---
 
-## 🍰 Prompting vs RAG (Retrieval-Augmented Generation) vs Fine-Tuning
+## 🍰 Prompting vs RAG vs Fine-Tuning
 
 | Approach | When to use |
 |---|---|

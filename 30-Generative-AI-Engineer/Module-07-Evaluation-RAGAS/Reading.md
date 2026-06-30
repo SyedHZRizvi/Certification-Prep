@@ -50,7 +50,7 @@ These tell you about *the model*. They're useful for model selection ("Claude vs
 
 ### Layer 3: Production / online evaluation
 
-*Are my real users happy?* Implicit signals (thumbs up/down, regenerate clicks, response time before next message), explicit signals (NPS (Net Promoter Score), surveys), and offline replays of production traffic.
+*Are my real users happy?* Implicit signals (thumbs up/down, regenerate clicks, response time before next message), explicit signals (NPS, surveys), and offline replays of production traffic.
 
 🎯 **You need all three.** Layer 1 picks the model; Layer 2 catches regressions in CI; Layer 3 closes the feedback loop with reality.
 
@@ -199,7 +199,7 @@ Best practice: **synthetic test set for breadth, real-user-derived for depth**.
 | **DeepEval** | General-purpose; pytest-style integration |
 | **OpenAI Evals** | Capability + behavioral evals; YAML or Python |
 | **Anthropic Evals** | Anthropic's open-source eval harness |
-| **Promptfoo** | Config-driven prompt A/B testing; CLI (Command Line Interface) + UI (User Interface) |
+| **Promptfoo** | Config-driven prompt A/B testing; CLI + UI |
 | **Braintrust** | Hosted experiments + traces |
 | **TruLens** | Open-source RAG eval + tracing |
 | **LangSmith** | LangChain-native eval + dataset management |
@@ -342,7 +342,7 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 - 📄 Es et al. (2023). *RAGAS: Automated Evaluation of RAG.*
-- 📄 Liu et al. (2023). *G-Eval: NLG (Natural Language Generation) Evaluation Using GPT-4 with Better Human Alignment.*
+- 📄 Liu et al. (2023). *G-Eval: NLG Evaluation Using GPT-4 with Better Human Alignment.*
 - 📄 Zheng et al. (2023). *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena.*
 - 📄 Bai et al. (2022). *Constitutional AI: Harmlessness from AI Feedback.*
 - 📖 [RAGAS docs](https://docs.ragas.io/)

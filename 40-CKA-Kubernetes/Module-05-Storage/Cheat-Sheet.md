@@ -11,7 +11,7 @@
 | `emptyDir` (Memory) | Pod | No | No | Fast scratch, RAM cache |
 | `hostPath` | Node | Yes (if path persists) | No | Node-level logs, DaemonSet |
 | `configMap` | Cluster | Yes (read-only) | Yes | Config files mounted as files |
-| `secret` | Cluster | Yes (read-only) | Yes | Credentials, TLS (Transport Layer Security) certs |
+| `secret` | Cluster | Yes (read-only) | Yes | Credentials, TLS certs |
 | `persistentVolumeClaim` | Cluster/NS | Yes | Depends on backend | Stateful workloads |
 | `projected` | Cluster | Yes (read-only) | Yes | Combine CM + Secret + SA token |
 | `nfs` | Cluster | Yes | Yes (RWX) | Shared storage across Pods |
@@ -22,7 +22,7 @@
 
 | Mode | Abbreviation | Multiple Nodes? | Multiple Pods? | Typical backend |
 |---|---|---|---|---|
-| `ReadWriteOnce` | RWO | No (one Node) | Multiple on same Node | AWS (Amazon Web Services) EBS, GCE PD, Azure Disk |
+| `ReadWriteOnce` | RWO | No (one Node) | Multiple on same Node | AWS EBS, GCE PD, Azure Disk |
 | `ReadOnlyMany` | ROX | Yes | Yes (read only) | NFS, CephFS |
 | `ReadWriteMany` | RWX | Yes | Yes | NFS, CephFS, Azure File |
 | `ReadWriteOncePod` | RWOP | No | One Pod only | CSI drivers (k8s >= 1.22) |

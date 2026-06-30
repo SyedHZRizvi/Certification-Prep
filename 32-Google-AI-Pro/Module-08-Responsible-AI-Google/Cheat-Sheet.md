@@ -71,9 +71,9 @@ All three: invisible, detectable via Google library, robust to common transforma
 
 | Control | Layer |
 |---------|-------|
-| IAM (Identity and Access Management) | Authorization |
+| IAM | Authorization |
 | **CMEK** | **Data at rest** (your keys) |
-| **VPC (Virtual Private Cloud)-SC** | **Perimeter** (no exfiltration) |
+| **VPC-SC** | **Perimeter** (no exfiltration) |
 | Audit Logs | Forensics |
 
 🎯 *CMEK ≠ VPC-SC. They protect different things. Use both for HIPAA.*
@@ -96,7 +96,7 @@ All three: invisible, detectable via Google library, robust to common transforma
 | Type | Example |
 |------|---------|
 | Direct | "Ignore previous instructions and X" |
-| Indirect | Malicious instructions hidden in tool output / RAG (Retrieval-Augmented Generation)-retrieved doc |
+| Indirect | Malicious instructions hidden in tool output / RAG-retrieved doc |
 
 **Defense in depth:**
 1. Authority hierarchy in system prompt
@@ -170,4 +170,4 @@ If all 5 in <90s, you own this module. ✅
 
 ---
 
-➡️ [Module 9: MLOps (Machine Learning Operations) on Vertex AI](../Module-09-MLOps-Vertex-AI/Reading.md)
+➡️ [Module 9: MLOps on Vertex AI](../Module-09-MLOps-Vertex-AI/Reading.md)

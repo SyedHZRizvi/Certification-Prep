@@ -343,7 +343,7 @@ In fighting games, the input buffer window (0.1–0.25 seconds) is a **design va
 
 ## 🔗 Next Steps
 
-**Next Module:** [Module 6: UI (User Interface) Animation with Figma, GSAP & Framer Motion →](../Module-06-UI-Animation-Figma-GSAP/Reading.md)
+**Next Module:** [Module 6: UI Animation with Figma, GSAP & Framer Motion →](../Module-06-UI-Animation-Figma-GSAP/Reading.md)
 
 We shift from game engines to the web: Figma Smart Animate, GSAP's ScrollTrigger and Timeline, the Flip plugin, and Framer Motion for React.
 

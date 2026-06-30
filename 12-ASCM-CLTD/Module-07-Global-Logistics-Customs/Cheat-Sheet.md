@@ -40,7 +40,7 @@ EXW → FCA → FAS → FOB → CFR → CIF → CPT → CIP → DAP → DPU → 
 | Customs broker | Files customs entry |
 | Freight forwarder | Books transport, no possession |
 | NVOCC | Issues own BL, doesn't own ships |
-| 3PL (Third-Party Logistics) / 4PL (Fourth-Party Logistics) | Outsourced logistics |
+| 3PL / 4PL | Outsourced logistics |
 
 ---
 
@@ -120,7 +120,7 @@ Cash in advance → LC → Documentary collection → Open account → Consignme
 | Program | Country |
 |---------|---------|
 | C-TPAT | US |
-| AEO (Answer Engine Optimization) | EU |
+| AEO | EU |
 | PIP | Canada |
 | STP | Singapore |
 

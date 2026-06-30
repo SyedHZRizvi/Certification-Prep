@@ -42,7 +42,7 @@ Running in Azure?
 ├── YES → Managed Identity (system-assigned > user-assigned)
 │         + role "Cognitive Services User"
 └── NO  → Local dev? → AzureKeyCredential(key)
-         CI/CD (Continuous Integration/Continuous Deployment) off Azure? → Service principal (client secret/cert)
+         CI/CD off Azure? → Service principal (client secret/cert)
 ```
 
 | Method | Header | Code |
@@ -67,7 +67,7 @@ Running in Azure?
 
 ---
 
-## 📦 SDK (Software Development Kit) Packages Quick Reference
+## 📦 SDK Packages Quick Reference
 
 | Service | Package | Client |
 |---|---|---|
@@ -110,7 +110,7 @@ Running in Azure?
 - ❌ One F0 resource per service per subscription (limit), used for prod
 - ❌ Legacy regional endpoint + Entra ID auth (will fail)
 - ❌ Sharing key1 with multiple apps (rotation chaos)
-- ❌ Forgetting to assign RBAC (Role-Based Access Control) role after enabling managed identity
+- ❌ Forgetting to assign RBAC role after enabling managed identity
 
 ---
 
@@ -120,7 +120,7 @@ Running in Azure?
 - 1 F0 resource per kind per subscription
 - Multi-service kind = `AIServices`
 - Azure OpenAI kind = `OpenAI` (separate)
-- Default auth chain order: env → MI → CLI (Command Line Interface) → VS Code → interactive
+- Default auth chain order: env → MI → CLI → VS Code → interactive
 - Header for key auth: `Ocp-Apim-Subscription-Key`
 
 ---
@@ -131,7 +131,7 @@ Cover the answers and recite:
 
 1. Old name → new name for Form Recognizer? ___
 2. The 3 auth methods, in increasing security order? ___
-3. Header for key-based REST (Representational State Transfer) calls? ___
+3. Header for key-based REST calls? ___
 4. Which resource kind is multi-service? ___
 5. Why is Azure OpenAI not in the multi-service resource? ___
 
@@ -146,7 +146,7 @@ If you can answer all 5 in 30 seconds, you own Module 1. ✅
 | Need free tier (any kind) | Single-service F0 (one per kind per sub) |
 | Need one bill + one key | Multi-service `AIServices` S0 |
 | Need Azure OpenAI | Always separate `OpenAI` resource (gated) |
-| Code in Azure (App Service / Func / AKS / VM (Virtual Machine)) | System-assigned MI + `Cognitive Services User` role |
+| Code in Azure (App Service / Func / AKS / VM) | System-assigned MI + `Cognitive Services User` role |
 | Code on laptop (dev) | `AzureKeyCredential(key)` |
 | CI/CD off Azure | Service principal w/ Federated Identity (preferred) or client secret |
 | Traffic off public net | Private Endpoint + disable public network |
@@ -154,13 +154,13 @@ If you can answer all 5 in 30 seconds, you own Module 1. ✅
 | EU-only data residency | EU Data Zone (Azure OpenAI) or single-region S0 |
 | HIPAA + no prompt retention | Azure OpenAI + approved abuse-monitoring opt-out form |
 
-## 🧮 SLA (Service Level Agreement) + Throughput Cheats
+## 🧮 SLA + Throughput Cheats
 
 | Symbol | Means | Where it shows up |
 |---|---|---|
 | **TPM** | Tokens per minute | Azure OpenAI deployment quota |
 | **RPM** | Requests per minute | Azure OpenAI deployment quota |
-| **PTU** | Provisioned Throughput Unit | Reserved capacity SKU (Stock Keeping Unit) |
+| **PTU** | Provisioned Throughput Unit | Reserved capacity SKU |
 | **Standard** | Pay-as-you-go, region-pinned | Default for most Azure OpenAI deployments |
 | **Global Standard** | Cheaper PAYG, globally routed | Use when latency tolerance allows |
 | **Global Batch** | Async batched, ~50% cheaper, 24h SLA | High-volume offline workloads |
@@ -171,7 +171,7 @@ If you can answer all 5 in 30 seconds, you own Module 1. ✅
 |---|---|---|
 | Multi-tenant resource model | Microsoft Azure ARM docs | 2014→ |
 | Least-privilege RBAC | Saltzer & Schroeder, *Communications of the ACM* | 1975 |
-| Managed Identity | Microsoft Entra ID GA | 2018 (then renamed from Azure AD (Active Directory) in 2023) |
+| Managed Identity | Microsoft Entra ID GA | 2018 (then renamed from Azure AD in 2023) |
 | Responsible AI Standard v2 | Microsoft, *Responsible AI Standard* | June 2022 |
 | Azure OpenAI Service GA | Microsoft Azure blog | January 2023 |
 | NIST AI RMF 1.0 | NIST | January 2023 |

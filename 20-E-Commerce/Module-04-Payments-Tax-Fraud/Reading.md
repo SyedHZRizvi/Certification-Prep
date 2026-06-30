@@ -12,9 +12,9 @@ The interesting part isn't the volume. It's that Stripe scaled without breaking.
 
 Three operating principles emerged:
 
-1. **API (Application Programming Interface) stability is a moat.** Stripe's commitment to not breaking the API has compounded over 14 years. Developers built businesses on top because Stripe wouldn't pull the rug.
+1. **API stability is a moat.** Stripe's commitment to not breaking the API has compounded over 14 years. Developers built businesses on top because Stripe wouldn't pull the rug.
 2. **The hard work is in fraud and dispute mechanics, not payment processing.** Charging a card is solved. Knowing whether to charge the card, and what to do when the customer disputes the charge, is where the engineering is.
-3. **Compliance scales with volume.** PCI-DSS, SCA in EU, state-by-state sales tax in US (post-Wayfair 2018), GDPR (General Data Protection Regulation), each of these became a feature for Stripe's customers. Stripe Atlas (incorporation + business banking), Stripe Tax (sales tax compliance), Stripe Issuing (card issuing) all emerged from "we already had to solve this for ourselves."
+3. **Compliance scales with volume.** PCI-DSS, SCA in EU, state-by-state sales tax in US (post-Wayfair 2018), GDPR, each of these became a feature for Stripe's customers. Stripe Atlas (incorporation + business banking), Stripe Tax (sales tax compliance), Stripe Issuing (card issuing) all emerged from "we already had to solve this for ourselves."
 
 By 2024, Stripe was valued at $65B in a secondary sale and was the largest privately-held fintech. They were also navigating regulatory tension, Klarna (a BNPL competitor) had been put under UK FCA supervision in 2024, signaling the era of consumer-credit regulation in BNPL.
 
@@ -169,7 +169,7 @@ By 2024, all 45 states with sales tax had adopted economic nexus. Each state has
 
 **Tax automation vendors:**
 - **Avalara AvaTax**, largest enterprise vendor; multi-jurisdiction global.
-- **TaxJar** (acquired by Stripe in 2021, integrated as Stripe Tax), DTC (Direct-to-Consumer)-friendly.
+- **TaxJar** (acquired by Stripe in 2021, integrated as Stripe Tax), DTC-friendly.
 - **Vertex**, enterprise.
 - **Sovos**, enterprise + Europe.
 - **Stripe Tax**, native to Stripe; 0.5% per transaction; handles US + EU + UK + Australia.
@@ -184,7 +184,7 @@ By 2024, all 45 states with sales tax had adopted economic nexus. Each state has
 
 EU VAT (Value-Added Tax) rules changed dramatically on July 1, 2021:
 
-- **OSS** (One Stop Shop), sellers established in the EU register once and remit VAT across all 27 EU states. Replaced the old MOSS (Mini One Stop Shop) for B2C (Business-to-Consumer) digital services.
+- **OSS** (One Stop Shop), sellers established in the EU register once and remit VAT across all 27 EU states. Replaced the old MOSS (Mini One Stop Shop) for B2C digital services.
 - **IOSS** (Import One Stop Shop), non-EU sellers shipping low-value goods (≤€150) to EU consumers can register once and remit EU VAT at checkout. Without IOSS, EU customs collects VAT + fees on import, often surprising the customer with delivery charges.
 - **The €22 low-value exemption was eliminated.** Pre-2021, imports under €22 were VAT-free; this caused massive AliExpress/Wish abuse. Now every import owes VAT.
 
@@ -229,7 +229,7 @@ BNPL exploded 2020-2022 (cheap money), then contracted in 2023-2024 (regulatory 
 
 | Provider | Founded | Notes (2024-2026) |
 |----------|---------|---------------------|
-| Klarna | 2005 (Sweden) | $670B GMV (Gross Merchandise Value) processed cumulative; IPO (Initial Public Offering) planned 2025; UK FCA brought under supervision 2024 |
+| Klarna | 2005 (Sweden) | $670B GMV processed cumulative; IPO planned 2025; UK FCA brought under supervision 2024 |
 | Affirm | 2012 (US) | NASDAQ:AFRM since 2021; partnerships with Amazon, Shopify, Walmart |
 | Afterpay | 2014 (Australia) | Acquired by Square (now Block) 2022 for $29B |
 | PayPal Pay-in-4 | 2020 | Native to PayPal |
@@ -256,7 +256,7 @@ BNPL exploded 2020-2022 (cheap money), then contracted in 2023-2024 (regulatory 
 - Section 75 protections (consumers can dispute via the lender on goods that don't arrive or aren't as described)
 - Complaint-handling obligations
 
-Klarna's response: pre-positioned for the regulation, working with the FCA on disclosure formats, redesigning its UK app to surface "this is credit" messaging, and adding affordability scoring before approval. CEO (Chief Executive Officer) Sebastian Siemiatkowski publicly supported the FCA framework while pushing back on calls to classify BNPL as "high-cost credit." Klarna filed confidentially for a Nasdaq IPO in late 2024 at a reduced valuation target ($15-$20B range), pending the regulation landing.
+Klarna's response: pre-positioned for the regulation, working with the FCA on disclosure formats, redesigning its UK app to surface "this is credit" messaging, and adding affordability scoring before approval. CEO Sebastian Siemiatkowski publicly supported the FCA framework while pushing back on calls to classify BNPL as "high-cost credit." Klarna filed confidentially for a Nasdaq IPO in late 2024 at a reduced valuation target ($15-$20B range), pending the regulation landing.
 
 **Outcome.** UK FCA regulation became effective for BNPL in 2025. Klarna's UK conversion rate dropped ~6% in the first three months post-implementation (affordability checks add friction). But the company stabilized credit-loss rates and successfully navigated parallel Australian regulation in 2024. The 2024 H1 financials showed return to profitability ($66M net income H1 2024 vs $300M+ losses in 2023).
 
@@ -264,7 +264,7 @@ Klarna's response: pre-positioned for the regulation, working with the FCA on di
 
 **Discussion (Socratic).**
 - Q1: Klarna's regulatory exposure was the result of operating as a credit product while marketing as a payment product. Where else in e-commerce does this pattern (marketing as one thing, regulated as another) show up?
-- Q2: A $30M DTC brand sees 18% of orders use Klarna. The CFO (Chief Financial Officer) worries about the regulatory exposure. Build the argument that Klarna should be diversified away from, and the argument that it shouldn't.
+- Q2: A $30M DTC brand sees 18% of orders use Klarna. The CFO worries about the regulatory exposure. Build the argument that Klarna should be diversified away from, and the argument that it shouldn't.
 - Q3: Adyen, Stripe, and PayPal all offer BNPL via partners. What's the principle that decides whether a brand should integrate BNPL at the PSP layer vs the BNPL-direct layer?
 
 ---
@@ -332,7 +332,7 @@ Wallets dramatically improve checkout conversion. Baymard 2024 benchmarks show w
 - Wise (formerly TransferWise) Business, for repatriation.
 - OFX, Convera, Currency Cloud, enterprise.
 
-🚨 **Trap on the exam:** Currency conversion at checkout typically costs 1-2% over the mid-market FX rate. This shows up as "FX fees" line in your P&L (Profit and Loss). Multi-currency display without multi-currency settlement is a margin tax, fine for early stage, costly at $20M+ in international revenue.
+🚨 **Trap on the exam:** Currency conversion at checkout typically costs 1-2% over the mid-market FX rate. This shows up as "FX fees" line in your P&L. Multi-currency display without multi-currency settlement is a margin tax, fine for early stage, costly at $20M+ in international revenue.
 
 ---
 
@@ -412,7 +412,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 5 connects payment-completion to fulfillment (cart abandonment + checkout-to-ship); Module 7 returns to fraud at the paid-acquisition fraud-rate level; Module 10 returns to cross-border tax (IOSS, multi-currency) for international expansion.
-> - Cross-course: [09-CompTIA-Security-Plus Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) covers IAM (Identity and Access Management) disciplines that complement PCI-DSS.
+> - Cross-course: [09-CompTIA-Security-Plus Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) covers IAM disciplines that complement PCI-DSS.
 > - Practice: Practice Exam 1 has ~6 questions drawn from this module (PCI levels, SCA, Wayfair, EU VAT, chargeback ratios).
 
 ---

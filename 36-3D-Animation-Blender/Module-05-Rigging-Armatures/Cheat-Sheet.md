@@ -138,7 +138,7 @@ title: "Module 5 Cheat Sheet: Rigging & Armatures"
 
 ---
 
-## Python API (Application Programming Interface) for Armatures
+## Python API for Armatures
 
 | Expression | Result |
 |---|---|

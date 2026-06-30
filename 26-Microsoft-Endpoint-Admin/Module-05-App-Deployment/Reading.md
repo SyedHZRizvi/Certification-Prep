@@ -3,7 +3,7 @@
 > **Why this module matters:** MD-102 weighs application management at 10–15% but you'll see at least 5 questions about packaging, detection rules, dependencies, and supersedence. The exam loves "app stuck in Installing forever" troubleshooting scenarios. Get the Win32 packaging mental model right and these questions become trivial.
 
 > **Prerequisites for this module.** Before starting:
-> - Module 3 (Intune Fundamentals), Settings Catalog, group targeting, RBAC (Role-Based Access Control).
+> - Module 3 (Intune Fundamentals), Settings Catalog, group targeting, RBAC.
 > - Module 4 (Enrollment & Compliance), devices are enrolled; we're now pushing apps to them.
 > - Basic Windows command-line literacy, what `/quiet` and `/qn` flags do, why MSI vs EXE matters.
 
@@ -32,7 +32,7 @@ By Tuesday next week, 53/53 show "Installed." Maria has earned scars. This modul
 | **Line-of-business (LOB)** app | Raw MSI uploaded directly | Simple MSI with no dependencies |
 | **Microsoft Store app (new)** | Pulled from the new Microsoft Store | Microsoft Store apps |
 | **Microsoft 365 Apps** | Built-in template for Office Click-to-Run | Outlook/Word/Excel/PowerPoint/OneNote bundle |
-| **Web app / web link** | URL pinned as an app icon | Browser-based SaaS (Software as a Service) apps |
+| **Web app / web link** | URL pinned as an app icon | Browser-based SaaS apps |
 
 🔥 **Memorize the Win32 vs LOB distinction.** LOB = simple MSI, no extras. Win32 = `.intunewin` package with install/uninstall commands, detection rules, requirements, dependencies, supersedence, return codes.
 
@@ -121,7 +121,7 @@ exit 1
 A dependency says "before this app installs, ensure App B is installed first." Intune handles it like a graph:
 
 ```
-NorthwindCAD ──depends-on──> VC (Venture Capital)++ 2019 Redistributable
+NorthwindCAD ──depends-on──> VC++ 2019 Redistributable
 NorthwindCAD ──depends-on──> .NET Framework 4.8
 ```
 
@@ -256,7 +256,7 @@ ACPs push per-app settings to managed apps. Two flavors:
 
 | Type | When |
 |------|------|
-| **Managed devices** (MDM (Mobile Device Management) channel) | Device is enrolled, settings push via OS MDM |
+| **Managed devices** (MDM channel) | Device is enrolled, settings push via OS MDM |
 | **Managed apps** (MAM channel) | App is APP-protected, settings push via APP |
 
 Common settings pushed via ACP:
@@ -266,7 +266,7 @@ Common settings pushed via ACP:
 - Branding (logos, support URLs)
 - Per-app config keys (server URL, tenant ID, custom toggles)
 - Edge / Chrome / Firefox managed bookmarks
-- VPN (Virtual Private Network) config for managed apps
+- VPN config for managed apps
 
 🎯 **Exam tip:** "Push the server URL setting to Outlook Mobile so users don't have to type it" = App Configuration Policy.
 
@@ -281,7 +281,7 @@ App categories are labels you create to organize the Company Portal app catalog.
 - "HR"
 - "Travel & Expenses"
 
-Users see categories as tabs in Company Portal. They don't affect functionality, purely UX (User Experience).
+Users see categories as tabs in Company Portal. They don't affect functionality, purely UX.
 
 ---
 
@@ -388,13 +388,13 @@ You now know:
 - **Time to reach 90% of devices** for a required Win32 app: dropped from **~85 days** (ConfigMgr legacy) to **~9 days** (Intune Win32 with proper detection rules).
 - **"App stuck installing" helpdesk tickets**: dropped **~78%** after the mandatory detection-rule policy went live.
 - **MSIX adoption**: ~120 in-house apps converted, with a measurable reduction in registry-orphaning issues after uninstalls.
-- **Company Portal user satisfaction**: NPS (Net Promoter Score) for "I can find the app I need" rose from 32 to 71 after mandatory App Categories were enforced.
+- **Company Portal user satisfaction**: NPS for "I can find the app I need" rose from 32 to 71 after mandatory App Categories were enforced.
 - **Defender for Endpoint app-control rule violations**: dropped after every Win32 app was packaged with explicit detection + signature, since unmanaged installers became immediately distinguishable.
 
 **Lesson for the exam / for practitioners.** This is the textbook case for *why* MD-102 expects you to know detection rules cold and treat Win32 + detection + dependencies + supersedence as the canonical packaging model. The economic case is overwhelming: getting detection right means the difference between 9 days and 85 days for critical updates to reach 90% of fleet, a 9× improvement. When the exam describes "app stuck in installing forever" or "app reinstalls every cycle," the answer is almost always **detection rule misconfigured**, every time. The Walmart story is why.
 
 **Discussion (Socratic).**
-- **Q1.** Walmart converted ~120 in-house apps to MSIX. A peer retailer's CTO (Chief Technology Officer) argues "MSIX is solving a problem we don't have, MSI works fine." Defend the MSIX investment by naming the two specific operational scenarios (one per-user install, one upgrade cleanliness) where MSIX clearly wins.
+- **Q1.** Walmart converted ~120 in-house apps to MSIX. A peer retailer's CTO argues "MSIX is solving a problem we don't have, MSI works fine." Defend the MSIX investment by naming the two specific operational scenarios (one per-user install, one upgrade cleanliness) where MSIX clearly wins.
 - **Q2.** Walmart mandates pilot → broad → deferred for every Win32 app. A startup deploys to "all users" on day one. Defend the ring pattern by naming the one type of failure mode that almost always shows up first in pilot and would be devastating in broad.
 - **Q3.** Walmart's App Configuration Policies push tenant URL + branding to Edge + Outlook. A user privacy advocate asks "why push branding to Edge, is that surveillance?" Defend the ACP-pushed-branding pattern by naming the user-facing benefit that justifies the push.
 
@@ -402,7 +402,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 6 covers Defender for Endpoint, which interacts with apps via attack surface reduction rules and app control. Module 8 covers monitoring + reporting, which is how you'd notice app deployment failures in production.
-> - Cross-course: [`05-Azure-Fundamentals` Module 3](../../05-Azure-Fundamentals/Module-03-Core-Services/Reading.md) covers Windows VM (Virtual Machine) provisioning, useful context for app testing labs.
+> - Cross-course: [`05-Azure-Fundamentals` Module 3](../../05-Azure-Fundamentals/Module-03-Core-Services/Reading.md) covers Windows VM provisioning, useful context for app testing labs.
 > - Practice: Practice Exam 2 has roughly 5–7 questions from this module (Win32 vs LOB, detection rules, dependencies, supersedence, ACP). Final Mock Exam revisits with troubleshooting scenarios.
 
 ---

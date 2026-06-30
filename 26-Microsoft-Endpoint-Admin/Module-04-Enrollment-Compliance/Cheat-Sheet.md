@@ -20,7 +20,7 @@
 
 ABM = Apple's enterprise portal. Used for:
 
-- Assign devices to your MDM (Mobile Device Management) (Intune)
+- Assign devices to your MDM (Intune)
 - Bulk purchase apps (VPP)
 - Managed Apple IDs
 - Configure ADE enrollment profiles
@@ -75,7 +75,7 @@ Actions for non-compliance: email → push → lock → retire (with grace).
 | Users | All / Specific groups / Guests (exclude break-glass!) |
 | Cloud apps | All / Exchange / SharePoint / Salesforce |
 | Conditions | Sign-in risk, device state, platform, location, client apps |
-| **Grant** | Block OR allow with MFA (Multi-Factor Authentication) / compliant device / hybrid joined / approved app / APP |
+| **Grant** | Block OR allow with MFA / compliant device / hybrid joined / approved app / APP |
 | Session | Sign-in frequency, persistent browser, app restrictions |
 | State | Off / **Report-only** / On |
 

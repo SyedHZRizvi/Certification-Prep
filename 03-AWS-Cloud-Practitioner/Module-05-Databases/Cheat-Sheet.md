@@ -7,10 +7,10 @@
 ## 🗄️ The 4 Database Categories
 
 ```
-Relational (SQL (Structured Query Language))    →  RDS (Relational Database Service), Aurora
+Relational (SQL)    →  RDS, Aurora
 NoSQL              →  DynamoDB, DocumentDB, Neptune, Keyspaces, Timestream, QLDB
 In-Memory          →  ElastiCache (Redis/Memcached), DAX, MemoryDB
-Analytical (OLAP)  →  Redshift, Athena (S3 (Simple Storage Service) SQL)
+Analytical (OLAP)  →  Redshift, Athena (S3 SQL)
 ```
 
 ---
@@ -133,7 +133,7 @@ Wrong:
 
 - ❌ Using Redshift for high-frequency single-row updates
 - ❌ Using DynamoDB for relational joins
-- ❌ Self-managing RDS engines on EC2 (Elastic Compute Cloud) (just use RDS)
+- ❌ Self-managing RDS engines on EC2 (just use RDS)
 - ❌ Caching with Memcached when you need persistence
 
 ---

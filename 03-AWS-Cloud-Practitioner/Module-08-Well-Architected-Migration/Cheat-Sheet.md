@@ -30,9 +30,9 @@
 
 | R | Description | Effort |
 |---|-------------|--------|
-| **Rehost** | Lift & shift (VM (Virtual Machine) → EC2 (Elastic Compute Cloud)) | Low |
-| **Replatform** | Lift, tinker, shift (MySQL on EC2 → RDS (Relational Database Service) Aurora) | Low–Med |
-| **Repurchase** | Switch product (on-prem CRM (Customer Relationship Management) → Salesforce) | Med |
+| **Rehost** | Lift & shift (VM → EC2) | Low |
+| **Replatform** | Lift, tinker, shift (MySQL on EC2 → RDS Aurora) | Low–Med |
+| **Repurchase** | Switch product (on-prem CRM → Salesforce) | Med |
 | **Refactor** | Rewrite cloud-native (monolith → Lambda) | High |
 | **Retire** | Decommission | Trivial |
 | **Retain** | Keep on-prem (for now) | Trivial |
@@ -47,8 +47,8 @@
 |---------|----------|
 | **MGN** (App Migration Service) | Lift-and-shift servers |
 | **DMS** (+ SCT) | DB migration (incl. cross-engine) |
-| **DataSync** | Bulk file transfer (NFS/SMB → S3 (Simple Storage Service)/EFS/FSx) |
-| **Transfer Family** | Managed SFTP/FTPS/FTP (File Transfer Protocol) |
+| **DataSync** | Bulk file transfer (NFS/SMB → S3/EFS/FSx) |
+| **Transfer Family** | Managed SFTP/FTPS/FTP |
 | **Snow Family** | Petabyte physical transfer |
 | **Migration Hub** | Central tracking console |
 | **App Discovery Service** | Inventory on-prem apps |

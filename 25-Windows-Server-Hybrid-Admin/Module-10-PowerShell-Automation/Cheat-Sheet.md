@@ -22,9 +22,9 @@
 
 | Item | Value |
 |------|-------|
-| Port HTTP (Hypertext Transfer Protocol) | **5985** |
-| Port HTTPS (HTTP Secure) | **5986** |
-| Transport | WSMan (default) or SSH (Secure Shell) (PS 7) |
+| Port HTTP | **5985** |
+| Port HTTPS | **5986** |
+| Transport | WSMan (default) or SSH (PS 7) |
 | Auth in domain | Kerberos (default) |
 | Enable | `Enable-PSRemoting -Force` |
 
@@ -44,7 +44,7 @@
 | File / Concept | Purpose |
 |----------------|---------|
 | **Role Capability (`.psrc`)** | **What** cmdlets / params allowed |
-| **Session Config (`.pssc`)** | **Who** (AD (Active Directory) group) → which role; runtime identity |
+| **Session Config (`.pssc`)** | **Who** (AD group) → which role; runtime identity |
 | **Virtual Account** | Per-session elevated identity (NO standing privilege) |
 | Endpoint | `Register-PSSessionConfiguration -Name ... -Path .pssc` |
 
@@ -93,7 +93,7 @@
 
 - Auto-enables Microsoft-recommended services on VMs / Arc
 - Profiles: **Production** (Backup, Update Mgmt, Defender, Change Tracking, MAA), **Dev/Test**, **Custom**
-- Single click per VM (Virtual Machine); drift correction included
+- Single click per VM; drift correction included
 
 ---
 
@@ -106,7 +106,7 @@
 | Test connectivity | `Test-NetConnection -ComputerName srv01 -Port 5985` |
 | Get current FSMO holders | `netdom query fsmo` or `Get-ADDomainController -Filter *` |
 | List AD users | `Get-ADUser -Filter * -SearchBase "OU=Sales,..."` |
-| Create DHCP (Dynamic Host Configuration Protocol) scope | `Add-DhcpServerv4Scope` |
+| Create DHCP scope | `Add-DhcpServerv4Scope` |
 | Enable AD Recycle Bin | `Enable-ADOptionalFeature -Identity "Recycle Bin Feature" -Scope ForestOrConfigurationSet -Target contoso.com` |
 | Connect to Azure | `Connect-AzAccount` |
 | Onboard to Arc | `azcmagent connect --service-principal-id ...` |
@@ -129,7 +129,7 @@ Usually **wrong**:
 
 - ❌ "Run PS 5.1 cmdlet `Connect-MgGraph` on a Linux Arc box" (use PS 7)
 - ❌ "Store SP secret in plaintext in a runbook"
-- ❌ "Give DNS (Domain Name System) Operators Domain Admin to manage zones" (use JEA)
+- ❌ "Give DNS Operators Domain Admin to manage zones" (use JEA)
 - ❌ "Push DSC config to 1,000 nodes daily" (use Pull or AMC)
 - ❌ "Azure Automation DSC is the modern path" (it's retired)
 

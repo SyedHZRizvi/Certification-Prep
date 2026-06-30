@@ -34,7 +34,7 @@
 
 ---
 
-## 📊 SIEM (Security Information and Event Management) vs SOAR
+## 📊 SIEM vs SOAR
 
 | | SIEM | SOAR |
 |---|------|------|
@@ -51,8 +51,8 @@
 | Firewall | Allow/deny + 5-tuple |
 | IDS/IPS | Signature/anomaly alerts |
 | OS / Sysmon | Process, auth, service events |
-| EDR (Endpoint Detection and Response) | Process trees + behavioral |
-| DNS (Domain Name System) | Domain resolutions |
+| EDR | Process trees + behavioral |
+| DNS | Domain resolutions |
 | Auth | Logins / MFA / failures |
 | NetFlow / sFlow / IPFIX | Flow metadata only |
 | PCAP | Full packet payloads (huge) |

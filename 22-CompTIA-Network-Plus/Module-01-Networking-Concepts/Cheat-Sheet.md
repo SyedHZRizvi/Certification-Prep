@@ -8,11 +8,11 @@
 
 | # | Layer | PDU | Key idea | Examples |
 |---|-------|-----|----------|----------|
-| 7 | **Application** | Data | User-facing protocols | HTTP (Hypertext Transfer Protocol), DNS (Domain Name System), FTP (File Transfer Protocol), SSH (Secure Shell), SMTP (Simple Mail Transfer Protocol) |
-| 6 | **Presentation** | Data | Format / encrypt / compress | TLS (Transport Layer Security), JPEG, ASCII |
+| 7 | **Application** | Data | User-facing protocols | HTTP, DNS, FTP, SSH, SMTP |
+| 6 | **Presentation** | Data | Format / encrypt / compress | TLS, JPEG, ASCII |
 | 5 | **Session** | Data | Open / maintain / close sessions | NetBIOS, RPC, SIP |
-| 4 | **Transport** | **Segment** (TCP (Transmission Control Protocol)) / **Datagram** (UDP (User Datagram Protocol)) | End-to-end, ports | TCP, UDP, QUIC |
-| 3 | **Network** | **Packet** | Logical addressing, routing | IP, ICMP (Internet Control Message Protocol), OSPF (Open Shortest Path First), BGP (Border Gateway Protocol) |
+| 4 | **Transport** | **Segment** (TCP) / **Datagram** (UDP) | End-to-end, ports | TCP, UDP, QUIC |
+| 3 | **Network** | **Packet** | Logical addressing, routing | IP, ICMP, OSPF, BGP |
 | 2 | **Data Link** | **Frame** | Hop-to-hop, MAC addresses | Ethernet, Wi-Fi, ARP, switches |
 | 1 | **Physical** | **Bits** | Wires / radio / fiber | Cables, hubs, repeaters |
 
@@ -24,7 +24,7 @@
 ## 📦 Encapsulation Order (Top → Bottom)
 
 ```
-HTTP/HTTPS (HTTP Secure) data            ← L7 Application
+HTTP/HTTPS data            ← L7 Application
    ↓ + TLS                 ← L6 Presentation
    ↓ + session id          ← L5 Session
    ↓ + TCP header (port)   ← L4 Transport → SEGMENT
@@ -43,7 +43,7 @@ HTTP/HTTPS (HTTP Secure) data            ← L7 Application
 | Reliability | Yes | No |
 | Ordering | Yes | No |
 | Header size | 20+ bytes | 8 bytes |
-| Use cases | Web, SSH, email, file transfer | DNS, VoIP, DHCP (Dynamic Host Configuration Protocol), SNMP (Simple Network Management Protocol), video |
+| Use cases | Web, SSH, email, file transfer | DNS, VoIP, DHCP, SNMP, video |
 
 🧠 TCP: "**T**ake **C**are **P**lease". UDP: "**U**nreliable **D**elivery **P**rotocol".
 
@@ -82,10 +82,10 @@ HTTP/HTTPS (HTTP Secure) data            ← L7 Application
 | Acronym | Scope |
 |---------|-------|
 | PAN | 1–10 m (Bluetooth) |
-| LAN (Local Area Network) | One site |
+| LAN | One site |
 | CAN | Adjacent buildings |
 | MAN | One city / metro |
-| WAN (Wide Area Network) | Multi-city / global |
+| WAN | Multi-city / global |
 | SAN | Storage fabric (block-level) |
 | WLAN | LAN over Wi-Fi |
 

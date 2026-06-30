@@ -3,9 +3,9 @@
 > **Why this module matters:** Every single Azure resource lives somewhere in a 4-level hierarchy. Get the hierarchy wrong and your policies don't apply, your costs are unsplittable, and your governance falls apart. This is the foundation literally everything else sits on.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Core cloud-shared-responsibility concepts (IaaS (Infrastructure as a Service) / PaaS (Platform as a Service) / SaaS (Software as a Service)), covered in [`05-Azure-Fundamentals` Module 1](../../05-Azure-Fundamentals/Module-01-Cloud-Concepts/Reading.md) (AZ-900).
+> - Core cloud-shared-responsibility concepts (IaaS / PaaS / SaaS), covered in [`05-Azure-Fundamentals` Module 1](../../05-Azure-Fundamentals/Module-01-Cloud-Concepts/Reading.md) (AZ-900).
 > - Azure cost-model basics (subscriptions, regions, reservations), also AZ-900 Module 4.
-> - Comfort reading a CLI (Command Line Interface) command and a JSON snippet (no scripting expertise needed).
+> - Comfort reading a CLI command and a JSON snippet (no scripting expertise needed).
 >
 > If those are shaky, pause and spend an hour with AZ-900's "Azure architecture and services" learning path on Microsoft Learn before going deeper here. AZ-104 assumes AZ-900 in spirit even though it isn't a formal prerequisite.
 
@@ -17,7 +17,7 @@ Meet Jamal. He opens "Brew Bean Coffee" in 2019, one shop, one cash register, on
 
 By 2022, Brew Bean has **12 locations** across 3 states. Each has its own staff, its own utility bills, its own equipment leases. Jamal still dumps everything in one giant shoebox. His accountant cries. The Massachusetts location's espresso machine got charged to the Vermont shop. Nobody can tell which location is actually profitable. When the health inspector asks for *just* the Vermont receipts, Jamal spends 6 hours digging through paper.
 
-In 2024, Jamal hires a CFO (Chief Financial Officer). The CFO sets up a hierarchy:
+In 2024, Jamal hires a CFO. The CFO sets up a hierarchy:
 
 - **Brew Bean Holdings LLC** (the parent, like Azure's *tenant*)
 - **Region books**, Northeast, Mid-Atlantic, Southeast (like *management groups*)
@@ -49,7 +49,7 @@ Now when the Vermont inspector calls, Jamal pulls one folder. When Jamal wants t
                   └──────────────┬───────────────┘
                                  │
                   ┌──────────────▼───────────────┐
-                  │     RESOURCE GROUPS          │  ← lifecycle + RBAC (Role-Based Access Control) scope
+                  │     RESOURCE GROUPS          │  ← lifecycle + RBAC scope
                   └──────────────┬───────────────┘
                                  │
                   ┌──────────────▼───────────────┐
@@ -68,10 +68,10 @@ Now when the Vermont inspector calls, Jamal pulls one folder. When Jamal wants t
 The tenant is your **identity boundary**. One organization = one Entra ID tenant in 99% of cases. It holds:
 
 - Users, groups, service principals
-- The default DNS (Domain Name System) name like `contoso.onmicrosoft.com`
+- The default DNS name like `contoso.onmicrosoft.com`
 - Custom domains you've verified (like `contoso.com`)
 
-**Key trap:** A *subscription* is associated with **exactly one tenant** at any time. You can *transfer* a subscription to a different tenant, but a resource cannot span tenants natively (you'd use B2B (Business-to-Business) / cross-tenant sync for that, Module 2).
+**Key trap:** A *subscription* is associated with **exactly one tenant** at any time. You can *transfer* a subscription to a different tenant, but a resource cannot span tenants natively (you'd use B2B / cross-tenant sync for that, Module 2).
 
 ---
 
@@ -226,7 +226,7 @@ Key/value labels attached to resources, RGs, or subscriptions.
 | `Environment` | `Prod`, `Dev`, `Test` |
 | `CostCenter` | `12345` |
 | `Owner` | `jane.doe@contoso.com` |
-| `Application` | `Payments-API (Application Programming Interface)` |
+| `Application` | `Payments-API` |
 | `DataClassification` | `Confidential`, `Public` |
 
 ### Apply tags via CLI
@@ -290,7 +290,7 @@ az consumption budget create \
 | Lever | Save up to | Catch |
 |-------|------------|-------|
 | **Reserved Instances (RI)**, 1 or 3 yr | ~72% | Commit upfront, locked to a region/size family |
-| **Azure Savings Plan for Compute** | ~65% | More flexible than RI (any VM (Virtual Machine) family, any region) |
+| **Azure Savings Plan for Compute** | ~65% | More flexible than RI (any VM family, any region) |
 | **Spot VMs** | ~90% | Can be evicted with 30 sec notice |
 | **Azure Hybrid Benefit** | ~40% on Windows VMs | Bring your own Windows Server / SQL licenses |
 | **Auto-shutdown dev VMs** | ~70% on dev | Schedule via DevTest Labs or Automation |
@@ -437,7 +437,7 @@ You now know:
 
 ## 📊 Case Study, Coca-Cola European Partners (2019–2024)
 
-**Situation.** Coca-Cola European Partners (now Coca-Cola Europacific Partners, CCEP after the 2021 merger) is the world's largest independent Coca-Cola bottler, ~33,000 employees, 13 countries, 90+ manufacturing sites. In 2019 they inherited a portfolio of more than 100 Azure subscriptions accumulated by 13 country IT teams, each provisioned ad hoc with no shared management-group hierarchy, no consistent tagging, and no central policy guardrails. Cost was unattributable per country, GDPR (General Data Protection Regulation) posture was uneven, and a single misconfigured developer subscription in Spain had been silently spinning up `Standard_D64s_v3` VMs for six months before anyone noticed.
+**Situation.** Coca-Cola European Partners (now Coca-Cola Europacific Partners, CCEP after the 2021 merger) is the world's largest independent Coca-Cola bottler, ~33,000 employees, 13 countries, 90+ manufacturing sites. In 2019 they inherited a portfolio of more than 100 Azure subscriptions accumulated by 13 country IT teams, each provisioned ad hoc with no shared management-group hierarchy, no consistent tagging, and no central policy guardrails. Cost was unattributable per country, GDPR posture was uneven, and a single misconfigured developer subscription in Spain had been silently spinning up `Standard_D64s_v3` VMs for six months before anyone noticed.
 
 **Decision.** CCEP's central cloud team partnered with Microsoft FastTrack and an external advisor (Avanade) to apply the **Cloud Adoption Framework "Enterprise-Scale" landing zone** pattern (Microsoft, 2020). They:
 
@@ -445,7 +445,7 @@ You now know:
 2. Migrated all 100+ subscriptions under the new tree (no resource downtime, only the MG association changed).
 3. Applied 14 Azure Policy initiatives at the *Landing Zones* MG: allowed locations restricted to `westeurope`, `northeurope`, `francecentral`, `germanywestcentral`; required tags (`CostCenter`, `Application`, `Owner`, `DataClassification`); deny on public IP creation without exemption; CMK enforcement on storage and SQL.
 4. Built a chargeback pipeline: Cost Management exports → Azure Data Explorer → Power BI, sliced by `CostCenter` tag. The Inherit-a-tag `Modify` policy back-filled tags on existing resources.
-5. Wrapped production RGs in `CanNotDelete` locks and enforced PIM (Product Information Management) eligibility for Owner role at sub scope (covered in Module 2).
+5. Wrapped production RGs in `CanNotDelete` locks and enforced PIM eligibility for Owner role at sub scope (covered in Module 2).
 
 **Outcome.** By 2024 CCEP reported (Microsoft customer story, *Coca-Cola Europacific Partners*, 2023, refreshed 2024-09):
 

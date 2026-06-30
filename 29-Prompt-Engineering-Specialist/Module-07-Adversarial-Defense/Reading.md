@@ -126,7 +126,7 @@ Before any user input reaches the model, run it through a validator:
 Tools:
 
 - **LlamaGuard 3** (Meta), open-source input/output safety classifier
-- **OpenAI Moderation API (Application Programming Interface)**, free, comprehensive
+- **OpenAI Moderation API**, free, comprehensive
 - **Anthropic's safety classifier**, Bedrock / Workbench
 - **Perspective API** (Google), toxicity scoring
 - **Microsoft Azure Content Safety**, image + text moderation
@@ -442,7 +442,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 8](../Module-08-Production-Scale/Reading.md) integrates safety into observability and CI. [Module 6](../Module-06-Evaluation-AB-Testing/Reading.md) builds the adversarial regression suite.
-> - Cross-course: AWS (Amazon Web Services) AI Practitioner (course 07) covers Bedrock Guardrails. Azure AI Engineer (course 08) covers Azure Content Safety.
+> - Cross-course: AWS AI Practitioner (course 07) covers Bedrock Guardrails. Azure AI Engineer (course 08) covers Azure Content Safety.
 > - Practice: Practice Exam 2 has ~4 questions from this module.
 
 ---

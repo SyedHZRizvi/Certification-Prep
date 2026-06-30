@@ -4,16 +4,16 @@
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Logging into a Linux shell as root and a normal user
-> - Using `ls`, `cd`, and a text editor (vim, nano, or VS Code over SSH (Secure Shell))
+> - Using `ls`, `cd`, and a text editor (vim, nano, or VS Code over SSH)
 > - General familiarity with what a "service" is on any operating system
 >
-> If those are shaky, install Ubuntu Server or AlmaLinux in a free VirtualBox/UTM VM (Virtual Machine) and live there for an evening before continuing.
+> If those are shaky, install Ubuntu Server or AlmaLinux in a free VirtualBox/UTM VM and live there for an evening before continuing.
 
 ---
 
 ## 🍕 A Story: The 3 a.m. Boot Loop
 
-Meet Priya. She's the only sysadmin on call for a 200-person SaaS (Software as a Service) company. At 3:11 a.m. her phone screams: the primary database server in `us-east-1` is down. SSH connections time out. The cloud console shows the VM booted, then rebooted, then booted again. Five times in twelve minutes.
+Meet Priya. She's the only sysadmin on call for a 200-person SaaS company. At 3:11 a.m. her phone screams: the primary database server in `us-east-1` is down. SSH connections time out. The cloud console shows the VM booted, then rebooted, then booted again. Five times in twelve minutes.
 
 She pulls up the cloud serial console. The screen freezes on:
 
@@ -26,7 +26,7 @@ Welcome to emergency mode! After logging in, type "journalctl -xb" to view syste
 She types the root password into the emergency shell and runs `journalctl -xb`. Three lines tell the whole story:
 
 1. The previous week, a junior engineer had attached a new EBS volume for `/var/log/elastic` and added it to `/etc/fstab`.
-2. The EBS volume failed to attach this boot (an AWS (Amazon Web Services) API (Application Programming Interface) issue).
+2. The EBS volume failed to attach this boot (an AWS API issue).
 3. `/etc/fstab` had no `nofail` option, so `Local File Systems` target failed, which broke `multi-user.target`, which is why the system kept dropping to emergency mode.
 
 She edits `/etc/fstab`, adds `nofail,x-systemd.device-timeout=10s` to the line, runs `systemctl daemon-reload && systemctl reboot`. The system comes up in 41 seconds. She's back in bed at 3:34 a.m.
@@ -58,7 +58,7 @@ A modern Linux boot has six distinct stages. **MEMORIZE THIS.** Almost every boo
 | Trait | Legacy BIOS | UEFI (modern) |
 |-------|-------------|---------------|
 | Year introduced | 1981 (IBM PC) | 2005 (Intel EFI 2.0); UEFI 2.x standard |
-| Partition scheme | MBR (Master Boot Record, 2 TiB max) | GPT (Generative Pre-trained Transformer) (GUID Partition Table, ZB-scale) |
+| Partition scheme | MBR (Master Boot Record, 2 TiB max) | GPT (GUID Partition Table, ZB-scale) |
 | Boot location | 512-byte boot sector at LBA 0 | EFI System Partition (ESP), FAT32, ≥100 MiB, mounted at `/boot/efi` |
 | Bootloaders | grub-pc, syslinux, lilo (legacy) | grub-efi, systemd-boot, rEFInd, shim (for Secure Boot) |
 | Secure Boot | No | Yes (signed bootloaders via shim + MOK) |
@@ -116,7 +116,7 @@ systemd is now in charge. It reads unit files, builds a dependency graph, and st
 
 The "where do we end up" target. Almost always one of:
 
-- `multi-user.target`, text-mode multi-user system (servers, CLI (Command Line Interface) workstations)
+- `multi-user.target`, text-mode multi-user system (servers, CLI workstations)
 - `graphical.target`, multi-user + GUI display manager (desktops, workstations)
 
 Set it with `systemctl set-default <target>`. View it with `systemctl get-default`.
@@ -350,7 +350,7 @@ This is the exact shape of a typical PBQ, a half-correct unit file with a subtle
 
 **Discussion (Socratic).**
 - **Q1:** Upstart's event-driven model was technically elegant, services started when their dependencies fired events, not when an arbitrary runlevel was entered. Why did systemd's dependency-graph model win in practice anyway? Consider documentation, predictability, debugging tooling, and ecosystem inertia.
-- **Q2:** systemd absorbs functionality (login management, network config, DNS (Domain Name System) resolution, container management) that traditional Unix philosophy says should be separate small programs. Argue for and against this consolidation. What does the exam care about?
+- **Q2:** systemd absorbs functionality (login management, network config, DNS resolution, container management) that traditional Unix philosophy says should be separate small programs. Argue for and against this consolidation. What does the exam care about?
 - **Q3:** If you were standing up a new distribution from scratch in 2026 say, for an embedded edge appliance with a 200 MB RAM budget would you pick systemd, OpenRC (Gentoo), s6 (Alpine alternative), or write your own? Defend the answer.
 
 ---

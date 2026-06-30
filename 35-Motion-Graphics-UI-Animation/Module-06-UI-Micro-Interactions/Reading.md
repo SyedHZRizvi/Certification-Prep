@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-06-UI-Micro-Interactions/Reading/
+permalink: /35-Motion-Graphics-UI-Animation/Module-06-UI-Micro-Interactions/Reading/
 title: "Module 6: UI Micro-Interactions"
 ---
 

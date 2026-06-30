@@ -28,7 +28,7 @@
 | # | Name | Tell |
 |---|------|------|
 | A01 | Broken Access Control | IDOR (`?id=42`) |
-| A02 | Cryptographic Failures | Weak cipher, no HTTPS (HTTP Secure), hardcoded key |
+| A02 | Cryptographic Failures | Weak cipher, no HTTPS, hardcoded key |
 | A03 | Injection | `' OR 1=1 --` SQLi, `<script>` XSS |
 | A04 | Insecure Design | "We never threat-modeled" |
 | A05 | Security Misconfig | Default creds, verbose errors |
@@ -58,7 +58,7 @@
 | Attack | Tell |
 |--------|------|
 | **SYN flood** | Half-open connections piling up |
-| **DNS (Domain Name System) amplification** | Spoofed src + responses much larger than queries |
+| **DNS amplification** | Spoofed src + responses much larger than queries |
 | **DNS poisoning/spoof** | Wrong A records returned |
 | **ARP poisoning** | Gateway MAC suddenly belongs to a workstation |
 | **MAC flooding** | Switch CAM table overflowed |
@@ -124,7 +124,7 @@ Forged TGT after KRBTGT compromise → Golden Ticket
 1. SQLi best fix? ___
 2. XSS, best fix + which sub-type stores on the server? ___
 3. Spraying vs stuffing vs brute force, one-line each? ___
-4. On-path attack on a LAN (Local Area Network), most likely starts with what protocol abuse? ___
+4. On-path attack on a LAN, most likely starts with what protocol abuse? ___
 5. Name the malware type that does NOT self-replicate but disguises itself. ___
 
 ---

@@ -36,9 +36,9 @@ The classic solution was **Virtual Machines (VMs)**: run a full operating system
 | Boot time | 30 seconds to several minutes | Milliseconds |
 | Image size | Gigabytes (full OS included) | Megabytes (shared OS kernel) |
 | Isolation level | Strong (hypervisor boundary) | Process-level (shared kernel) |
-| Resource overhead | High (each VM (Virtual Machine) runs a full OS) | Very low |
+| Resource overhead | High (each VM runs a full OS) | Very low |
 | Portability | Good (but heavyweight) | Excellent (lightweight) |
-| Use case | Running different OSes, strong security boundary | Microservices, CI/CD (Continuous Integration/Continuous Deployment), scale-out apps |
+| Use case | Running different OSes, strong security boundary | Microservices, CI/CD, scale-out apps |
 | Examples | VMware, VirtualBox, KVM, Hyper-V | Docker, containerd, CRI-O |
 
 **MEMORIZE THIS.** Containers share the host OS kernel. VMs do not. This is the fundamental architectural difference, and it explains every other row in the table above.
@@ -153,7 +153,7 @@ Think of Kubernetes as the global freight logistics system built on top of McLea
 | "Where should this container run?" | **Scheduler** assigns pods to nodes based on resource availability and constraints |
 | "It crashed — restart it" | **ReplicaSet / Deployment controller** detects and recreates failed pods |
 | "Roll out v2 without downtime" | **Rolling update** strategy in Deployments |
-| "How do containers find each other?" | **Services** and **CoreDNS** provide stable IPs and DNS (Domain Name System) names |
+| "How do containers find each other?" | **Services** and **CoreDNS** provide stable IPs and DNS names |
 | "Scale from 2 to 20 copies" | **Horizontal Pod Autoscaler** scales replica counts |
 | "Store configuration securely" | **ConfigMaps** and **Secrets** |
 | "Persist data across restarts" | **PersistentVolumes** and **PersistentVolumeClaims** |
@@ -168,7 +168,7 @@ A Kubernetes cluster has two types of machines:
 ┌─────────────────────────────────────────┐
 │            CONTROL PLANE                │
 │  ┌──────────┐ ┌──────────┐ ┌────────┐  │
-│  │API (Application Programming Interface) Server│ │Scheduler │ │ Ctrlr  │  │
+│  │API Server│ │Scheduler │ │ Ctrlr  │  │
 │  └──────────┘ └──────────┘ │ Mgr    │  │
 │  ┌──────────┐              └────────┘  │
 │  │   etcd   │                          │
@@ -193,7 +193,7 @@ A Kubernetes cluster has two types of machines:
 The front door of Kubernetes. Every interaction — `kubectl` commands, internal component communication, external integrations — goes through the API server. It validates requests, authenticates users, authorizes actions, and persists state to etcd. If the API server is down, nothing works.
 
 **Key facts:**
-- Listens on port **6443** (HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure))
+- Listens on port **6443** (HTTPS)
 - All components talk to it — no component talks to another directly (except via the API server)
 - Stateless — can be horizontally scaled
 
@@ -225,7 +225,7 @@ Built-in controllers include:
 **MEMORIZE THIS.** The controller pattern: observe desired state → observe current state → take action to close the gap. This reconciliation loop is the heart of Kubernetes.
 
 #### cloud-controller-manager (optional)
-In cloud environments (AWS (Amazon Web Services), GCP (Google Cloud Platform), Azure), this component handles cloud-specific logic: managing load balancers, node lifecycle, routes. It separates cloud provider code from core Kubernetes.
+In cloud environments (AWS, GCP, Azure), this component handles cloud-specific logic: managing load balancers, node lifecycle, routes. It separates cloud provider code from core Kubernetes.
 
 ### Worker Node Components
 
@@ -335,7 +335,7 @@ kubectl set image deployment/web nginx=nginx:1.25
 Kubernetes does not run Docker directly. It uses containerd (or another CRI runtime). Docker is a developer tool; containerd is the production runtime. The CKA exam clusters use containerd.
 
 ### Pitfall 2: "etcd is just a cache"
-etcd is the *source of truth* for all cluster state. It is not a cache. If etcd loses data (without a backup), your cluster's entire configuration is gone — nodes, pods, services, RBAC (Role-Based Access Control) rules, everything.
+etcd is the *source of truth* for all cluster state. It is not a cache. If etcd loses data (without a backup), your cluster's entire configuration is gone — nodes, pods, services, RBAC rules, everything.
 
 ### Pitfall 3: "The scheduler starts pods"
 The scheduler *assigns* pods to nodes by writing the node name to the pod's spec. The kubelet on that node *starts* the containers. Two separate steps, two separate components.
@@ -370,7 +370,7 @@ Unless data is written to a PersistentVolume, it is stored in the container's wr
 - Review the Module 1 Cheat Sheet — print it and keep it during practice
 - Set up a local cluster (kind or minikube) and run through all kubectl commands hands-on
 - Practice `kubectl run`, `kubectl create`, `kubectl expose`, and `kubectl describe` until they are automatic
-- Move to **Module 2: Cluster Architecture** for deep dives on cluster setup, kubeadm, and TLS (Transport Layer Security) bootstrapping
+- Move to **Module 2: Cluster Architecture** for deep dives on cluster setup, kubeadm, and TLS bootstrapping
 
 ---
 

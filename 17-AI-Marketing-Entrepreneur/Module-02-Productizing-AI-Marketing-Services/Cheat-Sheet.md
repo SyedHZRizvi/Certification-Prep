@@ -44,7 +44,7 @@
 | Mid | Klaviyo Flow Build (5) | $4,500–$7,500 | 14 days |
 | Mid | AI Content Engine (sub) | $3,500–$6,500/mo | Monthly |
 | Mid | LinkedIn Ghostwriting (sub) | $2,500–$4,500/mo | Weekly |
-| High | Full Funnel Build (DTC (Direct-to-Consumer)) | $12K–$22K | 6 weeks |
+| High | Full Funnel Build (DTC) | $12K–$22K | 6 weeks |
 | High | Marketing Systems Audit | $9,500–$15,000 | 21 days |
 
 ---
@@ -82,12 +82,12 @@ Target margin: 60–80%
 1. Define out-of-scope in the SOW
 2. Kickoff Loom, not open-ended call
 3. Templatize the deliverable
-4. Scope-change menu (separate SKU (Stock Keeping Unit) prices)
+4. Scope-change menu (separate SKU prices)
 5. ONE revision round; overflow at flat fee
 
 ---
 
-## 📜 SLA (Service Level Agreement) Quick Reference
+## 📜 SLA Quick Reference
 
 | Element | Typical |
 |---|---|
@@ -145,6 +145,6 @@ If you can answer all 5 in under 60 seconds, you own this module. ✅
 
 ---
 
-> ⚖️ Pricing references are 2026 market data. Not professional pricing advice, verify current rates and consult a CPA (Cost Per Acquisition) on tax/structure questions.
+> ⚖️ Pricing references are 2026 market data. Not professional pricing advice, verify current rates and consult a CPA on tax/structure questions.
 
 ➡️ [Module 3: Client Acquisition Channels](../Module-03-Client-Acquisition-Channels/Reading.md)

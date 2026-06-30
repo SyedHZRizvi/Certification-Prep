@@ -176,7 +176,7 @@ The *Avatar* production at Weta Digital established the practices that define pr
 
 | Section | Color-Coded Backdrop | Contents |
 |---------|---------------------|---------|
-| INPUTS | Blue | All Read nodes, plate, CG beauty, all AOV passes, DMP (Data Management Platform) elements |
+| INPUTS | Blue | All Read nodes, plate, CG beauty, all AOV passes, DMP elements |
 | PREP | Yellow | Plate undistortion, color space conversions, lens distortion removal |
 | KEYING | Orange | All keyer nodes, holdout mattes, roto nodes |
 | CG INTEGRATION | Green | Shuffle nodes for AOV extraction, Grade nodes for CG matching, Merge-over operations |
@@ -250,7 +250,7 @@ Unlike After Effects, which treats 3D as a 2.5D simulation, Nuke contains a full
 | Scene-linear workflow | Limited (via OpenColorIO) | Native; designed for it |
 | Multi-channel EXR | Can read; limited channel routing | Native; Shuffle node handles any channel |
 | Node graph | Not available | Core paradigm |
-| Python scripting | Limited ExtendScript | Full Python API (Application Programming Interface); production pipeline automation |
+| Python scripting | Limited ExtendScript | Full Python API; production pipeline automation |
 | Deep compositing | Not available | Deep image compositing for volumetric renders |
 | 3D compositing space | Basic | Full 3D scene reconstruction + camera |
 | Collaborative workflow | Not designed for team use | Used by teams of 50+ artists simultaneously |

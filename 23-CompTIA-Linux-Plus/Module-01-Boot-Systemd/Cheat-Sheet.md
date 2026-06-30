@@ -18,7 +18,7 @@ UEFI/BIOS  →  GRUB2  →  Kernel+initramfs  →  Root pivot  →  systemd PID 
 
 | Trait | BIOS | UEFI |
 |-------|------|------|
-| Partition table | MBR (2 TiB max) | GPT (Generative Pre-trained Transformer) (huge) |
+| Partition table | MBR (2 TiB max) | GPT (huge) |
 | Boot location | 512-byte sector LBA 0 | EFI System Partition (FAT32, `/boot/efi`) |
 | Secure Boot | No | Yes (via shim + MOK) |
 

@@ -24,7 +24,7 @@
 4. Other devices working on this SSID?
 5. IP valid? (check Settings)
 6. Captive portal? (open browser)
-7. MDM (Mobile Device Management) Wi-Fi profile current?
+7. MDM Wi-Fi profile current?
 8. Within signal range?
 ```
 
@@ -44,7 +44,7 @@
 
 | Symptom | Likely |
 |---------|--------|
-| No email | MDM compliance / password / MFA (Multi-Factor Authentication) |
+| No email | MDM compliance / password / MFA |
 | Calendar missing events | Sync filter (e.g., 30 days) |
 | Contacts gone | iCloud / Google Sync toggle |
 | Photos not backing up | Cloud quota / paused on cellular |
@@ -83,7 +83,7 @@
 | Smishing | User awareness; SMS link caution |
 | Juice jacking | Use own brick / power-only cable |
 | SIM swap | Port-Out Lock + app-based MFA |
-| Public Wi-Fi MITM | VPN (Virtual Private Network) |
+| Public Wi-Fi MITM | VPN |
 | Jailbreak / root | MDM auto-quarantine |
 | Malicious app | Stick to official store; vet permissions |
 

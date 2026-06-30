@@ -22,12 +22,12 @@ Any "no" → cancel.
 ## 🛠️ The 9 Stack Categories
 
 ```
-1. LLM (Large Language Model): $20/mo
+1. LLM: $20/mo
 2. Image / video AI: $10–30/mo
 3. Productivity/docs , Free–$12/mo
-4. PM/CRM (Customer Relationship Management)            , Free
+4. PM/CRM            , Free
 5. Outbound: $235/mo (skip if inbound-led)
-6. SEO (Search Engine Optimization)/research: $129/mo (pick ONE)
+6. SEO/research: $129/mo (pick ONE)
 7. Email + automation, Free–$20/mo
 8. Analytics         , Free
 9. Billing/contracts: $25/mo
@@ -114,7 +114,7 @@ Any "no" → cancel.
 |---|---|
 | CRM | HubSpot CRM Free |
 | Heatmaps | Microsoft Clarity |
-| Analytics | GA4 (Google Analytics 4) + Search Console + Looker Studio |
+| Analytics | GA4 + Search Console + Looker Studio |
 | Notes | Notion Free |
 | Email (newsletter) | Beehiiv Free |
 | Automation (light) | Make.com Free |
@@ -159,7 +159,7 @@ When you see these, they're often **wrong**:
 - ❌ Tool sprawl (Marcus's $4,200/mo)
 - ❌ Multiple overlapping SEO tools
 - ❌ Enterprise CRM Year 1
-- ❌ No password manager / MFA (Multi-Factor Authentication)
+- ❌ No password manager / MFA
 - ❌ Zapier at high volume (use n8n)
 
 ---

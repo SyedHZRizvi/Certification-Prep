@@ -11,7 +11,7 @@ Business Manager (admin hub)
 └── Ad Account
     └── Campaign  ← OBJECTIVE, BUDGET (if CBO)
         └── Ad Set  ← AUDIENCE, PLACEMENTS, BUDGET (if ABO)
-            └── Ad  ← CREATIVE, COPY, CTA (Call to Action)
+            └── Ad  ← CREATIVE, COPY, CTA
 ```
 
 🧠 **Never** set up via personal Facebook profile. Business Manager always.
@@ -23,7 +23,7 @@ Business Manager (admin hub)
 ```
 ☐ Business Manager created
 ☐ Domain Verified
-☐ Pixel installed (GTM (Google Tag Manager))
+☐ Pixel installed (GTM)
 ☐ CAPI configured (server-side)
 ☐ Event Deduplication enabled
 ☐ AEM events ranked (top 8)
@@ -94,7 +94,7 @@ Test for 7+ days at $50+/day for real signal.
 ## 🎯 5 Reels Patterns That Work
 
 1. Founder selfie
-2. UGC (User-Generated Content) try-on (paid creator)
+2. UGC try-on (paid creator)
 3. Tutorial/demo
 4. Pattern interrupt + value
 5. Comment-hook ("Someone wrote this...")
@@ -126,15 +126,15 @@ Campaign 3: RETARGETING ($3-5/day always on)
 
 ---
 
-## 🎯 Healthy 2026 Benchmarks (DTC (Direct-to-Consumer) apparel US)
+## 🎯 Healthy 2026 Benchmarks (DTC apparel US)
 
 | Metric | Range |
 |--------|-------|
-| Reels CPM (Cost Per Mille) | $5–$15 |
-| Link CTR (Click-Through Rate) | 1.0–2.5% |
-| Link CPC (Cost Per Click) | $0.50–$2.00 |
+| Reels CPM | $5–$15 |
+| Link CTR | 1.0–2.5% |
+| Link CPC | $0.50–$2.00 |
 | CPP (purchase) | $25–$50 |
-| ROAS (Return on Ad Spend) | 2.5x–4x |
+| ROAS | 2.5x–4x |
 
 ---
 
@@ -161,4 +161,4 @@ Campaign 3: RETARGETING ($3-5/day always on)
 
 ---
 
-➡️ [Module 5: TikTok + LinkedIn Ads](../Module-05-TikTok-LinkedIn-Ads-B2B (Business-to-Business)/Reading.md)
+➡️ [Module 5: TikTok + LinkedIn Ads](../Module-05-TikTok-LinkedIn-Ads-B2B/Reading.md)

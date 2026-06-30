@@ -1,6 +1,6 @@
 # Module 6: Endpoint Security & Defender for Endpoint 🛡️
 
-> **Why this module matters:** Endpoint security is the largest single MD-102 sub-domain by weight. Modern attacks land on the endpoint first (phishing, malicious docs, browser exploits, supply-chain compromise) and Microsoft Defender for Endpoint is your front-line. Get MDE Plan 1 vs Plan 2, ASR rules, BitLocker, EDR (Endpoint Detection and Response), and security baselines internalized, they'll touch 8–12 questions.
+> **Why this module matters:** Endpoint security is the largest single MD-102 sub-domain by weight. Modern attacks land on the endpoint first (phishing, malicious docs, browser exploits, supply-chain compromise) and Microsoft Defender for Endpoint is your front-line. Get MDE Plan 1 vs Plan 2, ASR rules, BitLocker, EDR, and security baselines internalized, they'll touch 8–12 questions.
 
 > **Prerequisites for this module.** Before starting:
 > - Module 3 (Intune Fundamentals), settings catalog and group targeting.
@@ -101,7 +101,7 @@ ASR rules are pre-defined Defender behaviors that block specific malicious patte
 | **Block Office applications from injecting code into other processes** | Stops Office-based code injection |
 | **Block JavaScript or VBScript from launching downloaded executable content** | Stops scripting-engine-based dropper attacks |
 | **Block execution of potentially obfuscated scripts** | Anti-obfuscation engine |
-| **Block Win32 API (Application Programming Interface) calls from Office macros** | Hard-block on macros calling Win32 APIs |
+| **Block Win32 API calls from Office macros** | Hard-block on macros calling Win32 APIs |
 | **Block credential stealing from LSASS** | Stops Mimikatz-style credential dumping |
 | **Block process creations originating from PSExec and WMI commands** | Stops common lateral movement tools |
 | **Block untrusted and unsigned processes that run from USB** | Stops USB-based malware |
@@ -138,7 +138,7 @@ BitLocker encrypts the entire OS drive (and optionally data drives) using TPM-ba
 | Setting | Notes |
 |---------|-------|
 | **Enable BitLocker** | Requires TPM 2.0 + Secure Boot |
-| **Encryption method** | XTS-AES (Advanced Encryption Standard) 128 or 256 (256 recommended for high-security) |
+| **Encryption method** | XTS-AES 128 or 256 (256 recommended for high-security) |
 | **OS drive encryption type** | Full disk vs Used Space Only (faster, fine for new devices) |
 | **Recovery key escrow** | To Microsoft Entra ID (default) |
 | **Silent enablement** | Encrypt automatically without user prompts |
@@ -184,7 +184,7 @@ A special configuration where MDE blocks malicious artifacts **even when a third
 Microsoft Defender for Cloud Apps is Microsoft's CASB (Cloud Access Security Broker). It:
 
 - **Discovers shadow IT**, what cloud apps are users accessing?
-- **Controls SaaS (Software as a Service) apps**, sanction / un-sanction, conditional access policies for cloud apps
+- **Controls SaaS apps**, sanction / un-sanction, conditional access policies for cloud apps
 - **Detects threats in SaaS**, anomaly detection across Microsoft 365 + 3rd party
 - **Integrates with MDE**, Defender for Endpoint discovers cloud apps via network protection telemetry
 - **Information protection**, DLP across SaaS apps
@@ -243,7 +243,7 @@ Windows LAPS (replaces the older Active Directory LAPS) rotates the local admin 
 |---------|------|
 | **Windows Defender Application Control (WDAC)** | Code integrity policy, only signed apps allowed |
 | **Smart App Control** | Cloud-driven AppLocker successor for Windows 11 |
-| **AppLocker** | Legacy GPO (Group Policy Object)-based app whitelisting |
+| **AppLocker** | Legacy GPO-based app whitelisting |
 
 🎯 **Exam tip:** WDAC = the modern Windows-native app control. Smart App Control is the Microsoft-cloud-driven default.
 
@@ -351,8 +351,8 @@ You now know:
 5. **Security baselines** for Windows + Edge + M365 Apps applied via Intune.
 6. **Tamper protection** mandatory (no user or admin can disable Defender locally).
 7. **Defender for Cloud Apps** for SaaS visibility + governance.
-8. **Microsoft Sentinel** as the SIEM (Security Information and Event Management), consuming MDE alerts.
-9. **24/7 SOC (Security Operations Center)** with playbooks for "ransomware detected" using EDR isolation + AIR.
+8. **Microsoft Sentinel** as the SIEM, consuming MDE alerts.
+9. **24/7 SOC** with playbooks for "ransomware detected" using EDR isolation + AIR.
 
 **Outcome.** Norsk Hydro reported (multiple Microsoft case studies + public corporate disclosures through 2024):
 
@@ -382,7 +382,7 @@ You now know:
 ## 💬 Discussion, Socratic prompts
 
 1. **MDE Plan 1 vs Plan 2 for a regulated bank.** A bank's CIO argues Plan 1 is enough, "we have a separate EDR vendor." Defend the Plan 2 case by naming the integration advantages Plan 2 provides over a third-party EDR (hint: think about Conditional Access, Intune compliance signal, and Microsoft Sentinel ingestion).
-2. **ASR rule rollout cadence.** Microsoft recommends Audit → Block per rule. A CISO (Chief Information Security Officer) under regulatory pressure wants Block on Day 1. Defend the Audit step by naming a real-world failure mode that would have caused outages.
+2. **ASR rule rollout cadence.** Microsoft recommends Audit → Block per rule. A CISO under regulatory pressure wants Block on Day 1. Defend the Audit step by naming a real-world failure mode that would have caused outages.
 3. **Silent BitLocker for executives.** Executives often demand no friction. Silent BitLocker means no user prompts but admin-only key escrow. Defend the executive-applicable scenario where silent BitLocker is the right answer over user-prompted BitLocker.
 4. **EDR in block mode with third-party AV.** When is EDR in block mode the right answer vs replacing the third-party AV entirely? Defend with reference to migration risk, vendor lock-in, and SOC tooling cost.
 5. **Smart App Control vs WDAC vs AppLocker.** Microsoft has three app control mechanisms. When is each the right answer? Defend the cases.

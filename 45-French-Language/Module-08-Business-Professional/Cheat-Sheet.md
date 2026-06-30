@@ -5,7 +5,7 @@
 | French | IPA | English | اردو |
 |---|---|---|---|
 | entreprise (f.) | /ɑ̃.tʁə.pʁiz/ | company | کمپنی |
-| PDG (m.) | /pe.de.ʒe/ | CEO (Chief Executive Officer) | سی ای او |
+| PDG (m.) | /pe.de.ʒe/ | CEO | سی ای او |
 | cadre (m.) | /kadʁ/ | executive | ایگزیکٹو |
 | filiale (f.) | /fi.ljal/ | subsidiary | ذیلی کمپنی |
 | siège social (m.) | /sjɛʒ sɔ.sjal/ | headquarters | مرکزی دفتر |

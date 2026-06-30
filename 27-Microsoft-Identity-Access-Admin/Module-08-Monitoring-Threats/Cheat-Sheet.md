@@ -57,7 +57,7 @@ TableName
 | 1 | Failed sign-ins by user | SigninLogs |
 | 2 | Anonymous IP sign-ins | SigninLogs (RiskEventTypes_V2) |
 | 3 | Brute-force survivors | SigninLogs |
-| 4 | PIM (Product Information Management) activations | AuditLogs |
+| 4 | PIM activations | AuditLogs |
 | 5 | Break-glass sign-ins | SigninLogs |
 | 6 | OAuth consent to unverified | AuditLogs |
 | 7 | CA policy hits | SigninLogs (mv-expand ConditionalAccessPolicies) |
@@ -71,7 +71,7 @@ TableName
 
 | Component | What |
 |-----------|------|
-| Connectors | Ingest from Entra, Defender, AWS (Amazon Web Services), GCP (Google Cloud Platform), third-party |
+| Connectors | Ingest from Entra, Defender, AWS, GCP, third-party |
 | Analytics rules | Scheduled KQL → fires incidents |
 | Workbooks | Dashboards (Microsoft Entra workbook) |
 | Hunting queries | Pre-built + custom proactive queries |
@@ -84,11 +84,11 @@ TableName
 
 | | **Defender for Identity** | **Identity Protection** |
 |---|---------------------------|-------------------------|
-| Scope | On-prem AD (Active Directory) (DC / AD FS / AD CS) | Cloud Entra sign-ins |
+| Scope | On-prem AD (DC / AD FS / AD CS) | Cloud Entra sign-ins |
 | Agent | Yes (sensor) | No (cloud) |
 | Detects | Golden Ticket, DCSync, lateral movement | Leaked creds, impossible travel, anonymous IP |
-| Portal | Defender XDR (Extended Detection and Response) | Entra portal + Defender XDR |
-| License | Defender for Identity SKU (Stock Keeping Unit) / M365 E5 | Entra ID P2 |
+| Portal | Defender XDR | Entra portal + Defender XDR |
+| License | Defender for Identity SKU / M365 E5 | Entra ID P2 |
 
 ---
 
@@ -156,7 +156,7 @@ When you see these, often **wrong**:
 
 - ❌ "Sign-in logs retained 1 year by default"
 - ❌ "Identity Protection = Defender for Identity"
-- ❌ "MFA (Multi-Factor Authentication) stops token theft"
+- ❌ "MFA stops token theft"
 - ❌ "Forward only sign-in logs (skip audit + provisioning)"
 - ❌ "Break-glass needs no monitoring"
 - ❌ "KQL is SQL"

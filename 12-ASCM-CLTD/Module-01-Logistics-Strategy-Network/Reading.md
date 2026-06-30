@@ -7,7 +7,7 @@
 > - General business math: weighted averages, %, simple ratios (no calculus required here)
 > - The idea that companies compete on different value propositions (cost vs speed vs choice)
 >
-> If you've taken any introductory supply-chain course (ASCM CSCP Module 1–2, or an MBA Operations module) you're set. If "DC," "3PL (Third-Party Logistics)," and "service level" feel new, skim, Module 1 introduces each formally. Cross-reference: [CSCP Module 7 (Logistics, Distribution, Warehousing)](../../10-ASCM-CSCP/Module-07-Logistics-Distribution-Warehousing/Reading.md) covers an adjacent introductory view of the same network choices from the broader supply-chain perspective.
+> If you've taken any introductory supply-chain course (ASCM CSCP Module 1–2, or an MBA Operations module) you're set. If "DC," "3PL," and "service level" feel new, skim, Module 1 introduces each formally. Cross-reference: [CSCP Module 7 (Logistics, Distribution, Warehousing)](../../10-ASCM-CSCP/Module-07-Logistics-Distribution-Warehousing/Reading.md) covers an adjacent introductory view of the same network choices from the broader supply-chain perspective.
 
 ---
 
@@ -19,7 +19,7 @@ Picture two coffee roasters in Seattle, both with the same product, both shippin
 
 **Roaster B** has four smaller DCs, Seattle, Dallas, Chicago, and Atlanta. The unit warehousing cost is higher (more rent, more managers, less automation economies of scale). But that Atlanta customer? They get next-day **ground** delivery for $4. Returns flow to the nearest DC. When a hurricane hits Florida, Atlanta absorbs it.
 
-**Which network is right?** Trick question, *it depends on what your customer values*. If they want lowest unit price and don't care about speed (B2B (Business-to-Business) industrial), Roaster A wins. If they want speed and convenience (DTC (Direct-to-Consumer) retail), Roaster B wins.
+**Which network is right?** Trick question, *it depends on what your customer values*. If they want lowest unit price and don't care about speed (B2B industrial), Roaster A wins. If they want speed and convenience (DTC retail), Roaster B wins.
 
 **That trade-off facility cost vs. transportation cost vs. service level is the single most-tested idea in this module.** Hold it in your head.
 
@@ -39,7 +39,7 @@ The CLTD body of knowledge frames the discipline as five interlocking choices:
 | Mode strategy | What mix of truck/rail/ocean/air? | 1–5 years |
 | Make-or-buy | In-house fleet/warehouse or 3PL? | 2–5 years |
 | Service segmentation | Same service for every customer? | 1–3 years |
-| Technology stack | WMS (Warehouse Management System) / TMS (Transportation Management System) / OMS (Order Management System) / control tower? | 2–5 years |
+| Technology stack | WMS / TMS / OMS / control tower? | 2–5 years |
 
 🎯 **Exam tip:** Strategy decisions are *long-cycle, capital-intensive, hard to reverse*. If a scenario asks about a decision that can be reversed in a week, it's tactical, not strategic.
 
@@ -150,7 +150,7 @@ The CLTD exam loves to test the **shape** of the network. Know all five.
 
 | Network type | Pattern | Best for |
 |--------------|---------|----------|
-| **Direct shipment** | Plant → Customer (no DC) | High-volume, single-SKU (Stock Keeping Unit), like raw materials |
+| **Direct shipment** | Plant → Customer (no DC) | High-volume, single-SKU, like raw materials |
 | **Direct with milk run** | Plant → multi-stop route | Multiple small customers in a region |
 | **Hub-and-spoke** | Plant → Hub → Spoke DCs → Customers | Most parcel & LTL; consolidation engine |
 | **Cross-dock** | Inbound truck → sort floor → outbound truck (no storage) | Fast-movers, retail replenishment |
@@ -190,7 +190,7 @@ Not every building is a "warehouse." Vocabulary that gets tested:
 
 ---
 
-## 🧮 Make-or-Buy in Logistics: 3PL/4PL (Fourth-Party Logistics)
+## 🧮 Make-or-Buy in Logistics: 3PL/4PL
 
 Outsourcing decision in logistics has its own vocabulary.
 
@@ -238,14 +238,14 @@ Common segmentation lenses:
 
 **Situation.** A.P. Møller-Maersk, the world's largest container shipping line by capacity (Alphaliner data, ~17% global market share as of 2024), had spent a century optimizing one node of the supply chain: ocean. By 2016 it was caught in the classic container-shipping value squeeze, rate volatility, capex-heavy ships, and the realization that the *real* margin in supply chain sat downstream, in warehousing, customs brokerage, and integrated 3PL services that competitors like DSV, Kuehne+Nagel, and DHL Supply Chain were aggregating profitably. Customers (Nike, Unilever, Walmart) increasingly wanted *one* end-to-end logistics contract, not separate ocean, customs, and warehouse providers.
 
-**Decision.** In September 2016 CEO (Chief Executive Officer) Søren Skou announced a strategy to transform Maersk from a "conglomerate" into a "global integrator of container logistics." Over the following 8 years Maersk:
+**Decision.** In September 2016 CEO Søren Skou announced a strategy to transform Maersk from a "conglomerate" into a "global integrator of container logistics." Over the following 8 years Maersk:
 
 - **Divested non-core energy assets** (Maersk Oil sold to Total in 2017 for $7.45B; Maersk Drilling spun off 2019).
 - **Acquired LF Logistics** (December 2021, $3.6B), Hong Kong-based contract logistics with strong Asia DC footprint.
 - **Acquired Pilot Freight Services** (April 2022, $1.7B), US last-mile big-and-bulky.
 - **Acquired Senator International** (2022), air freight forwarder.
 - **Built out Maersk Air Cargo** with 767/777F aircraft (2023).
-- **Restructured globally** into Ocean / Logistics & Services / Terminals divisions reporting under one integrated P&L (Profit and Loss).
+- **Restructured globally** into Ocean / Logistics & Services / Terminals divisions reporting under one integrated P&L.
 
 **Outcome.** By the 2023 annual report, Logistics & Services generated $14.4B of Maersk's $51.1B revenue, up from ~10% of revenue in 2016 to ~28% in 2023. After the 2021–2022 freight super-cycle (when ocean rates hit ~10× pre-pandemic levels and Maersk posted record $29B net profit in 2022), the integrated model proved itself as ocean rates normalized in 2023–2024: Logistics & Services revenue stayed resilient while ocean revenue collapsed ~60% year-over-year. Skou retired in 2023, succeeded by Vincent Clerc, who continued the strategy. By Q1 2024, integrated logistics customers represented over 60% of Logistics & Services revenue.
 
@@ -327,7 +327,7 @@ You now know:
 
 Before moving on, sit with these four prompts. They are open-ended no single correct answer but a CLTD-grade thinker should be able to argue *both sides* convincingly.
 
-1. **The "one-DC vs many-DC" debate at a real margin.** A specialty pet-food brand sells $90M/yr nationally from a single Indiana DC. CFO (Chief Financial Officer) proposes adding three regional DCs (West, South, East). CRO (Chief Revenue Officer) loves it, promises 2-day ground to 92% of customers. CFO models +$11M/yr in fixed cost. When does the math actually break even, and what *non-cost* factors should swing the decision? Build the strongest argument for the COO (Chief Operating Officer) (caught in the middle).
+1. **The "one-DC vs many-DC" debate at a real margin.** A specialty pet-food brand sells $90M/yr nationally from a single Indiana DC. CFO proposes adding three regional DCs (West, South, East). CRO loves it, promises 2-day ground to 92% of customers. CFO models +$11M/yr in fixed cost. When does the math actually break even, and what *non-cost* factors should swing the decision? Build the strongest argument for the COO (caught in the middle).
 
 2. **3PL vs build-it-yourself in a recession.** Yellow Freight's bankruptcy (July 2023) suddenly stranded thousands of LTL customers. Some had been pure-3PL outsourced; others had hybrid arrangements. From a *strategic logistics* perspective, what should a shipper learn from Yellow's collapse about the make-or-buy decision? Argue: would you go *more* in-house or *more* outsourced after watching that, and at what kind of company?
 

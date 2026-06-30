@@ -1,9 +1,9 @@
 # Module 5: Capacity Planning 🏗️
 
-> **Why this module matters:** A perfect MRP (Material Requirements Planning) plan with insufficient capacity is fiction. CPIM tests capacity planning at every layer of the planning hierarchy. About 10–15% of exam questions touch capacity, bottlenecks, and the Theory of Constraints.
+> **Why this module matters:** A perfect MRP plan with insufficient capacity is fiction. CPIM tests capacity planning at every layer of the planning hierarchy. About 10–15% of exam questions touch capacity, bottlenecks, and the Theory of Constraints.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 3: S&OP (Sales and Operations Planning)](../Module-03-SOP (Standard Operating Procedure)-Sales-Operations-Planning/Reading.md), Resource Planning lives inside S&OP Step 3; the capacity hierarchy parallels the planning hierarchy
+> - [Module 3: S&OP](../Module-03-SOP-Sales-Operations-Planning/Reading.md), Resource Planning lives inside S&OP Step 3; the capacity hierarchy parallels the planning hierarchy
 > - [Module 4: MPS / MRP](../Module-04-Master-Production-Scheduling-MRP/Reading.md), RCCP supports MPS; CRP supports MRP; you need to know what each plans before you can check its capacity
 > - High-school arithmetic with percentages (utilization and efficiency)
 >
@@ -85,7 +85,7 @@ A **load profile** is a bar chart of required capacity vs available capacity, by
 
 ### Bill of Resources (used in RCCP)
 
-A simplified BOM (Bill of Materials) that lists only the *critical* work centers and how many standard hours each unit of finished good consumes.
+A simplified BOM that lists only the *critical* work centers and how many standard hours each unit of finished good consumes.
 
 **Example.** Bike A has a Bill of Resources:
 
@@ -275,7 +275,7 @@ When available exceeds required:
 
 ## 📊 Case Study, Tesla Gigafactory & the "Production Hell" Ramp (2017–2024)
 
-**Situation.** Tesla announced the Model 3 in March 2016 with a $35,000 sticker price, taking ~500,000 pre-orders (~$14B in reservations). Production was to ramp at the Fremont assembly plant and the new **Gigafactory 1** in Sparks, Nevada, jointly with Panasonic on battery cells. CEO (Chief Executive Officer) Elon Musk publicly committed to producing **5,000 Model 3s per week by the end of 2017**. Tesla had built ~84,000 vehicles across its entire history at the start of the ramp; the commitment was effectively to triple cumulative production in a single year. Capacity planning had to bridge from a near-prototype line to industrial-scale automation that had never been attempted in the EV industry.
+**Situation.** Tesla announced the Model 3 in March 2016 with a $35,000 sticker price, taking ~500,000 pre-orders (~$14B in reservations). Production was to ramp at the Fremont assembly plant and the new **Gigafactory 1** in Sparks, Nevada, jointly with Panasonic on battery cells. CEO Elon Musk publicly committed to producing **5,000 Model 3s per week by the end of 2017**. Tesla had built ~84,000 vehicles across its entire history at the start of the ramp; the commitment was effectively to triple cumulative production in a single year. Capacity planning had to bridge from a near-prototype line to industrial-scale automation that had never been attempted in the EV industry.
 
 **Decision.** Tesla committed to extreme automation upfront the "alien dreadnought" Musk described including robotic battery-module assembly and a fully automated final-assembly line. The capacity hierarchy was, per ASCM canonical form: Resource Planning had built capacity assuming a smooth ramp; RCCP-equivalent rough-cut analysis treated automation throughput as design-capacity from day one rather than demonstrated capacity. The bottleneck identification process was *intended* to follow TOC discipline but in practice was overridden by program timing.
 
@@ -325,7 +325,7 @@ You now know:
 
 ## 💬 Discussion, Socratic prompts
 
-1. **Lead vs lag in a chip-shortage era.** A specialty-chemicals plant ran at 95% utilization through 2023 with 8-week customer lead times. Demand forecasts are uncertain, could grow 20% or shrink 10% in 2025. CFO (Chief Financial Officer) wants Lag (capital-conservative); COO (Chief Operating Officer) wants Lead (capture upside). Build the strongest case for each, and identify the **two** financial metrics that should decide.
+1. **Lead vs lag in a chip-shortage era.** A specialty-chemicals plant ran at 95% utilization through 2023 with 8-week customer lead times. Demand forecasts are uncertain, could grow 20% or shrink 10% in 2025. CFO wants Lag (capital-conservative); COO wants Lead (capture upside). Build the strongest case for each, and identify the **two** financial metrics that should decide.
 2. **The "100% utilization" trap.** A new VP of Manufacturing celebrates that all 14 work centers are running at 95%+. Why is this a *yellow flag* not a green one in a TOC-trained plant?
 3. **TOC vs Lean.** Goldratt focuses on the *constraint*; Lean focuses on eliminating *all waste*. In a high-mix job shop with one obvious bottleneck, which discipline yields more value first? In a repetitive automotive line with no clear bottleneck, which? Cite Goldratt and Womack/Jones.
 4. **The "shift the constraint" challenge.** Tesla's constraint moved repeatedly during the ramp: battery cells → battery packs → paint → final assembly → logistics → service. Argue that this is a *failure* of the planning hierarchy AND that it's a *natural outcome* of TOC Step 5. What does the answer tell you about how to set executive expectations during a ramp?

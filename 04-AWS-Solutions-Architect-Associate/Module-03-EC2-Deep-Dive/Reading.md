@@ -1,12 +1,12 @@
-# Module 3: EC2 (Elastic Compute Cloud) Deep Dive 💻
+# Module 3: EC2 Deep Dive 💻
 
-> **Why this module matters:** EC2 is the oldest compute service and still the most heavily tested. SAA throws scenarios at you involving instance families (M vs C vs R vs G), purchase options (Reserved vs Spot vs Savings Plan), Auto Scaling, and load balancer choice (ALB vs NLB vs GWLB). Pick the wrong type or option and you blow either the cost or the SLA (Service Level Agreement).
+> **Why this module matters:** EC2 is the oldest compute service and still the most heavily tested. SAA throws scenarios at you involving instance families (M vs C vs R vs G), purchase options (Reserved vs Spot vs Savings Plan), Auto Scaling, and load balancer choice (ALB vs NLB vs GWLB). Pick the wrong type or option and you blow either the cost or the SLA.
 
 > **Prerequisites for this module.**
 > - [Module 1: Foundations & Well-Architected](../Module-01-Foundations-Well-Architected/Reading.md), Region/AZ vocabulary, Shared Responsibility
-> - [Module 2: IAM (Identity and Access Management) & Organizations](../Module-02-IAM-Organizations/Reading.md), instance profiles / IAM roles attached to EC2
+> - [Module 2: IAM & Organizations](../Module-02-IAM-Organizations/Reading.md), instance profiles / IAM roles attached to EC2
 > - Basic Linux command-line literacy (you'll see `aws ec2 run-instances` examples)
-> - Understanding of TCP (Transmission Control Protocol) vs UDP (User Datagram Protocol), OSI layer 4 vs layer 7 (for load balancer choice)
+> - Understanding of TCP vs UDP, OSI layer 4 vs layer 7 (for load balancer choice)
 
 ---
 
@@ -60,9 +60,9 @@ m6i.large
 | **On-Demand** | 0% | None | No | Short-term, unpredictable workloads, testing |
 | **Reserved Instance (RI), Standard** | Up to **72%** | 1 or 3 yr | No | Steady, predictable workloads (specific instance type) |
 | **Reserved Instance, Convertible** | Up to ~54% | 1 or 3 yr | No | Steady but want to switch instance family later |
-| **Savings Plans, Compute** | Up to 66% | 1 or 3 yr | No | Flexible, any region, any family, any size, ECS (Elastic Container Service)/Fargate/Lambda too |
+| **Savings Plans, Compute** | Up to 66% | 1 or 3 yr | No | Flexible, any region, any family, any size, ECS/Fargate/Lambda too |
 | **Savings Plans, EC2 Instance** | Up to 72% | 1 or 3 yr | No | Locked to family + region but can change size/OS |
-| **Spot** | Up to **90%** | None | YES, 2-min warning | Fault-tolerant batch, big data, CI/CD (Continuous Integration/Continuous Deployment), stateless web tier |
+| **Spot** | Up to **90%** | None | YES, 2-min warning | Fault-tolerant batch, big data, CI/CD, stateless web tier |
 | **Dedicated Host** | 0–70% (with RI) | Optional | No | BYOL software licensing, isolation, compliance |
 | **Dedicated Instance** | Modest | None | No | Hardware isolation (no other AWS tenants), simpler than host |
 | **Capacity Reservation** | No discount | None | No | Guarantee capacity in an AZ for critical apps |
@@ -78,7 +78,7 @@ m6i.large
 - **Savings Plans** are a **$/hour commitment** for 1 or 3 years that AWS auto-applies to any matching usage.
 
 If you change instance types frequently or use Fargate/Lambda → Savings Plan wins.
-If you run a fleet of one specific RDS (Relational Database Service) engine type → RI is fine.
+If you run a fleet of one specific RDS engine type → RI is fine.
 
 ---
 
@@ -90,7 +90,7 @@ If you run a fleet of one specific RDS (Relational Database Service) engine type
 | **Instance Store** | Block | Physically attached to host | NO, wiped on stop/terminate | One instance only | Hot cache, scratch, NoSQL temp |
 | **EFS** | File (NFS) | Multi-AZ in a region | Yes | Many instances (read+write) across AZs | Shared content, CMS, dev homes |
 | **FSx for Windows** | File (SMB) | Multi-AZ optional | Yes | Many Windows clients | Lift-and-shift Windows workloads |
-| **FSx for Lustre** | File (HPC) | Single or multi-AZ | Yes (linked to S3 (Simple Storage Service)) | Many HPC nodes | ML training, HPC, batch processing |
+| **FSx for Lustre** | File (HPC) | Single or multi-AZ | Yes (linked to S3) | Many HPC nodes | ML training, HPC, batch processing |
 
 ### EBS volume types
 
@@ -154,8 +154,8 @@ AWS has three load balancers in scope. Picking the wrong one is a classic exam t
 
 | LB | Layer | Protocols | Routing features | Use case |
 |----|-------|-----------|------------------|----------|
-| **ALB** (Application LB) | L7 | HTTP (Hypertext Transfer Protocol), HTTPS (HTTP Secure), gRPC, WebSocket | Path-based, host-based, header-based, query-string, redirects, auth integration | Web/API (Application Programming Interface) microservices, containers |
-| **NLB** (Network LB) | L4 | TCP, UDP, TLS (Transport Layer Security) | Static IP per AZ, ultra-low latency, millions of req/s | Gaming, IoT, TCP services, preserving client IP |
+| **ALB** (Application LB) | L7 | HTTP, HTTPS, gRPC, WebSocket | Path-based, host-based, header-based, query-string, redirects, auth integration | Web/API microservices, containers |
+| **NLB** (Network LB) | L4 | TCP, UDP, TLS | Static IP per AZ, ultra-low latency, millions of req/s | Gaming, IoT, TCP services, preserving client IP |
 | **GWLB** (Gateway LB) | L3/4 | IP (GENEVE protocol) | Transparent insertion of 3rd-party firewall/IDS appliances | Centralized network virtual appliances (Palo Alto, Fortinet, etc.) |
 | **CLB** (Classic, legacy) | L4/L7 | HTTP/HTTPS/TCP | Limited | Don't use for new designs |
 
@@ -164,13 +164,13 @@ AWS has three load balancers in scope. Picking the wrong one is a classic exam t
 | Target | Used by | Note |
 |--------|---------|------|
 | **Instance** | ALB/NLB | EC2 instance IDs |
-| **IP** | ALB/NLB | IPs in VPC (incl. on-prem via VPN (Virtual Private Network)/DX) |
+| **IP** | ALB/NLB | IPs in VPC (incl. on-prem via VPN/DX) |
 | **Lambda** | ALB | Invoke Lambda for each request |
 | **ALB as target of NLB** | NLB | Route TCP to an ALB |
 
 ### Key features by LB
 
-- **ALB:** WAF (Web Application Firewall) integration, AWS Cognito user auth at the LB, SSL (Secure Sockets Layer)/SNI, sticky sessions
+- **ALB:** WAF integration, AWS Cognito user auth at the LB, SSL/SNI, sticky sessions
 - **NLB:** Source IP preservation, **static IPs** (or Elastic IPs), great for whitelisting
 - **GWLB:** Bump-in-the-wire pattern for inspecting traffic with vendor appliances
 
@@ -208,7 +208,7 @@ Hibernate is great for "long-cached" instances (like dev VDIs) that you want to 
 - **Security Group**, instance-level virtual firewall, **stateful**. Allow rules only (deny by default).
 - **NACL**, subnet-level firewall, **stateless**. Allow AND deny rules; numbered order.
 - **Enhanced Networking (ENA/SR-IOV)**, line-rate networking, default on modern types.
-- **Placement in private subnet**, typical for app and DB tiers; access via NAT (Network Address Translation) for outbound or VPC endpoints.
+- **Placement in private subnet**, typical for app and DB tiers; access via NAT for outbound or VPC endpoints.
 
 🎯 **Exam trap:** "Block specific IPs from reaching my web app" → **NACL** (SGs can't deny). Add an SG allow-only-from-ELB on top.
 
@@ -263,7 +263,7 @@ Hibernate is great for "long-cached" instances (like dev VDIs) that you want to 
 
 ## 📖 Case Study, Pinterest's $4M Cost Optimization (2017–2020)
 
-**Situation.** Pinterest, with 250M+ MAU by 2017, ran one of the largest image-serving infrastructures on AWS. By 2017 its monthly bill was estimated at $25M+ (per Pinterest's S-1 IPO (Initial Public Offering) filing, October 2018). The CFO (Chief Financial Officer) and engineering leadership both wanted *predictable* cost, neither wanted to slow product velocity. Initial cost-reduction attempts (limiting instance count manually, blocking expensive families) caused outages and engineer frustration. The pre-IPO scrutiny demanded a more rigorous answer.
+**Situation.** Pinterest, with 250M+ MAU by 2017, ran one of the largest image-serving infrastructures on AWS. By 2017 its monthly bill was estimated at $25M+ (per Pinterest's S-1 IPO filing, October 2018). The CFO and engineering leadership both wanted *predictable* cost, neither wanted to slow product velocity. Initial cost-reduction attempts (limiting instance count manually, blocking expensive families) caused outages and engineer frustration. The pre-IPO scrutiny demanded a more rigorous answer.
 
 **Decision.** Pinterest formed a small "Cloud Economics" team (recounted by Suman Karumuri at AWS re:Invent 2019, ENT212 *"How Pinterest scales on AWS"*). The program:
 
@@ -308,7 +308,7 @@ When the exam says "company wants to reduce EC2 cost without sacrificing reliabi
 
 > **Where this leads.**
 > - **Inside this course:** Module 04 (VPC) handles the networking around EC2, Security Groups, NACLs, NAT. Module 05 (S3) and Module 06 (Databases) are where most EC2 instances send their data. Module 09 (Monitoring) covers Compute Optimizer recommendations and CloudWatch alarms that drive ASG scaling.
-> - **Cross-course:** `03-AWS-Cloud-Practitioner` Module 03 has a gentler EC2 intro. `06-Azure-Administrator` Module 03 covers the equivalent Azure VM (Virtual Machine) concepts; the architectural patterns are identical, only the names differ.
+> - **Cross-course:** `03-AWS-Cloud-Practitioner` Module 03 has a gentler EC2 intro. `06-Azure-Administrator` Module 03 covers the equivalent Azure VM concepts; the architectural patterns are identical, only the names differ.
 > - **Practice:** Practice Exam 1 has 6 EC2/ELB questions; Final Mock Exam has 9.
 > - **Real world:** Spin up a `t3.micro` (free-tier eligible) and an `t4g.micro` (Graviton, also free-tier), both run for 12 months free; useful for testing user-data scripts and IAM role attachment.
 

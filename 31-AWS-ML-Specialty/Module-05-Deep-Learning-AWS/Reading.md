@@ -32,7 +32,7 @@ You need to recognise the five major DL families and know what each is best at:
 | **Graph Neural Networks** | Social networks, molecules, knowledge graphs | Kipf & Welling (2017) GCN |
 | **Diffusion / GANs** | Image / video / audio generation | Goodfellow et al. (2014) GAN; Ho et al. (2020) DDPM |
 
-🎯 **Exam pattern.** Most MLS-C01 DL questions assume **CNNs** for vision and **Transformers** for NLP (Natural Language Processing)/multimodal. Older study guides over-index on RNNs; in 2026, transformers dominate.
+🎯 **Exam pattern.** Most MLS-C01 DL questions assume **CNNs** for vision and **Transformers** for NLP/multimodal. Older study guides over-index on RNNs; in 2026, transformers dominate.
 
 ---
 
@@ -40,10 +40,10 @@ You need to recognise the five major DL families and know what each is best at:
 
 For deep learning, you almost always use a **pre-built framework container** in script mode.
 
-| Framework | SDK (Software Development Kit) class | Strength |
+| Framework | SDK class | Strength |
 |-----------|-----------|----------|
 | **PyTorch** | `sagemaker.pytorch.PyTorch` | Dominant for research and most new production work |
-| **TensorFlow** | `sagemaker.tensorflow.TensorFlow` | Strong in production / mobile; Keras API (Application Programming Interface) |
+| **TensorFlow** | `sagemaker.tensorflow.TensorFlow` | Strong in production / mobile; Keras API |
 | **MXNet** | `sagemaker.mxnet.MXNet` | Legacy AWS favourite; less common in 2026 |
 | **Hugging Face** | `sagemaker.huggingface.HuggingFace` | Pre-built containers with `transformers`, `datasets` libraries |
 | **scikit-learn** | `sagemaker.sklearn.SKLearn` | Tabular classical ML, not DL |
@@ -102,7 +102,7 @@ EFA is AWS's high-throughput, low-latency network interface for multi-node ML. W
 
 ### FSx for Lustre
 
-A high-performance parallel filesystem linked to S3 (Simple Storage Service) with lazy loading. Sub-millisecond access; used as `data_repository_associations` to keep data warm without copying.
+A high-performance parallel filesystem linked to S3 with lazy loading. Sub-millisecond access; used as `data_repository_associations` to keep data warm without copying.
 
 ```python
 estimator = PyTorch(
@@ -243,7 +243,7 @@ For DL projects without labels (the common case for vision and NLP), SageMaker G
 - **Workforce options:** AWS Mechanical Turk (cheapest), private workforce (your team), vendor workforce (Amazon-vetted vendors)
 - **Built-in tasks:** Image classification, bounding box, semantic segmentation, text classification, NER
 - **Active learning (Ground Truth Plus is fully managed):** Auto-labels easy examples to reduce labelling cost
-- **Custom workflows** via Lambda + UI (User Interface) templates
+- **Custom workflows** via Lambda + UI templates
 
 🎯 **Exam pattern.** *"Reduce labelling cost on a 1M-image classification project."* → **Ground Truth with active learning** (auto-labels ~70% of "easy" examples; humans only label the rest).
 
@@ -257,7 +257,7 @@ For DL projects without labels (the common case for vision and NLP), SageMaker G
 | **Object detection** | DL | YOLO, Faster R-CNN, DETR |
 | **Semantic segmentation** | DL | U-Net, FCN, DeepLab |
 | **Speech recognition** | DL | Conformer, Whisper, wav2vec2 |
-| **Text understanding** | DL | Transformers (BERT, GPT (Generative Pre-trained Transformer)-style) |
+| **Text understanding** | DL | Transformers (BERT, GPT-style) |
 | **Image generation** | DL | Diffusion (DALL-E, Stable Diffusion), GANs |
 | **Recommendation (deep)** | Sometimes | Two-tower, DCN, transformer ranker |
 | **Tabular classification** | Often NOT | **XGBoost usually wins** |
@@ -363,7 +363,7 @@ JumpStart hosts **300+ pre-trained models** (foundation and task-specific) plus 
 | **Neuron SDK** | AWS compiler/runtime for Inferentia and Trainium |
 | **FSx for Lustre** | High-throughput parallel filesystem on AWS |
 | **Ground Truth** | SageMaker data-labelling service |
-| **Training Compiler** | SageMaker JIT (Just-In-Time) compiler for TF/PyTorch graphs |
+| **Training Compiler** | SageMaker JIT compiler for TF/PyTorch graphs |
 | **Debugger** | SageMaker training-internals tensor introspection |
 | **Profiler** | SageMaker performance / utilisation profiler |
 | **JumpStart** | SageMaker library of pre-trained models and solutions |
@@ -558,7 +558,7 @@ for epoch in range(EPOCHS):
 - `distribution={"smdistributed":{"dataparallel":{"enabled":True}}}` = SMDDP enabled
 - `use_spot_instances=True` + `checkpoint_s3_uri` = Spot training
 - `enable_network_isolation=True` = no outbound network
-- `enable_inter_container_traffic_encryption=True` = TLS (Transport Layer Security) between nodes
+- `enable_inter_container_traffic_encryption=True` = TLS between nodes
 
 ---
 
@@ -645,4 +645,4 @@ predictor = model.deploy(
 3. Verified data loader keeps GPU >80% utilised on a single GPU?
 4. Verified distributed run scales to 2 nodes before scaling to 32?
 5. Verified checkpointing path works on Spot interruption simulation?
-6. Verified VPC (Virtual Private Cloud) + KMS + IAM (Identity and Access Management) passes a security review?
+6. Verified VPC + KMS + IAM passes a security review?

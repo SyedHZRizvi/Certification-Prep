@@ -29,11 +29,11 @@
 
 ## 🧪 Content Safety APIs
 
-| API (Application Programming Interface) | Catches |
+| API | Catches |
 |---|---|
 | `analyze_text` / `analyze_image` | Harmful content in 4 categories |
 | `shield_prompt` (Prompt Shields) | Jailbreaks (**user attack**) + indirect injection (**document attack**) |
-| `detect_groundedness` | LLM (Large Language Model) output not supported by sources |
+| `detect_groundedness` | LLM output not supported by sources |
 | Protected Material Detection | Reproducing copyrighted text/code |
 | Custom Categories (preview) | Your own classifier (e.g. competitor mentions) |
 
@@ -62,7 +62,7 @@ r = client.analyze_text(AnalyzeTextOptions(text="..."))
 1. IDENTIFY harms
 2. MEASURE them (test sets + evaluation)
 3. MITIGATE with 4 layers:
-     Model · Safety system · Metaprompt + grounding · UX (User Experience)
+     Model · Safety system · Metaprompt + grounding · UX
 4. OPERATE (staged rollout, monitoring, IR plan)
 ```
 
@@ -151,7 +151,7 @@ If you can answer all 5 in 60 seconds, you own Module 2. ✅
 |---|---|---|---|
 | 1 | Model | Choose safer base model; fine-tune | Azure OpenAI / Foundry model catalog |
 | 2 | Safety system | Filters + Shields + Groundedness | Azure AI Content Safety; built-in OpenAI filters |
-| 3 | Metaprompt + grounding | System prompt + RAG (Retrieval-Augmented Generation) `in_scope=true` + citations | Foundry prompt flow; On Your Data |
+| 3 | Metaprompt + grounding | System prompt + RAG `in_scope=true` + citations | Foundry prompt flow; On Your Data |
 | 4 | User experience | UX cues, badges, "report" button, escape hatch | Application code + Adaptive Cards |
 
 ## 📋 Regulatory Mapping (2024–2026)

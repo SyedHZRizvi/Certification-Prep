@@ -1,11 +1,11 @@
 # Module 4: File Servers, Storage & Storage Spaces 💾
 
-> **Why this module matters:** Storage is 15–20% of AZ-800 and almost every storage question is about choosing the right *combination* of technologies (S2D + Storage Replica + DFS-N) for a specific scenario. The exam loves "you have two data centers, RTO (Recovery Time Objective) 5 min, RPO (Recovery Point Objective) zero, 2 PB data which combination?" Get the prerequisites, scale limits, and synchronous-vs-asynchronous trade-offs into reflex memory and you've locked down an outsized chunk of the test.
+> **Why this module matters:** Storage is 15–20% of AZ-800 and almost every storage question is about choosing the right *combination* of technologies (S2D + Storage Replica + DFS-N) for a specific scenario. The exam loves "you have two data centers, RTO 5 min, RPO zero, 2 PB data which combination?" Get the prerequisites, scale limits, and synchronous-vs-asynchronous trade-offs into reflex memory and you've locked down an outsized chunk of the test.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Basic storage concepts (RAID 1/5/6/10, IOPS, latency, throughput)
 > - Active Directory groups for permissions, [Module 1](../Module-01-Active-Directory/Reading.md)
-> - DNS (Domain Name System) basics, especially `\\contoso.com\shares` resolution, [Module 3](../Module-03-Networking-DNS/Reading.md)
+> - DNS basics, especially `\\contoso.com\shares` resolution, [Module 3](../Module-03-Networking-DNS/Reading.md)
 > - NTFS permissions and shared-folder permissions (basic) from any Windows Server experience
 >
 > If those are shaky, pause and review. This module assumes you can already explain "why NTFS permissions stack with share permissions to produce the effective permission."
@@ -48,7 +48,7 @@ By the end, you'll know which combination solves any given scenario.
 | **2** | **2-way mirror only** |
 | **3** | **3-way mirror** |
 | **4** | 3-way mirror **or** dual parity |
-| **6+** | Mirror-accelerated parity (MAP (Minimum Advertised Price)) |
+| **6+** | Mirror-accelerated parity (MAP) |
 
 🔥 **MEMORIZE the 2-node = 2-way mirror constraint.** A 2-node S2D cluster cannot survive losing a node *and* a drive simultaneously the way a 3-node 3-way mirror can.
 
@@ -181,7 +181,7 @@ New-DfsnFolder -Path "\\contoso.com\Shares\HR" `
 | Property | Detail |
 |----------|--------|
 | Topology | Hub-spoke, full-mesh, or custom |
-| Replication transport | RPC over TCP (Transmission Control Protocol) (or via SMB) |
+| Replication transport | RPC over TCP (or via SMB) |
 | Block-level diff | Yes, only changed blocks transfer (RDC) |
 | Read-only members | Yes |
 | Bandwidth throttling | Yes, per schedule |
@@ -281,12 +281,12 @@ FSRM can classify files by content (e.g., "contains credit card numbers") and ap
 
 ## 💼 Work Folders
 
-**Work Folders** is Microsoft's self-managed (not OneDrive) file-sync feature. Configure once; user's documents sync to multiple corporate devices over HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure).
+**Work Folders** is Microsoft's self-managed (not OneDrive) file-sync feature. Configure once; user's documents sync to multiple corporate devices over HTTPS.
 
 | Property | Detail |
 |----------|--------|
 | Transport | HTTPS only (port 443) |
-| Authentication | AD (Active Directory) integrated, supports Workplace Join + Conditional Access |
+| Authentication | AD integrated, supports Workplace Join + Conditional Access |
 | Conflict policy | Last-writer-wins; minor conflicts auto-resolved |
 | Encryption at rest | Optional (per-folder) |
 | Status | "Legacy but still supported", OneDrive is Microsoft's strategic file-sync direction |
@@ -307,7 +307,7 @@ New-SyncShare -Name "Marketing" `
 
 ## 🌍 BranchCache
 
-**BranchCache** caches HQ-hosted content at the branch, reducing WAN (Wide Area Network) load.
+**BranchCache** caches HQ-hosted content at the branch, reducing WAN load.
 
 | Mode | Description |
 |------|-------------|
@@ -328,7 +328,7 @@ Set-BCContentServer -ServerVerifies $true
 Enable-BCHostedServer
 ```
 
-Plus GPO (Group Policy Object) settings on clients to enable BranchCache + set cache mode.
+Plus GPO settings on clients to enable BranchCache + set cache mode.
 
 ---
 
@@ -342,7 +342,7 @@ The **iSCSI Target Server** role exposes virtual disks (`.vhdx` files) as iSCSI 
 | Authentication | CHAP and Reverse-CHAP supported |
 | Snapshots | Yes (per-LUN, point-in-time) |
 | Clones | Yes (read-only and writable) |
-| Network | Dedicated iSCSI VLAN (Virtual Local Area Network) strongly recommended |
+| Network | Dedicated iSCSI VLAN strongly recommended |
 | Initiators | Windows iSCSI Initiator (built-in client), VMware, Linux open-iscsi |
 
 ```powershell
@@ -386,12 +386,12 @@ Set-IscsiServerTarget -TargetName "TARGET01" `
 
 ## 📊 Case Study, The 2017 Equifax Breach and the Role of File-Level Access Controls
 
-**Situation.** In May–July 2017, Equifax disclosed (formally September 7, 2017) that an unauthenticated attacker exploited an unpatched Apache Struts CVE-2017-5638 vulnerability in their Automated Consumer Interview System (ACIS) web application to gain initial access and then spent **76 days** inside the network exfiltrating ~147 million US consumers' SSNs, dates of birth, addresses, and ~209,000 credit-card numbers (US Government Accountability Office, *Data Protection: Actions Taken by Equifax and Federal Agencies in Response to the 2017 Breach*, August 2018; Equifax Security Incident press release, September 7 2017). The attackers moved laterally through file shares, dumping data from multiple servers undetected for ten weeks largely because **expired TLS (Transport Layer Security) certificates** had silenced the IDS that was supposed to inspect the outbound traffic. Investigators noted that overly broad share-level permissions across the corporate file estate meant that once the web app was breached, the attacker had read access to data far beyond the application's legitimate scope.
+**Situation.** In May–July 2017, Equifax disclosed (formally September 7, 2017) that an unauthenticated attacker exploited an unpatched Apache Struts CVE-2017-5638 vulnerability in their Automated Consumer Interview System (ACIS) web application to gain initial access and then spent **76 days** inside the network exfiltrating ~147 million US consumers' SSNs, dates of birth, addresses, and ~209,000 credit-card numbers (US Government Accountability Office, *Data Protection: Actions Taken by Equifax and Federal Agencies in Response to the 2017 Breach*, August 2018; Equifax Security Incident press release, September 7 2017). The attackers moved laterally through file shares, dumping data from multiple servers undetected for ten weeks largely because **expired TLS certificates** had silenced the IDS that was supposed to inspect the outbound traffic. Investigators noted that overly broad share-level permissions across the corporate file estate meant that once the web app was breached, the attacker had read access to data far beyond the application's legitimate scope.
 
 **Decision.** Equifax's response to Congress laid out remediation areas that map almost exactly to AZ-800 storage objectives:
 
 1. **Access-Based Enumeration (ABE)**, show users only the folders they have access to. Doesn't *grant* permissions but reduces reconnaissance value. Equifax explicitly cited ABE rollouts as part of file-server hardening.
-2. **Just-in-time access for sensitive shares**, via **Microsoft Defender for Servers P2 JIT (Just-In-Time) VM (Virtual Machine) access** for the server hosting the share, and SAM-R isolation.
+2. **Just-in-time access for sensitive shares**, via **Microsoft Defender for Servers P2 JIT VM access** for the server hosting the share, and SAM-R isolation.
 3. **File Server Resource Manager (FSRM) classification + file screens**, block obvious exfil tools (`.iso`, `.7z`, `.zip` over a certain size) and classify files by content sensitivity.
 4. **DFS Namespaces** with site-aware referrals so users don't accidentally hit a far-site replica with stale permissions.
 5. **Audit logging of file access** to a Log Analytics workspace via the Azure Monitor Agent (covered in Module 7).
@@ -410,7 +410,7 @@ The exam will phrase this as: *"After consolidating five legacy file servers via
 **Discussion (Socratic).**
 - **Q1.** Equifax's web-app breach should never have given the attacker access to *unrelated* file shares. Build the file-server permission architecture that ensures the principle of least privilege scales to 20,000+ shares, including how DFS-N and AGDLP group nesting (from Module 1) combine to make it tractable.
 - **Q2.** FSRM file screens can be set to "Active" (block writes) or "Passive" (log only). A finance team will not tolerate any false positives blocking their work, so they want Passive everywhere. Build the case for *selective* Active enforcement on `.exe`, `.ps1`, `.iso` and explain the residual risk of Passive-only.
-- **Q3.** Equifax cited an expired TLS certificate as the cause of their IDS blind spot. The same certificate-management failure mode applies to file-server SSL (Secure Sockets Layer) bindings, Storage Replica encryption channels, and DFS-N referrals. Architect a 90-day certificate lifecycle policy for a 200-server file estate. What single tool (free or paid) makes this realistic, and what's the cost of *not* having it?
+- **Q3.** Equifax cited an expired TLS certificate as the cause of their IDS blind spot. The same certificate-management failure mode applies to file-server SSL bindings, Storage Replica encryption channels, and DFS-N referrals. Architect a 90-day certificate lifecycle policy for a 200-server file estate. What single tool (free or paid) makes this realistic, and what's the cost of *not* having it?
 
 ---
 

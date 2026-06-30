@@ -1,6 +1,6 @@
 # Module 4: Structured Outputs & JSON 📦
 
-> **Why this module matters:** 13% of the Final Mock. The moment your LLM output flows into other software a database, an API (Application Programming Interface), a UI (User Interface), another LLM you need *guaranteed* structure. Hoping for valid JSON is how you wake up at 3am to a 500-error log full of "trailing comma" and "unterminated string." This module is the engineering layer that ends that pager.
+> **Why this module matters:** 13% of the Final Mock. The moment your LLM output flows into other software a database, an API, a UI, another LLM you need *guaranteed* structure. Hoping for valid JSON is how you wake up at 3am to a 500-error log full of "trailing comma" and "unterminated string." This module is the engineering layer that ends that pager.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Modules 1, 2, 3
@@ -13,7 +13,7 @@
 
 ## 🛒 A Story: The E-Commerce Site That Returned $1.2M in Refunds Because of Invalid JSON
 
-Meet Rashid, lead engineer at a 4-year-old D2C (Direct-to-Consumer) cosmetics brand. His team shipped a "Tell us in plain English what you want, and our AI builds your shopping cart" feature in 2024, a natural-language interface that calls GPT-4 to extract product names and quantities from a user message, then constructs a real cart.
+Meet Rashid, lead engineer at a 4-year-old D2C cosmetics brand. His team shipped a "Tell us in plain English what you want, and our AI builds your shopping cart" feature in 2024, a natural-language interface that calls GPT-4 to extract product names and quantities from a user message, then constructs a real cart.
 
 The first week, the feature converted at 28%, higher than the form-based flow. Marketing celebrated.
 
@@ -222,7 +222,7 @@ cart: Cart = response.parsed
 
 | Provider | Mechanism | Schema source |
 |----------|-----------|---------------|
-| OpenAI | `response_format=PydanticModel` (beta SDK (Software Development Kit)) OR `response_format={"type": "json_schema", ...}` (raw API) | Pydantic OR JSON Schema |
+| OpenAI | `response_format=PydanticModel` (beta SDK) OR `response_format={"type": "json_schema", ...}` (raw API) | Pydantic OR JSON Schema |
 | Anthropic | `tools=[...]` with `tool_choice={"type":"tool", "name":...}` | JSON Schema |
 | Gemini | `config={"response_mime_type":"application/json", "response_schema": ...}` | Pydantic OR JSON Schema |
 | Llama (via instructor) | `client = instructor.from_openai(client)`, then `response_model=PydanticModel` | Pydantic |
@@ -415,7 +415,7 @@ The model thinks in the `reasoning` field, then commits to the categorical answe
 **Day 1, Add schema:**
 ```python
 class CartItem(BaseModel):
-    product_id: str = Field(..., pattern=r"^SKU (Stock Keeping Unit)-\d{6}$")
+    product_id: str = Field(..., pattern=r"^SKU-\d{6}$")
     quantity: int = Field(..., ge=1, le=20)
     variant: str | None = None
 ```
@@ -522,7 +522,7 @@ By early 2026, schema-enforced structured output is the **default** for any new 
 - Tool descriptions ARE prompt engineering, write them with the same care as system prompts.
 
 **Discussion (Socratic).**
-- **Q1:** A startup CTO (Chief Technology Officer) insists their team's elaborate JSON-mode + regex retry layer is "good enough." Make the technical and business case for migrating to schema-enforced structured outputs.
+- **Q1:** A startup CTO insists their team's elaborate JSON-mode + regex retry layer is "good enough." Make the technical and business case for migrating to schema-enforced structured outputs.
 - **Q2:** Anthropic doesn't have a `response_format` flag, they use tool use. Are these meaningfully different from a developer's POV, or just spelling? Argue both sides.
 - **Q3:** Constrained decoding can occasionally produce *low-quality* outputs because the model is forced into a token it didn't want to pick. When does this trade-off matter? How do you measure it?
 

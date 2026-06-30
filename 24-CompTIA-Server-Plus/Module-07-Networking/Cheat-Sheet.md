@@ -17,7 +17,7 @@
 
 ---
 
-## 🏷️ VLAN (Virtual Local Area Network) Tagging (802.1Q)
+## 🏷️ VLAN Tagging (802.1Q)
 
 | Port | Carries |
 |---|---|
@@ -38,7 +38,7 @@ Typical server VLANs:
 - Jumbo = **9000** (sometimes 9216)
 - **MUST be end-to-end** (NIC + switch + storage)
 - Use on: iSCSI/NFS storage, vMotion, backup VLANs
-- Don't use on: user-facing LAN (Local Area Network), anything that crosses the internet
+- Don't use on: user-facing LAN, anything that crosses the internet
 
 🚨 MTU mismatch = silent drops + worse perf than 1500 default.
 
@@ -63,12 +63,12 @@ Typical server VLANs:
 
 | | L4 | L7 |
 |---|---|---|
-| Layer | Transport (IP+port) | Application (HTTP (Hypertext Transfer Protocol), etc.) |
+| Layer | Transport (IP+port) | Application (HTTP, etc.) |
 | Speed | Very fast | Slower (parses payload) |
 | Routing | By IP+port | By host / path / header / cookie |
-| SSL (Secure Sockets Layer) offload | No | Yes |
-| WAF (Web Application Firewall) | No | Yes |
-| Examples | AWS (Amazon Web Services) NLB, F5 LTM L4, HAProxy L4 | AWS ALB, NGINX, Application Gateway, F5 LTM L7 |
+| SSL offload | No | Yes |
+| WAF | No | Yes |
+| Examples | AWS NLB, F5 LTM L4, HAProxy L4 | AWS ALB, NGINX, Application Gateway, F5 LTM L7 |
 
 ### Algorithms
 
@@ -82,18 +82,18 @@ Typical server VLANs:
 
 ### Other LB features
 
-- **Health checks** (L4 TCP (Transmission Control Protocol) / L7 HTTP)
-- **GSLB** = DNS (Domain Name System)-level geo load balancing
+- **Health checks** (L4 TCP / L7 HTTP)
+- **GSLB** = DNS-level geo load balancing
 - **Sticky session** = bind client to backend
 
 ---
 
 ## 🛰️ Server Networking Extras
 
-- **OOB Mgmt VLAN** = sacred (separate, never internet-exposed, MFA (Multi-Factor Authentication))
+- **OOB Mgmt VLAN** = sacred (separate, never internet-exposed, MFA)
 - **iSCSI VLAN** = dedicated, jumbo, MPIO (Module 3)
 - **WoL** = magic packet to NIC; requires standby power + NIC support
-- **QoS (Quality of Service) / DSCP / 802.1p** = priority tagging when storage shares fabric
+- **QoS / DSCP / 802.1p** = priority tagging when storage shares fabric
 - **STP PortFast / edge port** = bypasses 30-s STP delay for server-facing ports
 - **MLAG / VSS** = multi-chassis LAG for switch redundancy
 

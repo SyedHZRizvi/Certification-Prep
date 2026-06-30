@@ -8,7 +8,7 @@
 
 | Service | Answers... |
 |---------|------------|
-| **CloudTrail** | "Who made this API (Application Programming Interface) call?" |
+| **CloudTrail** | "Who made this API call?" |
 | **CloudWatch Logs** | "What did the app print?" |
 | **AWS Config** | "What was this resource's config; is it compliant?" |
 | **X-Ray** | "Where's the latency in a distributed request?" |
@@ -19,9 +19,9 @@
 
 | Service | Use |
 |---------|-----|
-| **GuardDuty** | Threats (CloudTrail/VPC/DNS (Domain Name System), ML) |
-| **Macie** | PII discovery in S3 (Simple Storage Service) |
-| **Inspector** | Vulnerabilities (EC2 (Elastic Compute Cloud), Lambda, ECR) |
+| **GuardDuty** | Threats (CloudTrail/VPC/DNS, ML) |
+| **Macie** | PII discovery in S3 |
+| **Inspector** | Vulnerabilities (EC2, Lambda, ECR) |
 | **Security Hub** | Aggregate findings |
 | **Detective** | Investigate incidents (graph) |
 
@@ -44,14 +44,14 @@
 
 | Symptom | Cure |
 |---------|------|
-| NAT (Network Address Translation) $$ on S3 traffic | **Gateway VPC Endpoint** |
+| NAT $$ on S3 traffic | **Gateway VPC Endpoint** |
 | Idle dev EC2 | Schedule stop / Lambda / Spot |
 | Long predictable EC2 | RI / Savings Plan |
 | Fault-tolerant batch | Spot Fleet |
 | Cold S3 data | Lifecycle → IA → Glacier |
 | Over-provisioned EC2 | Compute Optimizer |
 | Heavy egress to internet | CloudFront |
-| RDS (Relational Database Service) connection storms | RDS Proxy |
+| RDS connection storms | RDS Proxy |
 | Unattached EBS / EIP | Trusted Advisor / Config rule |
 | Lambda over-mem | Compute Optimizer Lambda recs |
 

@@ -15,7 +15,7 @@
 | Position-based (U-shaped) | 40/20/40 | First + last matter |
 | Data-driven (DDA) | Probabilistic / fractional | Default with enough data |
 
-**W-shaped** (B2B (Business-to-Business) variant): 22.5 / 22.5 / 22.5 / 22.5 to First / Lead / Opp / Last + 10% middle.
+**W-shaped** (B2B variant): 22.5 / 22.5 / 22.5 / 22.5 to First / Lead / Opp / Last + 10% middle.
 
 ---
 
@@ -41,7 +41,7 @@ RE_i = (P_conv_with_i − P_conv_without_i) / P_conv_with_i
 
 ---
 
-## 🤖 GA4 (Google Analytics 4) DDA Threshold
+## 🤖 GA4 DDA Threshold
 
 ```
 400 conversions per conversion type per 30 days
@@ -55,7 +55,7 @@ RE_i = (P_conv_with_i − P_conv_without_i) / P_conv_with_i
 | Vendor | Sweet spot | Rigor |
 |--------|-----------|-------|
 | Rockerbox | Enterprise MTA + MMM + Incr | High |
-| Northbeam | DTC (Direct-to-Consumer) | Med-high |
+| Northbeam | DTC | Med-high |
 | Measured | Enterprise Incr + MMM | High (no MTA) |
 | Triple Whale | Shopify DTC | Med |
 | Hyros | Info products | Low-med |

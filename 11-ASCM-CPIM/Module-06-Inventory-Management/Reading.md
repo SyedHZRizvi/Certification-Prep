@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 2: Demand Planning & Forecasting](../Module-02-Demand-Planning-Forecasting/Reading.md), σ (standard deviation), MAD, MAPE; safety stock depends directly on demand variability
-> - [Module 4: MPS / MRP (Material Requirements Planning)](../Module-04-Master-Production-Scheduling-MRP/Reading.md), lot-sizing rules consume the same EOQ/POQ/FOQ vocabulary
+> - [Module 4: MPS / MRP](../Module-04-Master-Production-Scheduling-MRP/Reading.md), lot-sizing rules consume the same EOQ/POQ/FOQ vocabulary
 > - High-school algebra: square roots (for EOQ), the normal distribution (for safety stock)
 >
 > This is the most arithmetic-heavy module. Expect to work each EOQ, EPQ, ROP, and safety-stock example by hand. If the math is rusty, build a 1-page cheat sheet of formulas before starting.
@@ -227,7 +227,7 @@ Days of Supply = 365 / Turnover
 
 ### Worked example
 
-COGS (Cost of Goods Sold) = $20M/year, average inventory = $4M.
+COGS = $20M/year, average inventory = $4M.
 
 Turnover = 20 / 4 = **5 turns per year**.
 Days of supply = 365 / 5 = **73 days**.
@@ -242,7 +242,7 @@ Higher turnover = better (less capital tied up), within reason; too high = stock
 
 When suppliers offer price breaks at higher order quantities, the EOQ may not be optimal, you must compare total cost at each price break.
 
-### Vendor-Managed Inventory (VMI (Vendor Managed Inventory))
+### Vendor-Managed Inventory (VMI)
 
 The *supplier* monitors customer inventory and reorders automatically. Reduces customer planner workload, smooths supplier capacity, mitigates bullwhip.
 
@@ -252,8 +252,8 @@ Goods physically at customer site but *owned by supplier* until consumed. Custom
 
 ### Inventory Valuation Methods (Briefly)
 
-- **FIFO (First In, First Out)**, first-in, first-out (older stock issued first)
-- **LIFO (Last In, First Out)**, last-in, first-out (newer stock issued first)
+- **FIFO**, first-in, first-out (older stock issued first)
+- **LIFO**, last-in, first-out (newer stock issued first)
 - **Weighted Average**, average cost
 - **Standard Cost**, predetermined cost; variances flagged
 
@@ -269,8 +269,8 @@ For perishables, always FIFO. For tax purposes in inflationary periods, LIFO may
 | "Higher safety stock is always better" | More SS = more carrying cost; trade-off against service level |
 | "Cycle counting requires plant shutdown" | No, that's annual physical. Cycle counting is continuous |
 | "ABC analysis applies only to retailers" | False, it works for any inventory: SKUs, components, MRO supplies |
-| "Inventory turnover is the only inventory KPI (Key Performance Indicator) that matters" | Turnover + IRA + service level + carrying cost together tell the story |
-| "JIT (Just-In-Time) eliminates safety stock" | JIT *reduces* safety stock through reliability, doesn't eliminate it entirely |
+| "Inventory turnover is the only inventory KPI that matters" | Turnover + IRA + service level + carrying cost together tell the story |
+| "JIT eliminates safety stock" | JIT *reduces* safety stock through reliability, doesn't eliminate it entirely |
 
 ---
 
@@ -312,15 +312,15 @@ For perishables, always FIFO. For tax purposes in inflationary periods, LIFO may
 
 ## 📊 Case Study, Allbirds Inventory Write-Down (2022–2023)
 
-**Situation.** Allbirds is a San Francisco direct-to-consumer (DTC (Direct-to-Consumer)) footwear brand founded 2014 around the merino-wool "Wool Runner" sneaker. IPO (Initial Public Offering)'d November 2021 at a $4.1B valuation on the strength of DTC growth (~$219M FY 2020 revenue, up from $0 five years earlier) and a sustainability-positioning narrative (carbon-neutral, materials-innovation). The company's inventory model was forecast-driven MTS with quarterly buys from contract footwear factories in Vietnam and South Korea on lead times of 90–180 days. As DTC growth slowed and competitive pressure from Hoka, On Running, and the New Balance "990v6" revival intensified through 2022, Allbirds maintained its forecast-buy pattern and accumulated inventory at a rate that outpaced sell-through.
+**Situation.** Allbirds is a San Francisco direct-to-consumer (DTC) footwear brand founded 2014 around the merino-wool "Wool Runner" sneaker. IPO'd November 2021 at a $4.1B valuation on the strength of DTC growth (~$219M FY 2020 revenue, up from $0 five years earlier) and a sustainability-positioning narrative (carbon-neutral, materials-innovation). The company's inventory model was forecast-driven MTS with quarterly buys from contract footwear factories in Vietnam and South Korea on lead times of 90–180 days. As DTC growth slowed and competitive pressure from Hoka, On Running, and the New Balance "990v6" revival intensified through 2022, Allbirds maintained its forecast-buy pattern and accumulated inventory at a rate that outpaced sell-through.
 
-**Decision.** Through 2022 leadership held onto the original SKU (Stock Keeping Unit) breadth (Wool Runners, Tree Runners, the Dasher running shoe, Mizzles for wet weather, Wool Loungers, plus seasonal colorways) and continued to launch new SKUs (the *Wool Runner Mizzle*, the *Trail Runner SWT*) without aggressively retiring underperformers. Safety-stock sizing assumed the 2020–2021 demand variability, not the post-2022 demand-pattern shift. The ABC discipline (focusing planning effort on top-revenue SKUs) was applied weakly, long-tail SKUs accumulated inventory disproportionately.
+**Decision.** Through 2022 leadership held onto the original SKU breadth (Wool Runners, Tree Runners, the Dasher running shoe, Mizzles for wet weather, Wool Loungers, plus seasonal colorways) and continued to launch new SKUs (the *Wool Runner Mizzle*, the *Trail Runner SWT*) without aggressively retiring underperformers. Safety-stock sizing assumed the 2020–2021 demand variability, not the post-2022 demand-pattern shift. The ABC discipline (focusing planning effort on top-revenue SKUs) was applied weakly, long-tail SKUs accumulated inventory disproportionately.
 
 **Outcome.** Q3 2022 Allbirds wrote down **$13M** of inventory; Q4 2022 added another. By Q2 2023 the company had taken total inventory write-downs of **$30M+** and announced a Strategic Transformation Plan (Aug 2023): SKU rationalization (cut from ~50+ to ~30 active), reduction of the DTC fleet footprint, and a return to a tighter MTS planning discipline with shorter buy cycles. Stock price fell from a peak of $32 (Nov 2021) to below $1.40 (mid-2023), a 95% decline. By late 2024 inventory levels were back in a healthier band but revenue had declined sharply (FY 2023 revenue $254M vs FY 2022's $298M). Allbirds remains publicly traded on NASDAQ at very low valuation as of early 2026.
 
 **Lesson for the exam / for practitioners.** Allbirds is a near-textbook case of **safety-stock sizing assumptions becoming wrong without anyone re-checking them**. The CPIM formula `SS = z × σ_LT` is honest: σ_LT must be re-estimated when the demand-variability pattern changes. When demand was growing 60% YoY in 2020–2021, the variability was real but trending up; when DTC growth collapsed in 2022, the variability shape changed entirely (new demand pattern, longer right-tail of slow-moving SKUs, higher correlation across SKUs in slowdown). The carrying cost of the long-tail SKUs (storage, capital, and ultimately obsolescence-write-off) was vastly understated by the original ABC classification.
 
-The CPIM exam-takeaway: **inventory KPIs (Key Performance Indicators) are leading indicators of strategy mismatch.** Inventory turnover dropping, days-of-supply growing, ABC-A items in stockout while C items pile up, these are signals to *re-baseline* the planning assumptions, not patch. Most write-down stories share this shape: a planning system that's quantitatively correct given old assumptions, applied to a new demand reality, generating an answer no one questions because the system "says so."
+The CPIM exam-takeaway: **inventory KPIs are leading indicators of strategy mismatch.** Inventory turnover dropping, days-of-supply growing, ABC-A items in stockout while C items pile up, these are signals to *re-baseline* the planning assumptions, not patch. Most write-down stories share this shape: a planning system that's quantitatively correct given old assumptions, applied to a new demand reality, generating an answer no one questions because the system "says so."
 
 **Discussion (Socratic).**
 - Q1: An Allbirds-style brand sees DTC growth slowing in Q2. Build the strongest argument for a *defensive* inventory strategy (cut buys aggressively, accept stockouts on some SKUs) AND for a *patient* inventory strategy (maintain buys, ride out the soft quarter). At what stage of evidence does the calculation flip?

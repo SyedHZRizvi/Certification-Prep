@@ -8,7 +8,7 @@
 
 | Feature | Free | P1 | P2 |
 |---------|:----:|:--:|:--:|
-| Cloud users + groups + SSO (Single Sign-On) to gallery | ✅ | ✅ | ✅ |
+| Cloud users + groups + SSO to gallery | ✅ | ✅ | ✅ |
 | Security Defaults | ✅ | ✅ | ✅ |
 | SSPR (cloud users) | ✅ | ✅ | ✅ |
 | SSPR (synced users) | ❌ | ✅ | ✅ |
@@ -17,14 +17,14 @@
 | **Microsoft Entra Application Proxy** | ❌ | ✅ | ✅ |
 | **Branding** (custom logo on sign-in) | ❌ | ✅ | ✅ |
 | **Identity Protection** (risk-based CA) | ❌ | ❌ | ✅ |
-| **Privileged Identity Management (PIM (Product Information Management))** | ❌ | ❌ | ✅ |
+| **Privileged Identity Management (PIM)** | ❌ | ❌ | ✅ |
 | **Access reviews + entitlement management** | ❌ | ❌ | ✅ |
 
 **Microsoft 365 bundles:**
 - E3 = Entra ID P1
 - E5 = Entra ID P2 (+ Identity Protection + PIM + entitlement management)
 
-**Microsoft Entra ID Governance** (add-on SKU (Stock Keeping Unit)) = Lifecycle Workflows + custom extensions + ML access review recommendations.
+**Microsoft Entra ID Governance** (add-on SKU) = Lifecycle Workflows + custom extensions + ML access review recommendations.
 
 ---
 
@@ -32,7 +32,7 @@
 
 | Item | Value |
 |------|-------|
-| Default DNS (Domain Name System) name | `<tenant>.onmicrosoft.com` (permanent) |
+| Default DNS name | `<tenant>.onmicrosoft.com` (permanent) |
 | Custom domains per tenant | 5,000 |
 | One subscription belongs to | Exactly 1 tenant (can be transferred) |
 | Tenant creation | Entra portal → Create a tenant → Workforce / External |
@@ -45,7 +45,7 @@
 |--------|----------|----------|
 | **M365 Admin Roles** | M365 workloads | Exchange Admin, Teams Admin |
 | **Entra Roles** | Entra ID + Entra-aware services | Global Admin, User Admin, App Admin, PIM Admin |
-| **Azure RBAC (Role-Based Access Control) Roles** | Azure resources | Owner, Contributor, Reader, UAA |
+| **Azure RBAC Roles** | Azure resources | Owner, Contributor, Reader, UAA |
 
 **Critical:** Global Admin ≠ Owner of all Azure subs. Must toggle "Access management for Azure resources" and assign UAA at root scope.
 
@@ -57,7 +57,7 @@
 |------|----------------|
 | **Global Administrator** | Everything in Entra; can elevate to root Azure |
 | **Privileged Role Administrator** | Assign any Entra role + manage PIM |
-| **Privileged Authentication Administrator** | Reset MFA (Multi-Factor Authentication) on any user (incl. GA) |
+| **Privileged Authentication Administrator** | Reset MFA on any user (incl. GA) |
 | **Authentication Administrator** | Reset MFA on non-admins only |
 | **Application Administrator** | Manage all apps + service principals |
 | **User Administrator** | Manage users + groups (not GAs) |
@@ -68,9 +68,9 @@
 
 ---
 
-## 🤝 B2B (Business-to-Business) vs External ID
+## 🤝 B2B vs External ID
 
-| | **B2B Collaboration** | **External ID** (formerly B2C (Business-to-Consumer)) |
+| | **B2B Collaboration** | **External ID** (formerly B2C) |
 |---|---------------------|--------------------------------|
 | Audience | Partners, vendors | Customers (consumers) |
 | Where users live | Guests in YOUR tenant | Separate External ID tenant |

@@ -1,6 +1,6 @@
 # Module 5: Marketing Mix Modeling 📈
 
-> **Why this module matters:** Marketing Mix Modeling (MMM) is the 60-year-old discipline that became the most-asked-for skill on marketing-strategist job postings in 2024–2026. It's the only measurement technique that can attribute the impact of TV ads, podcasts, billboards, and brand campaigns *alongside* digital channels, using only aggregate weekly data. By 2026, every senior marketing strategist is expected to be able to read an MMM output and defend its numbers in front of a CFO (Chief Financial Officer).
+> **Why this module matters:** Marketing Mix Modeling (MMM) is the 60-year-old discipline that became the most-asked-for skill on marketing-strategist job postings in 2024–2026. It's the only measurement technique that can attribute the impact of TV ads, podcasts, billboards, and brand campaigns *alongside* digital channels, using only aggregate weekly data. By 2026, every senior marketing strategist is expected to be able to read an MMM output and defend its numbers in front of a CFO.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The attribution-method vocabulary from [Module 4: Multi-Touch Attribution](../Module-04-Multi-Touch-Attribution/Reading.md), especially the MTA limits that motivate MMM.
@@ -13,7 +13,7 @@
 
 ## 🏢 A Story: How Walmart's MMM Team Saved a $50M Holiday Campaign
 
-December 2022. Walmart's media-mix model a Bayesian MMM built in-house by a team of 12 economists and data scientists predicts that a planned $50M Q4 holiday TV campaign will deliver a return on ad spend (ROAS (Return on Ad Spend)) of 1.8×. This is *below* the threshold Walmart's CFO sets for incremental media investment (2.4×). The Marketing VP wants to run the campaign anyway, "we always run holiday TV." The CFO blocks it.
+December 2022. Walmart's media-mix model a Bayesian MMM built in-house by a team of 12 economists and data scientists predicts that a planned $50M Q4 holiday TV campaign will deliver a return on ad spend (ROAS) of 1.8×. This is *below* the threshold Walmart's CFO sets for incremental media investment (2.4×). The Marketing VP wants to run the campaign anyway, "we always run holiday TV." The CFO blocks it.
 
 The team reallocates $50M as follows:
 
@@ -331,7 +331,7 @@ Question being asked
 | Meridian (open-source) | Similar | Similar |
 | In-house Bayesian (PyMC / Stan) | 4–9 months for a team | 1–2 weeks per refresh |
 | Consultant MMM (Analytics Partners, MMA, Marketing Evolution) | $150K–$500K per engagement | Monthly refresh fees $20K–$80K |
-| Platform MMM (Rockerbox, Measured, Northbeam) | Built-in to platform | Included in SaaS (Software as a Service) subscription |
+| Platform MMM (Rockerbox, Measured, Northbeam) | Built-in to platform | Included in SaaS subscription |
 
 🎯 **What the 2026 best practice looks like:**
 1. Run a quarterly **MMM refresh** on Robyn or Meridian, calibrated against incrementality tests.
@@ -430,8 +430,8 @@ The MMM's recommendation. Shown as a bar chart, current spend versus optimized s
 **Lesson for the exam / for practitioners.** P&G's MMM revival is the canonical 2021–2024 reference for *why MMM is more relevant in 2026 than it was in 2018*, despite being a 60-year-old discipline. The case also illustrates the **MMM + incrementality calibration** pattern this module teaches: MMM alone gives you a model; MMM calibrated against quarterly geo-holdout tests gives you a model you can defend in front of a CFO. On the exam, when a case asks "the iOS-ATT-driven measurement collapse damaged our MTA, what do we do?", the senior-strategist answer is "rebuild MMM as the primary budget-allocation tool, use MTA only for within-channel tactical decisions, and continuously calibrate MMM via incrementality tests." That's the P&G playbook, and it's exam-aligned.
 
 **Discussion (Socratic).**
-- Q1: P&G has the budget, brand portfolio, and data-science headcount to run 60+ incrementality tests per year. A mid-market DTC (Direct-to-Consumer) brand with $20M in revenue cannot run more than 3–4 per year. What's the *minimum viable* MMM-plus-incrementality cadence for that smaller brand, and how would you defend the methodological compromises to a board that wants "the P&G approach at our scale"?
-- Q2: The official answer here is that MMM is "more relevant in 2026 than 2018." Steel-man the contrarian view: a CDP (Customer Data Platform)-rich enterprise with high consent rates and strong server-side CAPI implementations could plausibly argue MTA + incrementality is enough, that MMM is yesterday's tool. Where does this contrarian case actually hold, and where does it fail?
+- Q1: P&G has the budget, brand portfolio, and data-science headcount to run 60+ incrementality tests per year. A mid-market DTC brand with $20M in revenue cannot run more than 3–4 per year. What's the *minimum viable* MMM-plus-incrementality cadence for that smaller brand, and how would you defend the methodological compromises to a board that wants "the P&G approach at our scale"?
+- Q2: The official answer here is that MMM is "more relevant in 2026 than 2018." Steel-man the contrarian view: a CDP-rich enterprise with high consent rates and strong server-side CAPI implementations could plausibly argue MTA + incrementality is enough, that MMM is yesterday's tool. Where does this contrarian case actually hold, and where does it fail?
 - Q3: P&G's choice to make MMM *binding* for brand-budget decisions (with MTA only advisory) implicitly accepts the trade-off that MMM is *slow*, it can refresh monthly at best, while MTA refreshes daily. What governance design lets a marketing org commit to MMM-led allocation without losing the speed of tactical MTA-driven decisions?
 
 ---
@@ -464,10 +464,10 @@ You now know:
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
 2. ✏️ Take [Quiz.md](./Quiz.md)
 3. 📋 Review [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ Move to [Module 6: Predictive Analytics, CLV (Customer Lifetime Value) & Churn](../Module-06-Predictive-Analytics-LTV (Lifetime Value)-Churn/Reading.md)
+4. ➡️ Move to [Module 6: Predictive Analytics, CLV & Churn](../Module-06-Predictive-Analytics-LTV-Churn/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 6](../Module-06-Predictive-Analytics-LTV-Churn/Reading.md) takes the marketing-decision lens from MMM and extends it to *per-customer* prediction (CLV, churn); [Module 10](../Module-10-Marketing-Org-Tech-Stack-Design/Reading.md) covers how an MMM function is staffed, budgeted, and governed inside a CMO (Chief Marketing Officer) org.
+> - Inside this course: [Module 6](../Module-06-Predictive-Analytics-LTV-Churn/Reading.md) takes the marketing-decision lens from MMM and extends it to *per-customer* prediction (CLV, churn); [Module 10](../Module-10-Marketing-Org-Tech-Stack-Design/Reading.md) covers how an MMM function is staffed, budgeted, and governed inside a CMO org.
 > - Cross-course: [Course 18: AI Digital Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) expects a worked MMM artifact (Robyn or Meridian on a real or synthetic dataset).
 > - Practice: [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) (questions 22–29) and the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) test ad-stock, Hill saturation, and the MTA-vs-MMM decision tree.
 

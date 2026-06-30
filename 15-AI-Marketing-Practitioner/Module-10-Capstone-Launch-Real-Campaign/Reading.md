@@ -10,7 +10,7 @@ You're going to launch a **real, live ad campaign** with **$200 of your own mone
 
 1. Pick a real brand, product, or service (yours or a friend's)
 2. Write the full campaign brief using Module 1's templates
-3. Set up tracking (Pixel + CAPI + GA4 (Google Analytics 4)) using Modules 2 + 4
+3. Set up tracking (Pixel + CAPI + GA4) using Modules 2 + 4
 4. Build creative using Module 8's AI pipeline
 5. Launch on Google Search ($100) + Meta Reels ($100)
 6. Run for 14-21 days with daily optimization (15 min/day)
@@ -91,7 +91,7 @@ You may also spend $50-150 on tools you don't already have (Unbounce, Klaviyo, M
 | 11 | Daily check + first Search Terms report review. | Negative keyword list (added) |
 | 12 | Daily check + Meta first ad-level breakdown. | Ad-level performance screenshot |
 | 13 | Daily check. Pause worst-performing ad on each platform. | Pause decisions documented |
-| 14 | First end-of-week review. CPA (Cost Per Acquisition) target? Pivot or scale? | Week 1 report doc |
+| 14 | First end-of-week review. CPA target? Pivot or scale? | Week 1 report doc |
 
 ### Week 3: Scale + Document (Days 15-21)
 
@@ -99,9 +99,9 @@ You may also spend $50-150 on tools you don't already have (Unbounce, Klaviyo, M
 |-----|------|-------------|
 | 15 | If healthy CPA → increase budget 20%. Else diagnose. | Decision rationale doc |
 | 16 | Add 2 new creative variants (DCT-style on Meta). | New ads launched |
-| 17 | Refresh Google ad copy if CTR (Click-Through Rate) < 4%. | New RSA variants |
+| 17 | Refresh Google ad copy if CTR < 4%. | New RSA variants |
 | 18 | Daily check. Watch 5 Hotjar replays. | Hotjar insight note |
-| 19 | Daily check. Calculate ROAS (Return on Ad Spend) / CPL (Cost Per Lead) / CAC (Customer Acquisition Cost). | Numbers doc |
+| 19 | Daily check. Calculate ROAS / CPL / CAC. | Numbers doc |
 | 20 | Stop spend. Wait 24h for delayed conversions to attribute. | (No spend day) |
 | 21 | Final reporting. Write post-mortem + blog post. | Capstone deliverables (see below) |
 
@@ -151,10 +151,10 @@ Why They Don't:     [The barrier]
 [The one message]
 
 ═══════════════════════════════════════════════════════════════
-                    KPIs (Key Performance Indicators)
+                    KPIs
 ═══════════════════════════════════════════════════════════════
 
-Primary KPI (Key Performance Indicator):     [ONE metric, e.g., "25 PDF downloads at CPA <= $8"]
+Primary KPI:     [ONE metric, e.g., "25 PDF downloads at CPA <= $8"]
 Secondary KPI:   [Health metric, e.g., "CTR > 3%"]
 Guardrail KPI:   [Pause trigger, e.g., "Pause channel if CPA > $15 for 2 days"]
 
@@ -190,7 +190,7 @@ Score yourself out of 100 across these dimensions:
 | **4. Campaign Structure** | 10 | Google: proper match types, negatives in place, RSAs at Excellent strength. Meta: proper ABO test structure. |
 | **5. Launch Discipline** | 10 | Both campaigns launched. No "default settings" left checked. Audience signals on PMax/Meta. |
 | **6. Optimization Cadence** | 15 | 14+ days of daily optimization logs. Search terms reviewed. Creative refreshed. |
-| **7. Measurement Rigor** | 10 | Final report includes CTR, CPC (Cost Per Click), CPA, conversion volume, ROAS or CPL. With error bars on small samples. |
+| **7. Measurement Rigor** | 10 | Final report includes CTR, CPC, CPA, conversion volume, ROAS or CPL. With error bars on small samples. |
 | **8. Post-Mortem Quality** | 10 | Honest assessment of what worked, failed, surprised. Forward-looking lessons. |
 | **TOTAL** | 100 | |
 
@@ -221,7 +221,7 @@ META ADS (5 min):
   ☐ Daily spend on pace?
   ☐ Any disapproved ads? (fix immediately)
   ☐ Frequency > 4x on any ad? (refresh creative)
-  ☐ CPM (Cost Per Mille) > $25? (audience too narrow)
+  ☐ CPM > $25? (audience too narrow)
 
 CONVERSION CHECK (5 min):
   ☐ Pull GA4 + ad platform conversion numbers
@@ -322,7 +322,7 @@ This is your portfolio piece. Write it for a marketing manager who might hire yo
 These are real practitioners who shared their own first-campaign learnings publicly. Look at the depth and honesty:
 
 - **Demand Curve's "I spent $1,000 on ads" series**: [demandcurve.com/case-studies](https://www.demandcurve.com/), short-form case studies with numbers
-- **DTC (Direct-to-Consumer) Newsletter, Founder spend reports**: candid breakdowns from real DTC founders
+- **DTC Newsletter, Founder spend reports**: candid breakdowns from real DTC founders
 - **Reforge, Growth case studies**: longer-form analysis (paid newsletter, free articles available)
 
 These are the bar. Your capstone doesn't need to match their scale, but it should match their honesty.
@@ -390,7 +390,7 @@ If you can't define any of these without checking, return to the relevant module
 ```
 Brief (M1) · ICP validation (M1) · Match types (M2) · Smart Bidding (M2) · RSA (M2) ·
 PMax architecture (M3) · Audience signals (M3) · CAPI (M4) · DCT (M4) · ASC (M4) ·
-TLA (M5) · Matched Audiences (M5) · DSP (Demand-Side Platform) (M6) · CDP (Customer Data Platform) (M6) · Attribution windows (M6) ·
+TLA (M5) · Matched Audiences (M5) · DSP (M6) · CDP (M6) · Attribution windows (M6) ·
 A/B testing math (M7) · Sample size (M7) · Brand Voice Project (M8) · Midjourney --cref (M8) ·
 Workflows/Flows (M9) · Tool use (M9) · Speed-to-lead (M9)
 ```

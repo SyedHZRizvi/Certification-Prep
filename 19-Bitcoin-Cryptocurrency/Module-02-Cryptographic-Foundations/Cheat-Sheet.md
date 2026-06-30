@@ -13,7 +13,7 @@
 | 3 | **Signatures** (ECDSA, Schnorr) | Spending |
 | 4 | **Merkle trees** | Block commitment, SPV proofs |
 
-🚨 Bitcoin does NOT use: RSA, AES (Advanced Encryption Standard) (consensus), NIST P-curves, ZKPs (mainchain), Diffie-Hellman (consensus).
+🚨 Bitcoin does NOT use: RSA, AES (consensus), NIST P-curves, ZKPs (mainchain), Diffie-Hellman (consensus).
 
 ---
 

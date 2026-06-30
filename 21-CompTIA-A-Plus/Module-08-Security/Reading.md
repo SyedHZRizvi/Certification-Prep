@@ -5,11 +5,11 @@
 > **Prerequisites for this module.** You need:
 > - Module 7 (OS basics, accounts, UAC, BitLocker)
 > - Module 2 (networks, firewalls, VPNs, ports)
-> - Module 1 (mobile, MDM (Mobile Device Management))
+> - Module 1 (mobile, MDM)
 
 ---
 
-## 🚨 A Story: The CFO (Chief Financial Officer) Whose Click Almost Cost the Firm $2M
+## 🚨 A Story: The CFO Whose Click Almost Cost the Firm $2M
 
 Meet Sven. He's the IT manager for a 90-person commercial real-estate firm. On a Thursday afternoon, the CFO calls, flustered, embarrassed. "I got an email from what looked like our bank. It said a wire transfer needed re-authorization. I clicked the link and… entered my password and the code from my authenticator. Then it didn't do anything. I'm worried."
 
@@ -88,9 +88,9 @@ This module gives you the vocabulary and judgment to be Sven, to respond fast, t
 | **FileVault** | macOS | Full-disk encryption |
 | **LUKS** | Linux | Full-disk encryption (Linux Unified Key Setup) |
 | **VeraCrypt** | Cross-platform | Open-source full-disk + container encryption |
-| **HTTPS (HTTP Secure) (HTTP (Hypertext Transfer Protocol) Secure) / TLS (Transport Layer Security)** | All | Network encryption (web) |
-| **VPN (Virtual Private Network) (IPsec, OpenVPN, WireGuard)** | All | Encrypted tunnel between client and network |
-| **SSH (Secure Shell)** | All | Encrypted shell access (port 22) |
+| **HTTPS / TLS** | All | Network encryption (web) |
+| **VPN (IPsec, OpenVPN, WireGuard)** | All | Encrypted tunnel between client and network |
+| **SSH** | All | Encrypted shell access (port 22) |
 
 🎯 **Exam pattern:** *"How do you protect data on a stolen laptop?"* → **Full-disk encryption** (BitLocker on Windows, FileVault on Mac, LUKS on Linux).
 
@@ -98,7 +98,7 @@ This module gives you the vocabulary and judgment to be Sven, to respond fast, t
 
 - Requires TPM 1.2+ (recommended 2.0) OR USB key
 - Can be enforced via Group Policy / Intune
-- **Recovery key**, 48-digit key generated at setup; back up to AD (Active Directory) / Entra ID / Microsoft account / printed
+- **Recovery key**, 48-digit key generated at setup; back up to AD / Entra ID / Microsoft account / printed
 - **Suspending BitLocker**, temporary; resumes encrypted at next reboot
 
 ---
@@ -141,7 +141,7 @@ This module gives you the vocabulary and judgment to be Sven, to respond fast, t
 | **Whaling** | Phishing targeting executives |
 | **Smishing** | SMS message |
 | **Vishing** | Voice / phone call |
-| **Pharming** | DNS (Domain Name System) poisoning / typo-squatted domain |
+| **Pharming** | DNS poisoning / typo-squatted domain |
 | **Shoulder surfing** | Watching credentials over the shoulder |
 | **Tailgating** | Following badged person through secure door |
 | **Dumpster diving** | Searching trash for sensitive info |
@@ -168,7 +168,7 @@ This module gives you the vocabulary and judgment to be Sven, to respond fast, t
 |----------|--------|
 | **WEP** | Broken since 2001. NEVER use. |
 | **WPA** | Stopgap. Deprecated. |
-| **WPA2-PSK (AES (Advanced Encryption Standard))** | Strong; the most common 2010s-2024 |
+| **WPA2-PSK (AES)** | Strong; the most common 2010s-2024 |
 | **WPA2-Enterprise** | Per-user 802.1X with RADIUS |
 | **WPA3-Personal (SAE)** | Strongest; modern default |
 | **WPA3-Enterprise (192-bit)** | High-security enterprise |
@@ -178,7 +178,7 @@ This module gives you the vocabulary and judgment to be Sven, to respond fast, t
 - Change default SSID and admin password on every SOHO router
 - Enable **WPA3** if all client devices support it (else WPA2-AES)
 - Disable **WPS** (WiFi Protected Setup), exploitable
-- Separate **guest SSID/VLAN (Virtual Local Area Network)** with no LAN (Local Area Network) access
+- Separate **guest SSID/VLAN** with no LAN access
 - Disable **SSID broadcast hiding**, security through obscurity, easily defeated, hurts roaming
 
 ---
@@ -190,7 +190,7 @@ This module gives you the vocabulary and judgment to be Sven, to respond fast, t
 | **Apply latest OS updates** | Patches known CVEs |
 | **Run as standard user, not admin** | Limits damage from any single click |
 | **Enable host firewall** | Defense in depth |
-| **Antivirus / EDR (Endpoint Detection and Response)** | Detection + behavioral defense |
+| **Antivirus / EDR** | Detection + behavioral defense |
 | **Full-disk encryption** | Lost laptop = no data exposure |
 | **Disable unnecessary services** | Reduce attack surface |
 | **Disable AutoRun** for USB | Prevents auto-execution of malicious media |
@@ -209,7 +209,7 @@ This module gives you the vocabulary and judgment to be Sven, to respond fast, t
 3. **Test** Immediately **isolate** the host (unplug Ethernet + Wi-Fi off). Note: do NOT reboot yet memory analysis may help.
 4. **Plan**
    - Disconnect from network
-   - Notify SOC (Security Operations Center)/IR per company policy
+   - Notify SOC/IR per company policy
    - Identify scope (was this user a network share owner? Did the ransomware reach mapped drives?)
    - **Do NOT pay the ransom** (unless explicitly approved at exec level after legal review)
    - Restore from backup; if backup is compromised, restore from offline copy
@@ -264,10 +264,10 @@ This is the classic ransomware playbook. The single biggest predictor of outcome
 |---------|---------|
 | MFA | Multi-Factor Authentication |
 | TOTP / HOTP | Time-/HMAC-based One-Time Password |
-| SSO (Single Sign-On) | Single Sign-On |
-| RBAC (Role-Based Access Control) | Role-Based Access Control |
+| SSO | Single Sign-On |
+| RBAC | Role-Based Access Control |
 | PII / PHI / PCI | Personal / Health / Payment Card data classes |
-| AV / EDR / XDR (Extended Detection and Response) | Antivirus / Endpoint Detection / Extended Detection |
+| AV / EDR / XDR | Antivirus / Endpoint Detection / Extended Detection |
 | MDM | Mobile Device Management |
 | BYOD | Bring Your Own Device |
 | VPN | Virtual Private Network |
@@ -295,9 +295,9 @@ Colonial paid the ransom: **75 BTC (≈$4.4M)** within 24 hours. The decryptor p
 - **The downstream impact** of a single corporate ransomware event reached *the entire US East Coast economy*.
 
 **Discussion (Socratic).**
-- **Q1:** If you were Colonial's CISO (Chief Information Security Officer) 30 days before the attack, identifying the legacy VPN account, how would you have prioritized MFA enablement against pushback from operations? Pretend you have to convince an operations VP.
+- **Q1:** If you were Colonial's CISO 30 days before the attack, identifying the legacy VPN account, how would you have prioritized MFA enablement against pushback from operations? Pretend you have to convince an operations VP.
 - **Q2:** Colonial paid the ransom within 24 hours. The US government later seized 63.7 of the 75 BTC paid. Argue both sides: was paying the ransom the right call, and should the recovery have changed policy?
-- **Q3:** A regional grocery chain's CEO (Chief Executive Officer) reads about Colonial and asks, "Are we next?" What 5 controls do you recommend? What's the realistic budget conversation?
+- **Q3:** A regional grocery chain's CEO reads about Colonial and asks, "Are we next?" What 5 controls do you recommend? What's the realistic budget conversation?
 
 ---
 

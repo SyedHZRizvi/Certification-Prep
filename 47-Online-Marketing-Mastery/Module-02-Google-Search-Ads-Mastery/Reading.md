@@ -1,6 +1,6 @@
 # Module 02: Google Search Ads Mastery 🔍
 
-> **Why this module matters:** Google Search Ads are the closest thing to a money-printing machine that exists in digital marketing — but only if you understand the machinery. The difference between a £3 CPA (Cost Per Acquisition) and a £1.20 CPA is not budget; it is structure, intent-matching, and Quality Score. This module gives you that edge.
+> **Why this module matters:** Google Search Ads are the closest thing to a money-printing machine that exists in digital marketing — but only if you understand the machinery. The difference between a £3 CPA and a £1.20 CPA is not budget; it is structure, intent-matching, and Quality Score. This module gives you that edge.
 
 > **Prerequisites:** Module 01 (Digital Marketing Fundamentals) — you should know what a conversion is, what a landing page does, and have a mental model of the marketing funnel (TOFU/MOFU/BOFU). You do NOT need an active Google Ads account to learn this material, but having one in practice mode is strongly recommended.
 
@@ -35,7 +35,7 @@ She also switched from broad match to a combination of exact match and phrase ma
 Ninety days later:
 
 - CPA: **£1.20** (down from £3.04 — a 60.5% reduction)
-- ROAS (Return on Ad Spend): **18.4x** (up from 7.1x)
+- ROAS: **18.4x** (up from 7.1x)
 - Click-through rate: **8.2%** (industry average for retail: ~2.5%)
 - Quality Score average: **8.2/10** (up from 4.1/10)
 
@@ -55,7 +55,7 @@ Think of a Google Ads account like a well-organized filing cabinet. If you shove
 |-------|-----------------|---------|
 | **Account** | Billing, user access, conversion tracking, linked Google Analytics | The filing cabinet itself |
 | **Campaign** | Budget, network (Search/Display/Shopping), location targeting, language, bidding strategy, ad schedule | A drawer in the cabinet |
-| **Ad Group** | A set of related keywords + their matching ads, max CPC (Cost Per Click) bid (if manual) | A folder in the drawer |
+| **Ad Group** | A set of related keywords + their matching ads, max CPC bid (if manual) | A folder in the drawer |
 | **Keyword / Ad** | The specific search terms you bid on; the ad copy shown for those terms | The documents in the folder |
 
 ### Why the Structure Matters
@@ -149,7 +149,7 @@ Quality Score determines your **Ad Rank** — and Ad Rank determines both your a
 
 ### The Three Components of Quality Score
 
-Quality Score = f(Expected CTR (Click-Through Rate), Ad Relevance, Landing Page Experience)
+Quality Score = f(Expected CTR, Ad Relevance, Landing Page Experience)
 
 | Component | Weight (approx.) | What Improves It |
 |-----------|-----------------|------------------|
@@ -263,7 +263,7 @@ Google tests combinations and learns which 3 headlines + 2 descriptions perform 
 | Include your primary keyword in at least 1 headline | Improves Ad Relevance score |
 | Pin Headline 1 to your brand/product name | Ensures brand is always shown |
 | Make each headline independently meaningful | Google may show any 3 at once |
-| Include a CTA (Call to Action) in at least 1 description | "Order by 2pm for same-day delivery" |
+| Include a CTA in at least 1 description | "Order by 2pm for same-day delivery" |
 | Write headlines at different "angles" | Price, urgency, feature, benefit, social proof |
 | Aim for "Excellent" ad strength | Google's indicator of headline/description diversity |
 
@@ -290,11 +290,11 @@ Ad extensions (rebranded "Assets" by Google in 2022) expand your ad with additio
 | **Location Asset** | Shows address | Retail with physical stores; links to Google Maps |
 | **Price Asset** | Show specific products/services with prices | E-commerce; effective for premium product positioning |
 | **Image Asset** | Visual alongside ad (search partner sites) | Brand differentiation; newer feature |
-| **Lead Form Asset** | Capture leads without leaving Google | B2B (Business-to-Business) lead gen; newsletter sign-ups |
+| **Lead Form Asset** | Capture leads without leaving Google | B2B lead gen; newsletter sign-ups |
 
 > **Europe-Specific Note:** Call assets and location assets are particularly important in Germany and France, where consumers show higher intent to verify business legitimacy before purchasing. German users, in particular, have strong distrust of unfamiliar online brands — showing a physical address and phone number in your ads materially improves CTR in the German market (industry observation, not verified stat).
 
-> **GDPR (General Data Protection Regulation) Note:** Lead form assets collect personal data. Ensure your privacy policy URL is included in the form configuration and that you have a lawful basis for processing. In the EU/EEA, explicit consent (GDPR Article 6(1)(a)) is required unless you can demonstrate legitimate interest — which is harder to argue for marketing data. When in doubt, use consent.
+> **GDPR Note:** Lead form assets collect personal data. Ensure your privacy policy URL is included in the form configuration and that you have a lawful basis for processing. In the EU/EEA, explicit consent (GDPR Article 6(1)(a)) is required unless you can demonstrate legitimate interest — which is harder to argue for marketing data. When in doubt, use consent.
 
 ---
 
@@ -331,7 +331,7 @@ You provide "asset groups" (images, videos, headlines, descriptions, logos) and 
 
 ## Section 9: Conversion Tracking — If You Do Not Measure It, You Cannot Optimize It
 
-Without conversion tracking, Smart Bidding is blind. Without Smart Bidding, you are manually managing bids in 2024 the way people ran PPC (Pay-Per-Click) campaigns in 2006.
+Without conversion tracking, Smart Bidding is blind. Without Smart Bidding, you are manually managing bids in 2024 the way people ran PPC campaigns in 2006.
 
 ### Setting Up Google Ads Conversion Tracking
 
@@ -339,10 +339,10 @@ Without conversion tracking, Smart Bidding is blind. Without Smart Bidding, you 
 Install the tag on your website. Create a conversion action in Google Ads (e.g., "Purchase," "Lead Form Submit"). Tag fires when the event occurs.
 
 **Method 2: Import from Google Analytics 4**
-Link your Google Ads account to GA4 (Google Analytics 4). Import GA4 conversion events. Recommended for most businesses — one source of truth.
+Link your Google Ads account to GA4. Import GA4 conversion events. Recommended for most businesses — one source of truth.
 
 **Method 3: Offline Conversion Import**
-For B2B or complex sales cycles. You import conversion data from your CRM (Customer Relationship Management) (a lead becomes a sale 30 days later). Google then knows which keywords and ads drove real revenue, not just form fills.
+For B2B or complex sales cycles. You import conversion data from your CRM (a lead becomes a sale 30 days later). Google then knows which keywords and ads drove real revenue, not just form fills.
 
 ### Conversion Tracking Checklist
 

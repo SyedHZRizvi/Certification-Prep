@@ -7,7 +7,7 @@
 ## 🏗️ The Fulfillment Stack (MEMORIZE)
 
 ```
-ORDER  →  OMS (Order Management System)  →  WMS (Warehouse Management System)  →  TMS (Transportation Management System)  →  CARRIER  →  LAST-MILE  →  CUSTOMER
+ORDER  →  OMS  →  WMS  →  TMS  →  CARRIER  →  LAST-MILE  →  CUSTOMER
                                                               ↓
                                                           RETURNS
                                                           REVERSE LOGISTICS
@@ -26,12 +26,12 @@ TMS  = Carrier selection (whom to ship with)
 | Model | Best for |
 |-------|----------|
 | In-house | < 200 orders/mo; unboxing-as-moat |
-| 3PL (Third-Party Logistics) | $1M-$50M DTC (Direct-to-Consumer) (ShipBob, Shipmonk) |
-| Marketplace (FBA (Fulfillment by Amazon)/WFS) | Marketplace channel; now Buy with Prime for DTC |
+| 3PL | $1M-$50M DTC (ShipBob, Shipmonk) |
+| Marketplace (FBA/WFS) | Marketplace channel; now Buy with Prime for DTC |
 
 ---
 
-## 🆚 FBA vs FBM (Fulfillment by Merchant) Cheat Sheet
+## 🆚 FBA vs FBM Cheat Sheet
 
 | Dimension | FBA | FBM |
 |-----------|-----|-----|
@@ -93,7 +93,7 @@ $9 / 0.50 × 1.4 = $25 minimum
 | Carrier | Sweet spot |
 |---------|-----------|
 | USPS | Light < 2 lbs, residential |
-| UPS | Mid-weight, B2B (Business-to-Business) + residential |
+| UPS | Mid-weight, B2B + residential |
 | FedEx | Express, B2B |
 | DHL Express | International (cross-border default) |
 | Amazon Logistics | Amazon-fulfilled only; ~25% of US volume |
@@ -111,7 +111,7 @@ $9 / 0.50 × 1.4 = $25 minimum
 | Returnly (Affirm) | DTC payment-tied refunds |
 | Narvar | Enterprise multi-carrier |
 
-🧠 **Easy returns lift LTV (Lifetime Value) 20-50%** (Loop 2024).
+🧠 **Easy returns lift LTV 20-50%** (Loop 2024).
 
 Return rates by category:
 
@@ -203,4 +203,4 @@ If all 6 answered cleanly in 90 sec, you own this module. ✅
 
 ---
 
-➡️ [Module 6: Conversion Optimization & UX (User Experience)](../Module-06-Conversion-Optimization-UX/Reading.md)
+➡️ [Module 6: Conversion Optimization & UX](../Module-06-Conversion-Optimization-UX/Reading.md)

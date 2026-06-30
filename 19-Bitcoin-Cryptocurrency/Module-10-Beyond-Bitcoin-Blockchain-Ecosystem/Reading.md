@@ -104,7 +104,7 @@ A **rollup** executes transactions off-chain (on an L2), then posts a **compress
 | **Optimism / OP Mainnet** | Dec 2021 | Optimistic (Bedrock) | OP Stack open-source; Coinbase's Base built on it |
 | **Base** | Aug 2023 | Optimistic (OP Stack) | Coinbase-built; large consumer-app L2 |
 | **zkSync Era** | Mar 2023 | ZK | Matter Labs; zkEVM |
-| **Starknet** | Nov 2021 | ZK (Cairo VM (Virtual Machine)) | StarkWare; uses STARK proofs (no trusted setup) |
+| **Starknet** | Nov 2021 | ZK (Cairo VM) | StarkWare; uses STARK proofs (no trusted setup) |
 | **Polygon zkEVM** | Mar 2023 | ZK | Polygon Labs |
 | **Linea** | Jul 2023 | ZK | ConsenSys (MetaMask owner) |
 | **Scroll** | Oct 2023 | ZK | Open-source zkEVM |
@@ -146,7 +146,7 @@ A **stablecoin** is a crypto asset designed to track an external reference price
 
 ### DAI, the crypto-collateralized version
 
-**DAI** is issued by **MakerDAO** (Rune Christensen, white paper 2014; launched 2017). Users lock ETH (or other approved collateral) in a smart contract called a **Vault** (formerly **CDP (Customer Data Platform)**, Collateralized Debt Position), at a minimum **collateralization ratio** (typically 150-170%). They receive newly-minted DAI as a loan against that collateral. If the collateral value drops below the threshold, the system auto-liquidates the collateral to repay the DAI debt + a penalty.
+**DAI** is issued by **MakerDAO** (Rune Christensen, white paper 2014; launched 2017). Users lock ETH (or other approved collateral) in a smart contract called a **Vault** (formerly **CDP**, Collateralized Debt Position), at a minimum **collateralization ratio** (typically 150-170%). They receive newly-minted DAI as a loan against that collateral. If the collateral value drops below the threshold, the system auto-liquidates the collateral to repay the DAI debt + a penalty.
 
 🎯 **Exam tip.** DAI's mechanism survived multiple ETH crashes including March 2020's "Black Thursday" (ETH fell 50% in 24 hours). The system stressed but held. Compare with UST: same nominal stability claim, completely different mechanism, completely different outcome.
 
@@ -217,7 +217,7 @@ Mechanism (V2): the constant product `x · y = k`. (See Module 9.)
 
 ### 2. Lending, Aave, Compound
 
-**Compound** (Leshner & Hayes, 2018) and **Aave** (Stani Kulechov, 2017 as ETHLend; rebranded Aave 2020) created **pooled, overcollateralized lending**. Users deposit asset A; borrowers deposit collateral B (at 110-200% LTV (Lifetime Value)) and borrow A. Interest rates are algorithmic, set by utilization ratio.
+**Compound** (Leshner & Hayes, 2018) and **Aave** (Stani Kulechov, 2017 as ETHLend; rebranded Aave 2020) created **pooled, overcollateralized lending**. Users deposit asset A; borrowers deposit collateral B (at 110-200% LTV) and borrow A. Interest rates are algorithmic, set by utilization ratio.
 
 🎯 **Exam tip.** Aave introduced **flash loans** (uncollateralized loans that must be repaid in the same transaction), a primitive with no analog in TradFi. Used legitimately for arbitrage and collateral migration; also weaponized in dozens of exploits.
 
@@ -399,7 +399,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: This is the final reading module. The [Capstone Project](../Capstone-Project.md) requires integrating Modules 1-10, including Bitcoin's design choices, the institutional custody stack from Module 9, and the broader ecosystem covered here. The [Recommended Readings](../Recommended-Readings.md) appendix is your gateway to deeper study.
-> - Cross-course: `07-AWS (Amazon Web Services)-AI-Practitioner` and `08-Azure-AI-Engineer` overlap on the data-layer questions modular blockchains raise (Celestia is to blockchain DA roughly what S3 (Simple Storage Service) is to cloud DA). `09-CompTIA-Security-Plus` overlaps on smart-contract attack surfaces.
+> - Cross-course: `07-AWS-AI-Practitioner` and `08-Azure-AI-Engineer` overlap on the data-layer questions modular blockchains raise (Celestia is to blockchain DA roughly what S3 is to cloud DA). `09-CompTIA-Security-Plus` overlaps on smart-contract attack surfaces.
 > - Practice: Practice Exam 2 has 5-7 questions on Ethereum, rollups, stablecoins. Final Mock has scenario questions integrating Bitcoin and the broader ecosystem.
 
 ---

@@ -6,7 +6,7 @@
 > - PowerShell basics, pipelines, cmdlet syntax, parameter binding, variables
 > - WS-Management / WinRM ports (5985/5986)
 > - JSON / YAML for DSC config syntax
-> - Azure Resource Manager basics (resource groups, RBAC (Role-Based Access Control)), for Azure Automation
+> - Azure Resource Manager basics (resource groups, RBAC), for Azure Automation
 >
 > If those are shaky, pause and review. This module assumes you can already write `Get-Process | Where-Object Name -eq "explorer" | Stop-Process`.
 
@@ -19,12 +19,12 @@ It's Monday morning at Globex. The IT director has a problem: every new server p
 The fix is a 50-line PowerShell script that:
 
 1. Reads tickets from the ITSM system (Azure Function trigger)
-2. Provisions the Azure VM (Virtual Machine) via `New-AzVM`
+2. Provisions the Azure VM via `New-AzVM`
 3. Onboards to Arc via the connect script
-4. Joins to AD (Active Directory) via `Add-Computer`
+4. Joins to AD via `Add-Computer`
 5. Installs AMA + applies DCR via DSC
 6. Adds to the right OU via `Move-ADObject`
-7. Sets up Defender baseline via GPO (Group Policy Object) link
+7. Sets up Defender baseline via GPO link
 8. Posts the result back to ITSM
 
 Time per provision drops from 12 minutes to 30 seconds. The half-FTE returns to project work. The CIO writes a "thank you" email and approves the next automation budget.
@@ -76,7 +76,7 @@ Remoting executes commands on remote machines over **WS-Management (WSMan)**.
 
 | Property | Detail |
 |----------|--------|
-| Transport | WSMan over HTTP (Hypertext Transfer Protocol) (5985) or HTTPS (HTTP Secure) (5986) |
+| Transport | WSMan over HTTP (5985) or HTTPS (5986) |
 | Authentication | Kerberos (default in-domain), CredSSP, Negotiate, Certificate, Basic (with HTTPS only) |
 | Enable on target | `Enable-PSRemoting -Force` |
 | One-to-one session | `Enter-PSSession -ComputerName SRV01` |
@@ -84,7 +84,7 @@ Remoting executes commands on remote machines over **WS-Management (WSMan)**.
 | Persistent session | `New-PSSession` for repeated use |
 | Implicit remoting | Import remote modules into local session |
 
-### PowerShell 7 also supports SSH (Secure Shell) remoting
+### PowerShell 7 also supports SSH remoting
 
 ```powershell
 # PowerShell 7 cross-platform SSH remoting
@@ -109,7 +109,7 @@ Enter-PSSession -HostName linuxserver01 -UserName alice -SSHTransport
 ### Build a simple JEA endpoint
 
 ```powershell
-# Step 1: Create role capability, "DNS (Domain Name System) Operators can manage zones but not service"
+# Step 1: Create role capability, "DNS Operators can manage zones but not service"
 $rcPath = "$env:ProgramFiles\WindowsPowerShell\Modules\DnsOpsJEA\RoleCapabilities\DnsOps.psrc"
 New-Item -ItemType Directory -Path (Split-Path $rcPath) -Force
 
@@ -256,7 +256,7 @@ foreach ($vm in $vms) {
 
 Lets you run a runbook *on* an on-prem or Arc machine instead of in Azure's sandbox. Useful when:
 
-- Touching on-prem AD without VPN (Virtual Private Network)
+- Touching on-prem AD without VPN
 - Accessing on-prem SQL or file shares
 - Bypassing Azure egress fees
 
@@ -309,7 +309,7 @@ Add-DnsServerResourceRecordA -ZoneName "contoso.com" -Name "web" -IPv4Address 10
 Add-DnsServerConditionalForwarderZone -Name "fabrikam.com" -MasterServers 10.99.0.5,10.99.0.6
 ```
 
-### DHCP (Dynamic Host Configuration Protocol) module
+### DHCP module
 ```powershell
 Add-DhcpServerInDC -DnsName "dhcp01.contoso.com" -IPAddress 10.0.0.10
 Add-DhcpServerv4Scope -Name "HQ" -StartRange 10.0.10.50 -EndRange 10.0.10.200 -SubnetMask 255.255.255.0
@@ -357,9 +357,9 @@ New-AzVM -ResourceGroupName "rg-test" -Name "TestVM01" -Image "Win2022Datacenter
 
 ## 📊 Case Study, How GitHub Builds Its 50,000-Server Infrastructure with Code
 
-**Situation.** GitHub, owned by Microsoft since 2018, runs its global infrastructure on ~50,000 servers across multiple data centers and clouds. Every day, GitHub deploys ~100 production changes to that infrastructure. By 2022, GitHub had moved entirely to an **infrastructure-as-code** model: every server's config, every firewall rule, every CDN (Content Delivery Network) setting, every DNS record is defined in version-controlled Terraform / DSC / Ansible files, peer-reviewed via PRs, and applied via automated runners.
+**Situation.** GitHub, owned by Microsoft since 2018, runs its global infrastructure on ~50,000 servers across multiple data centers and clouds. Every day, GitHub deploys ~100 production changes to that infrastructure. By 2022, GitHub had moved entirely to an **infrastructure-as-code** model: every server's config, every firewall rule, every CDN setting, every DNS record is defined in version-controlled Terraform / DSC / Ansible files, peer-reviewed via PRs, and applied via automated runners.
 
-**Decision.** GitHub's IaC (Infrastructure as Code) philosophy (publicly documented in *GitHub's Engineering Blog: Production-quality infrastructure with Terraform*, July 2022):
+**Decision.** GitHub's IaC philosophy (publicly documented in *GitHub's Engineering Blog: Production-quality infrastructure with Terraform*, July 2022):
 
 1. **Everything is code.** A server config that's not in git isn't a config, it's a manual artifact and will drift.
 2. **Drift detection runs every 10 minutes.** Any DSC / Terraform `plan` mismatch creates a Slack alert and an automatic PR.
@@ -372,7 +372,7 @@ New-AzVM -ResourceGroupName "rg-test" -Name "TestVM01" -Image "Win2022Datacenter
 - Mean time to deploy infrastructure change: **6 minutes** (PR merge → applied)
 - Mean time to detect drift: **8 minutes** (10-min cycle ± jitter)
 - Outage caused by "I made an emergency manual change": **zero in 18 months** (each emergency goes through the same PR-and-apply pipeline; the runner is the only path to change)
-- Audit-prep time for SOC (Security Operations Center) 2 / ISO 27001: **dropped from ~4 weeks to ~2 days**
+- Audit-prep time for SOC 2 / ISO 27001: **dropped from ~4 weeks to ~2 days**
 
 **Lesson for the exam / for practitioners.** AZ-801 won't ask about GitHub's internals but tests:
 
@@ -385,7 +385,7 @@ The exam will phrase: *"How do you ensure all 200 production Windows Servers hav
 
 **Discussion (Socratic).**
 - **Q1.** GitHub's "everything is code" requires every engineer to learn Terraform/DSC. The cultural transition is the hardest part. Build the case for the 6-week training plan to bring a 50-engineer ops team to IaC fluency, and identify the *single* skill that gates the rest (hint: git workflow, including PR review).
-- **Q2.** JEA at scale (thousands of role capabilities) becomes its own management problem. Build the case that **fewer, broader role definitions** + **PIM (Product Information Management) activation for sensitive ones** beats hyper-granular JEA-everywhere. Where does the simplicity-vs-least-privilege trade-off live?
+- **Q2.** JEA at scale (thousands of role capabilities) becomes its own management problem. Build the case that **fewer, broader role definitions** + **PIM activation for sensitive ones** beats hyper-granular JEA-everywhere. Where does the simplicity-vs-least-privilege trade-off live?
 - **Q3.** DSC drift detection at 10-minute intervals catches deliberate manual changes, but engineers will argue "sometimes I need to make a quick fix during an outage." Build the policy: when is manual change *ever* allowed (probably "outage-only with retroactive PR within 24 hours"), and how do you enforce the retroactive PR requirement?
 
 ---

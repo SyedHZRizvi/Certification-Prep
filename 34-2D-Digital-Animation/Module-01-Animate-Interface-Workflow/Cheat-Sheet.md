@@ -99,7 +99,7 @@ title: "Module 1 Cheat Sheet: Animate Interface & Workflow"
 | 24 | Cinema standard | Spider-Verse, Avatar TLAB |
 | 25 | PAL (Europe, Australia) | BBC, European animation |
 | 30 | NTSC / YouTube standard | US TV, YouTube |
-| 60 | Games / UI (User Interface) animation | Game UI, web apps |
+| 60 | Games / UI animation | Game UI, web apps |
 
 **On twos at 24fps** = 12 unique drawings per second.
 

@@ -1,5 +1,5 @@
 ---
-permalink: /35-Motion-Graphics-UI (User Interface)-Animation/Module-06-UI-Micro-Interactions/Cheat-Sheet/
+permalink: /35-Motion-Graphics-UI-Animation/Module-06-UI-Micro-Interactions/Cheat-Sheet/
 title: "Module 6 Cheat Sheet: UI Micro-Interactions"
 ---
 

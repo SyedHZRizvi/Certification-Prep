@@ -1,8 +1,8 @@
 # Module 11: Email Marketing & Automation — GDPR-Compliant Growth 📧
 
-> **Why this module matters:** Email marketing consistently delivers the highest ROI (Return on Investment) of any digital channel — industry estimates put the return at £36–£42 for every £1 spent — yet most marketers leave 70% of that revenue on the table by ignoring automation, segmentation, and legal compliance. Master this module and you will understand the channel that quietly funds the most profitable e-commerce brands in both Europe and North America.
+> **Why this module matters:** Email marketing consistently delivers the highest ROI of any digital channel — industry estimates put the return at £36–£42 for every £1 spent — yet most marketers leave 70% of that revenue on the table by ignoring automation, segmentation, and legal compliance. Master this module and you will understand the channel that quietly funds the most profitable e-commerce brands in both Europe and North America.
 
-> **Prerequisites:** You should be comfortable with basic digital marketing concepts (Modules 1–3), understand conversion funnels, and have a rough idea of what a CRM (Customer Relationship Management) is. No coding required.
+> **Prerequisites:** You should be comfortable with basic digital marketing concepts (Modules 1–3), understand conversion funnels, and have a rough idea of what a CRM is. No coding required.
 
 ---
 
@@ -40,7 +40,7 @@ Email ROAS: **£4.20 for every £1 invested**. Google Ads ROAS at the same time:
 
 Email was generating **3x the return** of their paid search, with zero incremental ad spend.
 
-But here is the detail most marketers miss: Ben had to build the GDPR compliance infrastructure first. Double opt-in confirmation emails. Documented consent timestamps. A one-click unsubscribe link in every message. A clear privacy notice on every form. Without that foundation, the entire strategy risked a UK ICO (Information Commissioner's Office) fine of up to £17.5 million or 4% of global turnover — whichever is higher.
+But here is the detail most marketers miss: Ben had to build the GDPR compliance infrastructure first. Double opt-in confirmation emails. Documented consent timestamps. A one-click unsubscribe link in every message. A clear privacy notice on every form. Without that foundation, the entire strategy risked a UK ICO fine of up to £17.5 million or 4% of global turnover — whichever is higher.
 
 **The lesson:** Email is not a broadcast channel. It is a relationship channel. And in Europe, that relationship must be built on explicit, documented, freely-given consent.
 
@@ -70,7 +70,7 @@ A lead magnet is a free resource offered in exchange for an email address. Not a
 | Type | Typical Opt-in Rate | Best For |
 |------|-------------------|---------|
 | Discount code (10–15% off) | 4–8% of visitors | E-commerce, fashion, beauty |
-| Checklist / cheat sheet | 3–6% | B2B (Business-to-Business), SaaS (Software as a Service), education |
+| Checklist / cheat sheet | 3–6% | B2B, SaaS, education |
 | Quiz / assessment | 5–12% | Personalisation brands, supplements |
 | Free trial / sample | 6–10% | Subscription products |
 | Exclusive guide / ebook | 2–5% | Professional services, high-ticket |
@@ -107,7 +107,7 @@ Your Email Service Provider (ESP) is your infrastructure. Choosing the wrong one
 |---------|-----------|---------|---------|----------------|
 | **Best for** | Beginners, SMBs | E-commerce (Shopify/WooCommerce) | B2B, CRM-heavy teams | Mid-market, complex automations |
 | **Pricing (1,000 contacts)** | Free–$20/mo | Free–$45/mo | $50–$800/mo | $29–$149/mo |
-| **EU data residency** | Yes (AWS (Amazon Web Services) EU) | Yes (EU region available) | Yes (GDPR compliant) | Yes |
+| **EU data residency** | Yes (AWS EU) | Yes (EU region available) | Yes (GDPR compliant) | Yes |
 | **GDPR double opt-in** | Yes | Yes (built-in) | Yes | Yes |
 | **Segmentation depth** | Basic | Very deep (predictive) | Deep (CRM-linked) | Deep |
 | **E-commerce integrations** | Good | Excellent (native Shopify) | Good | Good |
@@ -123,7 +123,7 @@ Your Email Service Provider (ESP) is your infrastructure. Choosing the wrong one
 
 ---
 
-## Section 3 — Legal Compliance: GDPR, CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act), and CASL
+## Section 3 — Legal Compliance: GDPR, CAN-SPAM, and CASL
 
 This is the section that separates professional marketers from amateurs. Email law is not optional.
 
@@ -261,7 +261,7 @@ The classic mistake is sending a big discount immediately to lapsed customers. T
 
 | Segment | Definition | Typical Strategy |
 |---------|-----------|-----------------|
-| **VIP / High LTV (Lifetime Value)** | Top 20% by revenue | Early access, exclusive offers, loyalty rewards |
+| **VIP / High LTV** | Top 20% by revenue | Early access, exclusive offers, loyalty rewards |
 | **Active Engaged** | Opened in last 30 days | Full campaign cadence, new products, content |
 | **At-Risk** | No open in 60–90 days | Re-engagement, reduced frequency |
 | **Lapsed** | No open in 90–180 days | Win-back sequence |
@@ -276,7 +276,7 @@ The classic mistake is sending a big discount immediately to lapsed customers. T
 | **Subject line** | Question vs statement, emoji vs no emoji, length | 5–20% open rate difference |
 | **Sender name** | Brand name vs personal name ("Priya at Ember & Oak") | 5–15% open rate difference |
 | **Send time** | Tuesday 10am vs Thursday 7pm (varies by audience) | 5–10% open rate difference |
-| **CTA (Call to Action) copy** | "Shop now" vs "Claim your 10% off" | 10–30% CTR difference |
+| **CTA copy** | "Shop now" vs "Claim your 10% off" | 10–30% CTR difference |
 | **Email length** | Short (150 words) vs long (500+ words) | Depends on audience and product |
 | **Personalisation** | First name vs no first name in subject | 2–6% open rate difference |
 
@@ -290,7 +290,7 @@ Deliverability is the hidden foundation. You can have the world's best welcome s
 
 ### The SPF/DKIM/DMARC Trinity
 
-These are DNS (Domain Name System) authentication records that prove to receiving email servers that you are who you say you are.
+These are DNS authentication records that prove to receiving email servers that you are who you say you are.
 
 | Protocol | Full Name | What It Does | How To Think About It |
 |----------|----------|-------------|----------------------|

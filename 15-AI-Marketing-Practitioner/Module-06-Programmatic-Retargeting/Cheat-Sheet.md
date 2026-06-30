@@ -7,7 +7,7 @@
 ## 🌐 The Programmatic Ecosystem
 
 ```
-ADVERTISER → DSP (Demand-Side Platform) → AD EXCHANGE → SSP (Supply-Side Platform) → PUBLISHER
+ADVERTISER → DSP → AD EXCHANGE → SSP → PUBLISHER
                    (~50ms auction)
 ```
 
@@ -24,8 +24,8 @@ ADVERTISER → DSP (Demand-Side Platform) → AD EXCHANGE → SSP (Supply-Side P
 | DSP | Best for |
 |-----|----------|
 | **DV360** (Google) | Enterprise + Google ecosystem |
-| **TTD** (independent) | Agencies, CTV (Connected TV), scale |
-| **AdRoll** | SMB / DTC (Direct-to-Consumer) retargeting |
+| **TTD** (independent) | Agencies, CTV, scale |
+| **AdRoll** | SMB / DTC retargeting |
 | **Criteo** | Dynamic product retargeting |
 
 ---
@@ -63,7 +63,7 @@ Per user / per campaign: 24
 
 ---
 
-## 🏭 CDP (Customer Data Platform) Solves the Lag Problem
+## 🏭 CDP Solves the Lag Problem
 
 ```
 Website event → CDP (Segment) → Ad platforms (Meta/Google/TT) in SECONDS
@@ -86,7 +86,7 @@ vs. without CDP: 24-hour audience sync = wasted spend.
 |--------|-----|
 | 28-day click + 1-day view | Pre-iOS 14 |
 | **7-day click + 1-day view** | Current Meta default |
-| 90-day click | LinkedIn B2B (Business-to-Business) |
+| 90-day click | LinkedIn B2B |
 | 28-day click + view-through | YouTube |
 
 ### Models
@@ -95,7 +95,7 @@ vs. without CDP: 24-hour audience sync = wasted spend.
 Last-click       → biased to bottom funnel
 Linear           → equal across touches
 Position (40/20/40) → first + last matter most
-Data-driven      → ML-based (GA4 (Google Analytics 4) default)
+Data-driven      → ML-based (GA4 default)
 ```
 
 ---
@@ -107,7 +107,7 @@ Data-driven      → ML-based (GA4 (Google Analytics 4) default)
 | **IVT** | Invalid Traffic (bots, fraud) |
 | **GIVT** | Common bots |
 | **SIVT** | Sophisticated bots, click farms |
-| **MFA (Multi-Factor Authentication)** | Made-For-Advertising sites (~20% of open web!) |
+| **MFA** | Made-For-Advertising sites (~20% of open web!) |
 | **DoubleVerify / IAS** | Enterprise verification tools |
 
 ### Block List Starter
@@ -166,4 +166,4 @@ Single-touch attribution credits: 1 of 30
 
 ---
 
-➡️ [Module 7: CRO (Chief Revenue Officer) + Landing Pages](../Module-07-CRO-Landing-Pages-Personalization/Reading.md)
+➡️ [Module 7: CRO + Landing Pages](../Module-07-CRO-Landing-Pages-Personalization/Reading.md)

@@ -34,7 +34,7 @@ Assumptions: straight-line distance, uniform freight rate, single facility.
 
 ### Break-even between two sites
 ```
-   FC₁ + VC (Venture Capital)₁·Q = FC₂ + VC₂·Q
+   FC₁ + VC₁·Q = FC₂ + VC₂·Q
    Q* = (FC₁ − FC₂) / (VC₂ − VC₁)
 ```
 

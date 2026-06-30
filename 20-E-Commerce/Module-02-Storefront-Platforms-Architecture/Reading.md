@@ -1,6 +1,6 @@
 # Module 2: Storefront Platforms & Architecture 🏗️
 
-> **Why this module matters:** Picking the wrong platform is the single most expensive mistake in e-commerce. A wrong call costs $200K-$2M and 9-18 months. By the end of this module, you'll be able to walk a CTO (Chief Technology Officer) through Shopify vs Adobe Commerce vs BigCommerce vs Salesforce vs headless / composable, and defend a recommendation with TCO math.
+> **Why this module matters:** Picking the wrong platform is the single most expensive mistake in e-commerce. A wrong call costs $200K-$2M and 9-18 months. By the end of this module, you'll be able to walk a CTO through Shopify vs Adobe Commerce vs BigCommerce vs Salesforce vs headless / composable, and defend a recommendation with TCO math.
 
 ---
 
@@ -8,15 +8,15 @@
 
 In 2004, a 24-year-old programmer named Tobi Lütke opened an online store called Snowdevil to sell snowboards from his garage in Ottawa. He hated the e-commerce software he had to use (Yahoo! Stores, Miva Merchant, OsCommerce, clunky, slow, ugly). So he wrote his own.
 
-A year later, the snowboards weren't selling. The software was. Tobi pivoted, renamed it Shopify, opened it to other merchants, and by 2010 had thousands of customers. In 2015 Shopify IPO (Initial Public Offering)'d. By 2024 it powered ~5M stores, processed >$200B GMV (Gross Merchandise Value), and was the second-largest US retailer after Amazon by GMV.
+A year later, the snowboards weren't selling. The software was. Tobi pivoted, renamed it Shopify, opened it to other merchants, and by 2010 had thousands of customers. In 2015 Shopify IPO'd. By 2024 it powered ~5M stores, processed >$200B GMV, and was the second-largest US retailer after Amazon by GMV.
 
 That pivot from a single failing snowboard business to a platform is the central tension every operator faces when picking a stack. Tobi shipped a tool he needed; the platform happened later. **Buy the tool that fits your stage, not the tool that fits your fantasy.** A $2M brand that picks Adobe Commerce because "we'll need it at $100M" will spend a year fighting their stack instead of growing.
 
 This module gives you the decision framework. Five major platform families (Shopify, Adobe Commerce, BigCommerce, Salesforce Commerce Cloud, composable/MACH), the three architecture patterns (monolithic, headless, composable), and the trade-offs that decide where a $10M, $50M, or $250M brand should live.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - The unit-economics language (AOV, CAC (Customer Acquisition Cost), CLV (Customer Lifetime Value), contribution margin), covered in [Module 1](../Module-01-E-Commerce-Fundamentals-Business-Models/Reading.md)
-> - Basic web architecture (frontend, backend, database, API (Application Programming Interface)), outside this course; see MDN's Web Fundamentals
+> - The unit-economics language (AOV, CAC, CLV, contribution margin), covered in [Module 1](../Module-01-E-Commerce-Fundamentals-Business-Models/Reading.md)
+> - Basic web architecture (frontend, backend, database, API), outside this course; see MDN's Web Fundamentals
 > - The seven business models, covered in [Module 1](../Module-01-E-Commerce-Fundamentals-Business-Models/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
@@ -60,8 +60,8 @@ Best-of-breed services composed via APIs: commercetools or Elastic Path for cart
 
 | Platform | GMV sweet spot | Typical TCO (Year 1) | Best for |
 |----------|---------------|----------------------|----------|
-| **Shopify Plus** | $1M-$250M | $40K-$200K | Speed, DTC (Direct-to-Consumer), opinionated stack |
-| **Adobe Commerce** | $20M-$500M | $250K-$1.5M | Complex B2B (Business-to-Business)+B2C (Business-to-Consumer), deep customization |
+| **Shopify Plus** | $1M-$250M | $40K-$200K | Speed, DTC, opinionated stack |
+| **Adobe Commerce** | $20M-$500M | $250K-$1.5M | Complex B2B+B2C, deep customization |
 | **BigCommerce** | $1M-$100M | $30K-$200K | Multi-storefront, multi-channel, no transaction fees |
 | **Salesforce B2C Commerce Cloud** | $100M-$5B+ | $750K-$5M | Enterprise B2C, Einstein AI, Marketing Cloud integration |
 | **Composable (commercetools + Algolia + Sanity)** | $250M-$10B+ | $1M-$3M | Strategic differentiation, omnichannel, B2B+B2C unified |
@@ -74,7 +74,7 @@ Shopify Plus (the enterprise tier) costs $2,300-$25,000/month based on GMV. Incl
 - Fastest time-to-launch (a basic Plus store ships in 2-4 weeks).
 - Best app ecosystem (~8,000 Plus-compatible apps).
 - Shop Pay checkout converts 4-12% higher than industry baseline (Shopify 2024 commerce trends).
-- Polaris design system gives merchants a consistent admin UX (User Experience).
+- Polaris design system gives merchants a consistent admin UX.
 
 **Weaknesses:**
 - Liquid templating language is showing its age (Shopify is migrating to React/Hydrogen).
@@ -100,7 +100,7 @@ Adobe acquired Magento for $1.68B in 2018. Today there are two flavors:
 
 **Weaknesses:**
 - Engineering-heavy. A typical Adobe Commerce build needs 4-8 engineers + a 6-12 month timeline.
-- Hosting cost is significant ($3K-$30K/month for AWS (Amazon Web Services)-hosted).
+- Hosting cost is significant ($3K-$30K/month for AWS-hosted).
 - Magento 2 upgrade path from Magento 1 (deprecated June 2020) was painful.
 
 🚨 **Trap on the exam:** "Magento" and "Adobe Commerce" are both correct names. The free version is "Magento Open Source"; the paid version is "Adobe Commerce." Adobe rebranded in 2021. Don't confuse the two, Adobe Commerce includes the managed hosting on Adobe-managed AWS infrastructure.
@@ -239,9 +239,9 @@ Key vendors:
 - **CMS:** Contentful, Sanity, Storyblok, Contentstack
 - **Search:** Algolia, Bloomreach, Constructor, Searchspring
 - **Personalization:** Bloomreach, Dynamic Yield, Mutiny
-- **PIM (Product Information Management):** Akeneo, Salsify, Plytix
+- **PIM:** Akeneo, Salsify, Plytix
 - **Payments:** Stripe, Adyen, Mollie
-- **OMS (Order Management System)/Order management:** Fluent Commerce, Aptos, Manhattan Active Omni
+- **OMS/Order management:** Fluent Commerce, Aptos, Manhattan Active Omni
 
 🚨 **Trap on the exam:** "Composable" implies "best-of-breed across vendors." A single-vendor stack (e.g., Adobe Commerce + Adobe Experience Platform + Adobe Target) is NOT composable, even if it's API-first. Composable specifically means multi-vendor.
 

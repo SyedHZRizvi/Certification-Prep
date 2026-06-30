@@ -6,7 +6,7 @@
 
 ## 🎯 A Real Story: How a 2-Person Brand Out-Produced an Agency
 
-In 2024, a 2-person DTC (Direct-to-Consumer) skincare brand called Bloom Hydration (the founder publicly shared their playbook on the [DTC Newsletter](https://dtcnews.com/) and on Demand Curve's blog) launched against Beauty competitors with 50-person marketing teams. Their entire creative output for the year:
+In 2024, a 2-person DTC skincare brand called Bloom Hydration (the founder publicly shared their playbook on the [DTC Newsletter](https://dtcnews.com/) and on Demand Curve's blog) launched against Beauty competitors with 50-person marketing teams. Their entire creative output for the year:
 
 - **180 image ads** for Meta + Google
 - **60 video ads** for Reels + TikTok + YouTube Shorts
@@ -33,7 +33,7 @@ This module teaches you their pipeline, adapted for 2026 tools. By the end, you 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The creative brief, insight, and proposition fields, covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md)
 > - The 3-second hook test and short-form video aspect ratios, covered in [Module 3](../Module-03-Google-Ads-PMax-Display-Video/Reading.md) and [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
-> - DCT (Hook × Body × CTA (Call to Action)) creative test matrix, covered in [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
+> - DCT (Hook × Body × CTA) creative test matrix, covered in [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
 ---
@@ -68,7 +68,7 @@ The mistake beginners make: trying to generate a video ad in one prompt. The pro
 | Use case | Best model |
 |----------|------------|
 | Long-form brand content (essays, threads, briefs) | Claude Sonnet 4.7 |
-| Quick variants + structured outputs (50 headline variations) | ChatGPT GPT (Generative Pre-trained Transformer)-5 |
+| Quick variants + structured outputs (50 headline variations) | ChatGPT GPT-5 |
 | Multimodal (paste image, get copy reacting to it) | Gemini 2.5 Pro |
 | SEO content with web research | ChatGPT (with web search) |
 | Brand voice fidelity with custom instructions | Claude Projects |
@@ -208,7 +208,7 @@ The 2026 AI video landscape:
 | **Pika 2.0** | Stylized + character-driven | Up to 10 sec, strong character motion |
 | **Sora (OpenAI)** | Long-form (60+ sec) realistic | Limited availability, very high quality |
 | **HeyGen** | AI avatar talking heads | Multi-language, lip sync, custom avatars |
-| **Synthesia** | Corporate explainer videos | Avatar library, B2B (Business-to-Business)-friendly |
+| **Synthesia** | Corporate explainer videos | Avatar library, B2B-friendly |
 | **D-ID** | Animating still photos | Speak from a single image |
 
 ### The Smart Workflow (Not Single-Shot)
@@ -295,7 +295,7 @@ The secret to producing 50+ assets per month isn't speed, it's automation. Make.
 ```
 [Trigger: Google Sheet row added]
    ↓
-[Step 1: Claude API (Application Programming Interface)]
+[Step 1: Claude API]
    "Generate 10 headlines for product: {Product Name}, target: {Audience}"
    ↓
 [Step 2: For each headline →]
@@ -313,7 +313,7 @@ The secret to producing 50+ assets per month isn't speed, it's automation. Make.
 
 | Tool | Pros | Cons |
 |------|------|------|
-| **Zapier** | Easiest UI (User Interface); biggest app library | Expensive at scale ($299+/mo for serious use) |
+| **Zapier** | Easiest UI; biggest app library | Expensive at scale ($299+/mo for serious use) |
 | **Make.com** | Visual flow builder; cheaper per operation | Steeper learning curve |
 | **n8n** | Open source; self-hostable; cheapest at scale | Self-host = ops overhead |
 
@@ -396,7 +396,7 @@ Compare to: hiring one freelance designer at $4K/mo. The math is obvious.
 
 ## 🎓 Real Case Study: How Klarna Cut Marketing Costs 25% With AI
 
-Klarna's CEO (Chief Executive Officer) Sebastian Siemiatkowski publicly shared at the [Klarna Q3 2024 earnings call](https://www.klarna.com/) that AI tools reduced their marketing production costs by **$10M+ annually**, and headcount in marketing operations dropped by ~20%.
+Klarna's CEO Sebastian Siemiatkowski publicly shared at the [Klarna Q3 2024 earnings call](https://www.klarna.com/) that AI tools reduced their marketing production costs by **$10M+ annually**, and headcount in marketing operations dropped by ~20%.
 
 What they automated:
 

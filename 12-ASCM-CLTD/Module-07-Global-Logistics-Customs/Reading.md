@@ -25,7 +25,7 @@ This module makes sure you never do that. We'll cover all 11 Incoterms 2020, cus
 
 ## 🌐 Incoterms 2020, All 11 Rules
 
-> **Citation.** *Incoterms® 2020, ICC Rules for the Use of Domestic and International Trade Terms* (International Chamber of Commerce, Paris, 2019; effective Jan 1, 2020). The rules are commercial trademarks of the ICC and are reaffirmed every 10 years (next revision projected: Incoterms 2030). The Harmonized System is governed by the *International Convention on the Harmonized Commodity Description and Coding System* (World Customs Organization, Brussels, 1983; updated every 5 years; HS 2022 currently in force). C-TPAT is administered by US Customs and Border Protection (CBP, 2001 under the SAFE Port Act); AEO (Answer Engine Optimization) programs are administered globally under the WCO SAFE Framework of Standards (2005; updated 2018, 2021). USMCA went into force July 1, 2020 (replacing NAFTA 1994).
+> **Citation.** *Incoterms® 2020, ICC Rules for the Use of Domestic and International Trade Terms* (International Chamber of Commerce, Paris, 2019; effective Jan 1, 2020). The rules are commercial trademarks of the ICC and are reaffirmed every 10 years (next revision projected: Incoterms 2030). The Harmonized System is governed by the *International Convention on the Harmonized Commodity Description and Coding System* (World Customs Organization, Brussels, 1983; updated every 5 years; HS 2022 currently in force). C-TPAT is administered by US Customs and Border Protection (CBP, 2001 under the SAFE Port Act); AEO programs are administered globally under the WCO SAFE Framework of Standards (2005; updated 2018, 2021). USMCA went into force July 1, 2020 (replacing NAFTA 1994).
 
 **Incoterms** = International Commercial Terms, published by the International Chamber of Commerce (ICC). Current version: **Incoterms 2020**, effective January 1, 2020. The 11 rules govern who pays for transport, who carries risk, and where transfer happens.
 
@@ -120,7 +120,7 @@ Under **C-terms** (CPT, CIP, CFR, CIF), the seller *pays* freight to destination
 | **Customs broker** | Files customs paperwork on importer's behalf |
 | **Freight forwarder** | Books transport, prepares documents (no goods possession typically) |
 | **NVOCC** | Non-Vessel Operating Common Carrier, issues own BL but doesn't own ships |
-| **3PL (Third-Party Logistics)** | Outsourced logistics provider |
+| **3PL** | Outsourced logistics provider |
 
 ### Customs documents (memorize)
 
@@ -264,7 +264,7 @@ Goods imported for a limited time without duty (samples, trade shows, repair).
 ### Currency / FX risk
 
 - Spot rates, forward contracts, options, natural hedging
-- Major: USD, EUR, JPY, CNY, GBP (Google Business Profile)
+- Major: USD, EUR, JPY, CNY, GBP
 - Quote convention: EUR/USD = 1.08 means 1 EUR = 1.08 USD
 
 ### Political / geopolitical risk
@@ -298,7 +298,7 @@ All grant *expedited customs treatment* in exchange for security compliance.
 | **NVOCC** | Non-vessel ocean carrier; issues own BL |
 | **Customs broker** | Files customs entry on behalf of importer |
 | **3PL** | Operates warehouse + transport, often with broker affiliate |
-| **4PL (Fourth-Party Logistics)** | Orchestrates other LSPs |
+| **4PL** | Orchestrates other LSPs |
 | **Indirect air carrier (IAC)** | Air freight forwarder |
 
 🎯 **Exam tip:** Freight forwarders ≠ customs brokers. Many companies offer both, but they're distinct licenses.
@@ -307,7 +307,7 @@ All grant *expedited customs treatment* in exchange for security compliance.
 
 ## 📜 Case Study, CMA CGM's Acquisition of Bolloré Logistics (2024)
 
-**Situation.** CMA CGM, France's largest container shipping line and the world's #3 carrier by capacity (after MSC and Maersk), watched Maersk's vertical-integration playbook (see Module 1 case) play out from 2016 through 2022. By 2022 CMA CGM had earned over €40B of cumulative profits across the freight super-cycle and CEO (Chief Executive Officer) Rodolphe Saadé began an aggressive M&A (Mergers and Acquisitions) spree to follow Maersk's model. The strategic question: how to acquire the *integrated logistics* layer fastest? Bolloré Logistics the freight forwarding + customs brokerage + contract logistics arm of the French conglomerate Bolloré Group was, in 2023, the world's #5 freight forwarder with 14,800 employees across 140+ countries, ~€7B revenue, and deep African + Asian customs broker capability.
+**Situation.** CMA CGM, France's largest container shipping line and the world's #3 carrier by capacity (after MSC and Maersk), watched Maersk's vertical-integration playbook (see Module 1 case) play out from 2016 through 2022. By 2022 CMA CGM had earned over €40B of cumulative profits across the freight super-cycle and CEO Rodolphe Saadé began an aggressive M&A spree to follow Maersk's model. The strategic question: how to acquire the *integrated logistics* layer fastest? Bolloré Logistics the freight forwarding + customs brokerage + contract logistics arm of the French conglomerate Bolloré Group was, in 2023, the world's #5 freight forwarder with 14,800 employees across 140+ countries, ~€7B revenue, and deep African + Asian customs broker capability.
 
 **Decision.** In April 2024 CMA CGM closed the acquisition of Bolloré Logistics for €4.65B (announced December 2023, regulatory approvals through Q1 2024). The deal:
 
@@ -420,7 +420,7 @@ You now know:
 
 4. **Customs broker make-or-buy.** A growing importer (~5,000 entries/year) currently uses an external broker. They consider hiring an in-house licensed broker. What are the breakeven and risk considerations?
 
-5. **AEO/C-TPAT investment ROI (Return on Investment).** Earning C-TPAT certification costs ~$50K–$200K in audit and process work. The benefits (lower exam rates, faster clearance) are real but hard to quantify ahead of time. How would you build the business case to the CFO (Chief Financial Officer)?
+5. **AEO/C-TPAT investment ROI.** Earning C-TPAT certification costs ~$50K–$200K in audit and process work. The benefits (lower exam rates, faster clearance) are real but hard to quantify ahead of time. How would you build the business case to the CFO?
 
 > **Where this leads.**
 > - Inside this course: Module 8 layers the sustainability/risk lens onto the global trade decisions made here.

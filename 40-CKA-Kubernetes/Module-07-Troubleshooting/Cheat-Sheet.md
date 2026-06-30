@@ -37,7 +37,7 @@
 | `kubectl logs <pod> -f` | Tail live logs |
 | `kubectl get events --sort-by=.metadata.creationTimestamp` | Chronological events (newest last) |
 | `kubectl get events -n <ns> --field-selector reason=FailedScheduling` | Only scheduling failures |
-| `kubectl run tmp --image=busybox --rm -it --restart=Never -- nslookup kubernetes` | DNS (Domain Name System) smoke test |
+| `kubectl run tmp --image=busybox --rm -it --restart=Never -- nslookup kubernetes` | DNS smoke test |
 
 ---
 
@@ -68,7 +68,7 @@
 | Component | Check Command |
 |---|---|
 | All control plane pods | `kubectl get pods -n kube-system` |
-| API (Application Programming Interface) server | `crictl ps \| grep apiserver` (if kubectl is unavailable) |
+| API server | `crictl ps \| grep apiserver` (if kubectl is unavailable) |
 | Controller manager | `kubectl logs kube-controller-manager-<node> -n kube-system` |
 | Scheduler | `kubectl logs kube-scheduler-<node> -n kube-system` |
 | etcd | `kubectl logs etcd-<node> -n kube-system` |
@@ -88,7 +88,7 @@
 | `kubectl get networkpolicy -n <ns>` | List NetworkPolicies that may block traffic |
 | `kubectl describe networkpolicy <name>` | See what traffic is allowed/denied |
 | `kubectl run tmp --image=busybox --rm -it --restart=Never -- nslookup <svc>.<ns>.svc.cluster.local` | Test cross-namespace DNS |
-| `kubectl run tmp --image=curlimages/curl --rm -it --restart=Never -- curl http://<svc>:<port>` | Test HTTP (Hypertext Transfer Protocol) connectivity to a service |
+| `kubectl run tmp --image=curlimages/curl --rm -it --restart=Never -- curl http://<svc>:<port>` | Test HTTP connectivity to a service |
 | `kubectl run tmp --image=busybox --rm -it --restart=Never -- wget -qO- http://<pod-ip>:<port>` | Test direct pod connectivity |
 
 ---
@@ -116,5 +116,5 @@
 | `/etc/kubernetes/admin.conf` | Admin kubeconfig for the cluster |
 | `/var/lib/kubelet/config.yaml` | Kubelet configuration |
 | `/var/lib/etcd/` | etcd data directory |
-| `/etc/kubernetes/pki/etcd/` | etcd TLS (Transport Layer Security) certificates |
+| `/etc/kubernetes/pki/etcd/` | etcd TLS certificates |
 | `/var/log/pods/` | Raw pod log files on the node |

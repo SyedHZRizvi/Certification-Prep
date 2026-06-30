@@ -73,7 +73,7 @@ A 5-minute video at 1 fps + audio = 5 × 60 × 258 + 5 × 60 × 32 ≈ **87,000 
 
 ## 📤 How to Pass Multi-Modal Input
 
-### Python (Gemini API (Application Programming Interface))
+### Python (Gemini API)
 
 ```python
 import google.generativeai as genai
@@ -318,7 +318,7 @@ Customer speaks at drive-thru speaker
 ```
 
 **Why multi-modal matters here:**
-- Native audio understanding eliminates the transcribe-then-LLM pipeline (Wendy's CTO (Chief Technology Officer) publicly cited this as the key win vs the McDonald's architecture)
+- Native audio understanding eliminates the transcribe-then-LLM pipeline (Wendy's CTO publicly cited this as the key win vs the McDonald's architecture)
 - Latency budget is tight (drive-thru customer impatient at >2 seconds); Flash is the right tier
 - Brand voice in Chirp TTS keeps "Wendy's" voice consistent
 - Vertex AI Agent Builder + Conversational Agents handles the state machine deterministically, Gemini doesn't free-improvise orders
@@ -342,7 +342,7 @@ Customer speaks at drive-thru speaker
 - Output: triage recommendation + cited literature + confidence score
 
 **Why on Vertex AI (not Google AI Studio):**
-- HIPAA-eligible deployment requires signed BAA + CMEK + VPC (Virtual Private Cloud)-SC (not available on AI Studio)
+- HIPAA-eligible deployment requires signed BAA + CMEK + VPC-SC (not available on AI Studio)
 - Audit logging for every clinical interaction
 - Regional residency (US-only deployment for US patients)
 - Med-PaLM 2 is NOT on the consumer Gemini app; only Vertex AI
@@ -375,7 +375,7 @@ Customer speaks at drive-thru speaker
 | **Native multi-modal** | Trained on multiple modalities jointly from scratch |
 | **Tokens per modality** | Image ~258; audio ~32/sec; video ~290/sec at 1 fps |
 | **Files API** | Upload large media once, reference by URI |
-| **Part** | Vertex AI SDK (Software Development Kit) class wrapping a single modality input |
+| **Part** | Vertex AI SDK class wrapping a single modality input |
 | **VideoMetadata** | Class to configure video processing (fps) |
 | **Diarization** | Speaker identification in audio |
 | **OCR** | Optical Character Recognition (text in images) |
@@ -403,7 +403,7 @@ You now know:
 - 🏥 **Verily Med-PaLM 2**, clinical-grade deployment
 - 💰 **Token math** for multi-modal cost estimation
 
-**Next:** [Module 5, RAG (Retrieval-Augmented Generation) on Google Cloud](../Module-05-RAG-Google-Cloud/Reading.md)
+**Next:** [Module 5, RAG on Google Cloud](../Module-05-RAG-Google-Cloud/Reading.md)
 
 ---
 

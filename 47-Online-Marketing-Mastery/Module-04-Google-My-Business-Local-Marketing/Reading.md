@@ -42,7 +42,7 @@ Estimated new patients from local pack visibility increase: 11 per month.
 
 At an average patient lifetime value of CAD $2,400, that is roughly CAD $26,400 in new annual revenue — from fixing a category, standardizing a street name, and sending a text message.
 
-*This is the power of local SEO (Search Engine Optimization). Not ads. Not influencers. Fundamentals.*
+*This is the power of local SEO. Not ads. Not influencers. Fundamentals.*
 
 ---
 
@@ -130,7 +130,7 @@ Most businesses upload 5-10 stock photos and call it done. The data tells a diff
 |--------|-----------------|
 | US/Canada | Show diversity in team photos; it increases click-through with diverse audiences |
 | UK | Show UKAS accreditations, awards, certifications (e.g., Which? Trusted Trader) |
-| Germany | Datenschutz (GDPR (General Data Protection Regulation)): Get written consent before posting identifiable employee/customer photos |
+| Germany | Datenschutz (GDPR): Get written consent before posting identifiable employee/customer photos |
 | France | CNIL compliance: Same GDPR photo consent rules apply; use stock-style alternatives if needed |
 | Netherlands | AVG (Dutch GDPR implementation): Same photo consent standards |
 
@@ -246,7 +246,7 @@ Google Posts are short updates published directly to your GBP. They appear in th
 
 ### Post Types and When to Use Each
 
-| Post Type | Best Use Case | Lifespan | CTA (Call to Action) Options |
+| Post Type | Best Use Case | Lifespan | CTA Options |
 |-----------|-------------|---------|------------|
 | What's New | General updates, blog summaries | 7 days | Learn more, Call, Visit |
 | Event | Workshops, webinars, open days | Until event ends | Register, Learn more |
@@ -265,7 +265,7 @@ Google Posts are short updates published directly to your GBP. They appear in th
 
 ### What Are Local Services Ads?
 
-Local Services Ads (LSAs) appear above regular Google Ads and organic results for high-intent local service searches. Unlike standard PPC (Pay-Per-Click) (pay per click), LSAs charge per **qualified lead** (phone call or message) — making them highly efficient.
+Local Services Ads (LSAs) appear above regular Google Ads and organic results for high-intent local service searches. Unlike standard PPC (pay per click), LSAs charge per **qualified lead** (phone call or message) — making them highly efficient.
 
 The "Google Guaranteed" badge (green checkmark) that appears on LSAs is a trust signal backed by Google's screening process.
 
@@ -283,7 +283,7 @@ The "Google Guaranteed" badge (green checkmark) that appears on LSAs is a trust 
 
 ### LSA vs Google Ads vs GBP — When to Use Each
 
-| Channel | Cost Model | Best When... | Avg ROI (Return on Investment) Context |
+| Channel | Cost Model | Best When... | Avg ROI Context |
 |---------|-----------|-------------|----------------|
 | GBP (organic) | Free | Always — this is your foundation | Highest long-term ROI |
 | Local Services Ads | Per lead | Service businesses needing fast leads | $5-$150 per lead depending on category |

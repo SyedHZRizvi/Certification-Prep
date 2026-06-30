@@ -29,8 +29,8 @@ I - Informed (kept aware)
 | Activity | Marketing | Data Eng | Product | Finance | Privacy |
 |----------|-----------|----------|---------|---------|---------|
 | MMM | A | R | C | C | I |
-| GA4 (Google Analytics 4) setup | A | R | C | I | I |
-| CDP (Customer Data Platform) selection | A | R | C | C | C |
+| GA4 setup | A | R | C | I | I |
+| CDP selection | A | R | C | C | C |
 | sGTM ops | C | R/A | I | I | C |
 | Vendor contract | C | I | I | A | C |
 | Privacy compliance | C | C | C | I | A/R |
@@ -44,7 +44,7 @@ I - Informed (kept aware)
 | Web Analytics | GA4 (free / 360), Adobe Analytics |
 | Product Analytics | Mixpanel, Amplitude, Heap, PostHog |
 | CDP | Segment, mParticle, Hightouch (composable) |
-| Server-side GTM (Google Tag Manager) | Stape, GTM-SS, JenTis |
+| Server-side GTM | Stape, GTM-SS, JenTis |
 | CMP | OneTrust, Cookiebot, Didomi, Usercentrics |
 | MMM | Robyn (free), Meridian (free), Rockerbox, Measured |
 | MTA | Northbeam, Rockerbox, Triple Whale |
@@ -83,7 +83,7 @@ Red flag: >50% activation + <10% measurement.
 
 ---
 
-## 📊 5 Questions The CFO (Chief Financial Officer) Will Always Ask
+## 📊 5 Questions The CFO Will Always Ask
 
 1. What did we spend and what did it return?
 2. Which channels are growing/shrinking and why?
@@ -94,14 +94,14 @@ Red flag: >50% activation + <10% measurement.
 ### The 12-metric 1-page scorecard
 
 - New customer count
-- CAC (Customer Acquisition Cost) (blended + paid-only)
-- LTV (Lifetime Value) (12-mo projected)
+- CAC (blended + paid-only)
+- LTV (12-mo projected)
 - LTV:CAC
 - MMM-attributed incremental revenue
 - Total spend + spend/revenue ratio
 - Month-3 retention (latest cohort)
 - NRR + GRR
-- Incrementality-validated paid-search ROAS (Return on Ad Spend)
+- Incrementality-validated paid-search ROAS
 - Incrementality-validated paid-social ROAS
 
 ---
@@ -115,7 +115,7 @@ Red flag: >50% activation + <10% measurement.
 | Marketing Science Manager | 5–8 | $140K–$200K |
 | Director, Marketing Analytics | 8–12 | $180K–$280K |
 | VP Growth / Performance | 12–18 | $280K–$500K |
-| CMO (Chief Marketing Officer) / CGO | 15+ | $400K–$1M+ |
+| CMO / CGO | 15+ | $400K–$1M+ |
 
 ---
 

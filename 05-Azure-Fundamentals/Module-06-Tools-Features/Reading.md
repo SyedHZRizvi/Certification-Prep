@@ -1,11 +1,11 @@
 # Module 6: Tools & Features 🧰
 
-> **Why this module matters:** AZ-900 loves "which tool would you use?" questions. This module is your toolbox. Portal vs CLI (Command Line Interface) vs PowerShell, ARM vs Bicep, Monitor vs Advisor vs Service Health, knowing the distinct *job* of each gets you free points.
+> **Why this module matters:** AZ-900 loves "which tool would you use?" questions. This module is your toolbox. Portal vs CLI vs PowerShell, ARM vs Bicep, Monitor vs Advisor vs Service Health, knowing the distinct *job* of each gets you free points.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [The Azure resource hierarchy (MG → Sub → RG → Resource)](../Module-02-Azure-Architecture/Reading.md#-the-resource-hierarchy-live-or-die-for-the-exam), covered in Module 2
 > - [Core Azure compute / network / storage / database services](../Module-03-Core-Services/Reading.md), covered in Module 3
-> - [RBAC (Role-Based Access Control), Policy, Defender for Cloud, Sentinel](../Module-04-Identity-Governance-Security/Reading.md), covered in Module 4
+> - [RBAC, Policy, Defender for Cloud, Sentinel](../Module-04-Identity-Governance-Security/Reading.md), covered in Module 4
 > - Comfort with the difference between a *resource* and a *tool that manages resources*
 >
 > The tools in this module *manage* the services from Modules 3 + 4. If you don't yet know what App Service or Azure Policy are, the "which tool would you use?" questions will feel arbitrary. Pause and review.
@@ -16,13 +16,13 @@
 
 By now Anna runs *PizzaTracker.io* on Azure across two regions. She wakes up Monday and her day looks like:
 
-1. Phone buzzes, **Azure Mobile App** alert: a kitchen oven controller VM (Virtual Machine) in West US went unhealthy
+1. Phone buzzes, **Azure Mobile App** alert: a kitchen oven controller VM in West US went unhealthy
 2. She opens **Azure Portal** on her laptop and checks the dashboard
 3. **Service Health** shows West US has a planned maintenance window in 3 hours, she's not the only one
 4. She needs to restart 5 VMs across 2 regions, instead of clicking 50 times, she opens **Cloud Shell** and runs an **Azure CLI** loop
 5. New website launching tomorrow: she defines the infrastructure (App Service, SQL DB, Storage) in **Bicep** and deploys via `az deployment group create`
 6. **Azure Advisor** tells her three idle VMs are wasting $80/month, she shuts them down
-7. **Azure Monitor** dashboard shows API (Application Programming Interface) latency rose 15%, she clicks into Log Analytics queries to investigate
+7. **Azure Monitor** dashboard shows API latency rose 15%, she clicks into Log Analytics queries to investigate
 
 Every one of those steps used a different Azure tool, and the exam wants you to know which is which. Here we go.
 
@@ -49,7 +49,7 @@ az group create --name rg-pizza --location eastus
 az vm create --resource-group rg-pizza --name web1 --image UbuntuLTS
 ```
 
-🎯 Best for: Scripting on Linux/macOS, CI/CD (Continuous Integration/Continuous Deployment) pipelines, anything cross-platform.
+🎯 Best for: Scripting on Linux/macOS, CI/CD pipelines, anything cross-platform.
 
 ### Azure PowerShell
 Cmdlets running on PowerShell Core (cross-platform) or Windows PowerShell.
@@ -119,7 +119,7 @@ resource storage 'Microsoft.Storage/storageAccounts@2023-01-01' = {
 🎯 **Exam pattern:** "Microsoft-recommended modern IaC language for Azure" → **Bicep**.
 
 ### Terraform
-HashiCorp's multi-cloud IaC. Works with Azure (and AWS (Amazon Web Services), GCP (Google Cloud Platform), etc.) via the AzureRM provider. Popular in multi-cloud shops.
+HashiCorp's multi-cloud IaC. Works with Azure (and AWS, GCP, etc.) via the AzureRM provider. Popular in multi-cloud shops.
 
 ### Comparison
 
@@ -182,7 +182,7 @@ Personalized recommendations across five pillars:
 | Pillar | Example recommendation |
 |--------|------------------------|
 | **Reliability** | Enable Azure Backup for VMs |
-| **Security** | Enable MFA (Multi-Factor Authentication) on admin accounts |
+| **Security** | Enable MFA on admin accounts |
 | **Performance** | Resize underperforming SQL DB |
 | **Cost** | Buy Reservations / shut down idle VM |
 | **Operational Excellence** | Set up Service Health alerts |
@@ -220,7 +220,7 @@ Personalized recommendations across five pillars:
 |----------|------|
 | **Microsoft Trust Center** | Overview of Microsoft's security/privacy/compliance practices |
 | **Service Trust Portal** | Audit reports, compliance docs, security assessments downloads |
-| **Compliance Manager** | Track your org's compliance with frameworks (ISO 27001, HIPAA, NIST, GDPR (General Data Protection Regulation)) |
+| **Compliance Manager** | Track your org's compliance with frameworks (ISO 27001, HIPAA, NIST, GDPR) |
 
 🎯 **Exam pattern:** "Download Microsoft's ISO 27001 audit report" → **Service Trust Portal**.
 
@@ -295,7 +295,7 @@ Personalized recommendations across five pillars:
 
 ## 📊 Case Study, Mercedes-Benz Connected Vehicle Platform on Azure (2020–2024)
 
-**Situation.** Mercedes-Benz produces roughly **2 million premium vehicles per year** across the globe, and each car shipped since 2020 ships with always-connected telematics **MBUX** (Mercedes-Benz User Experience) infotainment, over-the-air (OTA) software updates, fleet data telemetry, EV charging integration, the *MB.OS* operating system rolling out from 2024, and (in the EU/US) Drive Pilot Level-3 autonomous driving. By 2023 Mercedes had roughly **30+ million connected vehicles** in its global fleet, each generating gigabytes of telemetry per day (vehicle health, driving patterns, OTA-update receipts, EV-battery state). The pre-cloud architecture a mix of on-prem Stuttgart data centers and SaaS (Software as a Service), could not absorb the data growth or ship features fast enough versus Tesla, BYD, and other electric-first competitors.
+**Situation.** Mercedes-Benz produces roughly **2 million premium vehicles per year** across the globe, and each car shipped since 2020 ships with always-connected telematics **MBUX** (Mercedes-Benz User Experience) infotainment, over-the-air (OTA) software updates, fleet data telemetry, EV charging integration, the *MB.OS* operating system rolling out from 2024, and (in the EU/US) Drive Pilot Level-3 autonomous driving. By 2023 Mercedes had roughly **30+ million connected vehicles** in its global fleet, each generating gigabytes of telemetry per day (vehicle health, driving patterns, OTA-update receipts, EV-battery state). The pre-cloud architecture a mix of on-prem Stuttgart data centers and SaaS, could not absorb the data growth or ship features fast enough versus Tesla, BYD, and other electric-first competitors.
 
 **Decision.** Mercedes-Benz announced in 2020 a strategic partnership with **Microsoft and Azure** as the primary cloud, anchored by a multi-year MOU (Mercedes-Benz Group press release, 2020-06-15; renewed 2023). Key technology choices:
 
@@ -305,7 +305,7 @@ Personalized recommendations across five pillars:
 - **Azure OpenAI** integration in MBUX from late 2023, drivers can ask MBUX a free-form question (route, vehicle status, EV-charging recommendation) and the response is generated via Azure OpenAI with car-context retrieval
 - **Azure Cosmos DB** for the vehicle-state-per-VIN store, globally distributed, multi-region writes, sub-10ms latency exactly as the Module 3 case for Cosmos describes
 - **Azure Monitor + Application Insights + Log Analytics** as the observability layer across the entire stack
-- **Microsoft Sentinel** for the SOC (Security Operations Center), ingesting vehicle telemetry as a security data source (anomalous behavior may indicate a compromised vehicle bus or fraudulent OTA attempt)
+- **Microsoft Sentinel** for the SOC, ingesting vehicle telemetry as a security data source (anomalous behavior may indicate a compromised vehicle bus or fraudulent OTA attempt)
 - **Bicep** as the standardized IaC across the platform team's ~600 microservices, Mercedes engineers cite Bicep's resource-graph clarity over Terraform for Azure-only stacks
 - **Azure Arc** to manage on-prem manufacturing-floor servers (Mercedes plants in Stuttgart, Sindelfingen, Tuscaloosa, Beijing) under the same Policy + Defender governance as the cloud workloads, a model the Module 6 case for Arc points to directly
 - **Azure DevOps + GitHub Enterprise** as the development platform (the same GitHub-on-Azure stack from Module 5's case)
@@ -316,7 +316,7 @@ Personalized recommendations across five pillars:
 - The **MBUX Voice Assistant powered by Azure OpenAI** rolled out across 2024 model-year vehicles in Q1 2024; uptake exceeded 40% of new sales by year-end (Mercedes-Benz CES 2024 press release, 2024-01-09; MWC Barcelona 2024 followup).
 - **OTA update success rate** improved from low-80s percent (pre-Azure) to mid-90s percent (post-Azure) due to better retry orchestration via Event Grid + Logic Apps.
 - The platform absorbed the 2023 Drive Pilot Level-3 launch in the U.S. (Nevada + California), high-frequency telemetry from autonomy-relevant sensors had to land in U.S. regions for NHTSA regulatory reasons. Existing region pair + sovereignty design from Module 2 was the substrate.
-- Mercedes-Benz publicly cites this platform in nearly every quarterly earnings call as a "competitive moat" against Tesla. CTO (Chief Technology Officer) Markus Schäfer has framed the Azure partnership as the technological underpinning of MB.OS in multiple Mercedes investor days (Mercedes-Benz Capital Markets Day, 2023-10).
+- Mercedes-Benz publicly cites this platform in nearly every quarterly earnings call as a "competitive moat" against Tesla. CTO Markus Schäfer has framed the Azure partnership as the technological underpinning of MB.OS in multiple Mercedes investor days (Mercedes-Benz Capital Markets Day, 2023-10).
 
 **Lesson for the exam / for practitioners.** This case touches *every* Module 6 tool category at production scale:
 
@@ -329,7 +329,7 @@ Microsoft has used Mercedes as a flagship case study in Microsoft Build 2023 + 2
 **Discussion (Socratic).**
 - **Q1:** Mercedes uses Bicep instead of Terraform despite Terraform being more popular industry-wide. Build the strongest argument for *each* IaC tool for a company with Mercedes' profile (Azure-only by design, ~600 microservices, ~50 platform engineers). Where does Bicep's "compiles to ARM, same engine" advantage actually pay off, and where does Terraform's "multi-cloud" advantage become relevant despite Azure-only design? (Hint: think about acquired-company stacks, vendor partner integrations, and what happens in year 7 if Microsoft pricing leverage erodes.)
 2. **The Azure Arc trap.** Mercedes uses Arc to manage on-prem manufacturing servers from Azure. A skeptic argues this is the wrong abstraction, "if you're going to apply Azure Policy to non-Azure infrastructure, you've added complexity without actually getting the cloud's elasticity benefits." Argue both sides. When is Arc the *right* answer (extending governance) vs. the *wrong* answer (delaying a real migration)? Cite the Module 6 distinction between Arc (manage in place) and Migrate (move to Azure).
-3. **Sentinel as a security-data lake.** Mercedes ingests *vehicle telemetry* into Sentinel as security data, anomalous CAN-bus signals can indicate a remote-attack attempt. This is a non-obvious use of a SIEM (Security Information and Event Management). Argue: when does it make sense to pipe IoT telemetry into a SIEM (Sentinel), and when is it overkill or even a privacy/compliance risk? At what kind of company would you *not* do this?
+3. **Sentinel as a security-data lake.** Mercedes ingests *vehicle telemetry* into Sentinel as security data, anomalous CAN-bus signals can indicate a remote-attack attempt. This is a non-obvious use of a SIEM. Argue: when does it make sense to pipe IoT telemetry into a SIEM (Sentinel), and when is it overkill or even a privacy/compliance risk? At what kind of company would you *not* do this?
 
 ---
 

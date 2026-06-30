@@ -52,7 +52,7 @@ The catch: it took 6 weeks to get the prompt right. The early prompts had the mo
 
 🎯 **Memorize:** For **video**, Gemini 2.5 is the only mainstream choice, it accepts video files directly. For **everything else multi-modal**, all four families are competitive.
 
-🚨 **Trap:** "Multi-modal" on the box doesn't always mean "multi-modal in the API (Application Programming Interface)." GPT-5's voice mode is a separate API path from the standard chat completion. Always read the docs.
+🚨 **Trap:** "Multi-modal" on the box doesn't always mean "multi-modal in the API." GPT-5's voice mode is a separate API path from the standard chat completion. Always read the docs.
 
 ---
 
@@ -182,7 +182,7 @@ class DamageReport(BaseModel):
 
 ## 📜 OCR, When LLM Vision Beats Dedicated OCR
 
-For most document text extraction in 2026, frontier vision models BEAT dedicated OCR (Tesseract, AWS (Amazon Web Services) Textract for simple cases, Google Document AI) for **layout-aware extraction**, bills, forms, contracts. They lose on:
+For most document text extraction in 2026, frontier vision models BEAT dedicated OCR (Tesseract, AWS Textract for simple cases, Google Document AI) for **layout-aware extraction**, bills, forms, contracts. They lose on:
 
 - Extremely dense text (newspaper pages, legal-print fine print)
 - Specialized scripts (Arabic calligraphy, vertical CJK)
@@ -334,7 +334,7 @@ resp = client.models.generate_content(
 
 > **Scenario:** Aaliyah's team starts the FNOL pilot. Walk through the 6-week iteration.
 
-**Week 1, MVP (Minimum Viable Product) prompt + Claude 3 Opus:**
+**Week 1, MVP prompt + Claude 3 Opus:**
 - Free-form output. ~60% useful first-pass.
 - Failures: glare-blocked plates, ambiguous orientation on white sedans.
 
@@ -432,7 +432,7 @@ Pilot graduates to production. The prompt now lives in version control with an e
 **The follow-on.** Within 6 months, Claude 3 Opus / Sonnet / Haiku all shipped vision. Gemini 1.5 Pro added long-context multi-modal. Llama 3.2 Vision (October 2024) made open-weights vision a reality. By late 2024, "vision-only models" (no text reasoning) were considered obsolete for most production work.
 
 **The failure modes that taught everyone.**
-- Early GPT-4V was prone to refusal on faces (heavy safety tuning around identifying people), annoying for use cases like KYC (Know Your Customer) and ID verification.
+- Early GPT-4V was prone to refusal on faces (heavy safety tuning around identifying people), annoying for use cases like KYC and ID verification.
 - Chart-reading confabulation was a major early discovery, community-built benchmarks like ChartQA showed disappointing scores.
 - Indirect prompt injection via image text (a sticky note in the photo saying "ignore your instructions") emerged as a serious vulnerability, Module 7.
 

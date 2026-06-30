@@ -15,7 +15,7 @@
 
 **Promotion thresholds (move term up one tier when):**
 
-- Auto → Broad: 1–2 orders (any ACoS (Advertising Cost of Sale) — just testing)
+- Auto → Broad: 1–2 orders (any ACoS — just testing)
 - Broad → Phrase: 3–5 orders + ACoS ≤ break-even
 - Phrase → Exact: 8–10 orders + ACoS ≤ target
 
@@ -25,8 +25,8 @@
 
 ```
 ACoS            = (Ad Spend ÷ Ad Revenue) × 100
-TACoS (Total Advertising Cost of Sale)           = (Ad Spend ÷ Total Revenue) × 100
-ROAS (Return on Ad Spend)            = Ad Revenue ÷ Ad Spend
+TACoS           = (Ad Spend ÷ Total Revenue) × 100
+ROAS            = Ad Revenue ÷ Ad Spend
 Break-Even ACoS = Gross Profit Margin %
 Target ACoS     = Break-Even ACoS × (1 − desired profit buffer %)
 ```
@@ -53,7 +53,7 @@ Target ACoS     = Break-Even ACoS × (1 − desired profit buffer %)
 | Sponsored Products (SP) | Keywords + ASINs | Search results + PDPs | None | Direct sales, the workhouse |
 | Sponsored Brands (SB) | Keywords | Top of search banner | None (brand registry req.) | Brand awareness + NTB acquisition |
 | Sponsored Display (SD) | Audiences + Products | Amazon + off-Amazon | None | Retargeting + competitor intercept |
-| Amazon DSP (Demand-Side Platform) | Programmatic audiences | Amazon + 3rd-party sites | $10k–$50k/mo | Full-funnel, video, large brands |
+| Amazon DSP | Programmatic audiences | Amazon + 3rd-party sites | $10k–$50k/mo | Full-funnel, video, large brands |
 
 ---
 
@@ -98,9 +98,9 @@ Example: £0.80 base × (1 + 100%) = £1.60 top-of-search effective bid
 
 | Metric | US / Canada | UK | Germany |
 |--------|------------|-----|---------|
-| Avg SP CPC (Cost Per Click) | $0.75–1.20 | £0.55–0.90 | €0.65–1.00 |
+| Avg SP CPC | $0.75–1.20 | £0.55–0.90 | €0.65–1.00 |
 | Avg ACoS (mature category) | 28–35% | 25–32% | 22–30% |
-| Avg SP CTR (Click-Through Rate) | 0.35–0.45% | 0.30–0.40% | 0.28–0.38% |
+| Avg SP CTR | 0.35–0.45% | 0.30–0.40% | 0.28–0.38% |
 | SB Video CTR (vs standard SB) | 2–3x higher | 2–3x higher | 2–3x higher |
 | Avg Conversion Rate | 10–15% | 8–13% | 9–14% |
 
@@ -126,11 +126,11 @@ Example: £0.80 base × (1 + 100%) = £1.60 top-of-search effective bid
 
 **Available in:** US, UK, Germany, France, Italy, Spain, Netherlands (+ select markets)
 
-**GDPR (General Data Protection Regulation) note:** Attribution occurs within Amazon's own ecosystem — no third-party cookies, no separate GDPR consent requirement
+**GDPR note:** Attribution occurs within Amazon's own ecosystem — no third-party cookies, no separate GDPR consent requirement
 
 **Key metrics:** Clicks → Detail page views → Add to cart → Purchases → Revenue
 
-**Use case:** Prove to CFO (Chief Financial Officer) that £10,000 Google Ads spend drove £45,000 in Amazon revenue → ROAS = 4.5x
+**Use case:** Prove to CFO that £10,000 Google Ads spend drove £45,000 in Amazon revenue → ROAS = 4.5x
 
 ---
 
@@ -169,18 +169,18 @@ Cost of brand defence: typically very low CPC (£0.05–0.20 for brand name term
 |-----------|----------------------|------------------------|
 | Marketplace structure | amazon.com (unified US) | Separate per country (.co.uk, .de, .fr) |
 | Campaign management | Single marketplace | One campaign set per marketplace |
-| Currency/billing | USD (US), CAD (CA) | GBP (Google Business Profile) (UK), EUR (eurozone) |
+| Currency/billing | USD (US), CAD (CA) | GBP (UK), EUR (eurozone) |
 | Amazon DSP availability | Fully mature | Available UK, DE, FR, ES, IT |
 | Sponsored Brands Video | Widely available | Available, some market lag |
 | Average CPCs | Generally higher | Generally lower (less competition) |
-| GDPR applicability | CCPA (California Consumer Privacy Act) (California) | Full GDPR across EU/UK GDPR |
+| GDPR applicability | CCPA (California) | Full GDPR across EU/UK GDPR |
 | SD audience retargeting (GDPR) | No GDPR concern | First-party data, walled garden — compliant |
 
 ---
 
 ## ⚠️ Anti-Patterns
 
-1. **One auto campaign = your whole PPC (Pay-Per-Click) strategy.** Auto is discovery, not revenue.
+1. **One auto campaign = your whole PPC strategy.** Auto is discovery, not revenue.
 2. **Never checking the Search Term Report.** You are paying for irrelevant traffic invisibly.
 3. **Optimising ACoS in isolation.** Without TACoS, you cannot see the organic halo effect.
 4. **No negative keywords.** Build your negative list from Day 1, not Month 3.

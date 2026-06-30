@@ -40,7 +40,7 @@ Average compensation uplift after building a professional reel: **35–55%** wit
 - **Studio-grade standards**, every lesson anchored in real production decisions from ILM, Weta FX, Framestore, MPC, and Dneg
 - **The Nuke advantage**, most online courses teach only After Effects; this course teaches the **node graph paradigm** used on every major film for the past 20 years
 - **Color science, not color guessing**, log vs linear, ACES, LUTs, and how Oppenheimer's grain-and-fire aesthetic was engineered
-- **Pipeline thinking**, you will understand where your shot fits in the 2D/3D/DMP (Data Management Platform)/comp pipeline, not just how to use the tools
+- **Pipeline thinking**, you will understand where your shot fits in the 2D/3D/DMP/comp pipeline, not just how to use the tools
 - **Practical + digital**, the Gareth Edwards school of filmmaking: how great VFX supervisors make digital look physical
 
 ---
