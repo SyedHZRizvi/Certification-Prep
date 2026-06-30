@@ -1,6 +1,6 @@
 # Module 2 Quiz: Cluster Architecture, Installation & Configuration
 
-> **26 questions** | Mix of Remember, Understand, Apply, and Analyze levels
+> **31 questions** | Mix of Remember, Understand, Apply, and Analyze levels
 > Aim for a score of ≥85% before moving to Module 3. The CKA exam tests *application* — if you miss any Apply or Analyze question, revisit the Reading and redo the relevant lab.
 
 ---
@@ -280,6 +280,56 @@ D) Restore from an etcd backup taken before the certificate was deleted
 
 ---
 
+### Q27.
+You want to see the exact YAML a Helm chart would produce, with your value overrides applied, **without contacting the cluster or installing anything**. Which command do you use?
+
+A) `helm install my-release the-chart --dry-run=server`  
+B) `helm template my-release the-chart --set replicas=3`  
+C) `kubectl apply -f the-chart`  
+D) `helm get manifest my-release`  
+
+---
+
+### Q28.
+A teammate runs `helm upgrade my-release the-chart --set image.tag=v2` and is surprised that the `replicaCount=5` they set during the original `helm install` has reverted to the chart default of 1. What explains this?
+
+A) `helm upgrade` always resets every value to chart defaults and cannot be configured otherwise  
+B) `helm upgrade` does not re-apply prior `--set` values unless `--reuse-values` (or another `--set`) is passed  
+C) The chart's `values.yaml` was edited between install and upgrade  
+D) `replicaCount` is an immutable field and cannot be changed after install  
+
+---
+
+### Q29.
+You have a Kustomize `base/` directory and an `overlays/prod/` directory whose `kustomization.yaml` lists `resources: [../../base]` plus a replica patch. Which command builds the overlay and applies it to the cluster?
+
+A) `kubectl apply -f overlays/prod`  
+B) `kubectl apply -k overlays/prod`  
+C) `kubectl kustomize overlays/prod | helm install -`  
+D) `kustomize install overlays/prod`  
+
+---
+
+### Q30.
+After applying a `CustomResourceDefinition` named `backups.ops.example.com`, which command lets you discover the fields available under that new resource's `spec`?
+
+A) `kubectl describe pod backups`  
+B) `kubectl explain backup.spec`  
+C) `kubectl api-versions backups`  
+D) `helm show values backups`  
+
+---
+
+### Q31.
+A custom resource of a kind installed via an operator sits unprocessed — nothing reconciles it. The CRD is present (`kubectl get crd` lists it) and the resource YAML is valid. What is the most likely cause?
+
+A) The CRD must be re-applied with `--force` every time a custom resource is created  
+B) The operator's controller Pod is not running (crashed, missing RBAC, or wrong namespace)  
+C) Custom resources require a matching Ingress object to be processed  
+D) `kubectl explain` must be run before a custom resource takes effect  
+
+---
+
 ## 🎯 Answers + Explanations
 
 | Q | Answer | Level |
@@ -310,6 +360,11 @@ D) Restore from an etcd backup taken before the certificate was deleted
 | 24 | B | Apply |
 | 25 | B | Apply |
 | 26 | B | Analyze |
+| 27 | B | Apply |
+| 28 | B | Understand |
+| 29 | B | Apply |
+| 30 | B | Apply |
+| 31 | B | Analyze |
 
 ---
 
@@ -364,3 +419,13 @@ D) Restore from an etcd backup taken before the certificate was deleted
 **Q25 — B:** After a token expires, `kubeadm token create --print-join-command` is the single command that handles everything: creates a new token, computes the CA cert hash, and outputs the complete `kubeadm join` command. Re-running `kubeadm init` would destroy the existing cluster.
 
 **Q26 — B:** `kubeadm certs renew apiserver` regenerates specifically the apiserver certificate and key in `/etc/kubernetes/pki/`. This is the minimally invasive fix — no cluster reset required. After the command, force-restart the apiserver static pod by touching the manifest or using `crictl`. Option D (etcd restore) would additionally lose all data written since the snapshot was taken, and is unnecessarily destructive for a certificate issue.
+
+**Q27 — B:** `helm template` renders the chart's manifests on the **client** with your `--set` overrides applied and prints them to stdout — no API server contact, nothing installed. `--dry-run=server` (A) does contact the cluster to validate. `helm get manifest` (D) only works for an already-installed release. This is the go-to command for "show me what *would* be applied," and its output can be piped into `kubectl apply -f -`.
+
+**Q28 — B:** `helm upgrade` computes the release from the chart defaults plus the flags you pass *this time*. Prior `--set` values are not carried forward unless you add `--reuse-values` (keep previous values, layer new ones on) or re-specify them. This is a frequent real-world surprise — and a likely exam distractor.
+
+**Q29 — B:** `kubectl apply -k <dir>` tells kubectl to treat the directory as a kustomization, build the overlay (pulling in the base and applying patches), and apply the result. `apply -f` (A) would ignore `kustomization.yaml` and just apply raw files, missing the overlay entirely. Kustomize is built into kubectl, so no separate tool is needed.
+
+**Q30 — B:** `kubectl explain` reads the live OpenAPI schema from the API server, so it works on custom resources as soon as their CRD is installed — `kubectl explain backup.spec` (and `--recursive`) lists the available fields. `kubectl describe pod` (A) targets the wrong kind, and `helm show values` (D) is for charts, not arbitrary CRs.
+
+**Q31 — B:** A CRD only adds the *kind*; the behaviour comes from the operator's controller. If that controller Pod is not running — crashed, missing RBAC, or deployed in a different namespace — custom resources are stored but never reconciled. Always check `kubectl get pods -n <operator-ns>` and the controller logs first. A CRD without a controller is inert, exactly like an Ingress object with no IngressController.

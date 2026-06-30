@@ -1,6 +1,6 @@
 # Module 5: Deep Learning on AWS 🧬
 
-> **Why this module matters:** Deep learning is the dominant technology of 2026, every transformer, every diffusion model, every voice clone, every self-driving system runs on GPU or AI silicon. SageMaker is AWS's deep-learning gym; Trainium and Inferentia are its purpose-built chips; SMDDP and SMMP are its distributed-training libraries. The MLS-C01 exam tests *all* of this: when to bring your own PyTorch/TF container, what instance family to pick, how distributed training works, when to use mixed precision, when EFA matters, and how to make a multi-GPU job not bottleneck on data loading. This module makes you fluent.
+> **Why this module matters:** Deep learning is the dominant technology of 2026, every transformer, every diffusion model, every voice clone, every self-driving system runs on GPU or AI silicon. SageMaker is AWS's deep-learning gym; Trainium and Inferentia are its purpose-built chips; SMDDP and SMMP are its distributed-training libraries. The MLA-C01 exam tests *all* of this: when to bring your own PyTorch/TF container, what instance family to pick, how distributed training works, when to use mixed precision, when EFA matters, and how to make a multi-GPU job not bottleneck on data loading. This module makes you fluent.
 
 > **Prerequisites for this module.** Modules 1–4 of this course. Helpful background:
 > - Familiarity with PyTorch or TensorFlow at the level of writing a `Dataset`, a `nn.Module`, and a training loop
@@ -13,7 +13,7 @@
 
 Tesla famously built its own **Dojo** supercomputer in 2021 to train Autopilot perception models. The reason was simple economics: NVIDIA GPUs were both expensive *and* hard to procure. Many hyperscalers came to the same realisation. **Google** built **TPUs** (2016). **Apple** built **Neural Engine** silicon. **Microsoft** is building **Maia**. **Amazon** built **Trainium** for training and **Inferentia** for inference.
 
-Why does this matter for MLS-C01? Because the exam will ask "**which is the MOST cost-effective compute for training a 7-billion parameter transformer on AWS?**" and the wrong answer is "p4d on demand". The right answer is some combination of **Trainium** + **Spot** + **SMDDP** + **FSx for Lustre**. This module gives you the vocabulary to recognise that.
+Why does this matter for MLA-C01? Because the exam will ask "**which is the MOST cost-effective compute for training a 7-billion parameter transformer on AWS?**" and the wrong answer is "p4d on demand". The right answer is some combination of **Trainium** + **Spot** + **SMDDP** + **FSx for Lustre**. This module gives you the vocabulary to recognise that.
 
 This module is also where you graduate from "I picked a built-in algorithm and clicked train" (Module 4) to "I wrote a custom PyTorch model and trained it across 32 nodes with mixed precision and tensor parallelism." That is the level of fluency the exam expects on the modelling-heavy domains.
 
@@ -32,7 +32,7 @@ You need to recognise the five major DL families and know what each is best at:
 | **Graph Neural Networks** | Social networks, molecules, knowledge graphs | Kipf & Welling (2017) GCN |
 | **Diffusion / GANs** | Image / video / audio generation | Goodfellow et al. (2014) GAN; Ho et al. (2020) DDPM |
 
-🎯 **Exam pattern.** Most MLS-C01 DL questions assume **CNNs** for vision and **Transformers** for NLP/multimodal. Older study guides over-index on RNNs; in 2026, transformers dominate.
+🎯 **Exam pattern.** Most MLA-C01 DL questions assume **CNNs** for vision and **Transformers** for NLP/multimodal. Older study guides over-index on RNNs; in 2026, transformers dominate.
 
 ---
 

@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2, AWS Certified Machine Learning Specialty (MLS-C01)
+# 🧪 Practice Exam 2, AWS Certified Machine Learning Engineer – Associate (MLA-C01)
 
 > **Conditions:** Set an 80-minute timer. 30 questions. No notes.
 > **Pass mark for this practice exam:** 23/30 (~76%), exam-realistic difficulty.
@@ -287,4 +287,4 @@ D. Lower bias
 
 ---
 
-➡️ Next: [Final Mock Exam (65 Q / 180 min)](./Final-Mock-Exam.md)
+➡️ Next: [Final Mock Exam (65 Q / 130 min)](./Final-Mock-Exam.md)

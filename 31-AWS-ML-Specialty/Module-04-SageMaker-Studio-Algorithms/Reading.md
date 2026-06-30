@@ -1,6 +1,6 @@
 # Module 4: SageMaker Studio & Built-In Algorithms 🧠
 
-> **Why this module matters:** Domain 3 of the MLS-C01 exam is **Modeling 36%** of every question by far the biggest block. About half of that is *"given a problem, pick the right SageMaker algorithm and the right hyperparameters."* SageMaker has **17 built-in algorithms**, and you need to know which one solves which problem, what input format it needs, what the key hyperparameters do, and what the gotchas are. This module makes you fluent in the SageMaker model layer.
+> **Why this module matters:** Domain 2 of the MLA-C01 exam is **ML Model Development, 26%** of every question. About half of that is *"given a problem, pick the right SageMaker algorithm and the right hyperparameters."* SageMaker has **17 built-in algorithms**, and you need to know which one solves which problem, what input format it needs, what the key hyperparameters do, and what the gotchas are. This module makes you fluent in the SageMaker model layer.
 
 > **Prerequisites for this module.** Modules 1, 2, 3 of this course. Helpful background:
 > - Comfort with scikit-learn-style `fit() / predict()` patterns
@@ -530,7 +530,7 @@ Runs the same training script on a local Docker daemon, no spin-up time, no AWS 
 - **Tree ensembles**: XGBoost on tabular session features for re-ranking
 - **Bandit / contextual bandit**: explore-exploit at serving time
 
-**Lesson for the exam.** Netflix uses both classical (XGBoost, FM, ALS) AND deep (transformer, two-tower) models depending on the sub-problem. MLS-C01 questions often resolve to "**which built-in algorithm matches this scenario?**", the right answer almost always exists in SageMaker's catalogue.
+**Lesson for the exam.** Netflix uses both classical (XGBoost, FM, ALS) AND deep (transformer, two-tower) models depending on the sub-problem. MLA-C01 questions often resolve to "**which built-in algorithm matches this scenario?**", the right answer almost always exists in SageMaker's catalogue.
 
 ---
 

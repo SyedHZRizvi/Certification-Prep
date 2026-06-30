@@ -31,9 +31,9 @@ title: Certified Kubernetes Administrator (CKA)
 | Module | Topic | Exam Domains Covered |
 |--------|-------|----------------------|
 | [Module 1 — Container Foundations](./Module-01-Container-Foundations/) | Docker → Kubernetes rationale, architecture overview | Cluster Architecture |
-| [Module 2 — Cluster Architecture](./Module-02-Cluster-Architecture/) | kubeadm, etcd backup/restore, TLS, HA setups | Cluster Architecture (25%) |
-| [Module 3 — Workloads & Scheduling](./Module-03-Workloads-Scheduling/) | Pods, Deployments, DaemonSets, StatefulSets, taints | Workloads & Scheduling (15%) |
-| [Module 4 — Services & Networking](./Module-04-Services-Networking/) | ClusterIP, NodePort, Ingress, NetworkPolicies, DNS | Services & Networking (20%) |
+| [Module 2 — Cluster Architecture](./Module-02-Cluster-Architecture/) | kubeadm, etcd backup/restore, TLS, HA setups, Helm, Kustomize, CRDs & Operators | Cluster Architecture (25%) |
+| [Module 3 — Workloads & Scheduling](./Module-03-Workloads-Scheduling/) | Pods, Deployments, DaemonSets, StatefulSets, taints, HPA autoscaling | Workloads & Scheduling (15%) |
+| [Module 4 — Services & Networking](./Module-04-Services-Networking/) | ClusterIP, NodePort, Ingress, Gateway API, NetworkPolicies, DNS | Services & Networking (20%) |
 | [Module 5 — Storage](./Module-05-Storage/) | PV, PVC, StorageClass, ConfigMaps, Secrets | Storage (10%) |
 | [Module 6 — Security & RBAC](./Module-06-Security-RBAC/) | Roles, ClusterRoles, ServiceAccounts, SecurityContexts | Cluster Architecture |
 | [Module 7 — Troubleshooting](./Module-07-Troubleshooting/) | Pod, cluster, networking, logging — the 30% domain | Troubleshooting (30%) |

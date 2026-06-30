@@ -1,6 +1,6 @@
 # Module 1: ML Foundations & The AWS ML Landscape 🤖
 
-> **Why this module matters:** The MLS-C01 exam does not ask "what is gradient descent", it asks "given a dataset of 12 million transactions where 0.02% are fraudulent, what is the BEST algorithm, what is the BEST evaluation metric, and what is the BEST AWS service to deploy it?" To answer that, you need a mental model of (a) the *families* of ML problems and (b) the *seven layers* of the AWS ML stack. This module gives you both lenses. You will use them for the next 9 modules.
+> **Why this module matters:** The MLA-C01 exam does not ask "what is gradient descent", it asks "given a dataset of 12 million transactions where 0.02% are fraudulent, what is the BEST algorithm, what is the BEST evaluation metric, and how do you deploy, monitor, and secure it on AWS?" To answer that, you need a mental model of (a) the *families* of ML problems and (b) the *seven layers* of the AWS ML stack. This module gives you both lenses. You will use them for the next 9 modules.
 
 > **Prerequisites.** No AWS ML experience assumed; this is the on-ramp module. Helpful background:
 > - Python at the level of being comfortable with NumPy / pandas (Wes McKinney's *Python for Data Analysis* is enough)
@@ -20,7 +20,7 @@ For three years she eyeballed it: "looks like a busy week, do 60 kg." Then in 20
 
 That model is what this course teaches you to **build, evaluate, deploy, and operate** on AWS. Every concept in the next 10 modules from gradient boosting in Module 4 to SageMaker Pipelines in Module 9 exists to take a Priya-shaped business problem and turn it into a predictive system that runs reliably at 3 AM with no human in the loop.
 
-The MLS-C01 exam tests the same end-to-end journey. So that is how this course is sequenced.
+The MLA-C01 exam tests the same end-to-end journey, with extra weight on deploying, orchestrating, monitoring, and securing that system in production. So that is how this course is sequenced.
 
 ---
 
@@ -129,7 +129,7 @@ Every production ML system AWS asks you about follows seven steps. Each module o
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
-🎯 **Exam pattern.** Many MLS-C01 questions describe a *step* and ask which AWS service is best. Knowing the lifecycle keeps you from picking a Module-4 answer when the question is actually about Module-2.
+🎯 **Exam pattern.** Many MLA-C01 questions describe a *step* and ask which AWS service is best. Knowing the lifecycle keeps you from picking a Module-4 answer when the question is actually about Module-2.
 
 ---
 
@@ -210,7 +210,7 @@ AWS organises its ML services in a deliberate seven-layer stack. The exam tests 
 
 **Outcome (publicly reported numbers).** False-positive rate fell **~50%**, false-negative rate fell **~26%**, model retrain cycle dropped from monthly to **daily**, and infra cost fell ~40% versus the old Hadoop cluster (no more 24/7 idle racks). Approval latency hit p99 < 100 ms.
 
-**Lesson for the exam.** Capital One's stack is the prototype MLS-C01 reference architecture: **Kinesis → S3 → Glue → Feature Store → SageMaker Training → MME endpoint + Clarify + Monitor + Pipelines**. Memorise it. Half of the modelling and ops questions in this course are variations.
+**Lesson for the exam.** Capital One's stack is the prototype MLA-C01 reference architecture: **Kinesis → S3 → Glue → Feature Store → SageMaker Training → MME endpoint + Clarify + Monitor + Pipelines**. Memorise it. Half of the modelling and ops questions in this course are variations.
 
 **Discussion (Socratic).**
 - Q1. Why did Capital One pick **XGBoost** rather than a deep neural network for fraud? What does the bias-variance trade-off say about tabular data with ~2,800 features and tens of millions of labelled examples?
@@ -221,7 +221,7 @@ AWS organises its ML services in a deliberate seven-layer stack. The exam tests 
 
 ## 🔬 The Math You Actually Need (Cornell-Grade But Tight)
 
-Pure-math questions are rare on MLS-C01, but you must read and understand the math in scenario questions. Here is the minimum vocabulary, dense.
+Pure-math questions are rare on MLA-C01, but you must read and understand the math in scenario questions. Here is the minimum vocabulary, dense.
 
 ### Loss functions (the thing the optimiser is minimising)
 
@@ -293,7 +293,7 @@ The **AWS Well-Architected Framework** has 6 pillars (Operational Excellence, Se
 
 ---
 
-## 🛠️ The Day-1 Setup Every MLS-C01 Engineer Does
+## 🛠️ The Day-1 Setup Every MLA-C01 Engineer Does
 
 | Task | Why |
 |------|-----|
@@ -368,7 +368,7 @@ The **AWS Well-Architected Framework** has 6 pillars (Operational Excellence, Se
 
 ## 💬 Discussion, Socratic Prompts (15 min reflection)
 
-1. **The "AI is just statistics" debate.** A computer-science professor argues that 80% of modern ML is just regularised linear regression dressed up in new clothes (logistic regression → SVM → XGBoost → transformer = all chained linear projections with a non-linearity between them). A philosopher argues that emergent capability in 100B-param LLMs is qualitatively new. Argue both sides. Which is the right *mental model* for an MLS-C01 engineer to adopt when picking algorithms?
+1. **The "AI is just statistics" debate.** A computer-science professor argues that 80% of modern ML is just regularised linear regression dressed up in new clothes (logistic regression → SVM → XGBoost → transformer = all chained linear projections with a non-linearity between them). A philosopher argues that emergent capability in 100B-param LLMs is qualitatively new. Argue both sides. Which is the right *mental model* for an MLA-C01 engineer to adopt when picking algorithms?
 2. **Managed vs custom, the eternal pendulum.** AWS's L5 managed services (Comprehend, Rekognition, etc.) reduce engineering cost but increase vendor lock-in and limit customisation. SageMaker (L4) is more work but you own the model. When does the lock-in cost exceed the engineering savings? Reason from a 5-person startup to a 5,000-engineer enterprise.
 3. **The accuracy trap.** Why is **accuracy** the most reported metric in ML papers but often the worst metric to optimise in production? Pick a domain (fraud, medical diagnosis, content moderation) and design a *better* primary metric.
 4. **Bias-variance in the LLM era.** Frontier LLMs have ~10^11 parameters and the classical bias-variance trade-off would predict catastrophic overfitting. Yet they generalise. Explain in your own words why (hint: scale, regularisation via pretraining objectives, double descent).
@@ -395,7 +395,7 @@ You now know:
 - 🏋️ The **7-step ML lifecycle** that structures the rest of this course
 - ☁️ The **7-layer AWS ML stack** (L1 data → L7 Q applications) and when each layer is the right answer
 - 🔬 The math you actually need (loss functions, gradient descent variants)
-- 🎯 The **evaluation-metric** vocabulary needed to read any MLS-C01 question
+- 🎯 The **evaluation-metric** vocabulary needed to read any MLA-C01 question
 - 🏗️ The **Well-Architected ML Lens** and its mapping to the 6 pillars
 - 📖 The **Capital One** fraud-detection reference architecture you will see variations of in many questions
 
@@ -410,7 +410,7 @@ You now know:
 ## 📚 Further Sources (This Module)
 
 **AWS official**
-- 📖 **AWS Certified Machine Learning – Specialty Exam Guide (PDF)**, the canonical 17-page blueprint
+- 📖 **AWS Certified Machine Learning Engineer – Associate (MLA-C01) Exam Guide**, the canonical blueprint
 - 📖 **Amazon SageMaker Developer Guide (full docs)** `docs.aws.amazon.com/sagemaker/` every feature
 - 📖 **AWS Well-Architected Machine Learning Lens (PDF)**, best practice for production ML
 - 📖 **AWS ML Blog** `aws.amazon.com/blogs/machine-learning/` case studies + feature launches

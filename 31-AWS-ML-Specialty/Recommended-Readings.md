@@ -1,6 +1,6 @@
-# 📚 Recommended Readings, AWS ML Specialty (MLS-C01)
+# 📚 Recommended Readings, AWS ML Engineer – Associate (MLA-C01)
 
-> Curated bibliography for the AWS Certified Machine Learning Specialty (MLS-C01) track. 65+ entries sequenced by **when in the course to engage with each**. None are required for passing the exam; all elevate the depth of understanding for production ML on AWS.
+> Curated bibliography for the AWS Certified Machine Learning Engineer – Associate (MLA-C01) track. 65+ entries sequenced by **when in the course to engage with each**. None are required for passing the exam; all elevate the depth of understanding for production ML on AWS.
 
 The list is roughly Pareto-ordered: the top items per section give 80% of the value with 20% of the reading.
 
@@ -10,7 +10,7 @@ The list is roughly Pareto-ordered: the top items per section give 80% of the va
 
 If you read only 5 things in addition to this course, read these:
 
-1. **AWS Certified Machine Learning – Specialty Exam Guide (PDF, 17 pages).** The blueprint. Read twice.
+1. **AWS Certified Machine Learning Engineer – Associate (MLA-C01) Exam Guide.** The blueprint. Read twice.
 2. **Amazon SageMaker Developer Guide.** Every SageMaker feature in detail. Skim the table of contents; deep-read the sections you weren't confident on after the practice exams.
 3. **AWS Well-Architected Machine Learning Lens (whitepaper).** AWS's own best-practice document for production ML.
 4. **Géron, Aurélien (2022). Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow (3rd ed.). O'Reilly.** The best applied ML book on the market. Chapters 2-4 and 7 pair with Modules 1-4 of this course.
@@ -215,7 +215,7 @@ Some references reward re-reading at different career stages. Here is when:
 
 | When | Re-read |
 |------|---------|
-| Before Module 1 | AWS MLS-C01 Exam Guide; Géron Ch 1-3 |
+| Before Module 1 | AWS MLA-C01 Exam Guide; Géron Ch 1-3 |
 | Before Module 5 | Goodfellow Ch 6, 9; Vaswani 2017 (transformer) |
 | Before Module 8 | Lundberg & Lee (SHAP); Hardt, Price, Srebro (fairness) |
 | Before Module 9 | Sculley et al. 2015 (technical debt); Huyen Ch 1-4 |
@@ -229,7 +229,7 @@ Some references reward re-reading at different career stages. Here is when:
 
 If you have ~10 hours of total reading time outside this course:
 
-1. AWS MLS-C01 Exam Guide (2 readings, 1 hour total)
+1. AWS MLA-C01 Exam Guide (2 readings, 1 hour total)
 2. Géron Chapters 2-4, 7 (4 hours)
 3. AWS Well-Architected Machine Learning Lens (1 hour)
 4. Sculley et al. 2015 (30 minutes)

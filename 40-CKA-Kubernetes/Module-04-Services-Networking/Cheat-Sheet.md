@@ -80,6 +80,58 @@ nginx.ingress.kubernetes.io/ssl-redirect: "false"
 
 ---
 
+## Gateway API Quick Reference (Modern Successor to Ingress)
+
+```bash
+# Inspect the three objects
+kubectl get gatewayclass
+kubectl get gateway -A
+kubectl get httproute -A
+kubectl describe gateway <name>     # check Accepted: True / Programmed: True
+```
+
+| Object | Owned by | Role |
+|--------|----------|------|
+| `GatewayClass` | Cluster operator | Names the controller implementation (like `ingressClassName`) |
+| `Gateway` | Cluster admin | Listeners: port + protocol + TLS |
+| `HTTPRoute` | Developer | Hostname/path match → `backendRefs` |
+
+| Ingress | Gateway API |
+|---------|-------------|
+| API group `networking.k8s.io` | API group `gateway.networking.k8s.io` |
+| One object | Three objects (class/gateway/route) |
+| Annotations for advanced features | Typed spec fields; native weighted splitting |
+| Stable, frozen | Active successor for new features |
+
+```yaml
+# HTTPRoute essentials
+spec:
+  parentRefs:                # bind to a Gateway
+    - name: my-gateway
+  hostnames: ["app.example.com"]
+  rules:
+    - matches:
+        - path: {type: PathPrefix, value: /api}   # PathPrefix | Exact | RegularExpression
+      backendRefs:
+        - {name: api-svc, port: 80}
+```
+
+```yaml
+# Gateway TLS (on the listener, NOT the route)
+listeners:
+  - name: https
+    protocol: HTTPS
+    port: 443
+    tls:
+      mode: Terminate                 # Terminate | Passthrough
+      certificateRefs:
+        - {kind: Secret, name: app-tls-secret}
+```
+
+**TRAP:** Gateway API group is `gateway.networking.k8s.io`, NOT `networking.k8s.io`. Gateway needs a controller + CRDs installed, same as Ingress.
+
+---
+
 ## NetworkPolicy Syntax Reference
 
 | Field | Location | Meaning |

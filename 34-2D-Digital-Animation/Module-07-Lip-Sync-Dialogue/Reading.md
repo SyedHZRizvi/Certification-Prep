@@ -128,7 +128,7 @@ Character Animator maps audio to a simplified phoneme set:
 | **Qw-Oo** | W and Q sounds |
 | **Rest** | Silence |
 
-> 🎯 **What the exam tests:** Character Animator's phoneme groups are similar but not identical to Preston Blair's set. On the exam, know BOTH sets. Preston Blair is used in Animate/manual workflows; Character Animator's groups are specific to Ch.
+> 🎯 **Exam tip:** For the ACP Animate exam, know the **Preston Blair** set cold, it is the manual phoneme system used in Animate. Character Animator's groups are similar but not identical, and Ch itself is **not** on the exam; learn its set only as supplementary craft for auto lip sync.
 
 ### Preston Blair vs. Character Animator, Comparison
 
@@ -151,7 +151,7 @@ For Character Animator to recognize mouth shapes, the source file (Photoshop or 
 2. **Toggles** mouth layers are set as "exclusive behaviors" only one is visible at a time.
 3. **The head group**, all face features (eyes, brows, mouth) grouped under a head group that tracks face position via Ch's live camera or audio-only mode.
 
-> 🎯 **What the exam tests:** Character Animator reads layer names to identify which layer represents which phoneme. If the layer is named incorrectly or inconsistently, Ch cannot perform auto lip sync. The layer naming convention is part of the exam.
+> 🎯 **Worth knowing (supplementary, not on the ACP Animate exam):** Character Animator reads layer names to identify which layer represents which phoneme. If the layer is named incorrectly or inconsistently, Ch cannot perform auto lip sync. This naming discipline is Ch craft, not an Animate exam objective.
 
 ---
 
@@ -210,7 +210,7 @@ Key performance elements to layer on top of technical sync:
 - **Posing between words**, characters hold positions on held syllables; they don't constantly jiggle.
 - **The pause before the answer**, a character that pauses believably before responding feels real; one that answers instantly feels like a script being read.
 
-> 🎯 **What the exam tests:** Adobe Certified Professional exam questions may address Character Animator setup (layer naming, puppet preparation) as well as the general principles of lip sync timing. Know both the technical and conceptual sides.
+> 🎯 **Exam tip:** The ACP Animate exam tests lip sync the *Animate* way, the Preston Blair phoneme chart, swapping mouth symbols, and the audio sync settings that keep dialogue tied to the playhead. Adobe **Character Animator** is a separate application and is **not** on the ACP Animate exam; the Ch material below is supplementary craft. Master the manual phoneme-and-symbol workflow for the certification; learn Ch for speed on the job.
 
 ---
 
@@ -336,7 +336,7 @@ Beyond Adobe's tools, several third-party applications offer automated or semi-a
 | **Reallusion Cartoon Animator** | Desktop | Auto lip sync with adjustable phoneme sets | Cut-out rigs in Reallusion pipeline |
 | **Loom.ai / Replica Studios** | Cloud-based | AI-driven lip sync from text/audio | Rapid prototyping; game cinematic temp sync |
 
-For the Adobe Certified Professional exam, **Adobe Character Animator** is the only third-party tool that requires detailed knowledge. The others provide industry context that may appear as comparison questions.
+**Adobe Character Animator** is a separate Adobe application, not Adobe Animate, so it is **not** part of the ACP Animate exam. It is covered here as supplementary craft because it is the fastest auto-lip-sync route in a real Adobe pipeline. The third-party tools above are pure industry context.
 
 ---
 
@@ -354,7 +354,7 @@ Beyond recorded audio analysis, Character Animator supports live performance mod
 
 Character Animator's live performance mode is used in broadcast situations (virtual reporters, brand mascots appearing live) and for rapid content creation where animation time is extremely limited.
 
-> 🎯 **What the exam tests:** Know that Character Animator supports both recorded audio analysis (batch lip sync) and live microphone input (live performance mode). These are two different workflows within the same application.
+> 🎯 **Worth knowing (supplementary, not on the ACP Animate exam):** Character Animator supports both recorded audio analysis (batch lip sync) and live microphone input (live performance mode), two different workflows within the same application. This is Ch craft, not an Animate exam objective.
 
 ---
 

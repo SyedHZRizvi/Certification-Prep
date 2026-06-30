@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1, AWS Certified Machine Learning Specialty (MLS-C01)
+# 🧪 Practice Exam 1, AWS Certified Machine Learning Engineer – Associate (MLA-C01)
 
 > **Conditions:** Set an 80-minute timer. 30 questions. No notes, no Google, no breaks.
 > **Pass mark for this practice exam:** 22/30 (~73%)
@@ -217,7 +217,7 @@ D. Storing it in S3
 
 **Q6. Answer: B, Pipe mode + RecordIO-protobuf.** Pipe mode streams data via FIFO; no need to copy 5 TB to disk first.
 
-**Q7. Answer: B, Feature Store online + offline.** Dual-mode store is the MLS-C01 canonical answer.
+**Q7. Answer: B, Feature Store online + offline.** Dual-mode store is the MLA-C01 canonical answer.
 
 **Q8. Answer: B, Clarify pre-training bias.** Pre-training bias surfaces dataset disparities before any model is trained.
 

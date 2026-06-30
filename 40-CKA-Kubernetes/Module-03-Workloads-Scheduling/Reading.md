@@ -605,6 +605,110 @@ For the CKA exam, you need to know:
 
 ---
 
+## 12. Horizontal Pod Autoscaler (HPA): Scaling the Fleet Automatically
+
+Back to the logistics company. So far you have set a fixed fleet size: "10 trucks on the East Zone." But demand is not constant — Monday mornings are slammed, Sunday nights are dead. Paying for 10 trucks at 3 AM is wasteful; running 10 trucks during the holiday rush is not enough. What you really want is a dispatcher who **watches the load and adds or removes trucks automatically** to keep every truck about 70% utilised.
+
+That dispatcher is the **Horizontal Pod Autoscaler (HPA)**. It watches a metric (most commonly CPU), compares it to a target you set, and changes the `replicas` count of a Deployment, ReplicaSet, or StatefulSet to keep the metric near that target. "Horizontal" means it adds **more Pods** — not bigger Pods.
+
+### 12.1 How the HPA Loop Works
+
+The HPA controller runs inside the control plane and re-evaluates every 15 seconds by default. Each cycle:
+
+1. Read the current metric value for the Pods (e.g., average CPU across all Pods).
+2. Compute desired replicas with the ratio formula:
+   `desiredReplicas = ceil( currentReplicas × ( currentMetric / targetMetric ) )`
+3. Scale the target workload toward that number, clamped between `minReplicas` and `maxReplicas`.
+
+So if 4 Pods are averaging 80% CPU and your target is 50%, the HPA computes `ceil(4 × 80/50) = ceil(6.4) = 7` and scales to 7 Pods.
+
+### 12.2 The metrics-server Dependency
+
+🚨 **Trap on the exam:** The HPA does **not** collect metrics itself. It reads them from the **Metrics API**, which is supplied by **metrics-server** — a separate component that is NOT installed by default. Without metrics-server, CPU/memory-based HPAs show `<unknown>` in the `TARGETS` column and never scale. This is the single most common HPA failure.
+
+```bash
+# Is metrics-server present and serving?
+kubectl get deployment metrics-server -n kube-system
+kubectl top nodes        # these two commands ONLY work
+kubectl top pods         # if metrics-server is running
+```
+
+The same `kubectl top` dependency is a quick way to confirm metrics are flowing before you even create an HPA.
+
+### 12.3 Creating an HPA Imperatively
+
+**MEMORIZE THIS.** The fastest path on the exam is `kubectl autoscale`:
+
+```bash
+kubectl autoscale deployment delivery-app \
+  --cpu-percent=70 \
+  --min=2 \
+  --max=10
+```
+
+This targets 70% average CPU, never scaling below 2 or above 10 Pods.
+
+🎯 **Exam tip:** For the HPA to use a CPU *percentage*, the Pods' containers **must declare `resources.requests.cpu`** — the percentage is measured against the request. No CPU request means the HPA cannot compute utilisation and will report `<unknown>`. Always check that requests are set.
+
+### 12.4 The autoscaling/v2 Object
+
+The declarative form uses the `autoscaling/v2` API, which supports multiple and non-CPU metrics. Know this YAML:
+
+```yaml
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: delivery-app-hpa
+  namespace: default
+spec:
+  scaleTargetRef:                 # what to scale
+    apiVersion: apps/v1
+    kind: Deployment
+    name: delivery-app
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization        # percentage of the Pod's CPU request
+          averageUtilization: 70
+    - type: Resource
+      resource:
+        name: memory
+        target:
+          type: AverageValue       # absolute value, not a percentage
+          averageValue: 500Mi
+```
+
+> The older `autoscaling/v1` only supports a single CPU target. `autoscaling/v2` adds memory, multiple metrics, custom/external metrics, and scaling **behavior** policies (stabilization windows to prevent flapping). For the CKA, use `autoscaling/v2`.
+
+### 12.5 Inspecting an HPA
+
+```bash
+kubectl get hpa
+kubectl describe hpa delivery-app-hpa     # shows current vs target + scaling events
+kubectl get hpa delivery-app-hpa -o yaml
+```
+
+In `kubectl get hpa`, the `TARGETS` column reads like `45%/70%` (current/target). A value of `<unknown>/70%` means metrics-server is missing or the Pods have no CPU request — go fix that first.
+
+### 12.6 HPA vs. VPA
+
+| Dimension | Horizontal Pod Autoscaler (HPA) | Vertical Pod Autoscaler (VPA) |
+|-----------|---------------------------------|-------------------------------|
+| Scales | **Number of Pods** (out/in) | **Resources per Pod** (requests/limits up/down) |
+| Good for | Stateless apps that scale by adding replicas | Workloads that are hard to replicate (some stateful/singletons) |
+| Mechanism | Adjusts `replicas` on the workload | Adjusts container `requests`/`limits` |
+| Disruption | Non-disruptive (adds/removes Pods) | Often restarts Pods to apply new sizes |
+| Built in? | Yes (core API `autoscaling/v2`) | No — add-on, installed separately |
+| CKA focus | **Primary** — know it well | Conceptual — know the distinction |
+
+🚨 **Trap on the exam:** Do not run an HPA and a VPA on the **same CPU/memory metric** for the same workload — they fight each other (the VPA changes the request the HPA measures against). They can coexist only on *different* metrics. The CKA tests HPA hands-on; VPA appears as a "know the difference" concept.
+
+---
+
 ## Summary
 
 | Concept | Key Points |
@@ -622,6 +726,8 @@ For the CKA exam, you need to know:
 | Resources | requests = scheduling floor; limits = runtime ceiling; CPU throttled, memory OOMKilled |
 | LimitRange | Per-namespace defaults and bounds |
 | ResourceQuota | Per-namespace total caps |
+| HPA | Scales replica count to hit a metric target; `autoscaling/v2`; needs metrics-server + CPU requests |
+| HPA vs VPA | HPA = more Pods; VPA = bigger Pods (add-on); don't pair on same metric |
 
 ---
 
@@ -641,3 +747,5 @@ For the CKA exam, you need to know:
 - [Kubernetes Docs: Assigning Pods to Nodes](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/)
 - [Kubernetes Docs: Resource Management](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
 - [Kubernetes Docs: StatefulSets](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
+- [Kubernetes Docs: Horizontal Pod Autoscaling](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
+- [Kubernetes Docs: HPA Walkthrough](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/)

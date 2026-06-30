@@ -1,6 +1,6 @@
 # Module 2: Data Engineering for Machine Learning 🛠️
 
-> **Why this module matters:** Domain 1 of the MLS-C01 exam is **Data Engineering, 20%** of every question. The blueprint asks: can you *ingest, store, transform, catalogue, and govern* data so a SageMaker training job can read it? Most ML failures are data-engineering failures (broken schemas, partial files, missing partitions, drifted upstream sources, S3-class mistakes). This module makes you fluent in the AWS data plane that feeds every ML model in production.
+> **Why this module matters:** Domain 1 of the MLA-C01 exam is **Data Preparation for ML, 28%** of every question, the single biggest domain. The blueprint asks: can you *ingest, store, transform, catalogue, and govern* data so a SageMaker training job can read it? Most ML failures are data-engineering failures (broken schemas, partial files, missing partitions, drifted upstream sources, S3-class mistakes). This module (with Module 3) makes you fluent in the AWS data plane that feeds every ML model in production.
 
 > **Prerequisites for this module.** Module 1 of this course. Helpful background:
 > - Comfort with SQL at the level of GROUP BY, JOIN, window functions
@@ -77,7 +77,7 @@ Amazon S3 is the foundation of every SageMaker workflow. The exam tests **storag
 
 ## 🌊 AWS Glue, The Data Catalogue & ETL Engine
 
-AWS Glue is THE service for cataloguing and transforming ML data. It is on every MLS-C01 exam.
+AWS Glue is THE service for cataloguing and transforming ML data. It is on every MLA-C01 exam.
 
 ### Glue components
 
@@ -382,10 +382,10 @@ This is the architecture you should be able to sketch in 60 seconds.
 
 **Outcome.** ~700 ML models in production. Petabyte-scale training reproducible from any historical point. Daily retrains for every personalisation model. Inference QPS in the tens of millions.
 
-**Lesson for the exam.** Netflix's stack uses many AWS-native equivalents you will be tested on: **MSK = Kinesis or Kafka**, **Iceberg = AWS-supported open format on S3**, **EMR = Spark**, **Flink = Kinesis Managed Apache Flink**. Translate Netflix's pieces to MLS-C01 vocabulary and you have your reference data-engineering architecture.
+**Lesson for the exam.** Netflix's stack uses many AWS-native equivalents you will be tested on: **MSK = Kinesis or Kafka**, **Iceberg = AWS-supported open format on S3**, **EMR = Spark**, **Flink = Kinesis Managed Apache Flink**. Translate Netflix's pieces to MLA-C01 vocabulary and you have your reference data-engineering architecture.
 
 **Discussion (Socratic).**
-- Q1. Iceberg gives **ACID transactions** on S3, schema evolution, time travel, partition evolution. What MLS-C01 problem does this solve that plain Parquet does not?
+- Q1. Iceberg gives **ACID transactions** on S3, schema evolution, time travel, partition evolution. What MLA-C01 problem does this solve that plain Parquet does not?
 - Q2. Netflix re-trains ranking models *daily*. What is the cost vs accuracy trade-off? At what frequency does drift-driven retraining become wasteful?
 - Q3. They built a **proprietary feature store**. Today, SageMaker Feature Store would fit the bill. What features of Feature Store are most valuable, and which Netflix-internal capabilities does it still lack?
 

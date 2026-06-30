@@ -1,8 +1,8 @@
 # 🏆 Capstone Project, Atlas Health: Production-Grade ML Platform for Pre-Authorization Triage
 
-> **Goal:** Synthesise everything you've learned across the 10 modules of this MLS-C01 course into a single, real-world ML systems-design deliverable that a hiring panel at Capital One, Anthem, or AWS Professional Services could grade against the same rubric they use for senior ML candidates.
+> **Goal:** Synthesise everything you've learned across the 10 modules of this MLA-C01 course into a single, real-world ML systems-design deliverable that a hiring panel at Capital One, Anthem, or AWS Professional Services could grade against the same rubric they use for senior ML candidates.
 >
-> **Scope:** ~30-45 hours of focused work spread across 2-3 weeks. Drives you from "I can pass MLS-C01" to "I could lead this on Monday at a Series-C health-tech company."
+> **Scope:** ~30-45 hours of focused work spread across 2-3 weeks. Drives you from "I can pass MLA-C01" to "I could lead this on Monday at a Series-C health-tech company."
 >
 > **When to take it:** After completing all 10 modules and at least Practice Exam 2. The Final Mock can wait until the capstone is done, drafting the design exposes weak modules.
 
@@ -134,7 +134,7 @@ State which AWS services are core (≤15 services) and justify each. Annotate la
 | 80-89 | ✅ Strong senior engineer. Few rough edges in MLOps OR cost reasoning. |
 | 70-79 | ⚠️ Solid associate. Re-read the modules you scored weakest on. |
 | 60-69 | 🔁 Junior level; needs another pass through 4–5 of the 10 modules. |
-| <60 | 📚 Do not book the MLS-C01 exam yet, the depth gaps will show. |
+| <60 | 📚 Do not book the MLA-C01 exam yet, the depth gaps will show. |
 
 ---
 
@@ -205,7 +205,7 @@ Before considering the capstone complete:
 - [ ] Top-5 risk register
 - [ ] Self-graded against the rubric
 
-When you can tick every box and self-score 75+, you are ready for both the **real MLS-C01 exam** AND the kind of senior ML platform interview where this capstone *is* the interview.
+When you can tick every box and self-score 75+, you are ready for both the **real MLA-C01 exam** AND the kind of senior ML platform interview where this capstone *is* the interview.
 
 ---
 
@@ -213,12 +213,12 @@ When you can tick every box and self-score 75+, you are ready for both the **rea
 
 If a candidate can produce a defensible Atlas Health design, they have shown:
 
-- **End-to-end ML systems thinking** (data → model → MLOps → security → cost, every domain on the MLS-C01 blueprint)
+- **End-to-end ML systems thinking** (data → model → MLOps → security → cost, every domain on the MLA-C01 blueprint)
 - **AWS service depth** (SageMaker, Bedrock, Glue, Athena, IAM, KMS, VPC, at the specificity senior reviewers expect)
 - **Real-world judgement** (latency budgets, cost math, hire ordering, compliance mapping)
 - **Bias-aware engineering** (Clarify, Model Monitor, A2I, model cards in the right places)
 - **Communication discipline** (clear sections, defensible decisions, no hand-waving)
 
-This is what separates "passes the exam" from "is hireable as a senior ML platform engineer". The MLS-C01 cert is a credential. The capstone is the *competence*.
+This is what separates "passes the exam" from "is hireable as a senior ML platform engineer". The MLA-C01 cert is a credential. The capstone is the *competence*.
 
 🎓 Good luck. Treat it like a real engineering deliverable. The grading rubric mirrors what hiring managers actually use.

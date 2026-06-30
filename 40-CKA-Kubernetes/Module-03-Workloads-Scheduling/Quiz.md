@@ -1,6 +1,6 @@
 # Module 3 Quiz: Workloads & Scheduling
 
-**26 questions** | Bloom taxonomy levels noted | ~30 minutes under exam conditions
+**31 questions** | Bloom taxonomy levels noted | ~35 minutes under exam conditions
 
 ---
 
@@ -283,6 +283,56 @@ D) `Unknown` — the API server cannot determine the state
 
 ---
 
+### Q27. [Apply]
+Which command creates a Horizontal Pod Autoscaler for the Deployment `web` that targets 70% average CPU, scaling between 2 and 10 replicas?
+
+A) `kubectl scale deployment web --cpu=70 --replicas=2-10`  
+B) `kubectl autoscale deployment web --cpu-percent=70 --min=2 --max=10`  
+C) `kubectl create hpa web --target-cpu=70 --range=2,10`  
+D) `kubectl set autoscale deployment/web --cpu=70%`  
+
+---
+
+### Q28. [Analyze]
+You create a CPU-based HPA, but `kubectl get hpa` shows `<unknown>/70%` in the TARGETS column and the workload never scales. What are the two most likely causes?
+
+A) The Deployment has too many replicas already  
+B) metrics-server is not installed, or the Pods have no `resources.requests.cpu` set  
+C) The HPA `maxReplicas` is set lower than the current replica count  
+D) The cluster is using `autoscaling/v2` instead of `autoscaling/v1`  
+
+---
+
+### Q29. [Apply]
+An HPA currently runs 4 replicas at 80% average CPU with a target of 50%. Using the standard HPA formula, how many replicas will it scale to?
+
+A) 5  
+B) 6  
+C) 7  
+D) 8  
+
+---
+
+### Q30. [Understand]
+Which statement correctly distinguishes the Horizontal Pod Autoscaler (HPA) from the Vertical Pod Autoscaler (VPA)?
+
+A) HPA changes each Pod's CPU/memory requests; VPA changes the number of Pods  
+B) HPA changes the number of Pods; VPA changes each Pod's CPU/memory requests  
+C) Both change the number of Pods, but VPA is faster  
+D) Both are built into Kubernetes core and enabled by default  
+
+---
+
+### Q31. [Remember]
+Which API version should you use for an HPA that targets both CPU utilization and a memory value?
+
+A) `autoscaling/v1`  
+B) `autoscaling/v2`  
+C) `apps/v1`  
+D) `metrics/v1beta1`  
+
+---
+
 ## Answers + Explanations
 
 | Q | Answer | Explanation |
@@ -313,3 +363,8 @@ D) `Unknown` — the API server cannot determine the state
 | 24 | **C** | Control plane nodes receive the taint `node-role.kubernetes.io/control-plane:NoSchedule`. Regular Pods lack a matching toleration, so they are not scheduled there. |
 | 25 | **C** | `kubectl rollout status` blocks and reports the precise rollout progress and completion. Other commands require manual interpretation. |
 | 26 | **C** | Without the named scheduler running, no component processes the Pod's scheduling request. It stays `Pending` indefinitely. |
+| 27 | **B** | `kubectl autoscale deployment web --cpu-percent=70 --min=2 --max=10` is the imperative one-liner. The other options use flags/subcommands that do not exist. |
+| 28 | **B** | An HPA reads metrics from the Metrics API served by metrics-server (not installed by default), and CPU *utilization* is measured against each container's `resources.requests.cpu`. Missing either produces `<unknown>` and no scaling. |
+| 29 | **C** | `desiredReplicas = ceil(currentReplicas × currentMetric / targetMetric) = ceil(4 × 80/50) = ceil(6.4) = 7`. |
+| 30 | **B** | HPA scales horizontally (more/fewer Pods via `replicas`); VPA scales vertically (adjusts per-Pod CPU/memory requests/limits). VPA is an add-on, not built in, and the two should not target the same metric. |
+| 31 | **B** | `autoscaling/v2` supports multiple metrics including memory and custom/external metrics. `autoscaling/v1` supports only a single CPU target. |

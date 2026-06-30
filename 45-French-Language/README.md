@@ -53,9 +53,9 @@ French is spoken by over 320 million people across 5 continents — from Paris t
 | **02** | Core Vocabulary | A1–A2 | Family, body, days, months, seasons, weather |
 | **03** | Basic Grammar | A1–A2 | Être/avoir, present tense, pronouns, negation, articles |
 | **04** | Everyday Conversations | A2 | Shopping, directions, restaurant, travel, emergencies |
-| **05** | Intermediate Grammar | B1 | Imparfait, conditionnel, relative clauses, subjunctive introduction |
+| **05** | Intermediate Grammar | B1 | Passé composé vs imparfait, future tenses, reflexive verbs, object pronouns |
 | **06** | Practical Communication | B1–B2 | Phone calls, emails, appointments, describing events |
-| **07** | Advanced Grammar | B2 | Passive voice, reported speech, complex conjunctions, nominalization |
+| **07** | Advanced Grammar | B2 | Subjunctive, conditionnel passé, reported speech, relative pronouns, passive voice |
 | **08** | Business & Professional | B2–C1 | Business French, negotiations, presentations, formal correspondence |
 | **09** | Culture & Media | C1 | Literature, film, news, idioms, regional accents, la Francophonie |
 | **10** | Mastery & Fluency | C1–C2 | Rhetorical devices, academic writing, debate, philosophical discourse |
@@ -175,9 +175,9 @@ French and English share an enormous vocabulary through the Norman Conquest (106
 | **02** | بنیادی الفاظ | خاندان، جسم، دن، مہینے |
 | **03** | بنیادی گرامر | être/avoir، ضمائر، نفی |
 | **04** | روزمرہ گفتگو | خریداری، سمت، ریستوران |
-| **05** | درمیانی گرامر | Imparfait، Conditionnel |
+| **05** | درمیانی گرامر | Passé composé، Imparfait، مستقبل، Reflexive افعال |
 | **06** | عملی مواصلات | فون، ای میل، ملاقاتیں |
-| **07** | اعلیٰ گرامر | Passive Voice، بالواسطہ تقریر |
+| **07** | اعلیٰ گرامر | Subjonctif، بالواسطہ تقریر، اضافی ضمائر، مجہول فعل |
 | **08** | کاروباری فرانسیسی | مذاکرات، پریزنٹیشن |
 | **09** | ثقافت اور میڈیا | ادب، فلم، محاورے |
 | **10** | مہارت اور روانی | علمی تحریر، بحث |

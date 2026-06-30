@@ -1,7 +1,8 @@
-# 🧪 Final Mock Exam, AWS Certified Machine Learning Specialty (MLS-C01)
+# 🧪 Final Mock Exam, AWS Certified Machine Learning Engineer – Associate (MLA-C01)
 
-> **Conditions:** Set a **180-minute** timer. **65 questions.** **REAL exam length & time.** No notes, no Google, no breaks. This is your dress rehearsal.
-> **Pass mark:** 49/65 (~75%), mirrors the real 750/1000 scaled score.
+> **Conditions:** Set a **130-minute** timer. **65 questions.** **REAL exam length & time.** No notes, no Google, no breaks. This is your dress rehearsal.
+> **Pass mark:** 47/65 (~72%), mirrors the real 720/1000 scaled score.
+> **Format note:** The real MLA-C01 also includes **ordering** and **matching** questions; this mock uses multiple-choice / multiple-response, so drill the sequencing items in Modules 9–10 separately.
 > **When to take it:** 1–2 days before the real exam.
 
 ---
@@ -432,7 +433,7 @@ D. CloudWatch Metrics
 
 **Q5. B, Pipe mode + RecordIO-protobuf.** Streams data via FIFO; no upfront disk copy.
 
-**Q6. B, Feature Store online + offline.** Dual-mode store; the MLS-C01 canonical answer.
+**Q6. B, Feature Store online + offline.** Dual-mode store; the MLA-C01 canonical answer.
 
 **Q7. B, Clarify pre-training bias.** Surfaces dataset disparities before any training.
 
@@ -554,27 +555,27 @@ D. CloudWatch Metrics
 
 ---
 
-## 📊 Scoring (mirror MLS-C01 scaled-score logic)
+## 📊 Scoring (mirror MLA-C01 scaled-score logic)
 
 | Raw Score | Approx. Scaled | Verdict |
 |-----------|----------------|---------|
 | 60-65 | 900+ | 🏆 You're more than ready, go book the exam |
-| 49-59 | 750-890 | ✅ Pass; review weak spots; book the exam this week |
-| 39-48 | 600-740 | ⚠️ Borderline, wait a few days, drill flashcards, retest |
+| 47-59 | 720-890 | ✅ Pass; review weak spots; book the exam this week |
+| 39-46 | 600-715 | ⚠️ Borderline, wait a few days, drill flashcards, retest |
 | <39 | <600 | 🔁 Re-study weak modules; don't book yet |
 
 ---
 
 ## 🔍 Review Process
 
-1. Take the exam under realistic conditions: 180-minute timer, no notes, no breaks.
+1. Take the exam under realistic conditions: 130-minute timer, no notes, no breaks.
 2. Score yourself.
 3. For each wrong answer:
 
    - Note the module
    - Re-read the Reading + Cheat-Sheet
    - Add a flashcard
-4. Wait 3+ days, then retake. Goal: **49+/65** before booking.
+4. Wait 3+ days, then retake. Goal: **47+/65** before booking.
 
 ---
 

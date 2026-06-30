@@ -101,6 +101,32 @@
 **Use:** action completed BEFORE another past action.
 - *Quand je suis arrivé, elle **était déjà partie**.* (She had already left when I arrived.)
 
+## Relative Pronouns (qui · que · dont · où)
+
+| Pronoun | Role in clause | English | Example |
+|---|---|---|---|
+| qui | subject | who / which / that | *La femme **qui** parle.* |
+| que (qu') | direct object | whom / which / that | *Le livre **que** je lis.* |
+| dont | replaces **de + noun** | whose / of which / about which | *Le film **dont** je parle.* |
+| où | place / time | where / when | *Le jour **où** elle est arrivée.* |
+
+- **qui vs que:** subject → *qui*; direct object → *que*.
+- **dont** = any *de* construction (*parler de, rêver de, avoir besoin de*, possession). Never add a second preposition.
+- After *que* + *avoir*, the past participle agrees with the preceding object: *les lettres **qu'**elle a **écrites***.
+
+## Passive Voice (Voix Passive)
+
+**Formation: être (in the needed tense) + past participle → agrees with the subject.** Agent introduced by **par**.
+
+| Tense | Active | Passive |
+|---|---|---|
+| présent | *On construit la maison.* | *La maison **est construite**.* |
+| passé composé | *On a construit la maison.* | *La maison **a été construite**.* |
+| futur simple | *On construira la maison.* | *La maison **sera construite**.* |
+
+- Agreement: *le livre a été écrit* · *la lettre a été **écrite*** · *les décisions ont été **prises***.
+- No agent? Prefer **on** + active verb (*On parle français ici*) over the full passive.
+
 ## Key Vocabulary
 
 | French | IPA | English | اردو |

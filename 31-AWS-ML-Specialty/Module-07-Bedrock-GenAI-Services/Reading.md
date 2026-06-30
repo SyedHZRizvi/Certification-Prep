@@ -1,6 +1,6 @@
 # Module 7: Amazon Bedrock & GenAI Services 🌟
 
-> **Why this module matters:** Generative AI is now ~25% of the MLS-C01 modelling domain (post 2024 blueprint refresh). Amazon **Bedrock** is AWS's managed foundation-model gateway Claude, Llama, Mistral, Titan, Cohere and AWS has built an entire production stack around it: **Knowledge Bases** for RAG, **Agents** for tool use, **Guardrails** for safety, **Bedrock fine-tuning** for customisation, **JumpStart** for SageMaker-hosted foundation models, **Amazon Q** as the application layer. The exam tests when to call Bedrock vs SageMaker, how RAG works, how to ground LLMs in private data, and how to add governance.
+> **Why this module matters:** Generative AI is now ~25% of the MLA-C01 modelling domain (post 2024 blueprint refresh). Amazon **Bedrock** is AWS's managed foundation-model gateway Claude, Llama, Mistral, Titan, Cohere and AWS has built an entire production stack around it: **Knowledge Bases** for RAG, **Agents** for tool use, **Guardrails** for safety, **Bedrock fine-tuning** for customisation, **JumpStart** for SageMaker-hosted foundation models, **Amazon Q** as the application layer. The exam tests when to call Bedrock vs SageMaker, how RAG works, how to ground LLMs in private data, and how to add governance.
 
 > **Prerequisites for this module.** Modules 1–6 of this course. Helpful background:
 > - Familiarity with prompt engineering at the level of `system prompt + user prompt`

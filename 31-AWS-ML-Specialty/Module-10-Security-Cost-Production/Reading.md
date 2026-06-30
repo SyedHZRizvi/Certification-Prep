@@ -1,6 +1,6 @@
 # Module 10: Security, Cost & Production Operations 🔐
 
-> **Why this module matters:** The MLS-C01 exam mixes security and cost optimisation into the ML Implementation & Operations domain (20%) plus across all other domains. The exam will ask things like "how do you secure training data with KMS and VPC?", "which Spot strategy cuts training cost 90%?", "which instance family minimises inference cost?", "how do you troubleshoot a slow endpoint?" and "what is the right way to enforce least-privilege on a SageMaker training role?". This module is the final knot that ties everything: IAM, KMS, VPC, PrivateLink, Spot, Savings Plans, Multi-Model Endpoints, Debugger / Profiler, and the production-debugging playbook.
+> **Why this module matters:** The MLA-C01 exam concentrates security and operations in Domain 4 (ML Solution Monitoring, Maintenance & Security, 24%), with cost optimisation woven across all domains. The exam will ask things like "how do you secure training data with KMS and VPC?", "which Spot strategy cuts training cost 90%?", "which instance family minimises inference cost?", "how do you troubleshoot a slow endpoint?" and "what is the right way to enforce least-privilege on a SageMaker training role?". This module is the final knot that ties everything: IAM, KMS, VPC, PrivateLink, Spot, Savings Plans, Multi-Model Endpoints, Debugger / Profiler, and the production-debugging playbook.
 
 > **Prerequisites for this module.** Modules 1–9 of this course. Helpful background:
 > - SAA-C03's IAM, KMS, VPC chapters cover the underlying AWS identity / network primitives
@@ -283,7 +283,7 @@ Bedrock can also be invoked via VPC endpoints (PrivateLink). Traffic never trave
 
 **Outcome.** ML cost as fraction of total cloud bill fell from 22% to 12%; security audit-finding count fell ~90%; same workload throughput.
 
-**Lesson for the exam.** Pinterest's stack is the canonical "secure + cost-optimised" reference. **Spot + MME + Inferentia + Savings Plan + KMS + VPC = MLS-C01 happy path.**
+**Lesson for the exam.** Pinterest's stack is the canonical "secure + cost-optimised" reference. **Spot + MME + Inferentia + Savings Plan + KMS + VPC = MLA-C01 happy path.**
 
 ---
 
@@ -361,7 +361,7 @@ Bedrock can also be invoked via VPC endpoints (PrivateLink). Traffic never trave
 ## ➡️ Where This Leads
 
 > **Where this leads.**
-> - **Course completion!** You have covered every MLS-C01 domain. Time to take the practice exams.
+> - **Course completion!** You have covered every MLA-C01 domain. Time to take the practice exams.
 > - **Cross-course:** `04-AWS-Solutions-Architect-Associate` Modules 2 (IAM) and 9 (Monitoring/Cost) deepen the AWS security and cost basics if you want more.
 > - **Practice:** Practice Exam 1 has 1 question, Practice Exam 2 has 3 questions, Final Mock has 5 questions on this material.
 > - **Real world:** Audit your own AWS account: are notebooks auto-shutting? Is your training data KMS-encrypted? Is your SageMaker role least-privilege?

@@ -1,6 +1,6 @@
 # Module 8: Evaluation, Hyperparameter Tuning & Bias 🎯
 
-> **Why this module matters:** Domain 3 of MLS-C01 (Modeling) is 36% of the exam, and a big chunk of it perhaps a third is *evaluation*: confusion matrices, ROC vs PR-AUC, RMSE vs MAE, cross-validation, hyperparameter tuning strategies, and the operational side of fairness (Clarify SHAP, model cards, A2I). This module makes you fluent in the *measurement* side of ML: how do you *know* a model is good?
+> **Why this module matters:** Evaluation spans two MLA-C01 domains, Domain 2 (ML Model Development, 26%) for *analyzing model performance*, and Domain 4 (Monitoring, Maintenance & Security, 24%) for *detecting drift in production*. The core skills are the same: confusion matrices, ROC vs PR-AUC, RMSE vs MAE, cross-validation, hyperparameter tuning strategies, and the operational side of fairness (Clarify SHAP, model cards, A2I). This module makes you fluent in the *measurement* side of ML: how do you *know* a model is good, and how do you know when it stops being good?
 
 > **Prerequisites for this module.** Modules 1–7 of this course. Helpful background:
 > - High-school statistics (confidence intervals, hypothesis testing)
@@ -120,7 +120,7 @@ threshold = 0.3   # catches more positives, accepts more FPs
 predictions = (model.predict_proba(X)[:, 1] >= threshold).astype(int)
 ```
 
-For an MLS-C01 question, "**lower the decision threshold**" usually pairs with "**imbalanced data**" or "**FN is costly**".
+For an MLA-C01 question, "**lower the decision threshold**" usually pairs with "**imbalanced data**" or "**FN is costly**".
 
 ---
 
@@ -682,4 +682,4 @@ What is the task?
     └─ Post-training → DI, DPPL, DAR, DRR, AD, RD, SD, FT, TE
 ```
 
-🎯 **Memorise this decision tree.** Many MLS-C01 scenario questions resolve to "which metric?", the wrong choice trips many candidates.
+🎯 **Memorise this decision tree.** Many MLA-C01 scenario questions resolve to "which metric?", the wrong choice trips many candidates.

@@ -83,6 +83,47 @@ kubectl taint nodes <node> <key>=<value>:<effect>-
 
 ---
 
+## Horizontal Pod Autoscaler (HPA)
+
+```bash
+# Imperative — fastest on exam
+kubectl autoscale deployment <name> --cpu-percent=70 --min=2 --max=10
+
+# Inspect (TARGETS column reads current/target, e.g. 45%/70%)
+kubectl get hpa
+kubectl describe hpa <name>
+
+# Metrics prerequisite — these only work if metrics-server is installed
+kubectl top pods
+kubectl top nodes
+```
+
+```yaml
+apiVersion: autoscaling/v2          # use v2, not v1
+kind: HorizontalPodAutoscaler
+spec:
+  scaleTargetRef: {apiVersion: apps/v1, kind: Deployment, name: <name>}
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target: {type: Utilization, averageUtilization: 70}
+```
+
+`desiredReplicas = ceil( currentReplicas × currentMetric / targetMetric )`
+
+| | HPA | VPA |
+|--|-----|-----|
+| Scales | Number of Pods | Resources per Pod |
+| Built in | Yes (`autoscaling/v2`) | No (add-on) |
+| CKA focus | Hands-on | Know the difference |
+
+> **TRAP:** `<unknown>` in TARGETS = metrics-server missing OR Pods have no `resources.requests.cpu`. Don't run HPA + VPA on the same metric.
+
+---
+
 ## Cron Syntax Reference
 
 ```

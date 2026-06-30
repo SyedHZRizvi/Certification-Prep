@@ -304,6 +304,135 @@ spec:
 
 ---
 
+## 7.5 Gateway API — The Modern Successor to Ingress
+
+### Why a Successor Exists
+
+Go back to the concierge in our hotel lobby. Ingress gave that concierge exactly one job description: read an HTTP request and point it at a room. It works, but every hotel chain wanted to tweak the concierge's behaviour — rewrite a URL here, split traffic 90/10 there, terminate TLS a particular way — and the Ingress object had no fields for any of it. So vendors bolted those features on through **annotations**: dozens of free-text `nginx.ingress.kubernetes.io/...` strings that the API server never validates and that do not port from one controller to another.
+
+The **Gateway API** is the rebuilt lobby. Instead of one overloaded concierge, the work is split across three roles that map to three Kubernetes objects — and the routing rules live in typed, validated fields instead of annotations. It is the project's chosen long-term replacement for Ingress; Ingress is frozen (stable, but receiving no new features) while Gateway API is where new capability lands.
+
+> 🎯 **Exam tip:** When a question contrasts Ingress with Gateway API, the headline fact is **"Gateway API is the modern successor to Ingress — role-oriented, expressive, and portable, with no annotation soup."** Ingress is not removed; both coexist on the cluster.
+
+### The Three Resources (and Who Owns Them)
+
+Gateway API deliberately separates concerns so that infrastructure teams and application teams stop stepping on each other:
+
+| Resource | API kind | Owned by | Analogy |
+|----------|----------|----------|---------|
+| **GatewayClass** | `GatewayClass` | Cluster operator / infra | The brand of concierge desk a chain has approved (e.g. "nginx", "istio") |
+| **Gateway** | `Gateway` | Platform / cluster admin | The physical desk in *this* lobby — which ports it listens on, which TLS certs it holds |
+| **HTTPRoute** | `HTTPRoute` | Application developer | The directory card that says "/spa goes to the spa-service" |
+
+A GatewayClass is cluster-scoped and is provided by whoever installs the controller — it is the rough analogue of `ingressClassName`. A Gateway references a GatewayClass and opens **listeners** (port + protocol + optional TLS). An HTTPRoute attaches itself to a Gateway and carries the actual hostname/path matching rules. This many-to-one fan-in (many HTTPRoutes → one Gateway) is what lets one team own the entry point while many teams independently publish routes.
+
+All three live under the `gateway.networking.k8s.io` API group. The objects are delivered as **CRDs** (see Module 2) — Gateway API ships out-of-tree, so a cluster must have the CRDs and a conforming controller installed before any of this works. The CKA exam cluster will have them pre-installed.
+
+> 🚨 **Trap on the exam:** Just like Ingress, a Gateway object **does nothing on its own** — it needs a controller implementing the referenced GatewayClass (NGINX Gateway Fabric, Istio, Cilium, etc.). And the API group is `gateway.networking.k8s.io`, **not** `networking.k8s.io` (that is Ingress). Mixing up the two API groups is a classic distractor.
+
+### GatewayClass
+
+```yaml
+apiVersion: gateway.networking.k8s.io/v1
+kind: GatewayClass
+metadata:
+  name: hotel-gwc
+spec:
+  controllerName: gateway.nginx.org/nginx-gateway-controller   # who implements this class
+```
+
+### Gateway (the Listener)
+
+```yaml
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: hotel-gateway
+  namespace: default
+spec:
+  gatewayClassName: hotel-gwc
+  listeners:
+    - name: http
+      protocol: HTTP
+      port: 80
+    - name: https
+      protocol: HTTPS
+      port: 443
+      tls:
+        mode: Terminate                 # Gateway terminates TLS here
+        certificateRefs:
+          - kind: Secret
+            name: hotel-tls-secret      # Secret with tls.crt and tls.key
+```
+
+### HTTPRoute (the Routing Rules)
+
+Host-based and path-based routing live in the same object. An HTTPRoute binds to a Gateway through `parentRefs`:
+
+```yaml
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: hotel-route
+  namespace: default
+spec:
+  parentRefs:
+    - name: hotel-gateway               # attach to the Gateway above
+  hostnames:
+    - "hotel.com"
+  rules:
+    - matches:
+        - path:
+            type: PathPrefix            # PathPrefix | Exact | RegularExpression
+            value: /spa
+      backendRefs:
+        - name: spa-service
+          port: 80
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /restaurant
+      backendRefs:
+        - name: restaurant-service
+          port: 80
+```
+
+> Note the field names differ from Ingress on purpose: `backendRefs` (a list — enabling native traffic splitting by weight), `parentRefs` (the Gateway binding), and `PathPrefix` instead of Ingress's `Prefix`. Native weighted splitting is just two `backendRefs` entries each with a `weight:` — something Ingress could only do through controller-specific annotations.
+
+### TLS in Gateway API
+
+TLS is configured on the **Gateway listener**, not on the route — that is the architectural split again (infra owns certs; developers own routes). The two modes:
+
+| `tls.mode` | Behavior |
+|------------|----------|
+| `Terminate` | Gateway decrypts TLS using the referenced Secret, then forwards plaintext to the backend |
+| `Passthrough` | Gateway forwards the encrypted connection untouched; the backend terminates TLS |
+
+### Ingress vs. Gateway API — Side by Side
+
+| Dimension | Ingress | Gateway API |
+|-----------|---------|-------------|
+| API group | `networking.k8s.io` | `gateway.networking.k8s.io` |
+| Objects | One (`Ingress`) | Three (`GatewayClass`, `Gateway`, `HTTPRoute`) |
+| Roles | Blended into one object | Separated: infra / cluster-admin / developer |
+| Advanced features | Vendor annotations (non-portable) | Typed, validated spec fields (portable) |
+| Traffic splitting | Annotation-dependent | Native via weighted `backendRefs` |
+| Protocols | HTTP/HTTPS | HTTP, HTTPS, TLS, TCP, UDP, gRPC (via route kinds) |
+| Status | Stable, frozen (no new features) | Active successor for new capability |
+| Ships with K8s core | No (controller required) | No (CRDs + controller required) |
+
+```bash
+# Inspect Gateway API objects
+kubectl get gatewayclass
+kubectl get gateway -A
+kubectl get httproute -A
+kubectl describe gateway hotel-gateway       # check the PROGRAMMED / ACCEPTED conditions
+```
+
+> 🎯 **Exam tip:** After applying a Gateway, run `kubectl describe gateway <name>` and read the **conditions**. `Accepted: True` and `Programmed: True` mean the controller picked it up. An address only appears once the controller provisions the listener — the same "is it actually wired up?" check you do for a Service's endpoints.
+
+---
+
 ## 8. NetworkPolicies
 
 ### Default Behavior Without NetworkPolicies
@@ -485,6 +614,7 @@ kubectl logs -n kube-system -l k8s-app=kube-proxy
 | ExternalName | DNS CNAME alias, no proxying |
 | CoreDNS | Cluster DNS server; format is `svc.ns.svc.cluster.local` |
 | Ingress | HTTP routing rules; requires IngressController (not in K8s core) |
+| Gateway API | Modern successor to Ingress; GatewayClass + Gateway + HTTPRoute; `gateway.networking.k8s.io`; CRDs + controller required |
 | NetworkPolicy | Pod-level firewall; CNI must support it; default is allow-all |
 | kube-proxy | Programs iptables/IPVS rules on each Node to implement Services |
 | EndpointSlices | Lists real Pod IPs behind a Service |
@@ -494,7 +624,7 @@ kubectl logs -n kube-system -l k8s-app=kube-proxy
 ## Next Steps
 
 - **Videos.md** — Watch the essential video walkthroughs for this module
-- **Quiz.md** — 26 questions covering everything in this module
+- **Quiz.md** — 30 questions covering everything in this module
 - **Cheat-Sheet.md** — One-page reference for exam day
 - **Module 5: Storage** — PersistentVolumes, PVCs, StorageClasses
 
@@ -504,6 +634,8 @@ kubectl logs -n kube-system -l k8s-app=kube-proxy
 
 - [Kubernetes Services documentation](https://kubernetes.io/docs/concepts/services-networking/service/)
 - [Kubernetes Ingress documentation](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+- [Gateway API documentation](https://kubernetes.io/docs/concepts/services-networking/gateway/)
+- [Gateway API project site](https://gateway-api.sigs.k8s.io/)
 - [NetworkPolicies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 - [CoreDNS in Kubernetes](https://kubernetes.io/docs/tasks/administer-cluster/coredns/)
 - [DNS for Services and Pods](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/)

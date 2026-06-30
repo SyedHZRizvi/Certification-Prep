@@ -172,4 +172,4 @@ Private VPC
 
 🎉 **You finished Module 10! On to the practice exams.**
 
-➡️ [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) → [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) → [Final Mock (65 Q / 180 min)](../Practice-Exams/Final-Mock-Exam.md)
+➡️ [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) → [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) → [Final Mock (65 Q / 130 min)](../Practice-Exams/Final-Mock-Exam.md)

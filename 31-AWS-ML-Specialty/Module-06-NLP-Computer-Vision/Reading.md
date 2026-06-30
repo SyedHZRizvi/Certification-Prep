@@ -1,6 +1,6 @@
 # Module 6: NLP & Computer Vision Workflows 🗣️👁️
 
-> **Why this module matters:** AWS has a dozen *managed AI services* that solve NLP and CV problems with a single API call, no model training, no infrastructure. The MLS-C01 exam tests whether you can recognise when one of these (Comprehend, Rekognition, Textract, Translate, Transcribe, Polly, Lex, Kendra, Personalize, Forecast, Fraud Detector) is the BEST answer and when to instead build a custom SageMaker / Bedrock solution. This module makes you fluent in the "managed vs custom" decision and the specific capabilities of each managed L5 service.
+> **Why this module matters:** AWS has a dozen *managed AI services* that solve NLP and CV problems with a single API call, no model training, no infrastructure. The MLA-C01 exam tests whether you can recognise when one of these (Comprehend, Rekognition, Textract, Translate, Transcribe, Polly, Lex, Kendra, Personalize, Forecast, Fraud Detector) is the BEST answer and when to instead build a custom SageMaker / Bedrock solution. This module makes you fluent in the "managed vs custom" decision and the specific capabilities of each managed L5 service.
 
 > **Prerequisites for this module.** Modules 1–5 of this course. Helpful background:
 > - Basic understanding of NLP tasks (classification, NER, summarisation, translation), Module 1 covered the families

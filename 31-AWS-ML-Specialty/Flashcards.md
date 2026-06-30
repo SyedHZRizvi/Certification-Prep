@@ -266,7 +266,7 @@
 })();
 </script>
 
-# 🃏 AWS ML Specialty (MLS-C01) Flashcards (Master Set)
+# 🃏 AWS ML Engineer – Associate (MLA-C01) Flashcards (Master Set)
 
 > **How to use:** Each card has a Q on one line and A on the next. Drill daily until your real exam. Aim for 15–20 min/day for 3 weeks before the exam.
 
@@ -298,7 +298,7 @@
 **Q:** When is accuracy the WRONG metric?
 **A:** On imbalanced classes (e.g. 99.9% negatives). Use PR-AUC, F1, recall, precision instead.
 
-**Q:** Define the 7-step ML lifecycle relevance to MLS-C01 modules.
+**Q:** Define the 7-step ML lifecycle relevance to MLA-C01 modules.
 **A:** Step 2 = Module 2; Step 3 = Module 3; Step 4 = Modules 4-7; Step 5 = Module 8; Steps 6-7 = Modules 9-10.
 
 ---

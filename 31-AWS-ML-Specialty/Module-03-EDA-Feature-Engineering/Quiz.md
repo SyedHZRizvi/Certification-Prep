@@ -235,7 +235,7 @@ The complete imbalance toolkit. Stratified preserves class proportions; class we
 Data Wrangler is the no-code visual data-prep tool inside SageMaker Studio. DataBrew (Glue) is similar but separate from SageMaker Pipelines.
 
 ### Q9: **B. SageMaker Feature Store online + offline**
-The dual-mode design, online for inference (low latency), offline (S3) for training. The MLS-C01 canonical answer.
+The dual-mode design, online for inference (low latency), offline (S3) for training. The MLA-C01 canonical answer.
 
 ### Q10: **C. Random Cut Forest**
 RCF is unsupervised, designed for streaming, no labels needed. The standard SageMaker answer for tabular anomaly detection.

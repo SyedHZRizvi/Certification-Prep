@@ -93,9 +93,11 @@ By the end of this course, you'll be able to:
 |------|-----------------|--------|------------|
 | [Practice-Exam-1](./Practice-Exams/Practice-Exam-1.md) | After Modules 1–5 | 30 Q / 40 min | ⭐⭐⭐ |
 | [Practice-Exam-2](./Practice-Exams/Practice-Exam-2.md) | After Modules 6–10 | 30 Q / 40 min | ⭐⭐⭐⭐ |
-| [Final-Mock-Exam](./Practice-Exams/Final-Mock-Exam.md) | 2–3 days before the Adobe Certified Professional exam | **60 Q / 90 min** | ⭐⭐⭐⭐⭐ |
+| [Final-Mock-Exam](./Practice-Exams/Final-Mock-Exam.md) | 2–3 days before the Adobe Certified Professional exam | **30 Q / 50 min** | ⭐⭐⭐⭐⭐ |
 
-**Pass mark:** Score 85%+ on the Final Mock before booking the real exam. The Adobe Certified Professional in Animate (Adobe/Certiport) tests both software knowledge and animation theory, this mock covers both.
+**Pass mark:** Score 85%+ on the Final Mock before booking the real exam. The Final Mock matches the real exam's **30-question / 50-minute** length so your pacing is rehearsed.
+
+> 🚨 **Trap on the exam: the real test has a second section the mock cannot replicate.** The Adobe Certified Professional in Animate (Adobe/Certiport) is delivered in two parts, a **Questions** section (selected-response) and a **Tasks** section of **live in-application activities you perform inside Adobe Animate itself**, scored on the result you produce. A written multiple-choice mock can rehearse the Questions section and the underlying concepts, but it *cannot* stand in for the live Tasks. To prepare for those, you must drill the actual Animate operations from the module labs (create symbols, set audio sync, build tweens, rig with the bone tool, publish) until they are muscle memory. Treat the mock as half the preparation; the keyboard-and-canvas reps are the other half.
 
 ---
 
@@ -118,17 +120,30 @@ Paid but worth it:
 
 ## 🎓 The Formal Exam
 
-**Adobe Certified Professional in Animate (Adobe/Certiport)** is administered by Certiport (in-person, proctored, ~90 minutes, ~$180). It tests:
+**Adobe Certified Professional in Animate (Adobe/Certiport)** is a proctored exam administered through Certiport / Pearson VUE (~$180). It runs **50 minutes** and contains **~30 questions** plus a live-task component, and you pass with a scaled score of **700 / 1000**.
 
-| Domain | Weight |
-|--------|--------|
-| Setting project requirements | ~8% |
-| Understanding digital video | ~12% |
-| Building compositions | ~25% |
-| Applying After Effects features | ~35% |
-| Producing and delivering | ~20% |
+The exam is delivered in **two sections**:
 
-This course is aligned to the **Adobe Certified Professional, Animate** exam objectives. The Final Mock Exam is written from those objectives. Every quiz covers the module's share of those domains.
+| Section | What It Is | How It's Scored |
+|---------|------------|-----------------|
+| **Questions** | Selected-response items (multiple choice, matching, fill-in) on industry knowledge, the interface, the timeline, drawing and animation concepts, and publishing | Right/wrong against the objectives |
+| **Tasks** | **Live in-application activities performed inside Adobe Animate** — you actually build, modify, and publish in the real software | Scored on the result you produce |
+
+The objectives are organized into five domains:
+
+| Domain | What It Covers |
+|--------|----------------|
+| Working in the Animation Industry | Industry terms, client/colleague communication, copyright and licensing, design and animation principles |
+| Project Setup and Interface | Creating documents, customizing the workspace, importing and managing assets, color/gradient/brush management |
+| Organizing Documents | The Timeline panel, layers, and layer types |
+| Create and Modify Multimedia Elements | Vector graphics, text, selections, transforms, effects, frame-by-frame and tween animation, interactive elements, audio and video |
+| Publishing Digital Media | Preparing content, exporting assets, and publishing documents |
+
+This course is aligned to the **Adobe Certified Professional, Animate** objectives across those five domains. The Final Mock rehearses the **Questions** section; the per-module labs (build symbols, tween, rig, lip-sync, publish) are your rehearsal for the live **Tasks** section.
+
+> 🎯 **Exam tip:** Adobe does not publish a fixed percentage weight per domain, so don't chase a "this domain is 35%" study plan. Study all five domains, and treat **Create and Modify Multimedia Elements** as the largest practical bucket since it maps to most of the live Tasks.
+
+> 📌 **About Modules 5–6 (After Effects).** After Effects is *not* on the ACP Animate exam. Those two modules are included as **supplementary cross-tool craft** — most working 2D animators move between Animate and After Effects, and the rigging/compositing skills round out your portfolio. Skip them if your only goal is the certification; keep them if your goal is a job.
 
 ---
 

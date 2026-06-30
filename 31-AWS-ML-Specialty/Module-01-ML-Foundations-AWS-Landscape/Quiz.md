@@ -3,7 +3,7 @@
 > **Instructions:** Answer all 25 questions WITHOUT looking at the reading.
 > Aim for 20/25 minimum. Time limit: 35 minutes.
 
-> **Bloom's distribution.** Remember 4 (16%) · Understand 6 (24%) · Apply 8 (32%) · Analyze/Evaluate 6 (24%) · Create 1 (4%). MLS-C01 questions are heavily scenario-driven, only ~16% test pure recall.
+> **Bloom's distribution.** Remember 4 (16%) · Understand 6 (24%) · Apply 8 (32%) · Analyze/Evaluate 6 (24%) · Create 1 (4%). MLA-C01 questions are heavily scenario-driven, only ~16% test pure recall.
 
 ---
 

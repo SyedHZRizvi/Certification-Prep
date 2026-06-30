@@ -5,6 +5,8 @@ title: "Module 6: Puppet & Bone Tools, DUIK Rigging"
 
 # 🦿 Module 6: Puppet & Bone Tools, DUIK Rigging
 
+> 📌 **Supplementary module.** Like Module 5, this is After Effects craft and is **not** on the Adobe Certified Professional in Animate exam. DUIK, Joysticks 'n Sliders, and AE expressions are portfolio-builders, not exam objectives. Skip Modules 5–6 if you are studying purely for the certification; keep them if you want the full working-animator toolkit.
+
 ## The Plugin That Changed Everything
 
 Before DUIK Bassel, professional character rigging in After Effects required hundreds of expressions, manual FK/IK setups written from scratch, and days of work to build a single character rig. After DUIK Bassel, the same rig took an afternoon.
@@ -71,7 +73,7 @@ The most common use case for DUIK IK is a character's legs, which need to have t
 7. Keyframe the goal controller's position → DUIK solves hip and knee angles automatically.
 8. To move the whole character, use the root controller (usually a controller for the entire rig).
 
-> 🎯 **What the exam tests:** The "foot" or "end effector" controller is what you animate directly. The intermediate joints (knee) are solved automatically by DUIK's IK. You can add a "knee goal" controller to push the knee in a specific direction.
+> 🎯 **Worth knowing (supplementary, not on the ACP Animate exam):** The "foot" or "end effector" controller is what you animate directly. The intermediate joints (knee) are solved automatically by DUIK's IK. You can add a "knee goal" controller to push the knee in a specific direction.
 
 ### Pole Vectors (Knee Direction Fix)
 
@@ -129,7 +131,7 @@ DUIK includes a "Wiggle" and "Spring" system for adding this secondary motion pr
 | **Stiffness** | How quickly the spring returns to rest (high = rigid, low = floppy) |
 | **Damping** | How quickly oscillation dies out (high = snaps back, low = bounces long) |
 
-> 🎯 **What the exam tests:** Spring rigs generate secondary animation **procedurally**, no keyframes needed. The spring follows a parent layer's motion with configurable delay and oscillation. This is distinct from manually keyframing follow-through on secondary elements.
+> 🎯 **Worth knowing (supplementary, not on the ACP Animate exam):** Spring rigs generate secondary animation **procedurally**, no keyframes needed. The spring follows a parent layer's motion with configurable delay and oscillation. This is distinct from manually keyframing follow-through on secondary elements.
 
 ---
 
@@ -153,7 +155,7 @@ Imagine a 2D joystick on screen. When the joystick is in the center, the charact
 
 You draw all five face poses and link them to the joystick. J+S interpolates between them automatically as you animate the joystick position.
 
-> 🚨 **Exam Trap:** Joysticks 'n Sliders creates a controller UI layer in the comp but this layer is invisible at render time. The actual character layers are driven by expressions connected to the joystick's position. You animate the joystick controller, not the character face layers directly.
+> 🚨 **Common Pitfall:** Joysticks 'n Sliders creates a controller UI layer in the comp but this layer is invisible at render time. The actual character layers are driven by expressions connected to the joystick's position. You animate the joystick controller, not the character face layers directly.
 
 ### Facial Rig Components with J+S
 
@@ -211,7 +213,7 @@ DUIK is one of the most frequently listed plugin requirements in After Effects c
 
 ---
 
-## 🎯 What the Exam Tests: Module 6 Checklist
+## 🎯 Skills Checklist (Supplementary — Not on the ACP Animate Exam)
 
 1. What is the difference between DUIK Bassel and DUIK Angela?
 2. What is a DUIK bone and how does it differ from After Effects parenting?
@@ -226,7 +228,7 @@ DUIK is one of the most frequently listed plugin requirements in After Effects c
 
 ---
 
-## 🚨 Exam Trap Section
+## 🚨 Common Pitfalls (Supplementary)
 
 - **DUIK is free:** Students sometimes assume professional rigging tools are expensive. DUIK is free and open-source. Joysticks 'n Sliders is a paid companion tool (~$49), not part of DUIK.
 - **You animate controllers, not bones:** A common beginner mistake is to keyframe the bone layers directly. Always keyframe the controller layers that DUIK creates, the bones update automatically.
@@ -259,7 +261,7 @@ DUIK is the centerpiece, but a professional 2D AE rig often uses several additio
 | **GifGun** | ~$20 | Direct GIF export from AE (no Media Encoder) |
 | **Flow** | ~$25 | Improved easing UI; curve management |
 
-> 🎯 **What the exam tests:** DUIK and Joysticks 'n Sliders are the primary tools tested. Know what DUIK does (IK/FK/Spring) vs. what J+S does (facial blend controllers). They are complementary, not competing.
+> 🎯 **Worth knowing (supplementary, not on the ACP Animate exam):** DUIK and Joysticks 'n Sliders are the primary tools to know. Know what DUIK does (IK/FK/Spring) vs. what J+S does (facial blend controllers). They are complementary, not competing.
 
 ---
 
@@ -289,7 +291,7 @@ DUIK's power comes partly from AE **expressions**, short snippets of JavaScript 
 | **linear() / ease()** | Value mapping between ranges | Converts joystick position to layer opacity |
 | **value + [0, 0]** | Adds a constant offset to a parented value | Fine-tuning bone placement after parenting |
 
-> 🎯 **What the exam tests:** The `loopOut()` expression is the most exam-relevant, it causes a composition's keyframes to loop indefinitely. Applied to a walk cycle pre-comp's Time Remapping property, it creates an infinite loop without duplicating keyframes.
+> 🎯 **Worth knowing (supplementary, not on the ACP Animate exam):** The `loopOut()` expression is the most useful in production, it causes a composition's keyframes to loop indefinitely. Applied to a walk cycle pre-comp's Time Remapping property, it creates an infinite loop without duplicating keyframes.
 
 ---
 
@@ -344,7 +346,7 @@ DUIK Angela includes a procedural walk cycle generator, one of its most powerful
 | **Arm Swing** | Amount of arm counter-swing |
 | **Step Height** | How high the feet lift |
 
-> 🎯 **What the exam tests:** The DUIK walk cycle generator is procedural, it uses expressions to drive motion. You can still override individual keyframes on top of the procedural base, allowing customization while retaining the automatic cycle foundation.
+> 🎯 **Worth knowing (supplementary, not on the ACP Animate exam):** The DUIK walk cycle generator is procedural, it uses expressions to drive motion. You can still override individual keyframes on top of the procedural base, allowing customization while retaining the automatic cycle foundation.
 
 ---
 
@@ -373,7 +375,7 @@ DUIK Angela's Auto-Rig feature is the fastest way to build a complete character 
 
 ---
 
-## 📋 Exam Readiness Checklist
+## 📋 Skills Readiness Checklist
 
 Before moving on, verify you can answer each of these without notes:
 
@@ -382,9 +384,9 @@ Before moving on, verify you can answer each of these without notes:
 - [ ] Identify the two most common mistakes students make
 - [ ] Describe when you would use each major tool/technique covered
 - [ ] Explain the trade-offs between the primary approaches discussed
-- [ ] State the exam-relevant numbers, ratios, or standards from memory
+- [ ] State the key numbers, ratios, or standards from memory
 
-## 🎯 Five High-Frequency Exam Questions
+## 🎯 Five Things Worth Knowing
 
 These patterns appear repeatedly in industry certification and portfolio assessments:
 

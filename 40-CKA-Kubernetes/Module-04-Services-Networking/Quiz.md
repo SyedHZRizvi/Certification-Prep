@@ -1,6 +1,6 @@
 # Module 4 Quiz — Services & Networking
 
-**26 questions | CKA Domain: Services & Networking (20%)**
+**30 questions | CKA Domain: Services & Networking (20%)**
 
 ---
 
@@ -297,6 +297,46 @@ D. `kafka-1.cluster.local`
 
 ---
 
+### Q27. [Understand]
+Which statement best describes the relationship between Ingress and the Gateway API?
+
+A. Gateway API is an older API that Ingress replaced  
+B. Gateway API is the modern successor to Ingress — role-oriented and more expressive — while Ingress is stable but frozen  
+C. Gateway API and Ingress are the same object under different names  
+D. Gateway API only works for TCP traffic, never HTTP
+
+---
+
+### Q28. [Remember]
+Which three resource kinds make up the core of the Gateway API?
+
+A. IngressClass, Ingress, Service  
+B. GatewayClass, Gateway, HTTPRoute  
+C. Gateway, Route, Listener  
+D. NetworkPolicy, Gateway, Endpoint
+
+---
+
+### Q29. [Apply]
+In the Gateway API, where is TLS termination configured?
+
+A. On the HTTPRoute, in `spec.rules[].tls`  
+B. On the Gateway listener, via `tls.mode` and `certificateRefs`  
+C. On the GatewayClass, in `spec.tls`  
+D. On the backend Service, via an annotation
+
+---
+
+### Q30. [Analyze]
+A developer creates a `Gateway` and an `HTTPRoute` in the exam cluster, but `kubectl describe gateway` shows the listener has no address and `Programmed` is not `True`. The objects are syntactically valid. What is the most likely cause?
+
+A. The API group should be `networking.k8s.io` instead of `gateway.networking.k8s.io`  
+B. No controller implementing the referenced GatewayClass is running, so nothing programs the Gateway  
+C. HTTPRoutes cannot reference a Gateway in the same namespace  
+D. Gateways do not report status conditions
+
+---
+
 ## Answers + Explanations
 
 **Q1 — C. ClusterIP**  
@@ -376,3 +416,15 @@ NetworkPolicies are applied in the namespace of the target Pods (not the source)
 
 **Q26 — B. `kafka-1.kafka.data.svc.cluster.local`**  
 StatefulSet Pods get stable DNS via the headless Service. The format is `<pod-name>.<service-name>.<namespace>.svc.<cluster-domain>`. This is what enables stable addressing for distributed systems like Kafka, Zookeeper, and etcd.
+
+**Q27 — B. Gateway API is the modern successor to Ingress — role-oriented and more expressive — while Ingress is stable but frozen**  
+Ingress is not deleted and both coexist, but Gateway API is where new networking capability lands. It splits the single overloaded Ingress object into role-oriented resources and replaces vendor annotations with typed, validated, portable spec fields. It handles far more than TCP (HTTP, HTTPS, TLS, TCP, UDP, gRPC via route kinds).
+
+**Q28 — B. GatewayClass, Gateway, HTTPRoute**  
+GatewayClass (names the controller implementation, like `ingressClassName`), Gateway (opens listeners — port, protocol, TLS), and HTTPRoute (hostname/path matching → `backendRefs`). They map cleanly to the infra / cluster-admin / developer roles.
+
+**Q29 — B. On the Gateway listener, via `tls.mode` and `certificateRefs`**  
+TLS lives on the Gateway listener, not the route — the architectural split puts certificate handling with the infrastructure owner while developers own routing. `mode: Terminate` decrypts at the Gateway; `mode: Passthrough` forwards encrypted traffic to the backend.
+
+**Q30 — B. No controller implementing the referenced GatewayClass is running, so nothing programs the Gateway**  
+Like Ingress, Gateway API objects are inert configuration until a conforming controller reconciles them. With no controller for the GatewayClass, the Gateway never gets `Programmed: True` and no address is assigned. The API group `gateway.networking.k8s.io` is correct (option A is the Ingress group), and Gateways do report status conditions (option D is false).

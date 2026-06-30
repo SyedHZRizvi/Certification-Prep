@@ -203,7 +203,120 @@ The **plus-que-parfait** describes an action that occurred **before** another pa
 
 ---
 
-## 5. Sample Dialogue — Advanced Grammar in Context
+## 5. Relative Pronouns (Les Pronoms Relatifs) — Qui, Que, Dont, Où
+
+Think of relative pronouns as the glue that welds two short sentences into one elegant one. Instead of saying *"I saw a man. The man was wearing a hat,"* French stitches them: *J'ai vu un homme **qui** portait un chapeau.* The relative pronoun replaces the repeated noun (the **antecedent**) and introduces the **relative clause** that describes it.
+
+English speakers already do this with *who, whom, which, that, whose, where* — French simply chooses its pronoun by the **grammatical role** the antecedent plays inside the relative clause, not by whether it's a person or a thing.
+
+### The Four Core Relative Pronouns
+
+| Pronoun | Replaces | Role in the clause | English | Example |
+|---|---|---|---|---|
+| **qui** | person or thing | **subject** of the clause | who / which / that | *La femme **qui** parle est ma prof.* (The woman who is speaking is my teacher.) |
+| **que** (qu') | person or thing | **direct object** of the clause | whom / which / that | *Le livre **que** je lis est passionnant.* (The book that I'm reading is gripping.) |
+| **dont** | person or thing | replaces **de + noun** | whose / of which / about which | *Le film **dont** je parle est français.* (The film I'm talking about is French.) |
+| **où** | place or time | **location** or **moment** | where / when | *La ville **où** je suis né est petite.* (The town where I was born is small.) |
+
+### The Decision Rule (Qui vs. Que)
+
+This is the single most-tested distinction. Forget "person vs. thing" — ask only: **what does the missing word do inside the relative clause?**
+
+- If it's the **subject** (it does the verb) → **qui** (never elides: *qui il* stays *qui il*).
+- If it's the **direct object** (the verb acts on it) → **que** (elides before a vowel: *qu'il*).
+
+| Two sentences | Combined | Why |
+|---|---|---|
+| *Je connais un homme. **Il** habite à Nice.* | *Je connais un homme **qui** habite à Nice.* | *il* is the subject → **qui** |
+| *Voici le gâteau. J'ai fait **le gâteau**.* | *Voici le gâteau **que** j'ai fait.* | *le gâteau* is the object → **que** |
+
+### Dont — The "De" Specialist
+
+**`dont` replaces any construction built on *de*** — *de qui, de quoi, duquel*. Use it whenever the verb, noun, or adjective in the clause is followed by *de*. It is the French equivalent of *whose / of which / about which*, and it has no separate masculine, feminine, or plural form.
+
+| Trigger (verb/expression + de) | Sentence | Why dont |
+|---|---|---|
+| parler **de** qch | *C'est le projet **dont** je parle.* (the project I'm talking about) | parler **de** → dont |
+| rêver **de** qch | *Voici la maison **dont** je rêve.* (the house I dream of) | rêver **de** → dont |
+| avoir besoin **de** qch | *L'outil **dont** j'ai besoin est cassé.* (the tool I need) | avoir besoin **de** → dont |
+| possession (**de** + noun) | *C'est l'auteur **dont** le roman est célèbre.* (the author whose novel is famous) | *le roman **de** l'auteur* → dont |
+
+> 🎯 **Exam tip:** When the English sentence contains *whose*, or when the French verb takes *de* (*parler de, rêver de, avoir besoin de, se souvenir de*), the answer is almost always **dont**. In the Final Mock, *« C'est le professeur ___ j'ai parlé »* requires **dont**, because you *parler **de** quelqu'un* — never *que* or *qui* here.
+
+> 🚨 **Trap on the exam:** *dont* already contains the *de*, so you must **never** add a second preposition. *C'est le professeur à qui j'ai parlé, dont* is wrong — *dont* and *à qui* cannot both appear. Likewise, do not stack *dont* with *de*: write *la maison dont je rêve*, never *~~dont je rêve de~~*.
+
+### Où — Place and Time
+
+*où* covers both **where** (place) and **when** (a point in time) — English uses two different words, French uses one:
+
+| Use | Example | English |
+|---|---|---|
+| Place | *Le café **où** nous nous sommes rencontrés.* | The café where we met. |
+| Time | *Le jour **où** elle est arrivée.* | The day (when) she arrived. |
+
+> 🎯 **Exam tip:** After a time word (*le jour, le moment, l'année, l'époque*), use **où**, never *quand*. *Le moment où je l'ai vu* — not *~~le moment quand~~*.
+
+### Past-Participle Agreement After Que
+
+When *que* introduces a direct object that sits **before** a verb in the passé composé with *avoir*, the past participle **agrees** with that preceding direct object:
+
+- *Les lettres **qu'**elle a **écrites**.* — The letters she wrote. (*lettres* = f. pl. → écrit**es**)
+- *La voiture **que** j'ai **achetée**.* — The car I bought. (*voiture* = f. sg. → achet**ée**)
+
+This never happens with *qui* (the antecedent is the subject, not the object).
+
+---
+
+## 6. The Passive Voice (La Voix Passive)
+
+In the **active voice**, the subject performs the action: *Le chef prépare le repas* (The chef prepares the meal). In the **passive voice**, the subject **receives** the action: *Le repas est préparé par le chef* (The meal is prepared by the chef). French builds the passive almost exactly as English does — with the verb "to be" plus a past participle — so the structure will feel familiar.
+
+### Formation: être + Past Participle (+ Agreement)
+
+**The passive = the verb *être* (conjugated in the needed tense) + the past participle, which agrees with the subject in gender and number.** The doer, if mentioned, is introduced by **par** (or **de** for states/emotions).
+
+| Element | Rule |
+|---|---|
+| Auxiliary | *être*, conjugated in the tense of the original active verb |
+| Past participle | agrees with the **subject** (like an adjective) |
+| Agent ("by…") | **par** + agent (most verbs); **de** + agent after verbs of feeling/description (*aimé de, respecté de, couvert de*) |
+
+### The Passive Across Tenses
+
+The tense of the active sentence lives in *être*; the past participle stays constant. Watch how only *être* changes:
+
+| Tense | Active | Passive |
+|---|---|---|
+| Présent | *On construit la maison.* | *La maison **est construite**.* (is built) |
+| Passé composé | *On a construit la maison.* | *La maison **a été construite**.* (was built) |
+| Imparfait | *On construisait la maison.* | *La maison **était construite**.* (was being built) |
+| Futur simple | *On construira la maison.* | *La maison **sera construite**.* (will be built) |
+
+Note the agreement: *la maison* is feminine singular, so *construit* → *construit**e*** in every row.
+
+| Subject | Passé composé passive | Agreement |
+|---|---|---|
+| Le livre | *a été écrit* | m. sg. — no change |
+| La lettre | *a été écrit**e*** | f. sg. — + e |
+| Les rapports | *ont été écrit**s*** | m. pl. — + s |
+| Les décisions | *ont été pris**es*** | f. pl. — + es |
+
+### When to Use — and When to Avoid — the Passive
+
+French uses the passive far **less** than English. Where English happily writes *"Mistakes were made,"* French often prefers two more natural alternatives:
+
+| Alternative | Example | English |
+|---|---|---|
+| **on** + active verb | *On a pris une décision.* | A decision was made / They made a decision. |
+| **pronominal (se) passive** | *Le français **se parle** au Québec.* | French is spoken in Quebec. |
+
+> 🎯 **Exam tip:** When there is **no specified agent** ("by whom" is unknown or irrelevant), the idiomatic French choice is usually **on** + active verb, not the full passive. *On parle français ici* sounds far more natural than *Le français est parlé ici*. Examiners reward the *on*-construction in production tasks.
+
+> 🚨 **Trap on the exam:** The past participle in a passive **must agree with the subject**, because *être* is the auxiliary. *La lettre a été **écrit*** is wrong — it must be *écrit**e***. This is the most common passive error tested in DELF B2 grammar items.
+
+---
+
+## 7. Sample Dialogue — Advanced Grammar in Context
 
 ### Dialogue: A Regret and a Wish
 
@@ -237,6 +350,8 @@ In this module you mastered:
 - The full Si-clause system (three levels of hypothetical conditions)
 - Reported speech: tense shifts and time/place changes
 - The plus-que-parfait: the past of the past
+- Relative pronouns: qui, que, dont, and où — and when each one is required
+- The passive voice: être + past participle with agreement, and the *on* alternative
 
 ## Next Steps
 Move on to **Module 8 — Français Professionnel** to apply these advanced structures in corporate vocabulary, formal meetings, and business register.
@@ -349,6 +464,53 @@ Plus-que-parfait بتاتا ہے کہ ایک ماضی کے واقعے سے پہ�
 
 ---
 
+## ۵. Pronoms Relatifs — اضافی ضمائر (qui, que, dont, où)
+
+اضافی ضمائر دو چھوٹے جملوں کو ایک خوبصورت جملے میں جوڑتے ہیں۔ ضمیر کا انتخاب اس **کردار** سے ہوتا ہے جو وہ اپنے clause میں ادا کر رہا ہے — نہ کہ اس سے کہ بات کسی شخص کی ہے یا چیز کی۔
+
+| ضمیر | کیا بدلتا ہے | کردار | معنی | مثال |
+|---|---|---|---|---|
+| **qui** | شخص یا چیز | **فاعل (subject)** | جو | *La femme **qui** parle.* (وہ عورت جو بول رہی ہے) |
+| **que** | شخص یا چیز | **مفعول (object)** | جسے | *Le livre **que** je lis.* (وہ کتاب جو میں پڑھ رہا ہوں) |
+| **dont** | de + اسم کی جگہ | جس کا / جس کے بارے میں | *Le film **dont** je parle.* (وہ فلم جس کے بارے میں میں بات کر رہا ہوں) |
+| **où** | جگہ یا وقت | جہاں / جب | *La ville **où** je suis né.* (وہ شہر جہاں میں پیدا ہوا) |
+
+**اہم اصول (qui بمقابلہ que):** صرف یہ پوچھیں کہ گمشدہ لفظ clause میں کیا کرتا ہے — اگر **فاعل** ہے تو **qui**، اگر **مفعول** ہے تو **que**۔
+
+**Dont — "de" کا ماہر:** جب فعل یا اسم کے ساتھ *de* آتا ہو (*parler de, rêver de, avoir besoin de*) تو **dont** استعمال ہوتا ہے۔
+- *C'est l'auteur **dont** le roman est célèbre.* — وہ مصنف جس کا ناول مشہور ہے۔
+
+> 🎯 **Exam tip:** جہاں انگریزی میں *whose* ہو، یا فرانسیسی فعل *de* لیتا ہو، وہاں جواب تقریباً ہمیشہ **dont** ہوتا ہے۔ *« C'est le professeur ___ j'ai parlé »* میں **dont** درست ہے (کیونکہ *parler **de** quelqu'un*)۔
+
+> 🚨 **Trap on the exam:** *dont* میں *de* پہلے سے شامل ہے، اس لیے دوسرا preposition کبھی نہ لگائیں۔ *à qui … dont* اکٹھے غلط ہیں۔
+
+> 🎯 **Exam tip:** وقت کے الفاظ (*le jour, le moment, l'année*) کے بعد **où** آتا ہے، *quand* نہیں۔
+
+---
+
+## ۶. Voix Passive — مجہول فعل
+
+فعل معروف میں فاعل کام کرتا ہے؛ فعل مجہول میں فاعل پر کام ہوتا ہے۔ *Le repas **est préparé** par le chef* (کھانا باورچی کے ذریعے تیار کیا جاتا ہے)۔
+
+**بناوٹ: être (مناسب زمانے میں) + past participle** — اور past participle فاعل کی صنف و عدد کے ساتھ ملتا ہے۔ کرنے والا **par** کے ساتھ آتا ہے۔
+
+| زمانہ | معروف | مجہول |
+|---|---|---|
+| Présent | *On construit la maison.* | *La maison **est construite**.* |
+| Passé composé | *On a construit la maison.* | *La maison **a été construite**.* |
+| Futur | *On construira la maison.* | *La maison **sera construite**.* |
+
+**مطابقت (agreement):**
+- *Le livre a été écrit* (مذکر — کوئی تبدیلی نہیں)
+- *La lettre a été **écrite*** (مؤنث — +e)
+- *Les décisions ont été **prises*** (مؤنث جمع — +es)
+
+> 🎯 **Exam tip:** جب کرنے والا معلوم نہ ہو تو فرانسیسی میں مجہول کے بجائے **on + معروف فعل** زیادہ فطری ہے۔ *On parle français ici* > *Le français est parlé ici*۔
+
+> 🚨 **Trap on the exam:** مجہول میں past participle کو فاعل سے ضرور ملائیں — *La lettre a été **écrite***، کبھی *écrit* نہیں۔
+
+---
+
 ## خلاصہ
 
 اس موڈیول میں آپ نے سیکھا:
@@ -357,5 +519,7 @@ Plus-que-parfait بتاتا ہے کہ ایک ماضی کے واقعے سے پہ�
 - Si جملوں کا تین سطحی نظام
 - Reported Speech: زمانوں اور وقت کے الفاظ میں تبدیلی
 - Plus-que-parfait: ماضی کا ماضی
+- اضافی ضمائر: qui, que, dont, où — اور ہر ایک کب درست ہے
+- مجہول فعل: être + past participle مع مطابقت، اور *on* کا متبادل
 
 </div>

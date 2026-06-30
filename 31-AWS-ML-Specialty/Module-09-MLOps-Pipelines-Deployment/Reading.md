@@ -1,6 +1,6 @@
 # Module 9: MLOps, Pipelines, Deployment & Monitoring 🚀
 
-> **Why this module matters:** Domain 4 of MLS-C01 (ML Implementation & Operations) is **20%** of the exam. It tests the production side of ML: pipelines, deployment patterns, monitoring, retraining, A/B tests, blue-green releases, shadow deployments. This is also the area where most candidates lose points because their hands-on experience is heavier on training than on operating. This module makes you fluent in SageMaker Pipelines, the four endpoint types, Model Registry, Model Monitor, and the CI/CD glue (Projects, CodePipeline, EventBridge, Step Functions).
+> **Why this module matters:** Module 9 carries Domain 3 of MLA-C01 (Deployment & Orchestration of ML Workflows, **22%**) plus much of Domain 4 (ML Solution Monitoring, Maintenance & Security, **24%**). It tests the production side of ML: pipelines, deployment patterns, monitoring, retraining, A/B tests, blue-green releases, shadow deployments. This is also the area where most candidates lose points because their hands-on experience is heavier on training than on operating. This module makes you fluent in SageMaker Pipelines, the four endpoint types, Model Registry, Model Monitor, and the CI/CD glue (Projects, CodePipeline, EventBridge, Step Functions).
 
 > **Prerequisites for this module.** Modules 1–8 of this course. Helpful background:
 > - Familiarity with CI/CD concepts (build → test → deploy)
@@ -301,7 +301,7 @@ SageMaker **Inference Recommender** automatically benchmarks your model on diffe
 
 **Outcome.** Page-out rate fell ~80%. New-model time-to-production fell from ~6 weeks to ~5 days. The team now ships 30+ model updates per week.
 
-**Lesson for the exam.** This stack **Pipelines + Registry + Projects + Monitor + Blue/Green + EventBridge** is the *canonical* MLS-C01 reference architecture for production ML. Memorise the names and what each does.
+**Lesson for the exam.** This stack **Pipelines + Registry + Projects + Monitor + Blue/Green + EventBridge** is the *canonical* MLA-C01 reference architecture for production ML. Memorise the names and what each does.
 
 ---
 

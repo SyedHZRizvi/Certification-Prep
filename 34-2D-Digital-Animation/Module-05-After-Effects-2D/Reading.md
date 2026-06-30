@@ -5,6 +5,8 @@ title: "Module 5: After Effects for 2D Animation"
 
 # 🎬 Module 5: After Effects for 2D Animation
 
+> 📌 **Supplementary module.** After Effects is **not** tested on the Adobe Certified Professional in Animate exam. This module (and Module 6) is included as cross-tool craft because most working 2D animators move between Animate and After Effects. If your only goal is the certification, you can skip Modules 5–6; if your goal is a job, keep them. The "Worth knowing" callouts here teach real production technique, not exam objectives.
+
 ## Why Switch from Animate to After Effects?
 
 Adobe Animate is a purpose-built animation tool. After Effects is a compositing and motion graphics tool that has been adopted by character animators because of what it offers that Animate doesn't: robust parenting, expressions, advanced compositing, GPU-accelerated effects, and an ecosystem of professional plugins that extend its capabilities far beyond what any single application could provide natively.
@@ -58,7 +60,7 @@ The "Create Shapes from Vector Layers" command is one of the most powerful tools
 4. Layer menu → Create → Create Shapes from Vector Layer.
 5. The original Illustrator layer is replaced by a native Shape Layer.
 
-> 🎯 **What the exam tests:** After "Create Shapes from Vector Layers," the original Illustrator layer (which has the .ai source file icon) is automatically hidden. The new Shape Layer has a "Contents" group containing all the vector paths. You can now animate individual paths, strokes, and fills separately.
+> 🎯 **Worth knowing (supplementary, not on the ACP Animate exam):** After "Create Shapes from Vector Layers," the original Illustrator layer (which has the .ai source file icon) is automatically hidden. The new Shape Layer has a "Contents" group containing all the vector paths. You can now animate individual paths, strokes, and fills separately.
 
 ### Importing from Adobe Animate
 
@@ -102,7 +104,7 @@ The Puppet Pin Tool in After Effects applies a deformation mesh to a rasterized 
 5. AE automatically generates a triangulated mesh over the layer.
 6. Keyframe the pins over time to animate the character.
 
-> 🚨 **Exam Trap:** The Puppet Pin Tool is most effective on a single flattened layer (one merged image of the character). For articulated rigs with separately controllable parts, you need separate layers with parenting or a proper DUIK rig (Module 6). Don't try to rig complex characters with Puppet Pins alone.
+> 🚨 **Common Pitfall:** The Puppet Pin Tool is most effective on a single flattened layer (one merged image of the character). For articulated rigs with separately controllable parts, you need separate layers with parenting or a proper DUIK rig (Module 6). Don't try to rig complex characters with Puppet Pins alone.
 
 ### When to Use Puppet Pins
 
@@ -138,7 +140,7 @@ When a parent layer moves, rotates, or scales, all child layers follow, maintain
 
 Using **Null Objects** as rig controllers is standard professional practice. A Null is an invisible object that holds transform data. You animate the Null, not the visible layer directly, this separates "control" from "artwork."
 
-> 🎯 **What the exam tests:** Null Objects in After Effects are invisible at render time. They appear in the Composition viewer as a small square crosshair but are never exported. They are essential tools for rig control and animation management.
+> 🎯 **Worth knowing (supplementary, not on the ACP Animate exam):** Null Objects in After Effects are invisible at render time. They appear in the Composition viewer as a small square crosshair but are never exported. They are essential tools for rig control and animation management.
 
 ---
 
@@ -164,7 +166,7 @@ This command deserves a dedicated section because of how much it changes the wor
 
 A logo is designed in Illustrator. The logo has several paths. In AE, you use "Create Shapes from Vector Layers" to convert each layer. Then you use Trim Paths to animate the logo drawing itself in, a line that travels along each vector path, revealing the logo as if it were being drawn by hand.
 
-> 🎯 **What the exam tests:** After converting Illustrator layers to Shape Layers, the original AI layers are auto-hidden (not deleted). You can still toggle them back on. The new Shape Layers are entirely independent of the source file.
+> 🎯 **Worth knowing (supplementary, not on the ACP Animate exam):** After converting Illustrator layers to Shape Layers, the original AI layers are auto-hidden (not deleted). You can still toggle them back on. The new Shape Layers are entirely independent of the source file.
 
 ---
 
@@ -187,7 +189,7 @@ In After Effects, applying **Easy Ease** (F9) to a keyframe converts it from a l
 - Shift+F9 = Easy Ease In (only eases in to the keyframe)
 - Ctrl/Cmd+Shift+F9 = Easy Ease Out (only eases out from the keyframe)
 
-> 🚨 **Exam Trap:** After applying Easy Ease, AE's default easing handles are often too aggressive, giving a very "robotic" S-curve. Open the Graph Editor and manually adjust the bezier handles to get more nuanced easing. Default Easy Ease is a starting point, not a final answer.
+> 🚨 **Common Pitfall:** After applying Easy Ease, AE's default easing handles are often too aggressive, giving a very "robotic" S-curve. Open the Graph Editor and manually adjust the bezier handles to get more nuanced easing. Default Easy Ease is a starting point, not a final answer.
 
 ---
 
@@ -204,7 +206,7 @@ Pre-compositions (pre-comps) in After Effects serve the same role as symbols in 
 
 To pre-compose: select layers → Ctrl+Shift+C / Cmd+Shift+C → name the pre-comp.
 
-> 🎯 **What the exam tests:** Pre-composing layers applies effects added to the pre-comp to all layers inside it simultaneously. This is different from applying effects to individual layers. If you want a color grade applied to all body parts at once, pre-compose the character and apply the effect to the pre-comp.
+> 🎯 **Worth knowing (supplementary, not on the ACP Animate exam):** Pre-composing layers applies effects added to the pre-comp to all layers inside it simultaneously. This is different from applying effects to individual layers. If you want a color grade applied to all body parts at once, pre-compose the character and apply the effect to the pre-comp.
 
 ---
 
@@ -237,7 +239,7 @@ In 2D animation, track mattes are used for:
 - Magical effects that clip to a character's silhouette
 - Stylized transitions between scenes
 
-> 🎯 **What the exam tests:** Track mattes require two specific layers stacked in the Timeline: the matte layer directly above the layer it controls. The matte layer's visibility is turned off (so it doesn't render), but it still controls the layer below. If either of these conditions is wrong, the matte won't work.
+> 🎯 **Worth knowing (supplementary, not on the ACP Animate exam):** Track mattes require two specific layers stacked in the Timeline: the matte layer directly above the layer it controls. The matte layer's visibility is turned off (so it doesn't render), but it still controls the layer below. If either of these conditions is wrong, the matte won't work.
 
 ---
 
@@ -275,7 +277,7 @@ AE proficiency is the single most-requested skill in 2D animation job postings o
 
 ---
 
-## 🎯 What the Exam Tests: Module 5 Checklist
+## 🎯 Skills Checklist (Supplementary — Not on the ACP Animate Exam)
 
 1. What does "Create Shapes from Vector Layers" do and what happens to the original AI layer?
 2. What are the three types of Puppet Pins and what does each do?
@@ -290,7 +292,7 @@ AE proficiency is the single most-requested skill in 2D animation job postings o
 
 ---
 
-## 🚨 Exam Trap Section
+## 🚨 Common Pitfalls (Supplementary)
 
 - **H.264 cannot be exported from AE Render Queue directly:** You must use Adobe Media Encoder. The AE Render Queue does not list H.264/MP4 as an output format.
 - **Easy Ease default is too aggressive:** Applying F9 and leaving it is a beginner mistake. Always open the Graph Editor to fine-tune the handles.
@@ -311,7 +313,7 @@ AE proficiency is the single most-requested skill in 2D animation job postings o
 
 ## 📊 AE Layer Types Reference
 
-After Effects layers have properties that differ significantly from Animate layers. Understanding layer types is exam-relevant:
+After Effects layers have properties that differ significantly from Animate layers. Understanding layer types is useful in production:
 
 | Layer Type | Created By | Purpose | Renders? |
 |-----------|-----------|---------|---------|
@@ -325,7 +327,7 @@ After Effects layers have properties that differ significantly from Animate laye
 | Camera layer | Layer → New → Camera | 3D camera for 3D layer navigation | No (defines view) |
 | Light layer | Layer → New → Light | Lighting for 3D layers | No (affects 3D layers) |
 
-> 🎯 **What the exam tests:** The Adjustment Layer is particularly important, it applies any effects added to it to all layers below it in the same composition. This is how color grades and vignettes are applied globally to a composite.
+> 🎯 **Worth knowing (supplementary, not on the ACP Animate exam):** The Adjustment Layer is particularly important, it applies any effects added to it to all layers below it in the same composition. This is how color grades and vignettes are applied globally to a composite.
 
 ---
 
@@ -389,7 +391,7 @@ Understanding AE's render output settings prevents quality loss:
 
 ---
 
-## 📋 Exam Readiness Checklist
+## 📋 Skills Readiness Checklist
 
 Before moving on, verify you can answer each of these without notes:
 
@@ -398,9 +400,9 @@ Before moving on, verify you can answer each of these without notes:
 - [ ] Identify the two most common mistakes students make
 - [ ] Describe when you would use each major tool/technique covered
 - [ ] Explain the trade-offs between the primary approaches discussed
-- [ ] State the exam-relevant numbers, ratios, or standards from memory
+- [ ] State the key numbers, ratios, or standards from memory
 
-## 🎯 Five High-Frequency Exam Questions
+## 🎯 Five Things Worth Knowing
 
 These patterns appear repeatedly in industry certification and portfolio assessments:
 

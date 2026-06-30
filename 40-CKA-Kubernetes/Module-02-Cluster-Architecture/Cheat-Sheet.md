@@ -192,3 +192,68 @@ kubectl uncordon <node-name>
 | 7 | 4 | 3 |
 
 > Always use an **odd** number of etcd members. Even numbers do not improve fault tolerance.
+
+---
+
+## Helm Quick Reference
+
+```bash
+helm repo add <name> <url> && helm repo update   # register + refresh a repo
+helm search repo <name>                          # find charts/versions
+helm template <rel> <chart>                      # render YAML (client, no install)
+helm install <rel> <chart> -n <ns> --create-namespace
+helm install <rel> <chart> --set key=val         # override a value
+helm install <rel> <chart> -f values.yaml        # override via file
+helm upgrade --install <rel> <chart> --set key=val   # install-or-upgrade
+helm list -A                                      # all releases
+helm rollback <rel> <revision> -n <ns>
+helm uninstall <rel> -n <ns>
+```
+
+| Term | Meaning | Override precedence (high → low) |
+|---|---|---|
+| Chart / Release / Repo | Package / instance / server | `--set` > `-f file` > chart `values.yaml` |
+
+> **TRAP:** `helm upgrade` drops prior `--set` values unless you pass `--reuse-values`.
+
+---
+
+## Kustomize Quick Reference (built into kubectl)
+
+```bash
+kubectl kustomize <dir>          # render final YAML to stdout
+kubectl apply -k <overlay-dir>   # build + apply
+kubectl delete -k <overlay-dir>  # remove managed objects
+```
+
+```
+myapp/base/kustomization.yaml          # resources: [deployment.yaml, service.yaml]
+myapp/overlays/prod/kustomization.yaml # resources: [../../base]; namePrefix/patches/images/replicas
+```
+
+| Helm | Kustomize |
+|---|---|
+| Go templating (`{{ }}`) | Patches on plain YAML |
+| `helm install` / `helm template` | `kubectl apply -k` / `kubectl kustomize` |
+| Needs `helm` binary | Built into `kubectl` |
+
+> **TRAP:** `apply -f <dir>` ignores `kustomization.yaml`; use `apply -k` to get the overlay.
+
+---
+
+## CRDs and Operators
+
+```bash
+kubectl get crd                          # list installed CRDs
+kubectl describe crd <plural>.<group>    # group, versions, scope
+kubectl get <newkind> -A                 # use the custom kind natively
+kubectl explain <kind>.spec --recursive  # discover fields (works on CRs too)
+```
+
+| Term | Role |
+|---|---|
+| CRD | Teaches the API server a new **kind** (schema) |
+| Custom Resource (CR) | An **instance** = desired state |
+| Operator | **Controller + CRD(s)** running a reconcile loop |
+
+> **TRAP:** A CR that "does nothing" usually means its operator/controller Pod isn't running — a CRD without a controller is inert, like Ingress without an IngressController.

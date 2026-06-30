@@ -130,7 +130,7 @@ Multi-Model Endpoint (auto-scaled, multi-AZ)
 Clarify (SHAP) + Model Monitor (drift) + Pipelines (nightly retrain)
 ```
 
-**MLS-C01 will paraphrase this architecture 5+ times across the exam.**
+**MLA-C01 will paraphrase this architecture 5+ times across the exam.**
 
 ---
 
@@ -169,16 +169,17 @@ Clarify (SHAP) + Model Monitor (drift) + Pipelines (nightly retrain)
 
 ---
 
-## 🗓️ Exam Facts (MLS-C01)
+## 🗓️ Exam Facts (MLA-C01)
 
 | Item | Value |
 |------|-------|
-| Questions | 65 (50 scored) |
-| Time | **180 min** |
-| Pass | **750/1000** (~75%) |
-| Cost | $300 USD |
+| Questions | 65 (50 scored + 15 unscored) |
+| Time | **130 min** |
+| Pass | **720/1000**, compensatory |
+| Cost | $150 USD |
 | Validity | 3 years |
-| Domain mix | DataEng 20 / EDA 24 / Modeling 36 / Ops 20 |
+| Domain mix | DataPrep 28 / ModelDev 26 / Deploy&Orch 22 / Monitor&Sec 24 |
+| Formats | Multiple-choice · multiple-response · ordering · matching |
 
 ---
 

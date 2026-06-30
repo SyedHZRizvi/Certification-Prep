@@ -1,6 +1,6 @@
 # Module 3: Exploratory Data Analysis & Feature Engineering 🔬
 
-> **Why this module matters:** Domain 2 of the MLS-C01 exam is **EDA, 24%** of every question. More exam weight than Data Engineering, more than MLOps. Feature engineering is also the single highest-leverage activity in production ML: in Kaggle competitions and real-world projects alike, a thoughtful feature set on a mediocre algorithm beats a brilliant algorithm on raw features. This module makes you fluent in the statistical reasoning, the cleaning techniques, the encoding strategies, the dimensionality-reduction tricks, and the AWS-specific tools (Data Wrangler, QuickSight, Clarify data bias) you need.
+> **Why this module matters:** Domain 2 of the MLA-C01 exam is **EDA, 24%** of every question. More exam weight than Data Engineering, more than MLOps. Feature engineering is also the single highest-leverage activity in production ML: in Kaggle competitions and real-world projects alike, a thoughtful feature set on a mediocre algorithm beats a brilliant algorithm on raw features. This module makes you fluent in the statistical reasoning, the cleaning techniques, the encoding strategies, the dimensionality-reduction tricks, and the AWS-specific tools (Data Wrangler, QuickSight, Clarify data bias) you need.
 
 > **Prerequisites for this module.** Modules 1 and 2 of this course. Helpful background:
 > - Comfort with pandas and NumPy at the level of `df.describe()`, `df.groupby()`, `df.merge()`
@@ -42,7 +42,7 @@ Every dataset gets walked through these five steps before a single model is trai
 5. SPLIT          → stratified train / validation / test (or k-fold)
 ```
 
-🎯 **Exam pattern.** Many MLS-C01 questions test step 3 (cleaning) and step 4 (engineering). The other steps appear in scenario context.
+🎯 **Exam pattern.** Many MLA-C01 questions test step 3 (cleaning) and step 4 (engineering). The other steps appear in scenario context.
 
 ---
 
@@ -290,7 +290,7 @@ When the positive class is <10% (or <1%), models default to predicting the major
 
 ---
 
-## 🤖 SageMaker Data Wrangler, The MLS-C01 Pet Tool
+## 🤖 SageMaker Data Wrangler, The MLA-C01 Pet Tool
 
 Data Wrangler is the visual data-prep tool inside SageMaker Studio. The exam will ask about it directly.
 
@@ -378,7 +378,7 @@ Before training, check for **data bias** that could lead to unfair outcomes. Sag
 
 **Outcome.** Radar block rate "improved by ~30%" with this feature engineering work alone (no model architecture change), per Stripe's 2023 reports.
 
-**Lesson for the exam.** The vast majority of model lift came from **features**, not algorithms. MLS-C01 questions will paraphrase this: "**which is the BEST way to improve the model?**", often the answer is feature engineering, not a fancier algorithm.
+**Lesson for the exam.** The vast majority of model lift came from **features**, not algorithms. MLA-C01 questions will paraphrase this: "**which is the BEST way to improve the model?**", often the answer is feature engineering, not a fancier algorithm.
 
 ---
 
@@ -628,7 +628,7 @@ X_tr_resampled, y_tr_resampled = sm.fit_resample(X_tr, y_tr)
 # Do NOT resample X_val / y_val
 ```
 
-🎯 **Exam patterns.** Many evaluation-related MLS-C01 questions hinge on recognising the *right* CV strategy for the data shape. Group K-fold and walk-forward CV are the two most-missed.
+🎯 **Exam patterns.** Many evaluation-related MLA-C01 questions hinge on recognising the *right* CV strategy for the data shape. Group K-fold and walk-forward CV are the two most-missed.
 
 ---
 

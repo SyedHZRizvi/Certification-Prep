@@ -25,11 +25,11 @@
 ## ⭐ Essential watching (~75 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="oKMivEn6sFk" href="https://www.youtube.com/results?search_query=AWS+Machine+Learning+Specialty+exam+overview+Stephane+Maarek" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Machine+Learning+Engineer+Associate+MLA-C01+exam+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📝</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AWS ML Specialty (MLS-C01) Exam Overview</p>
+      <p class="vg-title">AWS ML Engineer Associate (MLA-C01) Exam Overview</p>
       <p class="vg-creator">K21Academy</p>
       <span class="vg-duration">⏱ 18 min · Format, weights, study strategy</span>
     </div>
@@ -151,7 +151,7 @@
 
 | Channel | Why |
 |---------|-----|
-| **StatQuest with Josh Starmer** | Best intuitive ML explainers on YouTube, every MLS-C01 topic in one place |
+| **StatQuest with Josh Starmer** | Best intuitive ML explainers on YouTube, every MLA-C01 topic in one place |
 | **Stephane Maarek** | Best-selling Udemy AWS courses; YouTube has free MLS clips |
 | **AWS Online Tech Talks / AWS Events** | Official source; deep technical content on every SageMaker / Bedrock feature |
 | **Be A Better Dev** | Short, animated AWS service explainers |

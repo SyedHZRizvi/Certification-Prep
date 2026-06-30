@@ -488,6 +488,257 @@ kubectl uncordon <node>
 
 ---
 
+## 📦 Helm: The Package Manager for Kubernetes
+
+Go back to City Hall. Installing a CNI plugin or a monitoring stack by hand means applying a dozen separate YAML files — Deployments, Services, ConfigMaps, RBAC, CRDs — and editing each one for your environment. Helm is the city's permit office that takes a **single standardised application package** and stamps out all those objects for you, with your local values filled in.
+
+A Helm **chart** is that package: a directory of templated manifests plus a `values.yaml` of defaults. A **release** is one installed instance of a chart in your cluster. A **repository** is a server hosting charts you can pull.
+
+### Why Helm Is on the CKA
+
+The curriculum explicitly tests **using Helm to install cluster components**. You will not be asked to author a chart from scratch, but you must be able to add a repo, install a chart, override values, and upgrade a release.
+
+### Helm Workflow Commands
+
+**MEMORIZE THIS.**
+
+```bash
+# Add and refresh a chart repository
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo update
+helm search repo ingress-nginx          # find chart names/versions
+
+# Preview the rendered manifests WITHOUT installing (dry-run on the client)
+helm template my-release ingress-nginx/ingress-nginx
+
+# Install a chart as a named release into a namespace
+helm install my-release ingress-nginx/ingress-nginx \
+  --namespace ingress --create-namespace
+
+# Override values at install time
+helm install my-release ingress-nginx/ingress-nginx \
+  --set controller.replicaCount=2 \
+  --set controller.service.type=NodePort
+
+# Use a values file instead of many --set flags
+helm install my-release ingress-nginx/ingress-nginx -f my-values.yaml
+
+# List releases, inspect, and upgrade
+helm list -A
+helm get values my-release -n ingress
+helm upgrade my-release ingress-nginx/ingress-nginx --set controller.replicaCount=3
+helm upgrade --install my-release ingress-nginx/ingress-nginx   # install if absent, else upgrade
+
+# Roll back and uninstall
+helm rollback my-release 1 -n ingress
+helm uninstall my-release -n ingress
+```
+
+| Concept | Meaning |
+|---|---|
+| Chart | The package (templates + `values.yaml` + `Chart.yaml`) |
+| Release | One named, installed instance of a chart |
+| Repository | A server hosting charts (`helm repo add`) |
+| `values.yaml` | Default configuration; override with `--set` or `-f` |
+| `helm template` | Render manifests locally — no cluster contact, no install |
+
+> 🎯 **Exam tip:** `helm template` renders the YAML on the client and prints it — perfect when a task says "show what *would* be applied" or when you want to pipe the output into `kubectl apply -f -`. `helm install --dry-run` is the server-side equivalent that also validates against the API. Know the difference.
+
+> 🚨 **Trap on the exam:** `--set key=value` overrides take precedence over `-f values.yaml`, which in turn override the chart's built-in `values.yaml`. If an override "isn't working," check whether a later `--set` is winning. Also: `helm upgrade` does NOT re-read your previous `--set` flags unless you pass `--reuse-values` — forgetting this silently reverts overrides to chart defaults.
+
+---
+
+## 🧩 Kustomize: Template-Free Configuration
+
+Helm uses templating (`{{ .Values.x }}`). Kustomize takes the opposite approach: you keep **plain, valid YAML** and layer **patches** on top of it. There are no template placeholders — every file is a real manifest you could apply directly. Kustomize is built **into `kubectl`**, so there is nothing extra to install on the exam.
+
+The mental model: a **base** holds the common manifests; each **overlay** (dev, staging, prod) points at the base and patches only what differs.
+
+### `kustomization.yaml`
+
+Every Kustomize directory has a `kustomization.yaml` that lists resources and the transformations to apply:
+
+```yaml
+# base/kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - deployment.yaml
+  - service.yaml
+commonLabels:
+  app: hotel-api
+```
+
+### Bases and Overlays
+
+```
+myapp/
+├── base/
+│   ├── kustomization.yaml
+│   ├── deployment.yaml
+│   └── service.yaml
+└── overlays/
+    └── prod/
+        ├── kustomization.yaml      # references ../../base
+        └── replica-patch.yaml
+```
+
+```yaml
+# overlays/prod/kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base                      # pull in the base
+namePrefix: prod-                   # prod-hotel-api, prod-...
+replicas:
+  - name: hotel-api
+    count: 5
+patches:
+  - path: replica-patch.yaml        # strategic-merge patch onto the base
+images:
+  - name: hotel/api
+    newTag: v2.3.0
+```
+
+### Applying Kustomize
+
+**MEMORIZE THIS.**
+
+```bash
+# Render the final YAML to stdout (no cluster contact)
+kubectl kustomize overlays/prod
+
+# Build AND apply in one step (the -k flag)
+kubectl apply -k overlays/prod
+
+# Delete everything a kustomization manages
+kubectl delete -k overlays/prod
+```
+
+### Helm vs. Kustomize
+
+| Dimension | Helm | Kustomize |
+|---|---|---|
+| Mechanism | Go templating (`{{ }}`) | Overlays/patches on plain YAML |
+| Packaging | Charts + repositories | Directories (`base` + `overlays`) |
+| Install command | `helm install` | `kubectl apply -k` |
+| Render-only command | `helm template` | `kubectl kustomize` |
+| Extra tooling needed | `helm` binary | None — built into `kubectl` |
+| Strength | Distribution, versioned releases, rollbacks | Environment variants without templating |
+
+> 🎯 **Exam tip:** Both `kubectl apply -k <dir>` and `kubectl apply -f <dir>` take a directory, but `-k` means "treat this as a kustomization and build it first." If you `apply -f` a directory that contains a `kustomization.yaml`, you do **not** get the overlay — you just apply the raw files. Use `-k` whenever a `kustomization.yaml` is present.
+
+---
+
+## 🔌 Custom Resource Definitions (CRDs) and the Operator Pattern
+
+Kubernetes ships with built-in kinds — Pod, Service, Deployment. A **CustomResourceDefinition (CRD)** teaches the API server a brand-new kind. Once a CRD is installed, `kubectl get <newkind>` works exactly like `kubectl get pods`, and the new objects are stored in etcd and protected by RBAC like anything else. This is how Gateway API, cert-manager, Prometheus, and most ecosystem tools extend Kubernetes.
+
+### What a CRD Looks Like
+
+```yaml
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: backups.ops.example.com        # must be <plural>.<group>
+spec:
+  group: ops.example.com
+  scope: Namespaced                     # or Cluster
+  names:
+    plural: backups
+    singular: backup
+    kind: Backup
+    shortNames: [bk]
+  versions:
+    - name: v1
+      served: true
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                schedule: {type: string}
+```
+
+After applying that CRD, you can create instances of the new `Backup` kind:
+
+```yaml
+apiVersion: ops.example.com/v1
+kind: Backup
+metadata:
+  name: nightly
+spec:
+  schedule: "0 2 * * *"
+```
+
+### Inspecting CRDs and Custom Resources
+
+**MEMORIZE THIS.**
+
+```bash
+# List all CRDs installed on the cluster
+kubectl get crd
+
+# Describe a specific CRD (see its group, versions, scope)
+kubectl describe crd backups.ops.example.com
+
+# Use the new kind like any native resource
+kubectl get backups -A
+kubectl get bk                          # shortName works too
+
+# Discover the fields of ANY kind — built-in or custom
+kubectl explain backup.spec
+kubectl explain backup.spec.schedule
+```
+
+> 🎯 **Exam tip:** `kubectl explain` reads the live OpenAPI schema from the API server, so it works on custom resources the moment their CRD is installed. When you forget a field path under pressure, `kubectl explain <kind>.spec --recursive` is faster than opening the docs tab.
+
+### The Operator Pattern
+
+A CRD alone is just **data** — it adds a new kind but nothing acts on it. An **Operator** supplies the **behaviour**: it is a custom controller running in the cluster (usually as a Deployment) that watches instances of the CRD and drives reality toward their spec.
+
+This is the same **control loop** the built-in controllers use (Module 2, kube-controller-manager): *observe desired state → compare to actual state → reconcile the difference → repeat.* An Operator encodes operational knowledge — "how to back up this database," "how to fail over this cluster" — into that loop so a human does not have to run the runbook by hand.
+
+```
+   Custom Resource (desired)          Operator (controller)
+   ┌──────────────────────┐           ┌────────────────────────┐
+   │ kind: Backup          │  watch    │  reconcile loop:        │
+   │ spec.schedule: 0 2 *  │ ────────► │  observe → diff → act   │
+   └──────────────────────┘           └───────────┬────────────┘
+                                                   │ creates/updates
+                                                   ▼
+                                       Pods, Jobs, PVCs, Secrets...
+```
+
+| Term | Role |
+|---|---|
+| CRD | Defines a new **kind** (the schema) |
+| Custom Resource (CR) | An **instance** of that kind (the desired state) |
+| Controller | A loop that **watches** resources and reconciles state |
+| Operator | A **controller + one or more CRDs** packaging operational know-how |
+
+### Installing and Inspecting an Operator
+
+Operators are typically delivered via a manifest bundle or a Helm chart that installs (a) the CRDs and (b) the controller Deployment plus its RBAC:
+
+```bash
+# Common install paths
+kubectl apply -f https://example.com/operator/install.yaml
+helm install my-operator some-repo/my-operator -n operators --create-namespace
+
+# Confirm the CRDs landed and the controller is running
+kubectl get crd | grep example.com
+kubectl get pods -n operators
+kubectl get deploy -n operators
+```
+
+> 🚨 **Trap on the exam:** A custom resource sitting in `Pending` or doing nothing usually means the **operator/controller is not running** (crashed Pod, missing RBAC, wrong namespace) — not that the CR is malformed. Check `kubectl get pods -n <operator-ns>` and its logs first. A CRD without its controller is inert, exactly like an Ingress object with no IngressController.
+
+---
+
 ## 📊 Summary
 
 | Concept | Key Fact |
@@ -505,6 +756,12 @@ kubectl uncordon <node>
 | External HA min | 3 control plane + 3 etcd nodes |
 | Upgrade rule | One minor version at a time |
 | CNI installed by | You (not kubeadm) |
+| Helm render-only | `helm template` (client) / `--dry-run` (server) |
+| Helm install/upgrade | `helm install`, `helm upgrade --install`, `--set`, `-f`, `helm repo add` |
+| Kustomize apply | `kubectl apply -k <overlay>`; render with `kubectl kustomize` |
+| Kustomize layout | `base/` + `overlays/` referencing the base |
+| CRD | Teaches the API server a new kind; `kubectl get crd`, `kubectl explain` |
+| Operator | Controller + CRD(s); reconcile loop encoding ops knowledge |
 
 ---
 
@@ -513,7 +770,7 @@ kubectl uncordon <node>
 1. **Lab:** Bootstrap a 1-control-plane + 2-worker cluster using kubeadm on VMs or killercoda.com
 2. **Lab:** Perform an etcd backup and restore from scratch (do this at least 3 times)
 3. **Lab:** Deliberately break a static pod and use `crictl` to diagnose it
-4. **Quiz:** Take the Module 2 Quiz (26 questions) targeting Apply and Analyze levels
+4. **Quiz:** Take the Module 2 Quiz (31 questions) targeting Apply and Analyze levels
 5. **Next Module:** Module 3 — Workloads and Scheduling (Deployments, DaemonSets, resource limits)
 
 ---
@@ -526,3 +783,7 @@ kubectl uncordon <node>
 - [PKI certificates and requirements](https://kubernetes.io/docs/setup/best-practices/certificates/)
 - [High Availability topology options](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topology/)
 - [Kubelet configuration reference](https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/)
+- [Helm documentation](https://helm.sh/docs/)
+- [Declarative management with Kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/)
+- [Custom Resources & CRDs](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
+- [Operator pattern](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/)
