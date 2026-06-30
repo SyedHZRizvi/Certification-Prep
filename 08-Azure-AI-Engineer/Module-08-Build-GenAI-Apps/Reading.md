@@ -167,7 +167,7 @@ Telemetry can flow to **Application Insights** and **Log Analytics**.
 
 ## 🧩 RAG Patterns (Production-Grade)
 
-This is THE most common GenAI architecture and the AI-102 exam loves it.
+This is THE most common GenAI architecture and the AI-103 exam loves it.
 
 ### The reference pipeline
 
@@ -273,6 +273,294 @@ run = project.agents.create_and_process_run(thread.id, agent.id)
 
 ---
 
+## 🧠 Implement Generative AI and Agentic Solutions (The 30–35% Domain)
+
+> **Why this section is the spine of the exam.** On the AI-103 blueprint *"Implement generative AI and agentic solutions"* is the single heaviest domain at **30–35%**. Vision, language, and document intelligence are still examined (they carried over from AI-102), but *this* is where the questions cluster. If you only deeply master one domain, master this one. Everything below is built on **Azure AI Foundry Agent Service** and the **`azure-ai-projects`** / **`azure-ai-agents`** SDKs.
+
+### 🍕 A Story: Maya's One Bot Becomes a Team
+
+Maya's v1.0 support bot worked, but by v2.0 the ticket queue had three very different jobs tangled into one prompt: *triage* the customer's issue, *look up* their order and entitlements, and *draft* a policy-correct reply. One giant system prompt tried to do all three, and it kept doing two well and one badly on any given run. Her senior engineer said the line that reframed everything: *"Stop writing a smarter prompt. Start hiring a team."*
+
+So Maya split the work the way a real support desk is organized: a **Triage agent** that classifies and routes, an **Order-Lookup agent** that calls internal APIs, and a **Reply-Drafting agent** that writes the final answer grounded in policy docs. An **orchestrator** hands the conversation between them. That is the leap from a *single agent* to a *multi-agent* system, and it is exactly the architecture AI-103 wants you to be able to design, build, and reason about.
+
+### What "Agentic" Means on Azure
+
+An **agent** in Foundry Agent Service is a server-side, stateful assistant defined by four things:
+
+| Pillar | What it is | Where it lives |
+|---|---|---|
+| **Role / persona** | Who the agent *is* ("a senior claims adjuster") | `instructions` |
+| **Goal** | What success looks like for this agent | `instructions` |
+| **Instructions** | The behavioral contract: tone, constraints, refusal rules, output format | `instructions` |
+| **Tools** | The actions it can take (functions, file search, code interpreter) | `tools` |
+
+The agent runs inside the **thread / run** model: a **thread** is a persistent conversation, a **message** is one turn added to it, and a **run** is the agent processing the thread (reasoning, calling tools, appending its reply). The service persists threads server-side, so **memory** is durable across turns without you re-sending history.
+
+🎯 **Exam tip:** When a question describes "persistent conversation state managed by the service, not by my app," the answer is **a Foundry Agent Service thread**, not "store the chat history in my database."
+
+### The SDK Surface You're Tested On
+
+Two packages, one clear division of labor:
+
+| Package | What it gives you | You use it to… |
+|---|---|---|
+| **`azure-ai-projects`** | The `AIProjectClient` — your handle to the Foundry **project**, its connections, deployments, and the `.agents` operations | Connect to the project, create agents, open threads, start runs |
+| **`azure-ai-agents`** | The agents data plane: tool definitions (`FunctionTool`, `FileSearchTool`, `CodeInterpreterTool`), thread/run/message models, run-step inspection | Define tool schemas, submit tool outputs, read run steps for observability |
+
+Authentication is **`DefaultAzureCredential`** (managed identity in production, `az login` locally). You connect with the project **endpoint**, not hardcoded keys.
+
+```python
+from azure.ai.projects import AIProjectClient
+from azure.identity import DefaultAzureCredential
+
+project = AIProjectClient(
+    endpoint="https://<your-foundry-project>.services.ai.azure.com/api/projects/<name>",
+    credential=DefaultAzureCredential(),
+)
+```
+
+🚨 **Trap on the exam:** Keys + connection strings still appear as distractors. The modern, exam-correct pattern is **`DefaultAzureCredential` + project endpoint + managed identity**. "Embed the API key in the agent definition" is always wrong.
+
+### Single-Agent Anatomy: Roles, Goals, Instructions
+
+A single agent is the unit you must be able to write cold. The `instructions` field is where role + goal + behavioral contract all live — treat it like a job description, not a greeting.
+
+```python
+agent = project.agents.create_agent(
+    model="gpt-4o",                       # a deployment in your project
+    name="claims-triage",
+    instructions=(
+        "ROLE: You are a senior insurance claims triage specialist.\n"
+        "GOAL: Classify each incoming claim by type and urgency, and decide "
+        "whether it can be auto-approved or must go to a human adjuster.\n"
+        "RULES:\n"
+        " - Never approve a claim over $10,000 yourself; route it to a human.\n"
+        " - If required documents are missing, ask for them; do not guess.\n"
+        " - Always return: claim_type, urgency (low/med/high), route (auto/human)."
+    ),
+)
+```
+
+The pattern to internalize: **ROLE** (persona) → **GOAL** (success criterion) → **RULES** (guardrails + output contract). The exam rewards instructions that encode *refusal conditions* and *escalation paths*, not just a friendly tone.
+
+### Function Calling and Tool Schemas
+
+Tools are how an agent *acts*. The most tested tool type is **function calling**: you describe a function with a **JSON schema**, the model decides when to call it, the service pauses the run in a `requires_action` state, your code executes the real function and submits the result, and the run resumes.
+
+The schema is the contract. The model can only call what you describe accurately — vague descriptions produce wrong calls.
+
+```python
+from azure.ai.agents.models import FunctionTool
+
+def lookup_order(order_id: str) -> str:
+    """Return order status + entitlement for an order_id."""
+    ...  # calls your internal API
+    return '{"status": "shipped", "warranty": "active"}'
+
+# The SDK can build the JSON schema from typed Python functions:
+order_tool = FunctionTool(functions={lookup_order})
+
+agent = project.agents.create_agent(
+    model="gpt-4o",
+    name="order-lookup",
+    instructions="Look up orders using the lookup_order tool. Never invent order data.",
+    tools=order_tool.definitions,
+)
+```
+
+The raw tool schema the model actually sees looks like this — know its shape:
+
+```json
+{
+  "type": "function",
+  "function": {
+    "name": "lookup_order",
+    "description": "Return order status + entitlement for an order_id.",
+    "parameters": {
+      "type": "object",
+      "properties": { "order_id": { "type": "string", "description": "The order identifier" } },
+      "required": ["order_id"]
+    }
+  }
+}
+```
+
+The run loop with function calling:
+
+```python
+thread = project.agents.threads.create()
+project.agents.messages.create(thread.id, role="user", content="Where is order A-4471?")
+run = project.agents.runs.create(thread.id, agent_id=agent.id)
+
+while run.status in ("queued", "in_progress", "requires_action"):
+    if run.status == "requires_action":
+        outputs = []
+        for call in run.required_action.submit_tool_outputs.tool_calls:
+            if call.function.name == "lookup_order":
+                args = json.loads(call.function.arguments)
+                result = lookup_order(**args)               # YOU run the real function
+                outputs.append({"tool_call_id": call.id, "output": result})
+        run = project.agents.runs.submit_tool_outputs(thread.id, run.id, tool_outputs=outputs)
+    else:
+        run = project.agents.runs.get(thread.id, run.id)
+```
+
+🎯 **Exam tip:** The `requires_action` → `submit_tool_outputs` handshake is the single most-tested mechanic. The model never runs your code; it *requests* a call and waits for *you* to return the result. Built-in tools (Code Interpreter, File Search) run server-side and do **not** pause for `requires_action`.
+
+| Tool type | Who executes it | Pauses the run? |
+|---|---|---|
+| **Function calling** | Your code | Yes (`requires_action`) |
+| **Code Interpreter** | Foundry (sandboxed) | No |
+| **File Search** | Foundry (RAG over uploads) | No |
+| **OpenAPI / connected tools** | Foundry via connection | No |
+
+### Memory and Threads
+
+Memory in Agent Service is **the thread**. Each thread accumulates messages and the service handles context; you reuse a `thread.id` to continue a conversation, and you create a new thread to start fresh. There is no need to re-send prior turns.
+
+- **Thread = durable memory** for one conversation (one user, one case).
+- **Run = one processing pass** over the thread by an agent.
+- **Run steps** = the granular record (each tool call, each model message) — your observability goldmine.
+
+For longer-horizon memory (facts that should persist *across* threads — a customer's preferences, a policy summary), the pattern is to **persist a summary yourself** (e.g., to Cosmos DB or a vector store) and re-inject it into a new thread's first message, or expose it as a **File Search** tool. The exam distinguishes *conversation memory* (the thread, automatic) from *long-term knowledge* (your store, deliberate).
+
+### Approval and Safety Guardrails
+
+Agentic systems act, so guardrails are graded. Three layers AI-103 expects you to name:
+
+1. **Instruction-level guardrails** — refusal rules and escalation paths baked into `instructions` ("never approve > $10k yourself").
+2. **Human-in-the-loop approval** — for high-impact tool calls, *don't* auto-submit tool outputs. Surface the proposed call to a human, get approval, then call `submit_tool_outputs`. The `requires_action` pause is the natural approval gate.
+3. **Platform safety** — **Azure AI Content Safety** (Prompt Shields against jailbreak/indirect-prompt-injection, harm categories) and **Foundry guardrails/RAI policy** on the model deployment. Indirect prompt injection through tool/RAG content is a specifically tested risk for agents.
+
+🚨 **Trap on the exam:** "The agent auto-executes any tool it wants, including refunds and deletions." For irreversible/high-value actions the correct design is a **human approval gate at the `requires_action` boundary**, plus least-privilege on the tool's own credentials.
+
+### Evaluation and Observability
+
+You cannot ship an agent you can't measure. Two halves:
+
+**Evaluation** — the **Azure AI Evaluation SDK (`azure-ai-evaluation`)** plus Foundry's evaluators score agent behavior, including agent-specific evaluators:
+
+| Evaluator | What it checks |
+|---|---|
+| **Intent Resolution** | Did the agent correctly understand what the user wanted? |
+| **Tool Call Accuracy** | Did it pick the right tool with the right arguments? |
+| **Task Adherence** | Did it follow its instructions / stay in scope? |
+| **Groundedness / Relevance / Coherence / Fluency** | The standard quality set (carry over from RAG) |
+| **Safety (Hate/Sexual/Violence/Self-Harm, Jailbreak)** | Content Safety categories |
+
+**Observability** — agent runs emit **OpenTelemetry traces** that flow to **Application Insights** (wired through the Foundry project). You inspect **run steps** to see every reasoning step and tool call, latency, and token cost per step. "Trace why the agent called the wrong tool" → read the **run steps** + the Application Insights trace.
+
+🎯 **Exam tip:** Match the verb to the surface — *score quality* → **Evaluation SDK / Foundry evaluators**; *debug a live run* → **run steps + OpenTelemetry → Application Insights**.
+
+### Single-Agent vs Multi-Agent Orchestration
+
+When does one agent become a team? The heuristic the exam rewards:
+
+| Signal | Lean single-agent | Lean multi-agent |
+|---|---|---|
+| Number of distinct skills | One coherent job | Several specialized jobs (triage / lookup / draft) |
+| Tool count per turn | Few | Many, naturally grouped |
+| Instruction length | Manageable | Bloated, contradictory |
+| Need for separation of duties | Low | High (e.g., a "drafter" must not also approve) |
+| Reusability | N/A | Agents reused across workflows |
+
+Multi-agent orchestration in Foundry uses **connected agents** (one agent calls another agent as a tool) or an **orchestrator agent** that delegates to specialist agents and composes their outputs. Common topologies:
+
+| Topology | Shape | Use when |
+|---|---|---|
+| **Orchestrator–worker** | A planner agent delegates sub-tasks to specialists | Clear decomposition (Maya's desk) |
+| **Sequential (pipeline)** | Agent A → Agent B → Agent C | Each stage transforms the last (extract → reason → write) |
+| **Hand-off / routing** | A router picks the right specialist | One of N specialists fits each request |
+| **Group chat / collaborative** | Agents iterate together until done | Open-ended tasks needing debate/critique |
+
+🚨 **Trap on the exam:** "More agents is always better." Multi-agent adds latency, cost, and failure surface. Use it when the work genuinely decomposes into separable roles — otherwise a single well-instructed agent is cheaper and more reliable.
+
+### 🧩 Worked Example: A Three-Agent Claims Workflow
+
+Maya's production design — the same scenario as the Capstone. An **orchestrator** owns the conversation and delegates to three connected specialists.
+
+```python
+from azure.ai.projects import AIProjectClient
+from azure.ai.agents.models import FunctionTool, ConnectedAgentTool
+from azure.identity import DefaultAzureCredential
+
+project = AIProjectClient(endpoint=PROJECT_ENDPOINT, credential=DefaultAzureCredential())
+
+# 1) Specialist: order/policy lookup (function tool)
+lookup = FunctionTool(functions={lookup_policy, lookup_order})
+order_agent = project.agents.create_agent(
+    model="gpt-4o", name="lookup-specialist",
+    instructions="ROLE: data retriever. Use the lookup tools. Never invent policy data.",
+    tools=lookup.definitions,
+)
+
+# 2) Specialist: drafter (grounded on policy docs via File Search)
+from azure.ai.agents.models import FileSearchTool
+files = FileSearchTool(vector_store_ids=[POLICY_VECTOR_STORE_ID])
+drafter = project.agents.create_agent(
+    model="gpt-4o", name="reply-drafter",
+    instructions=("ROLE: policy-correct writer. GOAL: draft the customer reply grounded "
+                  "ONLY in retrieved policy text. Cite the clause. Do NOT promise approvals."),
+    tools=files.definitions,
+)
+
+# 3) Orchestrator: delegates to the two specialists as connected-agent tools
+order_conn  = ConnectedAgentTool(id=order_agent.id, name="lookup_specialist",
+                                 description="Looks up order status and policy entitlements.")
+draft_conn  = ConnectedAgentTool(id=drafter.id, name="reply_drafter",
+                                 description="Writes the grounded customer reply.")
+
+orchestrator = project.agents.create_agent(
+    model="gpt-4o", name="claims-orchestrator",
+    instructions=(
+        "ROLE: claims desk supervisor. GOAL: resolve the customer's claim end to end.\n"
+        "PLAN: (1) call lookup_specialist for order + entitlement; "
+        "(2) if claim_value > 10000 OR entitlement is unclear, STOP and escalate to a human; "
+        "(3) otherwise call reply_drafter to write the grounded reply; (4) return the draft.\n"
+        "GUARDRAIL: never approve a payout yourself; you only triage and draft."
+    ),
+    tools=[*order_conn.definitions, *draft_conn.definitions],
+)
+
+# Run the whole team through ONE thread
+thread = project.agents.threads.create()
+project.agents.messages.create(thread.id, role="user",
+    content="Claim on order A-4471: phone screen cracked, asking $480 repair.")
+run = project.agents.runs.create_and_process(thread.id, agent_id=orchestrator.id)
+
+# Observability: inspect what each agent did
+for step in project.agents.run_steps.list(thread.id, run.id):
+    print(step.type, step.status)   # tool_calls / message_creation, per delegated agent
+```
+
+What this example demonstrates, point by point, against the domain:
+
+- **Single + multi-agent**: three single agents composed into a multi-agent system via `ConnectedAgentTool`.
+- **Roles / goals / instructions**: each `instructions` block is ROLE → GOAL → RULES.
+- **Function calling + tool schemas**: `lookup-specialist` uses `FunctionTool` (JSON-schema tools your code executes).
+- **Memory / threads**: one shared `thread` carries state across the whole interaction.
+- **Approval & safety guardrails**: the orchestrator's "STOP and escalate if > \$10k" is the human-in-the-loop gate; the drafter is grounded via File Search and forbidden from promising approvals.
+- **Evaluation + observability**: `run_steps.list(...)` exposes each delegated agent's actions for tracing; pair with the Evaluation SDK's Tool Call Accuracy + Task Adherence evaluators and Application Insights traces.
+
+🎯 **Exam tip:** A "connected agent" is just *an agent exposed to another agent as a tool*. If a question asks how one Foundry agent delegates to another without you writing custom orchestration glue, the answer is **`ConnectedAgentTool`**.
+
+### Quick Reference: Agentic Domain at a Glance
+
+| Need | Foundry / SDK answer |
+|---|---|
+| Create a stateful assistant | `project.agents.create_agent(...)` |
+| Persistent conversation memory | a **thread** (`threads.create`, reuse `thread.id`) |
+| Let the model call your code | **Function calling** (`FunctionTool` + `requires_action` → `submit_tool_outputs`) |
+| Server-side RAG over files | **File Search** tool (vector store) |
+| Server-side Python/data tasks | **Code Interpreter** tool |
+| One agent delegates to another | **`ConnectedAgentTool`** (connected/multi-agent) |
+| High-impact action approval | human gate at the `requires_action` pause |
+| Block jailbreak / injection | **Content Safety Prompt Shields** + RAI policy on the deployment |
+| Score agent quality | **`azure-ai-evaluation`** (Intent Resolution, Tool Call Accuracy, Task Adherence) |
+| Debug a live agent run | **run steps** + **OpenTelemetry → Application Insights** |
+
+---
+
 ## 🛠️ Semantic Kernel (SK)
 
 **Semantic Kernel** is Microsoft's open-source SDK (C#, Python, Java) for orchestrating LLM + plugins from your code (think: LangChain, by Microsoft).
@@ -374,6 +662,12 @@ Use SK when you want **portable** orchestration code (run locally, multi-cloud, 
 | **Evaluation** | Scored test runs (groundedness, relevance, coherence, fluency, similarity, safety, custom) |
 | **Agent Service** | Foundry's assistants-style API with tools (code interp, file search, function calling) |
 | **Thread / Run / Message** | Agent Service primitives |
+| **Run step** | Granular record of one action in a run (a tool call or model message); the observability unit |
+| **`azure-ai-projects` / `azure-ai-agents`** | The SDKs for Foundry Agent Service (`AIProjectClient` + tool/thread/run models) |
+| **Function calling** | Model requests a JSON-schema-described function; run pauses at `requires_action` for you to `submit_tool_outputs` |
+| **Connected agent** | An agent exposed to another agent as a tool (`ConnectedAgentTool`); the basis of multi-agent orchestration |
+| **Orchestrator–worker** | Multi-agent topology: a planner agent delegates sub-tasks to specialist agents |
+| **Agent evaluators** | Intent Resolution, Tool Call Accuracy, Task Adherence (via `azure-ai-evaluation`) |
 | **Semantic Kernel** | Open-source orchestration SDK (C#/Python/Java) |
 | **Plugin / Function (SK)** | A callable unit (native or prompt-based) the kernel orchestrates |
 | **Planner** | SK component that builds multi-step plans |
@@ -427,6 +721,7 @@ You now know:
 - 📈 Production monitoring + drift detection
 - 🧩 The reference RAG architecture and its quality knobs
 - 🤖 Agent Service, tools (file search, code interpreter, functions) + threads
+- 🧠 The heaviest AI-103 domain: single- and multi-agent orchestration on Foundry Agent Service (roles/goals/instructions, function-calling + tool schemas, memory/threads, approval + safety guardrails, evaluation + observability) with `azure-ai-projects` / `azure-ai-agents`
 - 🛠️ Semantic Kernel basics (kernel, plugin, planner)
 - 🏗️ Decision matrix for building any GenAI app
 - 🚨 Hub vs Project, MaaS vs MaaP, prompt flow vs SK
@@ -439,7 +734,7 @@ You now know:
 4. 🧪 Take [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md)
 5. 🧪 Then [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md)
 6. 🏛️ Then attempt the **course [Capstone Project](../Capstone-Project.md)**, production-grade insurer claims workflow
-7. 📅 Book AI-102. You're ready.
+7. 📅 Book AI-103. You're ready.
 
 ---
 

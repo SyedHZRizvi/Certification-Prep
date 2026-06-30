@@ -1,10 +1,10 @@
-# 🧪 Final Mock Exam, Azure AI Engineer (AI-102, Real-Exam Conditions)
+# 🧪 Final Mock Exam, Azure AI App & Agent Developer (AI-103, Real-Exam Conditions)
 
-> **Conditions:** Set a **100-minute timer**. **55 questions**. Real-exam conditions: no notes, no Googling, no Slack. Stand up, breathe, then go.
-> **Pass mark:** 39/55 (~70.9%, slightly above the real cut of 700/1000)
+> **Conditions:** Set a **110-minute timer**. **60 questions**. Real-exam conditions: no notes, no Googling, no Slack. Stand up, breathe, then go.
+> **Pass mark:** 42/60 (~70%, slightly above the real cut of 700/1000)
 > Take this **the week before** your real exam.
 
-> The real AI-102 will include drag-and-drop, hot area, and case-study items. This mock simulates that mix in plain text, read each case study **carefully**.
+> The real AI-103 will include drag-and-drop, hot area, and case-study items. This mock simulates that mix in plain text, read each case study **carefully**.
 
 ---
 
@@ -388,6 +388,36 @@ B. Measure → Mitigate → Identify → Operate
 C. Plan → Build → Test → Release
 D. Identify → Measure → Mitigate → Operate
 
+### 56. The four core primitives of the Azure AI Foundry Agent Service are:
+A. Hub, Project, Connection, Flow
+B. Agent, Thread, Message, Run
+C. Index, Indexer, Skillset, Data source
+D. Prompt, Variant, Node, Endpoint
+
+### 57. Your agent must answer questions over a set of PDFs you upload directly to the agent (no separate AI Search index). The built-in tool to enable is:
+A. Code Interpreter
+B. Function Calling
+C. File Search
+D. Browser
+
+### 58. **Multi-agent design.** A loan-processing workflow needs one agent to gather applicant data, a second to score risk, and a third to draft the decision letter, each evaluated separately. The recommended Azure AI Foundry approach is:
+A. A single agent with one enormous system prompt doing all three jobs
+B. A connected-agents (orchestrator + specialized sub-agents) design where the orchestrator delegates to each agent as a tool
+C. Three independent chatbots with no shared state
+D. A Prompt Flow with only embedding nodes
+
+### 59. When you define a function tool for an agent, the model chooses whether and how to call it based on:
+A. The function's name, description, and JSON parameter schema
+B. The Azure region of the deployment
+C. The order the tools were registered
+D. The content-filter severity threshold
+
+### 60. To enforce a quality bar on a generative-AI agent before release, you run Foundry Evaluation, which scores responses on:
+A. Loss and training accuracy
+B. Groundedness, Relevance, Coherence, Fluency, Similarity, Safety
+C. CPU and memory utilization only
+D. Word Error Rate
+
 ---
 
 ## 🎯 Answer Key (No Cheating!)
@@ -409,6 +439,11 @@ D. Identify → Measure → Mitigate → Operate
                                        53. C
                                        54. B
                                        55. D
+                                       56. B
+                                       57. C
+                                       58. B
+                                       59. A
+                                       60. B
 ```
 
 ---
@@ -537,18 +572,28 @@ D. Identify → Measure → Mitigate → Operate
 
 **Q55. Answer: D (Identify → Measure → Mitigate → Operate).** The Microsoft RAI workflow. A / B / C wrong ordering or wrong stages. **Takeaway:** memorize the four stages and their order.
 
+**Q56. Answer: B (Agent, Thread, Message, Run).** The Foundry Agent Service primitives, the Thread holds conversation memory across turns. A is the project hierarchy; C is AI Search; D is Prompt Flow terminology. **Takeaway:** Agent · Thread · Message · Run.
+
+**Q57. Answer: C (File Search).** File Search does RAG over files you upload directly to the agent, no separate index required. A runs code; B calls your functions; D browses the web. **Takeaway:** uploaded-file RAG = File Search tool.
+
+**Q58. Answer: B (Connected agents, orchestrator + specialized sub-agents).** Multi-agent orchestration delegates each narrow job to a specialized agent the orchestrator calls as a tool, so each is evaluated and maintained independently. A is brittle; C cannot share context; D does no reasoning. **Takeaway:** specialized sub-agents behind an orchestrator beat one mega-prompt.
+
+**Q59. Answer: A (Name, description, JSON parameter schema).** The model decides tool calls from the tool's name, description, and JSON Schema. B / C / D don't influence selection. **Takeaway:** good descriptions + accurate schemas = reliable function calling.
+
+**Q60. Answer: B (Groundedness, Relevance, Coherence, Fluency, Similarity, Safety).** Foundry Evaluation's built-in evaluators, the release-gate metric set for GenAI apps. A is training metrics; C is infra; D is speech. **Takeaway:** quality gate = Foundry Evaluation on a golden set.
+
 ---
 
-## 📊 Scoring (out of 55 base + 7 case-study sub-questions = 62 graded items)
+## 📊 Scoring (out of 60 base + 7 case-study sub-questions = 67 graded items)
 
 | Score | Verdict |
 |---|---|
-| 56–62 | 🏆 Book the exam this week |
-| 49–55 | ✅ Solid, review wrong answers, take exam in 1–2 weeks |
-| 39–48 | ⚠️ Pass mark but not comfortable, re-take with another set in 1 week |
-| <39 | 🔁 Re-study weak modules; pivot to specific Quiz.md / Cheat-Sheet review |
+| 61–67 | 🏆 Book the exam this week |
+| 53–60 | ✅ Solid, review wrong answers, take exam in 1–2 weeks |
+| 42–52 | ⚠️ Pass mark but not comfortable, re-take with another set in 1 week |
+| <42 | 🔁 Re-study weak modules; pivot to specific Quiz.md / Cheat-Sheet review |
 
-(Note: the real AI-102 returns a 700/1000 scaled score. ~70% raw is the practical target.)
+(Note: the real AI-103 returns a 700/1000 scaled score. ~70% raw is the practical target.)
 
 ---
 
@@ -575,14 +620,15 @@ For EACH wrong answer:
 | 51 | Case spans M2, M4, M5, M7 |
 | 52 | Case spans M5, M6 |
 | 53–55 | M1/M2/M7 (cross-cutting) |
+| 56–60 | M8 (Generative AI + Agents + Multi-Agent + Foundry) |
 
 ---
 
 ## 🧠 24 Hours Before The Real Exam
 
 - ✅ Re-read every Cheat-Sheet.md (8 modules × ~2 min)
-- ✅ Microsoft Learn's free AI-102 practice assessment, take it twice
-- ✅ Review the official AI-102 study guide once more
+- ✅ Microsoft Learn's free AI-103 practice assessment, take it twice
+- ✅ Review the official AI-103 study guide once more
 - ✅ Sleep 8 hours
 - ✅ For online proctored, test webcam + room scan the night before
 - ✅ For in-center, print your confirmation, bring 2 IDs

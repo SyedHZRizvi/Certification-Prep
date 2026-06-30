@@ -1,6 +1,6 @@
 # Module 5: Document Intelligence & Knowledge Mining 📄
 
-> **Why this module matters:** This is the LARGEST single module on the AI-102 exam by surface area. Document Intelligence + Azure AI Search together touch 15–20% of questions and are central to every RAG architecture (Modules 7 & 8). Master the prebuilt vs custom model distinction AND the index/indexer/skillset triangle.
+> **Why this module matters:** **Implement information extraction / document intelligence** is 10–15% of AI-103, but its real weight is bigger than that number suggests: Document Intelligence + Azure AI Search are the retrieval backbone of every RAG architecture, which lands inside the heaviest domain on the exam (**Implement generative AI and agentic solutions**, 30–35% — Modules 7 & 8). This teaching carries straight over from the older blueprint, only the naming and domain weight changed. Master the prebuilt vs custom model distinction AND the index/indexer/skillset triangle.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1 (resource model, SDKs, auth)

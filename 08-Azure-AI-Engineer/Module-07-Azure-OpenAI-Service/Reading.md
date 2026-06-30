@@ -1,6 +1,6 @@
 # Module 7: Azure OpenAI Service 🧠
 
-> **Why this module matters:** Generative AI is 15–20% of AI-102 on paper, but it's the area that grows every exam refresh. Master deployments, prompts, content filters, fine-tuning, and "On Your Data" for RAG.
+> **Why this module matters:** **Implement generative AI and agentic solutions** is the single heaviest domain on AI-103 at 30–35% — generative apps plus single- and multi-agent orchestration on Azure AI Foundry (memory/threads, function-calling, tool schemas, evaluation, observability, and safety). This module is your generative-AI foundation: master deployments, prompts, content filters, fine-tuning, and "On Your Data" for RAG here, then Module 8 builds the agent layer on top.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1 (Azure resource model, auth)

@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 2, Azure AI Engineer (AI-102 Style)
+# 🧪 Practice Exam 2, Azure AI App & Agent Developer (AI-103 Style)
 
-> **Conditions:** Set an 80-minute timer. 45 questions. Treat it like the real thing, no notes, no Googling.
-> **Pass mark:** 32/45 (~70%)
+> **Conditions:** Set an 85-minute timer. 50 questions. Treat it like the real thing, no notes, no Googling.
+> **Pass mark:** 35/50 (~70%)
 > Take this AFTER finishing all 8 modules.
 
 ---
@@ -112,7 +112,7 @@ D. CosmosDbPartitionedStorage or BlobStorage
 
 ### 18. Which is TRUE about LUIS?
 A. Recommended for new bots
-B. Still on the AI-102 exam as primary
+B. Still the primary intent service for new projects
 C. Replaced by Bot Service
 D. Authoring is retired, use CLU instead
 
@@ -292,6 +292,36 @@ B. OpenAI.com is cheaper in every case
 C. Azure has different models
 D. Azure adds RBAC, private networking, region pinning, content filters, residency
 
+### 46. In a single-agent Azure AI Foundry Agent Service setup, the primitive that holds the running conversation history (so the agent has memory across turns) is the:
+A. Connection
+B. Thread
+C. Deployment
+D. Skillset
+
+### 47. You are building a multi-agent system on Azure AI Foundry where a "Triage" agent must hand a customer request to a specialized "Refunds" agent and then to a "Shipping" agent. Which orchestration pattern fits BEST?
+A. A single monolithic prompt with every instruction concatenated
+B. Two unrelated deployments with no shared thread
+C. A Custom Vision pipeline
+D. Connected agents, a primary orchestrator agent that delegates to specialized sub-agents as tools
+
+### 48. When you register a function tool with an Azure AI Foundry agent, the model decides whether to call it based primarily on:
+A. The alphabetical order of the functions
+B. The function's name, description, and JSON parameter schema you supply
+C. The deployment region
+D. The content-filter threshold
+
+### 49. To catch quality regressions before shipping a generative-AI app, the Foundry capability that scores responses against a golden dataset on Groundedness, Relevance, Coherence, Fluency, Similarity, and Safety is:
+A. Foundry Evaluation (evaluators run in the SDK or portal)
+B. Prompt Shields
+C. Knowledge Store
+D. Document Translation
+
+### 50. After your agent app goes live, the recommended way to trace each run (tool calls, token usage, latency, and per-step errors) for observability is:
+A. Read the raw model weights
+B. Disable logging to save cost
+C. Application Insights / OpenTelemetry tracing wired into the Foundry project
+D. Manual screenshots of the chat
+
 ---
 
 ## 🎯 Answer Key (No Cheating!)
@@ -308,6 +338,11 @@ D. Azure adds RBAC, private networking, region pinning, content filters, residen
 9.  C    18. D    27. B    36. A    43. C
                                        44. B
                                        45. D
+                                       46. B
+                                       47. D
+                                       48. B
+                                       49. A
+                                       50. C
 ```
 
 ---
@@ -886,14 +921,78 @@ D. Azure adds RBAC, private networking, region pinning, content filters, residen
 
 ---
 
+**Q46. Answer: B (Thread)**
+
+**Why B is correct.** In Foundry Agent Service the primitives are Agent, Thread, Message, and Run. The Thread is the stateful conversation container, it persists the message history so the agent has memory across turns without you re-sending the whole transcript.
+
+**Why the other options are wrong.**
+- A (Connection): A reusable handle to an external service, not conversation memory.
+- C (Deployment): The model endpoint, not per-conversation state.
+- D (Skillset): An Azure AI Search enrichment pipeline.
+
+**Exam-takeaway.** Agent · Thread · Message · Run, the Thread is the memory.
+
+---
+
+**Q47. Answer: D (Connected agents, orchestrator delegating to specialized sub-agents)**
+
+**Why D is correct.** Multi-agent orchestration on Azure AI Foundry uses a primary (orchestrator) agent that calls specialized agents as tools, each agent owns a narrow skill (Refunds, Shipping). This keeps prompts focused, lets you evaluate each agent independently, and scales better than one giant prompt.
+
+**Why the other options are wrong.**
+- A: A single monolithic prompt is brittle and hard to evaluate or maintain.
+- B: Two deployments with no shared thread cannot hand off context.
+- C: Custom Vision is image classification/detection, irrelevant here.
+
+**Exam-takeaway.** Specialized sub-agents behind an orchestrator beat one mega-prompt.
+
+---
+
+**Q48. Answer: B (Function name, description, and JSON parameter schema)**
+
+**Why B is correct.** Function/tool calling works because you describe each tool with a name, a natural-language description, and a JSON Schema for its parameters. The model uses that schema to decide when to call the tool and how to fill the arguments.
+
+**Why the other options are wrong.**
+- A: Order is irrelevant.
+- C / D: Region and content-filter threshold don't drive tool selection.
+
+**Exam-takeaway.** Clear tool descriptions + accurate JSON schemas = reliable function calling.
+
+---
+
+**Q49. Answer: A (Foundry Evaluation)**
+
+**Why A is correct.** Foundry Evaluation runs built-in evaluators (Groundedness, Relevance, Coherence, Fluency, Similarity, Safety) plus custom ones over a golden dataset, used as a release gate before shipping.
+
+**Why the other options are wrong.**
+- B (Prompt Shields): Detects prompt-injection, not quality scoring.
+- C (Knowledge Store): A projection of enriched search data.
+- D (Document Translation): Translates files.
+
+**Exam-takeaway.** Quality regression gate = Foundry Evaluation on a golden set.
+
+---
+
+**Q50. Answer: C (Application Insights / OpenTelemetry tracing in the Foundry project)**
+
+**Why C is correct.** Observability for generative-AI apps uses OpenTelemetry-based tracing surfaced in Application Insights, capturing each run's tool calls, token usage, latency, and errors per step.
+
+**Why the other options are wrong.**
+- A: You never inspect raw weights for app observability.
+- B: Disabling logging removes the very signal you need.
+- D: Screenshots aren't telemetry.
+
+**Exam-takeaway.** Observability = OpenTelemetry tracing → Application Insights.
+
+---
+
 ## 📊 Scoring
 
 | Score | Verdict |
 |---|---|
-| 41–45 | 🏆 Ready for the Final Mock and the real exam |
-| 32–40 | ✅ Solid; review wrong answers, then attempt the Final Mock |
-| 23–31 | ⚠️ Re-study weak modules; retake in 3 days |
-| <23 | 🔁 Restart from your weakest modules |
+| 45–50 | 🏆 Ready for the Final Mock and the real exam |
+| 35–44 | ✅ Solid; review wrong answers, then attempt the Final Mock |
+| 25–34 | ⚠️ Re-study weak modules; retake in 3 days |
+| <25 | 🔁 Restart from your weakest modules |
 
 ---
 
@@ -917,6 +1016,7 @@ For EACH wrong answer:
 | 37–40 | Module 2 (Responsible AI) |
 | 41A–C | Case study spans Modules 4, 5, 6 |
 | 42–45 | Modules 1, 3, 4, 7 |
+| 46–50 | Module 8 (Generative AI + Agents + Foundry) |
 
 ---
 

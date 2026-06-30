@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 1, Azure AI Engineer (AI-102 Style)
+# 🧪 Practice Exam 1, Azure AI App & Agent Developer (AI-103 Style)
 
 > **Conditions:** Set a 50-minute timer. 28 questions. Treat it like the real thing, no notes, no Googling.
-> **Pass mark:** 20/28 (~70%, matches the real AI-102 cut score)
+> **Pass mark:** 20/28 (~70%, matches the real AI-103 cut score)
 > Take this AFTER finishing Modules 1–4.
 
 ---
@@ -212,7 +212,7 @@ D. It exposes most AI services (Vision, Language, Translator, Speech, Document I
 
 **Q1. Answer: B (Azure AI services)**
 
-**Why B is correct.** Microsoft rebranded the umbrella from "Cognitive Services" to "Azure AI services" in 2023; the AI-102 blueprint uses the current name (Module 1 § "Naming").
+**Why B is correct.** Microsoft rebranded the umbrella from "Cognitive Services" to "Azure AI services" in 2023; the AI-103 blueprint uses the current name (Module 1 § "Naming").
 
 **Why the other options are wrong.**
 - A (Azure ML Services): Azure ML is the broader ML platform (training, registries, endpoints), not the umbrella for pretrained AI APIs.

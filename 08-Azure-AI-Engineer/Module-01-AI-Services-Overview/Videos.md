@@ -34,11 +34,11 @@
       <span class="vg-duration">⏱ 10 min · The 2024 service catalog</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+AI+Engineer+AI-102+study+guide+Tim+Warner" target="_blank" rel="noopener" data-video-id="I7fdWafTcPY">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+AI+Engineer+AI-103+study+guide" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AI-102 Study Guide Walkthrough</p>
+      <p class="vg-title">AI-103 Study Guide Walkthrough</p>
       <p class="vg-creator">Tim Warner</p>
       <span class="vg-duration">⏱ 18 min · Domain weights + what to focus on</span>
     </div>

@@ -1,6 +1,6 @@
 # Module 3: Computer Vision 👁️
 
-> **Why this module matters:** Vision is 15–20% of AI-102 and the most code-heavy domain. You need to know FOUR services cold: Azure AI Vision (Image Analysis 4.0 + OCR/Read), Face, Custom Vision, and Video Indexer.
+> **Why this module matters:** **Implement computer vision** is 10–15% of AI-103 and one of the most code-heavy domains. You need to know FOUR services cold: Azure AI Vision (Image Analysis 4.0 + OCR/Read), Face, Custom Vision, and Video Indexer. This teaching carries straight over from the older blueprint, only the naming and the domain weight changed.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1 (resource model, SDK packages, auth), [Module 1 Reading](../Module-01-AI-Services-Overview/Reading.md)

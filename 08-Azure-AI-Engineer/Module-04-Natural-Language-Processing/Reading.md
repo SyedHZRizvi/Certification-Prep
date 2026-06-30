@@ -1,6 +1,6 @@
 # Module 4: Natural Language Processing 🗣️
 
-> **Why this module matters:** NLP is 15–20% of AI-102 and is split across three services, Azure AI Language, Translator, and Speech. The exam tests each by SDK call shape, by feature name, and by service selection. Don't mix them up.
+> **Why this module matters:** **Implement natural language / text analysis** is 10–15% of AI-103 and is split across three services, Azure AI Language, Translator, and Speech. The exam tests each by SDK call shape, by feature name, and by service selection. This NLP teaching carries straight over from the older blueprint, only the naming and domain weight changed. Don't mix the three services up.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The Azure AI resource model + auth, [Module 1](../Module-01-AI-Services-Overview/Reading.md)
@@ -20,7 +20,7 @@ Maya's app is now in 14 countries. Users:
 - Talk to her chatbot by voice → she needs **speech-to-text** in any language
 - Get a voice response → **text-to-speech** with a localized voice
 
-That's literally the AI-102 NLP triad: **Language** (text understanding), **Translator** (multi-language), **Speech** (voice in + voice out). Let's break each one down.
+That's literally the AI-103 NLP triad: **Language** (text understanding), **Translator** (multi-language), **Speech** (voice in + voice out). Let's break each one down.
 
 ---
 

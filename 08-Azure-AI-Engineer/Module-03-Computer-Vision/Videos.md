@@ -128,7 +128,7 @@
 | **Microsoft Reactor** | Live coding |
 | **Adam Marczak, Azure for Everyone** | Clear explainers |
 | **Cloud Academy** | Lab-style walkthroughs |
-| **Tim Warner** | AI-102 exam focus |
+| **Tim Warner** | Azure AI / AI-103 focus |
 
 ---
 

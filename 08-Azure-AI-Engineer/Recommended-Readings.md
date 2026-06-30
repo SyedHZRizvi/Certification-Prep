@@ -1,19 +1,19 @@
-# Recommended Readings, Azure AI Engineer (AI-102)
+# Recommended Readings, Azure AI Apps and Agents Developer (AI-103)
 
-> This is the *outside-the-cert-book* reading list. The official AI-102 study guide and Microsoft Learn paths teach you the exam. These materials teach you the discipline, the technical foundations, the regulatory shape, and the production reality that the exam can only test in a limited way. Pair this list with the modules; don't substitute.
+> This is the *outside-the-cert-book* reading list. The official AI-103 study guide and Microsoft Learn paths teach you the exam. These materials teach you the discipline, the technical foundations, the regulatory shape, and the production reality that the exam can only test in a limited way. Pair this list with the modules; don't substitute.
 
 ---
 
 ## 📚 Canonical textbooks
 
-### 1. *Exam Ref AI-102: Designing and Implementing a Microsoft Azure AI Solution*, Jim Cheshire (Microsoft Press, 2024 edition; ISBN 978-0-13-816598-3)
-The official Microsoft Press exam reference. Maps section-by-section to the AI-102 blueprint. **When to engage:** read alongside Modules 1–8; use it for blueprint-section coverage you may have skimmed here.
+### 1. Official AI-103 study guide + Azure AI Foundry documentation (Microsoft Learn)
+The authoritative, free reference for *Developing AI Apps and Agents on Azure*. Start with the [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) for the skill outline, then work through the [Azure AI Foundry documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/) (generative AI apps, single- and multi-agent orchestration, evaluation, observability). Maps section-by-section to the blueprint. **When to engage:** read alongside Modules 1–8; use it for blueprint-section coverage you may have skimmed here.
 
 ### 2. *Hands-On Machine Learning with Microsoft Azure ML* Thomas K. Abraham et al. (Packt, 2023; ISBN 978-1-80324-225-4) sometimes also referenced as Bertrand (2023)
 Practical, code-first walkthrough of Azure ML and its overlap with the AI-services + Foundry surface. **When to engage:** before the Capstone, gives the hands-on muscle memory for resource provisioning and eval workflows.
 
 ### 3. *Deep Learning*, Ian Goodfellow, Yoshua Bengio, Aaron Courville (MIT Press, 2016; ISBN 978-0-262-03561-3; free at deeplearningbook.org)
-The canonical deep-learning textbook. Pre-transformer-era, but every chapter on optimization, regularization, and CNNs/RNNs is still required reading. **When to engage:** Module 3 (vision) and Module 7 (model anatomy), read chapters 1, 5, 6, 9 for AI-102 purposes.
+The canonical deep-learning textbook. Pre-transformer-era, but every chapter on optimization, regularization, and CNNs/RNNs is still required reading. **When to engage:** Module 3 (vision) and Module 7 (model anatomy), read chapters 1, 5, 6, 9 for AI-103 purposes.
 
 ### 4. *Designing Data-Intensive Applications*, Martin Kleppmann (O'Reilly, 2017; ISBN 978-1-449-37332-0)
 Not AI-specific, but the chapters on distributed systems, replication, consistency, and indexes are the implicit context every Azure AI engineer needs when reasoning about Azure AI Search, Cosmos DB, and durability of agent state. **When to engage:** Module 5 (knowledge mining) and Module 8 (production GenAI apps).
@@ -26,7 +26,7 @@ Industry-flavored NLP, covers the same problems Azure AI Language solves, with t
 ## 📰 Seminal papers (read these in this order)
 
 ### 1. Vaswani et al. (2017). *"Attention Is All You Need."* NeurIPS 2017. [arxiv.org/abs/1706.03762](https://arxiv.org/abs/1706.03762)
-The transformer paper. Every model in Modules 3–8 descends from it. **Why it matters:** if you cannot explain attention in your own words you cannot pass a senior ML-engineer architecture interview, however well you do on AI-102.
+The transformer paper. Every model in Modules 3–8 descends from it. **Why it matters:** if you cannot explain attention in your own words you cannot pass a senior ML-engineer architecture interview, however well you do on AI-103.
 
 ### 2. Devlin et al. (2018). *"BERT: Pre-training of Deep Bidirectional Transformers."* NAACL 2019.
 The encoder-only lineage that powers many of Azure AI Language's classification and NER models. **Why it matters:** explains why "Language understanding" works differently from "language generation."
@@ -44,7 +44,7 @@ In-context learning + few-shot prompting are products of this paper. **Why it ma
 **Why it matters:** alternative-alignment view to Microsoft's Responsible AI Standard, useful for understanding the *space* of safety approaches, not just Microsoft's.
 
 ### 7. Microsoft (June 2022). *Responsible AI Standard v2.* [microsoft.com/en-us/ai/principles-and-approach](https://www.microsoft.com/en-us/ai/principles-and-approach)
-**Why it matters:** the corporate standard the AI-102 RAI questions test against. Read it once cover-to-cover; you'll recognize every Module 2 concept.
+**Why it matters:** the corporate standard the AI-103 RAI questions test against. Read it once cover-to-cover; you'll recognize every Module 2 concept.
 
 ### 8. NIST (January 2023). *AI Risk Management Framework, AI RMF 1.0.* [nist.gov/itl/ai-risk-management-framework](https://www.nist.gov/itl/ai-risk-management-framework)
 **Why it matters:** the US-federal alignment Azure customers in regulated industries map to. Pair with Module 2.
@@ -78,8 +78,8 @@ Pragmatic, daily-updated writing on LLM engineering across providers (including 
 
 ## 🎓 Free academic courses
 
-### 1. Microsoft Learn, AI-102 learning path: [learn.microsoft.com/en-us/training/courses/ai-102t00](https://learn.microsoft.com/en-us/training/courses/ai-102t00)
-Free, hands-on labs included. **When to engage:** in parallel with each module here; the labs cement the SDK calls.
+### 1. Microsoft Learn, AI-103 learning path: [learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-agents-developer/](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-agents-developer/)
+Free, hands-on labs included; covers generative AI apps, agents, and multi-agent orchestration on Azure AI Foundry alongside the vision/language/document modules. **When to engage:** in parallel with each module here; the labs cement the SDK calls.
 
 ### 2. Stanford CS224n *Natural Language Processing with Deep Learning* (Chris Manning) free lectures + materials on YouTube and Stanford's CS website
 The graduate-level NLP curriculum. **When to engage:** if you want to understand *why* the NLP services work the way they do; pair with Module 4. (Free lectures on Stanford Online + YouTube.)
@@ -91,7 +91,7 @@ Karpathy's free YouTube series builds GPT-style models from scratch. **When to e
 Free, live walkthroughs of Azure AI scenarios. **When to engage:** monthly; great for staying current.
 
 ### 5. Coursera, *Microsoft Azure AI Fundamentals* (AI-900 path; free to audit)
-Lower-level than AI-102, but useful prereq fill-in for anyone shaky on Azure ML, vision, or NLP fundamentals. **When to engage:** before Module 1 if Azure-AI vocabulary is new.
+Lower-level than AI-103, but useful prereq fill-in for anyone shaky on Azure ML, vision, or NLP fundamentals. **When to engage:** before Module 1 if Azure-AI vocabulary is new.
 
 ---
 
@@ -99,7 +99,7 @@ Lower-level than AI-102, but useful prereq fill-in for anyone shaky on Azure ML,
 
 | Week | Course module | Outside reading |
 |---|---|---|
-| 1 | Module 1 (AI Services) | *Exam Ref* Ch. 1–2; Microsoft Learn AI-102 path Unit 1; Microsoft AI blog (back 30 days) |
+| 1 | Module 1 (AI Services) | AI-103 study guide (skill outline); Microsoft Learn AI-103 path Unit 1; Microsoft AI blog (back 30 days) |
 | 2 | Module 2 (Responsible AI) | Microsoft RAI Standard v2 (cover-to-cover); NIST AI RMF 1.0; Sarah Bird Build 2024 talk |
 | 3 | Module 3 (Vision) | Vaswani et al. (2017); *Deep Learning* Ch. 9 (CNNs); Microsoft Mechanics on Vision 4.0 |
 | 4 | Module 4 (NLP) | Devlin et al. (2018); Vajjala et al. NLP textbook Ch. 1–3, 8 |

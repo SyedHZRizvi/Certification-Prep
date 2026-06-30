@@ -1,6 +1,6 @@
 # Module 6: Conversational AI 💬
 
-> **Why this module matters:** AI-102's "NLP" and "agentic solution" domains cover the chatbot stack: Azure AI Bot Service, Bot Framework, CLU, Question Answering, and how they fit together through orchestration workflows. This module ties Module 4's NLP services into deployable bots.
+> **Why this module matters:** Conversational AI is where the old chatbot stack meets the new **agentic** one. AI-103's heaviest domain, **Implement generative AI and agentic solutions** (30–35%), now frames bots as a stepping stone to agents: the classic Azure AI Bot Service, Bot Framework, CLU, and Question Answering pieces still teach the conversation, channel, and orchestration plumbing you'll reuse when you build single- and multi-agent solutions on Azure AI Foundry (Module 8). This module ties Module 4's NLP services into deployable bots, then points them toward the bot-to-agent path the exam emphasizes.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1 (auth, identities)
@@ -39,7 +39,7 @@ Bot Service is Azure's managed hosting for bots built with the **Bot Framework S
 You author bots with one of:
 
 - **Bot Framework SDK** (C#, JavaScript/TypeScript, Python, Java), code-first
-- **Power Virtual Agents / Copilot Studio**, low-code (less common on AI-102)
+- **Power Virtual Agents / Copilot Studio**, low-code (less common on the exam)
 - **Bot Framework Composer** visual editor on top of the SDK (deprecated for new work Microsoft now points to Copilot Studio + Foundry)
 
 ### Channels, the Bot Service magic
@@ -280,7 +280,7 @@ Microsoft now positions **Azure AI Foundry / Copilot Studio** as the modern path
 - Building **agents** with **Tool calling** + **plugins**
 - Custom **prompt flow** orchestrations
 
-For AI-102, you still need to know **Bot Service + Bot Framework + CLU + QA + Orchestration** as the classic stack. Module 8 covers the agent + Foundry side.
+For AI-103, you still need to know **Bot Service + Bot Framework + CLU + QA + Orchestration** as the classic stack, then see how it evolves into agents: the same channel, dialog, and orchestration concepts carry over when you build single- and multi-agent solutions on Azure AI Foundry. Module 8 covers that agent + Foundry side.
 
 ---
 

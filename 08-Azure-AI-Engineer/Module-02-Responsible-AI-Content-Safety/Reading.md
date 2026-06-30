@@ -1,6 +1,6 @@
 # Module 2: Responsible AI & Content Safety 🛡️
 
-> **Why this module matters:** Microsoft built Azure AI around six Responsible AI (RAI) principles. The exam tests them BY NAME and tests Content Safety APIs by SHAPE. Combined, this is easily 10–15% of your exam, and the easiest 10–15% to lock in.
+> **Why this module matters:** Microsoft built Azure AI around six Responsible AI (RAI) principles. The exam tests them BY NAME and tests Content Safety APIs by SHAPE. On AI-103 this is governance and safety machinery you'll be expected to wire into every solution, it lands under **Plan and manage an Azure AI solution** (25–30%) and is reinforced again inside the safety, evaluation, and observability skills of the generative-AI domain. It's also some of the easiest points to lock in.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The Azure AI resource model + auth methods, see [Module 1](../Module-01-AI-Services-Overview/Reading.md)
@@ -305,7 +305,7 @@ The whole thing was governed by an internal Impact Assessment matching Microsoft
 
 **Outcome.** The Tax Assist feature was reportedly used by millions of online filers across the 2024 season (per H&R Block's Q4 FY2024 earnings call, June 2024) with no publicly reported safety incident attributed to the AI layer. Internal eval data shared at Microsoft Build 2024 indicated groundedness scores above 0.9 on a holdout set of 500+ tax questions and a measurable lift in completion rate for users who engaged the assistant. By late 2024, the same architecture was extended to Spanish-language flows.
 
-**Lesson for the exam / for practitioners.** This is the exam-blueprint case: every Content Safety dial mentioned in this module (categories, severity thresholds, Prompt Shields, Groundedness Detection, Protected Material, abuse-log opt-out) maps onto a real production decision H&R Block had to make. AI-102 tests them in isolation; the case shows them *composed*. Note especially that "Identify → Measure → Mitigate → Operate" wasn't optional, it was the structure that let H&R Block defend the deployment to the IRS, to its insurance carrier, and to a privacy-conscious customer base.
+**Lesson for the exam / for practitioners.** This is the exam-blueprint case: every Content Safety dial mentioned in this module (categories, severity thresholds, Prompt Shields, Groundedness Detection, Protected Material, abuse-log opt-out) maps onto a real production decision H&R Block had to make. AI-103 tests them in isolation; the case shows them *composed*. Note especially that "Identify → Measure → Mitigate → Operate" wasn't optional, it was the structure that let H&R Block defend the deployment to the IRS, to its insurance carrier, and to a privacy-conscious customer base.
 
 **Discussion (Socratic).**
 - Q1: H&R Block chose **abuse-monitoring opt-out** for tax content. From Microsoft's safety-team perspective, what's the implicit trade-off they accepted, and how would you defend it to an EU AI Act regulator if the same product launched in Germany in 2026?

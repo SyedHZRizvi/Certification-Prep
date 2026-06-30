@@ -18,7 +18,7 @@ This is **The Cert Hub** — a Jekyll site authored by Humayun Zafar. It hosts s
 | 5 | `05-Azure-Fundamentals` | AZ-900 | 6 |
 | 6 | `06-Azure-Administrator` | AZ-104 | 10 |
 | 7 | `07-AWS-AI-Practitioner` | AIF-C01 | 8 |
-| 8 | `08-Azure-AI-Engineer` | AI-102 | 8 |
+| 8 | `08-Azure-AI-Engineer` | AI-103 | 8 |
 | 9 | `09-CompTIA-Security-Plus` | SY0-701 | 10 |
 | 10 | `10-ASCM-CSCP` | CSCP (Supply Chain Pro) | 10 |
 | 11 | `11-ASCM-CPIM` | CPIM (Planning & Inventory) | 8 |
@@ -251,7 +251,7 @@ The live site has now grown to:
 - **15,500+** practice questions across all quizzes + flashcards + mock exams
 - **1,325+** total study hours
 
-The **Generative & Agentic AI** category is its own homepage section containing 7 courses: AIF-C01 + AI-102 (moved from "IT, Cloud & Systems Administration") + 5 specialty courses (Claude Architect, Prompt Engineering Specialist, Generative AI Engineer, AWS ML Specialty MLS-C01, **Google AI Pro** — aligned with Google Cloud Generative AI Leader + Professional ML Engineer credentials).
+The **Generative & Agentic AI** category is its own homepage section containing 7 courses: AIF-C01 + AI-103 (moved from "IT, Cloud & Systems Administration") + 5 specialty courses (Claude Architect, Prompt Engineering Specialist, Generative AI Engineer, AWS ML Engineer Associate MLA-C01, **Google AI Pro** — aligned with Google Cloud Generative AI Leader + Professional ML Engineer credentials).
 
 The **DevOps & Cloud-Native** track launched with **Certified Kubernetes Administrator (CKA)** — 8 modules, 17-task mock exam format, CNCF-aligned content covering all 5 exam domains in proportion to their weights.
 

@@ -46,7 +46,7 @@ Microsoft kept rebranding throughout 2023–2024. The exam uses **current** name
 
 ## 🧩 Azure AI Services Catalog (what's in the umbrella)
 
-These are the services you'll touch on AI-102:
+These are the services you'll touch on AI-103. On this exam they're the foundation you *plan and manage* before building generative and agentic solutions on top:
 
 | Category | Service | What it does | Typical resource kind |
 |---|---|---|---|
@@ -63,7 +63,7 @@ These are the services you'll touch on AI-102:
 | Generative | Azure OpenAI | GPT-4o, GPT-4, embeddings, DALL-E, Whisper | `OpenAI` |
 | Multi | **Azure AI services multi-service** | One resource, one key, access to most services above | `AIServices` (or `CognitiveServices`) |
 
-⚠️ **Note on retired services:** Anomaly Detector, Metrics Advisor, Personalizer, and the standalone "Language Understanding (LUIS)" service are all retired or in retirement. AI-102 has stopped asking about them as primary subjects. CLU has replaced LUIS. QnA Maker is replaced by Question Answering.
+⚠️ **Note on retired services:** Anomaly Detector, Metrics Advisor, Personalizer, and the standalone "Language Understanding (LUIS)" service are all retired or in retirement. The exam has stopped asking about them as primary subjects. CLU has replaced LUIS. QnA Maker is replaced by Question Answering.
 
 ---
 
@@ -197,7 +197,7 @@ Two flavors:
 
 ## 📦 SDKs You Need to Know
 
-The AI-102 exam shows code snippets. You're expected to read Python (and recognize C#/JS structure). Memorize package names:
+The exam shows code snippets. You're expected to read Python (and recognize C#/JS structure). Memorize package names:
 
 | Service | Python package | Client class |
 |---|---|---|
@@ -321,7 +321,7 @@ Content-Type: application/json
 
 **Outcome.** Microsoft's FY2024 disclosures (per CEO Satya Nadella, July 2024 earnings call) reported Azure OpenAI was used by 60,000+ customers, with the Azure AI business contributing 8 percentage points to Azure growth that quarter. By Q1 2025, the customer count crossed 65,000 (Microsoft Build 2024 keynote; verified against Microsoft Investor Relations materials, checked 2026-05). Critically: there was no major public security incident traced to the platform itself between GA (Jan 2023) and 2026-05, the architectural choices (private networking, MI, data zones) held.
 
-**Lesson for the exam / for practitioners.** Every "boring" feature this module covers multi-service vs single-service, custom subdomains for Entra ID, managed identity, Private Endpoints, customer-managed keys, quota tiers is the same machinery that lets Azure OpenAI host ChatGPT Enterprise at scale. AI-102 tests these as separate questions because they're separate dials. In production, they compose into a defensible platform.
+**Lesson for the exam / for practitioners.** Every "boring" feature this module covers multi-service vs single-service, custom subdomains for Entra ID, managed identity, Private Endpoints, customer-managed keys, quota tiers is the same machinery that lets Azure OpenAI host ChatGPT Enterprise at scale. AI-103 tests these under **Plan and manage an Azure AI solution** because they're separate dials. In production, they compose into a defensible platform.
 
 **Discussion (Socratic).**
 - Q1: If you were the architect for a new ChatGPT-style consumer product in 2026, would you use Azure OpenAI (gated, RBAC-heavy, region-pinned) or pre-trained open-weights models on Azure Machine Learning? Build the strongest argument for each, what's the implicit trade-off you're accepting?
@@ -389,4 +389,4 @@ You now know:
 - 📖 [Use managed identities with Azure AI](https://learn.microsoft.com/en-us/azure/ai-services/authentication#authenticate-with-microsoft-entra-id)
 - 📖 [Azure SDK for Python, AI packages](https://learn.microsoft.com/en-us/python/api/overview/azure/ai)
 - 📖 [Azure AI services pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/)
-- 📖 [AI-102 official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-102)
+- 📖 [AI-103 official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103)

@@ -1,4 +1,4 @@
-# Capstone Project, Azure AI Engineer (AI-102)
+# Capstone Project, Azure AI Apps and Agents Developer (AI-103)
 
 > **Pedagogical intent.** This capstone is the synthesis of every module in `08-Azure-AI-Engineer/`. You will design and partially build a production-grade GenAI system end-to-end under realistic constraints. The grading rubric mirrors the *implicit* rubric Microsoft would apply to a senior Azure AI engineer interview at a mid-market enterprise.
 
@@ -21,7 +21,7 @@ You have just been hired as the **Azure AI Engineer** at **Harbor Mutual Insuran
 - **Regulatory:** HIPAA-defensible for PHI-adjacent fields; GLBA for financial data; NAIC Model Bulletin on AI in insurance (2023) compliance posture; preparation for the EU AI Act (2024) if you expand into the EU operations.
 - **Security:** No keys in code; Private Endpoints + disabled public network access; Customer-Managed Keys (CMK) via Key Vault for at-rest encryption of training data and search index; approved Azure OpenAI **abuse-monitoring opt-out** for PHI flows.
 - **Cost ceiling:** $720K/year all-in (Azure consumption + Foundry features). Inflation-adjusted scenarios required for the cost forecast.
-- **Operational:** Go/no-go review against the current Microsoft AI-102 blueprint sections (Plan + Manage; Generative AI Solutions; Agentic Solutions; Computer Vision; NLP; Knowledge Mining + Information Extraction).
+- **Operational:** Go/no-go review against the current Microsoft AI-103 blueprint sections (Plan & Manage an Azure AI Solution; Implement Generative AI and Agentic Solutions; Implement Computer Vision; Implement Natural Language / Text Analysis; Implement Information Extraction / Document Intelligence).
 - **Timeline:** 20 weeks. You will not ship "perfectly", the capstone evaluates how you sequence risk and what you defer.
 
 ---
@@ -40,7 +40,7 @@ You have just been hired as the **Azure AI Engineer** at **Harbor Mutual Insuran
 
 6. **Observability dashboard spec.** What goes on the dashboard, why, and what alert threshold triggers a runbook. Cover: TPM/RPM utilization, 429 rate, content-filter trigger counts, p95 latency, groundedness drift vs baseline, evaluation-set score drift over time, per-deployment cost burn. Connect to Application Insights + Log Analytics; specify retention.
 
-7. **Go/no-go review document.** Cross-reference against current AI-102 blueprint sections (use the [Microsoft AI-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-102) for the latest skill outline). For each section, score your architecture: **Green** (production-ready), **Yellow** (needs a sprint), **Red** (deferred to phase 2). Defend each yellow + red with a written justification. This is your launch-readiness brief to the CIO.
+7. **Go/no-go review document.** Cross-reference against current AI-103 blueprint sections (use the [Microsoft AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) for the latest skill outline). For each section, score your architecture: **Green** (production-ready), **Yellow** (needs a sprint), **Red** (deferred to phase 2). Defend each yellow + red with a written justification. This is your launch-readiness brief to the CIO.
 
 ---
 
@@ -54,7 +54,7 @@ You have just been hired as the **Azure AI Engineer** at **Harbor Mutual Insuran
 | **Security review** | 15 | MI topology + Private Endpoints + CMK + Prompt Shields + RBAC trimming all addressed; least-privilege cited | Most controls; some gaps | Missing major controls; no per-resource MI plan |
 | **Cost forecast** | 10 | Cap respected; SKU rationale per workload; sensitivity at 2×/5× | Within cap; partial SKU rationale | Over cap; no sensitivity |
 | **Observability dashboard** | 10 | Specific metrics + thresholds + retention + runbook triggers | Generic dashboard plan | Vague telemetry |
-| **Go/no-go review** | 10 | Honest red/yellow/green; phase-2 plan; cross-referenced to AI-102 blueprint sections | Some sections scored; partial blueprint mapping | Generic "we're ready" or "nothing's ready" |
+| **Go/no-go review** | 10 | Honest red/yellow/green; phase-2 plan; cross-referenced to AI-103 blueprint sections | Some sections scored; partial blueprint mapping | Generic "we're ready" or "nothing's ready" |
 | **Written argument quality** | 5 | Defends every controversial choice with named-source citations | Some defense; few citations | Assertions without justification |
 
 **Pass mark:** 75/100. **"Excellent, graduate-level professional quality:** 90+/100.
@@ -63,7 +63,7 @@ You have just been hired as the **Azure AI Engineer** at **Harbor Mutual Insuran
 
 ## Suggested timeline (20 weeks)
 
-- **Week 1:** Decode Microsoft's current AI-102 blueprint; read each module's case study; download Transparency Notes for every service.
+- **Week 1:** Decode Microsoft's current AI-103 blueprint; read each module's case study; download Transparency Notes for every service.
 - **Week 2:** Architecture v0 sketch; identity + network skeleton; provision Hub + Project + Connections.
 - **Week 3:** Stand up Document Intelligence Custom Classifier + Custom Neural for claim-form variants.
 - **Week 4:** Build the search-index schema; load ~10% of the corpus; first vector + hybrid query.
@@ -82,7 +82,7 @@ You have just been hired as the **Azure AI Engineer** at **Harbor Mutual Insuran
 - **Week 17:** Observability dashboard v1; runbook authoring.
 - **Week 18:** Soft launch with one adjuster team; collect telemetry.
 - **Week 19:** Iterate on eval failures; tighten release-gate thresholds.
-- **Week 20:** **Go/no-go review.** Cross-reference to AI-102 blueprint; produce phase-2 plan.
+- **Week 20:** **Go/no-go review.** Cross-reference to AI-103 blueprint; produce phase-2 plan.
 
 ---
 
@@ -119,7 +119,7 @@ You should produce, in `~/capstone-azure-ai-engineer/`:
 - **Integrates ≥ 60% of the course modules** (Modules 1, 2, 5, 7, 8 are load-bearing; Modules 3, 4, 6 surface in extensions).
 - **Requires technical work AND written justification**, the rubric rewards the "argue your choice" pedagogy Harvard MBA cases use.
 - **Real, defensible scenario**, Harbor Mutual is fictional, but the regulatory, cost, and architectural constraints are the ones a mid-market insurer would face in 2026.
-- **Maps to the AI-102 blueprint**, passing this capstone implies passing the certification, with the bonus that you will have actual deployment artifacts and a story to tell at interview.
+- **Maps to the AI-103 blueprint**, passing this capstone implies passing the certification, with the bonus that you will have actual deployment artifacts and a story to tell at interview.
 
 Good luck. Ship something defensible. Then defend it.
 

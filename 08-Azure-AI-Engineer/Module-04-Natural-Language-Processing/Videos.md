@@ -126,7 +126,7 @@
 |---|---|
 | **Microsoft Learn** | Canonical examples |
 | **Microsoft Reactor** | Coding walkthroughs |
-| **Tim Warner** | AI-102 specific |
+| **Tim Warner** | Azure AI Engineer focus |
 | **Adam Marczak** | Animated explainers |
 | **John Savill** | Azure depth |
 

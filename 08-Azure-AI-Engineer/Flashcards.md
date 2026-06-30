@@ -266,7 +266,7 @@
 })();
 </script>
 
-# 🃏 Azure AI Engineer (AI-102) Master Flashcards
+# 🃏 Azure AI Apps and Agents Developer (AI-103) Master Flashcards
 
 > **How to use:** Each card has a Q on one line and A on the next. Use the interactive widget above (mark "Got it" / "Try again" to track your progress), or copy these into Anki / Quizlet / paper. Aim for daily review until the real exam.
 
@@ -613,14 +613,14 @@
 - Use the section dropdown above to focus on weak topics.
 - After each Quiz.md, add the questions you missed as new cards.
 - Aim for ≥ 90% "Got it" before your real exam date.
-- Take Microsoft Learn's free AI-102 practice assessment as your gut-check.
+- Take Microsoft Learn's free AI-103 practice assessment as your gut-check.
 
 ---
 
 ## 🎯 BEFORE THE EXAM
 
 1. Review every Cheat-Sheet.md (8 modules × ~2 min)
-2. Re-read the official AI-102 study guide
+2. Re-read the official AI-103 study guide
 3. Run Microsoft Learn's free practice assessment twice
 4. Sleep 8 hours
 5. Trust your prep. You've got this. 💪
