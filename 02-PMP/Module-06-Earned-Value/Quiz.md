@@ -189,7 +189,7 @@ CPI = EV/AC = $100K/$125K = 0.80. EAC = BAC/CPI = $250K/0.80 = $312.5K. VAC = BA
 
 ---
 
-## 📊 Score: 11+/12 🏆 / 9-10 ✅ / <9 🔁 (drill formulas!)
+## 📊 Score: 27+/29 🏆 / 22–26 ✅ / <22 🔁 (drill formulas!)
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 7: Risk](../Module-07-Risk/Reading.md)
 

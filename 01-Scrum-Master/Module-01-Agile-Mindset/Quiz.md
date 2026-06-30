@@ -1,7 +1,7 @@
 # ✏️ Module 1 Quiz: The Agile Mindset
 
-> **Instructions:** Answer all 12 questions WITHOUT looking at the reading.
-> Then check your answers below. Aim for 10/12 minimum.
+> **Instructions:** Answer all 30 questions WITHOUT looking at the reading.
+> Then check your answers below. Aim for 25/30 minimum.
 
 ---
 
@@ -286,10 +286,10 @@ Empirical process control means deciding based on what is observed, not predicte
 
 ## 📊 Score Yourself
 
-- 12/12 → 🏆 You've mastered Module 1. Move to Module 2!
-- 10–11/12 → ✅ Solid. Note your wrong answers, then move on.
-- 8–9/12 → ⚠️ Re-read the parts you missed. Then re-quiz tomorrow.
-- <8/12 → 🔁 Re-read the entire Reading.md. Watch videos #2 and #3 again.
+- 30/30 → 🏆 You've mastered Module 1. Move to Module 2!
+- 25–29/30 → ✅ Solid. Note your wrong answers, then move on.
+- 20–24/30 → ⚠️ Re-read the parts you missed. Then re-quiz tomorrow.
+- <20/30 → 🔁 Re-read the entire Reading.md. Watch videos #2 and #3 again.
 
 ---
 

@@ -250,7 +250,7 @@ The PMP exam expects approach selection based on context (tailoring), not prefer
 
 ---
 
-## 📊 Score: 24–27 🏆 / 20–23 ✅ / 16–19 ⚠️ / <16 🔁
+## 📊 Score: 29–33 🏆 / 25–28 ✅ / 20–24 ⚠️ / <20 🔁
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 2: People Domain](../Module-02-People-Domain/Reading.md)
 

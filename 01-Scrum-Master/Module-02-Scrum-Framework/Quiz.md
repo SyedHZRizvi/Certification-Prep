@@ -1,6 +1,6 @@
 # ✏️ Module 2 Quiz: The Scrum Framework
 
-> 15 questions. Aim for 13/15. Don't peek at answers!
+> 33 questions. Aim for 29/33. Don't peek at answers!
 
 ---
 

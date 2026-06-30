@@ -1,6 +1,6 @@
 # ✏️ Module 3 Quiz: Scrum Roles
 
-> 15 questions. Aim for 13/15. No peeking.
+> 33 questions. Aim for 29/33. No peeking.
 
 ---
 

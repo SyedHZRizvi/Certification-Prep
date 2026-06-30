@@ -1,7 +1,7 @@
 # 🏆 Final Mock Exam, PSM I
 
 > **Take this 1-2 days before your real exam.**
-> 60 minutes. 60 questions. Pass: 51/60 (85%).
+> 60 minutes. 80 questions. Pass: 68/80 (85%).
 > No notes. No pauses. Treat it like the real thing.
 
 ---
@@ -368,21 +368,179 @@ B. Sprint Review (already done)
 C. Sprint Retrospective (already done)
 D. Daily Scrum
 
+### 61. A team's board shows items as "done," but several are missing tests and haven't been integrated. Which empirical pillar is MOST compromised?
+A. Inspection
+B. Adaptation
+C. Transparency
+D. Commitment
+
+---
+
+### 62. Every Retrospective the team identifies the same impediment, yet nothing changes Sprint to Sprint. Which pillar of empiricism is breaking down?
+A. Transparency
+B. Inspection
+C. Adaptation
+D. Velocity
+
+---
+
+### 63. The Product Goal is:
+A. A list of every release for the year
+B. The long-term objective the Scrum Team plans against, residing in the Product Backlog
+C. Set fresh by the Developers each Sprint
+D. The same thing as the Sprint Goal
+
+---
+
+### 64. Which commitment belongs to the Sprint Backlog?
+A. Product Goal
+B. Sprint Goal
+C. Definition of Done
+D. Release Plan
+
+---
+
+### 65. The Definition of Done is best described as the commitment for which artifact?
+A. The Product Backlog
+B. The Sprint Backlog
+C. The Increment
+D. The Product Goal
+
+---
+
+### 66. "Self-managing" Scrum Teams means they internally decide:
+A. Their own salaries and hiring
+B. Who does what, when, and how
+C. The company's product strategy
+D. Which stakeholders to invite to the Review
+
+---
+
+### 67. Mid-Sprint, the Developers discover they need a skill no one on the team has. The BEST first response is:
+A. Cancel the Sprint
+B. Acquire or grow the capability within the team so they remain cross-functional
+C. Permanently hand that work to a separate component team
+D. Wait until the next Sprint and escalate to management
+
+---
+
+### 68. A Developer believes the current technical approach is wrong but says nothing to avoid conflict. Which Scrum value is MOST lacking?
+A. Focus
+B. Courage
+C. Commitment
+D. Respect
+
+---
+
+### 69. During the Daily Scrum a senior Developer dismisses a junior's idea as "a waste of time." Which Scrum value is MOST violated?
+A. Openness
+B. Respect
+C. Focus
+D. Commitment
+
+---
+
+### 70. Who is required to attend the Daily Scrum?
+A. The Developers
+B. The whole Scrum Team plus stakeholders
+C. The Scrum Master, always
+D. The Product Owner, always
+
+---
+
+### 71. A Sprint should be canceled when:
+A. The team is behind on a few backlog items
+B. The Sprint Goal becomes obsolete
+C. A stakeholder requests new features
+D. Velocity drops below the forecast
+
+---
+
+### 72. An organization wants to limit risk and get feedback sooner. The Scrum-aligned lever is:
+A. Lengthen the Sprint to fit more work
+B. Shorten the Sprint length
+C. Remove the Sprint Review
+D. Add more stakeholders to the Daily Scrum
+
+---
+
+### 73. Ordering the Product Backlog is the accountability of:
+A. The Developers
+B. The Scrum Master
+C. The Product Owner
+D. The stakeholders by vote
+
+---
+
+### 74. In Sprint Planning, who decides how many Product Backlog items are pulled into the Sprint?
+A. The Product Owner assigns them
+B. The Scrum Master allocates them
+C. The Developers, who select what they can accomplish
+D. Management, based on the roadmap
+
+---
+
+### 75. A manager asks the Scrum Master to compile a weekly status report on each Developer's hours. The SM should:
+A. Produce the report as requested
+B. Help the organization understand empirical, team-level transparency instead of individual surveillance
+C. Delegate the report to the Product Owner
+D. Refuse and report the manager to HR
+
+---
+
+### 76. The Increment is:
+A. A demo prepared only for the Sprint Review
+B. A concrete stepping stone toward the Product Goal that meets the Definition of Done and is usable
+C. Whatever the Developers finished, regardless of quality
+D. Released only after stakeholder sign-off
+
+---
+
+### 77. Within a Scrum Team, the Scrum Guide states there are:
+A. Sub-teams and a hierarchy led by the Scrum Master
+B. No sub-teams or hierarchies; one cohesive unit focused on one Product Goal
+C. Separate teams for analysis, build, and test
+D. A lead Developer who directs the others
+
+---
+
+### 78. The team spends hours producing a detailed document no one reads. Grounded in Scrum's Lean Thinking foundation, they should:
+A. Keep it for completeness
+B. Reduce the waste by eliminating work that adds no value
+C. Assign it to the Scrum Master to maintain
+D. Expand it so it becomes useful someday
+
+---
+
+### 79. A stakeholder insists the team "commit" to delivering a fixed scope by Sprint end. The Scrum value of Commitment actually means the team commits to:
+A. Delivering every selected item no matter what
+B. The Sprint Goal and to doing their best, with scope able to flex
+C. The stakeholder's deadline
+D. A signed scope contract
+
+---
+
+### 80. The Sprint Goal primarily helps the Developers by:
+A. Listing every task for the Sprint
+B. Providing focus and a single coherent objective even as specifics change
+C. Replacing the need for a Product Backlog
+D. Guaranteeing the Sprint cannot be canceled
+
 ---
 
 ## 🎯 Answer Key
 
 ```
-1.B   11.B   21.B   31.B   41.B   51.B
-2.B   12.B   22.C   32.B   42.B   52.C
-3.B   13.B   23.B   33.B   43.B   53.B
-4.B   14.C   24.B   34.B   44.B   54.B
-5.A   15.C   25.C   35.B   45.B   55.B
-6.B   16.B   26.C   36.B   46.C   56.C
-7.B   17.C   27.C   37.C   47.B   57.B
-8.C   18.B   28.C   38.B   48.B   58.C
-9.B   19.B   29.B   39.C   49.B   59.B
-10.C  20.B   30.B   40.B   50.C   60.A
+1.B   11.B   21.B   31.B   41.B   51.B   61.C   71.B
+2.B   12.B   22.C   32.B   42.B   52.C   62.C   72.B
+3.B   13.B   23.B   33.B   43.B   53.B   63.B   73.C
+4.B   14.C   24.B   34.B   44.B   54.B   64.B   74.C
+5.A   15.C   25.C   35.B   45.B   55.B   65.C   75.B
+6.B   16.B   26.C   36.B   46.C   56.C   66.B   76.B
+7.B   17.C   27.C   37.C   47.B   57.B   67.B   77.B
+8.C   18.B   28.C   38.B   48.B   58.C   68.B   78.B
+9.B   19.B   29.B   39.C   49.B   59.B   69.B   79.B
+10.C  20.B   30.B   40.B   50.C   60.A   70.A   80.B
 ```
 
 ---
@@ -391,10 +549,10 @@ D. Daily Scrum
 
 | Score | Recommendation |
 |-------|----------------|
-| 55–60 | 🏆 BOOK THE EXAM. You're ready. |
-| 51–54 | ✅ Solid. Read Scrum Guide once more, then book. |
-| 45–50 | ⚠️ Take a few more days. Re-quiz wrong answers. Take Scrum.org Open Assessment 3x. |
-| <45 | 🔁 Need 1-2 more weeks. Re-read weakest modules. |
+| 75–80 | 🏆 BOOK THE EXAM. You're ready. |
+| 68–74 | ✅ Solid. Read Scrum Guide once more, then book. |
+| 60–67 | ⚠️ Take a few more days. Re-quiz wrong answers. Take Scrum.org Open Assessment 3x. |
+| <60 | 🔁 Need 1-2 more weeks. Re-read weakest modules. |
 
 ---
 
@@ -652,6 +810,86 @@ D. Daily Scrum
 ### Q60. Answer: A (Next Sprint Planning)
 **Why A is correct.** Sequence: Review → Retro (already done) → next Sprint Planning starts the new Sprint.
 **Why others are wrong.** B, C: Already done, the question asks what's NEXT. D: Daily Scrum is within a Sprint, not the start.
+
+### Q61. Answer: C (Transparency)
+**Why C is correct.** Calling unfinished, untested work "done" hides the true state of the Increment; the board no longer reflects reality. Without transparency, inspection and adaptation are built on false data.
+**Why others are wrong.** A: Inspection can still occur, just on distorted information. B: Adaptation is downstream of the broken transparency. D: Commitment is a Scrum value, not an empirical pillar.
+
+### Q62. Answer: C (Adaptation)
+**Why C is correct.** The team inspects (the impediment surfaces every Retro) but never changes anything; the failure is in adaptation, the act of adjusting based on what inspection reveals.
+**Why others are wrong.** A: The impediment is visible, so transparency is working. B: Inspection is happening, that's how they keep finding it. D: Velocity is a metric, not an empirical pillar.
+
+### Q63. Answer: B (Long-term objective in the Product Backlog)
+**Why B is correct.** The Scrum Guide 2020 defines the Product Goal as the long-term objective the team plans against; it is the commitment for the Product Backlog and lives within it.
+**Why others are wrong.** A: It's a single objective, not a release list. C: It's long-term, not re-created each Sprint. D: The Sprint Goal is the Sprint-level objective, distinct from the Product Goal.
+
+### Q64. Answer: B (Sprint Goal)
+**Why B is correct.** Each artifact has a commitment: Product Backlog → Product Goal, Sprint Backlog → Sprint Goal, Increment → Definition of Done.
+**Why others are wrong.** A: Product Goal is the Product Backlog's commitment. C: Definition of Done is the Increment's commitment. D: A release plan is not a Scrum Guide artifact or commitment.
+
+### Q65. Answer: C (The Increment)
+**Why C is correct.** The Definition of Done is the commitment for the Increment; work meets the DoD before it is part of an Increment.
+**Why others are wrong.** A: The Product Backlog's commitment is the Product Goal. B: The Sprint Backlog's commitment is the Sprint Goal. D: The Product Goal is itself a commitment, not the thing DoD applies to.
+
+### Q66. Answer: B (Who does what, when, and how)
+**Why B is correct.** Self-managing teams internally decide who does the work, when, and how, per the 2020 Scrum Guide.
+**Why others are wrong.** A: Compensation and hiring are organizational, not Scrum-Team, decisions. C: Product strategy is the PO's accountability. D: Inviting stakeholders isn't the definition of self-management.
+
+### Q67. Answer: B (Grow the capability within the team)
+**Why B is correct.** Scrum Teams are cross-functional, they have, or develop, all the skills needed to create value each Sprint, so acquiring the capability internally is the right move.
+**Why others are wrong.** A: A missing skill rarely makes the Sprint Goal obsolete. C: Permanent handoff to a component team creates dependencies, an anti-pattern. D: Defaulting to escalation abandons self-management and cross-functionality.
+
+### Q68. Answer: B (Courage)
+**Why B is correct.** Raising an uncomfortable but important concern takes courage; staying silent to avoid conflict is the absence of it.
+**Why others are wrong.** A: Focus is about the Sprint's work. C: Commitment is about dedication to goals. D: Respect is about valuing others, not speaking up about a technical concern.
+
+### Q69. Answer: B (Respect)
+**Why B is correct.** Dismissing a teammate as a "waste of time" fails to respect them as a capable, independent person, the Respect value.
+**Why others are wrong.** A: Openness is about sharing/visibility. C: Focus is about the work. D: Commitment is about dedication to goals.
+
+### Q70. Answer: A (The Developers)
+**Why A is correct.** The Daily Scrum is the Developers' event; they are the required participants. The Scrum Master and Product Owner attend only if they are actively working on Sprint Backlog items.
+**Why others are wrong.** B: Stakeholders are not part of the Daily. C, D: SM/PO attendance is not mandatory unless they're Developers on the Sprint Backlog.
+
+### Q71. Answer: B (The Sprint Goal becomes obsolete)
+**Why B is correct.** A Sprint is canceled only if the Sprint Goal becomes obsolete, and only the Product Owner can cancel it.
+**Why others are wrong.** A: Being behind is normal, not grounds for cancellation. C: New feature requests go to the Product Backlog. D: A velocity dip doesn't make the goal obsolete.
+
+### Q72. Answer: B (Shorten the Sprint length)
+**Why B is correct.** Shorter Sprints generate more frequent inspection points and limit cost/risk to one shorter Sprint, more empirical feedback, sooner.
+**Why others are wrong.** A: Longer Sprints increase risk and delay feedback. C: Removing the Review removes an inspection point. D: Stakeholders don't belong in the Daily Scrum.
+
+### Q73. Answer: C (The Product Owner)
+**Why C is correct.** The Product Owner is accountable for ordering Product Backlog items to best achieve goals and maximize value.
+**Why others are wrong.** A: Developers decide how to do the work, not backlog order. B: The SM coaches the process but doesn't order the backlog. D: Stakeholders influence but do not own ordering.
+
+### Q74. Answer: C (The Developers select what they can accomplish)
+**Why C is correct.** During Sprint Planning the Developers select how much they forecast they can complete; the work is never assigned to them.
+**Why others are wrong.** A: The PO proposes value and goals but doesn't assign items. B: The SM facilitates, doesn't allocate. D: Management doesn't push work into the Sprint.
+
+### Q75. Answer: B (Coach the org toward team-level transparency)
+**Why B is correct.** The Scrum Master serves the organization by helping it understand empiricism and team-level transparency; individual-hours surveillance is an anti-pattern that undermines self-management and trust.
+**Why others are wrong.** A: Producing individual-surveillance reports reinforces the anti-pattern. C: Pushing it to the PO just relocates the problem. D: Reporting to HR is a disproportionate, non-coaching response.
+
+### Q76. Answer: B (A usable stepping stone meeting the DoD)
+**Why B is correct.** An Increment is a concrete stepping stone toward the Product Goal; each Increment is additive and must meet the Definition of Done to be usable.
+**Why others are wrong.** A: An Increment isn't merely a Review demo. C: Work that doesn't meet the DoD is not part of an Increment. D: Usability comes from the DoD, not stakeholder sign-off.
+
+### Q77. Answer: B (No sub-teams or hierarchies)
+**Why B is correct.** The 2020 Scrum Guide states the Scrum Team has no sub-teams or hierarchies; it is one cohesive unit focused on one Product Goal.
+**Why others are wrong.** A: No hierarchy led by the SM exists. C: Splitting into analysis/build/test sub-teams contradicts one cohesive unit. D: There is no directing "lead Developer."
+
+### Q78. Answer: B (Reduce the waste)
+**Why B is correct.** Scrum is founded on empiricism and Lean Thinking, which reduces waste by focusing on the essentials; work that adds no value should be eliminated.
+**Why others are wrong.** A: Keeping it "for completeness" preserves waste. C: Reassigning the waste doesn't remove it. D: Expanding low-value work multiplies the waste.
+
+### Q79. Answer: B (Commit to the Sprint Goal and to doing their best)
+**Why B is correct.** The Commitment value means the team commits to the Sprint Goal and to doing its best; selected scope is a forecast that can flex while the goal is protected.
+**Why others are wrong.** A: "Every item no matter what" treats a forecast as a fixed contract. C, D: Committing to an external deadline or signed scope contradicts how Scrum handles uncertainty.
+
+### Q80. Answer: B (Focus and a single coherent objective)
+**Why B is correct.** The Sprint Goal gives the Developers focus and a single objective, creating coherence even as the specific work emerges and changes during the Sprint.
+**Why others are wrong.** A: It's an objective, not a task list. C: It doesn't replace the Product Backlog. D: It doesn't prevent cancellation, an obsolete Sprint Goal is exactly what triggers one.
 
 ---
 

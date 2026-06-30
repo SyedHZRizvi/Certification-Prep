@@ -1,6 +1,6 @@
 # ✏️ PMP Module 2 Quiz: People Domain
 
-> 18 questions. Aim 15/18. Most exam-relevant module, drill it.
+> 35 questions. Aim 29/35. Most exam-relevant module, drill it.
 
 ## Questions
 
@@ -278,7 +278,7 @@ Servant leadership applies: listen first to understand, then bring the parties t
 
 ---
 
-## 📊 Score: 27+/30 🏆 / 22–26 ✅ / <22 🔁
+## 📊 Score: 31+/35 🏆 / 26–30 ✅ / <26 🔁
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 3](../Module-03-Process-Domain/Reading.md)
 

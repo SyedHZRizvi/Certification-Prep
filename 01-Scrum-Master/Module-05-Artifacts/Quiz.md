@@ -1,6 +1,6 @@
 # ✏️ Module 5 Quiz: Artifacts & Commitments
 
-> 12 questions. Aim 10/12.
+> 30 questions. Aim 25/30.
 
 ---
 
@@ -237,10 +237,10 @@ The PO is accountable for the Product Backlog and for developing/communicating t
 
 ## 📊 Score
 
-- 11–12/12 → 🏆
-- 9–10 → ✅
-- 7–8 → ⚠️
-- <7 → 🔁
+- 27–30/30 → 🏆
+- 23–26 → ✅
+- 18–22 → ⚠️
+- <18 → 🔁
 
 ---
 

@@ -75,7 +75,7 @@ By the end of this track, you'll be able to:
 | 9 | [Procurement](./Module-09-Procurement/Reading.md) | Process | 4 hrs |
 | 10 | [Stakeholders](./Module-10-Stakeholders/Reading.md) | People | 4 hrs |
 
-**Total:** ~54 hrs reading + 30 hrs videos + 30 hrs practice = **~115 study hours core**, plus mock exams.
+**Total:** 54 hrs reading + 30 hrs videos + 30 hrs practice = **114 study hours core**, plus mock exams.
 
 ---
 

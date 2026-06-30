@@ -243,7 +243,7 @@ Bottom-up estimating sums detailed estimates of each work package, most accurate
 
 ---
 
-## 📊 Score: 27+/30 🏆 / 22–26 ✅ / <22 🔁
+## 📊 Score: 31+/35 🏆 / 26–30 ✅ / <26 🔁
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 4](../Module-04-Business-Environment/Reading.md)
 

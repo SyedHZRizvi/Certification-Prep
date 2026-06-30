@@ -224,7 +224,7 @@ The fix for "Scrum theater" is bringing the WHY back into the events, not lectur
 
 ---
 
-## 📊 Score: 11+/12 🏆 / 9–10 ✅ / <9 🔁
+## 📊 Score: 27+/30 🏆 / 25–26 ✅ / <25 🔁
 
 ## 🃏 Anki
 
