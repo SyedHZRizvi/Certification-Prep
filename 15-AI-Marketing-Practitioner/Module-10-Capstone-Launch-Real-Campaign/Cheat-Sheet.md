@@ -103,8 +103,8 @@ CONVERSION (5 min):
 
 | Metric | Normal | Diagnose |
 |--------|--------|----------|
-| Day 1-3 CTR | 1-5% | < 0.5% = creative issue |
-| Day 1-3 CPM | $5-$25 | > $40 = audience too narrow |
+| Day 1-3 CTR (Click-Through Rate) | 1-5% | < 0.5% = creative issue |
+| Day 1-3 CPM (Cost Per Mille) | $5-$25 | > $40 = audience too narrow |
 | Day 1-3 Conv | 0-3 (small) | Don't panic, learning phase |
 | Day 7 CPA | Could be 2-3x target | Diagnose, don't pause |
 | Day 14 CPA | Should be ≤ target | If above: pivot |

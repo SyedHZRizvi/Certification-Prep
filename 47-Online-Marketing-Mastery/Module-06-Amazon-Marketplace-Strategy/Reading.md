@@ -10,7 +10,7 @@
 
 In the spring of 2022, a mid-sized American supplements brand — call them PureVitamin Co. — decided to ride the post-pandemic health wave into Europe. They had crushed it on Amazon US. Their whey protein ranked on page one for seventeen competitive keywords. Their founder had appeared on a podcast. Life was good.
 
-Their German marketplace launch plan was bold: list all 47 SKUs on Amazon.de, enroll in Pan-European FBA, and let Amazon's logistics network handle the rest. They translated their US listings using Google Translate. They shipped $120,000 of inventory to Amazon's fulfilment centre in Rheinberg, Germany.
+Their German marketplace launch plan was bold: list all 47 SKUs on Amazon.de, enroll in Pan-European FBA (Fulfillment by Amazon), and let Amazon's logistics network handle the rest. They translated their US listings using Google Translate. They shipped $120,000 of inventory to Amazon's fulfilment centre in Rheinberg, Germany.
 
 Then came the email from Amazon EU.
 
@@ -36,7 +36,7 @@ Total cost: $120,000 in stranded inventory fees, removal and disposal costs, re-
 
 Amazon operates distinct marketplace domains that are essentially separate businesses sharing a technology platform. As of 2025 (industry estimates):
 
-| Marketplace | Domain | GMV Estimate | Primary Currency | VAT/Sales Tax |
+| Marketplace | Domain | GMV (Gross Merchandise Value) Estimate | Primary Currency | VAT/Sales Tax |
 |---|---|---|---|---|
 | United States | amazon.com | ~$400B | USD | Sales tax (varies by state) |
 | United Kingdom | amazon.co.uk | ~£30B | GBP | 20% VAT |
@@ -82,7 +82,7 @@ The A10 evolution specifically added heavier weighting to **organic sales** (vs.
 
 ### Listing Anatomy — The TITLE Formula
 
-Amazon's title is your #1 indexing and CTR lever. US marketplace allows up to 200 characters; EU marketplaces typically cap at 80–150 visible characters.
+Amazon's title is your #1 indexing and CTR (Click-Through Rate) lever. US marketplace allows up to 200 characters; EU marketplaces typically cap at 80–150 visible characters.
 
 **The BRAND-KEYWORD-FEATURE-SIZE-VARIANT formula:**
 
@@ -111,7 +111,7 @@ Five bullet points. Each should hit one benefit using the **FISH** structure:
 
 **Capitalise the first 2-3 words** of each bullet — Amazon renders them in plain text and the caps act as visual sub-headers on mobile.
 
-**EU-specific bullets:** In Germany, health claims on food supplements are governed by the EU Health Claims Regulation (EC 1924/2006). You CANNOT write "Builds Muscle" without an approved EU health claim. You CAN write "Contributes to normal muscle function" (this is an approved claim for Vitamin D). Violating this gets your ASIN suppressed or your account warned.
+**EU-specific bullets:** In Germany, health claims on food supplements are governed by the EU Health Claims Regulation (EC 1924/2006). You CANNOT write "Builds Muscle" without an approved EU health claim. You CAN write "Contributes to normal muscle function" (this is an approved claim for Vitamin D). Violating this gets your ASIN (Amazon Standard Identification Number) suppressed or your account warned.
 
 ### The Product Description and A+ Content
 
@@ -120,7 +120,7 @@ The product description (the long-form HTML text below the fold) is indexed but 
 A+ Content impact (Amazon internal data, cited by Amazon Seller University 2024):
 - Average conversion uplift: **3–10%** on well-optimised listings
 - Premium A+ Content (available to sellers with 5+ A+ modules and high brand scores): average uplift of **20%**
-- A+ Content is **not** indexed for keywords — its value is purely conversion, not SEO
+- A+ Content is **not** indexed for keywords — its value is purely conversion, not SEO (Search Engine Optimization)
 
 **A+ Content best practices:**
 
@@ -149,7 +149,7 @@ The backend keywords field (250 bytes in the US, often less in EU) is invisible 
 
 ---
 
-## Section 3: Fulfilment — FBA vs FBM vs SFP
+## Section 3: Fulfilment — FBA vs FBM (Fulfillment by Merchant) vs SFP
 
 ### The Three Fulfilment Models
 
@@ -266,7 +266,7 @@ Amazon's Vine programme sends your product to ~30 trusted reviewers ("Vine Voice
 
 Available in US, UK, DE, FR, ES, IT, JP. Allows customers to subscribe to recurring deliveries at a 5–15% discount.
 
-- **Why it matters:** SnS customers have 3–4x higher LTV than one-time buyers
+- **Why it matters:** SnS customers have 3–4x higher LTV (Lifetime Value) than one-time buyers
 - **FBA requirement:** SnS requires FBA for most categories
 - **Inventory risk:** SnS commits you to fulfilling recurring orders — running out of stock causes automatic cancellations and penalises your SnS metrics
 
@@ -292,7 +292,7 @@ Available in US, UK, DE, FR, ES, IT, JP. Allows customers to subscribe to recurr
 
 6. **Making health claims on EU supplement listings that are not on the approved EU register.** "Supports immune health" is a US-style claim. In the EU, the equivalent approved claim for Vitamin C is: "Vitamin C contributes to the normal function of the immune system." The exact wording matters.
 
-7. **Launching a new ASIN with zero reviews and running PPC immediately.** PPC drives traffic but traffic with a 0% conversion rate signals a poor-quality listing to the A10 algorithm. Get 15–30 organic reviews (via Vine, early reviewer program, or legitimate request via the "Request a Review" button) before scaling PPC.
+7. **Launching a new ASIN with zero reviews and running PPC (Pay-Per-Click) immediately.** PPC drives traffic but traffic with a 0% conversion rate signals a poor-quality listing to the A10 algorithm. Get 15–30 organic reviews (via Vine, early reviewer program, or legitimate request via the "Request a Review" button) before scaling PPC.
 
 ---
 

@@ -28,12 +28,12 @@ HOW   →  KPIs with NUMBERS.
 
 ---
 
-## 📐 KPI Tiers (Don't Mix Levels)
+## 📐 KPI (Key Performance Indicator) Tiers (Don't Mix Levels)
 
 | Tier | What it measures | Example metrics |
 |------|------------------|-----------------|
-| Primary KPI | Success | CPA, ROAS, conversions, qualified leads |
-| Secondary KPI | Health | CTR, CPC, CPM, frequency |
+| Primary KPI | Success | CPA, ROAS (Return on Ad Spend), conversions, qualified leads |
+| Secondary KPI | Health | CTR (Click-Through Rate), CPC (Cost Per Click), CPM (Cost Per Mille), frequency |
 | Guardrail KPI | Pause trigger | "Stop if CPA > $60 for 3 days" |
 
 ---

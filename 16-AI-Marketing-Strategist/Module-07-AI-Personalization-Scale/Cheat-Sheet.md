@@ -85,7 +85,7 @@ Train model → produce user/item embeddings → store in **FAISS / ScaNN / Pine
 | Dynamic Yield (Mastercard) | Retail / e-com |
 | Optimizely Personalization | Hybrid experimentation + personalization |
 | Bloomreach Engagement | Composable commerce |
-| BlueShift | B2B + B2C lifecycle |
+| BlueShift | B2B (Business-to-Business) + B2C (Business-to-Consumer) lifecycle |
 | Adobe Target | Adobe enterprise |
 | Algolia Recommend | Search-derived recsys |
 | Constructor.io | E-com search + recsys |

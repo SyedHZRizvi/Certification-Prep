@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md), covered earlier in this course
-> - [SEO + Content Audit](../Module-02-Capstone-SEO-Content-Audit/Reading.md), covered in the previous module (or parallelize if you started both)
+> - [SEO (Search Engine Optimization) + Content Audit](../Module-02-Capstone-SEO-Content-Audit/Reading.md), covered in the previous module (or parallelize if you started both)
 > - Paid acquisition fundamentals (auction mechanics, CPC/CPM/ROAS, audience targeting), covered in [15-AI-Marketing-Practitioner](../../15-AI-Marketing-Practitioner/README.md), especially Modules 2–5
 > - Google Tag Manager / Meta Pixel basics, covered in [16-AI-Marketing-Strategist Module 2](../../16-AI-Marketing-Strategist/Module-02-CDP-Server-Side-Tracking/Reading.md)
 > If any of these are shaky, pause and review, this module assumes you can set up conversion tracking without hand-holding.
@@ -19,9 +19,9 @@ One Saturday, Sam decides to spend $200 of their own money. Real cash, real plat
 
 They map it out: $100 on Google Search Ads targeting "learn watercolor online," $100 on Meta with a lookalike audience built from the friend's email list. 14 days. Three creative variants on each platform.
 
-Day 3, Sam learns that Meta's algorithm hates their first creative. CTR is 0.4%. Pause it. Day 5, Google's search ads are getting clicks but the landing page is converting at 0.8% way too low. Sam works with the friend to rewrite the headline, swap the hero image. Day 7, conversion rate up to 3.2%. Day 10, the Meta UGC-style variant they relaunched is crushing CTR 2.1%, CPL $4.50.
+Day 3, Sam learns that Meta's algorithm hates their first creative. CTR (Click-Through Rate) is 0.4%. Pause it. Day 5, Google's search ads are getting clicks but the landing page is converting at 0.8% way too low. Sam works with the friend to rewrite the headline, swap the hero image. Day 7, conversion rate up to 3.2%. Day 10, the Meta UGC (User-Generated Content)-style variant they relaunched is crushing CTR 2.1%, CPL $4.50.
 
-At day 14, Sam writes it all up. Final numbers: $189 spent (Meta cut them off before they hit $200, weird), 28 leads, 4 paying customers ($156 revenue). Negative ROAS. Sam includes everything, the failed creatives, the bad landing page, the moment they almost panicked at $40 spent with zero conversions, the rewrite, the relaunch.
+At day 14, Sam writes it all up. Final numbers: $189 spent (Meta cut them off before they hit $200, weird), 28 leads, 4 paying customers ($156 revenue). Negative ROAS (Return on Ad Spend). Sam includes everything, the failed creatives, the bad landing page, the moment they almost panicked at $40 spent with zero conversions, the rewrite, the relaunch.
 
 The post-mortem goes on LinkedIn. 14k impressions. A growth marketing lead at a SaaS startup comments. Two weeks later, Sam is in interviews. Three weeks later, offer.
 
@@ -84,8 +84,8 @@ You have $200 total. Default allocation:
 
 **Alternative splits depending on subject:**
 
-- **B2B SaaS with bottom-of-funnel keywords:** $150 Google / $50 Meta
-- **DTC product with strong visual:** $60 Google / $140 Meta
+- **B2B (Business-to-Business) SaaS with bottom-of-funnel keywords:** $150 Google / $50 Meta
+- **DTC (Direct-to-Consumer) product with strong visual:** $60 Google / $140 Meta
 - **Local service business:** $130 Google / $70 Meta (search intent dominates)
 - **Personal brand / newsletter signup:** $50 Google / $150 Meta
 
@@ -127,7 +127,7 @@ Pick the split BEFORE you start. Don't change it mid-campaign.
 
 7. **Write 2–3 ad variants per ad group.**
    - Responsive Search Ads (RSA) with multiple headlines and descriptions.
-   - Include: target keyword in headline 1, value prop in headline 2, CTA in headline 3.
+   - Include: target keyword in headline 1, value prop in headline 2, CTA (Call to Action) in headline 3.
    - Description: highlight 2 differentiators.
 
 8. **Set up Google Ads Editor (optional but useful).**
@@ -201,8 +201,8 @@ Each day, check:
 
 ### The Daily Optimization Routine (10 min/day)
 
-- CPM trending up or down?
-- CPC reasonable for niche?
+- CPM (Cost Per Mille) trending up or down?
+- CPC (Cost Per Click) reasonable for niche?
 - Conversion events firing?
 - Frequency >2.5? (Audience fatigue starting)
 - Which creative has highest CTR? Which has highest conversion rate?
@@ -465,8 +465,8 @@ The hiring manager isn't grading you on ROAS. They're grading on:
 | **CPL** | Cost per lead |
 | **CPA** | Cost per acquisition (often = CPL) |
 | **ROAS** | Return on ad spend (revenue / spend) |
-| **CAC** | Customer acquisition cost |
-| **LTV** | Customer lifetime value |
+| **CAC (Customer Acquisition Cost)** | Customer acquisition cost |
+| **LTV (Lifetime Value)** | Customer lifetime value |
 | **Lookalike** | A Meta audience built from your existing customer data |
 | **Custom Audience** | Uploaded data (emails, phone numbers) |
 | **Pixel** | Meta's tracking tag |
@@ -501,7 +501,7 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Surfside PPC YouTube channel](https://www.youtube.com/@SurfsidePPC), best Google Ads tutorials anywhere
+- 📖 [Surfside PPC (Pay-Per-Click) YouTube channel](https://www.youtube.com/@SurfsidePPC), best Google Ads tutorials anywhere
 - 📖 [Cody Schneider's Twitter](https://twitter.com/codyschneiderxx), live paid campaign breakdowns
 - 📖 [Google Ads Help Center Conversion Tracking](https://support.google.com/google-ads/answer/1722022) the official setup guide
 - 📖 [Meta Blueprint](https://www.facebookblueprint.com/), free Meta Ads certification courses

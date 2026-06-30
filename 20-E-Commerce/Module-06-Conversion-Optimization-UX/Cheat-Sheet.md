@@ -4,7 +4,7 @@
 
 ---
 
-## 📊 DTC CVR Benchmarks (2026)
+## 📊 DTC (Direct-to-Consumer) CVR Benchmarks (2026)
 
 | Category | Median | Top quartile |
 |----------|--------|--------------|
@@ -125,7 +125,7 @@ Best practices:
 
 | Vendor | Best for |
 |--------|----------|
-| Mutiny | B2B / SaaS landing pages |
+| Mutiny | B2B (Business-to-Business) / SaaS landing pages |
 | Dynamic Yield | Enterprise |
 | Optimizely Personalization | CMS-integrated |
 | Bloomreach | Content + commerce |

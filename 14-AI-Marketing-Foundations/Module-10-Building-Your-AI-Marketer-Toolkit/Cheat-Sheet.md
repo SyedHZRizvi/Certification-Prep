@@ -25,7 +25,7 @@
 | Category | What it is | Example |
 |---|---|---|
 | **CDP** | Customer Data Platform | Segment, mParticle, Tealium, BlueConic, Lytics |
-| **CRM** | Customer Relationship Management | Salesforce, HubSpot, Pipedrive |
+| **CRM (Customer Relationship Management)** | Customer Relationship Management | Salesforce, HubSpot, Pipedrive |
 | **ESP** | Email Service Provider | Mailchimp, Klaviyo, ActiveCampaign |
 | **MA Platform** | Marketing Automation (often + CRM) | HubSpot Marketing, Marketo |
 | **CMS** | Content Management System | WordPress, Webflow, Contentful |
@@ -76,7 +76,7 @@ ASSET LIBRARY
 5. Ad Copy Variation (HSO / PAS / BAB / AIDA)
 6. Voice Translator
 7. Competitor Teardown
-8. SEO Outline Builder (Skyscraper)
+8. SEO (Search Engine Optimization) Outline Builder (Skyscraper)
 9. Boring-to-Engaging Email
 10. Weekly Review
 
@@ -87,7 +87,7 @@ ASSET LIBRARY
 1. List every paid tool + monthly cost
 2. "Did I use in last 30 days?"
 3. "Is free alternative good enough?"
-4. Cancel bottom 20% by ROI
+4. Cancel bottom 20% by ROI (Return on Investment)
 
 ---
 

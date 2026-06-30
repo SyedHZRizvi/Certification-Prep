@@ -12,9 +12,9 @@ The 1997 letter codifies six principles: obsess over customers, take bold invest
 
 Twenty-seven years later, Amazon is a $1.7 trillion company that sells $570B of goods through its own retail plus another $400B through third-party sellers. The 1997 letter is taped to the wall of the Day 1 building in Seattle. Every Director-of-something at Amazon can recite the six principles. Every press release at Amazon starts as a "PR/FAQ", a "working backwards" artifact, written before any product exists, that asks: if we shipped this, what would the customer-facing announcement say?
 
-That's the bar. It isn't about the books-vs-everything-store pivot. It's about an operating principle written in 1997 still shaping a $1.7T company's quarterly reviews in 2026. **The brief is the company.** If you can write that kind of operating doctrine for your own business in 2,000 words, you've already done more strategic work than most $50M DTC brands ever do.
+That's the bar. It isn't about the books-vs-everything-store pivot. It's about an operating principle written in 1997 still shaping a $1.7T company's quarterly reviews in 2026. **The brief is the company.** If you can write that kind of operating doctrine for your own business in 2,000 words, you've already done more strategic work than most $50M DTC (Direct-to-Consumer) brands ever do.
 
-This module gives you the language, DTC, marketplace, B2B, hybrid; AOV, CAC, CLV, contribution margin, payback period; long-tail vs head; the Fader customer-centricity frame; the Bezos Day-1 doctrine. By the end, you'll have written the first draft of your own business-model canvas.
+This module gives you the language, DTC, marketplace, B2B (Business-to-Business), hybrid; AOV (Average Order Value), CAC (Customer Acquisition Cost), CLV, contribution margin, payback period; long-tail vs head; the Fader customer-centricity frame; the Bezos Day-1 doctrine. By the end, you'll have written the first draft of your own business-model canvas.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Basic financial vocabulary (revenue, cost, margin), covered in [02-PMP Module 3](../../02-PMP/Module-03-Process-Domain/Reading.md)
@@ -78,7 +78,7 @@ CAC = Total Customer Acquisition Spend / Number of New Customers Acquired
 Two flavors:
 
 - **Marketing CAC**: paid-media spend only divided by new customers. Easy to calculate from ad-platform exports.
-- **Blended CAC** (or "Fully Loaded CAC"): all customer-acquisition costs media, agency fees, salaries of the acquisition team, tooling divided by new customers. The CFO version. The one Series B+ boards use.
+- **Blended CAC** (or "Fully Loaded CAC"): all customer-acquisition costs media, agency fees, salaries of the acquisition team, tooling divided by new customers. The CFO (Chief Financial Officer) version. The one Series B+ boards use.
 
 The Common Thread Collective 2024 ECD Quarterly reports DTC blended CAC ranges from $38 (beauty) to $312 (mattress/furniture). Categories with high consideration cycles have high CAC.
 
@@ -157,7 +157,7 @@ Industry conventions:
 
 ## 📊 The Bezos 1997 Letter: Six Principles That Still Run Amazon
 
-Bezos's first shareholder letter (1997, [aboutamazon.com](https://aboutamazon.com/news/company-news/2018-letter-to-shareholders)) codified six operating principles. These are not historical artifacts; they are still recited in Amazon's L7+ promotion bars and they shape how Amazon's 1.5M employees make decisions.
+Bezos's first shareholder letter (1997, [aboutamazon.com 12 ) codified six operating principles. These are not historical artifacts; they are still recited in Amazon's L7+ promotion bars and they shape how Amazon's 1.5M employees make decisions.
 
 | Principle | What it means | How you apply it in 2026 |
 |-----------|--------------|--------------------------|
@@ -180,7 +180,7 @@ Bezos's first shareholder letter (1997, [aboutamazon.com](https://aboutamazon.co
 
 The letter was filed with the 10-K every year afterward. Six core principles emerged: customer obsession, long-term thinking, Day 1 always, hire the best, operational excellence, take bold bets.
 
-**Outcome.** Amazon's stock fell to under $6 in 2001 during the dot-com crash. Amazon did not turn a meaningful annual profit until 2003 six years after the IPO. By 2026, Amazon trades at ~$200/share (after a 20-for-1 split in 2022, so ~$4,000 pre-split equivalent), market cap $1.7T, $570B retail GMV plus $400B third-party seller GMV. The 1997 letter is reprinted in every annual report. AWS invented in 2006 alone generates more annual revenue than the entire 1997 Amazon. The "Day 1" doctrine is taped to walls in every Amazon office. Bryar and Carr's *Working Backwards* (St. Martin's, 2021) written by ex-Amazon executives, codified the operating mechanisms.
+**Outcome.** Amazon's stock fell to under $6 in 2001 during the dot-com crash. Amazon did not turn a meaningful annual profit until 2003 six years after the IPO. By 2026, Amazon trades at ~$200/share (after a 20-for-1 split in 2022, so ~$4,000 pre-split equivalent), market cap $1.7T, $570B retail GMV (Gross Merchandise Value) plus $400B third-party seller GMV. The 1997 letter is reprinted in every annual report. AWS invented in 2006 alone generates more annual revenue than the entire 1997 Amazon. The "Day 1" doctrine is taped to walls in every Amazon office. Bryar and Carr's *Working Backwards* (St. Martin's, 2021) written by ex-Amazon executives, codified the operating mechanisms.
 
 **Lesson for the exam / for practitioners.** A business model is an *operating doctrine*, not a P&L. The numbers follow the doctrine. Bezos understood that the cost of optimizing for the next quarter was the option value of being a 25-year company. Operators who can't articulate their long-term doctrine cannot make the Type-1 decisions that compound over a decade. Every certification body Adobe, Salesforce, Wharton Online tests this principle in some form: when given a multi-year strategic trade-off, the right answer is almost always the one that preserves long-term optionality, even at the cost of short-term margin.
 
@@ -198,7 +198,7 @@ A heavily tested framework on the Adobe Commerce Business Practitioner exam:
 | Volume potential | Slow ramp | Fast scale (existing demand) | Slow ramp; account-based |
 | Marketing spend | Heavy (CAC = 25-40% of LTV) | Mostly platform ads (~10-15%) | Sales-led; longer cycles |
 | Conversion rate | 1.5-3.5% | 8-15% on Amazon | Higher (intent-driven) |
-| Best for | Brand-building, repeat purchase | Cash-flow + brand discovery | High AOV, low SKU count |
+| Best for | Brand-building, repeat purchase | Cash-flow + brand discovery | High AOV, low SKU (Stock Keeping Unit) count |
 
 🚨 **Trap on the exam:** Adobe Commerce questions often present "should this company go DTC or marketplace?" scenarios. The right answer is usually *both*, with the qualifier that **the brand's North Star metric should be DTC GMV growth + marketplace as a discovery/cash-flow channel**, not marketplace as the primary destination. Brands that go marketplace-first lose the customer data, lose pricing power, and become commodity sellers.
 
@@ -213,7 +213,7 @@ The academic predecessor: Brynjolfsson, Hu & Smith's 2003 *Management Science* p
 The exam-relevant takeaways:
 
 1. **Aggregate demand for niche SKUs can exceed demand from top SKUs** when shelf space cost is zero (digital).
-2. **Discovery is the bottleneck**, not inventory. Whoever has the best search, recommendation, and SEO wins.
+2. **Discovery is the bottleneck**, not inventory. Whoever has the best search, recommendation, and SEO (Search Engine Optimization) wins.
 3. **Long-tail strategies require PIM discipline.** You can't merchandise 50,000 SKUs without clean attribute data.
 
 🧠 **MEMORIZE THIS.** Long tail = niche demand aggregation; sources are Anderson 2006 and Brynjolfsson 2003. Adobe Commerce + Magento documentation references the long tail in catalog-management discussions because Magento's strength is large, faceted-search-driven catalogs.
@@ -254,7 +254,7 @@ For a new e-commerce business, ask in this order:
 2. **What's the gross margin?** < 30% → marketplace-first (you can't afford DTC CAC). 30-50% → DTC viable with disciplined CAC. 50%+ → DTC is the default.
 3. **What's the purchase frequency?** Monthly → subscription model viable. Quarterly → DTC with strong lifecycle. Annual+ → marketplace-first (you can't build retention).
 4. **What's the catalog size?** < 50 SKUs → DTC easy. 50-5,000 SKUs → DTC + marketplace. 5,000+ SKUs → B2B portal or marketplace operator.
-5. **Who pays first, customer or business?** B2C only → DTC. B2B → wholesale portal. Both → B2B2C hybrid.
+5. **Who pays first, customer or business?** B2C (Business-to-Consumer) only → DTC. B2B → wholesale portal. Both → B2B2C hybrid.
 
 🧠 **MEMORIZE THIS.** The five questions above map directly onto the kind of scenario questions commerce certification exams use. Train yourself to ask them in this order.
 
@@ -281,7 +281,7 @@ Liquid Death is a useful reference because their model is documented in intervie
 - **2024 revenue:** ~$268M (publicly disclosed in pitch).
 - **AOV** (Amazon + retail blended): ~$24 (a 12-pack of cans).
 - **Contribution margin:** ~52% (CPG-mountain-water economics, cheap product, expensive can + brand).
-- **Channel mix:** ~25% DTC via shop.liquiddeath.com; ~30% Amazon FBA; ~45% retail (7-Eleven, Whole Foods, Target).
+- **Channel mix:** ~25% DTC via shop.liquiddeath.com; ~30% Amazon FBA (Fulfillment by Amazon); ~45% retail (7-Eleven, Whole Foods, Target).
 - **Marketing CAC** (estimated): ~$8-$14 per DTC customer (heavily branded YouTube + Meta + TikTok creator-led).
 - **Payback period:** ~3-4 months on the DTC channel (3-4 reorders).
 - **CLV:CAC** (estimated): ~6:1 on DTC (over-invested in DTC because retail margin is thinner).
@@ -297,7 +297,7 @@ The teachable observation: Liquid Death didn't try to be a marketplace seller fi
 | **DTC** | Direct-to-Consumer; brand sells via its own digital storefront |
 | **AOV** | Average Order Value = Revenue / Orders |
 | **CAC** | Customer Acquisition Cost; marketing or blended |
-| **CLV / LTV** | Customer Lifetime Value; Fader 2012 framework |
+| **CLV / LTV (Lifetime Value)** | Customer Lifetime Value; Fader 2012 framework |
 | **Contribution Margin** | Revenue minus variable costs (COGS + fulfillment + processing + returns) |
 | **Payback Period** | CAC / (AOV × Contribution Margin); months to recover CAC |
 | **GMV** | Gross Merchandise Value; total order value before refunds |
@@ -338,7 +338,7 @@ You now know:
 
 Use these to test your own thinking. None has a single right answer, defend your choice with the frameworks in this module.
 
-1. A $4M Series-A DTC apparel brand has 32% contribution margin, 18-month customer payback, and 2.1x CLV:CAC. The CEO wants to spend $1M of the Series A on a TikTok-Shop creator-led blitz, expecting Tier-2 distribution to lift LTV via brand discovery. Build the strongest argument FOR and the strongest argument AGAINST. Which would you defend in a board meeting, and what gating numbers would you commit to?
+1. A $4M Series-A DTC apparel brand has 32% contribution margin, 18-month customer payback, and 2.1x CLV:CAC. The CEO (Chief Executive Officer) wants to spend $1M of the Series A on a TikTok-Shop creator-led blitz, expecting Tier-2 distribution to lift LTV via brand discovery. Build the strongest argument FOR and the strongest argument AGAINST. Which would you defend in a board meeting, and what gating numbers would you commit to?
 
 2. Re-read Bezos's 1997 letter. The doctrine says "operate as Day 1." But at a $250M-GMV DTC brand with 110 employees, "Day 1" can mean micro-management, decision-paralysis, and burned-out operators. Where does the doctrine become an anti-pattern, and what's the principle that should replace it at scale?
 

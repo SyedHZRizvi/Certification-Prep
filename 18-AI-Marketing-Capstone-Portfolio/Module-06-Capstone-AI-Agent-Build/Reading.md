@@ -14,7 +14,7 @@
 
 ## 🎬 A Story: The Marketer Who Outshipped The Engineering Team
 
-Imagine the marketing team at a Series A startup. The CEO wants them to research the top 50 competitors in their space and write strategic briefs on each. Manually, this is 4–6 weeks of work for a senior content marketer.
+Imagine the marketing team at a Series A startup. The CEO (Chief Executive Officer) wants them to research the top 50 competitors in their space and write strategic briefs on each. Manually, this is 4–6 weeks of work for a senior content marketer.
 
 A marketer on the team call them Theo opens Cursor on a Tuesday. They've never written serious code before. By Tuesday night they have a working Python script: 200 lines, uses the Claude API + an Apify scraper. Feed it a competitor URL → it fetches the homepage + pricing page + about page, runs them through Claude with a structured prompt, outputs a 2-page strategic brief.
 
@@ -36,7 +36,7 @@ The agent itself? Could be built by any marketer who reads docs and isn't afraid
 2. **Content Brief Generator**, given a keyword + target audience, produce a 2-page brief
 3. **Competitor Research Agent**, given competitor URLs, produce a strategic summary
 4. **Email Personalization Agent**, given a recipient profile, generate a personalized cold email
-5. **SEO Content Generator**, given a topic + outline, produce a full-length article
+5. **SEO (Search Engine Optimization) Content Generator**, given a topic + outline, produce a full-length article
 6. **Social Media Repurposer**, given a blog post URL, generate LinkedIn carousel + Twitter thread + Reddit post
 
 **Specifications:**
@@ -490,7 +490,7 @@ Live execution is key. Anyone can show a screenshot of code. Showing it actually
 | Highest "wow" factor | **Competitor Research Agent** |
 | Most business-applicable | **Lead Qualification Bot** |
 | Most differentiated | **Email Personalization Agent** (with web scraping) |
-| Most B2C-friendly | **Social Media Repurposer** |
+| Most B2C (Business-to-Consumer)-friendly | **Social Media Repurposer** |
 | Highest technical signal | **Email Personalization** OR **Competitor Research** w/ tool use |
 
 ---

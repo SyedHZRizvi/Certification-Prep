@@ -6,7 +6,7 @@
 
 ## 📊 The Headline Stat
 
-**$36 ROI per $1 spent** on email (DMA *Marketer Email Tracker*, most-cited).
+**$36 ROI (Return on Investment) per $1 spent** on email (DMA *Marketer Email Tracker*, most-cited).
 
 ---
 
@@ -70,7 +70,7 @@ Plus: one-click unsubscribe + complaint rate < 0.3%.
 | Use case | ESP |
 |---|---|
 | E-commerce / Shopify | **Klaviyo** |
-| All-in-one CRM | **HubSpot** |
+| All-in-one CRM (Customer Relationship Management) | **HubSpot** |
 | SMB content + e-comm | **Mailchimp** |
 | SMB automation | **ActiveCampaign** |
 | Creator newsletter | **ConvertKit / Beehiiv** |
@@ -84,10 +84,10 @@ Plus: one-click unsubscribe + complaint rate < 0.3%.
 
 | Law | Jurisdiction | Top penalty |
 |---|---|---|
-| **CAN-SPAM** | US | $50,000+/violation |
-| **GDPR** | EU + anyone marketing to EU | 4% global revenue or €20M |
-| **CASL** | Canada | CA$10M |
-| **CCPA / CPRA** | California | $7,500/intentional |
+| **CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act)** | US | $50,000+/violation |
+| **GDPR (General Data Protection Regulation)** | EU + anyone marketing to EU | 4% global revenue or €20M |
+| **CASL (Canada's Anti-Spam Legislation)** | Canada | CA$10M |
+| **CCPA (California Consumer Privacy Act) / CPRA** | California | $7,500/intentional |
 
 🚨 CAN-SPAM unsubscribe window: **10 business days**.
 

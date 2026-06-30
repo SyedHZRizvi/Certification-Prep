@@ -18,11 +18,11 @@ Business Center → Ad Account → Campaign → Ad Group → Ad
 
 | Format | Use for |
 |--------|---------|
-| **Spark Ads** ⭐ | Default, boost organic UGC; 30-80% better CTR than In-Feed |
+| **Spark Ads** ⭐ | Default, boost organic UGC (User-Generated Content); 30-80% better CTR (Click-Through Rate) than In-Feed |
 | In-Feed Ads | When no organic post to boost |
 | TopView | Brand launches, big awareness |
 | Branded Hashtag | Engagement campaigns |
-| Catalog/Video Shopping | DTC ecom |
+| Catalog/Video Shopping | DTC (Direct-to-Consumer) ecom |
 
 ---
 
@@ -107,7 +107,7 @@ Company Name · Company Size    · Company Industry
 Skills       · Years Experience · Groups
 ```
 
-🧠 LinkedIn = only platform with reliable B2B job-title + company-size targeting.
+🧠 LinkedIn = only platform with reliable B2B (Business-to-Business) job-title + company-size targeting.
 
 ---
 
@@ -115,9 +115,9 @@ Skills       · Years Experience · Groups
 
 | Metric | Range |
 |--------|-------|
-| CPM | $30–$80 |
+| CPM (Cost Per Mille) | $30–$80 |
 | CTR | 0.4–1.2% |
-| CPC | $5–$15 |
+| CPC (Cost Per Click) | $5–$15 |
 | Cost/Lead | $50–$300 |
 | Cost/Demo | $300–$1,500 |
 

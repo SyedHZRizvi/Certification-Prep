@@ -67,7 +67,7 @@ The headline is the single most read line on your profile. It appears in search 
 The good ones do one of three things:
 
 **Pattern A: Specific Outcome + Audience**
-*"Help B2B SaaS companies grow organic traffic with AI-assisted SEO"*
+*"Help B2B (Business-to-Business) SaaS companies grow organic traffic with AI-assisted SEO (Search Engine Optimization)"*
 *"Build paid acquisition systems for indie product founders"*
 
 **Pattern B: Capstone-Anchored**
@@ -416,7 +416,7 @@ The students who do this course best are the ones who treat the build as the con
 
 - *"Day 2 of the SEO audit. Just learned Screaming Frog finds [X type of issue]. Mind blown."*
 - *"Halfway through building my first AI agent. Cursor keeps suggesting I use a library I don't trust. Here's how I evaluated it."*
-- *"My Meta campaign on day 5: CTR up 3x after I rewrote the hook. The new hook is [thing]."*
+- *"My Meta campaign on day 5: CTR (Click-Through Rate) up 3x after I rewrote the hook. The new hook is [thing]."*
 
 Why this works:
 
@@ -438,7 +438,7 @@ Why this works:
 | Wrote each post from scratch every day | Pre-draft 10+ posts before launching |
 | Hid the "ugly" capstones | Show all 5. Hiding signals insecurity. |
 | Made portfolio site too fancy (Webflow with custom code) | Notion is fine. Polish later. |
-| No call-to-action in posts | Every post should have a soft CTA ("link in featured", "DM me if interested") |
+| No call-to-action in posts | Every post should have a soft CTA (Call to Action) ("link in featured", "DM me if interested") |
 | Posted only when motivated | Build it into your calendar |
 | Generic content (no specifics, no screenshots) | Show numbers, screenshots, names |
 | Engagement-baiting ("Comment YES if you agree!") | Don't. It looks desperate. |
@@ -554,7 +554,7 @@ You now know:
 
 These prompts probe the tension between "ship the wrapper fast" and "build a brand that compounds." Defend your reasoning against both sides.
 
-1. **The reading flatly says "Notion is the default; Webflow loses 2 weeks."** A senior designer pushes back: "For brand or DTC marketing roles, a Notion site signals 'doesn't care about craft', it actively undersells you." When is the speed argument right, and when is the craft argument right? Build the case for the audience-specific exception to the Notion-default rule.
+1. **The reading flatly says "Notion is the default; Webflow loses 2 weeks."** A senior designer pushes back: "For brand or DTC (Direct-to-Consumer) marketing roles, a Notion site signals 'doesn't care about craft', it actively undersells you." When is the speed argument right, and when is the craft argument right? Build the case for the audience-specific exception to the Notion-default rule.
 2. **The "First 30 Posts" framework distributes posts across 7 types (deep-dive, lesson learned, behind-the-scenes, contrarian, resource, question, milestone).** A successful indie creator counters that LinkedIn's algorithm now actively *demotes* variety, pick one format and ride it for 90 days. Is the diversified-posting playbook here outdated for 2026 LinkedIn? Defend the diversified approach against the focused-niching approach.
 3. **The 90-day Personal Brand Goals table sets targets like "30+ posts published, 100+ profile views/week, 5+ inbound connection requests/week."** A pragmatist says these metrics will discourage students whose audience is small/niche: a B2B SaaS marketer targeting *only* 50 hiring managers at Series B SaaS companies should hit 0 inbound DMs from outside that audience and that would mean the strategy is working. How should the metrics adapt to audience size? What's the universally-applicable signal?
 4. **The "build in public" mindset is presented as universal best practice.** A senior marketing exec at a large enterprise says it's actively career-limiting for *some* archetypes, corporate brand marketers, government affairs, regulated industries (healthcare, finance). When is "build in public" the wrong move? Where's the line, and how do you stay credible without it?

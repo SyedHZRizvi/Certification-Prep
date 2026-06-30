@@ -16,7 +16,7 @@
 **Promotion thresholds (move term up one tier when):**
 
 - Auto → Broad: 1–2 orders (any ACoS — just testing)
-- Broad → Phrase: 3–5 orders + ACoS ≤ break-even
+- Broad → Phrase: 3–5 orders + ACoS (Advertising Cost of Sale) ≤ break-even
 - Phrase → Exact: 8–10 orders + ACoS ≤ target
 
 ---
@@ -31,7 +31,7 @@ Break-Even ACoS = Gross Profit Margin %
 Target ACoS     = Break-Even ACoS × (1 − desired profit buffer %)
 ```
 
-**ACoS ↔ ROAS conversion table:**
+**ACoS ↔ ROAS (Return on Ad Spend) conversion table:**
 
 | ACoS | ROAS |
 |------|------|
@@ -98,9 +98,9 @@ Example: £0.80 base × (1 + 100%) = £1.60 top-of-search effective bid
 
 | Metric | US / Canada | UK | Germany |
 |--------|------------|-----|---------|
-| Avg SP CPC | $0.75–1.20 | £0.55–0.90 | €0.65–1.00 |
+| Avg SP CPC (Cost Per Click) | $0.75–1.20 | £0.55–0.90 | €0.65–1.00 |
 | Avg ACoS (mature category) | 28–35% | 25–32% | 22–30% |
-| Avg SP CTR | 0.35–0.45% | 0.30–0.40% | 0.28–0.38% |
+| Avg SP CTR (Click-Through Rate) | 0.35–0.45% | 0.30–0.40% | 0.28–0.38% |
 | SB Video CTR (vs standard SB) | 2–3x higher | 2–3x higher | 2–3x higher |
 | Avg Conversion Rate | 10–15% | 8–13% | 9–14% |
 
@@ -126,11 +126,11 @@ Example: £0.80 base × (1 + 100%) = £1.60 top-of-search effective bid
 
 **Available in:** US, UK, Germany, France, Italy, Spain, Netherlands (+ select markets)
 
-**GDPR note:** Attribution occurs within Amazon's own ecosystem — no third-party cookies, no separate GDPR consent requirement
+**GDPR (General Data Protection Regulation) note:** Attribution occurs within Amazon's own ecosystem — no third-party cookies, no separate GDPR consent requirement
 
 **Key metrics:** Clicks → Detail page views → Add to cart → Purchases → Revenue
 
-**Use case:** Prove to CFO that £10,000 Google Ads spend drove £45,000 in Amazon revenue → ROAS = 4.5x
+**Use case:** Prove to CFO (Chief Financial Officer) that £10,000 Google Ads spend drove £45,000 in Amazon revenue → ROAS = 4.5x
 
 ---
 
@@ -173,16 +173,16 @@ Cost of brand defence: typically very low CPC (£0.05–0.20 for brand name term
 | Amazon DSP availability | Fully mature | Available UK, DE, FR, ES, IT |
 | Sponsored Brands Video | Widely available | Available, some market lag |
 | Average CPCs | Generally higher | Generally lower (less competition) |
-| GDPR applicability | CCPA (California) | Full GDPR across EU/UK GDPR |
+| GDPR applicability | CCPA (California Consumer Privacy Act) (California) | Full GDPR across EU/UK GDPR |
 | SD audience retargeting (GDPR) | No GDPR concern | First-party data, walled garden — compliant |
 
 ---
 
 ## ⚠️ Anti-Patterns
 
-1. **One auto campaign = your whole PPC strategy.** Auto is discovery, not revenue.
+1. **One auto campaign = your whole PPC (Pay-Per-Click) strategy.** Auto is discovery, not revenue.
 2. **Never checking the Search Term Report.** You are paying for irrelevant traffic invisibly.
-3. **Optimising ACoS in isolation.** Without TACoS, you cannot see the organic halo effect.
+3. **Optimising ACoS in isolation.** Without TACoS (Total Advertising Cost of Sale), you cannot see the organic halo effect.
 4. **No negative keywords.** Build your negative list from Day 1, not Month 3.
 5. **Launching SD before SP is profitable.** Layer complexity only after the foundation works.
 6. **Defending your brand name is optional.** It is not — defend it or competitors will poach it.

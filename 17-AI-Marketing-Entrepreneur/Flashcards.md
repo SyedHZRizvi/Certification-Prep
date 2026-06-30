@@ -333,7 +333,7 @@
 **A:** $150–$250/hr effective.
 
 **Q:** How many SKUs should you have Year 1?
-**A:** 1 SKU Year 1, 2 SKUs Year 2, 3 SKUs Year 3. Resist adding more.
+**A:** 1 SKU (Stock Keeping Unit) Year 1, 2 SKUs Year 2, 3 SKUs Year 3. Resist adding more.
 
 **Q:** What's the rule on revisions in productized services?
 **A:** One revision round included. Additional revisions at a flat fee ($250–$500).
@@ -361,7 +361,7 @@
 **A:** ~$235/mo: Apollo $79 + Smartlead $39 + 3 inboxes $18 + LinkedIn SalesNav $99.
 
 **Q:** Minimum ACV for paid ads to make math sense?
-**A:** $7,500+. Below that, paid CAC ($800–$2,500 per booked call) doesn't pay back.
+**A:** $7,500+. Below that, paid CAC (Customer Acquisition Cost) ($800–$2,500 per booked call) doesn't pay back.
 
 **Q:** What is the Justin Welsh content engine?
 **A:** 5 LinkedIn posts/week + weekly newsletter, ~8 hr/week, repurposed across 5 LinkedIn + 5 tweets + 1 video per newsletter.
@@ -389,7 +389,7 @@
 **A:** 30–50%. Above 50% often signals underpricing.
 
 **Q:** What are the 7 sections of a proposal that closes?
-**A:** Cover + recap, problem, approach, ROI projection, investment (3 options), timeline + next steps, logistics + FAQ.
+**A:** Cover + recap, problem, approach, ROI (Return on Investment) projection, investment (3 options), timeline + next steps, logistics + FAQ.
 
 **Q:** What is a kill fee?
 **A:** Penalty paid by the client if they cancel mid-engagement. Typically 25–50% of unbilled balance.
@@ -432,7 +432,7 @@
 **A:** No. Pick ONE. They do 90% of the same work.
 
 **Q:** What's in the "sucker stack" to skip Year 1?
-**A:** HubSpot Marketing Hub Pro, Salesforce, ZoomInfo (use Apollo), Outreach.io/Salesloft, multiple SEO tools simultaneously.
+**A:** HubSpot Marketing Hub Pro, Salesforce, ZoomInfo (use Apollo), Outreach.io/Salesloft, multiple SEO (Search Engine Optimization) tools simultaneously.
 
 **Q:** Tool spend should target what % of revenue?
 **A:** 1–2%.
@@ -589,7 +589,7 @@
 **A:** Founder of Late Checkout. Public commentator on AI-leveraged agency builds and the AI-native team model.
 
 **Q:** Who is Khe Hy?
-**A:** Founder of RadReads. Solopreneur finance + leverage frameworks; "family CFO" model.
+**A:** Founder of RadReads. Solopreneur finance + leverage frameworks; "family CFO (Chief Financial Officer)" model.
 
 ---
 

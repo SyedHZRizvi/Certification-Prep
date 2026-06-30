@@ -1,6 +1,6 @@
 # Module 2: Storefront Platforms & Architecture 🏗️
 
-> **Why this module matters:** Picking the wrong platform is the single most expensive mistake in e-commerce. A wrong call costs $200K-$2M and 9-18 months. By the end of this module, you'll be able to walk a CTO through Shopify vs Adobe Commerce vs BigCommerce vs Salesforce vs headless / composable, and defend a recommendation with TCO math.
+> **Why this module matters:** Picking the wrong platform is the single most expensive mistake in e-commerce. A wrong call costs $200K-$2M and 9-18 months. By the end of this module, you'll be able to walk a CTO (Chief Technology Officer) through Shopify vs Adobe Commerce vs BigCommerce vs Salesforce vs headless / composable, and defend a recommendation with TCO math.
 
 ---
 
@@ -8,7 +8,7 @@
 
 In 2004, a 24-year-old programmer named Tobi Lütke opened an online store called Snowdevil to sell snowboards from his garage in Ottawa. He hated the e-commerce software he had to use (Yahoo! Stores, Miva Merchant, OsCommerce, clunky, slow, ugly). So he wrote his own.
 
-A year later, the snowboards weren't selling. The software was. Tobi pivoted, renamed it Shopify, opened it to other merchants, and by 2010 had thousands of customers. In 2015 Shopify IPO'd. By 2024 it powered ~5M stores, processed >$200B GMV, and was the second-largest US retailer after Amazon by GMV.
+A year later, the snowboards weren't selling. The software was. Tobi pivoted, renamed it Shopify, opened it to other merchants, and by 2010 had thousands of customers. In 2015 Shopify IPO'd. By 2024 it powered ~5M stores, processed >$200B GMV (Gross Merchandise Value), and was the second-largest US retailer after Amazon by GMV.
 
 That pivot from a single failing snowboard business to a platform is the central tension every operator faces when picking a stack. Tobi shipped a tool he needed; the platform happened later. **Buy the tool that fits your stage, not the tool that fits your fantasy.** A $2M brand that picks Adobe Commerce because "we'll need it at $100M" will spend a year fighting their stack instead of growing.
 
@@ -60,8 +60,8 @@ Best-of-breed services composed via APIs: commercetools or Elastic Path for cart
 
 | Platform | GMV sweet spot | Typical TCO (Year 1) | Best for |
 |----------|---------------|----------------------|----------|
-| **Shopify Plus** | $1M-$250M | $40K-$200K | Speed, DTC, opinionated stack |
-| **Adobe Commerce** | $20M-$500M | $250K-$1.5M | Complex B2B+B2C, deep customization |
+| **Shopify Plus** | $1M-$250M | $40K-$200K | Speed, DTC (Direct-to-Consumer), opinionated stack |
+| **Adobe Commerce** | $20M-$500M | $250K-$1.5M | Complex B2B (Business-to-Business)+B2C (Business-to-Consumer), deep customization |
 | **BigCommerce** | $1M-$100M | $30K-$200K | Multi-storefront, multi-channel, no transaction fees |
 | **Salesforce B2C Commerce Cloud** | $100M-$5B+ | $750K-$5M | Enterprise B2C, Einstein AI, Marketing Cloud integration |
 | **Composable (commercetools + Algolia + Sanity)** | $250M-$10B+ | $1M-$3M | Strategic differentiation, omnichannel, B2B+B2C unified |

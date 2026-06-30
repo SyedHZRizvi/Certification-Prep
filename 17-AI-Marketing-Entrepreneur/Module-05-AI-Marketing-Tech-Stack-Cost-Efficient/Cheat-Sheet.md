@@ -41,7 +41,7 @@ Any "no" → cancel.
 |---|---|---|
 | Tier 1, Solo, inbound-led | $20 LLM + $10 image + $12 Workspace + $129 Ahrefs + $25 Bonsai | **~$196** |
 | Tier 2, Solo, with outbound | Tier 1 + $235 outbound | **~$431** |
-| Tier 3, Small team (3–5) | Team seats + Folk CRM + Ahrefs Std + QBO | **~$964** |
+| Tier 3, Small team (3–5) | Team seats + Folk CRM (Customer Relationship Management) + Ahrefs Std + QBO | **~$964** |
 
 🎯 Target: tool spend ≈ **1–2% of revenue.**
 
@@ -85,7 +85,7 @@ Any "no" → cancel.
 
 ---
 
-## 🔍 SEO Single-Pick Rule
+## 🔍 SEO (Search Engine Optimization) Single-Pick Rule
 
 | Pick ONE | $/mo |
 |---|---|

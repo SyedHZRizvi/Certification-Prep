@@ -1,11 +1,11 @@
 # Module 9: AI Ethics, Privacy & Compliance ⚖️
 
-> **Why this module matters:** Privacy and AI-ethics regulation is the area where ignorance is most expensive. GDPR fines, FTC enforcement, EU AI Act compliance, and state-level laws (CCPA, CPRA, Texas Data Privacy Act, Virginia CDPA) are no longer theoretical. This module is the legal floor every 2026 marketer must know.
+> **Why this module matters:** Privacy and AI-ethics regulation is the area where ignorance is most expensive. GDPR (General Data Protection Regulation) fines, FTC enforcement, EU AI Act compliance, and state-level laws (CCPA, CPRA, Texas Data Privacy Act, Virginia CDPA) are no longer theoretical. This module is the legal floor every 2026 marketer must know.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) first-party data, cookie deprecation, attribution shifts
 > - [Module 2 AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) hallucinations, training data, bias surface
-> - [Module 6 Email Marketing](../Module-06-Email-Marketing-AI-Personalization/Reading.md) CAN-SPAM, GDPR-as-it-touches-email; this module deepens them
+> - [Module 6 Email Marketing](../Module-06-Email-Marketing-AI-Personalization/Reading.md) CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act), GDPR-as-it-touches-email; this module deepens them
 >
 > This module reads like a legal taxonomy. You don't need a law degree, but you should be ready to learn 9 regulatory acronyms (GDPR, CCPA/CPRA, COPPA, CAN-SPAM, CASL, LGPD, PIPL, PDPA, EU AI Act). Read with a regulatory glossary tab open.
 
@@ -52,7 +52,7 @@ The flagship privacy regulation of the 21st century. Applies to:
 
 🎯 **MEMORIZE THIS:** The 4%/€20M cap is the single most-cited GDPR number.
 
-### 2. CCPA / CPRA, California Consumer Privacy Act (Jan 2020) / California Privacy Rights Act (Jan 2023)
+### 2. CCPA (California Consumer Privacy Act) / CPRA, California Consumer Privacy Act (Jan 2020) / California Privacy Rights Act (Jan 2023)
 
 California's law, modeled on but distinct from GDPR.
 
@@ -72,7 +72,7 @@ California's law, modeled on but distinct from GDPR.
 
 **Penalties:** Up to **$2,500 per violation** (CCPA) and **$7,500 per intentional violation** (CPRA). Plus private right of action for data breaches.
 
-### 3. COPPA, Children's Online Privacy Protection Act (US, 1998; updated 2013)
+### 3. COPPA (Children's Online Privacy Protection Act), Children's Online Privacy Protection Act (US, 1998; updated 2013)
 
 Protects under-13s' personal information.
 
@@ -88,7 +88,7 @@ Protects under-13s' personal information.
 
 Covered in Module 6, email-specific.
 
-### 5. CASL (Canada, 2014)
+### 5. CASL (Canada's Anti-Spam Legislation) (Canada, 2014)
 
 Canada's Anti-Spam Law, covers email + electronic messages. Penalties up to **CA$10 million**.
 

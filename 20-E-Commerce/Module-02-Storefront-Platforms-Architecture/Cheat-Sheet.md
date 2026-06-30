@@ -23,10 +23,10 @@ COMPOSABLE: Best-of-breed services composed across many vendors
 
 ## 🏪 Platform Sweet Spots
 
-| Platform | GMV | TCO Y1 | Best for |
+| Platform | GMV (Gross Merchandise Value) | TCO Y1 | Best for |
 |----------|-----|--------|----------|
-| Shopify Plus | $1M-$250M | $40K-$200K | Speed, DTC, opinionated |
-| Adobe Commerce | $20M-$500M | $250K-$1.5M | Complex B2B+B2C |
+| Shopify Plus | $1M-$250M | $40K-$200K | Speed, DTC (Direct-to-Consumer), opinionated |
+| Adobe Commerce | $20M-$500M | $250K-$1.5M | Complex B2B (Business-to-Business)+B2C (Business-to-Consumer) |
 | BigCommerce | $1M-$100M | $30K-$200K | Multi-storefront, no transaction fees |
 | Salesforce CC | $100M-$5B | $750K-$5M | Enterprise B2C, Einstein AI |
 | Composable (MACH) | $250M-$10B | $1M-$3M | Strategic differentiation |

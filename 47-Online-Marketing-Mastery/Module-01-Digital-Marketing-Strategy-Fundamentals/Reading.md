@@ -24,9 +24,9 @@ Within 48 hours, the video had 12,000 orders. Within 72 hours, their server cras
 
 **A razor-sharp value proposition.** (Pun absolutely intended.) "$1 a month. No commitment." In a market where Gillette's Fusion ProGlide cost $3–4 *per blade*, this wasn't just a price difference — it was a paradigm shift.
 
-**The business result:** Dollar Shave Club went from $0 to $65 million in annual revenue in three years. By 2016, Unilever acquired them for **$1 billion in cash** — all-cash, no debt. At the time, it was the largest acquisition of a digitally-native DTC brand ever.
+**The business result:** Dollar Shave Club went from $0 to $65 million in annual revenue in three years. By 2016, Unilever acquired them for **$1 billion in cash** — all-cash, no debt. At the time, it was the largest acquisition of a digitally-native DTC (Direct-to-Consumer) brand ever.
 
-The kicker? Dubin's customer acquisition cost (CAC) in those early viral days was essentially zero. The lifetime value (LTV) of a subscriber — paying $1–9/month for years — was compounding beautifully. The LTV:CAC ratio was extraordinary.
+The kicker? Dubin's customer acquisition cost (CAC) in those early viral days was essentially zero. The lifetime value (LTV) of a subscriber — paying $1–9/month for years — was compounding beautifully. The LTV (Lifetime Value):CAC (Customer Acquisition Cost) ratio was extraordinary.
 
 **The lesson this module teaches through that story:**
 
@@ -68,10 +68,10 @@ RACE is the digital-marketing-specific evolution of SOSTAC. It's customer-journe
 
 | Stage | Goal | Channels | Key Metrics |
 |---|---|---|---|
-| **Reach** | Build awareness, drive traffic | SEO, paid search, social ads, PR, influencers | Impressions, reach, website sessions, share of voice |
+| **Reach** | Build awareness, drive traffic | SEO (Search Engine Optimization), paid search, social ads, PR, influencers | Impressions, reach, website sessions, share of voice |
 | **Act** | Encourage interaction on site/app | Content marketing, UX, landing pages, lead magnets | Pages per visit, time on site, leads generated, micro-conversions |
-| **Convert** | Turn prospects into customers | Email nurture, retargeting, cart abandonment flows, promotions | Conversion rate, revenue, ROAS, CPA |
-| **Engage** | Build loyalty and advocacy | Email CRM, loyalty programmes, community, social | Repeat purchase rate, NPS, LTV, churn rate |
+| **Convert** | Turn prospects into customers | Email nurture, retargeting, cart abandonment flows, promotions | Conversion rate, revenue, ROAS (Return on Ad Spend), CPA |
+| **Engage** | Build loyalty and advocacy | Email CRM (Customer Relationship Management), loyalty programmes, community, social | Repeat purchase rate, NPS, LTV, churn rate |
 
 **North American note:** American marketers often use "Attract → Engage → Delight" (HubSpot's flywheel) which maps closely to RACE. Neither is wrong — RACE is more metric-focused; the flywheel is more philosophy.
 
@@ -115,7 +115,7 @@ The funnel maps Bloom's taxonomy of cognition onto buying behaviour:
 | BOFU | Urgency, social proof, risk-removal | Free trials, testimonials, money-back guarantees, demos | "Cancel anytime" messaging, first month free offers |
 | Retention | Value demonstration, community, exclusivity | Newsletters, loyalty rewards, upsells, surveys | DSC's "Dollar Shave Club Club" magazine, product bundles |
 
-### The B2B Funnel Looks Different
+### The B2B (Business-to-Business) Funnel Looks Different
 
 In North American B2B (SaaS, enterprise, professional services), the funnel is longer and involves multiple decision-makers. A typical B2B SaaS path: **Content download (TOFU) → Webinar attendance (MOFU) → Free trial (MOFU/BOFU) → Demo with sales (BOFU) → Contract negotiation → Close.** Average B2B purchase cycle: 3–12 months (industry estimate, Gartner/Forrester research).
 
@@ -162,7 +162,7 @@ A buyer persona is a semi-fictional representation of your ideal customer, built
 
 ### The Big Four Performance Metrics
 
-Every marketing KPI you'll ever encounter is a variation or combination of four core metrics:
+Every marketing KPI (Key Performance Indicator) you'll ever encounter is a variation or combination of four core metrics:
 
 **1. Customer Acquisition Cost (CAC)**
 
@@ -215,7 +215,7 @@ ROAS = Revenue Generated from Ads / Ad Spend
 
 Example: You spend £10,000 on Google Shopping ads and generate £40,000 in sales → ROAS = 4x (or 400%).
 
-**ROAS vs ROI — don't confuse them:**
+**ROAS vs ROI (Return on Investment) — don't confuse them:**
 - ROAS measures gross revenue vs ad spend only
 - ROI measures net profit vs total investment (including COGS, fulfilment, overhead)
 - A ROAS of 4x sounds great; if your margin is 20%, you're actually barely breaking even
@@ -232,7 +232,7 @@ CPA is channel-level (what did *this campaign* cost per conversion?). CAC is com
 
 ---
 
-## Section 5 — Regulatory Landscape: GDPR vs CCPA
+## Section 5 — Regulatory Landscape: GDPR (General Data Protection Regulation) vs CCPA (California Consumer Privacy Act)
 
 ### Why Marketers Must Understand Data Law
 
@@ -253,7 +253,7 @@ The 2018 enforcement of GDPR (EU) and the 2020 enforcement of CCPA (California) 
 
 ### Practical Marketing Implications of GDPR
 
-1. **Email marketing:** You must have a legal basis for every email you send to an EU person. "Legitimate interest" can work for B2B, but B2C email requires explicit consent. No pre-ticked opt-in boxes. No confusing double-negatives ("Uncheck this box if you do NOT want to NOT receive emails").
+1. **Email marketing:** You must have a legal basis for every email you send to an EU person. "Legitimate interest" can work for B2B, but B2C (Business-to-Consumer) email requires explicit consent. No pre-ticked opt-in boxes. No confusing double-negatives ("Uncheck this box if you do NOT want to NOT receive emails").
 
 2. **Cookie banners:** Required in the EU and UK. Users must be able to reject all non-essential cookies. "Accept all / Reject all" must be equally prominent. Dark patterns (hiding the reject button) have attracted heavy fines in France and Germany.
 
@@ -349,8 +349,8 @@ Funnel:  TOFU (Awareness) → MOFU (Consideration) → BOFU (Conversion) → Ret
 |---|---|---|---|
 | GDPR | EU + UK | Opt-IN | Explicit consent for email; proper cookie banners |
 | CCPA/CPRA | California | Opt-OUT | "Do Not Sell My Data" link required |
-| CASL | Canada | Opt-IN | Express or implied consent; must identify sender |
-| CAN-SPAM | United States | Opt-OUT | Unsubscribe link required; no deceptive subject lines |
+| CASL (Canada's Anti-Spam Legislation) | Canada | Opt-IN | Express or implied consent; must identify sender |
+| CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act) | United States | Opt-OUT | Unsubscribe link required; no deceptive subject lines |
 
 ---
 

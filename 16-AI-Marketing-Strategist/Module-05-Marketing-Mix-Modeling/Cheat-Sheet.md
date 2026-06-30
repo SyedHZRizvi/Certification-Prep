@@ -76,7 +76,7 @@ Hill(x) = x^α / (x^α + K^α)
 
 | Question | Tool |
 |----------|------|
-| Marginal ROAS of +$1M in channel X? | MMM |
+| Marginal ROAS (Return on Ad Spend) of +$1M in channel X? | MMM |
 | Bid in Google Ads tomorrow? | MTA / DDA |
 | Which ad-set wins inside campaign? | MTA |
 | Reallocate across TV / digital / OOH? | MMM |
@@ -85,7 +85,7 @@ Hill(x) = x^α / (x^α + K^α)
 
 ---
 
-## 📊 The 4 CFO Charts
+## 📊 The 4 CFO (Chief Financial Officer) Charts
 
 1. **Waterfall**, Baseline + per-channel incremental
 2. **ROAS table**, Spend, incremental sales, ROAS per channel

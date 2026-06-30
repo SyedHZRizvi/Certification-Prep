@@ -4,9 +4,9 @@
 
 ---
 
-## 🎯 A Real Story: Amazon Opens FBA to Shopify (2024)
+## 🎯 A Real Story: Amazon Opens FBA (Fulfillment by Amazon) to Shopify (2024)
 
-For 18 years, Amazon's Fulfillment by Amazon (FBA) network by 2024 the largest fulfillment network on Earth, with 175+ million sq ft of US warehouse space was a walled garden. If you wanted Amazon to fulfill your orders, the orders had to come through Amazon's marketplace. Sellers on Shopify, BigCommerce, their own DTC sites? Use a different 3PL.
+For 18 years, Amazon's Fulfillment by Amazon (FBA) network by 2024 the largest fulfillment network on Earth, with 175+ million sq ft of US warehouse space was a walled garden. If you wanted Amazon to fulfill your orders, the orders had to come through Amazon's marketplace. Sellers on Shopify, BigCommerce, their own DTC (Direct-to-Consumer) sites? Use a different 3PL.
 
 In April 2023, Amazon launched **Buy with Prime** for non-Amazon storefronts. By 2024, the integration into Shopify Plus became official: Shopify merchants could surface a Prime badge on their DTC site, and Amazon would fulfill the order from FBA inventory.
 
@@ -16,7 +16,7 @@ In parallel, Amazon's Multi-Channel Fulfillment (MCF, FBA inventory used to fulf
 
 This is a watershed moment for DTC fulfillment economics. For the first time, the largest fulfillment network in the world is accessible to non-Amazon-marketplace operators. The implications cascade through 3PL selection, returns logistics, and the math of marketplace-vs-DTC channel allocation.
 
-This module gives you the operating knowledge: the 3PL landscape, the FBA/FBM/MCF/Buy-with-Prime decision matrix, OMS and WMS architecture, returns as a profit center (per Loop Returns 2024 data), and the freight-cost discipline that decides whether furniture DTC works.
+This module gives you the operating knowledge: the 3PL landscape, the FBA/FBM (Fulfillment by Merchant)/MCF/Buy-with-Prime decision matrix, OMS and WMS architecture, returns as a profit center (per Loop Returns 2024 data), and the freight-cost discipline that decides whether furniture DTC works.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Contribution-margin math, covered in [Module 1](../Module-01-E-Commerce-Fundamentals-Business-Models/Reading.md)
@@ -190,7 +190,7 @@ The 2023-2024 expansion that opened FBA-grade fulfillment to non-Amazon channels
 | Carrier | Sweet spot | Notes |
 |---------|------------|-------|
 | USPS | Light/small (< 2 lbs), residential | First Class Package Service; Priority Mail |
-| UPS | Mid-weight, B2B + residential | Reliable; expensive |
+| UPS | Mid-weight, B2B (Business-to-Business) + residential | Reliable; expensive |
 | FedEx | Express, B2B-skewed | Two-day air competitive |
 | DHL Express | International | The cross-border default |
 | Amazon Logistics | Amazon-fulfilled only | Now ~25% of US package volume |
@@ -213,7 +213,7 @@ Free shipping is a marketing claim AND a cost-allocation decision.
 
 **Three approaches:**
 1. **Free shipping always**, Easiest UX; costliest. Costs ~$6-$15 per order absorbed into margin.
-2. **Free shipping over $X**, Threshold; common DTC pattern. Lifts AOV but reduces order volume.
+2. **Free shipping over $X**, Threshold; common DTC pattern. Lifts AOV (Average Order Value) but reduces order volume.
 3. **Standard shipping with paid express**, Charges shipping but offers paid faster options.
 
 **The Free Shipping Threshold formula:**
@@ -252,7 +252,7 @@ US e-commerce return rate (2024): ~18-25% across categories. Apparel: 30-40%. Fu
 
 🚨 **Trap on the exam:** "Easy returns" is NOT the same as "free returns." Free returns cost the merchant ~$10-$25 per return; easy returns (paid by customer for low-value, free for high-value) preserves margin. The DTC industry trend in 2024 is "paid returns for low-value categories" (a step backward from 2018-2022 "always free").
 
-🧠 **MEMORIZE THIS.** Returns lift LTV by 20-50% (Loop Returns 2024). Returns are a customer-retention investment, not just a cost.
+🧠 **MEMORIZE THIS.** Returns lift LTV (Lifetime Value) by 20-50% (Loop Returns 2024). Returns are a customer-retention investment, not just a cost.
 
 ---
 
@@ -281,7 +281,7 @@ A 30-40% return rate at a $50 AOV apparel brand means about $15-20 per order is 
 
 ## 💼 Case Study, Amazon's FBA + Buy with Prime Expansion (2023-2024)
 
-**Situation.** Through 2022, Amazon's FBA network was the largest in the world (~175M sq ft, ~110M Prime members in the US) but locked to Amazon marketplace orders. Shopify, with ~5M stores and >$200B GMV, had grown to be Amazon's largest non-marketplace competitor. The strategic question for Amazon: should we open FBA's infrastructure to compete with the 3PL market (ShipBob, Shipmonk, Saddle Creek) directly?
+**Situation.** Through 2022, Amazon's FBA network was the largest in the world (~175M sq ft, ~110M Prime members in the US) but locked to Amazon marketplace orders. Shopify, with ~5M stores and >$200B GMV (Gross Merchandise Value), had grown to be Amazon's largest non-marketplace competitor. The strategic question for Amazon: should we open FBA's infrastructure to compete with the 3PL market (ShipBob, Shipmonk, Saddle Creek) directly?
 
 **Decision.** In April 2023, Amazon launched **Buy with Prime** publicly (it had been in invite-only beta since 2022). The integration allowed any Shopify, BigCommerce, or custom DTC site to surface a Prime badge using FBA inventory. In parallel, Amazon expanded **Multi-Channel Fulfillment (MCF)** APIs to support Walmart Marketplace, eBay, Etsy, TikTok Shop. By Q4 2023, Buy with Prime was integrated with Shopify Plus as an official channel. In 2024, Shopify and Amazon announced direct one-click installation of the Buy with Prime app from Shopify's app store.
 
@@ -301,7 +301,7 @@ The pricing:
 **Lesson for the exam / for practitioners.** Fulfillment economics shifted permanently in 2023-2024. The decision matrix expanded from "Amazon FBA for marketplace, separate 3PL for DTC" to "Amazon FBA + Buy with Prime for DTC, or pure 3PL for brands that value differentiated unboxing." The exam-answer pattern: when given "should we use Buy with Prime?", the right answer is YES when (a) the brand already has FBA inventory, (b) Prime trust meaningfully drives DTC conversion in the brand's category, and (c) the brand isn't differentiating on unboxing experience. NO when (a) brand is luxury / craft / sustainable-differentiated, (b) unboxing is the moat, or (c) the brand wants full customer-data ownership.
 
 **Discussion (Socratic).**
-- Q1: A $25M DTC home-goods brand currently uses ShipBob. They have a small Amazon FBA presence. The CEO considers switching DTC to Buy with Prime to gain the Prime badge. Build the strongest argument for staying with ShipBob, and the strongest for switching. What gating metric would decide?
+- Q1: A $25M DTC home-goods brand currently uses ShipBob. They have a small Amazon FBA presence. The CEO (Chief Executive Officer) considers switching DTC to Buy with Prime to gain the Prime badge. Build the strongest argument for staying with ShipBob, and the strongest for switching. What gating metric would decide?
 - Q2: Buy with Prime takes Amazon's brand to the customer's DTC experience (Prime badge, Amazon return label). Why might a luxury or DTC-craft brand actively avoid Buy with Prime?
 - Q3: Glossier never went FBA-heavy. They built their own 3PL relationships. What strategic principle was Glossier optimizing for that Buy with Prime would have weakened?
 
@@ -394,7 +394,7 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 7 returns to fulfillment when discussing Amazon Ads ACoS math; Module 9 returns when discussing GA4 fulfillment events; Module 10 returns deeply for cross-border DDP and IOSS integration.
+> - Inside this course: Module 7 returns to fulfillment when discussing Amazon Ads ACoS (Advertising Cost of Sale) math; Module 9 returns when discussing GA4 fulfillment events; Module 10 returns deeply for cross-border DDP and IOSS integration.
 > - Cross-course: [10-ASCM-CSCP Module 7](../../10-ASCM-CSCP/Module-07-Logistics-Distribution-Warehousing/Reading.md) and [12-ASCM-CLTD Module 5](../../12-ASCM-CLTD/Module-05-Warehouse-Operations/Reading.md) cover the underlying supply-chain disciplines.
 > - Practice: Practice Exam 1 has ~6 questions drawn from this module (OMS vs WMS, FBA vs FBM, Buy with Prime, returns economics).
 

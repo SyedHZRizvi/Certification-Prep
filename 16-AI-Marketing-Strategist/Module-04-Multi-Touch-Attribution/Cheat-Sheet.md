@@ -55,7 +55,7 @@ RE_i = (P_conv_with_i − P_conv_without_i) / P_conv_with_i
 | Vendor | Sweet spot | Rigor |
 |--------|-----------|-------|
 | Rockerbox | Enterprise MTA + MMM + Incr | High |
-| Northbeam | DTC | Med-high |
+| Northbeam | DTC (Direct-to-Consumer) | Med-high |
 | Measured | Enterprise Incr + MMM | High (no MTA) |
 | Triple Whale | Shopify DTC | Med |
 | Hyros | Info products | Low-med |

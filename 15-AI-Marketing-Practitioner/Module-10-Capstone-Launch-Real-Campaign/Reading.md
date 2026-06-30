@@ -99,9 +99,9 @@ You may also spend $50-150 on tools you don't already have (Unbounce, Klaviyo, M
 |-----|------|-------------|
 | 15 | If healthy CPA → increase budget 20%. Else diagnose. | Decision rationale doc |
 | 16 | Add 2 new creative variants (DCT-style on Meta). | New ads launched |
-| 17 | Refresh Google ad copy if CTR < 4%. | New RSA variants |
+| 17 | Refresh Google ad copy if CTR (Click-Through Rate) < 4%. | New RSA variants |
 | 18 | Daily check. Watch 5 Hotjar replays. | Hotjar insight note |
-| 19 | Daily check. Calculate ROAS / CPL / CAC. | Numbers doc |
+| 19 | Daily check. Calculate ROAS (Return on Ad Spend) / CPL / CAC (Customer Acquisition Cost). | Numbers doc |
 | 20 | Stop spend. Wait 24h for delayed conversions to attribute. | (No spend day) |
 | 21 | Final reporting. Write post-mortem + blog post. | Capstone deliverables (see below) |
 
@@ -190,7 +190,7 @@ Score yourself out of 100 across these dimensions:
 | **4. Campaign Structure** | 10 | Google: proper match types, negatives in place, RSAs at Excellent strength. Meta: proper ABO test structure. |
 | **5. Launch Discipline** | 10 | Both campaigns launched. No "default settings" left checked. Audience signals on PMax/Meta. |
 | **6. Optimization Cadence** | 15 | 14+ days of daily optimization logs. Search terms reviewed. Creative refreshed. |
-| **7. Measurement Rigor** | 10 | Final report includes CTR, CPC, CPA, conversion volume, ROAS or CPL. With error bars on small samples. |
+| **7. Measurement Rigor** | 10 | Final report includes CTR, CPC (Cost Per Click), CPA, conversion volume, ROAS or CPL. With error bars on small samples. |
 | **8. Post-Mortem Quality** | 10 | Honest assessment of what worked, failed, surprised. Forward-looking lessons. |
 | **TOTAL** | 100 | |
 
@@ -322,7 +322,7 @@ This is your portfolio piece. Write it for a marketing manager who might hire yo
 These are real practitioners who shared their own first-campaign learnings publicly. Look at the depth and honesty:
 
 - **Demand Curve's "I spent $1,000 on ads" series**: [demandcurve.com/case-studies](https://www.demandcurve.com/), short-form case studies with numbers
-- **DTC Newsletter, Founder spend reports**: candid breakdowns from real DTC founders
+- **DTC (Direct-to-Consumer) Newsletter, Founder spend reports**: candid breakdowns from real DTC founders
 - **Reforge, Growth case studies**: longer-form analysis (paid newsletter, free articles available)
 
 These are the bar. Your capstone doesn't need to match their scale, but it should match their honesty.

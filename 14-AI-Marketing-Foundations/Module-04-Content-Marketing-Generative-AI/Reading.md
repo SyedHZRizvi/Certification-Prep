@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 2 AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) the ROLE/CONTEXT/TASK prompt template, hallucination mitigation, multimodal toolkit
-> - [Module 3 SEO in the AI Era](../Module-03-SEO-in-the-AI-Era/Reading.md) pillar/cluster, E-E-A-T, GEO/AEO; content strategy reuses these
+> - [Module 3 SEO (Search Engine Optimization) in the AI Era](../Module-03-SEO-in-the-AI-Era/Reading.md) pillar/cluster, E-E-A-T, GEO/AEO; content strategy reuses these
 > - Basic content production literacy: knowing what an editorial calendar, brief, and outline look like
 >
 > If you've never published a blog post or a long-form social piece, the tactical sections will land best if you treat them as exercises to do alongside reading rather than abstractly absorbing.
@@ -56,7 +56,7 @@ For each piece of content you make, ask: **what job is the reader hiring this co
 |---|---|
 | Help me understand a new concept | Explainer post, video, glossary |
 | Help me compare options | Comparison table, "X vs Y" post |
-| Help me decide | Buyer's guide, ROI calculator |
+| Help me decide | Buyer's guide, ROI (Return on Investment) calculator |
 | Help me execute | How-to article, template, checklist |
 | Help me look smart in a meeting | Stats roundup, executive summary |
 | Help me feel inspired | Customer story, case study, manifesto |
@@ -104,7 +104,7 @@ Per Brynjolfsson, Li, and Raymond's 2023 paper *"Generative AI at Work"* (NBER w
 | **Gemini** (Google) | Research + multimodal + Workspace docs | Native Google Docs / Sheets integration | Newer; quality varies on creative tasks |
 | **Jasper** | Brand-voice-locked marketing content at scale | Brand voice tooling, templates, team workflows | Subscription cost, value depends on team scale |
 | **Copy.ai** | Short-form ad/email copy, sales workflows | Workflow automation, GTM focus | Less ideal for long blog posts |
-| **Writesonic** | SEO content + AI Article Writer | Built-in SERP analysis | Quality varies vs frontier models |
+| **Writesonic** | SEO content + AI Article Writer | Built-in SERP (Search Engine Results Page) analysis | Quality varies vs frontier models |
 | **Anyword** | Performance-predictive copy for ads/landing pages | Predictive copy scores | More ad copy than blog focus |
 
 > **Pricing note:** All paid AI writing tools change pricing constantly. As of writing, expect ChatGPT Plus / Claude Pro / Gemini Advanced in the ~$20/month range and Jasper / Copy.ai / Writesonic to start in the $30–$60/month range with team tiers higher. Always check current pricing.
@@ -208,7 +208,7 @@ A newer space, quality jumped dramatically in 2024–2025.
 
 **Realistic 2026 use cases for marketers:**
 
-1. **Personalized sales videos at scale**, HeyGen + a CRM integration can produce "Hi [Name], I noticed you visited our pricing page" videos personalized per prospect.
+1. **Personalized sales videos at scale**, HeyGen + a CRM (Customer Relationship Management) integration can produce "Hi [Name], I noticed you visited our pricing page" videos personalized per prospect.
 2. **Multilingual content**, record once, dub into 30 languages.
 3. **Repurposing**, Descript turns a podcast into a YouTube video, social clips, and a blog post in one workflow.
 4. **Concept testing**, Runway or Sora can pre-visualize a brand-film concept before paying for full production.
@@ -264,7 +264,7 @@ For every AI-assisted piece, a human must verify:
 - [ ] **Structure.** Logical flow, useful headings, scannable.
 - [ ] **SEO.** Title, meta, H1/H2/H3, internal links, schema.
 - [ ] **Visuals.** At least one image; for long posts, multiple.
-- [ ] **CTA.** Clear next step (subscribe, download, schedule).
+- [ ] **CTA (Call to Action).** Clear next step (subscribe, download, schedule).
 - [ ] **Compliance.** No PII, no claims that need legal review, AI disclosure if required.
 
 A piece that fails any of those checks should not ship.

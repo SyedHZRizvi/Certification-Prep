@@ -1,4 +1,4 @@
-# Module 12 Cheat Sheet: SEO & Content Marketing
+# Module 12 Cheat Sheet: SEO (Search Engine Optimization) & Content Marketing
 
 **Quick Reference Card | Semrush SEO · HubSpot SEO · Ahrefs Academy**
 
@@ -30,8 +30,8 @@
 **Core Metrics to Evaluate:**
 - **Search Volume** — monthly average searches (use 3-month rolling average)
 - **Keyword Difficulty (KD)** — Ahrefs: domain-based 0-100; Semrush: page-based 0-100
-- **CPC** — proxy for commercial value (higher CPC = more buyer intent)
-- **SERP Features** — does the SERP show AI Overview, Featured Snippet, PAA? Reduces organic CTR
+- **CPC (Cost Per Click)** — proxy for commercial value (higher CPC = more buyer intent)
+- **SERP (Search Engine Results Page) Features** — does the SERP show AI Overview, Featured Snippet, PAA? Reduces organic CTR (Click-Through Rate)
 
 **Target KD by Domain Rating:**
 - DR 0-20 → target KD ≤ 20
@@ -162,7 +162,7 @@ Rules:
 | Experience | Author bios with personal case studies, "I tested this" sections, original data |
 | Expertise | Author credentials, industry certifications, publication in respected journals |
 | Authoritativeness | Backlinks from industry publications, brand mentions, awards, speaker profiles |
-| Trustworthiness | HTTPS, accurate contact info, clear privacy policy, GDPR compliance, factual accuracy |
+| Trustworthiness | HTTPS, accurate contact info, clear privacy policy, GDPR (General Data Protection Regulation) compliance, factual accuracy |
 
 **Most critical for:** Health, finance, legal, safety (YMYL) content
 **European note:** GDPR-compliant cookie consent and privacy policy are Trustworthiness signals
@@ -263,7 +263,7 @@ Rules:
 
 ---
 
-## 14. Measuring Organic ROI
+## 14. Measuring Organic ROI (Return on Investment)
 
 **Leading Indicators (months 1-6):**
 - Keyword ranking improvements for target terms

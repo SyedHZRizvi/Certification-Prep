@@ -3,7 +3,7 @@
 > **Why this module matters:** Most founders overspend on tools in Year 1, $1,500–$3,000/month before they've made $10,000. This module shows you how to build a complete AI-marketing agency stack on $200/month as a solo operator (or $1,000–$1,500/month as a small team) without sacrificing delivery quality. The goal: maximum AI leverage, minimum monthly burn.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - A drafted SKU + delivery process from [Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md), you cannot buy the right tools until you know what you're delivering
+> - A drafted SKU (Stock Keeping Unit) + delivery process from [Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md), you cannot buy the right tools until you know what you're delivering
 > - The outbound + inbound channel choice from [Module 3](../Module-03-Client-Acquisition-Channels/Reading.md), the $235/mo outbound tier is only worth subscribing to if outbound is one of your two channels
 > - General familiarity with the categories of tools in marketing operations (LLMs, CRMs, SEO tools, email platforms, automation), [`14-AI-Marketing-Foundations` Modules 3–7](../../14-AI-Marketing-Foundations/) and [`15-AI-Marketing-Practitioner`](../../15-AI-Marketing-Practitioner/) cover most of these in product depth
 > - Comfort with the idea that **tool spend should be 1–2% of revenue**, not 5–10% (the central principle of the module)
@@ -101,9 +101,9 @@ Your stack should fit into exactly 9 categories. We'll cover each.
 | 1 | LLM (chat) | $25/mo | $75/mo |
 | 2 | Image / video AI | $30/mo | $60/mo |
 | 3 | Productivity / docs | Free–$10/mo | $50/mo |
-| 4 | Project mgmt / CRM | Free–$15/mo | $40/mo |
+| 4 | Project mgmt / CRM (Customer Relationship Management) | Free–$15/mo | $40/mo |
 | 5 | Outbound stack | $220/mo | $400/mo |
-| 6 | SEO / research | $99/mo | $150/mo |
+| 6 | SEO (Search Engine Optimization) / research | $99/mo | $150/mo |
 | 7 | Email + automation | Free–$20/mo | $100/mo |
 | 8 | Analytics + tracking | Free | Free–$50/mo |
 | 9 | Billing + contracts | $25/mo | $50/mo |
@@ -213,7 +213,7 @@ We covered the math in Module 3. Recap:
 
 | Tool | Use | Cost (2026, verify) |
 |---|---|---|
-| **Apollo** | B2B data + ICP filtering | $79/mo |
+| **Apollo** | B2B (Business-to-Business) data + ICP filtering | $79/mo |
 | **Clay** | AI enrichment | $149/mo (if needed) |
 | **Smartlead** | Cold email sending | $39/mo |
 | **Instantly** | Smartlead alternative | $37/mo |

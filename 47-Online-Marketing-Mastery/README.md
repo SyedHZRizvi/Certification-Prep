@@ -7,7 +7,7 @@ title: Online Marketing Mastery — Google, Amazon & Social Media
 
 **📣 Online Marketing** › Comprehensive Course
 
-> **Goal:** Master Google Ads, Amazon Advertising, Meta/TikTok/LinkedIn marketing, SEO, email, and data analytics — and apply them to European and North American markets with legal compliance built in.
+> **Goal:** Master Google Ads, Amazon Advertising, Meta/TikTok/LinkedIn marketing, SEO (Search Engine Optimization), email, and data analytics — and apply them to European and North American markets with legal compliance built in.
 > **Duration:** 10–14 weeks part-time (≈4–6 hrs/week)
 > **Difficulty:** Beginner-friendly · builds to advanced strategies
 > **Markets:** North America (US, Canada) + Europe (UK, EU, GDPR-regulated markets)
@@ -16,9 +16,9 @@ title: Online Marketing Mastery — Google, Amazon & Social Media
 
 ## ✨ Why This Course Is Different
 
-Most online marketing courses teach the mechanics — how to click through an ads dashboard, how to write a subject line, how to find a keyword. This course teaches the thinking behind the mechanics. Every module is built around the same question a CMO or a growth team lead asks: *why does this work, when does it stop working, and how do I prove it with numbers?* That means you will study real campaigns from real brands — European retailers navigating GDPR consent mode, North American DTC brands rebuilding attribution after iOS 14.5, Amazon sellers competing on ACoS in both the US and UK marketplaces at the same time. The brand examples are chosen for their instructional value, not their fame.
+Most online marketing courses teach the mechanics — how to click through an ads dashboard, how to write a subject line, how to find a keyword. This course teaches the thinking behind the mechanics. Every module is built around the same question a CMO (Chief Marketing Officer) or a growth team lead asks: *why does this work, when does it stop working, and how do I prove it with numbers?* That means you will study real campaigns from real brands — European retailers navigating GDPR (General Data Protection Regulation) consent mode, North American DTC (Direct-to-Consumer) brands rebuilding attribution after iOS 14.5, Amazon sellers competing on ACoS (Advertising Cost of Sale) in both the US and UK marketplaces at the same time. The brand examples are chosen for their instructional value, not their fame.
 
-Compliance is not a footnote in this course — it is woven into every channel chapter. GDPR Consent Mode v2, the UK ICO cookie guidance, CAN-SPAM, and CASL are introduced in the modules where they matter most: Analytics, Email, and Meta Advertising. You will not reach the end of the course and discover that the campaigns you designed are illegal in the markets you want to enter. The legal scaffolding is built while the marketing scaffolding goes up.
+Compliance is not a footnote in this course — it is woven into every channel chapter. GDPR Consent Mode v2, the UK ICO cookie guidance, CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act), and CASL (Canada's Anti-Spam Legislation) are introduced in the modules where they matter most: Analytics, Email, and Meta Advertising. You will not reach the end of the course and discover that the campaigns you designed are illegal in the markets you want to enter. The legal scaffolding is built while the marketing scaffolding goes up.
 
 The course is genuinely beginner-friendly in the early modules but does not stay there. By Module 8 you are building Meta Advantage+ Shopping campaigns with Conversions API configured for GDPR compliance. By Module 12 you are doing technical SEO audits and reading E-E-A-T quality signals the way a Google Search Quality Evaluator would. Each module is self-contained enough that experienced practitioners can jump in at the right level, while the narrative thread across all twelve modules builds a coherent mental model of how these channels work together inside a single brand's marketing mix.
 
@@ -33,7 +33,7 @@ Completing this course and the certifications it prepares you for positions you 
 | Role | US Range (USD) | UK/EU Range (GBP/EUR) |
 |------|---------------|----------------------|
 | Digital Marketing Specialist | $52K–$78K | £32K–£52K / €38K–€58K |
-| PPC Manager | $65K–$95K | £40K–£62K / €46K–€70K |
+| PPC (Pay-Per-Click) Manager | $65K–$95K | £40K–£62K / €46K–€70K |
 | Amazon Advertising Specialist | $60K–$90K | £38K–£58K / €44K–€66K |
 | Social Media Manager | $50K–$75K | £30K–£50K / €34K–€56K |
 | SEO Manager | $65K–$95K | £40K–£62K / €46K–€70K |
@@ -74,11 +74,11 @@ Completing this course and the certifications it prepares you for positions you 
 | 2 | Google Search Ads Mastery | Keyword research, match types, bidding strategies, Quality Score, Ad Rank, Responsive Search Ads, extensions, Smart Bidding | 4 hrs |
 | 3 | Google Analytics 4 | Event-based model, explorations, attribution models, Consent Mode v2, audience building, GA4 + Google Ads integration | 3 hrs |
 | 4 | Google My Business & Local Marketing | Local pack optimization, Google Business Profile, reviews strategy, local SEO signals, EU local directories | 2 hrs |
-| 5 | Amazon Sponsored Advertising | Sponsored Products / Brands / Display, keyword vs product targeting, ACoS, TACoS, bid strategy, dayparting, US vs UK/EU marketplace differences | 4 hrs |
-| 6 | Amazon Marketplace Strategy | Seller Central vs Vendor Central, FBA economics, A+ Content, Brand Store, Amazon SEO (A9/A10), marketplace expansion across US/UK/DE/FR/IT/ES | 4 hrs |
+| 5 | Amazon Sponsored Advertising | Sponsored Products / Brands / Display, keyword vs product targeting, ACoS, TACoS (Total Advertising Cost of Sale), bid strategy, dayparting, US vs UK/EU marketplace differences | 4 hrs |
+| 6 | Amazon Marketplace Strategy | Seller Central vs Vendor Central, FBA (Fulfillment by Amazon) economics, A+ Content, Brand Store, Amazon SEO (A9/A10), marketplace expansion across US/UK/DE/FR/IT/ES | 4 hrs |
 | 7 | Social Media Strategy | Platform selection framework, algorithm mechanics across platforms, content calendar, organic reach vs paid amplification, social listening | 3 hrs |
 | 8 | Meta Advertising | Facebook/Instagram campaign structure, audience types, Pixel setup, Conversions API (CAPI), GDPR consent gating, Advantage+ Shopping Campaigns, creative testing | 4 hrs |
-| 9 | LinkedIn Marketing | B2B targeting depth, Sponsored Content / Message Ads / Lead Gen Forms, Account-Based Marketing (ABM), LinkedIn Insight Tag, GDPR data handling | 3 hrs |
+| 9 | LinkedIn Marketing | B2B (Business-to-Business) targeting depth, Sponsored Content / Message Ads / Lead Gen Forms, Account-Based Marketing (ABM), LinkedIn Insight Tag, GDPR data handling | 3 hrs |
 | 10 | TikTok & YouTube Marketing | Video-first content strategy, TikTok algorithm, YouTube SEO, TikTok Ads Manager, YouTube Ads (skippable, bumper, Performance Max), Creator partnerships | 3 hrs |
 | 11 | Email Marketing & Automation | List building, segmentation, automation flows, deliverability fundamentals, GDPR double opt-in, CAN-SPAM, CASL, Klaviyo / Mailchimp | 3 hrs |
 | 12 | SEO & Content Marketing | Technical SEO, keyword research, on-page optimization, link building, E-E-A-T, content strategy, Core Web Vitals, international/hreflang SEO | 4 hrs |
@@ -93,7 +93,7 @@ Completing this course and the certifications it prepares you for positions you 
 Create accounts on Google Skillshop, Meta Blueprint, Amazon Ads Accreditation, and HubSpot Academy before you begin. Each is free and each will reinforce what you study here. Having the real dashboards open alongside the lessons accelerates learning significantly.
 
 **Step 2 — Work through the modules in order.**
-Modules 1–3 build the strategic and measurement foundation every later module depends on. Do not skip to Google Ads (Module 2) or Meta (Module 8) before completing Module 1. Experienced practitioners who already have live accounts in a specific channel can begin at that module and use Module 1 as a reference, but the KPI and attribution frameworks in Modules 1 and 3 are referenced throughout.
+Modules 1–3 build the strategic and measurement foundation every later module depends on. Do not skip to Google Ads (Module 2) or Meta (Module 8) before completing Module 1. Experienced practitioners who already have live accounts in a specific channel can begin at that module and use Module 1 as a reference, but the KPI (Key Performance Indicator) and attribution frameworks in Modules 1 and 3 are referenced throughout.
 
 **Step 3 — Take the practice exams and then sit the free certifications.**
 Each module maps to one or more free industry certifications. After completing Modules 2 and 3, sit the Google Ads Search and GA4 certifications. After Module 8, attempt the Meta Certified Digital Marketing Associate exam. After Modules 5–6, attempt the Amazon Ads Accreditation. Earning the certs as you go turns study momentum into a credentials portfolio.

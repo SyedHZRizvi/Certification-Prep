@@ -138,9 +138,9 @@ Eliminated July 2021: €22 low-value exemption
 | Affirm | NASDAQ since 2021; Amazon/Shopify partners |
 | Afterpay | Block-owned (acquired 2022, $29B) |
 | PayPal Pay-in-4 | Native to PayPal |
-| Sezzle | DTC-skewed |
+| Sezzle | DTC (Direct-to-Consumer)-skewed |
 
-**Merchant cost: 3-6%** · **AOV lift: 20-30%** · **Conv lift: 10-15%**
+**Merchant cost: 3-6%** · **AOV (Average Order Value) lift: 20-30%** · **Conv lift: 10-15%**
 
 ---
 

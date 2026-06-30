@@ -15,7 +15,7 @@
 
 December 1, 2016. Spotify launches a small feature: a personalized "Year in Music" page summarizing your top songs of the year. It's pretty. Some users share it. The campaign cost Spotify roughly $400K to build and promote.
 
-Fast-forward to December 1, 2024. **Spotify Wrapped** is now a global cultural event. 156 million users open Wrapped on day one. Twitter (X) trends carry the hashtag for 72 hours. Apple Music, Amazon Music, YouTube Music, and Tidal all launch their own copycat year-in-review features, and lose every single year. Spotify spends roughly $30M on Wrapped each year and generates an estimated $400M+ in net subscriber growth and brand value from it alone. The ROI is roughly **13×**, before counting brand lift.
+Fast-forward to December 1, 2024. **Spotify Wrapped** is now a global cultural event. 156 million users open Wrapped on day one. Twitter (X) trends carry the hashtag for 72 hours. Apple Music, Amazon Music, YouTube Music, and Tidal all launch their own copycat year-in-review features, and lose every single year. Spotify spends roughly $30M on Wrapped each year and generates an estimated $400M+ in net subscriber growth and brand value from it alone. The ROI (Return on Investment) is roughly **13×**, before counting brand lift.
 
 Why did Wrapped work? Not because Spotify had a marketing budget Apple didn't have Apple has more. Not because the data science was unique every streaming service has the same log files. Wrapped worked because Spotify's strategy team applied **three frameworks simultaneously**:
 
@@ -29,7 +29,7 @@ By the time you finish Module 1, you will have:
 
 - A working command of seven canonical strategic frameworks (STP, 4Ps + 4Cs + 7Ps, Porter's Five Forces, Ansoff Matrix, BCG Growth-Share, JTBD theory, Customer Journey Maps).
 - A working command of OKR design at the depth John Doerr describes in *Measure What Matters*, including the difference between objectives, key results, initiatives, and the trap of "set-it-and-forget-it OKRs" that plague 70% of orgs.
-- A KPI tree you can construct top-down from a single North Star metric, decomposing it into the operational levers each team can move.
+- A KPI (Key Performance Indicator) tree you can construct top-down from a single North Star metric, decomposing it into the operational levers each team can move.
 
 This is dense material. Treat it like a graduate-level course, because that is what it is.
 
@@ -41,9 +41,9 @@ Before any framework, understand the **levels** at which strategy operates. A co
 
 | Level | Time horizon | Owner | Example question |
 |-------|--------------|-------|------------------|
-| **Corporate strategy** | 3–10 years | CEO / Board | "What businesses should we be in?" (Ansoff, BCG) |
+| **Corporate strategy** | 3–10 years | CEO (Chief Executive Officer) / Board | "What businesses should we be in?" (Ansoff, BCG) |
 | **Business strategy** | 1–3 years | GM / President of BU | "How do we win in this specific market?" (Porter, STP) |
-| **Marketing strategy** | 6–18 months | CMO / VP Marketing | "What audiences, what positioning, what mix?" (4Ps/4Cs, JTBD) |
+| **Marketing strategy** | 6–18 months | CMO (Chief Marketing Officer) / VP Marketing | "What audiences, what positioning, what mix?" (4Ps/4Cs, JTBD) |
 | **Campaign strategy** | 1–6 months | Director / Senior Manager | "What channels, what creative, what budget?" (covered in Course 2) |
 | **Tactics** | 1–8 weeks | Manager / Specialist | "What headline, what bid, what landing page?" (covered in Course 2) |
 
@@ -222,7 +222,7 @@ The Boston Consulting Group's matrix is a **portfolio-management** tool. Each bu
 | **High relative share** | **Stars** (invest to maintain leadership) | **Cash cows** (milk to fund Stars) |
 | **Low relative share** | **Question marks** (decide: invest or divest) | **Dogs** (divest or harvest) |
 
-Modern marketing teams use a *channel* variant plotting each acquisition channel by channel growth × ROAS to allocate budget.
+Modern marketing teams use a *channel* variant plotting each acquisition channel by channel growth × ROAS (Return on Ad Spend) to allocate budget.
 
 | Channel | Channel growth (YoY) | ROAS (relative to portfolio avg) | Classification |
 |---------|---------------------|-----------------------------------|----------------|
@@ -284,7 +284,7 @@ A modern journey map is **not** a five-step Awareness-Consideration-Decision fun
 | **Thoughts & feelings** | What they're thinking and feeling at each step |
 | **Touchpoints** | Channels and assets the customer encounters |
 
-### Modern 7-stage B2B SaaS journey
+### Modern 7-stage B2B (Business-to-Business) SaaS journey
 
 | Stage | Customer mindset | Marketing job | Primary metric |
 |-------|------------------|---------------|----------------|
@@ -333,7 +333,7 @@ The trap that ruins 70% of OKR rollouts: confusing initiatives with key results.
 | Pipeline sourced from organic + content | $3.2M | $5.5M | $5.1M | 0.93 |
 | **Composite objective score** | | | | **0.83** |
 
-**Objective 2: Build a measurement function the CFO can trust.**
+**Objective 2: Build a measurement function the CFO (Chief Financial Officer) can trust.**
 
 | Key Result | Q2 target | Q2 attainment | Score |
 |------------|-----------|---------------|-------|

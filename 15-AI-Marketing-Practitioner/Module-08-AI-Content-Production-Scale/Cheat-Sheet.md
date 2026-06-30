@@ -24,7 +24,7 @@
 | Long brand content | **Claude Sonnet 4.6** |
 | Variants + structure | **ChatGPT GPT-5** |
 | Multimodal (image-in) | **Gemini 2.5 Pro** |
-| SEO w/ web research | ChatGPT (web search) |
+| SEO (Search Engine Optimization) w/ web research | ChatGPT (web search) |
 | Brand voice fidelity | Claude Projects |
 
 ---

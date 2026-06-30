@@ -130,7 +130,7 @@ Ask at day 60–90 after a clear win.
 | $10–25K | ✅ Viable |
 | $25K+ | ✅ Strong |
 
-CAC typically $800–$2,500 per booked call.
+CAC (Customer Acquisition Cost) typically $800–$2,500 per booked call.
 
 ---
 

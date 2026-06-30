@@ -23,7 +23,7 @@ PIM is the GLUE for customer-facing channels.
 | Vendor | Pricing | Best for |
 |--------|---------|----------|
 | Akeneo Community | Free (GPL) | Startups, eval |
-| Akeneo Cloud | $50K-$200K/yr | Mid-market DTC |
+| Akeneo Cloud | $50K-$200K/yr | Mid-market DTC (Direct-to-Consumer) |
 | Salsify | $80K-$400K/yr | Brand manufacturers |
 | Pimcore | Free OSS + commercial | Custom builds |
 | Plytix | $15K-$80K/yr | SMB fast launch |
@@ -101,11 +101,11 @@ CULTURAL        → Image alternatives, color symbolism
 
 | Strategy | Catalog Implication |
 |----------|---------------------|
-| MSRP | One price per SKU |
+| MSRP | One price per SKU (Stock Keeping Unit) |
 | Channel-specific | Different per channel |
 | MAP enforcement | Floor for resellers |
 | Dynamic | Demand/time/segment |
-| B2B price lists | Per-customer |
+| B2B (Business-to-Business) price lists | Per-customer |
 | Geo-pricing | Per-region |
 
 ---

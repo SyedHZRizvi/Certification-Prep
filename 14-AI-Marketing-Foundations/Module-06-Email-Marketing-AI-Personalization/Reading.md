@@ -1,6 +1,6 @@
 # Module 6: Email Marketing & AI Personalization 📧
 
-> **Why this module matters:** Email is the channel marketers under-invest in and over-deliver from. The DMA's annual studies put email ROI at $36–$42 for every $1 spent, the highest in marketing. Add 2026 AI personalization and you have the channel most likely to outperform any other on your résumé.
+> **Why this module matters:** Email is the channel marketers under-invest in and over-deliver from. The DMA's annual studies put email ROI (Return on Investment) at $36–$42 for every $1 spent, the highest in marketing. Add 2026 AI personalization and you have the channel most likely to outperform any other on your résumé.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) POESM (email = owned), funnel basics
@@ -19,7 +19,7 @@ Five years later, Morning Brew had **2.5 million subscribers** and was acquired 
 
 What they had was: **a high-quality daily email, a referral program, and obsessive list hygiene**. That's the entire moat.
 
-The lesson: in 2026, your email list is the closest thing you'll ever have to a marketing-channel monopoly. **You own it.** Google can change AI Overviews and tank your SEO traffic overnight. Meta can change ad costs and break your unit economics. Your email list keeps showing up.
+The lesson: in 2026, your email list is the closest thing you'll ever have to a marketing-channel monopoly. **You own it.** Google can change AI Overviews and tank your SEO (Search Engine Optimization) traffic overnight. Meta can change ad costs and break your unit economics. Your email list keeps showing up.
 
 Email is the channel where AI personalization, careful list hygiene, deliverability discipline, and proper segmentation produce *compounding* returns. This module is your foundation.
 
@@ -44,7 +44,7 @@ Reasons email outperforms most channels:
 ## 🧱 Email Marketing 101: The Five Foundations
 
 ### 1. List Building (Permission, Not Purchase)
-- Never buy lists, illegal under CAN-SPAM, GDPR, and most local laws.
+- Never buy lists, illegal under CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act), GDPR (General Data Protection Regulation), and most local laws.
 - Use **opt-in forms** with clear value propositions.
 - **Double opt-in** (confirmation email after signup) reduces spam and improves deliverability.
 - Lead magnets (PDF guide, free template, discount, checklist) are the standard exchange.
@@ -72,7 +72,7 @@ Too rare = forgotten. Too frequent = unsubscribed.
 **Common cadences:**
 - **Newsletters**: weekly to biweekly
 - **E-commerce promos**: 1–3x/week
-- **B2B nurture**: weekly to monthly
+- **B2B (Business-to-Business) nurture**: weekly to monthly
 - **Lifecycle triggers**: triggered by user action, on demand
 
 ### 5. Templates and Design
@@ -81,7 +81,7 @@ Too rare = forgotten. Too frequent = unsubscribed.
 - **Alt text** on images (in case images don't load)
 - **Short subject lines** (40–60 characters; mobile-friendly)
 - **Preview text** (the 90-character preview after the subject)
-- **One primary CTA** per email
+- **One primary CTA (Call to Action)** per email
 - **Brand consistency** + accessibility (alt text, contrast)
 
 ---
@@ -135,7 +135,7 @@ AI assigns sub-segments to A/B variants, monitors significance in real-time, and
 | ESP | Best For | Standout Feature | Pricing Tier |
 |---|---|---|---|
 | **Klaviyo** | E-commerce (Shopify, BigCommerce) | Deep e-commerce data + predictive sends | Free up to ~250 contacts; scales fast |
-| **HubSpot Email** | All-in-one CRM + marketing teams | Native to HubSpot CRM | Tiered with HubSpot Marketing Hub |
+| **HubSpot Email** | All-in-one CRM (Customer Relationship Management) + marketing teams | Native to HubSpot CRM | Tiered with HubSpot Marketing Hub |
 | **Mailchimp** | SMB, content + e-commerce | AI subject lines, broad ecosystem | Free up to ~500 contacts |
 | **ActiveCampaign** | SMB + mid-market automation | Best-in-class automation builder | Tiered SaaS |
 | **ConvertKit / Kit** | Creators, newsletters, infoproducts | Simple, creator-friendly | Free up to 1,000; paid above |
@@ -208,12 +208,12 @@ Skim these now; Module 9 goes deep.
 - Penalties up to 4% of global revenue or €20M (whichever higher)
 - Applies to anyone marketing to EU residents, not just EU-based companies
 
-### CASL (Canada, 2014)
+### CASL (Canada's Anti-Spam Legislation) (Canada, 2014)
 - Express consent for commercial email
 - Implied consent in limited cases
 - Penalties up to CA$10M
 
-### CCPA / CPRA (California, 2020+)
+### CCPA (California Consumer Privacy Act) / CPRA (California, 2020+)
 - Right to know / delete / opt-out of sale
 - Applies to companies > $25M revenue, or selling 50K+ Californians' data
 - Foundation for many later US state laws
@@ -327,7 +327,7 @@ The Klaviyo case demonstrates the broader thesis: **the next generation of ESPs 
 | **Lifecycle marketing** | Behavior-triggered sequences across the customer journey |
 | **Welcome series** | Highest-ROI initial sequence |
 | **Open rate** | % of sends that were opened (unreliable post-iOS-15) |
-| **Click rate / CTR** | % of opens (or sends) that clicked |
+| **Click rate / CTR (Click-Through Rate)** | % of opens (or sends) that clicked |
 | **Hard bounce** | Email permanently failed (bad address) |
 | **Soft bounce** | Temporary failure |
 | **Deliverability** | % of emails reaching inbox (vs spam folder) |
@@ -373,7 +373,7 @@ You now know:
 2. **The welcome series ROI assumption.** Klaviyo's data shows welcome series has the highest per-email revenue. But a SaaS lifecycle manager argues that for *their* business, the post-purchase series (specifically, day-7 onboarding nudge) outperforms welcome. Steel-man both. Under what business conditions does welcome win, and under what conditions does some other sequence dominate? (Hint: consider order-frequency, purchase cycle, customer lifecycle.)
 3. **The deliverability cliff after Feb 2024.** Gmail and Yahoo's Feb 2024 bulk-sender enforcement forced SPF/DKIM/DMARC + one-click unsubscribe + <0.3% complaint rate. A growth marketer says this favors big senders who can hire deliverability engineers; a SMB advocate says it just enforces hygiene that should always have been mandatory. Make both cases. Is the Feb-2024 enforcement net-positive for the email-marketing ecosystem, or net-negative for small senders trying to grow?
 4. **Phrasee, Mailchimp AI, and the moat question.** Mailchimp's AI subject-line generator is grounded in billions of past sends. Phrasee's tool reports 10–40% lift across enterprise clients. As LLMs commoditize text generation, what's the durable moat for these AI subject-line tools, proprietary outcome data, integration into the daily workflow, or brand trust? Defend the strongest single answer, then identify what would *break* the moat by 2028.
-5. **First-party email list as the post-cookie play.** "Build the list, own the channel" is the most-cited 2026 strategic answer. But list-building costs (lead magnets, paid acquisition into email funnels, double opt-in friction) have risen sharply. At what point does email-list-building stop being the cheapest first-party play and start being just another paid acquisition channel with extra steps? Walk through the math with an example CAC-to-email-subscriber number for an e-commerce brand at $30 CPM and 1% form conversion.
+5. **First-party email list as the post-cookie play.** "Build the list, own the channel" is the most-cited 2026 strategic answer. But list-building costs (lead magnets, paid acquisition into email funnels, double opt-in friction) have risen sharply. At what point does email-list-building stop being the cheapest first-party play and start being just another paid acquisition channel with extra steps? Walk through the math with an example CAC (Customer Acquisition Cost)-to-email-subscriber number for an e-commerce brand at $30 CPM (Cost Per Mille) and 1% form conversion.
 
 ---
 

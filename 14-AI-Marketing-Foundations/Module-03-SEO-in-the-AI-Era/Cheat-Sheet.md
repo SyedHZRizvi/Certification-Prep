@@ -1,4 +1,4 @@
-# 📋 Module 3 Cheat Sheet: SEO in the AI Era
+# 📋 Module 3 Cheat Sheet: SEO (Search Engine Optimization) in the AI Era
 
 > One page. Print it. Tape it to your monitor. Review before the exam.
 

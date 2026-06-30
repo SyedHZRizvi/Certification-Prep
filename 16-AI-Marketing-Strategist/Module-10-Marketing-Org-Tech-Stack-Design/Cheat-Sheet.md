@@ -83,7 +83,7 @@ Red flag: >50% activation + <10% measurement.
 
 ---
 
-## 📊 5 Questions The CFO Will Always Ask
+## 📊 5 Questions The CFO (Chief Financial Officer) Will Always Ask
 
 1. What did we spend and what did it return?
 2. Which channels are growing/shrinking and why?
@@ -94,14 +94,14 @@ Red flag: >50% activation + <10% measurement.
 ### The 12-metric 1-page scorecard
 
 - New customer count
-- CAC (blended + paid-only)
-- LTV (12-mo projected)
+- CAC (Customer Acquisition Cost) (blended + paid-only)
+- LTV (Lifetime Value) (12-mo projected)
 - LTV:CAC
 - MMM-attributed incremental revenue
 - Total spend + spend/revenue ratio
 - Month-3 retention (latest cohort)
 - NRR + GRR
-- Incrementality-validated paid-search ROAS
+- Incrementality-validated paid-search ROAS (Return on Ad Spend)
 - Incrementality-validated paid-social ROAS
 
 ---
@@ -115,7 +115,7 @@ Red flag: >50% activation + <10% measurement.
 | Marketing Science Manager | 5–8 | $140K–$200K |
 | Director, Marketing Analytics | 8–12 | $180K–$280K |
 | VP Growth / Performance | 12–18 | $280K–$500K |
-| CMO / CGO | 15+ | $400K–$1M+ |
+| CMO (Chief Marketing Officer) / CGO | 15+ | $400K–$1M+ |
 
 ---
 

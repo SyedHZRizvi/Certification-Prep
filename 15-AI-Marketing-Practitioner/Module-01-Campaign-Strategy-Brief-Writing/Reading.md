@@ -158,7 +158,7 @@ REPORTING CADENCE:
 - End-of-campaign: post-mortem doc + recommendations
 ```
 
-🎯 **Exam tip:** A real Google Ads Search Cert question asks about *naming KPIs by funnel stage*. Top of funnel = impressions / reach / video views. Mid funnel = CTR / engagement. Bottom funnel = conversions / CPA / ROAS. Don't mix levels.
+🎯 **Exam tip:** A real Google Ads Search Cert question asks about *naming KPIs by funnel stage*. Top of funnel = impressions / reach / video views. Mid funnel = CTR (Click-Through Rate) / engagement. Bottom funnel = conversions / CPA / ROAS (Return on Ad Spend). Don't mix levels.
 
 ---
 
@@ -263,7 +263,7 @@ Show your brief to someone outside the project (a partner, a fellow marketer in 
 | Anti-pattern | What it sounds like | The fix |
 |--------------|---------------------|---------|
 | Multi-audience brief | "Target millennials AND Gen Z AND boomers" | Pick ONE. Write a separate brief for each segment if needed. |
-| KPI-free brief | "Drive brand awareness and engagement" | Add numbers. "Reach 100K unique users at CPM <= $12" |
+| KPI (Key Performance Indicator)-free brief | "Drive brand awareness and engagement" | Add numbers. "Reach 100K unique users at CPM (Cost Per Mille) <= $12" |
 | Channel-first brief | "We're going to run TikTok ads because TikTok is hot" | Channel comes AFTER who/what/why. |
 | Feature-list brief | "Highlight our 17 features" | One proposition. The rest goes in the landing page. |
 | Inspiration-by-imitation | "Make it look like Liquid Death" | Reference for STRUCTURE, not for vibe-copying. |
@@ -388,7 +388,7 @@ You now know:
 Use these to test your own thinking. None has a single right answer, defend your choice with the frameworks in this module.
 
 1. A founder says: "We have $5,000 and 4 weeks. We don't have time to write a brief, we'll learn as we go." Build the strongest argument FOR skipping the brief and the strongest argument AGAINST. Which would you defend at a board review, and why?
-2. Re-read Liquid Death's "23-year-old at a concert" question and Notion's 35-word brief sentence. Both are one-customer, one-behavior briefs, but one is consumer DTC and one is B2B PLG. What's the principle they share, and where would copy-pasting one into the other's industry fail?
+2. Re-read Liquid Death's "23-year-old at a concert" question and Notion's 35-word brief sentence. Both are one-customer, one-behavior briefs, but one is consumer DTC (Direct-to-Consumer) and one is B2B (Business-to-Business) PLG. What's the principle they share, and where would copy-pasting one into the other's industry fail?
 3. The 3-Test ICP Validation Protocol takes ~2 weeks before any media spend. A growth lead argues that on a $200 capstone budget, the 20-conversation test costs more (in time-money) than the campaign itself. When is this argument right, and when is it a rationalization for skipping discipline?
 4. The reading lists "Eternal brief" as an anti-pattern (one brief, one campaign). Yet brand strategists like Marty Neumeier argue for a *brand* brief that lives for years. Reconcile the two, at what scope does each level of brief belong?
 5. Your AI-generated brief and your hand-written brief come back substantially different. Which do you trust more in 2026, and what does the gap between them tell you about the inputs you gave the model?

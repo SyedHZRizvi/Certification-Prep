@@ -1,8 +1,8 @@
-# Module 09: LinkedIn Marketing — B2B Strategies & Thought Leadership 💼
+# Module 09: LinkedIn Marketing — B2B (Business-to-Business) Strategies & Thought Leadership 💼
 
 > **Why this module matters:** LinkedIn is where 80% of B2B leads generated through social media actually come from — yet most companies treat it like a digital business card rather than the revenue engine it truly is. Master this module and you will know how to turn a $5,000/month LinkedIn budget into a predictable pipeline machine that outperforms teams of outbound sales reps.
 
-> **Prerequisites:** You should already understand buyer personas and the marketing funnel (Module 01) and basic paid advertising concepts (Module 02). Familiarity with CRM tools (Salesforce, HubSpot) is helpful but not required.
+> **Prerequisites:** You should already understand buyer personas and the marketing funnel (Module 01) and basic paid advertising concepts (Module 02). Familiarity with CRM (Customer Relationship Management) tools (Salesforce, HubSpot) is helpful but not required.
 
 ---
 
@@ -16,7 +16,7 @@ The VP of Marketing, Isabelle, is reading a case study about a Dutch SaaS compan
 
 Here is what she does.
 
-**Week 1–2: Thought Leadership Foundation.** She identifies the company's three most credible voices: the CEO (former Head of Risk at UBS), the CTO (ex-Deloitte), and a Customer Success Manager who had previously worked at a Big Four firm. She drafts a content calendar. Each person will post three times per week. The format: one "insight post" (200-word text with a punchy hook), one "document carousel" (10-slide PDF with data and frameworks), and one "case study snippet" (a real anonymised client win with numbers). No promotional content. No product mentions in organic posts.
+**Week 1–2: Thought Leadership Foundation.** She identifies the company's three most credible voices: the CEO (Chief Executive Officer) (former Head of Risk at UBS), the CTO (Chief Technology Officer) (ex-Deloitte), and a Customer Success Manager who had previously worked at a Big Four firm. She drafts a content calendar. Each person will post three times per week. The format: one "insight post" (200-word text with a punchy hook), one "document carousel" (10-slide PDF with data and frameworks), and one "case study snippet" (a real anonymised client win with numbers). No promotional content. No product mentions in organic posts.
 
 **Week 3–4: LinkedIn Ads Launch.** Isabelle sets up two Sponsored Content campaigns targeting:
 - Job titles: Chief Compliance Officer, VP Compliance, Head of Risk
@@ -24,7 +24,7 @@ Here is what she does.
 - Industries: Banking, Insurance, Asset Management
 - Geography: DACH region (Germany, Austria, Switzerland) + Benelux
 
-The creative: a document carousel titled "The 5 Most Common Compliance Failures in Mid-Market Banks (2022 Data)" — organic content repurposed as an ad. The CTA: a Lead Gen Form asking for name, email, job title (pre-filled by LinkedIn), and one qualifying question: "How many employees does your compliance team have?"
+The creative: a document carousel titled "The 5 Most Common Compliance Failures in Mid-Market Banks (2022 Data)" — organic content repurposed as an ad. The CTA (Call to Action): a Lead Gen Form asking for name, email, job title (pre-filled by LinkedIn), and one qualifying question: "How many employees does your compliance team have?"
 
 **Week 5–8: The Compounding Effect.** The organic posts start gaining traction. The CEO's post "Why your compliance team is your biggest competitive advantage" gets 47,000 impressions and 312 comments — almost entirely from their exact ICP (Ideal Customer Profile). The Lead Gen Form ad achieves a 12.4% conversion rate (industry average: 6–9%). Cost per lead: **€38**.
 
@@ -122,7 +122,7 @@ Not all LinkedIn content formats are equal. Each has a distinct algorithmic trea
 | **Native video** | 0.9x (declining) | Product demos, events, BTS | High | First 3 seconds critical; captions required |
 | **Image post** | 0.7x | Infographics, quote cards | Low | Custom design > stock photos |
 | **Poll** | 1.2x | Research, engagement | Very low | Use for ICP insight gathering |
-| **Article/Newsletter** | 0.4x (feed) + SEO | Deep expertise, long-form | High | SEO value on LinkedIn search |
+| **Article/Newsletter** | 0.4x (feed) + SEO (Search Engine Optimization) | Deep expertise, long-form | High | SEO value on LinkedIn search |
 | **Sponsored Content (single image)** | N/A (paid) | Lead Gen Form delivery | Medium | 1,200 x 628px; text <150 chars |
 | **Sponsored InMail (Message Ad)** | N/A (paid) | Event invitations, trials | Medium | 30–35% open rate if targeting tight |
 
@@ -151,7 +151,7 @@ LinkedIn Newsletters allow users and company pages to publish serial content tha
 
 ### The Five Ad Formats and When to Use Each
 
-| Ad Format | Funnel Stage | Best Use Case | Avg. CPM (North America) | Avg. CPM (Europe) |
+| Ad Format | Funnel Stage | Best Use Case | Avg. CPM (Cost Per Mille) (North America) | Avg. CPM (Europe) |
 |---|---|---|---|---|
 | **Sponsored Content (Single Image)** | Mid-funnel | Lead Gen Forms, gated content | $65–95 | €45–70 |
 | **Sponsored Content (Carousel)** | Mid-funnel | Multi-feature showcase, storytelling | $70–100 | €50–75 |
@@ -177,7 +177,7 @@ Lead Gen Forms are pre-filled forms that appear directly within LinkedIn — no 
 **Lead Gen Form field best practices:**
 - Ask for maximum 4–5 fields (more fields = steep conversion drop)
 - Include 1 custom qualifying question (e.g., "What is your company's annual revenue?")
-- Always include a privacy policy link — mandatory for GDPR compliance (see GDPR section below)
+- Always include a privacy policy link — mandatory for GDPR (General Data Protection Regulation) compliance (see GDPR section below)
 - Set a "Thank You" screen with an immediate value offer (download link, video, etc.)
 
 ### Targeting: LinkedIn's Unfair Advantage Over Meta and Google
@@ -300,9 +300,9 @@ If you are running LinkedIn campaigns targeting EU/EEA audiences — and you alm
 |---|---|---|
 | **Organic Post Impressions** | Creator Analytics / Company Page | N/A (depends on audience size) |
 | **Engagement Rate (organic)** | Company Page Analytics | 2–4% is strong for company pages |
-| **CTR (Sponsored Content)** | Campaign Manager | **0.35–0.60%** North America; **0.30–0.55%** Europe |
+| **CTR (Click-Through Rate) (Sponsored Content)** | Campaign Manager | **0.35–0.60%** North America; **0.30–0.55%** Europe |
 | **CPL (Lead Gen Forms)** | Campaign Manager | **$75–200** (NA); **€55–150** (EU) — B2B SaaS |
-| **CPC (Sponsored Content)** | Campaign Manager | **$5–12** North America; **€4–10** Europe |
+| **CPC (Cost Per Click) (Sponsored Content)** | Campaign Manager | **$5–12** North America; **€4–10** Europe |
 | **Lead Form Completion Rate** | Campaign Manager | **8–12%** is strong; >12% is excellent |
 | **Video View Rate** | Campaign Manager | 15–25% (through-play rate) |
 | **InMail Open Rate** | Campaign Manager | 30–35% is benchmark; <25% suggests poor targeting |
@@ -347,7 +347,7 @@ CPL = $2,000 ÷ 14 = $142.86
 CPL = Total Ad Spend ÷ Number of Leads Generated
 ```
 
-**ROAS Formula (for lead-gen campaigns):**
+**ROAS (Return on Ad Spend) Formula (for lead-gen campaigns):**
 ```
 ROAS = (Leads × Average Deal Value × Close Rate) ÷ Ad Spend
 Example: 50 leads × €20,000 ACV × 8% close rate = €80,000 pipeline / €5,000 spend = 16x ROAS

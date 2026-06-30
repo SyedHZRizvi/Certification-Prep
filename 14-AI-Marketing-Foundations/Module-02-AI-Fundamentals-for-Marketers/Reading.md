@@ -168,7 +168,7 @@ You take a foundation model and continue training it on your own dataset, perman
 | Domain knowledge | Limited | Strong (any docs you load) | Strong (if data is good) |
 | Best marketing use | Drafts, brainstorms, repurposing | Customer-facing AI, knowledge-base chat, brand-voiced content | Specialized voice, regulated industries |
 
-🎯 **Exam tip:** "We want our AI assistant to reference our own product docs" → **RAG**, almost always. "We want our AI to write in our CEO's voice across thousands of past articles" → fine-tuning is reasonable.
+🎯 **Exam tip:** "We want our AI assistant to reference our own product docs" → **RAG**, almost always. "We want our AI to write in our CEO (Chief Executive Officer)'s voice across thousands of past articles" → fine-tuning is reasonable.
 
 ---
 
@@ -288,7 +288,7 @@ For now, the practical marketer rules:
 1. Disclose AI-generated content when it's deceptive not to (FTC has enforced this since 2023).
 2. Don't input customer PII into a public LLM without consent.
 3. Don't use AI to impersonate a real person without permission.
-4. Keep your CMO and legal counsel briefed on what you're doing.
+4. Keep your CMO (Chief Marketing Officer) and legal counsel briefed on what you're doing.
 
 ---
 
@@ -363,7 +363,7 @@ You now know:
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
 2. ✏️ Take the [Quiz](./Quiz.md), aim for 20/24
 3. 📋 Print the [Cheat Sheet](./Cheat-Sheet.md)
-4. ➡️ Move to [Module 3: SEO in the AI Era](../Module-03-SEO-in-the-AI-Era/Reading.md)
+4. ➡️ Move to [Module 3: SEO (Search Engine Optimization) in the AI Era](../Module-03-SEO-in-the-AI-Era/Reading.md)
 
 ---
 
@@ -385,7 +385,7 @@ You now know:
 **Lesson for the exam / for practitioners.** Klarna is the most-cited 2024 reference for the *RAG-plus-LLM enterprise pattern* taught in this module: a foundation model (GPT-4) is the engine, but the deployment-grade system layered RAG over Klarna's own first-party documents (refund policies, help center, dispute history). That's not "fine-tuning" and it's not "prompt engineering alone", it's the middle layer (RAG) doing 80% of the value lift. The case also illustrates the hallucination-mitigation discipline: customer service is a high-trust context, so Klarna grounded the model in verifiable internal documents rather than relying on the model's pretraining. The exam-relevant principle: when a case asks "we want our AI to answer using our knowledge base in our brand voice," the right answer is almost always **RAG + a strong system prompt**, not fine-tuning.
 
 **Discussion (Socratic).**
-- Q1: Klarna's reported figure of "700 FTEs replaced" was widely covered, but later reporting suggested it brought some human agents back for complex cases. If you were Klarna's CMO or CTO in early 2024, how would you have framed the 700-agent number publicly without either overstating the win or understating the legitimate productivity gain?
+- Q1: Klarna's reported figure of "700 FTEs replaced" was widely covered, but later reporting suggested it brought some human agents back for complex cases. If you were Klarna's CMO or CTO (Chief Technology Officer) in early 2024, how would you have framed the 700-agent number publicly without either overstating the win or understating the legitimate productivity gain?
 - Q2: The official answer here is RAG over fine-tuning. Why does RAG win for Klarna's customer-service use case specifically, and what kind of use case (give a concrete example) would have made fine-tuning the right call instead?
 - Q3: Klarna implicitly accepted the trade-off that ~1/3 of conversations still need human escalation. What's the dimension along which that 1/3 is distributed, and is the "best" remaining human work the *hardest* cases or the *most ambiguous-policy* cases? Defend a routing strategy.
 
@@ -409,4 +409,4 @@ You now know:
 - 📰 *MIT Sloan Management Review*, multiple 2024–2025 case studies on enterprise GenAI adoption.
 - 📰 *Anthropic Research*, read at least one post; the "Constitutional AI" paper is the most cited safety reference.
 - 📰 Nielsen Norman Group, "The AI Trust Gap" (Pernice & Whitenton, 2024). UX research with implications for every AI-facing marketer.
-- 📰 McKinsey *State of AI* (annual), usage stats and ROI benchmarks.
+- 📰 McKinsey *State of AI* (annual), usage stats and ROI (Return on Investment) benchmarks.

@@ -8,10 +8,10 @@
 
 | Model | Primary platform | When to use |
 |-------|------------------|-------------|
-| **DTC** | Shopify Plus, Adobe Commerce | Brand + repeat purchase |
+| **DTC (Direct-to-Consumer)** | Shopify Plus, Adobe Commerce | Brand + repeat purchase |
 | **Marketplace seller** | Amazon, Walmart, Etsy | Cash flow + discovery |
 | **Marketplace operator** | Mirakl, Yo!Kart | You ARE the platform |
-| **B2B / wholesale** | Adobe Commerce B2B, Faire | High AOV, account-based |
+| **B2B (Business-to-Business) / wholesale** | Adobe Commerce B2B, Faire | High AOV (Average Order Value), account-based |
 | **B2B2C hybrid** | Shopify Plus + Faire + Amazon | Multi-channel scale |
 | **Subscription** | Recharge, Skio | Replenishable + low churn |
 | **Social / live commerce** | TikTok Shop, Whatnot | Creator-led discovery |
@@ -30,7 +30,7 @@ Payback = CAC / (AOV × CM%)
 
 ---
 
-## 📐 The CLV:CAC Ratio Cheat Sheet
+## 📐 The CLV:CAC (Customer Acquisition Cost) Ratio Cheat Sheet
 
 | CLV:CAC | Verdict |
 |---------|---------|

@@ -63,9 +63,9 @@ PMax / NEW:     Audience = SIGNAL (hint; can serve outside)
 | Format | Length | Pricing | Pay when |
 |--------|--------|---------|----------|
 | **Skippable In-Stream** | 5s–3min | CPV | Viewer hits 30s OR full play |
-| **Non-Skippable** | 15s max | CPM | Impression |
+| **Non-Skippable** | 15s max | CPM (Cost Per Mille) | Impression |
 | **Shorts** | 6–60s, vertical | CPM | Impression |
-| **In-Feed (Discovery)** | Any | CPC | User clicks to watch |
+| **In-Feed (Discovery)** | Any | CPC (Cost Per Click) | User clicks to watch |
 
 ---
 

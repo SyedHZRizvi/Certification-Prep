@@ -300,7 +300,7 @@
 
 ---
 
-## 🔍 SECTION 2: SEO + CONTENT AUDIT CAPSTONE
+## 🔍 SECTION 2: SEO (Search Engine Optimization) + CONTENT AUDIT CAPSTONE
 
 **Q:** What are the 7 sections of a portfolio-grade SEO audit?
 **A:** (1) Executive Summary, (2) Keyword Opportunity, (3) Technical SEO Scan, (4) Content Gap Analysis, (5) Top-Page Audit, (6) 90-Day Content Roadmap, (7) Recommendations Summary.
@@ -354,10 +354,10 @@
 **Q:** What's CPL?
 **A:** Cost Per Lead. Total spend / number of leads. Key efficiency metric.
 
-**Q:** What's CTR?
+**Q:** What's CTR (Click-Through Rate)?
 **A:** Click-Through Rate. Clicks / impressions. Healthy varies by channel (search 3-8%; social 0.8-2.5%).
 
-**Q:** What's ROAS?
+**Q:** What's ROAS (Return on Ad Spend)?
 **A:** Return on Ad Spend. Revenue / spend. 1.0 = break-even. 2.0 = $2 returned per $1 spent.
 
 **Q:** What's a Meta Lookalike Audience?
@@ -370,7 +370,7 @@
 **A:** Showing what didn't work is the highest-trust signal. Hiding failures reads as fake.
 
 **Q:** LinkedIn carousel slide count for the post-mortem?
-**A:** 6–10 slides. Cover → Challenge → Plan → Inflection → Results → What worked/didn't → Lessons → CTA.
+**A:** 6–10 slides. Cover → Challenge → Plan → Inflection → Results → What worked/didn't → Lessons → CTA (Call to Action).
 
 ---
 

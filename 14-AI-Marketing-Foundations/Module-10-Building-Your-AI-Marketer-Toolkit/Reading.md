@@ -54,7 +54,7 @@ Below is a comprehensive map of every category you'll likely need. Pick one tool
 |---|---|
 | **Long-form AI writing** | ChatGPT / Claude / Gemini (or Jasper for teams) |
 | **Short-form / ad copy** | Copy.ai, Anyword, Writesonic |
-| **SEO content optimizer** | Surfer SEO, Frase, MarketMuse, Clearscope |
+| **SEO (Search Engine Optimization) content optimizer** | Surfer SEO, Frase, MarketMuse, Clearscope |
 | **Grammar + style** | Grammarly, Hemingway Editor |
 | **Image generation** | Midjourney, DALL-E 3+, Adobe Firefly, Ideogram |
 | **Image editing** | Canva, Adobe Photoshop, Photopea (free OSS) |
@@ -80,7 +80,7 @@ Below is a comprehensive map of every category you'll likely need. Pick one tool
 | **Community** | Circle, Discord, Slack, Skool, Mighty Networks |
 | **Forms + Surveys** | Typeform, Tally, Google Forms, SurveyMonkey |
 
-### Tier 4, Measurement + CRM
+### Tier 4, Measurement + CRM (Customer Relationship Management)
 
 | Category | Tool Options |
 |---|---|
@@ -335,7 +335,7 @@ Decision rules for your stack:
 1. List every paid tool + monthly cost
 2. For each: "Did I use this in the last 30 days?"
 3. For each: "Is the free / cheaper alternative actually good enough?"
-4. Cancel the bottom 20% by ROI
+4. Cancel the bottom 20% by ROI (Return on Investment)
 
 You'll find $200–$1,000/month of bloat in even small marketing stacks.
 
@@ -449,7 +449,7 @@ You now know:
 1. **Mastery vs coverage in the stack.** The reading says "master 2–3 per category." A founder argues that as AI tools commoditize, the right move is to actively *try every new tool* because the next one might be 10× better and cancel the old one. Construct the strongest argument for "stay with proven tools 18+ months" and the strongest for "rotate aggressively as the market evolves." How do you build a stack that's stable enough to ship work but flexible enough to upgrade?
 2. **Prompt library as portable career capital.** The reading argues a 200-prompt personal library is a career moat. A skeptic says: when LLMs become 100× better, your hand-tuned prompts become irrelevant, you're investing in a depreciating asset. Steel-man both. What's the half-life of a well-engineered prompt today, and what *kind* of prompt has the longest half-life?
 3. **The Make + Zapier + n8n choice.** Make is visual + complex flows; Zapier is simple + most integrations; n8n is open-source + self-hostable. For a 5-person marketing team running 10 workflows, which would you commit to? Defend with reference to (a) maintenance burden, (b) lock-in risk, (c) data-residency concerns from Module 9, and (d) total cost of ownership over 24 months.
-4. **CDP as the "right" investment for mid-market.** Segment ($120K+/year at scale) and competitors are pitched as the bridge from siloed channels to unified intelligence. A CFO objects: "We're 50 employees with $5M revenue, a CDP is over-spec." A marketing-ops lead counters: "Without a CDP, our first-party data strategy is hot air." Make both cases. At what revenue + headcount + channel-count *does* a CDP start to pay back in 12 months?
+4. **CDP as the "right" investment for mid-market.** Segment ($120K+/year at scale) and competitors are pitched as the bridge from siloed channels to unified intelligence. A CFO (Chief Financial Officer) objects: "We're 50 employees with $5M revenue, a CDP is over-spec." A marketing-ops lead counters: "Without a CDP, our first-party data strategy is hot air." Make both cases. At what revenue + headcount + channel-count *does* a CDP start to pay back in 12 months?
 5. **The "documentation culture" claim from Stripe.** The reading argues Stripe's documentation discipline is what makes their AI integrations work, that AI quality is a function of input quality, and input is documentation. A skeptic argues this is post-hoc rationalization; Stripe wins for product reasons unrelated to docs. Construct both. What's an experiment you'd run inside your own team to test whether a 90-day documentation push actually moves the AI-output quality needle?
 
 ---

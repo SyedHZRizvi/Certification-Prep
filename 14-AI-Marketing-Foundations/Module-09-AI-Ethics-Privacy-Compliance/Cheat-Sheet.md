@@ -8,11 +8,11 @@
 
 | Law | Region | Top Penalty | Date |
 |---|---|---|---|
-| **GDPR** | EU (+ extraterritorial) | 4% global rev OR €20M | May 2018 |
-| **CCPA / CPRA** | California | $7,500/intentional violation | Jan 2020 / 2023 |
-| **COPPA** | US (children <13) | $50,120/violation | 1998 (upd. 2013) |
-| **CAN-SPAM** | US (email) | $50,000+/violation | 2003 |
-| **CASL** | Canada (email) | CA$10M | 2014 |
+| **GDPR (General Data Protection Regulation)** | EU (+ extraterritorial) | 4% global rev OR €20M | May 2018 |
+| **CCPA (California Consumer Privacy Act) / CPRA** | California | $7,500/intentional violation | Jan 2020 / 2023 |
+| **COPPA (Children's Online Privacy Protection Act)** | US (children <13) | $50,120/violation | 1998 (upd. 2013) |
+| **CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act)** | US (email) | $50,000+/violation | 2003 |
+| **CASL (Canada's Anti-Spam Legislation)** | Canada (email) | CA$10M | 2014 |
 | **LGPD** | Brazil | 2% rev or BRL 50M | 2020 |
 | **PIPL** | China | 5% rev or RMB 50M | 2021 |
 | **PDPA** | Singapore | 10% rev or SGD 1M | 2014 (upd. 2021) |

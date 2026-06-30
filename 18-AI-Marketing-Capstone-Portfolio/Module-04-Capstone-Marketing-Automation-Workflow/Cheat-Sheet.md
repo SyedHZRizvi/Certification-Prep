@@ -47,7 +47,7 @@
 | Cleanest visual UI | **Make.com** |
 | Dev signal / self-host / OSS | **n8n** |
 | Simplest interface | **Zapier** |
-| B2B SaaS / HubSpot ecosystem | **HubSpot Workflows** |
+| B2B (Business-to-Business) SaaS / HubSpot ecosystem | **HubSpot Workflows** |
 | Default for this course | **Make.com** |
 
 ---

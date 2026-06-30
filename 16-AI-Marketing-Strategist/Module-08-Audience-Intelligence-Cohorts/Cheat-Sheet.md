@@ -39,9 +39,9 @@ Acq month | M0   | M1   | M2   | M3   | M4
 | Retention % | active in M_n / cohort size at M0 |
 | NRR | (start ARR + expansion − contraction − churn) / start ARR |
 | GRR | (start ARR − contraction − churn) / start ARR |
-| LTV cohort curve | Cumulative revenue per user at M_n |
+| LTV (Lifetime Value) cohort curve | Cumulative revenue per user at M_n |
 
-**Best-in-class B2B SaaS NRR:** >120%.
+**Best-in-class B2B (Business-to-Business) SaaS NRR:** >120%.
 
 ---
 
@@ -101,7 +101,7 @@ W0:   churn
 
 ---
 
-## 🎙️ The 4 CEO Charts
+## 🎙️ The 4 CEO (Chief Executive Officer) Charts
 
 1. Cohort triangle heat-map (green→red)
 2. Retention-curve overlay (3–5 cohorts)

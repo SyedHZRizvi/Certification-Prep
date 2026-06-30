@@ -1,14 +1,14 @@
 # Module 3: Product Catalog & Information Management 📚
 
-> **Why this module matters:** Every paid-acquisition dollar, every SEO ranking, every marketplace listing, every cross-border expansion ultimately depends on one thing, the quality of your product data. Dirty catalog = dead Google Shopping campaigns, suspended Amazon listings, refunded customs orders, and CRO experiments that can never read. This module gives you the PIM discipline.
+> **Why this module matters:** Every paid-acquisition dollar, every SEO (Search Engine Optimization) ranking, every marketplace listing, every cross-border expansion ultimately depends on one thing, the quality of your product data. Dirty catalog = dead Google Shopping campaigns, suspended Amazon listings, refunded customs orders, and CRO experiments that can never read. This module gives you the PIM discipline.
 
 ---
 
-## 🎯 A Real Story: Home Depot's 2.5M-SKU Catalog Overhaul
+## 🎯 A Real Story: Home Depot's 2.5M-SKU (Stock Keeping Unit) Catalog Overhaul
 
 In 2018, Home Depot had 700,000 SKUs in its e-commerce catalog. Attribute coverage was inconsistent, many products had a length but no width, a brand but no model number, an image but no alt-text. Customer search and category browse were degrading: search queries like "12-inch under-cabinet LED light, dimmable" returned 312 results instead of 17.
 
-The CMO and CIO commissioned a six-year transformation. By 2024, Home Depot had **2.5 million SKUs** in catalog (a 3.6x increase driven by marketplace expansion to Home Depot's seller program), and the catalog ran on a unified PIM (built in-house on a Salsify-like architecture). Attribute coverage rose from 64% complete to 96% complete across the top 100 priority attributes by category. Site search relevance measured by Search-to-PDP click rate improved by 41%.
+The CMO (Chief Marketing Officer) and CIO commissioned a six-year transformation. By 2024, Home Depot had **2.5 million SKUs** in catalog (a 3.6x increase driven by marketplace expansion to Home Depot's seller program), and the catalog ran on a unified PIM (built in-house on a Salsify-like architecture). Attribute coverage rose from 64% complete to 96% complete across the top 100 priority attributes by category. Site search relevance measured by Search-to-PDP click rate improved by 41%.
 
 What did they do? Three things:
 
@@ -63,7 +63,7 @@ PIM is NOT the same as:
 | Vendor | Pricing | Best for |
 |--------|---------|----------|
 | **Akeneo Community Edition** | Free (open source) | Startups, evaluation |
-| **Akeneo Cloud Edition** | $50K-$200K/yr | Mid-market DTC, multi-locale |
+| **Akeneo Cloud Edition** | $50K-$200K/yr | Mid-market DTC (Direct-to-Consumer), multi-locale |
 | **Salsify** | $80K-$400K/yr | Brand manufacturers, marketplace-heavy |
 | **Pimcore** | Free OSS + commercial | Engineering-heavy custom builds |
 | **Plytix** | $15K-$80K/yr | SMB, fast launch |
@@ -220,7 +220,7 @@ The team grew from 12 catalog FTEs in 2018 to 86 in 2024 (PIM ops, attribute gov
 - Organic Google traffic to PDP pages: +84%.
 - Online sales grew from $7.7B (2018) to $20.6B (2023, per the annual report).
 
-**Lesson for the exam / for practitioners.** PIM is the foundational discipline that lets everything else compound. A brand can't run Google Shopping at scale, sell on Amazon without listing suppression, or expand internationally without a PIM. The certification bodies test this Adobe Commerce, Google Shopping, Amazon Ads all assume PIM hygiene. The exam-answer pattern: when given a "why isn't our Shopping ROAS scaling?" question, the answer is often "catalog data quality," not "more bid optimization."
+**Lesson for the exam / for practitioners.** PIM is the foundational discipline that lets everything else compound. A brand can't run Google Shopping at scale, sell on Amazon without listing suppression, or expand internationally without a PIM. The certification bodies test this Adobe Commerce, Google Shopping, Amazon Ads all assume PIM hygiene. The exam-answer pattern: when given a "why isn't our Shopping ROAS (Return on Ad Spend) scaling?" question, the answer is often "catalog data quality," not "more bid optimization."
 
 **Discussion (Socratic).**
 - Q1: Home Depot built their PIM in-house (Salsify-like architecture). At what brand scale does in-house PIM make sense, and below which scale does it not?
@@ -239,7 +239,7 @@ Pricing decisions live in the catalog (or in a separate Pricing Service that the
 | **Channel-specific pricing** | Different price on Amazon vs DTC vs Walmart |
 | **MAP enforcement** (Minimum Advertised Price) | Brand sets a floor; resellers can't go below |
 | **Dynamic pricing** | Price changes by demand, time, customer segment |
-| **B2B price lists** | Different price per customer/account |
+| **B2B (Business-to-Business) price lists** | Different price per customer/account |
 | **Geo-pricing** | Different price per region (UK vs US) |
 | **Currency conversion** | Price stored in each currency, not converted at checkout |
 
@@ -310,7 +310,7 @@ Lily AI (founded 2017, raised $25M Series B in 2022) is a category leader: its m
 3. **PIM-as-bottleneck.** Catalog team becomes the rate-limit on new product launches, instead of being the unlock.
 4. **Channel-specific PIM silos.** Separate systems for Shopify, Amazon, Google, data drifts apart, customer experience breaks.
 5. **PIM without DAM integration.** Images live in Dropbox or a shared drive; image quality is inconsistent.
-6. **Catalog without GTIN strategy.** Private-label brands skip GTIN registration → can't expand to Google Shopping or Amazon FBA.
+6. **Catalog without GTIN strategy.** Private-label brands skip GTIN registration → can't expand to Google Shopping or Amazon FBA (Fulfillment by Amazon).
 
 ---
 
@@ -363,7 +363,7 @@ You now know:
 
 ## 💬 Discussion, Socratic prompts
 
-1. A $25M GMV apparel DTC brand argues they don't need a PIM "because we only have 300 SKUs and Shopify's product admin works fine." Build the strongest argument that they're right and the strongest that they're wrong. At what SKU count / channel count does Shopify's native product admin stop being enough?
+1. A $25M GMV (Gross Merchandise Value) apparel DTC brand argues they don't need a PIM "because we only have 300 SKUs and Shopify's product admin works fine." Build the strongest argument that they're right and the strongest that they're wrong. At what SKU count / channel count does Shopify's native product admin stop being enough?
 
 2. Home Depot built PIM in-house. Wayfair builds in-house. But most $50M-$500M DTC brands buy Akeneo or Salsify. What's the principle that decides build-vs-buy, and what's the most common mistake when brands try to build?
 
@@ -371,7 +371,7 @@ You now know:
 
 4. Amazon requires GTIN. Google Shopping requires GTIN. Walmart requires GTIN. But the GS1 GTIN registration costs $250-$15,000 depending on prefix block size. A small-batch brand (< 100 SKUs) argues this fee is unjustified. When are they right? When are they wrong? What's the workaround if they're wrong about being right?
 
-5. A B2B catalog and a B2C catalog appear superficially similar, both have products, attributes, images, prices. But the operational disciplines around them differ. Identify three operational disciplines that work for B2C but break in B2B, and how you'd redesign each.
+5. A B2B catalog and a B2C (Business-to-Consumer) catalog appear superficially similar, both have products, attributes, images, prices. But the operational disciplines around them differ. Identify three operational disciplines that work for B2C but break in B2B, and how you'd redesign each.
 
 ---
 

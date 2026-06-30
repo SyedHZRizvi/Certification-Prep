@@ -7,7 +7,7 @@ title: AI Digital Marketing Strategist Track
 
 **📣 AI Marketing** › Course 3 of 5, Strategist (Advanced)
 
-> **Goal:** Become the marketer who designs measurement architecture, builds attribution and Marketing Mix Models, ships predictive scoring, and leads privacy-first measurement strategy. The person the CMO calls when the CFO asks, "What did marketing actually do this quarter?"
+> **Goal:** Become the marketer who designs measurement architecture, builds attribution and Marketing Mix Models, ships predictive scoring, and leads privacy-first measurement strategy. The person the CMO (Chief Marketing Officer) calls when the CFO (Chief Financial Officer) asks, "What did marketing actually do this quarter?"
 > **Duration:** 6 months part-time (~120 hours of study)
 > **Cost:** Free curriculum. Real exam vouchers stack to ~$150–$450 depending on combination you pursue.
 > **Difficulty:** Advanced · 3+ yrs marketing ops/paid/analytics experience
@@ -25,7 +25,7 @@ This is where you stop being the person who *runs* campaigns and start being the
 
 ### 🎯 The promise
 
-AI Digital Marketing Strategist is the credential for the marketer who graduates from execution to strategy, the person who designs measurement architecture, builds Marketing Mix Models, ships predictive LTV and churn scoring, and owns the privacy-first stack that survives Apple's ATT, Chrome's cookie deprecation, and the EU's Digital Markets Act. It is the level at which marketing stops being a cost center and starts being a quantifiable growth engine. By the end of this track you'll be ready to sit a stack of senior credentials including **Google Analytics Certification**, **Tableau Specialist / Desktop Associate**, **CXL Institute's Digital Analytics Minidegree**, and select **dbt and AWS Data Analytics** credentials that the modern Strategist increasingly needs.
+AI Digital Marketing Strategist is the credential for the marketer who graduates from execution to strategy, the person who designs measurement architecture, builds Marketing Mix Models, ships predictive LTV (Lifetime Value) and churn scoring, and owns the privacy-first stack that survives Apple's ATT, Chrome's cookie deprecation, and the EU's Digital Markets Act. It is the level at which marketing stops being a cost center and starts being a quantifiable growth engine. By the end of this track you'll be ready to sit a stack of senior credentials including **Google Analytics Certification**, **Tableau Specialist / Desktop Associate**, **CXL Institute's Digital Analytics Minidegree**, and select **dbt and AWS Data Analytics** credentials that the modern Strategist increasingly needs.
 
 ### 💼 Career outcomes after passing
 
@@ -44,7 +44,7 @@ This is course **3 of 5** in the ladder: **Foundations (14) → Practitioner (15
 - **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
 - **Story-driven lessons (not flashcard punishment)**, measurement architectures introduced through real CMO scenarios
 - **Original questions only**, every quiz and practice exam written from public exam outlines; no copyrighted dumps
-- **A real Capstone**, 6-month scenario as the new Director of Marketing Analytics & Strategy at a $400M B2B SaaS company, unifying GA4 + CRM + product data into a CDP and shipping MMM-informed budget allocation
+- **A real Capstone**, 6-month scenario as the new Director of Marketing Analytics & Strategy at a $400M B2B (Business-to-Business) SaaS company, unifying GA4 + CRM (Customer Relationship Management) + product data into a CDP and shipping MMM-informed budget allocation
 - **One author, one voice**, coherent vocabulary across all 10 modules
 - **Updated for the 2026 measurement landscape**, post-cookie measurement, Google Bayesian Meridian MMM, Consent Mode v2, Marketing Modeling Studio, the open-source MMM stack (Meta's Robyn, Google's LightweightMMM)
 
@@ -85,7 +85,7 @@ By the end of this track, you'll be able to:
 
 | # | Module | Time | What You'll Master |
 |---|--------|------|--------------------|
-| 1 | [Strategic Frameworks & OKRs](./Module-01-Strategic-Frameworks-OKRs/Reading.md) | 8 hrs | STP, 4Ps/4Cs/7Ps, Porter's Five Forces, Ansoff, BCG, JTBD, OKRs, KPI trees, North Star metric |
+| 1 | [Strategic Frameworks & OKRs](./Module-01-Strategic-Frameworks-OKRs/Reading.md) | 8 hrs | STP, 4Ps/4Cs/7Ps, Porter's Five Forces, Ansoff, BCG, JTBD, OKRs, KPI (Key Performance Indicator) trees, North Star metric |
 | 2 | [CDPs & Server-Side Tracking](./Module-02-CDP-Server-Side-Tracking/Reading.md) | 10 hrs | Segment vs mParticle vs Hightouch vs Census, server-side GTM, identity resolution, the death of the 3P cookie |
 | 3 | [GA4 Mastery & Custom Events](./Module-03-GA4-Mastery-Custom-Events/Reading.md) | 12 hrs | Event/parameter model, Explorations, custom events + audiences, BigQuery raw-event SQL |
 | 4 | [Multi-Touch Attribution](./Module-04-Multi-Touch-Attribution/Reading.md) | 14 hrs | Why last-click is dead, Shapley + Markov DDA, GA4 DDA under the hood, MTA vendors, incrementality |
@@ -100,7 +100,7 @@ By the end of this track, you'll be able to:
 
 ---
 
-## 🧪 Practice Exams (Located in `Practice-Exams/`)
+## 🧪 Practice Exams (Located in  3 )
 
 | Exam | When To Take | Questions | Time | Pass | Difficulty |
 |------|--------------|-----------|------|------|------------|

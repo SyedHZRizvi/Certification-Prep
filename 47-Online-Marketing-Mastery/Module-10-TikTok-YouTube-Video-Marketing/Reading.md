@@ -1,8 +1,8 @@
 # Module 10: TikTok & YouTube Marketing — Video-First Growth 🎬
 
-> **Why this module matters:** Short-form video is now the single highest-ROI content format in digital marketing — TikTok alone reaches 1.7 billion monthly active users and YouTube Shorts serves over 70 billion views per day. Brands that cannot produce, optimise, and advertise on these platforms are systematically ceding market share to those that can.
+> **Why this module matters:** Short-form video is now the single highest-ROI (Return on Investment) content format in digital marketing — TikTok alone reaches 1.7 billion monthly active users and YouTube Shorts serves over 70 billion views per day. Brands that cannot produce, optimise, and advertise on these platforms are systematically ceding market share to those that can.
 
-> **Prerequisites:** Modules 1–9 (digital marketing fundamentals, Google Ads, analytics, Amazon Ads, Meta Ads, LinkedIn). You should already understand CTR, CPC, CPM, conversion funnels, and basic audience targeting.
+> **Prerequisites:** Modules 1–9 (digital marketing fundamentals, Google Ads, analytics, Amazon Ads, Meta Ads, LinkedIn). You should already understand CTR (Click-Through Rate), CPC (Cost Per Click), CPM (Cost Per Mille), conversion funnels, and basic audience targeting.
 
 ---
 
@@ -74,7 +74,7 @@ TikTok's ranking system — internally called the "For You Page" (FYP) algorithm
 | Creator monetisation | TikTok Creator Fund + Shop | Creator Fund + Shop | Creator Fund only | Creator Fund only | Creator Fund only |
 | Primary content language | English | English | German (niche English) | French | Dutch/English mix |
 
-**Key implication for European marketers:** TikTok Shop — a transformative feature that allows in-app purchase — is only live in the US and UK as of 2024–2025. European brands must use link-in-bio or redirect to external e-commerce. GDPR compliance is also stricter: TikTok's pixel (TikTok Pixel) requires explicit consent under ePrivacy Directive rules — a cookie consent banner is mandatory before firing pixel events in the EU.
+**Key implication for European marketers:** TikTok Shop — a transformative feature that allows in-app purchase — is only live in the US and UK as of 2024–2025. European brands must use link-in-bio or redirect to external e-commerce. GDPR (General Data Protection Regulation) compliance is also stricter: TikTok's pixel (TikTok Pixel) requires explicit consent under ePrivacy Directive rules — a cookie consent banner is mandatory before firing pixel events in the EU.
 
 > **GDPR Callout:** The TikTok Pixel sets third-party cookies and sends behavioural data to servers that may be located outside the EU. Under GDPR Article 46, you must ensure Standard Contractual Clauses (SCCs) are in place and disclose this in your privacy policy. In Germany, the Bundesdatenschutzgesetz (BDSG) adds additional obligations around data minimisation.
 
@@ -94,7 +94,7 @@ Think of it like a newspaper headline: nobody reads past the headline if the hea
 |---|---|---|---|
 | **Hook** | 0–3 seconds | Stop the scroll; create curiosity or urgency | Visual shock, bold text overlay, rhetorical question, pattern interrupt |
 | **Build** | 3–45 seconds | Deliver value incrementally; keep completion rate high | Step-by-step reveals, "wait for it" tension, loopable structure |
-| **Payoff** | Final 10 seconds | Reward the viewer; prompt action | Surprising result, clear CTA, soft product mention, "follow for part 2" |
+| **Payoff** | Final 10 seconds | Reward the viewer; prompt action | Surprising result, clear CTA (Call to Action), soft product mention, "follow for part 2" |
 
 **The Loop Structure** is particularly powerful: design your video so the final frame flows naturally back to the opening frame. This encourages replays, which are one of TikTok's highest-weight signals.
 
@@ -128,7 +128,7 @@ TikTok is *audio-first* in a way no other platform is. The platform built its vi
 |---|---|---|---|---|
 | **In-Feed Ads** | FYP scroll feed | Yes (after 6s) | Conversions, traffic, app installs | $3–$10 (US); £2–£8 (UK) |
 | **TopView** | First thing users see on app open | Yes (after 5s) | Massive brand awareness | $50–$120 CPM (US) |
-| **Branded Hashtag Challenge** | Discovery + Challenge page | N/A | UGC campaigns, brand awareness | $150K–$300K flat fee (platform buy) |
+| **Branded Hashtag Challenge** | Discovery + Challenge page | N/A | UGC (User-Generated Content) campaigns, brand awareness | $150K–$300K flat fee (platform buy) |
 | **Spark Ads** | FYP feed (organic post boosted) | Yes | Social proof, conversions using real organic content | Same as In-Feed, lower CPM typical |
 
 **Spark Ads** deserve special attention. Unlike standard In-Feed ads (which are created inside Ads Manager), Spark Ads boost an *existing organic post* — either your own or a creator's (with their permission). The advantage: all likes, comments, shares, and follows accrue to the *organic post*, building social proof. Standard In-Feed Ads show zero engagement counts.
@@ -158,11 +158,11 @@ TikTok Shop turns the app into a full e-commerce platform. The commercial flywhe
 
 For brands: **TikTok Shop Affiliate Program** allows you to set commission rates and invite creators to promote your products without any ad spend — you pay only on completed sales. For European brands without TikTok Shop access, the equivalent strategy is working with creators using the Creator Marketplace and driving traffic to external Shopify/WooCommerce stores.
 
-> **Anti-Pattern:** Advertising on TikTok Shop without TikTok Pixel installed and verified. Without the pixel, you cannot track ROAS, optimise for purchase events, or build retargeting audiences. The pixel must be installed *before* you start spending.
+> **Anti-Pattern:** Advertising on TikTok Shop without TikTok Pixel installed and verified. Without the pixel, you cannot track ROAS (Return on Ad Spend), optimise for purchase events, or build retargeting audiences. The pixel must be installed *before* you start spending.
 
 ---
 
-## Section 4 — YouTube SEO: Ranking in the World's Second-Largest Search Engine
+## Section 4 — YouTube SEO (Search Engine Optimization): Ranking in the World's Second-Largest Search Engine
 
 ### Why YouTube SEO Is Different from Google SEO
 

@@ -283,16 +283,16 @@
 **Q:** Name the four most-tested funnel frameworks.
 **A:** AIDA (Attention/Interest/Desire/Action), AARRR (Acquisition/Activation/Retention/Referral/Revenue), RACE (Reach/Act/Convert/Engage), TOFU/MOFU/BOFU.
 
-**Q:** What is ROAS?
-**A:** Return on Ad Spend = revenue from ads ÷ ad spend. NOT the same as ROI.
+**Q:** What is ROAS (Return on Ad Spend)?
+**A:** Return on Ad Spend = revenue from ads ÷ ad spend. NOT the same as ROI (Return on Investment).
 
-**Q:** What is the formula for CAC?
+**Q:** What is the formula for CAC (Customer Acquisition Cost)?
 **A:** Total marketing & sales spend ÷ new customers acquired.
 
-**Q:** What's a healthy LTV:CAC ratio?
+**Q:** What's a healthy LTV (Lifetime Value):CAC ratio?
 **A:** 3:1 or higher.
 
-**Q:** What is AOV?
+**Q:** What is AOV (Average Order Value)?
 **A:** Average Order Value = total revenue ÷ number of orders.
 
 **Q:** Name the four "walled gardens" of digital ads.
@@ -376,7 +376,7 @@
 
 ---
 
-## 🔍 SECTION 3: SEO IN THE AI ERA
+## 🔍 SECTION 3: SEO (Search Engine Optimization) IN THE AI ERA
 
 **Q:** Name the three SEO pillars.
 **A:** On-page, Technical, Off-page.
@@ -513,10 +513,10 @@
 **Q:** Which ESP is dominant in Shopify e-commerce?
 **A:** Klaviyo.
 
-**Q:** What's the CAN-SPAM unsubscribe window?
+**Q:** What's the CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act) unsubscribe window?
 **A:** 10 business days.
 
-**Q:** What's the GDPR maximum fine?
+**Q:** What's the GDPR (General Data Protection Regulation) maximum fine?
 **A:** 4% of global annual revenue OR €20M, whichever is higher.
 
 **Q:** Best ESPs for creator newsletters?
@@ -536,7 +536,7 @@
 **A:** Bid × ad quality × user signals (not bid alone).
 
 **Q:** What are the three components of Google's Quality Score?
-**A:** Expected CTR, ad relevance, landing page experience.
+**A:** Expected CTR (Click-Through Rate), ad relevance, landing page experience.
 
 **Q:** What is Performance Max?
 **A:** Google's AI-driven multi-placement campaign type (Search, YouTube, Display, Discover, Gmail, Maps in one).
@@ -636,7 +636,7 @@
 **Q:** What did the Gender Shades study (Buolamwini 2018) show?
 **A:** Commercial facial-recognition systems had error rates of 0.8% for light-skinned men and up to 34.7% for dark-skinned women.
 
-**Q:** What is COPPA?
+**Q:** What is COPPA (Children's Online Privacy Protection Act)?
 **A:** US Children's Online Privacy Protection Act (1998, updated 2013); protects under-13s.
 
 **Q:** Brazil's GDPR equivalent?
@@ -668,7 +668,7 @@
 ## 🛠️ SECTION 10: AI MARKETER TOOLKIT
 
 **Q:** Name the 6 stack tiers in this course.
-**A:** 1) Foundation (LLM + notes), 2) Content/Creative, 3) Distribution/Channel, 4) Measurement/CRM, 5) Workflow/Automation, 6) Specialized AI.
+**A:** 1) Foundation (LLM + notes), 2) Content/Creative, 3) Distribution/Channel, 4) Measurement/CRM (Customer Relationship Management), 5) Workflow/Automation, 6) Specialized AI.
 
 **Q:** CDP vs CRM vs ESP vs MA platform, define each.
 **A:** CDP = unifies customer data (Segment). CRM = relationship database (Salesforce). ESP = sends email (Klaviyo). MA platform = automation + often CRM (HubSpot).
@@ -723,7 +723,7 @@ You should be able to instantly answer:
 - Email's DMA $36 ROI + SPF/DKIM/DMARC
 - PMax vs Advantage+ (Google vs Meta)
 - GA4 + UTM + DDA + Consent Mode v2
-- GDPR + EU AI Act + COPPA + CCPA/CPRA basics
+- GDPR + EU AI Act + COPPA + CCPA (California Consumer Privacy Act)/CPRA basics
 - CDP vs CRM vs ESP vs MA platform
 
 Good luck! 🚀

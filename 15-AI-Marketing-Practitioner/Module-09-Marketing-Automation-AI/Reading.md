@@ -27,7 +27,7 @@ The lesson: a campaign that ends at "thanks, we'll be in touch" is wasting your 
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Conversion events and tracking (Pixel, CAPI, GA4), covered in [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
-> - LinkedIn Lead Gen Forms and CRM hand-offs, covered in [Module 5](../Module-05-TikTok-LinkedIn-Ads-B2B/Reading.md)
+> - LinkedIn Lead Gen Forms and CRM (Customer Relationship Management) hand-offs, covered in [Module 5](../Module-05-TikTok-LinkedIn-Ads-B2B/Reading.md)
 > - CDP-fed audience sync concepts, covered in [Module 6](../Module-06-Programmatic-Retargeting/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
@@ -53,8 +53,8 @@ That's the entire model. Every automation is a chain of those.
 
 | Platform | Best for | Pricing (2026, entry tier) |
 |----------|----------|-----|
-| **HubSpot** | B2B SaaS + content marketing | Free CRM; Marketing Hub from $20/mo (Starter) |
-| **Klaviyo** | DTC ecommerce (especially Shopify) | Free up to 250 contacts; $45/mo at ~1500 contacts |
+| **HubSpot** | B2B (Business-to-Business) SaaS + content marketing | Free CRM; Marketing Hub from $20/mo (Starter) |
+| **Klaviyo** | DTC (Direct-to-Consumer) ecommerce (especially Shopify) | Free up to 250 contacts; $45/mo at ~1500 contacts |
 | **ActiveCampaign** | SMB + creators + service businesses | From $15/mo (Marketing Lite) |
 | **Salesforce Marketing Cloud** | Enterprise; deeply integrated with Salesforce CRM | $1,250+/mo |
 | **Make.com / n8n / Zapier** | Generic automation across any tools | $9-299/mo |
@@ -133,7 +133,7 @@ Klaviyo's automation is called **Flows**. Built for ecommerce conversion.
 | **Abandoned Browse** | Viewed product 3+ times, no add to cart | Add to cart |
 | **Post-Purchase** | Order placed | Review + cross-sell |
 | **Win-Back** | No purchase in 90+ days | Re-activate |
-| **Birthday / Anniversary** | Date-based | LTV lift |
+| **Birthday / Anniversary** | Date-based | LTV (Lifetime Value) lift |
 | **Replenishment** | X days post-purchase based on product | Repeat purchase |
 
 ### Example: Abandoned Cart Flow
@@ -422,7 +422,7 @@ Drift (acquired by Salesloft in 2024) shared at SaaStr 2022 their lead automatio
 - **HubSpot Workflows** powered the follow-up sequence based on meeting outcome
 - **Result**: average sales cycle dropped from 67 days to ~42 days (38% reduction)
 
-The lesson: speed-to-lead automation isn't optional in 2026. Leads convert at 3-10x higher rates when contacted within 5 minutes of inquiry (per [Lead Response Management studies, Harvard Business Review 2020 + 2024 updates](https://hbr.org/)).
+The lesson: speed-to-lead automation isn't optional in 2026. Leads convert at 3-10x higher rates when contacted within 5 minutes of inquiry (per [Lead Response Management studies, Harvard Business Review 2020 + 2024 updates 16 ).
 
 ---
 

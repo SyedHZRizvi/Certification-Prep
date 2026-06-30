@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) POESM Paid bucket, walled gardens, marketing math (CAC, LTV, ROAS, CPM, CPA)
 > - [Module 5 Social Media & AI Tools](../Module-05-Social-Media-AI-Tools/Reading.md) platform-by-platform algorithm logic (Meta, TikTok, LinkedIn ad surfaces sit on top of these)
-> - Comfort reading basic math expressions like "5× ROAS = revenue ÷ ad spend", the math sections drill this
+> - Comfort reading basic math expressions like "5× ROAS (Return on Ad Spend) = revenue ÷ ad spend", the math sections drill this
 >
 > If you've never logged into Google Ads or Meta Business Suite, sign up for the (free) sandbox account before the auction-mechanics section. The auction is much clearer when you've seen the "estimated reach" slider in a real UI.
 
@@ -13,7 +13,7 @@
 
 ## 🏟️ A Story: How Procter & Gamble Set Fire to $200 Million in Ads (and What Happened Next)
 
-In 2017, Procter & Gamble's then-CMO **Marc Pritchard** gave a now-famous speech to the IAB Annual Leadership Meeting in which he called the digital media supply chain "murky at best and fraudulent at worst." He laid out specific transparency demands of Facebook, Google, and the open-web ad networks. Then P&G *cut $200 million* in digital advertising spend over the next 18 months.
+In 2017, Procter & Gamble's then-CMO (Chief Marketing Officer) **Marc Pritchard** gave a now-famous speech to the IAB Annual Leadership Meeting in which he called the digital media supply chain "murky at best and fraudulent at worst." He laid out specific transparency demands of Facebook, Google, and the open-web ad networks. Then P&G *cut $200 million* in digital advertising spend over the next 18 months.
 
 The expected outcome would have been a sales hit. Instead and this became a landmark case study in *MIT Sloan Management Review* (2019) and *HBR* P&G's organic-and-brand metrics held. They had been wasting money. The reach they "lost" was reach to bots, fraud, and frequency caps that nobody had bothered to enforce.
 
@@ -67,7 +67,7 @@ Every platform offers some variation of these.
 
 | Strategy | What it optimizes | When to use |
 |---|---|---|
-| **Manual CPC** | You set the max bid per click | Niche / small accounts; tight control |
+| **Manual CPC (Cost Per Click)** | You set the max bid per click | Niche / small accounts; tight control |
 | **Maximize Clicks** | Algorithm gets as many clicks as your budget allows | Early traffic-building; broad awareness |
 | **Maximize Conversions** | Algorithm maximizes total conversions | Established conversion data |
 | **Target CPA** | Hit a specific cost-per-acquisition | Lead-gen optimization |
@@ -166,10 +166,10 @@ Scenario: You sell a $100 product with 40% gross margin ($40 gross profit per sa
 
 | Term | Value | Math |
 |---|---|---|
-| **AOV** (Average Order Value) | $100 | given |
+| **AOV (Average Order Value)** (Average Order Value) | $100 | given |
 | **Gross margin** | 40% | given |
 | **Profit per order** | $40 | $100 × 0.40 |
-| **Target CAC** | $20 | leaves $20 for opex + customer success |
+| **Target CAC (Customer Acquisition Cost)** | $20 | leaves $20 for opex + customer success |
 | **Target ROAS** | 5× | $100 revenue per $20 ad spend |
 | **Actual ad spend** | $5,000 | over 30 days |
 | **Orders generated** | 80 | from ads |
@@ -179,13 +179,13 @@ Scenario: You sell a $100 product with 40% gross margin ($40 gross profit per sa
 
 **Verdict:** This campaign is *losing money*. Actual CAC ($62.50) > target CAC ($20). Cut, optimize, or kill.
 
-### Sample B2B SaaS Math
+### Sample B2B (Business-to-Business) SaaS Math
 
 Scenario: A $100/month SaaS with average 18-month customer lifespan.
 
 | Term | Value | Math |
 |---|---|---|
-| **LTV** | $1,800 | $100 × 18 months |
+| **LTV (Lifetime Value)** | $1,800 | $100 × 18 months |
 | **Gross margin** | 80% | typical for SaaS |
 | **Gross profit per customer** | $1,440 | $1,800 × 0.80 |
 | **Target CAC** | $480 | gross profit ÷ 3 (3:1 LTV:CAC) |
@@ -298,7 +298,7 @@ The Wayfair case is the most-cited PMax-success enterprise example. It also pair
 | Term | Definition |
 |---|---|
 | **CPC** | Cost Per Click |
-| **CPM** | Cost Per Mille (1,000 impressions) |
+| **CPM (Cost Per Mille)** | Cost Per Mille (1,000 impressions) |
 | **CPA** | Cost Per Acquisition |
 | **ROAS** | Return On Ad Spend |
 | **Quality Score** | Google's 1–10 ad quality metric |
@@ -352,8 +352,8 @@ You now know:
 ## 💬 Discussion, Socratic prompts
 
 1. **The PMax black-box trade-off.** Performance Max compresses your control: you give Google creative + signals + budget, and the algorithm decides everything. Wayfair got 13% lift + 25% CAC improvement; other brands report PMax cannibalizing branded search. Construct the strongest argument for "always start with PMax for any new e-commerce account" and the strongest counter-argument for "always require 6 months of manual data before letting PMax allocate." What's the actual decision rule?
-2. **Manual + AI portfolio mix in practice.** The reading suggests 60–70% PMax/Advantage+, 10–20% brand defense, 10–20% targeted, 5–10% test budget. A growth VP at a $50M-revenue DTC brand says "this assumes mature paid-search experience that most teams don't have, for a 3-person paid team, 90% PMax is the right call so the algorithm carries most of the load." Make the case for and against. At what team size + ad-spend volume does the portfolio mix become enforceable rather than aspirational?
-3. **ROAS reporting as performance theater.** A marketing director presents a 6× ROAS to the CEO. Gross margin is 22%; per-order opex is $14; AOV is $80. Show that this campaign is *actually* losing money on a fully-loaded basis. Then design a 1-page reporting template that the marketing director can use *internally* without contradicting the "6× ROAS" reported to the CEO publicly. What's the right ethical and political move here?
+2. **Manual + AI portfolio mix in practice.** The reading suggests 60–70% PMax/Advantage+, 10–20% brand defense, 10–20% targeted, 5–10% test budget. A growth VP at a $50M-revenue DTC (Direct-to-Consumer) brand says "this assumes mature paid-search experience that most teams don't have, for a 3-person paid team, 90% PMax is the right call so the algorithm carries most of the load." Make the case for and against. At what team size + ad-spend volume does the portfolio mix become enforceable rather than aspirational?
+3. **ROAS reporting as performance theater.** A marketing director presents a 6× ROAS to the CEO (Chief Executive Officer). Gross margin is 22%; per-order opex is $14; AOV is $80. Show that this campaign is *actually* losing money on a fully-loaded basis. Then design a 1-page reporting template that the marketing director can use *internally* without contradicting the "6× ROAS" reported to the CEO publicly. What's the right ethical and political move here?
 4. **CAPI + Enhanced Conversions: real fix or marketing theater?** Conversions API + Enhanced Conversions are universally pitched as the "post-iOS-14.5 fix." A skeptic argues they're a partial workaround that gets blessed only because the ecosystem needs *something* to point at; a defender argues recovered match rates of 60–80% are materially game-changing. Make both cases. What measurement design would you propose to prove the value of CAPI in your own account?
 5. **Retail Media Networks: another walled garden, or genuinely different?** RMNs are projected to exceed $100B in US ad spend in 2025. Amazon, Walmart Connect, and Roundel sit on first-party purchase data unavailable to Google or Meta. Are RMNs (a) the next walled gardens (concentrating ad spend on a few retailer-owned platforms) or (b) a genuine ad-tech diversification move that reduces dependence on Google+Meta? Defend the strongest argument and identify what would change your view by 2028.
 

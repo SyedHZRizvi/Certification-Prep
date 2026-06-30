@@ -274,11 +274,11 @@
 
 ## 📦 SECTION 1: BUSINESS MODELS & UNIT ECONOMICS
 
-**Q:** Define DTC (Direct-to-Consumer) e-commerce.
+**Q:** Define DTC (Direct-to-Consumer) (Direct-to-Consumer) e-commerce.
 **A:** A model where the brand sells directly to the end customer through its own digital storefront, owning the customer relationship, data, and margin instead of routing through wholesale or marketplaces.
 
 **Q:** What are the four foundational unit-economics metrics for an e-commerce business?
-**A:** AOV (Average Order Value), CAC (Customer Acquisition Cost), Contribution Margin (revenue minus variable cost), and CLV (Customer Lifetime Value).
+**A:** AOV (Average Order Value) (Average Order Value), CAC (Customer Acquisition Cost) (Customer Acquisition Cost), Contribution Margin (revenue minus variable cost), and CLV (Customer Lifetime Value).
 
 **Q:** What is the "Bezos 1997 Day-1 doctrine"?
 **A:** Jeff Bezos's 1997 Shareholder Letter principle, always operate as a Day-1 startup: customer obsession, high-velocity decision-making, willingness to be misunderstood, and embrace external trends. Codified at Amazon as a permanent operating principle.
@@ -301,7 +301,7 @@
 **Q:** Define Marketplace (vs DTC).
 **A:** A marketplace (Amazon, Etsy, eBay, Walmart) is a platform that aggregates many sellers; the platform owns the customer relationship and takes a fee per transaction.
 
-**Q:** What's the difference between B2C and B2B e-commerce in pricing display?
+**Q:** What's the difference between B2C (Business-to-Consumer) and B2B (Business-to-Business) e-commerce in pricing display?
 **A:** B2C shows tax-inclusive (in most regions) and one price for all buyers. B2B shows tax-exclusive, supports negotiated price lists, customer-specific catalogs, and quote-to-cash workflows.
 
 ---
@@ -321,7 +321,7 @@
 **A:** Shopify's React-based headless storefront framework (launched 2021, GA 2023). Pairs with Oxygen (Shopify's hosting for Hydrogen) and Storefront API.
 
 **Q:** Name three Salesforce B2C Commerce Cloud differentiators.
-**A:** Einstein AI personalization, OCAPI/SCAPI APIs, deep Salesforce CRM/Marketing Cloud integration; positioned for enterprise B2C at $100M+ GMV.
+**A:** Einstein AI personalization, OCAPI/SCAPI APIs, deep Salesforce CRM (Customer Relationship Management)/Marketing Cloud integration; positioned for enterprise B2C at $100M+ GMV (Gross Merchandise Value).
 
 **Q:** What is BigCommerce's typical sweet spot?
 **A:** Mid-market merchants ($1M-$100M GMV) wanting native multi-storefront, multi-channel feeds, and no transaction fees on top of payments, without Adobe Commerce engineering complexity.
@@ -343,7 +343,7 @@
 **A:** Open-source PIM (community edition free) with strong attribute governance, multi-locale support, and a vibrant ecosystem of connectors to Shopify, Magento, Amazon, and Salesforce.
 
 **Q:** What is a "variant" vs a "product" in catalog terms?
-**A:** A product is the conceptual SKU group (e.g., "Allbirds Wool Runner"); variants are the orderable SKUs differing on attributes like size and color. Each variant has its own GTIN, price, and inventory.
+**A:** A product is the conceptual SKU (Stock Keeping Unit) group (e.g., "Allbirds Wool Runner"); variants are the orderable SKUs differing on attributes like size and color. Each variant has its own GTIN, price, and inventory.
 
 **Q:** Define GS1 standards.
 **A:** GS1 is the global non-profit standards body for product identification (GTIN, GLN, SSCC), maintaining the barcode and digital-link standards used in retail worldwide.
@@ -383,7 +383,7 @@
 **Q:** Define 3PL.
 **A:** Third-Party Logistics provider, outsourced fulfillment partner that handles receiving, storage, pick-pack, shipping, and returns. Examples: ShipBob, Shipmonk, Deliverr.
 
-**Q:** FBA vs FBM on Amazon, what's the trade-off?
+**Q:** FBA (Fulfillment by Amazon) vs FBM (Fulfillment by Merchant) on Amazon, what's the trade-off?
 **A:** FBA (Fulfilled by Amazon) = Amazon stores and ships; Prime-eligible, higher fees (~15% + storage). FBM (Fulfilled by Merchant) = seller ships; lower fees but no Prime badge, harder to win Buy Box.
 
 **Q:** What is Amazon's Buy with Prime?
@@ -412,7 +412,7 @@
 **A:** When the actual traffic split (e.g., 50.4% / 49.6%) deviates from the planned split, indicating a bug in randomization. SRM invalidates the test; never proceed if SRM is detected.
 
 **Q:** What are Core Web Vitals?
-**A:** Google's UX metric trio: LCP (Largest Contentful Paint, ≤2.5s), INP (Interaction to Next Paint, ≤200ms, replaced FID March 2024), CLS (Cumulative Layout Shift, ≤0.1). Affect SEO ranking.
+**A:** Google's UX metric trio: LCP (Largest Contentful Paint, ≤2.5s), INP (Interaction to Next Paint, ≤200ms, replaced FID March 2024), CLS (Cumulative Layout Shift, ≤0.1). Affect SEO (Search Engine Optimization) ranking.
 
 **Q:** What is a guard-rail metric in experimentation?
 **A:** A metric that, if hurt by the variant, blocks the launch even if the primary metric improves. Common guard-rails: page load time, error rate, customer support tickets.
@@ -431,7 +431,7 @@
 **A:** Apple launched App Tracking Transparency in iOS 14.5. Users had to opt-in to cross-app tracking. ~70-80% opted out, breaking Meta Pixel for iOS and costing Meta $10B+ in 2022 revenue.
 
 **Q:** What is Amazon Sponsored Products vs Sponsored Brands vs Sponsored Display?
-**A:** Sponsored Products = keyword/ASIN-targeted CPC ads in search results. Sponsored Brands = banner ads with logo + multi-product carousels. Sponsored Display = audience-based retargeting on/off Amazon.
+**A:** Sponsored Products = keyword/ASIN (Amazon Standard Identification Number)-targeted CPC (Cost Per Click) ads in search results. Sponsored Brands = banner ads with logo + multi-product carousels. Sponsored Display = audience-based retargeting on/off Amazon.
 
 **Q:** TikTok Shop launched in the US in:
 **A:** September 2023, partnering with creators for in-app shopping; ramped significantly through 2024 and ranks among the fastest-growing channels for emerging DTC brands.
@@ -450,7 +450,7 @@
 **A:** An automated email/SMS sequence targeting lapsed customers (typically 90-180 days post-last-purchase) with an incentive to return. Typical win-back rates: 10-15% for DTC.
 
 **Q:** What does Yotpo do?
-**A:** Yotpo is a unified UGC + reviews + loyalty + SMS platform; acquired Trustpilot competitors and expanded into a full retention stack. Competitors: Okendo, Junip, Stamped, Loox.
+**A:** Yotpo is a unified UGC (User-Generated Content) + reviews + loyalty + SMS platform; acquired Trustpilot competitors and expanded into a full retention stack. Competitors: Okendo, Junip, Stamped, Loox.
 
 **Q:** Brian Dean's "Skyscraper Technique" applied to e-commerce.
 **A:** Find a top-ranking buying guide for your keyword, build a 10x better version with more depth, better data, and original imagery, then pitch backlinks. Used heavily by REI and Wirecutter.

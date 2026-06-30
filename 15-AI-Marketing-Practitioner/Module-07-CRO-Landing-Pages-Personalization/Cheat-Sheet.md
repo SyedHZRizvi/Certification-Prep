@@ -87,7 +87,7 @@ Calculator: **evanmiller.org/ab-testing/sample-size.html**
 
 | Tool | How |
 |------|-----|
-| **Mutiny** | Reverse-IP B2B; personalizes copy per company |
+| **Mutiny** | Reverse-IP B2B (Business-to-Business); personalizes copy per company |
 | **Dynamic Yield** | Ecom product recs + dynamic copy |
 | **Optimizely Personalization** | Rules-based for enterprise |
 | **Unbounce Smart Traffic** | ML routes visitor to best variant |
@@ -109,7 +109,7 @@ Daily habit: watch **5 replays**, note **1 improvement**.
 
 | Test | Lift |
 |------|------|
-| Move CTA above fold | 10-30% |
+| Move CTA (Call to Action) above fold | 10-30% |
 | Simplify form 7→4 fields | 15-30% |
 | Add risk reversal | 5-10% |
 | Add social proof strip | 5-15% |

@@ -12,7 +12,7 @@
 | Canada | amazon.ca | CAD | HST/GST varies | Part of NACS; NARF for cross-border |
 | United Kingdom | amazon.co.uk | GBP | 20% VAT | Separate from EU27 post-Brexit |
 | Germany | amazon.de | EUR | 19% VAT | Largest EU marketplace |
-| France | amazon.fr | EUR | 20% VAT | Second EU by GMV |
+| France | amazon.fr | EUR | 20% VAT | Second EU by GMV (Gross Merchandise Value) |
 | Italy | amazon.it | EUR | 22% VAT | Strong fashion/luxury category |
 | Spain | amazon.es | EUR | 21% VAT | Growing; mobile-first shoppers |
 | Netherlands | amazon.nl | EUR | 21% BTW | Gateway to Benelux |
@@ -25,7 +25,7 @@
 
 | Factor | Weight | Actionable Lever |
 |---|---|---|
-| **S**ales velocity | Very High | Drive initial sales via Vine, deals, Launch PPC after 15+ reviews |
+| **S**ales velocity | Very High | Drive initial sales via Vine, deals, Launch PPC (Pay-Per-Click) after 15+ reviews |
 | **C**onversion rate | Very High | A+ Content, strong images, competitive price |
 | **C**lick-through rate | High | Main image quality, competitive price in search results |
 | **K**eyword relevance | High | Title front-load, backend 250 bytes fully filled |
@@ -83,7 +83,7 @@
 
 ---
 
-## Fulfilment Comparison — FBA vs FBM vs SFP
+## Fulfilment Comparison — FBA (Fulfillment by Amazon) vs FBM (Fulfillment by Merchant) vs SFP
 
 | Dimension | FBA | FBM | SFP |
 |---|---|---|---|
@@ -183,7 +183,7 @@ Enroll ONLY if ALL of the following are true:
 | US seller, goods in Germany (FBA) | Register for German VAT immediately |
 | US seller, goods in UK (FBA) | Register for UK VAT immediately |
 | Seller with Pan-EU FBA | Register in all 7 EU FBA countries |
-| B2C DTC (no EU warehouse) | OSS registration if annual EU sales > €10,000 |
+| B2C (Business-to-Consumer) DTC (Direct-to-Consumer) (no EU warehouse) | OSS registration if annual EU sales > €10,000 |
 | UK seller, UK sales only | Register when UK revenue > £90,000/yr |
 
 **OSS (One Stop Shop):** Allows EU sellers to file one VAT return for all EU B2C sales above €10,000/year. US/UK sellers must use the non-Union OSS scheme or register individually.
@@ -208,8 +208,8 @@ Enroll ONLY if ALL of the following are true:
 
 | Programme | Cost | Key Requirement | Primary Benefit |
 |---|---|---|---|
-| Amazon Vine | ~$200 (US); ~€200 (EU) per ASIN | < 30 existing reviews; Brand Registry | 15–30 honest reviews; 40–70% CVR uplift on new ASINs |
-| Subscribe & Save | Free to enrol | FBA required (most categories) | 3–4× higher customer LTV |
+| Amazon Vine | ~$200 (US); ~€200 (EU) per ASIN (Amazon Standard Identification Number) | < 30 existing reviews; Brand Registry | 15–30 honest reviews; 40–70% CVR uplift on new ASINs |
+| Subscribe & Save | Free to enrol | FBA required (most categories) | 3–4× higher customer LTV (Lifetime Value) |
 | Lightning Deals | ~$150 (US) | Minimum 20% discount | Featured in "Today's Deals" section |
 | Prime Day Deals | Varies | Submitted 4–6 weeks early; 20%+ discount | 3–5× demand spike for participating ASINs |
 | Brand Referral Bonus | Free | Brand Registry + external traffic | 10% avg bonus on attributed sales |

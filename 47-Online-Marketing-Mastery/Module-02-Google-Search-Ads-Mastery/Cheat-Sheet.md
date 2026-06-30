@@ -10,7 +10,7 @@
 |-------|----------|----------|
 | **Account** | Billing, users, conversion tracking, linked GA4 | One account per business |
 | **Campaign** | Budget, network, location, language, bidding strategy, ad schedule | One budget = one campaign |
-| **Ad Group** | Keyword set + matching ads + (if manual) CPC bid | One THEME per ad group |
+| **Ad Group** | Keyword set + matching ads + (if manual) CPC (Cost Per Click) bid | One THEME per ad group |
 | **Keyword / Ad** | Specific search terms bid on; copy shown to users | Keyword in Headline 1 |
 
 **STAG Rule:** 1 Theme → 3–7 Keywords → 1–2 RSAs → 1 Landing Page
@@ -61,7 +61,7 @@ Ad Rank = Max Bid × Quality Score × Extension Impact
 Actual CPC = (Competitor Ad Rank below you ÷ Your Quality Score) + £0.01
 ```
 
-### ROAS
+### ROAS (Return on Ad Spend)
 ```
 ROAS = Revenue from Ads ÷ Ad Spend
 (e.g., £18,000 ÷ £1,000 = 18x = 1,800%)
@@ -102,7 +102,7 @@ Conversion history in this campaign?
 | Component | Limit | Key Rule |
 |-----------|-------|----------|
 | Headlines | Up to 15 (max 30 chars each) | Write conceptually diverse — not synonym-spinning |
-| Descriptions | Up to 4 (max 90 chars each) | Include CTA in at least one |
+| Descriptions | Up to 4 (max 90 chars each) | Include CTA (Call to Action) in at least one |
 | Shown at once | 3 headlines + 2 descriptions | Make each headline independently meaningful |
 
 **Pin sparingly.** Pinning all positions defeats the point of AI testing.
@@ -118,10 +118,10 @@ Conversion history in this campaign?
 | **Sitelinks** | Yes | Drive to specific pages (4 links shown) |
 | **Callouts** | No | Short phrases: "Free Delivery," "Award-Winning" |
 | **Structured Snippets** | No | List values under a header: Occasions: Birthdays, Weddings |
-| **Call** | Yes (tap-to-call) | Phone-first B2C/local businesses |
+| **Call** | Yes (tap-to-call) | Phone-first B2C (Business-to-Consumer)/local businesses |
 | **Location** | Yes (maps) | Physical stores; builds trust in DE/FR markets |
 | **Price** | Yes | E-commerce; show specific products + prices |
-| **Lead Form** | In-ad form | B2B lead gen; newsletter sign-up |
+| **Lead Form** | In-ad form | B2B (Business-to-Business) lead gen; newsletter sign-up |
 | **Image** | Yes | Brand differentiation (search partner sites) |
 
 ---
@@ -146,14 +146,14 @@ Conversion history in this campaign?
 
 | Metric | US/Canada | UK | Germany/France/NL |
 |--------|-----------|----|--------------------|
-| Avg Search CTR (retail) | 2.5–4% | 2.5–4% | 2–3.5% |
+| Avg Search CTR (Click-Through Rate) (retail) | 2.5–4% | 2.5–4% | 2–3.5% |
 | Avg CPC (retail) | $1.20–$2.50 | £0.80–£1.80 | €0.70–€1.60 |
 | Healthy ROAS target | 200–400% (growth) | 400–600% (established) | 350–550% |
 | Mobile share of clicks | ~65% | ~68% | ~58–62% |
 
 **Germany-specific:** Phone number and address in ads materially improves CTR — German consumers verify before buying. Use Call and Location assets.
 
-**UK/EU GDPR:** Consent Mode v2 required for conversion tracking on EU/EEA visitors. Non-compliance = incomplete data + potential ICO/DPA action.
+**UK/EU GDPR (General Data Protection Regulation):** Consent Mode v2 required for conversion tracking on EU/EEA visitors. Non-compliance = incomplete data + potential ICO/DPA action.
 
 ---
 

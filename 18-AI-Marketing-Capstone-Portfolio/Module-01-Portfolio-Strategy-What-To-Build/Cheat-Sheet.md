@@ -85,7 +85,7 @@ Pick one. You can pivot later. Drift = problem.
 
 | # | Capstone | Skill Signaled | Module |
 |---|----------|----------------|--------|
-| 1 | SEO + Content Audit | Analytical writing + strategy | M2 |
+| 1 | SEO (Search Engine Optimization) + Content Audit | Analytical writing + strategy | M2 |
 | 2 | Live Paid Campaign | Money-at-stake decision making | M3 |
 | 3 | Marketing Automation Workflow | Systems thinking | M4 |
 | 4 | Attribution Model | Quantitative analysis | M5 |

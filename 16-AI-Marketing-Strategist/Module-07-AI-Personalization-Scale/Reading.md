@@ -179,7 +179,7 @@ The metric you optimize matters. Optimizing only NDCG leads to "obvious good" re
 | **Dynamic Yield** (acquired by Mastercard 2022) | E-commerce + retail | Rule-based + ML hybrid |
 | **Optimizely Personalization** | Hybrid optimization + personalization | Bayesian bandits |
 | **Bloomreach Engagement** | Composable commerce + personalization | CDP + personalization unified |
-| **BlueShift** | B2B + B2C lifecycle personalization | AI-driven journeys |
+| **BlueShift** | B2B (Business-to-Business) + B2C (Business-to-Consumer) lifecycle personalization | AI-driven journeys |
 | **Adobe Target** | Enterprise on Adobe stack | Bandits + recommendations |
 | **Algolia Recommend** | Search + recommendations | Search-derived recsys |
 | **Constructor.io** | E-commerce search + recsys | Hosted search + recsys |
@@ -187,7 +187,7 @@ The metric you optimize matters. Optimizing only NDCG leads to "obvious good" re
 | **Amazon Personalize** | AWS-native | Managed recsys |
 | **Open-source: TensorFlow Recommenders, Merlin (NVIDIA), RecBole** | If you have ML engineering | Build-your-own |
 
-⚠️ **What most teams get wrong:** Buying a personalization engine without first establishing the *measurement* infrastructure (Module 3 + 4). Personalization without measurement is theater. The CFO will ask "what did this $400K/year platform deliver?" and you need an incrementality test to answer.
+⚠️ **What most teams get wrong:** Buying a personalization engine without first establishing the *measurement* infrastructure (Module 3 + 4). Personalization without measurement is theater. The CFO (Chief Financial Officer) will ask "what did this $400K/year platform deliver?" and you need an incrementality test to answer.
 
 ---
 
@@ -219,11 +219,11 @@ This is the operational direction of personalization, *creative generated per in
 
 Five pitfalls that destroy personalization programs:
 
-1. **Optimization for the wrong metric.** CTR up, retention down. Always optimize for downstream business metric, not surface engagement.
+1. **Optimization for the wrong metric.** CTR (Click-Through Rate) up, retention down. Always optimize for downstream business metric, not surface engagement.
 2. **The filter bubble.** Recommending only what users have liked → catalog narrows → users get bored. Tune for *diversity* and *serendipity*.
 3. **Cold start.** New users + new items have no history. Hybrid + content-based methods bridge this.
 4. **The popularity bias.** Recommenders default to "everyone has watched this", depriving long-tail catalog items of exposure. Counter with *exposure penalty* terms.
-5. **Privacy compliance.** Per-user personalization at scale interacts with GDPR's "right to explanation", modern systems include *interpretability hooks* (the equivalent of "why am I seeing this?" buttons).
+5. **Privacy compliance.** Per-user personalization at scale interacts with GDPR (General Data Protection Regulation)'s "right to explanation", modern systems include *interpretability hooks* (the equivalent of "why am I seeing this?" buttons).
 
 ---
 
@@ -287,9 +287,9 @@ Five pitfalls that destroy personalization programs:
 
 1. Netflix's recsys saves an estimated $1B/year in retained revenue. Yet Netflix has also been criticized for *narrowing* the catalog users see, creating filter bubbles. Where is the line between a recsys that maximizes engagement and one that quietly damages long-term customer trust, and how would you instrument both?
 2. Bandit-driven optimization beats A/B testing at scale because it exploits winners faster. But it also makes *post-hoc analysis* harder, there's no clean control group. What measurement compromise are you accepting when you switch from A/B to multi-armed bandits, and how would you defend that compromise to a CFO who asks "but what's the lift?"
-3. Contextual bandits with 50+ context features power the most-cited production personalization systems. Smaller teams cannot run such a system. What's the minimum viable contextual signal a 5-person growth team should collect, and at what scale (DAU, requests/day) does the engineering investment cross the ROI line?
+3. Contextual bandits with 50+ context features power the most-cited production personalization systems. Smaller teams cannot run such a system. What's the minimum viable contextual signal a 5-person growth team should collect, and at what scale (DAU, requests/day) does the engineering investment cross the ROI (Return on Investment) line?
 4. Cold start is the recsys equivalent of the Day-1 sales problem, no signal on a new user or new item. List three *non-ML* fallbacks that responsible production systems use, and explain why "popular items" is usually a worse fallback than it sounds.
-5. GenAI now produces per-impression dynamic creative text, images, even short video at near-zero marginal cost. The brand-safety risk is real (hallucinated claims, off-brand voice). Draft the *one paragraph* of guardrails you'd require before any DTC brand could ship GenAI creative at scale, and defend each clause.
+5. GenAI now produces per-impression dynamic creative text, images, even short video at near-zero marginal cost. The brand-safety risk is real (hallucinated claims, off-brand voice). Draft the *one paragraph* of guardrails you'd require before any DTC (Direct-to-Consumer) brand could ship GenAI creative at scale, and defend each clause.
 
 ---
 

@@ -1,4 +1,4 @@
-# Module 2: Capstone 1, SEO + Content Audit 🔍
+# Module 2: Capstone 1, SEO (Search Engine Optimization) + Content Audit 🔍
 
 > **Why this module matters:** This is your first portfolio piece. By end of Module 2, you'll have a 15–20 page audit document, a 90-day content roadmap, and a public link you can put on LinkedIn. Most students who land their first marketing job credit *this* capstone.
 
@@ -195,7 +195,7 @@ If you own the site (or your subject does and will share), GSC is gold.
 
 **What to grab:**
 - Total clicks + impressions for last 12 months
-- Average CTR
+- Average CTR (Click-Through Rate)
 - Average position
 - Top 50 queries (export CSV)
 - Top 50 pages (export CSV)
@@ -382,7 +382,7 @@ The 90-second pitch:
 | **Domain Rating (DR)** | Ahrefs' 0–100 score of backlink strength |
 | **Keyword Difficulty (KD)** | Ahrefs' 0–100 estimate of how hard it is to rank |
 | **Search Volume** | Estimated monthly searches for a query |
-| **SERP** | Search Engine Results Page |
+| **SERP (Search Engine Results Page)** | Search Engine Results Page |
 | **Content Gap** | Keywords competitors rank for that you don't |
 | **Top Pages** | Highest-traffic existing pages on a site |
 | **Quick Wins** | Keywords ranked at positions 8–20 that could move up easily |

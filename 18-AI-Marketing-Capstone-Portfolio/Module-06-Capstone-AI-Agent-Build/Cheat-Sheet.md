@@ -49,7 +49,7 @@
 | 2 | Content Brief Generator | Low | Medium |
 | 3 | Competitor Research Agent | Medium | High |
 | 4 | Email Personalization Agent | Medium | High |
-| 5 | SEO Content Generator | Low | Medium |
+| 5 | SEO (Search Engine Optimization) Content Generator | Low | Medium |
 | 6 | Social Media Repurposer | Low | Medium |
 
 ---

@@ -1,4 +1,4 @@
-# 📋 Module 8 Cheat Sheet: SEO, Content & Lifecycle Marketing
+# 📋 Module 8 Cheat Sheet: SEO (Search Engine Optimization), Content & Lifecycle Marketing
 
 > Print and tape. Organic is the moat; lifecycle is the engine.
 
@@ -55,13 +55,13 @@
 | Solution | When |
 |----------|------|
 | Robots.txt disallow | Zero crawl budget on filter URLs |
-| Meta `noindex` | Crawl-time signal but no SERP |
+| Meta `noindex` | Crawl-time signal but no SERP (Search Engine Results Page) |
 | Canonical to parent | Default; preserves authority |
 | Selective indexing | High-volume facets → static indexed URLs |
 
 ---
 
-## 📐 E-E-A-T + HCU Timeline · CTR by Position
+## 📐 E-E-A-T + HCU Timeline · CTR (Click-Through Rate) by Position
 
 ```
 Dec 2022, "Experience" added (E-A-T → E-E-A-T)

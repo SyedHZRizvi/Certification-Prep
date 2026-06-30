@@ -92,7 +92,7 @@ Target margin: 60–80%
 | Element | Typical |
 |---|---|
 | Response time | 1 business day |
-| Delivery window | Match SKU (5d / 14d / 21d / 28d) |
+| Delivery window | Match SKU (Stock Keeping Unit) (5d / 14d / 21d / 28d) |
 | Revisions | 1 included; $250–$500 each after |
 | Office hours | M–F 9–6 local |
 | Refund | 25% within 48 hr; 0% after |

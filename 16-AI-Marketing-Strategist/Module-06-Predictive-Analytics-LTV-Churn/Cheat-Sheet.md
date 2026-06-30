@@ -8,7 +8,7 @@
 
 | Business type | Right model | Why |
 |---------------|-------------|-----|
-| Contractual (subscription) | AOV × Freq × Lifespan × Margin (or survival analysis) | Lifespan observable |
+| Contractual (subscription) | AOV (Average Order Value) × Freq × Lifespan × Margin (or survival analysis) | Lifespan observable |
 | Non-contractual (e-commerce) | BG/NBD + Gamma-Gamma | Probabilistic, per-customer |
 
 ### BG/NBD, what each letter means
@@ -127,7 +127,7 @@ M = Monetary  (5 = AOV > $200, 1 = < $25)
 - "Calibrate before using as a probability threshold..."
 - "Target middle deciles for marketing, top deciles are sure things..."
 - "Uplift modeling finds Persuadables..."
-- "LTV:CAC ≥ 3:1 is the sustainability floor..."
+- "LTV (Lifetime Value):CAC (Customer Acquisition Cost) ≥ 3:1 is the sustainability floor..."
 
 ❌ Often wrong:
 

@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The basic web request/response model what an HTTP POST looks like, what a cookie is, what a tag is covered in [Course 14 Module 8: Analytics & Measurement Basics](../../14-AI-Marketing-Foundations/Module-08-Analytics-Measurement-Basics/Reading.md).
-> - The OKR / KPI-tree vocabulary from [Module 1](../Module-01-Strategic-Frameworks-OKRs/Reading.md), because you'll wire the CDP to support those KPIs.
+> - The OKR / KPI (Key Performance Indicator)-tree vocabulary from [Module 1](../Module-01-Strategic-Frameworks-OKRs/Reading.md), because you'll wire the CDP to support those KPIs.
 > - Privacy-regulation literacy at a beginner level (GDPR, CCPA exist), covered in [Course 14 Module 9: AI Ethics, Privacy & Compliance](../../14-AI-Marketing-Foundations/Module-09-AI-Ethics-Privacy-Compliance/Reading.md).
 > If "first-party cookie", "DNS A record", or "container tag" feel unfamiliar, spend 30 minutes on the foundations first.
 
@@ -12,7 +12,7 @@
 
 ## 🛍️ A Story: How Stitch Fix's CDP Saved a $2B Business
 
-In 2018, Stitch Fix had a tracking problem that none of its competitors had but every modern e-commerce company will have within five years. Stitch Fix's revenue model wasn't "buy widget → ship widget." It was *"answer 60 style questions → receive a box of 5 hand-picked items → keep what you want → return the rest."* The customer journey had **34 distinct events** spread across web, mobile app, stylist text messages, email, and physical return packaging. The CMO needed to know, for each marketing dollar spent, how it influenced the *third Fix* (the third box a customer received) because that was the activation threshold customers who took 3+ fixes had 85%+ retention 12 months later. Customers who churned after Fix #1 had 11% retention.
+In 2018, Stitch Fix had a tracking problem that none of its competitors had but every modern e-commerce company will have within five years. Stitch Fix's revenue model wasn't "buy widget → ship widget." It was *"answer 60 style questions → receive a box of 5 hand-picked items → keep what you want → return the rest."* The customer journey had **34 distinct events** spread across web, mobile app, stylist text messages, email, and physical return packaging. The CMO (Chief Marketing Officer) needed to know, for each marketing dollar spent, how it influenced the *third Fix* (the third box a customer received) because that was the activation threshold customers who took 3+ fixes had 85%+ retention 12 months later. Customers who churned after Fix #1 had 11% retention.
 
 The problem: events lived in 14 different SaaS tools. The web SDK fired into Google Analytics. The app SDK fired into Amplitude. Email opens were in Iterable. SMS was in Twilio. Stylist actions were in an internal admin tool. Returns were in a warehouse system. To answer the question "did this paid Instagram dollar drive a 3rd Fix?", a data engineer had to cobble together six exports, normalize three user-ID formats, and hand the result to an analyst three days later.
 
@@ -23,7 +23,7 @@ Stitch Fix's solution was a **Customer Data Platform**, a single piece of infras
 3. Stored the unified stream in a warehouse where analysts could query it.
 4. *Activated* the data back to marketing tools, pushing "users at 80% probability of reaching Fix #3" back into Meta and Google as a custom audience.
 
-This is the canonical use case for a CDP. By 2022, Stitch Fix's media-mix model was running with under 4 hours of data latency. The "3rd Fix probability" audience drove a 38% lift in paid-acquisition ROAS. None of this was possible *before* the CDP and *none* of it would survive the death of the third-party cookie if it hadn't been built first-party from day one.
+This is the canonical use case for a CDP. By 2022, Stitch Fix's media-mix model was running with under 4 hours of data latency. The "3rd Fix probability" audience drove a 38% lift in paid-acquisition ROAS (Return on Ad Spend). None of this was possible *before* the CDP and *none* of it would survive the death of the third-party cookie if it hadn't been built first-party from day one.
 
 This is the module where you learn to architect that.
 
@@ -37,7 +37,7 @@ You will be asked this on every interview for a senior marketing role for the ne
 - **Firefox (2019)** followed with Enhanced Tracking Protection.
 - **Apple iOS 14.5 (April 2021)** launched App Tracking Transparency (ATT), requiring apps to ask users for permission to use the IDFA (mobile identifier). Opt-in rates settled around **25–35%**.
 - **Google Chrome's Privacy Sandbox** announced in 2020 that Chrome would deprecate third-party cookies "by 2022", a date that slipped to 2024, then to 2025, then to "user choice" via the Privacy Sandbox in 2026.
-- **GDPR (2018)**, **CCPA (2020)**, **CPRA (2023)** and a wave of US state laws (Virginia, Colorado, Connecticut, Utah, Texas, etc.) introduced strict consent + data-deletion requirements.
+- **GDPR (General Data Protection Regulation) (2018)**, **CCPA (California Consumer Privacy Act) (2020)**, **CPRA (2023)** and a wave of US state laws (Virginia, Colorado, Connecticut, Utah, Texas, etc.) introduced strict consent + data-deletion requirements.
 
 By 2026 the practical state is:
 
@@ -276,7 +276,7 @@ In practice, packaged CDPs do this graph work for you (Segment's "Persona" featu
 
 ## 🧪 A Worked Example, Building the Stitch-Fix-Style Pipeline
 
-Let's design the simplified data flow for a DTC brand modeling on Stitch Fix.
+Let's design the simplified data flow for a DTC (Direct-to-Consumer) brand modeling on Stitch Fix.
 
 ### Step 1, Collection layer (Segment)
 
@@ -411,16 +411,16 @@ For a Fortune-500 enterprise the same stack costs **$50K–$200K/month** because
 
 ## 💼 Case Study, Nike's Consumer Direct Acceleration (2020–2024)
 
-**Situation.** In June 2020, in the depths of the pandemic, Nike's then-CEO John Donahoe announced **Consumer Direct Acceleration (CDA)** a multi-year strategy to shift Nike's revenue mix from wholesale (Foot Locker, Dick's Sporting Goods, mid-tier department stores) toward direct-to-consumer channels (Nike-branded apps, SNKRS, Nike.com, owned retail). The strategic premise was that owning the customer relationship and therefore the first-party data, was the only way to defend margins as third-party cookies died and the retail-channel middlemen extracted more value. Nike had inherited an extremely fragmented data estate: the Nike app, the Nike Run Club app, the Nike Training Club app, SNKRS, and Nike.com each had separate user identities, separate behavioral logs, and separate marketing automation stacks.
+**Situation.** In June 2020, in the depths of the pandemic, Nike's then-CEO (Chief Executive Officer) John Donahoe announced **Consumer Direct Acceleration (CDA)** a multi-year strategy to shift Nike's revenue mix from wholesale (Foot Locker, Dick's Sporting Goods, mid-tier department stores) toward direct-to-consumer channels (Nike-branded apps, SNKRS, Nike.com, owned retail). The strategic premise was that owning the customer relationship and therefore the first-party data, was the only way to defend margins as third-party cookies died and the retail-channel middlemen extracted more value. Nike had inherited an extremely fragmented data estate: the Nike app, the Nike Run Club app, the Nike Training Club app, SNKRS, and Nike.com each had separate user identities, separate behavioral logs, and separate marketing automation stacks.
 
-**Decision.** Nike's data and marketing-tech teams executed a multi-year unification on **Adobe Real-Time CDP** (announced as the strategic CDP partner in 2021 and built out through 2022–2024), with Adobe Experience Platform serving as the underlying data lake. The investment also included a server-side tracking layer for the Nike.com web properties (replacing the previous client-side Google Marketing Platform pixels), a unified identity graph linking the five Nike apps via a single Nike Member ID, and direct reverse-ETL pipelines feeding Nike's CRM-driven personalization on its app surfaces. The total digital-and-data investment over the CDA program was disclosed in Nike's 2022 and 2023 10-K filings as part of a multi-billion-dollar capital program.
+**Decision.** Nike's data and marketing-tech teams executed a multi-year unification on **Adobe Real-Time CDP** (announced as the strategic CDP partner in 2021 and built out through 2022–2024), with Adobe Experience Platform serving as the underlying data lake. The investment also included a server-side tracking layer for the Nike.com web properties (replacing the previous client-side Google Marketing Platform pixels), a unified identity graph linking the five Nike apps via a single Nike Member ID, and direct reverse-ETL pipelines feeding Nike's CRM (Customer Relationship Management)-driven personalization on its app surfaces. The total digital-and-data investment over the CDA program was disclosed in Nike's 2022 and 2023 10-K filings as part of a multi-billion-dollar capital program.
 
 **Outcome.** By Nike's fiscal Q4 2022, direct-to-consumer revenue had climbed to **42% of total Nike Brand revenue**, up from ~30% in 2019. Nike Membership (the unified-identity program enabled by the CDP) crossed **300 million members globally** by 2023, with reported member sales growing at roughly 2× the rate of non-member sales. The Adobe RT-CDP + Adobe Experience Platform deployment became one of Adobe's most-public enterprise reference accounts. By 2024–2025 the strategy hit headwinds wholesale rebuild costs, slower-than-expected app monetization, and competitive pressure from Hoka and On leading to Donahoe's departure in late 2024 and a partial wholesale-channel reversal under his successor. But the CDP and the unified Member ID survived the strategy reversal; they had become structural infrastructure rather than a wholesale-bet bet.
 
 **Lesson for the exam / for practitioners.** Nike CDA is the canonical case for the *packaged-CDP-on-a-marketing-cloud* pattern (Pattern 4 in this module's CDP-architecture table). It also illustrates how the strategic value of a CDP **outlasts the strategy that justified its purchase**, the unified identity graph remains an asset for Nike even though the DTC-first commercial strategy was partially reversed. For the exam, recognize: when a case describes a global brand with multiple owned-channel apps + a marketing cloud already in use (Adobe or Salesforce), the natural answer is *embedded-in-marketing-cloud CDP*, not composable warehouse-native. The composable pattern wins for mid-market SaaS and DTC; the embedded pattern wins for global brand enterprises that already have the marketing-cloud sunk cost.
 
 **Discussion (Socratic).**
-- Q1: Nike's CDP investment was justified by a DTC-first growth thesis that was partially reversed in 2024. If you were the CMO making the original 2021 build-vs-buy decision, what specific KPIs would you have demanded in the business case so the CFO could later judge "did the CDP deliver, independent of whether the DTC thesis won?"
+- Q1: Nike's CDP investment was justified by a DTC-first growth thesis that was partially reversed in 2024. If you were the CMO making the original 2021 build-vs-buy decision, what specific KPIs would you have demanded in the business case so the CFO (Chief Financial Officer) could later judge "did the CDP deliver, independent of whether the DTC thesis won?"
 - Q2: Adobe RT-CDP (a packaged + marketing-cloud-embedded CDP) won the Nike deal over Hightouch + Snowflake (composable). For Nike's scale and Adobe-incumbent context, defend why the packaged answer was right, and then construct the strongest argument that a true composable build would have served Nike better long-term, even given the upfront cost premium.
 - Q3: Nike's Member ID unified five apps + the web property. The implicit trade-off accepted: every member-level event flows through one ID graph, which is operationally elegant but a single point of failure for the entire DTC business. What governance design protects against the privacy-incident or vendor-outage scenarios where a CDP becomes a *liability* rather than an asset?
 
@@ -428,7 +428,7 @@ For a Fortune-500 enterprise the same stack costs **$50K–$200K/month** because
 
 ## Discussion, Socratic prompts
 
-1. A Series-B B2B SaaS startup has $250K/year to spend on its measurement stack. The CDP-evaluation team is divided: half want packaged Segment + reverse-ETL to keep velocity, half want a composable RudderStack + warehouse-native build for long-term flexibility. Which would *you* sponsor, and what specific milestones would you write into the decision so the company knows in 18 months whether they were right?
+1. A Series-B B2B (Business-to-Business) SaaS startup has $250K/year to spend on its measurement stack. The CDP-evaluation team is divided: half want packaged Segment + reverse-ETL to keep velocity, half want a composable RudderStack + warehouse-native build for long-term flexibility. Which would *you* sponsor, and what specific milestones would you write into the decision so the company knows in 18 months whether they were right?
 2. Server-side tagging recovers 5–25% of measurement loss. Some teams report 35%+ recovery; some report under 5%. What about an organization's *traffic mix* and *implementation quality* drives that variance, and what specifically would you audit on a new client engagement to predict where they will land?
 3. Probabilistic identity resolution can boost match rates from ~30% (deterministic only) to 70%+. But the matches are *guesses*, typically 85–92% accurate. When is the 8–15% false-positive rate acceptable in marketing decisions, and when does it become legally or strategically dangerous (e.g., healthcare, financial services, regulated B2C)?
 4. The CDP Institute's canonical definition includes "packaged software, not an internal project." Yet warehouse-native CDPs are explicitly *not* packaged, they're assemblies. Has the CDP Institute's definition become outdated, or are warehouse-native stacks technically *not* CDPs? Defend either position.
@@ -462,7 +462,7 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 **CDP Institute** ([cdpinstitute.org](https://www.cdpinstitute.org/)), vendor-neutral CDP research, free annual industry report.
+- 📖 **CDP Institute** ([cdpinstitute.org 21 ), vendor-neutral CDP research, free annual industry report.
 - 📖 **Segment's Customer Data Platform Architecture documentation**, even if you don't use Segment, it's the canonical educational resource.
 - 📖 **The Privacy-First Marketing Stack** by David Vallez (Hightouch), free e-book.
 - 📖 **Google's "Adapt to a Cookieless Future" playbook** (think with Google).

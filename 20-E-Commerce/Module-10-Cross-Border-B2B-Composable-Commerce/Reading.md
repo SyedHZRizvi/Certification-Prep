@@ -1,12 +1,12 @@
-# Module 10: Cross-Border, B2B & Composable Commerce 🌍
+# Module 10: Cross-Border, B2B (Business-to-Business) & Composable Commerce 🌍
 
-> **Why this module matters:** Most e-commerce books stop at "domestic D2C on Shopify." The real revenue gravity in 2025-2026 has moved elsewhere. Cross-border sales now account for ~22% of global e-commerce GMV (Statista, 2024). B2B e-commerce is a $7.7T market roughly **5x larger than B2C** (Gartner, *B2B Commerce Forecast*, 2024). And the architectural conversation has decisively shifted from "which platform" to "which composable stack" MACH-aligned headless commerce is now the default reference architecture for any retailer over ~$200M GMV (Forrester, *MACH Alliance Report*, 2024). This module gives you the operating knowledge to compete in those three arenas: cross-border (tax, duty, fulfillment, regulation), B2B (quoting, net terms, multi-buyer accounts, EDI), and composable commerce (Hydrogen, MACH, commercetools, the Shein-vs-De-Minimis story).
+> **Why this module matters:** Most e-commerce books stop at "domestic D2C on Shopify." The real revenue gravity in 2025-2026 has moved elsewhere. Cross-border sales now account for ~22% of global e-commerce GMV (Gross Merchandise Value) (Statista, 2024). B2B e-commerce is a $7.7T market roughly **5x larger than B2C (Business-to-Consumer)** (Gartner, *B2B Commerce Forecast*, 2024). And the architectural conversation has decisively shifted from "which platform" to "which composable stack" MACH-aligned headless commerce is now the default reference architecture for any retailer over ~$200M GMV (Forrester, *MACH Alliance Report*, 2024). This module gives you the operating knowledge to compete in those three arenas: cross-border (tax, duty, fulfillment, regulation), B2B (quoting, net terms, multi-buyer accounts, EDI), and composable commerce (Hydrogen, MACH, commercetools, the Shein-vs-De-Minimis story).
 
 ---
 
 ## 🎯 A Real Story: Shein's Rise (2008-2024) and the Wall it Hit
 
-In 2008, a former SEO consultant named Chris Xu (Xu Yangtian) founded a wedding-dress dropshipping site in Nanjing, China. He renamed it SheInside in 2012, then Shein in 2015. By 2022 fourteen years later Shein was the most-downloaded shopping app on the Apple App Store globally, larger by downloads than Amazon, AliExpress, or H&M.
+In 2008, a former SEO (Search Engine Optimization) consultant named Chris Xu (Xu Yangtian) founded a wedding-dress dropshipping site in Nanjing, China. He renamed it SheInside in 2012, then Shein in 2015. By 2022 fourteen years later Shein was the most-downloaded shopping app on the Apple App Store globally, larger by downloads than Amazon, AliExpress, or H&M.
 
 The numbers behind that ascent were unprecedented:
 
@@ -14,7 +14,7 @@ The numbers behind that ascent were unprecedented:
 - **5,000-7,000 new SKUs added per day** by 2023. (For context: Zara, fast-fashion's previous king, added ~500/week.)
 - **5-7 day design-to-delivery cycles** in China's Pearl River Delta, vs. Zara's 3-6 weeks.
 - **300-unit micro-batch initial runs**, scaling only what trended, vs. industry-standard 5,000+ unit minimums.
-- **TikTok-feedback-driven SKU greenlighting:** a creator's organic video could move a Shein product from concept to inventory in 72 hours.
+- **TikTok-feedback-driven SKU (Stock Keeping Unit) greenlighting:** a creator's organic video could move a Shein product from concept to inventory in 72 hours.
 - **$66B private valuation peak** (April 2023), reportedly ahead of an expected NYSE IPO.
 
 Shein's competitive moat wasn't fashion it was a **cross-border supply chain stitched together by software**. Orders shipped direct from Chinese factories to US/EU/UK consumers via the US **De Minimis exemption** Section 321 of the Tariff Act of 1930 (codified at 19 USC 1321), which lets parcels under $800 enter the US duty-free with simplified customs processing. Shein and its rival Temu reportedly accounted for ~30% of US De Minimis parcels by 2024 (over 1 billion parcels annually combined). The economics were transformative: Shein could land a $7 dress in Atlanta with zero import duty, while a US-warehoused competitor paid 16-32% in tariffs on Chinese-origin apparel.
@@ -93,7 +93,7 @@ The **Harmonized System (HS)** is the WCO's (World Customs Organization, 1988) g
 
 ### Currency Hedging for Cross-Border Sellers
 
-A US-based seller pricing in EUR/GBP/AUD has FX exposure between **order placement and payment settlement** (typically 24-72 hours via Stripe/Adyen). For most DTC brands under $20M in cross-border revenue, this is small enough to absorb. Above ~$20M, brands typically:
+A US-based seller pricing in EUR/GBP/AUD has FX exposure between **order placement and payment settlement** (typically 24-72 hours via Stripe/Adyen). For most DTC (Direct-to-Consumer) brands under $20M in cross-border revenue, this is small enough to absorb. Above ~$20M, brands typically:
 
 1. **Natural hedging**, pay suppliers in the same currency you collect (e.g., source from Portugal, sell in EUR).
 2. **Forward contracts**, lock FX rates 30-90 days out via Wise Business, Airwallex, or a corporate FX desk.
@@ -103,7 +103,7 @@ A US-based seller pricing in EUR/GBP/AUD has FX exposure between **order placeme
 
 ---
 
-## 🇪🇺 EU Regulation, DSA, IOSS, VAT, GDPR
+## 🇪🇺 EU Regulation, DSA, IOSS, VAT, GDPR (General Data Protection Regulation)
 
 The EU is the world's strictest e-commerce regulator. Any cross-border D2C selling into the EU has to navigate:
 
@@ -175,7 +175,7 @@ Yet the platforms, content, and certifications mostly focus on B2C. Module 10 cl
 
 | Dimension | B2C | B2B |
 |-----------|-----|-----|
-| **AOV** | $40-$200 | $500-$50,000+ |
+| **AOV (Average Order Value)** | $40-$200 | $500-$50,000+ |
 | **Buyer count** | 1 (consumer) | 3-15 (buying committee per Gartner *CEB B2B Buyer Report*, 2017, updated 2022) |
 | **Pricing** | Public, fixed | Negotiated, contract-tier, per-account |
 | **Payment** | Card-on-checkout | Net 30/60/90 terms, PO, invoicing, EDI |
@@ -213,7 +213,7 @@ Yet the platforms, content, and certifications mostly focus on B2C. Module 10 cl
 - Strong EDI capability (X12, EDIFACT).
 
 **SAP Commerce Cloud (Hybris)**, enterprise B2B leader for $1B+ companies.
-**Salesforce Commerce Cloud B2B**, strong fit if already on Salesforce CRM.
+**Salesforce Commerce Cloud B2B**, strong fit if already on Salesforce CRM (Customer Relationship Management).
 **Sana Commerce**, purpose-built B2B, deep ERP integration (Dynamics 365, SAP).
 
 🧠 **MEMORIZE THIS.** Adobe Commerce B2B (enterprise + quoting depth), Shopify B2B (mid-market + speed), BigCommerce B2B Edition (out-of-box completeness), SAP/Salesforce (enterprise CRM-attached). These are the four B2B platform archetypes worth knowing cold.
@@ -264,7 +264,7 @@ The MACH Alliance (founded 2020 by commercetools, Contentstack, EPAM, Valtech) c
 
 ### The Composable Commerce Thesis (commercetools, ~2019)
 
-Dirk Hörig, commercetools' CEO, articulated the thesis in 2019 keynotes: enterprise retailers should **assemble** a commerce stack from best-of-breed components rather than buy a monolithic suite. The arguments:
+Dirk Hörig, commercetools' CEO (Chief Executive Officer), articulated the thesis in 2019 keynotes: enterprise retailers should **assemble** a commerce stack from best-of-breed components rather than buy a monolithic suite. The arguments:
 
 1. **Best-of-breed beats best-of-suite** for each capability (search: Algolia/Elastic; CMS: Contentstack/Sanity; payments: Stripe/Adyen; PIM: Akeneo/inriver).
 2. **Vendor lock-in is reduced**, swap one component without replatforming.

@@ -29,10 +29,10 @@
 | **Subject Choice** | Hypothetical | Real subject, verbal OK | Real subject, written permission, testimonial planned |
 | **Brief Document** | None | Written | Written + dated before launch, includes success criteria |
 | **Conversion Tracking** | Missing | Installed | Installed + verified + documented in post-mortem |
-| **Creative Variants** | 1 per platform | 2–3 per platform | 3+ per platform, mix of AI-generated + UGC + static |
+| **Creative Variants** | 1 per platform | 2–3 per platform | 3+ per platform, mix of AI-generated + UGC (User-Generated Content) + static |
 | **Live Runtime** | <7 days | 10–13 days | 14+ days with daily check-ins |
 | **Daily Log** | Missing | Sporadic | 14 dated entries, decisions w/ rationale |
-| **Final Numbers Table** | Vague claims | Listed numbers | Full table: spend, CPC, CPL, conversions, ROAS, by channel |
+| **Final Numbers Table** | Vague claims | Listed numbers | Full table: spend, CPC (Cost Per Click), CPL, conversions, ROAS (Return on Ad Spend), by channel |
 | **Post-Mortem Hook** | Generic open | Decent open | Opens with most interesting moment |
 | **Failure Documentation** | Hidden | Mentioned | Failures featured prominently w/ screenshots |
 | **Lessons Section** | Missing | Generic | 3+ specific actionable lessons |
@@ -48,8 +48,8 @@
 
 | Subject Type | Google | Meta |
 |-------------|--------|------|
-| B2B SaaS, bottom-of-funnel | $150 | $50 |
-| DTC, strong visual | $60 | $140 |
+| B2B (Business-to-Business) SaaS, bottom-of-funnel | $150 | $50 |
+| DTC (Direct-to-Consumer), strong visual | $60 | $140 |
 | Local service | $130 | $70 |
 | Personal brand / newsletter | $50 | $150 |
 | Default (when unsure) | $100 | $100 |

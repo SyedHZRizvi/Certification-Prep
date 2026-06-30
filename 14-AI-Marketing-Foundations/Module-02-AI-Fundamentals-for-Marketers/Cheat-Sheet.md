@@ -133,4 +133,4 @@ If you can do all 5 in under 90 seconds, you own this module. ✅
 
 ---
 
-➡️ [Module 3: SEO in the AI Era](../Module-03-SEO-in-the-AI-Era/Reading.md)
+➡️ [Module 3: SEO (Search Engine Optimization) in the AI Era](../Module-03-SEO-in-the-AI-Era/Reading.md)

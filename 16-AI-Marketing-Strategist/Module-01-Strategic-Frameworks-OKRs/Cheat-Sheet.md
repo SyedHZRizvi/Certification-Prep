@@ -8,9 +8,9 @@
 
 | Level | Horizon | Owner |
 |-------|---------|-------|
-| Corporate | 3–10 yr | CEO / Board |
+| Corporate | 3–10 yr | CEO (Chief Executive Officer) / Board |
 | Business | 1–3 yr | GM |
-| Marketing | 6–18 mo | CMO |
+| Marketing | 6–18 mo | CMO (Chief Marketing Officer) |
 | Campaign | 1–6 mo | Director |
 | Tactic | 1–8 wk | Manager |
 

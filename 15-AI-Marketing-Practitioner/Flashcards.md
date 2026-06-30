@@ -283,7 +283,7 @@
 **Q:** Maximum recommended brief length?
 **A:** 1-2 pages. Longer means you haven't decided yet.
 
-**Q:** What is a Primary KPI?
+**Q:** What is a Primary KPI (Key Performance Indicator)?
 **A:** The ONE metric that defines success for a campaign. Numeric. Threshold-based.
 
 **Q:** What is a Guardrail KPI?
@@ -330,10 +330,10 @@
 **A:** 15 headlines (30 chars each), 4 descriptions (90 chars each).
 
 **Q:** What's the formula for Ad Rank?
-**A:** Max CPC bid × Quality Score + Expected impact of extensions.
+**A:** Max CPC (Cost Per Click) bid × Quality Score + Expected impact of extensions.
 
 **Q:** Three components of Quality Score?
-**A:** Expected CTR, Ad Relevance, Landing Page Experience.
+**A:** Expected CTR (Click-Through Rate), Ad Relevance, Landing Page Experience.
 
 **Q:** What's the difference between "Search Terms" and "Keywords"?
 **A:** Search Terms are what searchers actually typed. Keywords are what YOU bid on.
@@ -373,7 +373,7 @@
 **A:** 15 seconds.
 
 **Q:** YouTube Shorts ad spec?
-**A:** Vertical 9:16, 6-60 seconds, CPM pricing.
+**A:** Vertical 9:16, 6-60 seconds, CPM (Cost Per Mille) pricing.
 
 **Q:** What pricing model do In-Feed (Discovery) YouTube ads use?
 **A:** CPC, you pay only when the user clicks to watch.
@@ -410,7 +410,7 @@
 **A:** Limits spend on existing customers, forces Meta to prospect new customers.
 
 **Q:** What are DCT's axes?
-**A:** Hook × Body × CTA, typically 4 × 4 × 4 = up to 64 variants.
+**A:** Hook × Body × CTA (Call to Action), typically 4 × 4 × 4 = up to 64 variants.
 
 **Q:** Minimum impressions before judging a DCT variant?
 **A:** ~1,000 per variant. Killing at 100 impressions is just noise.
@@ -465,7 +465,7 @@
 **A:** LinkedIn CPCs are 5-10x higher BUT leads convert to closed-won at much higher rates. Compare the right metric.
 
 **Q:** What is Sales Navigator?
-**A:** LinkedIn's premium ABM tool for sales teams ($99/seat), builds prospect lists, maps account committees, integrates with CRM.
+**A:** LinkedIn's premium ABM tool for sales teams ($99/seat), builds prospect lists, maps account committees, integrates with CRM (Customer Relationship Management).
 
 ---
 
@@ -483,7 +483,7 @@
 **Q:** What's DV360?
 **A:** Display & Video 360, Google's enterprise programmatic DSP, part of Google Marketing Platform.
 
-**Q:** Which DSP specializes in dynamic product retargeting for DTC?
+**Q:** Which DSP specializes in dynamic product retargeting for DTC (Direct-to-Consumer)?
 **A:** Criteo.
 
 **Q:** What does a CDP do?
@@ -530,7 +530,7 @@
 **A:** The probability of detecting an effect IF it exists. Typically 0.80.
 
 **Q:** Mutiny's specialty?
-**A:** B2B website personalization via reverse-IP detection, personalizes copy by visitor's company.
+**A:** B2B (Business-to-Business) website personalization via reverse-IP detection, personalizes copy by visitor's company.
 
 **Q:** What does Unbounce Smart Traffic do?
 **A:** Uses ML to route each visitor to the variant most likely to convert them.

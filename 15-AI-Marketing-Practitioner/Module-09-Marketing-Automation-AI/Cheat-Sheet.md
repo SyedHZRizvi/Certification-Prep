@@ -18,8 +18,8 @@ TRIGGER  →  CONDITION  →  ACTION  →  DELAY  →  next step
 
 | Use case | Platform |
 |----------|----------|
-| **DTC ecom (Shopify)** | Klaviyo |
-| **B2B SaaS / content** | HubSpot |
+| **DTC (Direct-to-Consumer) ecom (Shopify)** | Klaviyo |
+| **B2B (Business-to-Business) SaaS / content** | HubSpot |
 | **SMB / service biz** | ActiveCampaign or HubSpot Starter |
 | **Enterprise (SF CRM)** | Salesforce Marketing Cloud |
 | **Cross-tool glue** | Make.com / n8n / Zapier |

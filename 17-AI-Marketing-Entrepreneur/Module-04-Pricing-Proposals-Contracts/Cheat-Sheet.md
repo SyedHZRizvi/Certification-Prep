@@ -117,7 +117,7 @@ When you see these in answers, they're often correct:
 - ✅ "Anchor with a higher reference price..."
 - ✅ "Send a proposal with 3 options..."
 - ✅ "MSA + SOW structure..."
-- ✅ "Include the ROI projection section..."
+- ✅ "Include the ROI (Return on Investment) projection section..."
 
 When you see these, they're often **wrong**:
 

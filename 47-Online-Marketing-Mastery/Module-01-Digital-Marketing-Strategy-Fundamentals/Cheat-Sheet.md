@@ -9,11 +9,11 @@
 | Stage | Question | Example (Dollar Shave Club) |
 |---|---|---|
 | **S**ituation | Where are we now? (SWOT + market analysis) | Gillette owns 70% of US razors; blades overpriced |
-| **O**bjectives | Where do we want to be? (SMART goals) | 10,000 subscribers by Q1 end; CAC < $20 |
-| **S**trategy | How do we get there? (high-level direction) | Viral owned media + DTC subscription model |
+| **O**bjectives | Where do we want to be? (SMART goals) | 10,000 subscribers by Q1 end; CAC (Customer Acquisition Cost) < $20 |
+| **S**trategy | How do we get there? (high-level direction) | Viral owned media + DTC (Direct-to-Consumer) subscription model |
 | **T**actics | Which tools/channels? (channel selection) | YouTube video, email drip, social sharing |
 | **A**ctions | Who does what, by when? (execution plan) | Dubin films Feb 2012; launch March 6 |
-| **C**ontrol | How do we measure? (KPIs + review cadence) | Weekly: new subs, churn, CAC, LTV |
+| **C**ontrol | How do we measure? (KPIs + review cadence) | Weekly: new subs, churn, CAC, LTV (Lifetime Value) |
 
 **Mnemonic:** "Some Old Strategists Take A Course"
 
@@ -23,10 +23,10 @@
 
 | Stage | Goal | Channels | Key Metrics |
 |---|---|---|---|
-| **R**each | Drive traffic + awareness | SEO, paid search, social ads, PR | Impressions, sessions, share of voice |
+| **R**each | Drive traffic + awareness | SEO (Search Engine Optimization), paid search, social ads, PR | Impressions, sessions, share of voice |
 | **A**ct | Micro-conversions on-site | Content, UX, lead magnets, landing pages | Pages/session, leads, micro-CVR |
-| **C**onvert | Purchase / full conversion | Email nurture, retargeting, promotions | Revenue, CVR, ROAS, CPA |
-| **E**ngage | Loyalty + advocacy | Email CRM, loyalty, community, social | Repeat rate, NPS, LTV, churn |
+| **C**onvert | Purchase / full conversion | Email nurture, retargeting, promotions | Revenue, CVR, ROAS (Return on Ad Spend), CPA |
+| **E**ngage | Loyalty + advocacy | Email CRM (Customer Relationship Management), loyalty, community, social | Repeat rate, NPS, LTV, churn |
 
 ---
 
@@ -43,7 +43,7 @@
 
 ---
 
-## Essential KPI Formulas
+## Essential KPI (Key Performance Indicator) Formulas
 
 ```
 CAC   = Total Marketing & Sales Spend ÷ New Customers Acquired
@@ -92,7 +92,7 @@ Example: 25% margin → need ROAS > 4x just to break even on ad spend
 
 ---
 
-## GDPR vs CCPA vs CASL vs CAN-SPAM
+## GDPR (General Data Protection Regulation) vs CCPA (California Consumer Privacy Act) vs CASL (Canada's Anti-Spam Legislation) vs CAN-SPAM (Controlling the Assault of Non-Solicited Pornography and Marketing Act)
 
 | Law | Region | Default | Email Rule | Max Penalty |
 |---|---|---|---|---|
@@ -115,7 +115,7 @@ Example: 25% margin → need ROAS > 4x just to break even on ad spend
 |---|---|---|---|
 | **Google** | 4.9B (Search + YouTube) | Intent data — unmatched | Expensive CPCs in competitive niches |
 | **Meta** | 3.3B (FB + IG) | Demographic + interest targeting | iOS 14 signal loss; rising CPMs |
-| **Amazon** | 310M buyers (US/EU) | Purchase behaviour | Primarily e-commerce; limited B2B |
+| **Amazon** | 310M buyers (US/EU) | Purchase behaviour | Primarily e-commerce; limited B2B (Business-to-Business) |
 | **TikTok** | 1.7B | Engagement + discovery | Younger skew; regulatory risk; brand safety |
 
 **Walled garden risk:** Each platform reports its own metrics (often inflated). Always cross-reference with GA4 / server-side analytics + actual revenue data.

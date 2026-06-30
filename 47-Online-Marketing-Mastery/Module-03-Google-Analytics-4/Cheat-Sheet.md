@@ -70,7 +70,7 @@ Bounce Rate (GA4) = 100% − Engagement Rate
 | **Cohort Exploration** | Retention analysis by acquisition cohort |
 | **Segment Overlap** | Finding audience intersections (Venn diagram) |
 | **User Explorer** | Debugging individual pseudonymous user journeys |
-| **User Lifetime** | LTV by acquisition channel |
+| **User Lifetime** | LTV (Lifetime Value) by acquisition channel |
 | **Free Form** | Custom pivot tables and scatter plots |
 
 ---
@@ -84,9 +84,9 @@ Bounce Rate (GA4) = 100% − Engagement Rate
 | **First Click** | 100% to first touchpoint | Awareness campaign evaluation |
 | **Linear** | Equal to every touchpoint | Full-journey understanding |
 | **Time Decay** | More credit to recent | Short sales cycles |
-| **Position-Based (U-shaped)** | 40% first / 40% last / 20% middle | B2B demand gen |
+| **Position-Based (U-shaped)** | 40% first / 40% last / 20% middle | B2B (Business-to-Business) demand gen |
 
-> Warning: Last Click over-credits brand PPC. Use Model Comparison report before cutting any channel.
+> Warning: Last Click over-credits brand PPC (Pay-Per-Click). Use Model Comparison report before cutting any channel.
 
 ---
 
@@ -103,7 +103,7 @@ Bounce Rate (GA4) = 100% − Engagement Rate
 
 **When `denied`:** Tags fire in cookieless ping mode → feeds Google's conversion modelling
 
-> EU/GDPR Rule: `analytics_storage` and `ad_storage` must default to `'denied'` for EU/EEA users without explicit opt-in. Opt-out rates in Germany/Nordics: 40-60% (industry estimate).
+> EU/GDPR (General Data Protection Regulation) Rule: `analytics_storage` and `ad_storage` must default to `'denied'` for EU/EEA users without explicit opt-in. Opt-out rates in Germany/Nordics: 40-60% (industry estimate).
 
 ---
 
@@ -111,7 +111,7 @@ Bounce Rate (GA4) = 100% − Engagement Rate
 
 | Priority | Event | Why |
 |---|---|---|
-| 1 | `purchase` | Revenue, ROAS, Smart Bidding |
+| 1 | `purchase` | Revenue, ROAS (Return on Ad Spend), Smart Bidding |
 | 2 | `add_to_cart` | Cart abandonment audiences |
 | 3 | `begin_checkout` | Checkout funnel entry |
 | 4 | `view_item` | Product affinity, path analysis |
@@ -137,7 +137,7 @@ Required `purchase` parameters: `transaction_id`, `value`, `currency` (ISO 4217)
 | Situation | Solution |
 |---|---|
 | GA4 Exploration shows "(data sampled)" | Export to BigQuery; query raw events |
-| Need to JOIN GA4 with CRM / ad spend data | BigQuery SQL joins |
+| Need to JOIN GA4 with CRM (Customer Relationship Management) / ad spend data | BigQuery SQL joins |
 | Need data older than 14 months | BigQuery retains per GCS settings |
 | Median, percentile, or advanced stats needed | BigQuery SQL |
 

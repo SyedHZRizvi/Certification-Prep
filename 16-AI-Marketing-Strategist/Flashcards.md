@@ -327,7 +327,7 @@
 **A:** Managed hosting + power-ups for Google Tag Manager Server-Side (GTM-SS). Eliminates DevOps overhead.
 
 **Q:** Difference between deterministic and probabilistic identity resolution?
-**A:** Deterministic = known explicit links (login, hashed-email match). Probabilistic = ML inference from behavioral/contextual signals. Deterministic is the 2026 default; probabilistic is increasingly restricted under GDPR/CPRA.
+**A:** Deterministic = known explicit links (login, hashed-email match). Probabilistic = ML inference from behavioral/contextual signals. Deterministic is the 2026 default; probabilistic is increasingly restricted under GDPR (General Data Protection Regulation)/CPRA.
 
 **Q:** When did Apple's ITP (Intelligent Tracking Prevention) first launch?
 **A:** 2017 in Safari / WebKit. ITP progressively restricted third-party cookies, then capped first-party cookies set by tracking scripts.
@@ -410,7 +410,7 @@
 **A:** SKAdNetwork. Apple's privacy-preserving iOS install attribution framework. Reports noisy, aggregated, delayed conversion-value signals, cannot identify individual users.
 
 **Q:** How many bits is the SKAN conversion value?
-**A:** 6 bits (0–63 = 64 possible states). The strategist's job is to map LTV bins or behavioral milestones into these 64 states.
+**A:** 6 bits (0–63 = 64 possible states). The strategist's job is to map LTV (Lifetime Value) bins or behavioral milestones into these 64 states.
 
 **Q:** Name three Mobile Measurement Partners (MMPs).
 **A:** AppsFlyer, Branch, Adjust. They handle postback attribution and SKAN aggregation for mobile-app installs.
@@ -458,7 +458,7 @@
 **Q:** In an MMM decomposition, what proportion of revenue does "baseline" typically represent?
 **A:** 50–80%. The "would have happened anyway" share. Marketers consistently underestimate it.
 
-**Q:** A channel has 1.4× ROAS and a flat response curve at current spend. Recommendation?
+**Q:** A channel has 1.4× ROAS (Return on Ad Spend) and a flat response curve at current spend. Recommendation?
 **A:** Decrease spend modestly and reallocate. Flat curve = marginal dollar has very low impact.
 
 ---
@@ -501,7 +501,7 @@
 **Q:** What does RFM stand for and what are the typical score ranges?
 **A:** Recency, Frequency, Monetary. Typically scored on a 1–5 quintile scale per dimension. "555" = Champion; "111" = Lost.
 
-**Q:** What is the LTV:CAC sustainability floor?
+**Q:** What is the LTV:CAC (Customer Acquisition Cost) sustainability floor?
 **A:** 3:1. Below this, customer acquisition is unsustainable. Above 5:1 may indicate under-investment in growth.
 
 ---
@@ -551,7 +551,7 @@
 **Q:** Write the NRR formula.
 **A:** NRR = (start ARR + expansion − contraction − churn) / start ARR. >100% means existing customers grow even ignoring new sales.
 
-**Q:** What's the best-in-class B2B SaaS NRR bar?
+**Q:** What's the best-in-class B2B (Business-to-Business) SaaS NRR bar?
 **A:** >120%. Snowflake, Datadog, Cloudflare, Twilio have all reported NRR >130% at various points.
 
 **Q:** Difference between NRR and GRR?
@@ -589,7 +589,7 @@
 **A:** 15–30% additional attributed conversions within 6 weeks.
 
 **Q:** What is Google's Enhanced Conversions for Leads?
-**A:** The B2B variant. Allows hashed lead identifiers from your CRM to be uploaded back to Google Ads, retroactively attributing the lead to its original ad click.
+**A:** The B2B variant. Allows hashed lead identifiers from your CRM (Customer Relationship Management) to be uploaded back to Google Ads, retroactively attributing the lead to its original ad click.
 
 **Q:** Name 3 of the 7 Chrome Privacy Sandbox APIs.
 **A:** Examples: Topics API, Protected Audience API (formerly FLEDGE), Attribution Reporting API, Private Aggregation API, Shared Storage API, Private State Tokens, CHIPS.
@@ -610,7 +610,7 @@
 **A:** Mathematical privacy framework that adds calibrated noise to query results so individual records can't be identified. ε (epsilon) controls the privacy/utility trade-off, lower ε = stronger privacy + more noise.
 
 **Q:** Name the 4 dominant privacy regulations driving 2026 marketing decisions.
-**A:** GDPR (EU/EEA/UK), CCPA / CPRA (California, de facto US standard), MHMDA (Washington health data), COPPA (US kids).
+**A:** GDPR (EU/EEA/UK), CCPA (California Consumer Privacy Act) / CPRA (California, de facto US standard), MHMDA (Washington health data), COPPA (Children's Online Privacy Protection Act) (US kids).
 
 **Q:** Why is hashing PII not enough to remove GDPR obligations?
 **A:** A SHA-256 hash is one-way obfuscation but still identifies a person (or links to one). Personal data under GDPR, consent + DPA still required.
@@ -634,16 +634,16 @@
 **Q:** What is the 30-30-30-10 rule for marketing tech-stack spend?
 **A:** 30% Infrastructure (CDP, warehouse, BI), 30% Activation (email/lifecycle/ad tooling), 30% Measurement (MTA, MMM, product analytics, A/B), 10% Experimental (new categories).
 
-**Q:** Name the 5 questions the CFO will ask the marketing strategist every quarter.
+**Q:** Name the 5 questions the CFO (Chief Financial Officer) will ask the marketing strategist every quarter.
 **A:** (1) What did we spend and what did it return? (2) Which channels growing/shrinking and why? (3) How do we know it's incremental? (4) Where is the next $X going? (5) What's the leading indicator?
 
-**Q:** Approximately how much does a typical $20M-revenue DTC brand spend annually on its marketing stack?
+**Q:** Approximately how much does a typical $20M-revenue DTC (Direct-to-Consumer) brand spend annually on its marketing stack?
 **A:** ~$360K, or about 1.8% of revenue.
 
 **Q:** Approximate 2026 US compensation for a Director, Marketing Analytics?
 **A:** $180K–$280K (base + bonus + equity blended).
 
-**Q:** What does a CMO typically earn in 2026 (US, blended)?
+**Q:** What does a CMO (Chief Marketing Officer) typically earn in 2026 (US, blended)?
 **A:** $400K–$1M+ at public-company scale; >$5M for some Fortune-500 CMOs with equity.
 
 **Q:** What is the typical build-vs-buy break-even horizon?

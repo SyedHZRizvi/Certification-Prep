@@ -11,7 +11,7 @@
 | **Paid** | Yes (if you pay) | Google Ads, Meta Ads, sponsored posts |
 | **Owned** | Yes | Your blog, email list, app |
 | **Earned** | No (you influence) | PR mentions, organic backlinks, reviews |
-| **Shared** | Partially | UGC, Reddit threads, community discussions |
+| **Shared** | Partially | UGC (User-Generated Content), Reddit threads, community discussions |
 
 🧠 Memory: "**P**lease **O**wn **E**very **S**ale", Paid, Owned, Earned, Shared.
 
@@ -40,14 +40,14 @@
 
 | Term | Formula | Quick read |
 |---|---|---|
-| **CAC** | Total spend ÷ new customers | Cost to win one |
-| **LTV** | Avg revenue × avg lifespan | Total value of one |
+| **CAC (Customer Acquisition Cost)** | Total spend ÷ new customers | Cost to win one |
+| **LTV (Lifetime Value)** | Avg revenue × avg lifespan | Total value of one |
 | **LTV:CAC** | LTV ÷ CAC | Target ≥ 3:1 |
-| **AOV** | Revenue ÷ orders | Bigger basket = better |
-| **CPM** | Spend ÷ (impressions ÷ 1000) | Awareness pricing |
-| **CPC** | Spend ÷ clicks | Auction efficiency |
+| **AOV (Average Order Value)** | Revenue ÷ orders | Bigger basket = better |
+| **CPM (Cost Per Mille)** | Spend ÷ (impressions ÷ 1000) | Awareness pricing |
+| **CPC (Cost Per Click)** | Spend ÷ clicks | Auction efficiency |
 | **CPA** | Spend ÷ conversions | Channel-level CAC |
-| **ROAS** | Revenue ÷ ad spend | **NOT** the same as ROI |
+| **ROAS (Return on Ad Spend)** | Revenue ÷ ad spend | **NOT** the same as ROI (Return on Investment) |
 
 🚨 ROAS ≠ ROI. ROAS uses revenue; ROI uses profit.
 
@@ -90,7 +90,7 @@ Outside the walls: **Microsoft Advertising** (B2B via LinkedIn), **The Trade Des
 
 - ❌ Treating ROAS as profit (it's revenue / spend, not profit)
 - ❌ Last-click attribution as the only model
-- ❌ TOFU SEO as the centerpiece of a 2026 content plan
+- ❌ TOFU SEO (Search Engine Optimization) as the centerpiece of a 2026 content plan
 - ❌ "More channels = more reach", usually means more cost, less mastery
 - ❌ Conflating Performance Max (Google) with Advantage+ (Meta)
 - ❌ Buying email lists ("first-party data" must be collected with consent)

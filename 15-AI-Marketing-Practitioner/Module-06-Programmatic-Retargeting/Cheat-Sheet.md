@@ -25,7 +25,7 @@ ADVERTISER → DSP → AD EXCHANGE → SSP → PUBLISHER
 |-----|----------|
 | **DV360** (Google) | Enterprise + Google ecosystem |
 | **TTD** (independent) | Agencies, CTV, scale |
-| **AdRoll** | SMB / DTC retargeting |
+| **AdRoll** | SMB / DTC (Direct-to-Consumer) retargeting |
 | **Criteo** | Dynamic product retargeting |
 
 ---
@@ -86,7 +86,7 @@ vs. without CDP: 24-hour audience sync = wasted spend.
 |--------|-----|
 | 28-day click + 1-day view | Pre-iOS 14 |
 | **7-day click + 1-day view** | Current Meta default |
-| 90-day click | LinkedIn B2B |
+| 90-day click | LinkedIn B2B (Business-to-Business) |
 | 28-day click + view-through | YouTube |
 
 ### Models

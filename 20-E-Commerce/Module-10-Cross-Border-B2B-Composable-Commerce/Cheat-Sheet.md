@@ -1,4 +1,4 @@
-# 📋 Module 10 Cheat Sheet: Cross-Border, B2B & Composable Commerce
+# 📋 Module 10 Cheat Sheet: Cross-Border, B2B (Business-to-Business) & Composable Commerce
 
 > Print and tape. The closing module, and the one with the most regulation-trap questions.
 
@@ -10,7 +10,7 @@
 |--------|-----------|-----------|--------------|
 | US sales tax | Economic nexus, post-*Wayfair* (2018) | $100K-$500K state-dependent | Seller (or marketplace facilitator) |
 | US marketplace | Marketplace Facilitator laws (47 states + DC) | N/A | Marketplace (Amazon, eBay) |
-| EU OSS | EU-established seller, cross-EU B2C | EU resident | EU seller |
+| EU OSS | EU-established seller, cross-EU B2C (Business-to-Consumer) | EU resident | EU seller |
 | EU IOSS | Non-EU seller | ≤€150 parcel | Non-EU seller (registered) |
 | EU standard | Customs broker / courier | >€150 | Buyer or courier |
 | UK VAT | Single registration | £85K | Seller |
@@ -34,7 +34,7 @@ Local fulfillment = inventory pre-positioned → becomes domestic e-com
 
 | Regulation | Effective | Scope | Penalty |
 |-----------|-----------|-------|---------|
-| GDPR (Reg. 2016/679) | May 25, 2018 | EU data subjects | 4% global rev / €20M |
+| GDPR (General Data Protection Regulation) (Reg. 2016/679) | May 25, 2018 | EU data subjects | 4% global rev / €20M |
 | DSA (Reg. 2022/2065) | Feb 17, 2024 (all platforms; VLOPs from Aug 2023) | Marketplaces + VLOPs | 6% global rev |
 | DMA (Reg. 2022/1925) | March 7, 2024 | Gatekeepers | 10% global rev |
 | IOSS (2021 VAT reform) | July 1, 2021 | Non-EU ≤€150 | VAT non-compliance |
@@ -64,7 +64,7 @@ Marketplace Facilitator (post-Wayfair 2018):
 
 | Feature | B2C | B2B |
 |---------|-----|-----|
-| AOV | $40-$200 | $500-$50K+ |
+| AOV (Average Order Value) | $40-$200 | $500-$50K+ |
 | Decision-makers | 1 | 3-15 (Gartner CEB, avg ~6.8) |
 | Pricing | Public, fixed | Per-account, tiered, negotiated |
 | Payment | Card | Net 30/60/90, PO, invoicing |
@@ -84,7 +84,7 @@ Marketplace Facilitator (post-Wayfair 2018):
 | Shopify B2B (Plus) | Mid-market $10-200M | Speed, native net terms (GA 2022) |
 | BigCommerce B2B Edition | Mid-enterprise | Out-of-box features |
 | SAP Commerce Cloud | $1B+ enterprise | SAP-attached |
-| Salesforce Commerce B2B | Salesforce CRM shops | CRM-attached |
+| Salesforce Commerce B2B | Salesforce CRM (Customer Relationship Management) shops | CRM-attached |
 
 ---
 

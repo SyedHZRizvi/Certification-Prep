@@ -57,7 +57,7 @@ Browser → YOUR collection domain → sGTM container →
 |----------|---------|----------|
 | GTM-SS on GCP | $120–500/mo | Self-managed teams |
 | Stape.io | $20–100+/mo | SMB, no DevOps |
-| JenTis | €100–500/mo | European / GDPR-strict |
+| JenTis | €100–500/mo | European / GDPR (General Data Protection Regulation)-strict |
 
 **Reality check:** server-side recovers **5–25%** of measurement loss, NOT 100%.
 

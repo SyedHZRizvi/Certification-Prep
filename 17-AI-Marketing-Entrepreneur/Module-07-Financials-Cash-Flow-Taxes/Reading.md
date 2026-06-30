@@ -3,7 +3,7 @@
 > **Why this module matters:** Most agency founders are great at marketing and bad at finance, and that's how they end up surprised by tax bills, broke despite high revenue, and unable to scale. This module is the operator's financial playbook: how to track money, separate personal + business, structure (S-corp / LLC / sole prop / Ltd / GmbH equivalents), pay quarterly taxes, save aggressively, and protect your wealth. **EVERY claim in this module is operational guidance, NOT professional tax/legal advice. Always consult a CPA and (for entity structure) an attorney in your jurisdiction.**
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - A drafted SKU + pricing from [Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md) and [Module 4](../Module-04-Pricing-Proposals-Contracts/Reading.md), you can't forecast cash flow without knowing your unit economics
+> - A drafted SKU (Stock Keeping Unit) + pricing from [Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md) and [Module 4](../Module-04-Pricing-Proposals-Contracts/Reading.md), you can't forecast cash flow without knowing your unit economics
 > - The contract payment-terms vocabulary from Module 4 (Net-7 / Net-30, kill fee, milestone billing), these are the inputs to the cash flow forecast
 > - The tool-spend benchmark from [Module 5](../Module-05-AI-Marketing-Tech-Stack-Cost-Efficient/Reading.md) (~1–2% of revenue) and the hiring-cost math from [Module 6](../Module-06-Hiring-Managing-AI-Native-Teams/Reading.md), these are the major OpEx lines on your P&L
 > - Awareness that nothing in this module is professional tax, legal, or financial advice, entity formation, S-corp election, quarterly estimates, retirement contributions all require a CPA and attorney in your jurisdiction. The numbers cited are US 2024–2025 illustrative examples and shift annually.
@@ -471,7 +471,7 @@ After Year-2 expansion (recovery-center Google Ads), Maya cleared ~$450K persona
 
 Pat Walls (Starter Story) publicly discusses using the Profit First method. He cites it as keeping his profitable at every revenue level. Lesson: **financial discipline scales better than revenue does.**
 
-### Case 5, Sahil Bloom's family CFO model (public)
+### Case 5, Sahil Bloom's family CFO (Chief Financial Officer) model (public)
 
 Sahil Bloom has publicly written about building a "family CFO" practice for his finances after his businesses scaled, quarterly reviews of personal + business, automated savings, separation of growth + safety capital. Lesson: **as revenue scales, formalize the financial review.**
 
@@ -518,7 +518,7 @@ Sahil Bloom has publicly written about building a "family CFO" practice for his 
 | **SE tax** | Self-Employment tax (Social Security + Medicare) for non-W-2 income |
 | **Quarterly estimated tax** | Pre-payment of expected annual tax in 4 installments |
 | **P&L** | Profit & Loss statement |
-| **COGS** | Cost of Goods Sold, direct cost of delivery |
+| **COGS (Cost of Goods Sold)** | Cost of Goods Sold, direct cost of delivery |
 | **Gross margin** | (Revenue − COGS) / Revenue |
 | **Operating margin** | (Revenue − COGS − OpEx) / Revenue |
 | **Cash flow** | Money moving in vs out, regardless of profit |

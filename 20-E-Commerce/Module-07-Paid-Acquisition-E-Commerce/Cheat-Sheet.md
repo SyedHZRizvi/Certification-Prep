@@ -61,7 +61,7 @@ Incrementality: Geo-holdouts (5-10% market, 4 weeks)
 
 | Campaign Type | What it does |
 |---------------|-------------|
-| Sponsored Products | Keyword/ASIN-targeted CPC |
+| Sponsored Products | Keyword/ASIN (Amazon Standard Identification Number)-targeted CPC (Cost Per Click) |
 | Sponsored Brands | Banner + logo + carousel |
 | Sponsored Display | Audience-targeted, on/off Amazon |
 
@@ -72,8 +72,8 @@ Incrementality: Geo-holdouts (5-10% market, 4 weeks)
 - Category (broader)
 
 **Metrics:**
-- **ACoS** = Ad Spend / Ad Revenue (target 25-35%)
-- **TACoS** = Ad Spend / Total Revenue (the honest measure)
+- **ACoS (Advertising Cost of Sale)** = Ad Spend / Ad Revenue (target 25-35%)
+- **TACoS (Total Advertising Cost of Sale)** = Ad Spend / Total Revenue (the honest measure)
 
 ---
 
@@ -111,7 +111,7 @@ Winning 2024 playbook:
 
 ---
 
-## 📊 ROAS Math (MEMORIZE)
+## 📊 ROAS (Return on Ad Spend) Math (MEMORIZE)
 
 ```
 ROAS  = Ad Revenue / Ad Spend
@@ -143,7 +143,7 @@ Healthy feed disapproval rate: **< 5%**.
 ## ⚡ Failure Modes
 
 - ❌ No CAPI = 30-40% conversion signal lost
-- ❌ No brand exclusions = 20-40% CAC inflation via cannibalization
+- ❌ No brand exclusions = 20-40% CAC (Customer Acquisition Cost) inflation via cannibalization
 - ❌ Blended ROAS reported without CM = false profit
 - ❌ ACoS measured, TACoS ignored = Amazon Ads cannibalizes organic
 - ❌ TikTok without creator strategy = half the CVR
@@ -191,4 +191,4 @@ If all 6 cleanly in 90 sec, you own this module. ✅
 
 ---
 
-➡️ [Module 8: SEO, Content & Lifecycle Marketing](../Module-08-SEO-Content-Lifecycle-Marketing/Reading.md)
+➡️ [Module 8: SEO (Search Engine Optimization), Content & Lifecycle Marketing](../Module-08-SEO-Content-Lifecycle-Marketing/Reading.md)

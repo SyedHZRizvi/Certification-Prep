@@ -94,7 +94,7 @@ Test for 7+ days at $50+/day for real signal.
 ## 🎯 5 Reels Patterns That Work
 
 1. Founder selfie
-2. UGC try-on (paid creator)
+2. UGC (User-Generated Content) try-on (paid creator)
 3. Tutorial/demo
 4. Pattern interrupt + value
 5. Comment-hook ("Someone wrote this...")
@@ -130,11 +130,11 @@ Campaign 3: RETARGETING ($3-5/day always on)
 
 | Metric | Range |
 |--------|-------|
-| Reels CPM | $5–$15 |
-| Link CTR | 1.0–2.5% |
-| Link CPC | $0.50–$2.00 |
+| Reels CPM (Cost Per Mille) | $5–$15 |
+| Link CTR (Click-Through Rate) | 1.0–2.5% |
+| Link CPC (Cost Per Click) | $0.50–$2.00 |
 | CPP (purchase) | $25–$50 |
-| ROAS | 2.5x–4x |
+| ROAS (Return on Ad Spend) | 2.5x–4x |
 
 ---
 

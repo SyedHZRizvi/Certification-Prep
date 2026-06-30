@@ -1,12 +1,12 @@
 # Module 4: Meta Ads Mastery (Facebook + Instagram) 📱
 
-> **Why this module matters:** Meta is where most DTC brands learn paid media. It's also where most lose their shirt. The platform changed permanently after iOS 14.5 and again with Advantage+ in 2023. This module gives you the 2026 playbook.
+> **Why this module matters:** Meta is where most DTC (Direct-to-Consumer) brands learn paid media. It's also where most lose their shirt. The platform changed permanently after iOS 14.5 and again with Advantage+ in 2023. This module gives you the 2026 playbook.
 
 ---
 
 ## 🎯 A Real Story: How True Classic Tees Became a $250M Brand on Meta
 
-True Classic Tees launched in 2019 with a single product (a $25 men's t-shirt that fits better than the rest). By 2024 they were doing $250M+ in revenue, mostly from Meta ads. Their CMO Ben Yahalom shared the playbook publicly at AdExchanger's 2024 Industry Preview:
+True Classic Tees launched in 2019 with a single product (a $25 men's t-shirt that fits better than the rest). By 2024 they were doing $250M+ in revenue, mostly from Meta ads. Their CMO (Chief Marketing Officer) Ben Yahalom shared the playbook publicly at AdExchanger's 2024 Industry Preview:
 
 - **One product, ruthlessly tested**: they didn't expand the catalog for 18 months. Every dollar went to perfecting ad creative for that one t-shirt.
 - **DCT (Dynamic Creative Testing) cycles every 2 weeks**: 4 hooks × 4 body styles × 4 CTAs = 64 ad variants per cycle. Meta picks the winners.
@@ -14,14 +14,14 @@ True Classic Tees launched in 2019 with a single product (a $25 men's t-shirt th
 - **Server-side CAPI from day one**: they invested in Conversions API setup before launching, which preserved attribution after iOS 14.5.
 - **Advantage+ Shopping**: once they had 50+ daily conversions, they went all-in on Advantage+ Shopping campaigns.
 
-That last point is where most beginners trip. iOS 14.5 (released April 2021) let users opt out of tracking. Meta's signal collapsed. Brands that relied on Pixel-only attribution saw CAC double overnight. Brands like True Classic who had server-side **Conversions API (CAPI)** kept tracking ~70% of conversions accurately.
+That last point is where most beginners trip. iOS 14.5 (released April 2021) let users opt out of tracking. Meta's signal collapsed. Brands that relied on Pixel-only attribution saw CAC (Customer Acquisition Cost) double overnight. Brands like True Classic who had server-side **Conversions API (CAPI)** kept tracking ~70% of conversions accurately.
 
 This module teaches you to set up Meta ads the way True Classic did. CAPI on day zero. Advantage+ once you have data. DCT cycles. Reels-first creative. Let's build it.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Campaign brief structure (Who/What/Why/Where/How), covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md)
 > - The 30-conversion learning threshold concept, covered in [Module 2](../Module-02-Google-Ads-Search-Mastery/Reading.md)
-> - Funnel-stage KPI hierarchy and audience-signal vs hard-targeting distinction, covered in [Module 3](../Module-03-Google-Ads-PMax-Display-Video/Reading.md)
+> - Funnel-stage KPI (Key Performance Indicator) hierarchy and audience-signal vs hard-targeting distinction, covered in [Module 3](../Module-03-Google-Ads-PMax-Display-Video/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
 ---
@@ -122,7 +122,7 @@ Meta introduced Advantage+ Audience in 2023. By 2024, it became the default for 
 
 **When to use:**
 - DTC ecom: yes, almost always
-- B2B services: still test against traditional Lookalike targeting
+- B2B (Business-to-Business) services: still test against traditional Lookalike targeting
 - Local services: still use traditional interest + geo targeting
 
 ### Custom Audience Sources (Memorize)
@@ -142,7 +142,7 @@ Meta introduced Advantage+ Audience in 2023. By 2024, it became the default for 
 
 - **Seed size**: 1,000+ in the seed audience minimum, ideally 5,000+
 - **Percentage**: 1% (closest to seed) for prospecting; 3–5% for scale; 10% for top-of-funnel reach
-- **Best seeds**: high-LTV customers (top 20% of customer list by revenue) > all customers > all leads > all site visitors
+- **Best seeds**: high-LTV (Lifetime Value) customers (top 20% of customer list by revenue) > all customers > all leads > all site visitors
 - **One country per lookalike**: lookalikes are country-specific (a US lookalike won't work in Canada)
 
 ---
@@ -219,9 +219,9 @@ You: kill bottom 50% after 1,000+ impressions per variant
 
 After 7 days at $50+/day, you should have enough data per variant. Look at:
 
-- **Hook breakdown**: which 1–2 hooks have the best CTR + CPC?
-- **Body breakdown**: which 1–2 bodies have the best 3-sec view + CPM?
-- **CTA breakdown**: which 1–2 CTAs have the best conversion rate?
+- **Hook breakdown**: which 1–2 hooks have the best CTR (Click-Through Rate) + CPC (Cost Per Click)?
+- **Body breakdown**: which 1–2 bodies have the best 3-sec view + CPM (Cost Per Mille)?
+- **CTA (Call to Action) breakdown**: which 1–2 CTAs have the best conversion rate?
 
 Kill the bottom 2 of each. Run another cycle. After 2–3 cycles, you have a winning creative, and the data to make the NEXT batch even better.
 
@@ -249,7 +249,7 @@ Meta Reels CPMs have dropped 40%+ since 2022. Feed CPMs have risen. By 2025, mos
 **Pattern 1, Founder selfie ("Hey, I'm Sarah, founder of...")**
 Works because Reels viewers respond to faces. Don't over-produce. iPhone camera + decent lighting.
 
-**Pattern 2, UGC testimonial (creator-shot)**
+**Pattern 2, UGC (User-Generated Content) testimonial (creator-shot)**
 Pay $300–$1,500 to a micro-creator for a real product try-on. Use as-is.
 
 **Pattern 3, Tutorial/demo**
@@ -275,7 +275,7 @@ First 1 second = visual shock. Next 14 seconds = pure value.
 
 Let's build a real Meta campaign for the Sunday Studio Pilates apparel brand.
 
-**Goal:** 80 purchases at average $50 ROAS 3x = $4,000 revenue
+**Goal:** 80 purchases at average $50 ROAS (Return on Ad Spend) 3x = $4,000 revenue
 **Budget:** $400 ($13.30/day)
 **Conversion event:** Purchase, with value passing
 

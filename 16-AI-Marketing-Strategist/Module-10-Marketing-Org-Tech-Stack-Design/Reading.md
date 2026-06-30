@@ -1,11 +1,11 @@
 # Module 10: Marketing Org & Tech Stack Design 🏗️
 
-> **Why this module matters:** The best measurement architecture in the world produces zero business value if the marketing org is structured wrong, the tools cost more than they return, and the strategist cannot defend the budget in front of the CFO. This module is the org-design and finance counterpart to the technical content of Modules 1–9, and the bridge to the strategist's career path that follows.
+> **Why this module matters:** The best measurement architecture in the world produces zero business value if the marketing org is structured wrong, the tools cost more than they return, and the strategist cannot defend the budget in front of the CFO (Chief Financial Officer). This module is the org-design and finance counterpart to the technical content of Modules 1–9, and the bridge to the strategist's career path that follows.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Every preceding module of this course, Module 10 is the org-design synthesis of Modules 1–9 and references each in passing.
 > - Basic corporate-finance vocabulary (P&L, EBITDA, ROIC, payback period). High-level only; the [Recommended Readings](#-further-reading-optional) include Reichheld and Grove for depth.
-> - The OKR / KPI-tree vocabulary from [Module 1](../Module-01-Strategic-Frameworks-OKRs/Reading.md), Module 10 wires those KPIs into a 1-page CFO scorecard.
+> - The OKR / KPI (Key Performance Indicator)-tree vocabulary from [Module 1](../Module-01-Strategic-Frameworks-OKRs/Reading.md), Module 10 wires those KPIs into a 1-page CFO scorecard.
 > - The build-vs-buy tension from Modules 2, 5, and 7, each implies a martech-vendor decision that lands in this module.
 > If you have never read a marketing-org RACI or a martech vendor renewal memo, that's covered here from first principles.
 
@@ -17,7 +17,7 @@ In 2020, Airbnb famously cut its marketing budget by 90% during the pandemic. Wh
 
 The changes:
 
-1. **Marketing Science** became a distinct VP-level function reporting to the CMO, not buried inside an analytics team. It owned MMM, attribution, and incrementality testing, and could veto any campaign that lacked a measurement plan.
+1. **Marketing Science** became a distinct VP-level function reporting to the CMO (Chief Marketing Officer), not buried inside an analytics team. It owned MMM, attribution, and incrementality testing, and could veto any campaign that lacked a measurement plan.
 2. **The brand vs performance split was abolished.** Both functions had to use the same measurement infrastructure. The CMO had a single P&L.
 3. **A "build vs buy" committee** met quarterly. Every tool above $50K/year was reviewed for replacement, consolidation, or insourcing.
 4. **The org adopted a hub-and-spoke model**: a central Marketing Science + Data Engineering team supplied measurement infrastructure to embedded analysts on each marketing function (acquisition, lifecycle, brand).
@@ -131,7 +131,7 @@ Scott Brinker's annual *Marketing Technology Landscape* tracked **~12,000 martec
 | **BI Tool** | Looker Studio (free), Looker, Tableau, Mode, Hex | $0–$300K/yr |
 | **Email / SMS** | Iterable, Klaviyo, Braze, MoEngage, Customer.io | $20K–$300K/yr |
 | **Lifecycle Orchestration** | Braze, Iterable, Bloomreach, Salesforce Marketing Cloud | Often = email tier |
-| **CRM** | Salesforce, HubSpot, Microsoft Dynamics | $20K–$1M+/yr |
+| **CRM (Customer Relationship Management)** | Salesforce, HubSpot, Microsoft Dynamics | $20K–$1M+/yr |
 | **A/B Testing** | Optimizely, AB Tasty, Convert, VWO, GrowthBook (OSS) | $20K–$200K/yr |
 | **Personalization** | Dynamic Yield, Bloomreach, BlueShift, Adobe Target | $50K–$500K/yr |
 | **GenAI Creative** | Midjourney, DALL-E, Stable Diffusion, Adobe Firefly | $1K–$50K/yr |
@@ -139,7 +139,7 @@ Scott Brinker's annual *Marketing Technology Landscape* tracked **~12,000 martec
 | **Customer Support** | Zendesk, Intercom, Front, Gorgias | $30K–$300K/yr |
 | **Influencer / Affiliate** | Impact, GRIN, Aspire, CreatorIQ, Awin | $20K–$200K/yr |
 
-For a $20M-revenue DTC brand a typical 2026 stack might look like:
+For a $20M-revenue DTC (Direct-to-Consumer) brand a typical 2026 stack might look like:
 
 ```
 Web/Product Analytics      → GA4 free + Heap free + Mixpanel ($30K)
@@ -168,7 +168,7 @@ Total annual                ≈ $360K (1.8% of revenue)
 
 | Discipline | Practice |
 |------------|----------|
-| **Inventory** | Maintain a single source-of-truth list of every active subscription, with owner, renewal date, and last-quarter ROI |
+| **Inventory** | Maintain a single source-of-truth list of every active subscription, with owner, renewal date, and last-quarter ROI (Return on Investment) |
 | **Tagging** | Every recurring cost is tagged to a use case, owner, and a contractual minimum term |
 | **Showback / Chargeback** | Spread costs back to the spoke that uses the tool |
 | **Right-sizing** | Quarterly review of seat / event / MTU tiers to avoid over-paying |
@@ -221,7 +221,7 @@ The single highest-leverage skill for senior strategists is **defending the mark
 
 ### The 5 questions the CFO will ask (every time)
 
-1. **"What did we spend this quarter and what did it return?"** → blended ROAS / CAC + LTV: CAC ratio.
+1. **"What did we spend this quarter and what did it return?"** → blended ROAS (Return on Ad Spend) / CAC (Customer Acquisition Cost) + LTV (Lifetime Value): CAC ratio.
 2. **"Which channels are getting bigger and which are getting smaller, and why?"** → MMM channel waterfall + saturation curves.
 3. **"How do you know it's incremental?"** → recent incrementality test results.
 4. **"Where is the next $X going?"** → MMM budget optimizer + scenario simulation.
@@ -231,7 +231,7 @@ The single highest-leverage skill for senior strategists is **defending the mark
 
 ### The 1-Page Marketing Scorecard
 
-A canonical executive deliverable. The 12 metrics every CFO + CEO should see monthly:
+A canonical executive deliverable. The 12 metrics every CFO + CEO (Chief Executive Officer) should see monthly:
 
 | Metric | Q1 actual | Q2 target | Q2 actual | Trend |
 |--------|-----------|-----------|-----------|-------|
@@ -326,11 +326,11 @@ The arc that this entire course prepares you for:
 
 ## 💼 Case Study, HubSpot's Evolution from Inbound-Only to Multi-Channel Marketing Org (2014–2024)
 
-**Situation.** HubSpot founded 2006 by Brian Halligan and Dharmesh Shah at MIT Sloan was through 2013 the canonical "inbound marketing" company. Halligan and Shah's 2009 book *Inbound Marketing* (Wiley) had defined the category: organic content + SEO + free tools + nurture-email-driven lead generation, with paid advertising explicitly de-emphasized as "interruption marketing." HubSpot's marketing org through 2014 reflected that thesis, roughly 80% of headcount sat in content + SEO + lifecycle email teams; performance-marketing existed only as a thin team that mostly ran branded search to defend HubSpot's category position. The strategic problem became visible in 2014–2015: as HubSpot scaled past $100M in ARR and the category became more crowded (Marketo, Pardot, Eloqua, then a growing CDP wave), the pure-inbound flywheel started to *slow*. New competitors were spending on paid acquisition; HubSpot's organic share-of-voice was no longer enough to maintain growth rates.
+**Situation.** HubSpot founded 2006 by Brian Halligan and Dharmesh Shah at MIT Sloan was through 2013 the canonical "inbound marketing" company. Halligan and Shah's 2009 book *Inbound Marketing* (Wiley) had defined the category: organic content + SEO (Search Engine Optimization) + free tools + nurture-email-driven lead generation, with paid advertising explicitly de-emphasized as "interruption marketing." HubSpot's marketing org through 2014 reflected that thesis, roughly 80% of headcount sat in content + SEO + lifecycle email teams; performance-marketing existed only as a thin team that mostly ran branded search to defend HubSpot's category position. The strategic problem became visible in 2014–2015: as HubSpot scaled past $100M in ARR and the category became more crowded (Marketo, Pardot, Eloqua, then a growing CDP wave), the pure-inbound flywheel started to *slow*. New competitors were spending on paid acquisition; HubSpot's organic share-of-voice was no longer enough to maintain growth rates.
 
 **Decision.** Through 2014–2024 HubSpot executed a multi-year **org restructuring** that progressively integrated paid, lifecycle, brand, and AI capabilities into the inbound foundation without abandoning the inbound thesis. Concrete moves: (1) the **performance-marketing team** was expanded and given P&L authority for paid LinkedIn, Google, Meta, and YouTube alongside (not subordinate to) content; (2) the org adopted a **hub-and-spoke** model with central "Marketing Operations" + "Marketing Analytics" teams supplying measurement infrastructure to embedded marketers on each product line (Marketing Hub, Sales Hub, Service Hub, CMS Hub, Operations Hub); (3) in 2023 HubSpot publicly disclosed a major reorganization around **Generative AI** embedding GenAI capabilities (Content Assistant, ChatSpot, AI insights) into both the product *and* the marketing org's content-production workflow, with a dedicated AI-Ops sub-team in the hub; (4) the **CFO became a permanent attendee** of monthly marketing reviews, with marketing reporting against a unified scorecard rather than separated brand-vs-performance P&Ls.
 
-**Outcome.** HubSpot's revenue grew from approximately **$115M in 2014** to **$2.5+ billion in fiscal 2024** roughly 22× while maintaining gross-margin profile and customer-retention metrics that placed it in the top quartile of public B2B SaaS companies. The 2024 reorganization around generative AI was credited (in HubSpot's investor communications and analyst coverage) with accelerating content-production throughput and customer-facing AI-feature ship rate. By 2024 HubSpot was the second-largest CRM in the SMB segment after Salesforce and operated one of the most-studied marketing orgs in B2B SaaS, featured in McKinsey's 2023 CMO study and a recurring case in HBR digital-strategy writing.
+**Outcome.** HubSpot's revenue grew from approximately **$115M in 2014** to **$2.5+ billion in fiscal 2024** roughly 22× while maintaining gross-margin profile and customer-retention metrics that placed it in the top quartile of public B2B (Business-to-Business) SaaS companies. The 2024 reorganization around generative AI was credited (in HubSpot's investor communications and analyst coverage) with accelerating content-production throughput and customer-facing AI-feature ship rate. By 2024 HubSpot was the second-largest CRM in the SMB segment after Salesforce and operated one of the most-studied marketing orgs in B2B SaaS, featured in McKinsey's 2023 CMO study and a recurring case in HBR digital-strategy writing.
 
 **Lesson for the exam / for practitioners.** HubSpot is the canonical case for the **hub-and-spoke + AI-augmented hybrid** org pattern this module teaches. It also illustrates a strategic principle exams reliably test: *org structure must evolve when the strategic thesis evolves*. HubSpot's inbound-only org served the 2006–2013 strategic thesis perfectly; that same org structure would have starved HubSpot of growth in the 2015–2024 paid-channel-mature era. The senior-strategist insight: **a marketing org is a strategic artifact, not a fixed structure** when the channel mix changes, the brand-vs-performance balance changes, or AI capability changes, the org must restructure. On the exam, when a case describes a company that "has always operated as content-first" but now needs paid + brand + AI capabilities, the right answer is hub-and-spoke (or AI-augmented hybrid) *not* keeping the legacy structure and bolting paid onto the side.
 
