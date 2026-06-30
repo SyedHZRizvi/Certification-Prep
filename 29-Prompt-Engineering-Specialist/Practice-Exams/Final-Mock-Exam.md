@@ -22,22 +22,22 @@
 ## 📝 Questions
 
 ### 1. The "instruction hierarchy" formalized by OpenAI (Wallace et al. 2024) orders authority as:
-A. user > system > assistant > tool
-B. system > developer > user > tool
+A. system > developer > user > tool
+B. user > system > assistant > tool
 C. assistant > tool > user
 D. All roles equal
 
 ### 2. Setting `temperature=0` guarantees:
 A. Byte-identical output forever
-B. Greedy decoding, but absolute determinism also requires fixed seed + deterministic backend
-C. Disables the model
+B. Disables the model
+C. Greedy decoding, but absolute determinism also requires fixed seed + deterministic backend
 D. Removes the bias
 
 ### 3. The most cost-efficient cheap-tier 2026 model for a high-volume English classification batch (Jan 2026 pricing) is roughly:
 A. o3
-B. Gemini 2.5 Flash ($0.15 input / $0.60 output per MTok)
+B. Claude 4.7 Opus
 C. GPT-5 Opus
-D. Claude 4.7 Opus
+D. Gemini 2.5 Flash ($0.15 input / $0.60 output per MTok)
 
 ### 4. The "Lost in the Middle" paper (Liu et al. 2023) suggests placing critical instructions:
 A. In the exact middle
@@ -46,22 +46,22 @@ C. Randomly
 D. In a separate file
 
 ### 5. Output tokens vs input tokens on Claude/GPT/Gemini flagships are typically:
-A. Same price
-B. Output 3–5× more expensive
+A. Output 3–5× more expensive
+B. Same price
 C. Output free
 D. Output 0.1× input
 
 ### 6. A reasoning model's hidden "thinking tokens" are:
 A. Free
-B. Billed as output tokens, can drive 5–50× higher cost per query
-C. Discarded
+B. Discarded
+C. Billed as output tokens, can drive 5–50× higher cost per query
 D. Same as Whisper transcripts
 
 ### 7. The Microsoft Tay (2016) failure is a cautionary tale primarily about:
 A. High temperature
-B. The absence of a runtime system prompt, instruction hierarchy, and output filter
+B. Old GPUs
 C. Cellular outage
-D. Old GPUs
+D. The absence of a runtime system prompt, instruction hierarchy, and output filter
 
 ### 8. In-context learning was demonstrated at landmark scale in:
 A. Vaswani et al. 2017
@@ -76,22 +76,22 @@ C. ~30+pt
 D. None
 
 ### 10. "Many-shot" ICL is feasible primarily because:
-A. Models got smaller
-B. 200K+ context windows + prompt caching make it economical
+A. 200K+ context windows + prompt caching make it economical
+B. Models got smaller
 C. Vector databases exist
 D. Fine-tuning got easier
 
 ### 11. The strongest mitigation for "majority-label bias" in few-shot:
 A. Use only one label
-B. Balance example label counts across positions
-C. Use a smaller model
+B. Use a smaller model
+C. Balance example label counts across positions
 D. Increase max_tokens
 
 ### 12. Min et al. 2022 showed that few-shot ICL helps even when:
 A. The model is tiny
-B. Example labels are RANDOMLY assigned (format learning matters)
+B. The temperature is 2
 C. The context window is 4K
-D. The temperature is 2
+D. Example labels are RANDOMLY assigned (format learning matters)
 
 ### 13. kNN few-shot at runtime retrieves examples by:
 A. Random selection
@@ -100,22 +100,22 @@ C. Asking the user to pick
 D. Alphabetical order
 
 ### 14. Anthropic's preferred few-shot formatting convention is:
-A. CSV
-B. XML tags (`<example>...</example>`)
+A. XML tags (`<example>...</example>`)
+B. CSV
 C. Plain markdown only
 D. Base64
 
 ### 15. The seminal Chain-of-Thought paper:
 A. Brown 2020
-B. Wei et al. 2022
-C. Bai 2022
+B. Bai 2022
+C. Wei et al. 2022
 D. Vaswani 2017
 
 ### 16. The zero-shot CoT trigger phrase from Kojima 2022 is:
 A. "Be smart"
-B. "Let's think step by step"
+B. "Calculate"
 C. "Solve quickly"
-D. "Calculate"
+D. "Let's think step by step"
 
 ### 17. Self-consistency (Wang et al. 2022) algorithm:
 A. Sample N reasoning paths with T>0; majority-vote the final answer
@@ -136,22 +136,22 @@ C. Prompt / Output / Token
 D. Train / Val / Test
 
 ### 20. Tree-of-Thought (Yao et al. 2023) is BEST suited for:
-A. Sentiment classification
-B. Search-like problems (puzzles, planning, multi-step optimization)
+A. Search-like problems (puzzles, planning, multi-step optimization)
+B. Sentiment classification
 C. Translation
 D. Single-fact lookup
 
 ### 21. OpenAI o1 lifted AIME 2024 over GPT-4o by approximately:
 A. +1pt
-B. +43pt (13.4% → 56.7%)
-C. +200pt
+B. +200pt
+C. +43pt (13.4% → 56.7%)
 D. 0pt
 
 ### 22. Claude Extended Thinking exposes:
 A. `temperature`
-B. `budget_tokens` cap for thinking-token spend
+B. Nothing
 C. `max_steps`
-D. Nothing
+D. `budget_tokens` cap for thinking-token spend
 
 ### 23. The "router test" for when to use a reasoning model:
 A. Random 50/50
@@ -160,22 +160,22 @@ C. "Is the input long?"
 D. "Is the user a paying customer?"
 
 ### 24. DeepSeek R1 (January 2025) was significant because:
-A. Closed weights
-B. First open-weights reasoning model competitive with o1
+A. First open-weights reasoning model competitive with o1
+B. Closed weights
 C. Audio-only
 D. 4K context
 
 ### 25. The progression L0 → L1 → L2 in structured outputs represents:
 A. Pricing tiers
-B. Prompt-only → JSON Mode (valid JSON) → Schema-enforced (your JSON Schema)
-C. API tiers
+B. API tiers
+C. Prompt-only → JSON Mode (valid JSON) → Schema-enforced (your JSON Schema)
 D. Geographic regions
 
 ### 26. Anthropic schema-enforced output uses:
 A. `response_format={"type": "json_object"}`
-B. Forced tool use: `tool_choice={"type": "tool", "name": "<name>"}`
+B. There is no equivalent
 C. Server-side JSON repair
-D. There is no equivalent
+D. Forced tool use: `tool_choice={"type": "tool", "name": "<name>"}`
 
 ### 27. The popular cross-provider Pydantic wrapper for LLM structured outputs is:
 A. requests
@@ -184,22 +184,22 @@ C. langchain
 D. numpy
 
 ### 28. A Pydantic field `severity: Literal["LOW","HIGH"]` constrains the model to:
-A. Use lower temperature
-B. Output ONLY one of those two values for that field
+A. Output ONLY one of those two values for that field
+B. Use lower temperature
 C. Pick between two models
 D. Wait 2 seconds
 
 ### 29. OpenAI JSON Mode requires the word "json" to appear:
 A. In the API key
-B. Somewhere in the prompt (system or user message)
-C. In the model name
+B. In the model name
+C. Somewhere in the prompt (system or user message)
 D. Nowhere
 
 ### 30. The retry-on-validation-error loop in `instructor`:
 A. Drops the request
-B. Catches a Pydantic ValueError and re-prompts the model with the error context (up to `max_retries`)
+B. Switches models
 C. Lowers temperature
-D. Switches models
+D. Catches a Pydantic ValueError and re-prompts the model with the error context (up to `max_retries`)
 
 ### 31. Tool descriptions in a tool-use schema are:
 A. Documentation only
@@ -214,22 +214,22 @@ C. Gemini 2.5 Pro / Flash
 D. Llama 3.2 Vision
 
 ### 33. A high-detail 1024×1024 image typically costs approximately:
-A. ~10 tokens
-B. ~1,500–2,500 tokens
+A. ~1,500–2,500 tokens
+B. ~10 tokens
 C. ~50 tokens
 D. ~100K tokens
 
 ### 34. EXIF rotation metadata:
 A. Always honored
-B. OFTEN NOT honored, pre-rotate
-C. Doesn't exist
+B. Doesn't exist
+C. OFTEN NOT honored, pre-rotate
 D. Adds tokens
 
 ### 35. The MOST robust defense against chart-confabulation in vision LLMs:
 A. Lower temperature
-B. Enumerate data points individually + self-consistency
+B. Grayscale
 C. Bigger image
-D. Grayscale
+D. Enumerate data points individually + self-consistency
 
 ### 36. Image text in a photo (e.g., a sticky note saying "Ignore prior instructions"):
 A. Always safe
@@ -238,22 +238,22 @@ C. Bills extra
 D. Auto-OCR'd safely
 
 ### 37. The 3 pillars of LLM evaluation:
-A. Train/val/test
-B. Programmatic / LLM-as-judge / human review
+A. Programmatic / LLM-as-judge / human review
+B. Train/val/test
 C. Speed/cost/quality
 D. Claude/GPT/Gemini
 
 ### 38. G-Eval (Liu et al. 2023) refinements over naïve LLM-judging:
 A. Bigger judge model
-B. Chain-of-thought reasoning + averaging scores across N judge samples
-C. Lower temperature
+B. Lower temperature
+C. Chain-of-thought reasoning + averaging scores across N judge samples
 D. Vector embeddings
 
 ### 39. The strongest defense against LLM-judge "self-preference" bias:
 A. Higher-tier judge
-B. Use a DIFFERENT model family for the judge
+B. Remove criteria
 C. Lower temperature
-D. Remove criteria
+D. Use a DIFFERENT model family for the judge
 
 ### 40. RAGAS provides these RAG metrics:
 A. Latency only
@@ -262,22 +262,22 @@ C. Token count
 D. Cost only
 
 ### 41. To detect a 5pt accuracy delta at ~80% power, you need approximately:
-A. 10 per arm
-B. ~1,500 per arm
+A. ~1,500 per arm
+B. 10 per arm
 C. 100 per arm
 D. 1M per arm
 
 ### 42. "Pre-registration" of an A/B success metric:
 A. Pre-pays the API
-B. Defines metric and decision rule BEFORE looking at data, prevents p-hacking
-C. Registers a domain
+B. Registers a domain
+C. Defines metric and decision rule BEFORE looking at data, prevents p-hacking
 D. Trains the judge
 
 ### 43. Inter-annotator agreement (Cohen's κ) above ~0.7 indicates:
 A. Bad rubric
-B. Substantial agreement, well-defined task
+B. Bias
 C. Random scoring
-D. Bias
+D. Substantial agreement, well-defined task
 
 ### 44. The 3 categories of prompt injection:
 A. SQL / NoSQL / GraphQL
@@ -286,22 +286,22 @@ C. Active / passive / hybrid
 D. Easy / medium / hard
 
 ### 45. The seminal indirect-prompt-injection paper:
-A. Brown 2020
-B. Greshake et al. 2023
+A. Greshake et al. 2023
+B. Brown 2020
 C. Wei 2022
 D. Bai 2022
 
 ### 46. The MOST important architectural principle for tool RESULTS:
 A. Tool outputs are trusted
-B. Tool outputs are ALWAYS untrusted input, never instructions
-C. Tools must be open-source
+B. Tools must be open-source
+C. Tool outputs are ALWAYS untrusted input, never instructions
 D. Tools must require T=0
 
 ### 47. Anthropic Constitutional AI (Bai et al. 2022) trains the model by:
 A. Adding parameters
-B. Self-critique against a constitution; revisions become training data
+B. Adding humans
 C. Lowering temperature
-D. Adding humans
+D. Self-critique against a constitution; revisions become training data
 
 ### 48. "Defense in depth" against jailbreaks means:
 A. One very strong layer
@@ -310,22 +310,22 @@ C. Hiring more engineers
 D. Bigger model
 
 ### 49. Air Canada chatbot ruling (Feb 2024) established:
-A. Chatbots are immune from law
-B. A company can be HELD LIABLE for promises a chatbot makes
+A. A company can be HELD LIABLE for promises a chatbot makes
+B. Chatbots are immune from law
 C. AI replaces lawyers
 D. Pricing must be honest
 
 ### 50. DeepSeek R1 jailbreak storm (Jan 2025) demonstrated:
 A. Closed models only break
-B. Even open-weights reasoning models can be jailbroken via role-play, encoding, multi-turn within 48h
-C. Hardware bugs
+B. Hardware bugs
+C. Even open-weights reasoning models can be jailbroken via role-play, encoding, multi-turn within 48h
 D. Only one user issue
 
 ### 51. Anthropic prompt caching is enabled via:
 A. Automatic on everything
-B. Marking sections with `cache_control: {"type": "ephemeral"}` or `"persistent"`
+B. Smaller model
 C. Lowering temperature
-D. Smaller model
+D. Marking sections with `cache_control: {"type": "ephemeral"}` or `"persistent"`
 
 ### 52. OpenAI prompt caching:
 A. Manual only
@@ -334,16 +334,16 @@ C. Free for all
 D. Disabled by default
 
 ### 53. A semantic cache stores responses keyed by:
-A. Plain prompt text
-B. Embedding-similarity of input, serve hit when new input is semantically close
+A. Embedding-similarity of input, serve hit when new input is semantically close
+B. Plain prompt text
 C. API key
 D. System prompt
 
 ### 54. The dominant multi-provider abstraction in 2026:
 A. requests
-B. LiteLLM
+B. pandas
 C. numpy
-D. pandas
+D. LiteLLM
 
 ### 55. TTFT target for "responsive" chat:
 A. <50ms
@@ -352,16 +352,16 @@ C. <30s
 D. <5min
 
 ### 56. Batch APIs (OpenAI / Anthropic) offer:
-A. Faster realtime
-B. ~50% discount + relaxed limits for non-realtime workloads
+A. ~50% discount + relaxed limits for non-realtime workloads
+B. Faster realtime
 C. Higher quality
 D. Smaller models only
 
 ### 57. Per-customer spend caps primarily defend against:
 A. Slow responses
-B. Buggy customer integrations burning $50K+ overnight
+B. Vendor outages
 C. Low quality
-D. Vendor outages
+D. Buggy customer integrations burning $50K+ overnight
 
 ### 58. Vendor-neutral LLM telemetry is converging on:
 A. CSV logs
@@ -371,9 +371,9 @@ D. Email
 
 ### 59. The MOST important reason to PIN model snapshots (not float on "latest"):
 A. Lower cost
-B. Vendor regressions on new snapshots can break your prompts, pinning forces explicit eval
+B. Faster startup
 C. Smaller context
-D. Faster startup
+D. Vendor regressions on new snapshots can break your prompts, pinning forces explicit eval
 
 ### 60. Capstone design challenge: A regulated insurer is building an AI claims-triage assistant that ingests text + photos + voice memos, extracts structured claim data, reasons about coverage, calls internal tools for policy lookup, and produces a recommendation reviewed by a human adjuster. The MINIMUM viable production-grade architecture is:
 A. One free-form GPT-4o call
@@ -386,16 +386,16 @@ D. Hardcoded regex over free-form outputs
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B    11. B    21. B    31. B    41. B    51. B
-2.  B    12. B    22. B    32. C    42. B    52. B
-3.  B    13. B    23. B    33. B    43. B    53. B
-4.  B    14. B    24. B    34. B    44. B    54. B
-5.  B    15. B    25. B    35. B    45. B    55. B
-6.  B    16. B    26. B    36. B    46. B    56. B
-7.  B    17. A    27. B    37. B    47. B    57. B
-8.  B    18. C    28. B    38. B    48. B    58. B
-9.  C    19. B    29. B    39. B    49. B    59. B
-10. B    20. B    30. B    40. B    50. B    60. B
+1.  A    11. C    21. C    31. B    41. A    51. D
+2.  C    12. D    22. D    32. C    42. C    52. B
+3.  D    13. B    23. B    33. A    43. D    53. A
+4.  B    14. A    24. A    34. C    44. B    54. D
+5.  A    15. C    25. C    35. D    45. A    55. B
+6.  C    16. D    26. D    36. B    46. C    56. A
+7.  D    17. A    27. B    37. A    47. D    57. D
+8.  B    18. C    28. A    38. C    48. B    58. B
+9.  C    19. B    29. C    39. D    49. A    59. D
+10. A    20. A    30. D    40. B    50. C    60. B
 ```
 
 ---
@@ -403,79 +403,79 @@ D. Hardcoded regex over free-form outputs
 ## 💡 Quick Rationales (one-liner per question)
 
 ### Foundations (Q1-7)
-1. **B**, system > developer > user > tool (Wallace 2024 OpenAI Instruction Hierarchy).
-2. **B**, T=0 is greedy; absolute determinism also needs `seed` + deterministic backend.
-3. **B**, Gemini 2.5 Flash at $0.15/$0.60 per MTok is the cheapest mid-tier.
+1. **A**, system > developer > user > tool (Wallace 2024 OpenAI Instruction Hierarchy).
+2. **C**, T=0 is greedy; absolute determinism also needs `seed` + deterministic backend.
+3. **D**, Gemini 2.5 Flash at $0.15/$0.60 per MTok is the cheapest mid-tier.
 4. **B**, Critical info at edges of context per Liu 2023 "Lost in the Middle."
-5. **B**, Output tokens cost 3-5× input on Claude/GPT/Gemini flagships.
-6. **B**, o1/o3/Extended Thinking thinking tokens are billed as output; expensive.
-7. **B** Tay lacked system prompt + hierarchy + filter the canonical 2016 lesson.
+5. **A**, Output tokens cost 3-5× input on Claude/GPT/Gemini flagships.
+6. **C**, o1/o3/Extended Thinking thinking tokens are billed as output; expensive.
+7. **D** Tay lacked system prompt + hierarchy + filter the canonical 2016 lesson.
 
 ### Few-Shot (Q8-14)
 8. **B**, Brown 2020 GPT-3 paper, *Language Models are Few-Shot Learners*.
 9. **C**, Lu 2022 showed 30+pt swings from example reorder.
-10. **B**, 200K+ context + prompt caching make many-shot economical.
-11. **B**, Balance label counts defeats majority-label bias.
-12. **B** Min 2022 random labels still help (format learning).
+10. **A**, 200K+ context + prompt caching make many-shot economical.
+11. **C**, Balance label counts defeats majority-label bias.
+12. **D** Min 2022 random labels still help (format learning).
 13. **B**, kNN retrieval at runtime against a vector index.
-14. **B** Anthropic XML tags preferred convention for Claude few-shot.
+14. **A** Anthropic XML tags preferred convention for Claude few-shot.
 
 ### CoT / Reasoning (Q15-24)
-15. **B** Wei 2022 *Chain-of-Thought Prompting Elicits Reasoning*.
-16. **B**, Kojima 2022's "Let's think step by step."
+15. **C** Wei 2022 *Chain-of-Thought Prompting Elicits Reasoning*.
+16. **D**, Kojima 2022's "Let's think step by step."
 17. **A**, Self-consistency = sample N with T>0, majority-vote.
 18. **C**, N=40 means 40× cost. Use N=5 if eval allows.
 19. **B**, ReAct = Thought / Action / Observation.
-20. **B**, ToT is for search-like problems (puzzles, planning).
-21. **B**, o1 lifted AIME from 13.4% to 56.7%, ~+43pt.
-22. **B**, Claude Extended Thinking exposes `budget_tokens`.
+20. **A**, ToT is for search-like problems (puzzles, planning).
+21. **C**, o1 lifted AIME from 13.4% to 56.7%, ~+43pt.
+22. **D**, Claude Extended Thinking exposes `budget_tokens`.
 23. **B** "Would a smart human need to deliberate?" the router test.
-24. **B**, DeepSeek R1 was the first open-weights reasoning model competitive with o1.
+24. **A**, DeepSeek R1 was the first open-weights reasoning model competitive with o1.
 
 ### Structured Outputs (Q25-31)
-25. **B**, L0 prompt-only → L1 JSON Mode → L2 schema-enforced.
-26. **B**, Anthropic uses forced tool use as its structured-outputs mechanism.
+25. **C**, L0 prompt-only → L1 JSON Mode → L2 schema-enforced.
+26. **D**, Anthropic uses forced tool use as its structured-outputs mechanism.
 27. **B**, `instructor` (Jason Liu) is the cross-provider Pydantic wrapper.
-28. **B**, `Literal` constrains the field to its listed values only.
-29. **B**, OpenAI JSON Mode requires "json" in the prompt.
-30. **B**, `instructor` reprompts with validation error context, up to max_retries.
+28. **A**, `Literal` constrains the field to its listed values only.
+29. **C**, OpenAI JSON Mode requires "json" in the prompt.
+30. **D**, `instructor` reprompts with validation error context, up to max_retries.
 31. **B**, Tool descriptions are part of the prompt; model routes off them.
 
 ### Multi-Modal (Q32-36)
 32. **C**, Gemini 2.5 has native video.
-33. **B**, A high-detail 1024² image ≈ 1,500-2,500 tokens.
-34. **B**, EXIF rotation often NOT honored. Pre-rotate.
-35. **B**, Enumerate points + self-consistency defeats confabulation.
+33. **A**, A high-detail 1024² image ≈ 1,500-2,500 tokens.
+34. **C**, EXIF rotation often NOT honored. Pre-rotate.
+35. **D**, Enumerate points + self-consistency defeats confabulation.
 36. **B**, Image text is a real injection vector. Untrusted input.
 
 ### Evaluation (Q37-43)
-37. **B**, Three pillars: programmatic / LLM-judge / human.
-38. **B**, G-Eval adds CoT + averaged samples.
-39. **B**, Cross-family judge defeats self-preference bias.
+37. **A**, Three pillars: programmatic / LLM-judge / human.
+38. **C**, G-Eval adds CoT + averaged samples.
+39. **D**, Cross-family judge defeats self-preference bias.
 40. **B**, RAGAS = faithfulness + relevance + context precision + recall.
-41. **B**, ~1,500 per arm for a 5pt difference at 80% power.
-42. **B**, Pre-registration prevents p-hacking.
-43. **B**, κ > 0.7 = substantial agreement; rubric is well-defined.
+41. **A**, ~1,500 per arm for a 5pt difference at 80% power.
+42. **C**, Pre-registration prevents p-hacking.
+43. **D**, κ > 0.7 = substantial agreement; rubric is well-defined.
 
 ### Adversarial (Q44-50)
 44. **B**, Direct / indirect / multi-modal injection categories.
-45. **B**, Greshake 2023 indirect prompt injection paper.
-46. **B**, Tool outputs are ALWAYS untrusted input.
-47. **B**, Constitutional AI = self-critique against principles.
+45. **A**, Greshake 2023 indirect prompt injection paper.
+46. **C**, Tool outputs are ALWAYS untrusted input.
+47. **D**, Constitutional AI = self-critique against principles.
 48. **B** Defense in depth multiple independent layers.
-49. **B**, Air Canada chatbot liability ruling Feb 2024.
-50. **B**, DeepSeek R1 January 2025 jailbreak storm.
+49. **A**, Air Canada chatbot liability ruling Feb 2024.
+50. **C**, DeepSeek R1 January 2025 jailbreak storm.
 
 ### Production (Q51-59)
-51. **B**, Anthropic `cache_control` ephemeral/persistent tags.
+51. **D**, Anthropic `cache_control` ephemeral/persistent tags.
 52. **B**, OpenAI auto-caches ≥1024 tokens at ~50% off.
-53. **B**, Semantic cache keys on input embedding similarity.
-54. **B**, LiteLLM is the multi-provider abstraction de facto.
+53. **A**, Semantic cache keys on input embedding similarity.
+54. **D**, LiteLLM is the multi-provider abstraction de facto.
 55. **B**, TTFT <500ms = responsive chat bar.
-56. **B**, Batch APIs: 50% off + relaxed limits for non-realtime.
-57. **B**, Per-customer spend caps prevent runaway bills.
+56. **A**, Batch APIs: 50% off + relaxed limits for non-realtime.
+57. **D**, Per-customer spend caps prevent runaway bills.
 58. **B**, OpenTelemetry GenAI semconv = vendor-neutral telemetry standard.
-59. **B** Pin snapshots vendor regressions break prompts silently.
+59. **D** Pin snapshots vendor regressions break prompts silently.
 
 ### Capstone (Q60)
 60. **B**, Full 12-layer production-grade architecture. Anything less = future incident, regulatory exposure, or unreliable product.

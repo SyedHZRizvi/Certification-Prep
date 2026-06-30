@@ -15,8 +15,8 @@ C. Compressing the model
 D. Replacing the base model
 
 ### 2. For "knowledge updates," the BEST tool is:
-A. Supervised Fine-Tuning
-B. RAG
+A. RAG
+B. Supervised Fine-Tuning
 C. RLHF
 D. Distillation
 
@@ -28,8 +28,8 @@ D. None of the above
 
 ### 4. Vertex AI's SFT under the hood uses:
 A. Full-parameter fine-tuning
-B. LoRA (Low-Rank Adaptation) / parameter-efficient adapters
-C. Random weight reset
+B. Random weight reset
+C. LoRA (Low-Rank Adaptation) / parameter-efficient adapters
 D. Distillation
 
 ### 5. The hyperparameter controlling LoRA rank on Vertex AI:
@@ -39,21 +39,21 @@ C. `adapter_size`
 D. `batch_size`
 
 ### 6. After fine-tuning, the model is better on the holdout but worse on general questions. This is:
-A. Normal
-B. Catastrophic forgetting, solutions: more diverse data, smaller adapter, lower LR
+A. Catastrophic forgetting, solutions: more diverse data, smaller adapter, lower LR
+B. Normal
 C. Quota issue
 D. Network failure
 
 ### 7. DPO (Direct Preference Optimization) differs from RLHF in that:
 A. DPO requires more humans
-B. DPO directly optimizes on preference pairs WITHOUT the RL phase + reward model
+B. They are identical
 C. DPO is older
-D. They are identical
+D. DPO directly optimizes on preference pairs WITHOUT the RL phase + reward model
 
 ### 8. Distillation on Vertex AI:
 A. Compresses the base model
-B. Trains a small "student" (Flash) to mimic a large "teacher" (Pro) on a target task
-C. Removes safety
+B. Removes safety
+C. Trains a small "student" (Flash) to mimic a large "teacher" (Pro) on a target task
 D. Replaces RAG
 
 ### 9. Vertex AI Agent Builder is:
@@ -64,20 +64,20 @@ D. Only for voice
 
 ### 10. Conversational Agents was previously known as:
 A. Dialogflow ES
-B. Dialogflow CX
+B. PaLM Chat
 C. Bard
-D. PaLM Chat
+D. Dialogflow CX
 
 ### 11. The core abstractions in Conversational Agents:
-A. Models, prompts, embeddings
-B. Flows, Pages, Intents, Slots, Fulfillments
+A. Flows, Pages, Intents, Slots, Fulfillments
+B. Models, prompts, embeddings
 C. CPU, memory, disk
 D. Pods, deployments
 
 ### 12. To FORCE Gemini to call a specific function:
 A. Lower temperature
-B. `tool_config` with `mode=ANY` and `allowed_function_names=["X"]`
-C. Add "call X" in user message
+B. Add "call X" in user message
+C. `tool_config` with `mode=ANY` and `allowed_function_names=["X"]`
 D. Not possible
 
 ### 13. ADK stands for:
@@ -94,9 +94,9 @@ D. Search Agent
 
 ### 15. The MAIN reason Wendy's FreshAI uses Conversational Agents (not just Gemini):
 A. Cheaper
-B. Deterministic order-state machine + Gemini for disambiguation; mix of deterministic + creative
+B. To deprecate OpenAI
 C. Required by health regulators
-D. To deprecate OpenAI
+D. Deterministic order-state machine + Gemini for disambiguation; mix of deterministic + creative
 
 ### 16. The four `safety_settings` thresholds (strict → permissive):
 A. BLOCK_LOW_AND_ABOVE → BLOCK_MEDIUM_AND_ABOVE → BLOCK_ONLY_HIGH → BLOCK_NONE
@@ -106,9 +106,9 @@ D. RED → ORANGE → YELLOW → GREEN
 
 ### 17. The recitation checker:
 A. Can be disabled per call
-B. Detects training-data verbatim recitation; blocks output; cannot be disabled
+B. Doesn't exist
 C. Is opt-in only
-D. Doesn't exist
+D. Detects training-data verbatim recitation; blocks output; cannot be disabled
 
 ### 18. The FIRST technical lever to reduce hallucination:
 A. Lower temperature
@@ -117,22 +117,22 @@ C. Bigger model
 D. Disable safety_settings
 
 ### 19. SynthID variants include:
-A. Image only
-B. Image, audio, AND text, all invisible watermarks
+A. Image, audio, AND text, all invisible watermarks
+B. Image only
 C. Text only
 D. Audio only
 
 ### 20. By default on Vertex AI, your prompts and responses:
 A. Are used to train Google's models
-B. Are NOT used to train Google's models (opt-out is default)
-C. Are shared with third parties
+B. Are shared with third parties
+C. Are NOT used to train Google's models (opt-out is default)
 D. Are publicly indexed
 
 ### 21. Google's published security framework for AI systems is called:
 A. NIST CSF
-B. SAIF (Secure AI Framework)
+B. ISO 27001
 C. OWASP ASVS
-D. ISO 27001
+D. SAIF (Secure AI Framework)
 
 ### 22. The MOST IMPORTANT defense against indirect prompt injection:
 A. Lower temperature
@@ -148,9 +148,9 @@ D. Notebook → SSH
 
 ### 24. Vertex AI Pipelines is built on:
 A. Apache Airflow
-B. Kubeflow Pipelines v2 (KFP) + TFX
+B. Cloud Composer
 C. Jenkins
-D. Cloud Composer
+D. Kubeflow Pipelines v2 (KFP) + TFX
 
 ### 25. The three primary failure modes Vertex AI Model Monitoring detects:
 A. Training/serving skew, prediction drift, data drift
@@ -166,20 +166,20 @@ D. Pricing
 
 ### 27. The Bayesian hyperparameter tuning service on Vertex AI is:
 A. AutoML
-B. Vizier
-C. Optuna
+B. Optuna
+C. Vizier
 D. Hyperopt
 
 ### 28. `traffic_split={"0": 90, "1": 10}` on a Vertex AI Endpoint represents:
 A. 90% errors
-B. 90% to model 0, 10% canary to model 1
+B. Invalid
 C. 90% CPU, 10% memory
-D. Invalid
+D. 90% to model 0, 10% canary to model 1
 
 ### 29. The MOST appropriate deployment for a VPC-SC-compliant predictor:
 A. Public Endpoint
-B. Private Endpoint (VPC-only)
-C. Cloud Functions
+B. Cloud Functions
+C. Private Endpoint (VPC-only)
 D. GitHub Pages
 
 ### 30. Vodafone's MLOps migration improved their update velocity from ~2/month to:
@@ -193,16 +193,16 @@ D. They stopped shipping
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B    11. B    21. B
-2.  B    12. B    22. B
+1.  B    11. A    21. D
+2.  A    12. C    22. B
 3.  B    13. A    23. A
-4.  B    14. B    24. B
-5.  C    15. B    25. A
-6.  B    16. A    26. B
-7.  B    17. B    27. B
-8.  B    18. B    28. B
-9.  B    19. B    29. B
-10. B    20. B    30. B
+4.  C    14. B    24. D
+5.  C    15. D    25. A
+6.  A    16. A    26. B
+7.  D    17. D    27. C
+8.  C    18. B    28. D
+9.  B    19. A    29. C
+10. D    20. C    30. B
 ```
 
 ---

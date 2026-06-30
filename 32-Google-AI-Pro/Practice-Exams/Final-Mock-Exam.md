@@ -28,15 +28,15 @@ C. Anthropic in 2021
 D. Meta in 2019
 
 ### 2. Google Brain and DeepMind merged into Google DeepMind in:
-A. December 2022
-B. April 2023
+A. April 2023
+B. December 2022
 C. June 2024
 D. They have not merged
 
 ### 3. The five Gemini tiers, smallest to largest:
 A. Mini, Standard, Pro, Max, Ultra
-B. Nano, Flash Lite, Flash, Pro, Ultra
-C. Bronze, Silver, Gold, Platinum, Diamond
+B. Bronze, Silver, Gold, Platinum, Diamond
+C. Nano, Flash Lite, Flash, Pro, Ultra
 D. Light, Medium, Heavy, Heavyweight, Frontier
 
 ### 4. The MAXIMUM context window on Gemini 2.5 Pro is:
@@ -53,9 +53,9 @@ D. Not available
 
 ### 6. Google AI Principles were published in:
 A. 2015
-B. 2018
+B. 2024
 C. 2021
-D. 2024
+D. 2018
 
 ### 7. The Python SDK for the Gemini API:
 A. `google-generativeai`
@@ -64,8 +64,8 @@ C. `openai`
 D. `tensorflow`
 
 ### 8. To force JSON-Schema-conformant Gemini output:
-A. Lower temperature
-B. `response_mime_type="application/json"` AND `response_schema=<schema>`
+A. `response_mime_type="application/json"` AND `response_schema=<schema>`
+B. Lower temperature
 C. "Output JSON"
 D. Markdown fences
 
@@ -95,13 +95,13 @@ D. 99%
 
 ### 13. Google AI Studio vs Vertex AI, the KEY difference:
 A. Same product
-B. AI Studio = consumer playground (API keys); Vertex AI = enterprise (IAM, VPC-SC, BAA, region, audit)
-C. Vertex AI is free
+B. Vertex AI is free
+C. AI Studio = consumer playground (API keys); Vertex AI = enterprise (IAM, VPC-SC, BAA, region, audit)
 D. AI Studio is enterprise
 
 ### 14. Vertex AI is:
-A. One API
-B. An umbrella over ~25 sub-products
+A. An umbrella over ~25 sub-products
+B. One API
 C. The Gemini playground only
 D. An open-source framework
 
@@ -113,21 +113,21 @@ D. Only open-weight
 
 ### 16. Vertex AI Search vs Vector Search:
 A. Same thing
-B. Search = managed RAG (chunk+embed+index+retrieve+rerank); Vector Search = ANN index for custom embeddings
+B. Vector Search is deprecated
 C. Search is image-only
-D. Vector Search is deprecated
+D. Search = managed RAG (chunk+embed+index+retrieve+rerank); Vector Search = ANN index for custom embeddings
 
 ### 17. Reserved-capacity pricing on Vertex AI Gemini:
 A. Reserved Instances
-B. Provisioned Throughput (GSCUs)
-C. Spot
+B. Spot
+C. Provisioned Throughput (GSCUs)
 D. Free
 
 ### 18. Provisioned Throughput is appropriate when:
 A. Unpredictable low-volume
-B. Steady-state >5K RPM with capacity guarantees
+B. Using Claude only
 C. Prototyping
-D. Using Claude only
+D. Steady-state >5K RPM with capacity guarantees
 
 ### 19. CMEK on Vertex AI:
 A. Encrypts in transit
@@ -136,15 +136,15 @@ C. Free key generation
 D. Self-hosting
 
 ### 20. VPC Service Controls primarily:
-A. Encrypt data
-B. Perimeter against exfiltration
+A. Perimeter against exfiltration
+B. Encrypt data
 C. Allocate CPU
 D. Manage cost
 
 ### 21. For German data residency, the appropriate region:
 A. `us-central1`
-B. `europe-west3` (Frankfurt)
-C. `europe-west1` (Belgium)
+B. `europe-west1` (Belgium)
+C. `europe-west3` (Frankfurt)
 D. `asia-south1`
 
 ### 22. Gemini Default video sampling rate:
@@ -161,15 +161,15 @@ D. Free
 
 ### 24. Audio billing rate on Gemini:
 A. ~1 token/sec
-B. ~32 tokens/sec
+B. Free
 C. 1,000 tokens/sec
-D. Free
+D. ~32 tokens/sec
 
 ### 25. Files API on Gemini:
 A. Always required
-B. Use for files >20MB or reused across calls
+B. PDF-only
 C. Deprecated
-D. PDF-only
+D. Use for files >20MB or reused across calls
 
 ### 26. PDF page limit on Gemini in one prompt:
 A. 10
@@ -178,8 +178,8 @@ C. 1,000
 D. 100,000
 
 ### 27. RAG stands for:
-A. Recursive AI Generation
-B. Retrieval-Augmented Generation
+A. Retrieval-Augmented Generation
+B. Recursive AI Generation
 C. Reasoning Action Graph
 D. Reinforcement Adversarial Gradient
 
@@ -191,21 +191,21 @@ D. Cloud Functions
 
 ### 29. For 30M custom image embeddings:
 A. Vertex AI Search
-B. Vertex AI Vector Search
-C. Cloud SQL
+B. Cloud SQL
+C. Vertex AI Vector Search
 D. AlloyDB
 
 ### 30. The MOST multilingual Google embedding model:
 A. text-embedding-004
-B. multilingual-embedding-002
+B. OpenAI text-embedding-3
 C. Llama embedding
-D. OpenAI text-embedding-3
+D. multilingual-embedding-002
 
 ### 31. Two grounding modes native to Gemini in Vertex AI:
 A. None
-B. Google Search (public) and Vertex AI Search (private)
+B. SQL only
 C. Same thing
-D. SQL only
+D. Google Search (public) and Vertex AI Search (private)
 
 ### 32. Faithfulness as a RAG metric:
 A. Latency
@@ -214,22 +214,22 @@ C. Cost
 D. Speed
 
 ### 33. For "new knowledge that changes frequently," the BEST tool:
-A. SFT
-B. RAG
+A. RAG
+B. SFT
 C. RLHF
 D. Distillation
 
 ### 34. The 5 customization rungs (simplest → most complex):
 A. SFT → RLHF → prompt → RAG → DPO
-B. Better prompt → few-shot → RAG → SFT → RLHF/DPO
-C. Distillation → SFT → prompt → RAG → RLHF
+B. Distillation → SFT → prompt → RAG → RLHF
+C. Better prompt → few-shot → RAG → SFT → RLHF/DPO
 D. Random
 
 ### 35. Vertex AI SFT uses:
 A. Full-parameter FT
-B. LoRA / parameter-efficient adapters
+B. Distillation
 C. Random reset
-D. Distillation
+D. LoRA / parameter-efficient adapters
 
 ### 36. The LoRA rank hyperparameter:
 A. `epochs`
@@ -245,20 +245,20 @@ D. Faster inference
 
 ### 38. DPO vs RLHF:
 A. Same
-B. DPO directly optimizes on preference pairs WITHOUT RL phase or reward model, simpler
+B. None
 C. DPO older
-D. None
+D. DPO directly optimizes on preference pairs WITHOUT RL phase or reward model, simpler
 
 ### 39. Distillation:
-A. Compresses base model
-B. Train small student to mimic large teacher on a target task
+A. Train small student to mimic large teacher on a target task
+B. Compresses base model
 C. Removes safety
 D. Replaces RAG
 
 ### 40. Vertex AI Agent Builder is:
 A. One product
-B. Umbrella over Conversational Agents, Search Agents, Function Calling, ADK, Agent Garden
-C. Same as AI Studio
+B. Same as AI Studio
+C. Umbrella over Conversational Agents, Search Agents, Function Calling, ADK, Agent Garden
 D. Voice only
 
 ### 41. Conversational Agents was formerly known as:
@@ -269,19 +269,19 @@ D. PaLM Chat
 
 ### 42. To force a specific function call on Gemini:
 A. Lower temperature
-B. `tool_config` mode=ANY + allowed_function_names
+B. Not possible
 C. Add to user message
-D. Not possible
+D. `tool_config` mode=ANY + allowed_function_names
 
 ### 43. ADK is:
 A. Closed-source Vertex-only
-B. Open-source agent SDK, works with both Gemini API and Vertex AI
+B. Same as Conversational Agents
 C. Proprietary database
-D. Same as Conversational Agents
+D. Open-source agent SDK, works with both Gemini API and Vertex AI
 
 ### 44. For an IVR phone bot with strict slot collection:
-A. Pure Gemini function calling
-B. Conversational Agents
+A. Conversational Agents
+B. Pure Gemini function calling
 C. ADK
 D. Search Agent
 
@@ -293,21 +293,21 @@ D. Doesn't exist
 
 ### 46. The FIRST anti-hallucination lever:
 A. Lower temperature
-B. Grounding
-C. Bigger model
+B. Bigger model
+C. Grounding
 D. Disable safety_settings
 
 ### 47. SynthID variants:
 A. Image only
-B. Image, audio, AND text
+B. Audio only
 C. Text only
-D. Audio only
+D. Image, audio, AND text
 
 ### 48. Vertex AI default training-data behavior:
 A. Used to train Google's models
-B. NOT used to train Google's models (opt-out default)
+B. Publicly indexed
 C. Shared with third parties
-D. Publicly indexed
+D. NOT used to train Google's models (opt-out default)
 
 ### 49. Google's AI security framework:
 A. NIST CSF
@@ -316,8 +316,8 @@ C. OWASP
 D. ISO 27001
 
 ### 50. Indirect prompt injection:
-A. Direct user instruction
-B. Malicious instructions in retrieved/summarized content hijacking the model
+A. Malicious instructions in retrieved/summarized content hijacking the model
+B. Direct user instruction
 C. SQL injection
 D. Buffer overflow
 
@@ -329,8 +329,8 @@ D. SSH → notebook
 
 ### 52. Vertex AI Pipelines is built on:
 A. Apache Airflow
-B. Kubeflow Pipelines v2 + TFX
-C. Jenkins
+B. Jenkins
+C. Kubeflow Pipelines v2 + TFX
 D. Cloud Composer
 
 ### 53. Model Registry stores:
@@ -341,19 +341,19 @@ D. API keys
 
 ### 54. `traffic_split={"0": 90, "1": 10}`:
 A. 90% errors
-B. 90% to model 0, 10% canary to model 1
+B. Invalid
 C. Resource split
-D. Invalid
+D. 90% to model 0, 10% canary to model 1
 
 ### 55. Model Monitoring detects:
 A. Auth failures
-B. Training/serving skew, prediction drift, data drift, quality drift
-C. CPU/memory/disk
+B. CPU/memory/disk
+C. Training/serving skew, prediction drift, data drift, quality drift
 D. Cost overruns
 
 ### 56. Feature Store solves:
-A. Registration
-B. Training/serving skew via one source of truth
+A. Training/serving skew via one source of truth
+B. Registration
 C. Auth
 D. Pricing
 
@@ -371,8 +371,8 @@ D. Different LLM
 
 ### 59. The MOST IMPORTANT cost optimization for sustained 10K-RPM Gemini Pro:
 A. Streaming
-B. Provisioned Throughput
-C. Disable safety
+B. Disable safety
+C. Provisioned Throughput
 D. Switch clouds
 
 ### 60. Design challenge: Insurance claims processing AI with US data residency, HIPAA-eligible records, 50K/day, multi-modal input, human adjuster review. MINIMUM stack:
@@ -386,18 +386,18 @@ D. ChatGPT Plus
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B    13. B    25. B    37. B    49. B
-2.  B    14. B    26. C    38. B    50. B
-3.  B    15. B    27. B    39. B    51. A
-4.  D    16. B    28. B    40. B    52. B
-5.  B    17. B    29. B    41. B    53. B
-6.  B    18. B    30. B    42. B    54. B
-7.  A    19. B    31. B    43. B    55. B
-8.  B    20. B    32. B    44. B    56. B
-9.  A    21. B    33. B    45. B    57. B
-10. A    22. C    34. B    46. B    58. B
-11. B    23. B    35. B    47. B    59. B
-12. C    24. B    36. C    48. B    60. B
+1.  B    13. C    25. D    37. B    49. B
+2.  A    14. A    26. C    38. D    50. A
+3.  C    15. B    27. A    39. A    51. A
+4.  C    16. D    28. B    40. C    52. C
+5.  B    17. C    29. C    41. B    53. B
+6.  D    18. D    30. D    42. D    54. D
+7.  A    19. B    31. D    43. D    55. C
+8.  A    20. A    32. B    44. A    56. A
+9.  A    21. C    33. A    45. B    57. B
+10. A    22. C    34. C    46. C    58. B
+11. B    23. B    35. D    47. D    59. C
+12. C    24. D    36. C    48. D    60. B
 ```
 
 ---

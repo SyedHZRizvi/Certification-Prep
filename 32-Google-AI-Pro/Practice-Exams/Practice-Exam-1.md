@@ -9,20 +9,20 @@
 ## 📝 Questions
 
 ### 1. The 2017 paper that introduced the Transformer architecture was authored by:
-A. Researchers at OpenAI
-B. Vaswani et al. at Google Brain
+A. Vaswani et al. at Google Brain
+B. Researchers at OpenAI
 C. Anthropic founders
 D. Meta AI Research
 
 ### 2. Google Brain and DeepMind merged in:
 A. December 2022
-B. April 2023 (into Google DeepMind, with Demis Hassabis as CEO)
+B. They have never merged
 C. May 2024
-D. They have never merged
+D. April 2023 (into Google DeepMind, with Demis Hassabis as CEO)
 
 ### 3. The five tiers of the Gemini family (smallest to largest):
-A. Mini / Standard / Pro / Max / Ultra
-B. Nano / Flash Lite / Flash / Pro / Ultra
+A. Nano / Flash Lite / Flash / Pro / Ultra
+B. Mini / Standard / Pro / Max / Ultra
 C. Bronze / Silver / Gold / Platinum / Diamond
 D. Small / Medium / Heavy / Heavyweight / Frontier
 
@@ -34,8 +34,8 @@ D. 2M tokens
 
 ### 5. Gemini's vision is BEST described as:
 A. CLIP-adapter bolted onto a text model
-B. Natively multi-modal, trained on text + image + audio + video jointly from scratch
-C. Outsourced to Anthropic
+B. Outsourced to Anthropic
+C. Natively multi-modal, trained on text + image + audio + video jointly from scratch
 D. Not available
 
 ### 6. The Google AI Principles (2018) document includes:
@@ -45,21 +45,21 @@ C. None, Google has no AI principles
 D. Twelve rules
 
 ### 7. For high-volume intent classification on millions of messages/day, the BEST default Gemini tier:
-A. Gemini Nano
-B. Gemini 2.5 Flash
+A. Gemini 2.5 Flash
+B. Gemini Nano
 C. Gemini 2.5 Pro
 D. Gemini 2.5 Ultra
 
 ### 8. Google AI Studio vs Vertex AI, the KEY difference:
 A. Same product, different branding
-B. AI Studio = consumer-grade playground (API keys, hobby); Vertex AI = enterprise platform (IAM, VPC-SC, billing, residency)
+B. AI Studio runs only on Android
 C. Vertex is free; AI Studio paid
-D. AI Studio runs only on Android
+D. AI Studio = consumer-grade playground (API keys, hobby); Vertex AI = enterprise platform (IAM, VPC-SC, billing, residency)
 
 ### 9. The Python SDK for the Gemini API (NOT Vertex AI) is:
 A. `vertexai.generative_models`
-B. `google-generativeai`
-C. `openai`
+B. `openai`
+C. `google-generativeai`
 D. `tensorflow-hub`
 
 ### 10. The Python SDK module path for Gemini on Vertex AI:
@@ -69,16 +69,16 @@ C. `openai`
 D. `transformers`
 
 ### 11. To force Gemini output to conform to a JSON Schema, you set:
-A. Lower temperature only
-B. `response_mime_type="application/json"` AND `response_schema=<schema>`
+A. `response_mime_type="application/json"` AND `response_schema=<schema>`
+B. Lower temperature only
 C. "OUTPUT JSON" in user message
 D. Markdown fences
 
 ### 12. The four `safety_settings` harm categories are:
 A. Spam, Phishing, Malware, Crime
-B. Harassment, Hate Speech, Sexually Explicit, Dangerous Content
+B. Bias, Toxicity, Privacy, Copyright
 C. PII, PHI, PCI, IP
-D. Bias, Toxicity, Privacy, Copyright
+D. Harassment, Hate Speech, Sexually Explicit, Dangerous Content
 
 ### 13. To estimate token cost before paying for inference:
 A. Call `model.count_tokens(prompt)`, free endpoint
@@ -105,22 +105,22 @@ C. The consumer-grade Gemini playground
 D. An open-source framework
 
 ### 17. Vertex AI Model Garden hosts:
-A. Only Google's Gemini models
-B. Gemini + Claude + Llama + Mistral + Cohere + AI21 + Gemma + …
+A. Gemini + Claude + Llama + Mistral + Cohere + AI21 + Gemma + …
+B. Only Google's Gemini models
 C. Only third-party models
 D. Only open-weight models
 
 ### 18. The MOST appropriate sub-product for "I have 100K PDFs and want managed RAG fast":
 A. Vertex AI Vector Search
-B. Vertex AI Search (formerly Discovery Engine)
-C. BigQuery ML only
+B. BigQuery ML only
+C. Vertex AI Search (formerly Discovery Engine)
 D. Cloud Functions
 
 ### 19. The MOST appropriate sub-product for "I have 30M custom CLIP-style image embeddings":
 A. Vertex AI Search
-B. Vertex AI Vector Search (formerly Matching Engine)
+B. AlloyDB
 C. Cloud SQL
-D. AlloyDB
+D. Vertex AI Vector Search (formerly Matching Engine)
 
 ### 20. The reserved-capacity pricing tier for Gemini on Vertex AI is called:
 A. Reserved Instances
@@ -136,15 +136,15 @@ D. Using Claude
 
 ### 22. VPC Service Controls primarily protects against:
 A. Encryption at rest
-B. Data exfiltration outside a configured perimeter
-C. CPU starvation
+B. CPU starvation
+C. Data exfiltration outside a configured perimeter
 D. Cost overruns
 
 ### 23. CMEK on Vertex AI provides:
 A. Free encryption
-B. Customer-Managed Encryption Keys, you can rotate / revoke
+B. Self-hosting
 C. Per-request encryption only
-D. Self-hosting
+D. Customer-Managed Encryption Keys, you can rotate / revoke
 
 ### 24. For a German bank requiring data residency in Germany, the appropriate Vertex AI region:
 A. `us-central1`
@@ -172,15 +172,15 @@ D. Email to Google
 
 ### 28. The MOST appropriate Google embedding model for Spanish + Portuguese e-commerce:
 A. text-embedding-004 (English-focused)
-B. multilingual-embedding-002 (100+ languages)
-C. Llama embedding
+B. Llama embedding
+C. multilingual-embedding-002 (100+ languages)
 D. OpenAI text-embedding-3
 
 ### 29. The TWO native grounding modes on Gemini in Vertex AI:
 A. None
-B. Public web (Google Search) and private corpus (Vertex AI Search)
+B. SQL only
 C. Same product
-D. SQL only
+D. Public web (Google Search) and private corpus (Vertex AI Search)
 
 ### 30. Claude on Google Cloud is available via:
 A. Not available
@@ -193,15 +193,15 @@ D. Only direct Anthropic API
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B    11. B    21. B
-2.  B    12. B    22. B
-3.  B    13. A    23. B
-4.  D    14. B    24. B
-5.  B    15. C    25. C
+1.  A    11. A    21. B
+2.  D    12. D    22. C
+3.  A    13. A    23. D
+4.  C    14. B    24. B
+5.  C    15. C    25. C
 6.  A    16. B    26. C
-7.  B    17. B    27. B
-8.  B    18. B    28. B
-9.  B    19. B    29. B
+7.  A    17. A    27. B
+8.  D    18. C    28. C
+9.  C    19. D    29. D
 10. A    20. B    30. B
 ```
 
