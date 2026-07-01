@@ -9,7 +9,7 @@
 ### 1. Official AI-103 study guide + Azure AI Foundry documentation (Microsoft Learn)
 The authoritative, free reference for *Developing AI Apps and Agents on Azure*. Start with the [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) for the skill outline, then work through the [Azure AI Foundry documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/) (generative AI apps, single- and multi-agent orchestration, evaluation, observability). Maps section-by-section to the blueprint. **When to engage:** read alongside Modules 1–8; use it for blueprint-section coverage you may have skimmed here.
 
-### 2. *Hands-On Machine Learning with Microsoft Azure ML* Thomas K. Abraham et al. (Packt, 2023; ISBN 978-1-80324-225-4) sometimes also referenced as Bertrand (2023)
+### 2. *Hands-On Machine Learning with Azure* Thomas K. Abraham, Parashar Shah, Jen Stirrup, Lauri Lehman, Anindita Basak (Packt, 2019; ISBN 978-1-78913-195-6)
 Practical, code-first walkthrough of Azure ML and its overlap with the AI-services + Foundry surface. **When to engage:** before the Capstone, gives the hands-on muscle memory for resource provisioning and eval workflows.
 
 ### 3. *Deep Learning*, Ian Goodfellow, Yoshua Bengio, Aaron Courville (MIT Press, 2016; ISBN 978-0-262-03561-3; free at deeplearningbook.org)

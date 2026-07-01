@@ -164,13 +164,14 @@ Where Comprehend is per-document NLP, **Kendra** is *across* a document corpus. 
 
 ---
 
-## 👁️ AWS Managed Computer Vision, The Three That Matter
+## 👁️ AWS Managed Computer Vision, The Two That Matter
 
 | Service | Task | Custom? |
 |---------|------|---------|
 | **Amazon Rekognition** | Object/scene/face/text/celebrity detection, content moderation, video labels | Yes (Custom Labels) |
 | **Amazon Textract** | OCR + form / table / key-value extraction from documents | No (managed) |
-| **Amazon Lookout for Vision** | (Recently consolidated under Rekognition) Industrial defect detection | Custom |
+
+> 📌 **Note:** **Amazon Lookout for Vision** (the former managed industrial defect-detection service) has been **discontinued** by AWS, new-customer access ended in 2024. For visual anomaly / defect detection today, use **Rekognition Custom Labels** or a custom SageMaker model.
 
 ### Amazon Rekognition
 

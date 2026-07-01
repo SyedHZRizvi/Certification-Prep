@@ -148,7 +148,7 @@ These are the algorithms the exam expects you to recognise. We will deepen each 
 | 16 | **Semantic Segmentation (built-in)** | Per-pixel classification | Image + mask pairs | FCN / PSP / DeepLab v3 |
 | 17 | **DeepAR** | Time-series forecasting | JSON Lines | Probabilistic multi-series forecasting |
 
-🎯 **Memory hook for the table:** **6 are tabular** (XGBoost, Linear Learner, K-Means, k-NN, Factorization Machines, RCF). **3 are NLP / embedding** (Object2Vec, NTM, LDA, BlazingText, seq2seq, well, 5 if we count seq2seq + Object2Vec; depends on how you slice). **3 are vision** (Image Classification, Object Detection, Semantic Segmentation). **1 is time-series** (DeepAR). **1 is anomaly** (IP Insights / RCF). **1 is dim. reduction** (PCA).
+🎯 **Memory hook for the table (groups sum to 17):** **4 tabular supervised** (XGBoost, Linear Learner, k-NN, Factorization Machines), **3 clustering / anomaly** (K-Means, Random Cut Forest, IP Insights), **1 dimensionality reduction** (PCA), **2 topic modelling** (NTM, LDA), **3 text / embedding** (BlazingText, Object2Vec, seq2seq), **3 vision** (Image Classification, Object Detection, Semantic Segmentation), and **1 time-series** (DeepAR). That is 4 + 3 + 1 + 2 + 3 + 3 + 1 = **17**.
 
 ### Drilling in: the algorithms you MUST know cold
 

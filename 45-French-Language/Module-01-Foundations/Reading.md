@@ -16,11 +16,11 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 
 ## Why Learn French?
 
-French is spoken by over **300 million people** across 5 continents, making it the second most widely taught language in the world after English. Here is why French is one of the smartest language choices you can make:
+French is spoken by over **320 million people** across 5 continents, making it the second most widely taught language in the world after English. Here is why French is one of the smartest language choices you can make:
 
 - **Diplomacy & International Organisations:** French is an official language of the United Nations, NATO, the EU, the Red Cross, and the International Olympic Committee. Knowing French gives you a direct edge in global careers.
 - **Canada:** French is co-official with English. Québec, New Brunswick, and large communities across Canada are French-speaking — a huge professional advantage if you work with Canadian organisations.
-- **Africa:** More than 300 million Africans speak French. It is the official language of 29 African nations including Senegal, Côte d'Ivoire, DRC Congo, Cameroon, and Morocco — one of the fastest-growing economic regions on earth.
+- **Africa:** More than 160 million Africans speak French. It is the official language of 29 African nations including Senegal, Côte d'Ivoire, DRC Congo, Cameroon, and Morocco — one of the fastest-growing economic regions on earth.
 - **The European Union:** French is one of the EU's 3 working languages (alongside English and German). Brussels and Strasbourg run largely in French.
 - **Fashion, Cuisine & Culture:** French is the global language of haute couture, gourmet food, fine wine, and classical ballet. Major international brands — Louis Vuitton, Chanel, Hermès — operate in French.
 - **Literature & Film:** Camus, Flaubert, Proust, Victor Hugo. The Cannes Film Festival. French cinema is studied worldwide.

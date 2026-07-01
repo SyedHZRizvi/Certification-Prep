@@ -26,7 +26,7 @@
 | Key | ONE for many services | One per service |
 | Tier | S0 only | F0 + S0+ |
 | Use when | Multiple AI services, one bill | Isolate cost/scale, or use free tier |
-| ⚠️ Excludes | **Azure OpenAI** (always separate) |, |
+| ⚠️ Excludes | **Azure OpenAI** (always separate) | — |
 
 ```bash
 az cognitiveservices account create \

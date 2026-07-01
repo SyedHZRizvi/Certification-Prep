@@ -14,7 +14,7 @@ title: French Language Mastery
 
 French is spoken by over 320 million people across 5 continents — from Paris to Québec, Dakar to Beirut. Whether your goal is travel, business, academic study, or earning a DELF/DALF diploma, this course takes you from your very first "Bonjour" all the way to confident, nuanced C2-level fluency.
 
-> 🎯 **English Speaker Advantage:** English has borrowed thousands of words directly from French — *restaurant*, *café*, *ballet*, *résumé*, *genre*, *ballet*, *critique*, *fiancé*, *entrepreneur*, *rendezvous*. You already know hundreds of French words without realising it. This course builds on that foundation from day one.
+> 🎯 **English Speaker Advantage:** English has borrowed thousands of words directly from French — *restaurant*, *café*, *ballet*, *résumé*, *genre*, *critique*, *fiancé*, *entrepreneur*, *rendezvous*. You already know hundreds of French words without realising it. This course builds on that foundation from day one.
 
 ---
 
@@ -87,7 +87,7 @@ French and English share an enormous vocabulary through the Norman Conquest (106
 | **Arts & Culture** | ballet, théâtre, musique, cinéma | ballet, theatre, music, cinema |
 | **Business** | entrepreneur, bureau, finance, résumé | entrepreneur, bureau, finance, resume |
 | **Society** | boulevard, avenue, critique, genre | boulevard, avenue, critique, genre |
-| **Emotions** | joie, tristesse, passion, désir | joy, tristness, passion, desire |
+| **Emotions** | joie, passion, désir, émotion | joy, passion, desire, emotion |
 
 > ⚠️ **Watch Out for False Friends (Faux Amis):** *sensible* in French means "sensitive," not "sensible." *Actuellement* means "currently," not "actually." *Librairie* means "bookshop," not "library." These traps appear on every proficiency exam.
 

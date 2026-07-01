@@ -242,7 +242,7 @@ Q13. B, Double-clicking a symbol instance enters Symbol Editing Mode for that sy
 Q14. C, Animating on twos at 24fps = one new drawing every 2 frames = 12 unique drawings per second.
 Q15. B, Import to Library with layer preservation keeps each Photoshop layer on a separate Animate layer.
 Q16. B, PAL is 25fps. NTSC (US/Japan) is ~29.97fps, rounded to 30 for most digital delivery.
-Q17. B, OAM is an Open Adobe Animate Package: an HTML5 Canvas animation bundled for third-party integration.
+Q17. B, an OAM file (`.oam`) is an HTML5 Canvas animation bundled with its dependencies for third-party integration (e.g. InDesign, Experience Manager).
 Q18. C, Event sync plays audio to completion independent of the timeline. Stream sync ties audio to the playhead.
 Q19. C, Guide layers are visible to the animator but never appear in the final export.
 Q20. A, Break Apart permanently severs the instance-Library link; it becomes raw shapes, not a symbol.

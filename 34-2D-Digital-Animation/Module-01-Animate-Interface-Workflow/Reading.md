@@ -130,7 +130,7 @@ A well-organized Library is the difference between a project you can revise in a
 
 ### OAM Exports
 
-OAM (Open Adobe Animate Package) is a special export format used primarily for integration with Adobe Experience Manager and Adobe InDesign. It packages an HTML5 Canvas animation along with its dependencies into a single `.oam` file. It is less common in pure animation work but appears in interactive content pipelines.
+An OAM file (the `.oam` animation deployment package) is a special export format used primarily for integration with Adobe Experience Manager and Adobe InDesign. It packages an HTML5 Canvas animation along with its dependencies into a single `.oam` file. It is less common in pure animation work but appears in interactive content pipelines.
 
 For most animation workflows, you'll export to video via the **Export Movie** dialog (File → Export → Export Movie) or to HTML/JavaScript for web via File → Publish.
 

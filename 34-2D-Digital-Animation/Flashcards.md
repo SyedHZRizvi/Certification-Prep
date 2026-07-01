@@ -313,7 +313,7 @@
 
 **Q:** What is an OAM file in Adobe Animate?
 
-**A:** An Open Adobe Animate Package, a bundled HTML5 Canvas animation with its dependencies, used for integration with tools like Adobe InDesign and Adobe Experience Manager.
+**A:** The `.oam` animation deployment package, a bundled HTML5 Canvas animation with its dependencies, used for integration with tools like Adobe InDesign and Adobe Experience Manager.
 
 ---
 

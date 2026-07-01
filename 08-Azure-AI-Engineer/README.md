@@ -20,7 +20,7 @@ title: Azure AI App & Agent Developer Track (AI-103)
 
 ### 🎯 The promise
 
-The Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103) is the credential that proves you can **build and ship generative AI applications and autonomous agents** on the cloud platform powering OpenAI, GitHub Copilot, and most of the enterprise AI rollouts of 2025–2026. Microsoft Foundry (Azure AI Foundry), Azure OpenAI, Azure AI Search, Content Understanding, Speech, Vision, and the Language service, AI-103 holders are the engineers wiring all of them into real copilots, RAG systems, and multi-agent workflows. Pass AI-103 and your résumé moves from "interested in AI" to "builds and orchestrates AI agents in production."
+The Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103) is the credential that proves you can **build and ship generative AI applications and autonomous agents** on the cloud platform powering OpenAI, GitHub Copilot, and most of the enterprise AI rollouts of 2025–2026. Microsoft Foundry (Azure AI Foundry), Azure OpenAI, Azure AI Search, Content Understanding, Speech, Vision, the Language service — AI-103 holders are the engineers wiring all of them into real copilots, RAG systems, and multi-agent workflows. Pass AI-103 and your résumé moves from "interested in AI" to "builds and orchestrates AI agents in production."
 
 ### 💼 Career outcomes after passing
 
@@ -35,7 +35,7 @@ AI-103 is the central rung of Microsoft's AI ladder: **AZ-900 (course 05) / AI-9
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**
 - **Story-driven lessons (not flashcard punishment)**, every module solves a real production scenario (a customer-support copilot, a multi-agent claims workflow, a document-extraction pipeline) before introducing services
 - **Original questions only**, quizzes and practice exams written from Microsoft's published skills-measured outline; no copyrighted dumps
 - **Real-world case studies**, Microsoft's internal Copilot rollout, ASOS's product search, KPMG's audit assistant, MAS's policy-document analysis

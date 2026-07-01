@@ -66,8 +66,11 @@ kubectl run nginx --image=nginx --dry-run=client -o yaml > pod.yaml
 # Pod with specific command
 kubectl run busybox --image=busybox --command -- sleep 3600
 
-# Pod with resource requests
-kubectl run nginx --image=nginx --requests='cpu=100m,memory=128Mi'
+# Pod with resource requests — `kubectl run` no longer has --requests/--limits,
+# so scaffold the YAML, add the resources block, then apply
+kubectl run nginx --image=nginx --dry-run=client -o yaml > pod.yaml
+# (edit pod.yaml to add spec.containers[].resources.requests, then:)
+kubectl apply -f pod.yaml
 
 # Pod with labels
 kubectl run nginx --image=nginx --labels="app=web,tier=frontend"

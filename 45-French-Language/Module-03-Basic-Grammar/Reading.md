@@ -280,7 +280,7 @@ Invert subject and verb, connect with hyphen:
 | Où | Where | Où habitez-vous? (Where do you live?) |
 | Quand | When | Quand est-ce que vous arrivez? (When do you arrive?) |
 | Comment | How | Comment allez-vous? (How are you?) |
-| Pourquoi | Why | Pourquoi est-ce que tu pleurs? (Why are you crying?) |
+| Pourquoi | Why | Pourquoi est-ce que tu pleures? (Why are you crying?) |
 | Combien | How much/many | Combien ça coûte? (How much does it cost?) |
 | Quel / Quelle | Which / What | Quel est votre prénom? (What is your first name?) |
 
