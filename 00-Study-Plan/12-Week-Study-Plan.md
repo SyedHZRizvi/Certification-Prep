@@ -5,9 +5,9 @@
 **Study Plan** · 12-Week Study Plan
 *Last updated: 2026-05*
 
-> ⚠️ **Scope of this plan:** The week-by-week schedule below is written for the **Scrum Master → PMP** path as a worked example. If you're preparing for AWS, Azure, AI, Security+, one of the CompTIA IT-sysadmin certs (A+/Network+/Linux+/Server+), Microsoft enterprise (Windows Server/Endpoint/Identity), Generative & Agentic AI (Claude Architect / Prompt Engineering / GenAI Engineer / Google AI Pro / AWS ML Specialty), supply-chain certs, AI Marketing, Bitcoin, or E-Commerce, see [Adapting This Plan To Other Certs](#-adapting-this-plan-to-other-certs) at the bottom, the same principles, pacing logic, and mock-exam cadence transfer cleanly across all 32 tracks.
+> ⚠️ **Scope of this plan:** The week-by-week schedule below is written for the **Scrum Master → PMP** path as a worked example. If you're preparing for AWS, Azure, AI, Security+, one of the CompTIA IT-sysadmin certs (A+/Network+/Linux+/Server+), Microsoft enterprise (Windows Server/Endpoint/Identity), Generative & Agentic AI (Claude Architect / Prompt Engineering / GenAI Engineer / Google AI Pro / AWS ML Specialty), supply-chain certs, AI Marketing, Bitcoin, or E-Commerce, see [Adapting This Plan To Other Certs](#-adapting-this-plan-to-other-certs) at the bottom, the same principles, pacing logic, and mock-exam cadence transfer cleanly across all 47 tracks.
 
-> **Reality check:** This plan assumes ~10 hours/week. Less time? Stretch it to 16 weeks. More time? Compress to 8. **12 weeks is for ONE cert at a time**, not all 32 at once. Pick one, finish it, then start the next.
+> **Reality check:** This plan assumes ~10 hours/week. Less time? Stretch it to 16 weeks. More time? Compress to 8. **12 weeks is for ONE cert at a time**, not all 47 at once. Pick one, finish it, then start the next.
 
 ---
 
@@ -240,7 +240,7 @@ For per-cert pacing, see the `README.md` and `Cheat-Sheet.md` inside each track 
 You've got the plan. Now:
 
 1. ☑️ Open the [Quick Start Guide](../Quick-Start-Guide/) if you haven't picked a cert yet
-2. ☑️ Open the `README.md` of your chosen track (any of the [32 courses](../../))
+2. ☑️ Open the `README.md` of your chosen track (any of the [47 courses](../../))
 3. ☑️ Open [Exam Day Tips](../Exam-Day-Tips/), bookmark it for the morning of
 4. ☑️ Open the [Certifications Catalog](../../Resources/International-Certifications/) to confirm fees + registration steps
 5. ☑️ Start Module 01 today. Not tomorrow. Today.

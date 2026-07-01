@@ -139,7 +139,7 @@ To add students, you have two options:
        "notes": "paid annual subscription"
      }
      ```
-   - To grant access to all 32 courses, use `"courses": "*"` instead of a list.
+   - To grant access to all 47 courses, use `"courses": "*"` instead of a list.
 
 ---
 

@@ -5,7 +5,7 @@ title: Resources
 
 # 📚 Resources
 
-> Curated links to certifications, books, external practice tests, communities, and tools that complement the 32 courses on this site. Use these alongside the modules, don't try to read everything before starting.
+> Curated links to certifications, books, external practice tests, communities, and tools that complement the 47 courses on this site. Use these alongside the modules, don't try to read everything before starting.
 
 **Resources** · Hub
 *Last updated: 2026-05*
@@ -18,7 +18,7 @@ Pick the one that matches what you need right now. Each is a deep-dive on its to
 
 ### 🏆 [International Certifications Catalog](./International-Certifications/)
 
-**Every international cert that the 32 courses on this site map to**, with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules. The single most-referenced page once you're ready to actually take an exam.
+**Every international cert that the 47 courses on this site map to**, with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules. The single most-referenced page once you're ready to actually take an exam.
 
 - **Project & Agile**, PSM I, PMP, CAPM, CSM, PMI-ACP
 - **Cloud AWS** CLF-C02, SAA-C03, AIF-C01 + Pro/Specialty next steps
@@ -34,7 +34,7 @@ Pick the one that matches what you need right now. Each is a deep-dive on its to
 
 ### 📖 [Books & Links](./Books-and-Links/)
 
-The single most-recommended resources (both free vendor materials and paid books/courses), organized by cert family, for **all 32 tracks**.
+The single most-recommended resources (both free vendor materials and paid books/courses), organized by cert family, for **all 47 tracks**.
 
 - **Project & Agile**, The Scrum Guide, PMBOK 7, Andrew Ramdayal's PMP Udemy course
 - **AWS**, AWS Skill Builder (official training portal), AWS docs, exam guides
@@ -82,7 +82,7 @@ Plus: how to find a study buddy, where to ask questions, and which "too good to 
 
 ## 🎓 Tracks You Can Prepare For Here
 
-The 32 courses on this site, grouped by category. Click any course to open its README.
+The 47 courses on this site, grouped by category. Click any course to open its README.
 
 ### Project Management
 - 🏃 [Scrum Master (PSM I)](../01-Scrum-Master/) · 🧭 [PMP](../02-PMP/)
@@ -116,4 +116,4 @@ If you haven't picked a track yet, start with the **Quick Start Guide**, it asks
 - 🚀 [**Quick Start Guide**](../00-Study-Plan/Quick-Start-Guide/), pick your path in under 10 minutes
 - 📅 [**12-Week Study Plan**](../00-Study-Plan/12-Week-Study-Plan/), day-by-day schedule, adaptable to any cert
 - 🎯 [**Exam Day Tips**](../00-Study-Plan/Exam-Day-Tips/), read the morning of your exam
-- 🏠 [**Course Home**](../), all 32 tracks at a glance
+- 🏠 [**Course Home**](../), all 47 tracks at a glance

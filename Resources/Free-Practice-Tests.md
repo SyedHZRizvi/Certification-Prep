@@ -1,6 +1,6 @@
 # 🧪 External Practice Tests
 
-> Where to find more practice questions beyond what's included in each course, for **all 32 tracks** on this site. More practice = more pattern recognition.
+> Where to find more practice questions beyond what's included in each course, for **all 47 tracks** on this site. More practice = more pattern recognition.
 
 **Resources** · Free Practice Tests
 *Last updated: 2026-05*
@@ -489,4 +489,4 @@ You got this! 💪
 - 📚 [**Books & Links**](../Books-and-Links/), the canonical resource list per track
 - 🤝 [**Communities**](../Communities/), find a study buddy
 - 🎯 [**Exam Day Tips**](../../00-Study-Plan/Exam-Day-Tips/), read the morning of your exam
-- 🏠 [**Course Home**](../../), all 32 tracks at a glance
+- 🏠 [**Course Home**](../../), all 47 tracks at a glance

@@ -1,6 +1,6 @@
 # 🚀 Quick Start Guide
 
-> **Goal of this page:** Get you *doing* something within 10 minutes, no matter which of the 32 certifications and tracks you're chasing.
+> **Goal of this page:** Get you *doing* something within 10 minutes, no matter which of the 47 certifications and tracks you're chasing.
 >
 > 🏆 **Looking for the certification you want to chase?** See the [**International Certifications Catalog**](../../Resources/International-Certifications/) for every certification this site maps to, with issuing body, fee, exam format, registration procedure, and renewal rules.
 

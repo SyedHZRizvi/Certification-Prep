@@ -21,7 +21,7 @@ processor, certification body) can see the policy in one place.
 
 **The Cert Hub does NOT download, copy, rehost, or mirror any
 third-party video content.** Every video card on every Videos.md page
-across all 32 courses uses one of two YouTube-sanctioned mechanisms:
+across all 47 courses uses one of two YouTube-sanctioned mechanisms:
 
 | Mechanism | What it is | Legal basis |
 |---|---|---|
@@ -82,7 +82,7 @@ sign-off.
 
 ### 3.1 Twice-weekly automated audit
 
-`scripts/audit-video-ids.py` walks every Videos.md across the 32
+`scripts/audit-video-ids.py` walks every Videos.md across the 47
 courses, extracts each card's `data-video-id` attribute, and verifies
 the video is still live + embeddable via YouTube's public oEmbed API.
 

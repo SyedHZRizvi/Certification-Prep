@@ -5,7 +5,7 @@ title: Study Plan
 
 # 📅 Study Plan
 
-> Three guides that structure your prep from kickoff to exam day, applicable to any of the 32 certifications and tracks on this site. Read them in order, or jump to whatever you need most right now.
+> Three guides that structure your prep from kickoff to exam day, applicable to any of the 47 certifications and tracks on this site. Read them in order, or jump to whatever you need most right now.
 
 **Study Plan** · Hub
 *Last updated: 2026-05*
@@ -63,7 +63,7 @@ What's covered:
 
 ## 🎓 Pick Your Track
 
-Below are the 32 courses, grouped by category. Pick the one you're preparing for and open its README, that's where the cert-specific schedule, modules, and resources live.
+Below are the 47 courses, grouped by category. Pick the one you're preparing for and open its README, that's where the cert-specific schedule, modules, and resources live.
 
 ### Project Management
 - 🏃 [**Scrum Master (PSM I)**](../01-Scrum-Master/)
@@ -124,4 +124,4 @@ Below are the 32 courses, grouped by category. Pick the one you're preparing for
 - 🚀 **Read the [Quick Start Guide](./Quick-Start-Guide/)** if you haven't picked a track yet
 - 📚 **Browse the [Certifications Catalog](../Resources/International-Certifications/)** to compare fees, formats, and renewal rules
 - 📖 **Open the [Books & Links](../Resources/Books-and-Links/)** page for free + paid resources per track
-- 🏠 [**Course Home**](../), all 32 tracks at a glance
+- 🏠 [**Course Home**](../), all 47 tracks at a glance
