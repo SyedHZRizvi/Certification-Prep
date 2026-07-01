@@ -82,6 +82,35 @@ ConditionStep: AUC > 0.85?
 
 🎯 **Exam pattern.** *"Choose ML-native orchestrator for SageMaker workflow."* → **SageMaker Pipelines**.
 
+### Defining, Running, And Parameterising A Pipeline
+
+A pipeline is authored in the Python SDK, serialised to JSON, and stored server-side. The lifecycle is three verbs you must recognise:
+
+| Verb | SDK call | What happens |
+|------|----------|--------------|
+| **Define** | `Pipeline(name=..., steps=[...], parameters=[...])` | Builds the DAG object in memory (nothing runs) |
+| **Upsert** | `pipeline.upsert(role_arn=...)` | Creates or updates the pipeline definition in SageMaker; idempotent |
+| **Run** | `pipeline.start(parameters={...})` | Starts one **execution**; returns an execution ARN you can poll or wait on |
+
+**Parameters** (`ParameterString`, `ParameterInteger`, `ParameterFloat`, `ParameterBoolean`) let one definition serve many runs, override the training instance type, the input S3 path, or the approval status at `start()` time without re-authoring the DAG. **Step caching** (`cache_config=CacheConfig(enable_caching=True, expire_after="30d")`) skips re-running a step whose inputs and arguments are unchanged, which saves real money on repeated executions.
+
+🎯 **Exam pattern.** *"Reuse one training workflow with different input datasets per run."* → **Pipeline parameters** overridden at `start()`, not a new pipeline per dataset.
+
+### Lineage Tracking (Built In, Free)
+
+Every Pipelines execution automatically records **ML lineage**: the chain of artifacts (datasets, models), actions (training, processing jobs), and contexts (endpoints) that produced a given model. This is queryable through the **`LineageTableVisualizer`** in Studio or the `sagemaker.lineage` APIs, and answers audit questions like *"which exact dataset version and hyperparameters produced the model behind this endpoint?"*.
+
+| Lineage entity | Example |
+|----------------|---------|
+| **Artifact** | An S3 dataset, a `model.tar.gz`, a container image |
+| **Action** | A training job, a processing job, a model-registration event |
+| **Context** | An endpoint, an experiment, a model package group |
+| **Association** | The edge linking a training job to its input dataset and output model |
+
+🎯 **Exam pattern.** *"Auditors ask which dataset and code version produced the deployed model."* → **SageMaker ML Lineage Tracking** (automatic for Pipelines runs), not manual spreadsheets.
+
+🚨 **Trap.** Lineage is *automatic* for Pipelines and SDK jobs but you can also emit it manually with the Lineage APIs for out-of-band steps. It is **not** the same as CloudTrail — CloudTrail is API-call audit; Lineage is artifact-to-model provenance.
+
 ---
 
 ## 📦 Model Registry
@@ -99,18 +128,90 @@ A central catalogue of trained models with versioning and approval workflow.
 
 🎯 **Exam pattern.** *"Require human approval before deploying any new model version."* → **Model Registry approval workflow** + Lambda/EventBridge on `ApprovalStatus` change.
 
+### The Approval Workflow, Step By Step
+
+The Registry is the human-in-the-loop gate between "trained" and "deployed". The canonical flow:
+
+1. A Pipeline's `RegisterModel`/`ModelStep` writes a new **model package version** with `approval_status="PendingManualApproval"`.
+2. A reviewer (or an automated policy) inspects the attached **evaluation metrics**, **Model Card**, and **Clarify bias/explainability reports**, then calls `update_model_package(ModelApprovalStatus="Approved")` — via the Studio UI, CLI, or `boto3`.
+3. That status change emits a **SageMaker Model Package State Change** event to **EventBridge**.
+4. An EventBridge rule matching `detail.ModelApprovalStatus = "Approved"` triggers a **Lambda** (or **CodePipeline**) that deploys the exact approved version to staging, then production.
+
+```python
+sm = boto3.client("sagemaker")
+sm.update_model_package(
+    ModelPackageArn="arn:aws:sagemaker:...:model-package/churn/7",
+    ModelApprovalStatus="Approved",      # or "Rejected"
+    ApprovalDescription="Passed bias review; AUC 0.91 on holdout.",
+)
+```
+
+🚨 **Trap.** Registering a model does **not** deploy it. Deployment is a *separate* downstream action gated on `Approved`. A model can sit `PendingManualApproval` forever with no endpoint impact.
+
+🎯 **Exam pattern.** *"How is a specific approved model version promoted automatically?"* → **EventBridge rule on the model-package state-change event → CodePipeline/Lambda deploy**.
+
 ---
 
-## 🏗️ SageMaker Projects
+## 🏗️ SageMaker Projects + Service Catalog MLOps Templates
 
-A **Project** is a templated end-to-end MLOps setup using:
+A **Project** is a templated end-to-end MLOps setup provisioned from an **AWS Service Catalog** product. Instead of every team hand-wiring repos, pipelines, and endpoints, an admin publishes a governed template and each team launches it in one click, getting a consistent, compliant stack.
 
-- An AWS Service Catalog product
-- **CodeCommit/CodeBuild/CodePipeline** for CI/CD of the model code
-- **SageMaker Pipelines** for the training workflow
-- **Model Registry** + automated deployment to staging / production
+**What a Project provisions:**
 
-🎯 **Exam pattern.** *"Bootstrap a standard MLOps repo per team."* → **SageMaker Projects** with the MLOps template (CodePipeline + Pipelines + Registry + endpoints).
+- An **AWS Service Catalog product** (the governed template the org admin controls)
+- Two **CodeCommit** (or third-party Git) repos: one for **model build** (the training pipeline) and one for **model deploy** (the endpoint CI/CD)
+- **CodeBuild** + **CodePipeline** for CI/CD of both repos
+- A **SageMaker Pipeline** for the training workflow (pre-seeded in the build repo)
+- A **Model Registry** package group + automated deploy to **staging → manual-approval gate → production**
+- **EventBridge** rules wiring model registration and code commits to pipeline runs
+
+### The Built-In MLOps Templates
+
+| Template | What it wires up |
+|----------|------------------|
+| **MLOps template for model building/training/deployment** | Build repo (Pipeline) + deploy repo (endpoint CI/CD) + Registry |
+| **... with third-party Git (GitHub/Bitbucket) + Jenkins** | Same, but source in GitHub and CI in Jenkins instead of CodeCommit/CodePipeline |
+| **... for model deployment only** | Just the deploy side, for teams that already have a training pipeline |
+
+🎯 **Exam pattern.** *"Standardise MLOps across many teams with governance and one-click provisioning."* → **SageMaker Projects backed by a Service Catalog product**. Service Catalog is *why* it is governed and repeatable across teams — remember that pairing.
+
+🚨 **Trap.** Projects require the Service Catalog **portfolio to be enabled** for the Studio domain/role. If the exam mentions "team can't create Projects," the missing piece is the Service Catalog permission/portfolio, not IAM on SageMaker directly.
+
+---
+
+## 🔧 CI/CD For ML, CodePipeline + CodeBuild + CodeDeploy + EventBridge
+
+MLOps CI/CD has **two loops**, and the exam expects you to keep them separate:
+
+| Loop | Repo | Trigger | Does |
+|------|------|---------|------|
+| **Model build (CT — continuous training)** | model-build | Code push OR new data event | Runs the SageMaker Pipeline → trains → evaluates → registers to Registry (pending) |
+| **Model deploy (CD)** | model-deploy | Model package **Approved** event | Deploys the approved version to staging, runs tests, gates on approval, deploys to prod |
+
+### The AWS Developer-Tools Building Blocks
+
+| Service | Role in ML CI/CD |
+|---------|------------------|
+| **CodeCommit** (or GitHub/Bitbucket) | Source repo for model code + infra templates |
+| **CodeBuild** | Runs `buildspec.yml`: unit tests, `pipeline.upsert()`, `pipeline.start()`, lint, container build |
+| **CodePipeline** | Orchestrates stages: Source → Build → (train) → Approval → Deploy |
+| **CodeDeploy** | Blue/green traffic shifting (classically for Lambda/ECS; SageMaker endpoints have native blue/green in the endpoint update) |
+| **EventBridge** | The event glue: code push, `ModelApprovalStatus=Approved`, S3 new-data, Model Monitor drift → start the right pipeline |
+| **CodePipeline Manual Approval action** | The human gate between staging and production |
+
+### EventBridge Triggers You Must Know
+
+| Event source | Rule pattern (conceptual) | Action |
+|--------------|---------------------------|--------|
+| **New training data** | S3 `Object Created` on the raw prefix | Start model-build pipeline |
+| **Model approved** | SageMaker `Model Package State Change`, `ModelApprovalStatus=Approved` | Start model-deploy pipeline |
+| **Scheduled retrain** | EventBridge **Scheduler** cron (e.g. weekly) | Start model-build pipeline |
+| **Drift detected** | Model Monitor CloudWatch alarm → EventBridge | Start model-build pipeline |
+| **Pipeline failure** | SageMaker `Pipeline Execution Status Change`, `failed` | SNS page the on-call |
+
+🎯 **Exam pattern.** *"Retrain automatically when new labelled data lands in S3."* → **S3 event → EventBridge rule → CodePipeline/Lambda → SageMaker Pipeline**.
+
+🎯 **Exam pattern.** *"Human sign-off between staging and production deploy."* → **CodePipeline Manual Approval action** (distinct from Model Registry approval, which gates *registration*-to-deploy).
 
 ---
 
@@ -159,8 +260,22 @@ You MUST know this table cold. Many exam questions hinge on it.
 - No long-lived endpoint
 - Pay only for the job runtime
 - Output to S3
+- **`BatchStrategy`** (`MultiRecord` vs `SingleRecord`) + **`MaxPayloadInMB`** + **`MaxConcurrentTransforms`** tune throughput
+- **`assemble_with`** + **`join_source=Input`** re-attach predictions to the input columns in the output file (a common exam detail: "keep the ID column alongside the prediction")
+- Splits input by `SplitType` (`Line`, `RecordIO`, `TFRecord`) and shards across instances (`DataDistributionType=ShardedByS3Key`)
 
 🎯 **Exam pattern.** *"Score 50M records nightly."* → **Batch transform**.
+
+🎯 **Exam pattern.** *"Output must include the original record ID next to each prediction."* → **`join_source="Input"`** on the batch transform.
+
+### Choosing Among The Four (Decision Cheatsheet)
+
+| If the scenario says... | Choose |
+|-------------------------|--------|
+| "Sub-100 ms, steady 24/7 traffic" | **Real-time** |
+| "Idle most of the day, don't pay for idle, cold start OK" | **Serverless** |
+| "Payload up to 1 GB / minutes-long job / queue is fine / scale to zero" | **Async** |
+| "No live endpoint, score a whole dataset on a schedule" | **Batch transform** |
 
 ### Multi-Model Endpoints (MME)
 
@@ -184,9 +299,34 @@ You MUST know this table cold. Many exam questions hinge on it.
 
 SageMaker supports **blue/green with auto-rollback** based on CloudWatch alarms, **canary**, and **linear** out-of-the-box. **Shadow** is a deployment-time feature for endpoints.
 
-🎯 **Exam pattern.** *"Test a new model on real traffic without risk to users."* → **Shadow variant**.
+### How SageMaker Actually Implements These
 
-🎯 **Exam pattern.** *"Auto-rollback if 5xx rate exceeds 5%."* → **Blue/green with auto-rollback** on a CloudWatch alarm.
+For a **real-time endpoint update**, you attach a `DeploymentConfig` with one of three traffic-shifting policies plus `AutoRollbackConfiguration` (a list of CloudWatch alarms). If any alarm fires during the shift, SageMaker halts and rolls back to the old fleet automatically.
+
+| Traffic-shifting policy | `Type` value | Behaviour |
+|-------------------------|--------------|-----------|
+| **All-at-once blue/green** | `ALL_AT_ONCE` | Green fleet up, 100% shift, blue kept for the **baking period**, then torn down |
+| **Canary** | `CANARY` | Shift a small **canary size** first, bake, watch alarms, then shift the rest |
+| **Linear** | `LINEAR` | Shift in equal steps (e.g. 10% every 3 min) with a bake between steps |
+
+Key knobs: **baking period** (`TerminationWaitInSeconds` + `WaitIntervalInSeconds`) holds the old fleet so rollback is instant, and `MaximumExecutionTimeoutInSeconds` caps the whole update.
+
+**Shadow testing** is configured separately (a **shadow variant**): production traffic is *mirrored* to the new model, its responses are logged and compared, but only the production variant's response is returned to the caller. You promote the shadow variant once its metrics look good. Shadow doubles inference cost during the test window.
+
+**A/B (production variants)** differs from shadow: in A/B the challenger variant's responses **are** returned to a weighted slice of real users (so you can measure business KPIs), whereas shadow never returns the challenger's output to users.
+
+| | Shadow | A/B (production variants) |
+|-|--------|---------------------------|
+| Challenger response returned to users? | ❌ Never | ✅ To a weighted % |
+| Measures model-vs-model output diff? | ✅ | ✅ |
+| Measures real business KPI (clicks, conversion)? | ❌ | ✅ |
+| Risk to users | None | Bounded by the weight |
+
+🎯 **Exam pattern.** *"Test a new model on real traffic without risk to users."* → **Shadow variant** (challenger output never reaches users).
+
+🎯 **Exam pattern.** *"Compare business outcomes of two models on live users."* → **A/B production variants** (weighted traffic).
+
+🎯 **Exam pattern.** *"Auto-rollback if 5xx rate exceeds 5%."* → **Blue/green with auto-rollback** on a CloudWatch alarm in `AutoRollbackConfiguration`.
 
 ---
 
@@ -282,6 +422,36 @@ predictor.update_endpoint(
 SageMaker **Inference Recommender** automatically benchmarks your model on different instance types and recommends the cost-optimal one for your latency / throughput targets.
 
 🎯 **Exam pattern.** *"Pick the cheapest endpoint instance type meeting <100 ms p95 latency."* → **Inference Recommender**.
+
+---
+
+## 🧱 Infrastructure As Code, CloudFormation & CDK
+
+Production ML infrastructure (endpoints, endpoint configs, models, pipelines, Model Monitor schedules, alarms, IAM roles) should be **declarative and version-controlled**, not click-ops. The exam expects you to know the two AWS-native IaC tools and when each wins.
+
+| Tool | What it is | Best when |
+|------|------------|-----------|
+| **CloudFormation** | Declarative YAML/JSON templates; the underlying provisioning engine | You want a plain template, or you're wiring it into Service Catalog / CodePipeline |
+| **AWS CDK** | Imperative code (Python, TypeScript, ...) that **synthesises** CloudFormation | You want loops, conditionals, and reusable constructs in a real language |
+| **SAM** | CloudFormation macro for serverless (Lambda glue around ML) | The Lambda/EventBridge glue around your pipeline |
+| **Terraform** | Third-party (HashiCorp) IaC | The org is already standardised on Terraform (valid but non-AWS-native) |
+
+Key SageMaker CloudFormation resource types you may see named:
+
+| Resource | Provisions |
+|----------|-----------|
+| `AWS::SageMaker::Model` | A model (image + artifact + role) |
+| `AWS::SageMaker::EndpointConfig` | Variants, instance types, weights, capture config |
+| `AWS::SageMaker::Endpoint` | The live endpoint (references an EndpointConfig) |
+| `AWS::SageMaker::Pipeline` | A pipeline definition |
+| `AWS::SageMaker::ModelPackageGroup` | A Registry group |
+| `AWS::SageMaker::MonitoringSchedule` | A Model Monitor schedule |
+
+🎯 **Exam pattern.** *"Deploy identical SageMaker endpoints across dev/staging/prod repeatably."* → **CloudFormation (or CDK) templates**, parameterised per environment, run through CodePipeline.
+
+🎯 **Exam pattern.** *"Author infrastructure in Python with loops and reuse, deployed as CloudFormation."* → **AWS CDK** (it synthesises to CloudFormation under the hood).
+
+🚨 **Trap.** SageMaker **Projects** already generate CloudFormation via Service Catalog under the hood — if the scenario wants a *governed, templated, one-click* stack, the answer is **Projects**, not hand-written CloudFormation.
 
 ---
 

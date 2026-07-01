@@ -93,14 +93,47 @@ Tools:
 - **Function Calling**, your functions
 - **Browser**, preview web browsing
 
-Primitives: **Assistant · Thread · Message · Run**.
+Primitives: **Thread → Message → Run → Run step** (run step = the debug unit).
 
 ```python
 agent = project.agents.create_agent(model="gpt-4o", tools=[{"type":"file_search"}])
-thread = project.agents.create_thread()
-project.agents.create_message(thread.id, role="user", content="...")
-run = project.agents.create_and_process_run(thread.id, agent.id)
+thread = project.agents.threads.create()
+project.agents.messages.create(thread_id=thread.id, role="user", content="...")
+run = project.agents.runs.create_and_process(thread_id=thread.id, agent_id=agent.id)
 ```
+
+### Tool family
+
+| Tool | For |
+|---|---|
+| `FunctionTool` | Your code (pauses at `requires_action`) |
+| `FileSearchTool` | RAG over files you upload (vector store) |
+| `AzureAISearchTool` | Ground on an existing AI Search index |
+| `CodeInterpreterTool` | Sandboxed Python |
+| `OpenApiTool` | Call an external REST API |
+| `ConnectedAgentTool` | Expose an agent as a tool (multi-agent) |
+
+---
+
+## 🕸️ Multi-Agent Orchestration
+
+| Topology | Shape | Use when |
+|---|---|---|
+| **Orchestrator–worker** | Planner delegates + composes | Decompose & recombine |
+| **Sequential** | A → B → C | Fixed-order stages |
+| **Hand-off / routing** | Route to one specialist | One-of-N domains |
+| **Group chat** | Agents iterate/critique | Open-ended; **cap turns!** |
+
+🚨 Routing = hand to **one** & exit. Orchestrator = call **many** & compose.
+
+---
+
+## 📏 Agent Evaluation + Observability
+
+- **`azure-ai-evaluation`**: Intent Resolution · Tool Call Accuracy · Task Adherence (+ Groundedness/Relevance/Coherence/Fluency)
+- Quality evaluators are **LLM-as-a-judge** → need a judge `model_config`
+- **Observability**: OpenTelemetry → **Application Insights** (spans per run + per tool call); read **run steps** for the granular record
+- *Score quality* → Evaluation SDK · *debug a live run* → run steps + App Insights
 
 ---
 

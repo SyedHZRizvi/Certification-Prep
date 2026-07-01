@@ -99,12 +99,36 @@ extra_body={
 
 ---
 
-## 🛡️ Content Filters
+## 🏢 Foundry: Hub vs Project
+
+| Hub | Project |
+|---|---|
+| Shared infra: security, networking, connections, Storage/KeyVault/AppInsights | One app's workspace: deployments, flows, evals, indexes, agents |
+
+One hub → many projects. **MaaS** = serverless per-token · **MaaP** = managed compute you size. Reference a **Connection** (never inline keys).
+
+---
+
+## 🌊 Prompt Flow
+
+| Flow type | Job |
+|---|---|
+| Standard | App DAG (LLM/Python/prompt/retrieval nodes) |
+| Chat | Standard + chat I/O + history |
+| Evaluation | Scores another flow's outputs → metrics |
+
+**Variants** = A/B a node. Order: **author → evaluate (gate) → deploy as managed online endpoint → monitor (App Insights)**.
+
+---
+
+## 🛡️ Content Filters + Content Safety
 
 - Default: ON, **Medium** threshold for Hate/Sexual/Violence/Self-Harm, both prompt + completion
 - Customize via Azure AI Foundry → custom filter configuration → apply to deployment
-- Add Prompt Shields, Protected Material, Groundedness on supported models
-- Can't fully disable without approved exemption
+- **Prompt Shields** = jailbreak (user) + **indirect prompt injection** (RAG/tool/doc content)
+- **Groundedness detection** = runtime API flagging hallucinated claims (also an eval metric)
+- Protected Material (text/code); can't fully disable without approved exemption
+- Layered mitigation: **model → safety system → system message + grounding → UX**
 
 ---
 

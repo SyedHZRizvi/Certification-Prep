@@ -1,8 +1,8 @@
 # ✏️ Module 3 Quiz: EDA & Feature Engineering
 
-> 25 questions. Aim 20+/25. 35 minutes. No notes.
+> 28 questions. Aim 23+/28. 40 minutes. No notes.
 
-> **Bloom's distribution.** Remember 3 · Understand 5 · Apply 10 · Analyze/Evaluate 6 · Create 1.
+> **Bloom's distribution.** Remember 3 · Understand 6 · Apply 12 · Analyze/Evaluate 6 · Create 1.
 
 ---
 
@@ -208,6 +208,30 @@ D. RobustScaler
 
 ---
 
+### Q26. To build a training set that reconstructs each customer's features AS OF the event timestamp (no future leakage): *(Apply)*
+A. Feature Store online store `get_record`
+B. Feature Store offline store point-in-time (time-travel) query on event time
+C. A plain S3 `SELECT *`
+D. DynamoDB scan
+
+---
+
+### Q27. To reject a nightly data load inside a Glue ETL job when completeness or value-range checks fail: *(Apply)*
+A. AWS Glue Data Quality (DQDL rules)
+B. Amazon Macie
+C. QuickSight
+D. SMOTE
+
+---
+
+### Q28. Amazon Macie's role in a training-data pipeline is to: *(Understand)*
+A. Redact PII automatically
+B. Discover PII / PHI in S3 (redaction is done by Comprehend or a masking transform)
+C. Train the model
+D. Serve real-time features
+
+---
+
 ## 🎯 Answers + Explanations
 
 ### Q1: **C. Missingness as informative + indicator column**
@@ -285,14 +309,23 @@ If you compute target encoding on the full dataset including validation rows, th
 ### Q25: **B. Variance threshold filter**
 sklearn's `VarianceThreshold` drops near-constant features cheaply.
 
+### Q26: **B. Offline store point-in-time (time-travel) query**
+The offline store keeps every write with its event time, so you reconstruct features as of each event without leaking future values. The online store only holds the latest value.
+
+### Q27: **A. AWS Glue Data Quality (DQDL rules)**
+DQDL rules (completeness, uniqueness, ranges) run inside the Glue job and can fail or route bad loads, a data contract for training inputs.
+
+### Q28: **B. Discover PII / PHI in S3**
+Macie *discovers* sensitive data; it does not redact. Redaction is Comprehend or a Glue/DataBrew/Data Wrangler masking transform.
+
 ---
 
 ## 📊 Score
 
-- 24–25 → 🏆 Mastery. Module 4 awaits.
-- 20–23 → ✅ Solid.
-- 16–19 → ⚠️ Re-read the missing-values, encoding, and class-imbalance sections.
-- <16 → 🔁 Re-read the full Reading.md.
+- 27–28 → 🏆 Mastery. Module 4 awaits.
+- 22–26 → ✅ Solid.
+- 17–21 → ⚠️ Re-read the missing-values, encoding, class-imbalance, and data-quality sections.
+- <17 → 🔁 Re-read the full Reading.md.
 
 ---
 

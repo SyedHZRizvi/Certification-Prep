@@ -324,6 +324,30 @@ The first centralised, dual-mode (online + offline) feature store in any major c
 
 🚨 **Trap.** *"Use the offline store to serve real-time predictions."* → it's S3 with eventual consistency. Use the online store for low latency.
 
+### Online vs Offline, The Full Comparison
+
+| Aspect | Online store | Offline store |
+|--------|--------------|---------------|
+| **Backing** | Low-latency key-value (DynamoDB-style, in-memory) | S3 (Parquet) + Glue Data Catalog |
+| **Read pattern** | `get_record` by record ID, single-digit ms | Athena / Spark SQL, batch |
+| **Serves** | Real-time inference | Training, batch scoring, historical replay |
+| **Consistency** | Latest value per record ID | Append-only history (every write kept) |
+| **Cost** | Higher per GB (always warm) | Cheap (S3) |
+| **Time-travel** | ❌ (latest only) | ✅ point-in-time via event time |
+
+You choose the mode at feature-group creation: `enable_online_store=True` (both), or offline-only for training-only feature groups.
+
+### Two Concepts The Exam Loves
+
+- **Point-in-time (time-travel) queries.** The offline store keeps every write with its **event time**, so you can reconstruct "what did this customer's features look like at the moment of that transaction?" This is how you build training sets **without label leakage** — you never accidentally use a feature value computed *after* the event you're predicting.
+- **Training/serving skew elimination.** Because the same feature definitions feed both stores, the features at training time and at inference time are computed identically. This is the headline reason Feature Store exists.
+
+🎯 **Exam pattern.** *"Reconstruct historical feature values as of each event's timestamp to avoid leakage."* → **Offline store point-in-time (time-travel) query on event time**.
+
+🎯 **Exam pattern.** *"Eliminate training/serving skew across many teams reusing the same features."* → **SageMaker Feature Store** (single feature definitions, dual-written online + offline).
+
+🚨 **Trap.** **Feature group requires** a `record_identifier` and an `event_time` feature, both mandatory. A question that omits event time and asks "why did feature-group creation fail?" is testing this.
+
 ---
 
 ## 📊 Amazon QuickSight & Amazon Q in QuickSight
@@ -354,6 +378,55 @@ Before training, check for **data bias** that could lead to unfair outcomes. Sag
 | **Conditional Demographic Disparity (CDDL)** | Disparity adjusted for confounders |
 
 🎯 **Exam pattern.** *"Loan dataset has 65% approval rate for one gender and 38% for another. Detect this BEFORE training."* → **SageMaker Clarify pre-training bias report** (DPL, CI, KL).
+
+🚨 **Trap.** These are **pre-training (data)** metrics. **Post-training** bias (DPPL, Disparate Impact, on the model's *predictions*) is a Module 8 topic. The exam swaps the two to test whether you know which lifecycle stage you're at.
+
+---
+
+## 🧹 Data Quality & Governance Before Training
+
+Bias is one facet of data quality; the exam also tests the AWS tooling that validates, profiles, and de-risks a dataset **before** it reaches a training job.
+
+| Tool | What it does | Signature cue |
+|------|--------------|---------------|
+| **AWS Glue Data Quality** | Define **DQDL** rules (completeness, uniqueness, ranges, referential) on Glue tables / ETL; can **auto-recommend** rules from a profile; fails or flags bad loads | "enforce data-quality rules in the ETL pipeline" |
+| **AWS Glue DataBrew** | No-code visual **profiling** (250+ stats: distributions, cardinality, missingness, correlations) + 250+ cleaning transforms | "no-code profiling / cleaning by an analyst" |
+| **SageMaker Data Wrangler Data Quality & Insights Report** | In-Studio auto report: target leakage, duplicate rows, anomalies, feature importance | "inside SageMaker Studio, one-click quality report" |
+| **SageMaker Clarify (pre-training bias)** | Fairness metrics on the raw dataset (CI, DPL, KL/JS) | "detect demographic imbalance before training" |
+| **Amazon Macie** | Discovers **PII/PHI** (names, SSNs, health data) in S3 | "find sensitive data in the training bucket" |
+
+### Glue Data Quality (DQDL) In One Glance
+
+```
+Rules = [
+    Completeness "customer_id" = 1.0,
+    Uniqueness  "customer_id" > 0.99,
+    ColumnValues "age" between 0 and 120,
+    ColumnValues "state" in ["CA","NY","TX", ...]
+]
+```
+
+A ruleset can run as part of a Glue job and **stop the pipeline** (or route bad rows aside) when the score drops below threshold, the "data contract" for your training inputs.
+
+🎯 **Exam pattern.** *"Reject a nightly data load if completeness or value ranges break, inside the Glue ETL."* → **AWS Glue Data Quality (DQDL rules)**.
+
+🎯 **Exam pattern.** *"An analyst wants no-code profiling and cleaning of a dataset."* → **AWS Glue DataBrew**.
+
+### Handling PII / PHI In Training Data
+
+Regulated data (HIPAA PHI, GDPR PII) must be discovered and neutralised before it becomes features:
+
+| Step | Service / technique |
+|------|---------------------|
+| **Discover** | **Amazon Macie** scans S3 for PII/PHI and produces findings |
+| **Redact / mask** | **Amazon Comprehend** (`DetectPiiEntities` / redaction), Glue/DataBrew masking transforms |
+| **Tokenise / pseudonymise** | Replace identifiers with tokens; keep a separate secured mapping |
+| **Minimise** | Drop columns you don't need (data minimisation is the cheapest control) |
+| **Encrypt + isolate** | SSE-KMS on the bucket; VPC-only processing (Module 10 depth) |
+
+🎯 **Exam pattern.** *"Detect and redact PII in unstructured text before training an NLP model."* → **Comprehend PII detection/redaction** (discovery in S3 = **Macie**).
+
+🚨 **Trap.** **Macie discovers**; it does **not** redact. Redaction/masking is Comprehend or a Glue/DataBrew/Data Wrangler transform. The exam pairs the wrong verb with the wrong service.
 
 ---
 

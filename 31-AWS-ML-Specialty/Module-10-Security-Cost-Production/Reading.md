@@ -151,6 +151,141 @@ Bedrock can also be invoked via VPC endpoints (PrivateLink). Traffic never trave
 
 ---
 
+## 🔬 SageMaker Model Monitor, The Four Monitors In Depth
+
+Module 9 named the four monitors; here is the depth the exam tests. Every monitor follows the same three-phase pattern, **baseline → schedule → violations**, but each watches a different signal and each has a specific prerequisite.
+
+| Monitor | Watches | Needs ground-truth labels? | Depends on Clarify? |
+|---------|---------|---------------------------|---------------------|
+| **Data Quality** | Input feature distributions & schema vs a baseline (mean, std, missingness, type) | ❌ | ❌ |
+| **Model Quality** | Prediction accuracy/AUC/RMSE vs actual labels | ✅ (join predictions to labels) | ❌ |
+| **Model Bias Drift** | Bias metrics (e.g. DPPL) on live traffic vs baseline | ⚠️ (for label-dependent metrics) | ✅ |
+| **Feature Attribution Drift** | SHAP attribution ranking shift (NDCG) vs baseline | ❌ | ✅ |
+
+### The Shared Machinery
+
+1. **Data Capture** must be enabled on the endpoint (`DataCaptureConfig`, sampling %) so inputs and outputs land in S3.
+2. A **baseline / suggest-baseline** job computes `statistics.json` + `constraints.json` from training data.
+3. A **MonitoringSchedule** (hourly/daily cron) runs a processing job that compares captured data to the baseline.
+4. Violations are written to S3 and surfaced as the CloudWatch metric group; wire an **alarm** on them.
+
+```python
+# Model QUALITY monitor also needs a ground-truth ingestion step:
+from sagemaker.model_monitor import ModelQualityMonitor
+mq = ModelQualityMonitor(role=role, instance_type="ml.m5.xlarge", instance_count=1)
+mq.suggest_baseline(
+    baseline_dataset="s3://bkt/val-with-labels.csv",
+    problem_type="BinaryClassification",
+    inference_attribute="prediction",
+    ground_truth_attribute="label",
+    dataset_format=DatasetFormat.csv(header=True),
+)
+```
+
+🚨 **Trap.** **Data Quality** monitor needs *no labels* and catches input drift immediately. **Model Quality** needs labels, which usually arrive *late* (you learn the true outcome days later), so it can only report quality drift on a lag. Exam scenarios often hinge on "labels not available yet" → **Data Quality** (or Feature Attribution) is the only option that works *now*.
+
+🎯 **Exam pattern.** *"Ground truth arrives weeks later; detect degradation as soon as possible."* → **Data Quality + Feature Attribution Drift** now; **Model Quality** once labels arrive.
+
+---
+
+## ⚖️ SageMaker Clarify, Bias & Explainability In Depth
+
+Clarify does three jobs across the lifecycle: **pre-training bias**, **post-training bias**, and **explainability** (SHAP). Model Monitor's Bias and Feature-Attribution monitors are Clarify running on a schedule.
+
+### Pre-Training Bias Metrics (Data, Before You Train)
+
+| Metric | Measures |
+|--------|----------|
+| **Class Imbalance (CI)** | Under/over-representation of a facet |
+| **Difference in Proportions of Labels (DPL)** | Gap in positive-label rate between facets |
+| **KL / JS divergence** | Distribution divergence of labels between facets |
+| **Kolmogorov-Smirnov (KS)** | Max divergence between facet label distributions |
+| **Conditional Demographic Disparity in Labels (CDDL)** | Disparity after conditioning on a confounder |
+
+### Post-Training Bias Metrics (Predictions, After You Train)
+
+| Metric | Measures |
+|--------|----------|
+| **Difference in Positive Proportions in Predicted labels (DPPL)** | Predicted positive-rate gap between facets |
+| **Disparate Impact (DI)** | Ratio of predicted positive rates |
+| **Recall / Accuracy Difference (RD / AD)** | Performance gap between facets |
+| **Treatment Equality (TE)** | Ratio of FN/FP across facets |
+| **Counterfactual Flip (FT)** | Predictions that flip when only the facet changes |
+
+### Explainability
+
+- **SHAP** (Shapley additive explanations): per-feature contribution to each prediction, global + local.
+- **Partial Dependence Plots (PDP)**: marginal effect of a feature.
+- For **computer vision / NLP**, Clarify supports feature (pixel/token) attributions too.
+
+🎯 **Exam pattern.** *"Explain why the model denied this specific applicant."* → **Clarify SHAP local explanation**.
+
+🎯 **Exam pattern.** *"Loan approval rate differs by gender in the model's predictions."* → **Clarify post-training bias (DPPL / DI)**.
+
+🚨 **Trap.** **Pre-training bias** is about the *data* (DPL, CI); **post-training bias** is about the *predictions* (DPPL, DI). The exam swaps these to test whether you know which stage you're at.
+
+---
+
+## 🧪 A/B Testing In Production (Deeper)
+
+Beyond Module 9's weighted variants, the operational discipline is what the exam probes:
+
+| Concept | Detail |
+|---------|--------|
+| **Production variants** | Multiple models on one endpoint; `InitialVariantWeight` splits traffic probabilistically |
+| **`TargetVariant` header** | Force a specific variant per invocation (useful for deterministic testing / debugging) |
+| **Per-variant metrics** | CloudWatch emits `Invocations`, latency, errors **per variant**, that's how you compare |
+| **Statistical significance** | Don't promote on noise, run until the KPI difference is significant for your traffic |
+| **Shadow vs A/B** | Shadow never returns challenger output to users; A/B does, to a weighted slice |
+
+🎯 **Exam pattern.** *"Route 5% of traffic to a new model and compare conversion in CloudWatch, forcing specific variant for QA."* → **Production variants + `TargetVariant` for QA + per-variant CloudWatch metrics**.
+
+---
+
+## 🔭 Observability For ML In Depth
+
+| Tool | ML-specific use | Signature exam cue |
+|------|-----------------|--------------------|
+| **CloudWatch Metrics** | Per-variant invocations, `ModelLatency`, `OverheadLatency`, `Invocation4XX/5XX`, custom | "alarm on p95 latency" |
+| **CloudWatch Logs Insights** | Query endpoint/training logs with a SQL-like language for error patterns, latency percentiles | "search across logs for the error pattern / compute p99 from logs" |
+| **AWS X-Ray** | Distributed trace across Lambda → endpoint → DynamoDB/RDS | "find which hop adds latency across services" |
+| **CloudTrail** | Who called `CreateEndpoint`/`InvokeEndpoint`; can *trigger* automation | "audit API calls" / "trigger on a specific API call" |
+| **Model Monitor** | Drift signals as CloudWatch metrics | "detect drift on live data" |
+
+### Logs Insights, A Concrete Query
+
+```
+fields @timestamp, @message
+| filter @message like /ModelError/
+| stats count(*) as errors by bin(5m)
+| sort errors desc
+```
+
+🎯 **Exam pattern.** *"Ad-hoc query across endpoint logs to compute p99 latency or find an error spike."* → **CloudWatch Logs Insights** (not raw log tailing, not Athena).
+
+### CloudTrail-Triggered Retraining
+
+CloudTrail management events can flow to **EventBridge**, so a governance action (e.g. a new dataset registered, a specific `PutObject`, or an approval API call) can **trigger a retraining pipeline**. This is the audit-driven cousin of the Model-Monitor-driven retrain from Module 9.
+
+🎯 **Exam pattern.** *"Kick off retraining whenever a specific API action is recorded for compliance."* → **CloudTrail → EventBridge → Lambda/Pipeline**.
+
+### Right-Sizing Tools
+
+| Tool | Scope |
+|------|-------|
+| **SageMaker Inference Recommender** | Benchmarks a *model* across instance types → cost-optimal endpoint pick |
+| **AWS Compute Optimizer** | Analyses *EC2/Auto Scaling/Lambda/EBS* utilisation → right-size recommendations (broader, not ML-specific) |
+
+🚨 **Trap.** For picking the best **SageMaker endpoint instance type for a given model**, use **Inference Recommender**. **Compute Optimizer** is the general AWS right-sizing service for EC2/Lambda/EBS, not SageMaker endpoints. The exam contrasts these.
+
+### Cost Allocation Tags
+
+Tag SageMaker resources (endpoints, training jobs, notebooks) with keys like `team`, `project`, `env`. Once activated in the Billing console, **cost allocation tags** let Cost Explorer and AWS Budgets slice ML spend per team/project, the prerequisite for chargeback and per-model cost alarms.
+
+🎯 **Exam pattern.** *"Attribute SageMaker spend to each team for chargeback."* → **Activate cost allocation tags**, then Cost Explorer / Budgets grouped by tag.
+
+---
+
 ## 💰 Cost-Optimisation Levers, The Full Catalogue
 
 ### Training

@@ -1,6 +1,6 @@
 # ✏️ Module 10 Quiz: Security, Cost & Production
 
-> 24 questions. Aim 20+/24. 35 min.
+> 29 questions. Aim 23+/29. 40 min.
 
 ---
 
@@ -198,6 +198,46 @@ D. Switch to on-prem
 
 ---
 
+### Q25. Ground-truth labels for a deployed classifier arrive weeks later. To detect degradation as SOON as possible you should rely on: *(Apply)*
+A. Model Quality monitor only
+B. Data Quality + Feature Attribution Drift monitors (no labels needed)
+C. CloudTrail
+D. Wait for the labels
+
+---
+
+### Q26. A loan model's PREDICTED approval rate differs sharply by gender. The correct Clarify analysis is: *(Apply)*
+A. Pre-training bias (DPL / CI)
+B. Post-training bias (DPPL / Disparate Impact)
+C. SHAP global explanation only
+D. Data Quality monitor
+
+---
+
+### Q27. To run an ad-hoc query across endpoint logs to compute p99 latency and find an error spike: *(Apply)*
+A. CloudWatch Logs Insights
+B. Tail raw logs by hand
+C. AWS Config
+D. Macie
+
+---
+
+### Q28. To pick the cost-optimal SageMaker ENDPOINT instance type for a given model under a latency SLA: *(Apply)*
+A. AWS Compute Optimizer
+B. SageMaker Inference Recommender
+C. Trusted Advisor
+D. Cost Explorer
+
+---
+
+### Q29. To attribute SageMaker spend to each team for chargeback: *(Apply)*
+A. Activate cost allocation tags, then group Cost Explorer / Budgets by tag
+B. One shared account with no tags
+C. GuardDuty
+D. CloudTrail data events
+
+---
+
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Custom IAM role + bucket policy**
@@ -272,14 +312,29 @@ ECR has both API and DKR (image data) endpoints; S3 Gateway provides backing obj
 ### Q24: **B. Inferentia2 + Graviton + right-sizing + MME + managed services**
 Highest-impact sustainability moves; managed services have AWS-optimised data centres.
 
+### Q25: **B. Data Quality + Feature Attribution Drift**
+Both work without labels, so they flag degradation immediately. Model Quality has to wait for ground truth.
+
+### Q26: **B. Post-training bias (DPPL / Disparate Impact)**
+Post-training bias analyses the model's *predictions*. Pre-training bias (DPL/CI) analyses the *data*.
+
+### Q27: **A. CloudWatch Logs Insights**
+Purpose-built SQL-like log querying for ad-hoc analysis (percentiles, error patterns) across log groups.
+
+### Q28: **B. SageMaker Inference Recommender**
+It benchmarks the model across instance types for the cost-optimal endpoint under an SLA. Compute Optimizer right-sizes EC2/Lambda/EBS, not SageMaker endpoints.
+
+### Q29: **A. Cost allocation tags**
+Tag resources by team/project, activate the tags in Billing, then slice Cost Explorer / Budgets by tag for chargeback.
+
 ---
 
 ## 📊 Score
 
-- 22-24 → 🏆 Course complete!
-- 19-21 → ✅ Take Final Mock soon
-- 15-18 → ⚠️ Re-read security + cost sections
-- <15 → 🔁 Restart Module 10
+- 27-29 → 🏆 Course complete!
+- 23-26 → ✅ Take Final Mock soon
+- 18-22 → ⚠️ Re-read security + monitoring + cost sections
+- <18 → 🔁 Restart Module 10
 
 ---
 

@@ -248,7 +248,7 @@ Provides:
 from azure.ai.projects import AIProjectClient
 from azure.identity import DefaultAzureCredential
 
-project = AIProjectClient.from_connection_string(connection_string, credential=DefaultAzureCredential())
+project = AIProjectClient(endpoint="https://<your-project>.services.ai.azure.com/api/projects/<name>", credential=DefaultAzureCredential())
 
 agent = project.agents.create_agent(
     model="gpt-4o-chat",
@@ -257,9 +257,9 @@ agent = project.agents.create_agent(
     tools=[{"type":"file_search"}, {"type":"code_interpreter"}]
 )
 
-thread = project.agents.create_thread()
-project.agents.create_message(thread.id, role="user", content="Summarize last week's tickets.")
-run = project.agents.create_and_process_run(thread.id, agent.id)
+thread = project.agents.threads.create()
+project.agents.messages.create(thread_id=thread.id, role="user", content="Summarize last week's tickets.")
+run = project.agents.runs.create_and_process(thread_id=thread.id, agent_id=agent.id)
 ```
 
 ### Patterns
@@ -414,6 +414,47 @@ while run.status in ("queued", "in_progress", "requires_action"):
 | **File Search** | Foundry (RAG over uploads) | No |
 | **OpenAPI / connected tools** | Foundry via connection | No |
 
+### The Tool Family You Must Recognize
+
+The `azure-ai-agents` SDK ships a typed class per tool. The exam tests *which tool solves which need*:
+
+| Tool class | What it gives the agent | Executes where | Set up with |
+|---|---|---|---|
+| **`FunctionTool`** | Calls *your* Python functions (JSON-schema tools) | Your code (pauses at `requires_action`) | `FunctionTool(functions={fn})` |
+| **`FileSearchTool`** | Server-side RAG over uploaded files via a **vector store** | Foundry | `FileSearchTool(vector_store_ids=[...])` |
+| **`CodeInterpreterTool`** | Sandboxed Python for data/plots/math | Foundry | `CodeInterpreterTool()` |
+| **`AzureAISearchTool`** | Grounding against an existing **Azure AI Search** index connection | Foundry | `AzureAISearchTool(index_connection_id, index_name)` |
+| **`OpenApiTool`** | Calls an external REST API described by an OpenAPI spec | Foundry via connection | `OpenApiTool(name, spec, auth)` |
+| **`ConnectedAgentTool`** | Exposes another agent as a callable tool (multi-agent) | Foundry | `ConnectedAgentTool(id, name, description)` |
+
+🎯 **Exam tip:** Two RAG-ish tools, know the difference. **`FileSearchTool`** = RAG over files *you upload to the agent* (a managed vector store). **`AzureAISearchTool`** = grounding against an *existing enterprise* Azure AI Search index via a connection. "Documents I upload to the assistant" → File Search. "Our existing production search index" → Azure AI Search tool.
+
+### Threads, Runs, Run Steps, and Messages
+
+The data plane you're tested on is a four-level hierarchy:
+
+| Object | Granularity | You use it to… |
+|---|---|---|
+| **Thread** | One conversation (durable memory) | Reuse `thread.id` to continue; new thread to start fresh |
+| **Message** | One turn added to a thread | Add user input; read the assistant's reply |
+| **Run** | One processing pass over the thread by an agent | Start work; poll status (`queued`→`in_progress`→`requires_action`→`completed`) |
+| **Run step** | One atomic action *inside* a run — a `tool_calls` step or a `message_creation` step | **Observability**: see exactly what the agent did, each tool call, latency, tokens |
+
+**Run steps are the observability unit.** When a run misbehaves ("why did it call the wrong tool?"), you list the run steps and read each `tool_calls` step — the tool name, the arguments the model generated, and the output it got back.
+
+```python
+# Inspect every action the agent took during a run
+steps = project.agents.run_steps.list(thread_id=thread.id, run_id=run.id)
+for step in steps:
+    print(step.type, step.status)          # 'tool_calls' | 'message_creation'
+    details = step.step_details
+    if step.type == "tool_calls":
+        for call in details.tool_calls:
+            print("  tool:", call.type)     # function / file_search / code_interpreter / ...
+```
+
+🎯 **Exam tip:** The four-level chain is a favorite recall question. **Thread → Message → Run → Run step.** The *run step* (not the run) is the granular record of a single tool call or model message — the thing you read to debug tool selection.
+
 ### Memory and Threads
 
 Memory in Agent Service is **the thread**. Each thread accumulates messages and the service handles context; you reuse a `thread.id` to continue a conversation, and you create a new thread to start fresh. There is no need to re-send prior turns.
@@ -448,9 +489,61 @@ You cannot ship an agent you can't measure. Two halves:
 | **Groundedness / Relevance / Coherence / Fluency** | The standard quality set (carry over from RAG) |
 | **Safety (Hate/Sexual/Violence/Self-Harm, Jailbreak)** | Content Safety categories |
 
+The agent-specific evaluators are the ones AI-103 added on top of the RAG quality set. Know what each *needs* as input:
+
+| Evaluator | Needs | Passes when |
+|---|---|---|
+| **Intent Resolution** | query + agent response | The agent correctly identified what the user wanted |
+| **Tool Call Accuracy** | query + tool definitions + the calls the agent made | The right tool was chosen with the right arguments |
+| **Task Adherence** | query + response (+ instructions) | The agent stayed on task and followed its instructions |
+| **Groundedness** | response + context | The answer is supported by the retrieved context |
+| **Relevance / Coherence / Fluency** | query + response | Standard quality set (carried from RAG) |
+
+Running an evaluator from the SDK is a few lines — the pattern the exam wants you to recognize:
+
+```python
+from azure.ai.evaluation import evaluate, GroundednessEvaluator, RelevanceEvaluator
+from azure.ai.evaluation import IntentResolutionEvaluator, ToolCallAccuracyEvaluator
+
+model_config = {  # judge model (LLM-as-a-judge) for the quality evaluators
+    "azure_endpoint": AOAI_ENDPOINT, "azure_deployment": "gpt-4o",
+    "api_version": "2024-08-01-preview",
+}
+
+result = evaluate(
+    data="agent_test_set.jsonl",             # rows: query, response, context, tool_calls, ...
+    evaluators={
+        "groundedness": GroundednessEvaluator(model_config),
+        "relevance":    RelevanceEvaluator(model_config),
+        "intent":       IntentResolutionEvaluator(model_config),
+        "tool_accuracy": ToolCallAccuracyEvaluator(model_config),
+    },
+    azure_ai_project=PROJECT_ENDPOINT,        # publish scores back to the Foundry project
+)
+print(result["metrics"])                      # aggregate scores + a dashboard link
+```
+
+🎯 **Exam tip:** Most quality evaluators (groundedness, relevance, coherence, intent resolution) are **LLM-as-a-judge** — they need a `model_config` for the judge model. If a question asks "what does the groundedness evaluator require," a **judge model deployment** is part of the answer.
+
 **Observability** — agent runs emit **OpenTelemetry traces** that flow to **Application Insights** (wired through the Foundry project). You inspect **run steps** to see every reasoning step and tool call, latency, and token cost per step. "Trace why the agent called the wrong tool" → read the **run steps** + the Application Insights trace.
 
-🎯 **Exam tip:** Match the verb to the surface — *score quality* → **Evaluation SDK / Foundry evaluators**; *debug a live run* → **run steps + OpenTelemetry → Application Insights**.
+The wiring is the standard OpenTelemetry pattern — grab the project's Application Insights connection string and enable tracing:
+
+```python
+from azure.monitor.opentelemetry import configure_azure_monitor
+
+# The connection string is stored on the Foundry project
+conn = project.telemetry.get_connection_string()
+configure_azure_monitor(connection_string=conn)   # traces/metrics/logs → App Insights
+# (optional) enable content recording for prompts/completions in traces:
+#   env AZURE_TRACING_GEN_AI_CONTENT_RECORDING_ENABLED=true
+```
+
+Traces then appear in **Application Insights** (and the Foundry **Tracing** view): end-to-end spans per run, one child span per tool call, with latency and token counts. Query them in **Log Analytics** (Kusto) for aggregates.
+
+🎯 **Exam tip:** Match the verb to the surface — *score quality* → **`azure-ai-evaluation` / Foundry evaluators**; *debug or monitor a live run* → **OpenTelemetry → Application Insights** (+ **run steps** for the granular record). The transport for agent telemetry is **OpenTelemetry**; the sink is **Application Insights**.
+
+🚨 **Trap on the exam:** "Read the run's final message to know why it failed." The final message is the *output*, not the *trace*. To see *why* (which tool, which arguments, which step errored) you read **run steps** and the **OpenTelemetry spans in Application Insights** — not the answer text.
 
 ### Single-Agent vs Multi-Agent Orchestration
 
@@ -474,6 +567,76 @@ Multi-agent orchestration in Foundry uses **connected agents** (one agent calls 
 | **Group chat / collaborative** | Agents iterate together until done | Open-ended tasks needing debate/critique |
 
 🚨 **Trap on the exam:** "More agents is always better." Multi-agent adds latency, cost, and failure surface. Use it when the work genuinely decomposes into separable roles — otherwise a single well-instructed agent is cheaper and more reliable.
+
+### Orchestration Patterns In Depth (When to Use Which)
+
+The four topologies above are the ones AI-103 tests. Here is the deeper decision layer — the *shape*, the *control flow*, and the *failure mode* of each, so you can pick correctly under a scenario question.
+
+#### Orchestrator–Worker (Planner / Supervisor)
+
+```
+                 ┌──────────────┐
+   user ───────► │ Orchestrator │  plans, delegates, composes
+                 └───┬───┬───┬──┘
+                     ▼   ▼   ▼
+                 [W1] [W2] [W3]   specialist workers (connected agents)
+                     └───┴───┴──► results returned to orchestrator
+```
+
+- **Control flow:** central. The orchestrator decides *who* runs and *in what order*, then merges outputs.
+- **Use when:** the task cleanly decomposes into specialist sub-tasks that a supervisor recombines (Maya's triage → lookup → draft desk).
+- **Failure mode:** the orchestrator is a single point of failure and a latency bottleneck; a bad plan cascades.
+- **On Foundry:** orchestrator holds each worker as a **`ConnectedAgentTool`**.
+
+#### Sequential (Pipeline)
+
+```
+user ─► [Agent A] ─► [Agent B] ─► [Agent C] ─► output
+        extract      reason        write
+```
+
+- **Control flow:** fixed, linear. Each stage transforms the previous stage's output.
+- **Use when:** the work is inherently staged and order never changes (extract → normalize → summarize).
+- **Failure mode:** rigid — no branching; an early error propagates downstream unchecked.
+- **On Foundry:** chain connected agents, or drive the stages from a prompt-flow / SK pipeline.
+
+#### Hand-off / Routing
+
+```
+                 ┌────────┐   "billing question"
+   user ───────► │ Router │ ─────────────► [Billing agent]
+                 └────────┘ ─"tech issue"─► [Support agent]
+                            ─"sales"───────► [Sales agent]
+```
+
+- **Control flow:** the router classifies intent and **hands the conversation to exactly one** specialist, then steps out.
+- **Use when:** each request belongs to *one* of N well-defined domains (classic support desk triage).
+- **Failure mode:** misclassification sends the user to the wrong specialist; needs a fallback/"unknown" route.
+- **On Foundry:** a lightweight classifier agent that routes to one connected agent (contrast with orchestrator, which *composes many*).
+
+#### Group Chat / Collaborative
+
+```
+        ┌──────── shared conversation ────────┐
+   [Agent A] ⇄ [Agent B] ⇄ [Critic] ⇄ [Agent C]
+        └── iterate / debate until "done" ─────┘
+```
+
+- **Control flow:** several agents share one conversation and iterate (propose → critique → revise) until a termination condition.
+- **Use when:** open-ended, quality-sensitive tasks that benefit from debate/critique (design review, research synthesis).
+- **Failure mode:** most expensive and least predictable — can loop; **always set a max-turn / termination guard**.
+- **On Foundry / SK:** a group-chat orchestration with a manager that decides who speaks next and when to stop.
+
+| Pattern | Control flow | Cost/latency | Best for | Watch out for |
+|---|---|---|---|---|
+| **Orchestrator–worker** | Central planner | Medium | Decomposable tasks recombined by a supervisor | Planner is SPOF; bad plans cascade |
+| **Sequential** | Fixed linear | Low | Staged transforms in a fixed order | No branching; early errors propagate |
+| **Hand-off / routing** | Classify → one specialist | Low | One-of-N domain requests | Misclassification; needs a fallback route |
+| **Group chat** | Shared, iterative | High | Open-ended, debate/critique tasks | Loops; must cap turns / define "done" |
+
+🎯 **Exam tip:** Map the *verb* in the scenario to the pattern. **"Decompose and recombine"** → orchestrator–worker. **"Stages in a fixed order"** → sequential. **"Route each request to the right specialist"** → hand-off. **"Agents debate/critique until done"** → group chat.
+
+🚨 **Trap on the exam:** confusing **routing** with **orchestrator–worker**. Routing sends the request to **one** specialist and exits; an orchestrator **calls several** and **composes** their outputs. If the answer requires combining multiple specialists' results, it is orchestrator–worker, not routing.
 
 ### 🧩 Worked Example: A Three-Agent Claims Workflow
 
@@ -551,13 +714,18 @@ What this example demonstrates, point by point, against the domain:
 | Create a stateful assistant | `project.agents.create_agent(...)` |
 | Persistent conversation memory | a **thread** (`threads.create`, reuse `thread.id`) |
 | Let the model call your code | **Function calling** (`FunctionTool` + `requires_action` → `submit_tool_outputs`) |
-| Server-side RAG over files | **File Search** tool (vector store) |
-| Server-side Python/data tasks | **Code Interpreter** tool |
+| Server-side RAG over files I upload | **`FileSearchTool`** (managed vector store) |
+| Ground on our existing search index | **`AzureAISearchTool`** (index connection) |
+| Server-side Python/data tasks | **`CodeInterpreterTool`** |
+| Call an external REST API | **`OpenApiTool`** (OpenAPI spec + connection) |
 | One agent delegates to another | **`ConnectedAgentTool`** (connected/multi-agent) |
+| Debug which tool the agent chose | **run steps** (`run_steps.list`) |
+| Route each request to one specialist | **hand-off / routing** topology |
+| Decompose + recombine sub-tasks | **orchestrator–worker** topology |
 | High-impact action approval | human gate at the `requires_action` pause |
 | Block jailbreak / injection | **Content Safety Prompt Shields** + RAI policy on the deployment |
 | Score agent quality | **`azure-ai-evaluation`** (Intent Resolution, Tool Call Accuracy, Task Adherence) |
-| Debug a live agent run | **run steps** + **OpenTelemetry → Application Insights** |
+| Monitor / debug a live agent run | **OpenTelemetry → Application Insights** + **run steps** |
 
 ---
 
@@ -643,6 +811,12 @@ Use SK when you want **portable** orchestration code (run locally, multi-cloud, 
 5. **Agent Service** is the modern path for tool-using assistants, be familiar with file_search + code_interpreter + function tools.
 6. **Semantic Kernel** = code; **Prompt flow** = visual. Both can orchestrate the same building blocks.
 7. **Monitoring + drift detection** in Foundry uses your eval dataset as the baseline.
+8. **Thread → Message → Run → Run step.** The *run step* is the granular record of one tool call / model message — the debugging unit.
+9. **`FileSearchTool` vs `AzureAISearchTool`**, files you upload (managed vector store) vs an existing enterprise search index (connection).
+10. **Routing ≠ orchestrator–worker.** Routing hands to *one* specialist; an orchestrator *calls several and composes*.
+11. **Group chat needs a termination guard** (max turns / "done" condition) or it loops.
+12. **Agent telemetry transport = OpenTelemetry; sink = Application Insights.** The final message is the output, not the trace.
+13. **Quality evaluators are LLM-as-a-judge**, they need a judge `model_config`.
 
 ---
 
@@ -667,7 +841,12 @@ Use SK when you want **portable** orchestration code (run locally, multi-cloud, 
 | **Function calling** | Model requests a JSON-schema-described function; run pauses at `requires_action` for you to `submit_tool_outputs` |
 | **Connected agent** | An agent exposed to another agent as a tool (`ConnectedAgentTool`); the basis of multi-agent orchestration |
 | **Orchestrator–worker** | Multi-agent topology: a planner agent delegates sub-tasks to specialist agents |
+| **Sequential / Hand-off / Group chat** | Pipeline / route-to-one-specialist / iterate-and-critique topologies |
+| **`FileSearchTool` / `AzureAISearchTool`** | RAG over uploaded files (vector store) vs grounding on an existing AI Search index |
+| **`CodeInterpreterTool` / `OpenApiTool`** | Sandboxed Python vs calling an external REST API from an OpenAPI spec |
 | **Agent evaluators** | Intent Resolution, Tool Call Accuracy, Task Adherence (via `azure-ai-evaluation`) |
+| **LLM-as-a-judge** | Quality evaluators that use a judge model (`model_config`) to score responses |
+| **OpenTelemetry → Application Insights** | Transport + sink for agent traces (spans per run, per tool call) |
 | **Semantic Kernel** | Open-source orchestration SDK (C#/Python/Java) |
 | **Plugin / Function (SK)** | A callable unit (native or prompt-based) the kernel orchestrates |
 | **Planner** | SK component that builds multi-step plans |
@@ -722,6 +901,9 @@ You now know:
 - 🧩 The reference RAG architecture and its quality knobs
 - 🤖 Agent Service, tools (file search, code interpreter, functions) + threads
 - 🧠 The heaviest AI-103 domain: single- and multi-agent orchestration on Foundry Agent Service (roles/goals/instructions, function-calling + tool schemas, memory/threads, approval + safety guardrails, evaluation + observability) with `azure-ai-projects` / `azure-ai-agents`
+- 🕸️ Orchestration patterns in depth (orchestrator–worker, sequential, hand-off/routing, group chat) with when-to-use, control flow, and failure modes
+- 🧰 The tool family (`FunctionTool`, `FileSearchTool`, `AzureAISearchTool`, `CodeInterpreterTool`, `OpenApiTool`, `ConnectedAgentTool`) and the Thread → Message → Run → Run step hierarchy
+- 📏 Agent evaluation with `azure-ai-evaluation` (Intent Resolution, Tool Call Accuracy, Task Adherence, groundedness/relevance) and observability via OpenTelemetry → Application Insights
 - 🛠️ Semantic Kernel basics (kernel, plugin, planner)
 - 🏗️ Decision matrix for building any GenAI app
 - 🚨 Hub vs Project, MaaS vs MaaP, prompt flow vs SK
@@ -769,6 +951,10 @@ You now know:
 - 📖 [Prompt flow](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow)
 - 📖 [Evaluations](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/evaluation-metrics-built-in)
 - 📖 [Azure AI Agent Service](https://learn.microsoft.com/en-us/azure/ai-services/agents/overview)
+- 📖 [Agent tools (file search, code interpreter, function calling, connected agents)](https://learn.microsoft.com/en-us/azure/ai-services/agents/how-to/tools/overview)
+- 📖 [Azure AI Evaluation SDK](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/evaluate-sdk)
+- 📖 [Agent evaluators (intent resolution, tool call accuracy, task adherence)](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/observability)
+- 📖 [Trace agents with OpenTelemetry → Application Insights](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/trace-agents-sdk)
 - 📖 [Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
 - 📖 [Model catalog](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/model-catalog-overview)
 - 📖 [RAG reference architectures](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/baseline-openai-e2e-chat)

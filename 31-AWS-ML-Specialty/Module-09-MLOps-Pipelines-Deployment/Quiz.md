@@ -1,6 +1,6 @@
 # ✏️ Module 9 Quiz: MLOps, Pipelines, Deployment
 
-> 25 questions. Aim 20+/25. 35 min.
+> 30 questions. Aim 24+/30. 40 min.
 
 ---
 
@@ -206,6 +206,46 @@ D. Glue Crawler
 
 ---
 
+### Q26. Auditors ask exactly which dataset version and hyperparameters produced the model behind a live endpoint. The MLA-C01 answer is: *(Apply)*
+A. Read CloudWatch Logs manually
+B. SageMaker ML Lineage Tracking (automatic for Pipelines/SDK jobs)
+C. AWS Config
+D. Keep a spreadsheet
+
+---
+
+### Q27. A specific model version has just been set to `ModelApprovalStatus=Approved`. What promotes it to production automatically? *(Apply)*
+A. Registration alone deploys it
+B. An EventBridge rule on the Model Package State Change event → CodePipeline/Lambda deploy
+C. CloudTrail deploys it
+D. S3 versioning
+
+---
+
+### Q28. To retrain automatically whenever new labelled data lands in an S3 prefix: *(Apply)*
+A. Poll S3 from a cron job
+B. S3 Object Created event → EventBridge rule → CodePipeline/Lambda → SageMaker Pipeline
+C. Glue Crawler only
+D. Manual start
+
+---
+
+### Q29. A team wants a governed, one-click, templated MLOps stack (build repo + deploy repo + Pipeline + Registry) reused across many teams. BEST fit: *(Understand)*
+A. Hand-written CloudFormation per team
+B. SageMaker Projects backed by an AWS Service Catalog product
+C. A shared Jupyter notebook
+D. Copy-paste from a wiki
+
+---
+
+### Q30. On a batch transform job, to keep each input record's ID column alongside its prediction in the output: *(Apply)*
+A. `join_source="Input"`
+B. `enable_network_isolation=True`
+C. `BatchStrategy="SingleRecord"` alone
+D. A separate Athena join only
+
+---
+
 ## 🎯 Answers + Explanations
 
 ### Q1: **A. Pipelines + `ConditionStep`**
@@ -283,14 +323,29 @@ Explicitly fail the pipeline (e.g. when evaluation metric is below threshold).
 ### Q25: **B. RAM share OR Model Hub**
 RAM shares the Model Package across accounts; Model Hub pattern enables federated access.
 
+### Q26: **B. ML Lineage Tracking**
+Pipelines and SDK jobs automatically record artifact→action→context lineage; queryable in Studio or the `sagemaker.lineage` APIs. CloudTrail is API audit, not artifact provenance.
+
+### Q27: **B. EventBridge rule on the Model Package State Change event**
+Registration does not deploy. The `Approved` status emits an event; a rule triggers CodePipeline/Lambda to deploy that exact version.
+
+### Q28: **B. S3 event → EventBridge → CodePipeline/Lambda → Pipeline**
+Event-driven continuous training. No polling required.
+
+### Q29: **B. SageMaker Projects backed by Service Catalog**
+Projects provision a governed, templated build+deploy stack from a Service Catalog product, one-click and consistent across teams.
+
+### Q30: **A. `join_source="Input"`**
+Re-attaches predictions to the original input columns (including the ID) in the batch transform output.
+
 ---
 
 ## 📊 Score
 
-- 23-25 → 🏆 Mastery
-- 19-22 → ✅ Solid
-- 15-18 → ⚠️ Re-read Pipelines / endpoint sections
-- <15 → 🔁 Restart Module 9
+- 27-30 → 🏆 Mastery
+- 22-26 → ✅ Solid
+- 17-21 → ⚠️ Re-read Pipelines / endpoint sections
+- <17 → 🔁 Restart Module 9
 
 ---
 

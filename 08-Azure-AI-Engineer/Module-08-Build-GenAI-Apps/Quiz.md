@@ -1,7 +1,7 @@
 # ✏️ Module 8 Quiz: Build GenAI Apps
 
-> **Instructions:** Answer all 28 questions WITHOUT looking at the reading.
-> Then check your answers below. Aim for 23/28 minimum.
+> **Instructions:** Answer all 35 questions WITHOUT looking at the reading.
+> Then check your answers below. Aim for 29/35 minimum.
 > Each question is **Bloom's-taxonomy** tagged.
 
 ---
@@ -99,12 +99,12 @@ D. Are deprecated
 ### Q12. Which line completes this Python snippet to start an Agent Service run? *(Apply)*
 ```python
 from azure.ai.projects import AIProjectClient
-project = AIProjectClient.from_connection_string(cs, credential=DefaultAzureCredential())
-thread = project.agents.create_thread()
-project.agents.create_message(thread.id, role="user", content="...")
+project = AIProjectClient(endpoint=ENDPOINT, credential=DefaultAzureCredential())
+thread = project.agents.threads.create()
+project.agents.messages.create(thread_id=thread.id, role="user", content="...")
 ______
 ```
-A. `project.agents.create_and_process_run(thread.id, agent.id)`
+A. `project.agents.runs.create_and_process(thread_id=thread.id, agent_id=agent.id)`
 B. `project.openai.chat.create(...)`
 C. `project.send_message(thread)`
 D. `project.run(thread.id)`
@@ -247,6 +247,62 @@ D. Use one giant prompt with everything in it
 
 ---
 
+### Q29. A request must be classified and handed to exactly ONE of several domain specialists (billing, tech, sales), which then handles it alone. This multi-agent topology is: *(Understand)*
+A. Orchestrator–worker
+B. Hand-off / routing
+C. Group chat
+D. Sequential pipeline
+
+---
+
+### Q30. An orchestrator agent delegates sub-tasks to specialist agents and COMBINES their outputs. Contrast with routing, the key difference is: *(Analyze)*
+A. Routing is slower
+B. An orchestrator calls several specialists and composes results; routing hands to one specialist and exits
+C. They are identical
+D. Only routing uses connected agents
+
+---
+
+### Q31. Your agent should do RAG over an EXISTING enterprise Azure AI Search index (not files uploaded to the assistant). The right tool is: *(Apply)*
+A. `FileSearchTool`
+B. `AzureAISearchTool` (index connection)
+C. `CodeInterpreterTool`
+D. `OpenApiTool`
+
+---
+
+### Q32. To debug WHY an agent chose the wrong tool during a run, you inspect: *(Apply)*
+A. The run's final assistant message
+B. The run steps (`run_steps.list`) and the OpenTelemetry trace in Application Insights
+C. The thread title
+D. The model's temperature
+
+---
+
+### Q33. Which trio are the agent-specific evaluators in `azure-ai-evaluation`? *(Remember)*
+A. Groundedness, Fluency, Similarity
+B. Intent Resolution, Tool Call Accuracy, Task Adherence
+C. Loss, Accuracy, F1
+D. Latency, Cost, Throughput
+
+---
+
+### Q34. Agent telemetry (spans per run and per tool call) is emitted via ______ and lands in ______. *(Understand)*
+A. Syslog; a local file
+B. OpenTelemetry; Application Insights
+C. SNMP; Log Analytics only
+D. Custom polling; Cosmos DB
+
+---
+
+### Q35. A group-chat (collaborative) multi-agent design MUST include which safeguard? *(Understand)*
+A. A single shared API key
+B. A termination condition / max-turn cap to prevent infinite loops
+C. Temperature set to 2.0
+D. Exactly two agents
+
+---
+
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Azure AI Foundry**
@@ -282,7 +338,7 @@ Plus Browser (preview).
 ### Q11: **B. Stateful conversations across runs and messages**
 Threads accumulate history.
 
-### Q12: **A. `project.agents.create_and_process_run(thread.id, agent.id)`**
+### Q12: **A. `project.agents.runs.create_and_process(thread_id=thread.id, agent_id=agent.id)`**
 Standard Agent Service Python pattern.
 
 ### Q13: **B. Open-source orchestration SDK**
@@ -336,26 +392,47 @@ This is the GitHub Copilot lesson at scale. Microsoft RAI Standard v2 explicitly
 ### Q28: **B. Full Foundry composition**
 Each numbered clause maps to a Capstone deliverable. A, C, D drop one or more dimensions of the spec.
 
+### Q29: **B. Hand-off / routing**
+A router classifies intent and hands the conversation to exactly one specialist, then exits. One-of-N domain requests.
+
+### Q30: **B. Orchestrator composes many; routing hands to one and exits**
+If the design must combine multiple specialists' results, it is orchestrator–worker, not routing. Both use `ConnectedAgentTool`, so C and D are wrong.
+
+### Q31: **B. `AzureAISearchTool` (index connection)**
+`FileSearchTool` is RAG over files uploaded to the assistant (managed vector store); `AzureAISearchTool` grounds on an existing enterprise AI Search index via a connection.
+
+### Q32: **B. Run steps + OpenTelemetry trace in Application Insights**
+The final message is the output, not the trace. Run steps record each tool call + arguments; App Insights spans show latency/tokens per step.
+
+### Q33: **B. Intent Resolution, Tool Call Accuracy, Task Adherence**
+The agent-specific evaluators added on top of the RAG quality set (groundedness/relevance/coherence/fluency).
+
+### Q34: **B. OpenTelemetry; Application Insights**
+OpenTelemetry is the transport; Application Insights is the sink (also viewable in Foundry Tracing / queryable in Log Analytics).
+
+### Q35: **B. A termination condition / max-turn cap**
+Group chat is the most open-ended and expensive topology; without a "done" condition or turn cap it can loop indefinitely.
+
 ---
 
 ## 📊 Score Yourself
 
-- 27–28/28 → 🏆 Ready for Practice Exam 2 + Final Mock
-- 23–26/28 → ✅ Strong
-- 19–22/28 → ⚠️ Re-read Agent Service + Prompt Flow sections
-- <19/28 → 🔁 Re-read Reading.md; re-quiz tomorrow
+- 34–35/35 → 🏆 Ready for Practice Exam 2 + Final Mock
+- 29–33/35 → ✅ Strong
+- 22–28/35 → ⚠️ Re-read Agent Service + orchestration patterns + evaluation/observability
+- <22/35 → 🔁 Re-read Reading.md; re-quiz tomorrow
 
 ### Bloom's distribution check
 | Level | Count | % | Target |
 |---|---|---|---|
-| Remember | 12 | 43% | ≤ 25%¹ |
-| Understand | 7 | 25% | ~25% |
-| Apply | 7 | 25% | ~25% |
-| Analyze | 1 | 4% | ~20% |
-| Evaluate | 1 | 4% | (combined) |
-| Create | 1 | 4% | ~5% |
+| Remember | 13 | 37% | ≤ 25%¹ |
+| Understand | 9 | 26% | ~25% |
+| Apply | 9 | 26% | ~25% |
+| Analyze | 2 | 6% | ~20% |
+| Evaluate | 1 | 3% | (combined) |
+| Create | 1 | 3% | ~5% |
 
-¹ The Foundry-name + service-name recall density is high; deeper reasoning sits in Q27/Q28 + the Socratic prompts + the Capstone integration.
+¹ The Foundry-name + service-name recall density is high; deeper reasoning sits in Q27/Q28/Q30/Q32 + the Socratic prompts + the Capstone integration.
 
 ---
 
@@ -371,6 +448,12 @@ Each numbered clause maps to a Capstone deliverable. A, C, D drop one or more di
 - Evaluation metrics list
 - In_scope + citations
 - Bot Service one bot many channels
+- Orchestration topologies (orchestrator–worker / sequential / routing / group chat)
+- Routing vs orchestrator (hand to one vs compose many)
+- FileSearchTool vs AzureAISearchTool
+- Thread → Message → Run → Run step
+- Agent evaluators (Intent Resolution, Tool Call Accuracy, Task Adherence)
+- OpenTelemetry → Application Insights
 
 ---
 
