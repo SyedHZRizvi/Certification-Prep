@@ -60,6 +60,8 @@ export const COURSES = [
   { id: "45-French-Language",   slug: "French Language Mastery",   icon: "🇫🇷", category: "Spoken Language Mastery" },
   // Quran & Islamic Studies track
   { id: "46-Quran-Recitation-Learning-Memorization", slug: "Quran Recitation, Learning & Memorization", icon: "📖", category: "Quran & Islamic Studies" },
+  // Online Marketing track
+  { id: "47-Online-Marketing-Mastery",              slug: "Online Marketing Mastery",       icon: "🚀", category: "AI Digital Marketing" },
 ];
 
 export const COURSE_IDS = COURSES.map(c => c.id);
