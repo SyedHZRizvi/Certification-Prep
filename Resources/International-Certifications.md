@@ -5,7 +5,7 @@ title: International Certifications Catalog
 
 # 🏆 International Certifications Catalog
 
-> Every international cert that the 39 courses on this site map to, with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules.
+> Every international cert that the courses on this site map to, with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules.
 
 **Resources** · Certifications Catalog
 *Last updated: 2026-05*
@@ -20,7 +20,7 @@ An "industry certification" is a credential issued by a recognized standards bod
 2. **Real proctoring or honor-system with a recognized brand.** Pearson VUE, Prometric, OnVUE for independent proctoring; vendor portals (HubSpot Academy, Google Skillshop, Meta Blueprint) for vendor-administered self-paced assessments. The exam isn't just a marketing quiz.
 3. **Documented market standing.** You can find recent salary surveys (Robert Half, PMI Earning Power, Global Knowledge) listing the cert. You can find recruiters in your city searching for it on LinkedIn.
 
-**How to use this page:** Every section starts with one of our 39 courses. After you complete that course, you'll have covered the core objectives for the certifications listed under it, with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules. Completing the course prepares you for the exam; passing the exam depends on your individual preparation and is not guaranteed.
+**How to use this page:** Every section starts with one of our courses. After you complete that course, you'll have covered the core objectives for the certifications listed under it, with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules. Completing the course prepares you for the exam; passing the exam depends on your individual preparation and is not guaranteed.
 
 Pick the course. Finish it. Pay for the exam. Walk in confident.
 
