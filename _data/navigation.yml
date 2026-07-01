@@ -676,7 +676,7 @@ tracks:
 
   - id: az-ai102
     title: Azure AI Engineer
-    subtitle: AI-102 Associate Certification
+    subtitle: AI-103 Associate Certification
     color: pink
     color_from: "#ec4899"
     color_to: "#be185d"
@@ -942,8 +942,8 @@ tracks:
         single_file: true
 
   - id: aws-ml-specialty
-    title: AWS ML Specialty
-    subtitle: MLS-C01
+    title: AWS ML Engineer
+    subtitle: MLA-C01
     color: orange
     color_from: "#f97316"
     color_to: "#dc2626"
