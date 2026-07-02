@@ -427,7 +427,8 @@ Player API (iframe in `assets/video-modal.js`). All cards have a
 fallback `href` to a `youtube.com/results?search_query=...` URL that
 remains clickable even if the inline modal fails.
 
-Full policy + monitoring playbook lives in **`docs/VIDEO-COMPLIANCE.md`**.
+Plain-English public summary: **`docs/VIDEO-COMPLIANCE.md`** (`/video-compliance/`).
+Full technical + monitoring playbook (internal): **`_dev/VIDEO-COMPLIANCE-INTERNAL.md`**.
 
 ### 10.1 Hard rules
 
@@ -485,7 +486,7 @@ allow/deny lists + the verifier:
 | Student sees broken inline video | Medium | Twice-weekly audit + graceful degradation to search URL. |
 | Mass embedding-disabled by creators | Low | Audit catches HTTP 401 same as 404. Auto-fix strips both. |
 
-See `docs/VIDEO-COMPLIANCE.md` §4 for the full risk matrix + the
+See `_dev/VIDEO-COMPLIANCE-INTERNAL.md` §4 for the full risk matrix + the
 quarterly-review checklist.
 
 ---

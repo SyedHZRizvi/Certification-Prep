@@ -1,225 +1,78 @@
 ---
 permalink: /video-compliance/
-title: Video Compliance & Legal Policy
-description: The Cert Hub's legal posture on third-party video content, monitoring controls, and litigation risk model.
+title: How We Use Videos — Compliance & Transparency
+description: How The Cert Hub uses third-party educational videos — responsibly, transparently, and without hosting anyone's content.
 ---
 
-# 📺 Video Compliance & Legal Posture
+# 📺 How The Cert Hub Uses Videos
 
-> **Document owner:** Humayun Zafar
-> **Last reviewed:** 2026-06
-> **Cadence:** quarterly review, plus any time the underlying platform terms change
+> **Last reviewed:** 2026-06 · Reviewed every quarter.
 
-This document captures **The Cert Hub's** legal posture on third-party
-video content and the operational controls that back it up. It exists
-so that any future legal review (own counsel, hosting partner, payment
-processor, certification body) can see the policy in one place.
+The Cert Hub's courses point you to excellent teaching videos on YouTube to
+go alongside the reading. This page explains, in plain language, how we do
+that responsibly — and what we deliberately never do.
 
 ---
 
-## 1. The bottom line
+## The short version
 
-**The Cert Hub does NOT download, copy, rehost, or mirror any
-third-party video content.** Every video card on every Videos.md page
-across all 47 courses uses one of two YouTube-sanctioned mechanisms:
+**The Cert Hub never downloads, copies, re-hosts, or mirrors anyone's
+videos.** When you open a video from a course, one of two things happens:
 
-| Mechanism | What it is | Legal basis |
-|---|---|---|
-| **YouTube Embed Player API (iframe)** | The inline modal that opens when a student clicks a video card. Loaded via `<iframe src="https://www.youtube.com/embed/{id}">`. | [YouTube Terms of Service §5C](https://www.youtube.com/static?template=terms) explicitly permits embedding via this API. Creators can opt out by disabling embedding on individual videos (our audit detects + removes those — see §3). |
-| **YouTube search-URL fallback** | The `href` on every `.vg-card` link: `https://www.youtube.com/results?search_query={topic}`. Used when no `data-video-id` is set or the inline modal can't load. | Linking to a public search result page is not regulated under any copyright theory we are aware of. It is functionally equivalent to a Google search link. |
+- **It plays inside the site** using YouTube's official embed player — the
+  same player YouTube provides for any website to use. The video streams
+  straight from YouTube to your browser.
+- **Or it opens a YouTube search** for that topic, if a specific video
+  isn't available to play inline.
 
-**Neither mechanism downloads or rehosts video content.** The bytes of
-the video stream are served directly from YouTube's CDN to the
-student's browser, exactly as if the student had typed the URL into
-their address bar.
-
----
-
-## 2. Why we don't download even Creative Commons videos
-
-A natural question is: **"What if a YouTube video is licensed CC-BY?
-Can we download those and rehost?"**
-
-**No, not via YouTube.** Two reasons:
-
-1. **YouTube Terms of Service §5C** prohibits downloading or copying
-   any content from the platform, *regardless of the underlying
-   license*, unless YouTube itself provides a download button
-   (currently only YouTube Premium offline mode for personal
-   playback). The Creative Commons license a creator applies to their
-   video governs *redistribution* — but the *access method* is still
-   bound by YouTube's ToS, and YouTube's ToS does not permit
-   download as the access method.
-
-2. **Provenance + chain of custody.** Even if a CC-BY video could be
-   legally extracted, we would need an unbroken paper trail proving
-   the creator validly applied that license (CC-BY requires
-   attribution; some YouTube videos are mis-tagged). For 2,892 video
-   cards, the audit cost of verifying each one exceeds the benefit
-   compared to embed-only.
-
-The supported legal paths for downloading + rehosting a video are:
-
-- **Self-produced content:** the owner has full rights. (Humayun
-  Zafar, in his capacity as the sole author of The Cert Hub course
-  material, could produce his own walk-throughs and host those
-  directly. None currently exist.)
-- **Explicit written permission** from the creator (separate from any
-  CC license).
-- **Sourced from a non-YouTube origin** that itself permits
-  redistribution (e.g., a creator's own Creative-Commons-licensed
-  download from their personal site, or a public-domain archive like
-  the Library of Congress).
-
-If any of these become applicable in the future, the videos would
-live in `assets/videos/` and be served from Cloudflare Pages directly
-— never substituted for the existing YouTube embeds without owner
-sign-off.
+Either way, YouTube serves the video — exactly as if you had looked it up
+yourself. We store none of it, we don't run our own ads over it, and we
+never present it as our own content.
 
 ---
 
-## 3. Operational controls
+## Why we only link and embed — never download
 
-### 3.1 Twice-weekly automated audit
+Sometimes a video is published under an open licence, and people ask whether
+we could download those and host them ourselves. **We don't.** YouTube's
+Terms of Service don't allow downloading videos from the platform, whatever
+licence they carry — so we stick to the two methods YouTube openly supports:
+its embed player and ordinary links.
 
-`scripts/audit-video-ids.py` walks every Videos.md across the 47
-courses, extracts each card's `data-video-id` attribute, and verifies
-the video is still live + embeddable via YouTube's public oEmbed API.
-
-The audit runs **automatically every Monday and Thursday at 09:00
-UTC** via the GitHub Actions workflow `.github/workflows/audit-
-videos.yml`. The workflow:
-
-1. Executes the audit script in report mode and uploads the JSON
-   report as a workflow artifact (90-day retention).
-2. If any video IDs return HTTP 404 (removed / private / never
-   existed), opens a GitHub Issue labelled `video-audit` +
-   `compliance` listing each broken ID + every file it appears in.
-3. Re-runs the script in `--auto-fix` mode to strip the broken
-   `data-video-id` attributes (cards keep their search-URL `href`
-   fallback, so end-user behavior degrades gracefully).
-4. Opens a pull request with the cleanup diff for human review +
-   merge.
-
-### 3.2 Graceful degradation by design
-
-Every `.vg-card` has TWO redundant pointers to the content:
-
-```html
-<a class="vg-card"
-   data-video-id="REAL11CHARID"
-   href="https://www.youtube.com/results?search_query=topic+keywords">
-  ...
-</a>
-```
-
-- The **`data-video-id`** powers the inline modal player (best UX).
-- The **`href`** is the unconditional fallback — clicked when JS is
-  off, when the modal fails, or when the video ID has been removed.
-
-When a `data-video-id` is stripped by the audit, the card silently
-falls back to the search URL. The student still finds a relevant
-current video; the site does not 404 or show a broken player.
-
-### 3.3 No direct YouTube URLs anywhere in `href`
-
-CLAUDE.md §1.2 enforces, at pre-commit time, that no `href` attribute
-on the site contains `youtube.com/watch?v=` or `youtu.be/`. This is
-checked by `scripts/verify-baseline.py` and the pre-commit hook
-rejects any commit that violates it. Reason: a direct watch URL in
-the `href` would bypass the search-URL fallback and create a hard
-break if the video is later removed.
-
-The only sanctioned form of a real YouTube video ID in the
-codebase is inside the `data-video-id` attribute — which is itself
-auditable and removable by the twice-weekly job.
-
-### 3.4 Manual high-traffic re-curation
-
-When the auto-fix PR lands, the cards lose their inline-modal
-ability for those specific IDs. For high-traffic / capstone modules,
-a human reviewer (currently: Humayun) can replace the broken IDs
-with equivalent canonical videos before merging — typically
-sourcing from:
-
-- The same creator's other videos on the same topic
-- Anthropic / OpenAI / Google Cloud Tech / AWS / Microsoft official
-  channels (most stable, rarely take down content)
-- Karpathy / 3Blue1Brown / Fireship / StatQuest (canonical
-  long-shelf-life education)
-
-The audit script's JSON output groups broken IDs by file, so the
-reviewer can prioritize which courses need attention.
+The only videos we would ever host on the site directly are ones the site's
+author produces himself, or has explicit written permission to use. (There
+are none today.)
 
 ---
 
-## 4. Litigation risk model
+## Keeping the links healthy
 
-| Risk | Likelihood | Severity | Mitigation in place |
-|---|---|---|---|
-| Copyright takedown notice from a video creator | **Very low** | Low | We never host the content, only embed via YouTube's sanctioned API. Removing the iframe is one config change away. |
-| YouTube ToS-violation claim against The Cert Hub | **Very low** | Low | We only use the public Embed Player API + search URLs. No scraping, no downloading, no API-key abuse. |
-| Student complaint about broken / dead video | **Medium** | Very low | Twice-weekly audit + graceful degradation (search-URL fallback) means the student always gets a working result. |
-| Mass video-creator takedowns disabling embedding | **Low** | Medium | Audit catches `no-embed` (HTTP 401) videos same as broken (404). Auto-fix strips both. |
-| YouTube API rate-limiting our audit | **Low** | Very low | oEmbed is rate-limit-friendly (~50 calls/min per IP). Audit uses concurrency=16 and a retry-once strategy. If we hit limits, the report flags transient errors separately from broken ones. |
-
-**Outstanding risks we accept:**
-
-- A creator may pull a video between Monday's audit and Thursday's
-  next audit. Worst-case 4-day window of one broken inline modal —
-  the search URL fallback still works during that window.
-- We rely on YouTube's continued operation of the oEmbed endpoint.
-  If it changes URL or response format, the script needs an update.
-
-**What we explicitly do NOT do:**
-
-- We do not run yt-dlp, youtube-dl, or any download tool against any
-  YouTube URL, ever, on any environment that touches this codebase
-  (production, preview, CI). This is a hard policy line.
-- We do not cache video bytes anywhere — not on Cloudflare, not in
-  local backups, not in commits, not in test artifacts.
-- We do not maintain a "legal grey area" mirror of any third-party
-  educational video.
+Creators sometimes remove or hide their videos. So you never hit a dead
+player, we **check every video link automatically twice a week**. If one has
+stopped working, the course quietly falls back to a topic search — so you
+still land on a relevant, current video instead of an error page.
 
 ---
 
-## 5. Quarterly review checklist
+## Our position, at a glance
 
-Every quarter the following must be re-verified by Humayun (or any
-future site owner):
-
-- [ ] YouTube Terms of Service §5C (or its renumbered successor) still
-      permits Embed Player API use.
-- [ ] YouTube's oEmbed endpoint at `https://www.youtube.com/oembed`
-      still returns 200 for live videos and 404 for removed ones.
-- [ ] The GitHub Actions workflow has run the expected number of
-      times (~8 per month, allowing for runner outages).
-- [ ] Auto-fix PRs are being reviewed + merged on a reasonable
-      cadence (target: within 14 days of opening).
-- [ ] No new third-party content has been added to the site outside
-      the embed/search-URL channels.
-
-The pre-commit hook + scripts/verify-baseline.py already enforce
-the "no direct YouTube URLs in href" rule on every commit, so most
-of the policy is mechanically enforced rather than reviewer-
-dependent.
-
----
-
-## 6. Files referenced by this policy
-
-| File | Purpose |
+| A reasonable concern… | Our position |
 |---|---|
-| `scripts/audit-video-ids.py` | The audit script. Run weekly by CI; runnable manually with `--check` (report only) or `--auto-fix` (strip broken IDs). |
-| `.github/workflows/audit-videos.yml` | GitHub Actions schedule: Mon + Thu 09:00 UTC. Opens Issue + auto-PR on findings. |
-| `scripts/verify-baseline.py` | Pre-commit gate: enforces "no direct YouTube URLs in href" across all content. |
-| `CLAUDE.md` §1.2 + §1.2.1 | Site-wide rule defining the allowed `href` and `data-video-id` formats. |
-| `assets/video-modal.js` | The iframe-based inline modal player; the user-facing implementation of the YouTube Embed Player API. |
-| `docs/VIDEO-COMPLIANCE.md` | **This document.** The legal + operational policy. |
+| **Copyright** — are creators' videos used properly? | We never host or copy a video. We only embed it through YouTube's official player, or link to a search. Any embed can be removed instantly. |
+| **YouTube's rules** — are we within them? | We use only YouTube's public embed player and normal links — no downloading, no scraping, no workarounds. |
+| **Broken videos** — will you hit dead links? | The twice-weekly check plus the automatic search fallback mean you always reach a working result. |
+
+**Lines we will never cross:** we do not download video files with any tool,
+we do not store video content anywhere, and we do not keep a "grey-area"
+mirror of anyone else's educational videos.
 
 ---
 
-## 7. Contact
+## Questions
 
-For questions about this policy, contact **Humayun Zafar**
-(syed@transcrypts.com).
+For anything about this policy, contact **Humayun Zafar** —
+[syed@transcrypts.com](mailto:syed@transcrypts.com).
+
+*A detailed technical companion to this policy — covering the automated
+monitoring and the controls behind it — is maintained internally for
+compliance review.*
