@@ -108,7 +108,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%AD%D8%B1%D9%88%D9%81%D9%90+%D9%82%D9%84%D9%82%D9%84%DB%81+%DA%A9%D8%A7+%D8%A8%DB%8C%D8%A7%D9%86+%E2%80%94+%D9%82%D9%84%D9%82%D9%84%DB%81+%DA%A9%D8%A7+%D9%82%D8%A7%D8%B9%D8%AF%DB%81" data-video-id="n_3uKP1DFyQ" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=%D8%AD%D8%B1%D9%88%D9%81%D9%90+%D9%82%D9%84%D9%82%D9%84%DB%81+%DA%A9%D8%A7+%D8%A8%DB%8C%D8%A7%D9%86+%E2%80%94+%D9%82%D9%84%D9%82%D9%84%DB%81+%DA%A9%D8%A7+%D9%82%D8%A7%D8%B9%D8%AF%DB%81" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
