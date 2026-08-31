@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 9 min · Why it exists, when to rebuild</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+rescue+single+user+mode+grub+systemd" data-video-id="7zfd904U1oo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+rescue+single+user+mode+grub+systemd" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
