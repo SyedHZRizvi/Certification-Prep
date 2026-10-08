@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 20 min · Free cloud tour</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+S3+outage+2017+post-mortem" data-video-id="d9YbWzZ8_9w" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+S3+outage+2017+post-mortem" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
