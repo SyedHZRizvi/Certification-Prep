@@ -111,7 +111,7 @@
       <span class="vg-duration">⏱ 16 min · Inspection workflow</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="Pu_uB_VPtJg" href="https://www.youtube.com/results?search_query=Global+e+cross+border+ecommerce+DDP" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Global+e+cross+border+ecommerce+DDP" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
