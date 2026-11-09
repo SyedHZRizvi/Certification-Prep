@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 11 min · The classic broadcast</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="F9Oben6rhs0" href="https://www.youtube.com/results?search_query=AWS+EventBridge+rules+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+EventBridge+rules+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

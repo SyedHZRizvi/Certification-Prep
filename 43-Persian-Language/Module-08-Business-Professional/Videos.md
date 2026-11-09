@@ -66,7 +66,7 @@ Master C1-level Business Persian — formal correspondence, Iranian business cul
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+economic+vocabulary+financial+terms+Farsi" data-video-id="8xaeRpwgzwo" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+economic+vocabulary+financial+terms+Farsi" target="_blank">
   <div class="vg-thumb">📊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
