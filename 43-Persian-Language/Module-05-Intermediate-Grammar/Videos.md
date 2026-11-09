@@ -76,7 +76,7 @@ Build fluency with these intermediate grammar video resources covering tenses, m
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+relative+clauses+ke+that+who+which" data-video-id="tI3lKFlcmWw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+relative+clauses+ke+that+who+which" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
