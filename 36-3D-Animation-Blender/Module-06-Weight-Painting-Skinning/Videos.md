@@ -20,7 +20,7 @@ title: "Module 6 Videos: Weight Painting & Skinning"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+shape+keys+tutorial+facial+expressions+character" data-video-id="Ym3APNiZ7fA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+shape+keys+tutorial+facial+expressions+character" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Shape Keys, Facial Expressions for Characters</div>
