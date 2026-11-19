@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 20 min · End-to-end stack build</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+kernel+modules+modprobe+lsmod+tutorial" data-video-id="5YJia3BPuV0" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+kernel+modules+modprobe+lsmod+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
