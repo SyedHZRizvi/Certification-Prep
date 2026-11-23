@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 18 min · Modes, contexts, semanage</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SELinux+troubleshooting+ausearch+AVC+denials" data-video-id="D6GURCroYog" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SELinux+troubleshooting+ausearch+AVC+denials" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 14 min · Scan your own server</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SELinux+booleans+httpd_can_network_connect" data-video-id="YLqY1ppZiuc" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SELinux+booleans+httpd_can_network_connect" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

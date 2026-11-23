@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · The audit triangle</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="3C2TqgploOE" href="https://www.youtube.com/results?search_query=AWS+Cost+Explorer+Budgets+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Cost+Explorer+Budgets+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💸</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
