@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · #1 cost surprise</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Compute+Optimizer+right-sizing+demo" data-video-id="r4yor_KFiXc" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Compute+Optimizer+right-sizing+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
